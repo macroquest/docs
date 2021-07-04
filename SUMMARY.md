@@ -455,8 +455,8 @@
 ## Other Applications
 
 * [EQEmu](application/eqemu.md)
-* [Notepadplusplus Syntax File](application/notepadplusplus-syntax-file.md)
 * [Text Editors](application/text-editors.md)
-* [UltraEdit Syntax File](application/ultraedit-syntax-file.md)
+    * [Notepad++ Syntax File](application/notepadplusplus-syntax-file.md)
+    * [UltraEdit Syntax File](application/ultraedit-syntax-file.md)
 
 
