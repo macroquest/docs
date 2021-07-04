@@ -1,6 +1,8 @@
+# Slot Names
+
 ## ItemSlot & ItemSlot2
 
-These are not top level objects they are only members of [DataType:item](../data-types/datatype-item.md)
+These are not top level objects they are only members of [DataType:item](../data-types-and-top-level-objects/data-types/datatype-item.md)
 
 ### ItemSlot Diagram
 
@@ -12,150 +14,156 @@ The reason for this is that they work without having to open the bags.
 
 Picking up an item from pack 10 first slot in that pack:
 
-    /itemnotify in pack${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot}-22].Int} ${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot2} + 1].Int} leftmouseup
+```text
+/itemnotify in pack${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot}-22].Int} ${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot2} + 1].Int} leftmouseup
+```
 
-Why not just /itemnotify in ${Me.Inventory\[32\].Item\[1\].ItemSlot} ${Me.Inventory\[32\].Item\[1\].ItemSlot2} you may
-ask...
+Why not just /itemnotify in ${Me.Inventory\[32\].Item\[1\].ItemSlot} ${Me.Inventory\[32\].Item\[1\].ItemSlot2} you may ask...
 
-well, we didn't have .ItemSlot and .ItemSlot2 until recently, so /itemnotify works with the old pack system that starts
-at slot 1 not 0
+well, we didn't have .ItemSlot and .ItemSlot2 until recently, so /itemnotify works with the old pack system that starts at slot 1 not 0
 
 I can't change it to use real slotnumbers because then it will break a lot of old macros. So use the above calculation.
 
 -eqmule
 
-    ItemSlot Inventory
-    +----+----+
-    | 23 | 24 |
-    +----+----+
-    | 25 | 26 |
-    +----+----+
-    | 27 | 28 |
-    +----+----+
-    | 29 | 30 |
-    +----+----+
-    | 31 | 32 |
-    +----+----+
+```text
+ItemSlot Inventory
++----+----+
+| 23 | 24 |
++----+----+
+| 25 | 26 |
++----+----+
+| 27 | 28 |
++----+----+
+| 29 | 30 |
++----+----+
+| 31 | 32 |
++----+----+
+```
 
-.ItemSlot2 is a "sub" slot, example if .ItemSlot is 23 (a container like a Backpack for example) and your item is inside
-that container this will return what slot INSIDE that container it’s in... complicated? Not really.  
-  
-Picking up an item from pack 10 first slot in that pack: /itemnotify in
-pack${Math.Calc\[${Me.Inventory\[32\].Item\[1\].ItemSlot}-22\].Int}
-${Math.Calc\[${Me.Inventory\[32\].Item\[1\].ItemSlot2} + 1\].Int} leftmouseup  
-  
-Or say you want an Iron Ration, which is in bag 1 in slot 8 Doing /echo ${FindItem\[=Iron Ration\].ItemSlot} will return
-23  
-  
-Doing /echo ${FindItem\[=Iron Ration\].ItemSlot2} will return 7 (slots start at 0 so this is in fact correct)  
-  
+.ItemSlot2 is a "sub" slot, example if .ItemSlot is 23 \(a container like a Backpack for example\) and your item is inside that container this will return what slot INSIDE that container it’s in... complicated? Not really.
+
+Picking up an item from pack 10 first slot in that pack: /itemnotify in pack${Math.Calc\[${Me.Inventory\[32\].Item\[1\].ItemSlot}-22\].Int} ${Math.Calc\[${Me.Inventory\[32\].Item\[1\].ItemSlot2} + 1\].Int} leftmouseup
+
+Or say you want an Iron Ration, which is in bag 1 in slot 8 Doing /echo ${FindItem\[=Iron Ration\].ItemSlot} will return 23
+
+Doing /echo ${FindItem\[=Iron Ration\].ItemSlot2} will return 7 \(slots start at 0 so this is in fact correct\)
+
 For the above example, you would be using this:
 
-    /itemnotify in pack${Math.Calc[${Me.Inventory[23].ItemSlot}-22].Int} ${Math.Calc[${Me.Inventory[23].Item[7].ItemSlot2} + 1].Int} leftmouseup
+```text
+/itemnotify in pack${Math.Calc[${Me.Inventory[23].ItemSlot}-22].Int} ${Math.Calc[${Me.Inventory[23].Item[7].ItemSlot2} + 1].Int} leftmouseup
+```
 
 and programatically:
 
-    /itemnotify in pack${Math.Calc[${Me.Inventory[${FindItem[=Iron Ration].ItemSlot}].ItemSlot}-22].Int}
+```text
+/itemnotify in pack${Math.Calc[${Me.Inventory[${FindItem[=Iron Ration].ItemSlot}].ItemSlot}-22].Int}
+```
 
-Line above, then a space, and the following(I couldn't do a single line due to lack of linewrap):
+Line above, then a space, and the following\(I couldn't do a single line due to lack of linewrap\):
 
-    ${Math.Calc[${Me.Inventory[${FindItem[=Iron Ration].ItemSlot}].Item[${FindItem[=Iron Ration].ItemSlot2}].ItemSlot2} + 1].Int} leftmouseup
+```text
+${Math.Calc[${Me.Inventory[${FindItem[=Iron Ration].ItemSlot}].Item[${FindItem[=Iron Ration].ItemSlot2}].ItemSlot2} + 1].Int} leftmouseup
+```
 
 ## InvSlot
 
 ### Inventory Diagram
 
-    InvSlot Inventory
-    +----+----+
-    | 24 | 25 |
-    +----+----+
-    | 26 | 27 |
-    +----+----+
-    | 28 | 29 |
-    +----+----+
-    | 30 | 31 |
-    +----+----+
-    | 32 | 33 |
-    +----+----+
+```text
+InvSlot Inventory
++----+----+
+| 24 | 25 |
++----+----+
+| 26 | 27 |
++----+----+
+| 28 | 29 |
++----+----+
+| 30 | 31 |
++----+----+
+| 32 | 33 |
++----+----+
+```
 
 ### Equipment Slots
 
-|        |             |
-|--------|-------------|
-| **0**  | charm       |
-| **1**  | leftear     |
-| **2**  | head        |
-| **3**  | face        |
-| **4**  | rightear    |
-| **5**  | neck        |
-| **6**  | shoulder    |
-| **7**  | arms        |
-| **8**  | back        |
-| **9**  | leftwrist   |
-| **10** | rightwrist  |
-| **11** | ranged      |
-| **12** | hands       |
-| **13** | mainhand    |
-| **14** | offhand     |
-| **15** | leftfinger  |
+|  |  |
+| :--- | :--- |
+| **0** | charm |
+| **1** | leftear |
+| **2** | head |
+| **3** | face |
+| **4** | rightear |
+| **5** | neck |
+| **6** | shoulder |
+| **7** | arms |
+| **8** | back |
+| **9** | leftwrist |
+| **10** | rightwrist |
+| **11** | ranged |
+| **12** | hands |
+| **13** | mainhand |
+| **14** | offhand |
+| **15** | leftfinger |
 | **16** | rightfinger |
-| **17** | chest       |
-| **18** | legs        |
-| **19** | feet        |
-| **20** | waist       |
+| **17** | chest |
+| **18** | legs |
+| **19** | feet |
+| **20** | waist |
 | **21** | powersource |
-| **22** | ammo        |
+| **22** | ammo |
 
 ### Inventory Slots
 
-|        |        |
-|--------|--------|
-| **23** | pack1  |
-| **24** | pack2  |
-| **25** | pack3  |
-| **26** | pack4  |
-| **27** | pack5  |
-| **28** | pack6  |
-| **29** | pack7  |
-| **30** | pack8  |
-| **31** | pack9  |
+|  |  |
+| :--- | :--- |
+| **23** | pack1 |
+| **24** | pack2 |
+| **25** | pack3 |
+| **26** | pack4 |
+| **27** | pack5 |
+| **28** | pack6 |
+| **29** | pack7 |
+| **30** | pack8 |
+| **31** | pack9 |
 | **32** | pack10 |
 
 ### Bank Slots
 
-|          |             |
-|----------|-------------|
-| **2000** | bank1       |
-| **2001** | bank2       |
-| **2002** | bank3       |
-| **2003** | bank4       |
-| **2004** | bank5       |
-| **2005** | bank6       |
-| **2006** | bank7       |
-| **2007** | bank8       |
-| **2008** | bank9       |
-| **2009** | bank10      |
-| **2010** | bank11      |
-| **2011** | bank12      |
-| **2012** | bank13      |
-| **2013** | bank14      |
-| **2014** | bank15      |
-| **2015** | bank16      |
-| **2016** | bank17      |
-| **2017** | bank18      |
-| **2018** | bank19      |
-| **2019** | bank20      |
-| **2020** | bank21      |
-| **2021** | bank22      |
-| **2022** | bank23      |
-| **2023** | bank24      |
+|  |  |
+| :--- | :--- |
+| **2000** | bank1 |
+| **2001** | bank2 |
+| **2002** | bank3 |
+| **2003** | bank4 |
+| **2004** | bank5 |
+| **2005** | bank6 |
+| **2006** | bank7 |
+| **2007** | bank8 |
+| **2008** | bank9 |
+| **2009** | bank10 |
+| **2010** | bank11 |
+| **2011** | bank12 |
+| **2012** | bank13 |
+| **2013** | bank14 |
+| **2014** | bank15 |
+| **2015** | bank16 |
+| **2016** | bank17 |
+| **2017** | bank18 |
+| **2018** | bank19 |
+| **2019** | bank20 |
+| **2020** | bank21 |
+| **2021** | bank22 |
+| **2022** | bank23 |
+| **2023** | bank24 |
 | **2500** | sharedbank1 |
 | **2501** | sharedbank2 |
 
 ### Trade Slots
 
-|          |        |
-|----------|--------|
+|  |  |
+| :--- | :--- |
 | **3000** | trade1 |
 | **3001** | trade2 |
 | **3002** | trade3 |
@@ -168,8 +176,8 @@ Line above, then a space, and the following(I couldn't do a single line due to l
 
 ### Enviroment Slots
 
-|          |         |
-|----------|---------|
+|  |  |
+| :--- | :--- |
 | **4000** | enviro1 |
 | **4001** | enviro2 |
 | **4002** | enviro3 |
@@ -182,17 +190,17 @@ Line above, then a space, and the following(I couldn't do a single line due to l
 
 ### Loot Slots
 
-|          |        |
-|----------|--------|
-| **5000** | loot1  |
-| **5001** | loot2  |
-| **5002** | loot3  |
-| **5003** | loot4  |
-| **5004** | loot5  |
-| **5005** | loot6  |
-| **5006** | loot7  |
-| **5007** | loot8  |
-| **5008** | loot9  |
+|  |  |
+| :--- | :--- |
+| **5000** | loot1 |
+| **5001** | loot2 |
+| **5002** | loot3 |
+| **5003** | loot4 |
+| **5004** | loot5 |
+| **5005** | loot6 |
+| **5006** | loot7 |
+| **5007** | loot8 |
+| **5008** | loot9 |
 | **5009** | loot10 |
 | **5010** | loot11 |
 | **5011** | loot12 |
@@ -218,17 +226,17 @@ Line above, then a space, and the following(I couldn't do a single line due to l
 
 ### Merchant Slots
 
-|          |            |
-|----------|------------|
-| **6000** | merchant1  |
-| **6001** | merchant2  |
-| **6002** | merchant3  |
-| **6003** | merchant4  |
-| **6004** | merchant5  |
-| **6005** | merchant6  |
-| **6006** | merchant7  |
-| **6007** | merchant8  |
-| **6008** | merchant9  |
+|  |  |
+| :--- | :--- |
+| **6000** | merchant1 |
+| **6001** | merchant2 |
+| **6002** | merchant3 |
+| **6003** | merchant4 |
+| **6004** | merchant5 |
+| **6005** | merchant6 |
+| **6006** | merchant7 |
+| **6007** | merchant8 |
+| **6008** | merchant9 |
 | **6009** | merchant10 |
 | **6010** | merchant11 |
 | **6011** | merchant12 |
@@ -303,17 +311,17 @@ Line above, then a space, and the following(I couldn't do a single line due to l
 
 ### Bazaar Slots
 
-|          |          |
-|----------|----------|
-| **7000** | bazaar1  |
-| **7001** | bazaar2  |
-| **7002** | bazaar3  |
-| **7003** | bazaar4  |
-| **7004** | bazaar5  |
-| **7005** | bazaar6  |
-| **7006** | bazaar7  |
-| **7007** | bazaar8  |
-| **7008** | bazaar9  |
+|  |  |
+| :--- | :--- |
+| **7000** | bazaar1 |
+| **7001** | bazaar2 |
+| **7002** | bazaar3 |
+| **7003** | bazaar4 |
+| **7004** | bazaar5 |
+| **7005** | bazaar6 |
+| **7006** | bazaar7 |
+| **7007** | bazaar8 |
+| **7008** | bazaar9 |
 | **7009** | bazaar10 |
 | **7010** | bazaar11 |
 | **7011** | bazaar12 |
@@ -388,17 +396,17 @@ Line above, then a space, and the following(I couldn't do a single line due to l
 
 ### Inspect Slots
 
-|          |           |
-|----------|-----------|
-| **8000** | inspect1  |
-| **8001** | inspect2  |
-| **8002** | inspect3  |
-| **8003** | inspect4  |
-| **8004** | inspect5  |
-| **8005** | inspect6  |
-| **8006** | inspect7  |
-| **8007** | inspect8  |
-| **8008** | inspect9  |
+|  |  |
+| :--- | :--- |
+| **8000** | inspect1 |
+| **8001** | inspect2 |
+| **8002** | inspect3 |
+| **8003** | inspect4 |
+| **8004** | inspect5 |
+| **8005** | inspect6 |
+| **8006** | inspect7 |
+| **8007** | inspect8 |
+| **8008** | inspect9 |
 | **8009** | inspect10 |
 | **8010** | inspect11 |
 | **8011** | inspect12 |
@@ -424,11 +432,10 @@ Line above, then a space, and the following(I couldn't do a single line due to l
 
 ## See Also
 
--   [Data Types](../data-types/data-types.md)
--   [Top-Level Objects](../top-level-objects/top-level-objects.md)
--   TLO:InvSlot
--   TLO:ItemSlot
--   [DataType:item](../data-types/datatype-item.md)
--   [Slot Names](slot-names.md)
-
+* [Data Types](../data-types-and-top-level-objects/data-types/)
+* [Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/)
+* TLO:InvSlot
+* TLO:ItemSlot
+* [DataType:item](../data-types-and-top-level-objects/data-types/datatype-item.md)
+* [Slot Names](slot-names.md)
 
