@@ -53,7 +53,7 @@ file type.
 
 <!-- -->
 
--   For people using Utraedit, here is an addition you can make to your [UltraEdit Syntax
-    File](../application/ultraedit-syntax-file.md) that will give you some syntax highlighting and reformatting.
+-   For people using Utraedit, here is an addition you can make to your [UltraEdit Syntax File](../other-applications/ultraedit-syntax-file.md)
+    that will give you some syntax highlighting and reformatting.
 
 

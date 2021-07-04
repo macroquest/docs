@@ -27,5 +27,5 @@ Wassup, or join us in [IRC](documentation/macroquest2-irc.md)
 -   [MQ2 Manual](https://macroquest2.com/includes/wassup/manual.php) maintained by Wassup
 -   [Macro Reference](documentation/macro-reference.md)
 -   [Hacker Stuff](general-information/hacker-stuff.md)
--   [Text Editors and Syntax Files](application/text-editors.md)
+-   [Text Editors and Syntax Files](other-applications/text-editors.md)
 -   Tips for Editing the Wiki
