@@ -341,18 +341,22 @@
 
 ## Plugins
 * Core Plugins
+    * [MQ2AutoLogin](plugins/mq2autologin.md)
     * [MQ2Bzsrch](plugins/mq2bzsrch.md)
     * [MQ2Chat](plugins/mq2chat.md)
+    * [MQ2ChatWnd](plugins/mq2chatwnd.md)
+    * [MQ2CustomBinds](plugins/mq2custombinds.md)
+    * [MQ2EQBugFix](plugins/mq2eqbugfix.md)
     * [MQ2HUD](plugins/mq2hud.md)
     * [MQ2ItemDisplay](plugins/mq2itemdisplay.md)
     * [MQ2Labels](plugins/mq2labels.md)
     * [MQ2Map](plugins/mq2map.md)
+
 * Community Plugins
     * [MQ2AAPurchase](plugins/mq2aapurchase.md)
     * [MQ2AdvPath](plugins/mq2advpath.md)
     * [MQ2AutoForage](plugins/mq2autoforage.md)
     * [MQ2AutoGroup](plugins/mq2autogroup.md)
-    * [MQ2AutoLogin](plugins/mq2autologin.md)
     * [MQ2AutoSize](plugins/mq2autosize.md)
     * [MQ2AutoSkills](plugins/mq2autoskills.md)
     * [MQ2Bandolier](plugins/mq2bandolier.md)
@@ -360,16 +364,13 @@
     * [MQ2CEcho](plugins/mq2cecho.md)
     * [MQ2Cast](plugins/mq2cast.md)
     * [MQ2ChatEvents](plugins/mq2chatevents.md)
-    * [MQ2ChatWnd](plugins/mq2chatwnd.md)
     * [MQ2Clip](plugins/mq2clip.md)
     * [MQ2Cursor](plugins/mq2cursor.md)
-    * [MQ2CustomBinds](plugins/mq2custombinds.md)
     * [MQ2DPS](plugins/mq2dps.md)
     * [MQ2DPSAdv](plugins/mq2dpsadv.md)
     * [MQ2Debuffs](plugins/mq2debuffs.md)
     * [MQ2EQBC](plugins/mq2eqbc.md)
         * [MQ2EQBC:Revisions](history/mq2eqbc-revisions.md)
-    * [MQ2EQBugFix](plugins/mq2eqbugfix.md)
     * [MQ2Events](plugins/mq2events.md)
     * [MQ2Exchange](plugins/mq2exchange.md)
     * [MQ2FPS](plugins/mq2fps.md)
@@ -389,7 +390,6 @@
     * [MQ2NetBots](plugins/mq2netbots.md)
     * [MQ2NetHeal](plugins/mq2netheal.md)
     * [MQ2PQ](plugins/mq2pq.md)
-    * [MQ2Plugins](plugins/mq2plugins.md)
     * [MQ2RelayTells](plugins/mq2relaytells.md)
     * [MQ2Rez](plugins/mq2rez.md)
     * [MQ2Sound](plugins/mq2sound.md)
@@ -404,6 +404,7 @@
     * [MQ2Vendors](plugins/mq2vendors.md)
     * [MQ2Web](plugins/mq2web.md)
     * [MQ2XPTracker](plugins/mq2xptracker.md)
+
 * Discontinued / Unsupported
     * [MQ2EQIM](plugins/mq2eqim.md)
     * [MQ2IRC](plugins/mq2irc.md)
