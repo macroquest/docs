@@ -5,7 +5,7 @@ sub is run, and are traditionally located at the beginning of the macro file.
 
 Click on the list below to see more in-depth descriptions.
 
--   bind
+-   [bind](macro-bind.md)
 -   [chat](chat.md)
 -   [define](define.md)
 -   [event](event.md)
