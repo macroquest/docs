@@ -432,7 +432,6 @@
 * [Loot Any Corpse](macros/loot-any-corpse.md)
 * [ModBot](macros/modbot.md)
 * [Modbot 4.0](macros/modbot-4.0.md)
-* [Modbot v4 Class INI Examples](macros/modbot-v4-class-ini-examples.md)
 * [Necro Helper](macros/necro-helper.md)
 * [Ninjadvloot.inc](macros/ninjadvloot.inc.md)
 * [Puller.inc](macros/puller.inc.md)
@@ -453,7 +452,6 @@
 * [Chat-Sub](example/chat-sub.md)
 * [Macro Error](example/macro-error.md)
 * [ModBot/mbtutorial](example/modbot-mbtutorial.md)
-* [Modbot Class INI Examples](example/modbot-class-ini-examples.md)
 
 
 ## Other Applications
