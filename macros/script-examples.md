@@ -270,8 +270,8 @@ Theoretically it should give a pet kit to any pet it has targeted. That's untest
 `C17=/if (!${InvSlot[27].Item.ID}) /varset EmptySlot true`  
 `C18=/if (!${InvSlot[28].Item.ID}) /varset EmptySlot true`  
 `C19=/if (!${InvSlot[29].Item.ID}) /varset EmptySlot true`  
-`C20=/if ({{EmptySlot.Equal[false]}) /echo no empty slots, sorry no pet kit right now.`  
-`C21=/if ({{EmptySlot.Equal[false]}) /return 0`  
+`C20=/if (${EmptySlot.Equal[false]}) /echo no empty slots, sorry no pet kit right now.`  
+`C21=/if (${EmptySlot.Equal[false]}) /return 0`  
 `;Allow for more than 30 seconds by setting the timer to 10minutes`  
 `C22=/varset Timer 10m`  
 `;cast the pet armor`  
@@ -358,8 +358,8 @@ Also, I can confirm that the theoretical part about it giving the petkit to any 
 `C19=/if (!{InvSlot[30].Item.ID}) /varset EmptySlot true`  
 `C20=/if (!{InvSlot[31].Item.ID}) /varset EmptySlot true`  
 `C21=/if (!{InvSlot[32].Item.ID}) /varset EmptySlot true`  
-`C22=/if ({{EmptySlot.Equal[false]}) /bc no empty slots, sorry no pet kit right now.`  
-`C23=/if ({{EmptySlot.Equal[false]}) /return 0`  
+`C22=/if (${EmptySlot.Equal[false]}) /bc no empty slots, sorry no pet kit right now.`  
+`C23=/if (${EmptySlot.Equal[false]}) /return 0`  
 `; Allow for more than 30 seconds by setting the timer to 10 minutes`  
 `C24=/varset Timer 10m`  
 `; summon the pet armor`  
