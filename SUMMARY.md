@@ -1,7 +1,5 @@
 # Table of contents
 
-* [Main Page](main-page.md)
-
 ## Commands
 
 * [Slash Commands](commands/slash-commands.md)
