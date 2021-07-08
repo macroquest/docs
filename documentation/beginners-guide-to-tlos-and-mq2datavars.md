@@ -12,48 +12,23 @@ In order to use these built-in variables, you need to pick a Top-Level Object to
 
 Say you want to display your current Mana Percentage in a [HUD](../plugins/core-plugins/mq2hud/) or use it in a macro.
 
-* First off, you look through the [list of TLOs](../data-types-and-top-level-objects/top-level-objects/) and pick one that best suits the
-
-  information you're looking for. The [Me TLO](../data-types-and-top-level-objects/top-level-objects/tlo-me.md) looks like a good bet.
-
+* First off, you look through the [list of TLOs](../data-types-and-top-level-objects/top-level-objects/) and pick one that best suits the information you're looking for. The [Me TLO](../data-types-and-top-level-objects/top-level-objects/tlo-me.md) looks like a good bet.
 * Opening that page, you see that the Me TLO has access to the [_character_](../data-types-and-top-level-objects/data-types/datatype-character.md) datatype
 
   and the [_spawn_](../data-types-and-top-level-objects/data-types/datatype-spawn.md) datatype. The _character_ datatype contains information about your own
 
   character, mostly things that only you will know \(eg. how much mana you have, what spells you have loaded, etc\).
 
-  Since your character is also a spawn in the EQ world \(ie. other people can see you and interact with you\), you are
+  Since your character is also a spawn in the EQ world \(ie. other people can see you and interact with you\), you are also able to access the _spawn_ datatype, which gives information that other characters in the same zone may know \(eg. your location, your race, your class, etc\).
 
-  also able to access the _spawn_ datatype, which gives information that other characters in the same zone may know
-
-  \(eg. your location, your race, your class, etc\).
-
-* Since we're looking for your Mana Percentage, this is something that only you can know, so choose the _character_
-
-  datatype page.
-
-* This will display a list of all the members that are available to _character_. In the front of each datatype is an
-
-  italic word, which is the datatype that the member belongs to. It may seem a bit confusing right now but should get
-
-  easier as we progress to more complex examples.
-
-* Scroll down the list until you find a member that looks like it will give us what we need. The **PctMana** member
-
-  looks good.
-
+* Since we're looking for your Mana Percentage, this is something that only you can know, so choose the _character_ datatype page.
+* This will display a list of all the members that are available to _character_. In the front of each datatype is an italic word, which is the datatype that the member belongs to. It may seem a bit confusing right now but should get easier as we progress to more complex examples.
+* Scroll down the list until you find a member that looks like it will give us what we need. The **PctMana** member looks good.
 * The _int_ in front of **PctMana** shows that it is an integer. Since we're expecting a number, this seems correct.
-* Click on the [_int_](../data-types-and-top-level-objects/data-types/datatype-int.md) link and you'll notice another table similar to the _character_
+* Click on the [_int_](../data-types-and-top-level-objects/data-types/datatype-int.md) link and you'll notice another table similar to the _character_ datatype. This table has all the members of the _int_ datatype. Note that the bottom line of the list is \*\*To String_\*, which is the default for the datatype. The default for the_ int\* datatype is the number. Since we're just looking for the number, we can stop here.
+* So now we can "build" our variable. Remember, all variables start with a $-sign and are surrounded by braces { }. 
 
-  datatype. This table has all the members of the _int_ datatype. Note that the bottom line of the list is \*\*To
-
-  String_\*, which is the default for the datatype. The default for the_ int\* datatype is the number. Since we're just
-
-  looking for the number, we can stop here.
-
-* So now we can "build" our variable. Remember, all variables start with a $-sign and are surrounded by braces { }. We
-
-  start with our TLO:
+We start with our TLO:
 
 `${Me`
 
@@ -65,15 +40,11 @@ Say you want to display your current Mana Percentage in a [HUD](../plugins/core-
 
 `${Me.PctMana`
 
-* Now **PctMana** is an _int_ and the default for _int_ is just the number, so we don't need to add any members of
-
-  _int_. So we can close off the variable now:
+* Now **PctMana** is an _int_ and the default for _int_ is just the number, so we don't need to add any members of _int_. So we can close off the variable now:
 
 `${Me.PctMana}`
 
-* To test this variable, you can echo it in the EQ client. So typing the following will echo your mana percentage to
-
-  the MQ2 chat window:
+* To test this variable, you can echo it in the EQ client. So typing the following will echo your mana percentage to the MQ2 chat window:
 
 `/echo ${Me.PctMana}`
 
@@ -109,7 +80,7 @@ The next example deals with getting your class short name \(the 3-letter abbrevi
 
 ### Example 3: Comparison using a string
 
-For the next example, we will use the variable and compare it to a string in an if statement. Lets say we want to echo something if we're a bard, and something else if we're not.
+For the next example, we will use the variable and compare it to a string in an if statement. Let's say we want to echo something if we're a bard, and something else if we're not.
 
 * We'll be using the same **ShortName** example as above, but since we don't just want to echo the current short name,
 
@@ -122,15 +93,8 @@ For the next example, we will use the variable and compare it to a string in an 
 
   good enough for our test.
 
-* In the following example, I'll be using an /if statement. For the purposes of this example, you don't need to
-
-  understand how they work, but they're the staple of MQ2, so it's a good idea to have a look at the \[Flow
-
-  Control\]\(flow-control.md\) page and familiarize yourself with /if and its friends.
-
-* Returning to the example though, let's build the variable. We'll start with where we left off in the previous
-
-  example. Since we want to access a member of **ShortName**, we won't close it off:
+* In the following example, I'll be using an /if statement. For the purposes of this example, you don't need to understand how they work, but they're the staple of MQ2, so it's a good idea to have a look at the \[Flow Control\]\(flow-control.md\) page and familiarize yourself with /if and its friends.
+* Returning to the example though, let's build the variable. We'll start with where we left off in the previous example. Since we want to access a member of **ShortName**, we won't close it off:
 
 `/if (${Me.Class.ShortName`
 
