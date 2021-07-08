@@ -1,14 +1,11 @@
 # DataType:fellowship
 
-## Description
-
 Contains all the data about your fellowship
 
 ## Members
 
-|  |  |  |
-| :--- | :--- | :--- |
 | **Type** | **Member** | **Description** |
+| :--- | :--- | :--- |
 | [_bool_](datatype-bool.md) | **Campfire** | TRUE if campfire is up, FALSE if not |
 | [_ticks_](datatype-ticks.md) | **CampfireDuration** | Time left on current campfire |
 | [_float_](datatype-float.md) | **CampfireX** | Campfire X location |
@@ -20,12 +17,5 @@ Contains all the data about your fellowship
 | [_fellowshipmember_](datatype-fellowshipmember.md) | **Member\[**name**\|**\#**\]** | Member data by _name_ or _\#_ |
 | [_int_](datatype-int.md) | **Members** | Number of members in the fellowship |
 | [_string_](datatype-string.md) | **MotD** | Fellowship Message of the Day |
-| '**'**[**string**](datatype-string.md) | **To String** | TRUE if currently in a fellowship, FALSE if not |
-
-## See Also
-
-* [Data Types](./)
-* [Top-Level Objects](../top-level-objects/)
-* [DataType:fellowshipmember](datatype-fellowshipmember.md)
-* [DataType:character](datatype-character.md)
+| \_\_[_string_](datatype-string.md)\_\_ | **To String** | TRUE if currently in a fellowship, FALSE if not |
 

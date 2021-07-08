@@ -1,7 +1,5 @@
 # DataType:everquest
 
-## Description
-
 Data types related to the current EverQuest session. This replaces the MacroQuest datatype.
 
 ## Members

@@ -1,7 +1,5 @@
 # DataType:evolving
 
-## Description
-
 A DataType that deals with evolving items.
 
 ## Members

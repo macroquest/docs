@@ -1,14 +1,11 @@
 # DataType:ground
 
-## Description
-
 Contains all data related to a ground spawn
 
 ## Members
 
-|  |  |  |
-| :--- | :--- | :--- |
 | **Type** | **Member** | **Description** |
+| :--- | :--- | :--- |
 | [_int_](datatype-int.md) | **ID** | Ground item ID \(not the same as item ID, this is like spawn ID\) |
 | [_int_](datatype-int.md) | **Distance** | Distance from player to ground item |
 | [_float_](datatype-float.md) | **X** | X coordinate |
@@ -34,6 +31,12 @@ Contains all data related to a ground spawn
 | [_float_](datatype-float.md) | **N** | Y coordinate \(Northward-positive\) |
 | [_float_](datatype-float.md) | **U** | Z coordinate \(Upward-positive\) |
 | '**'**[**string**](datatype-string.md) | **To String** | Same as ID |
+
+## Methods
+
+| Name | Action |
+| :--- | :--- |
+|  |  |
 
 ## Examples
 
