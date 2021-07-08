@@ -2,7 +2,7 @@
 
 ## Introduction
 
-[Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/) \(TLOs\) are basically "built-in" global variables which contain information from the EQ client.
+[Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/) \(TLOs\) are basically "built-in" global variables that contain information from the EQ client.
 
 ## Usage
 
@@ -79,26 +79,14 @@ Say you want to display your current Mana Percentage in a [HUD](../plugins/core-
 
 ### Example 2: Class ShortName
 
-Next example deals with getting your class shortname \(the 3-letter abbreviation of your class\).
+The next example deals with getting your class short name \(the 3-letter abbreviation of your class\).
 
-* First, find the most likely TLO again. Again, the [Me TLO](../data-types-and-top-level-objects/top-level-objects/tlo-me.md) looks best.
-* Next find the member you would like to select. To find the members of **Me**, go to
-
-  [Character](../data-types-and-top-level-objects/data-types/datatype-character.md)
-
+* Find the most likely TLO again. Again, the [Me TLO](../data-types-and-top-level-objects/top-level-objects/tlo-me.md) looks best.
+* Find the member you would like to select. To find the members of **Me**, go to
+* [Character](../data-types-and-top-level-objects/data-types/datatype-character.md)
 * Scrolling through the members of **Me**, **Class** looks like the best candidate.
-* The _class_ datatype has a default of "Same as Name". Looking at the **Name** member, we can see that it is the
-
-  "long name" of the class \(eg. Enchanter\). We're actually looking for the short name, so we need to find a member of
-
-  _class_ found here [Class](../data-types-and-top-level-objects/data-types/datatype-class.md). Funny enough, **ShortName** looks like it will do the job.
-
-* **ShortName** is a _string_ datatype and the default for this datatype \(surprisingly\) is the string, and since we're
-
-  looking for a 3-letter string, this is perfect. So now we've found our end point, we can build the variable as
-
-  before.
-
+* The _class_ datatype has a default of "Same as Name". Looking at the **Name** member, we can see that it is the "long name" of the class \(eg. Enchanter\). We're actually looking for the short name, so we need to find a member of _class_ found here [Class](../data-types-and-top-level-objects/data-types/datatype-class.md). Funny enough, **ShortName** looks like it will do the job.
+* **ShortName** is a _string_ datatype and the default for this datatype \(surprisingly\) is the string, and since we're looking for a 3-letter string, this is perfect. So now we've found our endpoint, we can build the variable as before.
 * Start with the TLO:
 
 `${Me`
@@ -140,29 +128,21 @@ For the next example, we will use the variable and compare it to a string in an 
 
   Control\]\(flow-control.md\) page and familiarize yourself with /if and its friends.
 
-* Returning to the example though, lets build the variable. We'll start with where we left off in the previous
+* Returning to the example though, let's build the variable. We'll start with where we left off in the previous
 
   example. Since we want to access a member of **ShortName**, we won't close it off:
 
 `/if (${Me.Class.ShortName`
 
-* You'll notice that the **Equals** datatype has square brackets after it, which means that you need to enter
-
-  something between the brackets. This can be another variable, or just a string. For this example, we're checking if
-
-  we're a bard:
+* You'll notice that the **Equals** datatype has square brackets after it, which means that you need to enter something between the brackets. This can be another variable or just a string. For this example, we're checking if we're a bard:
 
 `/if (${Me.Class.ShortName.Equals[BRD]`
 
-* Remember that we're using **ShortName**, so we need to include the 3-letter abbreviation. Since this is the end of
-
-  the variable \(**Equals** is a _bool_\), we can close it off:
+* Remember that we're using **ShortName**, so we need to include the 3-letter abbreviation. Since this is the end of the variable \(**Equals** is a _bool_\), we can close it off:
 
 `/if (${Me.Class.ShortName.Equals[BRD]}`
 
-* But this is actually an /if statement, and we need to close that off to, so lets make it echo something if we're a
-
-  bard.
+* But this is actually an /if statement, and we need to close that off to, so lets make it echo something if we're a bard.
 
 `/if (${Me.Class.ShortName.Equal[BRD]}) {`  
 `/echo Catch me if you can!`  
