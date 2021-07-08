@@ -6,9 +6,8 @@ Data types related to the current EverQuest session. This replaces the MacroQues
 
 ## Members
 
-|  |  |  |
-| :--- | :--- | :--- |
 | **Type** | **Member** | **Description** |
+| :--- | :--- | :--- |
 | [_bool_](datatype-bool.md) | **Background** | Returns TRUE if EverQuest is in Background |
 | [_string_](datatype-string.md) | **BuildDate** | Date that MQ2Main.dll was built |
 | [_int_](datatype-int.md) | **CharSelectList** | Currently returns the zone ID the character is currently in |
@@ -42,15 +41,9 @@ Data types related to the current EverQuest session. This replaces the MacroQues
 | [_int_](datatype-int.md) | **ViewportY** | EverQuest viewport upper left \(Y\) position |
 | [_int_](datatype-int.md) | **ViewportYCenter** | EverQuest viewport center \(Y\) position |
 | [_int_](datatype-int.md) | **ViewportYMax** | EverQuest viewport lower right \(Y\) position |
-| [**string**](datatype-string.md) | **To String** | None |
+| [_string_](datatype-string.md)\_\_ | **To String** | None |
 
 ## Example
 
 `/echo ${EverQuest.Server}`
-
-## See Also
-
-* [Data Types](./)
-* [Top-Level Objects](../top-level-objects/)
-* [Slash Commands](../../commands/slash-commands/)
 

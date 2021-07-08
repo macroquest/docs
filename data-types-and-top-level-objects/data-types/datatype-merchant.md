@@ -86,14 +86,14 @@ This DataType contains information related to merchants
       <td style="text-align:left">True if the merchants itemlist has been filled in.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
+      <td style="text-align:left"><a href><em>action</em></a>
       </td>
       <td style="text-align:left"><b>OpenWindow</b>
       </td>
       <td style="text-align:left">Will open the merchant closest to you, or if you have a merchant target</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
+      <td style="text-align:left"><a href><em>action</em></a>
       </td>
       <td style="text-align:left"><b>SelectItem[xxx]</b>
       </td>
@@ -101,14 +101,14 @@ This DataType contains information related to merchants
         for EXACT match(its not case sensitive)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
+      <td style="text-align:left"><a href><em>action</em></a>
       </td>
       <td style="text-align:left"><b>Buy[#]</b>
       </td>
       <td style="text-align:left">Buys # of whatever is selected with Merchant.SelectItem[xxx]</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
+      <td style="text-align:left"><a href><em>action</em></a>
       </td>
       <td style="text-align:left"><b>Sell[#]</b>
       </td>

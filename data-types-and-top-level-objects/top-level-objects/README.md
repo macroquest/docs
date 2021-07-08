@@ -141,7 +141,7 @@ A [Beginners Guide to TLOs and MQ2DataVars](../../documentation/beginners-guide-
           </li>
           <li><a href="tlo-spell.md">TLO:Spell</a>
           </li>
-          <li><a href="tlo-string.md">TLO:String</a>
+          <li><a href>TLO:String</a>
           </li>
           <li><a href="tlo-switch.md">TLO:Switch</a>
           </li>

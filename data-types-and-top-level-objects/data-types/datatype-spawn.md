@@ -236,21 +236,21 @@ This type inherits no other types.
       <td style="text-align:left">Distance from player in Z plane</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
+      <td style="text-align:left"><a href><em>action</em></a>
       </td>
       <td style="text-align:left"><b>DoAssist</b>
       </td>
       <td style="text-align:left">assists the spawn</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
+      <td style="text-align:left"><a href><em>action</em></a>
       </td>
       <td style="text-align:left"><b>DoFace</b>
       </td>
       <td style="text-align:left">Faces target</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
+      <td style="text-align:left"><a href><em>action</em></a>
       </td>
       <td style="text-align:left"><b>DoTarget</b>
       </td>
@@ -426,7 +426,7 @@ This type inherits no other types.
       <td style="text-align:left">Level</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
+      <td style="text-align:left"><a href><em>action</em></a>
       </td>
       <td style="text-align:left"><b>DoLeftClick</b>
       </td>
@@ -648,7 +648,7 @@ This type inherits no other types.
       <td style="text-align:left">Race</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
+      <td style="text-align:left"><a href><em>action</em></a>
       </td>
       <td style="text-align:left"><b>DoRightClick</b>
       </td>

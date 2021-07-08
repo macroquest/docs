@@ -1,18 +1,15 @@
 # DataType:array
 
-## Description
-
 Data related to arrays. **Note:** Array indexing starts at **1**
 
 ## Members
 
-|  |  |  |
-| :--- | :--- | :--- |
 | **Type** | **Member** | **Description** |
+| :--- | :--- | :--- |
 | [_int_](datatype-int.md) | **Dimensions** | Number of dimensions in the array |
 | [_int_](datatype-int.md) | **Size** | Total number of elements in the array |
 | [_int_](datatype-int.md) | **Size\[**\#**\]** | Total number of elements stored in the \#th dimension of the array |
-| '**'**[**string**](datatype-string.md) | **To String** | None |
+| [_string_](datatype-string.md)\_\_ | **To String** | _None_ |
 
 ## Declare Arrays
 
@@ -40,8 +37,6 @@ This creates a 3-dimensional array with 4x5x6 elements \(1-4,1-5, 1-6\) with UND
 
 There is no limit to the number of dimensions or the number of elements in each dimension, but use your own good judgement.
 
-&lt;/ol&gt;
-
 **Note:** You cannot make an array of timers.
 
 ## Example Snippets
@@ -63,9 +58,4 @@ sub main
         /next myCounter
 /return
 ```
-
-## See Also
-
-* [Data Types](./)
-* [Top-Level Objects](../top-level-objects/)
 

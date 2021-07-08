@@ -13,8 +13,8 @@ This contains data related to the specified in-game window
 | [_bool_](datatype-bool.md) | **Checked** | Returns TRUE if the button has been checked |
 | _window_ | **Child\[**name**\]** | Child with this name |
 | [_bool_](datatype-bool.md) | **Children** | Returns TRUE if the window has children |
-| [_action_](datatype-action.md) | **DoClose** | Does the ction of closing a window |
-| [_action_](datatype-action.md) | **DoOpen** | Does the action of opening a window |
+| [_action_]() | **DoClose** | Does the ction of closing a window |
+| [_action_]() | **DoOpen** | Does the action of opening a window |
 | [_bool_](datatype-bool.md) | **Enabled** | Returns TRUE if the window is enabled |
 | _window_ | **FirstChild** | First child window |
 | [_int_](datatype-int.md) | **GetCurSel** | Int of the currently selected/highlighted item in a list or treeview |
@@ -25,10 +25,10 @@ This contains data related to the specified in-game window
 | [_int_](datatype-int.md) | **HScrollPos** | Horizontal scrollbar position |
 | [_int_](datatype-int.md) | **HScrollPct** | Horizontal scrollbar position in % to range from 0 to 100 |
 | [_int_](datatype-int.md) | **Items** | Number of items in a Listbox or Combobox |
-| [_action_](datatype-action.md) | **LeftMouseDown** | Does the action of clicking the left mouse button down |
-| [_action_](datatype-action.md) | **LeftMouseHeld** | Does the action of holding the left mouse button |
-| [_action_](datatype-action.md) | **LeftMouseHeldUp** | does the action of holding the left mouse button up |
-| [_action_](datatype-action.md) | **LeftMouseUp** | Does the action of clicking the left mouse button up |
+| [_action_]() | **LeftMouseDown** | Does the action of clicking the left mouse button down |
+| [_action_]() | **LeftMouseHeld** | Does the action of holding the left mouse button |
+| [_action_]() | **LeftMouseHeldUp** | does the action of holding the left mouse button up |
+| [_action_]() | **LeftMouseUp** | Does the action of clicking the left mouse button up |
 | [_string_](datatype-string.md) | **List\[**\#**,**y**\]** | Get the text for the \#th item in a list box. Only works on list boxes. Use of ,y is optional and allows selection of the column of the window to get text from. |
 | [_int_](datatype-int.md) | **List\[**text**,**y**\]** | Find an item in a list box by partial match \(use **window.List\[**=text**\]** for exact\). Only works on list boxes. Use of ,y is optional and allows selection of the column of the window to search in. |
 | [_bool_](datatype-bool.md) | **Minimized** | Returns TRUE if the window is minimized |
@@ -38,11 +38,11 @@ This contains data related to the specified in-game window
 | _window_ | **Next** | Next sibling window |
 | [_bool_](datatype-bool.md) | **Open** | Returns TRUE if the window is open |
 | _window_ | **Parent** | Parent window |
-| [_action_](datatype-action.md) | **RightMouseDown** | does the action of clicking the right mouse button |
-| [_action_](datatype-action.md) | **RightMouseHeld** | Does the action of holding the right mouse button |
-| [_action_](datatype-action.md) | **RightMouseHeldUp** | Does the action of holding the right mouse button up |
-| [_action_](datatype-action.md) | **RightMouseUp** | Does the action of clicking the right mouse button up |
-| [_action_](datatype-action.md) | **Select** | Selects the specified window |
+| [_action_]() | **RightMouseDown** | does the action of clicking the right mouse button |
+| [_action_]() | **RightMouseHeld** | Does the action of holding the right mouse button |
+| [_action_]() | **RightMouseHeldUp** | Does the action of holding the right mouse button up |
+| [_action_]() | **RightMouseUp** | Does the action of clicking the right mouse button up |
+| [_action_]() | **Select** | Selects the specified window |
 | [_string_](datatype-string.md) | **ScreenID** | ScreenID of window piece. **Note:** This is _not_ Custom UI dependent, it must be the same on all UIs |
 | [_bool_](datatype-bool.md) | **Siblings** | Returns TRUE if the window has siblings |
 | [_int_](datatype-int.md) | **Style** | Window style code |

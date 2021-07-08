@@ -6,11 +6,11 @@ This is currenly not a supported TLO. This page was added as a visual representa
 
 ## Forms
 
-* [_event_](../data-types/datatype-event.md) **Event**
+* [_event_](../../parking-lot/pages-to-be-reviewed/datatype-event.md) **Event**
 
 ## Access to Types
 
-* [_event_](../data-types/datatype-event.md) **event**
+* [_event_](../../parking-lot/pages-to-be-reviewed/datatype-event.md) **event**
 
 ## Examples
 
@@ -19,7 +19,7 @@ This is currenly not a supported TLO. This page was added as a visual representa
 ## See Also
 
 * [Top-Level Objects](./)
-* [event](../data-types/datatype-event.md)
+* [event](../../parking-lot/pages-to-be-reviewed/datatype-event.md)
 * [Data Types](../data-types/)
 * [Top-Level Objects](./)
 * [Pound\_Commands](../../commands/macro-commands/pound-commands/)

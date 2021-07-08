@@ -12,8 +12,6 @@ Object containing bazaar search data.
 
 * [_bazaar_](mq2bzsrch-datatype-bazaar.md) **bazaar**
 
-## Examples
-
 ## See Also
 
 * [Top-Level Objects](../../../data-types-and-top-level-objects/top-level-objects/)

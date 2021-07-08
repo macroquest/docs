@@ -41,7 +41,7 @@ Data Types are the members \(or properties\) of [Top-Level Objects](../top-level
           </li>
           <li><a href="datatype-dzmember.md">DataType:dzmember</a>
           </li>
-          <li><a href="datatype-event.md">DataType:event</a>
+          <li><a href="../../parking-lot/pages-to-be-reviewed/datatype-event.md">DataType:event</a>
           </li>
           <li><a href="datatype-evolving.md">DataType:evolving</a>
           </li>

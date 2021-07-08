@@ -233,7 +233,6 @@
   * [TLO:Spawn](data-types-and-top-level-objects/top-level-objects/tlo-spawn.md)
   * [TLO:SpawnCount](data-types-and-top-level-objects/top-level-objects/tlo-spawncount.md)
   * [TLO:Spell](data-types-and-top-level-objects/top-level-objects/tlo-spell.md)
-  * [TLO:String](data-types-and-top-level-objects/top-level-objects/tlo-string.md)
   * [TLO:Switch](data-types-and-top-level-objects/top-level-objects/tlo-switch.md)
   * [TLO:Target](data-types-and-top-level-objects/top-level-objects/tlo-target.md)
   * [TLO:Task](data-types-and-top-level-objects/top-level-objects/tlo-task.md)
@@ -242,7 +241,6 @@
   * [TLO:Window](data-types-and-top-level-objects/top-level-objects/tlo-window.md)
   * [TLO:Zone](data-types-and-top-level-objects/top-level-objects/tlo-zone.md)
 * [Data Types](data-types-and-top-level-objects/data-types/README.md)
-  * [DataType:action](data-types-and-top-level-objects/data-types/datatype-action.md)
   * [DataType:alertlist](data-types-and-top-level-objects/data-types/datatype-alertlisttype.md)
   * [DataType:altability](data-types-and-top-level-objects/data-types/datatype-altability.md)
   * [DataType:argb](data-types-and-top-level-objects/data-types/datatype-argb.md)
@@ -259,7 +257,6 @@
   * [DataType:deity](data-types-and-top-level-objects/data-types/datatype-deity.md)
   * [DataType:dynamiczone](data-types-and-top-level-objects/data-types/datatype-dynamiczone.md)
   * [DataType:dzmember](data-types-and-top-level-objects/data-types/datatype-dzmember.md)
-  * [DataType:event](data-types-and-top-level-objects/data-types/datatype-event.md)
   * [DataType:everquest](data-types-and-top-level-objects/data-types/datatype-everquest.md)
   * [DataType:evolving](data-types-and-top-level-objects/data-types/datatype-evolving.md)
   * [DataType:fellowship](data-types-and-top-level-objects/data-types/datatype-fellowship.md)
@@ -445,4 +442,9 @@
 * [Text Editors](other-applications/text-editors/README.md)
   * [Notepad++ Syntax File](other-applications/text-editors/notepadplusplus-syntax-file.md)
   * [UltraEdit Syntax File](other-applications/text-editors/ultraedit-syntax-file.md)
+
+## Parking Lot
+
+* [Pages to be Reviewed](parking-lot/pages-to-be-reviewed/README.md)
+  * [DataType:event](parking-lot/pages-to-be-reviewed/datatype-event.md)
 

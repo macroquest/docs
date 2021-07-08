@@ -1,7 +1,5 @@
 # DataType:character
 
-## Description
-
 This data type contains all the information about _your_ character.
 
 Inherits [_spawn_](datatype-spawn.md).
@@ -11,20 +9,15 @@ Inherits [_spawn_](datatype-spawn.md).
 <table>
   <thead>
     <tr>
-      <th style="text-align:left"></th>
-      <th style="text-align:left"></th>
-      <th style="text-align:left"></th>
+      <th style="text-align:left"><b>Type</b>
+      </th>
+      <th style="text-align:left"><b>Member</b>
+      </th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
     </tr>
   </thead>
   <tbody>
-    <tr>
-      <td style="text-align:left"><b>Type</b>
-      </td>
-      <td style="text-align:left"><b>Member</b>
-      </td>
-      <td style="text-align:left"><b>Description</b>
-      </td>
-    </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
       </td>
@@ -1343,13 +1336,6 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Silver in bank</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>Sit</b>
-      </td>
-      <td style="text-align:left">Causes toon to sit if not already</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
       </td>
       <td style="text-align:left"><b>Skill[</b>name|#<b>]</b>
@@ -1431,20 +1417,6 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Character Stamina</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>Stand</b>
-      </td>
-      <td style="text-align:left">causes toon to stand if not already</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-action.md"><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>StopCast</b>
-      </td>
-      <td style="text-align:left">Causes toon to stop casting</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
       </td>
       <td style="text-align:left"><b>STR</b>
@@ -1484,8 +1456,8 @@ Inherits [_spawn_](datatype-spawn.md).
       </td>
       <td style="text-align:left"><b>SubscriptionDays</b>
       </td>
-      <td style="text-align:left">Returns an int Usage: /echo I have ${Me.SubscriptionDays} left before
-        my all access expires.</td>
+      <td style="text-align:left">Usage: <code>/echo I have ${Me.SubscriptionDays} left before my all access expires.</code>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
@@ -1575,7 +1547,8 @@ Inherits [_spawn_](datatype-spawn.md).
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
       </td>
-      <td style="text-align:left">&apos;&apos;&apos;Trader</td>
+      <td style="text-align:left"><b>Trader</b>
+      </td>
       <td style="text-align:left">if you are an active Trader</td>
     </tr>
     <tr>
@@ -1609,7 +1582,7 @@ Inherits [_spawn_](datatype-spawn.md).
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
       </td>
-      <td style="text-align:left"><b>XTAggroCount[</b><em><b>N</b></em><b>]</b>
+      <td style="text-align:left"><b>XTAggroCount[</b>N<b>]</b>
       </td>
       <td style="text-align:left">
         <p><code>XTAggroCount</code>
@@ -1625,7 +1598,7 @@ Inherits [_spawn_](datatype-spawn.md).
     <tr>
       <td style="text-align:left"><a href="datatype-xtarget.md"><em>xtarget</em></a>
       </td>
-      <td style="text-align:left"><b>XTarget[#]</b>
+      <td style="text-align:left"><b>XTarget[</b>#<b>]</b>
       </td>
       <td style="text-align:left">Extended target data for the specified XTarget #. <b>Note: Passing no index to this returns the number of current extended targets.</b>
       </td>
@@ -1647,6 +1620,14 @@ Inherits [_spawn_](datatype-spawn.md).
     </tr>
   </tbody>
 </table>
+
+## Methods
+
+| Name | Action |
+| :--- | :--- |
+| **Sit** | Causes toon to sit if not already |
+| **Stand** | Causes toon to stand if not already |
+| **StopCast** | Causes toon to stop casting |
 
 ## Language Table
 

@@ -23,13 +23,13 @@ Contains all data related to a ground spawn
 | [_int_](datatype-int.md) | **Distance3D** | Distance from player to ground item |
 | [_int_](datatype-int.md) | **SubID** | ??? |
 | [_int_](datatype-int.md) | **ZoneID** | ??? |
-| [_action_](datatype-action.md) | **First** | First spawn |
-| [_action_](datatype-action.md) | **Last** | Last spawn |
-| [_action_](datatype-action.md) | **Next** | Next spawn |
-| [_action_](datatype-action.md) | **Prev** | Prev spawn |
-| [_action_](datatype-action.md) | **DoFace** | Will cause the toon to face the called for spawn if it exists |
-| [_action_](datatype-action.md) | **DoTarget** | Will cause the toon to target the called for spawn if it exists |
-| [_action_](datatype-action.md) | **Grab** | Picks up the ground spawn |
+| [_action_]() | **First** | First spawn |
+| [_action_]() | **Last** | Last spawn |
+| [_action_]() | **Next** | Next spawn |
+| [_action_]() | **Prev** | Prev spawn |
+| [_action_]() | **DoFace** | Will cause the toon to face the called for spawn if it exists |
+| [_action_]() | **DoTarget** | Will cause the toon to target the called for spawn if it exists |
+| [_action_]() | **Grab** | Picks up the ground spawn |
 | [_float_](datatype-float.md) | **W** | X coordinate \(Westward-positive\) |
 | [_float_](datatype-float.md) | **N** | Y coordinate \(Northward-positive\) |
 | [_float_](datatype-float.md) | **U** | Z coordinate \(Upward-positive\) |
