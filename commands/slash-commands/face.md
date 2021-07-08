@@ -1,4 +1,4 @@
-# Face
+# /face
 
 ## Syntax
 
@@ -6,15 +6,26 @@
 
 ## Description
 
-Turns your character to face a target, door, item or location at comparable speeds to pressing the left, right, lookup, and lookdown keys.  
-Some of the options are listed below.  
-{\| border="1" cellpadding="2" cellspacing="0" \|style="background:\#000000;color:\#ffffff;"\|**Option** \|style="background:\#000000;color:\#ffffff;"\|**Description** \|- \|**predict** \|Returns an estimated distance/location, unless the target is stationary \|- \|**fast** \|Faces you instantly \|- \|**nolook** \|Faces your target without changing your vertical viewing angle \(looking up/down at the target\) \|- \|**away** \|Turns you the opposite direction of your target \|- \|_name_ \|Considered a [Spawn Search](../../general-information/spawn-search.md) \|}  
-\*Using _/face_ with no options will face your target. It will do nothing if you have no target.  
-== Examples ==
+Turns your character to face a target, door, item or location at comparable speeds to pressing the left, right, lookup, and lookdown keys.
 
-|  |  |
+Some of the options are listed below.
+
+| Option | Description |
 | :--- | :--- |
+| **predict** | Returns an estimated distance/location, unless the target is stationary |
+| **fast** | Faces you instantly |
+| **nolook** | Faces your target without changing your vertical viewing angle \(looking up/date at the target\) |
+| **away** | Turn you in the opposite direction of your target |
+| _name_ | Considered a [Spawn Search](../../general-information/spawn-search.md) |
+
+{% hint style="info" %}
+Using **/face** without a target will do nothing.
+{% endhint %}
+
+## Examples
+
 | **Example** | **Description** |
+| :--- | :--- |
 | /face | Turns you to face and look at your selected target |
 | /face nolook | Faces your target without changing your vertical view angle |
 | /face fast | Immediately turns your character to face and look at your target |
@@ -24,11 +35,9 @@ Some of the options are listed below.
 | /face fast item | Immediately faces and looks at the item following an /itemtarget |
 | /face loc y,x,z | Faces the given loc \(**note**: no spaces in 'y,x,z' portion\) |
 
-== See Also ==
+## See Also
 
 * [/itemtarget](itemtarget.md)
 * [/doortarget](doortarget.md)
 * [Spawn Search](../../general-information/spawn-search.md)
-
-[Return to Slash Commands](./)
 

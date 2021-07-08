@@ -544,13 +544,13 @@ _The stick command sticks you to your target, so that if your target moves you w
 
 * * Stick at the specified distance or percentage
 
-\* **/stick**  **-\#**
+\* **/stick** **-\#**
 
 * * Reduce current stick distance modifier by \#
 
 \* **/stick moveback**
 
-* * stick will back up to the  value if the target gets closer, e.g. many targets in the rear pushing target
+* * stick will back up to the value if the target gets closer, e.g. many targets in the rear pushing target
 
     too close to the tank
 
@@ -623,7 +623,7 @@ _The stick command sticks you to your target, so that if your target moves you w
 
   backupdist \# \| breakdist \# \| snapdist \# \| !frontarc \# \| behindarc \# &lt;/span&gt;\*\*
 
-  * Read the _set **name**_section for explanation of what these parameters do
+  * Read the \_set **name**\_section for explanation of what these parameters do
 
 \* **/stick mod \#** **\|** **-\#**
 
@@ -686,7 +686,7 @@ _The stick command sticks you to your target, so that if your target moves you w
 
   \| backupdist \# \| ydist \# \| xdist \#&lt;/span&gt;\*\*
 
-  * Read the _set **name**_section for explanation of what these parameters do
+  * Read the \_set **name**\_section for explanation of what these parameters do
 
 ### /circle
 
@@ -784,7 +784,7 @@ _The circle command spins you in a circle. If you are like me, looking at this f
 
   returnnotlooting \| realtimeplayer \| scatter \| bearing \# \| scatsize \# \| scatdist \#&lt;/span&gt;\*\*
 
-  * Read the _set **name**_section for explanation of what these parameters do
+  * Read the \_set **name**\_section for explanation of what these parameters do
 
 === Other Plugin Commands === _Less popular commands of MQ2MoveUtils_  
 \* '''/calcangle
@@ -1471,11 +1471,11 @@ Here is a list of exactly what messages are tied to each flag:
 
   _You must specify something to stick to!_
 
-  _\(ERROR\) /moveto loc \[   \[z\] \] was supplied incorrectly._
+  _\(ERROR\) /moveto loc \[ \[z\] \] was supplied incorrectly._
 
-  _\(ERROR\) /makecamp loc \[   \] was supplied incorrectly._
+  _\(ERROR\) /makecamp loc \[ \] was supplied incorrectly._
 
-  _\(ERROR\) Usage /circle loc \[   \] \[other options\]_
+  _\(ERROR\) Usage /circle loc \[ \] \[other options\]_
 
   _\(ERROR\) Invalid SpawnID and do not have a valid target._
 

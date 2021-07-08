@@ -47,9 +47,7 @@ Damage spells do not "take" on you for the most part, and if you should be worki
 `/varset GemNumber ${Param0}`  
 `/echo Practicing ${Spell[${Me.Gem[${GemNumber}]}].Skill}. Hit ESC at any time to end and see results.`  
 `} else {`  
-`````  /echo Usage: /macro practice \[gem\#\] \[target\]``` /echo Which spell would you like to practice?``  
-`/endmacro`  
-`}`
+````` /echo Usage: /macro practice \[gem\#\] \[target\]``` /echo Which spell would you like to practice?````` /endmacro```}``
 
 `/if (${Defined[Param1]}) {`  
 `/varset PTarget ${Param1}`  

@@ -1,8 +1,8 @@
-# Invoke
+# /invoke
 
 ## Syntax
 
-_'/invoke_${TLO.\[XXX\].Action}''
+**/invoke ${TLO.\[XXX\].Action}**
 
 ## Description
 

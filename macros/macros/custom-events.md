@@ -51,16 +51,15 @@ A few things to note about the above example:
 
    to be passed, you can use \#2\# and greater to indicate other variables.
 
-2. Secondly, the above Sub has two variables passed to it - ${Line} and ${Inviter}.
-   1. The \#event system will always pass the entire line of matched text to the subroutine as the first variable. Even
+2. Secondly, the above Sub has two variables passed to it - ${Line} and ${Inviter}. 1. The \#event system will always pass the entire line of matched text to the subroutine as the first variable. Even
 
-      if you don't wish to use the entire line of text, you need to define the variable. Using "Line" as the first
+   if you don't wish to use the entire line of text, you need to define the variable. Using "Line" as the first
 
-      variable is very common. However the first variable can be called whatever you'd like, especially if you'd like
+   variable is very common. However the first variable can be called whatever you'd like, especially if you'd like
 
-      to use the line in your Sub!
+   to use the line in your Sub!
 
-   2. The next variable, Inviter, is the one we're interested in, and will match whatever's between the first set of \#
+   1. The next variable, Inviter, is the one we're interested in, and will match whatever's between the first set of \#
 
       symbols in the \#event line.
 

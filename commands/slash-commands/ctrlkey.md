@@ -1,4 +1,4 @@
-# Ctrlkey
+# /ctrlkey
 
 ## Syntax
 

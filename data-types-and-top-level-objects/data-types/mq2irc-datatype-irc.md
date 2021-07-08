@@ -14,5 +14,5 @@
 
 * [Data Types](./)
 * [Top-Level Objects](../top-level-objects/)
-* [MQ2IRC](../../plugins/discontinued-unsupported/mq2irc.md)
+* [MQ2IRC](../../plugins/discontinued-unsupported/mq2irc/)
 

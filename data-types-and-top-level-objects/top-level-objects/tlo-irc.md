@@ -22,5 +22,5 @@ Object which access all IRC-related information.
 
 * [Top-Level Objects](./)
 * [irc](../data-types/mq2irc-datatype-irc.md)
-* [MQ2IRC](../../plugins/discontinued-unsupported/mq2irc.md)
+* [MQ2IRC](../../plugins/discontinued-unsupported/mq2irc/)
 

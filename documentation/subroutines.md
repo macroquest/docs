@@ -36,7 +36,7 @@ All macros accept parameters passed to them when called. The parameters can be d
 `/echo ${Param0} ${Param1}`  
 `/return`
 
-**Note:** Any parameters passed to the sub are automatically declared as local variables for that Sub \(no need to [/declare](../commands/slash-commands/declare.md) them\).
+**Note:** Any parameters passed to the sub are automatically declared as local variables for that Sub \(no need to [/declare](../commands/macro-commands/declare.md) them\).
 
 ## Return Values
 

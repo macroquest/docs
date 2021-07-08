@@ -1,6 +1,6 @@
 # Rogue Helper Command List
 
-##  Command List Overview:
+## Command List Overview:
 
 Presentation format for RH commands can be found in the section labeled "Command List." Command names and parameters are capitalized for emphasis, but it should be noted that they are not case-sensitive. The format for each command is shown below:
 
@@ -17,7 +17,7 @@ Example usages...
 
 Within the syntax descriptions, a vertical line \(or pipe\) -- "\|" indicates an either/or choice. Any parameters enclosed within \&lt; &gt; symbols indicates a user-supplied value. Any parameters enclosed in \[ \] symbols is optional. Any parameter information not enclosed within \&lt; &gt; should be considered a literal expression \(that is you enter THAT text, commonly this is the word "ON" or "OFF" in conjunction with various commands\).
 
-##  Command List:
+## Command List:
 
 The following is a list of RH commands:
 

@@ -26,8 +26,9 @@ You can find the latest version of in [this post.](https://macroquest2.com/phpBB
 `[AAtoBuy]`  
 `AACount=2`  
 `AA1=Combat Agility|2`  
-`AA2=Combat Stability|M`  
-`````  \`
+`AA2=Combat Stability|M`
+
+````````` \`````
 
 -- Thanks Spudman for creating a dump macro that will dump all your non maxed AA's. You can get it here [http://macroquest2.com/phpBB2/viewtopic.php?p=139521\#139521](http://macroquest2.com/phpBB2/viewtopic.php?p=139521#139521)
 
@@ -49,11 +50,10 @@ However, if you earn AA's while zoning the autodetection will not work. If that 
 If you want to run the include as a macro create the below:
 
 `AAPurchase.mac`  
-`````  \#include AAPurchase.inc``` Sub Main(IniSection)``  
-`/call AAInit ${IniSection}`  
-`/call AAPicker`  
-`/return`  
-`````  \`
+````` \#include AAPurchase.inc``` Sub Main\(IniSection\)````` /call AAInit ${IniSection}```/call AAPicker``  
+`/return`
+
+````````` \`````
 
 and then just run '/mac AAPurcahse' or optionally '/mac AAPurcahse inisection' to load a shroud's abilities that you defined in the 'inisection' you entered.
 
@@ -62,11 +62,12 @@ and then just run '/mac AAPurcahse' or optionally '/mac AAPurcahse inisection' t
 Change this to change which channel you send your notifications to.
 
 `Ex: /bc , /echo , /mqlog`  
-`#define def_channel_ /echo`  
-`````  \`
+`#define def_channel_ /echo`
+
+````````` \`````
 
 Also from fearless, if you want to know who is training what when using /mqlog use this
 
 `#define def_channel_ "/mqlog $[Me.Name}"`  
- ``
+\`\`
 

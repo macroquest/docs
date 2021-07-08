@@ -31,7 +31,7 @@ How to use: An AA\_CharName.ini should automatically be created for you in your 
 `AACount=[Number of AAs in the ini list]`  
 `AA1=|#|M|S`
 
-*  the name of the AA \(e.g. Combat Stability\)
+* the name of the AA \(e.g. Combat Stability\)
 * _\#_ the maximum level of this AA to purchase \(do not use in combination with the 'M' parameter\)
 * _M_ indicates that you want to purchase this AA to its maximum level possible
 * _S_ indicates that you want to skip purchasing this AA \(if you don't hae enough AA points saved\) and check the next
@@ -127,7 +127,7 @@ The basic format of the modloot 'Loot.ini' file is as follows:
 
   variable to modbot. For example, 'Category=Smithing,Tailoring' would result in two new entries in the loot.ini file
 
-  on the next run of modbot:  
+  on the next run of modbot:
 
 `Category=Smithing,Tailoring`  
 `Smithing=`  
@@ -147,7 +147,7 @@ Categories can also be used with other commands. For instance:
 
 _/mb getbank Smithing TRUE_ \&lt;-- will search your bank for all items marked 'Smithing' and place them on your toon until you run out of room. The True\|False option is Stacks or Singles.
 
-_/mb give  Smithing TRUE \#_ \&lt;-- will give \# of Stacks \(TRUE\|FALSE\) of Smithing items to .
+_/mb give Smithing TRUE \#_ \&lt;-- will give \# of Stacks \(TRUE\|FALSE\) of Smithing items to .
 
 * **KeepScript**=\[ScriptName\] \(Allows you to define a full script that can be used to add extra options or checks
 
@@ -172,7 +172,7 @@ A '/call LootItem {Param1} Destroy Left' will destroy the item. Doing nothing, o
 ### Items Section - \[\]
 
 * =\[\|\|\|\] \(Tells modloot what to do with the item.\)
-  *  can equal Keep, Destroy, Ignore, Quest or CategoryName. Please note that \| cannot be
+  * can equal Keep, Destroy, Ignore, Quest or CategoryName. Please note that \| cannot be
 
     used at the same time as ToonName and/or Category.
 
@@ -191,7 +191,7 @@ A '/call LootItem {Param1} Destroy Left' will destroy the item. Doing nothing, o
 
       'Gathering from the Goblins' in order to loot this item. In this case, the looter will only loot 10 'Crate
 
-      of Supplies'. Note that the _Quest_ action should be used in conjunction with the  parameter
+      of Supplies'. Note that the _Quest_ action should be used in conjunction with the parameter
 
       \(defined as 'Gathering from the Goblins' in the example\).
 
@@ -201,7 +201,7 @@ A '/call LootItem {Param1} Destroy Left' will destroy the item. Doing nothing, o
 
     * _Raw Diamond=Sell_ \&lt;-- Item will be looted and, when told, will be sold to a vendor.
 
-  *  Allows you to specify which toon you want to loot a particular item by using =.
+  * Allows you to specify which toon you want to loot a particular item by using =.
   * \&lt;\# of item to loot&gt; Used with the 'Quest' and 'Keep' actions and defines how many of the item to loot. Once you
 
     have looted this amount, you will not loot anymore of this item. It is possible to simply use
@@ -210,7 +210,7 @@ A '/call LootItem {Param1} Destroy Left' will destroy the item. Doing nothing, o
 
     Quest\|x\| usage to include the quest name, but that is harmless, and item is still looted.
 
-  *  Tells modloot to only loot this item if you have the quest named .
+  * Tells modloot to only loot this item if you have the quest named .
 
 A typical Loot.ini file might look like:
 
@@ -248,7 +248,7 @@ As mentioned in the main wiki, the primary command for interacting with modmove 
 
 ### ModMove Commands
 
-**mbwayplay  \(u,d,b,e\) \(t,f\) \(c\)** \(Used to playback previously recorded paths / waypoints, through zones, doors, chaining paths, etc.\)
+**mbwayplay \(u,d,b,e\) \(t,f\) \(c\)** \(Used to playback previously recorded paths / waypoints, through zones, doors, chaining paths, etc.\)
 
 * **u**: \(up\) enter at the closest "waypoint" and then go "up" it
 * **d**: \(down\) enter at the closest "waypoint" and then go "down" it
@@ -258,7 +258,7 @@ As mentioned in the main wiki, the primary command for interacting with modmove 
 * **f**: zone \(f\)alse - do not zone at the end of the path
 * **c**: look for another path to \(c\)hain \(this is optional\)
 
-**mbwayrec**  \(Used to record a path / waypoint. Once started, ducking at each location will add a waypoint to the path \(note that you need to add at least two waypoints \(start and finish?\) while running the path or it will not record\). Sitting stops path recording and returns to modbot functions. In order to add doors, chains, pull locations, etc. you'll need to edit the MBWayPlay.INI file\)
+**mbwayrec** \(Used to record a path / waypoint. Once started, ducking at each location will add a waypoint to the path \(note that you need to add at least two waypoints \(start and finish?\) while running the path or it will not record\). Sitting stops path recording and returns to modbot functions. In order to add doors, chains, pull locations, etc. you'll need to edit the MBWayPlay.INI file\)
 
 * sell  \(sell to the vendor - please see the section on modloot to know how to automate the sell process\)
 * door \(open a door\)

@@ -1,4 +1,4 @@
-# Itemnotify
+# /itemnotify
 
 ## Syntax
 
@@ -43,6 +43,4 @@ Right-click your Shrunken Goblin Skull Earring:
 
 * [/click](click.md)
 * [Slot\_Names](../../general-information/slot-names.md)
-
-[Return to Slash Commands](./)
 

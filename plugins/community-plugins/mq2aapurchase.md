@@ -29,7 +29,7 @@ You can find the latest version of MQ2AAPurchase [here](https://macroquest2.com/
 `1=New Tanaan Crafting Mastery|3`  
 `2=Combat Stability|M`  
 `3=General Sturdiness|M`  
- ``
+\`\`
 
 This says I want to start buying once I have 40 points banked and is on. It will buy up to rank 3 of New Tanaan Crafting Mastery, and will buy max ranks of Combat Stability and General Sturdiness.
 

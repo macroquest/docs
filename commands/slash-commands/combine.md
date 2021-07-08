@@ -1,4 +1,4 @@
-# Combine
+# /combine
 
 ## Syntax
 
@@ -13,6 +13,4 @@ Activates the Combine button of pack\#
 ```text
 /combine pack8
 ```
-
-[Return to Slash Commands](./)
 

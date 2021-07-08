@@ -14,14 +14,14 @@
 
   function/compile correctly.
 
-* Have you read all the documentation on the plugin:
-  1. The initial forum post usually has some documentation in it, and most likely a link to further documentation
+* Have you read all the documentation on the plugin: 1. The initial forum post usually has some documentation in it, and most likely a link to further documentation
 
-     \(quite often a wiki page\).
+  \(quite often a wiki page\).
 
-  2. If you still have no luck, read through every page on the forum post \(it's sometimes quicker to read backwards,
+  1. If you still have no luck, read through every page on the forum post \(it's sometimes quicker to read backwards,
 
      as the information is often more relevant to current problems\).
+
 * Some plugins require other plugins to function, but usually you are warned about these when starting the plugin.
 
   Check to make sure you have any other pre-requisite plugins, and that these plugins are configured correctly.

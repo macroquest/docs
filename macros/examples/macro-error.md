@@ -9,7 +9,7 @@ With the recent changes for ${String\[ an attempt was made to fix an existing st
       /goto :MakeArray 
    } 
    /varcalc nValues ${nValues}+1 
-   /goto :CounterLoop 
+   /goto :CounterLoop
 ```
 
 Error:

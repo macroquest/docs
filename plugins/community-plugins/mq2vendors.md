@@ -30,11 +30,11 @@ This enables or disables saving of vendors' default item list to a local INI fil
 
 ## Top-Level Objects
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Vendor.Version}**  
+* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Vendor.Version}**
 
   Outputs the version number.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Vendor.HasItems}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Vendor.HasItems}**
 
   Returns TRUE if the merchant has items you are looking for.
 

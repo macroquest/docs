@@ -63,7 +63,7 @@ TargetLevel2000 2true243322140255255 **0**truefalsetruefalse
 
 Tooltips can be used to add any information \(even information from plugins or macros\) that doesn't have a built-in EQType. You add the EQType of 9999 and then add the MQ2Data string that gives you your required information within the
 
- tags.\`9999\`\`${variable}\`
+tags.\`9999\`\`${variable}\`
 
 ### Example
 

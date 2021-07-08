@@ -1,4 +1,4 @@
-# Alias
+# /alias
 
 ## Syntax
 
@@ -18,7 +18,6 @@ Useful for creating shorter versions of a command.
 
 ## See Also
 
-* [Slash Commands](./)
 * [MacroQuest.ini](../../documentation/macroquest.ini.md)
 * [TLO:Alias](../../data-types-and-top-level-objects/top-level-objects/tlo-alias.md)
 

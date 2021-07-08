@@ -10,7 +10,7 @@ In order to use these built-in variables, you need to pick a Top-Level Object to
 
 ### Example 1: Mana Percentage
 
-Say you want to display your current Mana Percentage in a [HUD](../plugins/core-plugins/mq2hud.md) or use it in a macro.
+Say you want to display your current Mana Percentage in a [HUD](../plugins/core-plugins/mq2hud/) or use it in a macro.
 
 * First off, you look through the [list of TLOs](../data-types-and-top-level-objects/top-level-objects/) and pick one that best suits the
 

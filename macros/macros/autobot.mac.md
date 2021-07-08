@@ -10,25 +10,25 @@
 
 [Plugins](../../commands/slash-commands/plugin.md):
 
-* [MQ2MoveUtils](https://macroquest2.com/phpBB3/viewtopic.php?t=11732) by Outlander  
+* [MQ2MoveUtils](https://macroquest2.com/phpBB3/viewtopic.php?t=11732) by Outlander
 
   This is so the macro knows about stick, /makecamp, and /moveto. Check out the
 
-  [wiki](https://macroquest2.com/wiki/index.php/MQ2MoveUtils).  
+  [wiki](https://macroquest2.com/wiki/index.php/MQ2MoveUtils).
 
-* [MQ2Exchange](https://macroquest2.com/phpBB3/viewtopic.php?t=7603) by Wassup  
+* [MQ2Exchange](https://macroquest2.com/phpBB3/viewtopic.php?t=7603) by Wassup
 
-  This is so that item swapping, casting, and swapping back will work  
+  This is so that item swapping, casting, and swapping back will work
 
-* [MQ2Debuffs](https://macroquest2.com/phpBB3/viewtopic.php?t=13495) by pinkfloydx33  
+* [MQ2Debuffs](https://macroquest2.com/phpBB3/viewtopic.php?t=13495) by pinkfloydx33
 
-  This is so the macro can keep track of your debuff counters.  
+  This is so the macro can keep track of your debuff counters.
 
-* [MQ2Melee](https://macroquest2.com/phpBB3/viewtopic.php?t=12779) by s0rcier  
+* [MQ2Melee](https://macroquest2.com/phpBB3/viewtopic.php?t=12779) by s0rcier
 
   So as to properly configure melee/ranged combat and various options thereof, check out the
 
-  [wiki](https://macroquest2.com/wiki/index.php/MQ2Melee).  
+  [wiki](https://macroquest2.com/wiki/index.php/MQ2Melee).
 
 Includes Files:
 
@@ -90,7 +90,7 @@ This command tells the bots to stop following wherever they happen to be standin
 ## Slash Commands
 
 [AutoBot.mac](https://macroquest2.com/phpBB3/viewtopic.php?t=11619) comes with a great set of predefined [Slash Commands](../../commands/slash-commands/) for easy and fast in-game configuration.  
-Uber macro pause/unpause hotkey \(bound to \ for me, unlike normal EQ hotkeys 1-10, it works even while casting\) Add the following lines to [MQ2CustomBinds](https://macroquest2.com/wiki/index.php/MQ2CustomBinds).txt:
+Uber macro pause/unpause hotkey \(bound to  for me, unlike normal EQ hotkeys 1-10, it works even while casting\) Add the following lines to [MQ2CustomBinds](https://macroquest2.com/wiki/index.php/MQ2CustomBinds).txt:
 
 `name=StartPauseDB`  
 `down=/docommand ${If[!${Macro.Name.Equal[RaidDruid.mac]}, /mac RaidDruid.mac, /varset RDPause ${If[${RDPause}==1,0,1]}]}`  
@@ -102,7 +102,7 @@ Here's a full list, divided into sub-sections for each category of [Slash Comman
 
 ### Melee
 
-* **/domelee**  
+* **/domelee**
 
   Toggles automatic engaging of the MA's target in melee.\(Must have the plugin
 
@@ -110,7 +110,7 @@ Here's a full list, divided into sub-sections for each category of [Slash Comman
 
 ### General
 
-* **/addalert ${Target.CleanName}**  
+* **/addalert ${Target.CleanName}**
 
   Adds targetted NPC to the list which will be ignored in the RDCommon.ini and will perform normally when near these
 
@@ -118,139 +118,139 @@ Here's a full list, divided into sub-sections for each category of [Slash Comman
 
   the ini file can be manually edited.
 
-* **/assistdelay**  
+* **/assistdelay**
 
   Sets the amount of time the bot will wait between MA assists. \(Ex. /assistdelay 5s\)
 
-* **/assistma**  
+* **/assistma**
 
   Toggles assisting of your designated MA1, MA2, and MA3. Turning this off essentially disables Melee, Nuking, DoTing,
 
   and Debuffing
 
-* **/autoninja**  
+* **/autoninja**
 
   Toggles auto looting of the nearest corpse after each XP gained message. Will only loot droppable items. Must have
 
   the plugin [MQ2MoveUtils](https://macroquest2.com/phpBB3/viewtopic.php?t=11732) for this to work.
 
-* **/autosit**  
+* **/autosit**
 
   Toggles auto sitting to med. Not much to say here.
 
-* **/chatchannel**  
+* **/chatchannel**
 
   Sets the chat channel the bot reports to, \(Ex. /chatchannel "i say"�\)
 
-* **/docanni**  
+* **/docanni**
 
   Toggles auto casting of your cannibalization spell when below your MedPct and above your CanniHPs. Also works for
 
   wizard harvest, mana robe, and necromancer Lich spells.
 
-* **/doyaulp**  
+* **/doyaulp**
 
   Toggles auto casting of your yaulp spell when below your MedPct and there are NPCs within your NPCRadius.
 
-* **/engagehps**  
+* **/engagehps**
 
   Sets the % of the mobs HPs you want to start melee/debuffing/dotting/nuking \(Ex. /engagehps 95\)
 
-* **/ma1**  
+* **/ma1**
 
   Assigns a PC as Main Assist 1. \(Ex. /ma1 BoDuke\)
 
-* **/ma2**  
+* **/ma2**
 
   Assigns a PC as Main Assist 2. \(Ex. /ma2 LukeDuke\)
 
-* **/ma3**  
+* **/ma3**
 
   Assigns a PC as Main Assist 3. \(Ex. /ma3 DaisyDuke\)
 
-* **/leashlength**  
+* **/leashlength**
 
   Sets the distance your bot will allow itself to get from his follow target before resuming follow \(Ex.
 
   /leashlength 25\)
 
-* **/listspells**  
+* **/listspells**
 
   Returns a list of all configured Spell Sets in your ini.
 
-* **/loadini "IniFileName"**  
+* **/loadini "IniFileName"**
 
   Loads a pre-configured ini file.
 
-* **/medpct**  
+* **/medpct**
 
   Sets the % of Mana you want to sit or summon your horse at. \(Ex. /medpct 50\)
 
-* **/npcradius**  
+* **/npcradius**
 
   Sets the Radius \(in feet\) around you that you want to watch NPCs using Assist healing and Assisting the MA \(Ex.
 
   /npcradius 200\)
 
-* **/npczradius**  
+* **/npczradius**
 
   Sets the Radius \(in feet\) above/below you that you want to watch NPCs using Assist healing and Assisting the MA \(Ex.
 
   /npczradius 200\)
 
-* **/rdpause**  
+* **/rdpause**
 
   Toggles AutoBot's active functions on and off.
 
-* **/relaytells**  
+* **/relaytells**
 
   Toggles automatic reporting of tells sent to the bot in your configured /chatchannel
 
-* **/reportevents**  
+* **/reportevents**
 
   Toggles automatic reporting of your bot's status messages such as low food/drink, stunned/unstunned, encumbered,
 
   etc.
 
-* **/reportmana**  
+* **/reportmana**
 
   Toggles automatic reporting of your mana status if you get below the medpct, only reports once before going above
 
   the medpct.
 
-* **/reportmanapct**  
+* **/reportmanapct**
 
   Defines the point at which you want to start reporting your mana status to your chat channel.
 
-* **/reporttoggles**  
+* **/reporttoggles**
 
   Toggles automatic reporting of your toggle status of any /commands you send your bot in the ChatChannel.
 
-* **/reportwow**  
+* **/reportwow**
 
   Toggles automatic reporting of Wrath of the Wild on the MA
 
-* **/saveini "IniFileName"**  
+* **/saveini "IniFileName"**
 
   Creates an ini file named "IniFileName"
 
-* **/sitdelay**  
+* **/sitdelay**
 
   Sets the amount of time you want to wait before sitting after casting any spell that might be considered aggro. \(Ex.
 
   /sitdelay 5s\)
 
-* **/stophps**  
+* **/stophps**
 
   Sets the % of the mob's HPs you want to stop nuking and debuffing. \(Ex. /stophps 10\)
 
-* **/usemount**  
+* **/usemount**
 
   Toggles automatic mount summoning at your /medpct, if this is off and /autosit is on, it will sit to med instead of
 
   summoning a mount.
 
-* **/npcradchk**  
+* **/npcradchk**
 
   Sets the Radius \(in feet\) around you that defines how close mobs are allow before you stop buffing to avoid aggro
 
@@ -258,7 +258,7 @@ Here's a full list, divided into sub-sections for each category of [Slash Comman
 
 ### Healing
 
-* **/aeheal**  
+* **/aeheal**
 
   Toggles on AE Healing. This creates an array of every PC within PCRadius, and cycles through every one of them,
 
@@ -266,7 +266,7 @@ Here's a full list, divided into sub-sections for each category of [Slash Comman
 
   or AE Damage effects.
 
-* **/assistheal**  
+* **/assistheal**
 
   Toggles on Assist Healing. This creates an array of every NPC within NPCRadius, and assists them to find the target
 
@@ -274,101 +274,101 @@ Here's a full list, divided into sub-sections for each category of [Slash Comman
 
   named. Also causes target to constantly ping-pong wildly all over the place trying to find a target to heal
 
-* **/cancelpct**  
+* **/cancelpct**
 
   Set this to the percentage of HPs you want AutoBot to cancel heals at. \(Ex. /cancelpct 90\)
 
-* **/checkgroup**  
+* **/checkgroup**
 
   Sets the number of seconds you'd like to wait between HP evaluations
 
-* **/divarbhps**  
+* **/divarbhps**
 
   Sets the % HPs you want to cast Divine Arbitration at if a groupmember gets below it \(Ex. /divarbhps 25\)
 
-* **/healchannel**  
+* **/healchannel**
 
   Sets the channel your bots use to report heals when they are cast.
 
-* **/healfd**  
+* **/healfd**
 
   Toggles healing of FD classes \(SK, Necro, Monk\) only while they are FD \(Ex. /healfd ON will only heal if they are
 
   FD\)
 
-* **/healgroup**  
+* **/healgroup**
 
   Toggles healing of your group. With this on, it will heal groupmembers that are below HealPct
 
-* **/healmefirst**  
+* **/healmefirst**
 
   Toggles healing of yourself over any group members. If you are mid-cast to heal someone else and your HPs fall below
 
   the HealPct, you will cancel it and heal yourself first. Self preservation at its finest.
 
-* **/healpct**  
+* **/healpct**
 
   Sets the % of HPs you want to heal other PCs at. \(ex. /healpct 70\)
 
-* **/healpets**  
+* **/healpets**
 
   Toggles healing of any pets in the group if they are below the PetHealPct
 
-* **/healramp**  
+* **/healramp**
 
   Toggles automatic healing of your Rampage tank anytime a RAMPAGE message is detected.
 
-* **/interrupt**  
+* **/interrupt**
 
   Toggles interrupting debuffs/nukes/dots to heal group members. Some people like to just let their group members die
 
   instead of ducking a nuke to heal them. This is for those people!
 
-* **/pcradius**  
+* **/pcradius**
 
   Sets the Radius \(in feet\) around you that you want to watch PC HPs using AE healing \(Ex. /pcradius 200\)
 
-* **/pczradius**  
+* **/pczradius**
 
   Sets the Radius \(in feet\) above and below you that you want to watch PC HPs using AE healing \(Ex. /pczradius 50\)
 
-* **/pethealpct**  
+* **/pethealpct**
 
   Sets the % of HPs you will heal pets at. \(Ex. /pethealpct 40\)
 
-* **/ramptank**  
+* **/ramptank**
 
   Sets the Rampage Tank that you check whenever a RAMPAGE message is seen with /healramp on. \(Ex. /ramptank
 
   UncleJesse\)
 
-* **/reportheals**  
+* **/reportheals**
 
   Toggles automatic reporting of heals in the ChatChannel
 
-* **/reportinterrupts**  
+* **/reportinterrupts**
 
   Toggles automatic reporting of interrupts to heal in the ChatChannel
 
-* **/reportsotw**  
+* **/reportsotw**
 
   Toggles automatic reporting of Spirit of the Wood in the ChatChannel
 
-* **/sotw**  
+* **/sotw**
 
   Toggle auto casting of Spirit of the Wood
 
-* **/sotwpct**  
+* **/sotwpct**
 
   Set this to the average group HP percentage you want it to auto cast Spirit of the Wood at. \(Ex. /sotwpct 75\)
 
-* **/tankhealpct**  
+* **/tankhealpct**
 
   Sets the % you start Chealing. Due to some predictive logic the Cheal may start earlier. Set this to the abslute
 
   floor you want to start CH at.
 
-* **/usech**  
+* **/usech**
 
   Toggles using your Cheal spell on MA1 on or off. It will monitor the tank's HPs and if he's taking enough damage to
 
@@ -376,13 +376,13 @@ Here's a full list, divided into sub-sections for each category of [Slash Comman
 
   HPs stop falling and level off above the TankHealPct, it will cancel CH and wait until the tank's HPs fall again.
 
-* **/usedivarb**  
+* **/usedivarb**
 
   Toggles using your divine arbitration or cleric epic 1.5 \(if you have it\) when a group member falls below the
 
   DivArbHPs.
 
-* **/waittocancel**  
+* **/waittocancel**
 
   Toggle. When turned on, this will wait until your heals have less than .5 seconds left before making the decison to
 
@@ -395,7 +395,7 @@ By default the bot only listens for /tells and IRC chat for buffing. If you want
 
 **Aliases:**
 
-* **/buff "Spell Name/Alias" \[Name \| Group\]**  
+* **/buff "Spell Name/Alias" \[Name \| Group\]**
 
   Use this alias to send a buff command to your bot, will also accept buff aliases. You can use this to cast items and
 
@@ -413,33 +413,33 @@ By default the bot only listens for /tells and IRC chat for buffing. If you want
 
   WHEN YOU KNOW YOU DON'T NEED TO BE DOING ANYTHING ELSE IMPORTANT LIKE HEALING\*\*
 
-* **/dobuffs**  
+* **/dobuffs**
 
   Toggles automatic casting of buff requests made via /tell
 
-* **/dobufftells**  
+* **/dobufftells**
 
   Toggles sending automatic replies to buff requests made via /tell
 
-* **/refreshbuffs**  
+* **/refreshbuffs**
 
   Toggles automatic refreshing of buffs. Only buffs that are set to refresh in the ini will be refreshed.
 
-* **/reportdobuffs**  
+* **/reportdobuffs**
 
   Toggles automatic reporting of buffs in the ChatChannel
 
-* **/reportselfbuffs**  
+* **/reportselfbuffs**
 
   Toggles automatic reporting of self buffs in the ChatChannel
 
-* **/selfbuff**  
+* **/selfbuff**
 
   Toggles Self Buffing. Useful if you happen to be in an environment where having all your self buffs up puts you over
 
   the limit
 
-* **/wow**  
+* **/wow**
 
   Toggles automatic casting of Wrath of the Wild on your designated MA. I figure an extra 650 damage every 4 minutes
 
@@ -447,59 +447,59 @@ By default the bot only listens for /tells and IRC chat for buffing. If you want
 
 ### Debuffing
 
-* **/debuff**  
+* **/debuff**
 
   Toggles Auto debuffing. Pretty much all there is to say about that
 
-* **/debuffchannel**  
+* **/debuffchannel**
 
   Sets the channel your bots will use to report debuffs
 
-* **/dot**  
+* **/dot**
 
   Toggle Auto DoTing of mobs
 
-* **/mez**  
+* **/mez**
 
   Toggles Auto mezzing for those places where mez==bad
 
-* **/reportdebuffs**  
+* **/reportdebuffs**
 
   Toggles reporting of debuffs in the ChatChannel
 
-* **/reportdots**  
+* **/reportdots**
 
   Toggles automatic report of DoTs in the ChatChannel
 
-* **/reportmez**  
+* **/reportmez**
 
   Toggles automatic report of Mezzes in the ChatChannel
 
-* **/usehott**  
+* **/usehott**
 
   Toggles using the Health of Target's Target Leadership ability to determine a mob's aggro.
 
 ### Nuking
 
-* **/nuke**  
+* **/nuke**
 
   Toggles Auto Nuking the MA's target.
 
-* **/nukedelay**  
+* **/nukedelay**
 
   Sets the delay between chain nuking. If your tank sucks, or are in a kite group raise this delay to prevent agro.
 
-* **/nukeset**  
+* **/nukeset**
 
   Returns the current spell set \# you are nuking from.
 
 ### Pet
 
-* **/petbuff**  
+* **/petbuff**
 
   Toggles automatic buffing of your pet
 
-* **/usepet**  
+* **/usepet**
 
   Toggles automatic summoning and sending in of pet to melee.
 
@@ -507,11 +507,11 @@ By default the bot only listens for /tells and IRC chat for buffing. If you want
 
 This portion of the macro requires the [MQ2Debuffs](https://macroquest2.com/phpBB3/viewtopic.php?t=13495) plugin by pinkfloydx33. See the [requirements](https://macroquest2.com/wiki/index.php/AutoBot.mac#Requirements).
 
-* **/docures**  
+* **/docures**
 
   Toggles auto-curing on and off.
 
-* **/reportcures**  
+* **/reportcures**
 
   Toggles auto-cure reporting on and off.
 
@@ -519,41 +519,41 @@ This portion of the macro requires the [MQ2Debuffs](https://macroquest2.com/phpB
 
 This portion of the macro makes use of the [MQ2Twist](https://macroquest2.com/phpBB3/viewtopic.php?t=8895) \(See [MQ2Twist wiki](https://macroquest2.com/wiki/index.php/MQ2Twist)\) and [MQ2BardSwap](https://macroquest2.com/phpBB3/viewtopic.php?t=9178) plugins.
 
-* **/addcombatsong \|""**  
+* **/addcombatsong \|""**
 
   Adds the Alias or Song Name to the combat twist if a slot is available.
 
-* **/addrestsong \|""**  
+* **/addrestsong \|""**
 
   Adds the Alias or Song Name to the rest twist if a slot is available.
 
-* **/autorestoff**  
+* **/autorestoff**
 
   When turned on it watches with each loop to see if any npc's are within the radius defined and will switch off rest
 
   songs if any are detected
 
-* **/autorestradius**  
+* **/autorestradius**
 
   Sets the radius at which your bard will stop twisting when NPCs are present
 
-* **/combatsongs on\|off**  
+* **/combatsongs on\|off**
 
   Enables or Disables automatically twisting the combat twist temporarily.
 
-* **/delcombatsong \|""**  
+* **/delcombatsong \|""**
 
   Removes the Alias or Song Name from the combat twist present.
 
-* **/delrestsong \|""**  
+* **/delrestsong \|""**
 
   Removes the Alias or Song Name from the rest twist if present.
 
-* **/listsongs combat\|rest\|all**  
+* **/listsongs combat\|rest\|all**
 
   Lists the songs set to be twisted for the given twist type.
 
-* **/songalias  "Song Name"**  
+* **/songalias "Song Name"**
 
   Creates an alias for the given song name \(must be in quotes if it has a space\).
 
@@ -801,7 +801,7 @@ This portion of the macro makes use of the [MQ2Twist](https://macroquest2.com/ph
 
 ### \[Bard-Aliases\]
 
-**aliasname=songname** _\(Set via /songalias  "song name"\)._ Songalias is basically to make it easier to change your combat/rest lineup on the fly with /addrestsong alias.
+**aliasname=songname** _\(Set via /songalias "song name"\)._ Songalias is basically to make it easier to change your combat/rest lineup on the fly with /addrestsong alias.
 
 ## Troubleshooting/FAQ
 
@@ -878,7 +878,7 @@ Target someone and type /stick. If that doesnt work you have issues with [MQ2Mov
 
 * **On Clerics that spam Complete Heals and interrupt them all**  
 
-Make sure you have UseDivArb set to 0 if you dont have that AA. // There's more to this than just the DivArb setting... but this might be one issue\\
+Make sure you have UseDivArb set to 0 if you dont have that AA. // There's more to this than just the DivArb setting... but this might be one issue\
 
 * **On non-attacking pets/bots**  
 

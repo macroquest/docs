@@ -1,4 +1,4 @@
-# Flashontells
+# /flashontells
 
 ## Syntax
 

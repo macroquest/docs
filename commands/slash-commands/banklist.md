@@ -1,4 +1,4 @@
-# Banklist
+# /banklist
 
 ## Syntax
 
@@ -14,8 +14,4 @@ Bankslot#:Typeofcontainer
 -Containerslot2:Item
 -etc
 ```
-
-## See Also
-
-[Slash Commands](./)
 

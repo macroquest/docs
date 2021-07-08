@@ -1,4 +1,4 @@
-# Beepontells
+# /beepontells
 
 ## Syntax
 

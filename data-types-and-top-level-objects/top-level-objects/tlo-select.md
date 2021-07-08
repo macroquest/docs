@@ -6,7 +6,7 @@ Object used to determine if a match was made to argument in the given set of val
 
 ## Forms
 
-* [_int_](../data-types/datatype-int.md) **Select\[\***argument_,_value1_\[,_value2_,...\]\*\]_
+* [_int_](../data-types/datatype-int.md) **Select\[\***argument_,\_value1_\[,_value2_,...\]\*\]\_
 
 ## Access to Types
 

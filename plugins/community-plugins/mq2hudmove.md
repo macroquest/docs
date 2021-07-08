@@ -4,7 +4,7 @@
 
 MQ2HUDMove by ieatacid allows you to move HUDs or sections of HUDs easily. The plugin can be downloaded [here](https://macroquest2.com/phpBB3/viewtopic.php?t=9087).
 
-* It requires the [MQ2HUD](../core-plugins/mq2hud.md) plugin
+* It requires the [MQ2HUD](../core-plugins/mq2hud/) plugin
 
 Features:
 
@@ -36,7 +36,7 @@ Move a single HUD
 
 Delete a single HUD
 
-* **/hudmove  \ \&lt;\#&gt;**
+* **/hudmove   \&lt;\#&gt;**
 
 Move a single HUD a specified number of units in whatever direction
 
@@ -48,11 +48,11 @@ Change HUD to preset color \(red, yellow, green, darkgreen, blue, lightblue, pur
 
 * _'/hudmove_
 
-  _\ \&lt;\#&gt;_'
+   _\&lt;\#&gt;_'
 
 Move all HUDs within a specified section
 
-* **/hudmove** _**;**_ **\ \&lt;\#&gt;**
+* **/hudmove** _**;**_  **\&lt;\#&gt;**
 
 These comment tags let the user define their own sections, even if they span across multiple ini sections \[ \].
 

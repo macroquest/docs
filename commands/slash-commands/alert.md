@@ -1,4 +1,4 @@
-# Alert
+# /alert
 
 ## Syntax
 
@@ -21,7 +21,6 @@ Used to manipulate alert lists which "watch" for spawns.
 
 ## See Also
 
-* [Slash Commands](./)
 * [TLO:Alert](../../data-types-and-top-level-objects/top-level-objects/tlo-alert.md)
-* [Spawn\_Search](../../general-information/spawn-search.md)
+* [Spawn Search](../../general-information/spawn-search.md)
 

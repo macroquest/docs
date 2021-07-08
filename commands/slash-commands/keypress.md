@@ -34,7 +34,7 @@ Example using EQUI-Keybindings keypress with in game keybindings \(like in optio
  /keypress forward            Releases the mapped forward key after /keypress forward hold
  /keypress OPEN_INV_BAGS      Opens all bags
  /keypress HAIL               Do the Hail command
- /keypress NETSTAT            Toggle the NETSTAT indicator (green ping thingy top left)        
+ /keypress NETSTAT            Toggle the NETSTAT indicator (green ping thingy top left)
 ```
 
 ### Send keypress to window

@@ -8,11 +8,11 @@ Object used to return information on a current Task.
 
 Oct 02 2019 by Eqmule
 
-- Made some changes to the ${Task} TLO
+* Made some changes to the ${Task} TLO
 
 `It's likely some macros will break due to these changes, but`  
 `I felt the upside with not having to rely on the window warrants that.`  
- ``
+\`\`
 
 New Feature: It's no longer needed to have the task window open to access the TLO. Added .Type to the TaskObjective TLO
 
@@ -79,5 +79,5 @@ Will return 1
 
 * [Top-Level Objects](./)
 * [DataType:task](../data-types/datatype-task.md)
-* [DataType:taskmember]()
+* [DataType:taskmember](tlo-task.md)
 

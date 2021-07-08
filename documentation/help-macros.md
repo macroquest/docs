@@ -2,7 +2,7 @@
 
 ## General Macro Help
 
-* First off, do you have the latest copy of your macro?  
+* First off, do you have the latest copy of your macro?
 
   If you found your macro on the forums, check back to the first post and see if it has been updated since you last
 
@@ -10,20 +10,20 @@
 
   recopy the code from the forums into your macro and then save it and try again.
 
-* Have you read all the documentation regarding the macro:
-  1. The first post on the forum normally has some text indicating how to run the macro, what it does, what its
+* Have you read all the documentation regarding the macro: 1. The first post on the forum normally has some text indicating how to run the macro, what it does, what its
 
-     dependencies are, etc.
+  dependencies are, etc.
 
-  2. Secondly, read all the pages in the thread about the macro. Yes, this may take you a while if its an old or
+  1. Secondly, read all the pages in the thread about the macro. Yes, this may take you a while if its an old or
 
      established macro, but it's very likely someone else has had the same problem and the question has been
 
      answered.
 
-  3. Check the wiki page, if your macro has one. Often they are checked and modified more frequently than the macro
+  2. Check the wiki page, if your macro has one. Often they are checked and modified more frequently than the macro
 
      thread/first post.
+
 * Do you have all the pre-requisites for the macro, other snippets \(.inc files\) and plugins required?
 * If there are pre-requisite plugins or snippets, are they configured correctly? You will most likely need to check
 

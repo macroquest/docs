@@ -25,7 +25,7 @@ The main features of MQ2MoveUtils are as follows:
 
   etc.
 
-* **Circle:** Run in a circle.  
+* **Circle:** Run in a circle.
 
 ## Commands
 
@@ -41,15 +41,15 @@ Sticks to current target even if you lose/change target
 
 * **/stick \[\]**
 
-Stick at  units to your target
+Stick at units to your target
 
 * **/stick \[-\]**
 
-Subtract the dist used from the current stick distance \(ie. it will put you  units closer to your target\)
+Subtract the dist used from the current stick distance \(ie. it will put you units closer to your target\)
 
 * **/stick \[%\]**
 
-Stick at  of max melee range from target. Eg. if max melee range is 20, then /stick 50% will stick you at 10 range
+Stick at of max melee range from target. Eg. if max melee range is 20, then /stick 50% will stick you at 10 range
 
 * **/stick \[behind\]**
 
@@ -71,7 +71,7 @@ Sticks you anywhere but in front of the target, will only reposition you if you 
 
 * **/stick \[moveback\]**
 
-Moveback will back your toon up to the current  value, keeping you at a consistant distance from your target
+Moveback will back your toon up to the current value, keeping you at a consistant distance from your target
 
 * **/stick \[loose\]**
 
@@ -113,11 +113,11 @@ Moves you to the specified location, or stops the current /moveto \(by using "/m
 
 * **/moveto \[\]**
 
-Sets the maximum distance from your moveto point that you consider acceptable. This option is here because it's not always possible to move to the **exact** point that you specify, so the plugin will move you to within  units of the moveto point before stopping. Eg. if you use "/moveto 5", you will always move to within 5 units from your moveto point
+Sets the maximum distance from your moveto point that you consider acceptable. This option is here because it's not always possible to move to the **exact** point that you specify, so the plugin will move you to within units of the moveto point before stopping. Eg. if you use "/moveto 5", you will always move to within 5 units from your moveto point
 
 * **/moveto \[-\]**
 
-Subtract  from the current moveto distance
+Subtract from the current moveto distance
 
 * **/moveto \[mpause\]**
 
@@ -197,7 +197,7 @@ Sets the anchor point to your current location, and uses the currently set radiu
 
 * **/circle \[on \]**
 
-Sets the anchor point to your current location, and uses the specified 
+Sets the anchor point to your current location, and uses the specified
 
 * **/circle \[ \]**
 
@@ -231,107 +231,107 @@ Save or load the circle settings from the INI file
 
 ### Stick
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Stick}**  
+* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Stick}**
 
   _Same as ${Stick.Status} \(see below\)._
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Stick.Status}**  
+* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Stick.Status}**
 
   Return ON if currently sticking, OFF if not, or PAUSED if it is paused
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Active}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Active}**
 
   Returns TRUE if currently sticking, FALSE if not
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Behind}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Behind}**
 
   Returns TRUE if behind target
 
-* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${Stick.Distance}**  
+* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${Stick.Distance}**
 
   The current stick distance
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Loose}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Loose}**
 
   Returns TRUE if stick loose is set
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.MoveBack}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.MoveBack}**
 
   Returns TRUE if stick is set to moveback
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.MoveBehind}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.MoveBehind}**
 
   Returns TRUE if stick is set to move behind the target
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.MovePause}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.MovePause}**
 
   Returns TRUE if stick movement is paused due to manual intervention
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Paused}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Paused}**
 
   Returns TRUE if stick has been paused with "/stick pause"
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Pin}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Pin}**
 
   Returns TRUE if /stick pin is being used
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Stopped}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Stopped}**
 
   Returns TRUE if you are stationary
 
 ### MoveTo
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${MoveTo}**  
+* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${MoveTo}**
 
   Return ON if currently moving to a location, OFF if not, or PAUSED if it is paused
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MoveTo.Moving}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MoveTo.Moving}**
 
   Returns TRUE if moving to location, FALSE if not
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MoveTo.Stopped}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MoveTo.Stopped}**
 
   Returns TRUE if stopped, FALSE if not
 
 ### MakeCamp
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${MakeCamp}**  
+* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${MakeCamp}**
 
   _Same as ${MakeCamp.Status} \(see below\)._
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${MakeCamp.Status}**  
+* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${MakeCamp.Status}**
 
   Return ON if MakeCamp is enabled, OFF if it is not enabled or PAUSED if it is paused
 
-* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.AnchorX}**  
+* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.AnchorX}**
 
   The X Loc of the anchor point
 
-* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.AnchorY}**  
+* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.AnchorY}**
 
   The Y Loc of the anchor point
 
-* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.CampRadius}**  
+* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.CampRadius}**
 
   The current camp radius
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MakeCamp.Leash}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MakeCamp.Leash}**
 
   Returns TRUE if the leash is enabled, FALSE if not
 
-* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.LeashLength}**  
+* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.LeashLength}**
 
   The length of the leash
 
-* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${MakeCamp.MaxDelay}**  
+* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${MakeCamp.MaxDelay}**
 
   The maximum delay before resuming /makecamp functionality after manual intervention
 
-* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${MakeCamp.MinDelay}**  
+* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${MakeCamp.MinDelay}**
 
   The minimum delay before resuming /makecamp functionality after manual intervention
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MakeCamp.Returning}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MakeCamp.Returning}**
 
   Returns TRUE if returning to camp, FALSE if not
 

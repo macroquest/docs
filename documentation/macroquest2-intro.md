@@ -151,5 +151,5 @@ Terramantian was given an honorary VIP for his numerous contributions to the Wik
 
 * ISXEQ, MacroQuest 2's sister project, sharing MQ2's code, for \[Lavish
 
-  Software\]\([http://www.lavishsoft.com\)'s](http://www.lavishsoft.com%29's) [Inner Space](http://www.lavishsoft.com/innerspace)
+  Software\]\(\[[http://www.lavishsoft.com\)'s\]\(http://www.lavishsoft.com%29's](http://www.lavishsoft.com%29's]%28http://www.lavishsoft.com%29's)\) [Inner Space](http://www.lavishsoft.com/innerspace)
 

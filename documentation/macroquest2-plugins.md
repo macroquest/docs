@@ -102,11 +102,11 @@ See [/plugin](../commands/slash-commands/plugin.md) for information on loading a
 * [MQ2CustomBinds](../plugins/core-plugins/mq2custombinds.md) -- Allows you to specify custom commands to execute on a key combination
 * [MQ2EQBugFix](../plugins/core-plugins/mq2eqbugfix.md) -- Currently nothing, but reserved for fixing bugs in EQ itself
 * [MQ2EQIM](../plugins/discontinued-unsupported/mq2eqim.md) -- EQIM
-* [MQ2HUD](../plugins/core-plugins/mq2hud.md) -- Provides additional functionality to the HUD included with MQ2
-* [MQ2IRC](../plugins/discontinued-unsupported/mq2irc.md) -- IRC plugin
-* [MQ2ItemDisplay](../plugins/core-plugins/mq2itemdisplay.md) -- Add extra data to item windows
+* [MQ2HUD](../plugins/core-plugins/mq2hud/) -- Provides additional functionality to the HUD included with MQ2
+* [MQ2IRC](../plugins/discontinued-unsupported/mq2irc/) -- IRC plugin
+* [MQ2ItemDisplay](../plugins/core-plugins/mq2itemdisplay/) -- Add extra data to item windows
 * [MQ2Labels](../plugins/core-plugins/mq2labels.md) -- allows custom UI labels
-* [MQ2Map](../plugins/core-plugins/mq2map.md) -- enhanced map
+* [MQ2Map](../plugins/core-plugins/mq2map/) -- enhanced map
 * [MQ2Telnet](../plugins/discontinued-unsupported/mq2telnet.md) -- act as a telnet server for macro output
 
 ## List of Plugins with wiki pages
@@ -180,19 +180,19 @@ See [/plugin](../commands/slash-commands/plugin.md) for information on loading a
           </li>
           <li><a href="../plugins/community-plugins/mq2gmcheck.md">MQ2GMCheck</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2hud.md">MQ2HUD</a>
+          <li><a href="../plugins/core-plugins/mq2hud/">MQ2HUD</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2hudmove.md">MQ2HUDMove</a>
           </li>
-          <li><a href="../plugins/discontinued-unsupported/mq2irc.md">MQ2IRC</a>
+          <li><a href="../plugins/discontinued-unsupported/mq2irc/">MQ2IRC</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2itemdisplay.md">MQ2ItemDisplay</a>
+          <li><a href="../plugins/core-plugins/mq2itemdisplay/">MQ2ItemDisplay</a>
           </li>
           <li><a href="../plugins/core-plugins/mq2labels.md">MQ2Labels</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2linkdb.md">MQ2Linkdb</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2map.md">MQ2Map</a>
+          <li><a href="../plugins/core-plugins/mq2map/">MQ2Map</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2melee.md">MQ2Melee</a>
           </li>
@@ -261,5 +261,5 @@ See [MacroQuest2:Extending](macroquest2-extending.md) for further information.
 
 ### Unloading a plugin from within a plugin
 
-Because call UnloadMQ2Plugin\(name\) from within a plugin will crash, you must use a macro command to unload the plugin. DoCommand\(NULL, "/timed 20 /plugin  unload"\); will queue the macro command to unload after two seconds.
+Because call UnloadMQ2Plugin\(name\) from within a plugin will crash, you must use a macro command to unload the plugin. DoCommand\(NULL, "/timed 20 /plugin unload"\); will queue the macro command to unload after two seconds.
 

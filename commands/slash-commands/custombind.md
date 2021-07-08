@@ -1,4 +1,4 @@
-# Custombind
+# /custombind
 
 ## Syntax
 

@@ -10,18 +10,18 @@ This is the next evolution of MQ2Twist. Features
 
 * Set conditions for each song in the medley. Only want to cast on named? Only want to do insult if mana &gt; 10%? Only
 
-  want to cast dots if attack is on? Only want to cast mana regen when not in combat?  
+  want to cast dots if attack is on? Only want to cast mana regen when not in combat?
 
 * Advanced queuing support. Can specific target of queued spells for mez or cure and plugin will switch back to
 
-  existing target with plugin reflexes. Optional interrupt when queing song.  
+  existing target with plugin reflexes. Optional interrupt when queing song.
 
-* Adapt your song song set without missing a beat when under the effect of "A tune stuck in my head"  
+* Adapt your song song set without missing a beat when under the effect of "A tune stuck in my head"
 * Priority scheduling. Did you just mez 3 mobs? Switch back to your most important spells automatically  
 * Automatically switch to maintaining 7 songs when Tune is up  
 * Switch from medley to medley while still remembering the duration of current songs. Named up? just do switch to your
 
-  burn medley to introduce new songs to the mix, while knowing what songs are already up.  
+  burn medley to introduce new songs to the mix, while knowing what songs are already up.
 
 You can find the latest version of MQ2Medley [here](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=19781).
 
@@ -65,16 +65,11 @@ Lesson of the Devoted AA will be added to the twist queue and sung when current 
 ## TLO
 
 * Medley.Medley
-
-- string of current medley - false \(boolean\) if no current medley
-
+* string of current medley - false \(boolean\) if no current medley
 * Medley.TTQE \(time to queue empty\)
-
-- double time in seconds until queue is empty, this is estimate only. If performating normal medley, this will be 0.0 Medley.Tune - int 1 if buffed with "A Tune Stuck in My Head", 0 otherwise
-
+* double time in seconds until queue is empty, this is estimate only. If performating normal medley, this will be 0.0 Medley.Tune - int 1 if buffed with "A Tune Stuck in My Head", 0 otherwise
 * Medley.Active
-
-- boolean true if MQ2Medley is currently trying to cast spells
+* boolean true if MQ2Medley is currently trying to cast spells
 
 ## INI Format
 

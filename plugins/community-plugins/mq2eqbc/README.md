@@ -5,7 +5,7 @@
 **MQ2EQBC** \(EQ box chat\) is a plugin composed of two parts, a server \(EQBCS\) and a client \(MQ2EQBC\).
 
 * The server provides a similar service to an IRC server but is much easier to setup.
-* The client is similar to the [MQ2IRC](../../discontinued-unsupported/mq2irc.md) client in that it monitors text that is sent to the EQBC
+* The client is similar to the [MQ2IRC](../../discontinued-unsupported/mq2irc/) client in that it monitors text that is sent to the EQBC
 
   server.
 
@@ -350,7 +350,7 @@ It currently takes the following command line parameters:
 
   which is the IP address that you want to the server to listen on if there is more than one network interface in the computer \(default is to listen on all interfaces, which is what you want unless you know otherwise\).
 
-* -l  will send all output to  rather than to the screen.
+* -l will send all output to rather than to the screen.
 * -d will cause the application to run as a deamon process in the background \(UNIX only\).
 
 **Examples:**
@@ -380,13 +380,9 @@ remember to replace the .txt extension with .cpp\).
 
 4. Click the Next button on the first page of the Win32 Application Wizard
 5. On the Applications Settings window:
-
-   - Leave the default Application type as "Console application"
-
-   - Uncheck "Precompiled header"
-
-   - Check "Empty project"
-
+   * Leave the default Application type as "Console application"
+   * Uncheck "Precompiled header"
+   * Check "Empty project"
 6. Click the Finish button
 7. Your empty project should now be open. In the Solution Explorer, right click on the "Source Files" folder and select
 

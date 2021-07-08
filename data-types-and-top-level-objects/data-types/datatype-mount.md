@@ -16,12 +16,12 @@ This datatype deals strictly with information on your "Mount" keyring.
 ## Examples
 
 `/echo ${Mount[1].Name}`  
- ``
+\`\`
 
 Outputs: \[MQ2\] Whirligig Flyer Control Device
 
 `/echo ${Mount[2].Name}`  
- ``
+\`\`
 
 Outputs: \[MQ2\] Abyssal Steed
 

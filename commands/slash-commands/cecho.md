@@ -1,4 +1,4 @@
-# CEcho
+# /cecho
 
 ## Deprecated
 
@@ -48,6 +48,4 @@ This outputs **This is a testAll done, let's show a backslash: \**
 
 * [MQ2ChatWnd](../../plugins/core-plugins/mq2chatwnd.md)
 * [MQ2CEcho](../../plugins/community-plugins/mq2cecho.md)
-
-[Return to Slash Commands](./)
 

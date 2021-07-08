@@ -1,4 +1,4 @@
-# Exec
+# /exec
 
 ## Syntax
 

@@ -1,4 +1,4 @@
-# Dumpbinds
+# /dumpbinds
 
 ## Syntax
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-Dumps all current binds to Configs\_name_.cfg
+Dumps all current binds to Configs\_name\_.cfg
 
 ## See Also
 
@@ -14,6 +14,4 @@ Dumps all current binds to Configs\_name_.cfg
 * [/bind](bind.md)
 * [/custombind](custombind.md)
 * [/loadcfg](loadcfg.md)
-
-[Return to Slash Commands](./)
 

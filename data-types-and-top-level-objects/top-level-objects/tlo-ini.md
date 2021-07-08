@@ -6,7 +6,7 @@ Reads value\(s\) from an ini file located in a relative or absolute path.
 
 ## Forms
 
-* [_string_](../data-types/datatype-string.md) **Ini\[\***filename**\*,**''section_**,**_key_**,**_default'**'\]**
+* [_string_](../data-types/datatype-string.md) **Ini\[\***filename**\*,**''section_**,**\_key_**,**\_default'**'\]**
   * The _section_, _key_, and _default_ do not need to be given. If _section_ or _key_ are not given, multiple
 
     values are read.
@@ -45,5 +45,5 @@ If sample.ini is in \Macros\iniTest folder:
 
 * [Top-Level Objects](./)
 * [string](../data-types/datatype-string.md)
-* [/ini for writing information to the ini file](../../commands/macro-commands/ini.md)
+* [/ini for writing information to the ini file](../../commands/slash-commands/ini.md)
 

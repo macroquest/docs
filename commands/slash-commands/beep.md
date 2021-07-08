@@ -1,4 +1,4 @@
-# Beep
+# /beep
 
 ## Syntax
 
@@ -13,8 +13,4 @@ Adding _filename_ will play a .wav file located in your Everquest directory. Thi
 If you prefer you can play the sounds in the Everquest "sounds" directory by using something like
 
 /beep sounds/_filename_
-
-## See Also
-
-[Slash Commands](./)
 

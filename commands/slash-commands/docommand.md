@@ -1,4 +1,4 @@
-# Docommand
+# /docommand
 
 ## Syntax
 
@@ -21,6 +21,4 @@ Executes _command_, parsing [MQ2Data](../../documentation/mq2data.md) first. Thi
 ```text
 /docommand ${If[${Target.ID},/alt activate 177,/echo No Target]}
 ```
-
-[Return to Slash Commands](./)
 

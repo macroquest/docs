@@ -25,7 +25,7 @@ So example, \au = blue, \a-u = dark blue. \aw = white, \a-w = dark white \(light
 
 The 2 functions are the same, just one of them echoes the debug header mq2 does, i.e. \[MQ2\] before your text output, the other doesn't.
 
-example: /cecho \arThis is a \attest\ax.\n\agAll done, let's show a backslash: \am\\
+example: /cecho \arThis is a \attest\ax.\n\agAll done, let's show a backslash: \am\
 
 ## See Also
 

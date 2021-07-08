@@ -1,6 +1,12 @@
-# Endmacro
+# /endmacro
+
+## Syntax
 
 **/endmacro**
 
-Stops the macro.
+## Description
+
+Stops the current macro.
+
+
 

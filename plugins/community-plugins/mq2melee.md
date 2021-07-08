@@ -146,7 +146,7 @@ The following Disciplines are detected to promote some combat abilities:
 
     commands use one of the following commands:
 
-    * For Disciplines use: **/echo ${Me.CombatAbility\[${Me.CombatAbility\[\]}\].ID}**, replacing 
+    * For Disciplines use: **/echo ${Me.CombatAbility\[${Me.CombatAbility\[\]}\].ID}**, replacing
 
       with the name of the Discipline.
 
@@ -189,57 +189,57 @@ The following Disciplines are detected to promote some combat abilities:
   others being active, so may not show up until you enable the prerequisite option.
 
 * To find the relevant Item IDs for the various options, you can use the following command:
-  * **/echo ${FindItem\[=\].ID}**, replacing  with the name of the item you are looking for \(no need
+  * **/echo ${FindItem\[=\].ID}**, replacing with the name of the item you are looking for \(no need
 
     to use quotes\). Eg. /echo ${FindItem\[=Blade of Carnage\].ID} results in "25210".
 
 ### /melee \[options\]
 
-* **\[on\|off\]**  
+* **\[on\|off\]**
 
   _Turns plugin On/Off._
 
-* **aggro**=\[on\|off\]  
+* **aggro**=\[on\|off\]
 
   \*Plugin tries to keep aggro on target using all enabled aggro abilities/disciplines until aggro is regained, or
 
   either you or the target dies.\*
 
-* **aggropri**=\[Item ID\]  
+* **aggropri**=\[Item ID\]
 
   _Item ID for primary weapon to be used in aggro mode._
 
-* **aggrosec**=\[Item ID\]  
+* **aggrosec**=\[Item ID\]
 
   _Item ID for secondary weapon to be used in aggro mode._
 
-* **arrow**=\[Item ID\]  
+* **arrow**=\[Item ID\]
 
   _Item ID of ammunition to use for ranged/throwing attacks._
 
-* **backoff**=\[0-100\]  
+* **backoff**=\[0-100\]
 
   \*Turns attack off if your life percentage goes below the designated value. Will never back off due to low health if
 
   aggro=on.\*
 
-* **bash**=\[on\|off\]  
+* **bash**=\[on\|off\]
 
   _Will try to bash target if you have a shield equipped or have have a 2-handed weapon and the 2 Hand Bash AA._
 
-* **battleleap**=\[on\|off\]  
+* **battleleap**=\[on\|off\]
 
   _Whether or not to use Battle Leap AA \(Default=0/off\)_
 
-* **begging**=\[on\|off\]  
+* **begging**=\[on\|off\]
 
   _Will turn attack off and beg target and turn back on._
 
-* **bow**=\[Item ID\]  
+* **bow**=\[Item ID\]
 
   _Item ID for ranged weapon._
 
-* **disarm**=\[on\|off\]  
+* **disarm**=\[on\|off\]
 
   _Will try to disarm target if target is wielding a weapon._
 
@@ -248,17 +248,17 @@ The following Disciplines are detected to promote some combat abilities:
 **downflag0**=\[on\|off\]  
 _Whether or not to use defined DownShit0 from ini. After enabling this option, you must edit the INI file with your relevant DownShit command and then issue **/melee load** to enable it._
 
-* **enrage**=\[on\|off\]  
+* **enrage**=\[on\|off\]
 
   \*Turns attack off and issues /pet hold \(/pet back if hold not available\) if target enrages and you are facing it.
 
   Automatically re-engages when enrage ends or if you are behind the target.\*
 
-* **facing**=\[on\|off\]  
+* **facing**=\[on\|off\]
 
   _Whether or not to face target \(checked every 2 seconds and only in ranged mode\)._
 
-* **falls**=\[on\|off\]  
+* **falls**=\[on\|off\]
 
   _\(Monk only\) Auto-feign to reduce aggro?._
 
@@ -267,157 +267,157 @@ _Whether or not to use defined DownShit0 from ini. After enabling this option, y
 **holyflag0**=\[on\|off\]  
 _Whether or not to use defined HolyShit0 from ini. After enabling this option, you must edit the INI file with your relevant HolyShit command and then issue **/melee load** to enable it._
 
-* **infuriate**=\[on\|off\]  
+* **infuriate**=\[on\|off\]
 
   \*Turns attack off and issues /pet hold \(/pet back if hold not available\) if target infuriates and you are facing it.
 
   Re-engages when infuriate ends or if you are behind the target.\*
 
-* **intimidation**=\[on\|off\]  
+* **intimidation**=\[on\|off\]
 
   _Will use intimidation if available._
 
-* **jolt**=\[0-100\]  
+* **jolt**=\[0-100\]
 
   _Jolt every \# of hits \(0=off\)._
 
-* **kick**=\[on\|off\]  
+* **kick**=\[on\|off\]
 
   _Will use kick if available._
 
-* **melee**=\[on\|off\]  
+* **melee**=\[on\|off\]
 
   _Turn Melee Mode On/Off._
 
-* **meleepri**=\[Item ID\]  
+* **meleepri**=\[Item ID\]
 
   _Item ID for primary weapon to be used in non-aggro mode._
 
-* **meleesec**=\[Item ID\]  
+* **meleesec**=\[Item ID\]
 
   _Item ID for secondary weapon to be used in non-aggro mode_
 
-* **mend**=\[0-100\]  
+* **mend**=\[0-100\]
 
   _Mend wounds if your life percentage goes below the designated value._
 
-* **petassist**=\[on\|off\]  
+* **petassist**=\[on\|off\]
 
   \*Will send pet attack on engage and backoff on enrage/infuriate if those options are enabled. The plugin will also
 
   use /pet hold if you have that AA.\*
 
-* **petdelay**=\[0-30\]  
+* **petdelay**=\[0-30\]
 
   _Will not engage pet until \[x\] seconds has passed._
 
-* **petmend**=\[0-100\]  
+* **petmend**=\[0-100\]
 
   \*Cast "Mend Companion" or "Replenish Companion" if pet is at or below given health % \(will cast higher of the two if
 
   you have both\).\*
 
-* **petrange**=\[0-150\]  
+* **petrange**=\[0-150\]
 
   _Will not engage pet until mob is within \[x\] range of your pet._
 
-* **pickpocket**=\[on\|off\]  
+* **pickpocket**=\[on\|off\]
 
   _Turn off attack & try to pickpocket if not in aggro mode._
 
-* **plugin**=\[on\|off\]  
+* **plugin**=\[on\|off\]
 
   _Turn plugin on/off._
 
-* **poker**=\[Item ID\]  
+* **poker**=\[Item ID\]
 
   _Item ID for backstabbing weapon. Will be swapped in before backstabbing if necessary._
 
-* **pothealfast**=\[0-100\]  
+* **pothealfast**=\[0-100\]
 
   _Use fast heal potion when my HP falls below \[X\]% \(default=30\)._
 
-* **pothealover**=\[0-100\]  
+* **pothealover**=\[0-100\]
 
   _Use heal over time potion when my HP falls below \[X\]% \(default=60\)._
 
-* **provoke0**=\[Disc/AA/Spell ID \#\]  
+* **provoke0**=\[Disc/AA/Spell ID \#\]
 
   _ID of the Disc/AA/Spell to use for provoking \(0=off\)._
 
-* **provoke1**=\[Disc/AA/Spell ID \#\]  
+* **provoke1**=\[Disc/AA/Spell ID \#\]
 
   _ID of the Disc/AA/Spell to use for provoking \(0=off\)._
 
-* **provokeend**=\[0-100\]  
+* **provokeend**=\[0-100\]
 
   _Stop trying to provoke when target's health falls below \[X\]% \(default=15\)._
 
-* **provokemax**=\[0-100\]  
+* **provokemax**=\[0-100\]
 
   _Number of times you will try provoking aa/disc/spells to regain aggro \(default=1\)._
 
-* **provokeonce**=\[on\|off\]  
+* **provokeonce**=\[on\|off\]
 
   _Only use provoke once to attempt to gain aggro._
 
-* **range**=\[0-250\]  
+* **range**=\[0-250\]
 
   _Enables ranged attacks when target is at or beyond this range._ Note that 0 disables ranged attacks completely.
 
-* **resume**=\[0-100\]  
+* **resume**=\[0-100\]
 
   _Stand up and turn back attack on if your life percentage goes above this value. Used with /melee feigndeath=on._
 
-* **shield**=\[Item ID\]  
+* **shield**=\[Item ID\]
 
   _Item ID of shield to use for bashing_
 
-* **slam**=\[on\|off\]  
+* **slam**=\[on\|off\]
 
   _Will slam as often as possible._
 
-* **sneak**=\[on\|off\]  
+* **sneak**=\[on\|off\]
 
   _Will try to sneak if not in combat._
 
-* **standup**=\[on\|off\]  
+* **standup**=\[on\|off\]
 
   _Will stand you on a failed FD._
 
-* **stickdelay**=\[0-100\]  
+* **stickdelay**=\[0-100\]
 
   _Wait \[X\] seconds before sticking to target._
 
-* **stickmode**=\[0\|1\|2\]  
+* **stickmode**=\[0\|1\|2\]
 
   _If 1, it will use the \*stickcmd_ as defined in the INI file, if 0, it will use the default stick command, if 2,
 
   it will turn off sticking\*
 
-* **stickrange**=\[0+\]  
+* **stickrange**=\[0+\]
 
   _Enables sticking when target is at set distance away \(0=no sticking\)._
 
-* **stun0**=\[Disc/AA/Spell ID \#\]  
+* **stun0**=\[Disc/AA/Spell ID \#\]
 
   _ID of the Disc/AA/Spell to use for stunning \(0=off\)._
 
-* **stun1**=\[Disc/AA/Spell ID \#\]  
+* **stun1**=\[Disc/AA/Spell ID \#\]
 
   _ID of the Disc/AA/Spell to use for stunning \(0=off\)._
 
-* **stunning**=\[0-100\]  
+* **stunning**=\[0-100\]
 
   _Cast defined Stun spell\(s\) if target at or below \[X\]% and/or if detected that target is casting a spell._
 
-* **taunt**=\[on\|off\]  
+* **taunt**=\[on\|off\]
 
   \*Will push taunt button if aggro=on and you're not the target's target. Without a TauntIF statement, this will cause
 
   your toon to chain taunt. If you do not wish for that, use a TauntIF command \(see below\).\*
 
-* **throwstone**=\[0-100\]  
+* **throwstone**=\[0-100\]
 
   _Will use throw stone disc when ready and target in range._ Note: Will not use in aggro/provoke mode if provoke has
 
@@ -830,87 +830,87 @@ _Will try to sense traps if not in combat._
 
 ## Top-Level Objects
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee}**
 
   Same as ${Melee.Enable} \(see below\).
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.AggroMode}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.AggroMode}**
 
   TRUE/FALSE if the plugin is operating in Aggro-mode or not.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.Ammunition}**  
+* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.Ammunition}**
 
   Count of defined ammunition or current equipped ammunition.
 
-* [_float_](../../data-types-and-top-level-objects/data-types/datatype-float.md) **${Melee.BackAngle}**  
+* [_float_](../../data-types-and-top-level-objects/data-types/datatype-float.md) **${Melee.BackAngle}**
 
   Angle representing heading difference with current target's back.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.BackStabbing}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.BackStabbing}**
 
   TRUE/FALSE if **backstab** setting is on/off.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.Casted}**  
+* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.Casted}**
 
   Time \(in miliseconds\) elapsed since last detected spell casting \(60000 if none\).
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Combat}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Combat}**
 
   TRUE/FALSE if plugin enable and got valid kill target. Should replace ${Me.Combat} logic.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.DiscID}**  
+* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.DiscID}**
 
   Spell ID of currently running discipline, 0 if none.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Enable}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Enable}**
 
   TRUE/FALSE if plugin on/off, NULL if not loaded.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Engage}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Engage}**
 
   TRUE if we have a valid kill target and it's okay to turn attack on, FALSE if not.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Enrage}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Enrage}**
 
   Is kill target enraged?
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.GotAggro}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.GotAggro}**
 
   TRUE/FALSE if current target seems to be aggroed on you \(not perfect\).
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Immobilize}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Immobilize}**
 
   TRUE if you have been standing still for more then 250ms, FALSE if not.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Infuriate}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Infuriate}**
 
   TRUE if kill target is infuriated!
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.MeleeMode}**  
+* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.MeleeMode}**
 
   Maximum distance to target to be considered in melee range.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.RangeMode}**  
+* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.RangeMode}**
 
   Minimum distance to target to be considered in archery range.
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Melee.Status}**  
+* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Melee.Status}**
 
   Current plugin status, can be one or more of the following: ENGAGED, WAITING, MELEE, RANGE, ENRAGE, INFURIATE,
 
   BACKING, ESCAPING, FEIGNING, EVADING, FALLING, STEALING, BEGGING.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.Target}**  
+* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.Target}**
 
   SpawnID of current valid kill target, otherwise 0.
 
-* [_float_](../../data-types-and-top-level-objects/data-types/datatype-float.md) **${Melee.ViewAngle}**  
+* [_float_](../../data-types-and-top-level-objects/data-types/datatype-float.md) **${Melee.ViewAngle}**
 
   Angle of view with current target.
 
 Debugging TLOs:
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${meleemvb\[**idskill**\]}**  
+* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${meleemvb\[**idskill**\]}**
 
   1 if the skill is ready and target in range, 0 if not. Most combat and/or character kills that can use an ID are
 
@@ -918,11 +918,11 @@ Debugging TLOs:
 
   **idtigerclaw**, **idescape**.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${meleemvi\[**variable**\]}**  
+* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${meleemvi\[**variable**\]}**
 
   1/0 if the variable is set to on/off. This includes all variables that can be set on the command line.
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${meleemvs\[**option**\]}**  
+* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${meleemvs\[**option**\]}**
 
   Evaluates _option_ based on the current conditions and target. _Options_ are all the INI options that contain
 

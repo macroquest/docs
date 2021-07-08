@@ -1,4 +1,4 @@
-# Varset
+# /varset
 
 ## Syntax
 
@@ -25,6 +25,4 @@ Sets a variable directly to a new value.
 ## See Also
 
 * [MQ2DataVars](../../documentation/mq2datavars.md) for further information about variables.
-
-[Return to Slash Commands](../slash-commands/)
 

@@ -1,4 +1,4 @@
-# Drop
+# /drop
 
 ## Syntax
 
@@ -7,6 +7,4 @@
 ## Description
 
 Drops the item currently on the cursor.
-
-[Return to Slash Commands](./)
 

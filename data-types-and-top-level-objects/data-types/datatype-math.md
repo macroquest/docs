@@ -87,7 +87,7 @@ This DataType performs various mathematical calculations. In the following membe
       </td>
       <td style="text-align:left"><b>Hex[</b><em>n</em><b>]</b>
       </td>
-      <td style="text-align:left">Returns hexidecimal value of <a href="datatype-int.md"><em>int</em></a><em> n</em>
+      <td style="text-align:left">Returns hexidecimal value of <a href="datatype-int.md"><em>int</em></a>  <em>n</em>
       </td>
     </tr>
     <tr>

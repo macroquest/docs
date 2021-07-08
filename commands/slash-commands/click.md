@@ -1,4 +1,4 @@
-# Click
+# /click
 
 ## Syntax
 

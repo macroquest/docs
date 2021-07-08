@@ -80,23 +80,23 @@ Alias for /twist stop
 
 ## Top-Level Objects
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Twist}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Twist}**
 
   _Same as ${Twist.Twisting} \(see below\)_
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Twist.Twisting}**  
+* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Twist.Twisting}**
 
   Returns TRUE if currently twisting, FALSE if not and NULL if plugin not loaded.
 
-* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Twist.Current}**  
+* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Twist.Current}**
 
   Returns the current gem being sung, -1 for item or 0 if not twisting
 
-* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Twist.Next}**  
+* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Twist.Next}**
 
   Returns the next gem to be sung, -1 for item or 0 if not twisting
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Twist.List}**  
+* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Twist.List}**
 
   Returns the twist sequence in a format suitable for /twist.
 
@@ -148,7 +148,7 @@ Long songs are defined as songs greater than 3 ticks in length. If set to 1 tick
 `inventory slot (with slot=slotname). If both a name and slot are defined for an`  
 `item, the plugin will attempt to swap the item into that slot (via the /exchange`  
 `command) and replace the original item when casting is complete.`  
-`````  The example INI file below contains examples of the types of usage.\`
+````````` The example INI file below contains examples of the types of usage.\`````
 
 ### ini file example
 

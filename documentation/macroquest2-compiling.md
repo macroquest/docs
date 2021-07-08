@@ -1,24 +1,8 @@
 # MacroQuest2:Compiling
 
-## Overview
-
-The easiest "1 click to build and be done solution" is to just use [http://www.macroquest2.com/builder](http://www.macroquest2.com/builder)
-
-If you are going to compile "manually" set \#define LIVE to TEST in mq2main.h and follow the steps below: If you are going to build for LIVE, you will need to fix the structs for it first.
-
-MacroQuest2 does not come pre-compiled, which means that you need to compile it in order to use it.
-
-Quick start for MQ2:
-
-1. Download & Install a C++ compiler
-2. Download and [Unzip](http://www.7-zip.org/download.html) the source \( \[Link for Latest
-
-   Source\]\([https://macroquest2.com/main.php?p=download](https://macroquest2.com/main.php?p=download)\) \)
-
-3. Create MQ2Auth0.h
-4. Compile MQ2 source
-5. Run MQ2
-6. Run Everquest
+{% hint style="warning" %}
+This documentation is out of date and is inaccurate
+{% endhint %}
 
 ## Download & Install C++ compiler
 
@@ -181,14 +165,14 @@ No additional service packs are needed if you have Visual C++ 2003 installed.
 ### Visual C++ 2005 Express \(**NO LONGER SUPPORTED**\)
 
 1. Download the Setup program [here](http://go.microsoft.com/fwlink/?LinkId=51410&clcid=0x409) and install it.
-2. Download SDK files and install them:
-   1. If you are using **XP** or **Vista 32-bit**, download the Microsoft Platform SDK from
+2. Download SDK files and install them: 1. If you are using **XP** or **Vista 32-bit**, download the Microsoft Platform SDK from
 
-      [here](http://www.microsoft.com/downloads/info.aspx?na=46&p=3&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=A55B6B43-E24F-4EA3-A93E-40C0EC4F68E5&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2fa%2f5%2ff%2fa5f0d781-e201-4ab6-8c6a-9bb4efed1e1a%2fPSDK-x86.exe&oRef=http%3a%2f%2fmsdn.microsoft.com%2fwindowsmedia%2fdownloads%2fdefault.aspx).
+   [here](http://www.microsoft.com/downloads/info.aspx?na=46&p=3&SrcDisplayLang=en&SrcCategoryId=&SrcFamilyId=A55B6B43-E24F-4EA3-A93E-40C0EC4F68E5&u=http%3a%2f%2fdownload.microsoft.com%2fdownload%2fa%2f5%2ff%2fa5f0d781-e201-4ab6-8c6a-9bb4efed1e1a%2fPSDK-x86.exe&oRef=http%3a%2f%2fmsdn.microsoft.com%2fwindowsmedia%2fdownloads%2fdefault.aspx).
 
-   2. If you are using **Vista 64-bit** download the Windows SDK
+   1. If you are using **Vista 64-bit** download the Windows SDK
 
       [here](http://www.microsoft.com/downloads/details.aspx?FamilyId=E6E1C3DF-A74F-4207-8586-711EBE331CDC&displaylang=en).
+
 3. Open Visual Studio 2005 Express.
 4. From the Tools drop down menu, select Options...
 5. Expand the "Projects and Solutions" tree and select "VC++ Directories"

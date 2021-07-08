@@ -1,4 +1,4 @@
-# Dosocial
+# /dosocial
 
 ## Syntax
 
@@ -45,6 +45,5 @@ same stuff as above example
 /dosocial "MyMacro"
 ```
 
-Typing the command in this way would execute Line 1 and 2 of the above example MyMacro social button.  
-[Return to Slash Commands](./)
+Typing the command in this way would execute Line 1 and 2 of the above example MyMacro social button.
 

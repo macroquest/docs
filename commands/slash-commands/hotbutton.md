@@ -1,4 +1,4 @@
-# Hotbutton
+# /hotbutton
 
 ## Syntax
 
@@ -20,8 +20,4 @@ Extends the built in /hotbutton command with multiple lines support
 | /hotbutton TheName 0:/echo hi | Where 0: in this case means NO Cursor Attachment. |
 | /hotbutton TheName 14 /echo hi | just calls the eq function like before. |
 | /hotbutton TheName /echo hi | just calls the eq function like before. |
-
-## See Also
-
-[Back to Slash Commands](./)
 

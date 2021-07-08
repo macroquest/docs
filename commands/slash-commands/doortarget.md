@@ -1,4 +1,4 @@
-# Doortarget
+# /doortarget
 
 ## Syntax
 
@@ -20,6 +20,4 @@
 
 * [Doors](doors.md)
 * [Face](face.md)
-
-[Return to Slash Commands](./)
 

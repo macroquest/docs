@@ -1,4 +1,4 @@
-# Echo
+# /echo
 
 ## Syntax
 
@@ -16,7 +16,7 @@ Echos the specified text \(or variables\) to the MQ2 chat window.
 /echo \am This is a \attest\ax \n\agAll done, let's show a backslash: \ar\\
 ```
 
-\[MQ2\] '''This is a  test
+\[MQ2\] '''This is a test
 
 All done, let's show a red backslash: \'''
 
@@ -71,6 +71,4 @@ All done, let's show a red backslash: \'''
 
 * [MQ2ChatWnd](../../plugins/core-plugins/mq2chatwnd.md)
 * [MQ2Chat](../../plugins/core-plugins/mq2chat.md)
-
-[Return to Slash Commands](./)
 

@@ -109,9 +109,9 @@ Data Types are the members \(or properties\) of [Top-Level Objects](../top-level
           </li>
           <li><a href="datatype-task.md">DataType:task</a>
           </li>
-          <li><a href>Datatype:taskmember</a>
+          <li><a href="./">Datatype:taskmember</a>
           </li>
-          <li><a href>DataType:taskmember</a>
+          <li><a href="./">DataType:taskmember</a>
           </li>
           <li><a href="datatype-ticks.md">DataType:ticks</a>
           </li>

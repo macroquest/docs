@@ -52,13 +52,13 @@ The parameters must be given in order, but any after _varname_ may be skipped to
 /declare MyVar int outer
 ```
 
- This creates a string variable named MyVar that exists within the Sub it was created in:
+This creates a string variable named MyVar that exists within the Sub it was created in:
 
 ```text
 /declare MyVar local
 ```
 
- This creates a timer named MyTime that is set to 3000 at creation and exists while the macro is running:
+This creates a timer named MyTime that is set to 3000 at creation and exists while the macro is running:
 
 ```text
 /declare MyTimer timer outer 3000
@@ -78,13 +78,13 @@ To create an array, attach square brackets to the end of the variable name and p
 /declare MyArray[10] int
 ```
 
- This creates a 2-dimensional 10x10 elements\(1-10,1-10\) int array of scope outer with all values of 5:
+This creates a 2-dimensional 10x10 elements\(1-10,1-10\) int array of scope outer with all values of 5:
 
 ```text
 /declare MyArray[10,10] int outer 5
 ```
 
- This creates a 3-dimensional array with 4x5x6 elements \(1-4,1-5, 1-6\) with UNDEFINED-ARRAY-ELEMENT in each location:
+This creates a 3-dimensional array with 4x5x6 elements \(1-4,1-5, 1-6\) with UNDEFINED-ARRAY-ELEMENT in each location:
 
 ```text
 /declare MyArray[4,5,6] string outer UNDEFINED-ARRAY-ELEMENT
@@ -98,7 +98,7 @@ There is no limit to the number of dimensions or the number of elements in each 
 
 ### Deleting Variables
 
-[/deletevar](../commands/slash-commands/deletevar.md) is used to delete variables. Examples:
+[/deletevar](../commands/macro-commands/deletevar.md) is used to delete variables. Examples:
 
 1. Deletes the variable varname. Using \* global will delete all global variables:
 
@@ -106,7 +106,7 @@ There is no limit to the number of dimensions or the number of elements in each 
 /deletevar varname [*|global]
 ```
 
- Sets a variable directly to a new value. Keep in mind that the type itself may reject this value depending on what you give it.
+Sets a variable directly to a new value. Keep in mind that the type itself may reject this value depending on what you give it.
 
 ```text
 /varset varname [newvalue]
@@ -126,31 +126,31 @@ To clear the value of the variable, you may omit the new value.
 /varset MyString ${MyString}stuff
 ```
 
- This inserts stuff at the front of ${MyString}:
+This inserts stuff at the front of ${MyString}:
 
 ```text
 /varset MyString stuff${MyString}
 ```
 
- This sets MyInt to 123:
+This sets MyInt to 123:
 
 ```text
 /varset MyInt 123
 ```
 
- This sets MyTimer to 123 seconds:
+This sets MyTimer to 123 seconds:
 
 ```text
 /varset MyTimer 123s
 ```
 
- This sets MyFloat to 1.23:
+This sets MyFloat to 1.23:
 
 ```text
 /varset MyFloat 1.23
 ```
 
- This sets array element n to 123:
+This sets array element n to 123:
 
 ```text
 /varset MyIntArray[n] 123

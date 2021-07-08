@@ -8,7 +8,7 @@ In addition to various combat abilities \(along with their tunable parameters\),
 
 A full list of features, their command syntax, and examples of how to use those commands is provided alphabetically below.
 
-##  Important Notice:
+## Important Notice:
 
 RH will **not function correctly**, particularly in combat and more specifically with strike execution, unless you do the following things before using the macro:
 
@@ -26,7 +26,7 @@ If you fail to do these things, RH will function poorly!
 
 If your rogue still fails to assist your tank, try /Stick Off
 
-##  Features:
+## Features:
 
 RH provides you, the rogue, with an enormous amount of power. RH can do just about anything a rogue would need to do and can do almost all of it automatically. The following section briefly lists the features and capabilities that RH provides.
 
@@ -98,5 +98,5 @@ RH provides you, the rogue, with an enormous amount of power. RH can do just abo
 * Automatically employ two configurable disciplines of your choice \(duelist, deadly precision, kinesthetics, etc.\)
 * Completely control macro output, both where it's displayed and the volume of text generated.
 
-##  \[Rogue Helper Command List\]\(https://macroquest2.com/wiki/index.php/Rogue\_Helper\_Command\_List\)
+## \[Rogue Helper Command List\]\([https://macroquest2.com/wiki/index.php/Rogue\_Helper\_Command\_List\](https://macroquest2.com/wiki/index.php/Rogue_Helper_Command_List\)\)
 

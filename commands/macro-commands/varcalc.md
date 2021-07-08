@@ -1,4 +1,4 @@
-# Varcalc
+# /varcalc
 
 ## Syntax
 
@@ -22,6 +22,4 @@
 ## See Also
 
 * [MQ2DataVars](../../documentation/mq2datavars.md) for further information on variables.
-
-[Return to Slash Commands](../slash-commands/)
 

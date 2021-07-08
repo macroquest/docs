@@ -53,7 +53,7 @@ Specific Buffing Instructions Rework the targeting Sub Routine Add more targets 
 
 To use this macro, you must have these files in your macros directory: DRShmbot.mac dREvents.inc dRSubs.inc
 
-To start the macro, type: /mac DRShmbot.mac  __
+To start the macro, type: /mac DRShmbot.mac \_\_
 
 Tank Name and Master Name are optional. They are **NOT** required but must be set in the INI for the bot to function correctly if not provided.
 

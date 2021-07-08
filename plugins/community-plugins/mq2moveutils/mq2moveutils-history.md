@@ -35,11 +35,11 @@ Version 2004.05.07:
 * /stick pause\|unpause added  
 * automatic /stick pause on casting  
 * /stick will break on a large enough sudden distance increment \(defaults to 250 units\)  
-* INI file support:  
+* INI file support:
 
   A default ini file is created if it doesn't exist. Section \[Defaults\] contains global defaults. New sections can be
 
-  added with character names as titles to override those defaults, for example:  
+  added with character names as titles to override those defaults, for example:
 
 AutoPause on/off enables/disables the automatic pause on cast feature \(regardless of this setting, bards won't pause /stick for casting... it's unneeded, and besides, that'd mean we can't sing while /stick'ing :\)\).  
 BreakOnWarp on/off enables/disables the automatic break on large distance increment  
@@ -53,14 +53,14 @@ Version 2004.05.14:
 * text output added to /stick  
 * /circle changed: if no center is given, current loc is taken to be the outside of the circle, not the center \(so you
 
-  start angling immediately, instead of going straight then suddenly turning\)  
+  start angling immediately, instead of going straight then suddenly turning\)
 
 Version 2004.05.16:
 
 * slight bug fix with /stick  
 * added /cirlce drunken: use "drunken" instead of "on" to have /circle update heading less often for a more
 
-  human-controlled look  
+  human-controlled look
 
 Version 2004.05.17:
 
@@ -76,21 +76,21 @@ Version 2004.06.14:
 * /stick mpause added, causes manual movement to pause stick instead of breaking  
 * /stick loose added, checks for distance/angle less often, to give a more human-controlled appearace  
 * Added "Verbosity" to ini file \(set to 0 for no messages, 1 for normal messages\)  
-* Added "Stick" TLO, of type "stick", with members:  
+* Added "Stick" TLO, of type "stick", with members:
 
   Status \(ON, OFF, PAUSED\), Active \(bool\), Distance \(float\), MoveBehind \(bool\), MoveBack \(bool\), MovePause \(bool\), Loose
 
-  \(bool\), and Paused \(bool\)  
+  \(bool\), and Paused \(bool\)
 
 Version 2004.06.21:
 
-* /stick uw added, for underwater /stick'ing, looks up/down to follow target  
+* /stick uw added, for underwater /stick'ing, looks up/down to follow target
 
   \* this option should eventually disappear and become automatic... but as of now, mq isn't correctly reporting
 
-  underwater status  
+  underwater status
 
-* /stick - and /stick % added, to modify stick distance \(useful when a wrong melee range is reported\)  
+* /stick - and /stick % added, to modify stick distance \(useful when a wrong melee range is reported\)
 * /stick loose fixed  
 * /circle drunken upgraded \(uses slow turning\)  
 
@@ -106,7 +106,7 @@ New version 2004.06.23:
 
   of loading. Consequently, this plugin tried to initialize things too early and the bug was exposed by WinEQ 2.0 as a
 
-  crash. Enjoy.  
+  crash. Enjoy.
 
 === Quagmire === New version 2005.03.22: by Quagmire
 
@@ -118,7 +118,7 @@ New version 2004.06.23:
 * automatic pausing when sitting, stunned or have yourself targeted  
 * when the target is close and directly behind you, will back up instead of spinning and moving forward \(helps when you
 
-  overshoot the target\)  
+  overshoot the target\)
 
 Updated 2005.03.24:
 
@@ -145,7 +145,7 @@ Updated 2005.06.26:
 
 === Outlander === \* Corrections and additions 2005.07.08  
 Added Version Number at top of help commands  
-Added /stick id  functionality  
+Added /stick id functionality  
 Added break MoveTo functionality so that when you manually move MoveTo is turned off
 
 \* Corrections and additions 2005.07.14  
@@ -197,7 +197,7 @@ added stickOn=true; to /stick hold and /stick id command parsers
 
 \* Additions 2005.12.22  
 Added OnRemoveSpawn sub to help with crashes as posted by DKAA  
-Added /moveto id \ functionality as discussed on boards.
+Added /moveto id  functionality as discussed on boards.
 
 * Updated 2006.02.27  
 * updated 2006.02.28  
@@ -209,19 +209,19 @@ Added /moveto id \ functionality as discussed on boards.
 * Updated 2006.04.24  
 * Updated 2007.05.10 by rswiders \(added clockwise/counterclockwise circling; added forward and kiting \(backwards\) facing
 
-  circling\)  
+  circling\)
 
-* Updated 2007.05.18 by deadchicken \(added loose to /moveto\)  
+* Updated 2007.05.18 by deadchicken \(added loose to /moveto\)
 
-  \* Additions 2007.5.18  
+  \* Additions 2007.5.18
 
   Added loose option to /moveto to be similar to /stick loose and use gFaceAngle instead of directly setting heading. This
 
-  also just turns without moving if angle is to great to avoid circling moveto location.  
+  also just turns without moving if angle is to great to avoid circling moveto location.
 
-  Fixed some 180deg turns which were += 265 instead of += 256.  
+  Fixed some 180deg turns which were += 265 instead of += 256.
 
-* Updated 2007.08.11 by bertbert \(added /followpath and /fp commands\)  
+* Updated 2007.08.11 by bertbert \(added /followpath and /fp commands\)
 
 \* 2007.08.11 - Added fp command to go to a person or location in a zone  
 \* Missed a return in new TLO StickTarget member  

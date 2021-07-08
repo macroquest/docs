@@ -26,19 +26,19 @@
 
 ## Available Commands:
 
-- All
+* All
 
 `-- Hail for level appropriate buffs.`
 
-- Druid
+* Druid
 
 `-- ports`
 
-- Wizard
+* Wizard
 
 `-- ports`
 
-- Mage
+* Mage
 
 `-- toys`  
 `-- toys x(1-20)`  
@@ -48,11 +48,11 @@
 `-- drod`  
 `-- other`
 
-- Cleric
+* Cleric
 
 `-- rez`
 
-- Necromancer
+* Necromancer
 
 `-- summon`
 

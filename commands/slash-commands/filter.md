@@ -1,4 +1,4 @@
-# Filter
+# /ilter
 
 ## Syntax
 
@@ -10,8 +10,9 @@
 
 Will filter out some common messages that can be annoying to see
 
-| **/filter** | /filter on its own will open the chat filter section of the EQ options window |
+| **Command** | Description |
 | :--- | :--- |
+| **/filter** | /filter on its own will open the chat filter section of the EQ options window |
 | **/filter macros** _all enhanced none_ | **all** will filter all macro messages, except for macro end  **enhanced** is currently not in use, and does nothing  **none** turns the filtering off |
 | **/filter Skills** _all/increase/none_ | **all** will filter all skill related messages  **increase** filters out skill increases only  **None** turns the filtering off |
 | **/filter** _target / money / food / encumber / debug on/off_ | **target** filter out target lost messages  **money** filter loot messages about money  **food** filters hungry messages  **encumber** filters out encumberance messages  **debug on/off** Turns on debug filters or not |
@@ -30,6 +31,4 @@ Also be aware the more lose you make your filter the more messages will be filte
 /filter name add Joe         This will add a filter that ignores all lines that start with "Joe"
 /filter name add *Joe        This will add a filter that ignores all lines that have "Joe" anywhere in them
 ```
-
-[Return to Slash Commands](./)
 

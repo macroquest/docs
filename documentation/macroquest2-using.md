@@ -92,7 +92,7 @@ See the [Custom UIs](custom-uis.md) page for further information on what you can
 
 ## HUDs
 
-MacroQuest can enable a custom Heads Up Display to show almost any kind of data on top of your UI. Instructions for configuration as well as further information can be found on the [MQ2HUD](../plugins/core-plugins/mq2hud.md) page.
+MacroQuest can enable a custom Heads Up Display to show almost any kind of data on top of your UI. Instructions for configuration as well as further information can be found on the [MQ2HUD](../plugins/core-plugins/mq2hud/) page.
 
 ## CFG Files
 
@@ -104,7 +104,7 @@ See the [CFG Files](cfg-files.md) section for further information.
 
   Chat window.\*\*
 
-You need to load the [MQ2Map](../plugins/core-plugins/mq2map.md) plugin using the command "/plugin MQ2Map" in-game.
+You need to load the [MQ2Map](../plugins/core-plugins/mq2map/) plugin using the command "/plugin MQ2Map" in-game.
 
 * **When you execute /mapfilter with any options, all layers that were previously visible disappear.**
 

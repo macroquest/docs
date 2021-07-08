@@ -1,4 +1,4 @@
-# Doevents
+# /doevents
 
 ## Syntax
 
@@ -16,7 +16,7 @@ Runs the first event of any type in the queue, flushes all queued events, or run
 /doevents flush                   Clears all events in the queue without running them
 /doevents SpellFizzle             Run SpellFizzle event(s)
 
-/doevents flush SpellFizzle       Clears SpellFizzle events in the queue 
+/doevents flush SpellFizzle       Clears SpellFizzle events in the queue
 ```
 
 ## See Also

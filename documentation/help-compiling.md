@@ -105,11 +105,8 @@ More info: google\(error C3068\) and look at the first link. Two of those things
 If you are compiling using Visual C++ 2005 Express Edition, you may need to disable Exceptions for compiling older versions of MQ2. Here are the instructions:
 
 1. Under the **Solution Explorer** right click **MQ2Main** and select **Properties**.
-
 2. Expand **Configuration Properties** if it isn't already expanded by clicking the **+** sign to the left of it. Then, expand **C/C++** and select **Code Generation**.
-
 3. Last, look at the line on the right side of that window that says **Enable C++ Exceptions** and if it is set to **Yes \(/EHsc\)**, click that dropdown box and select **No**, and then click **OK**.
-
 4. You can now run your compile like normal.
 
 ### error LNK2019: unresolved external symbol

@@ -38,7 +38,7 @@ MQ2ChatWnd stores a configuration file to the root MQ2 folder, _MQ2ChatWnd.ini_.
 [Settings]
 AutoScroll=on
 NoCharSelect=off
-SaveByChar=on 
+SaveByChar=on
 ```
 
 * **AutoScroll**

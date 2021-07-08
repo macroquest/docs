@@ -20,5 +20,5 @@ This is currenly not a supported datatype. This page was added as a visual repre
 * [Pound\_Commands](../../commands/macro-commands/pound-commands/)
 * [Custom\_Events](../../macros/macros/custom-events.md)
 * [Macro\_Reference](../../documentation/macro-reference.md)
-* [Event](../../commands/macro-commands/event.md)
+* [Event](../../commands/macro-commands/pound-commands/event.md)
 

@@ -69,11 +69,11 @@
           </li>
           <li><a href="hotbutton.md">/hotbutton</a>
           </li>
-          <li><a href="hud.md">/hud</a>
+          <li><a href="../../plugins/core-plugins/mq2hud/hud.md">/hud</a>
           </li>
           <li><a href="identify.md">/identify</a>
           </li>
-          <li><a href="../macro-commands/ini.md">/ini</a>
+          <li><a href="ini.md">/ini</a>
           </li>
           <li><a href="../macro-commands/invoke.md">/invoke</a>
           </li>
@@ -195,11 +195,11 @@
           </li>
           <li><a href="../macro-commands/continue.md">/continue</a>
           </li>
-          <li><a href="declare.md">/declare</a>
+          <li><a href="../macro-commands/declare.md">/declare</a>
           </li>
-          <li><a href="delay.md">/delay</a>
+          <li><a href="../macro-commands/delay.md">/delay</a>
           </li>
-          <li><a href="deletevar.md">/deletevar</a>
+          <li><a href="../macro-commands/deletevar.md">/deletevar</a>
           </li>
           <li><a href="../macro-commands/doevents.md">/doevents</a>
           </li>
@@ -223,7 +223,7 @@
           </li>
           <li><a href="../macro-commands/return.md">/return</a>
           </li>
-          <li><a href="seterror.md">/seterror</a>
+          <li><a href="../macro-commands/seterror.md">/seterror</a>
           </li>
           <li><a href="../macro-commands/varcalc.md">/varcalc</a>
           </li>
@@ -250,56 +250,56 @@
   <thead>
     <tr>
       <th style="text-align:left">
-        <p><a href="../../plugins/core-plugins/mq2hud.md">MQ2HUD</a>
+        <p><a href="../../plugins/core-plugins/mq2hud/">MQ2HUD</a>
         </p>
         <ul>
-          <li><a href="hud.md">/hud</a>
+          <li><a href="../../plugins/core-plugins/mq2hud/hud.md">/hud</a>
           </li>
-          <li><a href="defaulthud.md">/defaulthud</a>
+          <li><a href="../../plugins/core-plugins/mq2hud/defaulthud.md">/defaulthud</a>
           </li>
-          <li><a href="loadhud.md">/loadhud</a>
+          <li><a href="../../plugins/core-plugins/mq2hud/loadhud.md">/loadhud</a>
           </li>
-          <li><a href="classhud.md">/classhud</a>
+          <li><a href="../../plugins/core-plugins/mq2hud/classhud.md">/classhud</a>
           </li>
-          <li><a href="zonehud.md">/zonehud</a>
+          <li><a href="../../plugins/core-plugins/mq2hud/zonehud.md">/zonehud</a>
           </li>
         </ul>
       </th>
       <th style="text-align:left">
-        <p><a href="../../plugins/discontinued-unsupported/mq2irc.md">MQ2IRC</a>
+        <p><a href="../../plugins/discontinued-unsupported/mq2irc/">MQ2IRC</a>
         </p>
         <ul>
-          <li><a href="i.md">/i</a>
+          <li><a href="../../plugins/discontinued-unsupported/mq2irc/commands/i.md">/i</a>
           </li>
-          <li><a href="iconnect.md">/iconnect</a>
+          <li><a href="../../plugins/discontinued-unsupported/mq2irc/commands/iconnect.md">/iconnect</a>
           </li>
-          <li><a href="istatus.md">/istatus</a>
+          <li><a href="../../plugins/discontinued-unsupported/mq2irc/commands/istatus.md">/istatus</a>
           </li>
         </ul>
       </th>
       <th style="text-align:left">
-        <p><a href="../../plugins/core-plugins/mq2itemdisplay.md">MQ2ItemDisplay</a>
+        <p><a href="../../plugins/core-plugins/mq2itemdisplay/">MQ2ItemDisplay</a>
         </p>
         <ul>
-          <li><a href="inote.md">/inote</a>
+          <li><a href="../../plugins/core-plugins/mq2itemdisplay/inote.md">/inote</a>
           </li>
         </ul>
       </th>
       <th style="text-align:left">
-        <p><a href="../../plugins/core-plugins/mq2map.md">MQ2Map</a>
+        <p><a href="../../plugins/core-plugins/mq2map/">MQ2Map</a>
         </p>
         <ul>
-          <li><a href="highlight.md">/highlight</a>
+          <li><a href="../../plugins/core-plugins/mq2map/highlight.md">/highlight</a>
           </li>
-          <li><a href="mapclick.md">/mapclick</a>
+          <li><a href="../../plugins/core-plugins/mq2map/mapclick.md">/mapclick</a>
           </li>
-          <li><a href="mapfilter.md">/mapfilter</a>
+          <li><a href="../../plugins/core-plugins/mq2map/mapfilter.md">/mapfilter</a>
           </li>
-          <li><a href="maphide.md">/maphide</a>
+          <li><a href="../../plugins/core-plugins/mq2map/maphide.md">/maphide</a>
           </li>
-          <li><a href="mapnames.md">/mapnames</a>
+          <li><a href="../../plugins/core-plugins/mq2map/mapnames.md">/mapnames</a>
           </li>
-          <li><a href="mapshow.md">/mapshow</a>
+          <li><a href="../../plugins/core-plugins/mq2map/mapshow.md">/mapshow</a>
           </li>
         </ul>
       </th>

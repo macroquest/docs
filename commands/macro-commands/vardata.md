@@ -1,4 +1,4 @@
-# Vardata
+# /vardata
 
 ## Syntax
 
@@ -35,6 +35,4 @@ Sets a variable directly to the end result of a MQ2Data string.
 * [MQ2Data](../../documentation/mq2data.md)
 * [/varset](varset.md)
 * [/varcalc](varcalc.md)
-
-[Return to Slash Commands](../slash-commands/)
 

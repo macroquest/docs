@@ -6,9 +6,7 @@
 `/declare itemqty int local`  
 `/declare itemprice int local`  
 `/declare result int local`  
-`````  /if \(!${Window\[BarterMerchantWnd\].Open}\) {``` :RightClickBuyer``  
-`/click right target`  
-`/delay 10s ${Window[BarterMerchantWnd].Open}`  
+````` /if \(!${Window\[BarterMerchantWnd\].Open}\) {``` :RightClickBuyer````` /click right target```/delay 10s ${Window[BarterMerchantWnd].Open}``  
 `/if (!${Window[BarterMerchantWnd].Open}) {`  
 `/echo You need to move closer to your target`  
 `/delay 1s`  

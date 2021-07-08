@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/mqcopylayout  \| opt:** **\(not specifying a res, will default to "Windowed"\)\|** **nohot** **\|** **noload** **\|** **nosoc** **\|** **none \]**
+**/mqcopylayout \| opt:** **\(not specifying a res, will default to "Windowed"\)\|** **nohot** **\|** **noload** **\|** **nosoc** **\|** **none \]**
 
 ## Description
 

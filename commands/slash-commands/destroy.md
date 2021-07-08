@@ -1,4 +1,4 @@
-# Destroy
+# /destroy
 
 ## Syntax
 
@@ -13,6 +13,4 @@ Destroys whatever you have on your cursor with no confirmation, **even if you ha
 ```text
 /if ( ${Cursor.Name.Find[rusty]} ) /destroy
 ```
-
-[Return to Slash Commands](./)
 

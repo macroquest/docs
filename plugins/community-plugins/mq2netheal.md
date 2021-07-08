@@ -28,7 +28,7 @@ Receive status updates from other MQ2NetHeal-enabled clients connected to the sa
 
 Broadcast status updates to the EQBCS server.
 
-* _\*/netheal \[_ hot_\|_da\*&lt;/span&gt; \] \[
+* _\*/netheal \[_ hot\_\|\_da\*&lt;/span&gt; \] \[
 
   Time \] \[ List \]\*\*
 

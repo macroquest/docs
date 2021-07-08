@@ -1,4 +1,4 @@
-# Goto
+# /goto
 
 ## Syntax
 

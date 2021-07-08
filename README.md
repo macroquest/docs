@@ -1,12 +1,16 @@
 # Introduction
 
-Welcome to the MacroQuest2 Wiki.
+Welcome to the MacroQuest Documentation.
 
-The aim of this Wiki is to be the ultimate reference and troubleshooting source for MQ2, but we need your help to do it.
+{% hint style="warning" %}
+This documentation is a work in progress and may contain inaccuracies or errors.
+{% endhint %}
 
-## MacroQuest2
+{% hint style="info" %}
+This documentation is for MacroQuest a.k.a. MQnext. For the legacy MacroQuest2 Wiki go [here](https://macroquest2.com/wiki/index.php).
+{% endhint %}
 
-See the [Existing HTML manual](https://macroquest2.com/includes/wassup/manual.php), maintained by Wassup, or join us in [IRC](documentation/macroquest2-irc.md)
+## MacroQuest
 
 * [Intro](documentation/macroquest2-intro.md)
 * [Compiling MQ2](documentation/macroquest2-compiling.md)

@@ -1,8 +1,8 @@
-# Captioncolor
+# /captioncolor
 
 ## Syntax
 
-_'/captioncolor \[list \|_name'' \[off \| on \| \# \# \#\]\]
+**/captioncolor \[list \|"name'' \[off \| on \| \# \# \#\]\]**
 
 ## Description
 

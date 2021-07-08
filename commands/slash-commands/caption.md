@@ -1,4 +1,4 @@
-# Caption
+# /caption
 
 ## Syntax
 
@@ -54,6 +54,4 @@ Player1=${If[${NamingSpawn.Trader},Trader,]}${If[${NamingSpawn.Invis},(${NamingS
 
 * [NamingSpawn](../../documentation/namingspawn.md)
 * [MacroQuest.ini](../../documentation/macroquest.ini.md)
-
-[Return to Slash Commands](./)
 

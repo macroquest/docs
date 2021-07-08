@@ -32,7 +32,7 @@ Once you've clicked OK, the folder will populate with everything on SVN. Any tim
 To use ModBot
 
 1. Extract and place all included files from zip \(all .mac and .inc files\) into your MQ2 macro directory.
-2. From inside EQ, type /macro modbot  \(e.g. /macro modbot OR /macro modbot raidmode\).
+2. From inside EQ, type /macro modbot \(e.g. /macro modbot OR /macro modbot raidmode\).
 
    This will build, if it doesn't exist, your MB\_.ini file. Optional entries will make a
 
@@ -74,8 +74,8 @@ For examples of complete class ModBot INI files, please go to the [example INI p
 
 `(text) - These are "comments" and should be removed when saving the respective file`  
 `Example 1 - Send=1 (If set to 1 it will send netbots information over the network) This text:`  
-```*``\(If`````set``` `to` `1` `it` `will` `send` `netbots` `information` `over` `the` ```network)``\*`should NOT appear in the INI file`  
-````` \[text\] - This is to show different options or series of options``` Example 1 - /bc cast[, %t, grp,, etc]``
+``````*``\(If`````set`````` `to` `1` `it` `will` `send` `netbots` `information` `over` `the` ``````network)``\*`should NOT appear in the INI file`    
+````` \[text\] - This is to show different options or series of options`````` Example 1 - /bc cast\[, %t, grp,, etc\]\`\`
 
 ## Plugin Requirements & Examples
 
@@ -326,18 +326,18 @@ ABSpellAliasX=iksar
 ABTarTypeX=self
 
 * **attack** \(Sets DoMelee TRUE and forces bot to attack the TankName's target\)
-* **attack**    \(Sets DoMelee TRUE and forces bot to attack the target\)  
+* **attack** \(Sets DoMelee TRUE and forces bot to attack the target\)
 
-  \* Note: OffTank must be TRUE to use this option \(I may remove this requirement though TBD\)  
+  \* Note: OffTank must be TRUE to use this option \(I may remove this requirement though TBD\)
 
-  \* Example 1 - /bc attack badguy  
+  \* Example 1 - /bc attack badguy
 
   \* Example 2 = /bc attack badguy 100 20
 
 * **buffup** \(This will set DoBuffs & DoEvents TRUE & DoHeals FALSE\)
 * **campout** \(Performs a /camp desktop and ends the macro\)
 * **cast  &lt;on/off&gt;** \(This will disable or enable the spell associated with this alias\)
-* **cast  \[&lt;spawnname/id&gt; \&lt;%t&gt; \]  \[&lt;spawnname/id&gt; \&lt;%t&gt; \] \(infinte\)**
+* **cast \[&lt;spawnname/id&gt; \&lt;%t&gt; \] \[&lt;spawnname/id&gt; \&lt;%t&gt; \] \(infinte\)**
   * If the spell is detrimental, CAST targets the requester's target.
   * If the spell is beneficial, it targets the sender or, if _grp_ is present, it casts buff on group members.
   * If _%t_ is present, it targets the requester's target.
@@ -354,7 +354,7 @@ ABTarTypeX=self
 
   Currently once set to on or true, it will NOT turn off and you MUST restart the macro to "quit" this mode. It will
 
-  cast any spell alias on the requesting target. The requester must be a "master". Example: _/t  buffhp_
+  cast any spell alias on the requesting target. The requester must be a "master". Example: _/t buffhp_
 
 * **dobuffs** \[on, true, off, false, \]
 * **docombines** \(Toggle that turns docombines on/off \(default off\). Docombines will check for an open tradeskill
@@ -410,7 +410,7 @@ ABTarTypeX=self
 
   non-netbots toons. Useful for tells in background sessions\)
 
-* **exclude \** \(Adds  to alert list, to save list you must use the "save" option, otherwise
+* **exclude \** \(Adds to alert list, to save list you must use the "save" option, otherwise
 
   it will not be written to the INI file\)
 
@@ -441,9 +441,9 @@ ABTarTypeX=self
     * ''/bcaa //mb exclude a small bat
   * See the _Include_ command \(found below\) to temporarily remove a mob from the alert list
 
-* **follow**  \(Follows the sender or \)
+* **follow** \(Follows the sender or \)
 * **follow close** \(Follows the sender within 3 steps, very close\)
-* **give**     \(Calls the sub GiveCheck to hand an item to a toon or NPC.\)
+* **give** \(Calls the sub GiveCheck to hand an item to a toon or NPC.\)
   * ItemCount is optional and will default to 1.
   * The give command can be used in conjunction with categories that have been defined in the loot.ini. For
 
@@ -469,11 +469,11 @@ ABTarTypeX=self
 
   macro\)
 
-* **mbwayplay**  \(Used to playback previously recorded paths / waypoints, through zones, doors, chaining
+* **mbwayplay** \(Used to playback previously recorded paths / waypoints, through zones, doors, chaining
 
   paths, etc.\)
 
-* **mbwayrec**  \(Used to record a path / waypoint.\)
+* **mbwayrec** \(Used to record a path / waypoint.\)
   * Once started, ducking for each location will add a waypoint to the path.
   * Sitting stops path recording and returns to modbot functions.
   * To add doors, chains, pull locations, etc. you'll need to edit the MBWayPlay.INI file
@@ -481,19 +481,19 @@ ABTarTypeX=self
 
     [**here**](https://macroquest2.com/wiki/index.php/Related_Include_Files#ModMove) in the wiki.
 * **offtank &lt;on/off&gt;** \(Toggles offtanking for dealing with adds.\)
-* **script**  \(This will allow you to run custom commands while the macro is running, or
+* **script** \(This will allow you to run custom commands while the macro is running, or
 
   combine series of commands, see script examples in manual / rev notes\)
 
-* **sell**  \(You must be within range of a merchant in order to function, it will sell loot marked as
+* **sell** \(You must be within range of a merchant in order to function, it will sell loot marked as
 
   "=SELL" in the loot.ini file\)
 
-* **sell**  \(With NPC targeted will attempt to sell all items marked "sell" in your lootIni file to
+* **sell** \(With NPC targeted will attempt to sell all items marked "sell" in your lootIni file to
 
   target. Otherwise optional target name can be supplied.\)
 
-* **setinivar**  \(This will find and change any setting in your .ini\)
+* **setinivar** \(This will find and change any setting in your .ini\)
   * Note that this command will have trouble with script settings if you have more than one \(it will set the first
 
     C1= or whatever that it comes to.
@@ -530,12 +530,12 @@ _\(restart macro - had 0 count before\)_
 
 /mb setinivar ADSpellAlias\[1\] snare
 
-* **sing**  \(Will sing this song and add the respective gem number to the Twist.List, it attempts to use
+* **sing** \(Will sing this song and add the respective gem number to the Twist.List, it attempts to use
 
   detrimental as the qualifier to add it to combat songs, or rest songs\)
 
 * **stop** \(Will stop following and/or stop in place\)
-* **sung**  \(Will remove this song from the respective Twist.List, it attempts to use detrimental as the
+* **sung** \(Will remove this song from the respective Twist.List, it attempts to use detrimental as the
 
   qualifier to remove it from combat songs, or rest songs\)
 
@@ -580,16 +580,16 @@ _\(restart macro - had 0 count before\)_
 
 ### PreFace Notes
 
-* Spell Alias's must be unique across all alias's  
+* Spell Alias's must be unique across all alias's
 
   Obsolete? 06272011 -Changed - ?
 
 `"cast" command usage now allows for multiple aliases. If you have several spells with the same alias, using /bc castwill now cast all spells marked.`  
 `Example, for shaman you can have Fo7, Talisman of Boar, Talisman of Wrulan, Talisman of Tribunal, ect.. all marked with "fullgroup". "/mb cast fullgroup" will`  
 `cast each spell in the order they are found in the .ini file.`  
-````` Buffing -```Group buffs can now be seperated to different classes, and will allow keeping the spell on netbots members in seperate groups from the caster with the inclusion of keyword``  
-`"raid". Example -`  
-````` Code:```ABGem2=8``  
+````` Buffing -```Group buffs can now be seperated to different classes, and will allow keeping the spell on netbots members in seperate groups from the caster with the inclusion of keyword````` "raid". Example -\`
+
+```text
 `ABSpell2=Focus of the Seventh`  
 `ABSpellFoci2=`  
 `ABDurMod2=50`  
@@ -602,26 +602,26 @@ _\(restart macro - had 0 count before\)_
 `ABSpellIcon2=`  
 `ABPreCondition2=TRUE`  
 ````` Note from the above example that clr is not included in the TarType.. My clerics have the spell blocked. Attempting to cast on them will cause a chain loop of ```casting until the cleric gets self buff on that doesn't "stack" with focus. - so watch spell stacking and make sure to set your toons accordingly.``  
-````` Old format of "self" will also work with no change if you don't want to buff other groups with the spell.`````   
+````` Old format of "self" will also work with no change if you don't want to buff other groups with the spell.
+```
+
 `Commands -`  
 `Tell commands will now check buff aliases, and don't need "cast" to ask for buffs.. "/tellfullgroup" from a non-master toon will make the shaman cast`  
 `every spell with that alias on the sender of the tell. Masters still require use of "cast". - This does allow guildies or whoever else knows your aliases to get`  
 `buffs easily.`  
 `/say is not affected and is still not enabled for modbot.`  
-````` Added "docommand" -```Master toons that aren't in netbots can now directly command toons. "/telldocommand /sit" will make the receiving toon sit, or execute any command after``  
-`the "docommand" keyword. - Word of caution - You can cause macro errors with this if you aren't careful. The command sent is executed directly with /docommand in the macro.`  
-`A tell received of "/telldocommand /sit" will locally execute "/docommand /sit" Watch extra characters and or brackets.. - Because of the nature of this one,`  
+````` Added "docommand" -```Master toons that aren't in netbots can now directly command toons. "/telldocommand /sit" will make the receiving toon sit, or execute any command after````` the "docommand" keyword. - Word of caution - You can cause macro errors with this if you aren't careful. The command sent is executed directly with /docommand in the macro.```A tell received of "/telldocommand /sit" will locally execute "/docommand /sit" Watch extra characters and or brackets.. - Because of the nature of this one,``  
 `the commanding toon MUST be listed in MasterList.`
 
 * You should be familiar or at least capable of making MQ2Bandolier sets as they are used by MQ2Cast for "foci"
 
-  items  
+  items
 
 * Please treat the Buff, Debuff, Event, Heal INI sections as a first in first out \(FIFO\). Highest priority to lowest
 
   priority, you don't want mez or slow as ADSpell12 but as ADSpell1. You don't want AHHeal1 as Complete Heal, you want
 
-  AHHeal1 to be DA/DB \(those are examples, use common sense\)  
+  AHHeal1 to be DA/DB \(those are examples, use common sense\)
 
 * If you want to add some visual zip to your announcements \(things are easy to miss in /bc..\), you can use color
 
@@ -786,7 +786,7 @@ So if you want a 25% extension on the timer, set durmod to 25 to make ${Spell\[X
   without quotes\)\)
 
   * Can also use for charming:
-    * \[charm  \&lt;NPC type 0=any 1=undead,vampyre 2=animal 3=summoned 4=\(specify name
+    * \[charm \&lt;NPC type 0=any 1=undead,vampyre 2=animal 3=summoned 4=\(specify name
 
       type\)&gt; \]
 
@@ -847,14 +847,14 @@ For group heal spells, you must set the AHTarCnt to something greater than 1 in 
 `AHHealOOBC`  
 `Thinking of an english name for that setting, all that comes up is "Heal Outside Of BC".`  
 `So, in other words, if the setting is FALSE, it won't heal anyone that's not on YOUR EQBC server with the netbots plugin set up correctly, even if they're in your group.`  
-````` That is why I recommend you connect all toons and run modbot on all of them at least once, even if you don't plan to run it as a regular thing for the other toons.. It assures the plugins are set correctly.`````   
+`That is why I recommend you connect all toons and run modbot on all of them at least once, even if you don't plan to run it as a regular thing for the other toons.. It assures the plugins are set correctly.`  
 `If AHHealOOBC=TRUE, then modbot will heal group members and pets even if there's no netbots connection.`  
-````` Out of group healing can only be done by the macro if there's a netbots connection, or if the other toon is a master and uses the cast command via /tell.`````   
+`Out of group healing can only be done by the macro if there's a netbots connection, or if the other toon is a master and uses the cast command via /tell.`  
 `I do recommend AHHealOOBC=TRUE setting, but I still left the default FALSE so people could check their connections before setting TRUE.`
 
 * **AHHealMode=\#\|\#\|\#**
   * 0 or 1 \(off or on\)\|Heal \#\|Timer
-  * This will keep the toon in the heal loop after casting \ to check for additional heals for the duration
+  * This will keep the toon in the heal loop after casting  to check for additional heals for the duration
 
     of .
 * **AHInterruptLevel=\#**
@@ -1047,7 +1047,7 @@ For group heal spells, you must set the AHTarCnt to something greater than 1 in 
 
     as the immune target's ID. An example where this would be useful is for chanter mez:
 
-    * _/bc {TankName} //multiline ; /varset ACMATarget {Param1};/target id {Param1}_ will make your 
+    * _/bc {TankName} //multiline ; /varset ACMATarget {Param1};/target id {Param1}_ will make your
 
       toon target the immune mob even if he was on another mob at the time.
 * **ADUseHoTT\[x\]=\#**
@@ -1556,7 +1556,7 @@ It defaults to the ./macros folder, but the line can be changed to any path.
 
   it gets deleted.
 
-* **IniLocation** Path to your MB\_.ini files. Must end in / or \ if changed from default.
+* **IniLocation** Path to your MB\_.ini files. Must end in / or  if changed from default.
 * **LootIni** \[Loot.ini\] This setting can be used to change the location of your Loot.ini file as well as the name.
 * **MBWayPntLocation** \[MBWayPnt.ini\] This setting can be used to change the location of your MBWayPnt.ini file as
 
@@ -1794,10 +1794,9 @@ Example of using PetCast for a cleric hammer, to be called from a ACBefore comma
 Example of a CH script to be run from a non cleric .ini \(warrior\)
 
 `I figure I might as well be posting some of the script versions of other macros that I've been seeing around, but written my own thing so I could just keep modbot running.`  
-````` Modbot script version of CH chain that seems to work, though might have problems I haven't noticed.... I use this with a hotkey from my tank - ```"/mb script chain 50" (yes it's in MB_tank.ini - NOT the cleric.ini.. ) It finds all clerics in netbots, then runs through the list telling each``  
-`to cast CH after the delay you specify. This script does require the clerics to all be running modbot with an alias of CH for complete heal spell,`  
-`and connection to the same EQBCS server.`  
-````` Code:```[Script-chain]``  
+````` Modbot script version of CH chain that seems to work, though might have problems I haven't noticed.... I use this with a hotkey from my tank -```"/mb script chain 50" \(yes it's in MB\_tank.ini - NOT the cleric.ini.. \) It finds all clerics in netbots, then runs through the list telling each````` to cast CH after the delay you specify. This script does require the clerics to all be running modbot with an alias of CH for complete heal spell,```and connection to the same EQBCS server.``
+
+```text
 `Commands=13`  
 `C1=/multiline ; /declare clrlist string local;/declare x int local 1;/declare StopLoop bool local FALSE`  
 `C2=/if ({Spawn[{NetBots.Client.Arg[{x}]}].Class.ShortName.Equal[clr]}) /varset clrlist {clrlist} {NetBots.Client.Arg[{x}]}`  
@@ -1877,15 +1876,16 @@ Please note- when you are posting on the forum for help \(after reading this wik
 `Page8Button7Line1=/bcaa //mb exclude ${Target.CleanName}`  
 `Page8Button7Line2=/pause 5`  
 `Page8Button7Line3=/bcaa //mb exclude save`  
-`````  `````   
+`````
+```
+
 `I normally just keep my keys on page 10 and click from there, but as you can see there's include and exclude keys on pg 8 and another on pg2 I use for setting items to`  
 `"sell" in my loot.ini file.`  
 `The /bcaa stuff might not work for some depending on plugin versions, so that cn be replaced with a /bca and /mb on a second line. I find it very handy to have some keys I can`  
 `press quickly, and always either pause all my toons or exclude npcs before I go into areas that I don't want something attacked.`
 
 `Having trouble with your background session toons not moving properly? You might try this:`  
-````` WinEQ=on```to the [Defaults] section of your mq2moveutils.ini.``  
-`TrueHeading=off might help also in the same section, though I'm not sure if that's needed.`
+````` WinEQ=on```to the \[Defaults\] section of your mq2moveutils.ini.````` TrueHeading=off might help also in the same section, though I'm not sure if that's needed.\`
 
 ### Do your toons wander where they are not supposed to?
 

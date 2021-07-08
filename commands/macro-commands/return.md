@@ -1,4 +1,4 @@
-# Return
+# /return
 
 ## Syntax
 

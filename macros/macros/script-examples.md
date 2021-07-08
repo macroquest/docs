@@ -201,7 +201,7 @@ Before using this, you need to make room so make sure you have only 7 bags and o
 `C3=/if ({PKPetName.Length}<4 && {Me.Pet.ID}) /varset PKPetName {Me.Pet.CleanName}`  
 `C4=/if ({PKPetName.Length}<4) /return`  
 `C5=/varset Timer 10m`  
-`C6=/multiline ; /autoinventory;/call CastCall {Me.CleanName}`_```cast`` ``petwep```_````` C7=/multiline ; /delay 5s;/autoinventory ```C8=/call GiveCheck {PKPetName}``_```Summoned:`` ``Tonfa`` ``of`` ``the`` ``North`` ``Wind|Summoned:`` ``Blazing`` ``Brand```_````` C9=/varset ABTarCnt\[10\] 0 \`
+`C6=/multiline ; /autoinventory;/call CastCall {Me.CleanName}`_```cast`` ``petwep```_````C7=/multiline ; /delay 5s;/autoinventory ```C8=/call GiveCheck {PKPetName}``_```Summoned:`` ``Tonfa`` ``of`` ``the`` ``North`` ``Wind|Summoned:`` ``Blazing`` ``Brand```_```` C9=/varset ABTarCnt\[10\] 0 \`
 
 * Modify C8 to chose the wep you like for pet.
 * C9 will make the script stop redoing it again and again, so if your pet dies, simply re-start the macro or make a
@@ -404,7 +404,7 @@ Also, I can confirm that the theoretical part about it giving the petkit to any 
 
 ### Buying Items
 
-A "buy" procedure was recently added to Modbot.inc. The syntax is: _Buy_   
+A "buy" procedure was recently added to Modbot.inc. The syntax is: _Buy_
 
 `[Script-BuyStuff]`  
 `Commands=1`  

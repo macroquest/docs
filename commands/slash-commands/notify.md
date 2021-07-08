@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/notify** _**windowname**_ ****_**0**_**\|**_**controlname**_ **\[** _**notification**_ **\[**_**data**_**\] \]**
+**/notify** _**windowname**_ **\*\*\_**0**\_**\|**\_**controlname**\_** \[ **\_**notification**\_** \[**\_**data**\_**\] \]\*\*
 
 ## Description
 

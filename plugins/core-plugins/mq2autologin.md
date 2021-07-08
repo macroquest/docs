@@ -3,7 +3,7 @@
 ## Credits
 
 `Created by ieatacid, incorporated into MQ2Core by EQMule`  
-[`http://www.macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427`](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427) ``
+[`http://www.macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427`](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427) \`\`
 
 ## Description
 
@@ -85,7 +85,7 @@ Alternatively, you can use station names rather than sessions \(handy if you use
 
 ## In Game Commands
 
-`/switchserver` 
+`/switchserver`
 
 when issued in game, logs you out and logs you back in on whatever server and character specified:
 
@@ -115,8 +115,7 @@ MQ2AutoLogin has 2 types of sections
 **`InstantCamp=1/0`**  
 `Defaults to 0 (off) if it's not in your ini file. If enabled, this uses instant-camp to camp you out rather than the 30 second countdown.`
 
-**`UseStationNamesInsteadOfSessions=1/0`**````` Defaults to 0 \(off\).```0 = Off, it will login the session#``  
-`1 = On, this uses account information based on the specified station name in brackets, which works well if you're using ISBoxer or WinEQ2 profiles.`
+**`UseStationNamesInsteadOfSessions=1/0`**````` Defaults to 0 \(off\).```0 = Off, it will login the session\#````` 1 = On, this uses account information based on the specified station name in brackets, which works well if you're using ISBoxer or WinEQ2 profiles.\`
 
 **Section = either \[Session\#\] or \[LoginName\]**
 
@@ -166,7 +165,7 @@ Each character can be marked for loading by simply right clicking the character 
 
 You just left click on a character name and if it is check marked, it will load and the name will be changed to
 
- \(Loaded\)
+\(Loaded\)
 
 `Unloading individual accounts:`
 
@@ -174,7 +173,7 @@ If a char is loaded and has the text \(Loaded\) behind it you just left click it
 
 `Batch Files and hotkeys:`
 
-If you currently use batch files or hotkeys or whatever, those should still be usable if you don't want to click the menu. Example: \(this example assumes you HAVE profiles created with "Create New..." in mq2autologin.ini\) Batch file can launch your accounts by sending the server\_charname to the eqgame client like this: \ patchme /login:drinal\_eqmule And that's really all there is to it... You would of course change the server and Charname to your server and your char \(drinal and eqmule\)
+If you currently use batch files or hotkeys or whatever, those should still be usable if you don't want to click the menu. Example: \(this example assumes you HAVE profiles created with "Create New..." in mq2autologin.ini\) Batch file can launch your accounts by sending the server\_charname to the eqgame client like this:  patchme /login:drinal\_eqmule And that's really all there is to it... You would of course change the server and Charname to your server and your char \(drinal and eqmule\)
 
 `Encryption:`
 

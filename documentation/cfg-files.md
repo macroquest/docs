@@ -4,7 +4,7 @@
 
 CFG files are files which contain commands to be run at certain times. The file must contain commands the same as you would use them normally. Each command will be executed in order, however there are NO macro blocks, events, etc, in a CFG file.
 
-CFG files may be present in .\Configs, in .\ \(Release\), or potentially in the EverQuest directory. Note that the _Release_ would be the same as wherever your Macroquest.ini is.
+CFG files may be present in .\Configs, in . \(Release\), or potentially in the EverQuest directory. Note that the _Release_ would be the same as wherever your Macroquest.ini is.
 
 You can manually load a CFG file while in-game using the [/loadcfg](../commands/slash-commands/loadcfg.md) command.
 
@@ -22,7 +22,7 @@ You can manually load a CFG file while in-game using the [/loadcfg](../commands/
 
 ## Examples
 
-* Example use of **zoned.cfg**:  
+* Example use of **zoned.cfg**:
 
   \* You have a macro that wants to summon a mount \(or cast SoW, etc\), but should only attempt this in outdoor zones.
 

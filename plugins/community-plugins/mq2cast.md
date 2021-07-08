@@ -79,7 +79,7 @@ When clicking items you use the same syntax, except the "name" of the spell is t
 The following optional parameters can be added to the /casting line:
 
 -bandolier\|  
-Equip the bandolier with  before casting. Useful for focus effects.
+Equip the bandolier with before casting. Useful for focus effects.
 
 -invis  
 With this parameter, it will not cast if you are invisible.
@@ -164,31 +164,31 @@ _**Spell Set Delete**_ - This will delete a spell set from the ini file.
 
 ## Top Level Objects \(MQ2Data\)
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast}**
 
   _Same as ${Cast.Active} \(see below\)._
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Active}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Active}**
 
   Return TRUE if plugin is loaded and you are in-game.
 
-* [_spell_](../../data-types-and-top-level-objects/data-types/datatype-spell.md) **${Cast.Effect}**  
+* [_spell_](../../data-types-and-top-level-objects/data-types/datatype-spell.md) **${Cast.Effect}**
 
   Returns the name of the spell being casted, or a NULL string if not casting.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready}**
 
   Return TRUE if ready to cast a spell, item or AA.
 
-  * [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready\[M\]}**  
+  * [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready\[M\]}**
 
     Return TRUE if ready to memorize a spell.
 
-  * [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready\[\#\]}**  
+  * [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready\[\#\]}**
 
     Return TRUE if gem \# is ready to cast.
 
-  * [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready\[X\]}**  
+  * [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready\[X\]}**
 
     Return TRUE if spell, item, gem, ID, AA, etc is ready to cast. As spells and items can have the same IDs and
 
@@ -205,7 +205,7 @@ _**Spell Set Delete**_ - This will delete a spell set from the ini file.
 `${Cast.Ready[Death Peace|gem]}`  
 `${Cast.Ready[Death Peace|gem3]}`
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Cast.Result}**  
+* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Cast.Result}**
 
   Returns a string containing the result of the /casting command. It can be one of the following:
 
@@ -233,11 +233,11 @@ _**Spell Set Delete**_ - This will delete a spell set from the ini file.
   * **CAST\_TAKEHOLD**: The spell did not take hold
   * **CAST\_UNKNOWN**: Unknown Spell
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Cast.Return}**  
+* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Cast.Return}**
 
   Returns the result of the casting/memorize/interrupt request.
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Cast.Status}**  
+* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Cast.Status}**
 
   Returns a string containing all the pending events. This string often contains multiple events \(eg. when /casting
 
@@ -253,15 +253,15 @@ _**Spell Set Delete**_ - This will delete a spell set from the ini file.
   * **T**: targeting
   * **C**: spell casting in progress
 
-* [_spell_](../../data-types-and-top-level-objects/data-types/datatype-spell.md) **${Cast.Stored}**  
+* [_spell_](../../data-types-and-top-level-objects/data-types/datatype-spell.md) **${Cast.Stored}**
 
   Returns the last spell that was cast, or NULL if no spell has been cast.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Taken}**  
+* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Taken}**
 
   Return TRUE if last spell cast didn't take hold on target.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Cast.Timing}**  
+* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Cast.Timing}**
 
   Returns the estimated number of miliseconds remaining until the spell finished casting.
 
@@ -289,7 +289,7 @@ _Set Number of seconds left on spell before recasting Default:20_
 
 ### Top Level Objects \(MQ2Data\)
 
-* **${SpellTimer\[SpawnID,Caster,Spell Name\]}**  
+* **${SpellTimer\[SpawnID,Caster,Spell Name\]}**
 
   [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) Returns time \(in seconds\) left on "Spell Name" by "Caster" on "SpawnID".
 
@@ -326,11 +326,11 @@ An example of what the Timer Window looks like is \(NOTE: Links removed as they 
 
 The Timer Window shows the following information:
 
-* **Time Left**  
+* **Time Left**
 
   The amount of time left on the spell, in HH:MM:SS format. Eg. 00:15:32.
 
-* **Tags**  
+* **Tags**
 
   Some information on the target.
 
@@ -343,21 +343,21 @@ The Timer Window shows the following information:
   * **RA**: This target is the Raid Assist.
   * **R1-3**: This target is raid marked 1-3.
 
-* **Spell Name**  
+* **Spell Name**
 
   The name of the spell.
 
-* **Spawn Name**  
+* **Spawn Name**
 
   The unique name of the spawn.
 
 The buttons/comboboxes at the bottom of the window do the following:
 
-* **Button**  
+* **Button**
 
   Pauses and unpauses the Timer Window.
 
-* **Combobox 1**  
+* **Combobox 1**
 
   Select what you want to do when left-clicking the line in the window:
 
@@ -366,37 +366,37 @@ The buttons/comboboxes at the bottom of the window do the following:
   * Recast spell \(if memmed\)
   * Clear \(removes timer\). _You cannot remove an event._
 
-* **Combobox 2**  
+* **Combobox 2**
 
   Select what you want to do when right-clicking the line. Same choices as above.
 
 The Timer Settings Tab:
 
-* **Target \(Current Target\)**  
+* **Target \(Current Target\)**
 
   Show Target Timers
 
-* **NPC**  
+* **NPC**
 
   Show Npc and Npc Pet Timers
 
-* **PC**  
+* **PC**
 
   Show Pc Timers
 
-* **PET**  
+* **PET**
 
   Show Pc Pet Timers
 
-* **Events \(All Events\)**  
+* **Events \(All Events\)**
 
   Show Events
 
-* **My Spells \(Show Your Spells\)**  
+* **My Spells \(Show Your Spells\)**
 
   Show My Spells
 
-* **Other's Spells \(Show Other Spells\)**  
+* **Other's Spells \(Show Other Spells\)**
 
   Show Other Spells
 

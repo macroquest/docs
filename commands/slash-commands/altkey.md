@@ -1,4 +1,4 @@
-# Altkey
+# /altkey
 
 ## Syntax
 
@@ -16,6 +16,4 @@ Execute _command_ while telling the window manager that the alt key is pressed. 
 
 * [/ctrlkey](ctrlkey.md)
 * [/shiftkey](shiftkey.md)
-
-[Back to Slash Commands](./)
 

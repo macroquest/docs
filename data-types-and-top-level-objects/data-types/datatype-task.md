@@ -139,14 +139,14 @@ This is the type for your current task.
       <td style="text-align:left">Returns number of members in task</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>taskmember</em></a>
+      <td style="text-align:left"><a href="datatype-task.md"><em>taskmember</em></a>
       </td>
       <td style="text-align:left"><b>Member[</b>#<b>]</b>
       </td>
       <td style="text-align:left">Returns specified member in task by index</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>taskmember</em></a>
+      <td style="text-align:left"><a href="datatype-task.md"><em>taskmember</em></a>
       </td>
       <td style="text-align:left"><b>Member[</b>name<b>]</b>
       </td>
@@ -241,5 +241,5 @@ Output: The Hatching a Plan first objective should be completed in Hatchery Wing
 ## See Also
 
 * [TLO:Task](../top-level-objects/tlo-task.md)
-* [DataType:taskmember]()
+* [DataType:taskmember](datatype-task.md)
 

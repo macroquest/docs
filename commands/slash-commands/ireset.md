@@ -1,4 +1,4 @@
-# Ireset
+# /ireset
 
 ## Syntax
 
@@ -11,6 +11,4 @@ Resets the [DisplayItem](../../data-types-and-top-level-objects/top-level-object
 ## See Also
 
 * [TLO:DisplayItem](../../data-types-and-top-level-objects/top-level-objects/tlo-displayitem.md)
-
-[Return to Slash Commands](./)
 

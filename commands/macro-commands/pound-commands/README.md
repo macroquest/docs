@@ -1,4 +1,4 @@
-# Pound Commands
+# Macro Directives
 
 ## Definition
 
@@ -7,12 +7,12 @@ Pound commands are pre-execution commands that are not run during the macro. The
 Click on the list below to see more in-depth descriptions.
 
 * [bind](macro-bind.md)
-* [chat](../chat.md)
-* [define](../define.md)
-* [event](../event.md)
-* [include](../include.md)
+* [chat](chat.md)
+* [define](define.md)
+* [event](event.md)
+* [include](include.md)
 * [turbo](turbo.md)
-* [warning](../warning.md)
+* [warning](warning.md)
 
 ## example
 

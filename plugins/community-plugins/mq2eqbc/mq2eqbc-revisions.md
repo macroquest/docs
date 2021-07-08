@@ -31,13 +31,13 @@ _Update by MacQ_
 
 * I modified the LoadINI\(\) section to first load from the \[Settings\] section of the INI, then it loads from the
 
-  \[SERVER.CHARACTER\] section.  
+  \[SERVER.CHARACTER\] section.
 
   If there is no \[SERVER.CHARACTER\] section or one of the variables is not listed in the \[SERVER.CHARACTER\]
 
   section, then the value of that variable defaults to the \[Settings\] section or the defaults originally hard coded
 
-  in EQBC.  
+  in EQBC.
 
 * With this technique, we have greater flexibility to control variables on either a global or per characters basis.
 
@@ -53,7 +53,7 @@ _Update by three-p-o_
 
 ### Version 11.0218
 
-* Fix for null pointer crash when logging in  
+* Fix for null pointer crash when logging in
 
   \(final pms update\)
 
@@ -65,10 +65,8 @@ _Update by three-p-o_
 
 * Item links now function in the custom window \(thanks dkaa, ieatacid\)
 * Added a new option 'echoall' - /bccmd set echoall on
-
-  - This will echo outgoing '/bca' commands back to you in this format:  \(to all\) message or command here
-
-  - This defaults to off.
+  * This will echo outgoing '/bca' commands back to you in this format: \(to all\) message or command here
+  * This defaults to off.
 
 ### Version 9.0822
 
@@ -220,111 +218,102 @@ Irrelevant
 
 ### Version 1.3.p6 - 20090120
 
-* - Added '/bcclear' based off the '/mqclear' command
-* - Anything typed in the bc window that starts with a forward slash will now be processed as
-
+* * Added '/bcclear' based off the '/mqclear' command
+* a command instead of only a select few commands working
   a command instead of only a select few commands working
 
 ### Version 1.3.p5 - 20081219
 
-* - Added toggleguildwatch, togglegroupwatch, and togglefswatch as
-
+* additions to the toggletellwatch idea
   additions to the toggletellwatch idea
 
 ### Version 1.3.i4 - 20081215
 
-* - Added support for EQBC Interface by ieatacid
+* * Added support for EQBC Interface by ieatacid
 
 ### Version 1.3.p3 - 20081214
 
-* - Fix for vc6 by dkaa
+* * Fix for vc6 by dkaa
 
 ### Version 1.3.p2 - 20081208
 
-* - '/bcfont' and '/bcmin' are now useable in the UI window &gt;\&lt;
+* * '/bcfont' and '/bcmin' are now useable in the UI window &gt;\&lt;
 
 ### Version 1.3.p1 - 20081207
 
-* - Ripped MQ2ChatWnd code to allow for '/bcfont' & '/bcmin' as well as
-
+* more INI file settings relating to the UI window
   more INI file settings relating to the UI window
 
-* - Moved UI data from \[Settings\] to \[Window\] as it is plentiful now
-* - Added SaveByCharacter option to the INI to allow saving char UI data
-
+* * Moved UI data from \[Settings\] to \[Window\] as it is plentiful now
+* to be optional, always using \[Window\] options instead
   to be optional, always using \[Window\] options instead
 
-* - Added '/bccmd togglesavebychar' to allow toggle this setting.
-* - Change UseMyTitle to 1 if you wish to use a custom window title instead of server IP
+* * Added '/bccmd togglesavebychar' to allow toggle this setting.
+* * Change UseMyTitle to 1 if you wish to use a custom window title instead of server IP
 
   You need to create "WindowTitle=Custom Title" in \[Window\] and/or \[CharName\] to use it
 
   You do not need to put the title in quotes, and fearless might flame you if you admit to doing it
 
-* - Updated UI window to support '/bca', '/bcaa', and '/bct' command input
+* * Updated UI window to support '/bca', '/bcaa', and '/bct' command input
 
 ### Version 1.2.p7 - 20081026
 
-* - Added Fades, Alpha, and FadeToAlpha to Window INI Settings
-* - /bcaa will now perform the command even if togglecontrol is disabled
-* - Code cleanup/better handling for toggletellwatch
-* - Added 'togglesilentcmd', which silences the 'CMD: \[command\]' message
-* - Added INI support for silentcmd and tellwatch
+* * Added Fades, Alpha, and FadeToAlpha to Window INI Settings
+* * /bcaa will now perform the command even if togglecontrol is disabled
+* * Code cleanup/better handling for toggletellwatch
+* * Added 'togglesilentcmd', which silences the 'CMD: \[command\]' message
+* * Added INI support for silentcmd and tellwatch
 
 ### Version 1.2.p6 - 20080909
 
-* - Changed toggletellwatch to check against tell color instead of parsing lines
-
+* to prevent banker and trader spam
   to prevent banker and trader spam
 
-* - Fixed indenting. All indenting uses tabs now.
-* - Slightly changed bca and bcaa function names for identification
+* * Fixed indenting. All indenting uses tabs now.
+* * Slightly changed bca and bcaa function names for identification
 
 ### Version 1.2.a5 - 20080805 \(Why did I start playing again release\)
 
-* - Fix for changes to EQUIStructs::\_CSIDLWND structure
+* * Fix for changes to EQUIStructs::\_CSIDLWND structure
 
 ### Version 1.2.p4 - 20070712
 
-* - Added /bccmd toggletellwatch to pass tells received along, credit for string logic to MQ2MasterMind
-* - Updated HandleHelpRequest for /bca, /bcaa, and /bccmd toggletellwatch
+* * Added /bccmd toggletellwatch to pass tells received along, credit for string logic to MQ2MasterMind
+* * Updated HandleHelpRequest for /bca, /bcaa, and /bccmd toggletellwatch
 
 ### Version 1.2.a3 - 20070617 \(I'm still not playing release\)
 
-* - EQBC window will not close when escape key is pressed.
+* * EQBC window will not close when escape key is pressed.
 
 ### Version 1.2.v2 - 20070324
 
-* - Added better connection timeout handling
+* * Added better connection timeout handling
 
 ### Version 1.2.v1 - 20070116
 
-* - Added a hook plugins can implement named OnWriteBC. I wanted to be able to
-
+* block certain messages from appearing, and this was the only way I knew how.
   block certain messages from appearing, and this was the only way I knew how.
 
-* - Added /bcaa to send a message to all including yourself. /bcaa //taskquit
-
+* is an example of where this is useful
   is an example of where this is useful
 
 ### Version 1.1.a1 - 20060728
 
-* - Changed version numbering system. Hopefully Omni will change it back.
-
+* It's up to you to decide if the 'a' is "ascii" or "alpha" :\)
   It's up to you to decide if the 'a' is "ascii" or "alpha" :\)
 
-* - Channel list saved in INI file and restored when you log in.
-* - New command: /bccmd togglelocalecho. When Local Echo is on, commands sent
+* * Channel list saved in INI file and restored when you log in.
+* * New command: /bccmd togglelocalecho. When Local Echo is on, commands sent
 * to a channel you are in will be sent back to you \(as per toomanynames\)
 
 ### Version 1.0.a17 - 20060715
 
-* - Added support for pseudo-channels. A /bct to channel goes to everyone in
-
+* the channel.
   the channel.
 
-* - New command: /bccmd channels channel\_list
-* - Added ability to escape characters \ will be translated to just 
+* * New command: /bccmd channels channel\_list
+* * Added ability to escape characters  will be translated to just 
 
 ### Version 1.0.a16 - 20060701
 
@@ -394,26 +383,26 @@ Irrelevant
 
 ### Version 1.0.o5 - 20050926
 
-* - Handles zoning better.
+* * Handles zoning better.
 
 ### Version 1.0.o4 - 20050926
 
-* - Added commands: togglecompatmode togglereconnect setreconnectsecs stopreconnect
+* * Added commands: togglecompatmode togglereconnect setreconnectsecs stopreconnect
 
 ### Version 1.0.o3 - 20050926
 
-* - Now attempts to close socket when plugin is unloaded.
+* * Now attempts to close socket when plugin is unloaded.
 
 ### Version 1.0.o2 - 20050926
 
-* - Now recognizes when server is shut down.
+* * Now recognizes when server is shut down.
 
 ## EQBCS
 
 ### Version 2.0.0 - 20101218 \(ASCII\)
 
-* - Runs natively as a service in Windows
-* - To install it as a service under Windows, add -c to the command line \(e.g. EQBCS2 -l c:\eqbcs.log -c will
+* * Runs natively as a service in Windows
+* * To install it as a service under Windows, add -c to the command line \(e.g. EQBCS2 -l c:\eqbcs.log -c will
 
   install the Windows service and configure it to log to C:\eqbcs.log\). The service will be installed to point to the
 
@@ -421,11 +410,11 @@ Irrelevant
 
 ### Version 1.2.i2 - 20081215
 
-* - Added support for EQBC Interface by ieatacid
+* * Added support for EQBC Interface by ieatacid
 
 ### Version 1.2.v1 - 20070116 \(vladus2000 addition\)
 
-* - Added a 50 second ping. The client does not need to be changed for this
+* * Added a 50 second ping. The client does not need to be changed for this
 
   as it already accepts a ping message. This should prevent the connection
 
@@ -433,33 +422,30 @@ Irrelevant
 
 ### Version 1.1.a12 - 20060807 \(ASCII's on crack release\)
 
-* - Fixed the local echo check
+* * Fixed the local echo check
 
 ### Version 1.1.a11 - 20060727
 
-* - Changed version numbering system. It's up to you to decide if the 'a' is "ascii" or "alpha" :\)
-* - Channel list saved in INI file and restored when you log in.
-* - New command: /bccmd togglelocalecho. When Local Echo is on, commands sent
-
+* * Changed version numbering system. It's up to you to decide if the 'a' is "ascii" or "alpha" :\)
+* * Channel list saved in INI file and restored when you log in.
+* to a channel you are in will be sent back to you \(as per toomanynames\)
   to a channel you are in will be sent back to you \(as per toomanynames\)
 
 ### Version 1.0.a10 - 20060725
 
-* - Fixed bug that would crash server when any character other than the current
-
+* oldest server connection left a channel.
   oldest server connection left a channel.
 
 ### Version 1.0.a9 - 20060715
 
-* - Added support for pseudo-channels. A /bct to channel goes to everyone in the channel.
-* - New command: /bccmd channels channel\_list
-* - Added ability to escape characters \ will be translated to just 
+* * Added support for pseudo-channels. A /bct to channel goes to everyone in the channel.
+* * New command: /bccmd channels channel\_list
+* * Added ability to escape characters  will be translated to just 
 
 ### Version 1.0.a8 - 20060701
 
-* - Apply patch from Sorcerer for updated Netbots.
-* - Modified definition of two new Netbots functions to use char \* rather than PCHAR in order to allow compilation
-
+* * Apply patch from Sorcerer for updated Netbots.
+* on non-windows.
   on non-windows.
 
 ### Version 1.0.a7 - 20060520
@@ -482,27 +468,26 @@ Irrelevant
 
 ### Version 1.0.o4 - 20051013
 
-* - Fixed unix version not handling unclean disconnects properly.
+* * Fixed unix version not handling unclean disconnects properly.
 
 ### Version 1.0.o3 - 20051005
 
-* - Made more clear where to add login password \(LOGIN\_START\_TOKEN\).
-* - Changed select timeout to non debugging value, doh.
-* - Added support for msgall. \(/bca\)
-* - Added support for mq2netbots.
-* - Added ability for ping support - not used yet, but would give faster notification when someone does dirty drop from server
-
+* * Made more clear where to add login password \(LOGIN\_START\_TOKEN\).
+* * Changed select timeout to non debugging value, doh.
+* * Added support for msgall. \(/bca\)
+* * Added support for mq2netbots.
+* \(ie. crash, plugin unload\)
   \(ie. crash, plugin unload\)
 
-* - More cpu friendly.
+* * More cpu friendly.
 
 ### Version 1.0.o2 - 20050926
 
-* - Made compatible with VC6
+* * Made compatible with VC6
 
 ### Version 1.0.o1 - 20050925
 
-* - Fixed hang on reading when closing. Now uses select to see if data exists
+* * Fixed hang on reading when closing. Now uses select to see if data exists
 
 ## See Also
 

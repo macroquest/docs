@@ -8,7 +8,7 @@ Dok - 08-13-2004 - Original Source
 
 ## Commands
 
-**/fake** 
+**/fake**
 
 :\*_'_
 
@@ -16,7 +16,7 @@ Dok - 08-13-2004 - Original Source
 
 ::\*use \[\[ and \]\] to create links for text between
 
-::\*use \&lt;&gt; before  to link to a different object
+::\*use \&lt;&gt; before to link to a different object
 
 ## Example
 

@@ -1,10 +1,10 @@
-# Break
+# /break
 
 ## Syntax
 
 **/break**
 
-## Description
+## **Description**
 
 End a /for or /while loop immediately.
 

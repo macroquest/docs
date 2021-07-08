@@ -152,7 +152,7 @@ saves to the ini under \[Defaults\] Heading and character-specific section
 
 ...and this would snaproll 20 distance behind the target. The next snaproll you issued would then revert to using 10.0
 
-- Complete list of supported inline additions:
+* Complete list of supported inline additions:
 
 _/stick_ breakontarget breakongate breakonwarp pauseonwarp randomize delaystrafe useback usefleeing strafewalk mindelay
 
@@ -572,7 +572,7 @@ _/stick set allowmove \#_ \(e.g. /stick set allowmove 64.0 \) Saves to the INI a
 
 Ways to use this:
 
-_/stick \_\_\_\_ truehead_ - usable inline with any other parameters _/stick toggle truehead_ - toggle truehead for current command in process _/stick toggle alwaystruehead_ - toggle using it always Saves to INI as TrueHeading under \[Defaults\]. This also saves to the character-specific setting if _savebychar_ is turned on.
+_/stick \_\_\_\_ truehead _- usable inline with any other parameters_ /stick toggle truehead _- toggle truehead for current command in process_ /stick toggle alwaystruehead _- toggle using it always Saves to INI as TrueHeading under \[Defaults\]. This also saves to the character-specific setting if \_savebychar_ is turned on.
 
 * Added an optional strafe delay timer to prevent instant strafing when mobs turn for a short period of time such as
 
@@ -645,8 +645,7 @@ _/moveto toggle breakonaggro_ - this will halt the moveto if you gain aggro \(cr
 
 In the event either of these trigger:
 
-- A new TLO member, ${MoveTo.Broken} will show as true, so that you may see if the event fired. This will not reset to false until the next time you issue a _/moveto_ command. - An output message will display to the chatwnd \(if you do not have _totalsilence_ enabled\)
-
+* A new TLO member, ${MoveTo.Broken} will show as true, so that you may see if the event fired. This will not reset to false until the next time you issue a _/moveto_ command. - An output message will display to the chatwnd \(if you do not have _totalsilence_ enabled\)
 * Fixed a problem with the _/stick pin_ formula on one side of the target not positioning correctly.
 * Camp returns and moveto's now resume after pausing the plugin and unpausing with _/stick pause\|unpause_.
 * Mousepause will no longer spam if the pause flips active with only a makecamp setup and attempting to auto-return.
@@ -731,7 +730,7 @@ In the event either of these trigger:
 
   cases.
 
-* Added New TLO's:  
+* Added New TLO's:
 
 ${MakeCamp.ReturnNoAggro} - bool  
 ${MakeCamp.ReturnNotLooting} - bool  
@@ -915,7 +914,7 @@ This is a bit complex but when configured properly it is amazing. The idea behin
 
     /makecamp set scatdist #.##
 
--   set scatter distance  
+-   set scatter distance
 ```
 
 * Leash length can now be set to &gt;= camp radius, instead of just &gt;
@@ -1823,11 +1822,11 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
   * \[Defaults\] \[Stick\] \[Circle\] \[MoveTo\] \[MakeCamp\] \[StuckLogic\] \[your-char-name\]
 * INI file supports many more features. I suggest you backup your current one and delete it, then log in game and
 
-  /stick save to output a new one.  
+  /stick save to output a new one.
 
-  Then edit in your old values from backup and save the file and then /stick load.  
+  Then edit in your old values from backup and save the file and then /stick load.
 
-  That way you can see all the new features organized correctly.  
+  That way you can see all the new features organized correctly.
 
   Loading all values from \[Defaults\] will no longer work in this version, but some still remain there.
 
@@ -1917,7 +1916,7 @@ too small of number or something along those lines. It is there if you can find 
 
   * _/moveto dist \[\#\]_ - to set distance
   * _/moveto dist \[-dist\]_ - to subtract from currently set distance
-  * You can no longer set stick or moveto distance to a value below 0.  
+  * You can no longer set stick or moveto distance to a value below 0.
 
     Negative numbers halted all movement so any attempt to do so will force the distance value to 1.
 
@@ -1926,7 +1925,7 @@ too small of number or something along those lines. It is there if you can find 
 * Fixed two more crash bugs \(thanks ieatacid\)
 * Added /makecamp player \[name\]
   * Makecamp player works if you supply a valid name of a PC in the zone
-  * uses your current target \(fails if target is not SPAWN\_PLAYER\) if you do not supply the name.  
+  * uses your current target \(fails if target is not SPAWN\_PLAYER\) if you do not supply the name.
 
     This will create a dynamic camp based on the location of this player as they move, using the current 'radius'
 
@@ -1964,7 +1963,7 @@ too small of number or something along those lines. It is there if you can find 
 
 #### Beta - 8.1002 - _complete rewrite_ \(first beta\)
 
-* _Command Syntax_ - Many base commands all can be used from every command  
+* _Command Syntax_ - Many base commands all can be used from every command
 
   i.e. /circle load, /stick load, /makecamp load, /moveto load - all will do the same thing
 
@@ -1979,7 +1978,7 @@ too small of number or something along those lines. It is there if you can find 
 
   /stick
 
-* _Feign Support_ - added feign parameter or \[FeignSupport\] in the INI.  
+* _Feign Support_ - added feign parameter or \[FeignSupport\] in the INI.
 
   When enabled this will not begin your command if you are FD until you manually stand up
 

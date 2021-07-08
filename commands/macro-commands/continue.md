@@ -1,4 +1,4 @@
-# Continue
+# /continue
 
 ## Syntax
 

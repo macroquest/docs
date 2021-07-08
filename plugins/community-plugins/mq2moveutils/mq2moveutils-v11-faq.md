@@ -156,7 +156,7 @@ The three types of heading changes are a question of legitimacy versus efficienc
 
 ### Why do I move backwards often? It looks crazy and unnatural.
 
-Either your _backupdist' is set way too high \(10.0 is reasonable, 50.0 is not\) or you should just disable_useback''
+Either your \_backupdist' is set way too high \(10.0 is reasonable, 50.0 is not\) or you should just disable\_useback''
 
 ### When using loose or true heading, my character orbits around the destination/target rather than arriving smoothly
 

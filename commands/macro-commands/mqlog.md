@@ -1,4 +1,4 @@
-# Mqlog
+# /mqlog
 
 ## Syntax
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-This will log _text_ to a log file in the "\Logs" directory
+This will log _text_ to a log file in the "Logs" directory
 
 **Notes**
 
@@ -18,6 +18,4 @@ This will log _text_ to a log file in the "\Logs" directory
 ```text
 /mqlog The number of combines completed is: ${CombineCount}
 ```
-
-[Return to Slash Commands](../slash-commands/)
 

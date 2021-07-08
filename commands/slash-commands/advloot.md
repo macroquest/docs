@@ -1,4 +1,4 @@
-# Advloot
+# /advloot
 
 ## Syntax
 

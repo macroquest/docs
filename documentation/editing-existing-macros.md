@@ -242,9 +242,7 @@ So now, we have this:
 `the specified number of items on it. Usage:`&lt;/mac wait4rez 0&gt;`where 0`  
 `is the number of items to leave on corpse, 0 loots all items.`  
 `03/30/2005 **|`  
-````` \| -------------- ```| -- Main Sub --``  
-`| --------------`  
-`Sub Main`  
+````` \| --------------```\| -- Main Sub --````` \| --------------```Sub Main``  
 `/declare t int outer 0`  
 `/declare loottotal int outer`  
 `/declare lootslot int outer`  
@@ -323,9 +321,7 @@ Looks good - Now I'll just edit the comments at the top to better reflect what t
 [`http://www.macroquest2.com/wiki/index.php/Editing_Existing_Macros`](https://macroquest2.com/wiki/index.php/Editing_Existing_Macros)
 
 `**|`  
-````` \| -------------- ```| -- Main Sub --``  
-`| --------------`  
-`Sub Main`  
+````` \| --------------```\| -- Main Sub --````` \| --------------```Sub Main``  
 `/declare t int outer 0`  
 `/declare loottotal int outer`  
 `/declare lootslot int outer`  

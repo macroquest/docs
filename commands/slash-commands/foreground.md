@@ -1,4 +1,4 @@
-# Foreground
+# /foreground
 
 ## Syntax
 
@@ -10,10 +10,9 @@ Puts EQ in the foreground
 
 ## Examples
 
-/bct  //foreground
+`/bct //foreground`
 
 ## See Also
 
-* [Slash Commands](./)
 * [TLO:Alert](../../data-types-and-top-level-objects/top-level-objects/tlo-alert.md)
 

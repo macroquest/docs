@@ -110,13 +110,10 @@ All [Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/) 
 `"slower"`  
 `"los"`  
 `"targetable"`  
-`````"range"`` ``MinLevel`` ``MaxLevel```  
-`````"loc"`` ``KnownLocation`` ``xLoc`` ``yLoc`` ``zLoc`````   
-`````"id"`` ``bSpawnID`` ``SpawnID`````   
-`"radius"`  
-`````"body"`` ``BodyType`````   
-`"class"`  
-`"race"`  
+````"range"`` ``MinLevel`` ``MaxLevel``````` "loc"`````KnownLocation``` `xLoc` `yLoc` ``````zLoc`````    
+`````"id"`````` `bSpawnID` ``````SpawnID`````    
+`"radius"`    
+`````"body"`````` ```````BodyType``````````` "class"```"race"``  
 `[[ "light"`  
 `Light, Lights[Light] ]]`  
 `"guild"`  

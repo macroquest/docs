@@ -40,9 +40,8 @@ Paste this code into a file called grease.mac in your \macros directory, usually
 `/delay 1s`  
 `/nomodkey /notify TradeSkillWnd COMBW_ExperimentButton leftmouseup`  
 `/delay 1s`  
-`````  /if \(!${FindItem\[=Water Flask\].InvSlot}\) /goto :Done``` /nomodkey /ctrl /itemnotify ${FindItem[=Water Flask].InvSlot} leftmouseup``  
-`/nomodkey /itemnotify enviro1 leftmouseup`  
-`````  /if \(!${FindItem\[=Block of Clay\].InvSlot}\) /goto :Done``` /nomodkey /ctrl /itemnotify ${FindItem[=Block of Clay].InvSlot} leftmouseup``  
+````/if \(!${FindItem\[=Water Flask\].InvSlot}\) /goto :Done``` /nomodkey /ctrl /itemnotify ${FindItem[=Water Flask].InvSlot} leftmouseup``    
+`/nomodkey /itemnotify enviro1 leftmouseup`````  /if \(!${FindItem\[=Block of Clay\].InvSlot}\) /goto :Done``` /nomodkey /ctrl /itemnotify ${FindItem[=Block of Clay].InvSlot} leftmouseup``  
 `/nomodkey /itemnotify enviro2 leftmouseup`
 
 `/if (!${FindItem[=Small Jar Sketch].InvSlot}) /goto :Done`  
@@ -68,8 +67,7 @@ Paste this code into a file called grease.mac in your \macros directory, usually
 `/if (!${FindItem[=Unfired Small Container].InvSlot}) /goto :Done`  
 `/nomodkey /ctrl /itemnotify ${FindItem[=Unfired Small Container].InvSlot} leftmouseup`  
 `/nomodkey /itemnotify enviro1 leftmouseup`  
-`````  /if \(!${FindItem\[=Quality Firing Sheet\].InvSlot}\) /goto :Done``` /nomodkey /ctrl /itemnotify ${FindItem[=Quality Firing Sheet].InvSlot} leftmouseup``  
-`/nomodkey /itemnotify enviro2 leftmouseup`
+````` /if \(!${FindItem\[=Quality Firing Sheet\].InvSlot}\) /goto :Done``` /nomodkey /ctrl /itemnotify ${FindItem\[=Quality Firing Sheet\].InvSlot} leftmouseup````` /nomodkey /itemnotify enviro2 leftmouseup\`
 
 `/combine enviro`  
 `/delay 15`  
@@ -79,17 +77,14 @@ Paste this code into a file called grease.mac in your \macros directory, usually
 `/delay 1s`
 
 `| Open our new jar and put 2 greases in it`  
-`````  /itemnotify pack8 rightmouseup``` /delay 1s``  
-`````  /if \(!${FindItem\[=Clockwork Grease\].InvSlot}\) /goto :Done``` /nomodkey /ctrl /itemnotify ${FindItem[=Clockwork Grease].InvSlot} leftmouseup``  
+````/itemnotify pack8 rightmouseup``` /delay 1s``````  /if \(!${FindItem\[=Clockwork Grease\].InvSlot}\) /goto :Done``` /nomodkey /ctrl /itemnotify ${FindItem[=Clockwork Grease].InvSlot} leftmouseup``  
 `/nomodkey /itemnotify in pack8 1 leftmouseup`  
 `/delay 5`
 
 `/if (!${FindItem[=Clockwork Grease].InvSlot}) /goto :Done`  
 `/nomodkey /ctrl /itemnotify ${FindItem[=Clockwork Grease].InvSlot} leftmouseup`  
 `/nomodkey /itemnotify in pack8 2 leftmouseup`  
-`````  /combine pack8``` /delay 15``  
-`/doevents`  
-`/call ClearCursor`  
+````` /combine pack8``` /delay 15````` /doevents```/call ClearCursor``  
 `/delay 20`
 
 `| We should have a grease. Let's start over.`  

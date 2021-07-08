@@ -1,4 +1,4 @@
-# Cast
+# /cast
 
 ## Syntax
 
@@ -18,6 +18,4 @@ Will cast the specified spellname or spell gem, or perform a right-click of an i
 /cast item "mana robe"
 /cast list
 ```
-
-[Return to Slash Commands](./)
 

@@ -2,7 +2,7 @@
 
 ## Introduction
 
-The use of macros is what really makes MacroQuest2 extremely powerful. Additional in-game functionality like [the map](../plugins/core-plugins/mq2map.md), cross-zone targeting, enhanced [/who](../commands/slash-commands/who.md), custom binds, [the HUD](../plugins/core-plugins/mq2hud.md) and [plugins](macroquest2-plugins.md) are useful, but macroing is what **Macro**Quest is all about.
+The use of macros is what really makes MacroQuest2 extremely powerful. Additional in-game functionality like [the map](../plugins/core-plugins/mq2map/), cross-zone targeting, enhanced [/who](../commands/slash-commands/who.md), custom binds, [the HUD](../plugins/core-plugins/mq2hud/) and [plugins](macroquest2-plugins.md) are useful, but macroing is what **Macro**Quest is all about.
 
 See [here](macroquest2-macros.md) for some introductory information about macros. This page is concerned primarily with all the relevant information required to create your own macros.
 
