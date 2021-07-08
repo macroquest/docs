@@ -1,4 +1,4 @@
-# DataType:EverQuest
+# DataType:everquest
 
 ## Description
 
@@ -12,7 +12,7 @@ Data types related to the current EverQuest session. This replaces the MacroQues
 | [_bool_](datatype-bool.md) | **Background** | Returns TRUE if EverQuest is in Background |
 | [_string_](datatype-string.md) | **BuildDate** | Date that MQ2Main.dll was built |
 | [_int_](datatype-int.md) | **CharSelectList** | Currently returns the zone ID the character is currently in |
-| [_bool_](datatype-bool.md) | **ChatChannel\[**channel name**\]** | Returns TRUE if _channel name_ is joined |
+| [_bool_](datatype-bool.md) | **ChatChannel\[**_channel-name_**\]** | Returns TRUE if _channel-name_ is joined |
 | [_string_](datatype-string.md) | **ChatChannel\[**\#**\]** | Returns the name of chat channel \# |
 | [_int_](datatype-int.md) | **ChatChannels** | Returns the number of channels currently joined |
 | [_string_](datatype-string.md) | **CurrentUI** | return a string representing the currently loaded UI skin |
@@ -42,7 +42,7 @@ Data types related to the current EverQuest session. This replaces the MacroQues
 | [_int_](datatype-int.md) | **ViewportY** | EverQuest viewport upper left \(Y\) position |
 | [_int_](datatype-int.md) | **ViewportYCenter** | EverQuest viewport center \(Y\) position |
 | [_int_](datatype-int.md) | **ViewportYMax** | EverQuest viewport lower right \(Y\) position |
-| '**'**[**string**](datatype-string.md) | **To String** | None |
+| [**string**](datatype-string.md) | **To String** | None |
 
 ## Example
 

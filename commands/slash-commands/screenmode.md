@@ -1,8 +1,10 @@
-# Screenmode
+# /screenmode
 
 ## Syntax
 
-**/screenmode** **\&lt;\#&gt;** _**Options are 1, 2, or 3**_
+**/screenmode** **\#**
+
+Valid values for screen mode: 1, 2, or 3.
 
 ## Description
 
@@ -13,6 +15,4 @@ Where 2 is normal and 3 is no windows. 1 is Unknown.
 /screenmode 2
 
 * [TLO:EverQuest](../../data-types-and-top-level-objects/top-level-objects/tlo-everquest.md)
-
-[Return to Slash Commands](./)
 

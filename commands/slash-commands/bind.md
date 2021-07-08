@@ -31,7 +31,6 @@ Bind a key combination to a specific key.
 
 ## See Also
 
-* [Slash\_Commands](./)
-* [/custombind](custombind.md)
+* [/custombind](../../plugins/core-plugins/mq2custombinds/custombind.md)
 * [/dumpbinds](dumpbinds.md)
 

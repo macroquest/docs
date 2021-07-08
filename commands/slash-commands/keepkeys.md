@@ -1,4 +1,4 @@
-# Keepkeys
+# /keepkeys
 
 ## Syntax
 

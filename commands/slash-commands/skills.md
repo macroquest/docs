@@ -1,4 +1,4 @@
-# Skills
+# /skills
 
 ## Syntax
 

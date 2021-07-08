@@ -1,4 +1,4 @@
-# Shiftkey
+# /shiftkey
 
 ## Syntax
 
@@ -17,8 +17,4 @@ Execute _command_ while telling the window manager that the shift key is pressed
 ```text
 /shiftkey /itemnotify pack1 leftmouseup
 ```
-
-## See Also
-
-[Slash Commands](./)
 

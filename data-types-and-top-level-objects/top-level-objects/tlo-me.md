@@ -10,7 +10,7 @@ Character object which allows you to get properties of you as a character.
 
 ## Access to Types
 
-* [_xtaggrocount_](../data-types/datatype-xtaggrocount.md) **XTAggroCount**
+* [_xtaggrocount_]() **XTAggroCount**
 * [_character_](../data-types/datatype-character.md) **character**
 * [_spawn_](../data-types/datatype-spawn.md) **spawn**
 * [_target_](../data-types/datatype-target.md) **target**

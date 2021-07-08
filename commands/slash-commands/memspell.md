@@ -1,4 +1,4 @@
-# Memspell
+# /memspell
 
 **/memspell \# "**_**spellname**_**"**
 

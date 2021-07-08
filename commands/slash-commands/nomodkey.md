@@ -1,4 +1,4 @@
-# Nomodkey
+# /nomodkey
 
 ## Syntax
 
@@ -8,8 +8,6 @@
 
 Releases all ctrl/alt/shift keys while executing _command_
 
-## Examples
-
 ## See Also
 
 * [/shiftkey](shiftkey.md)
@@ -17,6 +15,4 @@ Releases all ctrl/alt/shift keys while executing _command_
 * [/ctrlkey](ctrlkey.md)
 * [/notify](notify.md)
 * [/keypress](keypress.md)
-
-[Return to Slash Commands](./)
 

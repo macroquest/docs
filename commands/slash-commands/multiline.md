@@ -1,4 +1,4 @@
-# Multiline
+# /multiline
 
 ## Syntax
 
@@ -26,6 +26,4 @@ Executes multiple commands using a single line separated by the delimiter.
        /multiline ; /echo Attacking ${Target.DisplayName}; /attack on
 }
 ```
-
-[Return to Slash Commands](./)
 

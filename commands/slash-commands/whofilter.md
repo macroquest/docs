@@ -1,4 +1,4 @@
-# Whofilter
+# /whofilter
 
 ## Syntax
 
@@ -8,12 +8,8 @@
 
 Toggles the display of the specified spawn\(s\) when using /who
 
-## Examples
-
 ## See Also
 
 * [/who](who.md)
 * [/whotarget](whotarget.md)
-
-[Return to Slash Commands](./)
 

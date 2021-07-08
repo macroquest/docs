@@ -13,7 +13,3 @@
 
 NOTE: You have to have tell windows enabled in options for this to work.
 
-## Examples
-
-## See Also
-

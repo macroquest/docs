@@ -1,4 +1,4 @@
-# Notify
+# /notify
 
 ## Syntax
 

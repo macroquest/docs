@@ -1,4 +1,4 @@
-# Substitute
+# /substitute
 
 ## Syntax
 
@@ -31,6 +31,4 @@ If you typed "/say %k", it would produce:
 ```text
 Oh my god!, kill targetname before I tell your Mother
 ```
-
-[Return to Slash Commands](./)
 

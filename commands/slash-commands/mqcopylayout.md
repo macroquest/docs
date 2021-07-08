@@ -1,4 +1,4 @@
-# MQCopyLayOut
+# /mqcopylayout
 
 ## Syntax
 
@@ -6,7 +6,7 @@
 
 ## Description
 
-Uses MQ2 to copy a UI lay out.
+Uses MQ2 to copy a UI layout.
 
 ## Examples
 
@@ -33,6 +33,4 @@ Will Copy the layout from UI\_eqmule\_test.ini setting excluding hotbuttons load
 ```/mqcopylayout eqmule test ``res:1600x900```
 
 Will Copy the layout from UI\_eqmule\_test.ini setting including hotbuttons loadouts and socials to your 1600x900 UI \(if that resolution actually exist in your UI ini\).
-
-[Return to Slash Commands](./)
 

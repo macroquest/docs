@@ -1,4 +1,4 @@
-# Popup
+# /popup
 
 ## Syntax
 
@@ -24,5 +24,7 @@ If you desire a custom color or display duration you may perform [this modificat
   /popup Run away! Run away!
   ```
 
-[Return to Slash Commands](./)
+## See Also
+
+* [/popcustom](popcustom.md)
 

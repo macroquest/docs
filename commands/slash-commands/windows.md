@@ -1,4 +1,4 @@
-# Windows
+# /windows
 
 ## Syntax
 
@@ -23,6 +23,4 @@
 
 * [WindowsList](../../general-information/windows/windowslist.md)
 * [/notify](notify.md)
-
-[Return to Slash Commands](./)
 

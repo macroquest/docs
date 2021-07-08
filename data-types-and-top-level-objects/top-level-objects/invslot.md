@@ -1,8 +1,8 @@
-# InvSlot
+# TLO:InvSlot
 
 .invslot .InvSlot .InvSlot2 are all deprecated
 
-Use [ItemSlot](../data-types/itemslot.md)
+Use [ItemSlot]()
 
 ### Historic Info
 

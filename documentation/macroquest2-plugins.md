@@ -96,18 +96,18 @@ See [/plugin](../commands/slash-commands/plugin.md) for information on loading a
 
 ## Plugins included with MacroQuest2
 
-* [MQ2Bzsrch](../plugins/core-plugins/mq2bzsrch.md) -- a bazaar search plug-in
+* [MQ2Bzsrch](../plugins/core-plugins/mq2bzsrch/) -- a bazaar search plug-in
 * [MQ2Chat](../plugins/core-plugins/mq2chat.md) -- Directs MQ2 output to the regular chat window
-* [MQ2ChatWnd](../plugins/core-plugins/mq2chatwnd.md) -- Directs MQ2 output to a special chat window \(safer\)
-* [MQ2CustomBinds](../plugins/core-plugins/mq2custombinds.md) -- Allows you to specify custom commands to execute on a key combination
+* [MQ2ChatWnd](../plugins/core-plugins/mq2chatwnd/) -- Directs MQ2 output to a special chat window \(safer\)
+* [MQ2CustomBinds](../plugins/core-plugins/mq2custombinds/) -- Allows you to specify custom commands to execute on a key combination
 * [MQ2EQBugFix](../plugins/core-plugins/mq2eqbugfix.md) -- Currently nothing, but reserved for fixing bugs in EQ itself
-* [MQ2EQIM](../plugins/discontinued-unsupported/mq2eqim.md) -- EQIM
+* [MQ2EQIM](../plugins/discontinued-unsupported/mq2eqim/) -- EQIM
 * [MQ2HUD](../plugins/core-plugins/mq2hud/) -- Provides additional functionality to the HUD included with MQ2
 * [MQ2IRC](../plugins/discontinued-unsupported/mq2irc/) -- IRC plugin
 * [MQ2ItemDisplay](../plugins/core-plugins/mq2itemdisplay/) -- Add extra data to item windows
 * [MQ2Labels](../plugins/core-plugins/mq2labels.md) -- allows custom UI labels
 * [MQ2Map](../plugins/core-plugins/mq2map/) -- enhanced map
-* [MQ2Telnet](../plugins/discontinued-unsupported/mq2telnet.md) -- act as a telnet server for macro output
+* [MQ2Telnet](../plugins/discontinued-unsupported/mq2telnet/) -- act as a telnet server for macro output
 
 ## List of Plugins with wiki pages
 
@@ -136,19 +136,19 @@ See [/plugin](../commands/slash-commands/plugin.md) for information on loading a
           </li>
           <li><a href="../plugins/community-plugins/mq2cast.md">MQ2Cast</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2cecho.md">MQ2CEcho</a>
+          <li><a href>MQ2CEcho</a>
           </li>
           <li><a href="../plugins/core-plugins/mq2chat.md">MQ2Chat</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2chatevents.md">MQ2ChatEvents</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2chatwnd.md">MQ2ChatWnd</a>
+          <li><a href="../plugins/core-plugins/mq2chatwnd/">MQ2ChatWnd</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2clip.md">MQ2Clip</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2cursor.md">MQ2Cursor</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2custombinds.md">MQ2CustomBinds</a>
+          <li><a href="../plugins/core-plugins/mq2custombinds/">MQ2CustomBinds</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2debuffs.md">MQ2Debuffs</a>
           </li>
@@ -164,7 +164,7 @@ See [/plugin](../commands/slash-commands/plugin.md) for information on loading a
           </li>
           <li><a href="../plugins/core-plugins/mq2eqbugfix.md">MQ2EQBugFix</a>
           </li>
-          <li><a href="../plugins/discontinued-unsupported/mq2eqim.md">MQ2EQIM</a>
+          <li><a href="../plugins/discontinued-unsupported/mq2eqim/">MQ2EQIM</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2events.md">MQ2Events</a>
           </li>
@@ -176,7 +176,7 @@ See [/plugin](../commands/slash-commands/plugin.md) for information on loading a
           </li>
           <li><a href="../plugins/community-plugins/mq2feedme.md">MQ2FeedMe</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2fps.md">MQ2FPS</a>
+          <li><a href="../plugins/discontinued-unsupported/mq2fps/">MQ2FPS</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2gmcheck.md">MQ2GMCheck</a>
           </li>
@@ -228,7 +228,7 @@ See [/plugin](../commands/slash-commands/plugin.md) for information on loading a
           </li>
           <li><a href="../plugins/community-plugins/mq2targets.md">MQ2Targets</a>
           </li>
-          <li><a href="../plugins/discontinued-unsupported/mq2telnet.md">MQ2Telnet</a>
+          <li><a href="../plugins/discontinued-unsupported/mq2telnet/">MQ2Telnet</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2timer.md">MQ2Timer</a>
           </li>
@@ -240,7 +240,7 @@ See [/plugin](../commands/slash-commands/plugin.md) for information on loading a
           </li>
           <li><a href="../plugins/community-plugins/mq2vendors.md">MQ2Vendors</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2web.md">MQ2Web</a>
+          <li><a href="../plugins/discontinued-unsupported/mq2web.md">MQ2Web</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2xptracker.md">MQ2XPTracker</a>
           </li>

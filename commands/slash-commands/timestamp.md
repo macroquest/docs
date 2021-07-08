@@ -1,4 +1,4 @@
-# Timestamp
+# /timestamp
 
 ## Syntax
 

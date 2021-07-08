@@ -1,4 +1,4 @@
-# Removebuff
+# /removebuff
 
 ## Syntax
 

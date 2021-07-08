@@ -46,7 +46,6 @@ Below are the default settings for each of the possible Caption Colors:
 
 ## See Also
 
-* [Slash\_Commands](./)
 * [Caption](caption.md)
 * [MacroQuest.ini](../../documentation/macroquest.ini.md)
 

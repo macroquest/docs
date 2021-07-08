@@ -1,4 +1,4 @@
-# Timed
+# /timed
 
 ## Syntax
 
@@ -28,6 +28,4 @@ Executes _command_ after a specified duration, given in deciseconds.
 ```text
 /timed 10 /echo 1 second has passed
 ```
-
-[Return to Slash Commands](./)
 

@@ -1,4 +1,4 @@
-# Loadcfg
+# /loadcfg
 
 ## Syntax
 
@@ -45,6 +45,4 @@ Executed when this plugin is loaded (after its initialization is complete)
 * **oot.cfg, soldungb.cfg, soldunga.cfg, take.cfg**
 
   Config file that will load when entering a specific zone
-
-[Return to Slash Commands](./)
 

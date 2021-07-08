@@ -1,4 +1,4 @@
-# Lootall
+# /lootall
 
 ## Syntax
 
@@ -35,6 +35,5 @@ Slot 4: No Trade Item
 
 ## See Also
 
-* [Slash Commands](./)
 * [/lootnodrop](../eq-commands/lootnodrop.md)
 

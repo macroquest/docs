@@ -1,8 +1,8 @@
-# Setprio
+# /setprio
 
 ## Syntax
 
-**/setprio** **\**
+**/setprio** \#
 
 ## Description
 

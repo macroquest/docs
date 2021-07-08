@@ -18,7 +18,3 @@ Execute _command_ while telling the window manager that the ctrl key is pressed.
 /ctrlkey /itemnotify pack1 leftmouseup
 ```
 
-## See Also
-
-[Slash Commands](./)
-

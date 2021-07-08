@@ -1,4 +1,4 @@
-# DataType:Macro
+# DataType:macro
 
 ## Description
 
@@ -6,9 +6,8 @@ The Macro DataType deals with the macro currently running, and nothing else.
 
 ## Members
 
-|  |  |  |
+| DataType | Member Name | **Description** |
 | :--- | :--- | :--- |
-| **DataType** | **Member Name** | **Description** |
 | [_string_](datatype-string.md) | **CurCommand** | list the current line number, macro name and code of the macro being processed |
 | [_int_](datatype-int.md) | **CurLine** | The current line number of the macro being processed |
 | [_string_](datatype-string.md) | **CurSub** | The current sub routine |
@@ -21,8 +20,12 @@ The Macro DataType deals with the macro currently running, and nothing else.
 | [_string_](datatype-string.md) | **Return** | The value that was returned by the last completed subroutine |
 | [_int_](datatype-int.md) | **RunTime** | How long the macro has been running \(in seconds\) |
 | [_int_](datatype-int.md) | **StackSize** | StackSize? |
-| [_Invoke_](../../commands/macro-commands/invoke.md) | **Undeclared** | will list all undeclared variables |
-|  |  |  |
+
+## Methods
+
+| Method Name | Action |
+| :--- | :--- |
+| Undeclared | List all undeclared variables |
 
 ## See Also
 

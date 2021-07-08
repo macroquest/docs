@@ -38,7 +38,7 @@ The following commonly used slash commands are added by MacroQuest2:
 * [/itemtarget](../commands/slash-commands/itemtarget.md)
 * [/macro](../commands/slash-commands/macro.md)
 * [/memspell](../commands/slash-commands/memspell.md)
-* [/mqfont](../commands/slash-commands/mqfont.md)
+* [/mqfont](../plugins/core-plugins/mq2chatwnd/mqfont.md)
 * [/mqpause](../commands/slash-commands/mqpause.md)
 * [/multiline](../commands/slash-commands/multiline.md)
 * [/popup](../commands/slash-commands/popup.md)

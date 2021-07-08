@@ -1,4 +1,4 @@
-# DataType:CachedBuff
+# DataType:cachedbuff
 
 ## Description
 

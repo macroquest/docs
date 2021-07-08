@@ -20,15 +20,14 @@ This documentation is for MacroQuest a.k.a. MQnext. For the legacy MacroQuest2 W
 
 ## Getting Help
 
-* Forums
-* [IRC](documentation/macroquest2-irc.md)
+* [Discord](https://discord.gg/77C4Ke6HKg)
+* [Forums](https://macroquest2.com/phpBB3)
 * [MQ2 Compile Problems](documentation/help-compiling.md)
 * [MQ2 Macro/Snippet Problems](documentation/help-macros.md)
 * [MQ2 Plugin Problems](documentation/help-plugins.md)
 
 ## References
 
-* [MQ2 Manual](https://macroquest2.com/includes/wassup/manual.php) maintained by Wassup
 * [Macro Reference](documentation/macro-reference.md)
 * [Hacker Stuff](general-information/hacker-stuff.md)
 * [Text Editors and Syntax Files](other-applications/text-editors/)

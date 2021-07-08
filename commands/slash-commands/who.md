@@ -1,4 +1,4 @@
-# Who
+# /who
 
 ## Syntax
 
@@ -41,6 +41,4 @@ Displays a List of PC's Who are Human
 * **/whotarget \(/whot\)**
 
 Displays a /who for your target, works on npc/pc shows even if role/anon, Shows if sneaking as well.
-
-[Return to Slash Commands](./)
 

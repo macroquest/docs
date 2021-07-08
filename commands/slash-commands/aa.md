@@ -17,7 +17,3 @@ Used to retrieve information on AA Abilities, or to activate an AA ability.
 | **/aa info** _**abilityname**_ | Gives information about a particular AA ability |
 | **/aa act** _**abilityname**_ | Works like "/alt act \#\#", but takes the name instead of \#\# \(note: You will notice a fraction of a second delay using this method vs. the /alt act \#\# method\). |
 
-## See Also
-
-[Slash Commands](./)
-

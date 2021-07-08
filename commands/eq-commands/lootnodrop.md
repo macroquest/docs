@@ -1,4 +1,4 @@
-# Lootnodrop
+# /lootnodrop
 
 ## Syntax
 
@@ -14,6 +14,5 @@ This is an **EverQuest command**, not related to MacroQuest2, used to specify ho
 
 ## See Also
 
-* [Slash Commands](../slash-commands/)
 * [/lootall](../slash-commands/lootall.md)
 

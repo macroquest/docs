@@ -19,14 +19,14 @@ A string is an array of characters. In MQ2 there is no single character datatype
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><em>string</em>
-      </td>
-      <td style="text-align:left"><b>Arg[</b>#<b>,</b>s<b>]</b>
-      </td>
-      <td style="text-align:left">Returns the #th argument of the string separated by <em>s</em>. The separator <em>s</em> must
-        be a single character (defaults to space).
-        <br />See below for difference between <b>Token</b> and <b>Arg</b>
-      </td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Arg[</b>#<b>,</b>s<b>]</b>
+        </td>
+        <td style="text-align:left">Returns the #th argument of the string separated by <em>s</em>. The separator <em>s</em> must
+          be a single character (defaults to space).
+          <br />See below for difference between <b>Token</b> and <b>Arg</b>
+        </td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -96,26 +96,26 @@ A string is an array of characters. In MQ2 there is no single character datatype
       <td style="text-align:left">Returns the length of the string as an integer</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>string</em>
-      </td>
-      <td style="text-align:left"><b>Left[</b>#<b>]</b>
-      </td>
-      <td style="text-align:left">Returns the first # characters of the string. A negative # will return
-        the whole string except for the last # characters</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Left[</b>#<b>]</b>
+        </td>
+        <td style="text-align:left">Returns the first # characters of the string. A negative # will return
+          the whole string except for the last # characters</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>string</em>
-      </td>
-      <td style="text-align:left"><b>Lower</b>
-      </td>
-      <td style="text-align:left">Returns the string in all lower-case</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Lower</b>
+        </td>
+        <td style="text-align:left">Returns the string in all lower-case</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>string</em>
-      </td>
-      <td style="text-align:left"><b>Mid[</b>p<b>,</b>n<b>]</b>
-      </td>
-      <td style="text-align:left">Returns a segment of the string, starting at position <b>p</b> and running <b>n</b> characters</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Mid[</b>p<b>,</b>n<b>]</b>
+        </td>
+        <td style="text-align:left">Returns a segment of the string, starting at position <b>p</b> and running <b>n</b> characters</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -134,49 +134,49 @@ A string is an array of characters. In MQ2 there is no single character datatype
         is case-sensitive</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>string</em>
-      </td>
-      <td style="text-align:left"><b>Replace[</b>ReplaceThis<b>,</b>WithThis<b>]</b>
-      </td>
-      <td style="text-align:left">Replaces <em>ReplaceThis</em> with <em>WithThis</em>
-      </td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Replace[</b>ReplaceThis<b>,</b>WithThis<b>]</b>
+        </td>
+        <td style="text-align:left">Replaces <em>ReplaceThis</em> with <em>WithThis</em>
+        </td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>string</em>
-      </td>
-      <td style="text-align:left"><b>Right[</b>#<b>]</b>
-      </td>
-      <td style="text-align:left">Returns the last # characters of the string. A negative # will return
-        the whole string except for the first # characters</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Right[</b>#<b>]</b>
+        </td>
+        <td style="text-align:left">Returns the last # characters of the string. A negative # will return
+          the whole string except for the first # characters</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>string</em>
-      </td>
-      <td style="text-align:left"><b>Token[</b>#<b>,</b>s<b>]</b>
-      </td>
-      <td style="text-align:left">Returns the #th token of the string separated by <em>s</em>. The separator <em>s</em> must
-        be a single character (defaults to space).
-        <br />See below for difference between <b>Arg</b> and <b>Token</b>
-      </td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Token[</b>#<b>,</b>s<b>]</b>
+        </td>
+        <td style="text-align:left">Returns the #th token of the string separated by <em>s</em>. The separator <em>s</em> must
+          be a single character (defaults to space).
+          <br />See below for difference between <b>Arg</b> and <b>Token</b>
+        </td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>string</em>
-      </td>
-      <td style="text-align:left"><b>Upper</b>
-      </td>
-      <td style="text-align:left">Returns the string in all upper-case</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Upper</b>
+        </td>
+        <td style="text-align:left">Returns the string in all upper-case</td>
     </tr>
     <tr>
-      <td style="text-align:left">&apos;<b>&apos;</b><a href="datatype-string.md"><b>string</b></a>
-      </td>
-      <td style="text-align:left"><b>To String</b>
-      </td>
-      <td style="text-align:left">This is a string!</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>To String</b>
+        </td>
+        <td style="text-align:left">This is a string!</td>
     </tr>
   </tbody>
 </table>
 
-== Examples ==
+## Examples
 
 ### Simple Examples
 

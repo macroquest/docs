@@ -123,7 +123,7 @@ Data Types are the members \(or properties\) of [Top-Level Objects](../top-level
           </li>
           <li><a href="datatype-window.md">DataType:window</a>
           </li>
-          <li><a href="datatype-xtaggrocount.md">DataType:xtaggrocount</a>
+          <li><a href>DataType:xtaggrocount</a>
           </li>
           <li><a href="datatype-xtarget.md">DataType:xtarget</a>
           </li>

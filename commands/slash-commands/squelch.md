@@ -1,4 +1,4 @@
-# Squelch
+# /squelch
 
 ## Syntax
 
@@ -19,6 +19,4 @@ Basically, it does the following:
 ```text
 /squelch /attack on
 ```
-
-[Return to Slash Commands](./)
 

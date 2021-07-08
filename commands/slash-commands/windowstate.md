@@ -1,4 +1,4 @@
-# Windowstate
+# /windowstate
 
 ## Syntax
 
@@ -13,11 +13,7 @@ Opens or closes the specified window.
 * These commands affect the client at an unnecessarily low level
 * The best practice is to use /keypress for opening that window instead
 
-## Examples
-
 ## See Also
 
 * [/keypress](keypress.md)
-
-[Return to Slash Commands](./)
 

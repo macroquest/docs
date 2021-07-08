@@ -1,4 +1,4 @@
-# Spew
+# /spew
 
 ## Syntax
 
@@ -7,6 +7,4 @@
 ## Description
 
 Enables or disables the output of Debug Spew to the "\Logs\DebugSpew.log" file.
-
-[Return to Slash Commands](./)
 

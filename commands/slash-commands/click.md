@@ -22,5 +22,3 @@ Clicks the left or right mouse button at your target or the location specified.
 
 * [/shiftkey](shiftkey.md)
 
-[Back to Slash Commands](./)
-

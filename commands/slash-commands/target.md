@@ -1,4 +1,4 @@
-# Target
+# /target
 
 ## Syntax
 
@@ -13,7 +13,7 @@ Targets whatever is matched by one or more of the following _options_:
 | **clear** | Clears your current target |
 | **mycorpse** | Your own corpse \(nearest\) |
 | **myself** | Target yourself |
-| _**Anything Else**_ | Anything else is considered a [Spawn Search](../../general-information/spawn-search.md) |
+| _Anything Else_ | Anything else is considered a [Spawn Search](../../general-information/spawn-search.md) |
 
 ## Examples
 
@@ -28,11 +28,13 @@ Targets whatever is matched by one or more of the following _options_:
 ## See Also
 
 * [TLO:Target](../../data-types-and-top-level-objects/top-level-objects/tlo-target.md)
-* [Slash Commands](./)
+
+
+
 * [Spawn Search](../../general-information/spawn-search.md)
 * [/doortarget](doortarget.md)
 * [/itemtarget](itemtarget.md)
 * [/alert](alert.md)
 * [DataType:spawn](../../data-types-and-top-level-objects/data-types/datatype-spawn.md)
-* DataType:targettype
+* [DataType:target](../../data-types-and-top-level-objects/data-types/datatype-target.md)
 

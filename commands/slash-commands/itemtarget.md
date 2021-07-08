@@ -1,4 +1,4 @@
-# Itemtarget
+# /itemtarget
 
 ## Syntax
 
@@ -15,6 +15,4 @@
 * [DataType:ground](../../data-types-and-top-level-objects/data-types/datatype-ground.md)
 * [/items](items.md)
 * [/face](face.md)
-
-[Return to Slash Commands](./)
 

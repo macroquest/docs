@@ -63,7 +63,7 @@ A [Beginners Guide to TLOs and MQ2DataVars](../../documentation/beginners-guide-
           </li>
           <li><a href="tlo-float.md">TLO:Float</a>
           </li>
-          <li><a href="tlo-fps.md">TLO:FPS</a>
+          <li><a href="../../plugins/discontinued-unsupported/mq2fps/tlo-fps.md">TLO:FPS</a>
           </li>
         </ul>
       </th>
@@ -91,7 +91,7 @@ A [Beginners Guide to TLOs and MQ2DataVars](../../documentation/beginners-guide-
           </li>
           <li><a href="tlo-int.md">TLO:Int</a>
           </li>
-          <li><a href="tlo-irc.md">TLO:Irc</a>
+          <li><a href="../../plugins/discontinued-unsupported/mq2irc/tlo-irc.md">TLO:Irc</a>
           </li>
           <li><a href="tlo-itemtarget.md">TLO:ItemTarget</a>
           </li>

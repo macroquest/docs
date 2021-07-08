@@ -69,6 +69,6 @@ All done, let's show a red backslash: \'''
 
 ## See Also
 
-* [MQ2ChatWnd](../../plugins/core-plugins/mq2chatwnd.md)
+* [MQ2ChatWnd](../../plugins/core-plugins/mq2chatwnd/)
 * [MQ2Chat](../../plugins/core-plugins/mq2chat.md)
 

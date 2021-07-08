@@ -1,4 +1,4 @@
-# Keypress
+# /keypress
 
 ## Syntax
 
@@ -565,7 +565,5 @@ End EQ Binds
 ## See Also
 
 * [/bind](bind.md)
-* [/custombind](custombind.md)
-
-[Back to Slash Commands](./)
+* [/custombind](../../plugins/core-plugins/mq2custombinds/custombind.md)
 

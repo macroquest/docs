@@ -1,4 +1,4 @@
-# Updateitems
+# /updateitems
 
 ## Status
 
@@ -29,6 +29,4 @@ Scans your inventory and bank and collects item IDs and names. The information i
 
 * If you want a list of your current assets, delete ItemDB.txt before you start MQ2
 * Don't forget to delete it and restart MQ2 each time you want to refresh that list.
-
-[Return to Slash Commands](./)
 

@@ -1,4 +1,4 @@
-# Makemevisible
+# /makemevisible
 
 ## Syntax
 

@@ -35,7 +35,7 @@
           </li>
           <li><a href="ctrlkey.md">/ctrlkey</a>
           </li>
-          <li><a href="custombind.md">/custombind</a>
+          <li><a href="../../plugins/core-plugins/mq2custombinds/custombind.md">/custombind</a>
           </li>
           <li><a href="destroy.md">/destroy</a>
           </li>
@@ -107,7 +107,7 @@
           </li>
           <li><a href="https://github.com/macroquest/docs/tree/108032b0f20c28068c91a07957f88d1e87a0bb61/commands/Mouseto/README.md">/mouseto</a>
           </li>
-          <li><a href="mqfont.md">/mqfont</a>
+          <li><a href="../../plugins/core-plugins/mq2chatwnd/mqfont.md">/mqfont</a>
           </li>
           <li><a href="../macro-commands/mqlog.md">/mqlog</a>
           </li>

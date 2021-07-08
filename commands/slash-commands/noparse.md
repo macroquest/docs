@@ -1,4 +1,4 @@
-# Noparse
+# /noparse
 
 ## Syntax
 
@@ -35,6 +35,4 @@ Prevents any MQ2Data from being parsed when used in _command_.
 /noparse /echo ${NotDisplayed}
 [MQ2] ${NotDisplayed}
 ```
-
-[Return to Slash Commands](./)
 

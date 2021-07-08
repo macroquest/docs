@@ -14,11 +14,11 @@ This is most commonly used as a method to exchange information between bots with
 
 ## Top-Level Objects
 
-* [_irc_](../../../data-types-and-top-level-objects/data-types/mq2irc-datatype-irc.md) [**Irc**](../../../data-types-and-top-level-objects/top-level-objects/tlo-irc.md)
+* [_irc_](mq2irc-datatype-irc.md) [**Irc**](tlo-irc.md)
 
 ## Data Types
 
-* [_irc_](../../../data-types-and-top-level-objects/data-types/mq2irc-datatype-irc.md) **irc**
+* [_irc_](mq2irc-datatype-irc.md) **irc**
 
 ## INI File
 

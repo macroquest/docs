@@ -1,4 +1,4 @@
-# Selectitem
+# /selectitem
 
 ## Syntax
 
@@ -18,6 +18,4 @@ Will select a "bottle of vinegar" you can also do "=bottle of vinegar" to match 
 
 * [TLO:Merchant](../../data-types-and-top-level-objects/top-level-objects/tlo-merchant.md)
 * [DataType:merchant](../../data-types-and-top-level-objects/data-types/datatype-merchant.md)
-
-[Back to Slash Commands](./)
 

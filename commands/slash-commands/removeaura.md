@@ -1,4 +1,4 @@
-# Removeaura
+# /removeaura
 
 ## Syntax
 

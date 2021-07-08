@@ -12,6 +12,6 @@ Dumps all current binds to Configs\_name\_.cfg
 
 * [CFG\_Files](../../documentation/cfg-files.md)
 * [/bind](bind.md)
-* [/custombind](custombind.md)
+* [/custombind](../../plugins/core-plugins/mq2custombinds/custombind.md)
 * [/loadcfg](loadcfg.md)
 

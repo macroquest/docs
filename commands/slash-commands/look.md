@@ -1,4 +1,4 @@
-# Look
+# /look
 
 ## Syntax
 
@@ -21,6 +21,4 @@ Changes the angle you are looking. _Angle_ can be any value between -128 \(direc
   ```text
   /look -75
   ```
-
-[Return to Slash Commands](./)
 

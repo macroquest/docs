@@ -1,4 +1,4 @@
-# Macro
+# /macro
 
 ## Syntax
 
@@ -28,6 +28,4 @@ Starts running a macro. Optional parameters can be added to the end of the /macr
 * [Macros \(about macros in general\)](../../documentation/macroquest2-macros.md)
 * [Macro \(Top-Level Object\)](../../data-types-and-top-level-objects/top-level-objects/tlo-macro.md)
 * [DataType:Macro](../../data-types-and-top-level-objects/data-types/datatype-macro.md)
-
-[Return to Slash Commands](./)
 

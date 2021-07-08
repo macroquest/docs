@@ -119,7 +119,7 @@ Contains data about items
 | [_invslot_](datatype-invslot.md) | **WornSlot\[**\#**\]** | The \#th invslot this item can be worn in \(fingers/ears count as 2 slots\) |
 | [_bool_](datatype-bool.md) | **WornSlot\[**name**\]** | Can item be worn in invslot with this _name_? \(worn slots only\) |
 | [_int_](datatype-int.md) | **WornSlots** | The number of invslots this item can be worn in \(fingers/ears count as 2 slots\) |
-| '**'**[**string**](datatype-string.md) | **To String** | Same as **Name** |
+| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |
 
 ## Spell Effect Types
 
