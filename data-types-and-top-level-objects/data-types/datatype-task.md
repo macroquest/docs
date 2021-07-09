@@ -125,11 +125,11 @@ This is the type for your current task.
       <td style="text-align:left">Returns name of the shared task</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-ticks.md"><em>ticks</em></a>
-      </td>
-      <td style="text-align:left"><b>Timer</b>
-      </td>
-      <td style="text-align:left">Returns amount of time before task expires</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-timestamp.md"><em>timestamp</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Timer</b>
+        </td>
+        <td style="text-align:left">Returns amount of time before task expires</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
