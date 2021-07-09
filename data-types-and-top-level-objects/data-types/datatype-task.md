@@ -1,7 +1,5 @@
 # DataType:task
 
-## Description
-
 This is the type for your current task.
 
 ## Members
@@ -174,16 +172,25 @@ This is the type for your current task.
       </td>
       <td style="text-align:left">
         <p>Returns a string that can be one of the following:</p>
-        <p> <code>Unknown,None,Deliver,Kill,Loot,Hail,Explore,Tradeskill,Fishing,</code>
-          <br
-          /> <code>Foraging,Cast,UseSkill,DZSwitch,DestroyObject,Collect,Dialogue</code>
-        </p>
+        <ul>
+          <li>Unknown</li>
+          <li>None</li>
+          <li>Deliver</li>
+          <li>Kill</li>
+          <li>Loot</li>
+          <li>Hail</li>
+          <li>Explore</li>
+          <li>Tradeskill</li>
+          <li>Fishing</li>
+          <li>Foraging</li>
+          <li>Cast</li>
+          <li>UseSkill</li>
+          <li>DZSwitch</li>
+          <li>DestroyObject</li>
+          <li>Collect</li>
+          <li>Dialogue</li>
+        </ul>
       </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
-      <td style="text-align:left"></td>
     </tr>
   </tbody>
 </table>
@@ -237,9 +244,4 @@ Output: The Hatching a Plan first objective status is 0/1
 Output: The Hatching a Plan first objective should be completed in Hatchery Wing
 
 `/echo I should be working on ${Task[hatch].Step} in ${Task[hatch].Step.Zone}`
-
-## See Also
-
-* [TLO:Task](../top-level-objects/tlo-task.md)
-* [DataType:taskmember](datatype-task.md)
 

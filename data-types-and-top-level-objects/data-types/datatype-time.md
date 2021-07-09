@@ -1,7 +1,5 @@
 # DataType:time
 
-## Description
-
 Contains data related to time
 
 ## Members
@@ -21,12 +19,5 @@ Contains data related to time
 | [_string_](datatype-string.md) | **Time12** | Time in 12-hour format \(HH:MM:SS\) |
 | [_string_](datatype-string.md) | **Time24** | Time in 24-hour format \(HH:MM:SS\) |
 | [_int_](datatype-int.md) | **Year** | Year |
-| '**'**[**string**](datatype-string.md) | **To String** | Same as **Time24** |
-
-## See Also
-
-* [Data Types](./)
-* [Top-Level Objects](../top-level-objects/)
-* [TLO:Time](../top-level-objects/tlo-time.md)
-* [TLO:GameTime](../top-level-objects/tlo-gametime.md)
+| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as **Time24** |
 

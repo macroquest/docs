@@ -1,7 +1,5 @@
 # DataType:timer
 
-## Description
-
 A timer data type is set in tenths of one second and counts down to zero; starting immediately after being set.
 
 ## Members
@@ -47,9 +45,4 @@ sub main
 ```
 
 This would loop while myTimer is above 0
-
-## See Also
-
-* [Data Types](./)
-* [Top-Level Objects](../top-level-objects/)
 
