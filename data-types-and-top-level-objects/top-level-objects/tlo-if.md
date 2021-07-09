@@ -6,11 +6,11 @@ Performs Math.Calc on _conditions_, gives _whentrue_ if non-zero, gives _whenfal
 
 ## Forms
 
-* [_string_](../data-types/datatype-string.md) **If\[\***conditions,whentrue,whenfalse**\*\]**
+* [_string_]() **If\[\***conditions,whentrue,whenfalse**\*\]**
 
 ## Access to Types
 
-* [_string_](../data-types/datatype-string.md) **string**
+* [_string_]() **string**
 
 ## Examples
 
@@ -25,5 +25,5 @@ If my hp percent is below 50 cast the Gate spell, otherwise goto the :Continue l
 ## See Also
 
 * [Top-Level Objects](./)
-* [string](../data-types/datatype-string.md)
+* [string]()
 

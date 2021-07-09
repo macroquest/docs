@@ -33,9 +33,9 @@ This contains data related to the specified in-game window
     <tr>
       <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-window.md"><em>window</em></a>&lt;em&gt;&lt;/em&gt;</td>
       <td
-      style="text-align:left"><b>Child[</b><code>name</code><b>]</b>
+      style="text-align:left"><b>Child[ </b><em>name</em><b> ]</b>
         </td>
-        <td style="text-align:left">Child with this name</td>
+        <td style="text-align:left">Find a child window with the provided name</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -63,7 +63,7 @@ This contains data related to the specified in-game window
       </td>
       <td style="text-align:left"><b>GetCurSel</b>
       </td>
-      <td style="text-align:left">Int of the currently selected/highlighted item in a list or treeview</td>
+      <td style="text-align:left">Index of the currently selected/highlighted item in a list or treeview</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -115,9 +115,9 @@ This contains data related to the specified in-game window
       <td style="text-align:left">Number of items in a Listbox or Combobox</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
-      <td style="text-align:left"><b>List[</b>N<b>,</b><code>y</code><b>]</b>
+      <td style="text-align:left"><b>List[ </b>#<b>, </b>y<em><b> </b></em><b>]</b>
       </td>
       <td style="text-align:left">Get the text for the <code>#</code>th item in a list box. Only works on
         list boxes. Use of <code>y</code> is optional and allows selection of the
@@ -126,7 +126,7 @@ This contains data related to the specified in-game window
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
       </td>
-      <td style="text-align:left"><b>List[</b><code>text</code><b>,</b><code>y</code><b>]</b>
+      <td style="text-align:left"><b>List[ </b>text<b>, </b>y<b> ]</b>
       </td>
       <td style="text-align:left">Find an item in a list box by partial match (use <b>window.List[</b>=text<b>]</b> for
         exact). Only works on list boxes. Use of <code>y</code> is optional and allows
@@ -154,7 +154,7 @@ This contains data related to the specified in-game window
       <td style="text-align:left">Have I clicked the Trade button?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Name</b>
       </td>
@@ -187,7 +187,7 @@ This contains data related to the specified in-game window
         <td style="text-align:left">Parent window</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>ScreenID</b>
       </td>
@@ -213,21 +213,21 @@ This contains data related to the specified in-game window
       <td style="text-align:left">Window style code</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Text</b>
       </td>
       <td style="text-align:left">Window&apos;s text</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Tooltip</b>
       </td>
       <td style="text-align:left">TooltipReference text</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Type</b>
       </td>
@@ -277,7 +277,7 @@ This contains data related to the specified in-game window
       <td style="text-align:left">Screen Y position</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>To String</b>
       </td>

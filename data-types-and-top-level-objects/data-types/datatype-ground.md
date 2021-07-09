@@ -12,7 +12,7 @@ Contains all data related to a ground spawn
 | [_float_](datatype-float.md) | **Y** | Y coordinate |
 | [_float_](datatype-float.md) | **Z** | Z coordinate |
 | [_heading_](datatype-heading.md) | **Heading** | Ground item is facing this heading |
-| [_string_](datatype-string.md) | **Name** | Name |
+| [_string_]() | **Name** | Name |
 | [_heading_](datatype-heading.md) | **HeadingTo** | Direction player must move to meet this ground item |
 | [_bool_](datatype-bool.md) | **LineOfSight** | Returns TRUE if ground spawn is in line of sight |
 | [_int_](datatype-int.md) | **Address** | ??? |
@@ -30,7 +30,7 @@ Contains all data related to a ground spawn
 | [_float_](datatype-float.md) | **W** | X coordinate \(Westward-positive\) |
 | [_float_](datatype-float.md) | **N** | Y coordinate \(Northward-positive\) |
 | [_float_](datatype-float.md) | **U** | Z coordinate \(Upward-positive\) |
-| '**'**[**string**](datatype-string.md) | **To String** | Same as ID |
+| '**'**[**string**]() | **To String** | Same as ID |
 
 ## Methods
 

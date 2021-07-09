@@ -894,7 +894,7 @@ _Will try to sense traps if not in combat._
 
   Minimum distance to target to be considered in archery range.
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Melee.Status}**
+* [_string_]() **${Melee.Status}**
 
   Current plugin status, can be one or more of the following: ENGAGED, WAITING, MELEE, RANGE, ENRAGE, INFURIATE,
 
@@ -922,7 +922,7 @@ Debugging TLOs:
 
   1/0 if the variable is set to on/off. This includes all variables that can be set on the command line.
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${meleemvs\[**option**\]}**
+* [_string_]() **${meleemvs\[**option**\]}**
 
   Evaluates _option_ based on the current conditions and target. _Options_ are all the INI options that contain
 

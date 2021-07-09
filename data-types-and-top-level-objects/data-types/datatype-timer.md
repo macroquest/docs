@@ -4,12 +4,11 @@ A timer data type is set in tenths of one second and counts down to zero; starti
 
 ## Members
 
-|  |  |  |
-| :--- | :--- | :--- |
 | **Type** | **Member** | **Description** |
+| :--- | :--- | :--- |
 | [_int_](datatype-int.md) | **OriginalValue** | Original value of the timer |
 | [_int_](datatype-int.md) | **Value** | Current value of the timer |
-| '**'**[**string**](datatype-string.md) | **To String** | Same as **Value** |
+| [string]() | **To String** | Same as **Value** |
 
 ## Example
 

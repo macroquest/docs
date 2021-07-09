@@ -24,7 +24,7 @@ Variables of local scope only exist while within a macro function or "Sub"
 
 ### Types
 
-Variables can be declared as any of the types in [Data Types](../data-types-and-top-level-objects/data-types/). The default type is [string](../data-types-and-top-level-objects/data-types/datatype-string.md).
+Variables can be declared as any of the types in [Data Types](../data-types-and-top-level-objects/data-types/). The default type is [string]().
 
 ### Names
 

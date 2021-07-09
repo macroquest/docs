@@ -9,7 +9,7 @@ Data related to arrays. **Note:** Array indexing starts at **1**
 | [_int_](datatype-int.md) | **Dimensions** | Number of dimensions in the array |
 | [_int_](datatype-int.md) | **Size** | Total number of elements in the array |
 | [_int_](datatype-int.md) | **Size\[**\#**\]** | Total number of elements stored in the \#th dimension of the array |
-| [_string_](datatype-string.md)\_\_ | **To String** | _None_ |
+| [_string_]()\_\_ | **To String** | _None_ |
 
 ## Declare Arrays
 

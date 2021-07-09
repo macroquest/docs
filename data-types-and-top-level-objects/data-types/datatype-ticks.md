@@ -13,7 +13,7 @@ Contains all the data related to the ticks time object
 | [_int_](datatype-int.md) | **TotalMinutes** | The total number of minutes |
 | [_int_](datatype-int.md) | **TotalSeconds** | The total number of seconds |
 | [_int_](datatype-int.md) | **Ticks** | The value in ticks |
-| [_string_](datatype-string.md) | **Time** | Time in the form MM:SS |
-| [_string_](datatype-string.md) | **TimeHMS** | Time in the form HH:MM:SS \(if there are no hours, the form will be MM:SS\) |
-| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as **Ticks** |
+| [_string_]() | **Time** | Time in the form MM:SS |
+| [_string_]() | **TimeHMS** | Time in the form HH:MM:SS \(if there are no hours, the form will be MM:SS\) |
+| \_\_[_string_]()\_\_ | **To String** | Same as **Ticks** |
 

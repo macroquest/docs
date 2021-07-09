@@ -9,9 +9,9 @@ Data for the specified plugin
 |  |  |  |
 | :--- | :--- | :--- |
 | **Type** | **Member** | **Description** |
-| [_string_](datatype-string.md) | **Name** | Name of the plugin |
+| [_string_]() | **Name** | Name of the plugin |
 | [_float_](datatype-float.md) | **Version** | Version number of the plugin |
-| '**'**[**string**](datatype-string.md) | **To String** | Same as **Name** |
+| '**'**[**string**]() | **To String** | Same as **Name** |
 
 ## See Also
 

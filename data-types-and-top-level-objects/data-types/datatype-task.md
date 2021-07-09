@@ -17,21 +17,21 @@ This is the type for your current task.
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Index</b>
       </td>
       <td style="text-align:left">Returns the task&apos;s place on the tasklist</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Objective[#].Instruction</b>
       </td>
       <td style="text-align:left">Returns a tasks&apos;s Objectives</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Objective[#].Status</b>
       </td>
@@ -39,7 +39,7 @@ This is the type for your current task.
         IE 0/3</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Objective[#].Zone</b>
       </td>
@@ -67,21 +67,21 @@ This is the type for your current task.
       <td style="text-align:left">Returns true or false if a objective is optional</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>RequiredItem</b>
       </td>
       <td style="text-align:left">Returns a string of the required item to complete a objective.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>RequiredSkill</b>
       </td>
       <td style="text-align:left">Returns a string of the required skill to complete a objective.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>RequiredSpell</b>
       </td>
@@ -102,21 +102,21 @@ This is the type for your current task.
       <td style="text-align:left">Returns an int of the task ID</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Step</b>
       </td>
       <td style="text-align:left">Returns description of current step in the task</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Select</b>
       </td>
       <td style="text-align:left">Selects the task</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Title</b>
       </td>
@@ -151,7 +151,7 @@ This is the type for your current task.
       <td style="text-align:left">Returns specified member in task by name</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Leader</b>
       </td>
@@ -166,7 +166,7 @@ This is the type for your current task.
         filled)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Type</b>
       </td>

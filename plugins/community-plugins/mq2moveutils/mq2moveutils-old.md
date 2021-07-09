@@ -231,11 +231,11 @@ Save or load the circle settings from the INI file
 
 ### Stick
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Stick}**
+* [_string_]() **${Stick}**
 
   _Same as ${Stick.Status} \(see below\)._
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Stick.Status}**
+* [_string_]() **${Stick.Status}**
 
   Return ON if currently sticking, OFF if not, or PAUSED if it is paused
 
@@ -281,7 +281,7 @@ Save or load the circle settings from the INI file
 
 ### MoveTo
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${MoveTo}**
+* [_string_]() **${MoveTo}**
 
   Return ON if currently moving to a location, OFF if not, or PAUSED if it is paused
 
@@ -295,11 +295,11 @@ Save or load the circle settings from the INI file
 
 ### MakeCamp
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${MakeCamp}**
+* [_string_]() **${MakeCamp}**
 
   _Same as ${MakeCamp.Status} \(see below\)._
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${MakeCamp.Status}**
+* [_string_]() **${MakeCamp.Status}**
 
   Return ON if MakeCamp is enabled, OFF if it is not enabled or PAUSED if it is paused
 

@@ -107,7 +107,7 @@ To remove a valuename \(and all of it's values\) from an ini file:
 
 {\| border="1" cellpadding="2" cellspacing="0"
 
-\|[_string_](../data-types-and-top-level-objects/data-types/datatype-string.md) **Name** \|Name \|}
+\|[_string_]() **Name** \|Name \|}
 
 * This shows us that we can use the .Name reference type to get a string value as a result, which can then be compared
 

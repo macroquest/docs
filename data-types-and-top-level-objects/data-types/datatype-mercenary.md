@@ -14,11 +14,11 @@ This type inherits no other types.
 | :--- | :--- | :--- | :--- |
 | **Type** | **Member** | **Description** | **Example** |
 | [_int_](datatype-int.md) | **AAPoints** | AA Points spent on mercenary abilities | ${Mercenary.AAPoints} |
-| [_string_](datatype-string.md) | **Stance** | Current stance of the mercenary | ${Mercenary.Stance.Equal\[Balanced\]} |
-| [_string_](datatype-string.md) | **State** | Current state of the mercenary \(returns "DEAD","SUSPENDED","ACTIVE", or "UNKNOWN" | ${Mercenary.State.Equal\[SUSPENDED\]} |
+| [_string_]() | **Stance** | Current stance of the mercenary | ${Mercenary.Stance.Equal\[Balanced\]} |
+| [_string_]() | **State** | Current state of the mercenary \(returns "DEAD","SUSPENDED","ACTIVE", or "UNKNOWN" | ${Mercenary.State.Equal\[SUSPENDED\]} |
 | [_int_](datatype-int.md) | **StateID** | Current state ID of the mercenary as a number. | ${Mercenary.StateID} |
-| [_string_](datatype-string.md) | **Index** | Index | ${Mercenary.Index} |
-| '**'**[**string**](datatype-string.md) | **To String** | Same as **Name** |  |
+| [_string_]() | **Index** | Index | ${Mercenary.Index} |
+| '**'**[**string**]() | **To String** | Same as **Name** |  |
 
 ## Examples
 

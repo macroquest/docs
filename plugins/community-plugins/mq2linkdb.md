@@ -58,7 +58,7 @@ Click on the link generated?
 
 **Note:** The TLO is only available in v2.
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${LinkDB\[\***name**\*\]}**
+* [_string_]() **${LinkDB\[\***name**\*\]}**
 
 Display the link found by _name_. Use =_name_ for an exact match.
 

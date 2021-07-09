@@ -20,7 +20,7 @@ You can toggle display of the HUD by using F11.
 
 ## Top-Level Objects
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **HUD**
+* [_string_]() **HUD**
 
 Name of currently loaded HUD
 

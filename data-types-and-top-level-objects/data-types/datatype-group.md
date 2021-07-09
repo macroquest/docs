@@ -11,7 +11,7 @@ Contains details about your group
 | **Type** | **Member** | **Description** |
 | [_bool_](datatype-bool.md) | **AnyoneMissing** | TRUE if someone is missing in group, offline, in other zone or simply just dead |
 | [_int_](datatype-int.md) | '''CasterMercCount | count of how many Caster DPS mercenaries are in your group |
-| [_string_](datatype-string.md) | '''Cleric | Will now return the cleric as a spawntype if a cleric is in the group \(not a mercenary but a REAL cleric\) |
+| [_string_]() | '''Cleric | Will now return the cleric as a spawntype if a cleric is in the group \(not a mercenary but a REAL cleric\) |
 | [_int_](datatype-int.md) | **GroupSize** | Number of members in your group, including yourself |
 | [_int_](datatype-int.md) | '''HealerMercCount | count of how many Healer mercenaries are in your group |
 | [_int_](datatype-int.md) | '''Injured\[XX\] | Will return the numbers of people in the group that has a hp percent lower than 90 |
@@ -26,12 +26,12 @@ Contains details about your group
 | [_spawn_](datatype-spawn.md) | **Member\[**\#/name**\].Pet** | Returns the group members' pet name |
 | [_int_](datatype-int.md) | **Members** | Total number of group members, excluding yourself |
 | [_int_](datatype-int.md) | **MercenaryCount** | Count of how many Mercenaries are in the group |
-| [_string_](datatype-string.md) | **MouseOver** | Returns the name of the group member your mouse is hovering over |
+| [_string_]() | **MouseOver** | Returns the name of the group member your mouse is hovering over |
 | [_bool_](datatype-bool.md) | **Offline** | will return a TRUE if offline, and FALSE if online |
 | [_bool_](datatype-bool.md) | **OtherZone** | will return a Bool TRUE if online but in another zone and FALSE if online and in same zone as you. |
 | [_groupmember_](datatype-groupmember.md) | **Puller** | Data on the puller of the group |
 | [_int_](datatype-int.md) | '''TankMercCount | count of how many Tank mercenaries are in your group |
-| '**'**[**string**](datatype-string.md) | **To String** | Same as **Members** |
+| '**'**[**string**]() | **To String** | Same as **Members** |
 
 ### Usage
 

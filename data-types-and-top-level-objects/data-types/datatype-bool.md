@@ -6,7 +6,7 @@ A Boolean expression is one that has just two possible outcomes: 1 \(TRUE\) and 
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| \_\_[_string_](datatype-string.md)\_\_ | **To String** | "TRUE" for non-zero, or "FALSE" for zero |
+| \_\_[_string_]()\_\_ | **To String** | "TRUE" for non-zero, or "FALSE" for zero |
 
 
 

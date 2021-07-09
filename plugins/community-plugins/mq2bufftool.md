@@ -117,7 +117,7 @@ Clicks off buffs from list _setname_ in configuration file
 | [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Ready** | TRUE if plugin loaded, INGAME, and blocking active |
 | [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) | **Spell\[\***n**\*\]** | Number of available buff slots for _n_ \(where _n_ spell ID or spell name\), returns -1 if none found |
 | [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) | **Total** | Total number of buffs blocked by plugin this session |
-| [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) | **To String** | TRUE if INGAME |
+| [_string_]() | **To String** | TRUE if INGAME |
 
 == See Also ==
 

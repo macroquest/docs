@@ -54,7 +54,7 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">The total number of AA Vitality you have</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Ability[</b>name<b>]</b>
       </td>
@@ -172,7 +172,7 @@ Inherits [_spawn_](datatype-spawn.md).
         into account spell or song haste.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Aura</b>
       </td>
@@ -335,7 +335,7 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Combat Effects bonus from gear and spells</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>CombatState</b>
       </td>
@@ -469,7 +469,7 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Damage absorption remaining (eg. from Rune-type spells)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Diseased</b>
       </td>
@@ -483,7 +483,7 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Character Dexterity</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Dotted</b>
       </td>
@@ -661,7 +661,7 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Group leadership points</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>GroupList</b>
       </td>
@@ -830,7 +830,7 @@ Inherits [_spawn_](datatype-spawn.md).
         a list of <em>slotnames</em>.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Invulnerable</b>
       </td>
@@ -947,7 +947,7 @@ Inherits [_spawn_](datatype-spawn.md).
         table.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Language[</b>language number<b>]</b>
       </td>
@@ -1047,7 +1047,7 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Max mana</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Mercenary</b>
       </td>
@@ -1055,7 +1055,7 @@ Inherits [_spawn_](datatype-spawn.md).
         dead). Returns NULL if you do not have a Mercenary.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>MercenaryStance</b>
       </td>
@@ -1083,7 +1083,7 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Moving? (including strafe)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Name</b>
       </td>
@@ -1224,7 +1224,7 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Platinum in shared bank</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Poisoned</b>
       </td>
@@ -1315,7 +1315,7 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Am I Shrouded?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Silenced</b>
       </td>
@@ -1445,7 +1445,7 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Stun Resist bonus from gear and spells</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Subscription</b>
       </td>
@@ -1460,7 +1460,7 @@ Inherits [_spawn_](datatype-spawn.md).
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Surname</b>
       </td>
@@ -1611,7 +1611,7 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Total amount of Vitality your toon has</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md">string</a>
+      <td style="text-align:left"><a href>string</a>
       </td>
       <td style="text-align:left"><b>To String</b>
       </td>

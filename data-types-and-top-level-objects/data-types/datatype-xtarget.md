@@ -4,14 +4,13 @@ Contains the data related to your extended target list
 
 ## Members
 
-|  |  |  |
-| :--- | :--- | :--- |
 | **Type** | **Member** | **Description** |
+| :--- | :--- | :--- |
 | [_int_](datatype-int.md) | **ID** | ID of specified XTarget |
-| [_string_](datatype-string.md) | **Name** | Name of specified XTarget |
+| [_string_]() | **Name** | Name of specified XTarget |
 | [_int_](datatype-int.md) | **PctAggro** | PctAggro of specified XTarget |
-| [_string_](datatype-string.md) | **TargetType** | Extended target type \(see below\) |
-| [_string_](datatype-string.md) | **To String** | Number of current extended targets |
+| [_string_]() | **TargetType** | Extended target type \(see below\) |
+| [_string_]() | **To String** | Number of current extended targets |
 
 ## Extended Target Types
 

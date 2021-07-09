@@ -96,7 +96,7 @@ Alias for /twist stop
 
   Returns the next gem to be sung, -1 for item or 0 if not twisting
 
-* [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Twist.List}**
+* [_string_]() **${Twist.List}**
 
   Returns the twist sequence in a format suitable for /twist.
 

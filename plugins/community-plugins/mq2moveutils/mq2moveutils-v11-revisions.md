@@ -1898,13 +1898,13 @@ too small of number or something along those lines. It is there if you can find 
 #### Beta - 8.1012a - minor
 
 * Added Circle TLOs
-  * \([string](../../../data-types-and-top-level-objects/data-types/datatype-string.md)\) - **${Circle}** - _ON / OFF / PAUSED_
-  * \([string](../../../data-types-and-top-level-objects/data-types/datatype-string.md)\) - **${Circle.Status}** - _ON / OFF/ PAUSED_
+  * \([string]()\) - **${Circle}** - _ON / OFF / PAUSED_
+  * \([string]()\) - **${Circle.Status}** - _ON / OFF/ PAUSED_
   * \([float](../../../data-types-and-top-level-objects/data-types/datatype-float.md)\) - **${Circle.CircleX}** - _location of the center X_
   * \([float](../../../data-types-and-top-level-objects/data-types/datatype-float.md)\) - **${Circle.CircleY}** - _location of the center Y_
   * \([bool](../../../data-types-and-top-level-objects/data-types/datatype-bool.md)\) - **${Circle.Drunken}** - _TRUE / FALSE_
-  * \([string](../../../data-types-and-top-level-objects/data-types/datatype-string.md)\) - **${Circle.Rotation}** - _CW / CCW_
-  * \([string](../../../data-types-and-top-level-objects/data-types/datatype-string.md)\) - **${Circle.Direction}** - _FORWARDS / BACKWARDS_
+  * \([string]()\) - **${Circle.Rotation}** - _CW / CCW_
+  * \([string]()\) - **${Circle.Direction}** - _FORWARDS / BACKWARDS_
 * Added the ability to change circle radius
   * Before you had to re-issue /circle on \[\#\] to change the radius\(size\) of the circle.
   * This would plant the anchor where you were at, forcing you to reset any custom anchor or options.
@@ -1985,8 +1985,8 @@ too small of number or something along those lines. It is there if you can find 
 \*_AutoSave_ - automatically save ini like old save cmd \(/stick save\) every time you change a setting
 
 * _New TLOs_
-  * \([string](../../../data-types-and-top-level-objects/data-types/datatype-string.md)\) - **${MakeCamp.InUseBy}** - which command is active
-  * \([string](../../../data-types-and-top-level-objects/data-types/datatype-string.md)\) - **${Stick.StickTargetName}** - name of stick target if using /stick id,
+  * \([string]()\) - **${MakeCamp.InUseBy}** - which command is active
+  * \([string]()\) - **${Stick.StickTargetName}** - name of stick target if using /stick id,
 
     or /stick hold, otherwise will be target name/NONE
 

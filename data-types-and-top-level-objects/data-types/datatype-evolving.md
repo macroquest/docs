@@ -10,7 +10,7 @@ A DataType that deals with evolving items.
 | [_bool_](datatype-bool.md) | **ExpOn** | Is evolving item experience turned on for this item? |
 | [_int_](datatype-int.md) | **Level** | The level of the evolving item. |
 | [_int_](datatype-int.md) | **MaxLevel** | The maximum level of the evolving item |
-| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as **ExpOn** |
+| \_\_[_string_]()\_\_ | **To String** | Same as **ExpOn** |
 
 ## Examples
 

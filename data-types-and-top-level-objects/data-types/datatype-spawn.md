@@ -116,14 +116,14 @@ This type inherits no other types.
       <td style="text-align:left">Class</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>CleanName</b>
       </td>
       <td style="text-align:left">The &quot;cleaned up&quot; name</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>ConColor</b>
       </td>
@@ -165,7 +165,7 @@ This type inherits no other types.
       <td style="text-align:left">Deity</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>DisplayName</b>
       </td>
@@ -308,7 +308,7 @@ This type inherits no other types.
       <td style="text-align:left">Is your target moving away from you?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Gender</b>
       </td>
@@ -329,14 +329,14 @@ This type inherits no other types.
       <td style="text-align:left">Group leader?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Guild</b>
       </td>
       <td style="text-align:left">Guild name</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>GuildStatus **</b>
       </td>
@@ -447,7 +447,7 @@ This type inherits no other types.
       <td style="text-align:left">LFG?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Light</b>
       </td>
@@ -468,14 +468,14 @@ This type inherits no other types.
       <td style="text-align:left">Linkdead?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Loc</b>
       </td>
       <td style="text-align:left">Loc of the spawn</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>LocYX</b>
       </td>
@@ -559,7 +559,7 @@ This type inherits no other types.
       <td style="text-align:left">Location using MQ format</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Name</b>
       </td>
@@ -704,7 +704,7 @@ This type inherits no other types.
       <td style="text-align:left">StandState</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>State</b>
       </td>
@@ -725,21 +725,21 @@ This type inherits no other types.
       <td style="text-align:left">Stuck?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Suffix</b>
       </td>
       <td style="text-align:left">Suffix attached to name, eg. of</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Surname</b>
       </td>
       <td style="text-align:left">Last name</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Title</b>
       </td>
@@ -753,7 +753,7 @@ This type inherits no other types.
       <td style="text-align:left">Trader?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      <td style="text-align:left"><a href><em>string</em></a>
       </td>
       <td style="text-align:left"><b>Type</b>
       </td>
@@ -831,7 +831,7 @@ This type inherits no other types.
       <td style="text-align:left">Shortcut for -Z (makes Downward positive)</td>
     </tr>
     <tr>
-      <td style="text-align:left">&apos;<b>&apos;</b><a href="datatype-string.md"><b>string</b></a>
+      <td style="text-align:left">&apos;<b>&apos;</b><a href><b>string</b></a>
       </td>
       <td style="text-align:left"><b>To String</b>
       </td>

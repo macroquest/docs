@@ -4,7 +4,7 @@
 
 |  |  |
 | :--- | :--- |
-| [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) **Name** | Item name |
+| [_string_]() **Name** | Item name |
 | [_spawn_](../../../data-types-and-top-level-objects/data-types/datatype-spawn.md) **Trader** | The guy selling it |
 | [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **Price** | Price the guy is selling it for |
 | [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **Quantity** | Number of this item this guy has |

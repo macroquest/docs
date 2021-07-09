@@ -18,7 +18,7 @@ Inherits [_spell_](datatype-spell.md).
 | [_float_](datatype-float.md) | **Mod** | The modifier to a bard song |
 | [_action_]() | **Remove** | Removes the named/partial name buff |
 | [_spell_](datatype-spell.md) | **Spell** | The spell |
-| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as Name |
+| \_\_[_string_]()\_\_ | **To String** | Same as Name |
 
 ## Examples
 

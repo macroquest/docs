@@ -205,7 +205,7 @@ _**Spell Set Delete**_ - This will delete a spell set from the ini file.
 `${Cast.Ready[Death Peace|gem]}`  
 `${Cast.Ready[Death Peace|gem3]}`
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Cast.Result}**
+* [_string_]() **${Cast.Result}**
 
   Returns a string containing the result of the /casting command. It can be one of the following:
 
@@ -233,11 +233,11 @@ _**Spell Set Delete**_ - This will delete a spell set from the ini file.
   * **CAST\_TAKEHOLD**: The spell did not take hold
   * **CAST\_UNKNOWN**: Unknown Spell
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Cast.Return}**
+* [_string_]() **${Cast.Return}**
 
   Returns the result of the casting/memorize/interrupt request.
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${Cast.Status}**
+* [_string_]() **${Cast.Status}**
 
   Returns a string containing all the pending events. This string often contains multiple events \(eg. when /casting
 

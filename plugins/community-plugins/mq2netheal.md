@@ -102,7 +102,7 @@ hp,all and short class names could be use with % ie: shm80 war60 hp80 all99.
 
 Where X could be Name/ID or Y is a Numerical Indice on Last ${NetWorst.Request}.
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) '''${NetHeal\[X\].Name}
+* [_string_]() '''${NetHeal\[X\].Name}
 
 Returns Name.
 
@@ -158,7 +158,7 @@ Return how old is This?
 
 * **Correct parameters are.**
 * **self,myself,pet,warder,spellid,spellidlist,${NetBots\[\].Buff}**  
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${NetCure\[X\]}**
+* [_string_]() **${NetCure\[X\]}**
 
 Return list of harmfull effects.
 
@@ -272,7 +272,7 @@ Returns HP Average People in Last Query.
 
 Return Last \# of People Matching Last Query.
 
-* [_string_](../../data-types-and-top-level-objects/data-types/datatype-string.md) **${NetWorst.Members}**
+* [_string_]() **${NetWorst.Members}**
 
 Return People SpawnID List of Last Query.
 

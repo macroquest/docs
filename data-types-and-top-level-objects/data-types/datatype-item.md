@@ -27,18 +27,18 @@ Contains data about items
 | [_int_](datatype-int.md) | **CHA** | CHA value on item |
 | [_int_](datatype-int.md) | **Charges** | Charges |
 | [_int_](datatype-int.md) | **Clairvoyance** | Clairvoyance |
-| [_string_](datatype-string.md) | **Class\[**\#**\]** | Returns the \#th long class name of the listed classes on an item. Items suitable for ALL classes will effectively have all 17 classes listed. |
+| [_string_]() | **Class\[**\#**\]** | Returns the \#th long class name of the listed classes on an item. Items suitable for ALL classes will effectively have all 17 classes listed. |
 | [_int_](datatype-int.md) | **Classes** | The number of classes that can use the item. Items suitable for ALL classes will return 16. |
 | [_int_](datatype-int.md) | **CombatEffects** | CombatEffects |
 | [_int_](datatype-int.md) | **Container** | Number of slots, if this is a container |
 | [_int_](datatype-int.md) | **DamageShieldMitigation** | Damage Shield Mitigation |
 | [_int_](datatype-int.md) | **DamShield** | Damage Shield value on item |
-| [_string_](datatype-string.md) | **Deity\[**\#**\]** | Returns the \#th deity of the listed deities on an item. Items with no deity restrictions will return NULL for all values of \#. |
+| [_string_]() | **Deity\[**\#**\]** | Returns the \#th deity of the listed deities on an item. Items with no deity restrictions will return NULL for all values of \#. |
 | [_int_](datatype-int.md) | **Deities** | The number of deities that can use the item. Items with no deity restrictions will return 0. |
 | [_int_](datatype-int.md) | **DEX** | DEX value on item |
-| [_string_](datatype-string.md) | **DMGBonusType** | "None", "Magic", "Fire", "Cold", "Poison", "Disease" |
+| [_string_]() | **DMGBonusType** | "None", "Magic", "Fire", "Cold", "Poison", "Disease" |
 | [_int_](datatype-int.md) | **DoTShielding** | DoT Shielding |
-| [_string_](datatype-string.md) | **EffectType** | Spell effect type \(see below for spell effect types\) |
+| [_string_]() | **EffectType** | Spell effect type \(see below for spell effect types\) |
 | [_int_](datatype-int.md) | **Endurance** | Endurance |
 | [_int_](datatype-int.md) | **EnduranceRegen** | Endurance regen |
 | [_evolving_](datatype-evolving.md) | **Evolving** | Does this item have Evolving experience on? |
@@ -71,19 +71,19 @@ Contains data about items
 | [_int_](datatype-int.md) | **Items** | Number of items, if this is a container. |
 | [_int_](datatype-int.md) | **ItemSlot** | Item Slot number see [Slot Names](../../general-information/slot-names.md) |
 | [_int_](datatype-int.md) | **ItemSlot2** | Item Slot subnumber see [Slot Names](../../general-information/slot-names.md) |
-| [_string_](datatype-string.md) | **LDoNTheme** | "All", "Deepest Guk", "Miragul's", "Mistmoore", "Rujarkian", "Takish", "Unknown" |
+| [_string_]() | **LDoNTheme** | "All", "Deepest Guk", "Miragul's", "Mistmoore", "Rujarkian", "Takish", "Unknown" |
 | [_bool_](datatype-bool.md) | **Lore** | Lore? |
 | [_bool_](datatype-bool.md) | **Magic** | Magic? |
 | [_int_](datatype-int.md) | **Mana** | Mana value on item |
 | [_int_](datatype-int.md) | **ManaRegen** | ManaRegen value on item |
 | [_int_](datatype-int.md) | **MaxPower** | Max power on an power source |
 | [_int_](datatype-int.md) | **MerchQuantity** | Quantity of item active merchant has |
-| [_string_](datatype-string.md) | **Name** | Name |
+| [_string_]() | **Name** | Name |
 | [_bool_](datatype-bool.md) | **NoDrop** | No Trade? |
 | [_bool_](datatype-bool.md) | **NoRent** | Temporary? |
 | [_int_](datatype-int.md) | **Power** | Power left on power source |
 | [_int_](datatype-int.md) | **Purity** | Purity of item |
-| [_string_](datatype-string.md) | **Race\[**\#**\]** | Returns the \#th long race name of the listed races on an item. Items suitable for ALL races will effectively have all 15 races listed. |
+| [_string_]() | **Race\[**\#**\]** | Returns the \#th long race name of the listed races on an item. Items suitable for ALL races will effectively have all 15 races listed. |
 | [_int_](datatype-int.md) | **Races** | The number of races that can use the item. Items suitable for ALL races will return 15. |
 | [_int_](datatype-int.md) | **RequiredLevel** | Returns the Required Level of an item. Items with no required level will return 0. |
 | [_int_](datatype-int.md) | **SellPrice** | Price to sell this item at this merchant |
@@ -111,7 +111,7 @@ Contains data about items
 | [_ticks_](datatype-ticks.md) | **Timer** | Returns the number of ticks remaining on an item recast timer |
 | [_int_](datatype-int.md) | **TimerReady** | Returns the number of seconds remaining on an item recast timer |
 | [_bool_](datatype-bool.md) | **Tradeskills** | Tradeskills? |
-| [_string_](datatype-string.md) | **Type** | Type |
+| [_string_]() | **Type** | Type |
 | [_int_](datatype-int.md) | **Tribute** | Tribute value of the item |
 | [_int_](datatype-int.md) | **Value** | Item value in coppers |
 | [_int_](datatype-int.md) | **Weight** | Item weight |
@@ -119,7 +119,7 @@ Contains data about items
 | [_invslot_](datatype-invslot.md) | **WornSlot\[**\#**\]** | The \#th invslot this item can be worn in \(fingers/ears count as 2 slots\) |
 | [_bool_](datatype-bool.md) | **WornSlot\[**name**\]** | Can item be worn in invslot with this _name_? \(worn slots only\) |
 | [_int_](datatype-int.md) | **WornSlots** | The number of invslots this item can be worn in \(fingers/ears count as 2 slots\) |
-| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |
+| \_\_[_string_]()\_\_ | **To String** | Same as **Name** |
 
 ## Spell Effect Types
 

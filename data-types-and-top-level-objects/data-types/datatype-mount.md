@@ -10,7 +10,7 @@ This datatype deals strictly with information on your "Mount" keyring.
 | :--- | :--- | :--- |
 | **Type** | **Member** | **Description** |
 | [_int_](datatype-int.md) | **Index** | Where on the keyring list |
-| [_string_](datatype-string.md) | **Name** | name of the mount in XX slot |
+| [_string_]() | **Name** | name of the mount in XX slot |
 |  |  |  |
 
 ## Examples

@@ -289,10 +289,10 @@ Port=1337
 | :--- | :--- | :--- |
 | **Type** | **Member Name** | **Description** |
 | [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Connected** | Client connection status |
-| [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) | **Names** | List of connected characters |
-| [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) | **Port** | OFFLINE if not connected, port if connected |
-| [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) | **Server** | hostname or IP of server you connected to |
-| [_string_](../../../data-types-and-top-level-objects/data-types/datatype-string.md) | **ToonName** | Character name **as seen by EQBC** \(may reflect YouPlayer\) |
+| [_string_]() | **Names** | List of connected characters |
+| [_string_]() | **Port** | OFFLINE if not connected, port if connected |
+| [_string_]() | **Server** | hostname or IP of server you connected to |
+| [_string_]() | **ToonName** | Character name **as seen by EQBC** \(may reflect YouPlayer\) |
 | [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Setting\[**_**option**_**\]** | Option enabled/disabled status. \(see **/bccmd set** for complete list\) |
 
 ### Examples
