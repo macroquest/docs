@@ -1,6 +1,9 @@
 # Table of contents
 
 * [Introduction](README.md)
+* [About MacroQuest](macroquest2-intro/README.md)
+  * [History Of MacroQuest](macroquest2-intro/history-of-macroquest.md)
+  * [Credits](macroquest2-intro/credits.md)
 * [Documentation](documentation/README.md)
   * [Beginners Guide to TLOs and MQ2DataVars](documentation/beginners-guide-to-tlos-and-mq2datavars.md)
   * [CFG Files](documentation/cfg-files.md)
@@ -22,7 +25,6 @@
   * [MacroQuest2.exe](documentation/macroquest2.exe.md)
   * [MacroQuest2:Compiling](documentation/macroquest2-compiling.md)
   * [MacroQuest2:IRC](documentation/macroquest2-irc.md)
-  * [MacroQuest2:Intro](documentation/macroquest2-intro.md)
   * [MacroQuest2:Macros](documentation/macroquest2-macros.md)
   * [MacroQuest2:Plugins](documentation/macroquest2-plugins.md)
   * [MacroQuest2:Troubleshooting](documentation/macroquest2-troubleshooting.md)

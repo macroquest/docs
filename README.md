@@ -12,7 +12,7 @@ This documentation is for MacroQuest a.k.a. MQnext. For the legacy MacroQuest2 W
 
 ## MacroQuest
 
-* [Intro](documentation/macroquest2-intro.md)
+* [Intro](macroquest2-intro/)
 * [Compiling MQ2](documentation/macroquest2-compiling.md)
 * [Using MQ2](documentation/macroquest2-using.md)
 * [Macros/Snippets](documentation/macroquest2-macros.md)
