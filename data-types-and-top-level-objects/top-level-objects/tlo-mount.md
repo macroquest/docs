@@ -1,35 +1,21 @@
 # TLO:Mount
 
-**NOTE** This TLO has been changed to "KeyRing"
-
-## Description
-
 Used to get information about items on your Mount keyring.
-
-The addition of this allows the item to be cast using /useitem
-
-`/useitem Abyssal Steed`
 
 ## Forms
 
-|  |  |
-| :--- | :--- |
-| [_Mount_](../data-types/datatype-keyring.md) **Mount\[**\#**\]** | Mount Name in slot 1 of your Mount Keyring |
-| [_Mount_](../data-types/datatype-keyring.md) **Mount\[**\#**\].Name** | Mount Name in slot 1 of your Mount Keyring |
-|  |  |
-
-## Access to Types
-
-* [_mount_](../data-types/datatype-keyring.md)
+|  |  |  |
+| :--- | :--- | :--- |
+| \_\_[_keyring_](../data-types/datatype-keyring.md) | **Mount\[**N**\]** | Retrieves the item in your mount keyring by index |
+| [_keyring_](../data-types/datatype-keyring.md) | **Mount\[**name**\]** | Retrieve the item in your mount keyring by name. A `=` can be prepended for an exact match. |
 
 ## Examples
 
 `/echo ${Mount[1].Name}`
 
-Outputs: \[MQ2\] Whirligig Flyer ... Displayes the first mount in your mount keyring
+Outputs: Whirligig Flyer
 
-## See Also
+Displays the first mount in your mount keyring
 
-* [Top-Level Objects](./)
-* [mount](../data-types/datatype-keyring.md)
+
 
