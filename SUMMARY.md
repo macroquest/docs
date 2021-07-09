@@ -259,6 +259,7 @@
   * [DataType:deity](data-types-and-top-level-objects/data-types/datatype-deity.md)
   * [DataType:dynamiczone](data-types-and-top-level-objects/data-types/datatype-dynamiczone.md)
   * [DataType:dzmember](data-types-and-top-level-objects/data-types/datatype-dzmember.md)
+  * [DataType:dztimer](data-types-and-top-level-objects/data-types/datatype-dztimer.md)
   * [DataType:everquest](data-types-and-top-level-objects/data-types/datatype-everquest.md)
   * [DataType:evolving](data-types-and-top-level-objects/data-types/datatype-evolving.md)
   * [DataType:fellowship](data-types-and-top-level-objects/data-types/datatype-fellowship.md)
