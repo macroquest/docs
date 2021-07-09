@@ -17,33 +17,33 @@ This is the type for your current task.
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Index</b>
-      </td>
-      <td style="text-align:left">Returns the task&apos;s place on the tasklist</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Index</b>
+        </td>
+        <td style="text-align:left">Returns the task&apos;s place on the tasklist</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Objective[#].Instruction</b>
-      </td>
-      <td style="text-align:left">Returns a tasks&apos;s Objectives</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Objective[#].Instruction</b>
+        </td>
+        <td style="text-align:left">Returns a tasks&apos;s Objectives</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Objective[#].Status</b>
-      </td>
-      <td style="text-align:left">Returns the status of the objective in the format amount done Vs total
-        IE 0/3</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Objective[#].Status</b>
+        </td>
+        <td style="text-align:left">Returns the status of the objective in the format amount done Vs total
+          IE 0/3</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Objective[#].Zone</b>
-      </td>
-      <td style="text-align:left">Returns the zone the objective is to be performed in</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Objective[#].Zone</b>
+        </td>
+        <td style="text-align:left">Returns the zone the objective is to be performed in</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -67,25 +67,25 @@ This is the type for your current task.
       <td style="text-align:left">Returns true or false if a objective is optional</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>RequiredItem</b>
-      </td>
-      <td style="text-align:left">Returns a string of the required item to complete a objective.</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>RequiredItem</b>
+        </td>
+        <td style="text-align:left">Returns a string of the required item to complete a objective.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>RequiredSkill</b>
-      </td>
-      <td style="text-align:left">Returns a string of the required skill to complete a objective.</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>RequiredSkill</b>
+        </td>
+        <td style="text-align:left">Returns a string of the required skill to complete a objective.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>RequiredSpell</b>
-      </td>
-      <td style="text-align:left">Returns a string of the required spell to complete a objective.</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>RequiredSpell</b>
+        </td>
+        <td style="text-align:left">Returns a string of the required spell to complete a objective.</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -102,25 +102,25 @@ This is the type for your current task.
       <td style="text-align:left">Returns an int of the task ID</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Step</b>
-      </td>
-      <td style="text-align:left">Returns description of current step in the task</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Step</b>
+        </td>
+        <td style="text-align:left">Returns description of current step in the task</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Select</b>
-      </td>
-      <td style="text-align:left">Selects the task</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Select</b>
+        </td>
+        <td style="text-align:left">Selects the task</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Title</b>
-      </td>
-      <td style="text-align:left">Returns name of the shared task</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Title</b>
+        </td>
+        <td style="text-align:left">Returns name of the shared task</td>
     </tr>
     <tr>
       <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-timestamp.md"><em>timestamp</em></a>&lt;em&gt;&lt;/em&gt;</td>
@@ -151,11 +151,11 @@ This is the type for your current task.
       <td style="text-align:left">Returns specified member in task by name</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Leader</b>
-      </td>
-      <td style="text-align:left">Returns task leader&apos;s name</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Leader</b>
+        </td>
+        <td style="text-align:left">Returns task leader&apos;s name</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -166,31 +166,31 @@ This is the type for your current task.
         filled)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Type</b>
-      </td>
-      <td style="text-align:left">
-        <p>Returns a string that can be one of the following:</p>
-        <ul>
-          <li>Unknown</li>
-          <li>None</li>
-          <li>Deliver</li>
-          <li>Kill</li>
-          <li>Loot</li>
-          <li>Hail</li>
-          <li>Explore</li>
-          <li>Tradeskill</li>
-          <li>Fishing</li>
-          <li>Foraging</li>
-          <li>Cast</li>
-          <li>UseSkill</li>
-          <li>DZSwitch</li>
-          <li>DestroyObject</li>
-          <li>Collect</li>
-          <li>Dialogue</li>
-        </ul>
-      </td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Type</b>
+        </td>
+        <td style="text-align:left">
+          <p>Returns a string that can be one of the following:</p>
+          <ul>
+            <li>Unknown</li>
+            <li>None</li>
+            <li>Deliver</li>
+            <li>Kill</li>
+            <li>Loot</li>
+            <li>Hail</li>
+            <li>Explore</li>
+            <li>Tradeskill</li>
+            <li>Fishing</li>
+            <li>Foraging</li>
+            <li>Cast</li>
+            <li>UseSkill</li>
+            <li>DZSwitch</li>
+            <li>DestroyObject</li>
+            <li>Collect</li>
+            <li>Dialogue</li>
+          </ul>
+        </td>
     </tr>
   </tbody>
 </table>

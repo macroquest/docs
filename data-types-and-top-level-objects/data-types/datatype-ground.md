@@ -12,7 +12,7 @@ Contains all data related to a ground spawn
 | [_float_](datatype-float.md) | **Y** | Y coordinate |
 | [_float_](datatype-float.md) | **Z** | Z coordinate |
 | [_heading_](datatype-heading.md) | **Heading** | Ground item is facing this heading |
-| [_string_]() | **Name** | Name |
+| \_\_[_string_](datatype-string.md)\_\_ | **Name** | Name |
 | [_heading_](datatype-heading.md) | **HeadingTo** | Direction player must move to meet this ground item |
 | [_bool_](datatype-bool.md) | **LineOfSight** | Returns TRUE if ground spawn is in line of sight |
 | [_int_](datatype-int.md) | **Address** | ??? |
@@ -20,23 +20,22 @@ Contains all data related to a ground spawn
 | [_int_](datatype-int.md) | **Distance3D** | Distance from player to ground item |
 | [_int_](datatype-int.md) | **SubID** | ??? |
 | [_int_](datatype-int.md) | **ZoneID** | ??? |
-| [_action_]() | **First** | First spawn |
-| [_action_]() | **Last** | Last spawn |
-| [_action_]() | **Next** | Next spawn |
-| [_action_]() | **Prev** | Prev spawn |
-| [_action_]() | **DoFace** | Will cause the toon to face the called for spawn if it exists |
-| [_action_]() | **DoTarget** | Will cause the toon to target the called for spawn if it exists |
-| [_action_]() | **Grab** | Picks up the ground spawn |
+| \_\_[_ground_](datatype-ground.md)\_\_ | **First** | First spawn |
+| \_\_[_ground_](datatype-ground.md)\_\_ | **Last** | Last spawn |
+| \_\_[_ground_](datatype-ground.md)\_\_ | **Next** | Next spawn |
+| \_\_[_ground_](datatype-ground.md)\_\_ | **Prev** | Prev spawn |
 | [_float_](datatype-float.md) | **W** | X coordinate \(Westward-positive\) |
 | [_float_](datatype-float.md) | **N** | Y coordinate \(Northward-positive\) |
 | [_float_](datatype-float.md) | **U** | Z coordinate \(Upward-positive\) |
-| '**'**[**string**]() | **To String** | Same as ID |
+| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as ID |
 
 ## Methods
 
 | Name | Action |
 | :--- | :--- |
-|  |  |
+| **DoFace** | Will cause the toon to face the called for spawn if it exists |
+| **DoTarget** | Will cause the toon to target the called for spawn if it exists |
+| **Grab** | Picks up the ground spawn |
 
 ## Examples
 
@@ -57,12 +56,4 @@ Will target the closest item on the ground which has the word "egg" in it. and t
 `/if (${Ground[1].Doface.Distance3D}) /echo we just targeted a ${Ground[1].DisplayName}`
 
 Will face the closest item on the ground. and then echo the distance to it in the mq2 window. well if it finds an groundspawn, otherwise it will just echo NULL .DoFace does NOT target the ground item, it just faces it.
-
-## See Also
-
-* [Data Types](./)
-* [Top-Level Objects](../top-level-objects/)
-* [TLO:Ground](../top-level-objects/tlo-ground.md)
-* [TLO:ItemTarget](../top-level-objects/tlo-itemtarget.md)
-* [TLO:GroundItemCount](../top-level-objects/tlo-grounditemcount.md)
 

@@ -10,10 +10,10 @@ Contains all information related to floating point numbers
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| [_string_]() | **Deci** | The number as a string with **one** place of precision, _i.e._ \#\#\#.\# |
-| [_string_]() | **Centi** | The number as a string with **two** places of precision, _i.e._ \#\#\#.\#\# |
+| [_string_](datatype-string.md)\_\_ | **Deci** | The number as a string with **one** place of precision, _i.e._ \#\#\#.\# |
+| [_string_](datatype-string.md)\_\_ | **Centi** | The number as a string with **two** places of precision, _i.e._ \#\#\#.\#\# |
 | [_int_](datatype-int.md) | **Int** | Integer portion of the number truncated rather than rounded, _e.g._ 12.779 returns 12 |
-| [_string_]() | **Milli** | The number as a string with **three** places of precision, _i.e._ \#\#\#.\#\#\# |
-| [_string_]() | **Precision\[**\#**\]** | The number as a string with \# places of precision |
-| \_\_[_string_]()\_\_ | **To String** | Same as **Centi** |
+| [_string_](datatype-string.md)\_\_ | **Milli** | The number as a string with **three** places of precision, _i.e._ \#\#\#.\#\#\# |
+| [_string_](datatype-string.md)\_\_ | **Precision\[**\#**\]** | The number as a string with \# places of precision |
+| [_string_](datatype-string.md)\_\_ | **To String** | Same as **Centi** |
 

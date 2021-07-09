@@ -54,11 +54,11 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">The total number of AA Vitality you have</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Ability[</b>name<b>]</b>
-      </td>
-      <td style="text-align:left">Skill name assigned to this doability button</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Ability[</b>name<b>]</b>
+        </td>
+        <td style="text-align:left">Skill name assigned to this doability button</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -172,11 +172,11 @@ Inherits [_spawn_](datatype-spawn.md).
         into account spell or song haste.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Aura</b>
-      </td>
-      <td style="text-align:left">The aura effect name</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Aura</b>
+        </td>
+        <td style="text-align:left">The aura effect name</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -335,12 +335,12 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Combat Effects bonus from gear and spells</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>CombatState</b>
-      </td>
-      <td style="text-align:left">Returns one of the following: COMBAT, DEBUFFED, COOLDOWN, ACTIVE, RESTING,
-        UNKNOWN</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>CombatState</b>
+        </td>
+        <td style="text-align:left">Returns one of the following: COMBAT, DEBUFFED, COOLDOWN, ACTIVE, RESTING,
+          UNKNOWN</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -469,11 +469,11 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Damage absorption remaining (eg. from Rune-type spells)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Diseased</b>
-      </td>
-      <td style="text-align:left">Returns the name of any Disease spell</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Diseased</b>
+        </td>
+        <td style="text-align:left">Returns the name of any Disease spell</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -483,11 +483,11 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Character Dexterity</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Dotted</b>
-      </td>
-      <td style="text-align:left">Returns name of first DoT on character.</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Dotted</b>
+        </td>
+        <td style="text-align:left">Returns name of first DoT on character.</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -661,11 +661,11 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Group leadership points</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>GroupList</b>
-      </td>
-      <td style="text-align:left">Returns a string of your group members (excluding you)</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>GroupList</b>
+        </td>
+        <td style="text-align:left">Returns a string of your group members (excluding you)</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-spawn.md"><em>spawn</em></a>
@@ -830,12 +830,12 @@ Inherits [_spawn_](datatype-spawn.md).
         a list of <em>slotnames</em>.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Invulnerable</b>
-      </td>
-      <td style="text-align:left">Returns the invulnerable spell name on you, can be used with spell data
-        type ex. ${Me.Invulnerable.Spell.ID}</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Invulnerable</b>
+        </td>
+        <td style="text-align:left">Returns the invulnerable spell name on you, can be used with spell data
+          type ex. ${Me.Invulnerable.Spell.ID}</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -947,12 +947,12 @@ Inherits [_spawn_](datatype-spawn.md).
         table.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Language[</b>language number<b>]</b>
-      </td>
-      <td style="text-align:left">Returns the EQ language name of the <em>language number</em> specified.
-        See below for language/number table.</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Language[</b>language number<b>]</b>
+        </td>
+        <td style="text-align:left">Returns the EQ language name of the <em>language number</em> specified.
+          See below for language/number table.</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -1047,19 +1047,19 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Max mana</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Mercenary</b>
-      </td>
-      <td style="text-align:left">The state of your Mercenary, ACTIVE, SUSPENDED, or UNKNOWN (If it&apos;s
-        dead). Returns NULL if you do not have a Mercenary.</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Mercenary</b>
+        </td>
+        <td style="text-align:left">The state of your Mercenary, ACTIVE, SUSPENDED, or UNKNOWN (If it&apos;s
+          dead). Returns NULL if you do not have a Mercenary.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>MercenaryStance</b>
-      </td>
-      <td style="text-align:left">Current active mercenary stance as a string, default is NULL.</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>MercenaryStance</b>
+        </td>
+        <td style="text-align:left">Current active mercenary stance as a string, default is NULL.</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -1083,11 +1083,11 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Moving? (including strafe)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Name</b>
-      </td>
-      <td style="text-align:left">First name</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Name</b>
+        </td>
+        <td style="text-align:left">First name</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -1224,11 +1224,11 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Platinum in shared bank</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Poisoned</b>
-      </td>
-      <td style="text-align:left">Returns the name of any Poison spell</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Poisoned</b>
+        </td>
+        <td style="text-align:left">Returns the name of any Poison spell</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -1315,11 +1315,11 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Am I Shrouded?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Silenced</b>
-      </td>
-      <td style="text-align:left">Returns the name of the Silence type effect on you</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Silenced</b>
+        </td>
+        <td style="text-align:left">Returns the name of the Silence type effect on you</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -1445,11 +1445,11 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Stun Resist bonus from gear and spells</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Subscription</b>
-      </td>
-      <td style="text-align:left">Subscription type GOLD, FREE, (Silver?)</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Subscription</b>
+        </td>
+        <td style="text-align:left">Subscription type GOLD, FREE, (Silver?)</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -1460,11 +1460,11 @@ Inherits [_spawn_](datatype-spawn.md).
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Surname</b>
-      </td>
-      <td style="text-align:left">Last name</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Surname</b>
+        </td>
+        <td style="text-align:left">Last name</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -1611,12 +1611,12 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left">Total amount of Vitality your toon has</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href>string</a>
-      </td>
-      <td style="text-align:left"><b>To String</b>
-      </td>
-      <td style="text-align:left">Same as <b>Name</b>
-      </td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>To String</b>
+        </td>
+        <td style="text-align:left">Same as <b>Name</b>
+        </td>
     </tr>
   </tbody>
 </table>

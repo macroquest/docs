@@ -6,7 +6,7 @@ Allows checking if cached buffs on others have expired with out targeting
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| [_string_]() | **CasterName** | Returns the name of the caster who applied the cached buff |
+| \_\_[_string_](datatype-string.md)\_\_ | **CasterName** | Returns the name of the caster who applied the cached buff |
 | [_int_](datatype-int.md) | **Count** | Returns the amount of buffs catched, or -1 it none |
 | [_int_](datatype-int.md) | **Duration** | Returns the duration of the cached buff |
 | [_int_](datatype-int.md) | **Slot** | Returns the buff slot the target had the buff in |

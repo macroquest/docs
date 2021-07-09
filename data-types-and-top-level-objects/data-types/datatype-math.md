@@ -1,7 +1,5 @@
 # DataType:math
 
-## Introduction
-
 This DataType performs various mathematical calculations. In the following members, _n_ is any formula that consists of valid [Operators](../../documentation/operators.md).
 
 ## Members
@@ -83,12 +81,12 @@ This DataType performs various mathematical calculations. In the following membe
       </td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Hex[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">Returns hexidecimal value of <a href="datatype-int.md"><em>int</em></a>  <em>n</em>
-      </td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Hex[</b><em>n</em><b>]</b>
+        </td>
+        <td style="text-align:left">Returns hexidecimal value of <a href="datatype-int.md"><em>int</em></a>  <em>n</em>
+        </td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -128,18 +126,12 @@ This DataType performs various mathematical calculations. In the following membe
       <td style="text-align:left">Tangent of <em>n</em> (in degrees)</td>
     </tr>
     <tr>
-      <td style="text-align:left">&apos;<b>&apos;</b><a href><b>string</b></a>
-      </td>
-      <td style="text-align:left"><b>To String</b>
-      </td>
-      <td style="text-align:left">NULL</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>To String</b>
+        </td>
+        <td style="text-align:left">NULL</td>
     </tr>
   </tbody>
 </table>
-
-## See Also
-
-* [Data Types](./)
-* [TLO:Math](../top-level-objects/tlo-math.md)
-* [Operators](../../documentation/operators.md)
 

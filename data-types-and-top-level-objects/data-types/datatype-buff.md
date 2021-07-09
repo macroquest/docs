@@ -1,12 +1,10 @@
 # DataType:buff
 
-## Description
-
-This is the type for any buffs currently affecting you, both long duration and short duration \(bard\) buffs.
-
-Inherits [_spell_](datatype-spell.md).
+This is the type for any buffs currently affecting you, both long duration and short duration buffs.
 
 ## Members
+
+This type inherits members from [_spell_](datatype-spell.md).
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
@@ -16,9 +14,14 @@ Inherits [_spell_](datatype-spell.md).
 | [_int_](datatype-int.md) | **ID** | The ID of the buff or shortbuff slot |
 | [_int_](datatype-int.md) | **Level** | The level of the person that cast the buff on you \(not the level of the spell\) |
 | [_float_](datatype-float.md) | **Mod** | The modifier to a bard song |
-| [_action_]() | **Remove** | Removes the named/partial name buff |
 | [_spell_](datatype-spell.md) | **Spell** | The spell |
-| \_\_[_string_]()\_\_ | **To String** | Same as Name |
+| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as Name |
+
+## Methods
+
+| Name | Action |
+| :--- | :--- |
+| **Remove** | Removes the named/partial name buff |
 
 ## Examples
 

@@ -115,13 +115,13 @@ This contains data related to the specified in-game window
       <td style="text-align:left">Number of items in a Listbox or Combobox</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>List[ </b>#<b>, </b>y<em><b> </b></em><b>]</b>
-      </td>
-      <td style="text-align:left">Get the text for the <code>#</code>th item in a list box. Only works on
-        list boxes. Use of <code>y</code> is optional and allows selection of the
-        column of the window to get text from.</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>List[ </b>#<b>, </b>y<em><b> </b></em><b>]</b>
+        </td>
+        <td style="text-align:left">Get the text for the <code>#</code>th item in a list box. Only works on
+          list boxes. Use of <code>y</code> is optional and allows selection of the
+          column of the window to get text from.</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -154,16 +154,16 @@ This contains data related to the specified in-game window
       <td style="text-align:left">Have I clicked the Trade button?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Name</b>
-      </td>
-      <td style="text-align:left">
-        <p>Name of window piece, <em>e.g.</em> &quot;ChatWindow&quot; for top level
-          windows, or the piece name for child windows.</p>
-        <p>&lt;b&gt;&lt;/b&gt;</p>
-        <p><b>Note:</b> this is Custom UI dependent</p>
-      </td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Name</b>
+        </td>
+        <td style="text-align:left">
+          <p>Name of window piece, <em>e.g.</em> &quot;ChatWindow&quot; for top level
+            windows, or the piece name for child windows.</p>
+          <p>&lt;b&gt;&lt;/b&gt;</p>
+          <p><b>Note:</b> this is Custom UI dependent</p>
+        </td>
     </tr>
     <tr>
       <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-window.md"><em>window</em></a>&lt;em&gt;&lt;/em&gt;</td>
@@ -187,16 +187,16 @@ This contains data related to the specified in-game window
         <td style="text-align:left">Parent window</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>ScreenID</b>
-      </td>
-      <td style="text-align:left">
-        <p>ScreenID of window piece.</p>
-        <p>&lt;b&gt;&lt;/b&gt;</p>
-        <p><b>Note:</b> This is <em>not</em> Custom UI dependent, it must be the same
-          on all UIs</p>
-      </td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>ScreenID</b>
+        </td>
+        <td style="text-align:left">
+          <p>ScreenID of window piece.</p>
+          <p>&lt;b&gt;&lt;/b&gt;</p>
+          <p><b>Note:</b> This is <em>not</em> Custom UI dependent, it must be the same
+            on all UIs</p>
+        </td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -213,26 +213,26 @@ This contains data related to the specified in-game window
       <td style="text-align:left">Window style code</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Text</b>
-      </td>
-      <td style="text-align:left">Window&apos;s text</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Text</b>
+        </td>
+        <td style="text-align:left">Window&apos;s text</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Tooltip</b>
-      </td>
-      <td style="text-align:left">TooltipReference text</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Tooltip</b>
+        </td>
+        <td style="text-align:left">TooltipReference text</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Type</b>
-      </td>
-      <td style="text-align:left">Type of window piece (Screen for top level windows, or Listbox, Button,
-        Gauge, Label, Editbox, Slider, etc)</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Type</b>
+        </td>
+        <td style="text-align:left">Type of window piece (Screen for top level windows, or Listbox, Button,
+          Gauge, Label, Editbox, Slider, etc)</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -277,11 +277,11 @@ This contains data related to the specified in-game window
       <td style="text-align:left">Screen Y position</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>To String</b>
-      </td>
-      <td style="text-align:left">TRUE if window exists, FALSE if not</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>To String</b>
+        </td>
+        <td style="text-align:left">TRUE if window exists, FALSE if not</td>
     </tr>
   </tbody>
 </table>

@@ -1,10 +1,10 @@
 # DataType:merchant
 
-## Description
-
-This DataType contains information related to merchants
+This contains information related to the active merchant.
 
 ## Members
+
+This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is active.
 
 <table>
   <thead>
@@ -86,48 +86,28 @@ This DataType contains information related to merchants
       <td style="text-align:left">True if the merchants itemlist has been filled in.</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>OpenWindow</b>
-      </td>
-      <td style="text-align:left">Will open the merchant closest to you, or if you have a merchant target</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>SelectItem[xxx]</b>
-      </td>
-      <td style="text-align:left">Select item specified or partial match that fits. Use SelectItem[=xxx]
-        for EXACT match(its not case sensitive)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>Buy[#]</b>
-      </td>
-      <td style="text-align:left">Buys # of whatever is selected with Merchant.SelectItem[xxx]</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>Sell[#]</b>
-      </td>
-      <td style="text-align:left">Sell # of whatever is selected with /seletitem. See examples</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&apos;<b>&apos;</b><a href="datatype-bool.md"><b>bool</b></a>
-      </td>
-      <td style="text-align:left"><b>To String</b>
-      </td>
-      <td style="text-align:left">Same as <b>Open</b>
-      </td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>To String</b>
+        </td>
+        <td style="text-align:left">Same as <b>Open</b>
+        </td>
     </tr>
   </tbody>
 </table>
 
+## Methods
+
+| Name | Action |
+| :--- | :--- |
+| **Buy\[\#\]** | Buys \# of whatever is selected with **Merchant.SelectItem\[xxx\]** |
+| **OpenWindow** | Will open the merchant closest to you, or if you have a merchant target |
+| **SelectItem\[xxx\]** | Select item specified or partial match that fits. Use **SelectItem\[=xxx\]** for EXACT match \(its not case sensitive\) |
+| **Sell\[\#\]** | Sell \# of whatever is selected with /selectitem. See examples |
+
 ## Examples
 
-Using ${Merchant.Sell\[\#\]}
+Using `${Merchant.Sell[#]}`
 
 `/selectitem "Diamond"`
 
@@ -138,11 +118,4 @@ Then you can use
 `/invoke ${Merchant.Sell[100]}`
 
 Sells 100 of whatever is selected with /selectitem
-
-## See Also
-
-* [Data Types](./)
-* [Top-Level Objects](../top-level-objects/)
-* [TLO:Merchant](../top-level-objects/tlo-merchant.md)
-* [selectitem](../../commands/slash-commands/selectitem.md)
 

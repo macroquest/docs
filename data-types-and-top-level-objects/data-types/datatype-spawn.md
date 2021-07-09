@@ -1,10 +1,6 @@
 # DataType:spawn
 
-## Description
-
-This is the type used for spawns.
-
-This type inherits no other types.
+Represents an in-game spawn.
 
 ## Members
 
@@ -85,20 +81,23 @@ This type inherits no other types.
       <td style="text-align:left">Is a buyer? (ie. Buyer in the bazaar)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-cachedbuff.md"><em>CachedBuff</em></a>
+      <td style="text-align:left"><a href="datatype-cachedbuff.md"><em>cachedbuff</em></a>
       </td>
       <td style="text-align:left"><b>CachedBuff</b>
       </td>
-      <td style="text-align:left">Caches buff information cast on others, refer to <a href="https://github.com/macroquest/docs/tree/108032b0f20c28068c91a07957f88d1e87a0bb61/data-types/[[DataType:CachedBuff/README.md">[[DataType:CachedBuff</a> for
-        additional information</td>
+      <td style="text-align:left">Caches buff information cast on others</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
       </td>
       <td style="text-align:left"><b>CanSplashLand</b>
       </td>
-      <td style="text-align:left">TRUE/FALSE on if a splash spell can land...NOTE! This check is ONLY for
-        line of sight to the targetindicator (red/green circle)</td>
+      <td style="text-align:left">
+        <p>TRUE/FALSE on if a splash spell can land...</p>
+        <p></p>
+        <p><b>Note:</b> This check is ONLY for line of sight to the targetindicator
+          (red/green circle)</p>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-spell.md"><em>spell</em></a>
@@ -116,14 +115,14 @@ This type inherits no other types.
       <td style="text-align:left">Class</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
       </td>
       <td style="text-align:left"><b>CleanName</b>
       </td>
       <td style="text-align:left">The &quot;cleaned up&quot; name</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
       </td>
       <td style="text-align:left"><b>ConColor</b>
       </td>
@@ -165,7 +164,7 @@ This type inherits no other types.
       <td style="text-align:left">Deity</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
       </td>
       <td style="text-align:left"><b>DisplayName</b>
       </td>
@@ -236,27 +235,6 @@ This type inherits no other types.
       <td style="text-align:left">Distance from player in Z plane</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>DoAssist</b>
-      </td>
-      <td style="text-align:left">assists the spawn</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>DoFace</b>
-      </td>
-      <td style="text-align:left">Faces target</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>DoTarget</b>
-      </td>
-      <td style="text-align:left">targets spawn</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
       </td>
       <td style="text-align:left"><b>Ducking</b>
@@ -293,12 +271,12 @@ This type inherits no other types.
       <td style="text-align:left">Feigning?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>spawn</em>
-      </td>
-      <td style="text-align:left"><b>Following</b>
-      </td>
-      <td style="text-align:left">The spawn a player is following using /follow on - also returns your pet&apos;s
-        target via ${Me.Pet.Following}</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Following</b>
+        </td>
+        <td style="text-align:left">The spawn a player is following using /follow on - also returns your pet&apos;s
+          target via ${Me.Pet.Following}</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -308,11 +286,11 @@ This type inherits no other types.
       <td style="text-align:left">Is your target moving away from you?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Gender</b>
-      </td>
-      <td style="text-align:left">Gender</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Gender</b>
+        </td>
+        <td style="text-align:left">Gender</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -329,20 +307,20 @@ This type inherits no other types.
       <td style="text-align:left">Group leader?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Guild</b>
-      </td>
-      <td style="text-align:left">Guild name</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Guild</b>
+        </td>
+        <td style="text-align:left">Guild name</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>GuildStatus **</b>
-      </td>
-      <td style="text-align:left">Guild status (Leader, Officer, Member) <b>NOTE</b> GuildStatus is no longer
-        present in BETA/TEST/LIVE versions and only available in UF and ROF EMU
-        builds.</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>GuildStatus **</b>
+        </td>
+        <td style="text-align:left">Guild status (Leader, Officer, Member) <b>NOTE</b> GuildStatus is no longer
+          present in BETA/TEST/LIVE versions and only available in UF and ROF EMU
+          builds.</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-heading.md"><em>heading</em></a>
@@ -426,13 +404,6 @@ This type inherits no other types.
       <td style="text-align:left">Level</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>DoLeftClick</b>
-      </td>
-      <td style="text-align:left">left clicks the spawn</td>
-    </tr>
-    <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
       </td>
       <td style="text-align:left"><b>Levitating</b>
@@ -447,11 +418,11 @@ This type inherits no other types.
       <td style="text-align:left">LFG?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Light</b>
-      </td>
-      <td style="text-align:left">Name of the light class this spawn has</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Light</b>
+        </td>
+        <td style="text-align:left">Name of the light class this spawn has</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -468,18 +439,18 @@ This type inherits no other types.
       <td style="text-align:left">Linkdead?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Loc</b>
-      </td>
-      <td style="text-align:left">Loc of the spawn</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Loc</b>
+        </td>
+        <td style="text-align:left">Loc of the spawn</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>LocYX</b>
-      </td>
-      <td style="text-align:left">LocYX of the spawn</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>LocYX</b>
+        </td>
+        <td style="text-align:left">LocYX of the spawn</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
@@ -496,11 +467,11 @@ This type inherits no other types.
       <td style="text-align:left">Current Raid or Group marked npc mark number (raid first)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>spawn</em>
-      </td>
-      <td style="text-align:left"><b>Master</b>
-      </td>
-      <td style="text-align:left">Master, if it is charmed or a pet</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Master</b>
+        </td>
+        <td style="text-align:left">Master, if it is charmed or a pet</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -538,11 +509,11 @@ This type inherits no other types.
       <td style="text-align:left">The Max distance from this spawn for you to hit it</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>spawn</em>
-      </td>
-      <td style="text-align:left"><b>Mount</b>
-      </td>
-      <td style="text-align:left">Mount</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Mount</b>
+        </td>
+        <td style="text-align:left">Mount</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -559,11 +530,11 @@ This type inherits no other types.
       <td style="text-align:left">Location using MQ format</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Name</b>
-      </td>
-      <td style="text-align:left">Name</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Name</b>
+        </td>
+        <td style="text-align:left">Name</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -574,48 +545,48 @@ This type inherits no other types.
         an &quot;a&quot; or an &quot;an&quot;)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>spawn</em>
-      </td>
-      <td style="text-align:left"><b>NearestSpawn[</b>search<b>]</b>
-      </td>
-      <td style="text-align:left">Find the nearest spawn matching this <a href="../../general-information/spawn-search.md">Spawn Search</a>,
-        to this spawn (most efficient on yourself)</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>NearestSpawn[</b>search<b>]</b>
+        </td>
+        <td style="text-align:left">Find the nearest spawn matching this <a href="../../general-information/spawn-search.md">Spawn Search</a>,
+          to this spawn (most efficient on yourself)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>spawn</em>
-      </td>
-      <td style="text-align:left"><b>NearestSpawn[</b>#<b>,</b>search<b>]</b>
-      </td>
-      <td style="text-align:left">Find the #th nearest spawn matching this <a href="../../general-information/spawn-search.md">Spawn Search</a>,
-        to this spawn (most efficient on yourself)</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>NearestSpawn[</b>#<b>,</b>search<b>]</b>
+        </td>
+        <td style="text-align:left">Find the #th nearest spawn matching this <a href="../../general-information/spawn-search.md">Spawn Search</a>,
+          to this spawn (most efficient on yourself)</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>spawn</em>
-      </td>
-      <td style="text-align:left"><b>Next</b>
-      </td>
-      <td style="text-align:left">Next spawn in the list</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Next</b>
+        </td>
+        <td style="text-align:left">Next spawn in the list</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>spawn</em>
-      </td>
-      <td style="text-align:left"><b>Owner</b>
-      </td>
-      <td style="text-align:left">Owner, if mercenary</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Owner</b>
+        </td>
+        <td style="text-align:left">Owner, if mercenary</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>spawn</em>
-      </td>
-      <td style="text-align:left"><b>Prev</b>
-      </td>
-      <td style="text-align:left">Previous spawn in the list</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Prev</b>
+        </td>
+        <td style="text-align:left">Previous spawn in the list</td>
     </tr>
     <tr>
-      <td style="text-align:left"><em>spawn</em>
-      </td>
-      <td style="text-align:left"><b>Pet</b>
-      </td>
-      <td style="text-align:left">Pet</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Pet</b>
+        </td>
+        <td style="text-align:left">Pet</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -646,13 +617,6 @@ This type inherits no other types.
       <td style="text-align:left"><b>Race</b>
       </td>
       <td style="text-align:left">Race</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href><em>action</em></a>
-      </td>
-      <td style="text-align:left"><b>DoRightClick</b>
-      </td>
-      <td style="text-align:left">Right clicks the spawn</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -704,11 +668,11 @@ This type inherits no other types.
       <td style="text-align:left">StandState</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>State</b>
-      </td>
-      <td style="text-align:left">STAND, SIT, DUCK, BIND, FEIGN, DEAD, STUN, HOVER, MOUNT, UNKNOWN</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>State</b>
+        </td>
+        <td style="text-align:left">STAND, SIT, DUCK, BIND, FEIGN, DEAD, STUN, HOVER, MOUNT, UNKNOWN</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -725,25 +689,25 @@ This type inherits no other types.
       <td style="text-align:left">Stuck?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Suffix</b>
-      </td>
-      <td style="text-align:left">Suffix attached to name, eg. of</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Suffix</b>
+        </td>
+        <td style="text-align:left">Suffix attached to name, eg. of</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Surname</b>
-      </td>
-      <td style="text-align:left">Last name</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Surname</b>
+        </td>
+        <td style="text-align:left">Last name</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Title</b>
-      </td>
-      <td style="text-align:left">Prefix/Title before name</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Title</b>
+        </td>
+        <td style="text-align:left">Prefix/Title before name</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -753,12 +717,12 @@ This type inherits no other types.
       <td style="text-align:left">Trader?</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>Type</b>
-      </td>
-      <td style="text-align:left">PC, NPC, Untargetable, Mount, Pet, Corpse, Chest, Trigger, Trap, Timer,
-        Item, Mercenary, Aura, Object, Banner, Campfire, Flyer</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Type</b>
+        </td>
+        <td style="text-align:left">PC, NPC, Untargetable, Mount, Pet, Corpse, Chest, Trigger, Trap, Timer,
+          Item, Mercenary, Aura, Object, Banner, Campfire, Flyer</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -831,17 +795,27 @@ This type inherits no other types.
       <td style="text-align:left">Shortcut for -Z (makes Downward positive)</td>
     </tr>
     <tr>
-      <td style="text-align:left">&apos;<b>&apos;</b><a href><b>string</b></a>
-      </td>
-      <td style="text-align:left"><b>To String</b>
-      </td>
-      <td style="text-align:left">Same as <b>Name</b>
-      </td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>To String</b>
+        </td>
+        <td style="text-align:left">Same as <b>Name</b>
+        </td>
     </tr>
   </tbody>
 </table>
 
-### All members as of 9/22/20
+## Methods
+
+| Name | Action |
+| :--- | :--- |
+| **DoAssist** | assists the spawn |
+| **DoFace** | Faces target |
+| **DoLeftClick** | left clicks the spawn |
+| **DoRightClick** | Right clicks the spawn |
+| **DoTarget** | Targets the spawn |
+
+## All members as of 9/22/20
 
 * AARank
 * AATitle
@@ -990,21 +964,10 @@ This type inherits no other types.
 * Y
 * Z
 
-### Usage
+## Usage
 
-|  |  |
-| :--- | :--- |
 | **Example** | **Output** |
-| '''${Pet.Equipment\[primary\].ID} | ID number of the pet's primary weapon |
-| '''${Group.Member\[mymagesname\].Pet.Equipment\[primary\].ID} | ID number of the group member's pet's primary weapon |
-|  |  |
-
-## See Also
-
-* [Animations](../../general-information/animations.md)
-* [Data Types](./)
-* [DataType:character](datatype-character.md)
-* [Spawn Search](../../general-information/spawn-search.md)
-* [Top-Level Objects](../top-level-objects/)
-* [TLO:Me](../top-level-objects/tlo-me.md)
+| :--- | :--- |
+| `${Pet.Equipment[primary].ID}` | ID number of the pet's primary weapon |
+| `${Group.Member[mymagesname].Pet.Equipment[primary].ID}` | ID number of the group member's pet's primary weapon |
 

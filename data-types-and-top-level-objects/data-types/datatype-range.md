@@ -1,16 +1,13 @@
 # DataType:range
 
-## Introduction
-
 This DataType performs a simple test on _n_ using the following members.
 
 ## Members
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| [_Bool_](datatype-bool.md) | **Between\[\***\#1,\#2:_'n_\]\*' | is _**n**_ Between the range of _\#1_ and _\#2_ both numbers included |
-| [_Bool_](datatype-bool.md) | **Inside\[\***\#1,\#2:_'n_\]\*' | is _**n**_ Inside the range of _\#1_ and _\#2_ both numbers excluded |
-|  |  |  |
+| [_bool_](datatype-bool.md) | **Between\[**\#1,\#2:_n_\] | is _**n**_ Between the range of _\#1_ and _\#2_ both numbers included |
+| [_bool_](datatype-bool.md) | **Inside\[**\#1,\#2:_n_\] | is _**n**_ Inside the range of _\#1_ and _\#2_ both numbers excluded |
 
 ## Examples
 
@@ -33,9 +30,4 @@ This DataType performs a simple test on _n_ using the following members.
 /echo Is 33 inside 33 and 66?: ${Range.Inside\[33,66:33\]}
 
 `Is 33 between 33 and 66?: FALSE`
-
-## See Also
-
-* [Data Types](./)
-* [TLO:Range](../top-level-objects/tlo-range.md)
 

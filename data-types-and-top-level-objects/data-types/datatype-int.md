@@ -1,24 +1,13 @@
 # DataType:int
 
-## Description
-
 Data related to integers
 
 ## Members
 
-|  |  |  |
-| :--- | :--- | :--- |
 | **Type** | **Member** | **Description** |
+| :--- | :--- | :--- |
 | [_float_](datatype-float.md) | **Float** | The number as a float \(123 is represented as 123.0\) |
-| [_string_]() | **Hex** | The hex value of the integer \(10 is represented as 0xA\) |
-| _int_ | **Reverse** | Endianness reversed |
-| '**'**[**string**]() | **To String** | The number |
-
-## See Also
-
-* [TLO:Int](../top-level-objects/tlo-int.md)
-* [Data Types](./)
-* [Endianness](http://en.wikipedia.org/wiki/Endianness)
-* [DataType:math](datatype-math.md)
-* [DataType:float](datatype-float.md)
+| \_\_[_string_](datatype-string.md)\_\_ | **Hex** | The hex value of the integer \(10 is represented as 0xA\) |
+| \_\_[_int_](datatype-int.md)\_\_ | **Reverse** | Endianness reversed |
+| \_\_[_string_](datatype-string.md)\_\_ | **To String** | The number |
 

@@ -1,7 +1,5 @@
 # DataType:spell
 
-## Description
-
 This is the type used for spell information.
 
 ## Members
@@ -10,10 +8,10 @@ This is the type used for spell information.
 | :--- | :--- | :--- |
 | **Type** | **Member** | **Description** |
 | [_float_](datatype-float.md) | **AERange** | AE range \(group spells use this for their range\) |
-| [_string_]() | **CastOnAnother** | Message when cast on others |
-| [_string_]() | **CastOnYou** | Message when cast on yourself |
+| [_string_](datatype-string.md)\_\_ | **CastOnAnother** | Message when cast on others |
+| [_string_](datatype-string.md)\_\_ | **CastOnYou** | Message when cast on yourself |
 | [_timestamp_](datatype-timestamp.md) | **CastTime** | Cast time \(unadjusted\) |
-| [_string_]() | **CounterType** | The resist counter. Will be one of "Disease", "Poison", "Curse" or "Corruption" |
+| [_string_](datatype-string.md)\_\_ | **CounterType** | The resist counter. Will be one of "Disease", "Poison", "Curse" or "Corruption" |
 | [_int_](datatype-int.md) | **CounterNumber** | The number of counters that the spell adds |
 | [_ticks_](datatype-ticks.md) | **Duration** | Duration of the spell \(if any\) |
 | [_ticks_](datatype-ticks.md) | **DurationValue1** | Duration of the spell \(if any\) |
@@ -28,27 +26,27 @@ This is the type used for spell information.
 | [_int_](datatype-int.md) | **Mana** | Mana cost \(unadjusted\) |
 | [_timestamp_](datatype-timestamp.md) | **MyCastTime** | Adjusted cast time |
 | [_float_](datatype-float.md) | **MyRange** | Adjusted spell range, including focus effects, etc. |
-| [_string_]() | **Name** | Spell Name |
+| [_string_](datatype-string.md)\_\_ | **Name** | Spell Name |
 | [_float_](datatype-float.md) | **PushBack** | Push back amount |
 | [_float_](datatype-float.md) | **Range** | Maximum range to target \(use **AERange** for AE and group spells\) |
 | [_int_](datatype-int.md) | **Rank** | Returns either 1, 2 or 3 for spells and 4-30 for clickys and potions. |
-| [_string_]() | **RankName** | Returns the spell/combat ability name rank character has. |
+| [_string_](datatype-string.md)\_\_ | **RankName** | Returns the spell/combat ability name rank character has. |
 | [_float_](datatype-float.md) | **RecastTime** | Time to recast after successful cast |
 | [_timestamp_](datatype-timestamp.md) | **RecoveryTime** | Same as **FizzleTime** |
 | [_int_](datatype-int.md) | **ResistAdj** | Resist adjustment |
-| [_string_]() | **ResistType** | See below for Resist Types |
-| [_string_]() | **Skill** | See below for Skill Types |
+| [_string_](datatype-string.md)\_\_ | **ResistType** | See below for Resist Types |
+| [_string_](datatype-string.md)\_\_ | **Skill** | See below for Skill Types |
 | [_int_](datatype-int.md) | **SlowPct** | Percentage of slow, example of use ${Target.Slowed.SlowPct} or ${Spell\[Slowing Helix\].SlowPct} |
 | [_int_](datatype-int.md) | **SpellIcon** | Icon number of the spell. Exmaple ${Spell\[blah\].SpellIcon} |
-| [_string_]() | **SpellType** | "Beneficial\(Group\)", "Beneficial", "Detrimental" or "Unknown" |
+| [_string_](datatype-string.md)\_\_ | **SpellType** | "Beneficial\(Group\)", "Beneficial", "Detrimental" or "Unknown" |
 | [_bool_](datatype-bool.md) | **Stacks\[**duration**\]** | Does the selected spell stack with your current buffs \(duration is in ticks\) |
 | [_bool_](datatype-bool.md) | **StacksPet\[**duration**\]** | Does the selected spell stack with your pet's current buffs \(duration is in ticks\) |
 | [_bool_](datatype-bool.md) | **StacksTarget\[**duration**\]** | Does the selected spell stack with your target's current buffs \(duration is in ticks\) |
 | [_bool_](datatype-bool.md) | **StacksWith\[**name**\]** | alias for .WillStack - see entry for more details |
-| [_string_]() | **TargetType** | See below for Target Types |
-| [_string_]() | **WearOff** | The "wear off" message |
+| [_string_](datatype-string.md)\_\_ | **TargetType** | See below for Target Types |
+| [_string_](datatype-string.md)\_\_ | **WearOff** | The "wear off" message |
 | [_bool_](datatype-bool.md) | **WillStack\[**name**\]** | Does the selected spell stack with the specific SPELL _name_ DOES NOT work with AAs. |
-| '**'**[**string**]() | **To String** | Same as **Name** |
+| [_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |
 
 ## Example
 

@@ -1,4 +1,70 @@
 # DataType:alertlist
 
-AlertList BodyType Class FRadius FromSpawnID GuildID Light MaxLevel MinLevel Name NearAlertList NoAlertList NotID NotNearAlertList PlayerState Race Radius SortBy Spawn SpawnID SpawnType ZRadius bAlert bAura bBanker bBanner bCampfire bDps bExactName bFellowship bGM bGroup bHealer bKnight bKnownLocation bLFG bLight bLoS bMerchant bNamed bNearAlert bNoAlert bNoGroup bNoGuild bNoPet bNotNearAlert bRaid bSlower bSpawnID bTank bTargNext bTargPrev bTargetable bTrader bTributeMaster xLoc yLoc
+Provide access to information in an alert list
+
+{% hint style="info" %}
+This page is incomplet
+{% endhint %}
+
+| Type | Name | Description |
+| :--- | :--- | :--- |
+|  | **MinLevel** |  |
+|  | MaxLevel |  |
+|  | SpawnType |  |
+|  | SpawnID |  |
+|  | FromSpawnID |  |
+|  | Radius |  |
+|  | Name |  |
+|  | BodyType |  |
+|  | Race |  |
+|  | Class |  |
+|  | Light |  |
+|  | GuildID |  |
+|  | bSpawnID |  |
+|  | bNotNearAlert |  |
+|  | bNearAlert |  |
+|  | bNoAlert |  |
+|  | bAlert |  |
+|  | bLFG |  |
+|  | bTrader |  |
+|  | bLight |  |
+|  | bTargNext |  |
+|  | bTargPrev |  |
+|  | bGroup |  |
+|  | bNoGroup |  |
+|  | bRaid |  |
+|  | bGM |  |
+|  | bNamed |  |
+|  | bMerchant |  |
+|  | bTributeMaster |  |
+|  | bKnight |  |
+|  | bTank |  |
+|  | bHealer |  |
+|  | bDps |  |
+|  | bSlower |  |
+|  | bAura |  |
+|  | bBanner |  |
+|  | bCampfire |  |
+|  | NotID |  |
+|  | NotNearAlertList |  |
+|  | NearAlertList |  |
+|  | NoAlertList |  |
+|  | AlertList |  |
+|  | ZRadius |  |
+|  | FRadius |  |
+|  | xLoc |  |
+|  | yLoc |  |
+|  | bKnownLocation |  |
+|  | bNoPet |  |
+|  | SortBy |  |
+|  | bNoGuild |  |
+|  | bLoS |  |
+|  | bExactName |  |
+|  | bTargetable |  |
+|  | PlayerState |  |
+|  | Spawn |  |
+|  | bFellowship |  |
+|  | bBanker |  |
+
+
 

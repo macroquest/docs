@@ -11,6 +11,6 @@ Data for the current dynamic zone instance
 | [_int_](datatype-int.md) | **MaxMembers** | Maximum number of characters that can enter this dynamic zone |
 | [_dzmember_](datatype-dzmember.md) | **Member\[**\#**\|**name**\]** | The dynamic zone member _\#_ or _name_ |
 | [_int_](datatype-int.md) | **Members** | Current number of characters in the dynamic zone |
-| [_string_]() | **Name** | The full name of the dynamic zone |
-| \_\_[_string_]()\_\_ | **To String** | Same as **Name** |
+| [_string_](datatype-string.md)\_\_ | **Name** | The full name of the dynamic zone |
+| [_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |
 

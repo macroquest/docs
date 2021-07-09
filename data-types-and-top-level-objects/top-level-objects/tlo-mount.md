@@ -14,13 +14,13 @@ The addition of this allows the item to be cast using /useitem
 
 |  |  |
 | :--- | :--- |
-| [_Mount_](../data-types/datatype-mount.md) **Mount\[**\#**\]** | Mount Name in slot 1 of your Mount Keyring |
-| [_Mount_](../data-types/datatype-mount.md) **Mount\[**\#**\].Name** | Mount Name in slot 1 of your Mount Keyring |
+| [_Mount_](../data-types/datatype-keyring.md) **Mount\[**\#**\]** | Mount Name in slot 1 of your Mount Keyring |
+| [_Mount_](../data-types/datatype-keyring.md) **Mount\[**\#**\].Name** | Mount Name in slot 1 of your Mount Keyring |
 |  |  |
 
 ## Access to Types
 
-* [_mount_](../data-types/datatype-mount.md)
+* [_mount_](../data-types/datatype-keyring.md)
 
 ## Examples
 
@@ -31,5 +31,5 @@ Outputs: \[MQ2\] Whirligig Flyer ... Displayes the first mount in your mount key
 ## See Also
 
 * [Top-Level Objects](./)
-* [mount](../data-types/datatype-mount.md)
+* [mount](../data-types/datatype-keyring.md)
 
