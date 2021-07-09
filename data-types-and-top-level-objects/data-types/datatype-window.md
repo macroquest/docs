@@ -1,61 +1,306 @@
 # DataType:window
 
-## Description
-
 This contains data related to the specified in-game window
 
 ## Members
 
-|  |  |  |
-| :--- | :--- | :--- |
-| **Type** | **Member** | **Description** |
-| [_argb_](datatype-argb.md) | **BGColor** | Background color |
-| [_bool_](datatype-bool.md) | **Checked** | Returns TRUE if the button has been checked |
-| _window_ | **Child\[**name**\]** | Child with this name |
-| [_bool_](datatype-bool.md) | **Children** | Returns TRUE if the window has children |
-| [_action_]() | **DoClose** | Does the ction of closing a window |
-| [_action_]() | **DoOpen** | Does the action of opening a window |
-| [_bool_](datatype-bool.md) | **Enabled** | Returns TRUE if the window is enabled |
-| _window_ | **FirstChild** | First child window |
-| [_int_](datatype-int.md) | **GetCurSel** | Int of the currently selected/highlighted item in a list or treeview |
-| [_int_](datatype-int.md) | **Height** | Height in pixels |
-| [_bool_](datatype-bool.md) | **Highlighted** | Returns TRUE if the window is highlighted |
-| [_bool_](datatype-bool.md) | **HisTradeReady** | Has the other person clicked the Trade button? |
-| [_int_](datatype-int.md) | **HScrollMax** | Horizontal scrollbar range |
-| [_int_](datatype-int.md) | **HScrollPos** | Horizontal scrollbar position |
-| [_int_](datatype-int.md) | **HScrollPct** | Horizontal scrollbar position in % to range from 0 to 100 |
-| [_int_](datatype-int.md) | **Items** | Number of items in a Listbox or Combobox |
-| [_action_]() | **LeftMouseDown** | Does the action of clicking the left mouse button down |
-| [_action_]() | **LeftMouseHeld** | Does the action of holding the left mouse button |
-| [_action_]() | **LeftMouseHeldUp** | does the action of holding the left mouse button up |
-| [_action_]() | **LeftMouseUp** | Does the action of clicking the left mouse button up |
-| [_string_](datatype-string.md) | **List\[**\#**,**y**\]** | Get the text for the \#th item in a list box. Only works on list boxes. Use of ,y is optional and allows selection of the column of the window to get text from. |
-| [_int_](datatype-int.md) | **List\[**text**,**y**\]** | Find an item in a list box by partial match \(use **window.List\[**=text**\]** for exact\). Only works on list boxes. Use of ,y is optional and allows selection of the column of the window to search in. |
-| [_bool_](datatype-bool.md) | **Minimized** | Returns TRUE if the window is minimized |
-| [_bool_](datatype-bool.md) | **MouseOver** | Returns TRUE if the mouse is currently over the window |
-| [_bool_](datatype-bool.md) | **MyTradeReady** | Have I clicked the Trade button? |
-| [_string_](datatype-string.md) | **Name** | Name of window piece, _e.g._ "ChatWindow" for top level windows, or the piece name for child windows. **Note:** this is Custom UI dependent |
-| _window_ | **Next** | Next sibling window |
-| [_bool_](datatype-bool.md) | **Open** | Returns TRUE if the window is open |
-| _window_ | **Parent** | Parent window |
-| [_action_]() | **RightMouseDown** | does the action of clicking the right mouse button |
-| [_action_]() | **RightMouseHeld** | Does the action of holding the right mouse button |
-| [_action_]() | **RightMouseHeldUp** | Does the action of holding the right mouse button up |
-| [_action_]() | **RightMouseUp** | Does the action of clicking the right mouse button up |
-| [_action_]() | **Select** | Selects the specified window |
-| [_string_](datatype-string.md) | **ScreenID** | ScreenID of window piece. **Note:** This is _not_ Custom UI dependent, it must be the same on all UIs |
-| [_bool_](datatype-bool.md) | **Siblings** | Returns TRUE if the window has siblings |
-| [_int_](datatype-int.md) | **Style** | Window style code |
-| [_string_](datatype-string.md) | **Text** | Window's text |
-| [_string_](datatype-string.md) | **Tooltip** | TooltipReference text |
-| [_string_](datatype-string.md) | **Type** | Type of window piece \(Screen for top level windows, or Listbox, Button, Gauge, Label, Editbox, Slider, etc\) |
-| [_int_](datatype-int.md) | **VScrollMax** | Vertical scrollbar range |
-| [_int_](datatype-int.md) | **VScrollPct** | Vertical scrollbar position in % to range from 0 to 100 |
-| [_int_](datatype-int.md) | **VScrollPos** | Vertical scrollbar position |
-| [_int_](datatype-int.md) | **Width** | Width in pixels |
-| [_int_](datatype-int.md) | **X** | Screen X position |
-| [_int_](datatype-int.md) | **Y** | Screen Y position |
-| '**'**[**bool**](datatype-bool.md) | **To String** | TRUE if window exists, FALSE if not |
+<table>
+  <thead>
+    <tr>
+      <th style="text-align:left"><b>Type</b>
+      </th>
+      <th style="text-align:left"><b>Member</b>
+      </th>
+      <th style="text-align:left"><b>Description</b>
+      </th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align:left"><a href="datatype-argb.md"><em>argb</em></a>
+      </td>
+      <td style="text-align:left"><b>BGColor</b>
+      </td>
+      <td style="text-align:left">Background color</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
+      </td>
+      <td style="text-align:left"><b>Checked</b>
+      </td>
+      <td style="text-align:left">Returns TRUE if the button has been checked</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-window.md"><em>window</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Child[</b><code>name</code><b>]</b>
+        </td>
+        <td style="text-align:left">Child with this name</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
+      </td>
+      <td style="text-align:left"><b>Children</b>
+      </td>
+      <td style="text-align:left">Returns TRUE if the window has children</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
+      </td>
+      <td style="text-align:left"><b>Enabled</b>
+      </td>
+      <td style="text-align:left">Returns TRUE if the window is enabled</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-window.md"><em>window</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>FirstChild</b>
+        </td>
+        <td style="text-align:left">First child window</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>GetCurSel</b>
+      </td>
+      <td style="text-align:left">Int of the currently selected/highlighted item in a list or treeview</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>Height</b>
+      </td>
+      <td style="text-align:left">Height in pixels</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
+      </td>
+      <td style="text-align:left"><b>Highlighted</b>
+      </td>
+      <td style="text-align:left">Returns TRUE if the window is highlighted</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
+      </td>
+      <td style="text-align:left"><b>HisTradeReady</b>
+      </td>
+      <td style="text-align:left">Has the other person clicked the Trade button?</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>HScrollMax</b>
+      </td>
+      <td style="text-align:left">Horizontal scrollbar range</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>HScrollPos</b>
+      </td>
+      <td style="text-align:left">Horizontal scrollbar position</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>HScrollPct</b>
+      </td>
+      <td style="text-align:left">Horizontal scrollbar position in % to range from 0 to 100</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>Items</b>
+      </td>
+      <td style="text-align:left">Number of items in a Listbox or Combobox</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      </td>
+      <td style="text-align:left"><b>List[</b>N<b>,</b><code>y</code><b>]</b>
+      </td>
+      <td style="text-align:left">Get the text for the <code>#</code>th item in a list box. Only works on
+        list boxes. Use of <code>y</code> is optional and allows selection of the
+        column of the window to get text from.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>List[</b><code>text</code><b>,</b><code>y</code><b>]</b>
+      </td>
+      <td style="text-align:left">Find an item in a list box by partial match (use <b>window.List[</b>=text<b>]</b> for
+        exact). Only works on list boxes. Use of <code>y</code> is optional and allows
+        selection of the column of the window to search in.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
+      </td>
+      <td style="text-align:left"><b>Minimized</b>
+      </td>
+      <td style="text-align:left">Returns TRUE if the window is minimized</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
+      </td>
+      <td style="text-align:left"><b>MouseOver</b>
+      </td>
+      <td style="text-align:left">Returns TRUE if the mouse is currently over the window</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
+      </td>
+      <td style="text-align:left"><b>MyTradeReady</b>
+      </td>
+      <td style="text-align:left">Have I clicked the Trade button?</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      </td>
+      <td style="text-align:left"><b>Name</b>
+      </td>
+      <td style="text-align:left">
+        <p>Name of window piece, <em>e.g.</em> &quot;ChatWindow&quot; for top level
+          windows, or the piece name for child windows.</p>
+        <p>&lt;b&gt;&lt;/b&gt;</p>
+        <p><b>Note:</b> this is Custom UI dependent</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-window.md"><em>window</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Next</b>
+        </td>
+        <td style="text-align:left">Next sibling window</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
+      </td>
+      <td style="text-align:left"><b>Open</b>
+      </td>
+      <td style="text-align:left">Returns TRUE if the window is open</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-window.md"><em>window</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Parent</b>
+        </td>
+        <td style="text-align:left">Parent window</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      </td>
+      <td style="text-align:left"><b>ScreenID</b>
+      </td>
+      <td style="text-align:left">
+        <p>ScreenID of window piece.</p>
+        <p>&lt;b&gt;&lt;/b&gt;</p>
+        <p><b>Note:</b> This is <em>not</em> Custom UI dependent, it must be the same
+          on all UIs</p>
+      </td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
+      </td>
+      <td style="text-align:left"><b>Siblings</b>
+      </td>
+      <td style="text-align:left">Returns TRUE if the window has siblings</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>Style</b>
+      </td>
+      <td style="text-align:left">Window style code</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      </td>
+      <td style="text-align:left"><b>Text</b>
+      </td>
+      <td style="text-align:left">Window&apos;s text</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      </td>
+      <td style="text-align:left"><b>Tooltip</b>
+      </td>
+      <td style="text-align:left">TooltipReference text</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      </td>
+      <td style="text-align:left"><b>Type</b>
+      </td>
+      <td style="text-align:left">Type of window piece (Screen for top level windows, or Listbox, Button,
+        Gauge, Label, Editbox, Slider, etc)</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>VScrollMax</b>
+      </td>
+      <td style="text-align:left">Vertical scrollbar range</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>VScrollPct</b>
+      </td>
+      <td style="text-align:left">Vertical scrollbar position in % to range from 0 to 100</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>VScrollPos</b>
+      </td>
+      <td style="text-align:left">Vertical scrollbar position</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>Width</b>
+      </td>
+      <td style="text-align:left">Width in pixels</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>X</b>
+      </td>
+      <td style="text-align:left">Screen X position</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>Y</b>
+      </td>
+      <td style="text-align:left">Screen Y position</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
+      </td>
+      <td style="text-align:left"><b>To String</b>
+      </td>
+      <td style="text-align:left">TRUE if window exists, FALSE if not</td>
+    </tr>
+  </tbody>
+</table>
+
+## Methods
+
+| **Name** | Action |
+| :--- | :--- |
+| **DoClose** | Does the action of closing a window |
+| **DoOpen** | Does the action of opening a window |
+| **LeftMouseDown** | Does the action of clicking the left mouse button down |
+| **LeftMouseHeld** | Does the action of holding the left mouse button |
+| **LeftMouseHeldUp** | does the action of holding the left mouse button up |
+| **LeftMouseUp** | Does the action of clicking the left mouse button up |
+| **RightMouseDown** | does the action of clicking the right mouse button |
+| **RightMouseHeld** | Does the action of holding the right mouse button |
+| **RightMouseHeldUp** | Does the action of holding the right mouse button up |
+| **RightMouseUp** | Does the action of clicking the right mouse button up |
+| **Select** | Selects the specified window |
 
 ## Examples
 
@@ -94,11 +339,4 @@ Return TRUE if the other person has clicked the Trade button in the Trade Window
 `${Window[tradewnd].MyTradeReady}`
 
 Return TRUE if I have clicked the Trade button in the Trade Window \(TradeWnd\)
-
-## See Also
-
-* [Data Types](./)
-* [Top-Level Objects](../top-level-objects/)
-* [TLO:Window](../top-level-objects/tlo-window.md)
-* [DataType:argb](datatype-argb.md)
 
