@@ -1,39 +1,29 @@
 # TLO:Alert
 
-TLO:Alert
+Provides access to alerts. See also: [/alert](../../commands/slash-commands/alert.md).
 
-## Members
+## Forms
 
-|  |  |  |
+| Type | Form | Description |
 | :--- | :--- | :--- |
-| **Type** | **Member** | **Description** |
-| [_AlertListType_](../data-types/datatype-alertlisttype.md) | **List\[\#\]** | Data on the Shared list |
-|  |  |  |
+| \_\_[_alert_](tlo-alert.md#alert-type)\_\_ | **Alert\[**\#**\]** | Alt Ability by number |
+| \_\_[_string_](../data-types/datatype-string.md)\_\_ | **Alert** | Returns pipe "\|" separated list of alert ids |
 
-## Sub members of TLO:Alert
+## Alert Type
 
-|  |  |
-| :--- | :--- |
-| **Member** | **Description** |
-| **.List\[\#\]** | Get the \#th item in List. Returns AlertListType |
-| **.Size** | Returns count of alerts. |
-|  |  |
+| Type | Name | Description |
+| :--- | :--- | :--- |
+| \_\_[_alertlist_](../data-types/datatype-alertlisttype.md)\_\_ | **List\[**\#**\]** | Get the \#th item in the list |
+| \_\_[_int_](../data-types/datatype-int.md)\_\_ | **Size** | Get the number of alerts |
+| \_\_[_string_](../data-types/datatype-string.md)\_\_ | **To String** | Same as **Size**. |
 
 ## Usage
 
-|  |  |
-| :--- | :--- |
 | **Command** | **Result** |
-| '''Example 1: /alert add 1 Fippy | Add and alert entry for Fippy to Alert List 1 |
-| '''/echo ${Alert\[1\].List\[0\].Name} | Output: \[MQ2\] Fippy |
-| '''/echo ${Alert\[1\].List\[0\].Spawn.Race} | Output: \[MQ2\] Druid \(or whatever Class Fippy is\) |
-| '''Example 2: /alert add 1 id ${Me.ID} | Add and alert entry using the Spawn ID. |
-| '''/echo ${Alert\[1\].List\[0\].SpawnID} | Output: \[MQ2\] 12345 \(or whatever your spawned is\) |
-| '''/echo ${Alert\[1\].Size} | Output: \[MQ2\] 1 \(or the number of alerts in alert list 1\) |
-|  |  |
-
-## See Also
-
-* [Top-Level Objects](./)
-* [Alert](../../commands/slash-commands/alert.md)
+| :--- | :--- |
+| `/alert add 1 Fippy` | Add and alert entry for Fippy to Alert List 1 |
+| `/echo ${Alert[1].List[0].Name}` | Output: Fippy |
+| `/alert add 1 id ${Me.ID}` | Add and alert entry using the Spawn ID. |
+| `/echo ${Alert[1].List[0].SpawnID}` | Output: 12345 \(or whatever your spawned is\) |
+| `/echo ${Alert[1].Size}` | Output: 1 \(or the number of alerts in alert list 1\) |
 

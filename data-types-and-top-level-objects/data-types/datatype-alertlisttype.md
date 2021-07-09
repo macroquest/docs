@@ -3,7 +3,7 @@
 Provide access to information in an alert list
 
 {% hint style="info" %}
-This page is incomplet
+This page is incomplete
 {% endhint %}
 
 | Type | Name | Description |
