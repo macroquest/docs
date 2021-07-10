@@ -127,18 +127,22 @@
           </li>
           <li><a href="ranged.md">/ranged</a>
           </li>
+          <li><a href="removebuff.md">/removebuff</a>
+          </li>
+          <li><a href="removepetbuff.md">/removepetbuff</a>
+          </li>
           <li><a href="reloadui.md">/reloadui</a>
           </li>
           <li><a href="screenmode.md">/screenmode</a>
-          </li>
-          <li><a href="sellitem.md">/sellitem</a>
-          </li>
-          <li><a href="setautorun.md">/setautorun</a>
           </li>
         </ul>
       </th>
       <th style="text-align:left">
         <ul>
+          <li><a href="sellitem.md">/sellitem</a>
+          </li>
+          <li><a href="setautorun.md">/setautorun</a>
+          </li>
           <li><a href="setprio.md">/setprio</a>
           </li>
           <li><a href="shiftkey.md">/shiftkey</a>

@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/popcustom \[color\] \[time in seconds to display message\] message\&lt;/span\]**
+**/popcustom \[color\] \[time in seconds to display message\] message**
 
 ## Description
 
