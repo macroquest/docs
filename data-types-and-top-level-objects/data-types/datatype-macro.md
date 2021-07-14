@@ -18,6 +18,7 @@ The Macro DataType deals with the macro currently running, and nothing else.
 | \_\_[_string_](datatype-string.md)\_\_ | **Return** | The value that was returned by the last completed subroutine |
 | [_int_](datatype-int.md) | **RunTime** | How long the macro has been running \(in seconds\) |
 | [_int_](datatype-int.md) | **StackSize** | StackSize? |
+| varies | **Variable** | returns the value given the name of Macro variable |
 
 ## Methods
 
