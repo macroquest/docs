@@ -44,7 +44,7 @@ If the AA "Companion's Aegis" can be trained, buy the next index/rank of it
 {% tab title="Lua" %}
 ```lua
 if mq.TLO.AltAbility("Companion's Aegis").CanTrain() then
-    mq.cmd.alt('buy '..mq.TLO.AltAbility("Companion's Aegis").NextIndex()
+    mq.cmd.alt('buy '..mq.TLO.AltAbility("Companion's Aegis").NextIndex())
 end
 ```
 {% endtab %}
