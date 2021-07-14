@@ -28,9 +28,25 @@ Contains all the data related to alternate abilities
 | [_int_](datatype-int.md) | **Type** | Type \(1-6\) |
 | \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |
 
-### Example
+### Example:
 
-| **Example/Usage** | **Output/Result** |
-| :--- | :--- |
-| `/if (${AltAbility[Companion's Aegis].CanTrain}) /alt buy ${AltAbility[Companion's Aegis].NextIndex}` | If the AA "Companion's Aegis" can be trained, buy the next index/rank of it |
+If the AA "Companion's Aegis" can be trained, buy the next index/rank of it
+
+{% tabs %}
+{% tab title="MQScript" %}
+```text
+/if (${AltAbility[Companion's Aegis].CanTrain}) {
+    /alt buy ${AltAbility[Companion's Aegis].NextIndex}
+}
+```
+{% endtab %}
+
+{% tab title="Lua" %}
+```lua
+if mq.TLO.AltAbility("Companion's Aegis").CanTrain() then
+    mq.cmd.alt('buy '..mq.TLO.AltAbility("Companion's Aegis").NextIndex()
+end
+```
+{% endtab %}
+{% endtabs %}
 
