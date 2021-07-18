@@ -57,6 +57,8 @@
           </li>
           <li><a href="echo.md">/echo</a>
           </li>
+          <li><a href="eqtarget.md">/eqtarget</a>
+          </li>
           <li><a href="exec.md">/exec</a>
           </li>
           <li><a href="face.md">/face</a>
@@ -89,12 +91,12 @@
           </li>
           <li><a href="keypress.md">/keypress</a>
           </li>
-          <li><a href="loadcfg.md">/loadcfg</a>
-          </li>
         </ul>
       </th>
       <th style="text-align:left">
         <ul>
+          <li><a href="loadcfg.md">/loadcfg</a>
+          </li>
           <li><a href="loadspells.md">/loadspells</a>
           </li>
           <li><a href="location.md">/location</a>
@@ -112,6 +114,8 @@
           <li><a href="../macro-commands/mqlog.md">/mqlog</a>
           </li>
           <li><a href="mqpause.md">/mqpause</a>
+          </li>
+          <li><a href="mqtarget.md">/mqtarget</a>
           </li>
           <li><a href="multiline.md">/multiline</a>
           </li>
@@ -131,14 +135,14 @@
           </li>
           <li><a href="removepetbuff.md">/removepetbuff</a>
           </li>
-          <li><a href="reloadui.md">/reloadui</a>
-          </li>
-          <li><a href="screenmode.md">/screenmode</a>
-          </li>
         </ul>
       </th>
       <th style="text-align:left">
         <ul>
+          <li><a href="reloadui.md">/reloadui</a>
+          </li>
+          <li><a href="screenmode.md">/screenmode</a>
+          </li>
           <li><a href="sellitem.md">/sellitem</a>
           </li>
           <li><a href="setautorun.md">/setautorun</a>
@@ -155,7 +159,7 @@
           </li>
           <li><a href="substitute.md">/substitute</a>
           </li>
-          <li><a href="target.md">/target</a>
+          <li><a href="mqtarget.md">/target</a>
           </li>
           <li><a href="timed.md">/timed</a>
           </li>

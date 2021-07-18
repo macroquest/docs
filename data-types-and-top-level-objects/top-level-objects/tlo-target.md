@@ -53,7 +53,7 @@ returns "\[MQ2\] a\_pyre\_beetle48 will break mezz in 66s"
 
 ## See Also
 
-* [Target](../../commands/slash-commands/target.md)
+* [Target](../../commands/slash-commands/mqtarget.md)
 * [Top-Level Objects](./)
 * [DataType:spawn](../data-types/datatype-spawn.md)
 * DataType:targettype

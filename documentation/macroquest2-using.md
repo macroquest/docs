@@ -20,7 +20,7 @@ The following common EverQuest slash commands are enhanced by MacroQuest2:
 * [/charinfo](../commands/slash-commands/charinfo.md)
 * [/help](../commands/slash-commands/help.md)
 * [/location](../commands/slash-commands/location.md)
-* [/target](../commands/slash-commands/target.md)
+* [/target](../commands/slash-commands/mqtarget.md)
 * [/who](../commands/slash-commands/who.md)
 * [/whotarget](../commands/slash-commands/whotarget.md)
 
