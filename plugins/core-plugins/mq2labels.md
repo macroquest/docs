@@ -4,8 +4,8 @@
 
 This plugin allows you to use MQ2Data within your EQ UI.
 
-* It provides a number of EQTypes which can be used exactly as you use the built-in EQTypes.
-* If there is not suitable EQType for your use, you can use ToolTips to display custom information.
+* It provides a number of EQTypes that can be used exactly as you use the built-in EQTypes.
+* If there is not a suitable EQType for your use, you can use ToolTips to display custom information.
 
 ## MQ2 EQTypes
 
@@ -71,7 +71,7 @@ Buff0Duration9999${Me.Buff1.Duration} 2true23315314255255 **255**truefalsefalse
 
 ### Note about ToolTipReference
 
-There are certain characters that are used in XML Code that are reserved. If these characters are used in the tooltipreference they will cause errors and the UI to fail loading. Most noteable of these characters is the "\&lt;" symbol. The "&gt;" symbol can still be used for comparisons. So In cases where you would use "\&lt;", rephase the statement to use "&gt;" instead. The "&" character also causes problems. In case where you use a "&&" in your if statements use nested ifs to get around the problem.
+There are certain characters that are used in XML Code that are reserved. If these characters are used in the tooltipreference they will cause errors and the UI will fail to load. The most notable of these characters is the "\&lt;" symbol. The "&gt;" symbol can still be used for comparisons. So In cases where you would use "\&lt;", rephase the statement to use "&gt;" instead. The "&" character also causes problems. In the case where you use a "&&" in your if statements use nested ifs to get around the problem.
 
 #### Example
 
