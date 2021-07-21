@@ -4,15 +4,15 @@
 
 ## Variable Basics
 
-1. The default _scope_ is local.
-2. The default _type_ is string.
-3. The default _value_ is nothing \(empty string or 0\).
+1. Default _scope_ is local
+2. Default _type_ is string
+3. Default _value_ is nothing \(empty string or 0\)
 
 ### Scopes
 
 * **global**
 
-Variables of global scope ALWAYS exist until they are deleted or macroquest ends
+Variables of global scope ALWAYS exist until they are deleted or MacroQuest ends
 
 * **outer**
 
@@ -24,7 +24,7 @@ Variables of local scope only exist while within a macro function or "Sub"
 
 ### Types
 
-Variables can be declared as any of the types in [Data Types](../data-types-and-top-level-objects/data-types/). The default type is [string]().
+Variables can be declared as any of the types in [Data Types](../data-types-and-top-level-objects/data-types/). The default type is string.
 
 ### Names
 
@@ -38,7 +38,7 @@ Name lookup is case insensitive.
 
 Variables are declared \(initially defined\) in the following format:
 
-```text
+```bash
 /declare varname|varname[array extents] [type] [local|global|outer] [defaultvalue]
 ```
 
@@ -64,8 +64,6 @@ This creates a timer named MyTime that is set to 3000 at creation and exists whi
 /declare MyTimer timer outer 3000
 ```
 
-&lt;/ol&gt;
-
 ### Arrays
 
 To create an array, attach square brackets to the end of the variable name and place in it the number of elements per dimension.
@@ -90,9 +88,7 @@ This creates a 3-dimensional array with 4x5x6 elements \(1-4,1-5, 1-6\) with UND
 /declare MyArray[4,5,6] string outer UNDEFINED-ARRAY-ELEMENT
 ```
 
-There is no limit to the number of dimensions or the number of elements in each dimension, but use your own good judgement.
-
-&lt;/ol&gt;
+There is no limit to the number of dimensions or the number of elements in each dimension but use your own good judgment.
 
 **Note:** You cannot make an array of timers.
 
@@ -103,7 +99,7 @@ There is no limit to the number of dimensions or the number of elements in each 
 1. Deletes the variable varname. Using \* global will delete all global variables:
 
 ```text
-/deletevar varname [*|global]
+/deletevar varname [* global]
 ```
 
 Sets a variable directly to a new value. Keep in mind that the type itself may reject this value depending on what you give it.
@@ -113,8 +109,6 @@ Sets a variable directly to a new value. Keep in mind that the type itself may r
 ```
 
 To clear the value of the variable, you may omit the new value.
-
-&lt;/ol&gt;
 
 ### Setting/Changing Variables
 
@@ -155,8 +149,6 @@ This sets array element n to 123:
 ```text
 /varset MyIntArray[n] 123
 ```
-
-&lt;/ol&gt;
 
 ### Setting Variables to Results of Calculations
 
