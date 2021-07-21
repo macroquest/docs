@@ -1,4 +1,4 @@
-# MacroQuest2:Compiling
+# MacroQuest:Compiling
 
 {% hint style="warning" %}
 This documentation is out of date and is inaccurate
@@ -20,7 +20,7 @@ VS2013 & VS2015 are completely free from Microsoft and commonly used.
 
   2013.
 
-## Download and Unzip the MQ2 Source
+## Download and Unzip the MQ Source
 
 1. Download the latest MacroQuest2 source files from [here](https://macroquest2.com/main.php?p=download).
 2. Unzip the source files to a directory of your choice, **making sure that subdirectories are retained**.

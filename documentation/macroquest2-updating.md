@@ -1,4 +1,4 @@
-# MacroQuest2:Updating
+# MacroQuest:Updating
 
 **Updating MacroQuest2**
 
