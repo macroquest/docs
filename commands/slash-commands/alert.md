@@ -12,7 +12,7 @@ Used to manipulate alert lists which "watch" for spawns.
 
 |  |  |
 | :--- | :--- |
-| **/alert add 1 "spawnname"** | Adds spawnname to alert list 1 |
+| **/alert add 1 "spawnname"** | Adds spawn name to alert list 1 |
 | **/alert clear 1** | Clears all members from alert list 1 |
 | **/alert list 1** | Lists all members of alert list 1 |
 | **/alert add 1 npc radius 300 "spawnname"** | Sets alert\(1\) to TRUE if "spawnname" is within radius of 300 from your location |
