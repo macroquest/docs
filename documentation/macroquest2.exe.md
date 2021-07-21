@@ -1,6 +1,6 @@
-# MacroQuest2.exe
+# MacroQuest.exe
 
-MacroQuest2.exe is _**closed source**_ and is known as the MacroQuest `injector`. It implements MQ2Auth protection to help prevent the distribution of pre-compiled binaries \(see Zerix\).
+MacroQuest.exe is _**an open-source**_ project and is known as the MacroQuest _injector_. It implements MQ2Auth protection to help prevent the distribution of pre-compiled binaries \(see Zerix\).
 
-Running MacroQuest2.exe is the way to start MacroQuest 2.
+Running MacroQuest.exe is the way to start MacroQuest.
 

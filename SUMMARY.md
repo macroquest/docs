@@ -22,7 +22,7 @@
   * [MQ2Data](documentation/mq2data.md)
   * [MQ2DataVars](documentation/mq2datavars.md)
   * [Macro Reference](documentation/macro-reference.md)
-  * [MacroQuest2.exe](documentation/macroquest2.exe.md)
+  * [MacroQuest.exe](documentation/macroquest2.exe.md)
   * [MacroQuest2:Compiling](documentation/macroquest2-compiling.md)
   * [MacroQuest2:IRC](documentation/macroquest2-irc.md)
   * [MacroQuest2:Macros](documentation/macroquest2-macros.md)
