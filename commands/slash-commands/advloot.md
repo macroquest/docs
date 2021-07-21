@@ -13,7 +13,7 @@
 
 ## Description
 
-Usefor for sending commands to the AdvLoot window \(some require you to be the master looter\)
+Used for sending commands to the AdvLoot window \(some require you to be the master looter\)
 
 ## Examples
 
