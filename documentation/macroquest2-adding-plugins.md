@@ -1,4 +1,4 @@
-# MacroQuest2:Adding Plugins
+# MacroQuest:Adding Plugins
 
 * "C:\MQ2" will be used throughout this "how to" for the MQ2 directory. Substitute the actual directory on your
 

@@ -2,13 +2,13 @@
 
 ## Description
 
-This plugin provides a Heads Up Display for your EQ window, which can provide a large amount of information in a relatively small amount of space. The HUD acts as a transparent background layer, upon which any information can be displayed. Each element of the HUD gets parsed each time MQ2Data is displayed, so there is no need to reload the HUD after making changes to the ini file, they are instantaneously available as soon as you save the ini file.
+This plugin provides a Heads Up Display for your EQ window, which can provide a large amount of information in a relatively small amount of space. The HUD acts as a transparent background layer, upon which any information can be displayed. Each element of the HUD gets parsed each time MQ2Data is displayed, so there is no need to reload the HUD after making changes to the .ini file, they are instantly available as soon as you save.
 
-The HUD is customized by entries in the MQ2HUD.ini file. The ini file allows any number of HUDs to be created and saved within. Loading a new HUD from the ini file can be done with /loadhud. The entry names are not case-sensitive.
+The HUD is customized by entries in the MQ2HUD.ini file. The .ini file allows any number of HUDs to be created and saved within. Loading a new HUD from the .ini file can be done with `/loadhud`. The entry names are not case-sensitive.
 
-The default HUD entry is called \[Elements\] and can be loaded with the /defaulthud command.
+The default HUD entry is called \[Elements\] and can be loaded with the `/defaulthud` command.
 
-You can toggle display of the HUD by using F11.
+You can toggle the display of the HUD by using F11.
 
 ## Commands
 
@@ -32,8 +32,8 @@ Entries in the MQ2HUD.ini file are in the following format:
 `TYPE,X,Y,RED,GREEN,BLUE,TEXT`
 
 * **TYPE** can be a combination of the following \(just add the numbers\):
-  * **1:** Display in non-full screen mode
-  * **2:** Display in full screen mode \("F10 mode"\)
+  * **1:** Display in non-fullscreen mode
+  * **2:** Display in fullscreen mode \("F10 mode"\)
   * **4:** Based on cursor location
   * **8:** Display at charselect
   * **16:** Only parse if a macro IS running
@@ -58,7 +58,7 @@ This will load the \[bard\] section of the MQ2HUD.ini.
 
 ## Code Segments
 
-This section contains code segments to help you customize your HUD. Please be sure to substitute the X,Y cords for the location you'd like to see them on your HUD.
+This section contains code segments to help you customize your HUD. Please be sure to substitute the X, Y cords for the location you'd like to see them on your HUD.
 
 `//AAXP`  
 `AAXPText=3,X,Y,255,234,8,AAXP`  

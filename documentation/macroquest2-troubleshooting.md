@@ -1,4 +1,4 @@
-# MacroQuest2:Troubleshooting
+# MacroQuest:Troubleshooting
 
 The first steps to getting help on a problem are:
 

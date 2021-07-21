@@ -1,4 +1,4 @@
-# MacroQuest2:Extending
+# MacroQuest:Extending
 
 ## Creating Your Own Top-Level Object
 

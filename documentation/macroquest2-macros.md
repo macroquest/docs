@@ -1,4 +1,4 @@
-# MacroQuest2:Macros
+# MacroQuest:Macros
 
 ## Introduction
 

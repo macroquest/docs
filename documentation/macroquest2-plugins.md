@@ -1,4 +1,4 @@
-# MacroQuest2:Plugins
+# MacroQuest:Plugins
 
 ## Introduction
 
