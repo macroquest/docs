@@ -7,7 +7,7 @@ This plugin allows you to use MQ2Data within your EQ UI.
 * It provides a number of EQTypes that can be used exactly as you use the built-in EQTypes.
 * If there is not a suitable EQType for your use, you can use ToolTips to display custom information.
 
-## MQ2 EQTypes
+## MQ EQTypes
 
 * **1000:** ${Me.CurrentMana}
 * **1001:** ${Me.MaxMana}
