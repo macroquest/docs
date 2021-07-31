@@ -2,7 +2,7 @@
 
 ## Description
 
-Object which is the found item on your character, a corpse, or a merchant by partial name match. Using =name will only find an exact match.
+A TLO used to find an item on your character, corpse, or a merchant by partial or exact name match.   _See examples below._
 
 ## Forms
 
