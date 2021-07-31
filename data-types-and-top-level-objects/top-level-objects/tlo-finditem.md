@@ -17,19 +17,35 @@ A TLO used to find an item on your character, corpse, or a merchant by partial o
 
 ## Examples
 
-Picks up the cleric epic 1.0
+Looks for the Cleric Epic \(by exact match\) and prints its ID.
 
-`/itemnotify ${FindItem[=Water Sprinkler of Nem Ankh].InvSlot} leftmouseup`
+{% tabs %}
+{% tab title="Lua" %}
+```lua
+/lua parse print(mq.TLO.FindItem("=Water Sprinkler of Nem Ankh").ID())
+```
+{% endtab %}
 
-Picks up any item containing the word swirling from your current target, be it a corpse, or your inventory
+{% tab title="MQScript" %}
+`/echo ${FindItem[=Water Sprinkler of Nem Ankh].ID}`
+{% endtab %}
+{% endtabs %}
 
-`/itemnotify ${FindItem[swirling].InvSlot} leftmouseup`
+Looks for an item with the name swirling in it, and prints the ID.
 
-This would be the newer ItemSlot variant:
+{% tabs %}
+{% tab title="Lua" %}
+```lua
+/lua parse print(mq.TLO.FindItem("swirling").ID())
+```
+{% endtab %}
 
-`/itemnotify in pack${Math.Calc[${FindItem[=Dragorn Fang].ItemSlot}-22].Int} ${Math.Calc[${FindItem[=Dragorn Fang].ItemSlot2}+1].Int} leftmouseup`
+{% tab title="MQScript" %}
+`/echo ${FindItem[swirling].ID}`
+{% endtab %}
+{% endtabs %}
 
-The above example would find a stack of Dragorn Fangs in your inventory, locating the pack number 1-10, and which slot in that pack \(1-?\) and pick up the stack
+
 
 ## See Also
 
