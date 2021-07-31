@@ -1,6 +1,6 @@
 # About MacroQuest
 
-MacroQuest, also known as MQ, is a platform for the customization and automation of [EverQuest](http://www.everquest.com).
+MacroQuest, also known as MQ, or most recently MQNext, is the next generation in development of the platform for the customization and automation of [EverQuest](http://www.everquest.com).  MacroQuest is, and has always been, open source software.
 
 MacroQuest is as useful as you wish to make it. You can utilize it just for the capabilities of the map and other plugins, or you can further enhance EverQuest through the use of macros or designing your own plugin.
 
