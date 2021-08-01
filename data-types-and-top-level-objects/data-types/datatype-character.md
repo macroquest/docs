@@ -2,7 +2,7 @@
 
 This data type contains all the information about _your_ character.
 
-Inherits [_spawn_](datatype-spawn.md).
+Inherits [_spawn_](datatype-spawn.md)
 
 ## Members
 
@@ -31,6 +31,12 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left"><b>AAPoints</b>
       </td>
       <td style="text-align:left">Unused AA points</td>
+    </tr>
+    <tr>
+      <td style="text-align:left">int</td>
+      <td style="text-align:left"><b>AAPointsAssigned</b>
+      </td>
+      <td style="text-align:left">Number of AA Points currently assigned</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -97,6 +103,28 @@ Inherits [_spawn_](datatype-spawn.md).
         NULL if tribute is inactive.</td>
     </tr>
     <tr>
+      <td style="text-align:left"><a href="datatype-buff.md">buff</a>
+      </td>
+      <td style="text-align:left"><b>Aego</b>
+      </td>
+      <td style="text-align:left">Returns the name of the Aegolism buff or equivalent (Aego, HP Buff, Symbol)
+        from a <b>Cleric</b>.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-spawn.md"><em>spawn</em></a>
+      </td>
+      <td style="text-align:left"><b>AggroLock</b>
+      </td>
+      <td style="text-align:left">Spawn info for aggro lock player</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>AGI</b>
+      </td>
+      <td style="text-align:left">Character Agility</td>
+    </tr>
+    <tr>
       <td style="text-align:left"><a href="datatype-altability.md"><em>altability</em></a>
       </td>
       <td style="text-align:left"><b>AltAbility[</b>#|name<b>]</b>
@@ -120,26 +148,20 @@ Inherits [_spawn_](datatype-spawn.md).
       </td>
     </tr>
     <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>AltCurrency[name]</b>
+      </td>
+      <td style="text-align:left">The amount of alternate currency given the name (e.g. <em>Marks of Valor)</em>
+      </td>
+    </tr>
+    <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
       </td>
       <td style="text-align:left"><b>AltTimerReady</b>
       </td>
       <td style="text-align:left">Alternate timer ready? (Bash/Slam/Frenzy/Backstab). <b>Note: ${AbilityReady} works fine with most of these.</b>
       </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>AGI</b>
-      </td>
-      <td style="text-align:left">Character Agility</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-spawn.md"><em>spawn</em></a>
-      </td>
-      <td style="text-align:left"><b>AggroLock</b>
-      </td>
-      <td style="text-align:left">spawn info for aggro lock player</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -209,9 +231,66 @@ Inherits [_spawn_](datatype-spawn.md).
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
       </td>
+      <td style="text-align:left"><b>BaseAGI</b>
+      </td>
+      <td style="text-align:left">Base Agility</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>BaseCHA</b>
+      </td>
+      <td style="text-align:left">Base Charisma</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>BaseDEX</b>
+      </td>
+      <td style="text-align:left">Base Dexterity</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>BaseINT</b>
+      </td>
+      <td style="text-align:left">Base Intelligence</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>BaseSTA</b>
+      </td>
+      <td style="text-align:left">Base Stamana</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>BaseSTR</b>
+      </td>
+      <td style="text-align:left">Base Strength</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>BaseWIS</b>
+      </td>
+      <td style="text-align:left">Base Wisdom</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-buff.md"><em>buff</em></a>
+      </td>
+      <td style="text-align:left"><b>Beneficial</b>
+      </td>
+      <td style="text-align:left">Returns the first Beneficial buff found in your list of buffs</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
       <td style="text-align:left"><b>Book[</b>name<b>]</b>
       </td>
-      <td style="text-align:left">Slot in your spellbook assigned to spell <em>name</em>.</td>
+      <td style="text-align:left">Slot in your spellbook assigned to spell <em>name</em>
+      </td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-spell.md"><em>spell</em></a>
@@ -219,6 +298,17 @@ Inherits [_spawn_](datatype-spawn.md).
       <td style="text-align:left"><b>Book[</b>#<b>]</b>
       </td>
       <td style="text-align:left">Spell assigned to this slot # in your spellbook</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left">Bound Location</td>
+      <td style="text-align:left">Returns x y z</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-buff.md"><em>buff</em></a>
+      </td>
+      <td style="text-align:left">Brells</td>
+      <td style="text-align:left">Returns the Brells line HP buff from a Paladin</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-buff.md"><em>buff</em></a>
@@ -237,15 +327,16 @@ Inherits [_spawn_](datatype-spawn.md).
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
       </td>
-      <td style="text-align:left">&apos;&apos;&apos;Buyer</td>
-      <td style="text-align:left">if you are an active buyer</td>
+      <td style="text-align:left"><b>Buyer</b>
+      </td>
+      <td style="text-align:left">Are you an active buyer?</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
       </td>
-      <td style="text-align:left">&apos;&apos;&apos;CanMount</td>
-      <td style="text-align:left">for some indoor zones that where not flagged as nomount and added bazaar,
-        nexus to zones where its ok to mount.</td>
+      <td style="text-align:left"><b>CanMount</b>
+      </td>
+      <td style="text-align:left">Can you use a mount here?</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
