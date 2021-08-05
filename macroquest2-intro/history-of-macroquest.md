@@ -26,7 +26,7 @@ A little bit less than a month later he posted again, this time with a link to a
 
 Macroquest2 was developed from the existing MacroQuest project, initially by Lax. You may find the original post about MacroQuest2 replacing MacroQuest [here](https://macroquest2.com/phpBB3/viewtopic.php?t=4023).
 
-A copied version of the post is below:
+The text of the post:
 
 > _**Post subject: Nonbelievers of Lax soon to be disproven!**_
 >
@@ -57,6 +57,4 @@ A copied version of the post is below:
 > _It should not be long before we have a zip for you to download for beta testing. Beta testing will last as long as it takes to get the plugins tested, which will not be long._
 >
 > _Once the default set of plugins is working, we can call it a "stable" release._
-
-**Note:** Credit for writing the above text goes to Lax.
 
