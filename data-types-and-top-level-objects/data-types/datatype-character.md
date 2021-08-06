@@ -33,10 +33,11 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Unused AA points</td>
     </tr>
     <tr>
-      <td style="text-align:left">int</td>
-      <td style="text-align:left"><b>AAPointsAssigned</b>
-      </td>
-      <td style="text-align:left">Number of AA Points currently assigned</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-int.md"><em>int</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>AAPointsAssigned</b>
+        </td>
+        <td style="text-align:left">Number of AA Points currently assigned</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -289,7 +290,7 @@ Inherits [_spawn_](datatype-spawn.md)
       </td>
       <td style="text-align:left"><b>Book[</b>name<b>]</b>
       </td>
-      <td style="text-align:left">Slot in your spellbook assigned to spell <em>name</em>
+      <td style="text-align:left">Slot in your spell book assigned to spell <em>name</em>
       </td>
     </tr>
     <tr>
@@ -297,18 +298,20 @@ Inherits [_spawn_](datatype-spawn.md)
       </td>
       <td style="text-align:left"><b>Book[</b>#<b>]</b>
       </td>
-      <td style="text-align:left">Spell assigned to this slot # in your spellbook</td>
+      <td style="text-align:left">Spell assigned to this slot # in your spell book</td>
     </tr>
     <tr>
-      <td style="text-align:left"></td>
-      <td style="text-align:left">BoundLocation</td>
-      <td style="text-align:left">Returns x y z</td>
+      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-worldlocation.md"><em>worldlocation</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>BoundLocation[#]</b>
+        </td>
+        <td style="text-align:left">Returns information about your bind points (0-4)</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-buff.md"><em>buff</em></a>
       </td>
       <td style="text-align:left">Brells</td>
-      <td style="text-align:left">Returns the Brells line HP buff from a Paladin</td>
+      <td style="text-align:left">Returns the Brell&apos;s line HP buff from a Paladin</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-buff.md"><em>buff</em></a>
