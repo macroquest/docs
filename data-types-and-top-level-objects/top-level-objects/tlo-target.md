@@ -10,7 +10,7 @@ Object used to get information about your current target.
 
 ## Access to Types
 
-* _target_ **target**
+* \_\_[_target_ ](../data-types/datatype-target.md)**target**
 * [_spawn_](../data-types/datatype-spawn.md) **spawn**
 
 ## Examples
