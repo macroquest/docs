@@ -301,7 +301,7 @@ Inherits [_spawn_](datatype-spawn.md)
     </tr>
     <tr>
       <td style="text-align:left"></td>
-      <td style="text-align:left">Bound Location</td>
+      <td style="text-align:left">BoundLocation</td>
       <td style="text-align:left">Returns x y z</td>
     </tr>
     <tr>
