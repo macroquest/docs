@@ -300,6 +300,7 @@
   * [DataType:timestamp](data-types-and-top-level-objects/data-types/datatype-timestamp.md)
   * [DataType:type](data-types-and-top-level-objects/data-types/datatype-type.md)
   * [DataType:window](data-types-and-top-level-objects/data-types/datatype-window.md)
+  * [DataType:worldlocation](data-types-and-top-level-objects/data-types/datatype-worldlocation.md)
   * [DataType:xtarget](data-types-and-top-level-objects/data-types/datatype-xtarget.md)
   * [DataType:zone](data-types-and-top-level-objects/data-types/datatype-zone.md)
 
