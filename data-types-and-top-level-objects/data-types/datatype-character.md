@@ -766,6 +766,11 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Current group marked NPC (1-3)</td>
     </tr>
     <tr>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+      <td style="text-align:left"></td>
+    </tr>
+    <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
       </td>
       <td style="text-align:left"><b>GroupSize</b>
