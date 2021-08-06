@@ -310,7 +310,8 @@ Inherits [_spawn_](datatype-spawn.md)
     <tr>
       <td style="text-align:left"><a href="datatype-buff.md"><em>buff</em></a>
       </td>
-      <td style="text-align:left">Brells</td>
+      <td style="text-align:left"><b>Brells</b>
+      </td>
       <td style="text-align:left">Returns the Brell&apos;s line HP buff from a Paladin</td>
     </tr>
     <tr>
