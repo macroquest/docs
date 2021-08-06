@@ -1727,58 +1727,33 @@ Inherits [_spawn_](datatype-spawn.md)
 
 ## Language Table
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">
-        <ul>
-          <li>1 Common Tongue</li>
-          <li>2 Barbarian</li>
-          <li>3 Erudian</li>
-          <li>4 Elvish</li>
-          <li>5 Dark Elvish</li>
-        </ul>
-      </th>
-      <th style="text-align:left">
-        <ul>
-          <li>6 Dwarvish</li>
-          <li>7 Troll</li>
-          <li>8 Ogre</li>
-          <li>9 Gnomish</li>
-          <li>10 Halfling</li>
-        </ul>
-      </th>
-      <th style="text-align:left">
-        <ul>
-          <li>11 Thieves Cant</li>
-          <li>12 Old Erudian</li>
-          <li>13 Elder Elvish</li>
-          <li>14 Froglok</li>
-          <li>15 Goblin</li>
-        </ul>
-      </th>
-      <th style="text-align:left">
-        <ul>
-          <li>16 Gnoll</li>
-          <li>17 Combine Tongue</li>
-          <li>17 Elder Teir&apos;Dal</li>
-          <li>19 Lizardman</li>
-          <li>20 Orcish</li>
-        </ul>
-      </th>
-      <th style="text-align:left">
-        <ul>
-          <li>21 Faerie</li>
-          <li>22 Dragon</li>
-          <li>23 Elder Dragon</li>
-          <li>24 Dark Speech</li>
-          <li>25 Vah Shir</li>
-        </ul>
-      </th>
-    </tr>
-  </thead>
-  <tbody></tbody>
-</table>
+| Language ID | Language Name |
+| :--- | :--- |
+| 1 | Common Tongue |
+| 2 | Barbarian |
+| 3 | Erudian |
+| 4 | Elvish |
+| 5 | Dark Elvish |
+| 6 | Dwarvish |
+| 7 | Troll |
+| 8 | Ogre |
+| 9 | Gnomish |
+| 10 | Halfling |
+| 11 | Thieves Cant |
+| 12 | Old Erudian |
+| 13 | Elder Elvish |
+| 14 | Froglok |
+| 15 | Goblin |
+| 16 | Gnoll |
+| 17 | Combine Tongue |
+| 18 | Elder Teir'Dal |
+| 19 | Lizardman |
+| 20 | Orcish |
+| 21 | Faerie |
+| 22 | Dragon |
+| 23 | Elder Dragon |
+| 24 | Dark Speech |
+| 25 | Vah Shir |
 
 ### Examples
 
