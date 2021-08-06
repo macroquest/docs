@@ -4,10 +4,6 @@
 
 Object used to get information about your current target.
 
-## Forms
-
-* \_\_[_target_ ](../data-types/datatype-target.md)**Target**
-
 ## Access to Types
 
 * \_\_[_target_ ](../data-types/datatype-target.md)**target**
