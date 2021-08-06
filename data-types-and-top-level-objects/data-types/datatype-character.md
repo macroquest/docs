@@ -564,7 +564,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td
       style="text-align:left"><b>Diseased</b>
         </td>
-        <td style="text-align:left">Returns the name of any Disease spell</td>
+        <td style="text-align:left">Returns the name of first Disease spell on character</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
@@ -578,7 +578,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td
       style="text-align:left"><b>Dotted</b>
         </td>
-        <td style="text-align:left">Returns name of first DoT on character.</td>
+        <td style="text-align:left">Returns name of first DoT on character</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
