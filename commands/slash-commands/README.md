@@ -133,7 +133,8 @@
           </li>
           <li><a href="removebuff.md">/removebuff</a>
           </li>
-          <li>/removelev</li>
+          <li><a href="removelev.md">/removelev</a>
+          </li>
           <li><a href="removepetbuff.md">/removepetbuff</a>
           </li>
         </ul>

@@ -127,6 +127,7 @@
   * [/reloadui](commands/slash-commands/reloadui.md)
   * [/removeaura](commands/slash-commands/removeaura.md)
   * [/removebuff](commands/slash-commands/removebuff.md)
+  * [/removelev](commands/slash-commands/removelev.md)
   * [/removepetbuff](commands/slash-commands/removepetbuff.md)
   * [/screenmode](commands/slash-commands/screenmode.md)
   * [/selectitem](commands/slash-commands/selectitem.md)
