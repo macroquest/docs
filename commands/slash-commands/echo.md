@@ -6,14 +6,14 @@
 
 ## Description
 
-Echos the specified text \(or variables\) to the MQ2 chat window.
+Echoes the specified text \(or variables\) to the MQ Console window.
 
 ## Examples
 
 **Colorized usage**
 
 ```text
-/echo \am This is a \attest\ax \n\agAll done, let's show a backslash: \ar\\
+/echo \amThis is a \attest\ax \n\agAll done, let's show a backslash: \ar\\
 ```
 
 \[MQ2\] '''This is a test
