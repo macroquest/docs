@@ -16,7 +16,7 @@ You can manually load a CFG file while in-game using the [/loadcfg](../commands/
 | **charselect.cfg** | Executed when you reach character select |
 | **zoned.cfg** | Executed after you finish zoning, but right before the map-specific config is executed |
 | _**server\_character**_**.cfg** | Executed when a certain character enters the world |
-| '**'classname.cfg** | Executed when char of 'classname' enters world. e.g., bard.cfg |
+| **classname.cfg** | Executed when char of 'classname' enters world. e.g., bard.cfg |
 | _**mapshortname**_**.cfg** | Executed when you zone into this zone |
 | _**pluginname**_**-autoexec.cfg** | Executed when this plugin is loaded \(after its initialization is complete\) |
 
