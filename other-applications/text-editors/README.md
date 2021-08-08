@@ -1,5 +1,10 @@
 # Text Editors
 
+## Visual Studio Code
+
+Visual Studio Code \([Download](https://code.visualstudio.com/?wt.mc_id=vscom_downloads)\)  
+VSCode Syntax Extension
+
 ## Crimson Editor
 
 Crimson Editor \(Download\)  
@@ -20,8 +25,5 @@ TextPad \(Download\)
 UltraEdit  
 [UltraEdit Syntax File](ultraedit-syntax-file.md)
 
-## Visual Studio Code
 
-VSCode \(Download\) - recommended macro editor.  
-VSCode Syntax Extension
 
