@@ -13,8 +13,8 @@ This documentation is for MacroQuest a.k.a. MQnext. For the legacy MacroQuest2 W
 ## MacroQuest
 
 * [Intro](macroquest2-intro/)
-* [Compiling MQ2](documentation/macroquest2-compiling.md)
-* [Using MQ2](documentation/macroquest2-using.md)
+* [Compiling MQ](documentation/macroquest2-compiling.md)
+* [Using MQ](documentation/macroquest2-using.md)
 * [Macros/Snippets](documentation/macroquest2-macros.md)
 * [Plugins](documentation/macroquest2-plugins.md)
 
@@ -22,9 +22,9 @@ This documentation is for MacroQuest a.k.a. MQnext. For the legacy MacroQuest2 W
 
 * [Discord](https://discord.gg/77C4Ke6HKg)
 * [Forums](https://macroquest2.com/phpBB3)
-* [MQ2 Compile Problems](documentation/help-compiling.md)
-* [MQ2 Macro/Snippet Problems](documentation/help-macros.md)
-* [MQ2 Plugin Problems](documentation/help-plugins.md)
+* [MQ Compile Problems](documentation/help-compiling.md)
+* [MQ Macro/Snippet Problems](documentation/help-macros.md)
+* [MQ Plugin Problems](documentation/help-plugins.md)
 
 ## References
 

@@ -2,19 +2,19 @@
 
 ## Starting/Stopping
 
-Once you have [compiled](macroquest2-compiling.md) MQ2 successfully, you can launch it by changing to the Releases directory and opening [MacroQuest2.exe](macroquest2.exe.md). It doesn't matter if MQ2 is started while EverQuest is running or not.
+Once you have [compiled](macroquest2-compiling.md) MQ successfully, you can launch it by changing to the Releases directory and opening [MacroQuest.exe](macroquest2.exe.md). It doesn't matter if MQ is started while EverQuest is running or not.
 
 If you do start it after you start EverQuest, you will have to wait a few seconds before it finishes loading and you see the results in-game.
 
-MQ2 can be stopped from within game, by typing [/unload](../commands/slash-commands/unload.md). If you are running multiple sessions, you will have to do this in each session. After unloading, you can close the tray icon by right-clicking on it and chosing Exit.
+MQ can be stopped from within game, by typing [/unload](../commands/slash-commands/unload.md). If you are running multiple sessions, you will have to do this in each session. After unloading, you can close the tray icon by right-clicking on it and chosing Exit.
 
 ### Multiple Sessions
 
-MacroQuest2 becomes part of EverQuest when you play, and anything you do inside one session is physically and logically separate from all others \(just like your two copies of EverQuest dont blend together\). This means that if you load a plugin in one session, it's not going to automatically load in the other. However, when you load a plugin, it will automatically load the next time a MacroQuest2 session begins. If that happens to be a second EQ session launching, then it may appear to your untrained eye as applying the plugin loading to all running sessions. Likewise, if you run a macro in one session, it's not going to automatically load in others. And if you run a command in one session, it's not going to automatically run in others.
+MacroQuest becomes part of EverQuest when you play, and anything you do inside one session is physically and logically separate from all others \(just like your two copies of EverQuest dont blend together\). This means that if you load a plugin in one session, it's not going to automatically load in the other. However, when you load a plugin, it will automatically load the next time a MacroQuest session begins. If that happens to be a second EQ session launching, then it may appear to your untrained eye as applying the plugin loading to all running sessions. Likewise, if you run a macro in one session, it's not going to automatically load in others. And if you run a command in one session, it's not going to automatically run in others.
 
 ## EQ Commands that are enhanced
 
-The following common EverQuest slash commands are enhanced by MacroQuest2:
+The following common EverQuest slash commands are enhanced by MacroQuest:
 
 * [/cast](../commands/slash-commands/cast.md)
 * [/charinfo](../commands/slash-commands/charinfo.md)
@@ -26,7 +26,7 @@ The following common EverQuest slash commands are enhanced by MacroQuest2:
 
 A full list is available in the [Slash Commands](../commands/slash-commands/) page.
 
-## MQ2-only Commands
+## MQ-only Commands
 
 The following commonly used slash commands are added by MacroQuest2:
 
@@ -70,7 +70,7 @@ See the [MacroQuest2:Macros](macroquest2-macros.md) section for further informat
 
 ### Plugins
 
-MQ2 plugins are modular and can be loaded and unloaded on demand.
+MQ plugins are modular and can be loaded and unloaded on demand.
 
 To load a plugin, type:
 
