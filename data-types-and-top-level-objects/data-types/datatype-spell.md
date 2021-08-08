@@ -16,7 +16,7 @@ This is the type used for spell information.
 | [_ticks_](datatype-ticks.md) | **Duration** | Duration of the spell \(if any\) |
 | [_ticks_](datatype-ticks.md) | **DurationValue1** | Duration of the spell \(if any\) |
 | [_timestamp_](datatype-timestamp.md) | **FizzleTime** | Time to recover after fizzle |
-| [_int_](datatype-int.md) | **GemIcon** | Icon number of the spell. Exmaple ${Spell\[blah\].GemIcon} |
+| [_int_](datatype-int.md) | **GemIcon** | Icon number of the spell. Example ${Spell\[blah\].GemIcon} |
 | [_int_](datatype-int.md) | **HastePct** | Percentage of haste, example of use ${Me.Hasted.HastePct} or ${Spell\[Speed of Milyex\].HastePct} |
 | [_int_](datatype-int.md) | **ID** | Spell ID |
 | [_bool_](datatype-bool.md) | **IsSkill** | is this spell a skill? |
@@ -29,7 +29,7 @@ This is the type used for spell information.
 | [_string_](datatype-string.md)\_\_ | **Name** | Spell Name |
 | [_float_](datatype-float.md) | **PushBack** | Push back amount |
 | [_float_](datatype-float.md) | **Range** | Maximum range to target \(use **AERange** for AE and group spells\) |
-| [_int_](datatype-int.md) | **Rank** | Returns either 1, 2 or 3 for spells and 4-30 for clickys and potions. |
+| [_int_](datatype-int.md) | **Rank** | Returns either 1, 2 or 3 for spells and 4-30 for clickables and potions. |
 | [_string_](datatype-string.md)\_\_ | **RankName** | Returns the spell/combat ability name rank character has. |
 | [_float_](datatype-float.md) | **RecastTime** | Time to recast after successful cast |
 | [_timestamp_](datatype-timestamp.md) | **RecoveryTime** | Same as **FizzleTime** |
