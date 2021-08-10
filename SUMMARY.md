@@ -54,6 +54,7 @@
     * [AAWindow](general-information/windows/aawindow.md)
     * [BreathWindow](general-information/windows/breathwindow.md)
     * [WindowsList](general-information/windows/windowslist.md)
+* [Changelog](changelog.md)
 
 ## Commands
 
@@ -182,7 +183,6 @@
   * [/varset](commands/macro-commands/varset.md)
   * [/while](commands/macro-commands/while.md)
 * [EQ Commands](commands/eq-commands/README.md)
-  * [Changelog](commands/eq-commands/changelog.md)
   * [/lootnodrop](commands/eq-commands/lootnodrop.md)
 
 ## Data Types & Top Level Objects
