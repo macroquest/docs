@@ -1,6 +1,6 @@
 # DataType:achievement
 
-Provides the details about a single achievement and allows access to an achievement's _components_. Components are the objectives of an achievement that are required to earn the achievement.
+Provides the details about a single achievement and allows access to an achievement's objective.
 
 ## Members
 
@@ -10,9 +10,9 @@ Provides the details about a single achievement and allows access to an achievem
 | \_\_[_string_](datatype-string.md)\_\_ | **Name** | The achievement's name |
 | \_\_[_string_](datatype-string.md)\_\_ | **Description** | The achievement's description |
 | [_int_](datatype-int.md) | **Points** | The point value for the achievement |
-| \_\_[_achievementcomp_](datatype-achievementcomp.md)\_\_ | **Component\[**\#\|_Description_**\]** | Find an component by its component ID or Description. |
-| \_\_[_achievementcomp_](datatype-achievementcomp.md)\_\_ | **ComponentByIndex\[**\#**\]** | Find an component by its visual ordering as displayed in the achievements window. |
-| [_int_](datatype-int.md) | **ComponentCount** | The number of components in this achievement. |
+| \_\_[_achievementobj_](datatype-achievementobj.md)\_\_ | **Objective\[**\#\|_Description_**\]** | Find an objective by its objective ID or Description. |
+| \_\_[_achievementobj_](datatype-achievementobj.md)\_\_ | **ObjectiveByIndex\[**\#**\]** | Find an objective by its visual ordering as displayed in the achievements window. |
+| [_int_](datatype-int.md) | **ObjectiveCount** | The number of objectives in this achievement. |
 | \_\_[_string_](datatype-string.md)\_\_ | **Link\[**_opt: Name_**\]** | Generate an achievement link. An optional name can be provided to display in the achievement, otherwise the current character's name will be used. |
 | [_int_](datatype-int.md) | **Index** | The index of the achievement. See [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices) for more information. |
 | [_int_](datatype-int.md) | **IconID** | ID of the Achievement's Icon. See [Achievement Icon](datatype-achievement.md#achievement-icon) below. |
@@ -98,8 +98,8 @@ Print how many humans you have left to kill for the "**I'm a People Person!**" a
     /echo ${Achievement[11000028].Name} is complete!
 } else {
     | 300197 = Humans
-    /if (!${Achievement[11000028].Component[300197].Completed}) {
-        /echo You have ${Math.Calc[${Achievement[11000028].Component[300197].RequiredCount} - ${Achievement[11000028].Component[300197].Count}].Int} humans left to kill!
+    /if (!${Achievement[11000028].Objective[300197].Completed}) {
+        /echo You have ${Math.Calc[${Achievement[11000028].Objective[300197].RequiredCount} - ${Achievement[11000028].Objective[300197].Count}].Int} humans left to kill!
     } else {
         /echo Done killing humans!
     }

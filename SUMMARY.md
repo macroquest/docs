@@ -249,7 +249,7 @@
 * [Data Types](data-types-and-top-level-objects/data-types/README.md)
   * [DataType:achievement](data-types-and-top-level-objects/data-types/datatype-achievement.md)
   * [DataType:achievementcat](data-types-and-top-level-objects/data-types/datatype-achievementcat.md)
-  * [DataType:achievementcomp](data-types-and-top-level-objects/data-types/datatype-achievementcomp.md)
+  * [DataType:achievementobj](data-types-and-top-level-objects/data-types/datatype-achievementobj.md)
   * [DataType:alertlist](data-types-and-top-level-objects/data-types/datatype-alertlisttype.md)
   * [DataType:altability](data-types-and-top-level-objects/data-types/datatype-altability.md)
   * [DataType:argb](data-types-and-top-level-objects/data-types/datatype-argb.md)
