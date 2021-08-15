@@ -149,7 +149,7 @@ In the following example, we will print the completed status of achievement "**W
 
 {% tab title="Lua" %}
 ```lua
-print(mq.TLO.Achievement(500980300).Completed()
+print(mq.TLO.Achievement(500980300).Completed())
 ```
 {% endtab %}
 {% endtabs %}

@@ -25,6 +25,8 @@ A [Beginners Guide to TLOs and MQ2DataVars](../../documentation/beginners-guide-
     <tr>
       <th style="text-align:left">
         <ul>
+          <li><a href="tlo-achievement.md">TLO:Achievement</a>
+          </li>
           <li><a href="tlo-advloot.md">TLO:AdvLoot</a>
           </li>
           <li><a href="tlo-alert.md">TLO:Alert</a>
@@ -109,12 +111,12 @@ A [Beginners Guide to TLOs and MQ2DataVars](../../documentation/beginners-guide-
           </li>
           <li><a href="TLO:Menu">TLO:Menu</a>
           </li>
+          <li><a href="tlo-mercenary.md">TLO:Mercenary</a>
+          </li>
         </ul>
       </th>
       <th style="text-align:left">
         <ul>
-          <li><a href="tlo-mercenary.md">TLO:Mercenary</a>
-          </li>
           <li><a href="tlo-merchant.md">TLO:Merchant</a>
           </li>
           <li><a href="tlo-mount.md">TLO:Mount</a>
