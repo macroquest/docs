@@ -106,9 +106,19 @@ Provides access achievements, achievement categories, and other information surr
 
 ## Usage <a id="usage"></a>
 
+{% hint style="warning" %}
+Looking up achievements by name may not always return the correct achievement if multiple exist with the same name. Achievement IDs should be preferred over names as they don't change and are unique.
+{% endhint %}
+
 **Achievement\[**\#**\]** and **Achievement.Achievement\[**\#**\]** are equivalent and are provided for consistency. The primary way to access achievement information should be via id. Achievement IDs are unique and do not change.
 
 To look up an achievement's ID, you can look up an achievement by name, or you can use the Achievements Inspector.
+
+#### ‌Note About Achievement Indices
+
+Achievements and categories can be looked up by index. This is significantly faster than looking up by id or name. However, these indices are **not** stable and will change from patch to patch, but they will not change during the session. If an achievement is being utilized in a script many times, it may be more performant to look up an achievement's index \(with its .Index member\) and then use that in subsequent queries.
+
+See [Achievement Examples](../data-types/datatype-achievement.md#examples) for some examples of using indices for looking up achievements.
 
 ### Examples
 
@@ -143,8 +153,4 @@ print(mq.TLO.Achievement(500980300).Completed()
 ```
 {% endtab %}
 {% endtabs %}
-
-### ‌Note About Achievement Indices
-
-Achievements and categories can be looked up by index. This is significantly faster than looking up by id or name. However, these indices are **not** stable and will change from patch to patch, but they will not change during the session. If an achievement is being utilized in a script many times, it may be more performant to look up an achievement's index \(with its .Index member\) and then use that in subsequent queries.
 
