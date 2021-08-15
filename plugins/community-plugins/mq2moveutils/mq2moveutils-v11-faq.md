@@ -98,11 +98,6 @@ You cannot use [_/face_](../../../commands/slash-commands/face.md) while a MoveU
 
 Try \( _/stick imsafe_ \) if you have BreakOnSummon or BreakOnGM enabled Try \( _/stick unpause_ \) if you have PauseLock enabled
 
-### I'm retarded and still use VC6. How do I compile this beast?
-
-* Get a real compiler
-* OR uncomment //\#define OLD\_COMPILER\_USER
-
 ## Configuration
 
 ### What are the different ways to handle manual keyboard and mouse movement ?
