@@ -188,6 +188,7 @@
 ## Data Types & Top Level Objects
 
 * [Top-Level Objects](data-types-and-top-level-objects/top-level-objects/README.md)
+  * [TLO:Achievement](data-types-and-top-level-objects/top-level-objects/tlo-achievement.md)
   * [TLO:AdvLoot](data-types-and-top-level-objects/top-level-objects/tlo-advloot.md)
   * [TLO:Alert](data-types-and-top-level-objects/top-level-objects/tlo-alert.md)
   * [TLO:Alias](data-types-and-top-level-objects/top-level-objects/tlo-alias.md)
@@ -246,6 +247,9 @@
   * [TLO:Window](data-types-and-top-level-objects/top-level-objects/tlo-window.md)
   * [TLO:Zone](data-types-and-top-level-objects/top-level-objects/tlo-zone.md)
 * [Data Types](data-types-and-top-level-objects/data-types/README.md)
+  * [DataType:achievement](data-types-and-top-level-objects/data-types/datatype-achievement.md)
+  * [DataType:achievementcat](data-types-and-top-level-objects/data-types/datatype-achievementcat.md)
+  * [DataType:achievementcomp](data-types-and-top-level-objects/data-types/datatype-achievementcomp.md)
   * [DataType:alertlist](data-types-and-top-level-objects/data-types/datatype-alertlisttype.md)
   * [DataType:altability](data-types-and-top-level-objects/data-types/datatype-altability.md)
   * [DataType:argb](data-types-and-top-level-objects/data-types/datatype-argb.md)
