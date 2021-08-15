@@ -114,15 +114,13 @@ local achievement = mq.TLO.Achievement("I'm a People Person!")
 if achievement.Completed() then
     print("Achievement completed!")
 else
-    local component = achievement.Component("Humans")
-    if component.Count() < component.RequiredCount() then
-        print(string.format("You have %d humans left to kill!", component.RequiredCount() - component.Count()))
+    local objective = achievement.Objective("Humans")
+    if not objective.Completed() then
+        print(string.format("You have %d humans left to kill!", objective.RequiredCount() - objective.Count()))
     else
         print("Done killing humans!")
     end
 end
-
-
 ```
 {% endtab %}
 {% endtabs %}
