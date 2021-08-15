@@ -25,8 +25,7 @@ A [Beginners Guide to TLOs and MQ2DataVars](../../documentation/beginners-guide-
     <tr>
       <th style="text-align:left">
         <ul>
-          <li><a href="tlo-achievement.md">TLO:Achievement</a>
-          </li>
+          <li><a href="tlo-achievement.md">TLO:Achievement</a> &#x1F195;</li>
           <li><a href="tlo-advloot.md">TLO:AdvLoot</a>
           </li>
           <li><a href="tlo-alert.md">TLO:Alert</a>
