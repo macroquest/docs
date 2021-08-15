@@ -6,7 +6,7 @@ Represents a single objective of an achievement
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **ID** | The achievement's objective's unique ID. |
+| [_int_](datatype-int.md) | **ID** | The objective's unique ID. |
 | \_\_[_string_](datatype-string.md)\_\_ | **Description** | Text describing this objective. |
 | [_int_](datatype-int.md) | **Count** | The current count recorded by the objective. |
 | [_int_](datatype-int.md) | **RequiredCount** | The total count required to be complete the objective. For objectives that don't require a count, this will be zero. |
