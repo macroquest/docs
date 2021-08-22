@@ -11,7 +11,7 @@ Allows you to create custom midline substitutions. They can be called from any a
 
 * Substitutions do not currently work in macros.
 * You don't use the percent signs when creating the substitutions or editing your config file.
-* You can use MQ's subsitutions without spaces around them \(unlike EQ's!\).
+* You can use MQ's substitutions without spaces around them \(unlike EQ's!\).
 * You can use EQ's wildcards \(ie: %t\) within your substitutions, however, you have to leave spaces around them \(yes,
 
   they suck\).
