@@ -22,7 +22,7 @@ Looks for the Cleric Epic \(by exact match\) and prints its ID.
 {% tabs %}
 {% tab title="Lua" %}
 ```lua
-/lua parse print(mq.TLO.FindItem("=Water Sprinkler of Nem Ankh").ID())
+/lua parse mq.TLO.FindItem("=Water Sprinkler of Nem Ankh").ID()
 ```
 {% endtab %}
 
@@ -36,7 +36,7 @@ Looks for an item with the name swirling in it, and prints the ID.
 {% tabs %}
 {% tab title="Lua" %}
 ```lua
-/lua parse print(mq.TLO.FindItem("swirling").ID())
+/lua parse mq.TLO.FindItem("swirling").ID()
 ```
 {% endtab %}
 
