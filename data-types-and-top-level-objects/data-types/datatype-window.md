@@ -378,3 +378,13 @@ Return TRUE if the other person has clicked the Trade button in the Trade Window
 
 Return TRUE if I have clicked the Trade button in the Trade Window \(TradeWnd\)
 
+`${Window[RewardSelectionWnd/RewardPageTabWindow].Tab[Brew for the Day].Child[RewardSelectionOptionList].List[2]}`
+
+Returns the name of the 2nd option in the list of rewards for the tab titled "Brew for the Day"
+
+
+
+
+
+> Overseer Tetradrachm
+
