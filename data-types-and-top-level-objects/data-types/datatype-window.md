@@ -2,6 +2,8 @@
 
 This contains data related to the specified in-game window
 
+Windows come in many forms, but all are represented with the generic **window** type. In some of the descriptions, a **bold** window type may be specified, which defines the behavior for that type of window.
+
 ## Members
 
 <table>
@@ -43,6 +45,21 @@ This contains data related to the specified in-game window
       <td style="text-align:left"><b>Children</b>
       </td>
       <td style="text-align:left">Returns TRUE if the window has children</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-window.md"><em>window</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>CurrentTab</b>
+        </td>
+        <td style="text-align:left"><b>TabBox:</b> Returns the <b>Page</b> window associated with the currently
+          selected tab.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>CurrentTabIndex</b>
+      </td>
+      <td style="text-align:left"><b>TabBox</b>: Returns the index of the currently selected tab.</td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
@@ -213,11 +230,31 @@ This contains data related to the specified in-game window
       <td style="text-align:left">Window style code</td>
     </tr>
     <tr>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
+      </td>
+      <td style="text-align:left"><b>TabCount</b>
+      </td>
+      <td style="text-align:left"><b>TabBox:</b> The number of tabs present in the TabBox.</td>
+    </tr>
+    <tr>
+      <td style="text-align:left"><a href="datatype-window.md"><em>window</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td
+      style="text-align:left"><b>Tab[ </b># or Name <b>]</b>
+        </td>
+        <td style="text-align:left"><b>TabBox:</b> Looks up the <b>Page</b> window that matches the provided
+          index or tab text.</td>
+    </tr>
+    <tr>
       <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
       <td
       style="text-align:left"><b>Text</b>
         </td>
-        <td style="text-align:left">Window&apos;s text</td>
+        <td style="text-align:left">
+          <p>Window&apos;s text.</p>
+          <p></p>
+          <p><b>STMLBox:</b> returns the contents of the STML.</p>
+          <p><b>Page</b>: returns the name of the page&apos;s Tab.</p>
+        </td>
     </tr>
     <tr>
       <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
@@ -301,6 +338,7 @@ This contains data related to the specified in-game window
 | **RightMouseHeldUp** | Does the action of holding the right mouse button up |
 | **RightMouseUp** | Does the action of clicking the right mouse button up |
 | **Select** | Selects the specified window |
+| **SetCurrentTab\[** \# or Name **\]** | If the window is a TabBox, set the current tab by index or by name. |
 
 ## Examples
 
