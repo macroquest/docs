@@ -8,8 +8,10 @@ Contains all the data related to alternate abilities
 | :--- | :--- | :--- |
 | [_int_](datatype-int.md) | **AARankRequired** | Rank required to train |
 | [_bool_](datatype-bool.md) | **CanTrain** | Returns true/false on if the Alternative Ability can be trained |
+| \_\_[_string_](datatype-string.md)\_\_ | **Category** | The name of the category that this AA belongs to. |
 | [_int_](datatype-int.md) | **Cost** | Base cost to train |
 | \_\_[_string_](datatype-string.md)\_\_ | **Description** | Basic description |
+| [_int_](datatype-int.md) | **GroupID** | ID of the AA group that this AA belongs to |
 | [_int_](datatype-int.md) | **ID** | ID |
 | [_int_](datatype-int.md) | **Index** | Returns the index number of the Alternative Ability |
 | [_int_](datatype-int.md) | **MaxRank** | Max rank available in this ability |
@@ -23,7 +25,8 @@ Contains all the data related to alternate abilities
 | [_int_](datatype-int.md) | **Rank** | Returns the Rank of the AA |
 | [_int_](datatype-int.md) | **RequiresAbilityPoints** | Points required in above ability |
 | [_int_](datatype-int.md) | **ReuseTime** | Reuse time in seconds |
-| \_\_[_string_](datatype-string.md)\_\_ | **ShortName** | Short name |
+| \_\_[_string_](datatype-string.md)\_\_ | **ShortName** | First line of button label \(if any\) |
+| [_string_](datatype-string.md)\_\_ | **ShortName2** | Second line of button label \(if any\) |
 | [_spell_](datatype-spell.md) | **Spell** | Spell used by the ability \(if any\) |
 | [_int_](datatype-int.md) | **Type** | Type \(1-6\) |
 | \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |

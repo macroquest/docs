@@ -46,7 +46,7 @@ Inherits members from [_spawn_](datatype-spawn.md)_._
 | [_spell_](datatype-spell.md) | **SV** | Returns the name of the Spiritual Vitality spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Symbol** | Returns the name of the Symbol spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Tashed** | Returns the name of the Tash spell if the Target has one |
-| \_\_[_string_]()\_\_ | **To String** | Same as **Name** |
+| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |
 
 ### Examples
 
