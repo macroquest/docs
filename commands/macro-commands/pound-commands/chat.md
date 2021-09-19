@@ -26,7 +26,7 @@ Sub Event_Chat(Channel,Sender,Text)
 This would trigger Event\_Chat for both guild and group chat.
 
 ```text
-/if (${ChatText.Find[send me to]} && ${Select[${Me.Class.ShortName},DRU,WIZ]}) {
+/if (${Text.Find[send me to]} && ${Select[${Me.Class.ShortName},DRU,WIZ]}) {
   /call SendUs ${Text.Arg[4]} ${Sender}
   /return
 }
