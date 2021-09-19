@@ -2,13 +2,13 @@
 
 ## Description
 
-\#chat channelname
+\#chat channel
 
-This is a special type of \#event which watches the specified channelname. Content from the channelname is accessed by creating a Sub Event\_Chat.
+This is a special type of \#event which watches the specified channel. Content from the channel is accessed by creating a Sub Event\_Chat.
 
 ## Use
 
-Valid channels are: auc, _chat_, guild, group, ooc, say, shout, and tell. \(_chat_ represents channels\) Channel raid was added with Oct 21, 2020 update
+Valid channels are: auc, _chat_, guild, group, raid, ooc, say, shout, and tell. \(_chat_ represents channels\)
 
 Only one channel may be used on the \#chat line, however multiple lines may be added.
 
@@ -18,8 +18,8 @@ Only one channel may be used on the \#chat line, however multiple lines may be a
 #chat guild
 #chat group
 
-Sub Event_Chat(ChatChannel,ChatSender,ChatText)
-  /echo ${ChatSender} told me ${ChatText} in ${ChatChannel}
+Sub Event_Chat(Channel,Sender,Text)
+  /echo ${Sender} told me ${Text} in ${Channel}
 /return
 ```
 
@@ -27,7 +27,7 @@ This would trigger Event\_Chat for both guild and group chat.
 
 ```text
 /if (${ChatText.Find[send me to]} && ${Select[${Me.Class.ShortName},DRU,WIZ]}) {
-  /call SendUs ${ChatText.Arg[4]} ${Sender}
+  /call SendUs ${Text.Arg[4]} ${Sender}
   /return
 }
 ```
@@ -37,7 +37,7 @@ This would watch for the key phrase "send me to" and then call the subroutine Se
 Ex "/g send me to pok" would man the keyword was pok, and the subroutine would cast the appropriate spell to send you to Plane of Knowledge.
 
 ```text
-/if (${ChatText.Find[open door]} || ${ChatText.Find[click door]}) {
+/if (${Text.Find[open door]} || ${Text.Find[click door]}) {
   /doortarget
   /delay 1s
   /face door
