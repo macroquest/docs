@@ -26,10 +26,10 @@ Sub Event_Chat(ChatChannel,ChatSender,ChatText)
 This would trigger Event\_Chat for both guild and group chat.
 
 ```text
-    /if (${ChatText.Find[send me to]} && ${DoPorts} && ${Select[${Me.Class.ShortName},DRU,WIZ]}) {
-        /call SendUs ${ChatText.Arg[4]} ${Sender}
-        /return
-        }
+/if (${ChatText.Find[send me to]} && ${Select[${Me.Class.ShortName},DRU,WIZ]}) {
+  /call SendUs ${ChatText.Arg[4]} ${Sender}
+  /return
+}
 ```
 
 This would watch for the key phrase "send me to" and then call the subroutine SendUs with the keyword following the phrase.
@@ -37,14 +37,14 @@ This would watch for the key phrase "send me to" and then call the subroutine Se
 Ex "/g send me to pok" would man the keyword was pok, and the subroutine would cast the appropriate spell to send you to Plane of Knowledge.
 
 ```text
-    /if (${ChatText.Find[open door]} || ${ChatText.Find[click door]}) {
-        /doortarget
-        /delay 1s
-        /face door
-        /if (${DoorTarget.Distance}>20) {
-            /click left door
-            }
-        }
+/if (${ChatText.Find[open door]} || ${ChatText.Find[click door]}) {
+  /doortarget
+  /delay 1s
+  /face door
+  /if (${DoorTarget.Distance}>20) {
+    /click left door
+  }
+}
 ```
 
 In this instance the macro would watch for the key phrase "open door" or "click door" and, provide the door was with in twenty feet, click on the door.
