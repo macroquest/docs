@@ -1,6 +1,6 @@
-# DataType:keyring
+# DataType:keyringitem
 
-This datatype deals strictly with information on your "Mount" keyring.
+This datatype deals strictly with information items on a keyring.
 
 ## Members
 
