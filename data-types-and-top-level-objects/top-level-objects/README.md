@@ -54,6 +54,8 @@ A [Beginners Guide to TLOs and MQ2DataVars](../../documentation/beginners-guide-
           </li>
           <li><a href="tlo-everquest.md">TLO:EverQuest</a>
           </li>
+          <li><a href="tlo-familiar.md">TLO:Familiar</a>
+          </li>
           <li><a href="tlo-finditem.md">TLO:FindItem</a>
           </li>
           <li><a href="tlo-finditembank.md">TLO:FindItemBank</a>
@@ -80,19 +82,15 @@ A [Beginners Guide to TLOs and MQ2DataVars](../../documentation/beginners-guide-
           </li>
           <li><a href="tlo-group.md">TLO:Group</a>
           </li>
-          <li><a href="TLO:GroupLeader">TLO:GroupLeader</a>
-          </li>
-          <li><a href="TLO:GroupLeaderName">TLO:GroupLeaderName</a>
-          </li>
           <li><a href="tlo-heading.md">TLO:Heading</a>
           </li>
           <li><a href="tlo-if.md">TLO:If</a>
           </li>
+          <li><a href="tlo-illusion.md">TLO:Illusion</a>
+          </li>
           <li><a href="tlo-ini.md">TLO:Ini</a>
           </li>
           <li><a href="tlo-int.md">TLO:Int</a>
-          </li>
-          <li><a href="../../plugins/discontinued-unsupported/mq2irc/tlo-irc.md">TLO:Irc</a>
           </li>
           <li><a href="tlo-itemtarget.md">TLO:ItemTarget</a>
           </li>
@@ -107,8 +105,6 @@ A [Beginners Guide to TLOs and MQ2DataVars](../../documentation/beginners-guide-
           <li><a href="tlo-math.md">TLO:Math</a>
           </li>
           <li><a href="tlo-me.md">TLO:Me</a>
-          </li>
-          <li><a href="TLO:Menu">TLO:Menu</a>
           </li>
           <li><a href="tlo-mercenary.md">TLO:Mercenary</a>
           </li>
@@ -141,8 +137,6 @@ A [Beginners Guide to TLOs and MQ2DataVars](../../documentation/beginners-guide-
           <li><a href="tlo-spawncount.md">TLO:SpawnCount</a>
           </li>
           <li><a href="tlo-spell.md">TLO:Spell</a>
-          </li>
-          <li><a href>TLO:String</a>
           </li>
           <li><a href="tlo-switch.md">TLO:Switch</a>
           </li>
