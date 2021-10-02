@@ -21,7 +21,7 @@ Accessing and manipulating data can be done with:
 Things that can be added to the macro file:
 
 * [Comments](comments.md)
-* [Pound Commands](../commands/macro-commands/pound-commands/)
+* [Pound Commands](../commands/macro-commands/macro-directives/)
   * [Custom Events](../macros/macros/custom-events.md)
 
 Controlling macro execution is done with:

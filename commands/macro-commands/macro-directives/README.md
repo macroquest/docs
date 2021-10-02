@@ -2,7 +2,7 @@
 
 ## Definition
 
-Pound commands are pre-execution commands that are not run during the macro. These commands will be run before the Main sub is run, and are traditionally located at the beginning of the macro file.
+Macro directives are instructions to the macro engine that are not run during the macro. These directives will be run before the Main sub is run, and are traditionally located at the beginning of the macro file.
 
 Click on the list below to see more in-depth descriptions.
 

@@ -22,8 +22,8 @@ This is currenly not a supported TLO. This page was added as a visual representa
 * [event](../../parking-lot/pages-to-be-reviewed/datatype-event.md)
 * [Data Types](../data-types/)
 * [Top-Level Objects](./)
-* [Pound\_Commands](../../commands/macro-commands/pound-commands/)
+* [Pound\_Commands](../../commands/macro-commands/macro-directives/)
 * [Custom\_Events](../../macros/macros/custom-events.md)
 * [Macro\_Reference](../../documentation/macro-reference.md)
-* [Event](../../commands/macro-commands/pound-commands/event.md)
+* [Event](../../commands/macro-commands/macro-directives/event.md)
 
