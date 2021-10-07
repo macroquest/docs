@@ -160,6 +160,7 @@
     * [\#define](commands/macro-commands/macro-directives/define.md)
     * [\#event](commands/macro-commands/macro-directives/event.md)
     * [\#include](commands/macro-commands/macro-directives/include.md)
+    * [\#include\_optional](commands/macro-commands/macro-directives/include_optional.md)
     * [\#turbo](commands/macro-commands/macro-directives/turbo.md)
     * [\#warning](commands/macro-commands/macro-directives/warning.md)
   * [/break](commands/macro-commands/break.md)
