@@ -11,6 +11,7 @@ Click on the list below to see more in-depth descriptions.
 * [define](define.md)
 * [event](event.md)
 * [include](include.md)
+* [include\_optional](include_optional.md)
 * [turbo](turbo.md)
 * [warning](warning.md)
 
