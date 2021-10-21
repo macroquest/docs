@@ -34,54 +34,13 @@ You'll be asked to enter nine fields:
 
 Upon clicking "Save", your profile will be encrypted and saved in mq2autologin.ini
 
-## 2. AutoLogin via a windows shortcut with -patchme
+## 2. AutoLogin via EverQuest launcher or a windows shortcut with -patchme
 
-Configure the ini file \(named: MQ2AutoLogin.ini\) with your account information in plaintext (this presents a security issue, please be careful with this file)
-
-**Sample INI**
-```ini⏎
-[Settings]
-KickActiveCharacter=1
-InstantCamp=0
-KickActiveTrader=1
-UseStationNamesInsteadOfSessions=0
-
-[Session1]
-StationName=StationNameforSession
-Password=PasswordforSession
-Server=ServerforSession
-Character=Name
-
-[Session2]
-StationName=StationNameforSession
-Password=PasswordforSession
-Server=ServerforSession
-Character=Name
-```
+Configure the ini file \(named: MQ2AutoLogin.ini\) with your account information in plaintext. See below for an example.
 
 ## 3. Autologin via ISBoxer or WinEQ using station name with -patchme
 
-Alternatively, you can use station names rather than sessions \(handy if you use ISBoxer or WinEQ2 profiles\). 
-
-**Sample INI**
-```ini⏎
-[Settings]
-UseMQ2Login=0
-KickActiveCharacter=1
-InstantCamp=0
-KickActiveTrader=1
-UseStationNamesInsteadOfSessions=1
-
-[StationName1]`  
-Password=PasswordforThisLoginName
-Server=ServerforThisLoginName
-Character=CharacterforThisLoginName
-
-[StationName2]
-Password=PasswordforThisLoginName
-Server=ServerforThisLoginName
-Character=CharacterforThisLoginName
-```
+Alternatively, you can use station names rather than sessions \(handy if you use ISBoxer or WinEQ2 profiles\). See below for an example.
 
 ## Commands
 
@@ -124,35 +83,56 @@ CharSelectDelay=3
 ConnectRetries=0
 ;How many attempts to connect after a failure
 UseMQ2Login=1
-;Encrypts your login information in MQ2AutoLogin.ini. NOTE: Changing your PCs hardware may make this unreadable. Be sure to use the export/import feature if moving or upgrading your PC.
+;Uses the default, encrypted method of autologin
 UseStationNamesInsteadOfSessions=0
 ;Stores your login and pass in plaintext in MQ2AutoLogin.ini, but is compatible with ISBoxer/WinEQ.
 ```
-If you're using `UseMQ2Login=1`, there will be additional sections such as `[Profiles]` and profile names. These should be left alone, as their settings are best changed via the GUI.
+If you're using `UseMQ2Login=1` and have created profiles via the tray icon, there will be additional sections such as `[Profiles]` and profile names. These should be left alone, as their settings are best changed via the GUI.
 
 **Section = \[Session\#\] or \[LoginName\]**
 
-If you prefer to use station names or sessions to log in, make sure your [Settings] reflect this preference, and then add session or station name sections with this format:
+If you prefer to use sessions (method 2) or station names (method 3) to log in, make sure your [Settings] reflect this preference, and then add session or station name sections with the format:
+
+**Sessions example INI**
 ```ini⏎
+[Settings]
+UseMQ2Login=0
+
 [Session1]
-StationName=ChangeMe
-Password=ChangeMe
-Server=ChangeMe
-Character=ChangeMe
+StationName=StationNameforSession
+Password=PasswordforSession
+Server=ServerforSession
+Character=Name
 
 [Session2]
-StationName=ChangeMe
-Password=ChangeMe
-Server=ChangeMe
-Character=ChangeMe
+StationName=StationNameforSession
+Password=PasswordforSession
+Server=ServerforSession
+Character=Name
+```
+and this format for station names,
 
-[YourStationName]
-Password=ChangeMe
-Server=ChangeMe
-Character=ChangeMe
+**Station names example INI**
+```ini⏎
+[Settings]
+UseMQ2Login=0
+UseStationNamesInsteadOfSessions=1
+
+[StationName1]
+Password=PasswordforThisLoginName
+Server=ServerforThisLoginName
+Character=CharacterforThisLoginName
+
+[StationName2]
+Password=PasswordforThisLoginName
+Server=ServerforThisLoginName
+Character=CharacterforThisLoginName
 ```
 
-**List of server short names**
+Additional settings from the global section, such as `KickActiveCharacter=1` can be added to session or station name sections to affect only that character.
+
+
+## List of server short names
 
     antonius
     bertox
