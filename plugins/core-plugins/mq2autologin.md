@@ -1,12 +1,8 @@
 # MQ2AutoLogin
 
-## Credits
-
-Originally by [ieatacid](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427)
-
 ## Description
 
-AutoLogin is a plugin that automatically logs in your characters. It can also switch characters, servers and login new accounts via commandline.
+AutoLogin is a plugin that automatically logs in your characters. It can also switch characters, servers and login new accounts via commandline. It was originally made by [ieatacid](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427).
 
 ## Setting up profiles via tray icon
 
