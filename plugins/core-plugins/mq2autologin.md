@@ -8,7 +8,7 @@ Originally by [ieatacid](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=164
 
 AutoLogin is a plugin that automatically logs in your characters. It can also switch characters, servers and login new accounts via commandline.
 
-## 1. Logging in via tray icon
+## Setting up profiles via tray icon
 
 Right click on your MacroQuest tray icon
 
