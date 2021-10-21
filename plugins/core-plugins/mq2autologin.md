@@ -32,7 +32,7 @@ You'll be asked to enter nine fields:
 8. Level: (Optional)
 9. Hotkey: (Assign a key or combination of keys to bring this character's window to the front)
 
-Upon clicking "Save", your profile will be encrypted and saved in mq2autologin.ini
+Upon clicking "Save", your profile will be encrypted and saved in MQ2AutoLogin.ini
 
 ## 2. AutoLogin via EverQuest launcher or a windows shortcut with -patchme
 
@@ -154,9 +154,33 @@ Additional settings from the global section, such as `KickActiveCharacter=1` can
     test
     beta
 
+## Custom server names
+To add a new server with a custom short name, which is particularly important for emulators, edit your MQ2AutoLogin.ini with the following format: 
+```ini⏎
+[Servers]
+customshortname=Exact long name (as it appears on login screen)
+```
+For example, here are the most popular macroquest-compatible emu servers as of 9/27/2017: 
+```ini⏎
+[Servers]
+peqgrand=[] [PEQ] The Grand Creation - Omens of War
+ezserver=[] EZ Server - Custom Zones, Vendors, Quests, Items, etc
+stormhaven=[] Storm Haven - High-Quality Custom Content
+alkabor=[] The Al'Kabor Project [www.takproject.net]
+thf=[] The Hidden Forest [ www.thehiddenforest.org ]
+chronicles=[] Chronicles of Norrath
+dragonsoul=[] Dragon Soul - CEQ [zh-cn/legit/PvE]
+leetsauce=[] Leetsauce Productions
+kmra=[] Raid Addicts (Fully Custom) [Solo/Group/Raid]
+scorpious=[] Scorpious2k: The Next Generation [custom]
+sod=[] Shards of Dalaya
+vegarlson=[] Vegarlson Asylum
+zek=[] Zek [Teams/Guildwars]
+```
+
 ## MQ2Login Profiles GUI
 
-\(Right click on the MacroQuest tray icon\)
+Right click on the MacroQuest tray icon -> Profiles
 
 `Check marks:`
 
@@ -174,7 +198,7 @@ If you currently use batch files or hotkeys or whatever, those should still be u
 
 If you make profiles via the tray icon GUI, they are encrypted in your MQ2AutoLogin.ini. Moving your file to another computer or changing computer hardware will invalidate these logins, so please use import/export for backup and moving purposes.
 
-`Import/Export profiles`
+`Import/Export`
 
 This helps export and import login profiles, which are otherwise hard to decrypt. 
 
