@@ -46,6 +46,10 @@ Will open a new EverQuest instance and login the specified character. Example: `
 
 Will log character out, and then log back in after specified time. Default time is in seconds. Example: `/relog 5m`
 
+`END` and `HOME`
+
+Pressing the "END" key at the character select screen will pause autologin, "HOME" will unpause.
+
 ## INI 
 
 MQ2AutoLogin.ini has the following global settings,
@@ -92,7 +96,7 @@ Server=ServerforSession
 Character=Name
 ```
 
-If you're using ISBoxer, set `UseMQ2Login=0` AND `UseStationNamesInsteadOfSessions=0`, and add station names to the MQ2AutoLogin.ini in this format, 
+If you're using ISBoxer, set `UseMQ2Login=0` AND `UseStationNamesInsteadOfSessions=1`, and add station names to the MQ2AutoLogin.ini in this format, 
 
 **Station names example INI**
 ```ini⏎
