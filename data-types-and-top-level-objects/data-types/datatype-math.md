@@ -4,134 +4,20 @@ This DataType performs various mathematical calculations. In the following membe
 
 ## Members
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>Type</b>
-      </th>
-      <th style="text-align:left"><b>Member</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Abs[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">The absolute value of the result of <em>n</em>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Acos[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">Arccosine of <em>n</em> (in degrees)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Asin[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">Arcsine of <em>n</em> (in degrees)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Atan[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">Arctangent of <em>n</em> (in degrees)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Calc[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">Performs a mathematical calculation <em>n</em>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Cos[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">Cosine of <em>n</em> (in degrees)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>Dec[</b><em>hex</em><b>]</b>
-      </td>
-      <td style="text-align:left">Decimal value of a hexidecimal string</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Distance[</b>y,x,z<b>:</b>y,x,z<b>]</b>
-      </td>
-      <td style="text-align:left">
-        <ul>
-          <li>Calculates the distance between two points on the map</li>
-          <li>1, 2, or 3 dimensions may be provided</li>
-          <li>Defaults to your character&apos;s current location</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Hex[</b><em>n</em><b>]</b>
-        </td>
-        <td style="text-align:left">Returns hexidecimal value of <a href="datatype-int.md"><em>int</em></a>  <em>n</em>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>Not[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">Bitwise complement of <em>n</em>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>Rand[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">Random integer. Rand[5] range 0 to 4. Rand[100,200] range 100 to 199</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Sin[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">Sine of <em>n</em> (in degrees)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Sqrt[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">Square root of <em>n</em>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Tan[</b><em>n</em><b>]</b>
-      </td>
-      <td style="text-align:left">Tangent of <em>n</em> (in degrees)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>To String</b>
-        </td>
-        <td style="text-align:left">NULL</td>
-    </tr>
-  </tbody>
-</table>
-
+| [_float_](datatype-float.md)       | **Abs\[**_n_**]**                  | The absolute value of the result of _n_                                                                                                                                     |
+| ---------------------------------- | ---------------------------------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [_float_](datatype-float.md)       | **Acos\[**_n_**]**                 | Arccosine of _n_ (in degrees)                                                                                                                                               |
+| [_float_](datatype-float.md)       | **Asin\[**_n_**]**                 | Arcsine of _n_ (in degrees)                                                                                                                                                 |
+| [_float_](datatype-float.md)       | **Atan\[**_n_**]**                 | Arctangent of _n_ (in degrees)                                                                                                                                              |
+| [_float_](datatype-float.md)       | **Calc\[**_n_**]**                 | Performs a mathematical calculation _n_                                                                                                                                     |
+| __[_int_](datatype-int.md)__       | **Clamp\[**_n, min, max_**]**      | Clamps the value _n_ such that _min _<= _n_ <= _max_                                                                                                                        |
+| [_float_](datatype-float.md)       | **Cos\[**_n_**]**                  | Cosine of _n_ (in degrees)                                                                                                                                                  |
+| [_int_](datatype-int.md)           | **Dec\[**_hex_**]**                | Decimal value of a hexidecimal string                                                                                                                                       |
+| [_float_](datatype-float.md)       | **Distance\[**y,x,z**:**y,x,z**]** | <ul><li>Calculates the distance between two points on the map</li><li>1, 2, or 3 dimensions may be provided</li><li>Defaults to your character's current location</li></ul> |
+| __[_string_](datatype-string.md)__ | **Hex\[**_n_**]**                  | Returns hexidecimal value of [_int_](datatype-int.md) _n_                                                                                                                   |
+| [_int_](datatype-int.md)           | **Not\[**_n_**]**                  | Bitwise complement of _n_                                                                                                                                                   |
+| [_int_](datatype-int.md)           | **Rand\[**_n_**]**                 | Random integer. Rand\[5] range 0 to 4. Rand\[100,200] range 100 to 199                                                                                                      |
+| [_float_](datatype-float.md)       | **Sin\[**_n_**]**                  | Sine of _n_ (in degrees)                                                                                                                                                    |
+| [_float_](datatype-float.md)       | **Sqrt\[**_n_**]**                 | Square root of _n_                                                                                                                                                          |
+| [_float_](datatype-float.md)       | **Tan\[**_n_**]**                  | Tangent of _n_ (in degrees)                                                                                                                                                 |
+| __[_string_](datatype-string.md)__ | **To String**                      | NULL                                                                                                                                                                        |
