@@ -1,175 +1,176 @@
 # MQ2AutoLogin
 
-## Credits
-
-`Created by ieatacid, incorporated into MQ2Core by EQMule`  
-[`http://www.macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427`](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427) \`\`
-
 ## Description
 
-There are 3 main ways people can use this.
+AutoLogin is a plugin that automatically logs in your characters. It can also switch characters, servers and login new accounts via commandline. It was originally made by [ieatacid](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427).
 
-`1. MQ2Login via tray icon gui right click`  
-`2. MQ2AutoLogin via a windows shortcut with -patchme`  
-`3. MQ2Autologin via ISBoxer or WinEQ using station name with -patchme`
+## Setting up profiles via tray icon
 
-Any of these methods would of course require you to have MQ2 loaded, with MQ2AutoLogin enabled. --Note MQ2AutoLogin is now part of the core download, enable/disable it through the MQ2 tray icon \(Mq2Login\) --
+Right click on your MacroQuest tray icon
 
-## MQ2Login via tray icon gui right click
+Select Profiles-&gt;Create New.
 
-Right clicking on your MQ2 tray icon will activate a pop up window.
+You'll be asked to enter nine fields:
 
-Select profile-&gt;Create New.
+1. Profile Set: (This creates "groups" of profiles, enter any custom name) 
+2. EQ Path: (Path to eqgame.exe)
+3. Login: (EverQuest login)
+4. Password:  (EverQuest password)
+5. Server: (Server short name)
+6. Character Name: 
+7. Class: (Optional)
+8. Level: (Optional)
+9. Hotkey: (Assign a key or combination of keys to bring this character's window to the front)
 
-You click it and a small window will pop up asking for 6 things.
+Upon clicking "Save", your profile will be encrypted and saved in MQ2AutoLogin.ini
 
-`Profile Set:`  
-`Login:`  
-`Password:`  
-`Server:`  
-`Charname: (Character Name)`  
-`EQ Path: and path to eqgame.exe EX c:\games\everquest (or click on the "Browse" button to find it)`
+## Commands
 
-Once you have that filled in you click an SAVE button and your profile will be encrypted and saved in mq2autologin.ini
+`/switchserver <server short name> <character name>`
 
-You can save as many profiles as you want and they will sort per profile set on the menu.
+Will log out your current character and log in the specified server/character on the same account. 
 
-Each profile set has a Load/Unload All option so once you have added all your accounts for a group you just click the Load All and away it goes, it will login all of the characters in that profile set that are checked.
+`/switchchar <name>`
 
-## MQ2AutoLogin via a windows shortcut with -patchme
+Will log out your current character and log in the specified character on the same account/server. 
 
-First, you'll need to set up the ini file \(named: MQ2AutoLogin.ini\) with your account information:
+`/loginchar [server:character|profile_server:character|server^login^character^password|server^login^password]`
 
-**Sample INI**
+Will open a new EverQuest instance and login the specified character. Example: `/loginchar vox:bobby`
 
-`[Settings]`  
-`KickActiveCharacter=1`  
-`InstantCamp=0`  
-`KickActiveTrader=1`  
-`UseStationNamesInsteadOfSessions=0`
+`/relog [#s|#m]`
 
-`[Session1]`  
-`StationName=StationNameforSession`  
-`Password=PasswordforSession`  
-`Server=ServerforSession`  
-`Character=`
+Will log character out, and then log back in after specified time. Default time is in seconds. Example: `/relog 5m`
 
-`[Session2]`  
-`StationName=StationNameforSession`  
-`Password=PasswordforSession`  
-`Server=ServerforSession`  
-`Character=`
+`END` and `HOME`
 
-## MQ2Autologin via ISBoxer or WinEQ using station name with -patchme
+Pressing the "END" key at the character select screen will pause autologin, "HOME" will unpause.
 
-Alternatively, you can use station names rather than sessions \(handy if you use ISBoxer or WinEQ2 profiles\). MQ2AutoLogin will use the defined station name and input the password and log in to the server and character indicated in the ini.
+## INI 
 
-**Sample INI**
+MQ2AutoLogin.ini has the following global settings,
+```ini⏎
+[Settings]
+;The following settings are global. Settings changed for specific characters will override them.
+NotifyOnServerUp=1
+;0 is off, 1 is beep, 2 is email via MQ2Gmail
+KickActiveCharacter=1
+;0 is off, 1 is on. Will attempt to boot an active player to log in.
+EndAfterCharSelect=1
+;0 is off, 1 is on.
+CharSelectDelay=3
+;seconds to wait at the character select screen. Default is 3
+ConnectRetries=0
+;How many attempts to connect after a failure
+UseMQ2Login=1
+;Uses the default, encrypted method of autologin
+UseStationNamesInsteadOfSessions=0
+;Stores your login and pass in plaintext in MQ2AutoLogin.ini, but is compatible with ISBoxer/WinEQ.
+```
+If you're using `UseMQ2Login=1` and have created profiles via the tray icon, there will be additional sections such as `[Profiles]` and profile names. These should be left alone, as their settings are best changed via the GUI.
 
-`[Settings]`  
-`UseMQ2Login=0`  
-`KickActiveCharacter=1`  
-`InstantCamp=0`  
-`KickActiveTrader=1`  
-`UseStationNamesInsteadOfSessions=1`
+## Alternate login methods
+There are two alternate login methods: Sessions (compatible with the EverQuest launcher and "-patchme" login method) and Station Names (best for WinEQ and ISBoxer) 
 
-`[StationName1]`  
-`Password=PasswordforThisLoginName`  
-`Server=ServerforThisLoginName`  
-`Character=CharacterforThisLoginName`
+If you'd like to use sessions, set `UseMQ2Login=0`, and add sessions to the MQ2AutoLogin.ini in this format, 
 
-`[StationName2]`  
-`Password=PasswordforThisLoginName`  
-`Server=ServerforThisLoginName`  
-`Character=CharacterforThisLoginName`
+**Sessions example INI**
+```ini⏎
+[Settings]
+UseMQ2Login=0
 
-## In Game Commands
+[Session1]
+StationName=StationNameforSession
+Password=PasswordforSession
+Server=ServerforSession
+Character=Name
 
-`/switchserver`
+[Session2]
+StationName=StationNameforSession
+Password=PasswordforSession
+Server=ServerforSession
+Character=Name
+```
 
-when issued in game, logs you out and logs you back in on whatever server and character specified:
+If you're using ISBoxer, set `UseMQ2Login=0` AND `UseStationNamesInsteadOfSessions=1`, and add station names to the MQ2AutoLogin.ini in this format, 
 
-`/switchchar|-instant <on|off>`
+**Station names example INI**
+```ini⏎
+[Settings]
+UseMQ2Login=0
+UseStationNamesInsteadOfSessions=1
 
-`/loginchar server:charname`
+[StationName1]
+Password=PasswordforThisLoginName
+Server=ServerforThisLoginName
+Character=CharacterforThisLoginName
 
-Will now launch eq and log the char in.
+[StationName2]
+Password=PasswordforThisLoginName
+Server=ServerforThisLoginName
+Character=CharacterforThisLoginName
+```
 
-NOTE: if you run this command and server:char is already running, you will kill his game and he will be logged in again, this command ALWAYS launches a new client. this is for advanced users only, I use it personally to launch and get back into a game when one of my clients has crashed. \(easily detected with the ${Group.Member\[soandso\].Offline} tlo member... or lets say I havent seen the guy for 15 minutes\) NOTE2: this command only works if you are using the mq2 login system and have a profile for the character. Example: /loginchar tunare:eqmule will search all mq2 profile sets for the tunare server and the char eqmule if it finds it, it will launch eq and log in that character
+Additional settings from the global section, such as `KickActiveCharacter=1` can be added to session or station name sections to affect only that character.
 
-## INI configuration values
 
-MQ2AutoLogin has 2 types of sections
+## List of server short names
 
-`1 - The global settings under [Settings]`  
-`2 - The per-character section. This can be either [Session#] or [LoginName]`
+    antonius
+    bertox
+    bristle
+    cazic
+    drinal
+    erollisi
+    firiona
+    luclin
+    phinigel
+    povar
+    ragefire
+    rathe
+    rizlona
+    tunare
+    vox
+    xegony
+    zek
+    test
+    beta
 
-**Section = \[Settings\]**
+## Custom server names
+To add a new server with a custom short name, which is particularly important for emulators, edit your MQ2AutoLogin.ini with the following format: 
+```ini⏎
+[Servers]
+customshortname=Exact long name (as it appears on login screen)
+```
+For example, here are the most popular macroquest-compatible emu servers as of 9/27/2017: 
+```ini⏎
+[Servers]
+peqgrand=[] [PEQ] The Grand Creation - Omens of War
+ezserver=[] EZ Server - Custom Zones, Vendors, Quests, Items, etc
+stormhaven=[] Storm Haven - High-Quality Custom Content
+alkabor=[] The Al'Kabor Project [www.takproject.net]
+thf=[] The Hidden Forest [ www.thehiddenforest.org ]
+chronicles=[] Chronicles of Norrath
+dragonsoul=[] Dragon Soul - CEQ [zh-cn/legit/PvE]
+leetsauce=[] Leetsauce Productions
+kmra=[] Raid Addicts (Fully Custom) [Solo/Group/Raid]
+scorpious=[] Scorpious2k: The Next Generation [custom]
+sod=[] Shards of Dalaya
+vegarlson=[] Vegarlson Asylum
+zek=[] Zek [Teams/Guildwars]
+```
 
-**`KickActiveCharacter=1/0`**  
-`Defaults to 1 (on) if it's not in your ini file. If enabled, this clicks the "Yes" button when the window pops up asking if you want to kick the character that you already have logged into a world server, else it just sits there at the server-select screen.`
+## MQ2Login Profiles GUI
 
-**`KickActiveTrader=1/0`**  
-`Defaults to 0 (off) if it's not in your ini file. If enabled, this clicks the "Yes" button when the window pops up asking if you want to kick the trader that you already have logged into a world server, else it just sits there at the server-select screen.`
-
-**`InstantCamp=1/0`**  
-`Defaults to 0 (off) if it's not in your ini file. If enabled, this uses instant-camp to camp you out rather than the 30 second countdown.`
-
-**`UseStationNamesInsteadOfSessions=1/0`**````` Defaults to 0 \(off\).```0 = Off, it will login the session\#````` 1 = On, this uses account information based on the specified station name in brackets, which works well if you're using ISBoxer or WinEQ2 profiles.\`
-
-**Section = either \[Session\#\] or \[LoginName\]**
-
-**`StationName=YourStationName`**  
-`If you are using sessions you need to specify the StationName, if you are not using sessions you dont need this value.`
-
-**`Password=YourPassword`**  
-`The password for your character`
-
-**`Server=YourServer`**  
-`The server you want to log in to. If set to none it will go to server select screen`
-
-**`Character=YourCharacterName`**  
-`The character you want to log in, if this is blank it will go to the character select screen for the specified server`
-
-**List of server short names for \[Session\#\] or \[LoginName\] sections**
-
-`; List of server short names`  
-`;antonius`  
-`;bertox`  
-`;bristle`  
-`;cazic`  
-`;drinal`  
-`;erollisi`  
-`;fippy`  
-`;firiona`  
-`;luclin`  
-`;mayong`  
-`;povar`  
-`;rathe`  
-`;trakanon`  
-`;tunare`  
-`;vox`  
-`;vulak`  
-`;xegony`  
-`;zek`
-
-## MQ2Login Details - \[Profiles\]
-
-\(Derived from right clicking on the MQ2 tray icon\)
+Right click on the MacroQuest tray icon -> Profiles
 
 `Check marks:`
 
-Each character can be marked for loading by simply right clicking the character name to toggle it marked on or off. \(for the LOAD ALL option\)
+A checked character will be loaded when clicking "Profile->Load All". Right-clicking a character's name will toggle the checkmark on or off.
 
 `Loading individual accounts:`
 
-You just left click on a character name and if it is check marked, it will load and the name will be changed to
-
-\(Loaded\)
-
-`Unloading individual accounts:`
-
-If a char is loaded and has the text \(Loaded\) behind it you just left click it to unload. I kept this as simple as I possibly could so its a Toggle.
+Left click on a character name and if checked, it will login and load MacroQuest. Left-clicking a loaded character will unload MacroQuest for that character.
 
 `Batch Files and hotkeys:`
 
@@ -177,15 +178,16 @@ If you currently use batch files or hotkeys or whatever, those should still be u
 
 `Encryption:`
 
-I strongly recommend getting this setup though, because it encrypts your password in a way that in "theory" makes it only decryptable on YOUR computer, this means that even if you accidently post your mq2autologin.ini somewhere, or someone gets hold of it, the information inside it will be useless to them.
+If you make profiles via the tray icon GUI, they are encrypted in your MQ2AutoLogin.ini. Moving your file to another computer or changing computer hardware will invalidate these logins, so please use import/export for backup and moving purposes.
+
+`Import/Export`
+
+This helps export and import login profiles, which are otherwise hard to decrypt. 
 
 `Launch Clean`
 
-The Launcher can now launch single sessions without logging u in, i basically just "launches clean" rightclick the "Launch Clean" menu item to toggle starting eqgame in suspended mode \(for power users\)
+Launch single sessions without logging in.
 
-`Import/Export profiles`
-
-The Launcher can now export and import login profiles.
 
 ## See Also
 
