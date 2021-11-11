@@ -4,816 +4,126 @@ Represents an in-game spawn.
 
 ## Members
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>Type</b>
-      </th>
-      <th style="text-align:left"><b>Member</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>AARank</b>
-      </td>
-      <td style="text-align:left">AA rank number</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>AFK</b>
-      </td>
-      <td style="text-align:left">AFK?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Aggressive</b>
-      </td>
-      <td style="text-align:left">returns TRUE or FALSE if a mob is aggressive or not</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>Animation</b>
-      </td>
-      <td style="text-align:left">Current animation ID. See <a href="../../general-information/animations.md">Animations</a> for
-        a list of animations.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Anonymous</b>
-      </td>
-      <td style="text-align:left">Anonymous</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Assist</b>
-      </td>
-      <td style="text-align:left">Current Raid or Group assist target?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Binding</b>
-      </td>
-      <td style="text-align:left">Binding wounds?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-body.md"><em>body</em></a>
-      </td>
-      <td style="text-align:left"><b>Body</b>
-      </td>
-      <td style="text-align:left">Body type</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Buyer</b>
-      </td>
-      <td style="text-align:left">Is a buyer? (ie. Buyer in the bazaar)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-cachedbuff.md"><em>cachedbuff</em></a>
-      </td>
-      <td style="text-align:left"><b>CachedBuff</b>
-      </td>
-      <td style="text-align:left">Caches buff information cast on others</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>CanSplashLand</b>
-      </td>
-      <td style="text-align:left">
-        <p>TRUE/FALSE on if a splash spell can land...</p>
-        <p></p>
-        <p><b>Note:</b> This check is ONLY for line of sight to the targetindicator
-          (red/green circle)</p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-spell.md"><em>spell</em></a>
-      </td>
-      <td style="text-align:left"><b>Casting</b>
-      </td>
-      <td style="text-align:left">Spell, if currently casting (only accurate on yourself, not NPCs or other
-        group members)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-class.md"><em>class</em></a>
-      </td>
-      <td style="text-align:left"><b>Class</b>
-      </td>
-      <td style="text-align:left">Class</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>CleanName</b>
-      </td>
-      <td style="text-align:left">The &quot;cleaned up&quot; name</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>ConColor</b>
-      </td>
-      <td style="text-align:left">GREY, GREEN, LIGHT BLUE, BLUE, WHITE, YELLOW, RED</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>CurrentEndurance</b>
-      </td>
-      <td style="text-align:left">Current Endurance points (only updates when target/group)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>CurrentHPs</b>
-      </td>
-      <td style="text-align:left">Current hit points</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>CurrentMana</b>
-      </td>
-      <td style="text-align:left">Current Mana points (only updates when target/group)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Dead</b>
-      </td>
-      <td style="text-align:left">Dead?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-deity.md"><em>deity</em></a>
-      </td>
-      <td style="text-align:left"><b>Deity</b>
-      </td>
-      <td style="text-align:left">Deity</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>
-      </td>
-      <td style="text-align:left"><b>DisplayName</b>
-      </td>
-      <td style="text-align:left">Name displayed in game (same as EQ&apos;s %T)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Distance</b>
-      </td>
-      <td style="text-align:left">Distance from player in (x,y)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Distance3D</b>
-      </td>
-      <td style="text-align:left">Distance from player in (x,y,z) in 3D</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>DistanceN</b>
-      </td>
-      <td style="text-align:left">Distance from player in Y plane (North/South)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>DistancePredict</b>
-      </td>
-      <td style="text-align:left">Estimated distance in (x,y), taking into account the spawn&apos;s movement
-        speed but not the player&apos;s</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>DistanceU</b>
-      </td>
-      <td style="text-align:left">Distance from player in Z plane (Up/Down)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>DistanceW</b>
-      </td>
-      <td style="text-align:left">Distance from player in X plane (East/West)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>DistanceX</b>
-      </td>
-      <td style="text-align:left">Distance from player in X plane</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>DistanceY</b>
-      </td>
-      <td style="text-align:left">Distance from player in Y plane</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>DistanceZ</b>
-      </td>
-      <td style="text-align:left">Distance from player in Z plane</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Ducking</b>
-      </td>
-      <td style="text-align:left">Ducking?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>Equipment</b>
-      </td>
-      <td style="text-align:left">returns a inttype, it takes numbers 0-8 or names: head chest arms wrists
-        hands legs feet primary offhand</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>EQLoc</b>
-      </td>
-      <td style="text-align:left">Location using EQ format</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>FeetWet</b>
-      </td>
-      <td style="text-align:left">Feet wet/swimming?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Feigning</b>
-      </td>
-      <td style="text-align:left">Feigning?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Following</b>
-        </td>
-        <td style="text-align:left">The spawn a player is following using /follow on - also returns your pet&apos;s
-          target via ${Me.Pet.Following}</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Fleeing</b>
-      </td>
-      <td style="text-align:left">Is your target moving away from you?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Gender</b>
-        </td>
-        <td style="text-align:left">Gender</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>GM</b>
-      </td>
-      <td style="text-align:left">GM or Guide?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>GroupLeader</b>
-      </td>
-      <td style="text-align:left">Group leader?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Guild</b>
-        </td>
-        <td style="text-align:left">Guild name</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>GuildStatus **</b>
-        </td>
-        <td style="text-align:left">Guild status (Leader, Officer, Member) <b>NOTE</b> GuildStatus is no longer
-          present in BETA/TEST/LIVE versions and only available in UF and ROF EMU
-          builds.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-heading.md"><em>heading</em></a>
-      </td>
-      <td style="text-align:left"><b>Heading</b>
-      </td>
-      <td style="text-align:left">Heading in this direction</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-heading.md"><em>heading</em></a>
-      </td>
-      <td style="text-align:left"><b>HeadingTo</b>
-      </td>
-      <td style="text-align:left">Heading player must travel in to reach this spawn</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-heading.md"><em>heading</em></a>
-      </td>
-      <td style="text-align:left"><b>HeadingToLoc[</b>y<b>,</b>x<b>]</b>
-      </td>
-      <td style="text-align:left">Heading to the coordinates y,x from the spawn</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Height</b>
-      </td>
-      <td style="text-align:left">Height</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>Holding</b>
-      </td>
-      <td style="text-align:left">Represents what the pc/npc is holding</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Hovering</b>
-      </td>
-      <td style="text-align:left">Hovering?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>ID</b>
-      </td>
-      <td style="text-align:left">Spawn ID</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Invis[ANY|0]</b>
-      </td>
-      <td style="text-align:left">
-        <p>Gives TRUE/FALSE returns. Options are:</p>
-        <ul>
-          <li>ANY or 0 - ${Me.Invis[ANY]} or ${Me.Invis[0]} or ${Me.Invis}</li>
-          <li>NORMAL or 1 - ${Me.Invis[NORMAL]} or just ${Me.Invis[1]}</li>
-          <li>UNDEAD or 2 - ${Me.Invis[UNDEAD]} or just ${Me.Invis[2]}</li>
-          <li>ANIMAL or 3 - ${Me.Invis[ANIMAL]} or just ${Me.Invis[3]}</li>
-          <li>SOS or 4 - ${Me.Invis[SOS]} or just ${Me.Invis[4]} returns true IF you
-            are a ROG AND in fact hidden AND have a skill of at least 100 in HIDE AND
-            have the AA for SoS</li>
-        </ul>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Invited</b>
-      </td>
-      <td style="text-align:left">Invited to group?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>Level</b>
-      </td>
-      <td style="text-align:left">Level</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Levitating</b>
-      </td>
-      <td style="text-align:left">Levitating?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>LFG</b>
-      </td>
-      <td style="text-align:left">LFG?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Light</b>
-        </td>
-        <td style="text-align:left">Name of the light class this spawn has</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>LineOfSight</b>
-      </td>
-      <td style="text-align:left">Returns TRUE if spawn is in LoS</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Linkdead</b>
-      </td>
-      <td style="text-align:left">Linkdead?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Loc</b>
-        </td>
-        <td style="text-align:left">Loc of the spawn</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>LocYX</b>
-        </td>
-        <td style="text-align:left">LocYX of the spawn</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Look</b>
-      </td>
-      <td style="text-align:left">Looking this angle</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>Mark</b>
-      </td>
-      <td style="text-align:left">Current Raid or Group marked npc mark number (raid first)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Master</b>
-        </td>
-        <td style="text-align:left">Master, if it is charmed or a pet</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>MaxEndurance</b>
-      </td>
-      <td style="text-align:left">Maximum Endurance points (only updates when target/group)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>MaxHPs</b>
-      </td>
-      <td style="text-align:left">Maximum hit points</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>MaxMana</b>
-      </td>
-      <td style="text-align:left">Maximum Mana points (only updates when target/group)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>MaxRange</b>
-      </td>
-      <td style="text-align:left">The max distance from this spawn for it to hit you</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>MaxRangeTo</b>
-      </td>
-      <td style="text-align:left">The Max distance from this spawn for you to hit it</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Mount</b>
-        </td>
-        <td style="text-align:left">Mount</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Moving</b>
-      </td>
-      <td style="text-align:left">Moving?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>MQLoc</b>
-      </td>
-      <td style="text-align:left">Location using MQ format</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Name</b>
-        </td>
-        <td style="text-align:left">Name</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Named</b>
-      </td>
-      <td style="text-align:left">Is this a &quot;named&quot; spawn (ie. does it&apos;s name not start with
-        an &quot;a&quot; or an &quot;an&quot;)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>NearestSpawn[</b>search<b>]</b>
-        </td>
-        <td style="text-align:left">Find the nearest spawn matching this <a href="../../general-information/spawn-search.md">Spawn Search</a>,
-          to this spawn (most efficient on yourself)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>NearestSpawn[</b>#<b>,</b>search<b>]</b>
-        </td>
-        <td style="text-align:left">Find the #th nearest spawn matching this <a href="../../general-information/spawn-search.md">Spawn Search</a>,
-          to this spawn (most efficient on yourself)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Next</b>
-        </td>
-        <td style="text-align:left">Next spawn in the list</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Owner</b>
-        </td>
-        <td style="text-align:left">Owner, if mercenary</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Prev</b>
-        </td>
-        <td style="text-align:left">Previous spawn in the list</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-spawn.md"><em>spawn</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Pet</b>
-        </td>
-        <td style="text-align:left">Pet</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>PctHPs</b>
-      </td>
-      <td style="text-align:left">Percent hit points</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>PlayerState</b>
-      </td>
-      <td style="text-align:left">returns a mask as an inttype which has the following meaning: 0=Idle 1=Open
-        2=WeaponSheathed 4=Aggressive 8=ForcedAggressive 0x10=InstrumentEquipped
-        0x20=Stunned 0x40=PrimaryWeaponEquipped 0x80=SecondaryWeaponEquipped</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>Primary</b>
-      </td>
-      <td style="text-align:left">Item ID of anything that may be in the Primary slot</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-race.md"><em>race</em></a>
-      </td>
-      <td style="text-align:left"><b>Race</b>
-      </td>
-      <td style="text-align:left">Race</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Roleplaying</b>
-      </td>
-      <td style="text-align:left">Roleplaying?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>Secondary</b>
-      </td>
-      <td style="text-align:left">Item ID of anything that may be in the Secondary slot</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Sitting</b>
-      </td>
-      <td style="text-align:left">Sitting?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Sneaking</b>
-      </td>
-      <td style="text-align:left">Sneaking?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Speed</b>
-      </td>
-      <td style="text-align:left">Speed moving</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Standing</b>
-      </td>
-      <td style="text-align:left">Standing?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>StandState</b>
-      </td>
-      <td style="text-align:left">StandState</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>State</b>
-        </td>
-        <td style="text-align:left">STAND, SIT, DUCK, BIND, FEIGN, DEAD, STUN, HOVER, MOUNT, UNKNOWN</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Stunned</b>
-      </td>
-      <td style="text-align:left">Stunned?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Stuck</b>
-      </td>
-      <td style="text-align:left">Stuck?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Suffix</b>
-        </td>
-        <td style="text-align:left">Suffix attached to name, eg. of</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Surname</b>
-        </td>
-        <td style="text-align:left">Last name</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Title</b>
-        </td>
-        <td style="text-align:left">Prefix/Title before name</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Trader</b>
-      </td>
-      <td style="text-align:left">Trader?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Type</b>
-        </td>
-        <td style="text-align:left">PC, NPC, Untargetable, Mount, Pet, Corpse, Chest, Trigger, Trap, Timer,
-          Item, Mercenary, Aura, Object, Banner, Campfire, Flyer</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>Underwater</b>
-      </td>
-      <td style="text-align:left">Underwater?</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>X</b>
-      </td>
-      <td style="text-align:left">X coordinate</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Y</b>
-      </td>
-      <td style="text-align:left">Y coordinate</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>Z</b>
-      </td>
-      <td style="text-align:left">Z coordinate</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>N</b>
-      </td>
-      <td style="text-align:left">X, the Northward-positive coordinate</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>W</b>
-      </td>
-      <td style="text-align:left">Y, the Westward-positive coordinate</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>U</b>
-      </td>
-      <td style="text-align:left">Z, the Upward-positive coordinate</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>E</b>
-      </td>
-      <td style="text-align:left">Shortcut for -X (makes Eastward positive)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>S</b>
-      </td>
-      <td style="text-align:left">Shortcut for -Y (makes Southward positive)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-float.md"><em>float</em></a>
-      </td>
-      <td style="text-align:left"><b>D</b>
-      </td>
-      <td style="text-align:left">Shortcut for -Z (makes Downward positive)</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>To String</b>
-        </td>
-        <td style="text-align:left">Same as <b>Name</b>
-        </td>
-    </tr>
-  </tbody>
-</table>
+| **Type**                               | **Member**                          | **Description**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| -------------------------------------- | ----------------------------------- | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| [_int_](datatype-int.md)               | **AARank**                          | AA rank number                                                                                                                                                                                                                                                                                                                                                                                                                                                                                              |
+| [_bool_](datatype-bool.md)             | **AFK**                             | AFK?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| [_bool_](datatype-bool.md)             | **Aggressive**                      | returns TRUE or FALSE if a mob is aggressive or not                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [_int_](datatype-int.md)               | **Animation**                       | Current animation ID. See [Animations](../../general-information/animations.md) for a list of animations.                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_bool_](datatype-bool.md)             | **Anonymous**                       | Anonymous                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_bool_](datatype-bool.md)             | **Assist**                          | Current Raid or Group assist target?                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| [_bool_](datatype-bool.md)             | **Binding**                         | Binding wounds?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [_body_](datatype-body.md)             | **Body**                            | Body type                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_bool_](datatype-bool.md)             | **Buyer**                           | Is a buyer? (ie. Buyer in the bazaar)                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [_cachedbuff_](datatype-cachedbuff.md) | **CachedBuff**                      | Caches buff information cast on others                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [_bool_](datatype-bool.md)             | **CanSplashLand**                   | <p>TRUE/FALSE on if a splash spell can land...</p><p></p><p><strong>Note:</strong> This check is ONLY for line of sight to the targetindicator (red/green circle)</p>                                                                                                                                                                                                                                                                                                                                       |
+| [_spell_](datatype-spell.md)           | **Casting**                         | Spell, if currently casting (only accurate on yourself, not NPCs or other group members)                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [_class_](datatype-class.md)           | **Class**                           | Class                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [_string_](datatype-string.md)         | **CleanName**                       | The "cleaned up" name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [_string_](datatype-string.md)         | **ConColor**                        | GREY, GREEN, LIGHT BLUE, BLUE, WHITE, YELLOW, RED                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [_int_](datatype-int.md)               | **CurrentEndurance**                | Current Endurance points (only updates when target/group)                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_int_](datatype-int.md)               | **CurrentHPs**                      | Current hit points                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [_int_](datatype-int.md)               | **CurrentMana**                     | Current Mana points (only updates when target/group)                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| [_bool_](datatype-bool.md)             | **Dead**                            | Dead?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [_deity_](datatype-deity.md)           | **Deity**                           | Deity                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [_string_](datatype-string.md)         | **DisplayName**                     | Name displayed in game (same as EQ's %T)                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [_float_](datatype-float.md)           | **Distance**                        | Distance from player in (x,y)                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [_float_](datatype-float.md)           | **Distance3D**                      | Distance from player in (x,y,z) in 3D                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [_float_](datatype-float.md)           | **DistanceN**                       | Distance from player in Y plane (North/South)                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [_float_](datatype-float.md)           | **DistancePredict**                 | Estimated distance in (x,y), taking into account the spawn's movement speed but not the player's                                                                                                                                                                                                                                                                                                                                                                                                            |
+| [_float_](datatype-float.md)           | **DistanceU**                       | Distance from player in Z plane (Up/Down)                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_float_](datatype-float.md)           | **DistanceW**                       | Distance from player in X plane (East/West)                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [_float_](datatype-float.md)           | **DistanceX**                       | Distance from player in X plane                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [_float_](datatype-float.md)           | **DistanceY**                       | Distance from player in Y plane                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [_float_](datatype-float.md)           | **DistanceZ**                       | Distance from player in Z plane                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [_bool_](datatype-bool.md)             | **Ducking**                         | Ducking?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [_int_](datatype-int.md)               | **Equipment**                       | returns a inttype, it takes numbers 0-8 or names: head chest arms wrists hands legs feet primary offhand                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [_float_](datatype-float.md)           | **EQLoc**                           | Location using EQ format                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [_bool_](datatype-bool.md)             | **FeetWet**                         | Feet wet/swimming?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [_bool_](datatype-bool.md)             | **Feigning**                        | Feigning?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| __[_spawn_](datatype-spawn.md)__       | **Following**                       | The spawn a player is following using /follow on - also returns your pet's target via ${Me.Pet.Following}                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_bool_](datatype-bool.md)             | **Fleeing**                         | Is your target moving away from you?                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| __[_string_](datatype-string.md)__     | **Gender**                          | Gender                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [_bool_](datatype-bool.md)             | **GM**                              | GM or Guide?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [_bool_](datatype-bool.md)             | **GroupLeader**                     | Group leader?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| __[_string_](datatype-string.md)__     | **Guild**                           | Guild name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| __[_string_](datatype-string.md)__     | **GuildStatus \*\***                | Guild status (Leader, Officer, Member) **NOTE** GuildStatus is no longer present in BETA/TEST/LIVE versions and only available in UF and ROF EMU builds.                                                                                                                                                                                                                                                                                                                                                    |
+| [_heading_](datatype-heading.md)       | **Heading**                         | Heading in this direction                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_heading_](datatype-heading.md)       | **HeadingTo**                       | Heading player must travel in to reach this spawn                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [_heading_](datatype-heading.md)       | **HeadingToLoc\[**y**,**x**]**      | Heading to the coordinates y,x from the spawn                                                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| [_float_](datatype-float.md)           | **Height**                          | Height                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [_int_](datatype-int.md)               | **Holding**                         | Represents what the pc/npc is holding                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [_bool_](datatype-bool.md)             | **Hovering**                        | Hovering?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_int_](datatype-int.md)               | **ID**                              | Spawn ID                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [_bool_](datatype-bool.md)             | **Invis\[ANY\|0]**                  | <p>Gives TRUE/FALSE returns. Options are:</p><ul><li>ANY or 0 - ${Me.Invis[ANY]} or ${Me.Invis[0]} or ${Me.Invis}</li><li>NORMAL or 1 - ${Me.Invis[NORMAL]} or just ${Me.Invis[1]}</li><li>UNDEAD or 2 - ${Me.Invis[UNDEAD]} or just ${Me.Invis[2]}</li><li>ANIMAL or 3 - ${Me.Invis[ANIMAL]} or just ${Me.Invis[3]}</li><li>SOS or 4 - ${Me.Invis[SOS]} or just ${Me.Invis[4]} returns true IF you are a ROG AND in fact hidden AND have a skill of at least 100 in HIDE AND have the AA for SoS</li></ul> |
+| [_bool_](datatype-bool.md)             | **Invited**                         | Invited to group?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [_int_](datatype-int.md)               | **Level**                           | Level                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [_bool_](datatype-bool.md)             | **Levitating**                      | Levitating?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [_bool_](datatype-bool.md)             | **LFG**                             | LFG?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| __[_string_](datatype-string.md)__     | **Light**                           | Name of the light class this spawn has                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| [_bool_](datatype-bool.md)             | **LineOfSight**                     | Returns TRUE if spawn is in LoS                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| [_bool_](datatype-bool.md)             | **Linkdead**                        | Linkdead?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| __[_string_](datatype-string.md)__     | **Loc**                             | Loc of the spawn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| __[_string_](datatype-string.md)__     | **LocYX**                           | LocYX of the spawn                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [_float_](datatype-float.md)           | **Look**                            | Looking this angle                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [_int_](datatype-int.md)               | **Mark**                            | Current Raid or Group marked npc mark number (raid first)                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| __[_spawn_](datatype-spawn.md)__       | **Master**                          | Master, if it is charmed or a pet                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [_int_](datatype-int.md)               | **MaxEndurance**                    | Maximum Endurance points (only updates when target/group)                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_int_](datatype-int.md)               | **MaxHPs**                          | Maximum hit points                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [_int_](datatype-int.md)               | **MaxMana**                         | Maximum Mana points (only updates when target/group)                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| [_float_](datatype-float.md)           | **MaxRange**                        | The max distance from this spawn for it to hit you                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [_float_](datatype-float.md)           | **MaxRangeTo**                      | The Max distance from this spawn for you to hit it                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| __[_spawn_](datatype-spawn.md)__       | **Mount**                           | Mount                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [_bool_](datatype-bool.md)             | **Moving**                          | Moving?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| [_float_](datatype-float.md)           | **MQLoc**                           | Location using MQ format                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| __[_string_](datatype-string.md)__     | **Name**                            | Name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| [_bool_](datatype-bool.md)             | **Named**                           | Is this a "named" spawn (ie. does it's name not start with an "a" or an "an")                                                                                                                                                                                                                                                                                                                                                                                                                               |
+| __[_spawn_](datatype-spawn.md)__       | **NearestSpawn\[**search**]**       | Find the nearest spawn matching this [Spawn Search](../../general-information/spawn-search.md), to this spawn (most efficient on yourself)                                                                                                                                                                                                                                                                                                                                                                  |
+| __[_spawn_](datatype-spawn.md)__       | **NearestSpawn\[**#**,**search**]** | Find the #th nearest spawn matching this [Spawn Search](../../general-information/spawn-search.md), to this spawn (most efficient on yourself)                                                                                                                                                                                                                                                                                                                                                              |
+| __[_spawn_](datatype-spawn.md)__       | **Next**                            | Next spawn in the list                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| __[_spawn_](datatype-spawn.md)__       | **Owner**                           | Owner, if mercenary                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| __[_spawn_](datatype-spawn.md)__       | **Prev**                            | Previous spawn in the list                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| __[_spawn_](datatype-spawn.md)__       | **Pet**                             | Pet                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [_int_](datatype-int.md)               | **PctHPs**                          | Percent hit points                                                                                                                                                                                                                                                                                                                                                                                                                                                                                          |
+| [_int_](datatype-int.md)               | **PlayerState**                     | returns a mask as an inttype which has the following meaning: 0=Idle 1=Open 2=WeaponSheathed 4=Aggressive 8=ForcedAggressive 0x10=InstrumentEquipped 0x20=Stunned 0x40=PrimaryWeaponEquipped 0x80=SecondaryWeaponEquipped                                                                                                                                                                                                                                                                                   |
+| [_int_](datatype-int.md)               | **Primary**                         | Item ID of anything that may be in the Primary slot                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [_race_](datatype-race.md)             | **Race**                            | Race                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| [_bool_](datatype-bool.md)             | **Roleplaying**                     | Roleplaying?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [_int_](datatype-int.md)               | **Secondary**                       | Item ID of anything that may be in the Secondary slot                                                                                                                                                                                                                                                                                                                                                                                                                                                       |
+| [_bool_](datatype-bool.md)             | **Sitting**                         | Sitting?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [_bool_](datatype-bool.md)             | **Sneaking**                        | Sneaking?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_float_](datatype-float.md)           | **Speed**                           | Speed moving                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [_bool_](datatype-bool.md)             | **Standing**                        | Standing?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_int_](datatype-int.md)               | **StandState**                      | StandState                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| __[_string_](datatype-string.md)__     | **State**                           | STAND, SIT, DUCK, BIND, FEIGN, DEAD, STUN, HOVER, MOUNT, UNKNOWN                                                                                                                                                                                                                                                                                                                                                                                                                                            |
+| [_bool_](datatype-bool.md)             | **Stunned**                         | Stunned?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [_bool_](datatype-bool.md)             | **Stuck**                           | Stuck?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                      |
+| __[_string_](datatype-string.md)__     | **Suffix**                          | Suffix attached to name, eg. of                                                                                                                                                                                                                                                                                                                                                                                                                                                                             |
+| __[_string_](datatype-string.md)__     | **Surname**                         | Last name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| __[_string_](datatype-string.md)__     | **Title**                           | Prefix/Title before name                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    |
+| [_bool_](datatype-bool.md)             | **Trader**                          | Trader?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                     |
+| __[_string_](datatype-string.md)__     | **Type**                            | PC, NPC, Untargetable, Mount, Pet, Corpse, Chest, Trigger, Trap, Timer, Item, Mercenary, Aura, Object, Banner, Campfire, Flyer                                                                                                                                                                                                                                                                                                                                                                              |
+| [_bool_](datatype-bool.md)             | **Underwater**                      | Underwater?                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                 |
+| [_float_](datatype-float.md)           | **X**                               | X coordinate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [_float_](datatype-float.md)           | **Y**                               | Y coordinate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [_float_](datatype-float.md)           | **Z**                               | Z coordinate                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                |
+| [_float_](datatype-float.md)           | **N**                               | X, the Northward-positive coordinate                                                                                                                                                                                                                                                                                                                                                                                                                                                                        |
+| [_float_](datatype-float.md)           | **W**                               | Y, the Westward-positive coordinate                                                                                                                                                                                                                                                                                                                                                                                                                                                                         |
+| [_float_](datatype-float.md)           | **U**                               | Z, the Upward-positive coordinate                                                                                                                                                                                                                                                                                                                                                                                                                                                                           |
+| [_float_](datatype-float.md)           | **E**                               | Shortcut for -X (makes Eastward positive)                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| [_float_](datatype-float.md)           | **S**                               | Shortcut for -Y (makes Southward positive)                                                                                                                                                                                                                                                                                                                                                                                                                                                                  |
+| [_float_](datatype-float.md)           | **D**                               | Shortcut for -Z (makes Downward positive)                                                                                                                                                                                                                                                                                                                                                                                                                                                                   |
+| __[_string_](datatype-string.md)__     | **To String**                       | Same as **Name**                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            |
 
 ## Methods
 
-| Name | Action |
-| :--- | :--- |
-| **DoAssist** | assists the spawn |
-| **DoFace** | Faces target |
-| **DoLeftClick** | left clicks the spawn |
-| **DoRightClick** | Right clicks the spawn |
-| **DoTarget** | Targets the spawn |
+| Name           | Action                 |
+| -------------- | ---------------------- |
+| **DoAssist**   | assists the spawn      |
+| **DoFace**     | Faces target           |
+| **DoTarget**   | Targets the spawn      |
+| **LeftClick**  | left clicks the spawn  |
+| **RightClick** | Right clicks the spawn |
 
 ## All members as of 9/22/20
 
@@ -966,8 +276,7 @@ Represents an in-game spawn.
 
 ## Usage
 
-| **Example** | **Output** |
-| :--- | :--- |
-| `${Pet.Equipment[primary].ID}` | ID number of the pet's primary weapon |
+| **Example**                                              | **Output**                                           |
+| -------------------------------------------------------- | ---------------------------------------------------- |
+| `${Pet.Equipment[primary].ID}`                           | ID number of the pet's primary weapon                |
 | `${Group.Member[mymagesname].Pet.Equipment[primary].ID}` | ID number of the group member's pet's primary weapon |
-
