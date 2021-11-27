@@ -1,6 +1,6 @@
 # DataType:macroquest
 
-Data types related to the current MacroQuest2 session.  These also inherit from the EverQuest Type.
+Data types related to the current MacroQuest2 session.  These also inherit from the [EverQuest Type](datatype-everquest.md).
 
 ## Members
 
