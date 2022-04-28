@@ -11,10 +11,10 @@ While not required to access achievements, categories may be useful for enumerat
 | [_int_](datatype-int.md) | **ID** | The unique ID for the category |
 | \_\_[_string_](datatype-string.md)\_\_ | **Name** | The category's display name |
 | [_string_](datatype-string.md)\_\_ | **Description** | The category's description |
-| \_\_[_achievement_](datatype-achievement.md)\_\_ | **Achievement\[**\#\|_Name_**\]** | Find an achievement in this category by its ID or name. |
-| \_\_[_achievement_](datatype-achievement.md)\_\_ | **AchievementByIndex\[**\#**\]** | Find an achievement by its index in this category. |
+| \_\_[_achievement_](datatype-achievement.md)\_\_ | **Achievement[**\#\|_Name_**]** | Find an achievement in this category by its ID or name. |
+| \_\_[_achievement_](datatype-achievement.md)\_\_ | **AchievementByIndex[**\#**]** | Find an achievement by its index in this category. |
 | [_int_](datatype-int.md) | **AchievementCount** | The number of achievements in this category. |
-| \_\_[_achievementcat_](datatype-achievementcat.md)\_\_ | **Category\[**\#\|_Name_**\]** | Find a child category in this category by its ID or name. |
+| \_\_[_achievementcat_](datatype-achievementcat.md)\_\_ | **Category[**\#\|_Name_**]** | Find a child category in this category by its ID or name. |
 | \_\_[_achievementcat_](datatype-achievementcat.md)\_\_ | **CategoryByIndex** | Find a child category by its index in this category. |
 | [_int_](datatype-int.md) | **CategoryCount** | The number of child categories in this category. |
 | [_int_](datatype-int.md) | **Points** | The total earned points of achievements in this category. |

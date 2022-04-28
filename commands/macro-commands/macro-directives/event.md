@@ -31,11 +31,11 @@ sub event_stuff(Line, word1, word2, word3, word4)
 
 ### Triggering your sub event\_stuff
 
-This code will watch EQ chat for an exact message of "\[MQ2\] Ant Bat Cat Dog Emu" when /doevents is called it will trigger the sub event\_stuff.
+This code will watch EQ chat for an exact message of "[MQ2] Ant Bat Cat Dog Emu" when /doevents is called it will trigger the sub event\_stuff.
 
 /doevents will process all your events since the last time it was done If the event happened 5 times since the last /doevents then it will execute your sub 5 times
 
-It needs to be exact, nothing in front or behind of your string. If you received a tell it would not trigger but if you see it as an /echo \(because /echo shows \[MQ2\] as first word in chat\) then it will trigger
+It needs to be exact, nothing in front or behind of your string. If you received a tell it would not trigger but if you see it as an /echo (because /echo shows [MQ2] as first word in chat) then it will trigger
 
 ### Multiple events calling same sub
 

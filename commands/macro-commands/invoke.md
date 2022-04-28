@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/invoke ${TLO.\[XXX\].Action}**
+**/invoke ${TLO.[XXX].Action}**
 
 ## Description
 
@@ -14,7 +14,7 @@ For the Task TLO:
 
 `.Select`
 
-For the Spawn\[\]. TLO:
+For the Spawn[]. TLO:
 
 `.DoTarget`  
 `.DoFace`  

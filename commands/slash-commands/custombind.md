@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/custombind \[ list \| \[ add\|delete\|set\|clear** _**bindname**_**\[-down\|-up\] \] \[**_**command**_ **\]**
+**/custombind [ list \| \[ add\|delete\|set\|clear** _**bindname**_**\[-down\|-up\] \] \[**_**command**_ **]**
 
 ## Description
 
@@ -10,11 +10,11 @@ This command is used to add, delete, list or change custom key bindings. See als
 
 |  |  |
 | :--- | :--- |
-| **/custombind list** | Lists all your custom bind names and commands \(the key combinations must be set using /bind\) |
+| **/custombind list** | Lists all your custom bind names and commands (the key combinations must be set using /bind) |
 | **/custombind add** _**bindname**_ | Add a new bind called _bindname_ ready for use. |
 | **/custombind delete** _**bindname**_ | Remove the custom bind _bindname_. |
-| **/custombind clear name\[-down\|-up\]** | This will clear a specific command for a custom bind. If -up or -down is not specified it defaults to -down. |
-| **/custombind set** _**bindname**_**\[-down\|-up\]** | Will set a specific command for a custom bind. This too defaults to -down if not specified. |
+| **/custombind clear name[-down\|-up]** | This will clear a specific command for a custom bind. If -up or -down is not specified it defaults to -down. |
+| **/custombind set** _**bindname**_**[-down\|-up]** | Will set a specific command for a custom bind. This too defaults to -down if not specified. |
 
 ## Example
 

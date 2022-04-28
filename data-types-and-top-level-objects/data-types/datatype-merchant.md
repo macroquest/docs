@@ -100,10 +100,10 @@ This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is ac
 
 | Name | Action |
 | :--- | :--- |
-| **Buy\[\#\]** | Buys \# of whatever is selected with **Merchant.SelectItem\[xxx\]** |
+| **Buy[\#\]** | Buys \# of whatever is selected with **Merchant.SelectItem\[xxx]** |
 | **OpenWindow** | Will open the merchant closest to you, or if you have a merchant target |
-| **SelectItem\[xxx\]** | Select item specified or partial match that fits. Use **SelectItem\[=xxx\]** for EXACT match \(its not case sensitive\) |
-| **Sell\[\#\]** | Sell \# of whatever is selected with /selectitem. See examples |
+| **SelectItem[xxx\]** | Select item specified or partial match that fits. Use **SelectItem\[=xxx]** for EXACT match (its not case sensitive) |
+| **Sell[\#]** | Sell \# of whatever is selected with /selectitem. See examples |
 
 ## Examples
 
@@ -111,7 +111,7 @@ Using `${Merchant.Sell[#]}`
 
 `/selectitem "Diamond"`
 
-Will select a "Diamond" you can also do "=Diamond" to match EXACT name \(its not case sensitive though\)
+Will select a "Diamond" you can also do "=Diamond" to match EXACT name (its not case sensitive though)
 
 Then you can use
 

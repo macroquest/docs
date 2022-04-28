@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/macro** _**filename**_ **\[** _**param0**_ **\[** _**param1**_ **\[...\]\]\]**
+**/macro** _**filename**_ **[** _**param0**_ **\[** _**param1**_ **\[...\]\]]**
 
 ## Description
 
@@ -25,7 +25,7 @@ Starts running a macro. Optional parameters can be added to the end of the /macr
 
 ## See Also
 
-* [Macros \(about macros in general\)](../../documentation/macroquest2-macros.md)
-* [Macro \(Top-Level Object\)](../../data-types-and-top-level-objects/top-level-objects/tlo-macro.md)
+* [Macros (about macros in general)](../../documentation/macroquest-macros.md)
+* [Macro (Top-Level Object)](../../data-types-and-top-level-objects/top-level-objects/tlo-macro.md)
 * [DataType:Macro](../../data-types-and-top-level-objects/data-types/datatype-macro.md)
 

@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/cast \[** _**spellname**_ **\| \# \| item** _**itemname**_ **\| list \]**
+**/cast [** _**spellname**_ **\| \# \| item** _**itemname**_ **\| list ]**
 
 ## Description
 

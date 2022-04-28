@@ -6,7 +6,7 @@ Data related to an inventory slot.
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **ID** | ID of this item slot \(usable directly by [/itemnotify](../../commands/slash-commands/itemnotify.md)\) |
+| [_int_](datatype-int.md) | **ID** | ID of this item slot (usable directly by [/itemnotify](../../commands/slash-commands/itemnotify.md)) |
 | [_item_](datatype-item.md) | **Item** | Item data for the item in this slot |
 | \_\_[_string_](datatype-string.md)\_\_ | **Name** | For inventory slots not inside packs, the slot name, otherwise NULL |
 | \_\_[_invslot_](datatype-invslot.md)\_\_ | **Pack** | Container that must be opened to access the slot with [/itemnotify](../../commands/slash-commands/itemnotify.md) |

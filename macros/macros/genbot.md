@@ -18,5 +18,5 @@ When using MQ2IRC in combination with the Genbot macro be sure to NOT use the /g
 I do not know how but issuing this command with either off/on makes it so  
 genbot chat no longer goes to the IRC window. Without this command the plugin  
 and macro work together perfectly.  
-\(\(Frank25\)\)
+(\(Frank25\))
 

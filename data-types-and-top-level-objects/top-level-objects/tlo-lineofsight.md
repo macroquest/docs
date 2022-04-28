@@ -8,8 +8,8 @@ Object that is used to check if there is Line of Sight betwen two locations.
 
 ## Forms
 
-* [_bool_](../data-types/datatype-bool.md) **LineOfSight\[**y,x,z:y,x,z**\]**
-* [_bool_](../data-types/datatype-bool.md) **LineOfSight\[**y,x,z,y,x,z**\]** \(For ISXEQ\)
+* [_bool_](../data-types/datatype-bool.md) **LineOfSight[**y,x,z:y,x,z**]**
+* [_bool_](../data-types/datatype-bool.md) **LineOfSight[**y,x,z,y,x,z**]** (For ISXEQ)
 
 ## Access to Types
 

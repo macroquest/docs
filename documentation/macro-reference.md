@@ -2,18 +2,18 @@
 
 ## Introduction
 
-The use of macros is what really makes MacroQuest2 extremely powerful. Additional in-game functionality like [the map](../plugins/core-plugins/mq2map/), cross-zone targeting, enhanced [/who](../commands/slash-commands/who.md), custom binds, [the HUD](../plugins/core-plugins/mq2hud/) and [plugins](macroquest2-plugins.md) are useful, but macroing is what **Macro**Quest is all about.
+The use of macros is what really makes MacroQuest2 extremely powerful. Additional in-game functionality like [the map](../plugins/core-plugins/mq2map/), cross-zone targeting, enhanced [/who](../commands/slash-commands/who.md), custom binds, [the HUD](../plugins/core-plugins/mq2hud/) and [plugins](macroquest-plugins.md) are useful, but macroing is what **Macro**Quest is all about.
 
-See [here](macroquest2-macros.md) for some introductory information about macros. This page is concerned primarily with all the relevant information required to create your own macros.
+See [here](macroquest-macros.md) for some introductory information about macros. This page is concerned primarily with all the relevant information required to create your own macros.
 
 ## Macro Fundamentals
 
-The MQ2 scripting language primarily involves the use of [Slash Commands](../commands/slash-commands/) \(/commands\), [variables](mq2datavars.md), [Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/) and some [Flow Control](flow-control.md) to help the macro along.
+The MQ2 scripting language primarily involves the use of [Slash Commands](../commands/slash-commands/) (/commands), [variables](mqdatavars.md), [Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/) and some [Flow Control](flow-control.md) to help the macro along.
 
 Accessing and manipulating data can be done with:
 
-* [Variables](mq2datavars.md) \(MQ2DataVars\)
-* [MQ2Data](mq2data.md)
+* [Variables](mqdatavars.md) (MQ2DataVars)
+* [MQ2Data](mqdata.md)
   * [Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/)
   * [Data Types](../data-types-and-top-level-objects/data-types/)
 * [Slash Commands](../commands/slash-commands/)
@@ -46,9 +46,9 @@ An effective way to store subroutines which are used in multiple macros is by us
 
 * Remember to check your syntax. Most of the common problems people run into are becuase they haven't closed their
 
-  {}'s, \[\]'s and \(\)'s properly. If you have to, start at the end of the troublesome section and start matching up
+  {}'s, []'s and ()'s properly. If you have to, start at the end of the troublesome section and start matching up
 
-  the {}'s, \[\]'s and \(\)'s by hand. It can really help sometimes to just print the macro and start crossing them out.
+  the {}'s, []'s and ()'s by hand. It can really help sometimes to just print the macro and start crossing them out.
 
 * For people using Utraedit, here is an addition you can make to your [UltraEdit Syntax File](https://github.com/macroquest/docs/tree/abfc239f4d668ae116ab48141e49bbff82337715/other-applications/ultraedit-syntax-file.md)
 

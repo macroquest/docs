@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/sellitem \[\#\]**
+**/sellitem [\#]**
 
 ## Description
 

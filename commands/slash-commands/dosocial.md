@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/dosocial** \[list \| "social name"\]
+**/dosocial** [list \| "social name"]
 
 ## Description
 

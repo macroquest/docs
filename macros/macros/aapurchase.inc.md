@@ -50,7 +50,7 @@ However, if you earn AA's while zoning the autodetection will not work. If that 
 If you want to run the include as a macro create the below:
 
 `AAPurchase.mac`  
-````` \#include AAPurchase.inc``` Sub Main\(IniSection\)````` /call AAInit ${IniSection}```/call AAPicker``  
+````` \#include AAPurchase.inc``` Sub Main(IniSection)````` /call AAInit ${IniSection}```/call AAPicker``  
 `/return`
 
 ````````` \`````

@@ -11,9 +11,4 @@ However, there are some issues you need to understand:
 
 _If you are not prepared for such circumstances, stop here and do not continue._
 
-**MacroQuest does not run out of the box!** It requires you to [compile](../documentation/macroquest2-compiling.md) it.
-
-### 
-
-## 
-
+**MacroQuest does not run out of the box!** It requires you to [compile](../documentation/macroquest-compiling.md) it.

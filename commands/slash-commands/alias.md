@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/alias \[list \|** _**aliasname**_ **delete\] \[name** _**command\]**_
+**/alias [list \|** _**aliasname**_ **delete\] \[name** _**command]**_
 
 ## Description
 

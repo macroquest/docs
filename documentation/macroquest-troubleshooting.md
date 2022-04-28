@@ -4,7 +4,7 @@ The first steps to getting help on a problem are:
 
 * [SEARCH](https://macroquest2.com/phpBB3/search.php) the MQ2 forums for other people who've had the same problem. If
 
-  you're getting an error message while compiling \(either MQ2 itself or a plugin\), its easiest to copy the error
+  you're getting an error message while compiling (either MQ2 itself or a plugin), its easiest to copy the error
 
   message into the search field. A good tip is to click the Display Results as Posts button, which should give you a
 
@@ -18,9 +18,9 @@ The first steps to getting help on a problem are:
 
   what you want"\), then you'll most likely find the answer to your question within the thread itself. Always read the
 
-  first page \(ie. page 1\) of the macro/plugin/snippet, as the author usually has all the pre-requisites and known
+  first page (ie. page 1) of the macro/plugin/snippet, as the author usually has all the pre-requisites and known
 
-  issues outlined there. There's also often some handy tips and sometimes link\(s\) to documentation that others may
+  issues outlined there. There's also often some handy tips and sometimes link(s) to documentation that others may
 
   have provided.
 
@@ -28,7 +28,7 @@ The first steps to getting help on a problem are:
 
   Make sure you follow the instructions in this main post
 
-* If you've put in the legwork \(and by this, I mean **at least** 30 mins of searching and reading\) and still can't
+* If you've put in the legwork (and by this, I mean **at least** 30 mins of searching and reading) and still can't
 
   find the answer to your question, then it may be time to post your question/problem.
 
@@ -42,11 +42,11 @@ _**If you don't search or follow the simple directions above, expect to be flame
 
   and respond to posts/questions within them. As do some of the more knowledgeable users of said macro/plugin.
 
-* If your question is about MQ2 itself \(compile problems, etc\), you can post a question to the forums using the
+* If your question is about MQ2 itself (compile problems, etc), you can post a question to the forums using the
 
   information in the Help\_Forums.
 
-* Include as much information as possible in your post \(including all error messages, when they happen, etc\) so that
+* Include as much information as possible in your post (including all error messages, when they happen, etc) so that
 
   people can actually help you. "It doesn't work" is not going to elicit any useful responses.
 
@@ -54,7 +54,7 @@ _**If you don't search or follow the simple directions above, expect to be flame
 
 * For problems with plugins see [Help Plugins](help-plugins.md).
 * For problems with macros see [Help Macros](help-macros.md).
-* Dealing with a [Crash to Desktop](crash-to-desktop.md) \(CTD\)
+* Dealing with a [Crash to Desktop](crash-to-desktop.md) (CTD)
 * Dealing with [Incorrect Client Version](incorrect-client-version.md)
 * Dealing with a Kick to Server Select
 

@@ -2,13 +2,13 @@
 
 ## Syntax
 
-**/call** _**subroutine**_ **\[Param0... \[Param\#\]\]**
+**/call** _**subroutine**_ **[Param0... \[Param\#\]]**
 
 ### Description
 
-Calls _subroutine_ \(defined later in the macro by "Sub _subroutine_"\).
+Calls _subroutine_ (defined later in the macro by "Sub _subroutine_").
 
-\(_See_ [_Subroutines_](../../documentation/subroutines.md) _for detailed information_\)
+(_See_ [_Subroutines_](../../documentation/subroutines.md) _for detailed information_)
 
 ### Examples
 
@@ -21,6 +21,6 @@ Calls _subroutine_ \(defined later in the macro by "Sub _subroutine_"\).
 ## See Also
 
 * [Slash Commands](../slash-commands/)
-* [MacroQuest2:Macros](../../documentation/macroquest2-macros.md)
+* [MacroQuest2:Macros](../../documentation/macroquest-macros.md)
 * [Subroutines](../../documentation/subroutines.md)
 

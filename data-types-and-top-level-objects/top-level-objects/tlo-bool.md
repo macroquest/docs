@@ -2,11 +2,11 @@
 
 ## Description
 
-Creates a bool object using text. Value is set to TRUE unless text is "NULL" "FALSE" or "0" \(capitalization does not count\).
+Creates a bool object using text. Value is set to TRUE unless text is "NULL" "FALSE" or "0" (capitalization does not count).
 
 ## Forms
 
-* [_bool_](../data-types/datatype-bool.md) **Bool\[**text**\]**
+* [_bool_](../data-types/datatype-bool.md) **Bool[**text**]**
 
 ## Access to Types
 

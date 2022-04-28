@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/where \[ pc \| npc \] \[** _**spawnname**_ **\]**
+**/where [ pc \| npc \] \[** _**spawnname**_ **]**
 
 ## Description
 

@@ -2,7 +2,7 @@
 
 **Me.CombatState**
 
-A new Out Of Combat \(OOC\) resting feature was introduced with The Serpent's Spine expansion, allowing accelerated mana and hit point regeneration. Once this state is Active and you are sitting \(or on a mount\), it takes a maximum 3 mins to go from 0 to full health/mana. The waiting period to reach an active/resting state varies on the zone or mobs you are fighting. The default timer is 30 seconds but this can reach upwards of 5 mins or more in high end raid zones.
+A new Out Of Combat (OOC\) resting feature was introduced with The Serpent's Spine expansion, allowing accelerated mana and hit point regeneration. Once this state is Active and you are sitting \(or on a mount), it takes a maximum 3 mins to go from 0 to full health/mana. The waiting period to reach an active/resting state varies on the zone or mobs you are fighting. The default timer is 30 seconds but this can reach upwards of 5 mins or more in high end raid zones.
 
 A new [DataType:character](../data-types-and-top-level-objects/data-types/datatype-character.md) member was added, CombatState.
 

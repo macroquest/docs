@@ -11,7 +11,7 @@ Targets whatever is matched by one or more of the following _options_:
 |  |  |
 | :--- | :--- |
 | **clear** | Clears your current target |
-| **mycorpse** | Your own corpse \(nearest\) |
+| **mycorpse** | Your own corpse (nearest) |
 | **myself** | Target yourself |
 | _Anything Else_ | Anything else is considered a [Spawn Search](../../general-information/spawn-search.md) |
 

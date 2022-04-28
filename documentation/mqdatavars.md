@@ -6,7 +6,7 @@
 
 1. Default _scope_ is local
 2. Default _type_ is string
-3. Default _value_ is nothing \(empty string or 0\)
+3. Default _value_ is nothing (empty string or 0)
 
 ### Scopes
 
@@ -18,7 +18,7 @@ Variables of global scope ALWAYS exist until they are deleted or MacroQuest ends
 
 Variables of outer scope exist while a macro is running
 
-* **local** \(default\)
+* **local** (default)
 
 Variables of local scope only exist while within a macro function or "Sub"
 
@@ -28,7 +28,7 @@ Variables can be declared as any of the types in [Data Types](../data-types-and-
 
 ### Names
 
-Only the following characters are allowed in the name of a variable: \[a-z\]\[A-Z\]\[0-9\]\_
+Only the following characters are allowed in the name of a variable: [a-z\]\[A-Z\]\[0-9]\_
 
 Name lookup is case insensitive.
 
@@ -36,7 +36,7 @@ Name lookup is case insensitive.
 
 ### Declaring
 
-Variables are declared \(initially defined\) in the following format:
+Variables are declared (initially defined) in the following format:
 
 ```bash
 /declare varname|varname[array extents] [type] [local|global|outer] [defaultvalue]
@@ -70,19 +70,19 @@ To create an array, attach square brackets to the end of the variable name and p
 
 **Array Examples**
 
-1. This creates a single-dimension local array of int with 10 elements \(1-10\) all 0:
+1. This creates a single-dimension local array of int with 10 elements (1-10) all 0:
 
 ```text
 /declare MyArray[10] int
 ```
 
-This creates a 2-dimensional 10x10 elements\(1-10,1-10\) int array of scope outer with all values of 5:
+This creates a 2-dimensional 10x10 elements(1-10,1-10) int array of scope outer with all values of 5:
 
 ```text
 /declare MyArray[10,10] int outer 5
 ```
 
-This creates a 3-dimensional array with 4x5x6 elements \(1-4,1-5, 1-6\) with UNDEFINED-ARRAY-ELEMENT in each location:
+This creates a 3-dimensional array with 4x5x6 elements (1-4,1-5, 1-6) with UNDEFINED-ARRAY-ELEMENT in each location:
 
 ```text
 /declare MyArray[4,5,6] string outer UNDEFINED-ARRAY-ELEMENT
@@ -114,7 +114,7 @@ To clear the value of the variable, you may omit the new value.
 
 [/varset](../commands/macro-commands/varset.md) is used to set or change a variable. Examples:
 
-1. This concatenates \(joins one to the other\) "stuff" to the end a string variable:
+1. This concatenates (joins one to the other) "stuff" to the end a string variable:
 
 ```text
 /varset MyString ${MyString}stuff
@@ -186,9 +186,9 @@ It is important to note that parsing of variables is performed from the inside t
 
 `${MyString${MyVar}}`
 
-The parser first evaluates ${MyVar}. If MyVar's value is 1, this gives us ${MyString1}. ${MyString1} is then evaluated, giving the value of whatever MyString1 is. ${${MyString}} will get the value of a MQ2Data query stored in MyString. This could be Me.Buff\[1\], or a variable name, or anything that is valid inside ${}. There is no limit to this recursion.
+The parser first evaluates ${MyVar}. If MyVar's value is 1, this gives us ${MyString1}. ${MyString1} is then evaluated, giving the value of whatever MyString1 is. ${${MyString}} will get the value of a MQ2Data query stored in MyString. This could be Me.Buff[1], or a variable name, or anything that is valid inside ${}. There is no limit to this recursion.
 
 ${${${${${${${${${${MyString}}}}}}}}}} will evaluate inside to outside until there is nothing left to evaluate.
 
-This is also true for arrays: ${MyArray\[${MyInt}\]} has no problems.
+This is also true for arrays: ${MyArray[${MyInt}]} has no problems.
 

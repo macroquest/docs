@@ -4,7 +4,7 @@
 
 ## Usage
 
-${Bool\[${Alias\[/myalias\]}\]} true if it exists, false if not
+${Bool[${Alias\[/myalias\]}]} true if it exists, false if not
 
 ## See Also
 

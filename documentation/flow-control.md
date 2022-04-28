@@ -19,7 +19,7 @@ MQ2 provides a few ways to control the execution of your macro.
 
   This will stand you up if you're sitting.
 
-\*One-line [/if](../commands/macro-commands/if.md) statements do not require curly braces \( {} \)
+\*One-line [/if](../commands/macro-commands/if.md) statements do not require curly braces ( {} )
 
 * If you wish to execute more than one command, you must wrap your set of commands in braces:
 
@@ -108,7 +108,7 @@ You can end a /while loop immediately with /break or try the next iteration with
 
 ## For loops
 
-For loops are used when you want to perform the same set of commands on a list of items. With a /for loop, you define a starting number, an end number and \(if necessary\) a number to increment by. The loop will perform the set of commands with the starting number, then will increment it \(by 1 as a default, unless you specify the number\) and will then re-run all the commands with the next number. It will continue to do that until it reaches the end number, at which time it will exit.
+For loops are used when you want to perform the same set of commands on a list of items. With a /for loop, you define a starting number, an end number and (if necessary\) a number to increment by. The loop will perform the set of commands with the starting number, then will increment it \(by 1 as a default, unless you specify the number) and will then re-run all the commands with the next number. It will continue to do that until it reaches the end number, at which time it will exit.
 
 Take this example, which will give a list of all your buff slots:
 
@@ -128,7 +128,7 @@ The problem with this example is that you'll get a couple of NULLs if you have n
 /next x
 ```
 
-This will have a look and see if the buff in slot ${x} has an ID \(remember that /if statements only deal with numbers\) and if the number is positive \(ie. not 0\), then it will echo the buff name.
+This will have a look and see if the buff in slot ${x} has an ID (remember that /if statements only deal with numbers\) and if the number is positive \(ie. not 0), then it will echo the buff name.
 
 You could easily list the buffs in reverse order by using "downto" instead of "to" in the /for loop.
 
@@ -149,7 +149,7 @@ You can end a /for loop immediately with /break or try the next iteration with /
 
 ## Goto jumps
 
-As with most programming and scripting languages, the use of the "goto" function is frowned upon \(generally because it's slow and there are better ways of achieving the same result\). In MQ2 it's not much different, and since MQ2 originally didn't include any type of "while" function, many older macros still include goto statements.
+As with most programming and scripting languages, the use of the "goto" function is frowned upon (generally because it's slow and there are better ways of achieving the same result). In MQ2 it's not much different, and since MQ2 originally didn't include any type of "while" function, many older macros still include goto statements.
 
 First off, you need a marker to denote where the [/goto](../commands/macro-commands/goto.md) function should move to. A marker is created in the following format:
 
@@ -169,7 +169,7 @@ Sub Main
 /return
 ```
 
-In the above example, your MQ2 chat window would be filled with "just passed the marker" echoed constantly until you ended the macro. We've created an infinite loop above, which is the most common use of /goto. A conditional /goto \(ie. a /goto after an /if statment\) is the closest you can get to a "while" function. Take the following example:
+In the above example, your MQ2 chat window would be filled with "just passed the marker" echoed constantly until you ended the macro. We've created an infinite loop above, which is the most common use of /goto. A conditional /goto (ie. a /goto after an /if statment) is the closest you can get to a "while" function. Take the following example:
 
 ```text
 Sub Main

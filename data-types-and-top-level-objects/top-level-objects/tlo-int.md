@@ -6,7 +6,7 @@ Object that creates an integer from n.
 
 ## Forms
 
-* [_int_](../data-types/datatype-int.md) **Int\[**n**\]**
+* [_int_](../data-types/datatype-int.md) **Int[**n**]**
 
 ## Access to Types
 

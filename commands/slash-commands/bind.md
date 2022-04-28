@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/bind \[list \| eqlist\] \| \[~\]name \[**_**keycombo**_ **\| clear\]**
+**/bind [list \| eqlist\] \| \[~\]name \[**_**keycombo**_ **\| clear]**
 
 ## Description
 

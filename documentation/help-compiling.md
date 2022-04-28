@@ -20,7 +20,7 @@ If you're having a problem with a macro or snippet, see [Help\_Macros](help-macr
 
   unsure\), then it's worth downloading the source again and just compiling MQ2 to see if you can narrow down the
 
-  problem. Follow the directions in [MacroQuest2:Compiling](macroquest2-compiling.md) and compile a fresh MQ2
+  problem. Follow the directions in [MacroQuest2:Compiling](macroquest-compiling.md) and compile a fresh MQ2
 
   with no plugins.
 
@@ -58,13 +58,13 @@ pDefault=strtok(NULL,"|");
 
 ### Fatal error C1189: \#error : Unknown CPU Architecture!
 
-This is caused by the MQ2 source files being posted in an incorrect OS format \(eg. Mac format\). This problem will be fixed very quickly, so check the download page again to see if a new version has been posted.
+This is caused by the MQ2 source files being posted in an incorrect OS format (eg. Mac format). This problem will be fixed very quickly, so check the download page again to see if a new version has been posted.
 
-### C:\MQ\MQ2Main\MQ2Main.h\(31\) : fatal error C1083: Cannot open include file: 'windows.h': No such file or directory
+### C:\MQ\MQ2Main\MQ2Main.h(31) : fatal error C1083: Cannot open include file: 'windows.h': No such file or directory
 
 windows.h is part of Microsoft's SDK. You don't have it. Go get it. Or, maybe you do have it but you didn't set the environment variables correctly. Either way: [1](http://www.microsoft.com)
 
-\(if you change this section, i will ban you.\) :\)
+(if you change this section, i will ban you.\) :)
 
 ### No .exe file generated
 
@@ -86,11 +86,11 @@ Problem occured during step 9 of the walkthrough. Researched the problem extensi
 #10 Go to Build - Batch Build, click "Select All" and then "Build"
 ```
 
-\(Solution will have to do with one of the previous steps that was missed, or done incorrectly.\)
+(Solution will have to do with one of the previous steps that was missed, or done incorrectly.)
 
 ### LINK : fatal error LNK1104: cannot open file '..\Release\MQ2Main.dll'
 
-Because mq2main.dll is injected to exes, it can be held open by any process. The top three contenders are eqgame.exe, macroquest2.exe, and wineq2.exe. You must stop these programs before you can write to mq2main.dll. Occasionally, mq2main.dll stays injected to another app. You can use Process Explorer from here to find the offending process and stop it.
+Because mq2main.dll is injected to exes, it can be held open by any process. The top three contenders are eqgame.exe, macroquest.exe, and wineq2.exe. You must stop these programs before you can write to mq2main.dll. Occasionally, mq2main.dll stays injected to another app. You can use Process Explorer from here to find the offending process and stop it.
 
 ### error C3068: : a 'naked' function cannot contain objects that would require unwinding if a C++ exception occurred
 
@@ -100,20 +100,20 @@ This is almost always caused by clicking macroquest2.dsw file instead of the Mac
 
 You have the wrong compiler flags for your version of the compiler. Reread the instructions and open the correct file and/or set the correct environment variables.
 
-More info: google\(error C3068\) and look at the first link. Two of those things you can't do so you'll have to do the third. Still don't know how? Tough shit.
+More info: google(error C3068) and look at the first link. Two of those things you can't do so you'll have to do the third. Still don't know how? Tough shit.
 
 If you are compiling using Visual C++ 2005 Express Edition, you may need to disable Exceptions for compiling older versions of MQ2. Here are the instructions:
 
 1. Under the **Solution Explorer** right click **MQ2Main** and select **Properties**.
 2. Expand **Configuration Properties** if it isn't already expanded by clicking the **+** sign to the left of it. Then, expand **C/C++** and select **Code Generation**.
-3. Last, look at the line on the right side of that window that says **Enable C++ Exceptions** and if it is set to **Yes \(/EHsc\)**, click that dropdown box and select **No**, and then click **OK**.
+3. Last, look at the line on the right side of that window that says **Enable C++ Exceptions** and if it is set to **Yes (/EHsc)**, click that dropdown box and select **No**, and then click **OK**.
 4. You can now run your compile like normal.
 
 ### error LNK2019: unresolved external symbol
 
 If you see these symbols: \_\_imp\_\_CallNextHookEx@16, \_\_imp\_\_ShellExecuteA@24, \_\_imp\_\_MessageBoxA@16, you didn't follow the directions. These symbols are resolved by libraries included by Microsoft's platform SDK, which you already have installed if you got here. That means that you either screwed up the link compile step or the libraries are not were the compiler thinks they are. Start again and follow the directions or try to trouble shoot your installation.
 
-To find out what library file is not found try to google for the function name \(if you are missing \_\_imp\_\_CallNextHookEx@16 google for CallNextHookEx and you will find that the library file is User32.lib etc\).
+To find out what library file is not found try to google for the function name (if you are missing \_\_imp\_\_CallNextHookEx@16 google for CallNextHookEx and you will find that the library file is User32.lib etc).
 
 When linking fail it is most likely the information you supplied under Tools - Options - VC++ Directories - Library Files that is wrong or have for some reason not taken effect.
 
@@ -123,7 +123,7 @@ If you get this error try opening up the cmd.exe file yourself prior to compilin
 
 ### error C2360: initialization of 'i' is skipped by 'case' label
 
-If you get this error, check to see if the file\(s\) that won't process correctly are featured in the Latest Release post as a known issue. Otherwise, the error message should tell you what line the error occurs at as follows:
+If you get this error, check to see if the file(s) that won't process correctly are featured in the Latest Release post as a known issue. Otherwise, the error message should tell you what line the error occurs at as follows:
 
 ```text
 C:\MQcompile\MQ2Main\MQ2DataTypes.cpp(7001) : error C2360: initialization of 'i' is skipped by 'case' label

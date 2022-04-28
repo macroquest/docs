@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/varset varname \[** _**newvalue**_ **\]**
+**/varset varname [** _**newvalue**_ **]**
 
 ## Description
 
@@ -24,5 +24,5 @@ Sets a variable directly to a new value.
 
 ## See Also
 
-* [MQ2DataVars](../../documentation/mq2datavars.md) for further information about variables.
+* [MQ2DataVars](../../documentation/mqdatavars.md) for further information about variables.
 

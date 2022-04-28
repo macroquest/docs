@@ -6,7 +6,7 @@ The Advanced Fishing macro by Panther can be obtained [here](https://macroquest2
 
 * **Fisherman's Companion**
 
-You can obtain the Fisherman's Companion by giving 2 Nightmare Cichlid Bones and 2 Vallorian Discus Bones \(both usually available in the bazaar\) to Ramos Jerwan in Plane of Knowledge.
+You can obtain the Fisherman's Companion by giving 2 Nightmare Cichlid Bones and 2 Vallorian Discus Bones (both usually available in the bazaar) to Ramos Jerwan in Plane of Knowledge.
 
 ## Features
 

@@ -2,11 +2,11 @@
 
 ## Syntax
 
-**/look \[\[-\]**_**angle**_**\]**
+**/look [\[-\]**_**angle**_**]**
 
 ## Description
 
-Changes the angle you are looking. _Angle_ can be any value between -128 \(directly down\) and 128 \(directly up\). The default for _angle_ is 0 \(straight ahead\).
+Changes the angle you are looking. _Angle_ can be any value between -128 (directly down\) and 128 \(directly up\). The default for _angle_ is 0 \(straight ahead).
 
 ## Examples
 
@@ -16,7 +16,7 @@ Changes the angle you are looking. _Angle_ can be any value between -128 \(direc
   /look 50
   ```
 
-* Changes your look angle to -75 \(down\)
+* Changes your look angle to -75 (down)
 
   ```text
   /look -75

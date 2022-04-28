@@ -2,7 +2,7 @@
 
 Macro to automatically snare target
 
-Works by: Checks to see if target has been snared since based upon if it is an NPC, % of health and checking the variable. When any mob dies, it resets the variable and only when a mob dies \(or it wears off, which is extremely rare\).
+Works by: Checks to see if target has been snared since based upon if it is an NPC, % of health and checking the variable. When any mob dies, it resets the variable and only when a mob dies (or it wears off, which is extremely rare).
 
 ```text
 #include spell_routines.inc

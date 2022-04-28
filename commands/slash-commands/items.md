@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/items \[**_**filter**_**\]**
+**/items [**_**filter**_**]**
 
 ## Description
 

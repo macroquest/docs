@@ -8,7 +8,7 @@ Data related to arrays. **Note:** Array indexing starts at **1**
 | :--- | :--- | :--- |
 | [_int_](datatype-int.md) | **Dimensions** | Number of dimensions in the array |
 | [_int_](datatype-int.md) | **Size** | Total number of elements in the array |
-| [_int_](datatype-int.md) | **Size\[**\#**\]** | Total number of elements stored in the \#th dimension of the array |
+| [_int_](datatype-int.md) | **Size[**\#**]** | Total number of elements stored in the \#th dimension of the array |
 | \_\_[_string_](datatype-string.md)\_\_ | **To String** | _None_ |
 
 ## Declare Arrays
@@ -17,19 +17,19 @@ To create an array, attach square brackets to the end of the variable name and p
 
 **Array Examples**
 
-1. This creates a single-dimension local array of int with 10 elements \(1-10\) all 0:
+1. This creates a single-dimension local array of int with 10 elements (1-10) all 0:
 
 ```text
 /declare MyArray[10] int
 ```
 
-This creates a 2-dimensional 10x10 elements\(1-10,1-10\) int array of scope outer with all values of 5:
+This creates a 2-dimensional 10x10 elements(1-10,1-10) int array of scope outer with all values of 5:
 
 ```text
 /declare MyArray[10,10] int outer 5
 ```
 
-This creates a 3-dimensional array with 4x5x6 elements \(1-4,1-5, 1-6\) with UNDEFINED-ARRAY-ELEMENT in each location:
+This creates a 3-dimensional array with 4x5x6 elements (1-4,1-5, 1-6) with UNDEFINED-ARRAY-ELEMENT in each location:
 
 ```text
 /declare MyArray[4,5,6] string outer UNDEFINED-ARRAY-ELEMENT

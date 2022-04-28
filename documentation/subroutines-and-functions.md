@@ -2,7 +2,7 @@
 
 ## General
 
-We know that every macro must have a Main Subroutine \(see [Macro Reference](macro-reference.md)\). However custom Subroutines can be created as a way of re-using common code, and as a way of separating code into logical blocks or routines.
+We know that every macro must have a Main Subroutine (see [Macro Reference](macro-reference.md)). However custom Subroutines can be created as a way of re-using common code, and as a way of separating code into logical blocks or routines.
 
 Subroutines start with a Sub line and end with a /return line. When it hits the /return line, it will pass control back to the calling Sub, at the point right after it was called.
 
@@ -26,7 +26,7 @@ This will echo the following into the MQ2 Chat Window:
 
 ## Subroutine Names
 
-Only the following characters are allowed in the name of a subroutine: \[a-z\]\[A-Z\]\[0-9\]\_
+Only the following characters are allowed in the name of a subroutine: [a-z\]\[A-Z\]\[0-9]\_
 
 Name lookup is case insensitive.
 
@@ -42,7 +42,7 @@ All macros accept parameters passed to them when called. The parameters can be d
 `/echo ${Param0} ${Param1}`  
 `/return`
 
-**Note:** Any parameters passed to the sub are automatically declared as local variables for that Sub \(no need to [/declare](../commands/macro-commands/declare.md) them\).
+**Note:** Any parameters passed to the sub are automatically declared as local variables for that Sub (no need to [/declare](../commands/macro-commands/declare.md) them).
 
 ## Return Values
 
@@ -52,7 +52,7 @@ A return value for the sub can be added after the [/return](../commands/macro-co
 `/declare Sum int local ${Math.Calc[${A}+${B}]}`  
 `/return ${Sum}`
 
-This will take the two passed variables \(A and B\), add them together and return the result. To use it, you'd need call it like so:
+This will take the two passed variables (A and B), add them together and return the result. To use it, you'd need call it like so:
 
 `Sub Main`  
 `/call Add 10 12`  
@@ -73,7 +73,7 @@ Subroutines can also be evaluated as part of an expression. The subroutine Add f
 
 This would also echo "22" in the MQ2 Chat Window.
 
-A function without arguments must be called as ${SomeFunction\[\]}.
+A function without arguments must be called as ${SomeFunction[]}.
 
 If you evaluate as sub as part of expression, the sub has no delays, its just flushes through the sub so any advanced logic or processing is not a good use. Using subroutine as an inline function should be limited to simple repetive tasks, like math or writing things or something that is not macro critical for how time moves
 

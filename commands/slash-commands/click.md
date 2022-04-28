@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/click \[ left \| right \] \[ center \| target \| switch \]**
+**/click [ left \| right \] \[ center \| target \| switch ]**
 
 ## Description
 

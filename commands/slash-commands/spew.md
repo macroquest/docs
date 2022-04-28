@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/spew \[on\|off\]**
+**/spew [on\|off]**
 
 ## Description
 

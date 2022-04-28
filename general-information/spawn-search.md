@@ -8,7 +8,7 @@ All [Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/) 
 | **aura** | Auras |
 | **body** _bodytype_ | Spawns with the specified _bodytype_ |
 | **chest** | Chests |
-| **class** _classname_ | Spawns with this class name \(long name\) |
+| **class** _classname_ | Spawns with this class name (long name) |
 | **corpse** | Corpses |
 | **dps** | Returns Wizards, Rangers and Rogues |
 | **fellowship** | includes toons in your fellowship that is in zone |
@@ -22,12 +22,12 @@ All [Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/) 
 | **knight** | Returns Paladins and Shadow Knights |
 | **lfg** | All spawns Looking For Group |
 | **light** _lightsource_ | Spawns with the specified _lightsource_ |
-| **loc \#x \#y \[\#z\]** | Spawn at the specified loc, Z is optional, if Z is not supplied it will use your current Z. \(note: you must use radius with this keyword\) |
-| **los** | Spawns in Line of Sight \(from your point of view\) |
+| **loc \#x \#y [\#z]** | Spawn at the specified loc, Z is optional, if Z is not supplied it will use your current Z. (note: you must use radius with this keyword) |
+| **los** | Spawns in Line of Sight (from your point of view) |
 | **mercenary** | Spawn which is a mercenary |
 | **merchant** | NPC Merchants |
 | **name** | Spawn with this name |
-| **named** | "Named" spawns \(spawns whose names start with a \#, or whose name does not start with "a" or "an"\) |
+| **named** | "Named" spawns (spawns whose names start with a \#, or whose name does not start with "a" or "an") |
 | **nearalert \#** | Spawns close to alert list \# |
 | **next** | Next spawn matching the search criteria |
 | **noalert \#** | Spawns not on the alert list \# |
@@ -36,14 +36,14 @@ All [Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/) 
 | **npc** | Non-Player Characters |
 | **npccorpse** | Non-Player Characters Corpses |
 | **npcpet** | Pets Owned by Non-Player Characters |
-| **pc** | Player Characters \(default\) |
+| **pc** | Player Characters (default) |
 | **pccorpse** | Player corpses |
 | **pcpet** | Pets Owned by Player Characters |
 | **pet** | Pets |
 | **prev** | Previous spawn matching the search criteria |
 | **race** _racename_ | Spawns with the race _racename_ |
 | **radius \#** | Within the radius \# |
-| **range low\# high\#** | Within the level range \#\(low\) and \#\(high\) |
+| **range low\# high\#** | Within the level range \#(low\) and \#\(high) |
 | **slower** | Returns Shamans, Enchanters and Beastlords |
 | **tank** | Returns Paladins, Shadow Knights and Warriors |
 | **targetable** | Spawns that can be targeted |

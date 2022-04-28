@@ -8,7 +8,7 @@
 
 Loads the specified .cfg file.
 
-* Plugins can use LoadCfgFile\(filename\)
+* Plugins can use LoadCfgFile(filename)
 * Some cfg files are loaded automatically. You may use /loadcfg to load them at your own desire.
   * **autoexec.cfg**
 

@@ -1,16 +1,16 @@
 # Spell Skill Trainer
 
-This macro was originally published in the Macro Depot 3.0 Forum, and has been successfully used to max out spell casting skills \(abjuration, alteration, channeling, conjuration, divination, evocation, meditation and specializations\).
+This macro was originally published in the Macro Depot 3.0 Forum, and has been successfully used to max out spell casting skills (abjuration, alteration, channeling, conjuration, divination, evocation, meditation and specializations).
 
 **Instructions**
 
 Paste this code into a file called practice.mac in your **\macros** directory.
 
-Memorize the spells you wish to cast to work on skill. I recommend using the highest level spell with the least amount of mana. I also suggest acquiring the following buffs from an enchanter: clarity \(or clarity 2\), gift of magic, insight \(+12wis +6int\) or brilliance \(+6wis +12int\), and intellectual superiority \(cuts down on fizzles\). Note, at level 46, the first 3 spells are replaced by Koadic's Endless Intellect \(aka KEI\).
+Memorize the spells you wish to cast to work on skill. I recommend using the highest level spell with the least amount of mana. I also suggest acquiring the following buffs from an enchanter: clarity (or clarity 2\), gift of magic, insight \(+12wis +6int\) or brilliance \(+6wis +12int\), and intellectual superiority \(cuts down on fizzles\). Note, at level 46, the first 3 spells are replaced by Koadic's Endless Intellect \(aka KEI).
 
 I've also found it very helpful to work on these skills in the guild hall "jacuzzi" since a\) your buffs won't fade, and b\) the jacuzzi nearly double your mana regen.
 
-Damage spells do not "take" on you for the most part, and if you should be working on conjuration with a summoning spell\(such as Halo of Light\), you do NOT need to delete the item! You cannot summon a 2nd halo, for example, however you will still get skillups.
+Damage spells do not "take" on you for the most part, and if you should be working on conjuration with a summoning spell(such as Halo of Light), you do NOT need to delete the item! You cannot summon a 2nd halo, for example, however you will still get skillups.
 
 `|/////////////////////////////////////////////////////////////////////////////////`  
 `|`  
@@ -47,7 +47,7 @@ Damage spells do not "take" on you for the most part, and if you should be worki
 `/varset GemNumber ${Param0}`  
 `/echo Practicing ${Spell[${Me.Gem[${GemNumber}]}].Skill}. Hit ESC at any time to end and see results.`  
 `} else {`  
-````` /echo Usage: /macro practice \[gem\#\] \[target\]``` /echo Which spell would you like to practice?````` /endmacro```}``
+````` /echo Usage: /macro practice [gem\#\] \[target]``` /echo Which spell would you like to practice?````` /endmacro```}``
 
 `/if (${Defined[Param1]}) {`  
 `/varset PTarget ${Param1}`  

@@ -12,7 +12,7 @@
 
 * Using **/lootall** will loot _everything_ on the corpse automatically unless there is more than one No Trade item on
 
-  it. In this case, you will have to loot everything \(including the item\(s\) that are not No Trade\) manually.
+  it. In this case, you will have to loot everything (including the item\(s\) that are not No Trade) manually.
 
 ## Examples
 

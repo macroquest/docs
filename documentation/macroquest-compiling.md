@@ -2,14 +2,14 @@
 
 ## Download & Install Visual Studio 2019/2022
 
-Links and instructions can be found at: \
+Links and instructions can be found at:
 [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
 
 ## How to Build
 
 ### Download & Install Git for Windows
 
-Links and instructions can be found at:\
+Links and instructions can be found at:
 [https://git-scm.com](https://git-scm.com/downloads)
 
 The recommended way to build MacroQuest is from a source code checkout using Git. There are many how to guides for installing and setting up git. [Here is one of them](https://docs.gitlab.com/ee/gitlab-basics/start-using-git.html)
@@ -67,8 +67,8 @@ The built files will be placed in `build/bin/Release`. To start MacroQuest, run 
 
 ### Adding Your Own Plugins
 
-Note: If you have any custom plugins you want to build, put the sources for them in the `plugins` folder, for example: `plugins/MQ2Foo/MQ2Foo.cpp` Do not put them in `src/plugins` this path is reserved for the MacroQuest developers.\
-\
+Note: If you have any custom plugins you want to build, put the sources for them in the `plugins` folder, for example: `plugins/MQ2Foo/MQ2Foo.cpp` Do not put them in `src/plugins` this path is reserved for the MacroQuest developers.
+
 To add any personal plugins to the solution:
 
 1. Right-click the solution in the Solution Explorer and click `Add -> Add Existing Project...`&#x20;

@@ -14,7 +14,7 @@ This include file allows the macro to control the use of spell gems and how they
 
 GemMem -- Memorizes the spell, remembers spell data, recognizes how long the spell has been memorized and if it has been flagged by the user as a gem that is allowed to be switched out. GemMem may call GemDMem if there is a spell in the slot and the spell gem is switchable or the user wants to overwrite the gem that is there anyway.
 
-GemDMem -- Simple ... It dememorizes the spell in whatever slot chosen\(1-9\)
+GemDMem -- Simple ... It dememorizes the spell in whatever slot chosen(1-9)
 
 GemEdit -- This sub routine takes the spell name or gem-number and switches it from switchable/not-switchable to not-switchable/switchable
 
@@ -22,7 +22,7 @@ GemTimer -- A subroutine to be called after spell casts if you want the include 
 
 GemFind -- A subroutine to scan the spell information, stored user-responses and available/used gems to find a suitable gem for memorization.
 
-Putting all these functions together, this include micromanages the use of spell gems within a routine. Instead of using something like /call cast 4 "Shrink" 5s, You can use this instead /if \(${Me.Gem\[${ShrinkSpell}\]}\) /call cast ${Me.Gem\[${ShrinkSpell}\]} ${ShrinkSpell} 5s.
+Putting all these functions together, this include micromanages the use of spell gems within a routine. Instead of using something like /call cast 4 "Shrink" 5s, You can use this instead /if (${Me.Gem[${ShrinkSpell}\]}) /call cast ${Me.Gem\[${ShrinkSpell}]} ${ShrinkSpell} 5s.
 
 ## Why use this?
 

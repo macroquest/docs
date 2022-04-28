@@ -2,7 +2,7 @@
 
 ## Introduction
 
-Plugins extend the functionality of MQ2, usually at a lower level than macros do. For example, a macro may help you do automatically mez mobs within a certain range, or auto-attack mob within a certain range. A plugin may control lower level functions like casting the mez spell for you \(ie. making sure you have the right target, auto-recasting if you fizzle, etc\) or control movement to your intended victim and activating attack \(ie. moving you to melee range, turning on attack, automatically backstabbing, turning off attack on enrage, etc\).
+Plugins extend the functionality of MQ2, usually at a lower level than macros do. For example, a macro may help you do automatically mez mobs within a certain range, or auto-attack mob within a certain range. A plugin may control lower level functions like casting the mez spell for you (ie. making sure you have the right target, auto-recasting if you fizzle, etc\) or control movement to your intended victim and activating attack \(ie. moving you to melee range, turning on attack, automatically backstabbing, turning off attack on enrage, etc).
 
 The functionality of plugins and macros often overlap, and in the above example its completely possible to do all the above using just a macro with no plugins.
 
@@ -12,24 +12,24 @@ Plugins are written in C++ whereas macros use MQ2's internal scripting language.
 
 Plugins can be found in the following forum:
 
-[MQ2::Development::Plugins](https://macroquest2.com/phpBB3/viewforum.php?f=31) \(VIP Only\)
+[MQ2::Development::Plugins](https://macroquest2.com/phpBB3/viewforum.php?f=31) (VIP Only)
 
-ImaNoob posted a very helpful thread [here.](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=6310) \(VIP Only\) Titled appropriately "The Complete Idiots Guide to MQ2 and plugins"
+ImaNoob posted a very helpful thread [here.](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=6310) (VIP Only) Titled appropriately "The Complete Idiots Guide to MQ2 and plugins"
 
 ## Compiling Plugins
 
 _Say you've seen an interesting looking plugin on the forums and you'd like to try it out, how exactly do you go about doing it?_
 
-* Open up a command prompt \(Windows key + R, type "cmd" without quotation marks, press enter\) and navigate to your MQ2
+* Open up a command prompt (Windows key + R, type "cmd" without quotation marks, press enter) and navigate to your MQ2
 
-  source directory \(eg. `cd \mq2-latest`\).
+  source directory (eg. `cd \mq2-latest`).
 
-* Type "`mkplugin`". Use the name of the plugin from the forum post \(eg. "`mkplugin MQ2Melee`"\).
+* Type "`mkplugin`". Use the name of the plugin from the forum post (eg. "`mkplugin MQ2Melee`").
 * This will create the directory under your MQ2 source root and add a few files in there. Go to this directory in
 
-  Explorer and open the .cpp file \(eg. MQ2Melee.cpp\) in your favourite text editor \(notepad will work
+  Explorer and open the .cpp file (eg. MQ2Melee.cpp) in your favourite text editor \(notepad will work
 
-  just fine\). If you don't have any file extensions on your files \(ie. none of them end with .cpp\), then in Explorer
+  just fine\). If you don't have any file extensions on your files (ie. none of them end with .cpp), then in Explorer
 
   go to Tools - Folder Options - View tab and untick "Hide file extensions for known file types".
 
@@ -52,24 +52,24 @@ _Say you've seen an interesting looking plugin on the forums and you'd like to t
 `#include "../MQ2Plugin.h"`  
 `PreSetup("MQ2Melee"); PLUGIN_VERSION(3.000);`&lt;/code&gt;
 
-* Some plugins require additional files to be included as well \(eg. .ccp, .h or .inc\). Just create these files in the
+* Some plugins require additional files to be included as well (eg. .ccp, .h or .inc). Just create these files in the
 
   plugin directory with the names as given in the forum post. \*\*Make sure to save them as plain text documents with
 
-  the correct extension \(ie. do not save them with .txt extension\) otherwise the plugin will not find them.\*\*
+  the correct extension (ie. do not save them with .txt extension) otherwise the plugin will not find them.\*\*
 
 * After you've got the plugin created and all the files copied, open up the main MacroQuest2 project and add your
 
   newly created project:
 
-  * In VS 6, Go to Projects-&gt;Insert Projects into workspace, then select .dsp \(eg. MQ2Melee.dsp\).
+  * In VS 6, Go to Projects-&gt;Insert Projects into workspace, then select .dsp (eg. MQ2Melee.dsp).
   * In VS .NET, go to File-&gt;Add Project-&gt;Existing project, and select the .vcproj \(eg.
 
     MQ2Melee.vcproj\).
 
   * In VS 2005 **AND NEWER**, go to File-&gt;Add-&gt;Existing project, and select the .vcproj \(or .vcxproj in
 
-    newer versions of VS} \(eg. MQ2Melee.vcproj or MQ2Melee.vcxproj\).
+    newer versions of VS} (eg. MQ2Melee.vcproj or MQ2Melee.vcxproj).
 
 * Compile the plugin:
   * In VS 2005 and newer, click on the plugin name in the Solution Explorer window, then click Build-&gt;Build
@@ -86,7 +86,7 @@ See [/plugin](../commands/slash-commands/plugin.md) for information on loading a
 
   that plugin. Some plugins have a built in help which can often be accessed in-game by typing the name of the
 
-  plugin's slash command\(s\) followed by help, or just the slash command\(s\) by itself. _\(more examples?\)_
+  plugin's slash command(s\) followed by help, or just the slash command\(s\) by itself. _\(more examples?)_
 
   * For example, in the MQ2MoveUtils plugin, the plugin adds the /moveto and /makecamp slash commands. Typing
 
@@ -98,7 +98,7 @@ See [/plugin](../commands/slash-commands/plugin.md) for information on loading a
 
 * [MQ2Bzsrch](../plugins/core-plugins/mq2bzsrch/) -- a bazaar search plug-in
 * [MQ2Chat](../plugins/core-plugins/mq2chat.md) -- Directs MQ2 output to the regular chat window
-* [MQ2ChatWnd](../plugins/core-plugins/mq2chatwnd/) -- Directs MQ2 output to a special chat window \(safer\)
+* [MQ2ChatWnd](../plugins/core-plugins/mq2chatwnd/) -- Directs MQ2 output to a special chat window (safer)
 * [MQ2CustomBinds](../plugins/core-plugins/mq2custombinds/) -- Allows you to specify custom commands to execute on a key combination
 * [MQ2EQBugFix](../plugins/core-plugins/mq2eqbugfix.md) -- Currently nothing, but reserved for fixing bugs in EQ itself
 * [MQ2EQIM](../plugins/discontinued-unsupported/mq2eqim/) -- EQIM
@@ -257,9 +257,9 @@ See Help:Plugins for troubleshooting plugin problems.
 
 ## Writing Your Own Plugins
 
-See [MacroQuest2:Extending](macroquest2-extending.md) for further information.
+See [MacroQuest2:Extending](macroquest-extending.md) for further information.
 
 ### Unloading a plugin from within a plugin
 
-Because call UnloadMQ2Plugin\(name\) from within a plugin will crash, you must use a macro command to unload the plugin. DoCommand\(NULL, "/timed 20 /plugin unload"\); will queue the macro command to unload after two seconds.
+Because call UnloadMQ2Plugin(name\) from within a plugin will crash, you must use a macro command to unload the plugin. DoCommand\(NULL, "/timed 20 /plugin unload"); will queue the macro command to unload after two seconds.
 

@@ -18,7 +18,7 @@ _Notification_ can be any one of the following:
 
 |  |  |
 | :--- | :--- |
-| **leftmouseup** | Puts the item on the cursor, or returns it to _slotname_ if its already on the cursor \(same as left clicking an inventory item\). |
+| **leftmouseup** | Puts the item on the cursor, or returns it to _slotname_ if its already on the cursor (same as left clicking an inventory item). |
 | **leftmouseheld** | Clicks and holds _slotname_. Used for making hotkeys. |
 | **rightmouseup** | Casts the item, or opens the container. This is the same as right clicking an inventory slot. |
 | **rightmouseheld** | Opens up the item display window. |

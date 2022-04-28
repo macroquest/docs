@@ -12,7 +12,7 @@ Can find MSVS Pre-reqs [here](http://search.microsoft.com/search/results.aspx?st
 ## Buy Visual Studio .NET 2005 trial
 
 [VS Net 2003](http://msdn.microsoft.com/vstudio/productinfo/trial/default.aspx) The above link is a trial of VS NET 2003 it's only 10 dollars  
-\[edited the above link, it went to the 2003 trial version\]
+[edited the above link, it went to the 2003 trial version]
 
 [http://msdn.microsoft.com/getthebetas/](http://msdn.microsoft.com/getthebetas/) This link goes to the page for Non-Subscribers to MSDN. Get Visual Studio 2005 Beta 2
 
@@ -71,7 +71,7 @@ DOWNLOAD [Extraction utility](http://download.microsoft.com/download/platformsdk
 You need this to get nmake.exe, the nmake.exe floating around the net is not the newer  
 win32 one for compiling long file name apps  
 DO NOT USE THE VS8 UI or Command Pronpt!!  
-All we really want here is the correct nmake.exe Copy nmake.exe to VC++ Toolkit\bin and you can even remove VS8 \(VS.Net 2005\)
+All we really want here is the correct nmake.exe Copy nmake.exe to VC++ Toolkit\bin and you can even remove VS8 (VS.Net 2005)
 
 Maintenance Utility "NMAKE.EXE" from: Visual C++ 2005 Express Beta  
 [VC++ 2005 Download](http://download.microsoft.com/download/1/f/9/1f9c364a-7835-426f-a12e-238bdf8e3ebf/vcsetup.exe)
@@ -86,7 +86,7 @@ DOWNLOAD: [Netframework 2.0](http://download.microsoft.com/download/2/d/9/2d96a8
 For simplicity i installed everything to custom directories With NO SPACES in the names. If you work in the command line this is easier to type You must set your variable to reflect your installed paths.
 
 SET ENVIRONMENT VARIABLES  
-Edit this file \(path is where ever you installed to, use CORRECT PATHS!\)
+Edit this file (path is where ever you installed to, use CORRECT PATHS!)
 
 `"c:\Compiler\VS8\VC\bin\vcvars32.bat"`
 
@@ -124,11 +124,11 @@ WHY dont you explain in here exactly how to compile?
 Because this article is to help you set up an environment to compile  
 Not to hold your hand and do everything for you. Search is your friend.
 
-## Now what? \(Or it don't F%@$% work\)
+## Now what? (Or it don't F%@$% work)
 
 Ok
 
-1. DO NOT USE VS.Net 8 \(2005\) GUI, you only need nmake from it
+1. DO NOT USE VS.Net 8 (2005) GUI, you only need nmake from it
 2. open V C++ Toolkit command prompt
 3. Run your vcvars.bat you edited
 4. type set COMPILER=7

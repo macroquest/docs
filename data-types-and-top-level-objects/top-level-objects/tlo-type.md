@@ -6,7 +6,7 @@ Used to get information on MQ2Data types.
 
 ## Forms
 
-* [_type_](../data-types/datatype-type.md) **Type\[**name**\]**
+* [_type_](../data-types/datatype-type.md) **Type[**name**]**
 
 ## Access to Types
 

@@ -18,7 +18,7 @@ Object used to get information about your mercenary.
 
 `/echo ${Mercenary.Stance}`
 
-Displays the current stance of the mercenary based on the type \(Passive, Balanced, Aggressive, etc.\)
+Displays the current stance of the mercenary based on the type (Passive, Balanced, Aggressive, etc.)
 
 `/echo ${Mercenary.State}`
 

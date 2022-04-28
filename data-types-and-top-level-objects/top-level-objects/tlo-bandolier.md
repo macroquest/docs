@@ -22,15 +22,15 @@ Used to find information your character's Bandolier
 
 ## Examples
 
-/if \(!${Me.Bandolier\[${Bandolier\[1HB\].Active}\) {
+/if (!${Me.Bandolier[${Bandolier\[1HB].Active}) {
 
-/echo \[${Time}\] player want us to activate Bandolier: 1HB.
+/echo [${Time}] player want us to activate Bandolier: 1HB.
 
-/invoke ${Me.Bandolier\[1HB\].Activate}
+/invoke ${Me.Bandolier[1HB].Activate}
 
 }
 
-/echo I have a ${Me.Bandolier\[1HB\].Item\[1\].Name} in my primary bandoilier slot
+/echo I have a ${Me.Bandolier[1HB\].Item\[1].Name} in my primary bandoilier slot
 
 Output: I have a Snowreaver in my primary bandoilier slot
 

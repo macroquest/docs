@@ -2,11 +2,11 @@
 
 ## Syntax
 
-**/doortarget \[id \# \| filter\]**
+**/doortarget [id \# \| filter]**
 
 ## Description
 
-"Targets" a door or Switch for further manipulation \(eg. /face door\). The targeting of doors, switches will not show up in the target window. This is because the EQ servers started monitoring for targeting that is not possible through the normal client, however current MQ will show indication of your /doortarget
+"Targets" a door or Switch for further manipulation (eg. /face door). The targeting of doors, switches will not show up in the target window. This is because the EQ servers started monitoring for targeting that is not possible through the normal client, however current MQ will show indication of your /doortarget
 
 ## Examples
 

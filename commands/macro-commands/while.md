@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/while \(condition\) {**
+**/while (condition) {**
 
 `...`
 

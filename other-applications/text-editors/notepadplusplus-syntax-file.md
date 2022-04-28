@@ -10,11 +10,11 @@ User defined languages are stored in a file named **userDefineLang.xml**. If you
 
 ```<NotepadPlus>`` \`\`\`\`\` &lt;/NotepadPlus&gt;
 
-Note that newer versions of Notepad++ stores userDefineLang.xml in "%userprofile%\Application Data\Notepad++" \(Use Start &gt; Run, and copy/paste that path\). Windows 7 users will find the userDefineLang.xml under "%AppData%\Notepad++."
+Note that newer versions of Notepad++ stores userDefineLang.xml in "%userprofile%\Application Data\Notepad++" (Use Start &gt; Run, and copy/paste that path). Windows 7 users will find the userDefineLang.xml under "%AppData%\Notepad++."
 
-Alternately, create a new stub language with Notepad++ using the User Define Dialog... \(found under the Language menu\). Edit userDefineLang.xml and add the following in between the delimiters
+Alternately, create a new stub language with Notepad++ using the User Define Dialog... (found under the Language menu). Edit userDefineLang.xml and add the following in between the delimiters
 
-000000sub/return\( \) \[ \] { } + &lt; = &gt;/aa /alert /alias /altkey /press /zapvars /varadd /sendkey
+000000sub/return( ) [ ] { } + &lt; = &gt;/aa /alert /alias /altkey /press /zapvars /varadd /sendkey
 
 /banklist /beep /bind
 
@@ -150,7 +150,7 @@ VideoModesWindow\#turbo \#define \#include \#event \#chat
 
 ## Using Notepad++ with the Syntax Highlighting
 
-You will want to associate .mac \(and possible .inc\) files with Notepad++. This can be done inside the application and by associating the extensions with the OS.
+You will want to associate .mac (and possible .inc) files with Notepad++. This can be done inside the application and by associating the extensions with the OS.
 
 From Menu
 

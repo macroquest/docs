@@ -2,11 +2,11 @@
 
 ## Description
 
-Reads value\(s\) from an ini file located in a relative or absolute path.
+Reads value(s) from an ini file located in a relative or absolute path.
 
 ## Forms
 
-* [_string_]() **Ini\[\***filename**\*,**''section_**,**\_key_**,**\_default'**'\]**
+* [_string_]() **Ini[\***filename**\*,**''section_**,**\_key_**,**\_default'**']**
   * The _section_, _key_, and _default_ do not need to be given. If _section_ or _key_ are not given, multiple
 
     values are read.
@@ -14,9 +14,9 @@ Reads value\(s\) from an ini file located in a relative or absolute path.
   * _Section_ and _key_ may be set to -1 to skip them and give a new value.
   * If the ini is located in a directory other than the root Macros directory is located, you can use a DOS-style
 
-    filepath \(relative or absolute\) to locate the ini. If the macro accessing the ini is in the same non-root
+    filepath (relative or absolute) to locate the ini. If the macro accessing the ini is in the same non-root
 
-    directory, you will still to provide the \(relative or absolute\) filepath.
+    directory, you will still to provide the (relative or absolute) filepath.
 
 ## Access to Types
 

@@ -1,6 +1,6 @@
 # Wait4Rez.inc
 
-Wait4Rez.inc by A\_Druid\_00 \(originally written by fantum409\) is a snippet which handles the following:
+Wait4Rez.inc by A\_Druid\_00 (originally written by fantum409) is a snippet which handles the following:
 
 * Consents group, guild and raid
 * Waits for the Rez box to pop up

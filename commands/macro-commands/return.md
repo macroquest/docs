@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/return \[value\|${varname}\]**
+**/return [value\|${varname}]**
 
 ## Description
 

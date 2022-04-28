@@ -8,8 +8,8 @@ Object used to return information on a spell by name or by ID.
 
 |  |  |
 | :--- | :--- |
-| [_spell_](../data-types/datatype-spell.md) **Spell\[**n**\]** | Find spell by ID |
-| [_spell_](../data-types/datatype-spell.md) **Spell\[**name**\]** | Find spell by name |
+| [_spell_](../data-types/datatype-spell.md) **Spell[**n**]** | Find spell by ID |
+| [_spell_](../data-types/datatype-spell.md) **Spell[**name**]** | Find spell by name |
 
 ## Access to Types
 
@@ -23,7 +23,7 @@ Will return 1620
 
 `/echo ${Spell[1620].Duration}`
 
-Will return 16 \(ie. 16 ticks\)
+Will return 16 (ie. 16 ticks)
 
 ## See Also
 

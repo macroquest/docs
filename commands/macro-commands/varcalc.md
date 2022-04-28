@@ -6,7 +6,7 @@
 
 ## Description
 
-* Sets a variable directly to the numeric result of a calculation \(_formula_\)
+* Sets a variable directly to the numeric result of a calculation (_formula_)
 * Keep in mind that the type of the variable may itself reject this value depending on what you give it
 * **This will not work on strings!**
 
@@ -21,5 +21,5 @@
 
 ## See Also
 
-* [MQ2DataVars](../../documentation/mq2datavars.md) for further information on variables.
+* [MQ2DataVars](../../documentation/mqdatavars.md) for further information on variables.
 

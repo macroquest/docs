@@ -6,7 +6,7 @@ Determines whether a variable, array, or timer with this name exists. The variab
 
 ## Forms
 
-* [_bool_](../data-types/datatype-bool.md) **Defined\[**name**\]**
+* [_bool_](../data-types/datatype-bool.md) **Defined[**name**]**
 
 ## Access to Types
 

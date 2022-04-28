@@ -17,7 +17,7 @@ Object used to get information about your current target.
 
 _This will return "a\_commander01" on a living mob or "a\_commander's\_corpse0" on a dead mob._
 
-* To display the target's clean name \(also similar to %t on living mobs\) use ${Target.CleanName} or
+* To display the target's clean name (also similar to %t on living mobs) use ${Target.CleanName} or
 
   ${Target.DisplayName}
 
@@ -39,13 +39,13 @@ _This will return "a commander" when the corpse is targetted._
 
 `/echo ${Target.Slowed.Name} will fade in ${Target.Slowed.Duration.TotalSeconds}s`
 
-returns "\[MQ2\] Tepid Deeds will fade in 114s"
+returns "[MQ2] Tepid Deeds will fade in 114s"
 
 * Example of using new Mezzed target datatype
 
 `/echo ${Target} will break mezz in ${Target.Mezzed.Duration.TotalSeconds}s`
 
-returns "\[MQ2\] a\_pyre\_beetle48 will break mezz in 66s"
+returns "[MQ2] a\_pyre\_beetle48 will break mezz in 66s"
 
 ## See Also
 

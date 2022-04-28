@@ -2,15 +2,15 @@
 
 ## MQ2Data Types
 
-MQ2Data types are the means by which properties or methods \([Data Types](../data-types-and-top-level-objects/data-types/)\) of TLOs \([Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/)\) are accessed and used within macros. [Variables](mq2datavars.md) in MQ2 are treated as [Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/).
+MQ2Data types are the means by which properties or methods ([Data Types](../data-types-and-top-level-objects/data-types/)\) of TLOs \([Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/)) are accessed and used within macros. [Variables](mqdatavars.md) in MQ2 are treated as [Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/).
 
 The basic syntax for accessing this MQ2Data is:
 
 `${TopLevelObject[index].Member[index].Member[index]}`
 
-To access a property of a TLO you begin with the TLO type you want, then append successive type members or properties until you get the result you're looking for. The use of properties can become very complex \(ie. extremely long\), especially when using ${Math.Calc\[\]}.
+To access a property of a TLO you begin with the TLO type you want, then append successive type members or properties until you get the result you're looking for. The use of properties can become very complex (ie. extremely long), especially when using ${Math.Calc[]}.
 
-**Note:** You absolutely MUST pay attention to the return types of each member and object. Make sure to always compare identical [Data Types](../data-types-and-top-level-objects/data-types/) when doing comparisons \(eg. string to a string, or a numeric to a numeric\). Using .Equal or .NotEqual to compare .Name to .ID will give errors. For example, ${Target.Name.Equal\[${Me.ID}\]} will not work. .Name returns a string, but .ID returns an int
+**Note:** You absolutely MUST pay attention to the return types of each member and object. Make sure to always compare identical [Data Types](../data-types-and-top-level-objects/data-types/) when doing comparisons (eg. string to a string, or a numeric to a numeric). Using .Equal or .NotEqual to compare .Name to .ID will give errors. For example, ${Target.Name.Equal[${Me.ID}]} will not work. .Name returns a string, but .ID returns an int
 
 Also be sure to look at the To String of each type.
 
@@ -33,7 +33,7 @@ Also be sure to look at the To String of each type.
 
 [_float_](../data-types-and-top-level-objects/data-types/datatype-float.md) **Distance**
 
-Distance from player in \(x,y\)
+Distance from player in (x,y)
 
 * So you append append .Distance to the TLO name to get: Target.Distance
 * Once you have gotten to the information you want, you MUST enclose the entire string in ${ }, so the end result of
@@ -50,7 +50,7 @@ Distance from player in \(x,y\)
 
 ## MQ2Data Members
 
-Members can also be describd as Properties or things that are property \(owned by, contained by, etc\) of objects of a type.
+Members can also be describd as Properties or things that are property (owned by, contained by, etc) of objects of a type.
 
 For example, the **Desk** type of object might have a property called **Screws**. The **Screws** property itself might be represented like this:
 
@@ -62,7 +62,7 @@ To demonstrate that an object named **Screws** is a member of the **Desk** type,
 
 [_int_](../data-types-and-top-level-objects/data-types/datatype-int.md) **Desk.Screws**
 
-The return type is of the last member appended \(ie. int\).
+The return type is of the last member appended (ie. int).
 
 ## MQ2Data Inheritance
 

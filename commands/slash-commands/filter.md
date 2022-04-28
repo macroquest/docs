@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/filter \[ macros all\|enhanced\|none \] \[ skills all\|increase\|none \] \[ target \| money \| food \| encumber \| debug** _**on**_**\|**_**off**_ **\] \[ name \[ add\|remove** _**text**_ **\] \] \[ zrange \# \] \[ mq** _**on**_**\|**_**off**_ **\]** '''
+**/filter [ macros all\|enhanced\|none \] \[ skills all\|increase\|none \] \[ target \| money \| food \| encumber \| debug** _**on**_**\|**_**off**_ **\] \[ name \[ add\|remove** _**text**_ **\] \] \[ zrange \# \] \[ mq** _**on**_**\|**_**off**_ **]** '''
 
 ## Description
 

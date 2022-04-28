@@ -6,7 +6,7 @@
 
   deals with fizzles, and provides a wealth of return code information for use in the calling macro.
 
-* It was originally written by ~rusty and later improved by A\_Druid\_00 \(VIP version\), and is probably the most-used
+* It was originally written by ~rusty and later improved by A\_Druid\_00 (VIP version), and is probably the most-used
 
   inc file today. It's the de-facto standard include for any macro which requires the casting of a spell, an AA, or
 
@@ -15,7 +15,7 @@
 * As with many of the inc files on the forums, there are 2 versions of spell\_routines.inc:
 * [Non-VIP](https://macroquest2.com/phpBB3/viewtopic.php?t=7568). This is the original from ~rusty.
 * [VIP](https://macroquest2.com/phpBB3/viewtopic.php?t=11656). This is the updated version, maintained by A\_Druid\_00.
-* The VIP version has been improved slightly and it a bit smaller \(and thus faster\). It also improves speed by making use of the MQ2Exchange plugin which is available in the VIP area. Both versions are interchangeable, and there are only minor differences between them. Both are fully functional.
+* The VIP version has been improved slightly and it a bit smaller (and thus faster). It also improves speed by making use of the MQ2Exchange plugin which is available in the VIP area. Both versions are interchangeable, and there are only minor differences between them. Both are fully functional.
 
 ## Usage
 
@@ -27,7 +27,7 @@ After this, you can use the commands/functions listed below.
 
 ## /call Cast
 
-**/call Cast "spellname\|itemname\|AAname\|AA\#" \[item\|alt\|gem\#\] \["give up time"\] \["custom subroutine name"\] \["Number of resist recasts"\]**
+**/call Cast "spellname\|itemname\|AAname\|AA\#" [item\|alt\|gem\#\] \["give up time"\] \["custom subroutine name"\] \["Number of resist recasts"]**
 
 _Note: Any of the above fields must use quotes if they are more than one word._
 
@@ -50,7 +50,7 @@ The CheckHP subroutine is as follows:
 `/if ( ${Target.PctHPs}>=80 ) /call Interrupt`  
 `/return`
 
-This will continuously /call the CheckHP subroutine while the spell is casting, and if the target's HPs rise above 80% \(ie. they got a heal from someone else\), it will interrupt the casting.
+This will continuously /call the CheckHP subroutine while the spell is casting, and if the target's HPs rise above 80% (ie. they got a heal from someone else), it will interrupt the casting.
 
 ## /call SwapItem
 
@@ -95,7 +95,7 @@ Essentially it dismounts if you're on a horse, and then does a /stopcast.
 
 |  |  |
 | :--- | :--- |
-| CAST\_CANCELLED | Spell was cancelled by ducking \(either manually or because mob died\) |
+| CAST\_CANCELLED | Spell was cancelled by ducking (either manually or because mob died) |
 | CAST\_CANNOTSEE | You can't see your target |
 | CAST\_IMMUNE | Target is immune to this spell |
 | CAST\_INTERRUPTED | Casting was interrupted and exceeded the given time limit |
@@ -106,7 +106,7 @@ Essentially it dismounts if you're on a horse, and then does a /stopcast.
 | CAST\_OUTOFMANA | You don't have enough mana for this spell! |
 | CAST\_OUTOFRANGE | Target is out of range |
 | CAST\_RESISTED | Your spell was resisted! |
-| CAST\_SUCCESS | Your spell was cast successfully! \(yay\) |
+| CAST\_SUCCESS | Your spell was cast successfully! (yay) |
 | CAST\_UNKNOWNSPELL | Spell/Item/Ability was not found |
 
 ## Other

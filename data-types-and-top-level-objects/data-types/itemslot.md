@@ -6,13 +6,13 @@ a **Member** of [DataType:item](datatype-item.md)
 
 Usage:
 
-/echo ${FindItem\[Backpack\].ItemSlot}
+/echo ${FindItem[Backpack].ItemSlot}
 
 Return:
 
-\[MQ2\] 23
+[MQ2] 23
 
-That means it found a Backpack in slot 23 of your inventory. \(First bag slot\)
+That means it found a Backpack in slot 23 of your inventory. (First bag slot)
 
 ## See Also
 

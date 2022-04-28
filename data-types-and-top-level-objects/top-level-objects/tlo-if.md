@@ -6,7 +6,7 @@ Performs Math.Calc on _conditions_, gives _whentrue_ if non-zero, gives _whenfal
 
 ## Forms
 
-* [_string_]() **If\[\***conditions,whentrue,whenfalse**\*\]**
+* [_string_]() **If[\***conditions,whentrue,whenfalse**\*]**
 
 ## Access to Types
 

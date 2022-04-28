@@ -2,7 +2,7 @@
 
 ## Description
 
-Access to objects of type corpse, which is the currently active corpse \(ie. the one you are looting\).
+Access to objects of type corpse, which is the currently active corpse (ie. the one you are looting).
 
 ## Forms
 

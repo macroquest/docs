@@ -12,8 +12,8 @@ Access to inventory and pack slots, as well as other similar types of slots with
 
 |  |  |
 | :--- | :--- |
-| [_invslot_](../data-types/datatype-invslot.md) **InvSlot\[**name**\]** | Inventory slot by name |
-| [_invslot_](../data-types/datatype-invslot.md) **InvSlot\[**\#**\]** | Inventory slot by number |
+| [_invslot_](../data-types/datatype-invslot.md) **InvSlot[**name**]** | Inventory slot by name |
+| [_invslot_](../data-types/datatype-invslot.md) **InvSlot[**\#**]** | Inventory slot by number |
 
 ## Access to Types
 

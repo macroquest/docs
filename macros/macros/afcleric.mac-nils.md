@@ -84,7 +84,7 @@ Updated:
 
 example: /bc sayzone wish to go will target senders target and say wish to go
 
-\(bugged, tank's target is temporary fix\)
+(bugged, tank's target is temporary fix)
 
 ## Commands
 
@@ -131,13 +131,13 @@ example: /bc sayzone wish to go will target senders target and say wish to go
 * foeoff - click off Flight of Eeagles
 * follow - start following toon that issued the command - toon has to be on master list
 * follow stop - stop following a toon
-* clickzone - click nearest zoneline \(book, zonedoor, etc.\) - has to be within distance of 12
+* clickzone - click nearest zoneline (book, zonedoor, etc.) - has to be within distance of 12
 * sayzone - will target requestor's target and echo the following text sent with the command - currently uses tank's
 
-  target \(bugged, tank's target is temporary fix\)
+  target (bugged, tank's target is temporary fix)
 
 * mana check - report mana percent in channel
-* slowcamp - sits and camps to desktop \(fails if toon is on a mount\)
+* slowcamp - sits and camps to desktop (fails if toon is on a mount)
 * rezz me - will target and attempt to rezz the requestor's corpse, will use epic if available
 * leaveraid - will disband you from a raid
 

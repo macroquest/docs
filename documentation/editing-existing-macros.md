@@ -168,7 +168,7 @@ Looking at the code, the next thing it does is it waits until it's fully zoned b
 `}`  
 `/end`
 
-Here we go again - next section deals with using the built in command /corpse to summon the corpse. \(In case it was moved since you had been rezzed.\)
+Here we go again - next section deals with using the built in command /corpse to summon the corpse. (In case it was moved since you had been rezzed.)
 
 `| -----------------------`  
 `| -- Pull corpse close --`  
@@ -191,7 +191,7 @@ Here we go again - next section deals with using the built in command /corpse to
 
 Now the next section we run across our first spot where we will use something, and remove something from the same section. Before we do that though, we need to take a brief look into one of the most basic programming ideas, the IF-THEN statement.
 
-In plain english, an IF-THEN statement reads just like this: if A is true, then do B. Now, we can add a little to it, and add ELSE. IF-THEN-ELSE would read in plain english like this: if A is true, then B, otherwise\(else\) do C.
+In plain english, an IF-THEN statement reads just like this: if A is true, then do B. Now, we can add a little to it, and add ELSE. IF-THEN-ELSE would read in plain english like this: if A is true, then B, otherwise(else) do C.
 
 Now, each programming language is different, but the basic way MacroQuest evaluates this is something similar to this:
 
@@ -233,7 +233,7 @@ Now I am NOT a coder. I learned one type of code and as soon as I got proficient
 `/if (${Me.State.NotEqual[BIND]}) /goto :corpsepull`  
 `/varset loottotal 0`
 
-Some of that IF-THEN-ELSE statement will not be needed for our macro. We will need the /loot part, but the rest of it can be canned. Also in that section is a delay of some sort - 5s \(assuming 5 seconds\) and then a statement that sorta looks like it's asking if we are binding wound. Then it has another IF-THEN statement that looks like IF you aren't in the bind wound position THEN goto :corpsepull. We removed corpsepull already, so it looks like we can get rid of the statement in whole. The /varset was put in there for a reason, and I'm not entirely sure why yet - so I'm going to leave it in.
+Some of that IF-THEN-ELSE statement will not be needed for our macro. We will need the /loot part, but the rest of it can be canned. Also in that section is a delay of some sort - 5s (assuming 5 seconds) and then a statement that sorta looks like it's asking if we are binding wound. Then it has another IF-THEN statement that looks like IF you aren't in the bind wound position THEN goto :corpsepull. We removed corpsepull already, so it looks like we can get rid of the statement in whole. The /varset was put in there for a reason, and I'm not entirely sure why yet - so I'm going to leave it in.
 
 So now, we have this:
 
@@ -292,7 +292,7 @@ So now, we have this:
 `/echo Done looting. ${lootleft} Item(s) left on your corpse.`  
 `/return`
 
-Looks like we're almost done. Now, let's change one thing that's been bothering me. FaNTuM's macro by default leaves 1 item on the corpse. If we're looting NPC's then we don't need to leave 1 item on the corpse at all. \(Unless you are a Necro or you group with one often that is\)
+Looks like we're almost done. Now, let's change one thing that's been bothering me. FaNTuM's macro by default leaves 1 item on the corpse. If we're looting NPC's then we don't need to leave 1 item on the corpse at all. (Unless you are a Necro or you group with one often that is)
 
 Scanning the code I see:
 

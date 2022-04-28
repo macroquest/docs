@@ -203,14 +203,14 @@ This is the type for your current task.
 `We are iterating through the IN MEMORY quest entries, we are NOT`  
 `iterating the window list, if you want to do that, use the Window TLO.`
 
-If you're smart don't use ${Task\[1\].ID} and expect it to be whatever is the first list item. ALWAYS refer to tasks by their NAME.
+If you're smart don't use ${Task[1].ID} and expect it to be whatever is the first list item. ALWAYS refer to tasks by their NAME.
 
 `Example: /echo ${Task[3].WindowIndex}`  
 `Example: /echo ${Task[Into The Muck].WindowIndex}`
 
 `/echo ${Task[hatch].Type}`
 
-Output: Shared \(Can be Shared or Quest in this context\)
+Output: Shared (Can be Shared or Quest in this context)
 
 The Task TLO also has a .Select "Method":
 

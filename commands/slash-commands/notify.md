@@ -2,11 +2,11 @@
 
 ## Syntax
 
-**/notify** _**windowname**_ **\*\*\_**0**\_**\|**\_**controlname**\_** \[ **\_**notification**\_** \[**\_**data**\_**\] \]\*\*
+**/notify** _**windowname**_ **\*\*\_**0**\_**\|**\_**controlname**\_** [ **\_**notification**\_** \[**\_**data**\_**\] ]\*\*
 
 ## Description
 
-This is used to interact with UI windows instead of using the mouse \(/notify cannot be used to interact with objects\).
+This is used to interact with UI windows instead of using the mouse (/notify cannot be used to interact with objects).
 
 * Entering "0" for _controlname_ would send the message to the window itself \(used for "close" at least, possibly
 

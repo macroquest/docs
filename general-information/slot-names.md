@@ -18,7 +18,7 @@ Picking up an item from pack 10 first slot in that pack:
 /itemnotify in pack${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot}-22].Int} ${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot2} + 1].Int} leftmouseup
 ```
 
-Why not just /itemnotify in ${Me.Inventory\[32\].Item\[1\].ItemSlot} ${Me.Inventory\[32\].Item\[1\].ItemSlot2} you may ask...
+Why not just /itemnotify in ${Me.Inventory[32\].Item\[1\].ItemSlot} ${Me.Inventory\[32\].Item\[1].ItemSlot2} you may ask...
 
 well, we didn't have .ItemSlot and .ItemSlot2 until recently, so /itemnotify works with the old pack system that starts at slot 1 not 0
 
@@ -41,13 +41,13 @@ ItemSlot Inventory
 +----+----+
 ```
 
-.ItemSlot2 is a "sub" slot, example if .ItemSlot is 23 \(a container like a Backpack for example\) and your item is inside that container this will return what slot INSIDE that container it’s in... complicated? Not really.
+.ItemSlot2 is a "sub" slot, example if .ItemSlot is 23 (a container like a Backpack for example) and your item is inside that container this will return what slot INSIDE that container it’s in... complicated? Not really.
 
-Picking up an item from pack 10 first slot in that pack: /itemnotify in pack${Math.Calc\[${Me.Inventory\[32\].Item\[1\].ItemSlot}-22\].Int} ${Math.Calc\[${Me.Inventory\[32\].Item\[1\].ItemSlot2} + 1\].Int} leftmouseup
+Picking up an item from pack 10 first slot in that pack: /itemnotify in pack${Math.Calc[${Me.Inventory\[32\].Item\[1\].ItemSlot}-22\].Int} ${Math.Calc\[${Me.Inventory\[32\].Item\[1\].ItemSlot2} + 1].Int} leftmouseup
 
-Or say you want an Iron Ration, which is in bag 1 in slot 8 Doing /echo ${FindItem\[=Iron Ration\].ItemSlot} will return 23
+Or say you want an Iron Ration, which is in bag 1 in slot 8 Doing /echo ${FindItem[=Iron Ration].ItemSlot} will return 23
 
-Doing /echo ${FindItem\[=Iron Ration\].ItemSlot2} will return 7 \(slots start at 0 so this is in fact correct\)
+Doing /echo ${FindItem[=Iron Ration].ItemSlot2} will return 7 (slots start at 0 so this is in fact correct)
 
 For the above example, you would be using this:
 
@@ -61,7 +61,7 @@ and programatically:
 /itemnotify in pack${Math.Calc[${Me.Inventory[${FindItem[=Iron Ration].ItemSlot}].ItemSlot}-22].Int}
 ```
 
-Line above, then a space, and the following\(I couldn't do a single line due to lack of linewrap\):
+Line above, then a space, and the following(I couldn't do a single line due to lack of linewrap):
 
 ```text
 ${Math.Calc[${Me.Inventory[${FindItem[=Iron Ration].ItemSlot}].Item[${FindItem[=Iron Ration].ItemSlot2}].ItemSlot2} + 1].Int} leftmouseup

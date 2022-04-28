@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/popupecho \[color\] \[ \[ time in seconds to display message \] message \]**
+**/popupecho [color\] \[ \[ time in seconds to display message \] message ]**
 
 ## Description
 

@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/doors \[**_**"filter"**_**\]**
+**/doors [**_**"filter"**_**]**
 
 ## Description
 

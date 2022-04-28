@@ -21,17 +21,17 @@ BuffTimer will be equal to 0 in:
 
 * 360 tenths of 1 second
 * 36 seconds
-* 6 ticks \(a tick is 6 seconds\)
+* 6 ticks (a tick is 6 seconds)
 
-Timers may also be set with an "s" \(seconds\) or an "m" \(minutes\) appended to the value. For example:
+Timers may also be set with an "s" (seconds\) or an "m" \(minutes) appended to the value. For example:
 
 `/varset BuffTimer 360s`
 
-This would set the timer to 3600 \(360\*10\) tenths of 1 second
+This would set the timer to 3600 (360\*10) tenths of 1 second
 
 `/varset BuffTimer 360m`
 
-This would set the timer to 216000 \(360\*60\*10\) tenths of 1 second
+This would set the timer to 216000 (360\*60\*10) tenths of 1 second
 
 ```text
 sub main

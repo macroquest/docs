@@ -8,8 +8,8 @@ Object used to get information on a specific spawn. Uses the filters under [Spaw
 
 |  |  |
 | :--- | :--- |
-| [_spawn_](../data-types/datatype-spawn.md) **Spawn\[**\#**\]** | Spawn matching ID \# |
-| [_spawn_](../data-types/datatype-spawn.md) **Spawn\[**search string**\]** | Any spawns matching _search string_ |
+| [_spawn_](../data-types/datatype-spawn.md) **Spawn[**\#**]** | Spawn matching ID \# |
+| [_spawn_](../data-types/datatype-spawn.md) **Spawn[**search string**]** | Any spawns matching _search string_ |
 
 ## Access to Types
 

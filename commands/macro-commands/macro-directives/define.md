@@ -2,7 +2,7 @@
 
 ### Description
 
-\#define can be used in place of some common variables, but variables are a lot more flexible \(eg. they can be changed within the macro\) and are preferred. One good use of \#define would be to enable or disable debugging information within a macro.
+\#define can be used in place of some common variables, but variables are a lot more flexible (eg. they can be changed within the macro) and are preferred. One good use of \#define would be to enable or disable debugging information within a macro.
 
 ### Use
 
@@ -14,7 +14,7 @@ Replaces all occurrences of _replaceme_ with replacement throughout the macro. E
 
 When the macro executes, all occurrences of "Me" will be replaced by "charactername". You can't use variables with
 
-## define \(since they execute before Sub Main\).
+## define (since they execute before Sub Main).
 
 ### Example
 

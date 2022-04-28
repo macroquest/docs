@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/face \[predict\] \[fast\] \[nolook\] \[away\] \[ alert \# \| loc y,x,z \| heading angle \| item \| door \| id \# \|** _**name**_ **\]**
+**/face [predict\] \[fast\] \[nolook\] \[away\] \[ alert \# \| loc y,x,z \| heading angle \| item \| door \| id \# \|** _**name**_ **]**
 
 ## Description
 
@@ -14,7 +14,7 @@ Some of the options are listed below.
 | :--- | :--- |
 | **predict** | Returns an estimated distance/location, unless the target is stationary |
 | **fast** | Faces you instantly |
-| **nolook** | Faces your target without changing your vertical viewing angle \(looking up/date at the target\) |
+| **nolook** | Faces your target without changing your vertical viewing angle (looking up/date at the target) |
 | **away** | Turn you in the opposite direction of your target |
 | _name_ | Considered a [Spawn Search](../../general-information/spawn-search.md) |
 
@@ -33,7 +33,7 @@ Using **/face** without a target will do nothing.
 | /face fast nolook | Immediately turns your character to face your target without changing your vertical view angle |
 | /face item | Faces and looks at the item following an /itemtarget |
 | /face fast item | Immediately faces and looks at the item following an /itemtarget |
-| /face loc y,x,z | Faces the given loc \(**note**: no spaces in 'y,x,z' portion\) |
+| /face loc y,x,z | Faces the given loc (**note**: no spaces in 'y,x,z' portion) |
 
 ## See Also
 

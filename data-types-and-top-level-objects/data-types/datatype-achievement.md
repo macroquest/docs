@@ -10,10 +10,10 @@ Provides the details about a single achievement and allows access to an achievem
 | \_\_[_string_](datatype-string.md)\_\_ | **Name** | The achievement's name |
 | \_\_[_string_](datatype-string.md)\_\_ | **Description** | The achievement's description |
 | [_int_](datatype-int.md) | **Points** | The point value for the achievement |
-| \_\_[_achievementobj_](datatype-achievementobj.md)\_\_ | **Objective\[**\#\|_Description_**\]** | Find an objective by its objective ID or Description. |
-| \_\_[_achievementobj_](datatype-achievementobj.md)\_\_ | **ObjectiveByIndex\[**\#**\]** | Find an objective by its visual ordering as displayed in the achievements window. |
+| \_\_[_achievementobj_](datatype-achievementobj.md)\_\_ | **Objective[**\#\|_Description_**]** | Find an objective by its objective ID or Description. |
+| \_\_[_achievementobj_](datatype-achievementobj.md)\_\_ | **ObjectiveByIndex[**\#**]** | Find an objective by its visual ordering as displayed in the achievements window. |
 | [_int_](datatype-int.md) | **ObjectiveCount** | The number of objectives in this achievement. |
-| \_\_[_string_](datatype-string.md)\_\_ | **Link\[**_opt: Name_**\]** | Generate an achievement link. An optional name can be provided to display in the achievement, otherwise the current character's name will be used. |
+| \_\_[_string_](datatype-string.md)\_\_ | **Link[**_opt: Name_**]** | Generate an achievement link. An optional name can be provided to display in the achievement, otherwise the current character's name will be used. |
 | [_int_](datatype-int.md) | **Index** | The index of the achievement. See [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices) for more information. |
 | [_int_](datatype-int.md) | **IconID** | ID of the Achievement's Icon. See [Achievement Icon](datatype-achievement.md#achievement-icon) below. |
 | \_\_[_string_](datatype-string.md)\_\_ | **State** | The achievement state. See [Achievement State](datatype-achievement.md#achievement-state) below. |

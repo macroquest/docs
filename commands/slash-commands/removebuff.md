@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/removebuff \[-pet\|-both\] Name Of Buff**
+**/removebuff [-pet\|-both] Name Of Buff**
 
 ## Description
 

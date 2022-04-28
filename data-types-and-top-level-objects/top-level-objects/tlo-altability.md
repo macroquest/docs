@@ -8,8 +8,8 @@ Note: The AltAbility TLO should not be used except for experimental data. If you
 
 |  |  |
 | :--- | :--- |
-| [_altability_](../data-types/datatype-altability.md) **AltAbility\[**\#**\]** | Alt Ability by number |
-| [_altability_](../data-types/datatype-altability.md) **AltAbility\[**name**\]** | Alt Ability by name |
+| [_altability_](../data-types/datatype-altability.md) **AltAbility[**\#**]** | Alt Ability by number |
+| [_altability_](../data-types/datatype-altability.md) **AltAbility[**name**]** | Alt Ability by name |
 
 ## Access to Types
 

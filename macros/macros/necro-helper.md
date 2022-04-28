@@ -2,7 +2,7 @@
 
 This is a simple helper macro I use when playing my necro toon. It does the following:
 
-At top left of display \(under the lag-o-meter\)
+At top left of display (under the lag-o-meter)
 
 * Displays your state: Sitting, standing, feign etc \(I wanted this mostly because the spectre animation when lich'ed
 
@@ -28,7 +28,7 @@ In middle of screen
 
 &lt;/code&gt;
 
-The macro code \(for your **Release\Macros** directory\):
+The macro code (for your **Release\Macros** directory):
 
 `|`  
 `| NecroHelper.mac by pw`  
@@ -544,7 +544,7 @@ The macro code \(for your **Release\Macros** directory\):
 `| FORMAT DURATION TO 00:00:00`  
 `|`  
 `/varset duration ${Math.Calc[${HudArrayTime[${counter}]}-${Time.SecondsSinceMidnight}].Int}`  
-````` /if \(${duration}&gt;3600\) {``` /varset myhour ${Math.Calc\[${duration}/3600\].Int}````` /varset duration ${Math.Calc\[\(\(${duration}/3600\)-${myhour}\)\*3600\]}```} else {``  
+````` /if (${duration}&gt;3600\) {``` /varset myhour ${Math.Calc[${duration}/3600\].Int}````` /varset duration ${Math.Calc\[\(\(${duration}/3600\)-${myhour})\*3600]}```} else {``  
 `/varset myhour`  
 `}`
 
@@ -584,7 +584,7 @@ The macro code \(for your **Release\Macros** directory\):
 
 &lt;/code&gt;
 
-You will also need these elements in your **MQ2HUD.ini** file \(located in **Release** directory\) NOTE: this file may not be present - create a new one with your favourite text editor \(or notepad\).
+You will also need these elements in your **MQ2HUD.ini** file (located in **Release** directory\) NOTE: this file may not be present - create a new one with your favourite text editor \(or notepad).
 
 `[Elements]`  
 `State=3,5,25,255,255,255,${Me.State}`  
@@ -593,7 +593,7 @@ You will also need these elements in your **MQ2HUD.ini** file \(located in **Rel
 `AAExp=3,5,55,255,255,255,AA: ${Me.PctAAExp}%`  
 `Tribute=3,5,65,2,255,2,${If[${Me.TributeActive},Tribute is on,]}`  
 `GM=3,5,75,255,2,2,${If[${Spawn[gm].ID},GM: ${Spawn[gm].Name},]}`  
-````` HudTimer1=1,480,240,050,255,255,${If\[${HudArraySpell\[1\].Equal\[none\]},,${HudArrayDuration\[1\]}\]}``` HudSpell1=1,530,240,255,255,255,${If\[${HudArraySpell\[1\].Equal\[none\]},,${HudArraySpell\[1\]}\]}````` HudTarget1=1,630,240,255,255,050,${If\[${HudArraySpell\[1\].Equal\[none\]},,${HudArrayNPCName\[1\]}\]}\`
+````` HudTimer1=1,480,240,050,255,255,${If[${HudArraySpell\[1\].Equal\[none\]},,${HudArrayDuration\[1\]}\]}``` HudSpell1=1,530,240,255,255,255,${If\[${HudArraySpell\[1\].Equal\[none\]},,${HudArraySpell\[1\]}\]}````` HudTarget1=1,630,240,255,255,050,${If\[${HudArraySpell\[1\].Equal\[none\]},,${HudArrayNPCName\[1\]}]}\`
 
 `HudTimer2=3,480,250,050,255,255,${If[${HudArraySpell[2].Equal[none]},,${HudArrayDuration[2]}]}`  
 `HudSpell2=3,530,250,255,255,255,${If[${HudArraySpell[2].Equal[none]},,${HudArraySpell[2]}]}`  
@@ -610,7 +610,7 @@ You will also need these elements in your **MQ2HUD.ini** file \(located in **Rel
 `HudTimer5=3,480,280,050,255,255,${If[${HudArraySpell[5].Equal[none]},,${HudArrayDuration[5]}]}`  
 `HudSpell5=3,530,280,255,255,255,${If[${HudArraySpell[5].Equal[none]},,${HudArraySpell[5]}]}`  
 `HudTarget5=3,630,280,255,255,050,${If[${HudArraySpell[5].Equal[none]},,${HudArrayNPCName[5]}]}`  
-````` HudTimer6=3,480,290,050,255,255,${If\[${HudArraySpell\[6\].Equal\[none\]},,${HudArrayDuration\[6\]}\]}``` HudSpell6=3,530,290,255,255,255,${If\[${HudArraySpell\[6\].Equal\[none\]},,${HudArraySpell\[6\]}\]}````` HudTarget6=3,630,290,255,255,050,${If\[${HudArraySpell\[6\].Equal\[none\]},,${HudArrayNPCName\[6\]}\]}```[MQ2HUD]``  
+````` HudTimer6=3,480,290,050,255,255,${If[${HudArraySpell\[6\].Equal\[none\]},,${HudArrayDuration\[6\]}\]}``` HudSpell6=3,530,290,255,255,255,${If\[${HudArraySpell\[6\].Equal\[none\]},,${HudArraySpell\[6\]}\]}````` HudTarget6=3,630,290,255,255,050,${If\[${HudArraySpell\[6\].Equal\[none\]},,${HudArrayNPCName\[6\]}]}```[MQ2HUD]``  
 `Last=Elements`
 
 &lt;/code&gt;

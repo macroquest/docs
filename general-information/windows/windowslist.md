@@ -138,7 +138,7 @@
 | RaidWindow |  |
 | RespawnWindow | hovering |
 | SelectorWindow | alt + w |
-| ShortDurationBuffWindow | "Songs" \(SD buffs\) window |
+| ShortDurationBuffWindow | "Songs" (SD buffs) window |
 | SkillsSelectWindow | select skill for actions window |
 | SkillsWindow | skill list with numerical value |
 | SocialEditWnd | social editing window |
@@ -162,7 +162,7 @@
 | TrackingWnd | track |
 | TradeskillWnd |  |
 | TradeWnd | trade |
-| TrainWindow | train new skills \(guildmaster\) |
+| TrainWindow | train new skills (guildmaster) |
 | TributeBenefitWnd |  |
 | TributeMasterWnd |  |
 | TaskSelectWnd | Task Select Window |
@@ -171,5 +171,5 @@
 | TSEL\_ChooseLabel | Task Select Window |
 | TSEL\_AcceptButton | Task Select Window |
 | TSEL\_DeclineButton | Task Select Window |
-| VideoModesWindow | select video modes \(display options\) |
+| VideoModesWindow | select video modes (display options) |
 

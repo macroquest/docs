@@ -2,29 +2,29 @@
 
 ## Overview
 
-MacroQuest.ini is the configuration file used by MacroQuest2. By default it is stored in the root MQ2 folder alongside MacroQuest2.exe.
+MacroQuest.ini is the configuration file used by MacroQuest2. By default it is stored in the root MQ2 folder alongside macroquest.exe.
 
 ## INI Sections
 
-### \[MacroQuest\]
+### [MacroQuest]
 
-### \[Aliases\]
+### [Aliases]
 
-### \[Plugins\]
+### [Plugins]
 
-### \[Key Binds\]
+### [Key Binds]
 
-### \[Substitutions\]
+### [Substitutions]
 
-### \[SWho Filter\]
+### [SWho Filter]
 
-### \[Captions\]
+### [Captions]
 
-### \[Caption Colors\]
+### [Caption Colors]
 
-### \[Filter Names\]
+### [Filter Names]
 
-### \[AutoRun\]
+### [AutoRun]
 
 ## See Also
 

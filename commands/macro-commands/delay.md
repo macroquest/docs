@@ -2,13 +2,13 @@
 
 ## Syntax
 
-**/delay \#\[s\|m\] \[**_**condition**_**\]**
+**/delay \#[s\|m\] \[**_**condition**_**]**
 
 ## Description
 
 Fully pauses the macro for the amount of time specified, or until _condition_ is met.
 
-Time can be specified in 10ths of a second \(a number by itself\) or in seconds \(number followed by an "s"\) or minutes \(number followed by "m"\).
+Time can be specified in 10ths of a second (a number by itself\) or in seconds \(number followed by an "s"\) or minutes \(number followed by "m").
 
 ## Examples
 
@@ -27,9 +27,9 @@ Time can be specified in 10ths of a second \(a number by itself\) or in seconds 
 /delay ${Math.Calc[${Math.Rand[10]}+5]}s       Delays the macro for a random amount of seconds in the range of 5 to 15
 ```
 
-* The below example will hold down the forward key and will execute "/keypress forward" \(press forward once\) when
+* The below example will hold down the forward key and will execute "/keypress forward" (press forward once) when
 
-  ${Spawn\[1234\].Distance} \&lt; ${Spawn\[1234\].MaxMeleeTo} evaluates to TRUE or after 1 second passes.
+  ${Spawn[1234\].Distance} \&lt; ${Spawn\[1234].MaxMeleeTo} evaluates to TRUE or after 1 second passes.
 
 ```text
 /keypress forward hold

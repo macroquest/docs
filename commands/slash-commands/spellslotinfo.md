@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/spellslotinfo** **\[\#\|"spell name"\]**
+**/spellslotinfo** **[\#\|"spell name"]**
 
 ## Description
 

@@ -21,28 +21,28 @@ Contains data about items
 | [_int_](datatype-int.md) | **AugType** | Augment Type |
 | [_int_](datatype-int.md) | **Avoidance** | Avoidance |
 | [_int_](datatype-int.md) | **BuyPrice** | The cost to buy this item from active merchant |
-| [_float_](datatype-float.md) | **CastTime** | Spell effect's cast time \(in seconds\) |
+| [_float_](datatype-float.md) | **CastTime** | Spell effect's cast time (in seconds) |
 | [_int_](datatype-int.md) | **CHA** | CHA value on item |
 | [_int_](datatype-int.md) | **Charges** | Charges |
 | [_int_](datatype-int.md) | **Clairvoyance** | Clairvoyance |
-| \_\_[_string_](datatype-string.md)\_\_ | **Class\[**\#**\]** | Returns the \#th long class name of the listed classes on an item. Items suitable for ALL classes will effectively have all 17 classes listed. |
+| \_\_[_string_](datatype-string.md)\_\_ | **Class[**\#**]** | Returns the \#th long class name of the listed classes on an item. Items suitable for ALL classes will effectively have all 17 classes listed. |
 | [_int_](datatype-int.md) | **Classes** | The number of classes that can use the item. Items suitable for ALL classes will return 16. |
 | [_int_](datatype-int.md) | **CombatEffects** | CombatEffects |
 | [_int_](datatype-int.md) | **Container** | Number of slots, if this is a container |
 | [_int_](datatype-int.md) | **DamageShieldMitigation** | Damage Shield Mitigation |
 | [_int_](datatype-int.md) | **DamShield** | Damage Shield value on item |
-| [_string_](datatype-string.md)\_\_ | **Deity\[**\#**\]** | Returns the \#th deity of the listed deities on an item. Items with no deity restrictions will return NULL for all values of \#. |
+| [_string_](datatype-string.md)\_\_ | **Deity[**\#**]** | Returns the \#th deity of the listed deities on an item. Items with no deity restrictions will return NULL for all values of \#. |
 | [_int_](datatype-int.md) | **Deities** | The number of deities that can use the item. Items with no deity restrictions will return 0. |
 | [_int_](datatype-int.md) | **DEX** | DEX value on item |
 | [_string_](datatype-string.md)\_\_ | **DMGBonusType** | "None", "Magic", "Fire", "Cold", "Poison", "Disease" |
 | [_int_](datatype-int.md) | **DoTShielding** | DoT Shielding |
-| [_string_](datatype-string.md)\_\_ | **EffectType** | Spell effect type \(see below for spell effect types\) |
+| [_string_](datatype-string.md)\_\_ | **EffectType** | Spell effect type (see below for spell effect types) |
 | [_int_](datatype-int.md) | **Endurance** | Endurance |
 | [_int_](datatype-int.md) | **EnduranceRegen** | Endurance regen |
 | [_evolving_](datatype-evolving.md) | **Evolving** | Does this item have Evolving experience on? |
-| [_int_](datatype-int.md) | **FreeStack** | The number of items needed to fill all the stacks of the item you have \(with a stacksize of 20\).  If you have 3 stacks \(1, 10, 20 in those stacks\), you have room for 60 total and you have 31 on you, so **FreeStack** would return 29. |
+| [_int_](datatype-int.md) | **FreeStack** | The number of items needed to fill all the stacks of the item you have (with a stacksize of 20\).  If you have 3 stacks \(1, 10, 20 in those stacks), you have room for 60 total and you have 31 on you, so **FreeStack** would return 29. |
 | [_int_](datatype-int.md) | **Haste** | Haste value on item |
-| [_int_](datatype-int.md) | **HealAmount** | HealAmount \(regen?\) |
+| [_int_](datatype-int.md) | **HealAmount** | HealAmount (regen?) |
 | [_int_](datatype-int.md) | **HeroicAGI** | Heroic AGI value on item |
 | [_int_](datatype-int.md) | **HeroicCHA** | Heroic CHA value on item |
 | [_int_](datatype-int.md) | **HeroicDEX** | Heroic DEX value on item |
@@ -62,10 +62,10 @@ Contains data about items
 | [_int_](datatype-int.md) | **ID** | Item ID |
 | [_float_](datatype-float.md) | **InstrumentMod** | Instrument Modifier Value |
 | [_int_](datatype-int.md) | **INT** | INT value on item |
-| [_int_](datatype-int.md) | **InvSlot** | Inventory Slot Number \(Historic and now deprecated, use ItemSlot and ItemSlot2\) |
-| _item_ | **Item\[**\#**\]** | Item in \#th slot, if this is a container or has augs |
+| [_int_](datatype-int.md) | **InvSlot** | Inventory Slot Number (Historic and now deprecated, use ItemSlot and ItemSlot2) |
+| _item_ | **Item[**\#**]** | Item in \#th slot, if this is a container or has augs |
 | [_float_](datatype-float.md) | **ItemDelay** | Returns the delay of the weapon |
-| \_\_[_string_](datatype-string.md)\_\_ | **ItemLink\[CLICKABLE\]** | just prints the actual hexlink for an item \(not clickable\) unless \[CLICKABLE\] is included |
+| \_\_[_string_](datatype-string.md)\_\_ | **ItemLink[CLICKABLE\]** | just prints the actual hexlink for an item (not clickable) unless \[CLICKABLE] is included |
 | [_int_](datatype-int.md) | **Items** | Number of items, if this is a container. |
 | [_int_](datatype-int.md) | **ItemSlot** | Item Slot number see [Slot Names](../../general-information/slot-names.md) |
 | [_int_](datatype-int.md) | **ItemSlot2** | Item Slot subnumber see [Slot Names](../../general-information/slot-names.md) |
@@ -81,7 +81,7 @@ Contains data about items
 | [_bool_](datatype-bool.md) | **NoRent** | Temporary? |
 | [_int_](datatype-int.md) | **Power** | Power left on power source |
 | [_int_](datatype-int.md) | **Purity** | Purity of item |
-| [_string_](datatype-string.md)\_\_ | **Race\[**\#**\]** | Returns the \#th long race name of the listed races on an item. Items suitable for ALL races will effectively have all 15 races listed. |
+| [_string_](datatype-string.md)\_\_ | **Race[**\#**]** | Returns the \#th long race name of the listed races on an item. Items suitable for ALL races will effectively have all 15 races listed. |
 | [_int_](datatype-int.md) | **Races** | The number of races that can use the item. Items suitable for ALL races will return 15. |
 | [_int_](datatype-int.md) | **RequiredLevel** | Returns the Required Level of an item. Items with no required level will return 0. |
 | [_int_](datatype-int.md) | **SellPrice** | Price to sell this item at this merchant |
@@ -114,9 +114,9 @@ Contains data about items
 | [_int_](datatype-int.md) | **Value** | Item value in coppers |
 | [_int_](datatype-int.md) | **Weight** | Item weight |
 | [_int_](datatype-int.md) | **WIS** | WIS value on item |
-| [_invslot_](datatype-invslot.md) | **WornSlot\[**\#**\]** | The \#th invslot this item can be worn in \(fingers/ears count as 2 slots\) |
-| [_bool_](datatype-bool.md) | **WornSlot\[**name**\]** | Can item be worn in invslot with this _name_? \(worn slots only\) |
-| [_int_](datatype-int.md) | **WornSlots** | The number of invslots this item can be worn in \(fingers/ears count as 2 slots\) |
+| [_invslot_](datatype-invslot.md) | **WornSlot[**\#**]** | The \#th invslot this item can be worn in (fingers/ears count as 2 slots) |
+| [_bool_](datatype-bool.md) | **WornSlot[**name**]** | Can item be worn in invslot with this _name_? (worn slots only) |
+| [_int_](datatype-int.md) | **WornSlots** | The number of invslots this item can be worn in (fingers/ears count as 2 slots) |
 | [_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |
 
 ## Spell Effect Types
@@ -138,7 +138,7 @@ This next section needs to be moved to the MQ2ItemDisplay article
 
 **${DisplayItem}** now takes an index as an option parameter index can be 0-5 you can still just do ${DsiplayItem} and it will just pick whatever you inspected last.
 
-**Example:** /echo ${DisplayItem\[5\]}
+**Example:** /echo ${DisplayItem[5]}
 
 * Info = 1,
 * WindowTitle = 2,

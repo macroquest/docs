@@ -9,8 +9,8 @@ Used to find information about a particular zone.
 |  |  |
 | :--- | :--- |
 | [_currentzone_](../data-types/datatype-currentzone.md) **Zone** | Retrieves the current zone information |
-| [_zone_](../data-types/datatype-zone.md) **Zone\[**\#**\]** | Retrieves information about a zone by zone ID |
-| [_zone_](../data-types/datatype-zone.md) **Zone\[**shortname**\]** | Retrieves information about a zone by short name |
+| [_zone_](../data-types/datatype-zone.md) **Zone[**\#**]** | Retrieves information about a zone by zone ID |
+| [_zone_](../data-types/datatype-zone.md) **Zone[**shortname**]** | Retrieves information about a zone by short name |
 
 ## Access to Types
 

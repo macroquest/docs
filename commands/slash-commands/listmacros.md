@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/listmacros \[**_**filter**_**\]**
+**/listmacros [**_**filter**_**]**
 
 ## Description
 

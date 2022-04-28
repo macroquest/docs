@@ -40,7 +40,7 @@ Added .ID to the ${Task} TLO it returns an int of the task ID
 
 `Example: /echo ${Task[The Grand Illusion].ID}`
 
-Ok so fair warning, the taskwindow doesn't add items by index, unless sorted by first column, and even then, it can be "off" \(because reasons\) so... if you are smart don't use ${Task\[1\].ID} and expect it to be whatever is the first list item. ALWAYS refer to tasks by their NAME.
+Ok so fair warning, the taskwindow doesn't add items by index, unless sorted by first column, and even then, it can be "off" (because reasons) so... if you are smart don't use ${Task[1].ID} and expect it to be whatever is the first list item. ALWAYS refer to tasks by their NAME.
 
 so like:
 
@@ -69,7 +69,7 @@ Will return Eqmule
 
 `/echo ${Task[Task Name].Member[eqmule].Leader}`
 
-Will return True \(if leader\)
+Will return True (if leader)
 
 `/echo ${Task[Task Name].Member[eqmule].Index}`
 

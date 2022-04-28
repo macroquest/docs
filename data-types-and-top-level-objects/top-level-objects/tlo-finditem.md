@@ -8,8 +8,8 @@ A TLO used to find an item on your character, corpse, or a merchant by partial o
 
 |  |  |
 | :--- | :--- |
-| [_item_](../data-types/datatype-item.md) **FindItem\[**name**\]** | Returns item on your character, a corpse, or a merchant by partial name match |
-| [_item_](../data-types/datatype-item.md) **FindItem\[**=name**\]** | Returns item on your character, a corpse, or a merchant by exact name match |
+| [_item_](../data-types/datatype-item.md) **FindItem[**name**]** | Returns item on your character, a corpse, or a merchant by partial name match |
+| [_item_](../data-types/datatype-item.md) **FindItem[**=name**]** | Returns item on your character, a corpse, or a merchant by exact name match |
 
 ## Access to Types
 
@@ -17,7 +17,7 @@ A TLO used to find an item on your character, corpse, or a merchant by partial o
 
 ## Examples
 
-Looks for the Cleric Epic \(by exact match\) and prints its ID.
+Looks for the Cleric Epic (by exact match) and prints its ID.
 
 {% tabs %}
 {% tab title="Lua" %}

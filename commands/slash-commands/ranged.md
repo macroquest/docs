@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/ranged \[** _**spawnID**_ **\]**
+**/ranged [** _**spawnID**_ **]**
 
 ## Description
 

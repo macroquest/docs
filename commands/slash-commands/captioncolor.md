@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/captioncolor \[list \|"name'' \[off \| on \| \# \# \#\]\]**
+**/captioncolor [list \|"name'' \[off \| on \| \# \# \#\]]**
 
 ## Description
 
@@ -21,12 +21,12 @@ Below are the default settings for each of the possible Caption Colors:
 | PCCon | OFF | Color PCs by con color |
 | PCPVPTeam | OFF | Color PCs by PVP Team color |
 | PCRaid | OFF | Default color for all raid members |
-| PCClass | OFF | Color PCs by class \(raid settings\) |
+| PCClass | OFF | Color PCs by class (raid settings) |
 | PCGroup | OFF | Default color for group members |
 | PCTrader | ON | Default color for PC traders: 255 127 0 |
 | NPC | OFF | Default color for all NPCs |
 | NPCCon | ON | Color NPCs by con color |
-| NPCClass | OFF | Color NPCs by class \(raid settings\) |
+| NPCClass | OFF | Color NPCs by class (raid settings) |
 | NPCMerchant | ON | Default color for NPC merchants: 255 127 0 |
 | NPCBanker | ON | Default color for NPC banker: 200 0 255 |
 | NPCAssist | ON | Default color for the main assist NPC: 255 255 0 |

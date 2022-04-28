@@ -16,7 +16,7 @@
 
 * Have you read all the documentation on the plugin: 1. The initial forum post usually has some documentation in it, and most likely a link to further documentation
 
-  \(quite often a wiki page\).
+  (quite often a wiki page).
 
   1. If you still have no luck, read through every page on the forum post \(it's sometimes quicker to read backwards,
 

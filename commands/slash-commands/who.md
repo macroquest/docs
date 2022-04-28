@@ -20,7 +20,7 @@ Displays a List of The Named NPC in Zone
 
 * **/who pc Cleric**
 
-Displays a List of Player Clerics \(Even if Anon or /role\)
+Displays a List of Player Clerics (Even if Anon or /role)
 
 * **/who npc pixtt**
 
@@ -38,7 +38,7 @@ Displays a List of PC's Who are level 70
 
 Displays a List of PC's Who are Human
 
-* **/whotarget \(/whot\)**
+* **/whotarget (/whot)**
 
 Displays a /who for your target, works on npc/pc shows even if role/anon, Shows if sneaking as well.
 

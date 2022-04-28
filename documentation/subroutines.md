@@ -2,7 +2,7 @@
 
 ## General
 
-We know that every macro must have a Main Subroutine \(see [Macro Reference](macro-reference.md)\). However custom Subroutines can be created as a way of re-using common code, and as a way of separating code into logical blocks or routines.
+We know that every macro must have a Main Subroutine (see [Macro Reference](macro-reference.md)). However custom Subroutines can be created as a way of re-using common code, and as a way of separating code into logical blocks or routines.
 
 Subroutines start with a Sub line and end with a /return line. When it hits the /return line, it will pass control back to the calling Sub, at the point right after it was called.
 
@@ -36,7 +36,7 @@ All macros accept parameters passed to them when called. The parameters can be d
 `/echo ${Param0} ${Param1}`  
 `/return`
 
-**Note:** Any parameters passed to the sub are automatically declared as local variables for that Sub \(no need to [/declare](../commands/macro-commands/declare.md) them\).
+**Note:** Any parameters passed to the sub are automatically declared as local variables for that Sub (no need to [/declare](../commands/macro-commands/declare.md) them).
 
 ## Return Values
 
@@ -46,7 +46,7 @@ A return value for the sub can be added after the [/return](../commands/macro-co
 `/declare Sum int local ${Math.Calc[${A}+${B}]}`  
 `/return ${Sum}`
 
-This will take the two passed variables \(A and B\), add them together and return the result. To use it, you'd need call it like so:
+This will take the two passed variables (A and B), add them together and return the result. To use it, you'd need call it like so:
 
 `Sub Main`  
 `/call Add 10 12`  

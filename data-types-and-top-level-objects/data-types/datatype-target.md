@@ -11,11 +11,11 @@ Inherits members from [_spawn_](datatype-spawn.md)_._
 | [_spell_](datatype-spell.md) | **Aego** | Returns the name of the Aego spell if the Target has one |
 | [_spawn_](datatype-spawn.md) | **AggroHolder** | Returns the target's current target. |
 | [_spell_](datatype-spell.md) | **Beneficial** | Returns the name of the Beneficial spell if the Target has one. This will skip "player" casted buffs, but will show NPC Casted buffs and some AA buffs. |
-| [_spell_](datatype-spell.md) | **Buff\[**n**\]** | Returns the target's spell by buff index number. |
-| [_spell_](datatype-spell.md) | **Buff\[**_name_**\]** | Returns the target's spell name, or the first buff if no Index is provided. |
+| [_spell_](datatype-spell.md) | **Buff[**n**]** | Returns the target's spell by buff index number. |
+| [_spell_](datatype-spell.md) | **Buff[**_name_**]** | Returns the target's spell name, or the first buff if no Index is provided. |
 | [_int_](datatype-int.md) | **BuffCount** | Returns the number of buffs on the target. |
-| [_timestamp_](datatype-timestamp.md) | **BuffDuration\[**\#**\]** | Returns the duration remaining on this target buff by index number |
-| [_timestamp_](datatype-timestamp.md) | **BuffDuration\[**_name_**\]** | Returns the duration remaining on this target buff by spell name |
+| [_timestamp_](datatype-timestamp.md) | **BuffDuration[**\#**]** | Returns the duration remaining on this target buff by index number |
+| [_timestamp_](datatype-timestamp.md) | **BuffDuration[**_name_**]** | Returns the duration remaining on this target buff by spell name |
 | [_bool_](datatype-bool.md) | **BuffsPopulated** | Returns TRUE when the target's buffs are finished populating. |
 | [_spell_](datatype-spell.md) | **Brells** | Returns the name of the Brells spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Charmed** | Returns the name of the Charmed spell if the Target has one |

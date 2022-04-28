@@ -6,7 +6,7 @@
 
 ## Description
 
-Echoes the specified text \(or variables\) to the MQ Console window.
+Echoes the specified text (or variables) to the MQ Console window.
 
 ## Examples
 
@@ -16,7 +16,7 @@ Echoes the specified text \(or variables\) to the MQ Console window.
 /echo \amThis is a \attest\ax \n\agAll done, let's show a backslash: \ar\\
 ```
 
-\[MQ2\] '''This is a test
+[MQ2] '''This is a test
 
 All done, let's show a red backslash: \'''
 
@@ -26,7 +26,7 @@ All done, let's show a red backslash: \'''
 /echo My current health percent is ${Me.PctHPs}
 ```
 
-\[MQ2\] My current health percent is 100
+[MQ2] My current health percent is 100
 
 ## Color Codes
 

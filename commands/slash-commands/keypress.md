@@ -2,13 +2,13 @@
 
 ## Syntax
 
-**/keypress** _**name**_ **\[hold\]**
+**/keypress** _**name**_ **[hold]**
 
 note: /keypress usage outside of a macro is not recommended nor consistent
 
 ## Description
 
-Press the key _name_. This is used strictly for keys that are mapped by the EQ client, however /keypress will work with EQ binds as well as MQ2 binds \(see [/bind](bind.md)\).
+Press the key _name_. This is used strictly for keys that are mapped by the EQ client, however /keypress will work with EQ binds as well as MQ2 binds (see [/bind](bind.md)).
 
 /keypress does not actually press the key, it merely emulates the key being pressed, so it will not interfere with typing.
 
@@ -26,7 +26,7 @@ Example of pressing a virtual keyboard keycombo
 
 ### EQUI-Keybindings
 
-Example using EQUI-Keybindings keypress with in game keybindings \(like in options window\)
+Example using EQUI-Keybindings keypress with in game keybindings (like in options window)
 
 ```text
  /keypress jump               Taps the key mapped as the jump key   
@@ -49,7 +49,7 @@ Will type "x" into the active chat window
 | :---: | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
 | Esc | F1 | F2 | F3 | F4 | F5 | F6 | F7 | F8 | F9 | F10 | F11 | F12 | Prnt\_Scrn | Scroll\_Lock |  |
 | \` | 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 0 | - | = | Backspace | Insert | Home |
-| Tab | Q | W | E | R | T | Y | U | I | O | P | \[ | \] | \ | Delete | End |
+| Tab | Q | W | E | R | T | Y | U | I | O | P | [ | ] | \ | Delete | End |
 | Caps\_Lock | A | S | D | F | G | H | J | K | L | ; | ' | Enter |  |  |  |
 | Shift | Z | X | C | V | B | N | M | , | . | / | Right\_Shift |  | Up |  | Num\_1 |
 | Ctrl | Alt | Space | Right\_Alt | Right\_Ctrl | Left | Down | Right | Num\_0 |  | Num\_Del |  |  |  |  |  |

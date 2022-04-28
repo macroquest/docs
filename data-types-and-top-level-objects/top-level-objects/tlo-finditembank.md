@@ -10,8 +10,8 @@ Of note: The FindItemBank with ItemSlot REQUIRES that bank item containers be op
 
 |  |  |
 | :--- | :--- |
-| [_item_](../data-types/datatype-item.md) **FindItemBank\[**name**\]** | Returns item in your bank by partial name match |
-| [_item_](../data-types/datatype-item.md) **FindItemBank\[**=name**\]** | Returns item in your bank by exact name match |
+| [_item_](../data-types/datatype-item.md) **FindItemBank[**name**]** | Returns item in your bank by partial name match |
+| [_item_](../data-types/datatype-item.md) **FindItemBank[**=name**]** | Returns item in your bank by exact name match |
 
 ## Access to Types
 

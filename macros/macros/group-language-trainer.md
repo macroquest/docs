@@ -8,7 +8,7 @@ The speed at which languages are learned is dependent on either intelligence or 
 
 Paste this code into a file called lang.mac in your **\macros** directory.
 
-In game, create a social with 5 lines of text, and place this in hotbutton 1. It doesn't matter what it says, as this macro will only end up spamming numbers anyway. While spamming, group members can either turn off group text in options, or can use /ignore \[spammer\] during the "lesson".
+In game, create a social with 5 lines of text, and place this in hotbutton 1. It doesn't matter what it says, as this macro will only end up spamming numbers anyway. While spamming, group members can either turn off group text in options, or can use /ignore [spammer] during the "lesson".
 
 `|/////////////////////////////////////////////////////////////////////////////`  
 `| Lang.mac`  

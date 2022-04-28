@@ -6,7 +6,7 @@
 
 ## Description
 
-Executes _command_, parsing [MQ2Data](../../documentation/mq2data.md) first. This is useful for executing commands using MQ2Data that do not parse immediately, as well as executing a command stored in a variable.
+Executes _command_, parsing [MQ2Data](../../documentation/mqdata.md) first. This is useful for executing commands using MQ2Data that do not parse immediately, as well as executing a command stored in a variable.
 
 ## Examples
 

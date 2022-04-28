@@ -32,7 +32,7 @@ Sets a variable directly to the end result of a MQ2Data string.
 
 ## See Also
 
-* [MQ2Data](../../documentation/mq2data.md)
+* [MQ2Data](../../documentation/mqdata.md)
 * [/varset](varset.md)
 * [/varcalc](varcalc.md)
 

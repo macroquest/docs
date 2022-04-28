@@ -30,7 +30,7 @@ This will keep running /doevents and when it senses the \#event trigger text, it
 
 ## Using part of the \#event text as a variable
 
-Now while the above example is pretty useful \(eg. you can accept the invite in the Sub Event\_Invite\), what if we want to accept invites from more than one person? We could create two separate events and have them each echo a different piece of text. Or we could use part of the event text as a variable and manipulate it in the [subroutine](../../documentation/subroutines.md). You can do this by marking out the part of text you want to use as a variable. In the above example, we'll use the inviter's name:
+Now while the above example is pretty useful (eg. you can accept the invite in the Sub Event\_Invite), what if we want to accept invites from more than one person? We could create two separate events and have them each echo a different piece of text. Or we could use part of the event text as a variable and manipulate it in the [subroutine](../../documentation/subroutines.md). You can do this by marking out the part of text you want to use as a variable. In the above example, we'll use the inviter's name:
 
 ```text
  #event Invite           "#1# invites you to join a group."
@@ -123,7 +123,7 @@ This is another special custom event. The name of the Timer and the Original Val
 
    defined. It's up to you to make sure you define all the needed parameters, and to make sure they're defined as the
 
-   correct type \(string, int, bool, etc\).
+   correct type (string, int, bool, etc).
 
 2. Pay particular attention to the syntax of your \#event line. It will only trigger if the text is _identical_, so best
 

@@ -8,8 +8,8 @@ Object that has access to members that provide information on a plugin.
 
 |  |  |
 | :--- | :--- |
-| [_plugin_](../data-types/datatype-plugin.md) **Plugin\[**\#**\]** | Plugin by number, starting with 1 and stopping whenever the list runs out of plugins. |
-| [_plugin_](../data-types/datatype-plugin.md) **Plugin\[**name**\]** | Finds plugin by name |
+| [_plugin_](../data-types/datatype-plugin.md) **Plugin[**\#**]** | Plugin by number, starting with 1 and stopping whenever the list runs out of plugins. |
+| [_plugin_](../data-types/datatype-plugin.md) **Plugin[**name**]** | Finds plugin by name |
 
 ## Access to Types
 

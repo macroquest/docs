@@ -2,7 +2,7 @@
 
 ## Description
 
-This TLO gives you access to properties of dynamic \(instanced\) zones.
+This TLO gives you access to properties of dynamic (instanced) zones.
 
 ## Forms
 

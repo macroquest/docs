@@ -18,16 +18,16 @@ This datatype deals strictly with information on your "Mount" keyring.
 `/echo ${Mount[1].Name}`  
 \`\`
 
-Outputs: \[MQ2\] Whirligig Flyer Control Device
+Outputs: [MQ2] Whirligig Flyer Control Device
 
 `/echo ${Mount[2].Name}`  
 \`\`
 
-Outputs: \[MQ2\] Abyssal Steed
+Outputs: [MQ2] Abyssal Steed
 
 `/echo ${Mount[Abyssal Steed].Index}`
 
-Outputs: \[MQ2\] 2
+Outputs: [MQ2] 2
 
 ## See Also
 

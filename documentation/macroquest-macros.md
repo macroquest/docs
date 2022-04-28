@@ -4,7 +4,7 @@
 
 Macros are essentially scripts that run certain MQ2 commands when certain conditions are met.
 
-As an example, say you want to create a macro that repeatedly casts a certain spell \(eg. if you were trying to train up your Divination skill\). The macro could do something like this:
+As an example, say you want to create a macro that repeatedly casts a certain spell (eg. if you were trying to train up your Divination skill). The macro could do something like this:
 
 1. Cast "True North" spell
 2. Check mana and if not enough mana to cast the above spell, sit down and rest until mana is full.
@@ -12,7 +12,7 @@ As an example, say you want to create a macro that repeatedly casts a certain sp
 
 Macros can also be triggered off of things that happen in game. For example, you can create a macro that waits until someone says "Heal Me" in group, and then casts a heal on that person.
 
-A snippet is a portion of macro code that can be re-used in lots of different macros. One of the most popular snippets of code is the spell\_routines snippet, which casts a spell reliably \(ie. deals with fizzles, target being out of range, etc\). This snippet can be included in many different macros so that all of them benefit from the increased functionality.
+A snippet is a portion of macro code that can be re-used in lots of different macros. One of the most popular snippets of code is the spell\_routines snippet, which casts a spell reliably (ie. deals with fizzles, target being out of range, etc). This snippet can be included in many different macros so that all of them benefit from the increased functionality.
 
 Snippets help keep key pieces of code separate from the main macro, which makes it easier to update portions of big macros.
 
@@ -23,12 +23,12 @@ Snippets help keep key pieces of code separate from the main macro, which makes 
 You can find Macros in the following Forums:
 
 [MQ2::Macros::Macro Depot v3.0](https://macroquest2.com/phpBB3/viewforum.php?f=43)  
-[VIP::Macros](https://macroquest2.com/phpBB3/viewforum.php?f=49) \(VIP only\)
+[VIP::Macros](https://macroquest2.com/phpBB3/viewforum.php?f=49) (VIP only)
 
 Snippets can be found here:
 
 [MQ2::Macros::Snippets](https://macroquest2.com/phpBB3/viewforum.php?f=45)  
-[VIP::Macros](https://macroquest2.com/phpBB3/viewforum.php?f=49) \(VIP only\). _There's no specific VIP snippet forum, so all of them are just located in the VIP macro forum._
+[VIP::Macros](https://macroquest2.com/phpBB3/viewforum.php?f=49) (VIP only). _There's no specific VIP snippet forum, so all of them are just located in the VIP macro forum._
 
 ## Using Macros or Snippets that you have found
 

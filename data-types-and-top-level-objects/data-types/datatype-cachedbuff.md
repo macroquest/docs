@@ -16,13 +16,13 @@ Allows checking if cached buffs on others have expired with out targeting
 
 -Previously Added: .CachedBuffCount to the spawn tlo. it returns -1 if no buffs are cached for the spawn or number of buffs cached.
 
--Previously Added: .CachedBuff\[x\] to the spawn tlo where x is a spellid if its a number and a spell name if not. It returns a MQ2CachedBuffType.
+-Previously Added: .CachedBuff[x] to the spawn tlo where x is a spellid if its a number and a spell name if not. It returns a MQ2CachedBuffType.
 
--Previously Added: .CachedBuff\[\#x\] to the spawn tlo where \#x is a buffslot between 1-97. It returns a MQ2CachedBuffType.
+-Previously Added: .CachedBuff[\#x] to the spawn tlo where \#x is a buffslot between 1-97. It returns a MQ2CachedBuffType.
 
--Previously Added: .CachedBuff\[\*x\] to the spawn tlo where \*x is a index \(buffslots are not sorted\). It returns a MQ2CachedBuffType.
+-Previously Added: .CachedBuff[\*x] to the spawn tlo where \*x is a index (buffslots are not sorted). It returns a MQ2CachedBuffType.
 
--Previously Added: .CachedBuff\[^x\] to the spawn tlo where ^x is a keyword. It returns a MQ2CachedBuffType.
+-Previously Added: .CachedBuff[^x] to the spawn tlo where ^x is a keyword. It returns a MQ2CachedBuffType.
 
 `^x keywords: Slowed Rooted Mezzed Crippled Maloed Tashed Snared and Beneficial`
 

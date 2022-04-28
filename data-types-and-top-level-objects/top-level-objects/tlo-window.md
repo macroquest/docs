@@ -8,7 +8,7 @@ You can display a list of window names using the /windows command or see [Window
 
 ## Forms
 
-* [_window_](../data-types/datatype-window.md) **Window\[**name**\]**
+* [_window_](../data-types/datatype-window.md) **Window[**name**]**
 
 ## Access to Types
 

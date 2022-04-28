@@ -24,20 +24,20 @@
 
      thread/first post.
 
-* Do you have all the pre-requisites for the macro, other snippets \(.inc files\) and plugins required?
+* Do you have all the pre-requisites for the macro, other snippets (.inc files) and plugins required?
 * If there are pre-requisite plugins or snippets, are they configured correctly? You will most likely need to check
 
-  the forum posts for the snippet/plugin in question too \(yes, more reading :\).
+  the forum posts for the snippet/plugin in question too (yes, more reading :).
 
 ### INI file maintenance
 
-To remove a keyname \(\[Section\]\) and all of it's valuenames and values, from an ini file:
+To remove a keyname ([Section]) and all of it's valuenames and values, from an ini file:
 
 ```text
 /ini "Myfile.ini" "KeynameToRemove"
 ```
 
-To remove a valuename \(and all of it's values\) from an ini file:
+To remove a valuename (and all of it's values) from an ini file:
 
 ```text
 /ini "Myfile.ini" "Keyname" "ValuenameToRemove"
@@ -77,7 +77,7 @@ To remove a valuename \(and all of it's values\) from an ini file:
 
 * What this does is check if the spell name of the spell in the first slot is "Complete Healing" \*\(the /if statement
 
-  inside the brackets\)_. If it is not, then mem "Complete Healing" in slot 1_ \(the /memspell bit after the brackets\)\*.
+  inside the brackets\)_. If it is not, then mem "Complete Healing" in slot 1_ (the /memspell bit after the brackets)\*.
 
 * If we look in the manual, we see the following entry for the Gem reference type \(part of the
 
@@ -85,15 +85,15 @@ To remove a valuename \(and all of it's values\) from an ini file:
 
 {\| border="1" cellpadding="2" cellspacing="0"
 
-\|[_spell_](../data-types-and-top-level-objects/data-types/datatype-spell.md) **Gem\[**\#**\]** \|The name of the spell in this slot\# \|}
+\|[_spell_](../data-types-and-top-level-objects/data-types/datatype-spell.md) **Gem[**\#**]** \|The name of the spell in this slot\# \|}
 
-* The part we're interested here is the first word _spell_ which tells you what the return type of Gem\[\#\] will be.
+* The part we're interested here is the first word _spell_ which tells you what the return type of Gem[\#] will be.
 
   In this case it will return a type "spell".
 
 * Equal or NotEqual can only be used to compare two strings \(which is why people would convert the result of
 
-  ${Me.Gem\[1\]} _\("spell"\)_ to a string by using the ${String} TLO\). While this may look fine logically, it's not the
+  ${Me.Gem[1]} _("spell"\)_ to a string by using the ${String} TLO). While this may look fine logically, it's not the
 
   way MQ2 Data Types were designed to be used, and its more work for your PC to convert the result of the _spell_ to a
 
@@ -111,7 +111,7 @@ To remove a valuename \(and all of it's values\) from an ini file:
 
 * This shows us that we can use the .Name reference type to get a string value as a result, which can then be compared
 
-  \(using .Equal or .NotEqual\). So now we have a piece of code like the following:
+  (using .Equal or .NotEqual). So now we have a piece of code like the following:
 
 `${Me.Gem[1].Name}`
 
@@ -120,7 +120,7 @@ To remove a valuename \(and all of it's values\) from an ini file:
 `${Me.Gem[1].Name.NotEqual[Complete Healing]}`
 
 * Will give us a TRUE/FALSE result if you echo the above statement.
-* So instead of wrapping ${Me.Gem\[1\]} in a ${String\[\]} TLO, we've removed the need to convert the "spell" result
+* So instead of wrapping ${Me.Gem[1\]} in a ${String\[]} TLO, we've removed the need to convert the "spell" result
 
   to a "string" result, by adding .Name to the end of the TLO, thereby making it return a string value.
 
@@ -128,9 +128,9 @@ To remove a valuename \(and all of it's values\) from an ini file:
 
 `/if (${Me.Gem[1].Name.NotEqual[Complete Healing]}) /memspell 1 "Complete Healing"`
 
-* We've now removed the ${String\[\]} part, and still have a perfectly functioning \(and faster\) macro.
+* We've now removed the ${String[]} part, and still have a perfectly functioning (and faster) macro.
 
-### This macro I downloaded doesn't do X \(fill in as appropriate\)
+### This macro I downloaded doesn't do X (fill in as appropriate)
 
 * If you have followed all the advice in the General Macro Help section, and you are still having problems, you may
 

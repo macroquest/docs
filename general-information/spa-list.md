@@ -1,8 +1,8 @@
 # SPA List
 
-Spell Affects \(yea they have bad engrish\)  
+Spell Affects (yea they have bad engrish)  
 Spell Effects  
-Source Info \(Updated 2018-12\)
+Source Info (Updated 2018-12)
 
 ```text
 AFFECTNUMBER - AFFECTNAME

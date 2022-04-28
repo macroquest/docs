@@ -19,7 +19,7 @@ this type inherits members from [_spawn_ ](datatype-spawn.md)if the member is in
 | [_bool_](datatype-bool.md) | **OtherZone** | TRUE if the member is online but in another zone and FALSE if online and in same zone as you. |
 | [_bool_](datatype-bool.md) | **Present** | TRUE if the member is online and in same zone and FALSE if online and not in same zone as you. |
 | [_bool_](datatype-bool.md) | **Puller** | TRUE if the member is designated as the group's Puller, FALSE otherwise |
-| [_spawn_](datatype-spawn.md) | **Spawn** | Accesses the group member's spawn. Not all members will have a spawn \(if they are out of the zone\). |
+| [_spawn_](datatype-spawn.md) | **Spawn** | Accesses the group member's spawn. Not all members will have a spawn (if they are out of the zone). |
 | [_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |
 
 ## Examples

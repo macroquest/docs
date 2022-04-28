@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/keepkeys \[off\|on\]**
+**/keepkeys [off\|on]**
 
 ## Description
 

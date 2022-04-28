@@ -2,18 +2,18 @@
 
 ## Syntax
 
-**/advloot \[personal/shared\] \[\#\(index\) or "item name"\] \[window commands\] \[option** _**command\]**_
+**/advloot [personal/shared\] \[\#(index) or "item name"\] \[window commands\] \[option** _**command]**_
 
 |  |  |
 | :--- | :--- |
 | **Window Commands** | **Descritpion** |
 | **giveto** | Gives item to that character IE "/advloot share 1 giveto billybob" |
-| **leave** | Leaves the item on the corpse \(Note: to unlock the corpse from timer, ALL items related to that corpse must be looted or left on it\) |
+| **leave** | Leaves the item on the corpse (Note: to unlock the corpse from timer, ALL items related to that corpse must be looted or left on it) |
 |  |  |
 
 ## Description
 
-Used for sending commands to the AdvLoot window \(some require you to be the master looter\)
+Used for sending commands to the AdvLoot window (some require you to be the master looter)
 
 ## Examples
 

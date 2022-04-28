@@ -2,7 +2,7 @@
 
 ## Starting/Stopping
 
-Once you have [compiled](macroquest2-compiling.md) MQ successfully, you can launch it by changing to the Releases directory and opening [MacroQuest.exe](macroquest2.exe.md). It doesn't matter if MQ is started while EverQuest is running or not.
+Once you have [compiled](macroquest-compiling.md) MQ successfully, you can launch it by changing to the Releases directory and opening [MacroQuest.exe](macroquest.exe.md). It doesn't matter if MQ is started while EverQuest is running or not.
 
 If you do start it after you start EverQuest, you will have to wait a few seconds before it finishes loading and you see the results in-game.
 
@@ -10,7 +10,7 @@ MQ can be stopped from within game, by typing [/unload](../commands/slash-comman
 
 ### Multiple Sessions
 
-MacroQuest becomes part of EverQuest when you play, and anything you do inside one session is physically and logically separate from all others \(just like your two copies of EverQuest dont blend together\). This means that if you load a plugin in one session, it's not going to automatically load in the other. However, when you load a plugin, it will automatically load the next time a MacroQuest session begins. If that happens to be a second EQ session launching, then it may appear to your untrained eye as applying the plugin loading to all running sessions. Likewise, if you run a macro in one session, it's not going to automatically load in others. And if you run a command in one session, it's not going to automatically run in others.
+MacroQuest becomes part of EverQuest when you play, and anything you do inside one session is physically and logically separate from all others (just like your two copies of EverQuest dont blend together). This means that if you load a plugin in one session, it's not going to automatically load in the other. However, when you load a plugin, it will automatically load the next time a MacroQuest session begins. If that happens to be a second EQ session launching, then it may appear to your untrained eye as applying the plugin loading to all running sessions. Likewise, if you run a macro in one session, it's not going to automatically load in others. And if you run a command in one session, it's not going to automatically run in others.
 
 ## EQ Commands that are enhanced
 
@@ -66,7 +66,7 @@ To end a macro, use this command:
 
 `/endmacro`
 
-See the [MacroQuest2:Macros](macroquest2-macros.md) section for further information on macros, and [/macro](../commands/slash-commands/macro.md) and [/endmacro](../commands/slash-commands/endmacro.md) for starting and stopping.
+See the [MacroQuest2:Macros](macroquest-macros.md) section for further information on macros, and [/macro](../commands/slash-commands/macro.md) and [/endmacro](../commands/slash-commands/endmacro.md) for starting and stopping.
 
 ### Plugins
 
@@ -82,7 +82,7 @@ To unload a plugin:
 `/pluginunload`  
 `eg. /plugin mq2melee unload`
 
-See the [MacroQuest2:Plugins](macroquest2-plugins.md) section for further information on plugins, and [/plugin](../commands/slash-commands/plugin.md) for starting and stopping.
+See the [MacroQuest2:Plugins](macroquest-plugins.md) section for further information on plugins, and [/plugin](../commands/slash-commands/plugin.md) for starting and stopping.
 
 ## Custom UIs
 
@@ -110,7 +110,7 @@ You need to load the [MQ2Map](../plugins/core-plugins/mq2map/) plugin using the 
 
 Krust UI issue, or bad mapfilter options.
 
-* \*\*With MQ2 running, Monk's "Projection" ability cannot be seen and its title \(xxxxxx's projection\) is also not
+* \*\*With MQ2 running, Monk's "Projection" ability cannot be seen and its title (xxxxxx's projection) is also not
 
   displayed\*\*
 

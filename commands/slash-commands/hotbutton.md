@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/hotbutton \[ Name \] \[ color\# \] \[ Line\#:Cursor\#:/YourCommand YourText \]**
+**/hotbutton [ Name \] \[ color\# \] \[ Line\#:Cursor\#:/YourCommand YourText ]**
 
 ## Description
 

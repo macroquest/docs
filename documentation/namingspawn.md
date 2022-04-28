@@ -2,13 +2,13 @@
 
 So this topic doesn't have it's own Forum catagory that I saw. So I'm creating a thread in Macro Mania because it's to do with coding logic that follows along the same guidelines as the MQ2HUD.ini in a way.
 
-I'm talking about the \[Captions\] section of Macroquest.ini that most people don't even know exists. The \[Captions\] section uses a little known TLO that's not echoable in MQ2 that inherits the "Spawn" datatype to display information on NPC's and players. It's the code that shows you the details of player/NPC/pet spawns in MQ2.
+I'm talking about the [Captions\] section of Macroquest.ini that most people don't even know exists. The \[Captions] section uses a little known TLO that's not echoable in MQ2 that inherits the "Spawn" datatype to display information on NPC's and players. It's the code that shows you the details of player/NPC/pet spawns in MQ2.
 
 Why do you care? Well recently I created a HUD that got a lot of positive attention. the logic used to create the HUD is a lot like the logic that will be used to explain the captions section of Macroquest.ini
 
-What can you do with \[Captions\] section of the Macroquest2.ini, well. See for yourself what I've done in a few minutes of coding using the ${NamingSpawn} TLO.
+What can you do with [Captions] section of the Macroquest2.ini, well. See for yourself what I've done in a few minutes of coding using the ${NamingSpawn} TLO.
 
-This is an altered form of the \[Captions\] section of the macroquest.ini
+This is an altered form of the [Captions] section of the macroquest.ini
 
 I've changed NPC= section to display the information I want to see.
 
@@ -20,11 +20,11 @@ Limitations - You're only allowed two lines. So while you can \n to go to a next
 
 Player1, Player2, Player3, etc......what does it mean? The players are directly attached to /shownames 1, 2, 3, 4 etc in game. This only applies to player information.
 
-So if you want /shownames 1 to not show anything at all, you can do something like. Player1=${If\[${NamingSpawn.ID},,\]}
+So if you want /shownames 1 to not show anything at all, you can do something like. Player1=${If[${NamingSpawn.ID},,]}
 
-Someone recently mentioned mobs Feigning Death in EQ. Well perhaps you want to add ${NamingSpawn.Feigning} to the display of NPC's? ${If\[${NamingSpawn.Feigning},FD,\]} will display FD if the NPC is FD.
+Someone recently mentioned mobs Feigning Death in EQ. Well perhaps you want to add ${NamingSpawn.Feigning} to the display of NPC's? ${If[${NamingSpawn.Feigning},FD,]} will display FD if the NPC is FD.
 
-Want to know what spell a player is casting? Add ${If\[${NamingSpawn.Casting.ID}, Casting: ${NamingSpawn.Casting},\]} to the Player\# you want to show that information. Great for PVP when you want to stop a player from casting a heal by stunning them but don't want to waste your bash/stun on a trivial spell that won't save their life. /evil grin.
+Want to know what spell a player is casting? Add ${If[${NamingSpawn.Casting.ID}, Casting: ${NamingSpawn.Casting},]} to the Player\# you want to show that information. Great for PVP when you want to stop a player from casting a heal by stunning them but don't want to waste your bash/stun on a trivial spell that won't save their life. /evil grin.
 
 So as you can see this is a very powerful feature that most players either don't know exists or don't know how to edit.
 
@@ -32,7 +32,7 @@ Got your captions setup already? type /captions anon on, then take a screenshot 
 
 ~Chatwiththisname
 
---Update-- \[QUOTE=KingArthur;348346\] And is there anyway to reload the settings other than a totally relog?? is there any slash command like /reload or something? Ty'''
+--Update-- [QUOTE=KingArthur;348346] And is there anyway to reload the settings other than a totally relog?? is there any slash command like /reload or something? Ty'''
 
 I completely overlooked this question. The answer is YES~!
 
@@ -44,21 +44,21 @@ So if you make changes and want to test them you have to type
 
 Then right click on the tray icon for MQ2 and hit "Refresh injections"
 
-That will effectively reload the MacroQuest.ini and update your \[Captions\]
+That will effectively reload the MacroQuest.ini and update your [Captions]
 
 I don't know of any other way other than this.
 
-**How does an ${If\[,,,\]} statement work?**
+**How does an ${If[,,,]} statement work?**
 
-The following is how an ${If\[,,,\]} statement works.
+The following is how an ${If[,,,]} statement works.
 
 ```text
 ${If[ThisIsTrue,DoThis,ElseDoThis]}
 ```
 
-**How does a ${Select\[,\]} statement work?**
+**How does a ${Select[,]} statement work?**
 
-The following is how a ${Select\[,\]} statement works.
+The following is how a ${Select[,]} statement works.
 
 ```text
 ${Select[CompareThis,toThis,andThis,andThis]}
@@ -74,7 +74,7 @@ ${Select[${NamingSpawn.ID},${Group.Member[1].ID},${Group.Member[2].ID},${Group.M
 
 The above code evaluates true if the Spawn's ID is the first, second, or third group member in your group window.
 
-**How do I nest an ${Select\[,\]} inside an ${If\[,,,\]}**
+**How do I nest an ${Select[,\]} inside an ${If\[,,,]}**
 
 You would do
 
@@ -92,7 +92,7 @@ ${If[ThisIsTrue,DoThis,]}
 
 **What can I do with ${NamingSpawn}**
 
-NamingSpawn appears to inherit all members of ${Spawn\[\]} TLO. Therefore the following list should be available to ${NamingSpawn}. Some things may only apply to the current character you are playing.
+NamingSpawn appears to inherit all members of ${Spawn[]} TLO. Therefore the following list should be available to ${NamingSpawn}. Some things may only apply to the current character you are playing.
 
 ```text
 [spawn]

@@ -8,7 +8,7 @@ QuickBeg.inc can be found [here](https://macroquest2.com/phpBB3/viewtopic.php?t=
 
 ## Usage
 
-QuickBeg.inc requires an INI \(QuickBeg.ini\) file and some configuration before it can be used.
+QuickBeg.inc requires an INI (QuickBeg.ini) file and some configuration before it can be used.
 
 Refer to the Release Notes contained in the QuickBeg.inc source file for detailed instructions on how to integrate QuickBeg.inc into your macros.
 

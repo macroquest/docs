@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/doevents \[ flush \] \[** _**specificevent**_ **\]**
+**/doevents [ flush \] \[** _**specificevent**_ **]**
 
 ## Description
 

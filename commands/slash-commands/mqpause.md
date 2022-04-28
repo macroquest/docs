@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/mqpause \[ on \| off \]**
+**/mqpause [ on \| off ]**
 
 ## Description
 

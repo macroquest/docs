@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/caption list \| type** _**value**_ **\| update \# \| MQCaptions \[ on \| off \]**
+**/caption list \| type** _**value**_ **\| update \# \| MQCaptions [ on \| off ]**
 
 ## Description
 
@@ -26,7 +26,7 @@ Player1=${If[${NamingSpawn.Trader},Trader,]}${If[${NamingSpawn.Invis},(${NamingS
 ```
 
 * Use "\n" to add a new line when setting captions
-* To use the default \(EQ settings\) clear the specific setting\(Player1-Player4\) in the ini using:
+* To use the default (EQ settings\) clear the specific setting\(Player1-Player4) in the ini using:
 
   ```text
   /caption Player1
@@ -48,7 +48,7 @@ Player1=${If[${NamingSpawn.Trader},Trader,]}${If[${NamingSpawn.Invis},(${NamingS
 
 \*When using MQCaption if no parameter is given, the default parameter is off
 
-* Look at the Macroquest.ini file in the zip file under \[Captions\] for examples of configuring Player1-Player4.
+* Look at the Macroquest.ini file in the zip file under [Captions] for examples of configuring Player1-Player4.
 
 ## See Also
 

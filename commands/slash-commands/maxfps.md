@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/maxfps \[ bg \| fg \] \[ \# \]**
+**/maxfps [ bg \| fg \] \[ \# ]**
 
 ## Description
 

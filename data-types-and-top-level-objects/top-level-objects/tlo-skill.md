@@ -8,8 +8,8 @@ Object used to get information on your character's skills.
 
 |  |  |
 | :--- | :--- |
-| [_skill_](../data-types/datatype-skill.md) **Skill\[**\#**\]** | Retrieve skill by number |
-| [_skill_](../data-types/datatype-skill.md) **Skill\[**name**\]** | Retrieve skill by name |
+| [_skill_](../data-types/datatype-skill.md) **Skill[**\#**]** | Retrieve skill by number |
+| [_skill_](../data-types/datatype-skill.md) **Skill[**name**]** | Retrieve skill by name |
 
 ## Access to Types
 

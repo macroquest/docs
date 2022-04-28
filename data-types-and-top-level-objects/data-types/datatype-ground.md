@@ -6,7 +6,7 @@ Contains all data related to a ground spawn
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **ID** | Ground item ID \(not the same as item ID, this is like spawn ID\) |
+| [_int_](datatype-int.md) | **ID** | Ground item ID (not the same as item ID, this is like spawn ID) |
 | [_int_](datatype-int.md) | **Distance** | Distance from player to ground item |
 | [_float_](datatype-float.md) | **X** | X coordinate |
 | [_float_](datatype-float.md) | **Y** | Y coordinate |
@@ -24,9 +24,9 @@ Contains all data related to a ground spawn
 | \_\_[_ground_](datatype-ground.md)\_\_ | **Last** | Last spawn |
 | \_\_[_ground_](datatype-ground.md)\_\_ | **Next** | Next spawn |
 | \_\_[_ground_](datatype-ground.md)\_\_ | **Prev** | Prev spawn |
-| [_float_](datatype-float.md) | **W** | X coordinate \(Westward-positive\) |
-| [_float_](datatype-float.md) | **N** | Y coordinate \(Northward-positive\) |
-| [_float_](datatype-float.md) | **U** | Z coordinate \(Upward-positive\) |
+| [_float_](datatype-float.md) | **W** | X coordinate (Westward-positive) |
+| [_float_](datatype-float.md) | **N** | Y coordinate (Northward-positive) |
+| [_float_](datatype-float.md) | **U** | Z coordinate (Upward-positive) |
 | \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as ID |
 
 ## Methods
@@ -47,7 +47,7 @@ output: The closest Brew Barrel is 26.4 away from you.
 
 Note that both of the search functions are case insensitive and are sorted by distance closest to you. The only acceptable parameter in the search filter is by name or partial name.
 
-/echo ${Ground\[egg\].Doface.Distance3D}\) Will face the closest item on the ground which has the word "egg" in it. and then echo the distance to it in the mq2 window. well if it finds an item with the word "egg" in it on the ground that is, otherwise it will just echo NULL .DoFace does NOT target the ground item, it just faces it.
+/echo ${Ground[egg].Doface.Distance3D}\) Will face the closest item on the ground which has the word "egg" in it. and then echo the distance to it in the mq2 window. well if it finds an item with the word "egg" in it on the ground that is, otherwise it will just echo NULL .DoFace does NOT target the ground item, it just faces it.
 
 `/if (${Ground[egg].DoTarget.ID}) /echo we just targeted a ${Ground[egg]}`
 

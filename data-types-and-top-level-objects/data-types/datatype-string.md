@@ -190,7 +190,7 @@ A string is an array of characters. In MQ2 there is no single character datatype
 
 ### Difference between Arg and Token
 
-**Arg\[**\#**,**s**\]** and **Token\[**\#**,**s**\]** are very similar. The only difference between them is **Token** will include null values, while **Arg** will skip them. For example:
+**Arg[**\#**,**s**\]** and **Token\[**\#**,**s**]** are very similar. The only difference between them is **Token** will include null values, while **Arg** will skip them. For example:
 
 ```text
 /declare TestString ABC,,DEF

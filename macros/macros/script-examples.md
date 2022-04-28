@@ -1,14 +1,14 @@
 # Script Examples
 
-Following are examples of scripts that have been created by ModBot users over the years. Some work great, while others work pretty well, but they all at the very least will give you some solid examples from which you can start to create your own fantactis scripts \(which you will, of course, post here as an example :\)
+Following are examples of scripts that have been created by ModBot users over the years. Some work great, while others work pretty well, but they all at the very least will give you some solid examples from which you can start to create your own fantactis scripts (which you will, of course, post here as an example :)
 
 ## Heal Script Examples
 
 ### Intelligent use of Promised Renewal
 
-**Please note**: "PR" has been added as a precondition for heals, so this script is no longer needed \(although it is being left here as a good example\). Please see the AdvHeal section of the ModBot wiki for information on using PR with AHPreCondition.
+**Please note**: "PR" has been added as a precondition for heals, so this script is no longer needed (although it is being left here as a good example). Please see the AdvHeal section of the ModBot wiki for information on using PR with AHPreCondition.
 
-Unlike most other heal spells, Promised Renewal lands as a buff on the target that heals after it fades \(~18 seconds\). The challenge in the current incarnation of ModHeal is that Modheal calculates the mob's dps and along with your target's time to live \(ttl\) without taking into account the PR buff - the end result is that it will often cast a big \(and mana expensive\) fast heal on your target five seconds before the PR buff fades.
+Unlike most other heal spells, Promised Renewal lands as a buff on the target that heals after it fades (~18 seconds\). The challenge in the current incarnation of ModHeal is that Modheal calculates the mob's dps and along with your target's time to live \(ttl\) without taking into account the PR buff - the end result is that it will often cast a big \(and mana expensive) fast heal on your target five seconds before the PR buff fades.
 
 This script, created by Kroak, works to use PR correctly.
 
@@ -39,7 +39,7 @@ Kroak notes the following about this script:
 
   heal.
 
-* If you notice how long some of the lines are, you might guess why I'd like Netbots\[X\].Duration\[Y\] to take a
+* If you notice how long some of the lines are, you might guess why I'd like Netbots[X\].Duration\[Y] to take a
 
   spell name or ID instead of only listing by buff number.
 
@@ -103,15 +103,15 @@ Basically my wizard has 5 nukes, I want him to cast it in the following order : 
 `C12=/if ({nextCast}==2) /multiline ; /varset nextCast 3 ; /varset CastOne 0 ; /varset CastTwo 0 ; /varset CastThree 0 ; /varset ADTarCnt[3] 1 ; /echo 3 ; /return`  
 `C13=/if ({nextCast}==4) /multiline ; /varset nextCast 2 ; /varset CastOne 0 ; /varset CastTwo 0 ; /varset CastThree 0 ; /varset CastFour 0 ; /varset ADTarCnt[2] 1 ; /echo 2 ; /return`
 
-An important addition to this script is to reset all of the variables after a mob dies \(otherwise the ordering will get screwed up\). This is best accomplished using the ACAfter setting in the INI:
+An important addition to this script is to reset all of the variables after a mob dies (otherwise the ordering will get screwed up). This is best accomplished using the ACAfter setting in the INI:
 
 `ACAfter=/multiline ; /varset nextCast 0;/varset CastOne 0;/varset CastTwo 0;/varset CastThree 0;/varset CastFour 0`
 
-Note: Please see the Level 85 Wizard INI example found [**here**](https://macroquest2.com/wiki/index.php/Modbot_Class_INI_Examples#Wizard.INI) to see the nukes that Bartab is referring to \(this will provide a bit of context for his desired casting order\).
+Note: Please see the Level 85 Wizard INI example found [**here**](https://macroquest2.com/wiki/index.php/Modbot_Class_INI_Examples#Wizard.INI) to see the nukes that Bartab is referring to (this will provide a bit of context for his desired casting order).
 
 ### Enchanter Script for Using Mana Reiterate
 
-Thanks to Kzboray for posting his working script \(with some help from Kroak :\). Kzboray says that this script can also be used for any other Enchanter damage buff!:
+Thanks to Kzboray for posting his working script (with some help from Kroak :). Kzboray says that this script can also be used for any other Enchanter damage buff!:
 
 `ADGem4=script`  
 `ADSpell4=ddbuff`  
@@ -139,7 +139,7 @@ Thanks to Kzboray for posting his working script \(with some help from Kroak :\)
 `C4=/if ({Cast.Ready} && !{Cast.Ready[Mana Reiterate Rk. II]} || {NetBots[WizName].Buff.Find[{Spell[Mana Reiterate Rk. II].ID}]}) /return`  
 `C5=/call Mq2Cast`_```Mana`` ``Reiterate`` ``Rk.`` ``II```_`gem7 30s CastCheck -targetid|{Group.Member[{Group.Member[WizName]}].ID}`
 
-Simply change WizName \(2 places in the C4 and C5 lines\) to the name of the toon you want to be buffed and your done. Hope this helps someone else.
+Simply change WizName (2 places in the C4 and C5 lines) to the name of the toon you want to be buffed and your done. Hope this helps someone else.
 
 [**Return to main ModBot Wiki**](https://macroquest2.com/wiki/index.php/ModBot)
 
@@ -147,7 +147,7 @@ Simply change WizName \(2 places in the C4 and C5 lines\) to the name of the too
 
 ### Creating Campfires and Getting to Them
 
-Thanks to Toomanynames for this gem :\). The first script will set up the campsite fire for you and the second script will get you to the campsite \(note that there are some class specific items in the second script \(bard\)\).
+Thanks to Toomanynames for this gem :\). The first script will set up the campsite fire for you and the second script will get you to the campsite (note that there are some class specific items in the second script \(bard\)).
 
 `[Script-MakeSite]`  
 `Commands=15`  
@@ -181,7 +181,7 @@ Thanks to Toomanynames for this gem :\). The first script will set up the campsi
 
 #### Example 1 from Banderas
 
-Before using this, you need to make room so make sure you have only 7 bags and one slot free. Make certain that you have the PetKit script entry before all other pet toy "buffs" in the AdvBuff section so that the bag goes to the free slot \(then you can have frigid paradox stuff and others below the petkit entry\).
+Before using this, you need to make room so make sure you have only 7 bags and one slot free. Make certain that you have the PetKit script entry before all other pet toy "buffs" in the AdvBuff section so that the bag goes to the free slot (then you can have frigid paradox stuff and others below the petkit entry).
 
 `ABGem10=script`  
 `ABSpell10=PetKit`  
@@ -201,12 +201,12 @@ Before using this, you need to make room so make sure you have only 7 bags and o
 `C3=/if ({PKPetName.Length}<4 && {Me.Pet.ID}) /varset PKPetName {Me.Pet.CleanName}`  
 `C4=/if ({PKPetName.Length}<4) /return`  
 `C5=/varset Timer 10m`  
-`C6=/multiline ; /autoinventory;/call CastCall {Me.CleanName}`_```cast`` ``petwep```_````C7=/multiline ; /delay 5s;/autoinventory ```C8=/call GiveCheck {PKPetName}``_```Summoned:`` ``Tonfa`` ``of`` ``the`` ``North`` ``Wind|Summoned:`` ``Blazing`` ``Brand```_```` C9=/varset ABTarCnt\[10\] 0 \`
+`C6=/multiline ; /autoinventory;/call CastCall {Me.CleanName}`_```cast`` ``petwep```_````C7=/multiline ; /delay 5s;/autoinventory ```C8=/call GiveCheck {PKPetName}``_```Summoned:`` ``Tonfa`` ``of`` ``the`` ``North`` ``Wind|Summoned:`` ``Blazing`` ``Brand```_```` C9=/varset ABTarCnt[10] 0 \`
 
 * Modify C8 to chose the wep you like for pet.
 * C9 will make the script stop redoing it again and again, so if your pet dies, simply re-start the macro or make a
 
-  hotkey to do only petkit ones as /varset ABTarCnt\[10\] 1
+  hotkey to do only petkit ones as /varset ABTarCnt[10] 1
 
 #### Example 2 from Lunason
 
@@ -423,7 +423,7 @@ A "buy" procedure was recently added to Modbot.inc. The syntax is: _Buy_
 
 ### Clearing your Bot's Target
 
-Sometimes your bots remain fixated on a target \(e.g. after you switch targets, kill a mob and decide to mez/blur the rest \(think Old Man McKenzie instances\)\). Here is a line that you can toss on a hot key that will clear the target from all of your ModBot bots:
+Sometimes your bots remain fixated on a target (e.g. after you switch targets, kill a mob and decide to mez/blur the rest \(think Old Man McKenzie instances\)). Here is a line that you can toss on a hot key that will clear the target from all of your ModBot bots:
 
 `/bcaa //multiline ; /varset ACMATarget 0;/target clear`
 

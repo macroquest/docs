@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/popcustom \[color\] \[time in seconds to display message\] message**
+**/popcustom [color\] \[time in seconds to display message] message**
 
 ## Description
 
@@ -32,7 +32,7 @@ Color Chart
 | :--- | :--- |
 | **Example** | **Output** |
 | **/popcustom hi there** | Will display "hi there" on the screen just like /popup |
-| **/popcustom 5 hi there** | Will display "hi there" on the screen in pink, for 3 seconds \(/popup's default\) |
+| **/popcustom 5 hi there** | Will display "hi there" on the screen in pink, for 3 seconds (/popup's default) |
 | **/popcustom 5 5 hi there** | Will display "hi there" on the screen in pink, for 5 seconds. |
 |  |  |
 

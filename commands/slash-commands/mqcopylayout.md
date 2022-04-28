@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/mqcopylayout \| opt:** **\(not specifying a res, will default to "Windowed"\)\|** **nohot** **\|** **noload** **\|** **nosoc** **\|** **none \]**
+**/mqcopylayout \| opt:** **(not specifying a res, will default to "Windowed")\|** **nohot** **\|** **noload** **\|** **nosoc** **\|** **none \]**
 
 ## Description
 
@@ -32,5 +32,5 @@ Will Copy the layout from UI\_eqmule\_test.ini setting excluding hotbuttons load
 
 ```/mqcopylayout eqmule test ``res:1600x900```
 
-Will Copy the layout from UI\_eqmule\_test.ini setting including hotbuttons loadouts and socials to your 1600x900 UI \(if that resolution actually exist in your UI ini\).
+Will Copy the layout from UI\_eqmule\_test.ini setting including hotbuttons loadouts and socials to your 1600x900 UI (if that resolution actually exist in your UI ini).
 

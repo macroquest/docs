@@ -57,7 +57,7 @@ To start the macro, type: /mac DRShmbot.mac \_\_
 
 Tank Name and Master Name are optional. They are **NOT** required but must be set in the INI for the bot to function correctly if not provided.
 
-The macro will create an INI file for you to customize called, dR\_ToonsName.ini, in your macro directory. \(Ex. dR\_Bobshaman.ini\)
+The macro will create an INI file for you to customize called, dR\_ToonsName.ini, in your macro directory. (Ex. dR\_Bobshaman.ini)
 
 After the INI file is created, it will end the macro and you **MUST** edit the new INI file. Then you can restart the macro\(You will not need to edit it after it has been set once unless you need to change a setting.
 

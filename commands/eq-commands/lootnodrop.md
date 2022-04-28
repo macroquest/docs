@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/lootnodrop \[always \| sometimes \| never\]**
+**/lootnodrop [always \| sometimes \| never]**
 
 ## Description
 

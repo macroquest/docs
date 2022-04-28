@@ -2,121 +2,42 @@
 
 Provides access to achievements.
 
-## Forms <a id="forms"></a>
+## Forms
 
 | Type | Form | Description |
-| :--- | :--- | :--- |
-| \_\_[_achievement_](../data-types/datatype-achievement.md)_​_ | **Achievement\[**\#\|_Name_**\]** | Look up an achievement by name or by id. |
-| _​_[_achievementmgr_](tlo-achievement.md#alert-type)_​_ | **Achievement** | Access the achievement manager which provides access to information about achievements |
+| ---- | ---- | ---- |
+| _[achievement](../data-types/datatype-achievement.md)_ | **Achievement[#\|Name]** | Look up an achievement by name or by id. |
+| _[achievementmgr](#achievementmgr-type)_ | **Achievement** | Access the achievement manager which provides access to information about achievements |
 
-## AchievementMgr Type <a id="alert-type"></a>
+## AchievementMgr Type
 
-Provides access achievements, achievement categories, and other information surrounding the achievement system
+Provides access achievements, achievement categories, and other information surrounding the achievement system.
 
-<table>
-  <thead>
-    <tr>
-      <th style="text-align:left">Type</th>
-      <th style="text-align:left">Name</th>
-      <th style="text-align:left">Description</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="../data-types/datatype-achievement.md"><em>achievement</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Achievement[</b>#|<em>Name</em><b>]</b>
-        </td>
-        <td style="text-align:left">Find an achievement by its ID or by its name.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="../data-types/datatype-achievement.md"><em>achievement</em></a><em>&#x200B;</em>
-      </td>
-      <td style="text-align:left"><b>AchievementByIndex[</b>#<b>]</b>
-      </td>
-      <td style="text-align:left">Find an achievement by its <em>index</em>. See note about achievement indices
-        <a
-        href="tlo-achievement.md#note-about-achievement-indices">below</a>.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="../data-types/datatype-int.md"><em>int</em></a><em>&#x200B;</em>
-      </td>
-      <td style="text-align:left"><b>AchievementCount</b>
-      </td>
-      <td style="text-align:left">The number of achievements in the manager.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="../data-types/datatype-achievementcat.md"><em>achievementcat</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Category[</b>#|<em>Name</em><b>]</b>
-        </td>
-        <td style="text-align:left">
-          <p>Find an achievement category by its id or by its name.</p>
-          <p></p>
-          <p>Note: If searching by name, only top-level categories are returned from
-            the achievement manager.</p>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="../data-types/datatype-achievementcat.md"><em>achievementcat</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>CategoryByIndex[</b>#<b>]</b>
-        </td>
-        <td style="text-align:left">Find an achievement category by its <em>index</em>. See note about achievement
-          indices <a href="tlo-achievement.md#note-about-achievement-indices">below</a>.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="../data-types/datatype-int.md"><em>int</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>CategoryCount</b>
-        </td>
-        <td style="text-align:left">The number of achievement categories in the manager.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="../data-types/datatype-int.md"><em>int</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Points</b>
-        </td>
-        <td style="text-align:left">The total number of accumulated achievement points.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="../data-types/datatype-int.md"><em>int</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>CompletedAchievements</b>
-        </td>
-        <td style="text-align:left">The number of completed achievements.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="../data-types/datatype-int.md"><em>int</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>TotalAchievements</b>
-        </td>
-        <td style="text-align:left">The number of available achievements.</td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="../data-types/datatype-bool.md"><em>bool</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Ready</b>
-        </td>
-        <td style="text-align:left">Indicates that the manager has loaded all achievement data and is ready
-          to be used.</td>
-    </tr>
-  </tbody>
-</table>
+| Type | Name | Description |
+| ---- | ---- | ---- |
+| _[achievement](../data-types/datatype-achievement.md)_           | **Achievement[#\|Name]** |  Find an achievement by its ID or by its name.         |
+| _[achievement](../data-types/datatype-achievement.md)_           | **AchivementByIndex[#]** |  Find an achievement by its index.                     |
+| _[int](../data-types/datatype-int.md)_                           | **AchivementCount**      |  The number of achievements in the manager.            |
+| _[achievementcat](../data-types/datatype-achievementcat.md)_     | **Category[#\|Name]**    |  Find an achievement category by its id or by its name.Note: If searching by name, only top-level categories are returned from the achievement manager.    |
+| _[achievementcat](../data-types/datatype-achievementcat.md)_     | **CategoryByIndex[#]**   |  Find an achievement category by its index.            |
+| _[int](../data-types/datatype-int.md)_                           | **CategoryCount**        |  The number of achievement categories in the manager.  |
+| _[int](../data-types/datatype-int.md)_                           | **Points**               |  The total number of accumulated achievement points.    |
+| _[int](../data-types/datatype-int.md)_                           | **CompletedAchivements** |  The number of completed achievements.    |
+| _[int](../data-types/datatype-int.md)_                           | **TotalAchivements**     |  The number of available achievements.    |
+| _[bool](../data-types/datatype-bool.md)_                         | **Ready**                |  Indicates that the manager has loaded all achievement data and is ready to be used.    |
 
-## Usage <a id="usage"></a>
+## Usage
 
-{% hint style="warning" %}
-Looking up achievements by name may not always return the correct achievement if multiple exist with the same name. Achievement IDs should be preferred over names as they don't change and are unique.
-{% endhint %}
+!!! warning
+    Looking up achievements by name may not always return the correct achievement if multiple exist with the same name. Achievement IDs should be preferred over names as they don't change and are unique.
 
-**Achievement\[**\#**\]** and **Achievement.Achievement\[**\#**\]** are equivalent and are provided for consistency. The primary way to access achievement information should be via id. Achievement IDs are unique and do not change.
+**Achievement[**#**]** and **Achievement.Achievement[**#**]** are equivalent and are provided for consistency. The primary way to access achievement information should be via id. Achievement IDs are unique and do not change.
 
 To look up an achievement's ID, you can look up an achievement by name, or you can use the Achievements Inspector.
 
 #### ‌Note About Achievement Indices
 
-Achievements and categories can be looked up by index. This is significantly faster than looking up by id or name. However, these indices are **not** stable and will change from patch to patch, but they will not change during the session. If an achievement is being utilized in a script many times, it may be more performant to look up an achievement's index \(with its .Index member\) and then use that in subsequent queries.
+Achievements and categories can be looked up by index. This is significantly faster than looking up by id or name. However, these indices are **not** stable and will change from patch to patch, but they will not change during the session. If an achievement is being utilized in a script many times, it may be more performant to look up an achievement's index (with its .Index member) and then use that in subsequent queries.
 
 See [Achievement Examples](../data-types/datatype-achievement.md#examples) for some examples of using indices for looking up achievements.
 
@@ -124,33 +45,28 @@ See [Achievement Examples](../data-types/datatype-achievement.md#examples) for s
 
 In the following example, we will look up an achievement by name, and then print its ID.
 
-{% tabs %}
-{% tab title="MQScript" %}
-```text
-/echo ${Achievement[Master of Claws of Veeshan].ID}
-```
-{% endtab %}
+=== "MQScript"
 
-{% tab title="Lua" %}
-```lua
-print(mq.TLO.Achievement("Master of Claws of Veeshan").ID())
-```
-{% endtab %}
-{% endtabs %}
+    ```text
+    /echo ${Achievement[Master of Claws of Veeshan].ID}
+    ```
 
-In the following example, we will print the completed status of achievement "**Wayfarers Brotherhood Adventurer's Stone \(Various 20+\)**"
+=== "Lua"
 
-{% tabs %}
-{% tab title="MQScript" %}
-```
-/echo ${Achievement[500980300].Completed}
-```
-{% endtab %}
+    ```lua
+    print(mq.TLO.Achievement("Master of Claws of Veeshan").ID())
+    ```
 
-{% tab title="Lua" %}
-```lua
-print(mq.TLO.Achievement(500980300).Completed())
-```
-{% endtab %}
-{% endtabs %}
+In the following example, we will print the completed status of achievement "**Wayfarers Brotherhood Adventurer's Stone (Various 20+)**"
 
+=== "MQScript"
+
+    ```
+    /echo ${Achievement[500980300].Completed}
+    ```
+
+=== "Lua"
+
+    ```lua
+    print(mq.TLO.Achievement(500980300).Completed())
+    ```

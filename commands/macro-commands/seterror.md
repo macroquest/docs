@@ -2,7 +2,7 @@
 
 ## Syntax
 
-**/seterror \[** _**error**_ **\]**
+**/seterror [** _**error**_ **]**
 
 ## Description
 
