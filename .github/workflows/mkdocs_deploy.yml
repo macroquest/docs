@@ -22,6 +22,8 @@ jobs:
         run: pip install mkdocs mkdocs-gen-files
       - name: Python - Install mkdocs material theme
         run: pip install mkdocs-material
+      - name: Python - Install mkdocs same-dir plugin
+        run: pip install mkdocs-same-dir
       - name: Configure git as github-actions bot
         run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Publish docs

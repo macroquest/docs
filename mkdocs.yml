@@ -536,6 +536,7 @@ theme:
 # Plugins
 plugins:
   - search
+  - same-dir
 
 # Customization
 
