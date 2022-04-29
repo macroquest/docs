@@ -18,9 +18,9 @@ Some of the options are listed below.
 | **away** | Turn you in the opposite direction of your target |
 | _name_ | Considered a [Spawn Search](../../general-information/spawn-search.md) |
 
-{% hint style="info" %}
-Using **/face** without a target will do nothing.
-{% endhint %}
+| :memo: INFO                                       |
+|---------------------------------------------------|
+| Using **/face** without a target will do nothing. |
 
 ## Examples
 

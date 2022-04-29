@@ -2,9 +2,9 @@
 
 Provide access to information in an alert list
 
-{% hint style="info" %}
-This page is incomplete
-{% endhint %}
+| :memo: INFO             |
+|-------------------------|
+| This page is incomplete |
 
 | Type | Name | Description |
 | :--- | :--- | :--- |

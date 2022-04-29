@@ -130,9 +130,9 @@ _EffectType_ will return one of the following:
 * **Spell Scroll** - Scribeable spell scroll
 * **Worn** - item has a focus effect
 
-{% hint style="warning" %}
-This next section needs to be moved to the MQ2ItemDisplay article
-{% endhint %}
+| :warning: WARNING                                                 |
+|-------------------------------------------------------------------|
+| This next section needs to be moved to the MQ2ItemDisplay article |
 
 ## DisplayItem Index
 

@@ -1,8 +1,8 @@
 # MQ2FPS
 
-{% hint style="warning" %}
-This plugin is deprecated and no longer available for MacroQuest. Framelimiting functionality is now part of **main**.
-{% endhint %}
+| :warning: WARNING                                                                                                      |
+|------------------------------------------------------------------------------------------------------------------------|
+| This plugin is deprecated and no longer available for MacroQuest. Framelimiting functionality is now part of **main**. |
 
 ### Description
 

@@ -1,8 +1,8 @@
 # MQ2Web
 
-{% hint style="warning" %}
-This plugin is deprecated. The web browser component was removed from EverQuest.
-{% endhint %}
+| :warning: WARNING                                                                |
+|----------------------------------------------------------------------------------|
+| This plugin is deprecated. The web browser component was removed from EverQuest. |
 
 ## Description
 
