@@ -34,8 +34,6 @@ Update the submodules to the newest versions.  Ensure you are in the newly creat
 git submodule update
 ```
 
-Run `MQ2Auth.exe` to generate an authorization file for your computer.  Personal builds of MacroQuest are machine-locked, and can only be run on the machine that built it.
-
 If this is your first time downloading the source code, proceed to Build Steps.
 
 ### Updating an Existing Checkout
@@ -103,8 +101,6 @@ This will generate a `MQ2Foo.vcxproj`, `MQ2Foo.cpp` and several other files in a
 | tools       | Source code and additional tools that are used for MacroQuest development, but not part of the main project.               |
 
 ### Additional Files of Interest
-
-**MQ2Auth.exe** Generates MQ2Auth.h.  Run this first, before building the solution
 
 **plugins/mkplugin.exe** Generates a new plugin from the template.  Use this when creating a new plugin, or when converting an existing plugin from legacy MacroQuest.
 

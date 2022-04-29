@@ -8,5 +8,3 @@ The only supported compilers are VC6++ (Visual C++ 6.0) and VC.net (Visual C++ .
 
 Something else that can cause MQ2 to not show up in game. Even though it is in the Windows tray and also shows as loading when you are getting the splash screen prior to character select and on the splash screen as you enter the game world. A corrupted or missing macroquest.ini in the Release folder. If this is the case, download a new zip and recompile. Make sure there is a macroquest.ini in the release folder and that it is not corrupt by trying to open it with notepad or a text editor.
 
-For Vista users you should try setting the MQ2auth.exe to Windows XP SP2 compatability mode, before you compile and do the same with macroquest.exe.
-
