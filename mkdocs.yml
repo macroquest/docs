@@ -96,7 +96,7 @@ nav:
     - /click: commands/slash-commands/click.md
     - /combine: commands/slash-commands/combine.md
     - /ctrlkey: commands/slash-commands/ctrlkey.md
-    - /custombind: commands\slash-commands\custombind.md
+    - /custombind: commands/slash-commands/custombind.md
     - /destroy: commands/slash-commands/destroy.md
     - /docommand: commands/slash-commands/docommand.md
     - /doors: commands/slash-commands/doors.md
@@ -112,7 +112,7 @@ nav:
     - /filter: commands/slash-commands/filter.md
     - /flashontells: commands/slash-commands/flashontells.md
     - /foreground: commands/slash-commands/foreground.md
-    - /fps: commands\slash-commands\fps.md
+    - /fps: commands/slash-commands/fps.md
     - /help: commands/slash-commands/help.md
     - /hotbutton: commands/slash-commands/hotbutton.md
     - /identify: commands/slash-commands/identify.md
@@ -130,11 +130,11 @@ nav:
     - /loginname: commands/slash-commands/loginname.md
     - /look: commands/slash-commands/look.md
     - /lootall: commands/slash-commands/lootall.md
-    - /maxfps: commands\slash-commands\maxfps.md
-    - /mqclear: commands\slash-commands\mqclear.md
-    - /mqfont: commands\slash-commands\mqfont.md
-    - /mqmin: commands\slash-commands\mqmin.md
-    - /render: commands\slash-commands\render.md
+    - /maxfps: commands/slash-commands/maxfps.md
+    - /mqclear: commands/slash-commands/mqclear.md
+    - /mqfont: commands/slash-commands/mqfont.md
+    - /mqmin: commands/slash-commands/mqmin.md
+    - /render: commands/slash-commands/render.md
     - /mqcopylayout: commands/slash-commands/mqcopylayout.md
     - /macro: commands/slash-commands/macro.md
     - /makemevisible: commands/slash-commands/makemevisible.md
@@ -168,8 +168,8 @@ nav:
     - /squelch: commands/slash-commands/squelch.md
     - /substitute: commands/slash-commands/substitute.md
     - /mqtarget: commands/slash-commands/mqtarget.md
-    - /target: commands\slash-commands\target.md
-    - /telnet: commands\slash-commands\telnet.md
+    - /target: commands/slash-commands/target.md
+    - /telnet: commands/slash-commands/telnet.md
     - /timed: commands/slash-commands/timed.md
     - /timestamp: commands/slash-commands/timestamp.md
     - /unload: commands/slash-commands/unload.md
@@ -186,14 +186,14 @@ nav:
     
     - Macro Directives:
       - commands/macro-commands/macro-directives/README.md
-      - \#bind: commands/macro-commands/macro-directives/macro-bind.md
-      - \#chat: commands/macro-commands/macro-directives/chat.md
-      - \#define: commands/macro-commands/macro-directives/define.md
-      - \#event: commands/macro-commands/macro-directives/event.md
-      - \#include: commands/macro-commands/macro-directives/include.md
-      - \#include\_optional: commands/macro-commands/macro-directives/include_optional.md
-      - \#turbo: commands/macro-commands/macro-directives/turbo.md
-      - \#warning: commands/macro-commands/macro-directives/warning.md
+      - /#bind: commands/macro-commands/macro-directives/macro-bind.md
+      - /#chat: commands/macro-commands/macro-directives/chat.md
+      - /#define: commands/macro-commands/macro-directives/define.md
+      - /#event: commands/macro-commands/macro-directives/event.md
+      - /#include: commands/macro-commands/macro-directives/include.md
+      - /#include/_optional: commands/macro-commands/macro-directives/include_optional.md
+      - /#turbo: commands/macro-commands/macro-directives/turbo.md
+      - /#warning: commands/macro-commands/macro-directives/warning.md
     - /break: commands/macro-commands/break.md
     - /deletevar: commands/macro-commands/deletevar.md
     - /delay: commands/macro-commands/delay.md
@@ -228,7 +228,6 @@ nav:
       - TLO:Alias: data-types-and-top-level-objects/top-level-objects/tlo-alias.md
       - TLO:AltAbility: data-types-and-top-level-objects/top-level-objects/tlo-altability.md
       - TLO:Bandolier: data-types-and-top-level-objects/top-level-objects/tlo-bandolier.md
-      - TLO:Bazaar: data-types-and-top-level-objects\top-level-objects\mq2bzsrch-tlo-bazaar.md
       - TLO:Bool: data-types-and-top-level-objects/top-level-objects/tlo-bool.md
       - TLO:Corpse: data-types-and-top-level-objects/top-level-objects/tlo-corpse.md
       - TLO:Cursor: data-types-and-top-level-objects/top-level-objects/tlo-cursor.md
@@ -244,7 +243,7 @@ nav:
       - TLO:FindItemCount: data-types-and-top-level-objects/top-level-objects/tlo-finditemcount.md
       - TLO:Float: data-types-and-top-level-objects/top-level-objects/tlo-float.md
       - TLO:Friends: data-types-and-top-level-objects/top-level-objects/tlo-friends.md
-      - TLO:FPS: data-types-and-top-level-objects\top-level-objects\tlo-fps.md
+      - TLO:FPS: data-types-and-top-level-objects/top-level-objects/tlo-fps.md
       - TLO:GameTime: data-types-and-top-level-objects/top-level-objects/tlo-gametime.md
       - TLO:Ground: data-types-and-top-level-objects/top-level-objects/tlo-ground.md
       - TLO:GroundItemCount: data-types-and-top-level-objects/top-level-objects/tlo-grounditemcount.md
@@ -254,8 +253,7 @@ nav:
       - TLO:Illusion: data-types-and-top-level-objects/top-level-objects/tlo-illusion.md
       - TLO:Ini: data-types-and-top-level-objects/top-level-objects/tlo-ini.md
       - TLO:Int: data-types-and-top-level-objects/top-level-objects/tlo-int.md
-      - TLO:InvSlot: data-types-and-top-level-objects/top-level-objects/invslot.md
-      - TLO:IRC: data-types-and-top-level-objects\top-level-objects\tlo-irc.md
+      - TLO:IRC: data-types-and-top-level-objects/top-level-objects/tlo-irc.md
       - TLO:ItemTarget: data-types-and-top-level-objects/top-level-objects/tlo-itemtarget.md
       - TLO:LastSpawn: data-types-and-top-level-objects/top-level-objects/tlo-lastspawn.md
       - TLO:LineOfSight: data-types-and-top-level-objects/top-level-objects/tlo-lineofsight.md
@@ -289,16 +287,7 @@ nav:
       - data-types-and-top-level-objects/data-types/README.md
       - DataType:achievement: data-types-and-top-level-objects/data-types/datatype-achievement.md
       - DataType:achievementcat: data-types-and-top-level-objects/data-types/datatype-achievementcat.md
-      - DataType:achievementcomp: data-types-and-top-level-objects\data-types\datatype-achievementcomp.md
-      - DataType:mount: data-types-and-top-level-objects\data-types\datatype-mount.md
-      - DataType:taskmember: data-types-and-top-level-objects\data-types\datatype-taskmember-1.md
-      - DataType:xtaggrocount: data-types-and-top-level-objects\data-types\datatype-xtaggrocount.md
-      - DataType:itemslot: data-types-and-top-level-objects\data-types\itemslot.md
-      - DataType:bazaar: data-types-and-top-level-objects\data-types\mq2bzsrch-datatype-bazaar.md
-      - DataType:bazaaritem: data-types-and-top-level-objects\data-types\mq2bzsrch-datatype-bazaaritem.md
-      - DataType:buddy: data-types-and-top-level-objects\data-types\mq2eqim-datatype-buddy.md
-      - DataType:fps: data-types-and-top-level-objects\data-types\mq2fps-datatype-fps.md
-      - DataType:irc: data-types-and-top-level-objects\data-types\mq2irc-datatype-irc.md
+      - DataType:achievementcomp: data-types-and-top-level-objects/data-types/datatype-achievementcomp.md
       - DataType:achievementobj: data-types-and-top-level-objects/data-types/datatype-achievementobj.md
       - DataType:alertlist: data-types-and-top-level-objects/data-types/datatype-alertlisttype.md
       - DataType:altability: data-types-and-top-level-objects/data-types/datatype-altability.md
@@ -330,13 +319,14 @@ nav:
       - DataType:int: data-types-and-top-level-objects/data-types/datatype-int.md
       - DataType:invslot: data-types-and-top-level-objects/data-types/datatype-invslot.md
       - DataType:item: data-types-and-top-level-objects/data-types/datatype-item.md
-      - DataType:keyring: data-types-and-top-level-objects/data-types/datatype-keyring-1.md
-      - DataType:keyringitem: data-types-and-top-level-objects/data-types/datatype-keyring.md
+      - DataType:keyring: data-types-and-top-level-objects/data-types/datatype-keyring.md
+      - DataType:keyringitem: data-types-and-top-level-objects/data-types/datatype-keyringitem.md
       - DataType:macro: data-types-and-top-level-objects/data-types/datatype-macro.md
       - DataType:macroquest: data-types-and-top-level-objects/data-types/datatype-macroquest.md
       - DataType:math: data-types-and-top-level-objects/data-types/datatype-math.md
       - DataType:mercenary: data-types-and-top-level-objects/data-types/datatype-mercenary.md
       - DataType:merchant: data-types-and-top-level-objects/data-types/datatype-merchant.md
+      - DataType:mount: data-types-and-top-level-objects/data-types/datatype-mount.md
       - DataType:pet: data-types-and-top-level-objects/data-types/datatype-pet.md
       - DataType:plugin: data-types-and-top-level-objects/data-types/datatype-plugin.md
       - DataType:race: data-types-and-top-level-objects/data-types/datatype-race.md
@@ -358,8 +348,8 @@ nav:
       - DataType:type: data-types-and-top-level-objects/data-types/datatype-type.md
       - DataType:window: data-types-and-top-level-objects/data-types/datatype-window.md
       - DataType:worldlocation: data-types-and-top-level-objects/data-types/datatype-worldlocation.md
+      - DataType:xtaggrocount: data-types-and-top-level-objects/data-types/datatype-xtaggrocount.md
       - DataType:xtarget: data-types-and-top-level-objects/data-types/datatype-xtarget.md
-      - DataType:xtaggrocount: data-types-and-top-level-objects\data-types\xtaggrocount.md
       - DataType:zone: data-types-and-top-level-objects/data-types/datatype-zone.md
 
 - Plugins:
@@ -367,33 +357,33 @@ nav:
   - Core Plugins:
     - MQ2AutoLogin: plugins/core-plugins/mq2autologin.md
     - MQ2Bzsrch: plugins/core-plugins/mq2bzsrch.md
-    - TLO:Bazaar: plugins/core-plugins/mq2bzsrch/mq2bzsrch-tlo-bazaar.md
+      - TLO:Bazaar: plugins/core-plugins/mq2bzsrch/mq2bzsrch-tlo-bazaar.md
     - DataType:bazaar: plugins/core-plugins/mq2bzsrch/mq2bzsrch-datatype-bazaar.md
     - DataType:bazaaritem: plugins/core-plugins/mq2bzsrch/mq2bzsrch-datatype-bazaaritem.md
     - MQ2Chat: plugins/core-plugins/mq2chat.md
     - MQ2ChatWnd: plugins/core-plugins/mq2chatwnd.md
-    - /mqclear: plugins/core-plugins/mq2chatwnd/mqclear.md
-    - /mqfont: plugins/core-plugins/mq2chatwnd/mqfont.md
-    - /mqmin: plugins/core-plugins/mq2chatwnd/mqmin.md
+      - /mqclear: plugins/core-plugins/mq2chatwnd/mqclear.md
+      - /mqfont: plugins/core-plugins/mq2chatwnd/mqfont.md
+      - /mqmin: plugins/core-plugins/mq2chatwnd/mqmin.md
     - MQ2CustomBinds: plugins/core-plugins/mq2custombinds.md
-    - /custombind: plugins/core-plugins/mq2custombinds/custombind.md
+      - /custombind: plugins/core-plugins/mq2custombinds/custombind.md
     - MQ2EQBugFix: plugins/core-plugins/mq2eqbugfix.md
     - MQ2HUD: plugins/core-plugins/mq2hud/README.md
-    - /classhud: plugins/core-plugins/mq2hud/classhud.md
-    - /defaulthud: plugins/core-plugins/mq2hud/defaulthud.md
-    - /hud: plugins/core-plugins/mq2hud/hud.md
-    - /loadhud: plugins/core-plugins/mq2hud/loadhud.md
-    - /zonehud: plugins/core-plugins/mq2hud/zonehud.md
+      - /classhud: plugins/core-plugins/mq2hud/classhud.md
+      - /defaulthud: plugins/core-plugins/mq2hud/defaulthud.md
+      - /hud: plugins/core-plugins/mq2hud/hud.md
+      - /loadhud: plugins/core-plugins/mq2hud/loadhud.md
+      - /zonehud: plugins/core-plugins/mq2hud/zonehud.md
     - MQ2ItemDisplay: plugins/core-plugins/mq2itemdisplay/README.md
-    - /inote: plugins/core-plugins/mq2itemdisplay/inote.md
+      - /inote: plugins/core-plugins/mq2itemdisplay/inote.md
     - MQ2Labels: plugins/core-plugins/mq2labels.md
     - MQ2Map: plugins/core-plugins/mq2map/README.md
-    - /highlight: plugins/core-plugins/mq2map/highlight.md
-    - /mapclick: plugins/core-plugins/mq2map/mapclick.md
+      - /highlight: plugins/core-plugins/mq2map/highlight.md
+      - /mapclick: plugins/core-plugins/mq2map/mapclick.md
     - Mapfilter: plugins/core-plugins/mq2map/mapfilter.md
-    - /maphide: plugins/core-plugins/mq2map/maphide.md
-    - /mapnames: plugins/core-plugins/mq2map/mapnames.md
-    - /mapshow: plugins/core-plugins/mq2map/mapshow.md
+      - /maphide: plugins/core-plugins/mq2map/maphide.md
+      - /mapnames: plugins/core-plugins/mq2map/mapnames.md
+      - /mapshow: plugins/core-plugins/mq2map/mapshow.md
   
   - Community Plugins:
     - MQ2AAPurchase: plugins/community-plugins/mq2aapurchase.md
@@ -411,8 +401,8 @@ nav:
     - MQ2DPS: plugins/community-plugins/mq2dps.md
     - MQ2DPSAdv: plugins/community-plugins/mq2dpsadv.md
     - MQ2Debuffs: plugins/community-plugins/mq2debuffs.md
-    - MQ2Cecho: plugins\community-plugins\mq2cecho.md
-    - MQ2FPS: plugins\community-plugins\mq2fps.md
+    - MQ2Cecho: plugins/community-plugins/mq2cecho.md
+    - MQ2FPS: plugins/community-plugins/mq2fps.md
     - MQ2EQBC: plugins/community-plugins/mq2eqbc/README.md
     - MQ2EQBC:Revisions: plugins/community-plugins/mq2eqbc/mq2eqbc-revisions.md
     - MQ2Events: plugins/community-plugins/mq2events.md
@@ -429,7 +419,7 @@ nav:
     - MQ2MoveUtils:History: plugins/community-plugins/mq2moveutils/mq2moveutils-history.md
     - MQ2MoveUtils:v11 Revisions: plugins/community-plugins/mq2moveutils/mq2moveutils-v11-revisions.md
     - MQ2MoveUtils:v11 FAQ: plugins/community-plugins/mq2moveutils/mq2moveutils-v11-faq.md
-    - MQ2MoveUtils \(old\): plugins/community-plugins/mq2moveutils/mq2moveutils-old.md
+    - MQ2MoveUtils (old): plugins/community-plugins/mq2moveutils/mq2moveutils-old.md
     - MQ2NetBots: plugins/community-plugins/mq2netbots.md
     - MQ2NetHeal: plugins/community-plugins/mq2netheal.md
     - MQ2PQ: plugins/community-plugins/mq2pq.md
@@ -445,26 +435,26 @@ nav:
     - MQ2Twist: plugins/community-plugins/mq2twist/README.md
     - MQ2Twist:Revisions: plugins/community-plugins/mq2twist/mq2twist-revisions.md
     - MQ2Vendors: plugins/community-plugins/mq2vendors.md
-    - MQ2MQ2Web: plugins\community-plugins\mq2web.md
+    - MQ2MQ2Web: plugins/community-plugins/mq2web.md
     - MQ2XPTracker: plugins/community-plugins/mq2xptracker.md
   
   - Discontinued / Unsupported:
     - MQ2EQIM: plugins/discontinued-unsupported/mq2eqim/README.md
-    - MQ2EQIM:DataType:buddy: plugins/discontinued-unsupported/mq2eqim/mq2eqim-datatype-buddy.md
+      - MQ2EQIM:DataType:buddy: plugins/discontinued-unsupported/mq2eqim/mq2eqim-datatype-buddy.md
     - MQ2FPS: plugins/discontinued-unsupported/mq2fps/README.md
-    - TLO:FPS: plugins/discontinued-unsupported/mq2fps/tlo-fps.md
+      - TLO:FPS: plugins/discontinued-unsupported/mq2fps/tlo-fps.md
     - MQ2IRC: plugins/discontinued-unsupported/mq2irc/README.md
-    - TLO:Irc: plugins/discontinued-unsupported/mq2irc/tlo-irc.md
-    - MQ2IRC:DataType:irc: plugins/discontinued-unsupported/mq2irc/mq2irc-datatype-irc.md
-    - Commands: plugins/discontinued-unsupported/mq2irc/commands/README.md
-    - /i: plugins/discontinued-unsupported/mq2irc/commands/i.md
-    - /iconnect: plugins/discontinued-unsupported/mq2irc/commands/iconnect.md
-    - /istatus: plugins/discontinued-unsupported/mq2irc/commands/istatus.md
+      - TLO:Irc: plugins/discontinued-unsupported/mq2irc/tlo-irc.md
+      - MQ2IRC:DataType:irc: plugins/discontinued-unsupported/mq2irc/mq2irc-datatype-irc.md
+      - Commands: plugins/discontinued-unsupported/mq2irc/commands/README.md
+        - /i: plugins/discontinued-unsupported/mq2irc/commands/i.md
+        - /iconnect: plugins/discontinued-unsupported/mq2irc/commands/iconnect.md
+        - /istatus: plugins/discontinued-unsupported/mq2irc/commands/istatus.md
     - MQ2Telnet:
       - plugins/discontinued-unsupported/mq2telnet/README.md
-      - MQ2Telnet: plugins/discontinued-unsupported/mq2telnet.md
-    - /telnet: plugins/discontinued-unsupported/mq2telnet/telnet.md
-    - MQ2eqim: plugins\discontinued-unsupported\mq2eqim.md
+    - MQ2Telnet: plugins/discontinued-unsupported/mq2telnet.md
+      - /telnet: plugins/discontinued-unsupported/mq2telnet/telnet.md
+    - MQ2eqim: plugins/discontinued-unsupported/mq2eqim.md
     - MQ2Web: plugins/discontinued-unsupported/mq2web.md
 
 - Macros:

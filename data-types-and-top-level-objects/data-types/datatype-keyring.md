@@ -1,24 +1,23 @@
-# DataType:keyringitem
+# DataType:keyring
 
-This datatype deals strictly with information items on a keyring.
+This datatype represents information about a keyring (a.k.a. a collection of mounts, illusions, etc)
 
 ## Members
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **Index** | Where on the keyring list |
-| [item](datatype-item.md) | **Item** | The item on the keyring |
-| [_string_](datatype-string.md)\_\_ | **Name** | name of the keyring item |
+| [_int_](datatype-int.md) | **Count** | The number of items in this keyring |
+| [_keyringitem_](datatype-keyring.md) | **Stat** | The keyring item assigned as the stat item |
 
 ## Examples
 
-`/echo ${Mount[1].Name}`  
-Outputs: Whirligig Flyer Control Device
+If **Jungle Raptor Saddle** is set as your **Stat Mount**:
 
-`/echo ${Mount[2].Name}`  
-Outputs: Abyssal Steed
+`/echo ${Mount.Stat}`  
+Outputs: Jungle Raptor Saddle
 
-`/echo ${Mount[Abyssal Steed].Index}`
+If you have **3** items in your Mounts keyring:
 
-Outputs: 2
+`/echo ${Mount.Count}`  
+Outputs: 3
 
