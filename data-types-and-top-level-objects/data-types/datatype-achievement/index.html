@@ -8480,26 +8480,22 @@
 <p>Each achievement has an icon associated with it. This icon id represents a cell in the <code>A_DragItem</code> texture. To access the cell, subtract 500 from the icon id.</p>
 <h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
 <p>Link an achievement into chat</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="1:1"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>/say This is an achievement link: ${Achievement[2801001].Link}
 </code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:1"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">Lua</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
 </div>
-</div>
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="n">mq</span><span class="p">.</span><span class="n">cmdf</span><span class="p">(</span><span class="s2">&quot;/say This is an achievement link: %s&quot;</span><span class="p">,</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Achievement</span><span class="p">(</span><span class="mi">2801001</span><span class="p">).</span><span class="n">Link</span><span class="p">())</span>
 </code></pre></div>
+</div>
+</div>
+</div>
 <p>Print a message if an achievement has been completed. This example also demonstrates how to properly use an achievement index.</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="3:1"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">MQScript</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">MQScript</label><label for="__tabbed_2_2">Lua</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>| 500980300 = Wayfarers Brotherhood Adventurer&#39;s Stone (Various 20+)
 /declare achievementIndex int local ${Achievement[500980300].Index}
 /echo ${achievementIndex}
@@ -8510,11 +8506,8 @@
     /echo ${Achievement.AchievementByIndex[${achievementIndex}].Name} is not completed!
 }
 </code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="4:1"><input checked="checked" id="__tabbed_4_1" name="__tabbed_4" type="radio" /><div class="tabbed-labels"><label for="__tabbed_4_1">Lua</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
 </div>
-</div>
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="c1">-- 500980300 = Wayfarers Brotherhood Adventurer&#39;s Stone (Various 20+)</span>
 <span class="kd">local</span> <span class="n">achievementIndex</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Achievement</span><span class="p">(</span><span class="mi">500980300</span><span class="p">).</span><span class="n">Index</span><span class="p">()</span>
 
@@ -8525,12 +8518,13 @@
     <span class="nb">print</span><span class="p">(</span><span class="n">achievement</span><span class="p">.</span><span class="n">Name</span><span class="p">()</span> <span class="o">..</span> <span class="s1">&#39; is not completed!&#39;</span><span class="p">)</span>
 <span class="kr">end</span>
 </code></pre></div>
+</div>
+</div>
+</div>
 <p>Print how many humans you have left to kill for the "<strong>I'm a People Person!</strong>" achievement</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="5:1"><input checked="checked" id="__tabbed_5_1" name="__tabbed_5" type="radio" /><div class="tabbed-labels"><label for="__tabbed_5_1">MQScript</label></div>
+<div class="tabbed-set tabbed-alternate" data-tabs="3:2"><input checked="checked" id="__tabbed_3_1" name="__tabbed_3" type="radio" /><input id="__tabbed_3_2" name="__tabbed_3" type="radio" /><div class="tabbed-labels"><label for="__tabbed_3_1">MQScript</label><label for="__tabbed_3_2">Lua</label></div>
 <div class="tabbed-content">
-<div class="tabbed-block"></div>
-</div>
-</div>
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>| 11000028 = I&#39;m a People Person!
 /if (${Achievement[11000028].Completed}) {
     /echo ${Achievement[11000028].Name} is complete!
@@ -8543,11 +8537,8 @@
     }
 }
 </code></pre></div>
-<div class="tabbed-set tabbed-alternate" data-tabs="6:1"><input checked="checked" id="__tabbed_6_1" name="__tabbed_6" type="radio" /><div class="tabbed-labels"><label for="__tabbed_6_1">Lua</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block"></div>
 </div>
-</div>
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">achievement</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Achievement</span><span class="p">(</span><span class="s2">&quot;I&#39;m a People Person!&quot;</span><span class="p">)</span>
 
 <span class="kr">if</span> <span class="n">achievement</span><span class="p">.</span><span class="n">Completed</span><span class="p">()</span> <span class="kr">then</span>
@@ -8561,6 +8552,9 @@
     <span class="kr">end</span>
 <span class="kr">end</span>
 </code></pre></div>
+</div>
+</div>
+</div>
 
               
             </article>
