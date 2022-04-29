@@ -3,7 +3,7 @@
 Welcome to the MacroQuest Documentation.
 
 | :memo: NOTE | This documentation is a work in progress and may contain inaccuracies or errors. |
-|------------------------------------------------------------------------------------------------|
+|-------------|----------------------------------------------------------------------------------|
 
 ## MacroQuest
 
