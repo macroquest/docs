@@ -28,8 +28,10 @@ Provides access achievements, achievement categories, and other information surr
 
 ## Usage
 
-!!! warning
-    Looking up achievements by name may not always return the correct achievement if multiple exist with the same name. Achievement IDs should be preferred over names as they don't change and are unique.
+| :warning: WARNING                                                                                                                           |
+|---------------------------------------------------------------------------------------------------------------------------------------------|
+| Looking up achievements by name may not always return the correct achievement if multiple exist with the same name. Achievement IDs should  |
+| be preferred over names as they don't change and are unique.                                                                                |
 
 **Achievement[**#**]** and **Achievement.Achievement[**#**]** are equivalent and are provided for consistency. The primary way to access achievement information should be via id. Achievement IDs are unique and do not change.
 

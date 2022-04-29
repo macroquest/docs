@@ -2,13 +2,9 @@
 
 Welcome to the MacroQuest Documentation.
 
-!!! note
-
-    This documentation is a work in progress and may contain inaccuracies or errors.
-
-!!! info
-
-    This documentation is for MacroQuest a.k.a. MQnext. For the legacy MacroQuest2 Wiki go [here](https://macroquest2.com/wiki/index.php).
+| :memo: NOTE                                                                      |
+|----------------------------------------------------------------------------------|
+| This documentation is a work in progress and may contain inaccuracies or errors. |
 
 ## MacroQuest
 

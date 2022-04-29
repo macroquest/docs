@@ -2,8 +2,9 @@
 
 ## People Associated with the MacroQuest Project
 
-!!! warning "Out of Date"
-    This section is out of date and hasn't been updated for a really long time.
+| :warning: Out of Date                                                       |
+|-----------------------------------------------------------------------------|
+| This section is out of date and hasn't been updated for a really long time. |
 
 People are not listed within a section in any particular order.
 
