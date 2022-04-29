@@ -7,21 +7,21 @@ Provides the details about a single achievement and allows access to an achievem
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
 | [_int_](datatype-int.md) | **ID** | The achievement's unique ID. |
-| \_\_[_string_](datatype-string.md)\_\_ | **Name** | The achievement's name |
-| \_\_[_string_](datatype-string.md)\_\_ | **Description** | The achievement's description |
+| [_string_](datatype-string.md) | **Name** | The achievement's name |
+| [_string_](datatype-string.md) | **Description** | The achievement's description |
 | [_int_](datatype-int.md) | **Points** | The point value for the achievement |
-| \_\_[_achievementobj_](datatype-achievementobj.md)\_\_ | **Objective[**\#\|_Description_**]** | Find an objective by its objective ID or Description. |
-| \_\_[_achievementobj_](datatype-achievementobj.md)\_\_ | **ObjectiveByIndex[**\#**]** | Find an objective by its visual ordering as displayed in the achievements window. |
+| [_achievementobj_](datatype-achievementobj.md) | **Objective[**\#\|_Description_**]** | Find an objective by its objective ID or Description. |
+| [_achievementobj_](datatype-achievementobj.md) | **ObjectiveByIndex[**\#**]** | Find an objective by its visual ordering as displayed in the achievements window. |
 | [_int_](datatype-int.md) | **ObjectiveCount** | The number of objectives in this achievement. |
-| \_\_[_string_](datatype-string.md)\_\_ | **Link[**_opt: Name_**]** | Generate an achievement link. An optional name can be provided to display in the achievement, otherwise the current character's name will be used. |
+| [_string_](datatype-string.md) | **Link[**_opt: Name_**]** | Generate an achievement link. An optional name can be provided to display in the achievement, otherwise the current character's name will be used. |
 | [_int_](datatype-int.md) | **Index** | The index of the achievement. See [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices) for more information. |
 | [_int_](datatype-int.md) | **IconID** | ID of the Achievement's Icon. See [Achievement Icon](datatype-achievement.md#achievement-icon) below. |
-| \_\_[_string_](datatype-string.md)\_\_ | **State** | The achievement state. See [Achievement State](datatype-achievement.md#achievement-state) below. |
-| \_\_[_bool_](datatype-bool.md)\_\_ | **Completed** | True if the achievement has been completed |
-| \_\_[_bool_](datatype-bool.md)\_\_ | **Open** | True if the achievement is open |
-| \_\_[_bool_](datatype-bool.md)\_\_ | **Locked** | True if the achievement is locked |
-| \_\_[_bool_](datatype-bool.md)\_\_ | **Hidden** | True if the achievement is hidden |
-| \_\_[_time_](../top-level-objects/tlo-time.md)\_\_ | **CompletedTime** | Calendar time when the achievement was completed. |
+| [_string_](datatype-string.md) | **State** | The achievement state. See [Achievement State](datatype-achievement.md#achievement-state) below. |
+| [_bool_](datatype-bool.md) | **Completed** | True if the achievement has been completed |
+| [_bool_](datatype-bool.md) | **Open** | True if the achievement is open |
+| [_bool_](datatype-bool.md) | **Locked** | True if the achievement is locked |
+| [_bool_](datatype-bool.md) | **Hidden** | True if the achievement is hidden |
+| [_time_](../top-level-objects/tlo-time.md) | **CompletedTime** | Calendar time when the achievement was completed. |
 
 ### Achievement State
 
@@ -42,24 +42,22 @@ Each achievement has an icon associated with it. This icon id represents a cell 
 
 Link an achievement into chat
 
-{% tabs %}
-{% tab title="MQScript" %}
+=== "MQScript"
+
 ```text
 /say This is an achievement link: ${Achievement[2801001].Link}
 ```
-{% endtab %}
 
-{% tab title="Lua" %}
+=== "Lua"
+
 ```lua
 mq.cmdf("/say This is an achievement link: %s", mq.TLO.Achievement(2801001).Link())
 ```
-{% endtab %}
-{% endtabs %}
 
 Print a message if an achievement has been completed. This example also demonstrates how to properly use an achievement index.
 
-{% tabs %}
-{% tab title="MQScript" %}
+=== "MQScript"
+
 ```text
 | 500980300 = Wayfarers Brotherhood Adventurer's Stone (Various 20+)
 /declare achievementIndex int local ${Achievement[500980300].Index}
@@ -71,9 +69,9 @@ Print a message if an achievement has been completed. This example also demonstr
     /echo ${Achievement.AchievementByIndex[${achievementIndex}].Name} is not completed!
 }
 ```
-{% endtab %}
 
-{% tab title="Lua" %}
+=== "Lua"
+
 ```lua
 -- 500980300 = Wayfarers Brotherhood Adventurer's Stone (Various 20+)
 local achievementIndex = mq.TLO.Achievement(500980300).Index()
@@ -85,13 +83,12 @@ else
     print(achievement.Name() .. ' is not completed!')
 end
 ```
-{% endtab %}
-{% endtabs %}
+
 
 Print how many humans you have left to kill for the "**I'm a People Person!**" achievement
 
-{% tabs %}
-{% tab title="MQScript" %}
+=== "MQScript"
+
 ```
 | 11000028 = I'm a People Person!
 /if (${Achievement[11000028].Completed}) {
@@ -105,9 +102,9 @@ Print how many humans you have left to kill for the "**I'm a People Person!**" a
     }
 }
 ```
-{% endtab %}
 
-{% tab title="Lua" %}
+=== "Lua"
+
 ```lua
 local achievement = mq.TLO.Achievement("I'm a People Person!")
 
@@ -122,6 +119,3 @@ else
     end
 end
 ```
-{% endtab %}
-{% endtabs %}
-
