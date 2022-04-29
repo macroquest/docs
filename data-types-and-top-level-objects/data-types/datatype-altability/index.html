@@ -8349,7 +8349,7 @@
 <td>Returns true/false on if the Alternative Ability can be trained</td>
 </tr>
 <tr>
-<td><strong><a href="../datatype-string/"><em>string</em></a></strong></td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>Category</strong></td>
 <td>The name of the category that this AA belongs to.</td>
 </tr>
@@ -8359,7 +8359,7 @@
 <td>Base cost to train</td>
 </tr>
 <tr>
-<td><strong><a href="../datatype-string/"><em>string</em></a></strong></td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>Description</strong></td>
 <td>Basic description</td>
 </tr>
@@ -8394,7 +8394,7 @@
 <td>Reuse time (in seconds) that takes into account any hastened AA abilities</td>
 </tr>
 <tr>
-<td><strong><a href="../datatype-string/"><em>string</em></a></strong></td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>Name</strong></td>
 <td>Name</td>
 </tr>
@@ -8414,7 +8414,7 @@
 <td>Returns true/false on if the Alternative Ability is passive</td>
 </tr>
 <tr>
-<td><strong><a href="./"><em>altability</em></a></strong></td>
+<td><a href="./"><em>altability</em></a></td>
 <td><strong>RequiresAbility</strong></td>
 <td>Required ability (if any)</td>
 </tr>
@@ -8434,12 +8434,12 @@
 <td>Reuse time in seconds</td>
 </tr>
 <tr>
-<td><strong><a href="../datatype-string/"><em>string</em></a></strong></td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>ShortName</strong></td>
 <td>First line of button label (if any)</td>
 </tr>
 <tr>
-<td><a href="../datatype-string/"><em>string</em></a>__</td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>ShortName2</strong></td>
 <td>Second line of button label (if any)</td>
 </tr>
@@ -8454,7 +8454,7 @@
 <td>Type (1-6)</td>
 </tr>
 <tr>
-<td><strong><a href="../datatype-string/"><em>string</em></a></strong></td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>To String</strong></td>
 <td>Same as <strong>Name</strong></td>
 </tr>
@@ -8462,18 +8462,22 @@
 </table>
 <h3 id="example">Example:<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
 <p>If the AA "Companion's Aegis" can be trained, buy the next index/rank of it</p>
-<p _="%" endtab="endtab">{% tabs %}
-{% tab title="MQScript" %}
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScsript</label><label for="__tabbed_1_2">Lua</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>/if (${AltAbility[Companion&#39;s Aegis].CanTrain}) {
     /alt buy ${AltAbility[Companion&#39;s Aegis].NextIndex}
 }
-</code></pre></div></p>
-<p _="%" endtabs="endtabs">{% tab title="Lua" %}
+</code></pre></div>
+</div>
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AltAbility</span><span class="p">(</span><span class="s2">&quot;Companion&#39;s Aegis&quot;</span><span class="p">).</span><span class="n">CanTrain</span><span class="p">()</span> <span class="kr">then</span>
     <span class="n">mq</span><span class="p">.</span><span class="n">cmd</span><span class="p">.</span><span class="n">alt</span><span class="p">(</span><span class="s1">&#39;buy &#39;</span><span class="o">..</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AltAbility</span><span class="p">(</span><span class="s2">&quot;Companion&#39;s Aegis&quot;</span><span class="p">).</span><span class="n">NextIndex</span><span class="p">())</span>
 <span class="kr">end</span>
 </code></pre></div>
-{% endtab %}</p>
+</div>
+</div>
+</div>
 
               
             </article>

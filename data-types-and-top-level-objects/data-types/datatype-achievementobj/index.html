@@ -8344,7 +8344,7 @@
 <td align="left">The objective's unique ID.</td>
 </tr>
 <tr>
-<td align="left">__<a href="../datatype-string/"><em>string</em></a>__</td>
+<td align="left"><a href="../datatype-string/"><em>string</em></a></td>
 <td align="left"><strong>Description</strong></td>
 <td align="left">Text describing this objective.</td>
 </tr>
@@ -8359,7 +8359,7 @@
 <td align="left">The total count required to be complete the objective. For objectives that don't require a count, this will be zero.</td>
 </tr>
 <tr>
-<td align="left">__<a href="../datatype-bool/"><em>bool</em></a>__</td>
+<td align="left"><a href="../datatype-bool/"><em>bool</em></a></td>
 <td align="left"><strong>Completed</strong></td>
 <td align="left">True if the objective has been completed.</td>
 </tr>
@@ -8372,8 +8372,9 @@
 </table>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
 <p>List the objectives that are still left to complete the achievement "<strong>Norrathian Explorer</strong>":</p>
-<p _="%" endtab="endtab">{% tabs %}
-{% tab title="MQScript" %}
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>/declare ach achievement local Norrathian Explorer
 
 /if (${ach.Completed}) {
@@ -8388,8 +8389,9 @@
         /next i
     }
 }
-</code></pre></div></p>
-<p _="%" endtabs="endtabs">{% tab title="Lua" %}
+</code></pre></div>
+</div>
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">achievement</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Achievement</span><span class="p">(</span><span class="s1">&#39;Norrathian Explorer&#39;</span><span class="p">)</span>
 
 <span class="kr">if</span> <span class="n">achievement</span><span class="p">.</span><span class="n">Completed</span><span class="p">()</span> <span class="kr">then</span>
@@ -8404,7 +8406,9 @@
     <span class="kr">end</span>
 <span class="kr">end</span>
 </code></pre></div>
-{% endtab %}</p>
+</div>
+</div>
+</div>
 
               
             </article>

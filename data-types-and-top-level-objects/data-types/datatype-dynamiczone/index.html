@@ -8330,101 +8330,44 @@
 <p>Data for the current dynamic zone instance</p>
 <h2 id="members">Members<a class="headerlink" href="#members" title="Permanent link">&para;</a></h2>
 <table>
-  <thead>
-    <tr>
-      <th style="text-align:left"><b>Type</b>
-      </th>
-      <th style="text-align:left"><b>Member</b>
-      </th>
-      <th style="text-align:left"><b>Description</b>
-      </th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align:left"><a href="datatype-dzmember.md"><em>dzmember</em></a>
-      </td>
-      <td style="text-align:left"><b>Leader</b>
-      </td>
-      <td style="text-align:left">The leader of the dynamic zone</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-bool.md"><em>bool</em></a>
-      </td>
-      <td style="text-align:left"><b>LeaderFlagged</b>
-      </td>
-      <td style="text-align:left">
-        <p>Returns true if the dzleader can successfully enter the dz (this also
-          means the dz is actually Loaded.)</p>
-        <p></p>
-        <p><b>Example: </b><code>${DynamicZone.LeaderFlagged}</code>
-        </p>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>MaxMembers</b>
-      </td>
-      <td style="text-align:left">Maximum number of characters that can enter this dynamic zone</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-dzmember.md"><em>dzmember</em></a>
-      </td>
-      <td style="text-align:left"><b>Member[</b>#<b>|</b>name<b>]</b>
-      </td>
-      <td style="text-align:left">The dynamic zone member <em>#</em> or <em>name</em>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>Members</b>
-      </td>
-      <td style="text-align:left">Current number of characters in the dynamic zone</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Name</b>
-        </td>
-        <td style="text-align:left">The full name of the dynamic zone</td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a>
-      </td>
-      <td style="text-align:left"><b>MaxTimers</b>
-      </td>
-      <td style="text-align:left">The number of timers present in <b>Timers</b>
-      </td>
-    </tr>
-    <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-dztimer.md"><em>dztimer</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>Timer[#|Name]</b>
-        </td>
-        <td style="text-align:left">
-          <p>Access the list of current lockout timers. This is either an index from
-            1 to <b>MaxTimers</b>, or a Expedition|Event combination. Event is optional,
-            but if multiple Expeditions match, the timer with the earliest lockout
-            expiration will be returned.</p>
-          <p></p>
-          <p><b>Example:<br /></b>/echo ${DynamicZone.Timer[Nagafen&apos;s Lair|Lord
-            Nagafen].Timer.TimeDHM}</p>
-          <p>Output: 2:10:24</p>
-        </td>
-    </tr>
-    <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
-      <td
-      style="text-align:left"><b>To String</b>
-        </td>
-        <td style="text-align:left">Same as <b>Name</b>
-        </td>
-    </tr>
-  </tbody>
+<thead>
+<tr>
+<th align="left"><strong>Type</strong></th>
+<th align="left"><strong>Member</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="../datatype-dzmember/"><em>dzmember</em></a></td>
+<td align="left"><strong>Leader</strong></td>
+<td align="left">The leader of the dynamic zone</td>
+</tr>
+<tr>
+<td align="left"><a href="../datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>LeaderFlagged</strong></td>
+<td align="left">Returns true if the dzleader can successfully enter the dz (this also means the dz is actually Loaded.)</td>
+</tr>
+</tbody>
 </table>
+<div class="highlight"><pre><span></span><code>                                              Example: `${DynamicZone.LeaderFlagged}` |
+</code></pre></div>
+<p>| <a href="../datatype-int/"><em>int</em></a> | <strong>MaxMembers</strong> | Maximum number of characters that can enter this dynamic zone |
+| <a href="../datatype-dzmember/"><em>dzmember</em></a> | <strong>Member[</strong>#<strong>|**name</strong>]** | The dynamic zone member <em>#</em> or <em>name</em> |
+| <a href="../datatype-int/"><em>int</em></a> | <strong>Members</strong> | Current number of characters in the dynamic zone |
+| <a href="../datatype-string/"><em>string</em></a> | <strong>Name</strong> | The full name of the dynamic zone |
+| <a href="../datatype-int/"><em>int</em></a> | <strong>MaxTimers</strong> | The number of timers present in <strong>Timers</strong> |
+| <a href="../datatype-dztimer/"><em>dztimer</em></a> | <strong>Timer[<em>#</em>|<em>Name</em>]</strong> | Access the list of current lockout timers. This is either an index from
+                                                              1 to <strong>MaxTimers</strong>, or a Expedition|Event combination. Event is optional,
+                                                              but if multiple Expeditions match, the timer with the earliest lockout
+                                                              expiration will be returned.</p>
+<div class="highlight"><pre><span></span><code>                                                          **Example:**
 
+                                                          `/echo ${DynamicZone.Timer[Nagafen&#39;s Lair|Lord Nagafen].Timer.TimeDHM}`
+
+                                                          Output: 2:10:24
+</code></pre></div>
+<p>| <a href="../datatype-string/"><em>string</em></a> | <strong>To String</strong> | Same as <strong>Name</strong> |</p>
 <h3 id="changelog">Changelog<a class="headerlink" href="#changelog" title="Permanent link">&para;</a></h3>
 <ul>
 <li>July 9<sup>th</sup>, 2021: Added MaxTimers, Timer</li>
