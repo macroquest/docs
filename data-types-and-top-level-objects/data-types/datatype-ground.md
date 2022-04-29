@@ -12,7 +12,7 @@ Contains all data related to a ground spawn
 | [_float_](datatype-float.md) | **Y** | Y coordinate |
 | [_float_](datatype-float.md) | **Z** | Z coordinate |
 | [_heading_](datatype-heading.md) | **Heading** | Ground item is facing this heading |
-| \_\_[_string_](datatype-string.md)\_\_ | **Name** | Name |
+| [_string_](datatype-string.md) | **Name** | Name |
 | [_heading_](datatype-heading.md) | **HeadingTo** | Direction player must move to meet this ground item |
 | [_bool_](datatype-bool.md) | **LineOfSight** | Returns TRUE if ground spawn is in line of sight |
 | [_int_](datatype-int.md) | **Address** | ??? |
@@ -20,14 +20,14 @@ Contains all data related to a ground spawn
 | [_int_](datatype-int.md) | **Distance3D** | Distance from player to ground item |
 | [_int_](datatype-int.md) | **SubID** | ??? |
 | [_int_](datatype-int.md) | **ZoneID** | ??? |
-| \_\_[_ground_](datatype-ground.md)\_\_ | **First** | First spawn |
-| \_\_[_ground_](datatype-ground.md)\_\_ | **Last** | Last spawn |
-| \_\_[_ground_](datatype-ground.md)\_\_ | **Next** | Next spawn |
-| \_\_[_ground_](datatype-ground.md)\_\_ | **Prev** | Prev spawn |
+| [_ground_](datatype-ground.md) | **First** | First spawn |
+| [_ground_](datatype-ground.md) | **Last** | Last spawn |
+| [_ground_](datatype-ground.md) | **Next** | Next spawn |
+| [_ground_](datatype-ground.md) | **Prev** | Prev spawn |
 | [_float_](datatype-float.md) | **W** | X coordinate (Westward-positive) |
 | [_float_](datatype-float.md) | **N** | Y coordinate (Northward-positive) |
 | [_float_](datatype-float.md) | **U** | Z coordinate (Upward-positive) |
-| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as ID |
+| [_string_](datatype-string.md) | **To String** | Same as ID |
 
 ## Methods
 
