@@ -15,7 +15,7 @@ The AdvLoot TLO grants access to items in the Advanced Loot window.
 | [_advlootitem_](#advlootitem-type) | **SList**[ _Index_ ] | Inspect the item at the specified index in the shared loot list. |
 | [_int_](../data-types/datatype-int.md) | **SWantCount** | Want count from the Shared list (AN + AG + ND + GD) |
 
-## Associated  DataTypes
+## Associated DataTypes
 
 ### `advlootitem` Type
 

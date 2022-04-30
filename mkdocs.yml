@@ -459,7 +459,6 @@ nav:
     - DataType:achievementcat: reference/data-types/datatype-achievementcat.md
     - DataType:achievementcomp: reference/data-types/datatype-achievementcomp.md
     - DataType:achievementobj: reference/data-types/datatype-achievementobj.md
-    - DataType:alertlist: reference/data-types/datatype-alertlisttype.md
     - DataType:altability: reference/data-types/datatype-altability.md
     - DataType:argb: reference/data-types/datatype-argb.md
     - DataType:array: reference/data-types/datatype-array.md
