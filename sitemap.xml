@@ -336,6 +336,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.macroquest.org/main/features/parser/</loc>
+         <lastmod>2022-04-30</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.macroquest.org/main/other-applications/eqemu/</loc>
          <lastmod>2022-04-30</lastmod>
          <changefreq>daily</changefreq>
