@@ -33,7 +33,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Unused AA points</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-int.md"><em>int</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-int.md"><em>int</em></a></td>
       <td
       style="text-align:left"><b>AAPointsAssigned</b>
         </td>
@@ -61,7 +61,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">The total number of AA Vitality you have</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Ability[</b>name<b>]</b>
         </td>
@@ -195,7 +195,7 @@ Inherits [_spawn_](datatype-spawn.md)
         into account spell or song haste.</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Aura</b>
         </td>
@@ -301,7 +301,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Spell assigned to this slot # in your spell book</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-worldlocation.md"><em>worldlocation</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-worldlocation.md"><em>worldlocation</em></a></td>
       <td
       style="text-align:left"><b>BoundLocation[#]</b>
         </td>
@@ -430,7 +430,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Combat Effects bonus from gear and spells</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>CombatState</b>
         </td>
@@ -564,7 +564,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Damage absorption remaining (eg. from Rune-type spells)</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Diseased</b>
         </td>
@@ -578,7 +578,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Character Dexterity</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Dotted</b>
         </td>
@@ -756,7 +756,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Group leadership points</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>GroupList</b>
         </td>
@@ -930,7 +930,7 @@ Inherits [_spawn_](datatype-spawn.md)
         a list of <em>slotnames</em>.</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Invulnerable</b>
         </td>
@@ -1047,7 +1047,7 @@ Inherits [_spawn_](datatype-spawn.md)
         table.</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Language[</b>language number<b>]</b>
         </td>
@@ -1147,7 +1147,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Max mana</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Mercenary</b>
         </td>
@@ -1155,7 +1155,7 @@ Inherits [_spawn_](datatype-spawn.md)
           dead). Returns NULL if you do not have a Mercenary.</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>MercenaryStance</b>
         </td>
@@ -1183,7 +1183,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Moving? (including strafe)</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Name</b>
         </td>
@@ -1324,7 +1324,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Platinum in shared bank</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Poisoned</b>
         </td>
@@ -1415,7 +1415,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Am I Shrouded?</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Silenced</b>
         </td>
@@ -1545,7 +1545,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Stun Resist bonus from gear and spells</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Subscription</b>
         </td>
@@ -1560,7 +1560,7 @@ Inherits [_spawn_](datatype-spawn.md)
       </td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Surname</b>
         </td>
@@ -1711,7 +1711,7 @@ Inherits [_spawn_](datatype-spawn.md)
       <td style="text-align:left">Total amount of Vitality your toon has</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>To String</b>
         </td>
@@ -1761,274 +1761,12 @@ Inherits [_spawn_](datatype-spawn.md)
 
 ### Examples
 
-`/assist Eqmule`  
-`/delay 5s ${Me.AssistComplete}==TRUE`
+``` title="MQScript"
+/assist PlayerName
+/delay 5s ${Me.AssistComplete}==TRUE
+```
 
 The delay will last either 5s OR until the assist is complete
 
-## Ref mq2-2010121\MQ2Main\MQ2DataTypes.h
 
-Just putting this here because list above is incomplete and dont want to keep opening source...
-
-```text
-class MQ2CharacterType : public MQ2Type
-{
-public:
-    enum CharacterMembers
-    {
-        CountSongs = 2,
-        MaxBuffSlots = 3,
-        Exp = 4,
-        Spawn = 5,
-        Dar = 6,
-        AAExp = 7,
-        AAPoints = 8,
-        CurrentHPs = 10,
-        MaxHPs = 11,
-        HPRegen = 12,
-        PctHPs = 13,
-        CurrentMana = 14,
-        MaxMana = 15,
-        ManaRegen = 16,
-        PctMana = 17,
-        Buff = 18,
-        Song = 19,
-        Book = 20,
-        Skill = 21,
-        Ability = 22,
-        Cash = 24,
-        CashBank = 25,
-        PlatinumShared = 26,
-        Grouped = 27,
-        HPBonus = 28,
-        ManaBonus = 29,
-        GukEarned = 30,
-        MMEarned = 31,
-        RujEarned = 32,
-        TakEarned = 33,
-        MirEarned = 34,
-        LDoNPoints = 35,
-        CurrentFavor = 36,
-        CareerFavor = 37,
-        Endurance = 38,
-        Inventory = 39,
-        Bank = 40,
-        Combat = 42,
-        FreeInventory = 43,
-        Gem = 44,
-        SpellReady = 45,
-        Drunk = 50,
-        STR = 51,
-        STA = 52,
-        CHA = 53,
-        DEX = 54,
-        INT = 55,
-        AGI = 56,
-        WIS = 57,
-        svMagic = 58,
-        svFire = 59,
-        svCold = 60,
-        svPoison = 61,
-        svDisease = 62,
-        Hunger = 63,
-        Thirst = 64,
-        BaseSTR = 65,
-        BaseSTA = 66,
-        BaseCHA = 67,
-        BaseDEX = 68,
-        BaseINT = 69,
-        BaseAGI = 70,
-        BaseWIS = 71,
-        PracticePoints = 72,
-        PctExp = 73,
-        PctAAExp = 74,
-        Moving = 75,
-        AbilityReady = 76,
-        PetBuff = 77,
-        Platinum = 78,
-        Gold = 79,
-        Silver = 80,
-        Copper = 81,
-        PlatinumBank = 82,
-        GoldBank = 83,
-        SilverBank = 84,
-        CopperBank = 85,
-        Stunned = 88,
-        RangedReady = 89,
-        AltTimerReady = 90,
-        MaxEndurance = 91,
-        PctEndurance = 92,
-        AltAbility = 93,
-        AltAbilityReady = 94,
-        AltAbilityTimer = 95,
-        CombatAbility = 96,
-        CombatAbilityTimer = 97,
-        LargestFreeInventory = 98,
-        TargetOfTarget = 99,
-        RaidAssistTarget = 100,
-        GroupAssistTarget = 101,
-        RaidMarkNPC = 102,
-        GroupMarkNPC = 103,
-        CountBuffs = 104,
-        LanguageSkill = 105,
-        EnduranceBonus = 106,
-        CombatEffectsBonus = 107,
-        ShieldingBonus = 108,
-        SpellShieldBonus = 109,
-        AvoidanceBonus = 110,
-        AccuracyBonus = 111,
-        StunResistBonus = 112,
-        StrikeThroughBonus = 113,
-        AttackBonus = 114,
-        HPRegenBonus = 115,
-        ManaRegenBonus = 116,
-        DamageShieldBonus = 117,
-        DoTShieldBonus = 118,
-        AttackSpeed = 119,
-        GroupList = 120,
-        AmIGroupLeader = 121,
-        CurrentEndurance = 122,
-        EnduranceRegen = 123,
-        FreeBuffSlots = 124,
-        CurrentWeight = 125,
-        AAPointsSpent = 126,
-        AAPointsTotal = 127,
-        TributeActive = 128,
-        CombatAbilityReady = 129,
-        Running = 130,
-        GroupSize = 131,
-        TributeTimer = 132,
-        RadiantCrystals = 133,
-        EbonCrystals = 134,
-        Shrouded = 135,
-        AutoFire = 136,
-        Language = 137,
-        Aura = 138,
-        LAMarkNPC = 139,
-        LANPCHealth = 140,
-        LADelegateMA = 141,
-        LADelegateMarkNPC = 142,
-        LAInspectBuffs = 143,
-        LASpellAwareness = 144,
-        LAOffenseEnhancement = 145,
-        LAManaEnhancement = 146,
-        LAHealthEnhancement = 147,
-        LAHealthRegen = 148,
-        LAFindPathPC = 149,
-        LAHoTT = 150,
-        ActiveFavorCost = 151,
-        CombatState = 152,
-        svCorruption = 153,
-        svPrismatic = 154,
-        svChromatic = 155,
-        Doubloons = 156,
-        Orux = 157,
-        Phosphenes = 158,
-        Phosphites = 159,
-        Fellowship = 160,
-        Downtime = 161,
-        DamageShieldMitigationBonus = 162,
-        HeroicSTRBonus = 163,
-        HeroicINTBonus = 164,
-        HeroicWISBonus = 165,
-        HeroicAGIBonus = 166,
-        HeroicDEXBonus = 167,
-        HeroicSTABonus = 168,
-        HeroicCHABonus = 169,
-        HealAmountBonus = 170,
-        SpellDamageBonus = 171,
-        ClairvoyanceBonus = 172,
-        EnduranceRegenBonus = 173,
-        Counters = 174,
-        Faycites = 175,
-        Chronobines = 176,
-        Mercenary = 177,
-        XTarget = 178,
-        Haste = 179,
-        MercenaryStance = 180,
-        SkillCap = 181,
-        GemTimer = 182,
-        HaveExpansion = 183,
-        PctAggro = 184,
-        SecondaryPctAggro = 185,
-        SecondaryAggroPlayer = 186,
-        AggroLock = 187,
-        ZoneBound = 188,
-        ZoneBoundX = 189,
-        ZoneBoundY = 190,
-        ZoneBoundZ = 191,
-        PctMercAAExp = 192,
-        MercAAExp = 193,
-        Subscription = 194,
-        AAPointsAssigned = 195,
-        AltCurrency = 196,
-        ActiveDisc = 197,
-        Commemoratives = 198,
-        Nobles = 199,
-        Zoning = 200,
-        InInstance = 201,
-        Instance = 202,
-        MercListInfo = 203,
-        UseAdvancedLooting = 204,
-        Fists = 205,
-        EnergyCrystals = 206,
-        PiecesofEight = 207,
-        SpellInCooldown = 208,
-        Slowed = 209,
-        Rooted = 210,
-        Mezzed = 211,
-        Crippled = 212,
-        Malod = 213,
-        Tashed = 214,
-        Snared = 215,
-        Hasted = 216,
-        Aego = 217,
-        Skin = 218,
-        Focus = 219,
-        Regen = 220,
-        Symbol = 221,
-        Clarity = 222,
-        Pred = 223,
-        Strength = 224,
-        Brells = 225,
-        SV = 226,
-        SE = 227,
-        HybridHP = 228,
-        Growth = 229,
-        Shining = 230,
-        Beneficial = 231,
-        DSed = 232,
-        RevDSed = 233,
-        Charmed = 234,
-        CursorPlatinum = 235,
-        CursorGold = 236,
-        CursorSilver = 237,
-        CursorCopper = 238,
-        Diseased = 239,
-        Poisoned = 240,
-        Cursed = 241,
-        Corrupted = 242,
-        Krono = 243,
-        XTargetSlots = 244,
-        AssistComplete = 245,
-        ItemReady = 246,
-        NumGems = 247,
-        Vitality = 248,
-        PctVitality = 249,
-        AAVitality = 250,
-        PctAAVitality = 251,
-        GuildID = 252,
-        ExpansionFlags = 253,
-        SPA = 254,
-        BoundLocation = 255,
-        SkillBase = 256,
-    };
-    enum CharacterMethods
-    {
-        Stand,
-        Sit,
-        Dismount,
-        StopCast,
-    };
-```
-
+See Also: [Source](https://github.com/macroquest/macroquest/blob/master/src/main/datatypes/MQ2CharacterType.cpp).

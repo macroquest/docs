@@ -4,12 +4,14 @@ Provides access to achievements.
 
 ## Forms
 
-| Type | Form | Description |
-| ---- | ---- | ---- |
+| **Type** | **Form** | **Description** |
+| :--- | :--- | :--- |
 | [_achievement_](../data-types/datatype-achievement.md) | **Achievement[#\|Name]** | Look up an achievement by name or by id. |
 | [_achievementmgr_](#achievementmgr-type) | **Achievement** | Access the achievement manager which provides access to information about achievements |
 
-## AchievementMgr Type
+## Associated DataTypes
+
+### `achievementmgr` Type
 
 Provides access achievements, achievement categories, and other information surrounding the achievement system.
 
@@ -26,48 +28,51 @@ Provides access achievements, achievement categories, and other information surr
 | [_int_](../data-types/datatype-int.md)                           | **TotalAchivements**     |  The number of available achievements.    |
 | [_bool_](../data-types/datatype-bool.md)                         | **Ready**                |  Indicates that the manager has loaded all achievement data and is ready to be used.    |
 
+
 ## Usage
 
 !!! warning
     Looking up achievements by name may not always return the correct achievement if multiple exist with the same name. Achievement IDs should
     be preferred over names as they don't change and are unique.
 
+???+ note "Note About Achievement Indices"
+
+    Achievements and categories can be looked up by index. This is significantly faster than looking up by
+    id or name. However, these indices are **not** stable and will change from patch to patch,
+    but they will not change during the session.
+
+    If an achievement is being utilized in a script many times, it may be more performant to look up an
+    achievement's index (with its .Index member) and then use that in subsequent queries.
+
+    See [Achievement Examples](../data-types/datatype-achievement.md#examples) for some examples of using
+    indices for looking up achievements.
+
+
 **Achievement**[ _#_ ] and **Achievement.Achievement**[ _#_ ] are equivalent and are provided for consistency. The primary way to access achievement information should be via id. Achievement IDs are unique and do not change.
 
 To look up an achievement's ID, you can look up an achievement by name, or you can use the Achievements Inspector.
 
-#### ‌Note About Achievement Indices
 
-Achievements and categories can be looked up by index. This is significantly faster than looking up by id or name. However, these indices are **not** stable and will change from patch to patch, but they will not change during the session. If an achievement is being utilized in a script many times, it may be more performant to look up an achievement's index (with its .Index member) and then use that in subsequent queries.
-
-See [Achievement Examples](../data-types/datatype-achievement.md#examples) for some examples of using indices for looking up achievements.
-
-### Examples
-
-In the following example, we will look up an achievement by name, and then print its ID.
+### Usage Examples
 
 === "MQScript"
 
     ```text
+    | Look up an achievement by name, and then print its ID.
     /echo ${Achievement[Master of Claws of Veeshan].ID}
-    ```
 
-=== "Lua"
-
-    ```lua
-    print(mq.TLO.Achievement("Master of Claws of Veeshan").ID())
-    ```
-
-In the following example, we will print the completed status of achievement "**Wayfarers Brotherhood Adventurer's Stone (Various 20+)**"
-
-=== "MQScript"
-
-    ```
+    | print the completed status of achievement
+    | "Wayfarers Brotherhood Adventurer's Stone (Various 20+)"
     /echo ${Achievement[500980300].Completed}
     ```
 
 === "Lua"
 
     ```lua
+    -- Look up an achievement by name, and then print its ID.
+    print(mq.TLO.Achievement("Master of Claws of Veeshan").ID())
+
+    -- print the completed status of achievement
+    -- "Wayfarers Brotherhood Adventurer's Stone (Various 20+)"
     print(mq.TLO.Achievement(500980300).Completed())
     ```

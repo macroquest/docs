@@ -399,7 +399,6 @@ nav:
     - TLO:Alert: reference/top-level-objects/tlo-alert.md
     - TLO:Alias: reference/top-level-objects/tlo-alias.md
     - TLO:AltAbility: reference/top-level-objects/tlo-altability.md
-    - TLO:Bandolier: reference/top-level-objects/tlo-bandolier.md
     - TLO:Bool: reference/top-level-objects/tlo-bool.md
     - TLO:Corpse: reference/top-level-objects/tlo-corpse.md
     - TLO:Cursor: reference/top-level-objects/tlo-cursor.md
@@ -462,6 +461,7 @@ nav:
     - DataType:altability: reference/data-types/datatype-altability.md
     - DataType:argb: reference/data-types/datatype-argb.md
     - DataType:array: reference/data-types/datatype-array.md
+    - DataType:bandolier: reference/data-types/datatype-bandolier.md
     - DataType:body: reference/data-types/datatype-body.md
     - DataType:bool: reference/data-types/datatype-bool.md
     - DataType:buff: reference/data-types/datatype-buff.md

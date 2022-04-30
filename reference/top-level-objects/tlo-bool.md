@@ -1,27 +1,50 @@
 # TLO:Bool
 
-## Description
+Creates a bool object from a string. The resulting value is a _bool_ depending on whether the given string is falsey or not.
 
-Creates a bool object using text. Value is set to TRUE unless text is "NULL" "FALSE" or "0" (capitalization does not count).
+"Falsey" is defined as any of the following values:
+
+* Empty String
+* FALSE
+* NULL
+* The string "0"
+
+If the string is one of these values, the resulting bool is `false`. Otherwise, it is `true`.
 
 ## Forms
 
-* [_bool_](../data-types/datatype-bool.md) **Bool[**text**]**
+| **Type** | **Form** | **Description** |
+| :--- | :--- | :--- |
+| [_bool_](../data-types/datatype-bool.md) | **Bool**[ _Text_ ] | Converts the given _Text_ to a bool based on the rules presented above. |
 
-## Access to Types
 
-* [_bool_](../data-types/datatype-bool.md) **bool**
+## Usage Examples
 
-## Examples
+=== "MQScript"
 
-`/declare MyVar bool`  
-`/varset MyVar ${Bool[This is true]}`  
-`/echo ${MyVar}`
+    ```
+    /declare MyVar bool
+    /varset MyVar ${Bool[This is true]}
 
-_This would output TRUE_
+    | prints TRUE
+    /echo ${MyVar}
 
-`/declare MyVar bool`  
-`/varset MyVar ${Bool[NULL]}`  
-`/echo ${MyVar}`
+    /varset MyVar ${Bool[NULL]}
 
-_This would output FALSE_
+    | prints FALSE
+    /echo ${MyVar}
+    ```
+
+=== "Lua"
+
+    ```lua
+    local myVar
+
+    -- prints true
+    myVar = mq.TLO.Bool('This is true')()
+    print(myVar)
+
+    -- prints false
+    myVar = mq.TLO.Bool('NULL')()
+    print(myVar)
+    ```

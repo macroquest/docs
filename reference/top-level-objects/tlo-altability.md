@@ -1,22 +1,28 @@
 # TLO:AltAbility
 
-## Description
-
-Note: The AltAbility TLO should not be used except for experimental data. If you've already purchased the AA, use Me.AltAbility. Me.AltAbility is much faster.
+!!! danger
+    The AltAbility TLO should not be used except for when experimenting  with data. If you've already purchased the AA, use `Me.AltAbility`, which is tailored to your character and is much faster.
 
 ## Forms
 
-|  |  |
-| :--- | :--- |
-| [_altability_](../data-types/datatype-altability.md) **AltAbility[**\#**]** | Alt Ability by number |
-| [_altability_](../data-types/datatype-altability.md) **AltAbility[**name**]** | Alt Ability by name |
+| **Type** | **Form** | **Description** |
+| :--- | :--- | :--- |
+| [_altability_](../data-types/datatype-altability.md) **AltAbility**[ _Number_ ] | Look up an AltAbility by its altability id |
+| [_altability_](../data-types/datatype-altability.md) **AltAbility**[ _Name_ ] | Look up an AltAbility by its name |
 
-## Access to Types
 
-* [_altability_](../data-types/datatype-altability.md) **altability**
+## Example Usage
 
-## Examples
+=== "MQScript"
 
-`/echo ${AltAbility[Combat Stability].RequiresAbility}`
+    ```
+    | Prints the pre-requisite AA ability needed to train Combat Stability
+    /echo ${AltAbility[Combat Stability].RequiresAbility}
+    ```
 
-Returns the pre-requisite AA ability needed to train this Ability.
+=== "Lua"
+
+    ```lua
+    -- Prints the pre-requisite AA ability needed to train Combat Stability
+    print(mq.TLO.AltAbility('Combat Stability').RequiresAbility())
+    ```

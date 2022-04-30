@@ -4,7 +4,7 @@ Provides access to spawn search filter criteria in alerts. Alerts are created us
 
 ## Forms
 
-| *Type* | *Form* | *Description* |
+| **Type** | **Form** | **Description** |
 | :--- | :--- | :--- |
 | [_alert_](#alert-type) | **Alert**[ _ID_ ] | Retrieve information for the alert category by its id |
 | [_string_](../data-types/datatype-string.md) | **Alert** | Returns pipe `|` separated list of alert ids |
