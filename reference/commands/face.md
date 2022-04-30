@@ -18,9 +18,9 @@ Some of the options are listed below.
 | **away** | Turn you in the opposite direction of your target |
 | _name_ | Considered a [Spawn Search](../../reference/general/spawn-search.md) |
 
-| :memo: INFO                                       |
-|---------------------------------------------------|
-| Using **/face** without a target will do nothing. |
+!!! info
+
+    Using **/face** without a target will do nothing. |
 
 ## Examples
 
