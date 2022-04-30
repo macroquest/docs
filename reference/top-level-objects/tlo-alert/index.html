@@ -6677,15 +6677,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#alert-type" class="md-nav__link">
-    Alert Type
+  <a href="#associated-datatypes" class="md-nav__link">
+    Associated DataTypes
   </a>
+  
+    <nav class="md-nav" aria-label="Associated DataTypes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alert-type" class="md-nav__link">
+    alert Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alertlist-type" class="md-nav__link">
+    alertlist Type
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#usage-examples" class="md-nav__link">
+    Usage Examples
   </a>
   
 </li>
@@ -7624,8 +7644,6 @@
         
           
         
-          
-        
       
       
         
@@ -7698,20 +7716,6 @@
     <li class="md-nav__item">
       <a href="../../data-types/datatype-achievementobj/" class="md-nav__link">
         DataType:achievementobj
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../data-types/datatype-alertlisttype/" class="md-nav__link">
-        DataType:alertlist
       </a>
     </li>
   
@@ -8634,15 +8638,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#alert-type" class="md-nav__link">
-    Alert Type
+  <a href="#associated-datatypes" class="md-nav__link">
+    Associated DataTypes
   </a>
+  
+    <nav class="md-nav" aria-label="Associated DataTypes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#alert-type" class="md-nav__link">
+    alert Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#alertlist-type" class="md-nav__link">
+    alertlist Type
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#usage-examples" class="md-nav__link">
+    Usage Examples
   </a>
   
 </li>
@@ -8666,43 +8690,45 @@
 
 
 <h1 id="tloalert">TLO:Alert<a class="headerlink" href="#tloalert" title="Permanent link">&para;</a></h1>
-<p>Provides access to alerts. See <a href="../../commands/alert/">/alert</a>.</p>
+<p>Provides access to spawn search filter criteria in alerts. Alerts are created using <a href="../../commands/alert/">/alert</a>.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th align="left">Type</th>
-<th align="left">Form</th>
-<th align="left">Description</th>
+<th align="left"><em>Type</em></th>
+<th align="left"><em>Form</em></th>
+<th align="left"><em>Description</em></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="./#alert-type"><em>alert</em></a></td>
-<td align="left"><strong>Alert</strong>[ <em>#</em> ]</td>
-<td align="left">Alt Ability by number</td>
+<td align="left"><a href="#alert-type"><em>alert</em></a></td>
+<td align="left"><strong>Alert</strong>[ <em>ID</em> ]</td>
+<td align="left">Retrieve information for the alert category by its id</td>
 </tr>
 <tr>
 <td align="left"><a href="../../data-types/datatype-string/"><em>string</em></a></td>
 <td align="left"><strong>Alert</strong></td>
-<td align="left">Returns pipe "|" separated list of alert ids</td>
+<td align="left">Returns pipe <code>|</code> separated list of alert ids</td>
 </tr>
 </tbody>
 </table>
-<h2 id="alert-type">Alert Type<a class="headerlink" href="#alert-type" title="Permanent link">&para;</a></h2>
+<h2 id="associated-datatypes">Associated DataTypes<a class="headerlink" href="#associated-datatypes" title="Permanent link">&para;</a></h2>
+<h3 id="alert-type"><code>alert</code> Type<a class="headerlink" href="#alert-type" title="Permanent link">&para;</a></h3>
+<p>Provides access to the values of an alert.</p>
 <table>
 <thead>
 <tr>
-<th align="left">Type</th>
-<th align="left">Name</th>
-<th align="left">Description</th>
+<th align="left"><strong>Type</strong></th>
+<th align="left"><strong>Member</strong></th>
+<th align="left"><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="../../data-types/datatype-alertlisttype/"><em>alertlist</em></a></td>
-<td align="left"><strong>List[</strong>#<strong>]</strong></td>
-<td align="left">Get the #th item in the list</td>
+<td align="left"><a href="#alertlist-type"><em>alertlist</em></a></td>
+<td align="left"><strong>List</strong>[ <em>Index</em> ]</td>
+<td align="left">Get the item from the list at the specified index</td>
 </tr>
 <tr>
 <td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
@@ -8712,41 +8738,349 @@
 <tr>
 <td align="left"><a href="../../data-types/datatype-string/"><em>string</em></a></td>
 <td align="left"><strong>To String</strong></td>
-<td align="left">Same as <strong>Size</strong>.</td>
+<td align="left">Returns <strong>Size</strong> as a string.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<h3 id="alertlist-type"><code>alertlist</code> Type<a class="headerlink" href="#alertlist-type" title="Permanent link">&para;</a></h3>
+<p>Provides access to the properties of a spawn search associated with an alert. For a spawn to be entered
+into an alert it must match all the criteria specified by the alert list.</p>
+<p>See Also: <a href="../../general/spawn-search/">Spawn Search</a>.</p>
 <table>
 <thead>
 <tr>
-<th align="left"><strong>Command</strong></th>
-<th align="left"><strong>Result</strong></th>
+<th align="left"><strong>Type</strong></th>
+<th align="left"><strong>Member</strong></th>
+<th align="left"><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><code>/alert add 1 Fippy</code></td>
-<td align="left">Add and alert entry for Fippy to Alert List 1</td>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>AlertList</strong></td>
+<td align="left">Any spawn on the associated alert list</td>
 </tr>
 <tr>
-<td align="left"><code>/echo ${Alert[1].List[0].Name}</code></td>
-<td align="left">Output: Fippy</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bAlert</strong></td>
+<td align="left">Indicates usage of <strong>alert</strong> filter</td>
 </tr>
 <tr>
-<td align="left"><code>/alert add 1 id ${Me.ID}</code></td>
-<td align="left">Add and alert entry using the Spawn ID.</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bAura</strong></td>
+<td align="left">Any aur.</td>
 </tr>
 <tr>
-<td align="left"><code>/echo ${Alert[1].List[0].SpawnID}</code></td>
-<td align="left">Output: 12345 (or whatever your spawned is)</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bBanker</strong></td>
+<td align="left">Any banker</td>
 </tr>
 <tr>
-<td align="left"><code>/echo ${Alert[1].Size}</code></td>
-<td align="left">Output: 1 (or the number of alerts in alert list 1)</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bBanner</strong></td>
+<td align="left">Any banner</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bCampfire</strong></td>
+<td align="left">Any campfire</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bDps</strong></td>
+<td align="left">Any player that is a DPS class</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bExactName</strong></td>
+<td align="left">Name match requiries an exact match</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bFellowship</strong></td>
+<td align="left">Any member of the fellowship</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bGM</strong></td>
+<td align="left">Any player flagged as a GM</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bGroup</strong></td>
+<td align="left">Any member of the group</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bHealer</strong></td>
+<td align="left">Any player that is a healer class</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bKnight</strong></td>
+<td align="left">Any player that is a knight</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bKnownLocation</strong></td>
+<td align="left">Indicates usage of a <strong>loc</strong> filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bLFG</strong></td>
+<td align="left">Any player that is flagged as LFG</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bLight</strong></td>
+<td align="left">Indicates usage of a <strong>light</strong> filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bLoS</strong></td>
+<td align="left">Any spawn in line of sight</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bMerchant</strong></td>
+<td align="left">Any merchant</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bNamed</strong></td>
+<td align="left">Any "named" NPC</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bNearAlert</strong></td>
+<td align="left">Indicates usage of <strong>nearalert</strong> filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bNoAlert</strong></td>
+<td align="left">Indicates usage of <strong>noalert</strong> filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bNoGroup</strong></td>
+<td align="left">Exclude any player that is in the group</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bNoGuild</strong></td>
+<td align="left">Exclude any player that is in the guild</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bNoPet</strong></td>
+<td align="left">Exclude any spawn that is a pet</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bNotNearAlert</strong></td>
+<td align="left">Indicates usage of <strong>notnearalert</strong> filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-string/"><em>string</em></a></td>
+<td align="left"><strong>BodyType</strong></td>
+<td align="left">Any spawn with given body type</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bRaid</strong></td>
+<td align="left">Any member of the raid</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bSlower</strong></td>
+<td align="left">Any player that is a slower</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bSpawnID</strong></td>
+<td align="left">Indicates usage of the <strong>id</strong> filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bTank</strong></td>
+<td align="left">Any player that is a tank class</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bTargetable</strong></td>
+<td align="left">Any spawn that is targetable</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bTargNext</strong></td>
+<td align="left">Indicates usage of the <strong>next</strong> filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bTargPrev</strong></td>
+<td align="left">Indicates usage of the <strong>prev</strong> filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bTrader</strong></td>
+<td align="left">Any player that is a trader</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>bTributeMaster</strong></td>
+<td align="left">Any NPC that is a tribute master</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-string/"><em>string</em></a></td>
+<td align="left"><strong>Class</strong></td>
+<td align="left">Any spawn that is the given class</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-float/"><em>double</em></a></td>
+<td align="left"><strong>FRadius</strong></td>
+<td align="left">Any spawn that is given distance from the given <strong>loc</strong> filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>FromSpawnID</strong></td>
+<td align="left">Search starts at given spawn id</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int64</em></a></td>
+<td align="left"><strong>GuildID</strong></td>
+<td align="left">Any member of the guild with the given id</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-string/"><em>string</em></a></td>
+<td align="left"><strong>Light</strong></td>
+<td align="left">Any spawn that is equipped with the given light source</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>MaxLevel</strong></td>
+<td align="left">Any spawn that is at this level or lower</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>MinLevel</strong></td>
+<td align="left">Any spawn that is at this level or greater</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-string/"><em>string</em></a></td>
+<td align="left"><strong>Name</strong></td>
+<td align="left">Any spawn with the given name</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>NearAlertList</strong></td>
+<td align="left">Any spawn near the given alert list</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>NoAlertList</strong></td>
+<td align="left">Excludes any spawn in the given alert list</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>NotID</strong></td>
+<td align="left">Excludes any spawn with the given id</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>NotNearAlertList</strong></td>
+<td align="left">Excludes any spawn near the given alert list</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>PlayerState</strong></td>
+<td align="left">Any spawn with the given state</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-string/"><em>string</em></a></td>
+<td align="left"><strong>Race</strong></td>
+<td align="left">Any spawn with the given race</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-float/"><em>float</em></a></td>
+<td align="left"><strong>Radius</strong></td>
+<td align="left">Excludes the spawn if any player is within this distance (<strong>nopcnear</strong> filter)</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>SortBy</strong></td>
+<td align="left">Indicates the sort order of the filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-spawn/"><em>spawn</em></a></td>
+<td align="left"><strong>Spawn</strong></td>
+<td align="left">If an ID or Name is part of the filter, attempts to return a spawn with the matching ID or Name</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>SpawnID</strong></td>
+<td align="left">Any spawn with the given Spawn ID</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>SpawnType</strong></td>
+<td align="left">Any spawn with the given type</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-float/"><em>float</em></a></td>
+<td align="left"><strong>xLoc</strong></td>
+<td align="left"><code>x</code> component of the <strong>loc</strong> filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-float/"><em>float</em></a></td>
+<td align="left"><strong>yLoc</strong></td>
+<td align="left"><code>y</code> component of the <strong>loc</strong> filter</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-float/"><em>double</em></a></td>
+<td align="left"><strong>ZRadius</strong></td>
+<td align="left"><code>z</code> distance component of the <strong>loc</strong> filter</td>
 </tr>
 </tbody>
 </table>
+<h2 id="usage-examples">Usage Examples<a class="headerlink" href="#usage-examples" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>| Add an alert entry for Fippy to Alert list 1
+/alert add 1 Fippy
+
+| Will output &#39;Fippy&#39;
+/echo ${Alert[1].List[0].Name}
+
+| Add an alert entry using our Spawn ID
+/alert add 1 id ${Me.ID}
+
+| Will output your Spawn ID
+/echo ${Alert[1].List[1].SpawnID}
+
+| Will output the number of alerts in list 1
+/echo ${Alert[1].Size}
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">-- Add an alert entry for Fippy to Alert list 1</span>
+<span class="n">mq</span><span class="p">.</span><span class="n">cmd</span><span class="p">(</span><span class="s1">&#39;/alert add 1 Fippy&#39;</span><span class="p">)</span>
+
+<span class="c1">-- Will output &#39;Fippy&#39;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Alert</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">List</span><span class="p">(</span><span class="mi">0</span><span class="p">).</span><span class="n">Name</span><span class="p">())</span>
+
+<span class="c1">-- Add an alert entry using our Spawn ID</span>
+<span class="n">mq</span><span class="p">.</span><span class="n">cmdf</span><span class="p">(</span><span class="s1">&#39;/alert add 1 id %d&#39;</span><span class="p">,</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">ID</span><span class="p">())</span>
+
+<span class="c1">-- Will output our Spawn ID</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Alert</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">List</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">SpawnID</span><span class="p">())</span>
+
+<span class="c1">-- Will output the number of alerts in list 1</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Alert</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">Size</span><span class="p">())</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 
               
             </article>

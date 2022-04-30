@@ -7644,8 +7644,6 @@
         
           
         
-          
-        
       
       
         
@@ -7718,20 +7716,6 @@
     <li class="md-nav__item">
       <a href="../../data-types/datatype-achievementobj/" class="md-nav__link">
         DataType:achievementobj
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../data-types/datatype-alertlisttype/" class="md-nav__link">
-        DataType:alertlist
       </a>
     </li>
   
@@ -8718,12 +8702,12 @@
 </thead>
 <tbody>
 <tr>
-<td><em><a href="../../data-types/datatype-achievement/">achievement</a></em></td>
+<td><a href="../../data-types/datatype-achievement/"><em>achievement</em></a></td>
 <td><strong>Achievement[#|Name]</strong></td>
 <td>Look up an achievement by name or by id.</td>
 </tr>
 <tr>
-<td><em><a href="#achievementmgr-type">achievementmgr</a></em></td>
+<td><a href="#achievementmgr-type"><em>achievementmgr</em></a></td>
 <td><strong>Achievement</strong></td>
 <td>Access the achievement manager which provides access to information about achievements</td>
 </tr>
@@ -8741,74 +8725,64 @@
 </thead>
 <tbody>
 <tr>
-<td><em><a href="../../data-types/datatype-achievement/">achievement</a></em></td>
+<td><a href="../../data-types/datatype-achievement/"><em>achievement</em></a></td>
 <td><strong>Achievement[#|Name]</strong></td>
 <td>Find an achievement by its ID or by its name.</td>
 </tr>
 <tr>
-<td><em><a href="../../data-types/datatype-achievement/">achievement</a></em></td>
+<td><a href="../../data-types/datatype-achievement/"><em>achievement</em></a></td>
 <td><strong>AchivementByIndex[#]</strong></td>
 <td>Find an achievement by its index.</td>
 </tr>
 <tr>
-<td><em><a href="../../data-types/datatype-int/">int</a></em></td>
+<td><a href="../../data-types/datatype-int/"><em>int</em></a></td>
 <td><strong>AchivementCount</strong></td>
 <td>The number of achievements in the manager.</td>
 </tr>
 <tr>
-<td><em><a href="../../data-types/datatype-achievementcat/">achievementcat</a></em></td>
+<td><a href="../../data-types/datatype-achievementcat/"><em>achievementcat</em></a></td>
 <td><strong>Category[#|Name]</strong></td>
 <td>Find an achievement category by its id or by its name.Note: If searching by name, only top-level categories are returned from the achievement manager.</td>
 </tr>
 <tr>
-<td><em><a href="../../data-types/datatype-achievementcat/">achievementcat</a></em></td>
+<td><a href="../../data-types/datatype-achievementcat/"><em>achievementcat</em></a></td>
 <td><strong>CategoryByIndex[#]</strong></td>
 <td>Find an achievement category by its index.</td>
 </tr>
 <tr>
-<td><em><a href="../../data-types/datatype-int/">int</a></em></td>
+<td><a href="../../data-types/datatype-int/"><em>int</em></a></td>
 <td><strong>CategoryCount</strong></td>
 <td>The number of achievement categories in the manager.</td>
 </tr>
 <tr>
-<td><em><a href="../../data-types/datatype-int/">int</a></em></td>
+<td><a href="../../data-types/datatype-int/"><em>int</em></a></td>
 <td><strong>Points</strong></td>
 <td>The total number of accumulated achievement points.</td>
 </tr>
 <tr>
-<td><em><a href="../../data-types/datatype-int/">int</a></em></td>
+<td><a href="../../data-types/datatype-int/"><em>int</em></a></td>
 <td><strong>CompletedAchivements</strong></td>
 <td>The number of completed achievements.</td>
 </tr>
 <tr>
-<td><em><a href="../../data-types/datatype-int/">int</a></em></td>
+<td><a href="../../data-types/datatype-int/"><em>int</em></a></td>
 <td><strong>TotalAchivements</strong></td>
 <td>The number of available achievements.</td>
 </tr>
 <tr>
-<td><em><a href="../../data-types/datatype-bool/">bool</a></em></td>
+<td><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
 <td><strong>Ready</strong></td>
 <td>Indicates that the manager has loaded all achievement data and is ready to be used.</td>
 </tr>
 </tbody>
 </table>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th><img alt="⚠" class="twemoji" src="https://twemoji.maxcdn.com/v/latest/svg/26a0.svg" title=":warning:" /> WARNING</th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td>Looking up achievements by name may not always return the correct achievement if multiple exist with the same name. Achievement IDs should</td>
-</tr>
-<tr>
-<td>be preferred over names as they don't change and are unique.</td>
-</tr>
-</tbody>
-</table>
-<p><strong>Achievement[</strong>#<strong>]</strong> and <strong>Achievement.Achievement[</strong>#<strong>]</strong> are equivalent and are provided for consistency. The primary way to access achievement information should be via id. Achievement IDs are unique and do not change.</p>
+<div class="admonition warning">
+<p class="admonition-title">Warning</p>
+<p>Looking up achievements by name may not always return the correct achievement if multiple exist with the same name. Achievement IDs should
+be preferred over names as they don't change and are unique.</p>
+</div>
+<p><strong>Achievement</strong>[ <em>#</em> ] and <strong>Achievement.Achievement</strong>[ <em>#</em> ] are equivalent and are provided for consistency. The primary way to access achievement information should be via id. Achievement IDs are unique and do not change.</p>
 <p>To look up an achievement's ID, you can look up an achievement by name, or you can use the Achievements Inspector.</p>
 <h4 id="note-about-achievement-indices">‌Note About Achievement Indices<a class="headerlink" href="#note-about-achievement-indices" title="Permanent link">&para;</a></h4>
 <p>Achievements and categories can be looked up by index. This is significantly faster than looking up by id or name. However, these indices are <strong>not</strong> stable and will change from patch to patch, but they will not change during the session. If an achievement is being utilized in a script many times, it may be more performant to look up an achievement's index (with its .Index member) and then use that in subsequent queries.</p>

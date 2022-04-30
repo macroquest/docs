@@ -6663,15 +6663,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sub-members-of-tloadvloot" class="md-nav__link">
-    Sub members of TLO:AdvLoot
+  <a href="#associated-datatypes" class="md-nav__link">
+    Associated DataTypes
   </a>
+  
+    <nav class="md-nav" aria-label="Associated DataTypes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advlootitem-type" class="md-nav__link">
+    advlootitem Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemfilterdata-type" class="md-nav__link">
+    itemfilterdata Type
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#usage-examples" class="md-nav__link">
+    Usage Examples
   </a>
   
 </li>
@@ -7624,8 +7644,6 @@
         
           
         
-          
-        
       
       
         
@@ -7698,20 +7716,6 @@
     <li class="md-nav__item">
       <a href="../../data-types/datatype-achievementobj/" class="md-nav__link">
         DataType:achievementobj
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../data-types/datatype-alertlisttype/" class="md-nav__link">
-        DataType:alertlist
       </a>
     </li>
   
@@ -8634,15 +8638,35 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#sub-members-of-tloadvloot" class="md-nav__link">
-    Sub members of TLO:AdvLoot
+  <a href="#associated-datatypes" class="md-nav__link">
+    Associated DataTypes
   </a>
+  
+    <nav class="md-nav" aria-label="Associated DataTypes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#advlootitem-type" class="md-nav__link">
+    advlootitem Type
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#itemfilterdata-type" class="md-nav__link">
+    itemfilterdata Type
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#usage-examples" class="md-nav__link">
+    Usage Examples
   </a>
   
 </li>
@@ -8666,179 +8690,275 @@
 
 
 <h1 id="tloadvloot">TLO:AdvLoot<a class="headerlink" href="#tloadvloot" title="Permanent link">&para;</a></h1>
-<p>TLO:AdvLoot</p>
+<p>The AdvLoot TLO grants access to items in the Advanced Loot window.</p>
 <h2 id="members">Members<a class="headerlink" href="#members" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th align="left"></th>
-<th align="left"></th>
-<th align="left"></th>
+<th align="left"><strong>Type</strong></th>
+<th align="left"><strong>Member</strong></th>
+<th align="left"><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong>Type</strong></td>
-<td align="left"><strong>Member</strong></td>
-<td align="left"><strong>Description</strong></td>
+<td align="left"><a href="#itemfilterdata-type"><em>itemfilterdata</em></a></td>
+<td align="left"><strong>Filter</strong>[ <em>ItemID</em> ]</td>
+<td align="left">Inspect the loot filter for a given ItemID.</td>
 </tr>
 <tr>
-<td align="left"><em>Advloot</em></td>
-<td align="left"><strong>LootingInProgress</strong></td>
-<td align="left">True/False if looting from ADVLoot is in progress</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>LootInProgress</strong></td>
+<td align="left">True/False if looting from AdvLoot is in progress</td>
 </tr>
 <tr>
-<td align="left"><em>Advloot</em></td>
-<td align="left"><strong>SList</strong></td>
-<td align="left">Data on the Shared list</td>
-</tr>
-<tr>
-<td align="left"><em>Advloot</em></td>
-<td align="left"><strong>PList</strong></td>
-<td align="left">Data on the Personal list</td>
-</tr>
-<tr>
-<td align="left"><em>Advloot</em></td>
-<td align="left"><strong>SCount</strong></td>
-<td align="left">Item count from the Shared list</td>
-</tr>
-<tr>
-<td align="left"><em>Advloot</em></td>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
 <td align="left"><strong>PCount</strong></td>
 <td align="left">item count from the Personal list</td>
 </tr>
 <tr>
-<td align="left"><em>Advloot</em></td>
-<td align="left"><strong>SWantCount</strong></td>
-<td align="left">Want count from the Shared list</td>
+<td align="left"><a href="#advlootitem-type"><em>advlootitem</em></a></td>
+<td align="left"><strong>PList</strong>[ <em>Index</em> ]</td>
+<td align="left">Inspect the item at the specified index in the personal loot list.</td>
 </tr>
 <tr>
-<td align="left"><em>Advloot</em></td>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
 <td align="left"><strong>PWantCount</strong></td>
-<td align="left">Want count from the Personal list</td>
+<td align="left">Want count from the Personal list (AN + AG + ND + GD)</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>SCount</strong></td>
+<td align="left">Item count from the Shared list</td>
+</tr>
+<tr>
+<td align="left"><a href="#advlootitem-type"><em>advlootitem</em></a></td>
+<td align="left"><strong>SList</strong>[ <em>Index</em> ]</td>
+<td align="left">Inspect the item at the specified index in the shared loot list.</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>SWantCount</strong></td>
+<td align="left">Want count from the Shared list (AN + AG + ND + GD)</td>
 </tr>
 </tbody>
 </table>
-<h2 id="sub-members-of-tloadvloot">Sub members of TLO:AdvLoot<a class="headerlink" href="#sub-members-of-tloadvloot" title="Permanent link">&para;</a></h2>
+<h2 id="associated-datatypes">Associated DataTypes<a class="headerlink" href="#associated-datatypes" title="Permanent link">&para;</a></h2>
+<h3 id="advlootitem-type"><code>advlootitem</code> Type<a class="headerlink" href="#advlootitem-type" title="Permanent link">&para;</a></h3>
+<p>Represents a discrete item being looted in an AdvLoot window.</p>
 <table>
 <thead>
 <tr>
-<th align="left"></th>
-<th align="left"></th>
+<th align="left"><strong>Type</strong></th>
+<th align="left"><strong>Member</strong></th>
+<th align="left"><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong>Member</strong></td>
-<td align="left"><strong>Description</strong></td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>AlwaysGreed</strong></td>
+<td align="left">The Always Greed (AG) state of the item.</td>
 </tr>
 <tr>
-<td align="left"><strong>.AlwaysGreed</strong></td>
-<td align="left">TRUE/FALSE if the "AG" option is on</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>AlwaysNeed</strong></td>
+<td align="left">The Always Need (AN) state of the item.</td>
 </tr>
 <tr>
-<td align="left"><strong>.AlwaysNeed</strong></td>
-<td align="left">TRUE/FALSE if the "AN" option is on</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>AutoRoll</strong></td>
+<td align="left">The Auto Roll state (dice icon) of the item.</td>
 </tr>
 <tr>
-<td align="left"><strong>.AutoRoll</strong></td>
-<td align="left">TRUE/FALSE if the "Always Roll" (IE Dice symbol) option is on</td>
+<td align="left"><a href="../../data-types/datatype-spawn/"><em>spawn</em></a></td>
+<td align="left"><strong>Corpse</strong></td>
+<td align="left">The spawn representing the corpse that is being looted, if available.</td>
 </tr>
 <tr>
-<td align="left"><strong>.Greed</strong></td>
-<td align="left">TRUE/FALSE if the "GD" option is on</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>Greed</strong></td>
+<td align="left">The Greed (GD) state of the item.</td>
 </tr>
 <tr>
-<td align="left"><strong>.IconID</strong></td>
-<td align="left">returns an int - cred randyleo</td>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>IconID</strong></td>
+<td align="left">The ID of the icon for the item.</td>
 </tr>
 <tr>
-<td align="left"><strong>.Need</strong></td>
-<td align="left">TRUE/FALSE if the "ND" option is on</td>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>ID</strong></td>
+<td align="left">The ID of the item.</td>
 </tr>
 <tr>
-<td align="left"><strong>.Never</strong></td>
-<td align="left">TRUE/FALSE if the "NV" option is on</td>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>Index</strong></td>
+<td align="left">The positional index of the item.</td>
 </tr>
 <tr>
-<td align="left"><strong>.No</strong></td>
-<td align="left">TRUE/FALSE if the "NO" option is on</td>
+<td align="left"><a href="../../data-types/datatype-string/"><em>string</em></a></td>
+<td align="left"><strong>Name</strong></td>
+<td align="left">The name of the item.</td>
 </tr>
 <tr>
-<td align="left"><strong>.NoDrop</strong></td>
-<td align="left">TRUE if the item is No Drop... FALSE if not</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>Need</strong></td>
+<td align="left">The Need (ND) state of the item.</td>
 </tr>
 <tr>
-<td align="left"><strong>.StackSize</strong></td>
-<td align="left">Integer - list the amount of items in the stack</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>Never</strong></td>
+<td align="left">The Never (NV) state of the item.</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>No</strong></td>
+<td align="left">The No state of the item.</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>NoDrop</strong></td>
+<td align="left">Indicates if the item is NO DROP.</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>StackSize</strong></td>
+<td align="left">The size of the stack of items being looted.</td>
+</tr>
+<tr>
+<td align="left"><a href="../../data-types/datatype-string/"><em>string</em></a></td>
+<td align="left"><strong>To String</strong></td>
+<td align="left">Same as <strong>Name</strong></td>
 </tr>
 </tbody>
 </table>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<h3 id="itemfilterdata-type"><code>itemfilterdata</code> Type<a class="headerlink" href="#itemfilterdata-type" title="Permanent link">&para;</a></h3>
+<p>A collection of settings that together describe the loot filter for an item.</p>
 <table>
 <thead>
 <tr>
-<th align="left"></th>
-<th align="left"></th>
+<th align="left"><strong>Type</strong></th>
+<th align="left"><strong>Member</strong></th>
+<th align="left"><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><strong>Command</strong></td>
-<td align="left"><strong>Result</strong></td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>AutoRoll</strong></td>
+<td align="left">The Auto Roll state (dice icon).</td>
 </tr>
 <tr>
-<td align="left">'''/echo ${AdvLoot.PList[1].Name}</td>
-<td align="left">Output: [MQ2] Bone Chips</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>Greed</strong></td>
+<td align="left">The Greed (GD) state.</td>
 </tr>
 <tr>
-<td align="left">'''/echo there are ${AdvLoot.PCount} items in the personal loot list</td>
-<td align="left">Output: [MQ2] there are 3 items in the personal lootlist</td>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>IconID</strong></td>
+<td align="left">The ID of the icon.</td>
 </tr>
 <tr>
-<td align="left">'''/echo the item in index 1 has a StackSize of ${AdvLoot.PList[1].StackSize}</td>
-<td align="left">Output: [MQ2] the item in index 1 has a StackSize of 2</td>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>ID</strong></td>
+<td align="left">The ID of the item.</td>
 </tr>
 <tr>
-<td align="left">'''/if (${AdvLoot.SList[1].Need}==TRUE) /command</td>
-<td align="left">if item 1 in the shared list has Need checked, do command</td>
+<td align="left"><a href="../../data-types/datatype-string/"><em>string</em></a></td>
+<td align="left"><strong>Name</strong></td>
+<td align="left">The Name of the item.</td>
 </tr>
 <tr>
-<td align="left">'''/echo ${AdvLoot.PList[1].NoDrop}</td>
-<td align="left">Output: [MQ2]TRUE/FALSE</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>Need</strong></td>
+<td align="left">The Need (ND) state.</td>
 </tr>
 <tr>
-<td align="left">'''/echo the item in index 1 has a StackSize of ${AdvLoot.PList[1].StackSize}</td>
-<td align="left">Output: [MQ2] the item in index 1 has a StackSize of 2</td>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>Never</strong></td>
+<td align="left">The Never (NV) state.</td>
 </tr>
 <tr>
-<td align="left">'''/delay 10s !${ADVLoot.InProgress}</td>
-<td align="left">will wait either 10 second or until ADVLoot is no longer in the process of looting</td>
+<td align="left"><a href="../../data-types/datatype-int/"><em>int</em></a></td>
+<td align="left"><strong>Types</strong></td>
+<td align="left">Bit field representing all the loot filter flags for this item.</td>
 </tr>
 <tr>
-<td align="left"></td>
-<td align="left"></td>
+<td align="left"><a href="../../data-types/datatype-string/"><em>string</em></a></td>
+<td align="left"><strong>To String</strong></td>
+<td align="left">Same as <strong>Name</strong></td>
 </tr>
 </tbody>
 </table>
-<p><code>/if (!${AdvLoot.LootInProgress}) {</code><br />
-<code>/echo its safe to loot</code><br />
-<code>/if (${AdvLoot.SCount}&gt;=1) {</code><br />
-<code>/echo im going to give 1 ${AdvLoot.SList[1].Name} to myself</code><br />
-<code>/advloot shared 1 giveto ${Me.Name} 1</code><br />
-<code>}</code><br />
-<code>} else {</code><br />
-<code>/echo do something else, loot is in progress...</code><br />
-<code>}</code></p>
+<h2 id="usage-examples">Usage Examples<a class="headerlink" href="#usage-examples" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>| Echo the name of the first item in the personal loot list
+/echo ${AdvLoot.PList[1].Name}
+
+| Echo the number of items in the personal loot list.
+/echo There are ${AdvLoot.PCount} items in the personal loot list
+
+| Echo the stack size of the first item in the personal loot list.
+/echo The item in index 1 has a StackSize of ${AdvLoot.PList[1].StackSize}
+
+| If the first item in the shared loot list is marked as Need, then echo.
+/if (${AdvLoot.SList[1].Need}==TRUE) /echo I need that item!
+
+| Echo the NO DROP status of the first item in the personal loot list: TRUE or FALSE.
+/echo ${AdvLoot.PList[1].NoDrop}
+
+| Wait 10 seconds, or until AdvLoot is no longer in the process of looting.
+/delay 10s !${AdvLoot.LootInProgress}
+
+| Give the first item in the shared loot list to myself.
+/if (!${AdvLoot.LootInProgress}) {
+    /echo Its safe to loot!
+    /if (${AdvLoot.SCount}&gt;=1) {
+        /echo I am going to give 1 ${AdvLoot.SList[1].Name} to myself
+        /advloot shared 1 giveto ${Me.Name} 1
+    }
+} else {
+    /echo Do something else, loot is already in progress...
+}
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">-- Print the name of the first item in the personal loot list</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AdvLoot</span><span class="p">.</span><span class="n">PList</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">Name</span><span class="p">())</span>
+
+<span class="c1">-- Print the number of items in the personal loot list</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;There are &#39;</span><span class="p">,</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AdvLoot</span><span class="p">.</span><span class="n">PCount</span><span class="p">(),</span> <span class="s1">&#39; items in the personal loot list&#39;</span><span class="p">)</span>
+
+<span class="c1">-- Print the stack size of the first item in the personal loot list.</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The item in index 1 has a StackSize of &#39;</span><span class="p">,</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AdvLoot</span><span class="p">.</span><span class="n">PList</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">StackSize</span><span class="p">()))</span>
+
+<span class="c1">-- If the first item in the shared loot list is marked as Need, then print a message.</span>
+<span class="kr">if</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AdvLoot</span><span class="p">.</span><span class="n">SList</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">Need</span><span class="p">()</span> <span class="kr">then</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I need that item!&#39;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="c1">-- Print the NO DROP status of the first item in the personal loot list.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AdvLoot</span><span class="p">.</span><span class="n">PList</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">NoDrop</span><span class="p">())</span>
+
+<span class="c1">-- Wait 10 seconds, or until AdvLoot is no longer in the process of looting.</span>
+<span class="n">mq</span><span class="p">.</span><span class="n">delay</span><span class="p">(</span><span class="s1">&#39;10s&#39;</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span> <span class="kr">return</span> <span class="ow">not</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AdvLoot</span><span class="p">.</span><span class="n">LootInProgress</span><span class="p">()</span> <span class="kr">end</span><span class="p">)</span>
+
+<span class="c1">-- Give the first item in the shared loot list to myself.</span>
+<span class="kr">if</span> <span class="ow">not</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AdvLoot</span><span class="p">.</span><span class="n">LootInProgress</span><span class="p">()</span> <span class="kr">then</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Its safe to loot!&#39;</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AdvLoot</span><span class="p">.</span><span class="n">SCount</span><span class="p">()</span> <span class="o">&gt;=</span> <span class="mi">1</span> <span class="kr">then</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I am going to give 1 &#39;</span><span class="p">,</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AdvLoot</span><span class="p">.</span><span class="n">SList</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">Name</span><span class="p">(),</span> <span class="s1">&#39; to myself&#39;</span><span class="p">)</span>
+        <span class="n">mq</span><span class="p">.</span><span class="n">cmdf</span><span class="p">(</span><span class="s1">&#39;/advloot shared 1 giveto %s 1&#39;</span><span class="p">,</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">Name</span><span class="p">())</span>
+    <span class="kr">end</span>
+<span class="kr">else</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Do something else, loot is already in progress...&#39;</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 
               
             </article>
