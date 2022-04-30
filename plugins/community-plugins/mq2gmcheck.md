@@ -6,7 +6,7 @@
 
 Check to see if a GM is in the zone. This is not fool proof. It is absolutely true that a GM could be right in front of you and you'd never know it. This plugin will simply find those who are in the zone and not gm-invis, or who just came into the zone and were not gm-invised at the time. If a GM comes into the zone already gm-invised, we will not know about that.
 
-You can find the latest version of MQ2GMCheck [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=11140&hilit=MQ2GMCheck).
+You can find the latest version of MQ2GMCheck [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=11140&hilit=MQ2GMCheck).
 
 ## Commands
 
@@ -33,8 +33,3 @@ You can find the latest version of MQ2GMCheck [here](https://macroquest2.com/php
 `${GMCheck.Count} returns the number of GMs known in this zone.`
 
 audio - put an entry for GMCHECK in the MQ2Sound.ini
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

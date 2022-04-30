@@ -5,7 +5,7 @@
 **MQ2EQBC** \(EQ box chat\) is a plugin composed of two parts, a server \(EQBCS\) and a client \(MQ2EQBC\).
 
 * The server provides a similar service to an IRC server but is much easier to setup.
-* The client is similar to the [MQ2IRC](../../discontinued-unsupported/mq2irc/) client in that it monitors text that is sent to the EQBC
+* The client is similar to the [MQ2IRC](../../discontinued/mq2irc/) client in that it monitors text that is sent to the EQBC
 
   server.
 
@@ -15,9 +15,9 @@
 
 This plugin was originally written by Omnictrl, with ascii38 and pms providing maintenance for a period. The plugin and server currently have no active maintainer.
 
-The discussion thread regarding this plugin is found in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?t=12147).  
-The current client source release is located [here](https://macroquest2.com/phpBB3/viewtopic.php?p=170061#p170061).  
-The current compiled server application, which also will compile and run on Linux, can be found at the link in [this post](https://macroquest2.com/phpBB3/viewtopic.php?p=161994#p161994).
+The discussion thread regarding this plugin is found in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?t=12147).  
+The current client source release is located [here](https://macroquest.org/phpBB3/viewtopic.php?p=170061#p170061).  
+The current compiled server application, which also will compile and run on Linux, can be found at the link in [this post](https://macroquest.org/phpBB3/viewtopic.php?p=161994#p161994).
 
 For the development history of this plugin see the article [here](mq2eqbc-revisions.md).
 
@@ -288,12 +288,12 @@ Port=1337
 |  |  |  |
 | :--- | :--- | :--- |
 | **Type** | **Member Name** | **Description** |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Connected** | Client connection status |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Connected** | Client connection status |
 | [_string_]() | **Names** | List of connected characters |
 | [_string_]() | **Port** | OFFLINE if not connected, port if connected |
 | [_string_]() | **Server** | hostname or IP of server you connected to |
 | [_string_]() | **ToonName** | Character name **as seen by EQBC** \(may reflect YouPlayer\) |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Setting\[**_**option**_**\]** | Option enabled/disabled status. \(see **/bccmd set** for complete list\) |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Setting\[**_**option**_**\]** | Option enabled/disabled status. \(see **/bccmd set** for complete list\) |
 
 ### Examples
 
@@ -364,7 +364,7 @@ C:\> eqbcs ftp          Does not work, it does not look up service names to map 
 
 #### Compiling EQBCS \(Windows\)
 
-'''This guide for compiling EQBCS for Windows is credited to Tinydru from [this post](https://macroquest2.com/phpBB3/viewtopic.php?p=108811#108811)
+'''This guide for compiling EQBCS for Windows is credited to Tinydru from [this post](https://macroquest.org/phpBB3/viewtopic.php?p=108811#108811)
 
 ## Copy the two parts of the eqbsc post in to a single eqbcs.cpp file \(you can just use Notepad to do this - just
 
@@ -423,7 +423,7 @@ remember to replace the .txt extension with .cpp\).
 
 #### Compiling EQBCS \(Windows cmd line\)
 
-'''This guide for compiling EQBCS from the Windows cmd line is credited to dont\_know\_at\_all from [this post](https://macroquest2.com/phpBB3/viewtopic.php?p=145001#145001)
+'''This guide for compiling EQBCS from the Windows cmd line is credited to dont\_know\_at\_all from [this post](https://macroquest.org/phpBB3/viewtopic.php?p=145001#145001)
 
 ## ctrl-esc Run
 
@@ -433,7 +433,7 @@ remember to replace the .txt extension with .cpp\).
 4. cl eqbcs.cpp
 5. that's it.
 
-=== Compiling EQBCS \(Linux\) === '''This guide for compiling EQBCS for Linux is credited to ascii38 from [this post](https://macroquest2.com/phpBB3/viewtopic.php?p=144868#144868)
+=== Compiling EQBCS \(Linux\) === '''This guide for compiling EQBCS for Linux is credited to ascii38 from [this post](https://macroquest.org/phpBB3/viewtopic.php?p=144868#144868)
 
 ## g++ -fpermissive eqbcs.cpp -o eqbcs
 
@@ -496,16 +496,7 @@ C:\MQ2\eqbcs.exe
 ### EQBC Interface
 
 EQBC Interface is an application developed by ieatacid to allow communication with EQBCS outside of the EverQuest game client.  
-The discussion thread for this application is found in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?t=15835).  
+The discussion thread for this application is found in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?t=15835).  
 The most recent release of this application also allows you to view detailed information about characters connected to your server by selecting their name, which will display their statistics on the right-hand side of EQBC Interface. The interval of how often to poll the selected character is configurable by the user so that this information can be very close to real-time.
 
-Jimbob extended the functionality of this program in July 2015. The discussion thread for his fork of the project is found in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?p=169990#p169990).
-
-### See Also
-
-* [Top-Level Objects](../../../data-types-and-top-level-objects/top-level-objects/)
-* [Plugins](../../../documentation/macroquest2-plugins.md)
-* [MQ2NetHeal](../mq2netheal.md)
-* [MQ2NetBots](../mq2netbots.md)
-* [MQ2EQBC:Revisions](mq2eqbc-revisions.md)
-
+Jimbob extended the functionality of this program in July 2015. The discussion thread for his fork of the project is found in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?p=169990#p169990).

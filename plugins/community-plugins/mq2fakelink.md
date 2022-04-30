@@ -1,6 +1,6 @@
 # MQ2FakeLink
 
-**MQ2Fakelink** Creates fake links to "highlight" text Source can be found at **MQ2::Development::Plugins** Forum [Here](https://macroquest2.com/phpBB3/viewtopic.php?t=8750&start=0)
+**MQ2Fakelink** Creates fake links to "highlight" text Source can be found at **MQ2::Development::Plugins** Forum [Here](https://macroquest.org/phpBB3/viewtopic.php?t=8750&start=0)
 
 ## Developers
 
@@ -35,8 +35,3 @@ Changed trigger from \[ and \] to \[\[ and \]\]
 ### 2004.08.13
 
 Initial Release
-
-## See Also
-
-* [MQ2 Plugins](../../commands/slash-commands/plugin.md)
-

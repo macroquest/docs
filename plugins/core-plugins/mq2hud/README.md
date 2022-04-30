@@ -39,7 +39,7 @@ Entries in the MQ2HUD.ini file are in the following format:
   * **16:** Only parse if a macro IS running
 * **X** and **Y** denote the location of the entry on the screen \(0,0 is the upper left of your screen\)
 * **RED**, **GREEN** and **BLUE** are RGB values for the **TEXT** color \(255,255,255 is white; 0,0,0 is black\)
-* **TEXT** is the MQ2Data you wish to display. As a tip, the [If](../../../data-types-and-top-level-objects/top-level-objects/tlo-if.md) TLO is very useful here.
+* **TEXT** is the MQ2Data you wish to display. As a tip, the [If](../../../reference/top-level-objects/tlo-if.md) TLO is very useful here.
 
 ## Examples
 
@@ -88,9 +88,3 @@ This section contains code segments to help you customize your HUD. Please be su
 `//if the macro Raid Druid (Autobot) is currently paused`  
 `RDPauseInd1=3,10,122,225,250,225,RD PAUSED =`  
 `RDPauseInd2=3,85,122,225,0,0,${RDPause}`
-
-## See Also
-
-* [Top-Level Objects](../../../data-types-and-top-level-objects/top-level-objects/)
-* [Plugins](../../../documentation/macroquest2-plugins.md)
-

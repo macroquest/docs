@@ -4,13 +4,15 @@
 
 Comments are descriptive lines in a macro to make reading easier. These are not executed when the macro runs.
 
-Single line comments start with **\|**  
-\|This is a single line comment Multi line comments can also be used. Multi-line comments begin with **\|\*\*** and end with **\*\*\|**  
-\|\*\* This is a multiple line comment where
+Single line comments start with `|`:
 
-`you could use this form of commenting **|`
+```
+| This is a single line comment.
+```
 
-## See Also
+Multi line comments can also be used. Multi-line comments begin with `|**` and end with `**|`.
 
-[Macro\_Reference](macro-reference.md)
-
+```
+|** This is a multiple line comment where
+    you could use this form of commenting **|
+```

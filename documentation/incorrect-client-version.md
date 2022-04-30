@@ -21,5 +21,5 @@ da 0x614CD0
 
 It should match the expected values. If the expected values are **later** then the actual values, you need to patch everquest. If the actual values are **later**, then you need to patch MQ. If you think you've already patched and recompiled MQ, then you are using the wrong mq2main.dll.
 
-You can find archived versions of Macroquest [here](https://macroquest2.com/downloads/zips.php).
+You can find archived versions of Macroquest [here](https://macroquest.org/downloads/zips.php).
 

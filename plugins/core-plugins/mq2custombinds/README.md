@@ -9,4 +9,3 @@ You may specify a command for when the key is pressed \(down\), and another for 
 ## Commands
 
 [/custombind](custombind.md)
-

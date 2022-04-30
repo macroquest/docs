@@ -6,7 +6,7 @@
 
 The intention behind this plugin was to have the ability to announce all OnAddSpawn and OnRemoveSpawn to a dedicated window without the need of attaching a debugger. There are several great spawn tracking plugins on these forums such as MQ2Targets and MQ2Pop that offer named mob announcements, custom spawn search arguments, and many more features. This is not intended to be any sort of replacement for their great utility - just real-time tracking of desired spawn types. I borrowed ideas from MQ2ChatWnd, MQ2EQBC, MQ2TimeStamp, MQ2Paranoid, and others.
 
-You can find the latest version of MQ2 [here](https://macroquest2.com/phpBB3/viewtopic.php?p=143610#p143610).
+You can find the latest version of MQ2 [here](https://macroquest.org/phpBB3/viewtopic.php?p=143610#p143610).
 
 ## Commands
 
@@ -60,8 +60,3 @@ You can find the latest version of MQ2 [here](https://macroquest2.com/phpBB3/vie
 `/spawn [i]toggletype[/i] minlevel # - sets minimum level a spawn of this type must be to display output (valid 1 to 99)`  
 `/spawn [i]toggletype[/i] maxlevel # - sets maximum level a spawn of this type must be to display output (valid 1 to 99)`  
 `/spawn [i]toggletype[/i] color FF00FF - sets the output text color for this spawn type to the supplied hexadecimal RGB color value. do NOT prefix this value with 0x, #, nor use the integer value.`
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

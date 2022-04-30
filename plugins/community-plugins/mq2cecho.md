@@ -5,7 +5,7 @@
 Plugin to help colorize text in the MQ2 Window. Thank you for sharing htw!
 
 * This plugin is included in the main source download.
-* Link to the latest stable source: [1](https://macroquest2.com/phpBB3/viewtopic.php?f=47&p=152508#p152508)
+* Link to the latest stable source: [1](https://macroquest.org/phpBB3/viewtopic.php?f=47&p=152508#p152508)
 
 ## Commands
 
@@ -26,8 +26,3 @@ So example, \au = blue, \a-u = dark blue. \aw = white, \a-w = dark white \(light
 The 2 functions are the same, just one of them echoes the debug header mq2 does, i.e. \[MQ2\] before your text output, the other doesn't.
 
 example: /cecho \arThis is a \attest\ax.\n\agAll done, let's show a backslash: \am\
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

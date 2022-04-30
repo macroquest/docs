@@ -58,7 +58,7 @@ Stuff you need to know about debuggers:
 9. Enter the command 'r' for registers.
 10. Enter the command 'kv' for stack backtrace.
 11. If the crash is in MQ code, you should see the source file open and show the line that caused the problem (if you compiled it on the same machine as you are running on). Alt-3 brings up the local variables. See if there is anything of interest there.
-12. Post the output from those commands here: [http://www.macroquest2.com/phpBB2/viewforum.php?f=28](http://www.macroquest2.com/phpBB2/viewforum.php?f=28).
+12. Post the output from those commands here: [http://www.macroquest.org/phpBB2/viewforum.php?f=28](http://www.macroquest.org/phpBB2/viewforum.php?f=28).
 
 ### Visual Studio 2005 Express
 

@@ -158,7 +158,7 @@ as seen in the source, valid settings are: autoconnect control compatmode reconn
 
 * Rather than pretend it will be fixed again one day, removed the 'relog' command parameter \(and all related
 
-  functions\) as [MQ2SwitchChar](https://macroquest2.com/phpBB3/viewtopic.php?t=16201) by ieatacid provides all the
+  functions\) as [MQ2SwitchChar](https://macroquest.org/phpBB3/viewtopic.php?t=16201) by ieatacid provides all the
 
   functionality needed.
 
@@ -488,9 +488,3 @@ Irrelevant
 ### Version 1.0.o1 - 20050925
 
 * * Fixed hang on reading when closing. Now uses select to see if data exists
-
-## See Also
-
-* [MQ2EQBC](./)
-* [MacroQuest2 Plugins](../../../documentation/macroquest2-plugins.md)
-

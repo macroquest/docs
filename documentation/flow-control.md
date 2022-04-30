@@ -10,7 +10,7 @@ MQ2 provides a few ways to control the execution of your macro.
 ## If/else decisions
 
 * If statement blocks are the most common form of flow control in MQ2.
-* The syntax for an _/if_ statement can be found [here](../commands/macro-commands/if.md).
+* The syntax for an _/if_ statement can be found [here](../reference/commands/if.md).
 * The simplest statements are one-liners like the following:
 
   ```text
@@ -19,7 +19,7 @@ MQ2 provides a few ways to control the execution of your macro.
 
   This will stand you up if you're sitting.
 
-\*One-line [/if](../commands/macro-commands/if.md) statements do not require curly braces ( {} )
+\*One-line [/if](../reference/commands/if.md) statements do not require curly braces ( {} )
 
 * If you wish to execute more than one command, you must wrap your set of commands in braces:
 
@@ -64,7 +64,7 @@ You will also need the curly braces any time you're using _else_ or _else if_ st
 }
 ```
 
-Else blocks are extremely useful for catching "everything else" that is not matched by the [/if](../commands/macro-commands/if.md) statement.
+Else blocks are extremely useful for catching "everything else" that is not matched by the [/if](../reference/commands/if.md) statement.
 
 You can go one further and add some further matching with additional /if statments, like the following:
 
@@ -100,11 +100,6 @@ Similar to for loops, while loops can be used to execute a series of commands as
 
 You can end a /while loop immediately with /break or try the next iteration with /continue
 
-## See also /while
-
-* [/while](../commands/macro-commands/while.md)
-* [/break](../commands/macro-commands/break.md)
-* [/continue](../commands/macro-commands/continue.md)
 
 ## For loops
 
@@ -119,7 +114,7 @@ Take this example, which will give a list of all your buff slots:
 /next x
 ```
 
-The problem with this example is that you'll get a couple of NULLs if you have no buffs in those slots, so we can further refine the loop to make use of an [/if](../commands/macro-commands/if.md) statement as well, like this:
+The problem with this example is that you'll get a couple of NULLs if you have no buffs in those slots, so we can further refine the loop to make use of an [/if](../reference/commands/if.md) statement as well, like this:
 
 ```text
 /declare x int local
@@ -141,23 +136,18 @@ You could easily list the buffs in reverse order by using "downto" instead of "t
 
 You can end a /for loop immediately with /break or try the next iteration with /continue.
 
-## See also /for
-
-* [/for](../commands/macro-commands/for.md)
-* [/break](../commands/macro-commands/break.md)
-* [/continue](../commands/macro-commands/continue.md)
 
 ## Goto jumps
 
 As with most programming and scripting languages, the use of the "goto" function is frowned upon (generally because it's slow and there are better ways of achieving the same result). In MQ2 it's not much different, and since MQ2 originally didn't include any type of "while" function, many older macros still include goto statements.
 
-First off, you need a marker to denote where the [/goto](../commands/macro-commands/goto.md) function should move to. A marker is created in the following format:
+First off, you need a marker to denote where the [/goto](../reference/commands/goto.md) function should move to. A marker is created in the following format:
 
 ```text
 :marker
 ```
 
-To utilize that marker with a [/goto](../commands/macro-commands/goto.md) statment, do something like the following:
+To utilize that marker with a [/goto](../reference/commands/goto.md) statment, do something like the following:
 
 ```text
 Sub Main

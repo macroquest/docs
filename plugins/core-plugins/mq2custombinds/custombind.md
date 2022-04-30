@@ -6,7 +6,7 @@
 
 ## Description
 
-This command is used to add, delete, list or change custom key bindings. See also [/bind](../../../commands/slash-commands/bind.md) and [/dumpbinds](../../../commands/slash-commands/dumpbinds.md).
+This command is used to add, delete, list or change custom key bindings. See also [/bind](../../../reference/commands/bind.md) and [/dumpbinds](../../../reference/commands/dumpbinds.md).
 
 |  |  |
 | :--- | :--- |
@@ -18,7 +18,10 @@ This command is used to add, delete, list or change custom key bindings. See als
 
 ## Example
 
-**NOTE: MQ2's very first bind command is "RANGED" so you do not need to do this, it is just listed here as an example**
+!!! note
+
+    MQ's very first bind command is "RANGED" so you do not need to do this, it is just listed here as an example.
+
 
 ```text
     /custombind add mybind

@@ -35,10 +35,3 @@ Will display all spawns in the following format:
 [40 Human Banker] Banker Tawler - 100%
 [70 Wood Elf Ranger] BillyBob - 100%
 ```
-
-## See Also
-
-* [MQ2Map](./)
-
-[Return to Slash Commands](../../../commands/slash-commands/)
-

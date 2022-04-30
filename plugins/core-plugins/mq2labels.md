@@ -80,9 +80,3 @@ ${If\[${Target.ID} && ${Target.Casting},${Target.CleanName} is casting.,\]}
 would become
 
 ${If\[${Target.ID},${If\[${Target.Casting},${Target.CleanName} is casting.,\]},\]}
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-* [Custom UIs](../../documentation/custom-uis.md)
-

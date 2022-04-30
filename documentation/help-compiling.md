@@ -1,5 +1,10 @@
 # Help Compiling
 
+!!! warning
+
+    This content is outdated or incomplete.
+
+
 ## Intro
 
 This is a page for help with compiling MQ2. You should start here if you can't get it compiled, or it's crashing when you enter the game, or crashing when you use a command.
@@ -8,7 +13,7 @@ If you're having a problem with a macro or snippet, see [Help\_Macros](help-macr
 
 ## General Compiling Help
 
-* First, do you have the latest MQ2 source? Check the [download](https://macroquest2.com/main.php?p=download) page
+* First, do you have the latest MQ2 source? Check the [download](https://macroquest.org/main.php?p=download) page
 
   for the latest source and use that if you're not already. If the link says MQ2-down.zip or something similar, then
 
@@ -20,7 +25,7 @@ If you're having a problem with a macro or snippet, see [Help\_Macros](help-macr
 
   unsure\), then it's worth downloading the source again and just compiling MQ2 to see if you can narrow down the
 
-  problem. Follow the directions in [MacroQuest2:Compiling](macroquest-compiling.md) and compile a fresh MQ2
+  problem. Follow the directions in [Building MacroQuest](../main/building.md) and compile a fresh MQ2
 
   with no plugins.
 

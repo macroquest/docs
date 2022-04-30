@@ -6,13 +6,13 @@ MQ2LinkDB allows you to keep your own personalised database of item links. There
 
 * **v1:** The original, by Ziggy is available
 
-  [here](https://macroquest2.com/phpBB3/viewtopic.php?t=10375&start=0)
+  [here](https://macroquest.org/phpBB3/viewtopic.php?t=10375&start=0)
 
 * **v2:** An updated version of the plugin, which includes a TLO and linkbot functionality, was created by
 
   rswiders and is available in the VIP Forums
 
-  [here](https://macroquest2.com/phpBB3/viewtopic.php?t=14876)
+  [here](https://macroquest.org/phpBB3/viewtopic.php?t=14876)
 
 ### Features
 
@@ -71,9 +71,3 @@ You will get a tell with a link to the Baby Joseph Sayer.
 `/shout OMG I'm a dork! I have ${LinkDB[=Baby Joseph Sayer]} in my pack. Ha!`
 
 If the item is not found, the TLO returns an empty string, so you probably don't want to be directly shouting about Baby Joseph Sayer in your backpack. If you do and misspell his name, you will end up shouting about an empty string which isn't recommended.
-
-## See Also
-
-* [Top-Level Objects](../../data-types-and-top-level-objects/top-level-objects/)
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

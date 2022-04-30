@@ -2,7 +2,7 @@
 
 The first steps to getting help on a problem are:
 
-* [SEARCH](https://macroquest2.com/phpBB3/search.php) the MQ2 forums for other people who've had the same problem. If
+* [SEARCH](https://macroquest.org/phpBB3/search.php) the MQ2 forums for other people who've had the same problem. If
 
   you're getting an error message while compiling (either MQ2 itself or a plugin), its easiest to copy the error
 

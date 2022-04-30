@@ -6,7 +6,7 @@ CFG files are files which contain commands to be run at certain times. The file 
 
 CFG files may be present in .\Configs, in . (Release), or potentially in the EverQuest directory. Note that the _Release_ would be the same as wherever your Macroquest.ini is.
 
-You can manually load a CFG file while in-game using the [/loadcfg](../commands/slash-commands/loadcfg.md) command.
+You can manually load a CFG file while in-game using the [/loadcfg](../reference/commands/loadcfg.md) command.
 
 **The following CFG files will be loaded at the following times:**
 

@@ -4,7 +4,7 @@
 
 MQ2Tracking, by MacroFiend is a plugin which mimics the functionality of the Tracking skill of Rangers, Bards and Druids.
 
-The source to the plugin can be downloaded [here](https://macroquest2.com/phpBB3/viewtopic.php?t=5891).
+The source to the plugin can be downloaded [here](https://macroquest.org/phpBB3/viewtopic.php?t=5891).
 
 ## Commands
 
@@ -38,13 +38,8 @@ Sets the refresh time in seconds
 
 * **/track filter \[off\|\]**
 
-Sets or removes custom spawn search parameters \(same as [/who](../../commands/slash-commands/who.md)\)
+Sets or removes custom spawn search parameters \(same as [/who](../../reference/commands/who.md)\)
 
 * **/tracknames \[\|reset\]**
 
 Sets or removes custom naming for spawn entries in the list \(see [NamingSpawn](../../documentation/namingspawn.md)\)
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

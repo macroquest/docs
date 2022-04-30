@@ -2,20 +2,20 @@
 
 ## Introduction
 
-[Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/) (TLOs) are basically "built-in" global variables that contain information from the EQ client.
+[Top-Level Objects](../reference/top-level-objects/) (TLOs) are basically "built-in" global variables that contain information from the EQ client.
 
 ## Usage
 
-In order to use these built-in variables, you need to pick a Top-Level Object to start with, and then "build" the variable by adding one or more [DataType](../data-types-and-top-level-objects/data-types/) members of that TLO. It's best understood with some examples. **Note:** TLOs and members are all case sensitive, so enter them exactly as seen.
+In order to use these built-in variables, you need to pick a Top-Level Object to start with, and then "build" the variable by adding one or more [DataType](../reference/data-types/) members of that TLO. It's best understood with some examples. **Note:** TLOs and members are all case sensitive, so enter them exactly as seen.
 
 ### Example 1: Mana Percentage
 
 Say you want to display your current Mana Percentage in a [HUD](../plugins/core-plugins/mq2hud/) or use it in a macro.
 
-* First off, you look through the [list of TLOs](../data-types-and-top-level-objects/top-level-objects/) and pick one that best suits the information you're looking for. The [Me TLO](../data-types-and-top-level-objects/top-level-objects/tlo-me.md) looks like a good bet.
-* Opening that page, you see that the Me TLO has access to the [_character_](../data-types-and-top-level-objects/data-types/datatype-character.md) datatype
+* First off, you look through the [list of TLOs](../reference/top-level-objects/) and pick one that best suits the information you're looking for. The [Me TLO](../reference/top-level-objects/tlo-me.md) looks like a good bet.
+* Opening that page, you see that the Me TLO has access to the [_character_](../reference/data-types/datatype-character.md) datatype
 
-  and the [_spawn_](../data-types-and-top-level-objects/data-types/datatype-spawn.md) datatype. The _character_ datatype contains information about your own
+  and the [_spawn_](../reference/data-types/datatype-spawn.md) datatype. The _character_ datatype contains information about your own
 
   character, mostly things that only you will know (eg. how much mana you have, what spells you have loaded, etc).
 
@@ -25,7 +25,7 @@ Say you want to display your current Mana Percentage in a [HUD](../plugins/core-
 * This will display a list of all the members that are available to _character_. In the front of each datatype is an italic word, which is the datatype that the member belongs to. It may seem a bit confusing right now but should get easier as we progress to more complex examples.
 * Scroll down the list until you find a member that looks like it will give us what we need. The **PctMana** member looks good.
 * The _int_ in front of **PctMana** shows that it is an integer. Since we're expecting a number, this seems correct.
-* Click on the [_int_](../data-types-and-top-level-objects/data-types/datatype-int.md) link and you'll notice another table similar to the _character_ datatype. This table has all the members of the _int_ datatype. Note that the bottom line of the list is **To String_*, which is the default for the datatype. The default for the_ int* datatype is the number. Since we're just looking for the number, we can stop here.
+* Click on the [_int_](../reference/data-types/datatype-int.md) link and you'll notice another table similar to the _character_ datatype. This table has all the members of the _int_ datatype. Note that the bottom line of the list is **To String_*, which is the default for the datatype. The default for the_ int* datatype is the number. Since we're just looking for the number, we can stop here.
 * So now we can "build" our variable. Remember, all variables start with a $-sign and are surrounded by braces { }. 
 
 We start with our TLO:
@@ -52,11 +52,11 @@ We start with our TLO:
 
 The next example deals with getting your class short name (the 3-letter abbreviation of your class).
 
-* Find the most likely TLO again. Again, the [Me TLO](../data-types-and-top-level-objects/top-level-objects/tlo-me.md) looks best.
+* Find the most likely TLO again. Again, the [Me TLO](../reference/top-level-objects/tlo-me.md) looks best.
 * Find the member you would like to select. To find the members of **Me**, go to
-* [Character](../data-types-and-top-level-objects/data-types/datatype-character.md)
+* [Character](../reference/data-types/datatype-character.md)
 * Scrolling through the members of **Me**, **Class** looks like the best candidate.
-* The _class_ datatype has a default of "Same as Name". Looking at the **Name** member, we can see that it is the "long name" of the class (eg. Enchanter). We're actually looking for the short name, so we need to find a member of _class_ found here [Class](../data-types-and-top-level-objects/data-types/datatype-class.md). Funny enough, **ShortName** looks like it will do the job.
+* The _class_ datatype has a default of "Same as Name". Looking at the **Name** member, we can see that it is the "long name" of the class (eg. Enchanter). We're actually looking for the short name, so we need to find a member of _class_ found here [Class](../reference/data-types/datatype-class.md). Funny enough, **ShortName** looks like it will do the job.
 * **ShortName** is a _string_ datatype and the default for this datatype (surprisingly) is the string, and since we're looking for a 3-letter string, this is perfect. So now we've found our endpoint, we can build the variable as before.
 * Start with the TLO:
 

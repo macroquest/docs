@@ -56,14 +56,3 @@ SaveByChar=on
 ## Key Binding
 
 MQ2 creates a key binding for MQ2ChatWnd by default \(the . key\). This entry is created in a similar manner to the /bind command, and will create an entry in your [MacroQuest.ini](../../../documentation/macroquest.ini.md) file under the \[Key Binds\] section. The default entry is given the name _MQ2CHAT\_Nrm_, and may be changed by the user prior to starting MQ2, or using the /bind command.
-
-## See Also
-
-* [Plugins](../../../documentation/macroquest2-plugins.md)
-* [MQ2Chat](../mq2chat.md)
-* [/bind](../../../commands/slash-commands/bind.md)
-* [/keypress](../../../commands/slash-commands/keypress.md)
-* [/mqfont](mqfont.md)
-* [/mqmin](mqmin.md)
-* [/mqclear](mqclear.md)
-

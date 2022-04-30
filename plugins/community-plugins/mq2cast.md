@@ -2,9 +2,9 @@
 
 ## Introduction
 
-[MQ2Cast](https://macroquest2.com/phpBB3/viewtopic.php?t=12758) by s0rCieR and A\_Enchanter\_00 is a plugin to handle most things related to spell casting, item clicking and activating of AAs.
+[MQ2Cast](https://macroquest.org/phpBB3/viewtopic.php?t=12758) by s0rCieR and A\_Enchanter\_00 is a plugin to handle most things related to spell casting, item clicking and activating of AAs.
 
-The official forum thread for MQ2Cast is [here](https://macroquest2.com/phpBB3/viewtopic.php?t=12758) \(VIP Only\).
+The official forum thread for MQ2Cast is [here](https://macroquest.org/phpBB3/viewtopic.php?t=12758) \(VIP Only\).
 
 ## Features
 
@@ -28,7 +28,7 @@ The official forum thread for MQ2Cast is [here](https://macroquest2.com/phpBB3/v
 
 ## Requirements
 
-[MQ2Bandolier](https://macroquest2.com/phpBB3/viewtopic.php?t=12793) _For swapping in sets of items before casting \(ie. focus items\)_
+[MQ2Bandolier](https://macroquest.org/phpBB3/viewtopic.php?t=12793) _For swapping in sets of items before casting \(ie. focus items\)_
 
 [MQ2Exchange](mq2exchange.md) _For equipping clickies before using them_
 
@@ -164,31 +164,31 @@ _**Spell Set Delete**_ - This will delete a spell set from the ini file.
 
 ## Top Level Objects \(MQ2Data\)
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Cast}**
 
   _Same as ${Cast.Active} \(see below\)._
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Active}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Cast.Active}**
 
   Return TRUE if plugin is loaded and you are in-game.
 
-* [_spell_](../../data-types-and-top-level-objects/data-types/datatype-spell.md) **${Cast.Effect}**
+* [_spell_](../../reference/data-types/datatype-spell.md) **${Cast.Effect}**
 
   Returns the name of the spell being casted, or a NULL string if not casting.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Cast.Ready}**
 
   Return TRUE if ready to cast a spell, item or AA.
 
-  * [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready\[M\]}**
+  * [_bool_](../../reference/data-types/datatype-bool.md) **${Cast.Ready\[M\]}**
 
     Return TRUE if ready to memorize a spell.
 
-  * [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready\[\#\]}**
+  * [_bool_](../../reference/data-types/datatype-bool.md) **${Cast.Ready\[\#\]}**
 
     Return TRUE if gem \# is ready to cast.
 
-  * [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Ready\[X\]}**
+  * [_bool_](../../reference/data-types/datatype-bool.md) **${Cast.Ready\[X\]}**
 
     Return TRUE if spell, item, gem, ID, AA, etc is ready to cast. As spells and items can have the same IDs and
 
@@ -253,15 +253,15 @@ _**Spell Set Delete**_ - This will delete a spell set from the ini file.
   * **T**: targeting
   * **C**: spell casting in progress
 
-* [_spell_](../../data-types-and-top-level-objects/data-types/datatype-spell.md) **${Cast.Stored}**
+* [_spell_](../../reference/data-types/datatype-spell.md) **${Cast.Stored}**
 
   Returns the last spell that was cast, or NULL if no spell has been cast.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Cast.Taken}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Cast.Taken}**
 
   Return TRUE if last spell cast didn't take hold on target.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Cast.Timing}**
+* [_int_](../../reference/data-types/datatype-int.md) **${Cast.Timing}**
 
   Returns the estimated number of miliseconds remaining until the spell finished casting.
 
@@ -291,7 +291,7 @@ _Set Number of seconds left on spell before recasting Default:20_
 
 * **${SpellTimer\[SpawnID,Caster,Spell Name\]}**
 
-  [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) Returns time \(in seconds\) left on "Spell Name" by "Caster" on "SpawnID".
+  [_int_](../../reference/data-types/datatype-int.md) Returns time \(in seconds\) left on "Spell Name" by "Caster" on "SpawnID".
 
 :\* _Caster_ must be one of the following: **me** \(default\), **other** or **any**.
 
@@ -458,8 +458,3 @@ The duration is in seconds. The event is the text that you see on the screen whe
 `[Redfang Despawn]`  
 `duration=240`  
 `event="An ear-piercing screech reverberates throughout the surreal cavernous Demi-Plane of Blood, announcing the arrival of Redfang."`
-
-### To be added
-
-* None at this moment.
-

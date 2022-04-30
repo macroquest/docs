@@ -4,7 +4,7 @@
 
 Like it says this will autogroup, or auto accept raid invites from the names you have in your ini. Big thanks to Psycotic for the coding help. And to the other coders who's code i borrowed to try and put this thing together. Hopefully someone finds this plugin semi usefull.
 
-You can find the latest version of MQ2AutoGroup [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=13712&hilit=MQ2AutoGroup).
+You can find the latest version of MQ2AutoGroup [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=13712&hilit=MQ2AutoGroup).
 
 ## Commands
 
@@ -30,8 +30,3 @@ You can find the latest version of MQ2AutoGroup [here](https://macroquest2.com/p
 `Name0=bob`  
 `Name1=fred`  
 `Name2=harry`
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

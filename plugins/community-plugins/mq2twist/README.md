@@ -6,9 +6,9 @@
 
 MQ2Twist is a plugin for bards which allows them to "twist" a number of songs and/or items together very reliably. It takes care of missed notes and interrupts automatically, and can swap in items to cast too.
 
-This plugin was developed by koad, CyberTech, Cr4zyb4rd and Pheph, and can be downloaded from [here](https://macroquest2.com/phpBB3/viewtopic.php?t=8895) _VIP ACCESS REQUIRED_ it was last edited by Cr4zyb4rd on Wed Jun 21, 2006.
+This plugin was developed by koad, CyberTech, Cr4zyb4rd and Pheph, and can be downloaded from [here](https://macroquest.org/phpBB3/viewtopic.php?t=8895) _VIP ACCESS REQUIRED_ it was last edited by Cr4zyb4rd on Wed Jun 21, 2006.
 
-Winnower is the last one to post an updated file but it is user modified and that was on Wed Jul 29, 2015 [here](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=8895&start=465),
+Winnower is the last one to post an updated file but it is user modified and that was on Wed Jul 29, 2015 [here](https://macroquest.org/phpBB3/viewtopic.php?f=31&t=8895&start=465),
 
 **I am unable to find a current stable version. If you happen to find one please update this Wiki.** -\(Description updated by Valendar 6-15-16\)
 
@@ -80,19 +80,19 @@ Alias for /twist stop
 
 ## Top-Level Objects
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Twist}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${Twist}**
 
   _Same as ${Twist.Twisting} \(see below\)_
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Twist.Twisting}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${Twist.Twisting}**
 
   Returns TRUE if currently twisting, FALSE if not and NULL if plugin not loaded.
 
-* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Twist.Current}**
+* [_int_](../../../reference/data-types/datatype-int.md) **${Twist.Current}**
 
   Returns the current gem being sung, -1 for item or 0 if not twisting
 
-* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Twist.Next}**
+* [_int_](../../../reference/data-types/datatype-int.md) **${Twist.Next}**
 
   Returns the next gem to be sung, -1 for item or 0 if not twisting
 
@@ -136,7 +136,7 @@ Long songs are defined as songs greater than 3 ticks in length. If set to 1 tick
 
     the /exchange command. After casting, it will replace the original item.
 
-  * If only Name or Slot are specified, "[/itemnotify](../../../commands/slash-commands/itemnotify.md) _Slot_ rightmouseup" is used to
+  * If only Name or Slot are specified, "[/itemnotify](../../../reference/commands/itemnotify.md) _Slot_ rightmouseup" is used to
 
     perform item clicks.
 
@@ -198,9 +198,3 @@ Long songs are defined as songs greater than 3 ticks in length. If set to 1 tick
             Name=DISABLED
             Slot=DISABLED
 ```
-
-## See Also
-
-* [Top-Level Objects](../../../data-types-and-top-level-objects/top-level-objects/)
-* [Plugins](../../../documentation/macroquest2-plugins.md)
-

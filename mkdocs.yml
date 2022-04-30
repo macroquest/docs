@@ -15,377 +15,113 @@ copyright: Copyright &copy; 2002-2022 Macroquest Developers
 # Navigation
 nav:
 
-- Introduction: 
+- Documentation:
   - README.md
-  - About MacroQuest: macroquest-intro/README.md
-  - History Of MacroQuest: macroquest-intro/history-of-macroquest.md
-  - Credits: macroquest-intro/credits.md
+  - Getting Started: main/README.md
 
-- Documentation: 
-  - Beginners Guide to TLOs and DataVars: documentation/beginners-guide-to-tlos-and-datavars.md
-  - CFG Files: documentation/cfg-files.md
-  - Cheat Classifications: documentation/cheat-classifications.md
-  - Comments: documentation/comments.md
-  - Compilers: documentation/compilers.md
-  - Crash To Desktop: documentation/crash-to-desktop.md
-  - Custom UIs: documentation/custom-uis.md
-  - Editing Existing Macros: documentation/editing-existing-macros.md
-  - Flow Control: documentation/flow-control.md
-  - Help Compiling: documentation/help-compiling.md
-  - Help Macros: documentation/help-macros.md
-  - Help Plugins: documentation/help-plugins.md
-  - Identify Code Errors: documentation/identify-code-errors.md
-  - Incorrect Client Version: documentation/incorrect-client-version.md
-  - MQ2Data: documentation/mqdata.md
-  - MQDataVars: documentation/mqdatavars.md
-  - Macro Reference: documentation/macro-reference.md
-  - MacroQuest.exe: documentation/macroquest.exe.md
-  - MacroQuest:Compiling: documentation/macroquest-compiling.md
-  - MacroQuest2:IRC: documentation/macroquest-irc.md
-  - MacroQuest:Macros: documentation/macroquest-macros.md
-  - MacroQuest:Plugins: documentation/macroquest-plugins.md
-  - MacroQuest:Troubleshooting: documentation/macroquest-troubleshooting.md
-  - MacroQuest:Updating: documentation/macroquest-updating.md
-  - MacroQuest2:Using: documentation/macroquest-using.md
-  - MacroQuest.ini: documentation/macroquest.ini.md
-  - MacroQuest:Adding Plugins: documentation/macroquest-adding-plugins.md
-  - MacroQuest:Extending: documentation/macroquest-extending.md
-  - NamingSpawn: documentation/namingspawn.md
-  - Operators: documentation/operators.md
-  - Rules: documentation/rules.md
-  - Subroutines: documentation/subroutines.md
-  - Subroutines and Functions: documentation/subroutines-and-functions.md
+  - Building MacroQuest: main/building.md
 
-- General Information:
-  - Animations: general-information/animations.md
-  - CombatState: general-information/combatstate.md
-  - Containers List: general-information/containers-list.md
-  - Hacker Stuff: general-information/hacker-stuff.md
-  - List of spawn heights: general-information/list-of-spawn-heights.md
-  - MQ2 not working in EQ: general-information/mq-not-working-in-eq.md
-  - Multiboxing: general-information/multiboxing.md
-  - SPA List: general-information/spa-list.md
-  - Skills List: general-information/skills-list.md
-  - Slot Names: general-information/slot-names.md
-  - Spawn Search: general-information/spawn-search.md
-  
-  - Windows:
-    - AAWindow: general-information/windows/aawindow.md
-    - BreathWindow: general-information/windows/breathwindow.md
-    - WindowsList: general-information/windows/windowslist.md
+  - Developing MacroQuest:
+    - main/developing/README.md
+  - Extending MacroQuest:
+    - main/extending.md
 
-- Commands:
+  - MacroQuest Launcher: documentation/macroquest.exe.md
+
+  - Macros: documentation/macroquest-macros.md
   
-  - Slash Commands:
-    - commands/slash-commands/README.md
-    - /aa: commands/slash-commands/aa.md
-    - /advloot: commands/slash-commands/advloot.md
-    - /alert: commands/slash-commands/alert.md
-    - /alias: commands/slash-commands/alias.md
-    - /altkey: commands/slash-commands/altkey.md
-    - /banklist: commands/slash-commands/banklist.md
-    - /beep: commands/slash-commands/beep.md
-    - /beepontells: commands/slash-commands/beepontells.md
-    - /bind: commands/slash-commands/bind.md
-    - /cecho: commands/slash-commands/cecho.md
-    - /caption: commands/slash-commands/caption.md
-    - /captioncolor: commands/slash-commands/captioncolor.md
-    - /cast: commands/slash-commands/cast.md
-    - /charinfo: commands/slash-commands/charinfo.md
-    - /cleanup: commands/slash-commands/cleanup.md
-    - /click: commands/slash-commands/click.md
-    - /combine: commands/slash-commands/combine.md
-    - /ctrlkey: commands/slash-commands/ctrlkey.md
-    - /custombind: commands/slash-commands/custombind.md
-    - /destroy: commands/slash-commands/destroy.md
-    - /docommand: commands/slash-commands/docommand.md
-    - /doors: commands/slash-commands/doors.md
-    - /doortarget: commands/slash-commands/doortarget.md
-    - /dosocial: commands/slash-commands/dosocial.md
-    - /drop: commands/slash-commands/drop.md
-    - /dumpbinds: commands/slash-commands/dumpbinds.md
-    - /echo: commands/slash-commands/echo.md
-    - /endmacro: commands/slash-commands/endmacro.md
-    - /eqtarget: commands/slash-commands/eqtarget.md
-    - /exec: commands/slash-commands/exec.md
-    - /face: commands/slash-commands/face.md
-    - /filter: commands/slash-commands/filter.md
-    - /flashontells: commands/slash-commands/flashontells.md
-    - /foreground: commands/slash-commands/foreground.md
-    - /fps: commands/slash-commands/fps.md
-    - /help: commands/slash-commands/help.md
-    - /hotbutton: commands/slash-commands/hotbutton.md
-    - /identify: commands/slash-commands/identify.md
-    - /ireset: commands/slash-commands/ireset.md
-    - /itemnotify: commands/slash-commands/itemnotify.md
-    - /items: commands/slash-commands/items.md
-    - /itemtarget: commands/slash-commands/itemtarget.md
-    - /ini: commands/slash-commands/ini.md
-    - /keepkeys: commands/slash-commands/keepkeys.md
-    - /keypress: commands/slash-commands/keypress.md
-    - /listmacros: commands/slash-commands/listmacros.md
-    - /loadcfg: commands/slash-commands/loadcfg.md
-    - /loadspells: commands/slash-commands/loadspells.md
-    - /location: commands/slash-commands/location.md
-    - /loginname: commands/slash-commands/loginname.md
-    - /look: commands/slash-commands/look.md
-    - /lootall: commands/slash-commands/lootall.md
-    - /maxfps: commands/slash-commands/maxfps.md
-    - /mqclear: commands/slash-commands/mqclear.md
-    - /mqfont: commands/slash-commands/mqfont.md
-    - /mqmin: commands/slash-commands/mqmin.md
-    - /render: commands/slash-commands/render.md
-    - /mqcopylayout: commands/slash-commands/mqcopylayout.md
-    - /macro: commands/slash-commands/macro.md
-    - /makemevisible: commands/slash-commands/makemevisible.md
-    - /memspell: commands/slash-commands/memspell.md
-    - /mqpause: commands/slash-commands/mqpause.md
-    - /multiline: commands/slash-commands/multiline.md
-    - /netstatusxpos: commands/slash-commands/netstatusxpos.md
-    - /netstatusypos: commands/slash-commands/netstatusypos.md
-    - /nomodkey: commands/slash-commands/nomodkey.md
-    - /noparse: commands/slash-commands/noparse.md
-    - /notify: commands/slash-commands/notify.md
-    - /plugin: commands/slash-commands/plugin.md
-    - /popcustom: commands/slash-commands/popcustom.md
-    - /popup: commands/slash-commands/popup.md
-    - /popupecho: commands/slash-commands/popupecho.md
-    - /ranged: commands/slash-commands/ranged.md
-    - /reloadui: commands/slash-commands/reloadui.md
-    - /removeaura: commands/slash-commands/removeaura.md
-    - /removebuff: commands/slash-commands/removebuff.md
-    - /removelev: commands/slash-commands/removelev.md
-    - /removepetbuff: commands/slash-commands/removepetbuff.md
-    - /screenmode: commands/slash-commands/screenmode.md
-    - /selectitem: commands/slash-commands/selectitem.md
-    - /sellitem: commands/slash-commands/sellitem.md
-    - /setautorun: commands/slash-commands/setautorun.md
-    - /setprio: commands/slash-commands/setprio.md
-    - /shiftkey: commands/slash-commands/shiftkey.md
-    - /skills: commands/slash-commands/skills.md
-    - /spellslotinfo: commands/slash-commands/spellslotinfo.md
-    - /spew: commands/slash-commands/spew.md
-    - /squelch: commands/slash-commands/squelch.md
-    - /substitute: commands/slash-commands/substitute.md
-    - /mqtarget: commands/slash-commands/mqtarget.md
-    - /target: commands/slash-commands/target.md
-    - /telnet: commands/slash-commands/telnet.md
-    - /timed: commands/slash-commands/timed.md
-    - /timestamp: commands/slash-commands/timestamp.md
-    - /unload: commands/slash-commands/unload.md
-    - /updateitems: commands/slash-commands/updateitems.md
-    - /useitem: commands/slash-commands/useitem.md
-    - /where: commands/slash-commands/where.md
-    - /who: commands/slash-commands/who.md
-    - /whofilter: commands/slash-commands/whofilter.md
-    - /whotarget: commands/slash-commands/whotarget.md
-    - /windows: commands/slash-commands/windows.md
-    - /windowstate: commands/slash-commands/windowstate.md
-  
-  - Macro Commands:
-    
-    - Macro Directives:
-      - commands/macro-commands/macro-directives/README.md
-      - /#bind: commands/macro-commands/macro-directives/macro-bind.md
-      - /#chat: commands/macro-commands/macro-directives/chat.md
-      - /#define: commands/macro-commands/macro-directives/define.md
-      - /#event: commands/macro-commands/macro-directives/event.md
-      - /#include: commands/macro-commands/macro-directives/include.md
-      - /#include/_optional: commands/macro-commands/macro-directives/include_optional.md
-      - /#turbo: commands/macro-commands/macro-directives/turbo.md
-      - /#warning: commands/macro-commands/macro-directives/warning.md
-    - /break: commands/macro-commands/break.md
-    - /deletevar: commands/macro-commands/deletevar.md
-    - /delay: commands/macro-commands/delay.md
-    - /declare: commands/macro-commands/declare.md
-    - /call: commands/macro-commands/call.md
-    - /clearerrors: commands/macro-commands/clearerrors.md
-    - /continue: commands/macro-commands/continue.md
-    - /doevents: commands/macro-commands/doevents.md
-    - /for: commands/macro-commands/for.md
-    - /goto: commands/macro-commands/goto.md
-    - /if: commands/macro-commands/if.md
-    - /invoke: commands/macro-commands/invoke.md
-    - /mqlog: commands/macro-commands/mqlog.md
-    - /next: commands/macro-commands/next.md
-    - /return: commands/macro-commands/return.md
-    - /seterror: commands/macro-commands/seterror.md
-    - /varcalc: commands/macro-commands/varcalc.md
-    - /vardata: commands/macro-commands/vardata.md
-    - /varset: commands/macro-commands/varset.md
-    - /while: commands/macro-commands/while.md
-  
-  - EQ Commands:
-    - /lootnodrop: commands/eq-commands/lootnodrop.md
-  
-- Reference:
-    
-    - Top Level Objects:
-      - data-types-and-top-level-objects/top-level-objects/README.md
-      - TLO:Achievement: data-types-and-top-level-objects/top-level-objects/tlo-achievement.md
-      - TLO:AdvLoot: data-types-and-top-level-objects/top-level-objects/tlo-advloot.md
-      - TLO:Alert: data-types-and-top-level-objects/top-level-objects/tlo-alert.md
-      - TLO:Alias: data-types-and-top-level-objects/top-level-objects/tlo-alias.md
-      - TLO:AltAbility: data-types-and-top-level-objects/top-level-objects/tlo-altability.md
-      - TLO:Bandolier: data-types-and-top-level-objects/top-level-objects/tlo-bandolier.md
-      - TLO:Bool: data-types-and-top-level-objects/top-level-objects/tlo-bool.md
-      - TLO:Corpse: data-types-and-top-level-objects/top-level-objects/tlo-corpse.md
-      - TLO:Cursor: data-types-and-top-level-objects/top-level-objects/tlo-cursor.md
-      - TLO:Defined: data-types-and-top-level-objects/top-level-objects/tlo-defined.md
-      - TLO:DisplayItem: data-types-and-top-level-objects/top-level-objects/tlo-displayitem.md
-      - TLO:DoorTarget: data-types-and-top-level-objects/top-level-objects/tlo-doortarget.md
-      - TLO:DynamicZone: data-types-and-top-level-objects/top-level-objects/tlo-dynamiczone.md
-      - TLO:EverQuest: data-types-and-top-level-objects/top-level-objects/tlo-everquest.md
-      - TLO:Familiar: data-types-and-top-level-objects/top-level-objects/tlo-familiar.md
-      - TLO:FindItem: data-types-and-top-level-objects/top-level-objects/tlo-finditem.md
-      - TLO:FindItemBank: data-types-and-top-level-objects/top-level-objects/tlo-finditembank.md
-      - TLO:FindItemBankCount: data-types-and-top-level-objects/top-level-objects/tlo-finditembankcount.md
-      - TLO:FindItemCount: data-types-and-top-level-objects/top-level-objects/tlo-finditemcount.md
-      - TLO:Float: data-types-and-top-level-objects/top-level-objects/tlo-float.md
-      - TLO:Friends: data-types-and-top-level-objects/top-level-objects/tlo-friends.md
-      - TLO:FPS: data-types-and-top-level-objects/top-level-objects/tlo-fps.md
-      - TLO:GameTime: data-types-and-top-level-objects/top-level-objects/tlo-gametime.md
-      - TLO:Ground: data-types-and-top-level-objects/top-level-objects/tlo-ground.md
-      - TLO:GroundItemCount: data-types-and-top-level-objects/top-level-objects/tlo-grounditemcount.md
-      - TLO:Group: data-types-and-top-level-objects/top-level-objects/tlo-group.md
-      - TLO:Heading: data-types-and-top-level-objects/top-level-objects/tlo-heading.md
-      - TLO:If: data-types-and-top-level-objects/top-level-objects/tlo-if.md
-      - TLO:Illusion: data-types-and-top-level-objects/top-level-objects/tlo-illusion.md
-      - TLO:Ini: data-types-and-top-level-objects/top-level-objects/tlo-ini.md
-      - TLO:Int: data-types-and-top-level-objects/top-level-objects/tlo-int.md
-      - TLO:IRC: data-types-and-top-level-objects/top-level-objects/tlo-irc.md
-      - TLO:ItemTarget: data-types-and-top-level-objects/top-level-objects/tlo-itemtarget.md
-      - TLO:LastSpawn: data-types-and-top-level-objects/top-level-objects/tlo-lastspawn.md
-      - TLO:LineOfSight: data-types-and-top-level-objects/top-level-objects/tlo-lineofsight.md
-      - TLO:Macro: data-types-and-top-level-objects/top-level-objects/tlo-macro.md
-      - TLO:MacroQuest: data-types-and-top-level-objects/top-level-objects/tlo-macroquest.md
-      - TLO:Math: data-types-and-top-level-objects/top-level-objects/tlo-math.md
-      - TLO:Me: data-types-and-top-level-objects/top-level-objects/tlo-me.md
-      - TLO:Mercenary: data-types-and-top-level-objects/top-level-objects/tlo-mercenary.md
-      - TLO:Merchant: data-types-and-top-level-objects/top-level-objects/tlo-merchant.md
-      - TLO:Mount: data-types-and-top-level-objects/top-level-objects/tlo-mount.md
-      - TLO:NearestSpawn: data-types-and-top-level-objects/top-level-objects/tlo-nearestspawn.md
-      - TLO:Pet: data-types-and-top-level-objects/top-level-objects/tlo-pet.md
-      - TLO:Plugin: data-types-and-top-level-objects/top-level-objects/tlo-plugin.md
-      - TLO:Raid: data-types-and-top-level-objects/top-level-objects/tlo-raid.md
-      - TLO:Range: data-types-and-top-level-objects/top-level-objects/tlo-range.md
-      - TLO:Select: data-types-and-top-level-objects/top-level-objects/tlo-select.md
-      - TLO:SelectedItem: data-types-and-top-level-objects/top-level-objects/tlo-selecteditem.md
-      - TLO:Skill: data-types-and-top-level-objects/top-level-objects/tlo-skill.md
-      - TLO:Spawn: data-types-and-top-level-objects/top-level-objects/tlo-spawn.md
-      - TLO:SpawnCount: data-types-and-top-level-objects/top-level-objects/tlo-spawncount.md
-      - TLO:Spell: data-types-and-top-level-objects/top-level-objects/tlo-spell.md
-      - TLO:Switch: data-types-and-top-level-objects/top-level-objects/tlo-switch.md
-      - TLO:Target: data-types-and-top-level-objects/top-level-objects/tlo-target.md
-      - TLO:Task: data-types-and-top-level-objects/top-level-objects/tlo-task.md
-      - TLO:Time: data-types-and-top-level-objects/top-level-objects/tlo-time.md
-      - TLO:Type: data-types-and-top-level-objects/top-level-objects/tlo-type.md
-      - TLO:Window: data-types-and-top-level-objects/top-level-objects/tlo-window.md
-      - TLO:Zone: data-types-and-top-level-objects/top-level-objects/tlo-zone.md
-    
-    - Data Types:
-      - data-types-and-top-level-objects/data-types/README.md
-      - DataType:achievement: data-types-and-top-level-objects/data-types/datatype-achievement.md
-      - DataType:achievementcat: data-types-and-top-level-objects/data-types/datatype-achievementcat.md
-      - DataType:achievementcomp: data-types-and-top-level-objects/data-types/datatype-achievementcomp.md
-      - DataType:achievementobj: data-types-and-top-level-objects/data-types/datatype-achievementobj.md
-      - DataType:alertlist: data-types-and-top-level-objects/data-types/datatype-alertlisttype.md
-      - DataType:altability: data-types-and-top-level-objects/data-types/datatype-altability.md
-      - DataType:argb: data-types-and-top-level-objects/data-types/datatype-argb.md
-      - DataType:array: data-types-and-top-level-objects/data-types/datatype-array.md
-      - DataType:body: data-types-and-top-level-objects/data-types/datatype-body.md
-      - DataType:bool: data-types-and-top-level-objects/data-types/datatype-bool.md
-      - DataType:buff: data-types-and-top-level-objects/data-types/datatype-buff.md
-      - DataType:byte: data-types-and-top-level-objects/data-types/datatype-byte.md
-      - DataType:cachedbuff: data-types-and-top-level-objects/data-types/datatype-cachedbuff.md
-      - DataType:character: data-types-and-top-level-objects/data-types/datatype-character.md
-      - DataType:class: data-types-and-top-level-objects/data-types/datatype-class.md
-      - DataType:corpse: data-types-and-top-level-objects/data-types/datatype-corpse.md
-      - DataType:currentzone: data-types-and-top-level-objects/data-types/datatype-currentzone.md
-      - DataType:deity: data-types-and-top-level-objects/data-types/datatype-deity.md
-      - DataType:dynamiczone: data-types-and-top-level-objects/data-types/datatype-dynamiczone.md
-      - DataType:dzmember: data-types-and-top-level-objects/data-types/datatype-dzmember.md
-      - DataType:dztimer: data-types-and-top-level-objects/data-types/datatype-dztimer.md
-      - DataType:everquest: data-types-and-top-level-objects/data-types/datatype-everquest.md
-      - DataType:evolving: data-types-and-top-level-objects/data-types/datatype-evolving.md
-      - DataType:fellowship: data-types-and-top-level-objects/data-types/datatype-fellowship.md
-      - DataType:fellowshipmember: data-types-and-top-level-objects/data-types/datatype-fellowshipmember.md
-      - DataType:float: data-types-and-top-level-objects/data-types/datatype-float.md
-      - DataType:friends: data-types-and-top-level-objects/data-types/datatype-friends.md
-      - DataType:ground: data-types-and-top-level-objects/data-types/datatype-ground.md
-      - DataType:group: data-types-and-top-level-objects/data-types/datatype-group.md
-      - DataType:groupmember: data-types-and-top-level-objects/data-types/datatype-groupmember.md
-      - DataType:heading: data-types-and-top-level-objects/data-types/datatype-heading.md
-      - DataType:int: data-types-and-top-level-objects/data-types/datatype-int.md
-      - DataType:invslot: data-types-and-top-level-objects/data-types/datatype-invslot.md
-      - DataType:item: data-types-and-top-level-objects/data-types/datatype-item.md
-      - DataType:keyring: data-types-and-top-level-objects/data-types/datatype-keyring.md
-      - DataType:keyringitem: data-types-and-top-level-objects/data-types/datatype-keyringitem.md
-      - DataType:macro: data-types-and-top-level-objects/data-types/datatype-macro.md
-      - DataType:macroquest: data-types-and-top-level-objects/data-types/datatype-macroquest.md
-      - DataType:math: data-types-and-top-level-objects/data-types/datatype-math.md
-      - DataType:mercenary: data-types-and-top-level-objects/data-types/datatype-mercenary.md
-      - DataType:merchant: data-types-and-top-level-objects/data-types/datatype-merchant.md
-      - DataType:mount: data-types-and-top-level-objects/data-types/datatype-mount.md
-      - DataType:pet: data-types-and-top-level-objects/data-types/datatype-pet.md
-      - DataType:plugin: data-types-and-top-level-objects/data-types/datatype-plugin.md
-      - DataType:race: data-types-and-top-level-objects/data-types/datatype-race.md
-      - DataType:raid: data-types-and-top-level-objects/data-types/datatype-raid.md
-      - DataType:raidmember: data-types-and-top-level-objects/data-types/datatype-raidmember.md
-      - DataType:range: data-types-and-top-level-objects/data-types/datatype-range.md
-      - DataType:skill: data-types-and-top-level-objects/data-types/datatype-skill.md
-      - DataType:spawn: data-types-and-top-level-objects/data-types/datatype-spawn.md
-      - DataType:spell: data-types-and-top-level-objects/data-types/datatype-spell.md
-      - DataType:string: data-types-and-top-level-objects/data-types/datatype-string.md
-      - DataType:switch: data-types-and-top-level-objects/data-types/datatype-switch.md
-      - DataType:target: data-types-and-top-level-objects/data-types/datatype-target.md
-      - DataType:task: data-types-and-top-level-objects/data-types/datatype-task.md
-      - DataType:taskmember: data-types-and-top-level-objects/data-types/datatype-taskmember.md
-      - DataType:ticks: data-types-and-top-level-objects/data-types/datatype-ticks.md
-      - DataType:time: data-types-and-top-level-objects/data-types/datatype-time.md
-      - DataType:timer: data-types-and-top-level-objects/data-types/datatype-timer.md
-      - DataType:timestamp: data-types-and-top-level-objects/data-types/datatype-timestamp.md
-      - DataType:type: data-types-and-top-level-objects/data-types/datatype-type.md
-      - DataType:window: data-types-and-top-level-objects/data-types/datatype-window.md
-      - DataType:worldlocation: data-types-and-top-level-objects/data-types/datatype-worldlocation.md
-      - DataType:xtaggrocount: data-types-and-top-level-objects/data-types/datatype-xtaggrocount.md
-      - DataType:xtarget: data-types-and-top-level-objects/data-types/datatype-xtarget.md
-      - DataType:zone: data-types-and-top-level-objects/data-types/datatype-zone.md
+  - Configuration:
+    - documentation/macroquest.ini.md
+    - CFG Files: documentation/cfg-files.md
+
+
+  - Updating: documentation/macroquest-updating.md
+
+  - Articles:
+    - Cheat Classifications: documentation/cheat-classifications.md
+    - Custom UIs: documentation/custom-uis.md
+    - Editing Existing Macros: documentation/editing-existing-macros.md
+    - Hacker Stuff: reference/general/hacker-stuff.md
+    - Help Macros: documentation/help-macros.md
+    - Help Plugins: documentation/help-plugins.md
+
+  - Troubleshooting:
+    - documentation/macroquest-troubleshooting.md
+    - Crash To Desktop: documentation/crash-to-desktop.md
+    - Identify Code Errors: documentation/identify-code-errors.md
+    - Incorrect Client Version: documentation/incorrect-client-version.md
+    - MQ2 not working in EQ: reference/general/mq-not-working-in-eq.md
+
+  - Other Applications:
+    - EQEmu: other-applications/eqemu.md
+    - Text Editors: other-applications/text-editors/README.md
+    - Notepad++ Syntax File: other-applications/text-editors/notepadplusplus-syntax-file.md
+    - UltraEdit Syntax File: other-applications/text-editors/ultraedit-syntax-file.md
+
+  - Obsolete Docs:
+    - main/obsolete.md
+    - Compilers: documentation/compilers.md
+    - Adding Plugins: documentation/macroquest-adding-plugins.md
+    - Help Compiling: documentation/help-compiling.md
+
+  - History Of MacroQuest: main/history-of-macroquest.md
+  - Credits: main/credits.md
+
 
 - Plugins:
+  - plugins/README.md
+
+  - Developinig Plugins:
+    - plugins/developing/README.md
   
   - Core Plugins:
+    - plugins/core-plugins/README.md
+
     - MQ2AutoLogin: plugins/core-plugins/mq2autologin.md
-    - MQ2Bzsrch: plugins/core-plugins/mq2bzsrch.md
+    - MQ2Bzsrch:
+      - plugins/core-plugins/mq2bzsrch/README.md
+
       - TLO:Bazaar: plugins/core-plugins/mq2bzsrch/mq2bzsrch-tlo-bazaar.md
-    - DataType:bazaar: plugins/core-plugins/mq2bzsrch/mq2bzsrch-datatype-bazaar.md
-    - DataType:bazaaritem: plugins/core-plugins/mq2bzsrch/mq2bzsrch-datatype-bazaaritem.md
+      - DataType:bazaar: plugins/core-plugins/mq2bzsrch/mq2bzsrch-datatype-bazaar.md
+      - DataType:bazaaritem: plugins/core-plugins/mq2bzsrch/mq2bzsrch-datatype-bazaaritem.md
     - MQ2Chat: plugins/core-plugins/mq2chat.md
-    - MQ2ChatWnd: plugins/core-plugins/mq2chatwnd.md
+    - MQ2ChatWnd:
+      - plugins/core-plugins/mq2chatwnd/README.md
+
       - /mqclear: plugins/core-plugins/mq2chatwnd/mqclear.md
       - /mqfont: plugins/core-plugins/mq2chatwnd/mqfont.md
       - /mqmin: plugins/core-plugins/mq2chatwnd/mqmin.md
-    - MQ2CustomBinds: plugins/core-plugins/mq2custombinds.md
+    - MQ2CustomBinds:
+      - plugins/core-plugins/mq2custombinds/README.md
+
       - /custombind: plugins/core-plugins/mq2custombinds/custombind.md
     - MQ2EQBugFix: plugins/core-plugins/mq2eqbugfix.md
-    - MQ2HUD: plugins/core-plugins/mq2hud/README.md
+    - MQ2HUD:
+      - plugins/core-plugins/mq2hud/README.md
+
       - /classhud: plugins/core-plugins/mq2hud/classhud.md
       - /defaulthud: plugins/core-plugins/mq2hud/defaulthud.md
       - /hud: plugins/core-plugins/mq2hud/hud.md
       - /loadhud: plugins/core-plugins/mq2hud/loadhud.md
       - /zonehud: plugins/core-plugins/mq2hud/zonehud.md
-    - MQ2ItemDisplay: plugins/core-plugins/mq2itemdisplay/README.md
+    - MQ2ItemDisplay:
+      - plugins/core-plugins/mq2itemdisplay/README.md
+
       - /inote: plugins/core-plugins/mq2itemdisplay/inote.md
     - MQ2Labels: plugins/core-plugins/mq2labels.md
-    - MQ2Map: plugins/core-plugins/mq2map/README.md
+    - MQ2Map:
+      - plugins/core-plugins/mq2map/README.md
+
       - /highlight: plugins/core-plugins/mq2map/highlight.md
       - /mapclick: plugins/core-plugins/mq2map/mapclick.md
-    - Mapfilter: plugins/core-plugins/mq2map/mapfilter.md
+      - /mapfilter: plugins/core-plugins/mq2map/mapfilter.md
       - /maphide: plugins/core-plugins/mq2map/maphide.md
       - /mapnames: plugins/core-plugins/mq2map/mapnames.md
       - /mapshow: plugins/core-plugins/mq2map/mapshow.md
   
   - Community Plugins:
+    - plugins/community-plugins/README.md
+
     - MQ2AAPurchase: plugins/community-plugins/mq2aapurchase.md
     - MQ2AdvPath: plugins/community-plugins/mq2advpath.md
     - MQ2AutoForage: plugins/community-plugins/mq2autoforage.md
@@ -402,7 +138,6 @@ nav:
     - MQ2DPSAdv: plugins/community-plugins/mq2dpsadv.md
     - MQ2Debuffs: plugins/community-plugins/mq2debuffs.md
     - MQ2Cecho: plugins/community-plugins/mq2cecho.md
-    - MQ2FPS: plugins/community-plugins/mq2fps.md
     - MQ2EQBC: plugins/community-plugins/mq2eqbc/README.md
     - MQ2EQBC:Revisions: plugins/community-plugins/mq2eqbc/mq2eqbc-revisions.md
     - MQ2Events: plugins/community-plugins/mq2events.md
@@ -429,7 +164,6 @@ nav:
     - MQ2Spawn: plugins/community-plugins/mq2spawn.md
     - MQ2SpawnMaster: plugins/community-plugins/mq2spawnmaster.md
     - MQ2Targets: plugins/community-plugins/mq2targets.md
-    - MQ2Timer: plugins/community-plugins/mq2timer.md
     - MQ2Timestamp: plugins/community-plugins/mq2timestamp.md
     - MQ2Tracking: plugins/community-plugins/mq2tracking.md
     - MQ2Twist: plugins/community-plugins/mq2twist/README.md
@@ -438,67 +172,366 @@ nav:
     - MQ2MQ2Web: plugins/community-plugins/mq2web.md
     - MQ2XPTracker: plugins/community-plugins/mq2xptracker.md
   
-  - Discontinued / Unsupported:
-    - MQ2EQIM: plugins/discontinued-unsupported/mq2eqim/README.md
-      - MQ2EQIM:DataType:buddy: plugins/discontinued-unsupported/mq2eqim/mq2eqim-datatype-buddy.md
-    - MQ2FPS: plugins/discontinued-unsupported/mq2fps/README.md
-      - TLO:FPS: plugins/discontinued-unsupported/mq2fps/tlo-fps.md
-    - MQ2IRC: plugins/discontinued-unsupported/mq2irc/README.md
-      - TLO:Irc: plugins/discontinued-unsupported/mq2irc/tlo-irc.md
-      - MQ2IRC:DataType:irc: plugins/discontinued-unsupported/mq2irc/mq2irc-datatype-irc.md
-      - Commands: plugins/discontinued-unsupported/mq2irc/commands/README.md
-        - /i: plugins/discontinued-unsupported/mq2irc/commands/i.md
-        - /iconnect: plugins/discontinued-unsupported/mq2irc/commands/iconnect.md
-        - /istatus: plugins/discontinued-unsupported/mq2irc/commands/istatus.md
+  - Discontinued Plugins:
+    - plugins/discontinued/README.md
+
+    - MQ2EQIM:
+      - plugins/discontinued/mq2eqim/README.md
+      - MQ2EQIM:DataType:buddy: plugins/discontinued/mq2eqim/mq2eqim-datatype-buddy.md
+    - MQ2FPS:
+      - plugins/discontinued/mq2fps/README.md
+      - TLO:FPS: plugins/discontinued/mq2fps/tlo-fps.md
+      - DataType:FPS: plugins/discontinued/mq2fps/datatype-fps.md
+    - MQ2IRC:
+      - plugins/discontinued/mq2irc/README.md
+      - TLO:Irc: plugins/discontinued/mq2irc/tlo-irc.md
+      - MQ2IRC:DataType:irc: plugins/discontinued/mq2irc/mq2irc-datatype-irc.md
+      - Commands:
+        - plugins/discontinued/mq2irc/commands/README.md
+        - /i: plugins/discontinued/mq2irc/commands/i.md
+        - /iconnect: plugins/discontinued/mq2irc/commands/iconnect.md
+        - /istatus: plugins/discontinued/mq2irc/commands/istatus.md
     - MQ2Telnet:
-      - plugins/discontinued-unsupported/mq2telnet/README.md
-    - MQ2Telnet: plugins/discontinued-unsupported/mq2telnet.md
-      - /telnet: plugins/discontinued-unsupported/mq2telnet/telnet.md
-    - MQ2eqim: plugins/discontinued-unsupported/mq2eqim.md
-    - MQ2Web: plugins/discontinued-unsupported/mq2web.md
+      - plugins/discontinued/mq2telnet/README.md
+      - /telnet: plugins/discontinued/mq2telnet/telnet.md
+    - MQ2Web: plugins/discontinued/mq2web.md
 
 - Macros:
-  - macros/examples/README.md
-  - AAPurchase.inc: macros/macros/aapurchase.inc.md
-  - Advanced Fishing: macros/macros/advanced-fishing.md
-  - Afcleric.mac - nils: macros/macros/afcleric.mac-nils.md
-  - AutoBot.mac: macros/macros/autobot.mac.md
-  - AutoBot.mac-V4.28+: macros/macros/autobot.mac-v4.28+.md
-  - Barter: macros/macros/barter.md
-  - Cleric.mac - nytemyst: macros/macros/cleric.mac-nytemyst.md
-  - Clockwork Grease Maker: macros/macros/clockwork-grease-maker.md
-  - Custom Events: macros/macros/custom-events.md
-  - DRShmbot: macros/macros/drshmbot.md
-  - Defense.inc: macros/macros/defense.inc.md
-  - GemOpt.inc: macros/macros/gemopt.inc.md
-  - GenBot: macros/macros/genbot.md
-  - Group Language Trainer: macros/macros/group-language-trainer.md
-  - Guild Buff Bot: macros/macros/guild-buff-bot.md
-  - Loot Any Corpse: macros/macros/loot-any-corpse.md
-  - ModBot: macros/macros/modbot.md
-  - Modbot 4.0: macros/macros/modbot-4.0.md
-  - Necro Helper: macros/macros/necro-helper.md
-  - Ninjadvloot.inc: macros/macros/ninjadvloot.inc.md
-  - Puller.inc: macros/macros/puller.inc.md
-  - QuickBeg.inc: macros/macros/quickbeg.inc.md
-  - RDCommon.ini: macros/macros/rdcommon.ini.md
-  - Related Include Files: macros/macros/related-include-files.md
-  - Rogue Helper: macros/macros/rogue-helper.md
-  - Rogue Helper Command List: macros/macros/rogue-helper-command-list.md
-  - Script Examples: macros/macros/script-examples.md
-  - Sk.mac - nytemyst: macros/macros/sk.mac-nytemyst.md
-  - Snare: macros/macros/snare.md
-  - Spell Routines.inc: macros/macros/spell-routines.inc.md
-  - Spell Skill Trainer: macros/macros/spell-skill-trainer.md
-  - Wait4Rez.inc: macros/macros/wait4rez.inc.md
+  - macros/README.md
 
-- Other Applications:
-  - EQEmu: other-applications/eqemu.md
-  - Text Editors: other-applications/text-editors/README.md
-  - Notepad++ Syntax File: other-applications/text-editors/notepadplusplus-syntax-file.md
-  - UltraEdit Syntax File: other-applications/text-editors/ultraedit-syntax-file.md
+  - Beginners Guide to TLOs and DataVars: documentation/beginners-guide-to-tlos-and-datavars.md
+  - Comments: documentation/comments.md
+  - MQ2Data: documentation/mqdata.md
+  - MQDataVars: documentation/mqdatavars.md
+  - Flow Control: documentation/flow-control.md
+  - Operators: documentation/operators.md
+  - Rules: documentation/rules.md
+  - Subroutines: documentation/subroutines.md
+  - Custom Events: macros/custom-events.md
 
-- Changelog: changelog.md
+  - Macro Directives:
+    - reference/macro-directives/README.md
+    - /#bind: reference/macro-directives/macro-bind.md
+    - /#chat: reference/macro-directives/chat.md
+    - /#define: reference/macro-directives/define.md
+    - /#event: reference/macro-directives/event.md
+    - /#include: reference/macro-directives/include.md
+    - /#include/_optional: reference/macro-directives/include_optional.md
+    - /#turbo: reference/macro-directives/turbo.md
+    - /#warning: reference/macro-directives/warning.md
+
+  - Example Macros:
+    - macros/examples/README.md
+    - AAPurchase.inc: macros/examples/aapurchase.inc.md
+    - Advanced Fishing: macros/examples/advanced-fishing.md
+    - Afcleric.mac - nils: macros/examples/afcleric.mac-nils.md
+    - AutoBot.mac: macros/examples/autobot.mac.md
+    - AutoBot.mac-V4.28+: macros/examples/autobot.mac-v4.28+.md
+    - Barter: macros/examples/barter.md
+    - Cleric.mac - nytemyst: macros/examples/cleric.mac-nytemyst.md
+    - Clockwork Grease Maker: macros/examples/clockwork-grease-maker.md
+    - DRShmbot: macros/examples/drshmbot.md
+    - Defense.inc: macros/examples/defense.inc.md
+    - GemOpt.inc: macros/examples/gemopt.inc.md
+    - GenBot: macros/examples/genbot.md
+    - Group Language Trainer: macros/examples/group-language-trainer.md
+    - Guild Buff Bot: macros/examples/guild-buff-bot.md
+    - Loot Any Corpse: macros/examples/loot-any-corpse.md
+    - ModBot: macros/examples/modbot.md
+    - Modbot 4.0: macros/examples/modbot-4.0.md
+    - Necro Helper: macros/examples/necro-helper.md
+    - Ninjadvloot.inc: macros/examples/ninjadvloot.inc.md
+    - Puller.inc: macros/examples/puller.inc.md
+    - QuickBeg.inc: macros/examples/quickbeg.inc.md
+    - RDCommon.ini: macros/examples/rdcommon.ini.md
+    - Related Include Files: macros/examples/related-include-files.md
+    - Rogue Helper: macros/examples/rogue-helper.md
+    - Rogue Helper Command List: macros/examples/rogue-helper-command-list.md
+    - Script Examples: macros/examples/script-examples.md
+    - Sk.mac - nytemyst: macros/examples/sk.mac-nytemyst.md
+    - Snare: macros/examples/snare.md
+    - Spell Routines.inc: macros/examples/spell-routines.inc.md
+    - Spell Skill Trainer: macros/examples/spell-skill-trainer.md
+    - Wait4Rez.inc: macros/examples/wait4rez.inc.md
+
+- Reference:
+  - reference/README.md
+
+  - General Information:
+    - reference/general/README.md
+    - Animations: reference/general/animations.md
+    - CombatState: reference/general/combatstate.md
+    - Containers List: reference/general/containers-list.md
+    - List of spawn heights: reference/general/list-of-spawn-heights.md
+    - Multiboxing: reference/general/multiboxing.md
+    - NamingSpawn: documentation/namingspawn.md
+    - SPA List: reference/general/spa-list.md
+    - Skills List: reference/general/skills-list.md
+    - Slot Names: reference/general/slot-names.md
+    - Spawn Search: reference/general/spawn-search.md
+
+    - Windows:
+      - AAWindow: reference/general/windows/aawindow.md
+      - BreathWindow: reference/general/windows/breathwindow.md
+      - WindowsList: reference/general/windows/windowslist.md
+
+  - Commands:
+    - reference/commands/README.md
+    - Slash Commands:
+      - /aa: reference/commands/aa.md
+      - /advloot: reference/commands/advloot.md
+      - /alert: reference/commands/alert.md
+      - /alias: reference/commands/alias.md
+      - /altkey: reference/commands/altkey.md
+      - /banklist: reference/commands/banklist.md
+      - /beep: reference/commands/beep.md
+      - /beepontells: reference/commands/beepontells.md
+      - /bind: reference/commands/bind.md
+      - /cecho: reference/commands/cecho.md
+      - /caption: reference/commands/caption.md
+      - /captioncolor: reference/commands/captioncolor.md
+      - /cast: reference/commands/cast.md
+      - /charinfo: reference/commands/charinfo.md
+      - /cleanup: reference/commands/cleanup.md
+      - /click: reference/commands/click.md
+      - /combine: reference/commands/combine.md
+      - /ctrlkey: reference/commands/ctrlkey.md
+      - /destroy: reference/commands/destroy.md
+      - /docommand: reference/commands/docommand.md
+      - /doors: reference/commands/doors.md
+      - /doortarget: reference/commands/doortarget.md
+      - /dosocial: reference/commands/dosocial.md
+      - /drop: reference/commands/drop.md
+      - /dumpbinds: reference/commands/dumpbinds.md
+      - /echo: reference/commands/echo.md
+      - /endmacro: reference/commands/endmacro.md
+      - /eqtarget: reference/commands/eqtarget.md
+      - /exec: reference/commands/exec.md
+      - /face: reference/commands/face.md
+      - /filter: reference/commands/filter.md
+      - /flashontells: reference/commands/flashontells.md
+      - /foreground: reference/commands/foreground.md
+      - /fps: reference/commands/fps.md
+      - /help: reference/commands/help.md
+      - /hotbutton: reference/commands/hotbutton.md
+      - /identify: reference/commands/identify.md
+      - /ireset: reference/commands/ireset.md
+      - /itemnotify: reference/commands/itemnotify.md
+      - /items: reference/commands/items.md
+      - /itemtarget: reference/commands/itemtarget.md
+      - /ini: reference/commands/ini.md
+      - /keepkeys: reference/commands/keepkeys.md
+      - /keypress: reference/commands/keypress.md
+      - /listmacros: reference/commands/listmacros.md
+      - /loadcfg: reference/commands/loadcfg.md
+      - /loadspells: reference/commands/loadspells.md
+      - /location: reference/commands/location.md
+      - /loginname: reference/commands/loginname.md
+      - /look: reference/commands/look.md
+      - /lootall: reference/commands/lootall.md
+      - /mqcopylayout: reference/commands/mqcopylayout.md
+      - /macro: reference/commands/macro.md
+      - /makemevisible: reference/commands/makemevisible.md
+      - /memspell: reference/commands/memspell.md
+      - /mqpause: reference/commands/mqpause.md
+      - /multiline: reference/commands/multiline.md
+      - /netstatusxpos: reference/commands/netstatusxpos.md
+      - /netstatusypos: reference/commands/netstatusypos.md
+      - /nomodkey: reference/commands/nomodkey.md
+      - /noparse: reference/commands/noparse.md
+      - /notify: reference/commands/notify.md
+      - /plugin: reference/commands/plugin.md
+      - /popcustom: reference/commands/popcustom.md
+      - /popup: reference/commands/popup.md
+      - /popupecho: reference/commands/popupecho.md
+      - /ranged: reference/commands/ranged.md
+      - /reloadui: reference/commands/reloadui.md
+      - /removeaura: reference/commands/removeaura.md
+      - /removebuff: reference/commands/removebuff.md
+      - /removelev: reference/commands/removelev.md
+      - /removepetbuff: reference/commands/removepetbuff.md
+      - /screenmode: reference/commands/screenmode.md
+      - /selectitem: reference/commands/selectitem.md
+      - /sellitem: reference/commands/sellitem.md
+      - /setautorun: reference/commands/setautorun.md
+      - /setprio: reference/commands/setprio.md
+      - /shiftkey: reference/commands/shiftkey.md
+      - /skills: reference/commands/skills.md
+      - /spellslotinfo: reference/commands/spellslotinfo.md
+      - /spew: reference/commands/spew.md
+      - /squelch: reference/commands/squelch.md
+      - /substitute: reference/commands/substitute.md
+      - /mqtarget: reference/commands/mqtarget.md
+      - /target: reference/commands/target.md
+      - /timed: reference/commands/timed.md
+      - /timestamp: reference/commands/timestamp.md
+      - /unload: reference/commands/unload.md
+      - /updateitems: reference/commands/updateitems.md
+      - /useitem: reference/commands/useitem.md
+      - /where: reference/commands/where.md
+      - /who: reference/commands/who.md
+      - /whofilter: reference/commands/whofilter.md
+      - /whotarget: reference/commands/whotarget.md
+      - /windows: reference/commands/windows.md
+      - /windowstate: reference/commands/windowstate.md
+  
+    - Macro Commands:
+      - /break: reference/commands/break.md
+      - /deletevar: reference/commands/deletevar.md
+      - /delay: reference/commands/delay.md
+      - /declare: reference/commands/declare.md
+      - /call: reference/commands/call.md
+      - /clearerrors: reference/commands/clearerrors.md
+      - /continue: reference/commands/continue.md
+      - /doevents: reference/commands/doevents.md
+      - /for: reference/commands/for.md
+      - /goto: reference/commands/goto.md
+      - /if: reference/commands/if.md
+      - /invoke: reference/commands/invoke.md
+      - /mqlog: reference/commands/mqlog.md
+      - /next: reference/commands/next.md
+      - /return: reference/commands/return.md
+      - /seterror: reference/commands/seterror.md
+      - /varcalc: reference/commands/varcalc.md
+      - /vardata: reference/commands/vardata.md
+      - /varset: reference/commands/varset.md
+      - /while: reference/commands/while.md
+    
+    - EQ Commands:
+      - /lootnodrop: reference/commands/eq/lootnodrop.md
+    
+  - Top Level Objects:
+    - reference/top-level-objects/README.md
+    - TLO:Achievement: reference/top-level-objects/tlo-achievement.md
+    - TLO:AdvLoot: reference/top-level-objects/tlo-advloot.md
+    - TLO:Alert: reference/top-level-objects/tlo-alert.md
+    - TLO:Alias: reference/top-level-objects/tlo-alias.md
+    - TLO:AltAbility: reference/top-level-objects/tlo-altability.md
+    - TLO:Bandolier: reference/top-level-objects/tlo-bandolier.md
+    - TLO:Bool: reference/top-level-objects/tlo-bool.md
+    - TLO:Corpse: reference/top-level-objects/tlo-corpse.md
+    - TLO:Cursor: reference/top-level-objects/tlo-cursor.md
+    - TLO:Defined: reference/top-level-objects/tlo-defined.md
+    - TLO:DisplayItem: reference/top-level-objects/tlo-displayitem.md
+    - TLO:DoorTarget: reference/top-level-objects/tlo-doortarget.md
+    - TLO:DynamicZone: reference/top-level-objects/tlo-dynamiczone.md
+    - TLO:EverQuest: reference/top-level-objects/tlo-everquest.md
+    - TLO:Familiar: reference/top-level-objects/tlo-familiar.md
+    - TLO:FindItem: reference/top-level-objects/tlo-finditem.md
+    - TLO:FindItemBank: reference/top-level-objects/tlo-finditembank.md
+    - TLO:FindItemBankCount: reference/top-level-objects/tlo-finditembankcount.md
+    - TLO:FindItemCount: reference/top-level-objects/tlo-finditemcount.md
+    - TLO:Float: reference/top-level-objects/tlo-float.md
+    - TLO:Friends: reference/top-level-objects/tlo-friends.md
+    - TLO:GameTime: reference/top-level-objects/tlo-gametime.md
+    - TLO:Ground: reference/top-level-objects/tlo-ground.md
+    - TLO:GroundItemCount: reference/top-level-objects/tlo-grounditemcount.md
+    - TLO:Group: reference/top-level-objects/tlo-group.md
+    - TLO:Heading: reference/top-level-objects/tlo-heading.md
+    - TLO:If: reference/top-level-objects/tlo-if.md
+    - TLO:Illusion: reference/top-level-objects/tlo-illusion.md
+    - TLO:Ini: reference/top-level-objects/tlo-ini.md
+    - TLO:Int: reference/top-level-objects/tlo-int.md
+    - TLO:ItemTarget: reference/top-level-objects/tlo-itemtarget.md
+    - TLO:LastSpawn: reference/top-level-objects/tlo-lastspawn.md
+    - TLO:LineOfSight: reference/top-level-objects/tlo-lineofsight.md
+    - TLO:Macro: reference/top-level-objects/tlo-macro.md
+    - TLO:MacroQuest: reference/top-level-objects/tlo-macroquest.md
+    - TLO:Math: reference/top-level-objects/tlo-math.md
+    - TLO:Me: reference/top-level-objects/tlo-me.md
+    - TLO:Mercenary: reference/top-level-objects/tlo-mercenary.md
+    - TLO:Merchant: reference/top-level-objects/tlo-merchant.md
+    - TLO:Mount: reference/top-level-objects/tlo-mount.md
+    - TLO:NearestSpawn: reference/top-level-objects/tlo-nearestspawn.md
+    - TLO:Pet: reference/top-level-objects/tlo-pet.md
+    - TLO:Plugin: reference/top-level-objects/tlo-plugin.md
+    - TLO:Raid: reference/top-level-objects/tlo-raid.md
+    - TLO:Range: reference/top-level-objects/tlo-range.md
+    - TLO:Select: reference/top-level-objects/tlo-select.md
+    - TLO:SelectedItem: reference/top-level-objects/tlo-selecteditem.md
+    - TLO:Skill: reference/top-level-objects/tlo-skill.md
+    - TLO:Spawn: reference/top-level-objects/tlo-spawn.md
+    - TLO:SpawnCount: reference/top-level-objects/tlo-spawncount.md
+    - TLO:Spell: reference/top-level-objects/tlo-spell.md
+    - TLO:Switch: reference/top-level-objects/tlo-switch.md
+    - TLO:Target: reference/top-level-objects/tlo-target.md
+    - TLO:Task: reference/top-level-objects/tlo-task.md
+    - TLO:Time: reference/top-level-objects/tlo-time.md
+    - TLO:Type: reference/top-level-objects/tlo-type.md
+    - TLO:Window: reference/top-level-objects/tlo-window.md
+    - TLO:Zone: reference/top-level-objects/tlo-zone.md
+    
+  - Data Types:
+    - reference/data-types/README.md
+    - DataType:achievement: reference/data-types/datatype-achievement.md
+    - DataType:achievementcat: reference/data-types/datatype-achievementcat.md
+    - DataType:achievementcomp: reference/data-types/datatype-achievementcomp.md
+    - DataType:achievementobj: reference/data-types/datatype-achievementobj.md
+    - DataType:alertlist: reference/data-types/datatype-alertlisttype.md
+    - DataType:altability: reference/data-types/datatype-altability.md
+    - DataType:argb: reference/data-types/datatype-argb.md
+    - DataType:array: reference/data-types/datatype-array.md
+    - DataType:body: reference/data-types/datatype-body.md
+    - DataType:bool: reference/data-types/datatype-bool.md
+    - DataType:buff: reference/data-types/datatype-buff.md
+    - DataType:byte: reference/data-types/datatype-byte.md
+    - DataType:cachedbuff: reference/data-types/datatype-cachedbuff.md
+    - DataType:character: reference/data-types/datatype-character.md
+    - DataType:class: reference/data-types/datatype-class.md
+    - DataType:corpse: reference/data-types/datatype-corpse.md
+    - DataType:currentzone: reference/data-types/datatype-currentzone.md
+    - DataType:deity: reference/data-types/datatype-deity.md
+    - DataType:dynamiczone: reference/data-types/datatype-dynamiczone.md
+    - DataType:dzmember: reference/data-types/datatype-dzmember.md
+    - DataType:dztimer: reference/data-types/datatype-dztimer.md
+    - DataType:everquest: reference/data-types/datatype-everquest.md
+    - DataType:evolving: reference/data-types/datatype-evolving.md
+    - DataType:fellowship: reference/data-types/datatype-fellowship.md
+    - DataType:fellowshipmember: reference/data-types/datatype-fellowshipmember.md
+    - DataType:float: reference/data-types/datatype-float.md
+    - DataType:friends: reference/data-types/datatype-friends.md
+    - DataType:ground: reference/data-types/datatype-ground.md
+    - DataType:group: reference/data-types/datatype-group.md
+    - DataType:groupmember: reference/data-types/datatype-groupmember.md
+    - DataType:heading: reference/data-types/datatype-heading.md
+    - DataType:int: reference/data-types/datatype-int.md
+    - DataType:invslot: reference/data-types/datatype-invslot.md
+    - DataType:item: reference/data-types/datatype-item.md
+    - DataType:keyring: reference/data-types/datatype-keyring.md
+    - DataType:keyringitem: reference/data-types/datatype-keyringitem.md
+    - DataType:macro: reference/data-types/datatype-macro.md
+    - DataType:macroquest: reference/data-types/datatype-macroquest.md
+    - DataType:math: reference/data-types/datatype-math.md
+    - DataType:mercenary: reference/data-types/datatype-mercenary.md
+    - DataType:merchant: reference/data-types/datatype-merchant.md
+    - DataType:mount: reference/data-types/datatype-mount.md
+    - DataType:pet: reference/data-types/datatype-pet.md
+    - DataType:plugin: reference/data-types/datatype-plugin.md
+    - DataType:race: reference/data-types/datatype-race.md
+    - DataType:raid: reference/data-types/datatype-raid.md
+    - DataType:raidmember: reference/data-types/datatype-raidmember.md
+    - DataType:range: reference/data-types/datatype-range.md
+    - DataType:skill: reference/data-types/datatype-skill.md
+    - DataType:spawn: reference/data-types/datatype-spawn.md
+    - DataType:spell: reference/data-types/datatype-spell.md
+    - DataType:string: reference/data-types/datatype-string.md
+    - DataType:switch: reference/data-types/datatype-switch.md
+    - DataType:target: reference/data-types/datatype-target.md
+    - DataType:task: reference/data-types/datatype-task.md
+    - DataType:taskmember: reference/data-types/datatype-taskmember.md
+    - DataType:ticks: reference/data-types/datatype-ticks.md
+    - DataType:time: reference/data-types/datatype-time.md
+    - DataType:timer: reference/data-types/datatype-timer.md
+    - DataType:timestamp: reference/data-types/datatype-timestamp.md
+    - DataType:type: reference/data-types/datatype-type.md
+    - DataType:window: reference/data-types/datatype-window.md
+    - DataType:worldlocation: reference/data-types/datatype-worldlocation.md
+    - DataType:xtaggrocount: reference/data-types/datatype-xtaggrocount.md
+    - DataType:xtarget: reference/data-types/datatype-xtarget.md
+    - DataType:zone: reference/data-types/datatype-zone.md
+
+
+- Change Log: https://github.com/macroquest/macroquest/blob/master/data/resources/CHANGELOG.md
 
 # Theme
 theme:
@@ -506,7 +539,7 @@ theme:
   logo: images/logo.png
   favicon: images/logo.png
   features:
-    #- navigation.tabs
+    - navigation.tabs
     - search.highlight
     - search.share
     - navigation.instant
@@ -522,6 +555,8 @@ theme:
       toggle:
         icon: material/toggle-switch
         name: Switch to dark mode
+  icon:
+    repo: fontawesome/brands/github
 
 # Plugins
 plugins:

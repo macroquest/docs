@@ -12,7 +12,7 @@
 
   quantity in the merchant window\).
 
-MQ2Vendors was created by Ceghkmv and can be found [here](https://macroquest2.com/phpBB3/viewtopic.php?p=109662#109662).
+MQ2Vendors was created by Ceghkmv and can be found [here](https://macroquest.org/phpBB3/viewtopic.php?p=109662#109662).
 
 ## Commands
 
@@ -34,12 +34,6 @@ This enables or disables saving of vendors' default item list to a local INI fil
 
   Outputs the version number.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Vendor.HasItems}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Vendor.HasItems}**
 
   Returns TRUE if the merchant has items you are looking for.
-
-## See Also
-
-* [Top-Level Objects](../../data-types-and-top-level-objects/top-level-objects/)
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

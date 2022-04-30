@@ -57,8 +57,3 @@ command=/timed ${Math.Calc[3+${Math.Rand[4]}].Int}s /keypress ctrl+i
 trigger=#1#To join the raid click the accept button in the raid window or type /raidaccept.#2#
 command=/timed ${Math.Calc[3+${Math.Rand[4]}].Int}s /raidaccept
 ```
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

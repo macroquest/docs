@@ -6,7 +6,7 @@
 Plugin created by Sadge  
 Please do not distribute without my consent.
 
-You can find the latest version of MQ2RelayTells [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=15278&hilit=MQ2RelayTells).
+You can find the latest version of MQ2RelayTells [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=15278&hilit=MQ2RelayTells).
 
 `This plugin will relay different types of tells to a chat channel you specify.`  
 `You may also relay the tells to an email address or cellphone using Blat 262 found at www.blat.net`  
@@ -19,8 +19,3 @@ You can find the latest version of MQ2RelayTells [here](https://macroquest2.com/
 `/relaycustomwill addto your ini file and will not relay any tells that contain.`  
 `/relayhelp command. This allows you to view current settings`  
 `/relayload command. This allows you to reload the ini file if you make changes.`
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

@@ -10,16 +10,16 @@ This plugin is no longer under active development and no new contributions have 
 
 * Link to the latest stable source: \[16-Nov-2016th patch fix by
 
-  trevyn\]\([https://macroquest2.com/phpBB3/download/file.php?id=988](https://macroquest2.com/phpBB3/download/file.php?id=988)\)
+  trevyn\]\([https://macroquest.org/phpBB3/download/file.php?id=988](https://macroquest.org/phpBB3/download/file.php?id=988)\)
 
 * Link to older sources: [MQ2MoveUtils v11.x Source](http://mq2.whyarewehappening.com/MQ2MoveUtils/)
 * Link to emulator version of the source that works with the December 19, 2008 client: \[MoveUtils v11 for EMU by
 
-  pms\]\([https://macroquest2.com/phpBB3/viewtopic.php?p=155710\#p155710](https://macroquest2.com/phpBB3/viewtopic.php?p=155710#p155710)\)
+  pms\]\([https://macroquest.org/phpBB3/viewtopic.php?p=155710\#p155710](https://macroquest.org/phpBB3/viewtopic.php?p=155710#p155710)\)
 
 * Link to current discussion thread: \[MQ2MoveUtils v16.x
 
-  Thread\]\([https://macroquest2.com/phpBB3/viewtopic.php?t=15909](https://macroquest2.com/phpBB3/viewtopic.php?t=15909)\)
+  Thread\]\([https://macroquest.org/phpBB3/viewtopic.php?t=15909](https://macroquest.org/phpBB3/viewtopic.php?t=15909)\)
 
 ### Development Notes
 
@@ -816,22 +816,22 @@ _Members of this datatype relate to plugin settings and generic information_
 | :--- | :--- | :--- | :--- |
 | **Type** | **Member** | **Return Values** | **Description** |
 | [_string_]() | **Command** | NONE STICK MOVETO MAKECAMP CIRCLE | Displays the currently active command. MAKECAMP returns if a camp is setup but no other command is currently in use |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Stuck** | TRUE FALSE | Displays true if plugin stucklogic has determined you are currently stuck |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Summoned** | TRUE FALSE | Displays true if BreakOnSummon is enabled and has fired due to your character being summoned beyond breakonsummon distance |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **StuckLogic** | TRUE FALSE | Displays true if stucklogic is enabled |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Verbosity** | TRUE FALSE | Displays true if verbosity is enabled |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **FullVerbosity** | TRUE FALSE | Displays true if fullverbosity is enabled |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **TotalSilence** | TRUE FALSE | Displays true if totalsilence is enabled |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Aggro** | TRUE FALSE | Displays true if you are facing your target and your target is facing you |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **TryToJump** | TRUE FALSE | Displays true if stucklogic trytojump is enabled |
-| [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) | **PauseMinDelay** | 125 or greater | Displays the min delay for mousepause and mpause to resume command in ms |
-| [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) | **PauseMaxDelay** | 125 or more greater than PauseMinDelay | Displays the max delay for mousepause and mpause to resume command in ms |
-| [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) | **PulseCheck** | 1 or greater | Displays the number of pulses used to average movement rate for stucklogic |
-| [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) | **PulseUnstuck** | 1 or greater | Displays the number of pulses successfully moved forward after being stuck to be considered unstuck |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **DistStuck** | 0.01 or greater | Displays the amount of distance needed to have moved \(compared against pulse average\) or else considered stuck by stucklogic |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **Version** | \#.\#\#\#\# | Displays the version number of the plugin |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **MovePause** | TRUE FALSE | Displays true if mpause \(PauseKB\) is enabled |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **GM** | TRUE FALSE | Displays true if BreakOnGM fired |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Stuck** | TRUE FALSE | Displays true if plugin stucklogic has determined you are currently stuck |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Summoned** | TRUE FALSE | Displays true if BreakOnSummon is enabled and has fired due to your character being summoned beyond breakonsummon distance |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **StuckLogic** | TRUE FALSE | Displays true if stucklogic is enabled |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Verbosity** | TRUE FALSE | Displays true if verbosity is enabled |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **FullVerbosity** | TRUE FALSE | Displays true if fullverbosity is enabled |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **TotalSilence** | TRUE FALSE | Displays true if totalsilence is enabled |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Aggro** | TRUE FALSE | Displays true if you are facing your target and your target is facing you |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **TryToJump** | TRUE FALSE | Displays true if stucklogic trytojump is enabled |
+| [_int_](../../../reference/data-types/datatype-int.md) | **PauseMinDelay** | 125 or greater | Displays the min delay for mousepause and mpause to resume command in ms |
+| [_int_](../../../reference/data-types/datatype-int.md) | **PauseMaxDelay** | 125 or more greater than PauseMinDelay | Displays the max delay for mousepause and mpause to resume command in ms |
+| [_int_](../../../reference/data-types/datatype-int.md) | **PulseCheck** | 1 or greater | Displays the number of pulses used to average movement rate for stucklogic |
+| [_int_](../../../reference/data-types/datatype-int.md) | **PulseUnstuck** | 1 or greater | Displays the number of pulses successfully moved forward after being stuck to be considered unstuck |
+| [_float_](../../../reference/data-types/datatype-float.md) | **DistStuck** | 0.01 or greater | Displays the amount of distance needed to have moved \(compared against pulse average\) or else considered stuck by stucklogic |
+| [_float_](../../../reference/data-types/datatype-float.md) | **Version** | \#.\#\#\#\# | Displays the version number of the plugin |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **MovePause** | TRUE FALSE | Displays true if mpause \(PauseKB\) is enabled |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **GM** | TRUE FALSE | Displays true if BreakOnGM fired |
 | [_string_]() | **To String** | Same as **Command** | Same as **Command** |
 
 === ${Stick} === _Members of this datatype relate to the '/stick' command_
@@ -840,21 +840,21 @@ _Members of this datatype relate to plugin settings and generic information_
 | :--- | :--- | :--- | :--- |
 | **Type** | **Member** | **Return Values** | **Description** |
 | [_string_]() | **Status** | OFF PAUSED ON | Displays ON if any form of stick is active |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Active** | TRUE FALSE | Displays true if any form of stick is active |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Broken** | TRUE FALSE | Returns true if BreakOnHit event has halted stick prematurely |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **Distance** | \#.\#\# | Current distance used by stick |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **MoveBehind** | TRUE FALSE | Displays true if stick behind is active |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **MoveBack** | TRUE FALSE | Displays true if moveback is active |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Loose** | TRUE FALSE | Displays true if loose sticking is enabled |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Paused** | TRUE FALSE | Displays true if plugin is paused |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Behind** | TRUE FALSE | Displays true if currently behind target \(regardless of _/stick behind_\), false if outside of stick dist or not behind |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Stopped** | TRUE FALSE | Displays true if stick is within stick distance |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Pin** | TRUE FALSE | Displays true if stick pin is active |
-| [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) | **StickTarget** | SpawnID | Returns spawnid of stick target if stick id/hold used, else spawnid of current target, 0 if no target and id/hold not used |
-| [_string_]() | **StickTargetName** | NONE [DisplayedName](../../../data-types-and-top-level-objects/data-types/datatype-spawn.md) | Returns DisplayedName of stick target if stick id/hold used, else current target or NONE if no target and hold/id not used |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **DistMod** | \[-\]\#.\#\# | Current stickdist modifier |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **DistModPercent** | \#.\#\# | Current stickdist percent modifier |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Always** | TRUE FALSE | Returns true if _/stick always_ is active |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Active** | TRUE FALSE | Displays true if any form of stick is active |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Broken** | TRUE FALSE | Returns true if BreakOnHit event has halted stick prematurely |
+| [_float_](../../../reference/data-types/datatype-float.md) | **Distance** | \#.\#\# | Current distance used by stick |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **MoveBehind** | TRUE FALSE | Displays true if stick behind is active |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **MoveBack** | TRUE FALSE | Displays true if moveback is active |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Loose** | TRUE FALSE | Displays true if loose sticking is enabled |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Paused** | TRUE FALSE | Displays true if plugin is paused |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Behind** | TRUE FALSE | Displays true if currently behind target \(regardless of _/stick behind_\), false if outside of stick dist or not behind |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Stopped** | TRUE FALSE | Displays true if stick is within stick distance |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Pin** | TRUE FALSE | Displays true if stick pin is active |
+| [_int_](../../../reference/data-types/datatype-int.md) | **StickTarget** | SpawnID | Returns spawnid of stick target if stick id/hold used, else spawnid of current target, 0 if no target and id/hold not used |
+| [_string_]() | **StickTargetName** | NONE [DisplayedName](../../../reference/data-types/datatype-spawn.md) | Returns DisplayedName of stick target if stick id/hold used, else current target or NONE if no target and hold/id not used |
+| [_float_](../../../reference/data-types/datatype-float.md) | **DistMod** | \[-\]\#.\#\# | Current stickdist modifier |
+| [_float_](../../../reference/data-types/datatype-float.md) | **DistModPercent** | \#.\#\# | Current stickdist percent modifier |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Always** | TRUE FALSE | Returns true if _/stick always_ is active |
 | [_string_]() | **To String** | Same as **Status** | Same as **Status** |
 
 === ${MoveTo} === _Members of this datatype relate to the '/moveto' command_
@@ -862,14 +862,14 @@ _Members of this datatype relate to plugin settings and generic information_
 |  |  |  |  |
 | :--- | :--- | :--- | :--- |
 | **Type** | **Member** | **Return Values** | **Description** |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Moving** | TRUE FALSE | Displays true if moveto or camp return is active |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Stopped** | TRUE FALSE | Displays true if the last moveto command completed successfully |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **CampStopped** | TRUE FALSE | Displays true if within moveto distance of makecamp Y X location |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **UseWalk** | TRUE FALSE | Returns true if UseWalk is enabled |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **ArrivalDist** | 1.00+ | Acceptable arrival distance |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **ArrivalDistY** | 1.00+ | Acceptable arrival distance for precisey |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **ArrivalDistX** | 1.00+ | Acceptable arrival distance for precisex |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Broken** | TRUE FALSE | Returns true if BreakOnAggro or BreakOnHit event have halted moveto prematurely |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Moving** | TRUE FALSE | Displays true if moveto or camp return is active |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Stopped** | TRUE FALSE | Displays true if the last moveto command completed successfully |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **CampStopped** | TRUE FALSE | Displays true if within moveto distance of makecamp Y X location |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **UseWalk** | TRUE FALSE | Returns true if UseWalk is enabled |
+| [_float_](../../../reference/data-types/datatype-float.md) | **ArrivalDist** | 1.00+ | Acceptable arrival distance |
+| [_float_](../../../reference/data-types/datatype-float.md) | **ArrivalDistY** | 1.00+ | Acceptable arrival distance for precisey |
+| [_float_](../../../reference/data-types/datatype-float.md) | **ArrivalDistX** | 1.00+ | Acceptable arrival distance for precisex |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Broken** | TRUE FALSE | Returns true if BreakOnAggro or BreakOnHit event have halted moveto prematurely |
 | [_string_]() | **To String** | OFF PAUSED ON | Displays ON if a moveto command is active |
 
 === ${MakeCamp} === _Members of this datatype relate to the '/makecamp' command_
@@ -878,26 +878,26 @@ _Members of this datatype relate to plugin settings and generic information_
 | :--- | :--- | :--- | :--- |
 | **Type** | **Member** | **Return Values** | **Description** |
 | [_string_]() | **Status** | OFF PAUSED ON | Displays status of MakeCamp command. AltCamp returns OFF |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Leash** | TRUE FALSE | Displays true if leash is enabled |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **AnchorX** | 0.00 | Location of current camp X anchor |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **AnchorY** | 0.00 | Location of current camp Y anchor |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **LeashLength** | Greater than or equal to CampRadius | Size of Leash Length |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **CampRadius** | 10.0+ | Size of camp radius |
-| [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) | **MinDelay** | 125 or greater | Displays the min delay for auto-returning to camp in ms |
-| [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) | **MaxDelay** | 125 or more greater than MinDelay | Displays the max delay for auto-returning to camp in ms |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Returning** | TRUE FALSE | Displays true if _/makecamp return_ issued |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **AltAnchorX** | 0.00 | Location of current altcamp X anchor |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **AltAnchorY** | 0.00 | Location of current altcamp Y anchor |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **CampDist** | 0.00 | Distance to camp anchor from your current location. Returns 0.00 if camp is disabled |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **AltCampDist** | 0.00 | Distance to altcamp anchor from your current location. Returns 0.00 if altcamp not established |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **AltRadius** | 10.0+ | Size of altcamp radius |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Scatter** | TRUE FALSE | Displays true if camp scattering enabled |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **ReturnNoAggro** | TRUE FALSE | Displays true if ReturnNoAggro is enabled |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **ReturnNotLooting** | TRUE FALSE | Displays true if ReturnNotLooting is enabled |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **ReturnHaveTarget** | TRUE FALSE | Displays true if ReturnHaveTarget is enabled |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **Bearing** | 0.00 | Bearing \(heading\) of camp scattering |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **ScatDist** | 1.0+ | Distance from anchor to perform scatter |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **ScatSize** | 1.0+ | Size of scattering radius |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Leash** | TRUE FALSE | Displays true if leash is enabled |
+| [_float_](../../../reference/data-types/datatype-float.md) | **AnchorX** | 0.00 | Location of current camp X anchor |
+| [_float_](../../../reference/data-types/datatype-float.md) | **AnchorY** | 0.00 | Location of current camp Y anchor |
+| [_float_](../../../reference/data-types/datatype-float.md) | **LeashLength** | Greater than or equal to CampRadius | Size of Leash Length |
+| [_float_](../../../reference/data-types/datatype-float.md) | **CampRadius** | 10.0+ | Size of camp radius |
+| [_int_](../../../reference/data-types/datatype-int.md) | **MinDelay** | 125 or greater | Displays the min delay for auto-returning to camp in ms |
+| [_int_](../../../reference/data-types/datatype-int.md) | **MaxDelay** | 125 or more greater than MinDelay | Displays the max delay for auto-returning to camp in ms |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Returning** | TRUE FALSE | Displays true if _/makecamp return_ issued |
+| [_float_](../../../reference/data-types/datatype-float.md) | **AltAnchorX** | 0.00 | Location of current altcamp X anchor |
+| [_float_](../../../reference/data-types/datatype-float.md) | **AltAnchorY** | 0.00 | Location of current altcamp Y anchor |
+| [_float_](../../../reference/data-types/datatype-float.md) | **CampDist** | 0.00 | Distance to camp anchor from your current location. Returns 0.00 if camp is disabled |
+| [_float_](../../../reference/data-types/datatype-float.md) | **AltCampDist** | 0.00 | Distance to altcamp anchor from your current location. Returns 0.00 if altcamp not established |
+| [_float_](../../../reference/data-types/datatype-float.md) | **AltRadius** | 10.0+ | Size of altcamp radius |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Scatter** | TRUE FALSE | Displays true if camp scattering enabled |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **ReturnNoAggro** | TRUE FALSE | Displays true if ReturnNoAggro is enabled |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **ReturnNotLooting** | TRUE FALSE | Displays true if ReturnNotLooting is enabled |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **ReturnHaveTarget** | TRUE FALSE | Displays true if ReturnHaveTarget is enabled |
+| [_float_](../../../reference/data-types/datatype-float.md) | **Bearing** | 0.00 | Bearing \(heading\) of camp scattering |
+| [_float_](../../../reference/data-types/datatype-float.md) | **ScatDist** | 1.0+ | Distance from anchor to perform scatter |
+| [_float_](../../../reference/data-types/datatype-float.md) | **ScatSize** | 1.0+ | Size of scattering radius |
 | [_string_]() | **To String** | Same as **Status** | Same as **Status** |
 
 === ${Circle} === _Members of this datatype relate to the '/circle' command_
@@ -906,14 +906,14 @@ _Members of this datatype relate to plugin settings and generic information_
 | :--- | :--- | :--- | :--- |
 | **Type** | **Member** | **Return Values** | **Description** |
 | [_string_]() | **Status** | OFF PAUSED ON | Returns ON if circling |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **CircleY** | 0.00 | Location of circle center Y |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **CircleX** | 0.00 | Location of circle center X |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Drunken** | TRUE FALSE | Displays true if drunken |
+| [_float_](../../../reference/data-types/datatype-float.md) | **CircleY** | 0.00 | Location of circle center Y |
+| [_float_](../../../reference/data-types/datatype-float.md) | **CircleX** | 0.00 | Location of circle center X |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Drunken** | TRUE FALSE | Displays true if drunken |
 | [_string_]() | **Rotation** | CW CCW | Displays CCW if reverse circling |
 | [_string_]() | **Direction** | FORWARDS BACKWARDS | Movement direction of current circle |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Clockwise** | TRUE FALSE | Displays false if reverse circling |
-| [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Backwards** | TRUE FALSE | Displays true if movement direction backwards |
-| [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) | **Radius** | 5.00+ | Radius size of circle |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Clockwise** | TRUE FALSE | Displays false if reverse circling |
+| [_bool_](../../../reference/data-types/datatype-bool.md) | **Backwards** | TRUE FALSE | Displays true if movement direction backwards |
+| [_float_](../../../reference/data-types/datatype-float.md) | **Radius** | 5.00+ | Radius size of circle |
 | [_string_]() | **To String** | Same as **Status** | Same as **Status** |
 
 == Configuration == _MQ2MoveUtils saves a configuration file to your root MQ2 folder: MQ2MoveUtils.ini_
@@ -1490,13 +1490,3 @@ Here is a list of exactly what messages are tied to each flag:
   _PAUSED_ \(from /command pause\)
 
   _RESUMED_ \(from /command unpause\)
-
-## See Also
-
-* [MQ2MoveUtils Revision History](mq2moveutils-v11-revisions.md)
-* [MQ2MoveUtils Older Versions](./)
-* [MQ2MoveUtils History](mq2moveutils-history.md)
-* [MacroQuest2 Plugins](../../../documentation/macroquest2-plugins.md)
-* [Top-Level Objects](../../../data-types-and-top-level-objects/top-level-objects/)
-* [Data Types](../../../data-types-and-top-level-objects/data-types/)
-

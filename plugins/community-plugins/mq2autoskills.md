@@ -27,7 +27,7 @@ Currently supported skills are:
 * Taunt
 * Tiger Claw
 
-The plugin can be downloaded from [here](https://macroquest2.com/phpBB3/viewtopic.php?t=9079).
+The plugin can be downloaded from [here](https://macroquest.org/phpBB3/viewtopic.php?t=9079).
 
 '**'Note:** This plugin was developed many years ago and has been superceded by other more fully-featured plugins, the most popular being [MQ2Melee](mq2melee.md).
 
@@ -84,9 +84,3 @@ Enable/disable a skill
 ## Bugs
 
 Trade/Vendor windows and possibly some other events may cause some skills to fire when not appropriate and spam you.
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-* [MQ2Melee](mq2melee.md)
-

@@ -318,7 +318,7 @@ Looks good - Now I'll just edit the comments at the top to better reflect what t
 `This code based upon Wat4rez.mac by FaNTuM. Changed from Wait4rez.mac to`  
 `loot.mac at the following URL:`
 
-[`http://www.macroquest2.com/wiki/index.php/Editing_Existing_Macros`](https://macroquest2.com/wiki/index.php/Editing_Existing_Macros)
+[`http://www.macroquest.org/wiki/index.php/Editing_Existing_Macros`](https://macroquest.org/wiki/index.php/Editing_Existing_Macros)
 
 `**|`  
 ````` \| --------------```\| -- Main Sub --````` \| --------------```Sub Main``  

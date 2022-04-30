@@ -10,7 +10,7 @@ It works similar to MQ2AASpend that you can get with some precompiled MQ2 releas
 
 Source at [https://github.com/mackal/MQ2AAPurchase](https://github.com/mackal/MQ2AAPurchase) zip download also included in this post, but the github will always be up-to-date.
 
-You can find the latest version of MQ2AAPurchase [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=19869).
+You can find the latest version of MQ2AAPurchase [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=19869).
 
 ## Commands
 
@@ -36,8 +36,3 @@ This says I want to start buying once I have 40 points banked and is on. It will
 It's worth noting that in the MQ2AAPurchase\_List section the order of entries is important, not the key, so you can just write a macro to build a INI, move entries around to the order you want without having to worry about changing the keys.
 
 It will also try to spend all your points each time it is triggered \(like the skip option in the include\) so if that's not the behavior you want, you'll have to convince me I should add it :P
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

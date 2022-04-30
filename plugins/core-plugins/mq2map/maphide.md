@@ -21,10 +21,3 @@ This will hide _spawnname_ from the map. Hidden spawns are in effect until you r
   ```text
   /maphide npc range 1-39
   ```
-
-## See Also
-
-* [MQ2Map](./)
-
-[Return to Slash Commands](../../../commands/slash-commands/)
-

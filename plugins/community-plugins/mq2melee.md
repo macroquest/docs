@@ -6,18 +6,18 @@
 
 * MQ2Melee 7.09 Updated by Maskoi 02/17/2016 \[can be found
 
-  here\]\([https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=19600](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=19600)\), in the VIP Plugin Forum.
+  here\]\([https://macroquest.org/phpBB3/viewtopic.php?f=50&t=19600](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=19600)\), in the VIP Plugin Forum.
 
 * 6.0 Updated by Teichou 12/02/2012 for RoF, \[can be found
 
-  here\]\([https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=18581](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=18581)\)
+  here\]\([https://macroquest.org/phpBB3/viewtopic.php?f=50&t=18581](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=18581)\)
 
-* 5.0 and so on can be found here [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=18040)
-* Previous versions can be found [here](https://macroquest2.com/phpBB3/viewtopic.php?t=12779).
+* 5.0 and so on can be found here [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=18040)
+* Previous versions can be found [here](https://macroquest.org/phpBB3/viewtopic.php?t=12779).
 
 ### History
 
-The inspiration for MQ2Melee was [MQ2AutoSkills](https://macroquest2.com/phpBB3/viewtopic.php?t=9079) and [MQ2ThrowIt](https://macroquest2.com/phpBB3/viewtopic.php?t=11295). All credit for the concepts should go to Cr4zyb4rd and Bushdaka, authors of those plugins.
+The inspiration for MQ2Melee was [MQ2AutoSkills](https://macroquest.org/phpBB3/viewtopic.php?t=9079) and [MQ2ThrowIt](https://macroquest.org/phpBB3/viewtopic.php?t=11295). All credit for the concepts should go to Cr4zyb4rd and Bushdaka, authors of those plugins.
 
 ### Donations
 
@@ -45,23 +45,23 @@ If you want to give them money, look them up.
 
 5. MQ2MoveUtils:v11 plugin is needed to use /stick parameters \[Can be found
 
-   here\]\([https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=15909](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=15909)\).
+   here\]\([https://macroquest.org/phpBB3/viewtopic.php?f=31&t=15909](https://macroquest.org/phpBB3/viewtopic.php?f=31&t=15909)\).
 
 6. [MQ2Cast](mq2cast.md) is required to cast spells, activate Alternate Abilities or click items. \[Can be found
 
-   here\]\([https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=17517](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=17517)\).
+   here\]\([https://macroquest.org/phpBB3/viewtopic.php?f=50&t=17517](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=17517)\).
 
 7. [MQ2Exchange](mq2exchange.md) is required to find and swap items if using MQ2Cast to click items. \[Can be
 
-   found here\]\([https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16436](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16436)\).
+   found here\]\([https://macroquest.org/phpBB3/viewtopic.php?f=50&t=16436](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=16436)\).
 
 8. MQ2BagWindow is required for finding and swapping items. \[Can be found
 
-   here\]\([https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=17035](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=17035)\).
+   here\]\([https://macroquest.org/phpBB3/viewtopic.php?f=50&t=17035](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=17035)\).
 
 9. moveitems.h is required for swapping items and compiling. \[Can be found
 
-   here\]\([https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=17047](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=17047)\).
+   here\]\([https://macroquest.org/phpBB3/viewtopic.php?f=31&t=17047](https://macroquest.org/phpBB3/viewtopic.php?f=31&t=17047)\).
 
 ## Features
 
@@ -830,67 +830,67 @@ _Will try to sense traps if not in combat._
 
 ## Top-Level Objects
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Melee}**
 
   Same as ${Melee.Enable} \(see below\).
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.AggroMode}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Melee.AggroMode}**
 
   TRUE/FALSE if the plugin is operating in Aggro-mode or not.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.Ammunition}**
+* [_int_](../../reference/data-types/datatype-int.md) **${Melee.Ammunition}**
 
   Count of defined ammunition or current equipped ammunition.
 
-* [_float_](../../data-types-and-top-level-objects/data-types/datatype-float.md) **${Melee.BackAngle}**
+* [_float_](../../reference/data-types/datatype-float.md) **${Melee.BackAngle}**
 
   Angle representing heading difference with current target's back.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.BackStabbing}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Melee.BackStabbing}**
 
   TRUE/FALSE if **backstab** setting is on/off.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.Casted}**
+* [_int_](../../reference/data-types/datatype-int.md) **${Melee.Casted}**
 
   Time \(in miliseconds\) elapsed since last detected spell casting \(60000 if none\).
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Combat}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Melee.Combat}**
 
   TRUE/FALSE if plugin enable and got valid kill target. Should replace ${Me.Combat} logic.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.DiscID}**
+* [_int_](../../reference/data-types/datatype-int.md) **${Melee.DiscID}**
 
   Spell ID of currently running discipline, 0 if none.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Enable}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Melee.Enable}**
 
   TRUE/FALSE if plugin on/off, NULL if not loaded.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Engage}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Melee.Engage}**
 
   TRUE if we have a valid kill target and it's okay to turn attack on, FALSE if not.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Enrage}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Melee.Enrage}**
 
   Is kill target enraged?
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.GotAggro}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Melee.GotAggro}**
 
   TRUE/FALSE if current target seems to be aggroed on you \(not perfect\).
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Immobilize}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Melee.Immobilize}**
 
   TRUE if you have been standing still for more then 250ms, FALSE if not.
 
-* [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Melee.Infuriate}**
+* [_bool_](../../reference/data-types/datatype-bool.md) **${Melee.Infuriate}**
 
   TRUE if kill target is infuriated!
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.MeleeMode}**
+* [_int_](../../reference/data-types/datatype-int.md) **${Melee.MeleeMode}**
 
   Maximum distance to target to be considered in melee range.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.RangeMode}**
+* [_int_](../../reference/data-types/datatype-int.md) **${Melee.RangeMode}**
 
   Minimum distance to target to be considered in archery range.
 
@@ -900,17 +900,17 @@ _Will try to sense traps if not in combat._
 
   BACKING, ESCAPING, FEIGNING, EVADING, FALLING, STEALING, BEGGING.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${Melee.Target}**
+* [_int_](../../reference/data-types/datatype-int.md) **${Melee.Target}**
 
   SpawnID of current valid kill target, otherwise 0.
 
-* [_float_](../../data-types-and-top-level-objects/data-types/datatype-float.md) **${Melee.ViewAngle}**
+* [_float_](../../reference/data-types/datatype-float.md) **${Melee.ViewAngle}**
 
   Angle of view with current target.
 
 Debugging TLOs:
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${meleemvb\[**idskill**\]}**
+* [_int_](../../reference/data-types/datatype-int.md) **${meleemvb\[**idskill**\]}**
 
   1 if the skill is ready and target in range, 0 if not. Most combat and/or character kills that can use an ID are
 
@@ -918,7 +918,7 @@ Debugging TLOs:
 
   **idtigerclaw**, **idescape**.
 
-* [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) **${meleemvi\[**variable**\]}**
+* [_int_](../../reference/data-types/datatype-int.md) **${meleemvi\[**variable**\]}**
 
   1/0 if the variable is set to on/off. This includes all variables that can be set on the command line.
 
@@ -1125,9 +1125,3 @@ With Version 4 of the MQ2Melee plugin there was a change to the StickCmd, wherei
   and using in downshit & holyshit command lines\*\*.
 
 Use /potionbelt activate \# Where as \#=the potionbelt slot your item in \(example for Haste potion that is in slot 2 of the potionbelt\) downshit6=/if \(${Spell\[Elixir of Speed X\].Stacks} && !${Me.Buff\[Elixir of Speed X\].ID} && !${Me.Moving}\) /potionbelt activate 2
-
-## See Also
-
-* [Data Types](../../data-types-and-top-level-objects/data-types/)
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

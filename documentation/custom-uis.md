@@ -10,12 +10,7 @@ See the [MQ2Labels](../plugins/core-plugins/mq2labels.md) page for the EQType de
 
 This is a list of the most popular Custom UIs:
 
-* [krust UI](https://macroquest2.com/phpBB3/viewtopic.php?t=13016)
-* [AYA Strike](https://macroquest2.com/phpBB3/viewtopic.php?t=11971)
-* [Quartz UI](https://macroquest2.com/phpBB3/viewtopic.php?t=11989)
-* [Frequency UI](https://macroquest2.com/phpBB3/viewtopic.php?t=3954)
-
-## See Also
-
-[MQ2Labels](../plugins/core-plugins/mq2labels.md)
-
+* [krust UI](https://macroquest.org/phpBB3/viewtopic.php?t=13016)
+* [AYA Strike](https://macroquest.org/phpBB3/viewtopic.php?t=11971)
+* [Quartz UI](https://macroquest.org/phpBB3/viewtopic.php?t=11989)
+* [Frequency UI](https://macroquest.org/phpBB3/viewtopic.php?t=3954)

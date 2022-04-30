@@ -14,7 +14,7 @@ This plugin shows spell and item data in the item display window.
 
 ## Top-Level Objects
 
-* [_item_](../../../data-types-and-top-level-objects/data-types/datatype-item.md) **DisplayItem**
+* [_item_](../../../reference/data-types/datatype-item.md) **DisplayItem**
 
 This references the last item display window that was opened.
 
@@ -50,10 +50,5 @@ Field.....Bone\*....Large..Wood.....162
 Silver....Round....Large..Wood.....182  
 Field....Ceramic\*.Large..Wood.....202**
 
-## See Also
-
-* [Top-Level Objects](../../../data-types-and-top-level-objects/top-level-objects/)
-* [Plugins](../../../documentation/macroquest2-plugins.md)
-
-See [here](https://macroquest2.com/phpBB3/viewtopic.php?t=11549) and [here](https://macroquest2.com/phpBB3/viewtopic.php?t=12022) \(VIP only\) for some user-contributed ini file entries.
+See [here](https://macroquest.org/phpBB3/viewtopic.php?t=11549) and [here](https://macroquest.org/phpBB3/viewtopic.php?t=12022) \(VIP only\) for some user-contributed ini file entries.
 

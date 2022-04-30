@@ -81,11 +81,11 @@ To remove a valuename (and all of it's values) from an ini file:
 
 * If we look in the manual, we see the following entry for the Gem reference type \(part of the
 
-  [_character_](../data-types-and-top-level-objects/data-types/datatype-character.md) reference type\):
+  [_character_](../reference/data-types/datatype-character.md) reference type\):
 
 {\| border="1" cellpadding="2" cellspacing="0"
 
-\|[_spell_](../data-types-and-top-level-objects/data-types/datatype-spell.md) **Gem[**\#**]** \|The name of the spell in this slot\# \|}
+\|[_spell_](../reference/data-types/datatype-spell.md) **Gem[**\#**]** \|The name of the spell in this slot\# \|}
 
 * The part we're interested here is the first word _spell_ which tells you what the return type of Gem[\#] will be.
 
@@ -101,7 +101,7 @@ To remove a valuename (and all of it's values) from an ini file:
 
 * The way you're supposed to use the Data Types is to add more members to the end of the TLO until you get the result
 
-  you're looking for. In the above example, if we look at the reference type for [_spell_](../data-types-and-top-level-objects/data-types/datatype-spell.md),
+  you're looking for. In the above example, if we look at the reference type for [_spell_](../reference/data-types/datatype-spell.md),
 
   we see the following:
 

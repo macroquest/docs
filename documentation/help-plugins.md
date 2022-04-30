@@ -8,7 +8,7 @@
 
   available.
 
-* Have you got the latest MQ2 source files? Check the [download page](https://macroquest2.com/main.php?p=download)
+* Have you got the latest MQ2 source files? Check the [download page](https://macroquest.org/main.php?p=download)
 
   and make sure that you have have the latest MQ2 source. Some plugins depend on very recent changes to MQ2 to
 

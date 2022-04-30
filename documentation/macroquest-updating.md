@@ -12,7 +12,7 @@ Occasionally, the MacroQuest2 developers also update current features or add new
 
 Download the latest zip file and recompile when this occurs.
 
-Link to MacroQuest2 forums: [Forums](https://macroquest2.com/phpBB3/)
+Link to MacroQuest2 forums: [Forums](https://macroquest.org/phpBB3/)
 
-Link to the current latest zip: [MQ2\_Latest\_Source.zip](https://macroquest2.com/main.php?p=download&product=mq2)
+Link to the current latest zip: [MQ2\_Latest\_Source.zip](https://macroquest.org/main.php?p=download&product=mq2)
 

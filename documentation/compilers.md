@@ -1,5 +1,10 @@
 # Compilers
 
+!!! warning
+
+    This content is outdated or incomplete.
+
+
 Compiling with free legal tools
 
 ## Why buy the VS NET trial if i can compile free?

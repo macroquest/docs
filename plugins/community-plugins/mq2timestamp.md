@@ -4,7 +4,7 @@
 
 **MQ2Timestamp** Inserts a timestamp into incoming chat.
 
-You can find the latest version of MQ2Clip [here](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=9078&hilit=mq2timestamp).
+You can find the latest version of MQ2Clip [here](https://macroquest.org/phpBB3/viewtopic.php?f=31&t=9078&hilit=mq2timestamp).
 
 ## Commands
 
@@ -104,8 +104,3 @@ Will toggle on/off with no arguments
 `%#x - Long date representation, appropriate to current locale. For example: "Tuesday, March 14, 1995".`  
 `%#d, %#H, %#I, %#j, %#m, %#M, \`  
 `%#S, %#U, %#w, %#W, %#y, %#Y - Remove leading zeros (if any).`
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

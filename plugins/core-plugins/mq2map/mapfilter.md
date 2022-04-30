@@ -22,7 +22,7 @@ This controls what appears or does not appear on the in-game map provided by [MQ
 | **CastRadius \#** | Show a cast radius circle around your own spawn on the map. Set to "hide" or "0" to disable. |
 | **Chest** | Show/hide chests. |
 | **Corpse** | Master toggle to show/hide all corpses \(PC and NPC\). |
-| **Custom** _**searchfilter**_ | Set a custom filter, which can contain any filtering arguments from the [Spawn Search](../../../general-information/spawn-search.md) page. |
+| **Custom** _**searchfilter**_ | Set a custom filter, which can contain any filtering arguments from the [Spawn Search](../../../reference/general/spawn-search.md) page. |
 | **Group** | Whether group members should be listed in another color. |
 | **Ground** | Show/hide ground spawns. |
 | **Merceneary** | Show/hide mercenaries. |
@@ -84,10 +84,3 @@ My map is no different than normal and /mapfilter all had no effect, what did I 
 **Answer:**
 
 Each individual filter needs to be turned on individually, _/mapfilter all show_ does not toggle all filters to "show" as might be expected.
-
-## See Also
-
-* [MQ2Map](./)
-
-[Back to Slash Commands](../../../commands/slash-commands/)
-

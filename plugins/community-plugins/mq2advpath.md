@@ -33,8 +33,3 @@ This plugin allows you to record and playback player movement.
 * ${AdvPath.Status} // INT Status 0 = off , 1 = on , 2 = paused?
 * ${AdvPath.Paused} // BOOL Paused?
 * ${AdvPath.WaitingWarp} // BOOL Wating if warp take action ?
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

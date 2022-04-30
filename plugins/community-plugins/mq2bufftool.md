@@ -2,7 +2,7 @@
 
 ## Description
 
-MQ2BuffTool was written by s0rcier and is found in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?t=11890). This plugin was written a replacement for his previous work, MQ2BuffUtils, offering an easier approach to buff management for the end user and less robotic interaction to be less detectable by others.
+MQ2BuffTool was written by s0rcier and is found in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?t=11890). This plugin was written a replacement for his previous work, MQ2BuffUtils, offering an easier approach to buff management for the end user and less robotic interaction to be less detectable by others.
 
 ## Features
 
@@ -109,20 +109,12 @@ Clicks off buffs from list _setname_ in configuration file
 
 | **Type** | **Member Name** | **Description** |
 | :--- | :--- | :--- |
-| [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) | **Avail\[\***n**\*\]** | Number of free buff slots in _n_ \(where _n_ can be 1=buffs, 2=short duration, 3=pets\) |
-| [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) | **Count** | Number of buffs in blocked list |
-| [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) | **Maxim\[\***n**\*\]** | Number of total buff slots in _n_ \(where _n_ can be 1=buffs, 2=short duration, 3=pets\) |
-| [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Popup** | TRUE if popups are enabled |
-| [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Quiet** | Always TRUE if plugin is loaded |
-| [_bool_](../../data-types-and-top-level-objects/data-types/datatype-bool.md) | **Ready** | TRUE if plugin loaded, INGAME, and blocking active |
-| [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) | **Spell\[\***n**\*\]** | Number of available buff slots for _n_ \(where _n_ spell ID or spell name\), returns -1 if none found |
-| [_int_](../../data-types-and-top-level-objects/data-types/datatype-int.md) | **Total** | Total number of buffs blocked by plugin this session |
+| [_int_](../../reference/data-types/datatype-int.md) | **Avail\[\***n**\*\]** | Number of free buff slots in _n_ \(where _n_ can be 1=buffs, 2=short duration, 3=pets\) |
+| [_int_](../../reference/data-types/datatype-int.md) | **Count** | Number of buffs in blocked list |
+| [_int_](../../reference/data-types/datatype-int.md) | **Maxim\[\***n**\*\]** | Number of total buff slots in _n_ \(where _n_ can be 1=buffs, 2=short duration, 3=pets\) |
+| [_bool_](../../reference/data-types/datatype-bool.md) | **Popup** | TRUE if popups are enabled |
+| [_bool_](../../reference/data-types/datatype-bool.md) | **Quiet** | Always TRUE if plugin is loaded |
+| [_bool_](../../reference/data-types/datatype-bool.md) | **Ready** | TRUE if plugin loaded, INGAME, and blocking active |
+| [_int_](../../reference/data-types/datatype-int.md) | **Spell\[\***n**\*\]** | Number of available buff slots for _n_ \(where _n_ spell ID or spell name\), returns -1 if none found |
+| [_int_](../../reference/data-types/datatype-int.md) | **Total** | Total number of buffs blocked by plugin this session |
 | [_string_]() | **To String** | TRUE if INGAME |
-
-== See Also ==
-
-* MQ2BuffUtils
-* [Top-Level Objects](../../data-types-and-top-level-objects/top-level-objects/)
-* [Data Types](../../data-types-and-top-level-objects/data-types/)
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

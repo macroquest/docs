@@ -199,9 +199,3 @@ w/ code/ideas from Falco72 & Space-boy
 ### koad 03-24-04
 
 Original plugin \([http://macroquest.sourceforge.net/phpBB2/viewtopic.php?t=5962&start=2](http://macroquest.sourceforge.net/phpBB2/viewtopic.php?t=5962&start=2)\)
-
-## See Also
-
-* [MQ2Twist](./)
-* [MacroQuest2 Plugins](../../../documentation/macroquest2-plugins.md)
-

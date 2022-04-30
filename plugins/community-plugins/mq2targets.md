@@ -2,11 +2,11 @@
 
 ## Introduction
 
-MQ2Targets is a HUD Display-type spawn tracker with syntax similar to the [/where](../../commands/slash-commands/where.md) command. Created by DrunkDwarf.
+MQ2Targets is a HUD Display-type spawn tracker with syntax similar to the [/where](../../reference/commands/where.md) command. Created by DrunkDwarf.
 
 ### Links
 
-* [**MQ2Targets**](https://macroquest2.com/phpBB3/viewtopic.php?t=12912) source and discussion.
+* [**MQ2Targets**](https://macroquest.org/phpBB3/viewtopic.php?t=12912) source and discussion.
 
 ### Features
 
@@ -31,7 +31,7 @@ MQ2Targets is a HUD Display-type spawn tracker with syntax similar to the [/wher
 * **/watch add\|notify target**
   * Add the specified _target_ from the watch list. The syntax for _target_ is the same as that for the
 
-    [/where](../../commands/slash-commands/where.md) command. Using _notify_ will add a pop-up for each spawn.
+    [/where](../../reference/commands/where.md) command. Using _notify_ will add a pop-up for each spawn.
 
 \* **/watch remove\|delete target\|\#**
 
@@ -155,8 +155,3 @@ Targets are displayed as follows:
 * Add the /watch color functionality
 * Make HUD list clickable?
 * Add HUDString capability to the popup messages
-
-## See Also
-
-* [MQ2 Plugins](../../commands/slash-commands/plugin.md)
-

@@ -8,7 +8,7 @@ VSCode Syntax Extension
 ## Crimson Editor
 
 Crimson Editor (Download)  
-[Crimson Editor Syntax](https://macroquest2.com/phpBB3/viewtopic.php?f=3&t=3299)
+[Crimson Editor Syntax](https://macroquest.org/phpBB3/viewtopic.php?f=3&t=3299)
 
 ## Notepad++
 
@@ -18,7 +18,7 @@ Notepad++ (Download)
 ## TextPad
 
 TextPad (Download)  
-[Textpad Syntax](https://macroquest2.com/phpBB3/viewtopic.php?t=879)
+[Textpad Syntax](https://macroquest.org/phpBB3/viewtopic.php?t=879)
 
 ## UltraEdit
 

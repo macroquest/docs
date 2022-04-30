@@ -25,12 +25,3 @@ MacroQuest.ini is the configuration file used by MacroQuest2. By default it is s
 ### [Filter Names]
 
 ### [AutoRun]
-
-## See Also
-
-* MacroQuest2
-* [Command: /plugin](../commands/slash-commands/plugin.md)
-* [Command: /alias](../commands/slash-commands/alias.md)
-* [Command: /caption](../commands/slash-commands/caption.md)
-* [Command: /setautorun](../commands/slash-commands/setautorun.md)
-

@@ -27,10 +27,3 @@ This plugin adds some bazaar searching functionality.
 * [bazaaritem](mq2bzsrch-datatype-bazaaritem.md)
 
 ## Examples
-
-## See Also
-
-* [Data Types](../../../data-types-and-top-level-objects/data-types/)
-* [Top-Level Objects](../../../data-types-and-top-level-objects/top-level-objects/)
-* [Plugins](../../../documentation/macroquest2-plugins.md)
-

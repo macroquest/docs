@@ -6,7 +6,7 @@
 
 This is more of a utility plugin to provide an easy way to make custom alerts with some flexibility of where the WAV files are stored.
 
-You can find the latest version of MQ2Sound [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=20135).
+You can find the latest version of MQ2Sound [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=20135).
 
 ## Commands
 
@@ -26,8 +26,3 @@ You can find the latest version of MQ2Sound [here](https://macroquest2.com/phpBB
 `1=c:\\windows\\media\\notify.wav`  
 `2=c:\\windows\\media\\chord.wav`  
 `3=c:\\windows\\media\\tada.wav`
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

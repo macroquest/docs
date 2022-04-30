@@ -22,10 +22,3 @@ The text at the end of the additional information in blue on the item display wi
 Note: This is found on the Great Saphrophyte in EC
 Rarity is about 1 in 5
 ```
-
-## See Also
-
-* [MQ2ItemDisplay](./)
-
-[Return to Slash Commands](../../../commands/slash-commands/)
-

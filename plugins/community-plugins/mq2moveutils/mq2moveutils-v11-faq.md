@@ -92,7 +92,7 @@ You do not have HoTT data available. You either need the HoTT group leader AA or
 
 ### Your _/face_ commands are not working
 
-You cannot use [_/face_](../../../commands/slash-commands/face.md) while a MoveUtils command is active. MoveUtils handles facing targets internally based on many different settings. Using _/face_ in your macros that rely on MoveUtils is a bad practice that causes nothing but problems and thus is no longer allowed by the plugin.
+You cannot use [_/face_](../../../reference/commands/face.md) while a MoveUtils command is active. MoveUtils handles facing targets internally based on many different settings. Using _/face_ in your macros that rely on MoveUtils is a bad practice that causes nothing but problems and thus is no longer allowed by the plugin.
 
 ### NONE of your commands are working but you are sure the plugin is loaded and was working for a bit
 
@@ -143,11 +143,11 @@ See the Verbosity section at the bottom of the main article.
 
 The three types of heading changes are a question of legitimacy versus efficiency.
 
-**Fast** heading instantly changes your heading to the desired location. If you are facing North, target a mob that is South of you, and issued a stick command with fast heading enabled, your character would instantly face the mob and begin running. This works like MQ2's [/face](../../../commands/slash-commands/face.md) command with the _fast_ parameter. Repeated _fast_ turns can be quite noticeable to other players and thus, the other options exist.
+**Fast** heading instantly changes your heading to the desired location. If you are facing North, target a mob that is South of you, and issued a stick command with fast heading enabled, your character would instantly face the mob and begin running. This works like MQ2's [/face](../../../reference/commands/face.md) command with the _fast_ parameter. Repeated _fast_ turns can be quite noticeable to other players and thus, the other options exist.
 
 **Loose** heading rotates your heading changes using a fixed size turn increment to look more legitimate. You are able to set this increment size between 1 and 100. These numbers represent the actual number of degrees you will turn per pulse, not any sort of scaling system.
 
-**True** heading rotates your heading changes using the same method EQ does if you were to hold down the _right_ or _left_ key. This is comparable to [/keypress](../../../commands/slash-commands/keypress.md) with _right hold_ as parameters. This is the most legitimate method of turning available. It is also the slowest.
+**True** heading rotates your heading changes using the same method EQ does if you were to hold down the _right_ or _left_ key. This is comparable to [/keypress](../../../reference/commands/keypress.md) with _right hold_ as parameters. This is the most legitimate method of turning available. It is also the slowest.
 
 ### Why do I move backwards often? It looks crazy and unnatural.
 

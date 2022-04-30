@@ -2,16 +2,31 @@
 
 Welcome to the MacroQuest Documentation.
 
-| :memo: NOTE | This documentation is a work in progress and may contain inaccuracies or errors. |
-|-------------|----------------------------------------------------------------------------------|
+!!! note
+
+    This documentation is a work in progress. Please help us by contributing updates and corrections!
+
+# About MacroQuest
+
+MacroQuest, also known as MQ, or most recently MQNext, is the next generation in development of the platform for the customization and automation of [EverQuest](http://www.everquest.com).  MacroQuest is, and has always been, open source software.
+
+MacroQuest is as useful as you wish to make it. You can utilize it just for the capabilities of the map and other plugins, or you can further enhance EverQuest through the use of macros or designing your own plugin.
+
+However, there are some issues you need to understand:
+
+* First and foremost, the use of MacroQuest is a violation of the EULA of EverQuest.
+* This means that if you do not use MacroQuest sensibly, you risk your character being suspended for a period of time, or in extreme cases, having your character permanently banned.
+
+_If you are not prepared for such circumstances, stop here and do not continue._
+
+**MacroQuest does not run out of the box!** It requires you to [build](main/building.md) it.
 
 ## MacroQuest
 
-* [Intro](macroquest-intro/)
-* [Compiling MQ](documentation/macroquest-compiling.md)
-* [Using MQ](documentation/macroquest-using.md)
+* [Getting Started](main/README.md)
+* [Building MacroQuest](main/building.md)
 * [Macros/Snippets](documentation/macroquest-macros.md)
-* [Plugins](documentation/macroquest-plugins.md)
+* [Plugins](plugins/README.md)
 
 ## Getting Help
 
@@ -22,7 +37,7 @@ Welcome to the MacroQuest Documentation.
 
 ## References
 
-* [Macro Reference](documentation/macro-reference.md)
-* [Hacker Stuff](general-information/hacker-stuff.md)
+* [Macro Reference](macros/README.md)
+* [Hacker Stuff](reference/general/hacker-stuff.md)
 * [Text Editors and Syntax Files](other-applications/text-editors/)
 

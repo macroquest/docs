@@ -97,6 +97,3 @@ Released
 ## Screenshots
 
 [Click Here For Screenshot\(Not Working\)](http://www.lamah.com/shire/mq2dps0_99.jpg)
-
-## See Also
-

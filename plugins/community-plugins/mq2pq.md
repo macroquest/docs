@@ -6,7 +6,7 @@
 
 Provide a general purpose spell priority queue.
 
-You can find the latest version of MQ2PQ [here](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=20060&sid=53b793f1fc32e16a60783466e13c7345).
+You can find the latest version of MQ2PQ [here](https://macroquest.org/phpBB3/viewtopic.php?f=31&t=20060&sid=53b793f1fc32e16a60783466e13c7345).
 
 ## Requirements
 
@@ -101,8 +101,3 @@ Bard profile converted from MQ2Medley \( WORKING \)
 `Spell16_Name=Fjilnauk's Song of Suffering`  
 `Spell17_Name=Silisia's Lively Crescendo`  
 `Spell18_Name=Arcane Melody`
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

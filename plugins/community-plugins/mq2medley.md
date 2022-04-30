@@ -23,7 +23,7 @@ This is the next evolution of MQ2Twist. Features
 
   burn medley to introduce new songs to the mix, while knowing what songs are already up.
 
-You can find the latest version of MQ2Medley [here](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=19781).
+You can find the latest version of MQ2Medley [here](https://macroquest.org/phpBB3/viewtopic.php?f=31&t=19781).
 
 ## Plugin Interaction
 
@@ -109,8 +109,3 @@ If all songs are active, then will cast the one that will expire soonest.
 `song16=Fjilnauk's Song of Suffering Rk. II^18^1`  
 `song17=Silisia's Lively Crescendo^45^1`  
 `song18=Arcane Melody Rk. II^18 + (6*${Medley.Tune})^1`
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

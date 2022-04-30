@@ -7,7 +7,7 @@ The information below applies to the 7.0518 and earlier versions of MQ2MoveUtils
 
 MQ2MoveUtils is a very popular plugin which assists with most aspects of moving around within EQ. It has been worked on by a number of developers over the years \(tonio, CyberTech, Quagmire and Outlander\). For the history of this plugin and development notes please see [MQ2MoveUtils:History](mq2moveutils-history.md).
 
-The old forum thread for MQ2MoveUtils can be found [here](https://macroquest2.com/phpBB3/viewtopic.php?t=11732), in the VIP forums. Source for the [version 7.0 MQ2MoveUtils](http://mq2.whyarewehappening.com/MQ2MoveUtils/archive/07.0518/) is available.
+The old forum thread for MQ2MoveUtils can be found [here](https://macroquest.org/phpBB3/viewtopic.php?t=11732), in the VIP forums. Source for the [version 7.0 MQ2MoveUtils](http://mq2.whyarewehappening.com/MQ2MoveUtils/archive/07.0518/) is available.
 
 ## Features
 
@@ -239,43 +239,43 @@ Save or load the circle settings from the INI file
 
   Return ON if currently sticking, OFF if not, or PAUSED if it is paused
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Active}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${Stick.Active}**
 
   Returns TRUE if currently sticking, FALSE if not
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Behind}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${Stick.Behind}**
 
   Returns TRUE if behind target
 
-* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${Stick.Distance}**
+* [_float_](../../../reference/data-types/datatype-float.md) **${Stick.Distance}**
 
   The current stick distance
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Loose}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${Stick.Loose}**
 
   Returns TRUE if stick loose is set
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.MoveBack}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${Stick.MoveBack}**
 
   Returns TRUE if stick is set to moveback
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.MoveBehind}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${Stick.MoveBehind}**
 
   Returns TRUE if stick is set to move behind the target
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.MovePause}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${Stick.MovePause}**
 
   Returns TRUE if stick movement is paused due to manual intervention
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Paused}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${Stick.Paused}**
 
   Returns TRUE if stick has been paused with "/stick pause"
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Pin}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${Stick.Pin}**
 
   Returns TRUE if /stick pin is being used
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${Stick.Stopped}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${Stick.Stopped}**
 
   Returns TRUE if you are stationary
 
@@ -285,11 +285,11 @@ Save or load the circle settings from the INI file
 
   Return ON if currently moving to a location, OFF if not, or PAUSED if it is paused
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MoveTo.Moving}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${MoveTo.Moving}**
 
   Returns TRUE if moving to location, FALSE if not
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MoveTo.Stopped}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${MoveTo.Stopped}**
 
   Returns TRUE if stopped, FALSE if not
 
@@ -303,35 +303,35 @@ Save or load the circle settings from the INI file
 
   Return ON if MakeCamp is enabled, OFF if it is not enabled or PAUSED if it is paused
 
-* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.AnchorX}**
+* [_float_](../../../reference/data-types/datatype-float.md) **${MakeCamp.AnchorX}**
 
   The X Loc of the anchor point
 
-* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.AnchorY}**
+* [_float_](../../../reference/data-types/datatype-float.md) **${MakeCamp.AnchorY}**
 
   The Y Loc of the anchor point
 
-* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.CampRadius}**
+* [_float_](../../../reference/data-types/datatype-float.md) **${MakeCamp.CampRadius}**
 
   The current camp radius
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MakeCamp.Leash}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${MakeCamp.Leash}**
 
   Returns TRUE if the leash is enabled, FALSE if not
 
-* [_float_](../../../data-types-and-top-level-objects/data-types/datatype-float.md) **${MakeCamp.LeashLength}**
+* [_float_](../../../reference/data-types/datatype-float.md) **${MakeCamp.LeashLength}**
 
   The length of the leash
 
-* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${MakeCamp.MaxDelay}**
+* [_int_](../../../reference/data-types/datatype-int.md) **${MakeCamp.MaxDelay}**
 
   The maximum delay before resuming /makecamp functionality after manual intervention
 
-* [_int_](../../../data-types-and-top-level-objects/data-types/datatype-int.md) **${MakeCamp.MinDelay}**
+* [_int_](../../../reference/data-types/datatype-int.md) **${MakeCamp.MinDelay}**
 
   The minimum delay before resuming /makecamp functionality after manual intervention
 
-* [_bool_](../../../data-types-and-top-level-objects/data-types/datatype-bool.md) **${MakeCamp.Returning}**
+* [_bool_](../../../reference/data-types/datatype-bool.md) **${MakeCamp.Returning}**
 
   Returns TRUE if returning to camp, FALSE if not
 
@@ -405,11 +405,3 @@ This is the average distance covered during the the last _stickCheck_ pulses to 
 * You can see a list of options for each of the commands by typing the command and then "help". Eg. /stick help,
 
   /moveto help, etc.
-
-## See Also
-
-* [MQ2MoveUtils:History](mq2moveutils-history.md)
-* MQ2MoveUtils:v9
-* [Plugins](../../../documentation/macroquest2-plugins.md)
-* [Top-Level Objects](../../../data-types-and-top-level-objects/top-level-objects/)
-

@@ -7,7 +7,7 @@
 `out of range. (Current range is set at 50' - adjust with Range settings in INI)`  
 `NOTE: These effects are CLIENT SIDE ONLY!`
 
-`You can find the latest version of MQ2AutoSize`[`here`](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=12808&hilit=MQ2AutoSize)`.`
+`You can find the latest version of MQ2AutoSize`[`here`](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=12808&hilit=MQ2AutoSize)`.`
 
 ## Commands
 
@@ -42,8 +42,3 @@
 `SizeMounts=1`  
 `SizeCorpse=1`  
 `SizeSelf=1`
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

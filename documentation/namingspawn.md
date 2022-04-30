@@ -12,7 +12,7 @@ This is an altered form of the [Captions] section of the macroquest.ini
 
 I've changed NPC= section to display the information I want to see.
 
-The ${NamingSpawn} inherits the spawn data type. [https://macroquest2.com/wiki/index.php/DataType:spawn](https://macroquest2.com/wiki/index.php/DataType:spawn)
+The ${NamingSpawn} inherits the spawn data type. [https://macroquest.org/wiki/index.php/DataType:spawn](https://macroquest.org/wiki/index.php/DataType:spawn)
 
 While the wiki is certainly dated, just with that link alone you can find a lot of information. Basically anything you see in that list should be allowed to attach to the end of ${NamingSpawn}. You can test them with ${Target.datamember} IE: ${NamingSpawn.Body} will display "Humaniod", "Animal", "Plant", "Undead", etc so you can just look at the targets name and see if you can use your body specific spells/banestrike. I've added distance using ${NamingSpawn.Distance} and there is a lot more that you can add that I just haven't done yet.
 

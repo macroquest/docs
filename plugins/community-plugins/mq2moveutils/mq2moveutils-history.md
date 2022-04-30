@@ -3,22 +3,22 @@
 ## The tonio era
 
 The first version of [MQ2MoveUtils](./) was developed by tonio and released May 5, 2004.  
-_See:_ [_Original MQ2MoveUtils Discussion History_](https://macroquest2.com/phpBB3/viewtopic.php?t=6973)
+_See:_ [_Original MQ2MoveUtils Discussion History_](https://macroquest.org/phpBB3/viewtopic.php?t=6973)
 
 The conception of this plugin was inspired by the /circle command, developed by Easar to be included in the earliest versions of [MQ2Twist](../mq2twist/). For all intents and purposes Easar should be considered the inspiration for this entire project.  
-_See:_ [_Easar's contribution to MQ2Twist / MQ2Twister\(abandoned\)_](https://macroquest2.com/phpBB3/viewtopic.php?p=42768#42768)
+_See:_ [_Easar's contribution to MQ2Twist / MQ2Twister\(abandoned\)_](https://macroquest.org/phpBB3/viewtopic.php?p=42768#42768)
 
 tonio did an amazing job enhancing the early versions of this plugin with features including: _breaking from mob gate, breaking from mob warp with distance configuration, autopause to prevent casting interrupts, stick behind, stick id, mpause, stick loose, and stick hold_
 
 Contributors to the enhancement of MQ2MoveUtils after tonio stopped supporting it include: Bombadil \(_Binds for mpause_\), onetimehero \(_noface option_\), Lax, Cr4zyb4rd \(_TLO's & /stick pin_\), and rswiders \(_/moveto_\)
 
 Quagmire offered full support for the plugin for a brief period in 2005, adding many bug fixes, code cleanup, and features such as: _/stick behindonce, walk/run switching, mount checking, and snare checking._  
-_See:_ [_Quagmire's MoveUtils_](https://macroquest2.com/phpBB3/viewtopic.php?t=10941)
+_See:_ [_Quagmire's MoveUtils_](https://macroquest.org/phpBB3/viewtopic.php?t=10941)
 
 === The Outlander era === Outlander took over supporting MQ2MoveUtils on July 9, 2005.  
-_See:_ [_Outlander's MoveUtils_](https://macroquest2.com/phpBB3/viewtopic.php?t=11732)
+_See:_ [_Outlander's MoveUtils_](https://macroquest.org/phpBB3/viewtopic.php?t=11732)
 
-Outlander's first big contributions to MQ2MoveUtils were his stuck logic, which started off as an [include file](https://macroquest2.com/phpBB3/viewtopic.php?t=11609), and the /makecamp command, which created a radius that you could use to prevent your character from moving out of range to chase down mobs or potentially gain unwanted aggro. Over time other additions included: _stick !front, HoTT awareness, and more TLO's_
+Outlander's first big contributions to MQ2MoveUtils were his stuck logic, which started off as an [include file](https://macroquest.org/phpBB3/viewtopic.php?t=11609), and the /makecamp command, which created a radius that you could use to prevent your character from moving out of range to chase down mobs or potentially gain unwanted aggro. Over time other additions included: _stick !front, HoTT awareness, and more TLO's_
 
 Contributors to the enhancement of MQ2MoveUtils during Outlander's support include: dont\_know\_at\_all \(_bug fixes_\), ieatacid \(_bug fixes_\), somelamedruid \(_bug fixes_\), s0rcier \(_walk mode_\), deadchicken \(_loose moveto_\), bertbert \(_/followpath_\), Ralindal \(_bug fixes_\), and rswiders \(_many enhancements to /circle_\).
 
@@ -240,6 +240,3 @@ Added /moveto id  functionality as discussed on boards.
 \* Changes Reduced Sensitivity on MoveStuck Logic by default from 0.8 to 0.1  
 \* Added Delay to resume movement after manually moving with mpause enabled. While each command has mindelay and maxdelay they all set the same variables so this only needs to be done once.  
 \* Added checks to stick, moveto, and circle to not kick in the MoveStuck Logic if you are stunned
-
-== See Also == [MQ2MoveUtils](./)
-

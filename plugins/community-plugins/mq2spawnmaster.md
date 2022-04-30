@@ -16,7 +16,7 @@ The plugin currently stores the mob's x/y/z location, the system and in-game tim
 
 Anything set in the OnSpawnCommand key in the Settings section of the INI fille will be executed as a command when the spawn is first matched so that for example "/speak ${SpawnMaster.LastMatch} just spawned!" will give you a nice spawn alert if using the MQ2Speech plugin.
 
-You can find the latest version of MQ2 [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=9853&hilit=mq2spawnmaster).
+You can find the latest version of MQ2 [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=9853&hilit=mq2spawnmaster).
 
 ### Commands
 
@@ -30,8 +30,3 @@ You can find the latest version of MQ2 [here](https://macroquest2.com/phpBB3/vie
 `uplist - Display any mobs on watch list that are currently up`  
 `downlist - Display any watched mobs that have died or despawned`  
 `load - Load spawns from INI`
-
-### See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

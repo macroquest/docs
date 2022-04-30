@@ -1,6 +1,6 @@
 # MQ2DataVars
 
-**MQ2Data was designed so that accessing information could be done utilizing a uniform system. User variables are treated as MQ2Data** [**Top-Level Objects**](../data-types-and-top-level-objects/top-level-objects/)**.**
+**MQ2Data was designed so that accessing information could be done utilizing a uniform system. User variables are treated as MQ2Data** [**Top-Level Objects**](../reference/top-level-objects/)**.**
 
 ## Variable Basics
 
@@ -24,7 +24,7 @@ Variables of local scope only exist while within a macro function or "Sub"
 
 ### Types
 
-Variables can be declared as any of the types in [Data Types](../data-types-and-top-level-objects/data-types/). The default type is string.
+Variables can be declared as any of the types in [Data Types](../reference/data-types/). The default type is string.
 
 ### Names
 
@@ -94,7 +94,7 @@ There is no limit to the number of dimensions or the number of elements in each 
 
 ### Deleting Variables
 
-[/deletevar](../commands/macro-commands/deletevar.md) is used to delete variables. Examples:
+[/deletevar](../reference/commands/deletevar.md) is used to delete variables. Examples:
 
 1. Deletes the variable varname. Using \* global will delete all global variables:
 
@@ -112,7 +112,7 @@ To clear the value of the variable, you may omit the new value.
 
 ### Setting/Changing Variables
 
-[/varset](../commands/macro-commands/varset.md) is used to set or change a variable. Examples:
+[/varset](../reference/commands/varset.md) is used to set or change a variable. Examples:
 
 1. This concatenates (joins one to the other) "stuff" to the end a string variable:
 
@@ -152,7 +152,7 @@ This sets array element n to 123:
 
 ### Setting Variables to Results of Calculations
 
-You can use [/varcalc](../commands/macro-commands/varcalc.md) to set a variable directly to the numeric result of a calculation. Keep in mind that the type itself may reject this value depending on what you give it. _**This will NOT work on strings!**_
+You can use [/varcalc](../reference/commands/varcalc.md) to set a variable directly to the numeric result of a calculation. Keep in mind that the type itself may reject this value depending on what you give it. _**This will NOT work on strings!**_
 
 **Examples:**
 

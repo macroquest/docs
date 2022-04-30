@@ -1900,9 +1900,9 @@ too small of number or something along those lines. It is there if you can find 
 * Added Circle TLOs
   * \([string]()\) - **${Circle}** - _ON / OFF / PAUSED_
   * \([string]()\) - **${Circle.Status}** - _ON / OFF/ PAUSED_
-  * \([float](../../../data-types-and-top-level-objects/data-types/datatype-float.md)\) - **${Circle.CircleX}** - _location of the center X_
-  * \([float](../../../data-types-and-top-level-objects/data-types/datatype-float.md)\) - **${Circle.CircleY}** - _location of the center Y_
-  * \([bool](../../../data-types-and-top-level-objects/data-types/datatype-bool.md)\) - **${Circle.Drunken}** - _TRUE / FALSE_
+  * \([float](../../../reference/data-types/datatype-float.md)\) - **${Circle.CircleX}** - _location of the center X_
+  * \([float](../../../reference/data-types/datatype-float.md)\) - **${Circle.CircleY}** - _location of the center Y_
+  * \([bool](../../../reference/data-types/datatype-bool.md)\) - **${Circle.Drunken}** - _TRUE / FALSE_
   * \([string]()\) - **${Circle.Rotation}** - _CW / CCW_
   * \([string]()\) - **${Circle.Direction}** - _FORWARDS / BACKWARDS_
 * Added the ability to change circle radius
@@ -2032,11 +2032,3 @@ MQ2Globals::ExecuteCmd(FindMappableCommand("forward"),0,0);
 MQ2Globals::ExecuteCmd(FindMappableCommand("forward"),1,0);
 MQ2Globals::ExecuteCmd(FindMappableCommand("forward"),0,0);
 ```
-
-### See Also
-
-* MQMoveUtils v16.0
-* [MQMoveUtils Older Versions](./)
-* [MQ2MoveUtils History](mq2moveutils-history.md)
-* [MacroQuest2 Plugins](../../../documentation/macroquest2-plugins.md)
-

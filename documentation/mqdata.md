@@ -2,7 +2,7 @@
 
 ## MQ2Data Types
 
-MQ2Data types are the means by which properties or methods ([Data Types](../data-types-and-top-level-objects/data-types/)\) of TLOs \([Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/)) are accessed and used within macros. [Variables](mqdatavars.md) in MQ2 are treated as [Top-Level Objects](../data-types-and-top-level-objects/top-level-objects/).
+MQ2Data types are the means by which properties or methods ([Data Types](../reference/data-types/)\) of TLOs \([Top-Level Objects](../reference/top-level-objects/)) are accessed and used within macros. [Variables](mqdatavars.md) in MQ2 are treated as [Top-Level Objects](../reference/top-level-objects/).
 
 The basic syntax for accessing this MQ2Data is:
 
@@ -10,20 +10,20 @@ The basic syntax for accessing this MQ2Data is:
 
 To access a property of a TLO you begin with the TLO type you want, then append successive type members or properties until you get the result you're looking for. The use of properties can become very complex (ie. extremely long), especially when using ${Math.Calc[]}.
 
-**Note:** You absolutely MUST pay attention to the return types of each member and object. Make sure to always compare identical [Data Types](../data-types-and-top-level-objects/data-types/) when doing comparisons (eg. string to a string, or a numeric to a numeric). Using .Equal or .NotEqual to compare .Name to .ID will give errors. For example, ${Target.Name.Equal[${Me.ID}]} will not work. .Name returns a string, but .ID returns an int
+**Note:** You absolutely MUST pay attention to the return types of each member and object. Make sure to always compare identical [Data Types](../reference/data-types/) when doing comparisons (eg. string to a string, or a numeric to a numeric). Using .Equal or .NotEqual to compare .Name to .ID will give errors. For example, ${Target.Name.Equal[${Me.ID}]} will not work. .Name returns a string, but .ID returns an int
 
 Also be sure to look at the To String of each type.
 
 **Example of building an MQ2Data string:**
 
 * Suppose you want to display the distance to an NPC that you have targeted.
-* First, check the page for [TLO:Target](../data-types-and-top-level-objects/top-level-objects/tlo-target.md). There you can see its forms listed as
+* First, check the page for [TLO:Target](../reference/top-level-objects/tlo-target.md). There you can see its forms listed as
 
-  "[_spawn_](../data-types-and-top-level-objects/data-types/datatype-spawn.md) **Target**". This indicates that the Target TLO has access to all the
+  "[_spawn_](../reference/data-types/datatype-spawn.md) **Target**". This indicates that the Target TLO has access to all the
 
-  [_spawn_](../data-types-and-top-level-objects/data-types/datatype-spawn.md) reference type members.
+  [_spawn_](../reference/data-types/datatype-spawn.md) reference type members.
 
-* Looking at the [_spawn_](../data-types-and-top-level-objects/data-types/datatype-spawn.md) reference type, you will find a list of the properties and
+* Looking at the [_spawn_](../reference/data-types/datatype-spawn.md) reference type, you will find a list of the properties and
 
   members of spawn, to which **Target** has access to.
 
@@ -31,7 +31,7 @@ Also be sure to look at the To String of each type.
 
   will use:
 
-[_float_](../data-types-and-top-level-objects/data-types/datatype-float.md) **Distance**
+[_float_](../reference/data-types/datatype-float.md) **Distance**
 
 Distance from player in (x,y)
 
@@ -54,13 +54,13 @@ Members can also be describd as Properties or things that are property (owned by
 
 For example, the **Desk** type of object might have a property called **Screws**. The **Screws** property itself might be represented like this:
 
-[_int_](../data-types-and-top-level-objects/data-types/datatype-int.md) **Screws**
+[_int_](../reference/data-types/datatype-int.md) **Screws**
 
 _int_ is a type of object which means WHOLE NUMBER while **Screws** is the name of the object
 
 To demonstrate that an object named **Screws** is a member of the **Desk** type, we may also say:
 
-[_int_](../data-types-and-top-level-objects/data-types/datatype-int.md) **Desk.Screws**
+[_int_](../reference/data-types/datatype-int.md) **Desk.Screws**
 
 The return type is of the last member appended (ie. int).
 

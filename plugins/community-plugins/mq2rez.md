@@ -2,11 +2,11 @@
 
 ## Description
 
-Work done by Thez, Based off of dewey's [MQ2AutoRez](https://macroquest2.com/phpBB3/viewtopic.php?t=14058) This plugin is set up to auto accept rezes based on INI configuration, along with auto looting your corpse.
+Work done by Thez, Based off of dewey's [MQ2AutoRez](https://macroquest.org/phpBB3/viewtopic.php?t=14058) This plugin is set up to auto accept rezes based on INI configuration, along with auto looting your corpse.
 
 **MQ2Rez**
 
-You can find the latest version of MQ2Rez [here](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=14171).
+You can find the latest version of MQ2Rez [here](https://macroquest.org/phpBB3/viewtopic.php?f=31&t=14171).
 
 ## Commands
 
@@ -22,8 +22,3 @@ You can find the latest version of MQ2Rez [here](https://macroquest2.com/phpBB3/
 `/rezzme -- Immediately respawn yourself without a rez. You will *not* regain any experience.`
 
 The "mycommand" must be formatted like this: "/memset group" or "/multiline ; /sit ; /memset group ; /mac rezbuffs" etc.
-
-## See Also
-
-* [Plugins](../../documentation/macroquest2-plugins.md)
-

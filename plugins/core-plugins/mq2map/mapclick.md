@@ -28,10 +28,3 @@ Allows you to define custom _commands_ to execute when right-clicking with a cer
 ```
 
 When holding down the left alt, shift and then right-clicking a spawn on the map, "/mycommand %i" will be executed.
-
-## See Also
-
-* [MQ2Map](./)
-
-[Return to Slash Commands](../../../commands/slash-commands/)
-
