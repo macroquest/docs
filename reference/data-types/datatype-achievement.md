@@ -21,7 +21,7 @@ Provides the details about a single achievement and allows access to an achievem
 | [_bool_](datatype-bool.md) | **Open** | True if the achievement is open |
 | [_bool_](datatype-bool.md) | **Locked** | True if the achievement is locked |
 | [_bool_](datatype-bool.md) | **Hidden** | True if the achievement is hidden |
-| [_time_](../top-level-objects/tlo-time.md) | **CompletedTime** | Calendar time when the achievement was completed. |
+| [_time_](datatype-time.md) | **CompletedTime** | Calendar time when the achievement was completed. |
 
 ### Achievement State
 

@@ -6,8 +6,8 @@ Provides access to achievements.
 
 | Type | Form | Description |
 | ---- | ---- | ---- |
-| _[achievement](../data-types/datatype-achievement.md)_ | **Achievement[#\|Name]** | Look up an achievement by name or by id. |
-| _[achievementmgr](#achievementmgr-type)_ | **Achievement** | Access the achievement manager which provides access to information about achievements |
+| [_achievement_](../data-types/datatype-achievement.md) | **Achievement[#\|Name]** | Look up an achievement by name or by id. |
+| [_achievementmgr_](#achievementmgr-type) | **Achievement** | Access the achievement manager which provides access to information about achievements |
 
 ## AchievementMgr Type
 
@@ -15,25 +15,24 @@ Provides access achievements, achievement categories, and other information surr
 
 | Type | Name | Description |
 | ---- | ---- | ---- |
-| _[achievement](../data-types/datatype-achievement.md)_           | **Achievement[#\|Name]** |  Find an achievement by its ID or by its name.         |
-| _[achievement](../data-types/datatype-achievement.md)_           | **AchivementByIndex[#]** |  Find an achievement by its index.                     |
-| _[int](../data-types/datatype-int.md)_                           | **AchivementCount**      |  The number of achievements in the manager.            |
-| _[achievementcat](../data-types/datatype-achievementcat.md)_     | **Category[#\|Name]**    |  Find an achievement category by its id or by its name.Note: If searching by name, only top-level categories are returned from the achievement manager.    |
-| _[achievementcat](../data-types/datatype-achievementcat.md)_     | **CategoryByIndex[#]**   |  Find an achievement category by its index.            |
-| _[int](../data-types/datatype-int.md)_                           | **CategoryCount**        |  The number of achievement categories in the manager.  |
-| _[int](../data-types/datatype-int.md)_                           | **Points**               |  The total number of accumulated achievement points.    |
-| _[int](../data-types/datatype-int.md)_                           | **CompletedAchivements** |  The number of completed achievements.    |
-| _[int](../data-types/datatype-int.md)_                           | **TotalAchivements**     |  The number of available achievements.    |
-| _[bool](../data-types/datatype-bool.md)_                         | **Ready**                |  Indicates that the manager has loaded all achievement data and is ready to be used.    |
+| [_achievement_](../data-types/datatype-achievement.md)           | **Achievement[#\|Name]** |  Find an achievement by its ID or by its name.         |
+| [_achievement_](../data-types/datatype-achievement.md)           | **AchivementByIndex[#]** |  Find an achievement by its index.                     |
+| [_int_](../data-types/datatype-int.md)                           | **AchivementCount**      |  The number of achievements in the manager.            |
+| [_achievementcat_](../data-types/datatype-achievementcat.md)     | **Category[#\|Name]**    |  Find an achievement category by its id or by its name.Note: If searching by name, only top-level categories are returned from the achievement manager.    |
+| [_achievementcat_](../data-types/datatype-achievementcat.md)     | **CategoryByIndex[#]**   |  Find an achievement category by its index.            |
+| [_int_](../data-types/datatype-int.md)                           | **CategoryCount**        |  The number of achievement categories in the manager.  |
+| [_int_](../data-types/datatype-int.md)                           | **Points**               |  The total number of accumulated achievement points.    |
+| [_int_](../data-types/datatype-int.md)                           | **CompletedAchivements** |  The number of completed achievements.    |
+| [_int_](../data-types/datatype-int.md)                           | **TotalAchivements**     |  The number of available achievements.    |
+| [_bool_](../data-types/datatype-bool.md)                         | **Ready**                |  Indicates that the manager has loaded all achievement data and is ready to be used.    |
 
 ## Usage
 
-| :warning: WARNING                                                                                                                           |
-|---------------------------------------------------------------------------------------------------------------------------------------------|
-| Looking up achievements by name may not always return the correct achievement if multiple exist with the same name. Achievement IDs should  |
-| be preferred over names as they don't change and are unique.                                                                                |
+!!! warning
+    Looking up achievements by name may not always return the correct achievement if multiple exist with the same name. Achievement IDs should
+    be preferred over names as they don't change and are unique.
 
-**Achievement[**#**]** and **Achievement.Achievement[**#**]** are equivalent and are provided for consistency. The primary way to access achievement information should be via id. Achievement IDs are unique and do not change.
+**Achievement**[ _#_ ] and **Achievement.Achievement**[ _#_ ] are equivalent and are provided for consistency. The primary way to access achievement information should be via id. Achievement IDs are unique and do not change.
 
 To look up an achievement's ID, you can look up an achievement by name, or you can use the Achievements Inspector.
 

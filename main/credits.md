@@ -1,10 +1,10 @@
 # Credits
 
-## People Associated with the MacroQuest Project
+!!! warning
 
-| :warning: Out of Date                                                       |
-|-----------------------------------------------------------------------------|
-| This section is out of date and hasn't been updated for a really long time. |
+    This section is out of date and hasn't been updated for a really long time.
+
+## People Associated with the MacroQuest Project
 
 People are not listed within a section in any particular order.
 
