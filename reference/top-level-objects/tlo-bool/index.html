@@ -6578,8 +6578,6 @@
         
           
         
-          
-        
       
       
         
@@ -6676,20 +6674,6 @@
               
   
   
-  
-    <li class="md-nav__item">
-      <a href="../tlo-bandolier/" class="md-nav__link">
-        TLO:Bandolier
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
     
   
   
@@ -6726,13 +6710,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    Description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#forms" class="md-nav__link">
     Forms
   </a>
@@ -6740,15 +6717,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#access-to-types" class="md-nav__link">
-    Access to Types
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
+  <a href="#usage-examples" class="md-nav__link">
+    Usage Examples
   </a>
   
 </li>
@@ -7631,6 +7601,8 @@
         
           
         
+          
+        
       
       
         
@@ -7745,6 +7717,20 @@
     <li class="md-nav__item">
       <a href="../../data-types/datatype-array/" class="md-nav__link">
         DataType:array
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-types/datatype-bandolier/" class="md-nav__link">
+        DataType:bandolier
       </a>
     </li>
   
@@ -8618,13 +8604,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    Description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#forms" class="md-nav__link">
     Forms
   </a>
@@ -8632,15 +8611,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#access-to-types" class="md-nav__link">
-    Access to Types
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
+  <a href="#usage-examples" class="md-nav__link">
+    Usage Examples
   </a>
   
 </li>
@@ -8664,25 +8636,62 @@
 
 
 <h1 id="tlobool">TLO:Bool<a class="headerlink" href="#tlobool" title="Permanent link">&para;</a></h1>
-<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p>Creates a bool object using text. Value is set to TRUE unless text is "NULL" "FALSE" or "0" (capitalization does not count).</p>
+<p>Creates a bool object from a string. The resulting value is a <em>bool</em> depending on whether the given string is falsey or not.</p>
+<p>"Falsey" is defined as any of the following values:</p>
+<ul>
+<li>Empty String</li>
+<li>FALSE</li>
+<li>NULL</li>
+<li>The string "0"</li>
+</ul>
+<p>If the string is one of these values, the resulting bool is <code>false</code>. Otherwise, it is <code>true</code>.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../../data-types/datatype-bool/"><em>bool</em></a> <strong>Bool[**text</strong>]**</li>
-</ul>
-<h2 id="access-to-types">Access to Types<a class="headerlink" href="#access-to-types" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../../data-types/datatype-bool/"><em>bool</em></a> <strong>bool</strong></li>
-</ul>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p><code>/declare MyVar bool</code><br />
-<code>/varset MyVar ${Bool[This is true]}</code><br />
-<code>/echo ${MyVar}</code></p>
-<p><em>This would output TRUE</em></p>
-<p><code>/declare MyVar bool</code><br />
-<code>/varset MyVar ${Bool[NULL]}</code><br />
-<code>/echo ${MyVar}</code></p>
-<p><em>This would output FALSE</em></p>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Type</strong></th>
+<th align="left"><strong>Form</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>Bool</strong>[ <em>Text</em> ]</td>
+<td align="left">Converts the given <em>Text</em> to a bool based on the rules presented above.</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usage-examples">Usage Examples<a class="headerlink" href="#usage-examples" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>/declare MyVar bool
+/varset MyVar ${Bool[This is true]}
+
+| prints TRUE
+/echo ${MyVar}
+
+/varset MyVar ${Bool[NULL]}
+
+| prints FALSE
+/echo ${MyVar}
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">myVar</span>
+
+<span class="c1">-- prints true</span>
+<span class="n">myVar</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Bool</span><span class="p">(</span><span class="s1">&#39;This is true&#39;</span><span class="p">)()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">myVar</span><span class="p">)</span>
+
+<span class="c1">-- prints false</span>
+<span class="n">myVar</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Bool</span><span class="p">(</span><span class="s1">&#39;NULL&#39;</span><span class="p">)()</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">myVar</span><span class="p">)</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 
               
             </article>
@@ -8696,7 +8705,7 @@
     <nav class="md-footer__inner md-grid" aria-label="Footer">
       
         
-        <a href="../tlo-bandolier/" class="md-footer__link md-footer__link--prev" aria-label="Previous: TLO:Bandolier" rel="prev">
+        <a href="../tlo-altability/" class="md-footer__link md-footer__link--prev" aria-label="Previous: TLO:AltAbility" rel="prev">
           <div class="md-footer__button md-icon">
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
           </div>
@@ -8705,7 +8714,7 @@
               <span class="md-footer__direction">
                 Previous
               </span>
-              TLO:Bandolier
+              TLO:AltAbility
             </div>
           </div>
         </a>

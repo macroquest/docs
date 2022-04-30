@@ -6578,8 +6578,6 @@
         
           
         
-          
-        
       
       
         
@@ -6698,13 +6696,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    Description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#forms" class="md-nav__link">
     Forms
   </a>
@@ -6712,15 +6703,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#access-to-types" class="md-nav__link">
-    Access to Types
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
+  <a href="#example-usage" class="md-nav__link">
+    Example Usage
   </a>
   
 </li>
@@ -6729,20 +6713,6 @@
   
 </nav>
       
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tlo-bandolier/" class="md-nav__link">
-        TLO:Bandolier
-      </a>
     </li>
   
 
@@ -7631,6 +7601,8 @@
         
           
         
+          
+        
       
       
         
@@ -7745,6 +7717,20 @@
     <li class="md-nav__item">
       <a href="../../data-types/datatype-array/" class="md-nav__link">
         DataType:array
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-types/datatype-bandolier/" class="md-nav__link">
+        DataType:bandolier
       </a>
     </li>
   
@@ -8618,13 +8604,6 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    Description
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#forms" class="md-nav__link">
     Forms
   </a>
@@ -8632,15 +8611,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#access-to-types" class="md-nav__link">
-    Access to Types
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
+  <a href="#example-usage" class="md-nav__link">
+    Example Usage
   </a>
   
 </li>
@@ -8664,34 +8636,47 @@
 
 
 <h1 id="tloaltability">TLO:AltAbility<a class="headerlink" href="#tloaltability" title="Permanent link">&para;</a></h1>
-<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p>Note: The AltAbility TLO should not be used except for experimental data. If you've already purchased the AA, use Me.AltAbility. Me.AltAbility is much faster.</p>
+<div class="admonition danger">
+<p class="admonition-title">Danger</p>
+<p>The AltAbility TLO should not be used except for when experimenting  with data. If you've already purchased the AA, use <code>Me.AltAbility</code>, which is tailored to your character and is much faster.</p>
+</div>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
 <tr>
-<th align="left"></th>
-<th align="left"></th>
+<th align="left"><strong>Type</strong></th>
+<th align="left"><strong>Form</strong></th>
+<th align="left"><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td align="left"><a href="../../data-types/datatype-altability/"><em>altability</em></a> <strong>AltAbility[</strong>#<strong>]</strong></td>
-<td align="left">Alt Ability by number</td>
+<td align="left"><a href="../../data-types/datatype-altability/"><em>altability</em></a> <strong>AltAbility</strong>[ <em>Number</em> ]</td>
+<td align="left">Look up an AltAbility by its altability id</td>
+<td align="left"></td>
 </tr>
 <tr>
-<td align="left"><a href="../../data-types/datatype-altability/"><em>altability</em></a> <strong>AltAbility[**name</strong>]**</td>
-<td align="left">Alt Ability by name</td>
+<td align="left"><a href="../../data-types/datatype-altability/"><em>altability</em></a> <strong>AltAbility</strong>[ <em>Name</em> ]</td>
+<td align="left">Look up an AltAbility by its name</td>
+<td align="left"></td>
 </tr>
 </tbody>
 </table>
-<h2 id="access-to-types">Access to Types<a class="headerlink" href="#access-to-types" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../../data-types/datatype-altability/"><em>altability</em></a> <strong>altability</strong></li>
-</ul>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p><code>/echo ${AltAbility[Combat Stability].RequiresAbility}</code></p>
-<p>Returns the pre-requisite AA ability needed to train this Ability.</p>
+<h2 id="example-usage">Example Usage<a class="headerlink" href="#example-usage" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>| Prints the pre-requisite AA ability needed to train Combat Stability
+/echo ${AltAbility[Combat Stability].RequiresAbility}
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">-- Prints the pre-requisite AA ability needed to train Combat Stability</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">AltAbility</span><span class="p">(</span><span class="s1">&#39;Combat Stability&#39;</span><span class="p">).</span><span class="n">RequiresAbility</span><span class="p">())</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 
               
             </article>
@@ -8721,13 +8706,13 @@
       
       
         
-        <a href="../tlo-bandolier/" class="md-footer__link md-footer__link--next" aria-label="Next: TLO:Bandolier" rel="next">
+        <a href="../tlo-bool/" class="md-footer__link md-footer__link--next" aria-label="Next: TLO:Bool" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              TLO:Bandolier
+              TLO:Bool
             </div>
           </div>
           <div class="md-footer__button md-icon">

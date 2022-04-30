@@ -6578,8 +6578,6 @@
         
           
         
-          
-        
       
       
         
@@ -6649,9 +6647,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#achievementmgr-type" class="md-nav__link">
-    AchievementMgr Type
+  <a href="#associated-datatypes" class="md-nav__link">
+    Associated DataTypes
   </a>
+  
+    <nav class="md-nav" aria-label="Associated DataTypes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#achievementmgr-type" class="md-nav__link">
+    achievementmgr Type
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -6664,15 +6675,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#note-about-achievement-indices" class="md-nav__link">
-    ‌Note About Achievement Indices
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
+  <a href="#usage-examples" class="md-nav__link">
+    Usage Examples
   </a>
   
 </li>
@@ -6741,20 +6745,6 @@
     <li class="md-nav__item">
       <a href="../tlo-altability/" class="md-nav__link">
         TLO:AltAbility
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tlo-bandolier/" class="md-nav__link">
-        TLO:Bandolier
       </a>
     </li>
   
@@ -7644,6 +7634,8 @@
         
           
         
+          
+        
       
       
         
@@ -7758,6 +7750,20 @@
     <li class="md-nav__item">
       <a href="../../data-types/datatype-array/" class="md-nav__link">
         DataType:array
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-types/datatype-bandolier/" class="md-nav__link">
+        DataType:bandolier
       </a>
     </li>
   
@@ -8638,9 +8644,22 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#achievementmgr-type" class="md-nav__link">
-    AchievementMgr Type
+  <a href="#associated-datatypes" class="md-nav__link">
+    Associated DataTypes
   </a>
+  
+    <nav class="md-nav" aria-label="Associated DataTypes">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#achievementmgr-type" class="md-nav__link">
+    achievementmgr Type
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
   
 </li>
       
@@ -8653,15 +8672,8 @@
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
-  <a href="#note-about-achievement-indices" class="md-nav__link">
-    ‌Note About Achievement Indices
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
-    Examples
+  <a href="#usage-examples" class="md-nav__link">
+    Usage Examples
   </a>
   
 </li>
@@ -8695,25 +8707,26 @@
 <table>
 <thead>
 <tr>
-<th>Type</th>
-<th>Form</th>
-<th>Description</th>
+<th align="left"><strong>Type</strong></th>
+<th align="left"><strong>Form</strong></th>
+<th align="left"><strong>Description</strong></th>
 </tr>
 </thead>
 <tbody>
 <tr>
-<td><a href="../../data-types/datatype-achievement/"><em>achievement</em></a></td>
-<td><strong>Achievement[#|Name]</strong></td>
-<td>Look up an achievement by name or by id.</td>
+<td align="left"><a href="../../data-types/datatype-achievement/"><em>achievement</em></a></td>
+<td align="left"><strong>Achievement[#|Name]</strong></td>
+<td align="left">Look up an achievement by name or by id.</td>
 </tr>
 <tr>
-<td><a href="#achievementmgr-type"><em>achievementmgr</em></a></td>
-<td><strong>Achievement</strong></td>
-<td>Access the achievement manager which provides access to information about achievements</td>
+<td align="left"><a href="#achievementmgr-type"><em>achievementmgr</em></a></td>
+<td align="left"><strong>Achievement</strong></td>
+<td align="left">Access the achievement manager which provides access to information about achievements</td>
 </tr>
 </tbody>
 </table>
-<h2 id="achievementmgr-type">AchievementMgr Type<a class="headerlink" href="#achievementmgr-type" title="Permanent link">&para;</a></h2>
+<h2 id="associated-datatypes">Associated DataTypes<a class="headerlink" href="#associated-datatypes" title="Permanent link">&para;</a></h2>
+<h3 id="achievementmgr-type"><code>achievementmgr</code> Type<a class="headerlink" href="#achievementmgr-type" title="Permanent link">&para;</a></h3>
 <p>Provides access achievements, achievement categories, and other information surrounding the achievement system.</p>
 <table>
 <thead>
@@ -8782,34 +8795,37 @@
 <p>Looking up achievements by name may not always return the correct achievement if multiple exist with the same name. Achievement IDs should
 be preferred over names as they don't change and are unique.</p>
 </div>
+<details class="note" open="open">
+<summary>Note About Achievement Indices</summary>
+<p>Achievements and categories can be looked up by index. This is significantly faster than looking up by
+id or name. However, these indices are <strong>not</strong> stable and will change from patch to patch,
+but they will not change during the session.</p>
+<p>If an achievement is being utilized in a script many times, it may be more performant to look up an
+achievement's index (with its .Index member) and then use that in subsequent queries.</p>
+<p>See <a href="../../data-types/datatype-achievement/#examples">Achievement Examples</a> for some examples of using
+indices for looking up achievements.</p>
+</details>
 <p><strong>Achievement</strong>[ <em>#</em> ] and <strong>Achievement.Achievement</strong>[ <em>#</em> ] are equivalent and are provided for consistency. The primary way to access achievement information should be via id. Achievement IDs are unique and do not change.</p>
 <p>To look up an achievement's ID, you can look up an achievement by name, or you can use the Achievements Inspector.</p>
-<h4 id="note-about-achievement-indices">‌Note About Achievement Indices<a class="headerlink" href="#note-about-achievement-indices" title="Permanent link">&para;</a></h4>
-<p>Achievements and categories can be looked up by index. This is significantly faster than looking up by id or name. However, these indices are <strong>not</strong> stable and will change from patch to patch, but they will not change during the session. If an achievement is being utilized in a script many times, it may be more performant to look up an achievement's index (with its .Index member) and then use that in subsequent queries.</p>
-<p>See <a href="../../data-types/datatype-achievement/#examples">Achievement Examples</a> for some examples of using indices for looking up achievements.</p>
-<h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
-<p>In the following example, we will look up an achievement by name, and then print its ID.</p>
+<h3 id="usage-examples">Usage Examples<a class="headerlink" href="#usage-examples" title="Permanent link">&para;</a></h3>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>/echo ${Achievement[Master of Claws of Veeshan].ID}
+<div class="highlight"><pre><span></span><code>| Look up an achievement by name, and then print its ID.
+/echo ${Achievement[Master of Claws of Veeshan].ID}
+
+| print the completed status of achievement
+| &quot;Wayfarers Brotherhood Adventurer&#39;s Stone (Various 20+)&quot;
+/echo ${Achievement[500980300].Completed}
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Achievement</span><span class="p">(</span><span class="s2">&quot;Master of Claws of Veeshan&quot;</span><span class="p">).</span><span class="n">ID</span><span class="p">())</span>
-</code></pre></div>
-</div>
-</div>
-</div>
-<p>In the following example, we will print the completed status of achievement "<strong>Wayfarers Brotherhood Adventurer's Stone (Various 20+)</strong>"</p>
-<div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">MQScript</label><label for="__tabbed_2_2">Lua</label></div>
-<div class="tabbed-content">
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code>/echo ${Achievement[500980300].Completed}
-</code></pre></div>
-</div>
-<div class="tabbed-block">
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Achievement</span><span class="p">(</span><span class="mi">500980300</span><span class="p">).</span><span class="n">Completed</span><span class="p">())</span>
+<div class="highlight"><pre><span></span><code><span class="c1">-- Look up an achievement by name, and then print its ID.</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Achievement</span><span class="p">(</span><span class="s2">&quot;Master of Claws of Veeshan&quot;</span><span class="p">).</span><span class="n">ID</span><span class="p">())</span>
+
+<span class="c1">-- print the completed status of achievement</span>
+<span class="c1">-- &quot;Wayfarers Brotherhood Adventurer&#39;s Stone (Various 20+)&quot;</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Achievement</span><span class="p">(</span><span class="mi">500980300</span><span class="p">).</span><span class="n">Completed</span><span class="p">())</span>
 </code></pre></div>
 </div>
 </div>

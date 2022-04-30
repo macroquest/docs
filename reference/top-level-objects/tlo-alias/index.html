@@ -6578,8 +6578,6 @@
         
           
         
-          
-        
       
       
         
@@ -6684,15 +6682,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#members" class="md-nav__link">
-    Members
+  <a href="#forms" class="md-nav__link">
+    Forms
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#usage-examples" class="md-nav__link">
+    Usage Examples
   </a>
   
 </li>
@@ -6714,20 +6712,6 @@
     <li class="md-nav__item">
       <a href="../tlo-altability/" class="md-nav__link">
         TLO:AltAbility
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../tlo-bandolier/" class="md-nav__link">
-        TLO:Bandolier
       </a>
     </li>
   
@@ -7617,6 +7601,8 @@
         
           
         
+          
+        
       
       
         
@@ -7731,6 +7717,20 @@
     <li class="md-nav__item">
       <a href="../../data-types/datatype-array/" class="md-nav__link">
         DataType:array
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../data-types/datatype-bandolier/" class="md-nav__link">
+        DataType:bandolier
       </a>
     </li>
   
@@ -8604,15 +8604,15 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#members" class="md-nav__link">
-    Members
+  <a href="#forms" class="md-nav__link">
+    Forms
   </a>
   
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage" class="md-nav__link">
-    Usage
+  <a href="#usage-examples" class="md-nav__link">
+    Usage Examples
   </a>
   
 </li>
@@ -8636,9 +8636,39 @@
 
 
 <h1 id="tloalias">TLO:Alias<a class="headerlink" href="#tloalias" title="Permanent link">&para;</a></h1>
-<h2 id="members">Members<a class="headerlink" href="#members" title="Permanent link">&para;</a></h2>
-<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p><span Alias_91_myalias_93_="Alias[/myalias]" class="arithmatex">\({Bool[\)</span>]} true if it exists, false if not</p>
+<p>Provides a way to query whether a given alias exists. See <a href="../../commands/alias/">/alias</a>.</p>
+<h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th align="left"><strong>Type</strong></th>
+<th align="left"><strong>Form</strong></th>
+<th align="left"><strong>Description</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="left"><a href="../../data-types/datatype-bool/"><em>bool</em></a></td>
+<td align="left"><strong>Alias</strong>[ <em>Name</em> ]</td>
+<td align="left">Returns bool indicating if named aliase exists</td>
+</tr>
+</tbody>
+</table>
+<h2 id="usage-examples">Usage Examples<a class="headerlink" href="#usage-examples" title="Permanent link">&para;</a></h2>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>| prints TRUE if the /yes alias exists
+/echo ${Alias[/yes]}
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">-- prints true if the /yes alias exists</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Alias</span><span class="p">(</span><span class="s1">&#39;/yes&#39;</span><span class="p">)())</span>
+</code></pre></div>
+</div>
+</div>
+</div>
 
               
             </article>
