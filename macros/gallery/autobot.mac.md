@@ -2,13 +2,13 @@
 
 ## Description
 
-[AutoBot.mac](https://macroquest.org/phpBB3/viewtopic.php?t=12712) by A\_Druid\_00 is a versatile [macro](../../documentation/macroquest-macros.md) for automating a lot of tasks for your character in group, raid and solo situations.
+[AutoBot.mac](https://macroquest.org/phpBB3/viewtopic.php?t=12712) by A\_Druid\_00 is a versatile macro for automating a lot of tasks for your character in group, raid and solo situations.
 
 ## Requirements
 
-[AutoBot.mac](https://macroquest.org/phpBB3/viewtopic.php?t=12712) does not run on a default MQ2 compilation, it has a few extra dependencies. Some of the below items are [Plugins](../../reference/commands/plugin.md) and need to be compiled, just like MacroQuest2. Please read the appropriate documentation for each plugin. The Include files should be added to the same directory that AutoBot will be run from.
+[AutoBot.mac](https://macroquest.org/phpBB3/viewtopic.php?t=12712) does not run on a default MQ2 compilation, it has a few extra dependencies. Some of the below items are plugins and need to be compiled, just like MacroQuest2. Please read the appropriate documentation for each plugin. The Include files should be added to the same directory that AutoBot will be run from.
 
-[Plugins](../../reference/commands/plugin.md):
+Plugins:
 
 * [MQ2MoveUtils](https://macroquest.org/phpBB3/viewtopic.php?t=11732) by Outlander
 

@@ -2,7 +2,7 @@
 
 This macro is UNTESTED, but should work fine. If it doesn't - hit edit and fix it.
 
-Converted from Wait4Rez.mac to loot.mac here---&gt; [Editing Existing Macros](../../documentation/editing-existing-macros.md)
+Converted from Wait4Rez.mac to loot.mac here---&gt; [Editing Existing Macros](../editing-existing-macros.md)
 
 ```text
  |** Loot.mac by TheNewGuy

@@ -2,31 +2,31 @@
 
 The use of macros is what really makes MacroQuest2 extremely powerful. Additional in-game functionality like [the map](../plugins/core-plugins/mq2map/), cross-zone targeting, enhanced [/who](../reference/commands/who.md), custom binds, [the HUD](../plugins/core-plugins/mq2hud/) and [plugins](../plugins/README.md) are useful, but macroing is what **Macro**Quest is all about.
 
-See [here](../documentation/macroquest-macros.md) for some introductory information about macros. This page is concerned primarily with all the relevant information required to create your own macros.
+See [Getting Started](getting-started.md) for some introductory information about macros. This page is concerned primarily with all the relevant information required to create your own macros.
 
 ## Macro Fundamentals
 
-The MQ2 scripting language primarily involves the use of [Slash Commands](../reference/commands/), [variables](../documentation/mqdatavars.md), [Top-Level Objects](../reference/top-level-objects/) and some [Flow Control](../documentation/flow-control.md) to help the macro along.
+The MQ2 scripting language primarily involves the use of [Slash Commands](../reference/commands/README.md), [variables](variables.md), [Top-Level Objects](../reference/top-level-objects/) and some [Flow Control](flow-control.md) to help the macro along.
 
 Accessing and manipulating data can be done with:
 
-* [Variables](../documentation/mqdatavars.md) 
-* [MQ2Data](../documentation/mqdata.md)
+* [Variables](variables.md) 
+* [MQ2Data](mqdata.md)
   * [Top-Level Objects](../reference/top-level-objects/)
   * [Data Types](../reference/data-types/)
 * [Slash Commands](../reference/commands/)
 
 Things that can be added to the macro file:
 
-* [Comments](../documentation/comments.md)
-* [Pound Commands](../reference/macro-directives/)
-  * [Custom Events](custom-events.md)
+* [Comments](comments.md)
+* [Macro Directives](../reference/macro-directives/)
+* [Custom Events](custom-events.md)
 
 Controlling macro execution is done with:
 
-* [Flow Control](../documentation/flow-control.md)
-  * [Operators](../documentation/operators.md)
-* [Subroutines and Functions](../documentation/subroutines.md)
+* [Flow Control](flow-control.md)
+* [Operators](operators.md)
+* [Subroutines and Functions](subroutines.md)
 
 ## Include Files
 
@@ -36,7 +36,7 @@ An effective way to store subroutines which are used in multiple macros is by us
 
 * Sometimes you find a macro, and it's ALMOST what you need it for. In those cases, just edit the macro for your use.
 
-  Take a look at this tutorial: [Editing Existing Macros](../documentation/editing-existing-macros.md)
+  Take a look at this tutorial: [Editing Existing Macros](editing-existing-macros.md)
 
 * Be patient and expect to fail a few times. If your macro involved killing stuff, expect to die a few times to
 

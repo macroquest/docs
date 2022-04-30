@@ -2,7 +2,7 @@
 
 ## MQ2Data Types
 
-MQ2Data types are the means by which properties or methods ([Data Types](../reference/data-types/)\) of TLOs \([Top-Level Objects](../reference/top-level-objects/)) are accessed and used within macros. [Variables](mqdatavars.md) in MQ2 are treated as [Top-Level Objects](../reference/top-level-objects/).
+MQ2Data types are the means by which properties or methods ([Data Types](../reference/data-types/)\) of TLOs \([Top-Level Objects](../reference/top-level-objects/)) are accessed and used within macros. [Variables](variables.md) in MQ2 are treated as [Top-Level Objects](../reference/top-level-objects/).
 
 The basic syntax for accessing this MQ2Data is:
 

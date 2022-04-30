@@ -42,4 +42,4 @@ Sets or removes custom spawn search parameters \(same as [/who](../../reference/
 
 * **/tracknames \[\|reset\]**
 
-Sets or removes custom naming for spawn entries in the list \(see [NamingSpawn](../../documentation/namingspawn.md)\)
+Sets or removes custom naming for spawn entries in the list (see [NamingSpawn](../../main/features/namingspawn.md))

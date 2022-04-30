@@ -8,7 +8,7 @@
 
 Calls _subroutine_ (defined later in the macro by "Sub _subroutine_").
 
-(_See_ [_Subroutines_](../../documentation/subroutines.md) _for detailed information_)
+(_See_ [_Subroutines_](../../macros/subroutines.md) _for detailed information_)
 
 ### Examples
 

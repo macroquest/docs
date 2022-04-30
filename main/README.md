@@ -2,7 +2,7 @@
 
 ## Starting/Stopping
 
-Once you have [built](building.md) MQ successfully, you can launch it by changing to the Releases directory and opening [MacroQuest.exe](../documentation/macroquest.exe.md). It doesn't matter if MQ is started while EverQuest is running or not.
+Once you have [built](building.md) MQ successfully, you can launch it by changing to the Releases directory and opening [MacroQuest.exe](./macroquest-launcher.md). It doesn't matter if MQ is started while EverQuest is running or not.
 
 If you do start it after you start EverQuest, you will have to wait a few seconds before it finishes loading and you see the results in-game.
 
@@ -28,7 +28,7 @@ A full list is available in the [Slash Commands](../reference/commands/) page.
 
 ## MQ-only Commands
 
-The following commonly used slash commands are added by MacroQuest2:
+The following commonly used slash commands are added by MacroQuest:
 
 * [/destroy](../reference/commands/destroy.md)
 * [/drop](../reference/commands/drop.md)
@@ -52,7 +52,7 @@ A full list is available on the [Slash Commands](../reference/commands/) page.
 
 ## MacroQuest.ini
 
-* [NamingSpawn](../documentation/namingspawn.md) Article about manipulating the ini
+* [NamingSpawn](features/namingspawn.md) Article about manipulating the ini
 
 ## Macros and Plugins
 
@@ -66,7 +66,7 @@ To end a macro, use this command:
 
 `/endmacro`
 
-See the [MacroQuest2:Macros](../documentation/macroquest-macros.md) section for further information on macros, and [/macro](../reference/commands/macro.md) and [/endmacro](../reference/commands/endmacro.md) for starting and stopping.
+See the [Getting Startaed](../macros/getting-started.md) section for further information on macros, and [/macro](../reference/commands/macro.md) and [/endmacro](../reference/commands/endmacro.md) for starting and stopping.
 
 ### Plugins
 
@@ -88,7 +88,7 @@ See the [Plugins](../plugins/README.md) section for further information on plugi
 
 The EverQuest UI can also be enhanced through the use of MQ2 information. Things like your Target's level and class can be added to your Target Window, buff timers to your Buffs Window and other stats like mana regen, HP regen, Accuracy and Strikethrough to your Player Window.
 
-See the [Custom UIs](../documentation/custom-uis.md) page for further information on what you can add, and how to do so.
+See the [Custom UIs](./features/custom-uis.md) page for further information on what you can add, and how to do so.
 
 ## HUDs
 
@@ -96,7 +96,7 @@ MacroQuest can enable a custom Heads Up Display to show almost any kind of data 
 
 ## CFG Files
 
-See the [CFG Files](../documentation/cfg-files.md) section for further information.
+See the [CFG Files](./features/cfg-files.md) section for further information.
 
 ## Troubleshooting
 

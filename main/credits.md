@@ -51,7 +51,7 @@ Terramantian was given an honorary VIP for his numerous contributions to the Wik
 
 **Major "macro" developers**
 
-* GrimJack ([GenBot](../macros/examples/genbot.md))
+* GrimJack ([GenBot](../macros/gallery/genbot.md))
 * ml2517 (advbot)
 
 **Other notable users**

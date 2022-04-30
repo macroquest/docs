@@ -15,63 +15,43 @@ copyright: Copyright &copy; 2002-2022 Macroquest Developers
 # Navigation
 nav:
 
-- Documentation:
+- Home:
   - README.md
-  - Getting Started: main/README.md
 
+  - Getting Started: main/README.md
   - Building MacroQuest: main/building.md
 
   - Developing MacroQuest:
     - main/developing/README.md
-  - Extending MacroQuest:
-    - main/extending.md
+    - Debugging: main/developing/debugging.md
 
-  - MacroQuest Launcher: documentation/macroquest.exe.md
+  - MacroQuest Launcher: main/macroquest-launcher.md
 
-  - Macros: documentation/macroquest-macros.md
-  
-  - Configuration:
-    - documentation/macroquest.ini.md
-    - CFG Files: documentation/cfg-files.md
+  - Features:
+    - CFG Files: main/features/cfg-files.md
+    - Configuration: main/macroquest.ini.md
+    - Custom UIs: main/features/custom-uis.md
+    - NamingSpawn: main/features/namingspawn.md
 
-
-  - Updating: documentation/macroquest-updating.md
-
-  - Articles:
-    - Cheat Classifications: documentation/cheat-classifications.md
-    - Custom UIs: documentation/custom-uis.md
-    - Editing Existing Macros: documentation/editing-existing-macros.md
-    - Hacker Stuff: reference/general/hacker-stuff.md
-    - Help Macros: documentation/help-macros.md
-    - Help Plugins: documentation/help-plugins.md
-
-  - Troubleshooting:
-    - documentation/macroquest-troubleshooting.md
-    - Crash To Desktop: documentation/crash-to-desktop.md
-    - Identify Code Errors: documentation/identify-code-errors.md
-    - Incorrect Client Version: documentation/incorrect-client-version.md
-    - MQ2 not working in EQ: reference/general/mq-not-working-in-eq.md
+  - About the Project:
+    - Cheat Classifications: main/cheat-classifications.md
+    - Credits: main/credits.md
+    - Hacker Stuff: main/hacker-stuff.md
+    - History Of MacroQuest: main/history-of-macroquest.md
+    - Multiboxing: main/multiboxing.md
+    - Rules: main/rules.md
 
   - Other Applications:
-    - EQEmu: other-applications/eqemu.md
-    - Text Editors: other-applications/text-editors/README.md
-    - Notepad++ Syntax File: other-applications/text-editors/notepadplusplus-syntax-file.md
-    - UltraEdit Syntax File: other-applications/text-editors/ultraedit-syntax-file.md
-
-  - Obsolete Docs:
-    - main/obsolete.md
-    - Compilers: documentation/compilers.md
-    - Adding Plugins: documentation/macroquest-adding-plugins.md
-    - Help Compiling: documentation/help-compiling.md
-
-  - History Of MacroQuest: main/history-of-macroquest.md
-  - Credits: main/credits.md
-
+    - EQEmu: main/other-applications/eqemu.md
+    - Text Editors: main/other-applications/text-editors/README.md
+    - Notepad++ Syntax File: main/other-applications/text-editors/notepadplusplus-syntax-file.md
+    - UltraEdit Syntax File: main/other-applications/text-editors/ultraedit-syntax-file.md
 
 - Plugins:
   - plugins/README.md
-
-  - Developinig Plugins:
+  
+  - General Help: plugins/general-help.md
+  - Developing Plugins:
     - plugins/developing/README.md
   
   - Core Plugins:
@@ -199,60 +179,64 @@ nav:
 - Macros:
   - macros/README.md
 
-  - Beginners Guide to TLOs and DataVars: documentation/beginners-guide-to-tlos-and-datavars.md
-  - Comments: documentation/comments.md
-  - MQ2Data: documentation/mqdata.md
-  - MQDataVars: documentation/mqdatavars.md
-  - Flow Control: documentation/flow-control.md
-  - Operators: documentation/operators.md
-  - Rules: documentation/rules.md
-  - Subroutines: documentation/subroutines.md
+  - Getting Started:
+    - macros/getting-started.md
+    - Beginners Guide to TLOs and DataVars: macros/beginners-guide-datatypes.md
+    - General Help: macros/general-help.md
+    - Editing Existing Macros: macros/editing-existing-macros.md
+
+  - Comments: macros/comments.md
   - Custom Events: macros/custom-events.md
+  - Macro Data: macros/mqdata.md
+  - Variables: macros/variables.md
+  - Flow Control: macros/flow-control.md
+  - Operators: macros/operators.md
+  - Subroutines: macros/subroutines.md
 
   - Macro Directives:
     - reference/macro-directives/README.md
-    - /#bind: reference/macro-directives/macro-bind.md
-    - /#chat: reference/macro-directives/chat.md
-    - /#define: reference/macro-directives/define.md
-    - /#event: reference/macro-directives/event.md
-    - /#include: reference/macro-directives/include.md
-    - /#include/_optional: reference/macro-directives/include_optional.md
-    - /#turbo: reference/macro-directives/turbo.md
-    - /#warning: reference/macro-directives/warning.md
+    - '#bind': reference/macro-directives/macro-bind.md
+    - '#chat': reference/macro-directives/chat.md
+    - '#define': reference/macro-directives/define.md
+    - '#event': reference/macro-directives/event.md
+    - '#include': reference/macro-directives/include.md
+    - '#include_optional': reference/macro-directives/include_optional.md
+    - '#turbo': reference/macro-directives/turbo.md
+    - '#warning': reference/macro-directives/warning.md
 
-  - Example Macros:
-    - macros/examples/README.md
-    - AAPurchase.inc: macros/examples/aapurchase.inc.md
-    - Advanced Fishing: macros/examples/advanced-fishing.md
-    - Afcleric.mac - nils: macros/examples/afcleric.mac-nils.md
-    - AutoBot.mac: macros/examples/autobot.mac.md
-    - AutoBot.mac-V4.28+: macros/examples/autobot.mac-v4.28+.md
-    - Barter: macros/examples/barter.md
-    - Cleric.mac - nytemyst: macros/examples/cleric.mac-nytemyst.md
-    - Clockwork Grease Maker: macros/examples/clockwork-grease-maker.md
-    - DRShmbot: macros/examples/drshmbot.md
-    - Defense.inc: macros/examples/defense.inc.md
-    - GemOpt.inc: macros/examples/gemopt.inc.md
-    - GenBot: macros/examples/genbot.md
-    - Group Language Trainer: macros/examples/group-language-trainer.md
-    - Guild Buff Bot: macros/examples/guild-buff-bot.md
-    - Loot Any Corpse: macros/examples/loot-any-corpse.md
-    - ModBot: macros/examples/modbot.md
-    - Modbot 4.0: macros/examples/modbot-4.0.md
-    - Necro Helper: macros/examples/necro-helper.md
-    - Ninjadvloot.inc: macros/examples/ninjadvloot.inc.md
-    - Puller.inc: macros/examples/puller.inc.md
-    - QuickBeg.inc: macros/examples/quickbeg.inc.md
-    - RDCommon.ini: macros/examples/rdcommon.ini.md
-    - Related Include Files: macros/examples/related-include-files.md
-    - Rogue Helper: macros/examples/rogue-helper.md
-    - Rogue Helper Command List: macros/examples/rogue-helper-command-list.md
-    - Script Examples: macros/examples/script-examples.md
-    - Sk.mac - nytemyst: macros/examples/sk.mac-nytemyst.md
-    - Snare: macros/examples/snare.md
-    - Spell Routines.inc: macros/examples/spell-routines.inc.md
-    - Spell Skill Trainer: macros/examples/spell-skill-trainer.md
-    - Wait4Rez.inc: macros/examples/wait4rez.inc.md
+  - Macros Gallery:
+    - macros/gallery/README.md
+    - AAPurchase.inc: macros/gallery/aapurchase.inc.md
+    - Advanced Fishing: macros/gallery/advanced-fishing.md
+    - Afcleric.mac - nils: macros/gallery/afcleric.mac-nils.md
+    - AutoBot.mac: macros/gallery/autobot.mac.md
+    - AutoBot.mac-V4.28+: macros/gallery/autobot.mac-v4.28+.md
+    - Barter: macros/gallery/barter.md
+    - Cleric.mac - nytemyst: macros/gallery/cleric.mac-nytemyst.md
+    - Clockwork Grease Maker: macros/gallery/clockwork-grease-maker.md
+    - DRShmbot: macros/gallery/drshmbot.md
+    - Defense.inc: macros/gallery/defense.inc.md
+    - GemOpt.inc: macros/gallery/gemopt.inc.md
+    - GenBot: macros/gallery/genbot.md
+    - Group Language Trainer: macros/gallery/group-language-trainer.md
+    - Guild Buff Bot: macros/gallery/guild-buff-bot.md
+    - Loot Any Corpse: macros/gallery/loot-any-corpse.md
+    - ModBot: macros/gallery/modbot.md
+    - Modbot 4.0: macros/gallery/modbot-4.0.md
+    - Necro Helper: macros/gallery/necro-helper.md
+    - Ninjadvloot.inc: macros/gallery/ninjadvloot.inc.md
+    - Puller.inc: macros/gallery/puller.inc.md
+    - QuickBeg.inc: macros/gallery/quickbeg.inc.md
+    - RDCommon.ini: macros/gallery/rdcommon.ini.md
+    - Related Include Files: macros/gallery/related-include-files.md
+    - Rogue Helper: macros/gallery/rogue-helper.md
+    - Rogue Helper Command List: macros/gallery/rogue-helper-command-list.md
+    - Script Examples: macros/gallery/script-examples.md
+    - Sk.mac - nytemyst: macros/gallery/sk.mac-nytemyst.md
+    - Snare: macros/gallery/snare.md
+    - Spell Routines.inc: macros/gallery/spell-routines.inc.md
+    - Spell Skill Trainer: macros/gallery/spell-skill-trainer.md
+    - Wait4Rez.inc: macros/gallery/wait4rez.inc.md
 
 - Reference:
   - reference/README.md
@@ -263,8 +247,6 @@ nav:
     - CombatState: reference/general/combatstate.md
     - Containers List: reference/general/containers-list.md
     - List of spawn heights: reference/general/list-of-spawn-heights.md
-    - Multiboxing: reference/general/multiboxing.md
-    - NamingSpawn: documentation/namingspawn.md
     - SPA List: reference/general/spa-list.md
     - Skills List: reference/general/skills-list.md
     - Slot Names: reference/general/slot-names.md

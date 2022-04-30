@@ -25,19 +25,17 @@ _If you are not prepared for such circumstances, stop here and do not continue._
 
 * [Getting Started](main/README.md)
 * [Building MacroQuest](main/building.md)
-* [Macros/Snippets](documentation/macroquest-macros.md)
+* [Macros/Snippets](macros/getting-started.md)
 * [Plugins](plugins/README.md)
 
 ## Getting Help
 
 * [Discord](https://discord.gg/77C4Ke6HKg)
-* [MQ Compile Problems](documentation/help-compiling.md)
-* [MQ Macro/Snippet Problems](documentation/help-macros.md)
-* [MQ Plugin Problems](documentation/help-plugins.md)
+* [MQ Macro/Snippet Problems](macros/general-help.md)
+* [MQ Plugin Problems](plugins/general-help.md)
 
 ## References
 
 * [Macro Reference](macros/README.md)
-* [Hacker Stuff](reference/general/hacker-stuff.md)
-* [Text Editors and Syntax Files](other-applications/text-editors/)
-
+* [Hacker Stuff](main/hacker-stuff.md)
+* [Text Editors and Syntax Files](main/other-applications/text-editors/)

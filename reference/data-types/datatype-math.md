@@ -1,6 +1,6 @@
 # DataType:math
 
-This DataType performs various mathematical calculations. In the following members, _n_ is any formula that consists of valid [Operators](../../documentation/operators.md).
+This DataType performs various mathematical calculations. In the following members, _n_ is any formula that consists of valid [Operators](../../macros/operators.md).
 
 ## Members
 

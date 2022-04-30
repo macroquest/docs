@@ -39,7 +39,7 @@ MQ2 provides a few ways to control the execution of your macro.
 }
 ```
 
-The above example will only be matched if you're currently standing **and** you're not in combat **and** you're not casting. Any of the [Operators](operators.md) can be used to "fine-tune" the matching of any conditions. Also, brackets can be used to group certain sets of statements together.
+The above example will only be matched if you're currently standing **and** you're not in combat **and** you're not casting. Any of the [Operators](../macros/operators.md) can be used to "fine-tune" the matching of any conditions. Also, brackets can be used to group certain sets of statements together.
 
 ```text
 /if ( (${Me.Sitting} && !${Window[SpellBookWnd].Open}) || ${Me.Standing} ) /call Cast "Complete Healing" 10s

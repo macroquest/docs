@@ -1,6 +1,4 @@
-# Help Macros
-
-## General Macro Help
+# General Macro Help
 
 * First off, do you have the latest copy of your macro?
 

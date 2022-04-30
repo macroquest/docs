@@ -16,7 +16,7 @@ Sub Add(int A, int B)
 /return ${Sum}
 ```
 
-Return can also be used to exit out of a [subroutine](../../documentation/subroutines.md) early.
+Return can also be used to exit out of a [subroutine](../../macros/subroutines.md) early.
 
 ```text
 Sub Evade

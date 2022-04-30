@@ -4,7 +4,7 @@
 
 \#include filename
 
-This allows you to include the contents of another file (called a "snippet") within your macro, as though the contents were part of the calling macro. You can access the [Subroutines](../../documentation/subroutines.md) of the included file using /call, just as though they were a part of the original macro.
+This allows you to include the contents of another file (called a "snippet") within your macro, as though the contents were part of the calling macro. You can access the [Subroutines](../../macros/subroutines.md) of the included file using /call, just as though they were a part of the original macro.
 
 ## Use
 

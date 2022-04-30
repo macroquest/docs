@@ -2,7 +2,7 @@
 
 ## Basic Event Usage
 
-The Custom Event system allows you to trigger [Subroutines](../documentation/subroutines.md) off of any text that reaches the EQ client. Basically any text that is displayed in an EQ chat window, or in the MQ2 chat window can be used. You are able to use parts of the text as parameters for your event subroutine. An example of an \#event is below:
+The Custom Event system allows you to trigger [Subroutines](subroutines.md) off of any text that reaches the EQ client. Basically any text that is displayed in an EQ chat window, or in the MQ2 chat window can be used. You are able to use parts of the text as parameters for your event subroutine. An example of an \#event is below:
 
 ```text
 #event Invite           "BillyBob invites you to join a group."
@@ -30,7 +30,7 @@ This will keep running /doevents and when it senses the \#event trigger text, it
 
 ## Using part of the \#event text as a variable
 
-Now while the above example is pretty useful (eg. you can accept the invite in the Sub Event\_Invite), what if we want to accept invites from more than one person? We could create two separate events and have them each echo a different piece of text. Or we could use part of the event text as a variable and manipulate it in the [subroutine](../documentation/subroutines.md). You can do this by marking out the part of text you want to use as a variable. In the above example, we'll use the inviter's name:
+Now while the above example is pretty useful (eg. you can accept the invite in the Sub Event\_Invite), what if we want to accept invites from more than one person? We could create two separate events and have them each echo a different piece of text. Or we could use part of the event text as a variable and manipulate it in the [subroutine](subroutines.md). You can do this by marking out the part of text you want to use as a variable. In the above example, we'll use the inviter's name:
 
 ```text
  #event Invite           "#1# invites you to join a group."

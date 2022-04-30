@@ -6,7 +6,7 @@
 
 ## Description
 
-This command is used to add, delete, list or change custom key bindings. See also [/bind](../../../reference/commands/bind.md) and [/dumpbinds](../../../reference/commands/dumpbinds.md).
+This command is used to add, delete, list or change custom key bindings. See [/bind](../../../reference/commands/bind.md) and [/dumpbinds](../../../reference/commands/dumpbinds.md).
 
 |  |  |
 | :--- | :--- |

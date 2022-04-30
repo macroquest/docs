@@ -30,4 +30,4 @@ classDiagram
 
 The immediate datatype named _int_ and the Top Level Object named **Int** are not the same thing.
 
-A [Beginners Guide to TLOs and MQ2DataVars](../../documentation/beginners-guide-to-tlos-and-datavars.md) may be useful for understanding how TLOs work.
+A [Beginners Guide to TLOs and MQ2DataVars](../../macros/beginners-guide-datatypes.md) may be useful for understanding how TLOs work.

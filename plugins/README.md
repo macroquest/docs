@@ -257,11 +257,11 @@ See [/plugin](../reference/commands/plugin.md) for information on loading and un
 
 ## Troubleshooting
 
-See Help:Plugins for troubleshooting plugin problems.
+See [General Help](./general-help.md) for troubleshooting plugin problems.
 
 ## Writing Your Own Plugins
 
-See [Extending MacroQuest](../main/extending.md) for further information.
+See [Developing Plugins](./developing/) for further information.
 
 ### Unloading a plugin from within a plugin
 

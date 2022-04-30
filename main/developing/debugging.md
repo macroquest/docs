@@ -1,5 +1,9 @@
 # Crash To Desktop
 
+!!! warning
+
+    this information is obsolete and needs to be revised!
+
 ## Necessary Information
 
 1. We need to know the actual error. The address, the address that was probably trying to be read, etc. Copy and paste from the debugger.
