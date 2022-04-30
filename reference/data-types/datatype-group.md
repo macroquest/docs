@@ -11,8 +11,9 @@ Contains details about your group
 | [_string_](datatype-string.md) | **Cleric** | Will now return the cleric as a spawntype if a cleric is in the group (not a mercenary but a REAL cleric) |
 | [_int_](datatype-int.md) | **GroupSize** | Number of members in your group, including yourself |
 | [_int_](datatype-int.md) | **HealerMercCount** | count of how many Healer mercenaries are in your group |
-| [_int_](datatype-int.md) | **Injured[**XX**]** | Will return the numbers of people in the group that has a hp percent lower than 90 |
+| [_int_](datatype-int.md) | **Injured[**##**]** | Will return the numbers of people in the group that has a hp percent lower than ## |
 | [_groupmember_](datatype-groupmember.md) | **Leader** | Data on the leader of the group |
+| [_int_](datatype-int.md) | **LowMana[**##**]** | Will return the number of people in the group that have a mana percent lower than ## |
 | [_groupmember_](datatype-groupmember.md) | **MainAssist** | Data on the main assist of the group |
 | [_groupmember_](datatype-groupmember.md) | **MainTank** | Data on the main tank of the group |
 | [_groupmember_](datatype-groupmember.md) | **MarkNpc** | Data on the group member who can mark NPCs, if one is assigned |
