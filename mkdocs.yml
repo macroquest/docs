@@ -19,19 +19,24 @@ nav:
   - README.md
 
   - Getting Started: main/README.md
-  - Building MacroQuest: main/building.md
-
-  - Developing MacroQuest:
-    - main/developing/README.md
-    - Debugging: main/developing/debugging.md
-
-  - MacroQuest Launcher: main/macroquest-launcher.md
+  - Building MacroQuest:
+    - main/building.md
+    - Plugin Submodule Quick List: main/submodule-quick-list.md
 
   - Features:
+    - Anonymize: main/features/anonymize.md
     - CFG Files: main/features/cfg-files.md
     - Configuration: main/macroquest.ini.md
     - Custom UIs: main/features/custom-uis.md
     - NamingSpawn: main/features/namingspawn.md
+
+  - MacroQuest Launcher: main/macroquest-launcher.md
+
+  - Developing MacroQuest:
+    - main/developing/README.md
+    - Debugging: main/developing/debugging.md
+    - Using Vcpkg: main/developing/vcpkg.md
+    - Buff Predicates: main/developing/buff-predicates.md
 
   - About the Project:
     - Cheat Classifications: main/cheat-classifications.md
@@ -237,6 +242,11 @@ nav:
     - Spell Routines.inc: macros/gallery/spell-routines.inc.md
     - Spell Skill Trainer: macros/gallery/spell-skill-trainer.md
     - Wait4Rez.inc: macros/gallery/wait4rez.inc.md
+
+- Lua:
+  - lua/README.md
+  - LuaRocks Modules: lua/luarocks-modules.md
+  - Lua Events and Binds: lua/events-and-binds.md
 
 - Reference:
   - reference/README.md
