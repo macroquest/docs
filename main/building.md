@@ -57,16 +57,16 @@ At this point, the source should be ready to compile. Proceed to Build Steps.
 
 ### Build Steps
 
-1. Open the `MacroQuest.sln` file in the `src` directory. Double clicking this file should open Visual Studio 2019.
+1. Open the `MacroQuest.sln` file in the `src` directory. Double clicking this file should open Visual Studio.
 2. Select the `Release` and `(x64)`configuration from the drop-down menu near the top of the window.
 3. Since the project moved to 64-bit, ensure all project configurations are set to `(x64)` in the **Solution Macroquest** Property Pages. From the Visual Studio main menu, select **Build** then **Configuration Manager** then ensure the Platform column for each project is set to `(x64)`.
-4. Select `Build -> Build Solution` from the menu
+4. Select `Build -> Build Solution` from the menu.
 
 The built files will be placed in `build/bin/Release`. To start MacroQuest, run `MacroQuest.exe`. This will launch the application to the tray, and install MacroQuest into any running EverQuest processes.
 
 ### Adding Your Own Plugins
 
-Note: If you have any custom plugins you want to build, put the sources for them in the `plugins` folder, for example: `plugins/MQ2Foo/MQ2Foo.cpp` Do not put them in `src/plugins` this path is reserved for the MacroQuest developers.
+Note: If you have any custom plugins you want to build, put the sources for them in the `plugins` folder, for example: `plugins/MQ2Foo/MQ2Foo.cpp` Do not put them in `src/plugins`, this path is reserved for the MacroQuest developers.
 
 To add any personal plugins to the solution:
 
