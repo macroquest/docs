@@ -10,12 +10,12 @@ Welcome to the MacroQuest Documentation.
 
 MacroQuest, also known as MQ, or most recently MQNext, is the next generation in development of the platform for the customization and automation of [EverQuest](http://www.everquest.com).  MacroQuest is, and has always been, open source software.
 
-MacroQuest is as useful as you wish to make it. You can utilize it just for the capabilities of the map and other plugins, or you can further enhance EverQuest through the use of macros or designing your own plugin.
+MacroQuest is as useful as you wish to make it. You can utilize it just for the capabilities of the map and other plugins, or you can further enhance EverQuest through the use of lua scripts, macros, or designing your own plugin.
 
 However, there are some issues you need to understand:
 
 * First and foremost, the use of MacroQuest is a violation of the EULA of EverQuest.
-* This means that if you do not use MacroQuest sensibly, you risk your character being suspended for a period of time, or in extreme cases, having your character permanently banned.
+* This means that if you use MacroQuest, you risk your account being suspended for a period of time, or in extreme cases, having your account(s) permanently banned.
 
 _If you are not prepared for such circumstances, stop here and do not continue._
 
