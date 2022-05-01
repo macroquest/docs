@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8823,7 +8839,7 @@
 <p>Picking up an item from pack 10 first slot in that pack:</p>
 <div class="highlight"><pre><span></span><code>/itemnotify in pack${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot}-22].Int} ${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot2} + 1].Int} leftmouseup
 </code></pre></div>
-<p>Why not just /itemnotify in ${Me.Inventory[32].Item[1].ItemSlot} ${Me.Inventory[32].Item[1].ItemSlot2} you may ask...</p>
+<p>Why not just /itemnotify in ${Me.Inventory[32].Item<script type="math/tex; mode=display">1</script>.ItemSlot} ${Me.Inventory<script type="math/tex; mode=display">32</script>.Item[1].ItemSlot2} you may ask...</p>
 <p>well, we didn't have .ItemSlot and .ItemSlot2 until recently, so /itemnotify works with the old pack system that starts at slot 1 not 0</p>
 <p>I can't change it to use real slotnumbers because then it will break a lot of old macros. So use the above calculation.</p>
 <p>-eqmule</p>
@@ -8841,7 +8857,7 @@
 +----+----+
 </code></pre></div>
 <p>.ItemSlot2 is a "sub" slot, example if .ItemSlot is 23 (a container like a Backpack for example) and your item is inside that container this will return what slot INSIDE that container it’s in... complicated? Not really.</p>
-<p>Picking up an item from pack 10 first slot in that pack: /itemnotify in pack<span Me.Inventory_91_32_93_.Item_91_1_93_.ItemSlot="Me.Inventory[32].Item[1].ItemSlot" class="arithmatex">\({Math.Calc[\)</span>-22].Int} <span Me.Inventory_91_32_93_.Item_91_1_93_.ItemSlot2="Me.Inventory[32].Item[1].ItemSlot2" class="arithmatex">\({Math.Calc\[\)</span> + 1].Int} leftmouseup</p>
+<p>Picking up an item from pack 10 first slot in that pack: /itemnotify in pack<span class="arithmatex">\({Math.Calc[\)</span>{Me.Inventory<script type="math/tex; mode=display">32</script>.Item<script type="math/tex; mode=display">1</script>.ItemSlot}-22].Int} <span class="arithmatex">\({Math.Calc\[\)</span>{Me.Inventory<script type="math/tex; mode=display">32</script>.Item<script type="math/tex; mode=display">1</script>.ItemSlot2} + 1].Int} leftmouseup</p>
 <p>Or say you want an Iron Ration, which is in bag 1 in slot 8 Doing /echo ${FindItem[=Iron Ration].ItemSlot} will return 23</p>
 <p>Doing /echo ${FindItem[=Iron Ration].ItemSlot2} will return 7 (slots start at 0 so this is in fact correct)</p>
 <p>For the above example, you would be using this:</p>
@@ -10236,6 +10252,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

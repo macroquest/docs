@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8654,11 +8670,22 @@
 <p>This plugin allows you to record and playback player movement.</p>
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
 <ul>
-<li>/afollow [on|off] [nodoor|*door]</li>
-<li>/afollow [pause|unpause]</li>
-<li>/afollow spawn # [nodoor|*door]</li>
-<li>/afollow [nodoor|*door]</li>
-<li>/play [PathName|off] [reverse|*normal] [loop|*noloop] [smart] [pause|*unpause] [nodoor|*door]</li>
+<li>/afollow <script type="math/tex; mode=display">on\|off</script>
+<script type="math/tex; mode=display">nodoor\|\*door</script>
+</li>
+<li>/afollow <script type="math/tex; mode=display">pause\|unpause</script>
+</li>
+<li>/afollow spawn # <script type="math/tex; mode=display">nodoor\|\*door</script>
+</li>
+<li>/afollow <script type="math/tex; mode=display">nodoor\|\*door</script>
+</li>
+<li>/play <script type="math/tex; mode=display">PathName\|off</script>
+<script type="math/tex; mode=display">reverse\|\*normal</script>
+<script type="math/tex; mode=display">loop\|\*noloop</script>
+<script type="math/tex; mode=display">smart</script>
+<script type="math/tex; mode=display">pause\|\*unpause</script>
+<script type="math/tex; mode=display">nodoor\|\*door</script>
+</li>
 <li>/record </li>
 <li>/record save </li>
 <li>/record checkpoint </li>
@@ -8669,9 +8696,9 @@
 <li>${AdvPath.State} // FollowState, 0 = off, 1 = Following, 2 = Playing, 3 = Recording</li>
 <li>${AdvPath.Waypoints} // Total Number of Waypoints</li>
 <li>${AdvPath.NextWaypoint} // Number of NextWaypoint</li>
-<li>${AdvPath.Y[Check Point Name OR Waypoint number]} LOC</li>
-<li>${AdvPath.X[Check Point Name OR Waypoint number]} LOC</li>
-<li>${AdvPath.Z[Check Point Name OR Waypoint number]} LOC</li>
+<li>${AdvPath.Y<script type="math/tex; mode=display">Check Point Name OR Waypoint number</script>} LOC</li>
+<li>${AdvPath.X<script type="math/tex; mode=display">Check Point Name OR Waypoint number</script>} LOC</li>
+<li>${AdvPath.Z<script type="math/tex; mode=display">Check Point Name OR Waypoint number</script>} LOC</li>
 <li>${AdvPath.Monitor} // Spawn your following</li>
 <li>${AdvPath.Idle} // Idel time when following and not moving</li>
 <li>${AdvPath.Length} // Estimated length off the follow path</li>
@@ -8755,6 +8782,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

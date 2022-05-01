@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8788,17 +8804,17 @@ MQ2NetHeal has three sections. NetHeal,NetCure, and NetWorst.<br />
 <p>off ]**</p>
 <p>Turns MQ2NetHeal functionality on or off</p>
 <ul>
-<li><strong>/netheal [ grab=</strong><em><strong>on</strong></em><strong>|</strong><em><strong>off</strong></em> <strong>]</strong></li>
+<li><strong>/netheal <script type="math/tex; mode=display"> grab=**_**on**_**\|**_**off**_ **</script></strong></li>
 </ul>
 <p>Receive status updates from other MQ2NetHeal-enabled clients connected to the same EQBCS server.</p>
 <ul>
-<li><strong>/netheal [ send=</strong><em><strong>on</strong></em><strong>|</strong><em><strong>off</strong></em> <strong>]</strong></li>
+<li><strong>/netheal <script type="math/tex; mode=display"> send=**_**on**_**\|**_**off**_ **</script></strong></li>
 </ul>
 <p>Broadcast status updates to the EQBCS server.</p>
 <ul>
-<li><em>*/netheal [</em> hot_|_da*&lt;/span&gt; ] [</li>
+<li>_*/netheal <script type="math/tex; mode=display">_ hot\_\|\_da\*&lt;/span&gt; </script> [</li>
 </ul>
-<p>Time ] [ List ]**</p>
+<p>Time ] <script type="math/tex; mode=display"> List </script>**</p>
 <p>Labels List with 'hot' or 'da' flag for set amount of time. <span class="arithmatex">\(Time is in milliseconds.\)</span></p>
 <p>Recommended use :: ${Target.CleanName} for single target, Or ${NetWorst.Members} for NetWorst Query.</p>
 <p>This is here for Macro control.</p>
@@ -8809,15 +8825,15 @@ MQ2NetHeal has three sections. NetHeal,NetCure, and NetWorst.<br />
 <p>off ]**</p>
 <p>Toggles watching networks for afflictions</p>
 <ul>
-<li><strong>/netcure [ audio=</strong><em><strong>on</strong></em><strong>|</strong><em><strong>off</strong></em> <strong>]</strong></li>
+<li><strong>/netcure <script type="math/tex; mode=display"> audio=**_**on**_**\|**_**off**_ **</script></strong></li>
 </ul>
 <p>Toggles playing audio sound.</p>
 <ul>
-<li><strong>/netcure [ popup=</strong><em><strong>on</strong></em><strong>|</strong><em><strong>off</strong></em> <strong>]</strong></li>
+<li><strong>/netcure <script type="math/tex; mode=display"> popup=**_**on**_**\|**_**off**_ **</script></strong></li>
 </ul>
 <p>Toggles popup alerts.</p>
 <ul>
-<li><strong>/netcure [ quiet=</strong><em><strong>on</strong></em><strong>|</strong><em><strong>off</strong></em> <strong>]</strong></li>
+<li><strong>/netcure <script type="math/tex; mode=display"> quiet=**_**on**_**\|**_**off**_ **</script></strong></li>
 </ul>
 <p>Toggles sending reports to MQ2 Window.</p>
 <h3 id="networst">/networst<a class="headerlink" href="#networst" title="Permanent link">&para;</a></h3>
@@ -8827,24 +8843,26 @@ MQ2NetHeal has three sections. NetHeal,NetCure, and NetWorst.<br />
 <p>off ]**</p>
 <p>Toggles watching for spawns health.</p>
 <ul>
-<li><strong>/networst [ audio=</strong><em><strong>on</strong></em><strong>|</strong><em><strong>off</strong></em> <strong>]</strong></li>
+<li><strong>/networst <script type="math/tex; mode=display"> audio=**_**on**_**\|**_**off**_ **</script></strong></li>
 </ul>
 <p>Toggles playing audio sound.</p>
 <ul>
-<li><strong>/networst [ popup=</strong><em><strong>on</strong></em><strong>|</strong><em><strong>off</strong></em> <strong>]</strong></li>
+<li><strong>/networst <script type="math/tex; mode=display"> popup=**_**on**_**\|**_**off**_ **</script></strong></li>
 </ul>
 <p>Toggles popup alerts.</p>
 <ul>
-<li><strong>/networst [ quiet=</strong><em><strong>on</strong></em><strong>|</strong><em><strong>off</strong></em> <strong>]</strong></li>
+<li><strong>/networst <script type="math/tex; mode=display"> quiet=**_**on**_**\|**_**off**_ **</script></strong></li>
 </ul>
 <p>Toggles sending reports to MQ2 Window.</p>
 <h3 id="worst">/worst<a class="headerlink" href="#worst" title="Permanent link">&para;</a></h3>
 <ul>
-<li>'''/worsttarget [ Query ]</li>
+<li>'''/worsttarget <script type="math/tex; mode=display"> Query </script>
+</li>
 </ul>
 <p>Targets the spawn that matchs Query.</p>
 <ul>
-<li>'''/worstcycle [ Query ]</li>
+<li>'''/worstcycle <script type="math/tex; mode=display"> Query </script>
+</li>
 </ul>
 <p>Cycles to the next spawn that matchs Query</p>
 <p>Valid Query Parameters ::</p>
@@ -8853,162 +8871,162 @@ MQ2NetHeal has three sections. NetHeal,NetCure, and NetWorst.<br />
 <h2 id="top-level-objects">Top-Level Objects<a class="headerlink" href="#top-level-objects" title="Permanent link">&para;</a></h2>
 <h3 id="netheal_1">${NetHeal}<a class="headerlink" href="#netheal_1" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>All NetHeal TLOs can be used like : ${NetHeal[X].Name} Or ${NetHeal.Name[Y]}.</strong></li>
+<li><strong>All NetHeal TLOs can be used like : ${NetHeal<script type="math/tex; mode=display">X</script>.Name} Or ${NetHeal.Name<script type="math/tex; mode=display">Y</script>}.</strong></li>
 </ul>
 <p>Where X could be Name/ID or Y is a Numerical Indice on Last ${NetWorst.Request}.</p>
 <ul>
-<li><a href=""><em>string</em></a> '''${NetHeal[X].Name}</li>
+<li><a href=""><em>string</em></a> '''${NetHeal<script type="math/tex; mode=display">X</script>.Name}</li>
 </ul>
 <p>Returns Name.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal[X].ID}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.ID}</strong></li>
 </ul>
 <p>Return SpawnID.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-float/"><em>float</em></a> <strong>${NetHeal[X].Distance}</strong></li>
+<li><a href="../../../reference/data-types/datatype-float/"><em>float</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.Distance}</strong></li>
 </ul>
 <p>Return Distance.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal[X].PctHPs}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.PctHPs}</strong></li>
 </ul>
 <p>Return PctHPs.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${NetHeal[X].Pet}</strong></li>
+<li><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.Pet}</strong></li>
 </ul>
 <p>Return This is a Pet?</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal[X].Class}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.Class}</strong></li>
 </ul>
 <p>Return Class.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${NetHeal[X].Feign}</strong></li>
+<li><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.Feign}</strong></li>
 </ul>
 <p>Returns TRUE if X or Y is a NEC,SHD,MNK Class.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${NetHeal[X].Canni}</strong></li>
+<li><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.Canni}</strong></li>
 </ul>
 <p>Returns TRUE if X or Y is a Cannibalize Class.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal[X].Spawn}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.Spawn}</strong></li>
 </ul>
 <p>Return Spawn.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal[X].da}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.da}</strong></li>
 </ul>
 <p>Return da timer left.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal[X].hot}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.hot}</strong></li>
 </ul>
 <p>Return hot timer left.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal[X].ttl}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.ttl}</strong></li>
 </ul>
 <p>Return 60000. -Currently Broken July 13<sup>th</sup>, 2009</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal[X].Updated}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetHeal<script type="math/tex; mode=display">X</script>.Updated}</strong></li>
 </ul>
 <p>Return how old is This?</p>
 <h3 id="netcure_1">${NetCure}<a class="headerlink" href="#netcure_1" title="Permanent link">&para;</a></h3>
 <ul>
 <li><strong>Correct parameters are.</strong></li>
 <li><strong>self,myself,pet,warder,spellid,spellidlist,${NetBots[].Buff}</strong>  </li>
-<li><a href=""><em>string</em></a> <strong>${NetCure[X]}</strong></li>
+<li><a href=""><em>string</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>}</strong></li>
 </ul>
 <p>Return list of harmfull effects.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Detrimentals}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Detrimentals}</strong></li>
 </ul>
 <p>Return # of Detrimental Spells.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Counters}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Counters}</strong></li>
 </ul>
 <p>Return # of Counters.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Cursed}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Cursed}</strong></li>
 </ul>
 <p>Return # of Curse Counters.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Diseased}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Diseased}</strong></li>
 </ul>
 <p>Return # of Disease Counters.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Poisoned}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Poisoned}</strong></li>
 </ul>
 <p>Return # of Poison Counters.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].EnduDrain}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.EnduDrain}</strong></li>
 </ul>
 <p>Return # of Endurance Drain Per Tick.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].LifeDrain}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.LifeDrain}</strong></li>
 </ul>
 <p>Return # of Life Drain Per Tick.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].ManaDrain}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.ManaDrain}</strong></li>
 </ul>
 <p>Return # of Mana Drain Per Tick</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Blinded}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Blinded}</strong></li>
 </ul>
 <p>Return # Blind Spells.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].CastingLevel}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.CastingLevel}</strong></li>
 </ul>
 <p>Return # Reducing Casting Level.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Charmed}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Charmed}</strong></li>
 </ul>
 <p>Return # Charm Spells.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Feared}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Feared}</strong></li>
 </ul>
 <p>Return # Fear Spells.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Healing}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Healing}</strong></li>
 </ul>
 <p>Return # Reducing Healing Effectiveness.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Invulnerable}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Invulnerable}</strong></li>
 </ul>
 <p>Return # Invulnerability Spells</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Mesmerized}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Mesmerized}</strong></li>
 </ul>
 <p>Return # Memsmerize Spells.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Resistance}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Resistance}</strong></li>
 </ul>
 <p>Return # Resist Debuff Spells.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Rooted}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Rooted}</strong></li>
 </ul>
 <p>Return # Root Spells.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> '''${NetCure[X].Silenced)</li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> '''${NetCure<script type="math/tex; mode=display">X</script>.Silenced)</li>
 </ul>
 <p>Return # Silence Spells.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Slowed}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Slowed}</strong></li>
 </ul>
 <p>Return # Slow Spells.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Snared}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Snared}</strong></li>
 </ul>
 <p>Return # Snare Spells.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].SpellCost}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.SpellCost}</strong></li>
 </ul>
 <p>Return # Affecting Spell Mana Cost.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].SpellSlowed}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.SpellSlowed}</strong></li>
 </ul>
 <p>Return # Slowing Casting Speed.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].SpellDamage}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.SpellDamage}</strong></li>
 </ul>
 <p>Return # Reducing Spell Damage.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure[X].Trigger}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetCure<script type="math/tex; mode=display">X</script>.Trigger}</strong></li>
 </ul>
 <p>Return # That Trigger Something.</p>
 <h3 id="networst_1">${NetWorst}<a class="headerlink" href="#networst_1" title="Permanent link">&para;</a></h3>
@@ -9029,7 +9047,7 @@ MQ2NetHeal has three sections. NetHeal,NetCure, and NetWorst.<br />
 </ul>
 <p>Return People SpawnID List of Last Query.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetWorst.Request[X]}</strong></li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${NetWorst.Request<script type="math/tex; mode=display">X</script>}</strong></li>
 </ul>
 <p>Return # of People Matching That Query.</p>
 <p><strong>Valid Query Parameters</strong> ::</p>
@@ -9108,6 +9126,10 @@ MQ2NetHeal has three sections. NetHeal,NetCure, and NetWorst.<br />
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

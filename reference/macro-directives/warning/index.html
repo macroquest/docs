@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8642,7 +8658,7 @@
 <p>AGAIN: IMPORTANT: Undeclared variables will slow down macro performance a LOT if they are used over and over, so, fix your macros.</p>
 <h2 id="use">Use<a class="headerlink" href="#use" title="Permanent link">&para;</a></h2>
 <p>With #warning added to your macro, the macro will be issue a warning (either in the MQ window or chat window) when it run in to an undefined, and pause. The warning will list the macro line number and line language, so you can go in a fix the macro.</p>
-<p>A lot of times this is a matter of using [[TLO:Defined|${Defined[]}]]</p>
+<p>A lot of times this is a matter of using [<script type="math/tex; mode=display">TLO:Defined\|${Defined\[</script>}]]</p>
 <p>As in ${blah} only gets defined in a specific situation... as such the old way of just</p>
 <p><code>/if (${blah}) /dosomething</code></p>
 <p>will cause a lot of extra CPU usage. Using #warning will pause the macro and tell you where the problem is, so you can either change the macro to avoid the problem, or simply:</p>
@@ -8723,6 +8739,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

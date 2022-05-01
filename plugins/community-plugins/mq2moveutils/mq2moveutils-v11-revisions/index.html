@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -9304,7 +9320,7 @@
 <h4 id="stable-v140416">Stable - v14.0416<a class="headerlink" href="#stable-v140416" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Added Circle Strafe Ability <span class="arithmatex">\(Cr4zyb4rd\)</span></li>
-<li>/stick [strafe [left|right|flip|random]]<ul>
+<li>/stick <script type="math/tex; mode=display">strafe \[left\|right\|flip\|random</script>]<ul>
 <li>Continuously strafes in one direction regardless of distance to target with no target-of-target check.</li>
 <li>left|right - direction to strafe</li>
 <li>flip - strafes in opposite direction of last strafe command</li>
@@ -9332,7 +9348,7 @@
 <li>between 2.0 and 20.0</li>
 </ul>
 </li>
-<li>Saves to INI under [Stick] as UseFlex=on/off and DistFlex=#.#</li>
+<li>Saves to INI under <script type="math/tex; mode=display">Stick</script> as UseFlex=on/off and DistFlex=#.#</li>
 <li>inline as /stick whatever useflex flexdist #.#</li>
 </ul>
 <h4 id="stable-v110323">Stable - v11.0323<a class="headerlink" href="#stable-v110323" title="Permanent link">&para;</a></h4>
@@ -9350,7 +9366,7 @@
 <li>Added BreakOnHit option to Stick <span class="arithmatex">\(thank dkaa\)</span></li>
 <li>/stick set breakonhit on \&lt;---perm</li>
 <li>/stick 12 breakonhit \&lt;---inline</li>
-<li>saves to ini under [Stick] as BreakOnHit=on</li>
+<li>saves to ini under <script type="math/tex; mode=display">Stick</script> as BreakOnHit=on</li>
 <li>new TLO for this ${Stick.Broken}, which resets upon zone / next stick command usage</li>
 </ul>
 <h4 id="stable-v110101">Stable - v11.0101<a class="headerlink" href="#stable-v110101" title="Permanent link">&para;</a></h4>
@@ -9400,7 +9416,7 @@ NOT
 <li>The old style of movement has been reintroduced for WinEQ users i.e. those of you with problems of mouselook or</li>
 </ul>
 <p>strafe keys being left on when you alt-tab to switch sessions. You may switch over by using: /stick set wineq on</p>
-<p>This saves to the ini under [Defaults] as WinEQ=on/off</p>
+<p>This saves to the ini under <script type="math/tex; mode=display">Defaults</script> as WinEQ=on/off</p>
 <ul>
 <li>The true movement ability no longer makes the plugin offset-dependent. In the event the offset pattern changes and</li>
 </ul>
@@ -9417,7 +9433,7 @@ NOT
 /stick set heading loose
 /stick set heading fast
 </code></pre></div>
-<p>saves to the ini under [Defaults] Heading and character-specific section</p>
+<p>saves to the ini under <script type="math/tex; mode=display">Defaults</script> Heading and character-specific section</p>
 <ul>
 <li>All commands now reset to INI <span class="arithmatex">\(user, not plugin\)</span> defaults after each use.</li>
 <li>The INI no longer reloads every time you zone. It will only unload and reload defaults if you use the 'load'</li>
@@ -9506,19 +9522,19 @@ NOT
 <ul>
 <li>Added BreakOnTarget option to '/stick', which will break from the current stick if your target changes. /stick set</li>
 </ul>
-<p>breakontarget on, saves to the INI under [Stick] BreakOnTarget=on/off</p>
+<p>breakontarget on, saves to the INI under <script type="math/tex; mode=display">Stick</script> BreakOnTarget=on/off</p>
 <ul>
 <li>Added AlwaysUW options to both stick and moveto <span class="arithmatex">\(individually\)</span>. the current AutoUW option turns on underwater</li>
 </ul>
 <p>adjustments automatically only when you are underwater <span class="arithmatex">\(as intended\)</span>. The new 'alwaysuw' setting will instead always</p>
 <p>perform the stick or moveto as if you had typed 'uw' inline somewhere. /stick set alwaysuw on, /moveto set alwaysuw</p>
-<p>on, saves to the INI under [Stick] AlwaysUW=on/off &amp;&amp; [MoveTo] AlwaysUW=on/off</p>
+<p>on, saves to the INI under <script type="math/tex; mode=display">Stick</script> AlwaysUW=on/off &amp;&amp; <script type="math/tex; mode=display">MoveTo</script> AlwaysUW=on/off</p>
 <ul>
 <li>Added 'strafewalk' option to stick. This turns on walking when you are close to the target and using a strafe-based</li>
 </ul>
 <p>stick parameter. For characters with ridiculously high run speed this will help you position more accurately and</p>
 <p>should assist background sessions with moving slower and not overshooting the destination. /stick set strafewalk on,</p>
-<p>ini [Stick] UseWalk=on/off</p>
+<p>ini <script type="math/tex; mode=display">Stick</script> UseWalk=on/off</p>
 <ul>
 <li>Added 'usefleeing' option to stick for 'stick front'. If the target is fleeing <span class="arithmatex">\(same check as the TLO\)</span> and under 25%</li>
 </ul>
@@ -9527,7 +9543,7 @@ NOT
 <li>Added 'useback' to moveto. Just like with stick, if you are close to the moveto destination (which also includes</li>
 </ul>
 <p>camp returns), this will walk backwards to the destination rather than turning, facing the destination, walking</p>
-<p>there, and turning again. /moveto set useback on, ini: [MoveTo] UseBack=on/off</p>
+<p>there, and turning again. /moveto set useback on, ini: <script type="math/tex; mode=display">MoveTo</script> UseBack=on/off</p>
 <ul>
 <li>Set the distance same way as stick <span class="arithmatex">\(though unlike stick, you probably want a larger value here\)</span> /moveto set</li>
 </ul>
@@ -9669,21 +9685,22 @@ Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 <p>a z parameter that your character cannot reach, you will rotate in place above or below the unreachable z point</p>
 <p>endlessly. Bottom line: use sanity checking on your z locations if you opt to use this. Don't guesstimate.</p>
 <ul>
-<li>BehindArc can now be set by the user. /stick set behindarc #, saves to the INI under [Stick] "BehindArc" and the</li>
+<li>BehindArc can now be set by the user. /stick set behindarc #, saves to the INI under <script type="math/tex; mode=display">Stick</script> "BehindArc" and the</li>
 </ul>
-<p>[CharName] sections.</p>
+<p>
+<script type="math/tex; mode=display">CharName</script> sections.</p>
 <ul>
 <li>Snaproll distance can now be set by the user. This is the distance behind (or in front/side if you are using custom</li>
 </ul>
 <p>position) the target where the snap location is plotted. For reference, the default has been 10.0. If you frequently</p>
 <p>snaproll behind targets near walls and other tight objects with a large snapdist set you may run into problems.</p>
 <p>Usage:</p>
-<p>/stick set snapdist #, saves to the INI under [Stick] "SnaprollDist" and the [CharName] sections.</p>
+<p>/stick set snapdist #, saves to the INI under <script type="math/tex; mode=display">Stick</script> "SnaprollDist" and the <script type="math/tex; mode=display">CharName</script> sections.</p>
 <ul>
 <li>New feature 'pauseonwarp'. Instead of breaking from stick like BreakOnWarp currently does, pauseonwarp will stop</li>
 </ul>
 <p>movement and pause until the target is once again within BreakDist range. Pause or Break, not both at the same time.</p>
-<p>saves to INI under [Stick] "PauseOnWarp" and command /stick toggle pauseonwarp.</p>
+<p>saves to INI under <script type="math/tex; mode=display">Stick</script> "PauseOnWarp" and command /stick toggle pauseonwarp.</p>
 <ul>
 <li>Tightened up breakonsummon formula to work more efficiently</li>
 <li>BreakSummonDist can now be set in game, not just via INI: /stick set summondist #</li>
@@ -9695,7 +9712,7 @@ Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 <p>with this as it may need more testing <span class="arithmatex">\(thanks LrdDread\)</span></p>
 <ul>
 <li>/stick id #, with self targeted, will work as intended <span class="arithmatex">\(thanks dkaa\)</span></li>
-<li>/stick hold, followed by /stick [without hold] will no longer reset incorrectly. if you were previously using</li>
+<li>/stick hold, followed by /stick <script type="math/tex; mode=display">without hold</script> will no longer reset incorrectly. if you were previously using</li>
 </ul>
 <p>/stick hold and then issuing a second /stick to make changes to active stick parameters while keeping the hold going</p>
 <p>this will no longer work.</p>
@@ -9736,7 +9753,7 @@ Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 <p>underwater. This will affect <em>moveto</em> and <em>stick</em> commands when active and the plugin detects you are underwater and</p>
 <p>you have a target. <strong>This is enabled by default.</strong> If you frequently use <em>/moveto</em> or <em>/makecamp</em> while underwater</p>
 <p>and having a target unrelated to your destination, you may want to disable this option. Usage:</p>
-<p><em>/stick toggle autouw</em> Saves to the INI as AutoUW under [Defaults] and [server.char] sections.</p>
+<p><em>/stick toggle autouw</em> Saves to the INI as AutoUW under <script type="math/tex; mode=display">Defaults</script> and <script type="math/tex; mode=display">server.char</script> sections.</p>
 <ul>
 <li>The <em>/moveto loc</em> command now accepts an optional Z axis. If you use <em>/moveto loc Y X</em> as before, it will behave as</li>
 </ul>
@@ -9746,7 +9763,7 @@ Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 </ul>
 <p>currently use a small arrivaldist you may need to increase the size if when arriving at the moveto destination your</p>
 <p>character keeps attempting to reposition themselves. This only applies to <em>/moveto id</em> or if the Z axis is supplied</p>
-<p>in the <em>/moveto loc Y X [z]</em> format. This will not affect precisey, precisex, or camp returns.</p>
+<p>in the <em>/moveto loc Y X <script type="math/tex; mode=display">z</script></em> format. This will not affect precisey, precisex, or camp returns.</p>
 <ul>
 <li>Moveto now accepts the <em>uw</em> and <em>underwater</em> parameters, which will adjust your face angle based on the height and</li>
 </ul>
@@ -9756,7 +9773,7 @@ Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 <li>Loose/True heading anti-orbit angle value is now able to be configured by the user. It still defaults to 32.0f, so</li>
 </ul>
 <p>if everything works fine for you there is no need to change it. You may adjust the value with:</p>
-<p><em>/stick set allowmove #</em> <span class="arithmatex">\(e.g. /stick set allowmove 64.0 \)</span> Saves to the INI as AllowMove under [Defaults] and [server.char] sections.</p>
+<p><em>/stick set allowmove #</em> <span class="arithmatex">\(e.g. /stick set allowmove 64.0 \)</span> Saves to the INI as AllowMove under <script type="math/tex; mode=display">Defaults</script> and <script type="math/tex; mode=display">server.char</script> sections.</p>
 <ul>
 <li>TurnRate cap has been increased from 24.0 to 100.0, though I wouldn't suggest going that high.</li>
 <li>the <em>pause</em> parameter, and kb/mouse break/pause will now halt heading adjustments for loose/true heading (previously</li>
@@ -9791,23 +9808,23 @@ Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 <p>loose heading because you want fast heading, you will now also need to disable true heading. When enabled (again, it</p>
 <p>is on by default) it will apply to stick and moveto both, not separately like loose heading works.</p>
 <p>Ways to use this:</p>
-<p><em>/stick ____ truehead _- usable inline with any other parameters</em> /stick toggle truehead <em>- toggle truehead for current command in process</em> /stick toggle alwaystruehead <em>- toggle using it always Saves to INI as TrueHeading under [Defaults]. This also saves to the character-specific setting if _savebychar</em> is turned on.</p>
+<p><em>/stick ____ truehead _- usable inline with any other parameters</em> /stick toggle truehead <em>- toggle truehead for current command in process</em> /stick toggle alwaystruehead <em>- toggle using it always Saves to INI as TrueHeading under <script type="math/tex; mode=display">Defaults</script>. This also saves to the character-specific setting if _savebychar</em> is turned on.</p>
 <ul>
 <li>Added an optional strafe delay timer to prevent instant strafing when mobs turn for a short period of time such as</li>
 </ul>
 <p>quick spells, or gaining aggro without HoTT. Consider this, properly configured, a replacement to the old <em>nohott</em></p>
 <p>and a fix to an issue reported by LrdDread.</p>
 <p>Ways to use this:</p>
-<p><em>/stick toggle delaystrafe</em> - turns the delay for strafe-based movement <span class="arithmatex">\(pin, !front, front, behind\)</span> on or off <em>/stick set strafemindelay #</em> - sets the minimum amount of time you wish to delay before strafing <span class="arithmatex">\(in miliseconds\)</span>. The default is 1500 <span class="arithmatex">\(1.5 seconds\)</span>. <em>/stick set strafemaxdelay #</em> - sets the maximum amount of time you wish to wait before strafing <span class="arithmatex">\(in miliseconds\)</span>. The default is 3000 <span class="arithmatex">\(3 seconds\)</span>. Saves to the INI under [Stick] as DelayStrafe, and StrafeMinDelay / StrafeMaxDelay.</p>
+<p><em>/stick toggle delaystrafe</em> - turns the delay for strafe-based movement <span class="arithmatex">\(pin, !front, front, behind\)</span> on or off <em>/stick set strafemindelay #</em> - sets the minimum amount of time you wish to delay before strafing <span class="arithmatex">\(in miliseconds\)</span>. The default is 1500 <span class="arithmatex">\(1.5 seconds\)</span>. <em>/stick set strafemaxdelay #</em> - sets the maximum amount of time you wish to wait before strafing <span class="arithmatex">\(in miliseconds\)</span>. The default is 3000 <span class="arithmatex">\(3 seconds\)</span>. Saves to the INI under <script type="math/tex; mode=display">Stick</script> as DelayStrafe, and StrafeMinDelay / StrafeMaxDelay.</p>
 <ul>
 <li>The size of the arc for <em>/stick !front</em> is now configurable by the user. You may use:</li>
 </ul>
-<p><em>/stick set !frontarc #</em> - Valid ranges 260.0 to 1.0. The default is 135.0 and if you do not adjust it, it will continue to behave like normal. Saves to the INI as NotFrontArc under [Stick]. This also saves to the character-specific setting if <em>savebychar</em> is turned on.</p>
+<p><em>/stick set !frontarc #</em> - Valid ranges 260.0 to 1.0. The default is 135.0 and if you do not adjust it, it will continue to behave like normal. Saves to the INI as NotFrontArc under <script type="math/tex; mode=display">Stick</script>. This also saves to the character-specific setting if <em>savebychar</em> is turned on.</p>
 <ul>
 <li>Implemented optional arc randomization for pin/!front/behind. You may enable this with <em>/stick toggle randomize</em>. My</li>
 </ul>
 <p>formula is pretty basic so it will not be anything special yet, but its a foundation for improvement in the next</p>
-<p>release down the road. This saves to the INI as RandomArc under [Stick], and if you have <em>fullverbosity</em> enabled</p>
+<p>release down the road. This saves to the INI as RandomArc under <script type="math/tex; mode=display">Stick</script>, and if you have <em>fullverbosity</em> enabled</p>
 <p>then behind/!front will also output their arc values to the chatwnd.</p>
 <ul>
 <li>Added a command, <em>/calcangle</em>, which dumps the value moveutils uses to determine angular dist (useful if you want to</li>
@@ -9823,7 +9840,8 @@ Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 <p>use <em>moveback</em> and/or run into that problem often, please report a solid way of recreating it here and then consider</p>
 <p>turning it off based on your play style. Unlike the old moveutils, I have made this feature optional.</p>
 <p>Ways to use this:</p>
-<p><em>/stick toggle useback</em> - turns the backwards walking on and off <em>/stick set backupdist #</em> - how close to the target you can be to use backward walking. <strong>The smaller the better</strong>. This defaults to 10.0 like the old moveutils Saves to INI as UseBackward and BackupDist under [Stick]</p>
+<p><em>/stick toggle useback</em> - turns the backwards walking on and off <em>/stick set backupdist #</em> - how close to the target you can be to use backward walking. <strong>The smaller the better</strong>. This defaults to 10.0 like the old moveutils Saves to INI as UseBackward and BackupDist under <script type="math/tex; mode=display">Stick</script>
+</p>
 <ul>
 <li>Snaproll now uses GetDistance3D to prevent certain bugs related to being unable to get in range of a target on large</li>
 </ul>
@@ -9835,14 +9853,14 @@ Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 </ul>
 <p>standing still doing nothing. You may enable/disable this with <em>/stick toggle autopauseoutput</em>. If this is enabled,</p>
 <p>it will not respect <em>totalsilence</em> so you will need to configure this on its own. This saves to the INI as</p>
-<p>AutoPauseMsg under [Defaults].</p>
+<p>AutoPauseMsg under <script type="math/tex; mode=display">Defaults</script>.</p>
 <ul>
 <li>MoveTo now has two new BreakOn options <span class="arithmatex">\(my implementation of a suggestion from dkaa\)</span>. They are different forms of</li>
 </ul>
 <p>detecting aggro during a <em>/moveto</em> that will halt the command. This mostly assists macro writers in being able to</p>
 <p>stop moving to a location and handle the event of getting aggro during the move.</p>
 <p>Ways to use this:</p>
-<p><em>/moveto toggle breakonaggro</em> - this will halt the moveto if you gain aggro <span class="arithmatex">\(crossed-swords indicator\)</span> <em>/moveto toggle breakonhit</em> - this will halt the moveto if you are swung at <span class="arithmatex">\(both contact or miss\)</span>, if you want to keep moving until something is actually trying to hit you. I have added support for all three types of hitmodes, though if you use the "number only", I am only parsing for misses not the numerics [and you are annoying to support]. If you wish to use this, you should consider switching to abbreviated or normal. Saves to the INI under BreakOnAggro and BreakOnHit under [MoveTo].</p>
+<p><em>/moveto toggle breakonaggro</em> - this will halt the moveto if you gain aggro <span class="arithmatex">\(crossed-swords indicator\)</span> <em>/moveto toggle breakonhit</em> - this will halt the moveto if you are swung at <span class="arithmatex">\(both contact or miss\)</span>, if you want to keep moving until something is actually trying to hit you. I have added support for all three types of hitmodes, though if you use the "number only", I am only parsing for misses not the numerics <script type="math/tex; mode=display">and you are annoying to support</script>. If you wish to use this, you should consider switching to abbreviated or normal. Saves to the INI under BreakOnAggro and BreakOnHit under <script type="math/tex; mode=display">MoveTo</script>.</p>
 <p>In the event either of these trigger:</p>
 <ul>
 <li>A new TLO member, ${MoveTo.Broken} will show as true, so that you may see if the event fired. This will not reset to false until the next time you issue a <em>/moveto</em> command. - An output message will display to the chatwnd <span class="arithmatex">\(if you do not have _totalsilence_ enabled\)</span></li>
@@ -9858,7 +9876,7 @@ Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 <li>Bard detection has switched from string parsing to numeric comparison. It will now only check once every time you</li>
 </ul>
 <p>type a command <span class="arithmatex">\(to support switching to shrouds with the plugin loaded\)</span> instead of OnPulse. If you switch to a</p>
-<p>shroud with stick active, [please stab yourself and then] you will need to end the command and restart it to</p>
+<p>shroud with stick active, <script type="math/tex; mode=display">please stab yourself and then</script> you will need to end the command and restart it to</p>
 <p>detect the class change.</p>
 <ul>
 <li>ReturnNoTarget has been renamed to <strong>ReturnHaveTarget</strong>, as the naming incorrectly implied the opposite of what it</li>
@@ -10119,7 +10137,7 @@ ${MoveUtils.TryToJump} - bool<br />
 </ul>
 <p>savebychar* to disable saving/loading character-specific settings.</p>
 <ul>
-<li>Added optional INI value [YourCharName] "DisregardMe=true". This allows you to use character-specific settings but</li>
+<li>Added optional INI value <script type="math/tex; mode=display">YourCharName</script> "DisregardMe=true". This allows you to use character-specific settings but</li>
 </ul>
 <p>ignore them on a specific character and use defaults instead. Manually add this line for the characters you wish to</p>
 <p>use defaults on, and leave it off <span class="arithmatex">\(or you could put =false, but no need\)</span> for those you wish to continue using</p>
@@ -10192,7 +10210,7 @@ ${MoveUtils.TryToJump} - bool<br />
     /makecamp set pausemaxdelay #.##
 </code></pre></div>
 <ul>
-<li>You will now need to use different INI values for these delays. [Defaults] "MinDelay" and "MaxDelay" no longer do</li>
+<li>You will now need to use different INI values for these delays. <script type="math/tex; mode=display">Defaults</script> "MinDelay" and "MaxDelay" no longer do</li>
 </ul>
 <p>anything.</p>
 <ul>
@@ -10270,7 +10288,7 @@ MaxDelay=500
 <p>enabled. Following the suggested quickfix earlier in the thread, if you enable a new option <em>checkbard</em>, your</p>
 <p>speedmultiplier is divided by two if you are a bard class. This only applies to bards, not everyone with selos. This</p>
 <p>feature is disabled by default, so if you wish to test it, use <span class="arithmatex">\(_/stick set checkbard on\|off_ then _/stick save_\)</span>.</p>
-<p>This saves to the ini under [Defaults] "CheckBard"</p>
+<p>This saves to the ini under <script type="math/tex; mode=display">Defaults</script> "CheckBard"</p>
 <ul>
 <li>
 <p>Turning this on as a non-bard will not do anything, so turning it on for your bard alt and loading up another</p>
@@ -10334,7 +10352,7 @@ ReturnNoTarget=on
 <li>If you use a value out of bounds, it will not change the rate</li>
 </ul>
 </li>
-<li>To configure in the ini, you may use [Defaults] "TurnRate" section<ul>
+<li>To configure in the ini, you may use <script type="math/tex; mode=display">Defaults</script> "TurnRate" section<ul>
 <li>If you use a value out of bounds, it will use the plugin default of 16.0 and resave this value to your ini</li>
 </ul>
 </li>
@@ -10373,8 +10391,9 @@ ReturnNoTarget=on
 <ul>
 <li>This defaults to false so everything behaves as you are familiar with</li>
 <li>If you wish to use this, it can be set up as follows<ul>
-<li>[MakeCamp] "ReturnNotLooting" on/off in the ini</li>
-<li><em>/makecamp set returnnotlooting [on|off]</em></li>
+<li>
+<script type="math/tex; mode=display">MakeCamp</script> "ReturnNotLooting" on/off in the ini</li>
+<li><em>/makecamp set returnnotlooting <script type="math/tex; mode=display">on\|off</script></em></li>
 </ul>
 </li>
 </ul>
@@ -10427,15 +10446,15 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 </code></pre></div>
 <ul>
 <li>Added two new settings to support the <em>precisey</em> and <em>precisex</em> trailing parameters</li>
-<li>These also save to the ini under [MoveTo] as "ArrivalDistY" and "ArrivalDistX"</li>
+<li>These also save to the ini under <script type="math/tex; mode=display">MoveTo</script> as "ArrivalDistY" and "ArrivalDistX"</li>
 <li>Usage:</li>
 </ul>
 <div class="highlight"><pre><span></span><code>/moveto set xdist 10.00
 /moveto set ydist 10.00 (default is 10, can use any .2 digit float)
 </code></pre></div>
 <ul>
-<li>Changed INI setting for [MoveTo] "ArrivalDistance" to "ArrivalDist"</li>
-<li>Added <em>/moveto yloc [#]</em> and <em>/moveto xloc [#]</em> which will use your current x<span class="arithmatex">\(yloc\)</span>/y<span class="arithmatex">\(xloc\)</span> and beeline for the</li>
+<li>Changed INI setting for <script type="math/tex; mode=display">MoveTo</script> "ArrivalDistance" to "ArrivalDist"</li>
+<li>Added <em>/moveto yloc <script type="math/tex; mode=display">\#</script></em> and <em>/moveto xloc <script type="math/tex; mode=display">\#</script></em> which will use your current x<span class="arithmatex">\(yloc\)</span>/y<span class="arithmatex">\(xloc\)</span> and beeline for the</li>
 </ul>
 <p>x<span class="arithmatex">\(xloc\)</span> or y<span class="arithmatex">\(yloc\)</span> you requested</p>
 <ul>
@@ -10509,7 +10528,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <ul>
 <li><em>/stick toggle spinme</em> for use with <em>/stick front</em> has been removed. This is now set with */stick toggle</li>
 </ul>
-<p>nohottfront* and saves to the ini under [Stick] "AwareNotAggro" <span class="arithmatex">\(on/off\)</span> so you only have to type it once if you</p>
+<p>nohottfront* and saves to the ini under <script type="math/tex; mode=display">Stick</script> "AwareNotAggro" <span class="arithmatex">\(on/off\)</span> so you only have to type it once if you</p>
 <p>wish to use it</p>
 <ul>
 <li>To stay in line with this change, previous "AggroAwareness" <span class="arithmatex">\(on/off\)</span> in the ini renamed to "AwareAggro" (*value for</li>
@@ -10532,7 +10551,8 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <p>start turning back the same way it was turning from</p>
 <ul>
 <li>This is currently only in the INI but will soon be added to the set parameter</li>
-<li>[StuckLogic] "TurnHalfway" <span class="arithmatex">\(on/off\)</span></li>
+<li>
+<script type="math/tex; mode=display">StuckLogic</script> "TurnHalfway" <span class="arithmatex">\(on/off\)</span></li>
 </ul>
 <h4 id="beta-81101a-ctd-fix">Beta - 8.1101a - CTD fix<a class="headerlink" href="#beta-81101a-ctd-fix" title="Permanent link">&para;</a></h4>
 <ul>
@@ -10705,7 +10725,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <p>sticking to NO TARGET ERROR" message</p>
 <ul>
 <li>Fixed a bug with strafe being held down sometimes, keeping you sliding sideways when you should have stopped</li>
-<li>Fixed a bug with <em>/stick [parameters] always</em> checking events for breakonsummon,</li>
+<li>Fixed a bug with <em>/stick <script type="math/tex; mode=display">parameters</script> always</em> checking events for breakonsummon,</li>
 </ul>
 <p>mpause/mousepause/breakonkb/breakonmouse when you did not have a target. This will now only make those checks if you</p>
 <p>have a valid npc target and are currently sticking to it</p>
@@ -10787,7 +10807,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 /command toggle breakonsummon
 </code></pre></div>
 <ul>
-<li><em>/command checkifstuck</em> is forever removed. use <em>toggle stucklogic</em> or <em>set stucklogic [on|off]</em></li>
+<li><em>/command checkifstuck</em> is forever removed. use <em>toggle stucklogic</em> or <em>set stucklogic <script type="math/tex; mode=display">on\|off</script></em></li>
 <li>Preserved the values for 'ArrivalDist' and 'MoveToMod' in the ini since they were defaulting back to plugin-default</li>
 </ul>
 <p>values instead of your own custom settings. Will apply this to most everything else in the near future.</p>
@@ -10906,8 +10926,8 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <li>
 <p>Added new INI settings for this</p>
 <ul>
-<li><strong>[Stick] 'BreakOnSummon'</strong> - <em>on / off</em></li>
-<li><strong>[Stick] 'BreakSummonDist'</strong> - <em>distance to consider summoned <span class="arithmatex">\(default 20.0\)</span></em></li>
+<li><strong><script type="math/tex; mode=display">Stick</script> 'BreakOnSummon'</strong> - <em>on / off</em></li>
+<li><strong><script type="math/tex; mode=display">Stick</script> 'BreakSummonDist'</strong> - <em>distance to consider summoned <span class="arithmatex">\(default 20.0\)</span></em></li>
 </ul>
 </li>
 <li>Added toggle: <em>/stick toggle breakonsummon</em></li>
@@ -10936,7 +10956,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
   * <em>/stick toggle breakonmouse</em>
 * this works like mpause=off used to work for keyboard movement
 * if you move the mouse while a command is active, it will break from the command altogether
-* you can set this under [Defaults] 'BreakOnMouse' in the ini
+* you can set this under <script type="math/tex; mode=display">Defaults</script> 'BreakOnMouse' in the ini
   * <em>/stick toggle breakonkb</em>
 * this works like mpause=off used to
 * mpause=off will not break from your current commands any longer, it will resume immediately as opposed to</p>
@@ -10954,8 +10974,8 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <p>trying to turn both true in the ini will result in breaks being off and pauses being on.</p>
 </li>
 <li>ManualPause changed to KeyboardPause in the ini. command still is mpause though.</li>
-<li>Fixed a bug with <em>/makecamp on [#]</em></li>
-<li><em>/makecamp radius</em> and <em>/makecamp on [#]</em> and <em>/makecamp player</em> and <em>/makecamp [y] [x]</em> commands now also</li>
+<li>Fixed a bug with <em>/makecamp on <script type="math/tex; mode=display">\#</script></em></li>
+<li><em>/makecamp radius</em> and <em>/makecamp on <script type="math/tex; mode=display">\#</script></em> and <em>/makecamp player</em> and <em>/makecamp <script type="math/tex; mode=display">y</script> <script type="math/tex; mode=display">x</script></em> commands now also</li>
 </ul>
 <p>enforce leash size update if leash is smaller than camp radius <span class="arithmatex">\(before only /makecamp with no params did this\)</span></p>
 <ul>
@@ -10976,26 +10996,34 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <li><strong>${Stick.Aggro}</strong> - <em>PAUSED / TRUE / FALSE - <span class="arithmatex">\(true if NoHoTT detects aggro\)</span></em></li>
 <li>Help output completed, hence the new hidehelp option since it is spamcity</li>
 <li><em>INI Revamp</em> - ini file now breaks down into logical sections</li>
-<li>[Defaults] [Stick] [Circle] [MoveTo] [MakeCamp] [StuckLogic] [your-char-name]</li>
+<li>
+<script type="math/tex; mode=display">Defaults</script>
+<script type="math/tex; mode=display">Stick</script>
+<script type="math/tex; mode=display">Circle</script>
+<script type="math/tex; mode=display">MoveTo</script>
+<script type="math/tex; mode=display">MakeCamp</script>
+<script type="math/tex; mode=display">StuckLogic</script>
+<script type="math/tex; mode=display">your-char-name</script>
+</li>
 <li>INI file supports many more features. I suggest you backup your current one and delete it, then log in game and</li>
 </ul>
 <p>/stick save to output a new one.</p>
 <p>Then edit in your old values from backup and save the file and then /stick load.</p>
 <p>That way you can see all the new features organized correctly.</p>
-<p>Loading all values from [Defaults] will no longer work in this version, but some still remain there.</p>
+<p>Loading all values from <script type="math/tex; mode=display">Defaults</script> will no longer work in this version, but some still remain there.</p>
 <ul>
 <li><em>New INI Options</em></li>
-<li><strong>[Defaults] 'HideHelp'</strong> - <em>never display spam-filled help syntax</em></li>
-<li><strong>[Stick] 'AwareAggro'</strong> - <em>NoHoTT checking on/off</em></li>
-<li><strong>[Stick] 'StickDistMod'</strong> - <em>always use specific dist mod</em></li>
-<li><strong>[Stick] 'StickDistModPercent'</strong> - <em>always use specific dist mod percent</em></li>
-<li><strong>[MoveTo] 'ArrivalDist'</strong> - <em>max dist from moveto loc that is acceptable</em></li>
-<li><strong>[MoveTo] 'LooseMoveTo'</strong> - <em>always use loose heading</em></li>
-<li><strong>[MoveTo] 'MoveToMod'</strong> - <em>always use specific moveto dist mod</em></li>
-<li><strong>[Circle] 'AlwaysBackwards'</strong> - <em>always run backwards</em></li>
-<li><strong>[Circle] 'AlwaysCounterClockwise'</strong> - <em>always run in a counter-clockwise circle</em></li>
-<li><strong>[Circle] 'AlwaysDrunken'</strong> - <em>always use drunken movement</em></li>
-<li><strong>[Circle] 'RadiusSize'</strong> - <em>always use specific radius size</em></li>
+<li><strong><script type="math/tex; mode=display">Defaults</script> 'HideHelp'</strong> - <em>never display spam-filled help syntax</em></li>
+<li><strong><script type="math/tex; mode=display">Stick</script> 'AwareAggro'</strong> - <em>NoHoTT checking on/off</em></li>
+<li><strong><script type="math/tex; mode=display">Stick</script> 'StickDistMod'</strong> - <em>always use specific dist mod</em></li>
+<li><strong><script type="math/tex; mode=display">Stick</script> 'StickDistModPercent'</strong> - <em>always use specific dist mod percent</em></li>
+<li><strong><script type="math/tex; mode=display">MoveTo</script> 'ArrivalDist'</strong> - <em>max dist from moveto loc that is acceptable</em></li>
+<li><strong><script type="math/tex; mode=display">MoveTo</script> 'LooseMoveTo'</strong> - <em>always use loose heading</em></li>
+<li><strong><script type="math/tex; mode=display">MoveTo</script> 'MoveToMod'</strong> - <em>always use specific moveto dist mod</em></li>
+<li><strong><script type="math/tex; mode=display">Circle</script> 'AlwaysBackwards'</strong> - <em>always run backwards</em></li>
+<li><strong><script type="math/tex; mode=display">Circle</script> 'AlwaysCounterClockwise'</strong> - <em>always run in a counter-clockwise circle</em></li>
+<li><strong><script type="math/tex; mode=display">Circle</script> 'AlwaysDrunken'</strong> - <em>always use drunken movement</em></li>
+<li><strong><script type="math/tex; mode=display">Circle</script> 'RadiusSize'</strong> - <em>always use specific radius size</em></li>
 <li>New primary command parameters <span class="arithmatex">\(_usable with /stick, /moveto, /makecamp, or /circle_\)</span>:</li>
 <li><em>/stick toggle hidehelp</em> - toggle hidehelp on/off</li>
 <li><em>/stick toggle breakongate</em> - toggle on/off</li>
@@ -11057,18 +11085,18 @@ too small of number or something along those lines. It is there if you can find 
 <li><span class="arithmatex">\([string]()\)</span> - <strong>${Circle.Rotation}</strong> - <em>CW / CCW</em></li>
 <li><span class="arithmatex">\([string]()\)</span> - <strong>${Circle.Direction}</strong> - <em>FORWARDS / BACKWARDS</em></li>
 <li>Added the ability to change circle radius</li>
-<li>Before you had to re-issue /circle on [#] to change the radius<span class="arithmatex">\(size\)</span> of the circle.</li>
+<li>Before you had to re-issue /circle on <script type="math/tex; mode=display">\#</script> to change the radius<span class="arithmatex">\(size\)</span> of the circle.</li>
 <li>This would plant the anchor where you were at, forcing you to reset any custom anchor or options.</li>
 <li>Now you can do this:<ul>
-<li><em>/circle radius [#]</em> - will keep circling but increase the radius on the fly</li>
+<li><em>/circle radius <script type="math/tex; mode=display">\#</script></em> - will keep circling but increase the radius on the fly</li>
 </ul>
 </li>
-<li>Removed the ability to do /moveto [dist/-dist] because it was having conflicts. To set the moveto distance now you</li>
+<li>Removed the ability to do /moveto <script type="math/tex; mode=display">dist/-dist</script> because it was having conflicts. To set the moveto distance now you</li>
 </ul>
 <p>need to use:</p>
 <ul>
-<li><em>/moveto dist [#]</em> - to set distance</li>
-<li><em>/moveto dist [-dist]</em> - to subtract from currently set distance</li>
+<li><em>/moveto dist <script type="math/tex; mode=display">\#</script></em> - to set distance</li>
+<li><em>/moveto dist <script type="math/tex; mode=display">-dist</script></em> - to subtract from currently set distance</li>
 <li>
 <p>You can no longer set stick or moveto distance to a value below 0.</p>
 <p>Negative numbers halted all movement so any attempt to do so will force the distance value to 1.</p>
@@ -11077,7 +11105,8 @@ too small of number or something along those lines. It is there if you can find 
 <h4 id="beta-81012-makecamp-player">Beta - 8.1012 - makecamp player<a class="headerlink" href="#beta-81012-makecamp-player" title="Permanent link">&para;</a></h4>
 <ul>
 <li>Fixed two more crash bugs <span class="arithmatex">\(thanks ieatacid\)</span></li>
-<li>Added /makecamp player [name]</li>
+<li>Added /makecamp player <script type="math/tex; mode=display">name</script>
+</li>
 <li>Makecamp player works if you supply a valid name of a PC in the zone</li>
 <li>
 <p>uses your current target <span class="arithmatex">\(fails if target is not SPAWN\_PLAYER\)</span> if you do not supply the name.</p>
@@ -11132,7 +11161,7 @@ too small of number or something along those lines. It is there if you can find 
 </ul>
 <p>/stick</p>
 <ul>
-<li><em>Feign Support</em> - added feign parameter or [FeignSupport] in the INI.</li>
+<li><em>Feign Support</em> - added feign parameter or <script type="math/tex; mode=display">FeignSupport</script> in the INI.</li>
 </ul>
 <p>When enabled this will not begin your command if you are FD until you manually stand up</p>
 <p>*<em>AutoSave</em> - automatically save ini like old save cmd <span class="arithmatex">\(/stick save\)</span> every time you change a setting</p>
@@ -11263,6 +11292,10 @@ MQ2Globals::ExecuteCmd(FindMappableCommand(&quot;forward&quot;),0,0);
     
     
       <script src="../../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

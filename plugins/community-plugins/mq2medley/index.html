@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8708,7 +8724,8 @@
 <h1 id="mq2medley">MQ2Medley<a class="headerlink" href="#mq2medley" title="Permanent link">&para;</a></h1>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p><strong>MQ2Medley</strong><br />
-[Created by winnower, updated by Dewey2461]<br />
+<script type="math/tex; mode=display">Created by winnower, updated by Dewey2461</script>
+<br />
 Song scheduler for the modern bard.<br />
 "This plugin grew out my frustration with MQ2Twist and it being hard to change from twist to twist while still being efficient and not recasting the songs that already had signification duration left. Was hard to use aria, "A Tune Struck in My Head", and burn twists effectively"<br />
 This is the next evolution of MQ2Twist. Features</p>
@@ -8742,15 +8759,15 @@ MQ2Cast - recommend not using this on your bard. use "/medley queue" to cast ite
 <code>/medley quiet - Toggles songs listing for medley and queued songs</code><br />
 <code>/melody debug - now toggles on/off debugging information, saves its state</code></p>
 <p>Examples:<br />
-*/medley melee play medley defined in [MQ2Medley-melee] ini setion</p>
+*/medley melee play medley defined in <script type="math/tex; mode=display">MQ2Medley-melee</script> ini setion</p>
 <ul>
 <li>/medley queue "Dirge of the Sleepwalker" -interrupt</li>
 </ul>
 <p>Interrupt current song and cast AA "Dirge of the Sleepwaler"</p>
 <ul>
-<li>/medley queue "Slumber of Silisia" -targetid|${Me.XTarget[2].ID}</li>
+<li>/medley queue "Slumber of Silisia" -targetid|${Me.XTarget<script type="math/tex; mode=display">2</script>.ID}</li>
 </ul>
-<p>When current song ends, will mez XTarget[2], briefly switching target to XTraget[2] then switching back to current target. Target will be switched for one pulse, which is typically less than 20ms</p>
+<p>When current song ends, will mez XTarget<script type="math/tex; mode=display">2</script>, briefly switching target to XTraget<script type="math/tex; mode=display">2</script> then switching back to current target. Target will be switched for one pulse, which is typically less than 20ms</p>
 <ul>
 <li>/medley queue "Blade of Vesagran"</li>
 </ul>
@@ -8773,7 +8790,7 @@ MQ2Cast - recommend not using this on your bard. use "/medley queue" to cast ite
 Define up to 20 songs, song1-song20<br />
 Each song has 3 parts separate by carrot<span class="arithmatex">\(^\)</span> symbol<br />
 *Part 1: Song, Item or AA name<br />
-*Part 2: Duration the song lasts, this must be an expression like you would send to ${Math.Calc[part2]}. This how long you expect the buff to last. Notice use of ${Medley.Tune} in my example to increase duration if A Tune Stuck in my Head is up.<br />
+*Part 2: Duration the song lasts, this must be an expression like you would send to ${Math.Calc<script type="math/tex; mode=display">part2</script>}. This how long you expect the buff to last. Notice use of ${Medley.Tune} in my example to increase duration if A Tune Stuck in my Head is up.<br />
 *Part 3: Condition for this song to cast. Also an expression for Math.Calc</p>
 <h2 id="scheduling">Scheduling<a class="headerlink" href="#scheduling" title="Permanent link">&para;</a></h2>
 <p>Songs will cast in priority order, song1 &gt; song2 &gt; ... &gt; song20<br />
@@ -8874,6 +8891,10 @@ If all songs are active, then will cast the one that will expire soonest.</p>
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

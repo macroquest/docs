@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8689,11 +8705,11 @@
 <p>off ]**</p>
 <p>Turns MQ2NetBots functionality on or off</p>
 <ul>
-<li><strong>/netbots [ grab=</strong><em><strong>on</strong></em><strong>|</strong><em><strong>off</strong></em> <strong>]</strong></li>
+<li><strong>/netbots <script type="math/tex; mode=display"> grab=**_**on**_**\|**_**off**_ **</script></strong></li>
 </ul>
 <p>Receive status updates from other MQ2NetBots-enabled clients connected to the same EQBCS server.</p>
 <ul>
-<li><strong>/netbots [ send=</strong><em><strong>on</strong></em><strong>|</strong><em><strong>off</strong></em> <strong>]</strong></li>
+<li><strong>/netbots <script type="math/tex; mode=display"> send=**_**on**_**\|**_**off**_ **</script></strong></li>
 </ul>
 <p>Broadcast status updates to the EQBCS server.</p>
 <h2 id="top-level-object-netbots">Top-Level Object: ${NetBots}<a class="headerlink" href="#top-level-object-netbots" title="Permanent link">&para;</a></h2>
@@ -8714,7 +8730,7 @@
 </tr>
 <tr>
 <td align="left"><em>netbotsclient</em></td>
-<td align="left"><strong>NetBots[***Name</strong>*]**</td>
+<td align="left"><strong>NetBots<script type="math/tex; mode=display">\***Name**\*</script></strong></td>
 <td align="left">Returns broadcast information about <em>Name</em></td>
 </tr>
 </tbody>
@@ -8755,7 +8771,7 @@
 <li>State of <em>Name</em></li>
 <li>STUN STAND SIT DUCK BIND FEIGN DEAD UNKNOWN</li>
 </ul>
-<p>|- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Attacking</strong> |Is <em>Name</em> attacking? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>AFK</strong> |Is <em>Name</em> AFK? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Binding</strong> |Is <em>Name</em> kneeling? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Ducking</strong> |Is <em>Name</em> ducking? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Feigning</strong> |Is <em>Name</em> feigning? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Grouped</strong> |Is <em>Name</em> in a group? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Invis</strong> |Is <em>Name</em> invisible? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Levitating</strong> |Is <em>Name</em> levitating? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>LFG</strong> |Is <em>Name</em> LFG? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Mounted</strong> |Is <em>Name</em> on a mount? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Moving</strong> |Is <em>Name</em> moving? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Raid</strong> |Is <em>Name</em> in a raid? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Sitting</strong> |Is <em>Name</em> sitting? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Standing</strong> |Is <em>Name</em> standing? |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>FreeBuffSlots</strong> |Total free buff slots of <em>Name</em> |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>InZone</strong> |Is <em>Name</em> in the same zone? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>InGroup</strong> |Is <em>Name</em> in the same group? |- |<a href=""><em>string</em></a> |<strong>Leader</strong> |<em>Name</em>'s group leader |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>Updated</strong> |Timestamp of last update from <em>Name</em> |- |<a href=""><em>string</em></a> |<strong>Gem</strong> |All spells <em>Name</em> has memorized |- |<a href="../../../reference/data-types/datatype-spell/"><em>spell</em></a> |<strong>Gem[</strong>#<strong>]</strong> |Spell <em>Name</em> has in slot # |- |<a href=""><em>string</em></a> |<strong>Buff</strong> |All buffs <em>Name</em> has |- |<a href="../../../reference/data-types/datatype-spell/"><em>spell</em></a> |<strong>Buff[</strong>#<strong>]</strong> |Buff <em>Name</em> has in buff slot # |- |<a href=""><em>string</em></a> |<strong>Duration</strong> |Duration of all buffs <em>Name</em> has |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>Duration[</strong>#<strong>]</strong> |Duration of buff <em>Name</em> has in buff slot # |- |<a href=""><em>string</em></a> |<strong>ShortBuff</strong> |All short buffs <em>Name</em> has |- |<a href="../../../reference/data-types/datatype-spell/"><em>spell</em></a> |<strong>ShortBuff[</strong>#<strong>]</strong> |ShortBuff <em>Name</em> has in buff slot # |- |<a href=""><em>string</em></a> |<strong>PetBuff</strong> |All pet buffs <em>Name</em>'s pet has |- |<a href="../../../reference/data-types/datatype-spell/"><em>spell</em></a> |<strong>PetBuff[</strong>#<strong>]</strong> |Pet buff <em>Name</em>'s pet has in pet buff slot # |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>TotalAA</strong> |Total AA of <em>Name</em> |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>UsedAA</strong> |Total spent AA of <em>Name</em> |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>UnusedAA</strong> |Total unspent AA of <em>Name</em> |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>CombatState</strong> |Combat State of <em>Name</em> |- |}<br />
+<p>|- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Attacking</strong> |Is <em>Name</em> attacking? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>AFK</strong> |Is <em>Name</em> AFK? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Binding</strong> |Is <em>Name</em> kneeling? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Ducking</strong> |Is <em>Name</em> ducking? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Feigning</strong> |Is <em>Name</em> feigning? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Grouped</strong> |Is <em>Name</em> in a group? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Invis</strong> |Is <em>Name</em> invisible? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Levitating</strong> |Is <em>Name</em> levitating? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>LFG</strong> |Is <em>Name</em> LFG? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Mounted</strong> |Is <em>Name</em> on a mount? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Moving</strong> |Is <em>Name</em> moving? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Raid</strong> |Is <em>Name</em> in a raid? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Sitting</strong> |Is <em>Name</em> sitting? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>Standing</strong> |Is <em>Name</em> standing? |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>FreeBuffSlots</strong> |Total free buff slots of <em>Name</em> |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>InZone</strong> |Is <em>Name</em> in the same zone? |- |<a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> |<strong>InGroup</strong> |Is <em>Name</em> in the same group? |- |<a href=""><em>string</em></a> |<strong>Leader</strong> |<em>Name</em>'s group leader |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>Updated</strong> |Timestamp of last update from <em>Name</em> |- |<a href=""><em>string</em></a> |<strong>Gem</strong> |All spells <em>Name</em> has memorized |- |<a href="../../../reference/data-types/datatype-spell/"><em>spell</em></a> |<strong>Gem<script type="math/tex; mode=display">**\#**</script></strong> |Spell <em>Name</em> has in slot # |- |<a href=""><em>string</em></a> |<strong>Buff</strong> |All buffs <em>Name</em> has |- |<a href="../../../reference/data-types/datatype-spell/"><em>spell</em></a> |<strong>Buff<script type="math/tex; mode=display">**\#**</script></strong> |Buff <em>Name</em> has in buff slot # |- |<a href=""><em>string</em></a> |<strong>Duration</strong> |Duration of all buffs <em>Name</em> has |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>Duration<script type="math/tex; mode=display">**\#**</script></strong> |Duration of buff <em>Name</em> has in buff slot # |- |<a href=""><em>string</em></a> |<strong>ShortBuff</strong> |All short buffs <em>Name</em> has |- |<a href="../../../reference/data-types/datatype-spell/"><em>spell</em></a> |<strong>ShortBuff<script type="math/tex; mode=display">**\#**</script></strong> |ShortBuff <em>Name</em> has in buff slot # |- |<a href=""><em>string</em></a> |<strong>PetBuff</strong> |All pet buffs <em>Name</em>'s pet has |- |<a href="../../../reference/data-types/datatype-spell/"><em>spell</em></a> |<strong>PetBuff<script type="math/tex; mode=display">**\#**</script></strong> |Pet buff <em>Name</em>'s pet has in pet buff slot # |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>TotalAA</strong> |Total AA of <em>Name</em> |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>UsedAA</strong> |Total spent AA of <em>Name</em> |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>UnusedAA</strong> |Total unspent AA of <em>Name</em> |- |<a href="../../../reference/data-types/datatype-int/"><em>int</em></a> |<strong>CombatState</strong> |Combat State of <em>Name</em> |- |}<br />
 == Examples ==</p>
 <ul>
 <li>Displays the duration remaining on the buff <em>Samwell</em> has in buff slot 4</li>
@@ -8835,6 +8851,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

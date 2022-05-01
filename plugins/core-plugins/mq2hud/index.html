@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8621,7 +8637,7 @@
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>This plugin provides a Heads Up Display for your EQ window, which can provide a large amount of information in a relatively small amount of space. The HUD acts as a transparent background layer, upon which any information can be displayed. Each element of the HUD gets parsed each time MQ2Data is displayed, so there is no need to reload the HUD after making changes to the .ini file, they are instantly available as soon as you save.</p>
 <p>The HUD is customized by entries in the MQ2HUD.ini file. The .ini file allows any number of HUDs to be created and saved within. Loading a new HUD from the .ini file can be done with <code>/loadhud</code>. The entry names are not case-sensitive.</p>
-<p>The default HUD entry is called [Elements] and can be loaded with the <code>/defaulthud</code> command.</p>
+<p>The default HUD entry is called <script type="math/tex; mode=display">Elements</script> and can be loaded with the <code>/defaulthud</code> command.</p>
 <p>You can toggle the display of the HUD by using F11.</p>
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
 <ul>
@@ -8660,7 +8676,7 @@
 <code>MacroName=19,5,70,255,255,255,${If[${Bool[${Macro}]}, Current Macro Running - ${Macro},]}</code></p>
 <p>In the above HUD, the <em>CursorItemName</em> entry states that it will show the name of your cursor item in all modes. Using 6 as the <strong>TYPE</strong> will display the cursor in full-screen mode only.</p>
 <p><code>/loadhud bard</code></p>
-<p>This will load the [bard] section of the MQ2HUD.ini.</p>
+<p>This will load the <script type="math/tex; mode=display">bard</script> section of the MQ2HUD.ini.</p>
 <h2 id="code-segments">Code Segments<a class="headerlink" href="#code-segments" title="Permanent link">&para;</a></h2>
 <p>This section contains code segments to help you customize your HUD. Please be sure to substitute the X, Y cords for the location you'd like to see them on your HUD.</p>
 <p><code>//AAXP</code><br />
@@ -8758,6 +8774,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

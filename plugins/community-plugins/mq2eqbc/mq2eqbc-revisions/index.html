@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -9412,17 +9428,19 @@
 <h3 id="version-120">Version 12.0<a class="headerlink" href="#version-120" title="Permanent link">&para;</a></h3>
 <p><em>Update by MacQ</em></p>
 <ul>
-<li>I modified the LoadINI() section to first load from the [Settings] section of the INI, then it loads from the</li>
+<li>I modified the LoadINI() section to first load from the <script type="math/tex; mode=display">Settings</script> section of the INI, then it loads from the</li>
 </ul>
-<p>[SERVER.CHARACTER] section.</p>
-<p>If there is no [SERVER.CHARACTER] section or one of the variables is not listed in the [SERVER.CHARACTER]</p>
-<p>section, then the value of that variable defaults to the [Settings] section or the defaults originally hard coded</p>
+<p>
+<script type="math/tex; mode=display">SERVER.CHARACTER</script> section.</p>
+<p>If there is no <script type="math/tex; mode=display">SERVER.CHARACTER</script> section or one of the variables is not listed in the <script type="math/tex; mode=display">SERVER.CHARACTER</script>
+</p>
+<p>section, then the value of that variable defaults to the <script type="math/tex; mode=display">Settings</script> section or the defaults originally hard coded</p>
 <p>in EQBC.</p>
 <ul>
 <li>With this technique, we have greater flexibility to control variables on either a global or per characters basis.</li>
 </ul>
-<p>Now you can set certain variables you deem to be more global in the [Settings] section, or variables you deem to</p>
-<p>be more character specific set in a [SERVER.CHARACTER] section, which will override the [Settings] section.</p>
+<p>Now you can set certain variables you deem to be more global in the <script type="math/tex; mode=display">Settings</script> section, or variables you deem to</p>
+<p>be more character specific set in a <script type="math/tex; mode=display">SERVER.CHARACTER</script> section, which will override the <script type="math/tex; mode=display">Settings</script> section.</p>
 <h3 id="version-110219">Version 11.0219<a class="headerlink" href="#version-110219" title="Permanent link">&para;</a></h3>
 <p><em>Update by three-p-o</em></p>
 <ul>
@@ -9490,14 +9508,14 @@ Port=7331
 </ul>
 <p>(which, for those who do not know, anything you type there defaults to /bc, so you do not need to prefix the msg if</p>
 <p>you do not want).</p>
-<p>-The keybind defaults to nothing -It saves to MacroQuest.ini as "EQBC_Nrm=clear" when you first load the plugin. You may adjust it in [Settings] Keybind=key of your EQBC ini file <span class="arithmatex">\(i do it there\)</span> before loading the plugin.</p>
+<p>-The keybind defaults to nothing -It saves to MacroQuest.ini as "EQBC_Nrm=clear" when you first load the plugin. You may adjust it in <script type="math/tex; mode=display">Settings</script> Keybind=key of your EQBC ini file <span class="arithmatex">\(i do it there\)</span> before loading the plugin.</p>
 <ul>
 <li>New TLO members</li>
 </ul>
-<p>string <span EQBC.Server.Equal_91_127.0.0.1_93_="EQBC.Server.Equal[127.0.0.1]" class="arithmatex">\({EQBC.Server} - OFFLINE if not connected, the name of the server \(hostname or ip depending on how you made the connection\) if connected -- /if \(\)</span>) { // do my private stuff } else { // do other stuff }</p>
+<p>string <span class="arithmatex">\({EQBC.Server} - OFFLINE if not connected, the name of the server \(hostname or ip depending on how you made the connection\) if connected -- /if \(\)</span>{EQBC.Server.Equal<script type="math/tex; mode=display">127.0.0.1</script>}) { // do my private stuff } else { // do other stuff }</p>
 <p>string ${EQBC.Port} - OFFLINE if not connected, the port number otherwise</p>
-<p>string <span EQBC.ToonName.Equal_91_YouPlayer_93_="EQBC.ToonName.Equal[YouPlayer]" class="arithmatex">\({EQBC.ToonName} - the name of your character _AS SEEN BY EQBC_ aka /if \(\)</span>) { // im bugged or have a ghost, so do my fix routine }</p>
-<p>bool <span EQBC.Setting_91_tellwatch_93_="EQBC.Setting[tellwatch]" class="arithmatex">\({EQBC.Setting\[\[i\]settingname\[/i\]\]} - returns the TRUE or FALSE based on if a setting is enabled. the form is required, so if you do not supply a \[i\]settingname\[/i\] it will return FALSE. -- /if \(\)</span>) { /echo I have tellwatch enabled }</p>
+<p>string <span class="arithmatex">\({EQBC.ToonName} - the name of your character _AS SEEN BY EQBC_ aka /if \(\)</span>{EQBC.ToonName.Equal<script type="math/tex; mode=display">YouPlayer</script>}) { // im bugged or have a ghost, so do my fix routine }</p>
+<p>bool <span class="arithmatex">\({EQBC.Setting\[\[i\]settingname\[/i\]\]} - returns the TRUE or FALSE based on if a setting is enabled. the form is required, so if you do not supply a \[i\]settingname\[/i\] it will return FALSE. -- /if \(\)</span>{EQBC.Setting<script type="math/tex; mode=display">tellwatch</script>}) { /echo I have tellwatch enabled }</p>
 <p>Functionality Changes</p>
 <ul>
 <li>the syntax of all the settings has changed slightly. sorry for the annoyance but it had to be done...</li>
@@ -9622,12 +9640,12 @@ this applies to all setting options.
 </li>
 <li>
 <ul>
-<li>Moved UI data from [Settings] to [Window] as it is plentiful now</li>
+<li>Moved UI data from <script type="math/tex; mode=display">Settings</script> to <script type="math/tex; mode=display">Window</script> as it is plentiful now</li>
 </ul>
 </li>
 <li>
-<p>to be optional, always using [Window] options instead
-  to be optional, always using [Window] options instead</p>
+<p>to be optional, always using <script type="math/tex; mode=display">Window</script> options instead
+  to be optional, always using <script type="math/tex; mode=display">Window</script> options instead</p>
 </li>
 <li>
 <ul>
@@ -9640,7 +9658,7 @@ this applies to all setting options.
 </ul>
 </li>
 </ul>
-<p>You need to create "WindowTitle=Custom Title" in [Window] and/or [CharName] to use it</p>
+<p>You need to create "WindowTitle=Custom Title" in <script type="math/tex; mode=display">Window</script> and/or <script type="math/tex; mode=display">CharName</script> to use it</p>
 <p>You do not need to put the title in quotes, and fearless might flame you if you admit to doing it</p>
 <ul>
 <li>
@@ -9668,7 +9686,7 @@ this applies to all setting options.
 </li>
 <li>
 <ul>
-<li>Added 'togglesilentcmd', which silences the 'CMD: [command]' message</li>
+<li>Added 'togglesilentcmd', which silences the 'CMD: <script type="math/tex; mode=display">command</script>' message</li>
 </ul>
 </li>
 <li>
@@ -9813,11 +9831,11 @@ this applies to all setting options.
 </ul>
 <h3 id="version-10o9-20051014">Version 1.0.o9 - 20051014<a class="headerlink" href="#version-10o9-20051014" title="Permanent link">&para;</a></h3>
 <ul>
-<li>Added color support [+c+], where c can be one of "yogbrtbmpwx"</li>
+<li>Added color support <script type="math/tex; mode=display">+c+</script>, where c can be one of "yogbrtbmpwx"</li>
 <li>These are the same as the "\ac" codes for WriteChatColor.</li>
 <li>If the color char is uppercase, then dark version is used.</li>
-<li>Example: /bc Slow [+g+]Successful[+x+].</li>
-<li>Example: /bc Slow [+r+]Failed[+x+], retrying.</li>
+<li>Example: /bc Slow <script type="math/tex; mode=display">+g+</script>Successful<script type="math/tex; mode=display">+x+</script>.</li>
+<li>Example: /bc Slow <script type="math/tex; mode=display">+r+</script>Failed<script type="math/tex; mode=display">+x+</script>, retrying.</li>
 <li>Added new command to display colors, /bccmd colordump</li>
 <li>Added <span class="arithmatex">\(untested\)</span> password ability. Requires recompile of eqbcs with</li>
 </ul>
@@ -10109,6 +10127,10 @@ this applies to all setting options.
     
     
       <script src="../../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

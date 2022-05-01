@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8752,45 +8768,53 @@
 <h3 id="general">General<a class="headerlink" href="#general" title="Permanent link">&para;</a></h3>
 <p><em>The following parameters may be used by any of the three primary commands. For example purposes /block will be used.</em></p>
 <ul>
-<li>'''/block [ /help ]</li>
+<li>'''/block <script type="math/tex; mode=display"> /help </script>
+</li>
 </ul>
 <p>Displays help output</p>
 <ul>
-<li>'''/block [ /load ]</li>
+<li>'''/block <script type="math/tex; mode=display"> /load </script>
+</li>
 </ul>
 <p>Loads settings and blocked spells list from configuration file.</p>
 <ul>
-<li>'''/block [ /save ]</li>
+<li>'''/block <script type="math/tex; mode=display"> /save </script>
+</li>
 </ul>
 <p>Saves settings and blocked spells list to configuration file.</p>
 <ul>
-<li>'''/block [ /block ]</li>
+<li>'''/block <script type="math/tex; mode=display"> /block </script>
+</li>
 </ul>
 <p>Toggles scanning for blocked buffs on and off</p>
 <ul>
-<li>'''/block [ /list ]</li>
+<li>'''/block <script type="math/tex; mode=display"> /list </script>
+</li>
 </ul>
 <p>Displays a list of spells currently being blocked</p>
 <ul>
-<li>'''/block [ /popup ]</li>
+<li>'''/block <script type="math/tex; mode=display"> /popup </script>
+</li>
 </ul>
 <p>Toggles display of popup messages</p>
 <ul>
-<li>'''/block [ /window ]</li>
+<li>'''/block <script type="math/tex; mode=display"> /window </script>
+</li>
 </ul>
 <p>Popups XML windows</p>
 <h3 id="block">/block<a class="headerlink" href="#block" title="Permanent link">&para;</a></h3>
 <ul>
 <li>**/block [ ## | -##</li>
 </ul>
-<p>] [ <em>0</em> | <em>1</em> ]**</p>
+<p>] <script type="math/tex; mode=display"> _0_ \| _1_ </script>**</p>
 <p>Blocks spell in buff slot ## <span class="arithmatex">\(for short duration use slot -\#\#\)</span>, always <span class="arithmatex">\(0\)</span> or only if free slots/optionally <span class="arithmatex">\(1\)</span></p>
 <ul>
-<li><strong>/block [ Name ] [</strong> <em><strong>0</strong></em> <strong>|</strong> <em><strong>1</strong></em> <strong>]</strong></li>
+<li><strong>/block <script type="math/tex; mode=display"> Name </script> <script type="math/tex; mode=display">** _**0**_ **\|** _**1**_ **</script></strong></li>
 </ul>
 <p>Blocks spell matching <em>Name</em> , always <span class="arithmatex">\(0\)</span> or only if free slots/optionally <span class="arithmatex">\(1\)</span></p>
 <ul>
-<li><em>'/block [</em> setname''&lt;/span&gt; ]</li>
+<li>_'/block <script type="math/tex; mode=display">_ setname''&lt;/span&gt; </script>
+</li>
 </ul>
 <p>Blocks spells from list <em>setname</em> in configuration file</p>
 <h3 id="unblock">/unblock<a class="headerlink" href="#unblock" title="Permanent link">&para;</a></h3>
@@ -8800,11 +8824,11 @@
 <p>-## ]**</p>
 <p>Removes blocked spell in buff slot ## <span class="arithmatex">\(for short duration use slot -\#\#\)</span></p>
 <ul>
-<li><strong>/unblock [</strong> <em><strong>Name</strong></em> <strong>]</strong></li>
+<li><strong>/unblock <script type="math/tex; mode=display">** _**Name**_ **</script></strong></li>
 </ul>
 <p>Removes blocked spell matching <em>Name</em></p>
 <ul>
-<li><strong>/unblock [</strong> <em><strong>setname</strong></em> <strong>]</strong></li>
+<li><strong>/unblock <script type="math/tex; mode=display">** _**setname**_ **</script></strong></li>
 </ul>
 <p>Removes blocked spells from list <em>setname</em> in configuration file</p>
 <h3 id="clickoff">/clickoff<a class="headerlink" href="#clickoff" title="Permanent link">&para;</a></h3>
@@ -8814,11 +8838,11 @@
 <p>-## ]**</p>
 <p>Clicks off spell in buff slot ## <span class="arithmatex">\(for short duration use slot -\#\#\)</span></p>
 <ul>
-<li><strong>/unblock [</strong> <em><strong>Name</strong></em> <strong>]</strong></li>
+<li><strong>/unblock <script type="math/tex; mode=display">** _**Name**_ **</script></strong></li>
 </ul>
 <p>Clicks off spell matching <em>Name</em></p>
 <ul>
-<li><strong>/unblock [</strong> <em><strong>setname</strong></em> <strong>]</strong></li>
+<li><strong>/unblock <script type="math/tex; mode=display">** _**setname**_ **</script></strong></li>
 </ul>
 <p>Clicks off buffs from list <em>setname</em> in configuration file</p>
 <h2 id="top-level-object-block">Top-Level Object: ${Block}<a class="headerlink" href="#top-level-object-block" title="Permanent link">&para;</a></h2>
@@ -8833,7 +8857,7 @@
 <tbody>
 <tr>
 <td align="left"><a href="../../../reference/data-types/datatype-int/"><em>int</em></a></td>
-<td align="left"><strong>Avail[***n</strong>*]**</td>
+<td align="left"><strong>Avail<script type="math/tex; mode=display">\***n**\*</script></strong></td>
 <td align="left">Number of free buff slots in <em>n</em> <span class="arithmatex">\(where _n_ can be 1=buffs, 2=short duration, 3=pets\)</span></td>
 </tr>
 <tr>
@@ -8843,7 +8867,7 @@
 </tr>
 <tr>
 <td align="left"><a href="../../../reference/data-types/datatype-int/"><em>int</em></a></td>
-<td align="left"><strong>Maxim[***n</strong>*]**</td>
+<td align="left"><strong>Maxim<script type="math/tex; mode=display">\***n**\*</script></strong></td>
 <td align="left">Number of total buff slots in <em>n</em> <span class="arithmatex">\(where _n_ can be 1=buffs, 2=short duration, 3=pets\)</span></td>
 </tr>
 <tr>
@@ -8863,7 +8887,7 @@
 </tr>
 <tr>
 <td align="left"><a href="../../../reference/data-types/datatype-int/"><em>int</em></a></td>
-<td align="left"><strong>Spell[***n</strong>*]**</td>
+<td align="left"><strong>Spell<script type="math/tex; mode=display">\***n**\*</script></strong></td>
 <td align="left">Number of available buff slots for <em>n</em> <span class="arithmatex">\(where _n_ spell ID or spell name\)</span>, returns -1 if none found</td>
 </tr>
 <tr>
@@ -8951,6 +8975,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

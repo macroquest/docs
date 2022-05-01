@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8636,16 +8652,17 @@
 <li>/render</li>
 <li>/maxfps</li>
 </ul>
-<p><strong>/fps [on|off]</strong><br />
-<strong>/fps [x|y]</strong><br />
-<strong>/fps mode [absolute|calculate]</strong></p>
+<p><strong>/fps <script type="math/tex; mode=display">on\|off</script></strong><br />
+<strong>/fps <script type="math/tex; mode=display">x\|y</script></strong><br />
+<strong>/fps mode <script type="math/tex; mode=display">absolute\|calculate</script></strong></p>
 <ul>
 <li>On/Off enables or disables the FPS display.</li>
 <li>Use <em>x</em> and <em>y</em> to control the location of the FPS display on the screen.</li>
 <li>With <em>mode</em> you can change the FPS limiter mode to the one specified <span class="arithmatex">\(absolute or calculate\)</span> or toggle between the</li>
 </ul>
 <p>two if no mode is specified.</p>
-<p>**/render [bg|fg]</p>
+<p>**/render <script type="math/tex; mode=display">bg\|fg</script>
+</p>
 <h2 id="_1">|~#**<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
 <p>This sets the foreground or background rendering rate <span class="arithmatex">\(ie. how many frames will be drawn\)</span>. Setting the rendering rate does not slow down the game at all. The client still responds to the mouse and keyboard the same, the UI is still drawn, but the world itself is not drawn as often.</p>
 <ul>
@@ -8656,7 +8673,7 @@
 <div class="highlight"><pre><span></span><code> /render bg 3              Draws 1 out of 3 frames
  /render bg ~3             Draws 2 out of 3 frames
 </code></pre></div>
-<p><strong>/maxfps [ bg | fg ] [ # ]</strong><br />
+<p><strong>/maxfps <script type="math/tex; mode=display"> bg \| fg </script> <script type="math/tex; mode=display"> \# </script></strong><br />
 Sets the foreground or background framerate.</p>
 <p><strong>Example</strong></p>
 <div class="highlight"><pre><span></span><code> /maxfps fg 30            Sets foreground framerate to 30 FPS
@@ -8759,6 +8776,10 @@ Sets the foreground or background framerate.</p>
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

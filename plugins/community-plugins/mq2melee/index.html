@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -2408,7 +2424,7 @@
         
           <li class="md-nav__item">
   <a href="#melee-options" class="md-nav__link">
-    /melee [options]
+    /melee options
   </a>
   
 </li>
@@ -8963,7 +8979,7 @@
         
           <li class="md-nav__item">
   <a href="#melee-options" class="md-nav__link">
-    /melee [options]
+    /melee options
   </a>
   
 </li>
@@ -9263,7 +9279,7 @@
 <p>To determine the proper Spell ID for any Discipline, Alternate Ability or Spell to be used with the provoke/stun</p>
 <p>commands use one of the following commands:</p>
 <ul>
-<li>For Disciplines use: <strong>/echo <span Me.CombatAbility_91_93_="Me.CombatAbility[]" class="arithmatex">\({Me.CombatAbility\[\)</span>].ID}</strong>, replacing</li>
+<li>For Disciplines use: <strong>/echo <span class="arithmatex">\({Me.CombatAbility\[\)</span>{Me.CombatAbility<script type="math/tex; mode=display">\]}</script>.ID}</strong>, replacing</li>
 </ul>
 <p>with the name of the Discipline.</p>
 <ul>
@@ -9278,15 +9294,24 @@
 <li>
 <p>Some common discipline IDs are listed below:</p>
 <ul>
-<li>Ancient Chaos Cry [id=5016]</li>
-<li>Bazu Bellow [id=6173]</li>
-<li>Bellow [id=4681]</li>
-<li>Bellow of the Mastruq [id=5015]</li>
-<li>Berate [id=4682]</li>
-<li>Incite [id=4697]</li>
-<li>Mock [id=8467]</li>
-<li>Provoke [id=4608]</li>
-<li>Crippling Strike [id=468]</li>
+<li>Ancient Chaos Cry <script type="math/tex; mode=display">id=5016</script>
+</li>
+<li>Bazu Bellow <script type="math/tex; mode=display">id=6173</script>
+</li>
+<li>Bellow <script type="math/tex; mode=display">id=4681</script>
+</li>
+<li>Bellow of the Mastruq <script type="math/tex; mode=display">id=5015</script>
+</li>
+<li>Berate <script type="math/tex; mode=display">id=4682</script>
+</li>
+<li>Incite <script type="math/tex; mode=display">id=4697</script>
+</li>
+<li>Mock <script type="math/tex; mode=display">id=8467</script>
+</li>
+<li>Provoke <script type="math/tex; mode=display">id=4608</script>
+</li>
+<li>Crippling Strike <script type="math/tex; mode=display">id=468</script>
+</li>
 </ul>
 </li>
 <li>
@@ -9315,227 +9340,281 @@
 <ul>
 <li>To find the relevant Item IDs for the various options, you can use the following command:</li>
 <li>
-<p><strong>/echo ${FindItem[=].ID}</strong>, replacing with the name of the item you are looking for (no need</p>
-<p>to use quotes). Eg. /echo ${FindItem[=Blade of Carnage].ID} results in "25210".</p>
+<p><strong>/echo ${FindItem<script type="math/tex; mode=display">=</script>.ID}</strong>, replacing with the name of the item you are looking for (no need</p>
+<p>to use quotes). Eg. /echo ${FindItem<script type="math/tex; mode=display">=Blade of Carnage</script>.ID} results in "25210".</p>
 </li>
 </ul>
-<h3 id="melee-options">/melee [options]<a class="headerlink" href="#melee-options" title="Permanent link">&para;</a></h3>
+<h3 id="melee-options">/melee <script type="math/tex; mode=display">options</script>
+<a class="headerlink" href="#melee-options" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>[on|off]</strong></li>
+<li><strong><script type="math/tex; mode=display">on\|off</script></strong></li>
 </ul>
 <p><em>Turns plugin On/Off.</em></p>
 <ul>
-<li><strong>aggro</strong>=[on|off]</li>
+<li><strong>aggro</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p>*Plugin tries to keep aggro on target using all enabled aggro abilities/disciplines until aggro is regained, or</p>
 <p>either you or the target dies.*</p>
 <ul>
-<li><strong>aggropri</strong>=[Item ID]</li>
+<li><strong>aggropri</strong>=<script type="math/tex; mode=display">Item ID</script>
+</li>
 </ul>
 <p><em>Item ID for primary weapon to be used in aggro mode.</em></p>
 <ul>
-<li><strong>aggrosec</strong>=[Item ID]</li>
+<li><strong>aggrosec</strong>=<script type="math/tex; mode=display">Item ID</script>
+</li>
 </ul>
 <p><em>Item ID for secondary weapon to be used in aggro mode.</em></p>
 <ul>
-<li><strong>arrow</strong>=[Item ID]</li>
+<li><strong>arrow</strong>=<script type="math/tex; mode=display">Item ID</script>
+</li>
 </ul>
 <p><em>Item ID of ammunition to use for ranged/throwing attacks.</em></p>
 <ul>
-<li><strong>backoff</strong>=[0-100]</li>
+<li><strong>backoff</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
 <p>*Turns attack off if your life percentage goes below the designated value. Will never back off due to low health if</p>
 <p>aggro=on.*</p>
 <ul>
-<li><strong>bash</strong>=[on|off]</li>
+<li><strong>bash</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Will try to bash target if you have a shield equipped or have have a 2-handed weapon and the 2 Hand Bash AA.</em></p>
 <ul>
-<li><strong>battleleap</strong>=[on|off]</li>
+<li><strong>battleleap</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Whether or not to use Battle Leap AA <span class="arithmatex">\(Default=0/off\)</span></em></p>
 <ul>
-<li><strong>begging</strong>=[on|off]</li>
+<li><strong>begging</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Will turn attack off and beg target and turn back on.</em></p>
 <ul>
-<li><strong>bow</strong>=[Item ID]</li>
+<li><strong>bow</strong>=<script type="math/tex; mode=display">Item ID</script>
+</li>
 </ul>
 <p><em>Item ID for ranged weapon.</em></p>
 <ul>
-<li><strong>disarm</strong>=[on|off]</li>
+<li><strong>disarm</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Will try to disarm target if target is wielding a weapon.</em></p>
 <ul>
-<li><strong>downflag0-19</strong>=[on|off]</li>
+<li><strong>downflag0-19</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
-<p><strong>downflag0</strong>=[on|off]<br />
+<p><strong>downflag0</strong>=<script type="math/tex; mode=display">on\|off</script>
+<br />
 <em>Whether or not to use defined DownShit0 from ini. After enabling this option, you must edit the INI file with your relevant DownShit command and then issue <strong>/melee load</strong> to enable it.</em></p>
 <ul>
-<li><strong>enrage</strong>=[on|off]</li>
+<li><strong>enrage</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p>*Turns attack off and issues /pet hold <span class="arithmatex">\(/pet back if hold not available\)</span> if target enrages and you are facing it.</p>
 <p>Automatically re-engages when enrage ends or if you are behind the target.*</p>
 <ul>
-<li><strong>facing</strong>=[on|off]</li>
+<li><strong>facing</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Whether or not to face target <span class="arithmatex">\(checked every 2 seconds and only in ranged mode\)</span>.</em></p>
 <ul>
-<li><strong>falls</strong>=[on|off]</li>
+<li><strong>falls</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em><span class="arithmatex">\(Monk only\)</span> Auto-feign to reduce aggro?.</em></p>
 <ul>
-<li><strong>holyflag0-19</strong>=[on|off]</li>
+<li><strong>holyflag0-19</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
-<p><strong>holyflag0</strong>=[on|off]<br />
+<p><strong>holyflag0</strong>=<script type="math/tex; mode=display">on\|off</script>
+<br />
 <em>Whether or not to use defined HolyShit0 from ini. After enabling this option, you must edit the INI file with your relevant HolyShit command and then issue <strong>/melee load</strong> to enable it.</em></p>
 <ul>
-<li><strong>infuriate</strong>=[on|off]</li>
+<li><strong>infuriate</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p>*Turns attack off and issues /pet hold <span class="arithmatex">\(/pet back if hold not available\)</span> if target infuriates and you are facing it.</p>
 <p>Re-engages when infuriate ends or if you are behind the target.*</p>
 <ul>
-<li><strong>intimidation</strong>=[on|off]</li>
+<li><strong>intimidation</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Will use intimidation if available.</em></p>
 <ul>
-<li><strong>jolt</strong>=[0-100]</li>
+<li><strong>jolt</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
 <p><em>Jolt every # of hits <span class="arithmatex">\(0=off\)</span>.</em></p>
 <ul>
-<li><strong>kick</strong>=[on|off]</li>
+<li><strong>kick</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Will use kick if available.</em></p>
 <ul>
-<li><strong>melee</strong>=[on|off]</li>
+<li><strong>melee</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Turn Melee Mode On/Off.</em></p>
 <ul>
-<li><strong>meleepri</strong>=[Item ID]</li>
+<li><strong>meleepri</strong>=<script type="math/tex; mode=display">Item ID</script>
+</li>
 </ul>
 <p><em>Item ID for primary weapon to be used in non-aggro mode.</em></p>
 <ul>
-<li><strong>meleesec</strong>=[Item ID]</li>
+<li><strong>meleesec</strong>=<script type="math/tex; mode=display">Item ID</script>
+</li>
 </ul>
 <p><em>Item ID for secondary weapon to be used in non-aggro mode</em></p>
 <ul>
-<li><strong>mend</strong>=[0-100]</li>
+<li><strong>mend</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
 <p><em>Mend wounds if your life percentage goes below the designated value.</em></p>
 <ul>
-<li><strong>petassist</strong>=[on|off]</li>
+<li><strong>petassist</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p>*Will send pet attack on engage and backoff on enrage/infuriate if those options are enabled. The plugin will also</p>
 <p>use /pet hold if you have that AA.*</p>
 <ul>
-<li><strong>petdelay</strong>=[0-30]</li>
+<li><strong>petdelay</strong>=<script type="math/tex; mode=display">0-30</script>
+</li>
 </ul>
-<p><em>Will not engage pet until [x] seconds has passed.</em></p>
+<p><em>Will not engage pet until <script type="math/tex; mode=display">x</script> seconds has passed.</em></p>
 <ul>
-<li><strong>petmend</strong>=[0-100]</li>
+<li><strong>petmend</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
 <p>*Cast "Mend Companion" or "Replenish Companion" if pet is at or below given health % (will cast higher of the two if</p>
 <p>you have both).*</p>
 <ul>
-<li><strong>petrange</strong>=[0-150]</li>
+<li><strong>petrange</strong>=<script type="math/tex; mode=display">0-150</script>
+</li>
 </ul>
-<p><em>Will not engage pet until mob is within [x] range of your pet.</em></p>
+<p><em>Will not engage pet until mob is within <script type="math/tex; mode=display">x</script> range of your pet.</em></p>
 <ul>
-<li><strong>pickpocket</strong>=[on|off]</li>
+<li><strong>pickpocket</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Turn off attack &amp; try to pickpocket if not in aggro mode.</em></p>
 <ul>
-<li><strong>plugin</strong>=[on|off]</li>
+<li><strong>plugin</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Turn plugin on/off.</em></p>
 <ul>
-<li><strong>poker</strong>=[Item ID]</li>
+<li><strong>poker</strong>=<script type="math/tex; mode=display">Item ID</script>
+</li>
 </ul>
 <p><em>Item ID for backstabbing weapon. Will be swapped in before backstabbing if necessary.</em></p>
 <ul>
-<li><strong>pothealfast</strong>=[0-100]</li>
+<li><strong>pothealfast</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
-<p><em>Use fast heal potion when my HP falls below [X]% <span class="arithmatex">\(default=30\)</span>.</em></p>
+<p><em>Use fast heal potion when my HP falls below <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(default=30\)</span>.</em></p>
 <ul>
-<li><strong>pothealover</strong>=[0-100]</li>
+<li><strong>pothealover</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
-<p><em>Use heal over time potion when my HP falls below [X]% <span class="arithmatex">\(default=60\)</span>.</em></p>
+<p><em>Use heal over time potion when my HP falls below <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(default=60\)</span>.</em></p>
 <ul>
-<li><strong>provoke0</strong>=[Disc/AA/Spell ID #]</li>
+<li><strong>provoke0</strong>=<script type="math/tex; mode=display">Disc/AA/Spell ID \#</script>
+</li>
 </ul>
 <p><em>ID of the Disc/AA/Spell to use for provoking <span class="arithmatex">\(0=off\)</span>.</em></p>
 <ul>
-<li><strong>provoke1</strong>=[Disc/AA/Spell ID #]</li>
+<li><strong>provoke1</strong>=<script type="math/tex; mode=display">Disc/AA/Spell ID \#</script>
+</li>
 </ul>
 <p><em>ID of the Disc/AA/Spell to use for provoking <span class="arithmatex">\(0=off\)</span>.</em></p>
 <ul>
-<li><strong>provokeend</strong>=[0-100]</li>
+<li><strong>provokeend</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
-<p><em>Stop trying to provoke when target's health falls below [X]% <span class="arithmatex">\(default=15\)</span>.</em></p>
+<p><em>Stop trying to provoke when target's health falls below <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(default=15\)</span>.</em></p>
 <ul>
-<li><strong>provokemax</strong>=[0-100]</li>
+<li><strong>provokemax</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
 <p><em>Number of times you will try provoking aa/disc/spells to regain aggro <span class="arithmatex">\(default=1\)</span>.</em></p>
 <ul>
-<li><strong>provokeonce</strong>=[on|off]</li>
+<li><strong>provokeonce</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Only use provoke once to attempt to gain aggro.</em></p>
 <ul>
-<li><strong>range</strong>=[0-250]</li>
+<li><strong>range</strong>=<script type="math/tex; mode=display">0-250</script>
+</li>
 </ul>
 <p><em>Enables ranged attacks when target is at or beyond this range.</em> Note that 0 disables ranged attacks completely.</p>
 <ul>
-<li><strong>resume</strong>=[0-100]</li>
+<li><strong>resume</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
 <p><em>Stand up and turn back attack on if your life percentage goes above this value. Used with /melee feigndeath=on.</em></p>
 <ul>
-<li><strong>shield</strong>=[Item ID]</li>
+<li><strong>shield</strong>=<script type="math/tex; mode=display">Item ID</script>
+</li>
 </ul>
 <p><em>Item ID of shield to use for bashing</em></p>
 <ul>
-<li><strong>slam</strong>=[on|off]</li>
+<li><strong>slam</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Will slam as often as possible.</em></p>
 <ul>
-<li><strong>sneak</strong>=[on|off]</li>
+<li><strong>sneak</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Will try to sneak if not in combat.</em></p>
 <ul>
-<li><strong>standup</strong>=[on|off]</li>
+<li><strong>standup</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p><em>Will stand you on a failed FD.</em></p>
 <ul>
-<li><strong>stickdelay</strong>=[0-100]</li>
+<li><strong>stickdelay</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
-<p><em>Wait [X] seconds before sticking to target.</em></p>
+<p><em>Wait <script type="math/tex; mode=display">X</script> seconds before sticking to target.</em></p>
 <ul>
-<li><strong>stickmode</strong>=[0|1|2]</li>
+<li><strong>stickmode</strong>=<script type="math/tex; mode=display">0\|1\|2</script>
+</li>
 </ul>
 <p><em>If 1, it will use the *stickcmd</em> as defined in the INI file, if 0, it will use the default stick command, if 2,</p>
 <p>it will turn off sticking*</p>
 <ul>
-<li><strong>stickrange</strong>=[0+]</li>
+<li><strong>stickrange</strong>=<script type="math/tex; mode=display">0+</script>
+</li>
 </ul>
 <p><em>Enables sticking when target is at set distance away <span class="arithmatex">\(0=no sticking\)</span>.</em></p>
 <ul>
-<li><strong>stun0</strong>=[Disc/AA/Spell ID #]</li>
+<li><strong>stun0</strong>=<script type="math/tex; mode=display">Disc/AA/Spell ID \#</script>
+</li>
 </ul>
 <p><em>ID of the Disc/AA/Spell to use for stunning <span class="arithmatex">\(0=off\)</span>.</em></p>
 <ul>
-<li><strong>stun1</strong>=[Disc/AA/Spell ID #]</li>
+<li><strong>stun1</strong>=<script type="math/tex; mode=display">Disc/AA/Spell ID \#</script>
+</li>
 </ul>
 <p><em>ID of the Disc/AA/Spell to use for stunning <span class="arithmatex">\(0=off\)</span>.</em></p>
 <ul>
-<li><strong>stunning</strong>=[0-100]</li>
+<li><strong>stunning</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
-<p><em>Cast defined Stun spell<span class="arithmatex">\(s\)</span> if target at or below [X]% and/or if detected that target is casting a spell.</em></p>
+<p><em>Cast defined Stun spell<span class="arithmatex">\(s\)</span> if target at or below <script type="math/tex; mode=display">X</script>% and/or if detected that target is casting a spell.</em></p>
 <ul>
-<li><strong>taunt</strong>=[on|off]</li>
+<li><strong>taunt</strong>=<script type="math/tex; mode=display">on\|off</script>
+</li>
 </ul>
 <p>*Will push taunt button if aggro=on and you're not the target's target. Without a TauntIF statement, this will cause</p>
 <p>your toon to chain taunt. If you do not wish for that, use a TauntIF command <span class="arithmatex">\(see below\)</span>.*</p>
 <ul>
-<li><strong>throwstone</strong>=[0-100]</li>
+<li><strong>throwstone</strong>=<script type="math/tex; mode=display">0-100</script>
+</li>
 </ul>
 <p><em>Will use throw stone disc when ready and target in range.</em> Note: Will not use in aggro/provoke mode if provoke has</p>
 <p>not been used yet.</p>
@@ -9545,65 +9624,72 @@
 <ul>
 <li>Selo's Kick</li>
 </ul>
-<p><strong>selos</strong>=0|1 [off|on]</p>
+<p><strong>selos</strong>=0|1 <script type="math/tex; mode=display">off\|on</script>
+</p>
 <ul>
 <li>Boastful Bellow</li>
 </ul>
-<p><strong>boastful</strong>=0|1 [off|on]</p>
+<p><strong>boastful</strong>=0|1 <script type="math/tex; mode=display">off\|on</script>
+</p>
 <h4 id="beastlord">Beastlord<a class="headerlink" href="#beastlord" title="Permanent link">&para;</a></h4>
 <p><strong>AA's</strong></p>
 <ul>
 <li>Bite of the Asp</li>
 </ul>
-<p><strong>asp</strong>=0|1 [off|on]</p>
+<p><strong>asp</strong>=0|1 <script type="math/tex; mode=display">off\|on</script>
+</p>
 <ul>
 <li>Chameleon Strike</li>
 </ul>
-<p><strong>cstrike</strong>=0|1 [off|on]</p>
+<p><strong>cstrike</strong>=0|1 <script type="math/tex; mode=display">off\|on</script>
+</p>
 <ul>
 <li>Gorilla Smash</li>
 </ul>
-<p><strong>gorillasmash</strong>=0|1 [off|on]</p>
+<p><strong>gorillasmash</strong>=0|1 <script type="math/tex; mode=display">off\|on</script>
+</p>
 <ul>
 <li>Feral Swipe</li>
 </ul>
-<p><strong>feralswipe</strong>=0|1 [off|on]</p>
+<p><strong>feralswipe</strong>=0|1 <script type="math/tex; mode=display">off\|on</script>
+</p>
 <ul>
 <li>Playing Possum</li>
 </ul>
-<p><strong>feigndeath</strong>=[0-100] Attempt to feign death when life is below [X]%. 0=Off</p>
+<p><strong>feigndeath</strong>=<script type="math/tex; mode=display">0-100</script> Attempt to feign death when life is below <script type="math/tex; mode=display">X</script>%. 0=Off</p>
 <ul>
 <li>Raven's Claw</li>
 </ul>
-<p><strong>ravens</strong>=0|1 [off|on]</p>
+<p><strong>ravens</strong>=0|1 <script type="math/tex; mode=display">off\|on</script>
+</p>
 <p><strong>Combat Ability</strong></p>
 <ul>
 <li>Bestial Vivisection, Bestial Rending, Bestial Evulsing</li>
 </ul>
-<p><strong>bvivi</strong>=[0-100] Use ability when endurance above [X]%. 0=Off</p>
+<p><strong>bvivi</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>%. 0=Off</p>
 <ul>
 <li>Rake, Foray, Harrow, Rush, Barrage, Pummel</li>
 </ul>
-<p><strong>rake</strong>=[0-100] Use ability when endurance above [X]%. 0=Off</p>
+<p><strong>rake</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>%. 0=Off</p>
 <ul>
 <li>Flurry of Claws, Tumult of Claws, Clamor of Claws</li>
 </ul>
-<p><strong>fclaw</strong>=[0-100] Use ability when endurance above [X]%. 0=Off</p>
+<p><strong>fclaw</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>%. 0=Off</p>
 <h4 id="berserker">Berserker<a class="headerlink" href="#berserker" title="Permanent link">&para;</a></h4>
 <p><strong>Combat Ability</strong></p>
 <ul>
 <li>Shared Bloodlust, Shared Brutality, Shared Savagery, Shared Viciousness</li>
 </ul>
-<p><strong>bloodlust</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>bloodlust</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Leg Strike, Leg Cut, Leg Slice, Crippling Strike, Tendon Cleave, Tendon Sever, Tendon Shear, Tendon Lacerate, Tendon</li>
 </ul>
 <p>Slash, Tendon Gash</p>
-<p><strong>cripple</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>cripple</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Cry Havoc</li>
 </ul>
-<p><strong>cryhavoc</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>cryhavoc</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Diversive Strike, Distracting Strike, Confusing Strike, Baffling Strike, Jarring Strike, Jarring Smash, Jarring</li>
 </ul>
@@ -9612,89 +9698,90 @@
 <ul>
 <li>Overpowering Frenzy, Overwhelming Frenzy, Vanquishing Frenzy</li>
 </ul>
-<p><strong>opfrenzy</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>opfrenzy</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Rage Volley, Destroyer's Volley, Giant Slayer's Volley, Annihilator's Volley, Decimator's Volley, Eradicator's</li>
 </ul>
 <p>Volley, Savage Volley, Brutal Volley</p>
-<p><strong>ragevolley</strong>=[0-100] Will use best ragevolley discipline that is available, ready and endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>ragevolley</strong>=<script type="math/tex; mode=display">0-100</script> Will use best ragevolley discipline that is available, ready and endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Axe of Rallos, Axe of Graster</li>
 </ul>
-<p><strong>rallos</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>rallos</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Slap in the Face, Kick in the Teeth, Punch in the Throat</li>
 </ul>
-<p><strong>slapface</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>slapface</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Head Strike, Head Pummel, Head Crush, Mind Strike, Temple Blow, Temple Strike, Temple Bash, Temple Chop, Temple</li>
 </ul>
 <p>Smash, Temple Crush</p>
-<p><strong>stun1</strong>=[Disc/AA/Spell ID #] ID of the Disc/AA/Spell to use for stunning <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>stun1</strong>=<script type="math/tex; mode=display">Disc/AA/Spell ID \#</script> ID of the Disc/AA/Spell to use for stunning <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Vigorous Axe Throw, Energetic Axe Throw, Brutal Axe Throw</li>
 </ul>
-<p><strong>vigaxe</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>vigaxe</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <h4 id="monk">Monk<a class="headerlink" href="#monk" title="Permanent link">&para;</a></h4>
 <p><strong>AA</strong></p>
 <ul>
 <li>Eye Gouge</li>
 </ul>
-<p><strong>eyegouge</strong>=0|1 [off|on]</p>
+<p><strong>eyegouge</strong>=0|1 <script type="math/tex; mode=display">off\|on</script>
+</p>
 <p><strong>Combat Ability</strong></p>
 <ul>
 <li>Cloud of Fists</li>
 </ul>
-<p><strong>cloud</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span></p>
+<p><strong>cloud</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span></p>
 <ul>
 <li>Feign Death, Imitate Death</li>
 </ul>
-<p><strong>feign</strong>=[0-100] Attempt to feign death when life is below [X]%. 0=Off</p>
+<p><strong>feign</strong>=<script type="math/tex; mode=display">0-100</script> Attempt to feign death when life is below <script type="math/tex; mode=display">X</script>%. 0=Off</p>
 <ul>
 <li>Fists of Wu</li>
 </ul>
-<p><strong>fistofwu</strong>[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>fistofwu</strong><script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Leopard Claw, Dragon Fang, Clawstriker Flurry, Wheel Of Fists, Whorl Of Fists, Six-Step Pattern, Eight-Step Pattern</li>
 </ul>
-<p><strong>leopardclaw</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>leopardclaw</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Drunken Monkey</li>
 </ul>
-<p><strong>monkey</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span></p>
+<p><strong>monkey</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span></p>
 <ul>
 <li>Calanin's Synergy, Dreamwalker's Synergy, Veilwalker's Synergy, Shadewalker's Synergy</li>
 </ul>
-<p><strong>synergy</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>synergy</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Vigorous Shuriken</li>
 </ul>
-<p><strong>vigshuriken</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>vigshuriken</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <p><strong>Skills</strong></p>
 <ul>
 <li>Dragon Punch, Tail Rake <span class="arithmatex">\(Iksar\)</span></li>
 </ul>
-<p><strong>dragonpunch</strong>=0|1 [off|on] Will use if available.</p>
+<p><strong>dragonpunch</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Will use if available.</p>
 <ul>
 <li>Eagle Strike</li>
 </ul>
-<p><strong>eaglestrike</strong>=0|1 [off|on] Will use if available.</p>
+<p><strong>eaglestrike</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Will use if available.</p>
 <ul>
 <li>Flying Kick</li>
 </ul>
-<p><strong>flyingkick</strong>=0|1 [off|on] Will use if available.</p>
+<p><strong>flyingkick</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Will use if available.</p>
 <ul>
 <li>Mend</li>
 </ul>
-<p><strong>mend</strong>=0-100 [off|on] Mend wounds if your life percentage goes below the designated value.</p>
+<p><strong>mend</strong>=0-100 <script type="math/tex; mode=display">off\|on</script> Mend wounds if your life percentage goes below the designated value.</p>
 <ul>
 <li>Round Kick</li>
 </ul>
-<p><strong>roundkick</strong>=0|1 [off|on] Will use if available.</p>
+<p><strong>roundkick</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Will use if available.</p>
 <ul>
 <li>Tiger Claw</li>
 </ul>
-<p><strong>tigerclaw</strong>=0|1 [off|on] Will use if available.</p>
+<p><strong>tigerclaw</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Will use if available.</p>
 <h4 id="paladin">Paladin<a class="headerlink" href="#paladin" title="Permanent link">&para;</a></h4>
 <p><strong>AA</strong></p>
 <ul>
@@ -9705,22 +9792,22 @@
 <ul>
 <li>Lay Hands</li>
 </ul>
-<p><strong>layhand</strong>=[0-100] Lay Hands on myself when my HP % falls below [X].</p>
+<p><strong>layhand</strong>=<script type="math/tex; mode=display">0-100</script> Lay Hands on myself when my HP % falls below <script type="math/tex; mode=display">X</script>.</p>
 <p><strong>Combat Ability</strong></p>
 <ul>
 <li>Righteous Indignation, Righteous Vexation, Righteous Umbrage</li>
 </ul>
-<p><strong>rightind</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>rightind</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Withstand, Defy, Renounce, Reprove, Repel</li>
 </ul>
-<p><strong>withstand</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>withstand</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <p><strong>Spells</strong></p>
 <ul>
 <li>Challenge for Honor, Trial for Honor, Charge for Honor, Confrontation for Honor, Provocation for Honor, Demand for</li>
 </ul>
 <p>Honor, Reverent Force</p>
-<p><strong>challengefor</strong>=0|1 [off|on] Activate aggro spells.</p>
+<p><strong>challengefor</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Activate aggro spells.</p>
 <ul>
 <li>Stun, Holy Might, Force of Akera, Force of Akilae, Ancient Force of Chaos, Force of Piety, Ancient Force of Jeron,</li>
 </ul>
@@ -9731,7 +9818,7 @@
 <ul>
 <li>Steely Stance, Stubborn Stance, Stoic Stance, Steadfast Stance</li>
 </ul>
-<p><strong>steely</strong>=0|1 [off|on] Activate defensive spells.</p>
+<p><strong>steely</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Activate defensive spells.</p>
 <h4 id="ranger">Ranger<a class="headerlink" href="#ranger" title="Permanent link">&para;</a></h4>
 <p><strong>AA</strong></p>
 <ul>
@@ -9742,7 +9829,7 @@
 <ul>
 <li>Jolting Snapkicks, Jolting Frontkicks, Jolting Hook Kicks, Jolting Crescent Kicks, Jolting Heel Kicks</li>
 </ul>
-<p><strong>jltkicks</strong>=[0-100] endurance</p>
+<p><strong>jltkicks</strong>=<script type="math/tex; mode=display">0-100</script> endurance</p>
 <ul>
 <li>Storm of Blades, Focused Storm of Blades</li>
 </ul>
@@ -9757,147 +9844,148 @@
 <ul>
 <li>Assassinate</li>
 </ul>
-<p><strong>assassinate</strong>=0|1 [off|on] Activate the assassinate skill <span class="arithmatex">\(ie. Sneak, Hide, move behind target, activate Strike disc, backstab\)</span>.</p>
+<p><strong>assassinate</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Activate the assassinate skill <span class="arithmatex">\(ie. Sneak, Hide, move behind target, activate Strike disc, backstab\)</span>.</p>
 <p><strong>Combat Ability</strong></p>
 <ul>
 <li>Assault, Battery, Onslaught, Incursion</li>
 </ul>
-<p><strong>assault</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>assault</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Bleed, Wound, Lacerate, Gash</li>
 </ul>
-<p><strong>bleed</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>bleed</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Jugular Slash, Jugular Slice, Jugular Sever, Jugular Gash, Jugular Lacerate</li>
 </ul>
-<p><strong>jugular</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span></p>
+<p><strong>jugular</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span></p>
 <ul>
 <li>Pinpoint Vulnerability, Pinpoint Weaknesses, Pinpoint Vitals, Pinpoint Flaws, Pinpoint Liabilities, Pinpoint</li>
 </ul>
 <p>Deficiencies</p>
-<p><strong>pinpoint</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span></p>
+<p><strong>pinpoint</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span></p>
 <ul>
 <li>Sneak Attack, Thief's Vengeance, Assassin Strike, Kyv Strike, Ancient Chaos Strike, Daggerfall, Razor Arc, Swift</li>
 </ul>
 <p>Blade, Dagger Lunge, Dagger Swipe, Daggerswipe, Daggerstrike, Daggerthrust</p>
-<p><strong>strike</strong>=0|1 [off|on] Use your best sneak attack disc</p>
+<p><strong>strike</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Use your best sneak attack disc</p>
 <ul>
 <li>Thief's Eye</li>
 </ul>
-<p><strong>thiefeye</strong>=[0-100] Uses ability if your endurance is over [X]%. <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>thiefeye</strong>=<script type="math/tex; mode=display">0-100</script> Uses ability if your endurance is over <script type="math/tex; mode=display">X</script>%. <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Vigorous Dagger-Throw, Vigorous Dagger-Strike, Energetic Dagger-Throw</li>
 </ul>
-<p><strong>vigdagger</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>vigdagger</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <p><strong>Skills</strong></p>
 <ul>
 <li>Backstab</li>
 </ul>
-<p><strong>backstab</strong>=0|1 [off|on] Will try to back stab if you wielding a piercing weapon in your main hand and behind the target.</p>
+<p><strong>backstab</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Will try to back stab if you wielding a piercing weapon in your main hand and behind the target.</p>
 <ul>
 <li>Escape</li>
 </ul>
-<p><strong>escape</strong>=[0-100] Turn off Attack and use rogue escape skill if your life percentage goes below the designated value. Will never happen if aggro=on.</p>
+<p><strong>escape</strong>=<script type="math/tex; mode=display">0-100</script> Turn off Attack and use rogue escape skill if your life percentage goes below the designated value. Will never happen if aggro=on.</p>
 <ul>
 <li>Evade</li>
 </ul>
-<p><strong>evade</strong>=0|1 [off|on] Will attempt to evade in fight to drop some aggro each time hide skill available, strongly suggest that you set unhide=1 to authorize plugin to break invis and rejoin the fight.</p>
+<p><strong>evade</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Will attempt to evade in fight to drop some aggro each time hide skill available, strongly suggest that you set unhide=1 to authorize plugin to break invis and rejoin the fight.</p>
 <ul>
 <li>Hide</li>
 </ul>
-<p><strong>hide</strong>=0|1 [off|on] Will try to hide if you're not in a combat and not moving.</p>
+<p><strong>hide</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Will try to hide if you're not in a combat and not moving.</p>
 <ul>
 <li>Pickpocket</li>
 </ul>
-<p><strong>pickpocket</strong>=0|1 [off|on] Turn off attack &amp; try to pickpocket if not in aggro mode.</p>
+<p><strong>pickpocket</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Turn off attack &amp; try to pickpocket if not in aggro mode.</p>
 <ul>
 <li>Sense Traps</li>
 </ul>
-<p><strong>sensetraps</strong>=[on|off]<br />
+<p><strong>sensetraps</strong>=<script type="math/tex; mode=display">on\|off</script>
+<br />
 <em>Will try to sense traps if not in combat.</em></p>
 <ul>
 <li>Sneak</li>
 </ul>
-<p><strong>sneak</strong>=0|1 [off|on] Will try to sneak if not in combat.</p>
+<p><strong>sneak</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Will try to sneak if not in combat.</p>
 <h4 id="shadow-knight">Shadow Knight<a class="headerlink" href="#shadow-knight" title="Permanent link">&para;</a></h4>
 <p><strong>AA</strong></p>
 <ul>
 <li>Death Peace</li>
 </ul>
-<p><strong>feign1</strong>=[0-100] Attempt to feign death when life is below [X]%. 0=Off</p>
+<p><strong>feign1</strong>=<script type="math/tex; mode=display">0-100</script> Attempt to feign death when life is below <script type="math/tex; mode=display">X</script>%. 0=Off</p>
 <ul>
 <li>Harm Touch</li>
 </ul>
-<p><strong>harmtouch</strong>=0|1 [off|on] Use Harm Touch ability when ready.</p>
+<p><strong>harmtouch</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Use Harm Touch ability when ready.</p>
 <p><strong>Combat Ability</strong></p>
 <ul>
 <li>Withstand, Defy, Renounce, Reprove, Repel</li>
 </ul>
-<p><strong>withstand</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>withstand</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Gouging Blade, Gashing Blade, Lacerating Blade</li>
 </ul>
-<p><strong>gblade</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>gblade</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <p><strong>Spells</strong></p>
 <ul>
 <li>Feign Death, Comatose, Death Peace, Last Breath, Rigor Mortis, Last Grasp, Final Breath, Last Breath, Final Gasp,</li>
 </ul>
 <p>Terminal Breath</p>
-<p><strong>feign0</strong>=[0-100] Attempt to feign death when life is below [X]%. 0=Off</p>
+<p><strong>feign0</strong>=<script type="math/tex; mode=display">0-100</script> Attempt to feign death when life is below <script type="math/tex; mode=display">X</script>%. 0=Off</p>
 <ul>
 <li>Terror of Death, Terror of Terris, Terror of Thule, Terror of Discord, Terror of Vergalid, Terror of Soulbleeder,</li>
 </ul>
 <p>Terror of Jelvalak, Terror of Rerekalen, Terror of Poira, Terror of Narus</p>
-<p><strong>provoke1</strong>=[Disc/AA/Spell ID #] ID of the Disc/AA/Spell to use for provoking <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>provoke1</strong>=<script type="math/tex; mode=display">Disc/AA/Spell ID \#</script> ID of the Disc/AA/Spell to use for provoking <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Challenge for Power, Trial for Power, Charge for Power, Confrontation for Power, Provocation for Power, Demand for</li>
 </ul>
 <p>Power, Impose for Power</p>
-<p><strong>challengefor</strong>=0|1 [off|on] Activate aggro spells.</p>
+<p><strong>challengefor</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Activate aggro spells.</p>
 <ul>
 <li>Steely Stance, Stubborn Stance, Stoic Stance, Steadfast Stance, Staunch Stance</li>
 </ul>
-<p><strong>steely</strong>=0|1 [off|on] Activate defensive spells.</p>
+<p><strong>steely</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Activate defensive spells.</p>
 <h4 id="warrior">Warrior<a class="headerlink" href="#warrior" title="Permanent link">&para;</a></h4>
 <p><strong>AA</strong></p>
 <ul>
 <li>Call of Challenge</li>
 </ul>
-<p><strong>callchallenge</strong>=0|1 [off|on] Use Alt Ability when ready.</p>
+<p><strong>callchallenge</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Use Alt Ability when ready.</p>
 <ul>
 <li>Gut Punch</li>
 </ul>
-<p><strong>gutpunch</strong>=0|1 [off|on] Use Alt Ability when ready.</p>
+<p><strong>gutpunch</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Use Alt Ability when ready.</p>
 <ul>
 <li>Knee Strike</li>
 </ul>
-<p><strong>kneestrike</strong>=0|1 [off|on] Use Alt Ability when ready.</p>
+<p><strong>kneestrike</strong>=0|1 <script type="math/tex; mode=display">off\|on</script> Use Alt Ability when ready.</p>
 <p><strong>Combat Ability</strong></p>
 <ul>
 <li>Bracing Defense, Staunch Defense, Stalwart Defense, Steadfast Defense</li>
 </ul>
-<p><strong>defense</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>defense</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Commanding Voice</li>
 </ul>
-<p><strong>commanding</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>commanding</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Field Armorer, Field Outfitter, Field Defender, Field Guardian</li>
 </ul>
-<p><strong>fieldarm</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>fieldarm</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Opportunistic Strike, Strategic Strike, Vital Strike, Vital Strike</li>
 </ul>
-<p><strong>opportunisticstrike</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>opportunisticstrike</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Provoke, Belllow, Berate, Incite, Bellow of the Mastrug, Ancient Chaos Cry, Bazu Bellow, Scowl, Sneer, Jeer, Bazu</li>
 </ul>
 <p>Bluster, Bazu Roar, Scoff, Krondal's Roar, Ridicule</p>
-<p><strong>provoke1</strong>=[Disc/AA/Spell ID #] ID of the Disc/AA/Spell to use for provoking <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>provoke1</strong>=<script type="math/tex; mode=display">Disc/AA/Spell ID \#</script> ID of the Disc/AA/Spell to use for provoking <span class="arithmatex">\(0=off\)</span>.</p>
 <ul>
 <li>Throat Jab</li>
 </ul>
-<p><strong>throatjab</strong>=[0-100] Use ability when endurance above [X]% <span class="arithmatex">\(0=off\)</span>.</p>
+<p><strong>throatjab</strong>=<script type="math/tex; mode=display">0-100</script> Use ability when endurance above <script type="math/tex; mode=display">X</script>% <span class="arithmatex">\(0=off\)</span>.</p>
 <h2 id="top-level-objects">Top-Level Objects<a class="headerlink" href="#top-level-objects" title="Permanent link">&para;</a></h2>
 <ul>
 <li><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${Melee}</strong></li>
@@ -9978,17 +10066,17 @@
 <p>Angle of view with current target.</p>
 <p>Debugging TLOs:</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${meleemvb[**idskill</strong>]}**</li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${meleemvb<script type="math/tex; mode=display">**idskill**</script>}</strong></li>
 </ul>
 <p>1 if the skill is ready and target in range, 0 if not. Most combat and/or character kills that can use an ID are</p>
 <p>testable here. Examples of <em>idskills</em> are: <strong>idleopardclaw</strong>, <strong>idslam</strong>, <strong>idforage</strong>, <strong>idfrenzy</strong>,</p>
 <p><strong>idtigerclaw</strong>, <strong>idescape</strong>.</p>
 <ul>
-<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${meleemvi[**variable</strong>]}**</li>
+<li><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> <strong>${meleemvi<script type="math/tex; mode=display">**variable**</script>}</strong></li>
 </ul>
 <p>1/0 if the variable is set to on/off. This includes all variables that can be set on the command line.</p>
 <ul>
-<li><a href=""><em>string</em></a> <strong>${meleemvs[**option</strong>]}**</li>
+<li><a href=""><em>string</em></a> <strong>${meleemvs<script type="math/tex; mode=display">**option**</script>}</strong></li>
 </ul>
 <p>Evaluates <em>option</em> based on the current conditions and target. <em>Options</em> are all the INI options that contain</p>
 <p>command lines that need to be evaluated. Examples are: <strong>bashif</strong>, <strong>beggingif</strong>, <strong>tauntif</strong>, <strong>holyshit0</strong>,</p>
@@ -10001,7 +10089,7 @@
 </ul>
 <p>triggered.</p>
 <ul>
-<li>They all need to take the form of ${If[<em>condition</em>,1,0]} statements and must return an integer. Any return of 0 is</li>
+<li>They all need to take the form of ${If<script type="math/tex; mode=display">_condition_,1,0</script>} statements and must return an integer. Any return of 0 is</li>
 </ul>
 <p>considered FALSE, any other integer is considered TRUE.</p>
 <p>Eg. <span Me.Combat="Me.Combat" class="arithmatex">\({If\[\)</span>,1,0]} will always be evaluated correctly.</p>
@@ -10233,6 +10321,10 @@
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

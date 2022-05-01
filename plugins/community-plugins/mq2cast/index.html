@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8924,7 +8940,7 @@
 <h3 id="casting">/casting<a class="headerlink" href="#casting" title="Permanent link">&para;</a></h3>
 <p><strong>Syntax:</strong></p>
 <p><code>/casting "Name" [type] [options]</code></p>
-<p><em>Although the [type] is optional, it's always recommended to specify if you're casting a spell <span class="arithmatex">\(specify the gem or number\)</span>, clicking an item <span class="arithmatex">\(specify "item" or the slot name/slot number\)</span> or activating an AA <span class="arithmatex">\(specify "alt"\)</span>, since there are AAs which have the same name as spells and spells and items can have the same IDs.</em></p>
+<p><em>Although the <script type="math/tex; mode=display">type</script> is optional, it's always recommended to specify if you're casting a spell <span class="arithmatex">\(specify the gem or number\)</span>, clicking an item <span class="arithmatex">\(specify "item" or the slot name/slot number\)</span> or activating an AA <span class="arithmatex">\(specify "alt"\)</span>, since there are AAs which have the same name as spells and spells and items can have the same IDs.</em></p>
 <p>The /casting command requires only 1 argument, the name of the spell you wish to cast. If the spell is not memmed, it will try and mem it in gem5 <span class="arithmatex">\(this is the default if no gem is specified\)</span>. If the spell has more than one word, make sure to surround it with quotes. For example:</p>
 <p><code>/casting "Minor Shielding"</code></p>
 <p><em>This will cast the Minor Shielding spell if it is already memmed, or if not, will attempt to memorize it in gem5 before casting.</em></p>
@@ -9016,15 +9032,15 @@ Target this ID before casting.</p>
 <p>Return TRUE if ready to cast a spell, item or AA.</p>
 <ul>
 <li>
-<p><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${Cast.Ready[M]}</strong></p>
+<p><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${Cast.Ready<script type="math/tex; mode=display">M</script>}</strong></p>
 <p>Return TRUE if ready to memorize a spell.</p>
 </li>
 <li>
-<p><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${Cast.Ready[#]}</strong></p>
+<p><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${Cast.Ready<script type="math/tex; mode=display">\#</script>}</strong></p>
 <p>Return TRUE if gem # is ready to cast.</p>
 </li>
 <li>
-<p><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${Cast.Ready[X]}</strong></p>
+<p><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a> <strong>${Cast.Ready<script type="math/tex; mode=display">X</script>}</strong></p>
 <p>Return TRUE if spell, item, gem, ID, AA, etc is ready to cast. As spells and items can have the same IDs and</p>
 <p>spells and AAs can have the same names, it's a good idea to specify the type of cast to take place (ie.</p>
 <p>gem#/item/alt). Examples:</p>
@@ -9116,7 +9132,7 @@ Target this ID before casting.</p>
 <p><em>Set Number of seconds left on spell before recasting Default:20</em></p>
 <h3 id="top-level-objects-mq2data_1">Top Level Objects <span class="arithmatex">\(MQ2Data\)</span><a class="headerlink" href="#top-level-objects-mq2data_1" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>${SpellTimer[SpawnID,Caster,Spell Name]}</strong></li>
+<li><strong>${SpellTimer<script type="math/tex; mode=display">SpawnID,Caster,Spell Name</script>}</strong></li>
 </ul>
 <p><a href="../../../reference/data-types/datatype-int/"><em>int</em></a> Returns time <span class="arithmatex">\(in seconds\)</span> left on "Spell Name" by "Caster" on "SpawnID".</p>
 <p>:* <em>Caster</em> must be one of the following: <strong>me</strong> <span class="arithmatex">\(default\)</span>, <strong>other</strong> or <strong>any</strong>.</p>
@@ -9337,6 +9353,10 @@ Target this ID before casting.</p>
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

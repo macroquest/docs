@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8839,11 +8855,11 @@ The information below applies to the 7.0518 and earlier versions of MQ2MoveUtils
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
 <h3 id="stick">/stick<a class="headerlink" href="#stick" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>/stick [on|off]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">on\|off</script></strong></li>
 </ul>
 <p>Turn stick on and off. The default for /stick is to stick at max melee range.</p>
 <ul>
-<li><strong>/stick [hold]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">hold</script></strong></li>
 </ul>
 <p>Sticks to current target even if you lose/change target</p>
 <ul>
@@ -8851,69 +8867,69 @@ The information below applies to the 7.0518 and earlier versions of MQ2MoveUtils
 </ul>
 <p>Stick at units to your target</p>
 <ul>
-<li><strong>/stick [-]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">-</script></strong></li>
 </ul>
 <p>Subtract the dist used from the current stick distance <span class="arithmatex">\(ie. it will put you units closer to your target\)</span></p>
 <ul>
-<li><strong>/stick [%]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">%</script></strong></li>
 </ul>
 <p>Stick at of max melee range from target. Eg. if max melee range is 20, then /stick 50% will stick you at 10 range</p>
 <ul>
-<li><strong>/stick [behind]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">behind</script></strong></li>
 </ul>
 <p>Sticks you behind your target.</p>
 <p><strong>*Note:</strong> Be careful with this option if you do not have the Health of Target's Target Leadership Ability. If you have HoTT active and you are the Target of your Target, then you will not try to get behind. However if you do not have this ability and you gain aggro, you will spin around very quickly as you try and get behind your target while it continues to face you.*</p>
 <ul>
-<li><strong>/stick [behindonce]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">behindonce</script></strong></li>
 </ul>
 <p>Get behind the target once then convert to a regular stick</p>
 <ul>
-<li><strong>/stick [pin]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">pin</script></strong></li>
 </ul>
 <p>Sticks you to the side of the target, same considerations as /stick behind apply</p>
 <ul>
-<li><strong>/stick [!front]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">!front</script></strong></li>
 </ul>
 <p>Sticks you anywhere but in front of the target, will only reposition you if you would be in front. Same considerations apply to this as the "behind" and "pin" options</p>
 <ul>
-<li><strong>/stick [moveback]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">moveback</script></strong></li>
 </ul>
 <p>Moveback will back your toon up to the current value, keeping you at a consistant distance from your target</p>
 <ul>
-<li><strong>/stick [loose]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">loose</script></strong></li>
 </ul>
 <p>Uses a time delay so adjustments to your position do not occur as frequently, simulating a more human-like control</p>
 <ul>
-<li><strong>/stick [uw]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">uw</script></strong></li>
 </ul>
 <p>This changes the facing of your toon, and is very useful under water, where you will try and follow the Z coordinate of the spawn you are facing</p>
 <ul>
-<li><strong>/stick [id ]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">id </script></strong></li>
 </ul>
 <p>Allows you to stick to a specific spawn ID</p>
 <ul>
-<li><strong>/stick [mpause]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">mpause</script></strong></li>
 </ul>
 <p>By enabling mpause, manually moving your toon will not break stick and will rather put it on hold. When you are done manually moving, the /stick command will once again kick in and you will continue following the same target as before</p>
 <ul>
-<li><strong>/stick [pause|unpause]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">pause\|unpause</script></strong></li>
 </ul>
 <p>Pause and unpause the stick command</p>
 <ul>
-<li><strong>/stick [save|load]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">save\|load</script></strong></li>
 </ul>
 <p>Some settings are stored in the INI file. This allows you to save your current preferences to the INI file, or load the saved preferences this file</p>
 <ul>
-<li><strong>/stick [mindelay ]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">mindelay </script></strong></li>
 </ul>
 <p>When used with /stick this delay is used when mpause is enabled to decide the smallest value to use to resume the /stick command after a manual move</p>
 <ul>
-<li><strong>/stick [maxdelay ]</strong></li>
+<li><strong>/stick <script type="math/tex; mode=display">maxdelay </script></strong></li>
 </ul>
 <p>When used with /stick this delay is used when mpause is enabled to decide the largest value to use to resume the /stick command after a manual move</p>
 <h3 id="moveto">/moveto<a class="headerlink" href="#moveto" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>/moveto [loc Y X|off]</strong></li>
+<li><strong>/moveto <script type="math/tex; mode=display">loc Y X\|off</script></strong></li>
 </ul>
 <p>Moves you to the specified location, or stops the current /moveto <span class="arithmatex">\(by using "/moveto off"\)</span></p>
 <ul>
@@ -8921,113 +8937,113 @@ The information below applies to the 7.0518 and earlier versions of MQ2MoveUtils
 </ul>
 <p>Sets the maximum distance from your moveto point that you consider acceptable. This option is here because it's not always possible to move to the <strong>exact</strong> point that you specify, so the plugin will move you to within units of the moveto point before stopping. Eg. if you use "/moveto 5", you will always move to within 5 units from your moveto point</p>
 <ul>
-<li><strong>/moveto [-]</strong></li>
+<li><strong>/moveto <script type="math/tex; mode=display">-</script></strong></li>
 </ul>
 <p>Subtract from the current moveto distance</p>
 <ul>
-<li><strong>/moveto [mpause]</strong></li>
+<li><strong>/moveto <script type="math/tex; mode=display">mpause</script></strong></li>
 </ul>
 <p>By enabling mpause, manually moving your toon will not break moveto and will rather put it on hold. When you are done manually moving, the /moveto command will once again kick in and you will continue moving to your moveto point</p>
 <ul>
-<li><strong>/moveto [pause|unpause]</strong></li>
+<li><strong>/moveto <script type="math/tex; mode=display">pause\|unpause</script></strong></li>
 </ul>
 <p>Pause and unpause the moveto command</p>
 <ul>
-<li><strong>/moveto ID [Spawn ID]</strong></li>
+<li><strong>/moveto ID <script type="math/tex; mode=display">Spawn ID</script></strong></li>
 </ul>
 <p>Moves to the specified Spawn ID or moves to your current target if no Spawn ID is provided</p>
 <ul>
-<li><strong>/moveto [mindelay ]</strong></li>
+<li><strong>/moveto <script type="math/tex; mode=display">mindelay </script></strong></li>
 </ul>
 <p>When used with /moveto this delay is used when mpause is enabled to decide the smallest value to use to resume the /moveto command after a manual move.</p>
 <ul>
-<li><strong>/moveto [maxdelay ]</strong></li>
+<li><strong>/moveto <script type="math/tex; mode=display">maxdelay </script></strong></li>
 </ul>
 <p>When used with /moveto this delay is used when mpause is enabled to decide the largest value to use to resume the /moveto command after a manual move.</p>
 <ul>
-<li><strong>/moveto [save|load]</strong></li>
+<li><strong>/moveto <script type="math/tex; mode=display">save\|load</script></strong></li>
 </ul>
 <p>Save or load the moveto settings</p>
 <h3 id="makecamp">/makecamp<a class="headerlink" href="#makecamp" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>/makecamp [on|off]</strong></li>
+<li><strong>/makecamp <script type="math/tex; mode=display">on\|off</script></strong></li>
 </ul>
 <p>Turns MakeCamp logic off or turns it on, using your current location as the anchor point</p>
 <ul>
-<li><strong>/makecamp [ ]</strong></li>
+<li><strong>/makecamp <script type="math/tex; mode=display"> </script></strong></li>
 </ul>
 <p>Turns MakeCamp logic on using the supplied Y,X location as the camp anchor point</p>
 <ul>
-<li><strong>/makecamp [mindelay ]</strong></li>
+<li><strong>/makecamp <script type="math/tex; mode=display">mindelay </script></strong></li>
 </ul>
 <p>If outside the MakeCamp radius this is the minimum delay used before returning to a point within the camp radius</p>
 <ul>
-<li><strong>/makecamp [maxdelay ]</strong></li>
+<li><strong>/makecamp <script type="math/tex; mode=display">maxdelay </script></strong></li>
 </ul>
 <p>If outside the MakeCamp radius this is the maxium delay used before returning to a point within the camp radius</p>
 <ul>
-<li><strong>/makecamp [leash]</strong></li>
+<li><strong>/makecamp <script type="math/tex; mode=display">leash</script></strong></li>
 </ul>
 <p>Toggle the leash logic on and off. Leash is the maximum distance away from your camp anchor your toon will be allowed to go using another MQ2MoveUtils command such as /stick</p>
 <ul>
-<li><strong>/makecamp [leash ]</strong></li>
+<li><strong>/makecamp <script type="math/tex; mode=display">leash </script></strong></li>
 </ul>
 <p>Turns leash logic ON and sets the leash length</p>
 <ul>
-<li><strong>/makecamp [radius ]</strong></li>
+<li><strong>/makecamp <script type="math/tex; mode=display">radius </script></strong></li>
 </ul>
 <p>Sets the camp radius. This is the maximum distance you can be from the anchor point and still be considered "in camp"</p>
 <ul>
-<li><strong>/makecamp [mpause]</strong></li>
+<li><strong>/makecamp <script type="math/tex; mode=display">mpause</script></strong></li>
 </ul>
 <p>By enabling mpause, manually moving your toon will not break makecamp and will rather put it on hold. When you are done manually moving, the /makecamp command will once again kick</p>
 <ul>
-<li><strong>/makecamp [pause|unpause]</strong></li>
+<li><strong>/makecamp <script type="math/tex; mode=display">pause\|unpause</script></strong></li>
 </ul>
 <p>Pause and unpause the MQ2MoveUtils makecamp functionality</p>
 <ul>
-<li><strong>/makecamp [return]</strong></li>
+<li><strong>/makecamp <script type="math/tex; mode=display">return</script></strong></li>
 </ul>
 <p>Returns your toon to the camp immediatly</p>
 <ul>
-<li><strong>/makecamp [save|load]</strong></li>
+<li><strong>/makecamp <script type="math/tex; mode=display">save\|load</script></strong></li>
 </ul>
 <p>Save or load the makecamp settings</p>
 <h3 id="circle">/circle<a class="headerlink" href="#circle" title="Permanent link">&para;</a></h3>
 <ul>
-<li><strong>/circle [on|off]</strong></li>
+<li><strong>/circle <script type="math/tex; mode=display">on\|off</script></strong></li>
 </ul>
 <p>Sets the anchor point to your current location, and uses the currently set radius</p>
 <ul>
-<li><strong>/circle [on ]</strong></li>
+<li><strong>/circle <script type="math/tex; mode=display">on </script></strong></li>
 </ul>
 <p>Sets the anchor point to your current location, and uses the specified</p>
 <ul>
-<li><strong>/circle [ ]</strong></li>
+<li><strong>/circle <script type="math/tex; mode=display"> </script></strong></li>
 </ul>
 <p>Sets Y,X anchor point around which to circle</p>
 <ul>
-<li><strong>/circle [mpause]</strong></li>
+<li><strong>/circle <script type="math/tex; mode=display">mpause</script></strong></li>
 </ul>
 <p>By enabling mpause manually moving your toon will not break the circle but will instead put it on hold, when you get done manually moving the toon the /circle command will once again kick in.</p>
 <ul>
-<li><strong>/circle [pause|unpause]</strong></li>
+<li><strong>/circle <script type="math/tex; mode=display">pause\|unpause</script></strong></li>
 </ul>
 <p>Pause and unpause the /circle command</p>
 <ul>
-<li><strong>/circle [drunken]</strong></li>
+<li><strong>/circle <script type="math/tex; mode=display">drunken</script></strong></li>
 </ul>
 <p>Does not move in a perfect circle but instead the circle is more human-like</p>
 <ul>
-<li><strong>/circle [mindelay ]</strong></li>
+<li><strong>/circle <script type="math/tex; mode=display">mindelay </script></strong></li>
 </ul>
 <p>When used with /circle this delay is used when mpause is enabled to decide the smallest value to use to resume the /stick command after a manual move.</p>
 <ul>
-<li><strong>/circle [maxdelay ]</strong></li>
+<li><strong>/circle <script type="math/tex; mode=display">maxdelay </script></strong></li>
 </ul>
 <p>When used with /circle this delay is used when mpause is enabled to decide the largest value to use to resume the /stick command after a manual move.</p>
 <ul>
-<li><strong>/circle [save|load]</strong></li>
+<li><strong>/circle <script type="math/tex; mode=display">save\|load</script></strong></li>
 </ul>
 <p>Save or load the circle settings from the INI file</p>
 <h2 id="top-level-objects">Top-Level Objects<a class="headerlink" href="#top-level-objects" title="Permanent link">&para;</a></h2>
@@ -9136,7 +9152,7 @@ The information below applies to the 7.0518 and earlier versions of MQ2MoveUtils
 <p>Returns TRUE if returning to camp, FALSE if not</p>
 <h2 id="ini-file">INI File<a class="headerlink" href="#ini-file" title="Permanent link">&para;</a></h2>
 <p>A default INI file is created <span class="arithmatex">\(if it doesn't exist\)</span> when you issue one of the "save" commands <span class="arithmatex">\(eg. /stick save, /moveto save, etc\)</span>.</p>
-<p>The [Defaults] section contains global defaults for all users. New sections can be added with character names as titles to override the default values. An example INI file is below, with explanations of the options underneath:</p>
+<p>The <script type="math/tex; mode=display">Defaults</script> section contains global defaults for all users. New sections can be added with character names as titles to override the default values. An example INI file is below, with explanations of the options underneath:</p>
 <p><code>[Defaults]</code><br />
 <code>AutoPause=on</code><br />
 <code>BreakOnWarp=on</code><br />
@@ -9152,11 +9168,11 @@ The information below applies to the 7.0518 and earlier versions of MQ2MoveUtils
 <code>stuckCheck=5</code><br />
 <code>stuckDist=0.1</code></p>
 <ul>
-<li><strong>AutoPause [on/off]</strong></li>
+<li><strong>AutoPause <script type="math/tex; mode=display">on/off</script></strong></li>
 </ul>
 <p>This enables or disables the automatic pause on cast feature. This does not apply to bards, since they can move while singing.</p>
 <ul>
-<li><strong>BreakOnWarp [on/off]</strong></li>
+<li><strong>BreakOnWarp <script type="math/tex; mode=display">on/off</script></strong></li>
 </ul>
 <p>With <em>BreakOnWarp</em> on, any movement will be terminated if the target moves too far away. See <em>BreakDist</em> to set the distance.</p>
 <ul>
@@ -9164,11 +9180,11 @@ The information below applies to the 7.0518 and earlier versions of MQ2MoveUtils
 </ul>
 <p>This sets how far away the target has to be before it will be considered too far away to continue following.</p>
 <ul>
-<li><strong>BreakOnGate [on/off]</strong></li>
+<li><strong>BreakOnGate <script type="math/tex; mode=display">on/off</script></strong></li>
 </ul>
 <p>This enables/disables monitoring chat for "<em>TargetName</em> Gates". Movement will be terminated if it determines that the target has gated.</p>
 <ul>
-<li><strong>ManualPause [on/off]</strong></li>
+<li><strong>ManualPause <script type="math/tex; mode=display">on/off</script></strong></li>
 </ul>
 <p>Stores your preference for the mPause functionality built into the various commands.</p>
 <ul>
@@ -9184,7 +9200,7 @@ The information below applies to the 7.0518 and earlier versions of MQ2MoveUtils
 </ul>
 <p>This is the default value used for /makecamp leash length</p>
 <ul>
-<li><strong>StuckLogic [on/off]</strong></li>
+<li><strong>StuckLogic <script type="math/tex; mode=display">on/off</script></strong></li>
 </ul>
 <p>Enable or disable the logic used to determine if you are stuck behind an object when using /stick or /moveto.</p>
 <ul>
@@ -9273,6 +9289,10 @@ The information below applies to the 7.0518 and earlier versions of MQ2MoveUtils
     
     
       <script src="../../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

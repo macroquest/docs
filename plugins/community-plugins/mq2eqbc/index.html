@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -9109,7 +9125,7 @@ Password=mypassword
 <p>:* <strong>fswatch</strong></p>
 <p>Relay fellowship chat received to /bc</p>
 <p>:* <strong>silentcmd</strong></p>
-<p>Squelch 'CMD: [command]' echo</p>
+<p>Squelch 'CMD: <script type="math/tex; mode=display">command</script>' echo</p>
 <p>:* <strong>savebychar</strong></p>
 <p>Saving custom UI window settings to <em>CharName</em> sections of the configuration file <span class="arithmatex">\(saves to _Window_ if disabled\)</span></p>
 <p>:* <strong>silentinccmd</strong></p>
@@ -9275,7 +9291,7 @@ Port=1337
 </tr>
 <tr>
 <td align="left"><a href="../../../reference/data-types/datatype-bool/"><em>bool</em></a></td>
-<td align="left"><strong>Setting[</strong><em><strong>option</strong></em><strong>]</strong></td>
+<td align="left"><strong>Setting<script type="math/tex; mode=display">**_**option**_**</script></strong></td>
 <td align="left">Option enabled/disabled status. <span class="arithmatex">\(see **/bccmd set** for complete list\)</span></td>
 </tr>
 </tbody>
@@ -9351,7 +9367,7 @@ C:\&gt; eqbcs ftp          Does not work, it does not look up service names to m
 <ol>
 <li>In the Solution Explorer, double click on the eqbcs.cpp file - this will open the code in the code window.</li>
 <li>
-<p>In the code, find "tempPort = atoi<span class="arithmatex">\(argv\[1\]\)</span>;" and replace it with "tempPort = atoi<span class="arithmatex">\(\(const char \*\)</span>argv[1]);"</p>
+<p>In the code, find "tempPort = atoi<span class="arithmatex">\(argv\[1\]\)</span>;" and replace it with "tempPort = atoi<span class="arithmatex">\(\(const char \*\)</span>argv<script type="math/tex; mode=display">1</script>);"</p>
 <p><span class="arithmatex">\(this will be on or near line 1983\)</span>. Thanks much to Bardomatic for fixing this piece of code.</p>
 </li>
 <li>
@@ -9523,6 +9539,10 @@ The most recent release of this application also allows you to view detailed inf
     
     
       <script src="../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../assets/mathjaxhelper.js"></script>
       
     
   </body>

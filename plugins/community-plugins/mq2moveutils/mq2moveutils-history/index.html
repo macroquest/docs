@@ -494,6 +494,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -572,6 +574,20 @@
     <li class="md-nav__item">
       <a href="../../../../main/features/namingspawn/" class="md-nav__link">
         NamingSpawn
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../../main/features/parser/" class="md-nav__link">
+        Parser Walkthrough
       </a>
     </li>
   
@@ -8662,7 +8678,7 @@
 <li>/stick will break on a large enough sudden distance increment <span class="arithmatex">\(defaults to 250 units\)</span>  </li>
 <li>INI file support:</li>
 </ul>
-<p>A default ini file is created if it doesn't exist. Section [Defaults] contains global defaults. New sections can be</p>
+<p>A default ini file is created if it doesn't exist. Section <script type="math/tex; mode=display">Defaults</script> contains global defaults. New sections can be</p>
 <p>added with character names as titles to override those defaults, for example:</p>
 <p>AutoPause on/off enables/disables the automatic pause on cast feature <span class="arithmatex">\(regardless of this setting, bards won't pause /stick for casting... it's unneeded, and besides, that'd mean we can't sing while /stick'ing :\)</span>).<br />
 BreakOnWarp on/off enables/disables the automatic break on large distance increment<br />
@@ -8768,7 +8784,7 @@ Adjusted the the MoveStuck stuckDist to be &#8531; of what it normally is if you
 <p>* Corrections 2005.07.19<br />
 Modified /stick movestuck logic when you are close to mob and are switched to walk mode, this was causing movestuck logic to be executed incorrectly.</p>
 <p>* Corrections 2005.09.19<br />
-Changed IsBardClass function to use GetCharInfo2() instead of the old GetCharInfo() function.</p>
+Changed IsBardClass function to use GetCharInfo2<script type="math/tex">\) instead of the old GetCharInfo\(</script> function.</p>
 <p>* Corrections 2005.09.21<br />
 Changed movestuck logic for underwater to not kick in till you are not moving at all; pulse average = 0.</p>
 <p>* Addition 2005.09.26<br />
@@ -8911,6 +8927,10 @@ Added /moveto id  functionality as discussed on boards.</p>
     
     
       <script src="../../../../assets/javascripts/bundle.ed9748b7.min.js"></script>
+      
+        <script src="https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML"></script>
+      
+        <script src="../../../../assets/mathjaxhelper.js"></script>
       
     
   </body>
