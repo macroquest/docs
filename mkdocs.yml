@@ -29,6 +29,7 @@ nav:
     - Configuration: main/macroquest.ini.md
     - Custom UIs: main/features/custom-uis.md
     - NamingSpawn: main/features/namingspawn.md
+    - Parser Walkthrough: main/features/parser.md
 
   - MacroQuest Launcher: main/macroquest-launcher.md
 
@@ -563,6 +564,7 @@ markdown_extensions:
   - attr_list
   - def_list
   - footnotes
+  - mdx_math
   - meta
   - toc:
       permalink: true
@@ -593,3 +595,7 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
+
+extra_javascript:
+  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
+  - assets/mathjaxhelper.js
