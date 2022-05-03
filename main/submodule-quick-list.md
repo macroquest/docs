@@ -2,7 +2,7 @@
 
 A quick list of plugins that have been migrated and how to add them.  Once they're all added, you can quickly update your plugins with:  `git pull --recurse-submodules`.  The solution file with all of these in it is here: [MacroQuestCustom.sln](../uploads/MacroQuestCustom.sln) (place this file in the src folder beside MacroQuest.sln)
 
-When using this solution file, make sure your build configuration is set to Debug / x64.
+When using this solution file, make sure your build configuration is set to x64.
 
 ```bash
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2AASpend.git plugins/MQ2AASpend
