@@ -86,7 +86,7 @@ This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is ac
       <td style="text-align:left">True if the merchants itemlist has been filled in.</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>To String</b>
         </td>
@@ -102,6 +102,7 @@ This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is ac
 | :--- | :--- |
 | **Buy[\#\]** | Buys \# of whatever is selected with **Merchant.SelectItem\[xxx]** |
 | **OpenWindow** | Will open the merchant closest to you, or if you have a merchant target |
+| **CloseWindow** | Will close the merchant window |
 | **SelectItem[xxx\]** | Select item specified or partial match that fits. Use **SelectItem\[=xxx]** for EXACT match (its not case sensitive) |
 | **Sell[\#]** | Sell \# of whatever is selected with /selectitem. See examples |
 
@@ -118,4 +119,3 @@ Then you can use
 `/invoke ${Merchant.Sell[100]}`
 
 Sells 100 of whatever is selected with /selectitem
-
