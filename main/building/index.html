@@ -8806,14 +8806,14 @@
 <p>At this point, the source should be ready to compile. Proceed to Build Steps.</p>
 <h3 id="build-steps">Build Steps<a class="headerlink" href="#build-steps" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Open the <code>MacroQuest.sln</code> file in the <code>src</code> directory. Double clicking this file should open Visual Studio 2019.</li>
+<li>Open the <code>MacroQuest.sln</code> file in the <code>src</code> directory. Double clicking this file should open Visual Studio.</li>
 <li>Select the <code>Release</code> and <code>(x64)</code>configuration from the drop-down menu near the top of the window.</li>
 <li>Since the project moved to 64-bit, ensure all project configurations are set to <code>(x64)</code> in the <strong>Solution Macroquest</strong> Property Pages. From the Visual Studio main menu, select <strong>Build</strong> then <strong>Configuration Manager</strong> then ensure the Platform column for each project is set to <code>(x64)</code>.</li>
-<li>Select <code>Build -&gt; Build Solution</code> from the menu</li>
+<li>Select <code>Build -&gt; Build Solution</code> from the menu.</li>
 </ol>
 <p>The built files will be placed in <code>build/bin/Release</code>. To start MacroQuest, run <code>MacroQuest.exe</code>. This will launch the application to the tray, and install MacroQuest into any running EverQuest processes.</p>
 <h3 id="adding-your-own-plugins">Adding Your Own Plugins<a class="headerlink" href="#adding-your-own-plugins" title="Permanent link">&para;</a></h3>
-<p>Note: If you have any custom plugins you want to build, put the sources for them in the <code>plugins</code> folder, for example: <code>plugins/MQ2Foo/MQ2Foo.cpp</code> Do not put them in <code>src/plugins</code> this path is reserved for the MacroQuest developers.</p>
+<p>Note: If you have any custom plugins you want to build, put the sources for them in the <code>plugins</code> folder, for example: <code>plugins/MQ2Foo/MQ2Foo.cpp</code> Do not put them in <code>src/plugins</code>, this path is reserved for the MacroQuest developers.</p>
 <p>To add any personal plugins to the solution:</p>
 <ol>
 <li>Right-click the solution in the Solution Explorer and click <code>Add -&gt; Add Existing Project...</code>&#x20;</li>
