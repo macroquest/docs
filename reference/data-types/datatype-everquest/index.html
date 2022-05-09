@@ -496,6 +496,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -518,6 +520,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/anonymize/" class="md-nav__link">
         Anonymize
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/cached-buffs/" class="md-nav__link">
+        Cached Buffs
       </a>
     </li>
   
@@ -4206,6 +4222,8 @@
         
           
         
+          
+        
       
       
         
@@ -4264,6 +4282,20 @@
     <li class="md-nav__item">
       <a href="../../general/containers-list/" class="md-nav__link">
         Containers List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/languages/" class="md-nav__link">
+        Languages
       </a>
     </li>
   
@@ -4349,7 +4381,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_10" type="checkbox" id="__nav_5_2_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_11" type="checkbox" id="__nav_5_2_11" >
       
       
       
@@ -4362,13 +4394,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_5_2_10">
+        <label class="md-nav__link" for="__nav_5_2_11">
           Windows
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Windows" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_2_10">
+        <label class="md-nav__title" for="__nav_5_2_11">
           <span class="md-nav__icon md-icon"></span>
           Windows
         </label>
@@ -4489,6 +4521,10 @@
       
       
       
+        
+          
+        
+          
         
           
         
@@ -5472,6 +5508,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../commands/mouseto/" class="md-nav__link">
+        /mouseto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../commands/mqpause/" class="md-nav__link">
         /mqpause
       </a>
@@ -5768,6 +5818,20 @@
     <li class="md-nav__item">
       <a href="../../commands/setprio/" class="md-nav__link">
         /setprio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/setwintitle/" class="md-nav__link">
+        /setwintitle
       </a>
     </li>
   
@@ -7567,10 +7631,6 @@
         
           
         
-          
-        
-          
-        
       
       
         
@@ -7934,8 +7994,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#usage" class="md-nav__link">
+    Usage
   </a>
   
 </li>
@@ -7999,20 +8059,6 @@
     <li class="md-nav__item">
       <a href="../datatype-float/" class="md-nav__link">
         DataType:float
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../datatype-friends/" class="md-nav__link">
-        DataType:friends
       </a>
     </li>
   
@@ -8209,20 +8255,6 @@
     <li class="md-nav__item">
       <a href="../datatype-merchant/" class="md-nav__link">
         DataType:merchant
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../datatype-mount/" class="md-nav__link">
-        DataType:mount
       </a>
     </li>
   
@@ -8627,8 +8659,8 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#example" class="md-nav__link">
-    Example
+  <a href="#usage" class="md-nav__link">
+    Usage
   </a>
   
 </li>
@@ -8664,28 +8696,18 @@
 </thead>
 <tbody>
 <tr>
-<td><a href="../datatype-bool/"><em>bool</em></a></td>
-<td><strong>Background</strong></td>
-<td>Returns TRUE if EverQuest is in Background</td>
-</tr>
-<tr>
-<td><a href="../datatype-string/"><em>string</em></a></td>
-<td><strong>BuildDate</strong></td>
-<td>Date that MQ2Main.dll was built</td>
-</tr>
-<tr>
 <td><a href="../datatype-int/"><em>int</em></a></td>
 <td><strong>CharSelectList</strong></td>
 <td>Currently returns the zone ID the character is currently in</td>
 </tr>
 <tr>
 <td><a href="../datatype-bool/"><em>bool</em></a></td>
-<td><strong>ChatChannel[</strong><em>channel-name</em><strong>]</strong></td>
-<td>Returns TRUE if <em>channel-name</em> is joined</td>
+<td><strong>ChatChannel</strong>[<em>channelname</em>]</td>
+<td>Returns TRUE if <em>channelname</em> is joined</td>
 </tr>
 <tr>
 <td><a href="../datatype-string/"><em>string</em></a></td>
-<td><strong>ChatChannel[</strong>#<strong>]</strong></td>
+<td><strong>ChatChannel</strong>[ <em>#</em> ]</td>
 <td>Returns the name of chat channel #</td>
 </tr>
 <tr>
@@ -8699,11 +8721,6 @@
 <td>return a string representing the currently loaded UI skin</td>
 </tr>
 <tr>
-<td><a href="../datatype-string/"><em>string</em></a></td>
-<td><strong>Error</strong></td>
-<td>Last normal error message</td>
-</tr>
-<tr>
 <td><a href="../datatype-bool/"><em>bool</em></a></td>
 <td><strong>Foreground</strong></td>
 <td>Returns TRUE if EverQuest is in Foreground</td>
@@ -8711,7 +8728,12 @@
 <tr>
 <td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>GameState</strong></td>
-<td>CHARSELECT INGAME UNKNOWN</td>
+<td>Shows the current game state. Values: CHARSELECT, INGAME, PRECHARSELECT, UNKNOWN</td>
+</tr>
+<tr>
+<td><a href="../datatype-int/"><em>int</em></a></td>
+<td><strong>HWND</strong></td>
+<td>Window handle.</td>
 </tr>
 <tr>
 <td><a href="../datatype-bool/"><em>bool</em></a></td>
@@ -8724,9 +8746,9 @@
 <td>Last command entered</td>
 </tr>
 <tr>
-<td><a href="../datatype-int/"><em>int</em></a></td>
-<td><strong>LastMouseOver.Name</strong></td>
-<td>Returns the name of the last window you moused over</td>
+<td><a href="../datatype-window/"><em>window</em></a></td>
+<td><strong>LastMouseOver</strong></td>
+<td>Returns the last window you moused over</td>
 </tr>
 <tr>
 <td><a href="../datatype-string/"><em>string</em></a></td>
@@ -8760,8 +8782,8 @@
 </tr>
 <tr>
 <td><a href="../datatype-string/"><em>string</em></a></td>
-<td><strong>MQ2DataError</strong></td>
-<td>Last MQ2Data parsing error message</td>
+<td><strong>Path</strong></td>
+<td>Path to the Everquest folder</td>
 </tr>
 <tr>
 <td><a href="../datatype-int/"><em>int</em></a></td>
@@ -8789,14 +8811,14 @@
 <td>Full name of your server</td>
 </tr>
 <tr>
-<td><a href="../datatype-string/"><em>string</em></a></td>
-<td><strong>SyntaxError</strong></td>
-<td>Last syntax error message</td>
-</tr>
-<tr>
 <td><a href="../datatype-int/"><em>int</em></a></td>
 <td><strong>PPriority</strong></td>
-<td>Returns the processor priority that Everquest is set to. Where 1 is Low 2 is below Normal 3 is Normal 4 is Above Normal 5 is High and 6 is RealTime</td>
+<td>Returns the processor priority that Everquest is set to. Values: UNKNOWN, LOW, BELOW NORMAL, NORMAL, ABOVE NORMAL, HIGH, REALTIME</td>
+</tr>
+<tr>
+<td><a href="../datatype-bool/"><em>bool</em></a></td>
+<td><strong>ValidLoc</strong>[<em>coorrdinates</em>]</td>
+<td>Returns true if the given coordinates are valid.</td>
 </tr>
 <tr>
 <td><a href="../datatype-int/"><em>int</em></a></td>
@@ -8830,13 +8852,30 @@
 </tr>
 <tr>
 <td><a href="../datatype-string/"><em>string</em></a></td>
-<td><strong>To String</strong></td>
-<td>None</td>
+<td><strong>WinTitle</strong></td>
+<td>Titlebar text of the Everquest window.</td>
 </tr>
 </tbody>
 </table>
-<h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
-<p><code>/echo ${EverQuest.Server}</code></p>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<p>Using EverQuest.ValidLoc:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code>| Will print TRUE or FALSE if the location is valid
+/echo ${EverQuest.ValidLoc[123 456 789]}
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="c1">-- Will print true or false if the location is valid</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">EverQuest</span><span class="p">.</span><span class="n">ValidLoc</span><span class="p">(</span><span class="s2">&quot;123 456 789&quot;</span><span class="p">)())</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
 
               
             </article>

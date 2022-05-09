@@ -496,6 +496,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -518,6 +520,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/anonymize/" class="md-nav__link">
         Anonymize
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/cached-buffs/" class="md-nav__link">
+        Cached Buffs
       </a>
     </li>
   
@@ -4206,6 +4222,8 @@
         
           
         
+          
+        
       
       
         
@@ -4264,6 +4282,20 @@
     <li class="md-nav__item">
       <a href="../../general/containers-list/" class="md-nav__link">
         Containers List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/languages/" class="md-nav__link">
+        Languages
       </a>
     </li>
   
@@ -4349,7 +4381,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_10" type="checkbox" id="__nav_5_2_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_11" type="checkbox" id="__nav_5_2_11" >
       
       
       
@@ -4362,13 +4394,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_5_2_10">
+        <label class="md-nav__link" for="__nav_5_2_11">
           Windows
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Windows" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_2_10">
+        <label class="md-nav__title" for="__nav_5_2_11">
           <span class="md-nav__icon md-icon"></span>
           Windows
         </label>
@@ -4489,6 +4521,10 @@
       
       
       
+        
+          
+        
+          
         
           
         
@@ -5472,6 +5508,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../commands/mouseto/" class="md-nav__link">
+        /mouseto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../commands/mqpause/" class="md-nav__link">
         /mqpause
       </a>
@@ -5768,6 +5818,20 @@
     <li class="md-nav__item">
       <a href="../../commands/setprio/" class="md-nav__link">
         /setprio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/setwintitle/" class="md-nav__link">
+        /setwintitle
       </a>
     </li>
   
@@ -7567,10 +7631,6 @@
         
           
         
-          
-        
-          
-        
       
       
         
@@ -8004,20 +8064,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../datatype-friends/" class="md-nav__link">
-        DataType:friends
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../datatype-ground/" class="md-nav__link">
         DataType:ground
       </a>
@@ -8202,20 +8248,6 @@
     <li class="md-nav__item">
       <a href="../datatype-merchant/" class="md-nav__link">
         DataType:merchant
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../datatype-mount/" class="md-nav__link">
-        DataType:mount
       </a>
     </li>
   
@@ -8640,8 +8672,8 @@
 <h1 id="datatypefloat">DataType:float<a class="headerlink" href="#datatypefloat" title="Permanent link">&para;</a></h1>
 <p>Contains all information related to floating point numbers</p>
 <ul>
-<li>A floating-point number is one which has a decimal component (<em>e.g.</em> <strong>1.01</strong>)</li>
-<li>Members of this DataType generally manipulate the number's precision (<em>i.e.</em> how many decimal places)</li>
+<li>A floating-point number is one which has a decimal component (<em>e.g. 1.01</em>)</li>
+<li>Members of this DataType generally manipulate the number's precision (<em>i.e. how many decimal places</em>)</li>
 <li>They all round correctly with the exception of <em>int</em></li>
 </ul>
 <h2 id="members">Members<a class="headerlink" href="#members" title="Permanent link">&para;</a></h2>
@@ -8657,26 +8689,26 @@
 <tr>
 <td align="left"><a href="../datatype-string/"><em>string</em></a></td>
 <td align="left"><strong>Deci</strong></td>
-<td align="left">The number as a string with <strong>one</strong> place of precision, <em>i.e.</em> ###.#</td>
+<td align="left">The number as a string with <strong>one</strong> place of precision, <em>i.e. ###.#</em></td>
 </tr>
 <tr>
 <td align="left"><a href="../datatype-string/"><em>string</em></a></td>
 <td align="left"><strong>Centi</strong></td>
-<td align="left">The number as a string with <strong>two</strong> places of precision, <em>i.e.</em> ###.##</td>
+<td align="left">The number as a string with <strong>two</strong> places of precision, <em>i.e. ###.##</em></td>
 </tr>
 <tr>
 <td align="left"><a href="../datatype-int/"><em>int</em></a></td>
 <td align="left"><strong>Int</strong></td>
-<td align="left">Integer portion of the number truncated rather than rounded, <em>e.g.</em> 12.779 returns 12</td>
+<td align="left">Integer portion of the number truncated rather than rounded, <em>e.g. 12.779 returns 12</em></td>
 </tr>
 <tr>
 <td align="left"><a href="../datatype-string/"><em>string</em></a></td>
 <td align="left"><strong>Milli</strong></td>
-<td align="left">The number as a string with <strong>three</strong> places of precision, <em>i.e.</em> ###.###</td>
+<td align="left">The number as a string with <strong>three</strong> places of precision, <em>i.e. ###.###</em></td>
 </tr>
 <tr>
 <td align="left"><a href="../datatype-string/"><em>string</em></a></td>
-<td align="left"><strong>Precision[</strong>#<strong>]</strong></td>
+<td align="left"><strong>Precision</strong>[<em>#</em>]</td>
 <td align="left">The number as a string with # places of precision</td>
 </tr>
 <tr>
@@ -8715,13 +8747,13 @@
       
       
         
-        <a href="../datatype-friends/" class="md-footer__link md-footer__link--next" aria-label="Next: DataType:friends" rel="next">
+        <a href="../datatype-ground/" class="md-footer__link md-footer__link--next" aria-label="Next: DataType:ground" rel="next">
           <div class="md-footer__title">
             <div class="md-ellipsis">
               <span class="md-footer__direction">
                 Next
               </span>
-              DataType:friends
+              DataType:ground
             </div>
           </div>
           <div class="md-footer__button md-icon">

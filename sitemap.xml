@@ -321,6 +321,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.macroquest.org/main/features/cached-buffs/</loc>
+         <lastmod>2022-05-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.macroquest.org/main/features/cfg-files/</loc>
          <lastmod>2022-05-09</lastmod>
          <changefreq>daily</changefreq>
@@ -1596,11 +1601,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.macroquest.org/reference/data-types/datatype-friends/</loc>
-         <lastmod>2022-05-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.macroquest.org/reference/data-types/datatype-ground/</loc>
          <lastmod>2022-05-09</lastmod>
          <changefreq>daily</changefreq>
@@ -1667,11 +1667,6 @@
     </url>
     <url>
          <loc>https://docs.macroquest.org/reference/data-types/datatype-merchant/</loc>
-         <lastmod>2022-05-09</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.macroquest.org/reference/data-types/datatype-mount/</loc>
          <lastmod>2022-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1812,6 +1807,11 @@
     </url>
     <url>
          <loc>https://docs.macroquest.org/reference/general/containers-list/</loc>
+         <lastmod>2022-05-09</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.macroquest.org/reference/general/languages/</loc>
          <lastmod>2022-05-09</lastmod>
          <changefreq>daily</changefreq>
     </url>

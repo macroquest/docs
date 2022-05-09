@@ -496,6 +496,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -518,6 +520,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/anonymize/" class="md-nav__link">
         Anonymize
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/cached-buffs/" class="md-nav__link">
+        Cached Buffs
       </a>
     </li>
   
@@ -4206,6 +4222,8 @@
         
           
         
+          
+        
       
       
         
@@ -4264,6 +4282,20 @@
     <li class="md-nav__item">
       <a href="../../general/containers-list/" class="md-nav__link">
         Containers List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/languages/" class="md-nav__link">
+        Languages
       </a>
     </li>
   
@@ -4349,7 +4381,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_10" type="checkbox" id="__nav_5_2_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_11" type="checkbox" id="__nav_5_2_11" >
       
       
       
@@ -4362,13 +4394,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_5_2_10">
+        <label class="md-nav__link" for="__nav_5_2_11">
           Windows
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Windows" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_2_10">
+        <label class="md-nav__title" for="__nav_5_2_11">
           <span class="md-nav__icon md-icon"></span>
           Windows
         </label>
@@ -4489,6 +4521,10 @@
       
       
       
+        
+          
+        
+          
         
           
         
@@ -5472,6 +5508,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../commands/mouseto/" class="md-nav__link">
+        /mouseto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../commands/mqpause/" class="md-nav__link">
         /mqpause
       </a>
@@ -5768,6 +5818,20 @@
     <li class="md-nav__item">
       <a href="../../commands/setprio/" class="md-nav__link">
         /setprio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/setwintitle/" class="md-nav__link">
+        /setwintitle
       </a>
     </li>
   
@@ -7567,10 +7631,6 @@
         
           
         
-          
-        
-          
-        
       
       
         
@@ -7963,20 +8023,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../datatype-friends/" class="md-nav__link">
-        DataType:friends
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../datatype-ground/" class="md-nav__link">
         DataType:ground
       </a>
@@ -8161,20 +8207,6 @@
     <li class="md-nav__item">
       <a href="../datatype-merchant/" class="md-nav__link">
         DataType:merchant
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../datatype-mount/" class="md-nav__link">
-        DataType:mount
       </a>
     </li>
   
@@ -8689,8 +8721,8 @@
 <td>Returns TRUE if the button has been checked</td>
 </tr>
 <tr>
-<td><strong><a href="./"><em>window</em></a></strong></td>
-<td><strong>Child[ **<em>name</em></strong> ]**</td>
+<td><a href="./"><em>window</em></a></td>
+<td><strong>Child</strong>[ <em>name</em> ]</td>
 <td>Find a child window with the provided name</td>
 </tr>
 <tr>
@@ -8699,7 +8731,7 @@
 <td>Returns TRUE if the window has children</td>
 </tr>
 <tr>
-<td><a href="./"><em>window</em></a>__</td>
+<td><a href="./"><em>window</em></a></td>
 <td><strong>CurrentTab</strong></td>
 <td><strong>TabBox:</strong> Returns the <strong>Page</strong> window associated with the currently selected tab.</td>
 </tr>
@@ -8714,7 +8746,7 @@
 <td>Returns TRUE if the window is enabled</td>
 </tr>
 <tr>
-<td><strong><a href="./"><em>window</em></a></strong></td>
+<td><a href="./"><em>window</em></a></td>
 <td><strong>FirstChild</strong></td>
 <td>First child window</td>
 </tr>
@@ -8759,13 +8791,13 @@
 <td>Number of items in a Listbox or Combobox</td>
 </tr>
 <tr>
-<td><a href="../datatype-string/"><em>string</em></a>__</td>
-<td><strong>List[ **#</strong>, <strong>y_</strong> <strong>_</strong>]**</td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
+<td><strong>List</strong>[ <em>#, y</em> ]</td>
 <td>Get the text for the <code>#</code>th item in a list box. Only works on list boxes. Use of <code>y</code> is optional and allows selection of the column of the window to get text from.</td>
 </tr>
 <tr>
 <td><a href="../datatype-int/"><em>int</em></a></td>
-<td><strong>List[ **text</strong>, <strong>y</strong> ]**</td>
+<td><strong>List</strong>[ <em>text, y</em> ]</td>
 <td>Find an item in a list box by partial match (use <strong>window.List[</strong>=text**]** for exact). Only works on list boxes. Use of <code>y</code> is optional and allows selection of the column of the window to search in.</td>
 </tr>
 <tr>
@@ -8784,12 +8816,12 @@
 <td>Have I clicked the Trade button?</td>
 </tr>
 <tr>
-<td><a href="../datatype-string/"><em>string</em></a>__</td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>Name</strong></td>
 <td><p>Name of window piece, <em>e.g.</em> "ChatWindow" for top level windows, or the piece name for child windows.</p><p><strong></strong></p><p><strong>Note:</strong> this is Custom UI dependent</p></td>
 </tr>
 <tr>
-<td><strong><a href="./"><em>window</em></a></strong></td>
+<td><a href="./"><em>window</em></a></td>
 <td><strong>Next</strong></td>
 <td>Next sibling window</td>
 </tr>
@@ -8799,12 +8831,12 @@
 <td>Returns TRUE if the window is open</td>
 </tr>
 <tr>
-<td><strong><a href="./"><em>window</em></a></strong></td>
+<td><a href="./"><em>window</em></a></td>
 <td><strong>Parent</strong></td>
 <td>Parent window</td>
 </tr>
 <tr>
-<td><a href="../datatype-string/"><em>string</em></a>__</td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>ScreenID</strong></td>
 <td><p>ScreenID of window piece.</p><p><strong></strong></p><p><strong>Note:</strong> This is <em>not</em> Custom UI dependent, it must be the same on all UIs</p></td>
 </tr>
@@ -8824,22 +8856,22 @@
 <td><strong>TabBox:</strong> The number of tabs present in the TabBox.</td>
 </tr>
 <tr>
-<td><a href="./"><em>window</em></a>__</td>
-<td><strong>Tab[ **# or Name **]</strong></td>
+<td><a href="./"><em>window</em></a></td>
+<td><strong>Tab</strong> [ <em># or Name</em> ]</td>
 <td><strong>TabBox:</strong> Looks up the <strong>Page</strong> window that matches the provided index or tab text.</td>
 </tr>
 <tr>
-<td><a href="../datatype-string/"><em>string</em></a>__</td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>Text</strong></td>
 <td><p>Window's text.</p><p></p><p><strong>STMLBox:</strong> returns the contents of the STML.</p><p><strong>Page</strong>: returns the name of the page's Tab.</p></td>
 </tr>
 <tr>
-<td><a href="../datatype-string/"><em>string</em></a>__</td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>Tooltip</strong></td>
 <td>TooltipReference text</td>
 </tr>
 <tr>
-<td><a href="../datatype-string/"><em>string</em></a>__</td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>Type</strong></td>
 <td>Type of window piece (Screen for top level windows, or Listbox, Button, Gauge, Label, Editbox, Slider, etc)</td>
 </tr>
@@ -8874,7 +8906,7 @@
 <td>Screen Y position</td>
 </tr>
 <tr>
-<td><a href="../datatype-string/"><em>string</em></a>__</td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>To String</strong></td>
 <td>TRUE if window exists, FALSE if not</td>
 </tr>
@@ -8934,7 +8966,7 @@
 <td>Selects the specified window</td>
 </tr>
 <tr>
-<td><strong>SetCurrentTab[ **# or Name</strong> ]**</td>
+<td><strong>SetCurrentTab</strong> [ <em># or Name</em> ]</td>
 <td>If the window is a TabBox, set the current tab by index or by name.</td>
 </tr>
 </tbody>

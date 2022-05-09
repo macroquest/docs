@@ -496,6 +496,8 @@
         
           
         
+          
+        
       
       
         <label class="md-nav__link" for="__nav_1_4">
@@ -518,6 +520,20 @@
     <li class="md-nav__item">
       <a href="../../../main/features/anonymize/" class="md-nav__link">
         Anonymize
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/features/cached-buffs/" class="md-nav__link">
+        Cached Buffs
       </a>
     </li>
   
@@ -4206,6 +4222,8 @@
         
           
         
+          
+        
       
       
         
@@ -4264,6 +4282,20 @@
     <li class="md-nav__item">
       <a href="../../general/containers-list/" class="md-nav__link">
         Containers List
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../general/languages/" class="md-nav__link">
+        Languages
       </a>
     </li>
   
@@ -4349,7 +4381,7 @@
     <li class="md-nav__item md-nav__item--nested">
       
       
-        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_10" type="checkbox" id="__nav_5_2_10" >
+        <input class="md-nav__toggle md-toggle" data-md-toggle="__nav_5_2_11" type="checkbox" id="__nav_5_2_11" >
       
       
       
@@ -4362,13 +4394,13 @@
         
       
       
-        <label class="md-nav__link" for="__nav_5_2_10">
+        <label class="md-nav__link" for="__nav_5_2_11">
           Windows
           <span class="md-nav__icon md-icon"></span>
         </label>
       
       <nav class="md-nav" aria-label="Windows" data-md-level="3">
-        <label class="md-nav__title" for="__nav_5_2_10">
+        <label class="md-nav__title" for="__nav_5_2_11">
           <span class="md-nav__icon md-icon"></span>
           Windows
         </label>
@@ -4489,6 +4521,10 @@
       
       
       
+        
+          
+        
+          
         
           
         
@@ -5472,6 +5508,20 @@
   
   
     <li class="md-nav__item">
+      <a href="../../commands/mouseto/" class="md-nav__link">
+        /mouseto
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../commands/mqpause/" class="md-nav__link">
         /mqpause
       </a>
@@ -5768,6 +5818,20 @@
     <li class="md-nav__item">
       <a href="../../commands/setprio/" class="md-nav__link">
         /setprio
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../commands/setwintitle/" class="md-nav__link">
+        /setwintitle
       </a>
     </li>
   
@@ -7567,10 +7631,6 @@
         
           
         
-          
-        
-          
-        
       
       
         
@@ -7747,6 +7807,13 @@
         <li class="md-nav__item">
   <a href="#members" class="md-nav__link">
     Members
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
   </a>
   
 </li>
@@ -8004,20 +8071,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../datatype-friends/" class="md-nav__link">
-        DataType:friends
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../datatype-ground/" class="md-nav__link">
         DataType:ground
       </a>
@@ -8202,20 +8255,6 @@
     <li class="md-nav__item">
       <a href="../datatype-merchant/" class="md-nav__link">
         DataType:merchant
-      </a>
-    </li>
-  
-
-            
-          
-            
-              
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../datatype-mount/" class="md-nav__link">
-        DataType:mount
       </a>
     </li>
   
@@ -8619,6 +8658,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    Usage
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -8639,8 +8685,6 @@
 
 <h1 id="datatypebody">DataType:body<a class="headerlink" href="#datatypebody" title="Permanent link">&para;</a></h1>
 <p>Contains data about spawn body types</p>
-<p>Example: When a summoned npc is targeted this will return true.</p>
-<p><code>/echo ${Target.Body.Name.Equal[Undead Pet]}</code></p>
 <h2 id="members">Members<a class="headerlink" href="#members" title="Permanent link">&para;</a></h2>
 <table>
 <thead>
@@ -8657,17 +8701,35 @@
 <td align="left">The ID of the body type</td>
 </tr>
 <tr>
-<td align="left">__<a href="../datatype-string/"><em>string</em></a>__</td>
+<td align="left"><a href="../datatype-string/"><em>string</em></a></td>
 <td align="left"><strong>Name</strong></td>
 <td align="left">The full name of the body type</td>
 </tr>
 <tr>
-<td align="left">__<a href="../datatype-string/"><em>string</em></a>__</td>
+<td align="left"><a href="../datatype-string/"><em>string</em></a></td>
 <td align="left"><strong>To String</strong></td>
 <td align="left">Same as <strong>Name</strong></td>
 </tr>
 </tbody>
 </table>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
+<p>Prints true if a summoned npc is targeted</p>
+<div class="highlight"><pre><span></span><code>/echo ${Target.Body.Name.Equal[Undead Pet]}`
+</code></pre></div>
+</div>
+<div class="tabbed-block">
+<p>Prints true if a summoned npc is targeted</p>
+<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Target</span><span class="p">.</span><span class="n">Boddy</span><span class="p">.</span><span class="n">Name</span> <span class="o">===</span> <span class="s1">&#39;Undead Pet&#39;</span><span class="p">)</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
 
               
             </article>
