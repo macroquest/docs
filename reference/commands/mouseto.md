@@ -17,11 +17,13 @@ When a relative position is specified (using - or + in front of the X or Y) the 
 ## Examples
 
 Move the mouse to X=1 Y=1
+
 ```text
 /mouseto 1 1
 ```
+
 Move the mouse by 1 positive unit vertically and horizontally
-```
+
 ```text
 /mouseto +1 +1
 ```

@@ -1,6 +1,6 @@
 # DataType:class
 
-Data about a particular class
+Data about a particular character class
 
 ## Members
 
@@ -10,15 +10,12 @@ Data about a particular class
 | [_bool_](datatype-bool.md) | **ClericType** | Cleric/Paladin? |
 | [_bool_](datatype-bool.md) | **DruidType** | Druid/Ranger? |
 | [_bool_](datatype-bool.md) | **HealerType** | Cleric/Druid/Shaman? |
-| [_int_](datatype-int.md) | **ID** | The class's ID \# |
+| [_int_](datatype-int.md) | **ID** | The class's ID # |
 | [_bool_](datatype-bool.md) | **MercType** | Mercenary? |
-| \_\_[_string_](datatype-string.md)\_\_ | **Name** | The "long name" as in "Ranger" |
+| [_string_](datatype-string.md) | **Name** | The "long name" as in "Ranger" |
 | [_bool_](datatype-bool.md) | **NecromancerType** | Necromancer/Shadow Knight? |
 | [_bool_](datatype-bool.md) | **PetClass** | Any one of: Shaman, Necromancer, Mage, Beastlord |
 | [_bool_](datatype-bool.md) | **PureCaster** | Any one of: Cleric, Druid, Shaman, Necromancer, Wizard, Mage, Enchanter |
 | [_bool_](datatype-bool.md) | **ShamanType** | Shaman/Beastlord? |
-| \_\_[_string_](datatype-string.md)\_\_ | **ShortName** | The "short name" as in "RNG" |
-| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |
-
-
-
+| [_string_](datatype-string.md) | **ShortName** | The "short name" as in "RNG" |
+| [_string_](datatype-string.md) | **To String** | Same as **Name** |

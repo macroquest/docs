@@ -1,6 +1,11 @@
 # DataType:array
 
-Data related to arrays. **Note:** Array indexing starts at **1**
+Data related to arrays.
+
+!!! Note
+
+    Array indexing starts at 1.
+
 
 ## Members
 
@@ -8,16 +13,20 @@ Data related to arrays. **Note:** Array indexing starts at **1**
 | :--- | :--- | :--- |
 | [_int_](datatype-int.md) | **Dimensions** | Number of dimensions in the array |
 | [_int_](datatype-int.md) | **Size** | Total number of elements in the array |
-| [_int_](datatype-int.md) | **Size[**\#**]** | Total number of elements stored in the \#th dimension of the array |
-| \_\_[_string_](datatype-string.md)\_\_ | **To String** | _None_ |
+| [_int_](datatype-int.md) | **Size**[ _N_ ] | Total number of elements stored in the _N_ th dimension of the array |
 
-## Declare Arrays
+## Usage
 
 To create an array, attach square brackets to the end of the variable name and place in it the number of elements per dimension.
 
-**Array Examples**
+!!! tip
 
-1. This creates a single-dimension local array of int with 10 elements (1-10) all 0:
+    This array syntax only applies to MQScript. For lua, use tables instead.
+
+
+### Array Examples
+
+This creates a single-dimension local array of int with 10 elements (1-10) all 0:
 
 ```text
 /declare MyArray[10] int
@@ -39,23 +48,25 @@ There is no limit to the number of dimensions or the number of elements in each 
 
 **Note:** You cannot make an array of timers.
 
-## Example Snippets
+### Example Snippets
 
-```text
-sub main
+!!! example
+
+    ```text title="ArrayExample.mac"
+    sub main
         /declare myArray[9] int local 0
         /declare myCounter int local
 
         /echo =============[Put Data]=================
         /for myCounter 1 to ${myArray.Size}
-                /varset myArray[${myCounter}] ${Math.Rand[999]}
-                /echo Put a random number in Index ${myCounter} of myArray
+            /varset myArray[${myCounter}] ${Math.Rand[999]}
+            /echo Put a random number in Index ${myCounter} of myArray
         /next myCounter
 
         /echo =============[Get Data]=================
         /for myCounter 1 to ${myArray.Size}
-                /echo Index ${myCounter} in myArray is ${myArray[${myCounter}]}
+            /echo Index ${myCounter} in myArray is ${myArray[${myCounter}]}
         /next myCounter
-/return
-```
+    /return
+    ```
 

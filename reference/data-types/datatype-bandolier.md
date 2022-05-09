@@ -7,10 +7,10 @@ Used to access information about bandolier sets on your character.
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| [_bool_](../data-types/datatype-bool.md) | **Active** | Indicates if the bandolier set is active |
-| [_int_](../data-types/datatype-int.md) | **Index** | Returns the index number of the bandolier set |
+| [_bool_](datatype-bool.md) | **Active** | Indicates if the bandolier set is active |
+| [_int_](datatype-int.md) | **Index** | Returns the index number of the bandolier set |
 | [_bandolieritem_](#bandolieritem-datatype) | **Item**[&nbsp;_Index_&nbsp;] | Provides information about the specified item. Returns the Nth item in the set (Primary, Secondary, Ranged, Ammo) |
-| [_string_](../data-types/datatype-bandolier.md) | **Name** | Returns the name of the bandolier set |
+| [_string_](datatype-bandolier.md) | **Name** | Returns the name of the bandolier set |
 
 
 ## Methods
@@ -26,9 +26,9 @@ Used to access information about bandolier sets on your character.
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| [_int_](../data-types/datatype-int.md)          | **IconID** | Returns the icon id for the item |
-| [_int_](../data-types/datatype-int.md)          | **ID** | Returns the item id for the item |
-| [_string_](../data-types/datatype-bandolier.md) | **Name** | Returns the name of the item |
+| [_int_](datatype-int.md)          | **IconID** | Returns the icon id for the item |
+| [_int_](datatype-int.md)          | **ID** | Returns the item id for the item |
+| [_string_](datatype-bandolier.md) | **Name** | Returns the name of the item |
 
 
 ## Usage Examples

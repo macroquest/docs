@@ -8,7 +8,7 @@ A timer data type is set in tenths of one second and counts down to zero; starti
 | :--- | :--- | :--- |
 | [_int_](datatype-int.md) | **OriginalValue** | Original value of the timer |
 | [_int_](datatype-int.md) | **Value** | Current value of the timer |
-| [_string_](datatype-string.md)\_\_ | **To String** | Same as **Value** |
+| [_string_](datatype-string.md) | **To String** | Same as **Value** |
 
 ## Example
 

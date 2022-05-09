@@ -25,6 +25,7 @@ nav:
 
   - Features:
     - Anonymize: main/features/anonymize.md
+    - Cached Buffs: main/features/cached-buffs.md
     - CFG Files: main/features/cfg-files.md
     - Configuration: main/macroquest.ini.md
     - Custom UIs: main/features/custom-uis.md
@@ -257,6 +258,7 @@ nav:
     - Animations: reference/general/animations.md
     - CombatState: reference/general/combatstate.md
     - Containers List: reference/general/containers-list.md
+    - Languages: reference/general/languages.md
     - List of spawn heights: reference/general/list-of-spawn-heights.md
     - SPA List: reference/general/spa-list.md
     - Skills List: reference/general/skills-list.md
@@ -326,6 +328,7 @@ nav:
       - /macro: reference/commands/macro.md
       - /makemevisible: reference/commands/makemevisible.md
       - /memspell: reference/commands/memspell.md
+      - /mouseto: reference/commands/mouseto.md
       - /mqpause: reference/commands/mqpause.md
       - /multiline: reference/commands/multiline.md
       - /netstatusxpos: reference/commands/netstatusxpos.md
@@ -348,6 +351,7 @@ nav:
       - /sellitem: reference/commands/sellitem.md
       - /setautorun: reference/commands/setautorun.md
       - /setprio: reference/commands/setprio.md
+      - /setwintitle: reference/commands/setwintitle.md
       - /shiftkey: reference/commands/shiftkey.md
       - /skills: reference/commands/skills.md
       - /spellslotinfo: reference/commands/spellslotinfo.md
@@ -481,7 +485,6 @@ nav:
     - DataType:fellowship: reference/data-types/datatype-fellowship.md
     - DataType:fellowshipmember: reference/data-types/datatype-fellowshipmember.md
     - DataType:float: reference/data-types/datatype-float.md
-    - DataType:friends: reference/data-types/datatype-friends.md
     - DataType:ground: reference/data-types/datatype-ground.md
     - DataType:group: reference/data-types/datatype-group.md
     - DataType:groupmember: reference/data-types/datatype-groupmember.md
@@ -496,7 +499,6 @@ nav:
     - DataType:math: reference/data-types/datatype-math.md
     - DataType:mercenary: reference/data-types/datatype-mercenary.md
     - DataType:merchant: reference/data-types/datatype-merchant.md
-    - DataType:mount: reference/data-types/datatype-mount.md
     - DataType:pet: reference/data-types/datatype-pet.md
     - DataType:plugin: reference/data-types/datatype-plugin.md
     - DataType:race: reference/data-types/datatype-race.md

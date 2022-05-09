@@ -45,7 +45,7 @@ Contains data on the current raid
       <td style="text-align:left">Returns TRUE if the raid is locked</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Looter[</b>#<b>]</b>
         </td>
@@ -123,7 +123,7 @@ Contains data on the current raid
       <td style="text-align:left">Sum of all raid members&apos; levels</td>
     </tr>
     <tr>
-      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>To String</b>
         </td>

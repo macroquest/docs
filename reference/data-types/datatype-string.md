@@ -17,7 +17,7 @@ A string is an array of characters. In MQ2 there is no single character datatype
   </thead>
   <tbody>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Arg[</b>#<b>,</b>s<b>]</b>
         </td>
@@ -94,7 +94,7 @@ A string is an array of characters. In MQ2 there is no single character datatype
       <td style="text-align:left">Returns the length of the string as an integer</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Left[</b>#<b>]</b>
         </td>
@@ -102,14 +102,14 @@ A string is an array of characters. In MQ2 there is no single character datatype
           the whole string except for the last # characters</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Lower</b>
         </td>
         <td style="text-align:left">Returns the string in all lower-case</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Mid[</b>p<b>,</b>n<b>]</b>
         </td>
@@ -132,7 +132,7 @@ A string is an array of characters. In MQ2 there is no single character datatype
         is case-sensitive</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Replace[</b>ReplaceThis<b>,</b>WithThis<b>]</b>
         </td>
@@ -140,7 +140,7 @@ A string is an array of characters. In MQ2 there is no single character datatype
         </td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Right[</b>#<b>]</b>
         </td>
@@ -148,7 +148,7 @@ A string is an array of characters. In MQ2 there is no single character datatype
           the whole string except for the first # characters</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Token[</b>#<b>,</b>s<b>]</b>
         </td>
@@ -158,14 +158,14 @@ A string is an array of characters. In MQ2 there is no single character datatype
         </td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>Upper</b>
         </td>
         <td style="text-align:left">Returns the string in all upper-case</td>
     </tr>
     <tr>
-      <td style="text-align:left">&lt;em&gt;&lt;/em&gt;<a href="datatype-string.md"><em>string</em></a>&lt;em&gt;&lt;/em&gt;</td>
+      <td style="text-align:left"><a href="datatype-string.md"><em>string</em></a></td>
       <td
       style="text-align:left"><b>To String</b>
         </td>

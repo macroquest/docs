@@ -11,6 +11,8 @@ Contains all the data related to alternate abilities
 | [_string_](datatype-string.md)             | **Category**              | The name of the category that this AA belongs to.                         |
 | [_int_](datatype-int.md)                   | **Cost**                  | Base cost to train                                                        |
 | [_string_](datatype-string.md)             | **Description**           | Basic description                                                         |
+| [_int_](datatype-int.md)                   | **Expansion**             | Expansion level for the ability.                                          |
+| [_int_](datatype-int.md)                   | **Flags**                 | Flags value (Currently unknown?).                                         |
 | [_int_](datatype-int.md)                   | **GroupID**               | ID of the AA group that this AA belongs to                                |
 | [_int_](datatype-int.md)                   | **ID**                    | ID                                                                        |
 | [_int_](datatype-int.md)                   | **Index**                 | Returns the index number of the Alternative Ability                       |
@@ -21,8 +23,8 @@ Contains all the data related to alternate abilities
 | [_int_](datatype-int.md)                   | **NextIndex**             | Returns the next index number of the Alternative Ability                  |
 | [_int_](datatype-int.md)                   | **PointsSpent**           | Returns the amount of points spent on an AA                               |
 | [_bool_](datatype-bool.md)                 | **Passive**               | Returns true/false on if the Alternative Ability is passive               |
-| [_altability_](datatype-altability.md)     | **RequiresAbility**       | Required ability (if any)                                                 |
 | [_int_](datatype-int.md)                   | **Rank**                  | Returns the Rank of the AA                                                |
+| [_altability_](datatype-altability.md)     | **RequiresAbility**       | Required ability (if any)                                                 |
 | [_int_](datatype-int.md)                   | **RequiresAbilityPoints** | Points required in above ability                                          |
 | [_int_](datatype-int.md)                   | **ReuseTime**             | Reuse time in seconds                                                     |
 | [_string_](datatype-string.md)             | **ShortName**             | First line of button label (if any)                                       |

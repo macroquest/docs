@@ -8,14 +8,21 @@ This type inherits members from [_spell_](datatype-spell.md).
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **Counters** | The number of counters added by the buff |
-| [_int_](datatype-int.md) | **Dar** | The remaining damage absorption of the buff (if any\). _This is not entirely accurate, it will only show you to the Dar of your spell when it was initially cast, or what it was when you last zoned \(whichever is more recent)._ |
+| [_string_](datatype-string.md) | **Caster** | Name of the caster who cast the buff, if available. |
+| [_int_](datatype-int.md) | **Counters** | The number of counters added by the buff. |
+| [_int_](datatype-int.md) | **CountersCorruption** | The number of corruption counters. |
+| [_int_](datatype-int.md) | **CountersCurse** | The number of curse counters. |
+| [_int_](datatype-int.md) | **CountersDisease** | The number of disease counters. |
+| [_int_](datatype-int.md) | **CountersPoison** | The number of poison counters. |
+| [_int_](datatype-int.md) | **Dar** | The remaining damage absorption of the buff (if any). _This is not entirely accurate, it will only show you to the Dar of your spell when it was initially cast, or what it was when you last zoned (whichever is more recent)._ |
 | [_ticks_](datatype-ticks.md) | **Duration** | The time remaining before the buff fades (not total duration) |
+| [_int_](datatype-int.md) | **HitCount** | |
 | [_int_](datatype-int.md) | **ID** | The ID of the buff or shortbuff slot |
 | [_int_](datatype-int.md) | **Level** | The level of the person that cast the buff on you (not the level of the spell) |
 | [_float_](datatype-float.md) | **Mod** | The modifier to a bard song |
 | [_spell_](datatype-spell.md) | **Spell** | The spell |
-| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as Name |
+| [_int_](datatype-int.md) | **TotalCounters** | The total number of counters on the buff. |
+| [_string_](datatype-string.md) | **To String** | Same as Name |
 
 ## Methods
 
@@ -25,5 +32,21 @@ This type inherits members from [_spell_](datatype-spell.md).
 
 ## Examples
 
-`${Me.Buff[Credence].Remove}`
+!!! Example
+
+    === "MQScript"
+
+        Remove the buff named "Credence"
+
+        ```
+        /invoke ${Me.Buff[Credence].Remove}
+        ```
+    
+    === "Lua"
+
+        Remove the buff named "Crerdence"
+
+        ```lua
+        mq.TLO.Me.Buff("Credence").Remove()
+        ```
 

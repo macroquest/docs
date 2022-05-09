@@ -63,7 +63,7 @@ Contains data about items
 | [_float_](datatype-float.md) | **InstrumentMod** | Instrument Modifier Value |
 | [_int_](datatype-int.md) | **INT** | INT value on item |
 | [_int_](datatype-int.md) | **InvSlot** | Inventory Slot Number (Historic and now deprecated, use ItemSlot and ItemSlot2) |
-| _item_ | **Item[**\#**]** | Item in \#th slot, if this is a container or has augs |
+| [_item_](datatype-item.md) | **Item[**\#**]** | Item in \#th slot, if this is a container or has augs |
 | [_float_](datatype-float.md) | **ItemDelay** | Returns the delay of the weapon |
 | [_string_](datatype-string.md) | **ItemLink[CLICKABLE\]** | just prints the actual hexlink for an item (not clickable) unless \[CLICKABLE] is included |
 | [_int_](datatype-int.md) | **Items** | Number of items, if this is a container. |

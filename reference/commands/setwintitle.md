@@ -16,7 +16,7 @@ Set the window title to "My Very Cool Window"
 ```text
 /setwintitle My Very Cool Window
 ```
-Set the window title to "EverQuest - `<Your character name>`"
+Set the window title to "EverQuest - &lt;Your character name&gt;"
 ```text
 /setwintitle EverQuest - ${Me.Name}
 ```

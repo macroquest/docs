@@ -1,23 +1,46 @@
 # TLO:Friends
 
-## Description
-
-Creates an object to access your friends list
+Grants access to your friends dlist.
 
 ## Forms
 
-* [_friends_](../data-types/datatype-friends.md) **Friends**
+| **Type** | **Form** | **Description** |
+| :--- | :--- | :--- |
+| [_friends_](#friends-type) | **Friends** | Access friends data |
 
-## Access to Types
+## Associated DataTypes
 
-* [_friends_](../data-types/datatype-friends.md) **friends**
+### `friends` Type
 
-## Examples
+## Members
 
-`/echo ${Friends}`
+| **Type** | **Member** | **Description** |
+| :--- | :--- | :--- |
+| [_bool_](../data-types/datatype-bool.md) | **Friend**[_name_] | Returns TRUE if _name_ is on your friend list |
+| [_string_](../data-types/datatype-string.md) | **Friend**[_#_] | Returns the name of friend list member _\#_ |
+| [_string_](../data-types/datatype-string.md) | **To String** | Number of friends on your friends list |
 
-Echos the number of friends you have
 
-`/echo ${Friends.Friend[1]}`
+## Usage
 
-Echos the name of your first friend
+!!! example
+
+    === "MQScript"
+
+        ```
+        | Echo the number of friends that you have
+        /echo ${Friends}
+
+        | Ech othe name of your first friend
+        /echo ${Friends.Friend[1]}
+        ```
+
+    === "Lua"
+
+        ```lua
+        -- Echo the number of friends that you have
+        print(mq.TLO.Friends())
+
+        -- Echo the name of your firsrt friend
+        print(mq.TLO.Friends.Friend(1)())
+        ```

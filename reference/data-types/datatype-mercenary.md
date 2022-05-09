@@ -9,11 +9,11 @@ This type inherits members from [_spawn_](datatype-spawn.md).
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
 | [_int_](datatype-int.md) | **AAPoints** | AA Points spent on mercenary abilities |
-| \_\_[_string_](datatype-string.md)\_\_ | **Stance** | Current stance of the mercenary |
-| \_\_[_string_](datatype-string.md)\_\_ | **State** | Current state of the mercenary \(returns "DEAD","SUSPENDED","ACTIVE", or "UNKNOWN" |
+| [_string_](datatype-string.md) | **Stance** | Current stance of the mercenary |
+| [_string_](datatype-string.md) | **State** | Current state of the mercenary \(returns "DEAD","SUSPENDED","ACTIVE", or "UNKNOWN" |
 | [_int_](datatype-int.md) | **StateID** | Current state ID of the mercenary as a number. |
-| \_\_[_string_](datatype-string.md)\_\_ | **Index** | Index |
-| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |
+| [_string_](datatype-string.md) | **Index** | Index |
+| [_string_](datatype-string.md) | **To String** | Same as **Name** |
 
 ## Examples
 

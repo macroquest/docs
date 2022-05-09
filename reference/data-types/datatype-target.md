@@ -11,11 +11,11 @@ Inherits members from [_spawn_](datatype-spawn.md)_._
 | [_spell_](datatype-spell.md) | **Aego** | Returns the name of the Aego spell if the Target has one |
 | [_spawn_](datatype-spawn.md) | **AggroHolder** | Returns the target's current target. |
 | [_spell_](datatype-spell.md) | **Beneficial** | Returns the name of the Beneficial spell if the Target has one. This will skip "player" casted buffs, but will show NPC Casted buffs and some AA buffs. |
-| [_spell_](datatype-spell.md) | **Buff[**n**]** | Returns the target's spell by buff index number. |
-| [_spell_](datatype-spell.md) | **Buff[**_name_**]** | Returns the target's spell name, or the first buff if no Index is provided. |
+| [_spell_](datatype-spell.md) | **Buff**[ _N_] | Returns the target's spell by buff index number. |
+| [_spell_](datatype-spell.md) | **Buff**[ _name_ ] | Returns the target's spell name, or the first buff if no Index is provided. |
 | [_int_](datatype-int.md) | **BuffCount** | Returns the number of buffs on the target. |
-| [_timestamp_](datatype-timestamp.md) | **BuffDuration[**\#**]** | Returns the duration remaining on this target buff by index number |
-| [_timestamp_](datatype-timestamp.md) | **BuffDuration[**_name_**]** | Returns the duration remaining on this target buff by spell name |
+| [_timestamp_](datatype-timestamp.md) | **BuffDuration**[ _#_ ] | Returns the duration remaining on this target buff by index number |
+| [_timestamp_](datatype-timestamp.md) | **BuffDuration**[ _name_ ] | Returns the duration remaining on this target buff by spell name |
 | [_bool_](datatype-bool.md) | **BuffsPopulated** | Returns TRUE when the target's buffs are finished populating. |
 | [_spell_](datatype-spell.md) | **Brells** | Returns the name of the Brells spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Charmed** | Returns the name of the Charmed spell if the Target has one |
@@ -23,8 +23,8 @@ Inherits members from [_spawn_](datatype-spawn.md)_._
 | [_spell_](datatype-spell.md) | **Corrupted** | Returns the name of any the Corruption spell if Target has one |
 | [_spell_](datatype-spell.md) | **Cursed** | Returns the name of the Curse spell if Target has one |
 | [_spell_](datatype-spell.md) | **Crippled** | Returns the name of the Cripple spell if the Target has one |
-| [_string_]() | **Diseased** | Returns the name of a Disease spell if the Target has one |
-| [_string_]() | **Dotted** | Returns the name of a DOT spell if the Target has one |
+| [_string_](datatype-string.md) | **Diseased** | Returns the name of a Disease spell if the Target has one |
+| [_string_](datatype-string.md) | **Dotted** | Returns the name of a DOT spell if the Target has one |
 | [_spell_](datatype-spell.md) | **DSed** | Returns the name of the Damage Shield spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Focus** | Returns the name of the Focus spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Growth** | Returns the name of the Growth spell if the Target has one |
@@ -32,7 +32,7 @@ Inherits members from [_spawn_](datatype-spawn.md)_._
 | [_spell_](datatype-spell.md) | **HybridHP** | Returns the name of the Hybrid HP spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Maloed** | Returns the name of the Malo spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Mezzed** | Returns the name of the Mez spell if the Target has one |
-| [_string_]() | **Poisoned** | Returns the name of a Poison spell if the Target has one |
+| [_string_](datatype-string.md) | **Poisoned** | Returns the name of a Poison spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Pred** | Returns the name of the Predator spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Rooted** | Returns the name of the Rooted spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Regen** | Returns the name of the Regen spell if the Target has one |
@@ -46,7 +46,7 @@ Inherits members from [_spawn_](datatype-spawn.md)_._
 | [_spell_](datatype-spell.md) | **SV** | Returns the name of the Spiritual Vitality spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Symbol** | Returns the name of the Symbol spell if the Target has one |
 | [_spell_](datatype-spell.md) | **Tashed** | Returns the name of the Tash spell if the Target has one |
-| \_\_[_string_](datatype-string.md)\_\_ | **To String** | Same as **Name** |
+| [_string_](datatype-string.md) | **To String** | Same as **Name** |
 
 ### Examples
 

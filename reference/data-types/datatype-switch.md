@@ -22,10 +22,10 @@ Data related to switches (levers, buttons, etc) in the zone
 | [_float_](datatype-float.md) | **N** | Y coordinate (Northward-positive) |
 | [_string_](datatype-string.md) | **Name** | Name |
 | [_bool_](datatype-bool.md) | **Open** | True if the switch is in the "open" state (State == 1) |
-| \_\_[_int_](datatype-int.md)\_\_ | **State** | The "state" of the switch. |
+| [_int_](datatype-int.md) | **State** | The "state" of the switch. |
 | [_float_](datatype-float.md) | **W** | X coordinate (Westward-positive) |
 | [_float_](datatype-float.md) | **X** | X coordinate |
 | [_float_](datatype-float.md) | **Y** | Y coordinate |
 | [_float_](datatype-float.md) | **Z** | Z coordinate |
-| \_\_[_string_](datatype-string.md)\_\_ | **ToString** | Same as **ID** |
+| [_string_](datatype-string.md) | **ToString** | Same as **ID** |
 

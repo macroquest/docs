@@ -10,4 +10,3 @@ This DataType contains information on the members of the current dynamic zone in
 | [_string_](datatype-string.md) | **Name** | The name of the member |
 | [_string_](datatype-string.md) | **Status** | The status of the member - one of the following: Unknown, Online, Offline, In Dynamic Zone, Link Dead |
 | [_string_](datatype-string.md) | **To String** | Same as **Name** |
-
