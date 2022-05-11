@@ -5182,6 +5182,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ini-example" class="md-nav__link">
+    Ini Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#examples" class="md-nav__link">
     Examples
   </a>
@@ -8675,6 +8682,13 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#ini-example" class="md-nav__link">
+    Ini Example
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#examples" class="md-nav__link">
     Examples
   </a>
@@ -8701,13 +8715,32 @@
 
 <h1 id="exec">/exec<a class="headerlink" href="#exec" title="Permanent link">&para;</a></h1>
 <h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
-<p><strong>/exec</strong> <em><strong>command</strong></em></p>
-<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p>Executes the specified command as if from the command line.</p>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>/exec shutdown -f NOW
+<div class="highlight"><pre><span></span><code>/exec command [&quot;parameters&quot; | bg] [bg]
 </code></pre></div>
-<p>This would turn your computer off as if you went Windows-&gt;Turn off</p>
+<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
+<p>Executes the specified command as if from the command line.  If parameters are passed in, it will execute those parameters.  If "bg" is passed as either the second or third parameter, it will execute the program in the background, otherwise it executes in the foreground.</p>
+<p>The Application Paths section in the MacroQuest.ini file allows you to specify aliases for applications, but it's not necessary for usage.</p>
+<h2 id="ini-example">Ini Example<a class="headerlink" href="#ini-example" title="Permanent link">&para;</a></h2>
+<p>MacroQuest.ini
+<div class="highlight"><pre><span></span><code><span class="k">[Application Paths]</span><span class="w"></span>
+<span class="na">vscode</span><span class="o">=</span><span class="s">&quot;C:\Users\YourName\AppData\Local\Programs\Microsoft VS Code\bin\code.cmd&quot;</span><span class="w"></span>
+</code></pre></div></p>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<p>Shutdown the computer:
+<div class="highlight"><pre><span></span><code>/exec shutdown /s
+</code></pre></div>
+Force shutdown the computer:
+<div class="highlight"><pre><span></span><code>/exec shutdown &quot;/s /f&quot;
+</code></pre></div>
+Open Notepad in the background:
+<div class="highlight"><pre><span></span><code>/exec notepad bg
+</code></pre></div></p>
+<p>Open your MacroQuest.ini file in Visual Studio Code when using the above ini:
+<div class="highlight"><pre><span></span><code>/exec vscode &quot;${MacroQuest.Path[mqini]}&quot;
+</code></pre></div></p>
+<p>Or the same thing if vscode is just in your path, with no ini:
+<div class="highlight"><pre><span></span><code>/exec code &quot;${MacroQuest.Path[mqini]}&quot;
+</code></pre></div></p>
 
               
             </article>
