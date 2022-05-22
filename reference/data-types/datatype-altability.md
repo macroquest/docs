@@ -1,4 +1,9 @@
-# DataType:altability
+---
+tags:
+    - datatype
+---
+
+# `altability`
 
 Contains all the data related to alternate abilities
 

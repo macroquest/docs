@@ -1,22 +1,18 @@
-# TLO:EverQuest
+---
+tags:
+    - tlo
+---
 
-## Description
+# `EverQuest`
 
-`This has basically the same members as the old MacroQuest TLO`  
-`but I think most of them are more fitting under the EverQuest TLO.`  
-`MacroQuest TLO will inherit EverQuest TLO so backward compatibility is maintained`  
-`BUT new macros should use EverQuest instead.`
+Provides access to general information about the game and its state.
 
 ## Forms
 
-* ''[Everquest](../data-types/datatype-everquest.md)
+[_everquest_][everquest] EverQuest
 
-## Examples
+## Usage
 
-`Example: Place the mouse over a window and do a /echo ${EverQuest.LastMouseOver.Name}`  
-`Example2: /echo ${EverQuest.LastMouseOver.Tooltip}`
+See [EverQuest] for examples.
 
-`Usage: /echo Im at charsselect and ${Window[CharacterListWnd].Child[CLW_Character_List].List[1,3]} is in ${EverQuest.CharSelectList[1].ZoneID}`  
-`Output: (if a char named Eqmule is the first in your charlist) Im at charselect and Eqmule is in 202`  
-`/echo Im at charsselect and Eqmule is in ${EverQuest.CharSelectList[Eqmule].ZoneID}`  
-`Output: same as above.`
+[everquest]: ../data-types/datatype-everquest.md

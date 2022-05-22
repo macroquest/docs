@@ -1,4 +1,9 @@
-# DataType:keyringitem
+---
+tags:
+    - datatype
+---
+
+# `keyringitem`
 
 This datatype deals strictly with information items on a keyring.
 
@@ -12,13 +17,21 @@ This datatype deals strictly with information items on a keyring.
 
 ## Examples
 
-`/echo ${Mount[1].Name}`  
+```
+/echo ${Mount[1].Name}
+```
+
 Outputs: Whirligig Flyer Control Device
 
-`/echo ${Mount[2].Name}`  
+```
+/echo ${Mount[2].Name}
+```
+
 Outputs: Abyssal Steed
 
-`/echo ${Mount[Abyssal Steed].Index}`
+```
+/echo ${Mount[Abyssal Steed].Index}
+```
 
 Outputs: 2
 

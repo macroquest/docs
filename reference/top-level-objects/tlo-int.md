@@ -1,27 +1,36 @@
-# TLO:Int
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Int`
 
 Object that creates an integer from n.
 
 ## Forms
 
-* [_int_](../data-types/datatype-int.md) **Int[**n**]**
+[_int_][int] **Int**[n]
 
-## Access to Types
-
-* [_int_](../data-types/datatype-int.md) **int**
+:   Parses whatever value for _n_ is provided and converts it into an [int].
 
 ## Examples
 
-`/echo ${Int[123].Hex}`
+```
+/echo ${Int[123].Hex}
+```
 
 Echos the result of the conversion of 123 to an int in hexadecimal.
 
-`/echo ${Int[textstringhere]}`
+```
+/echo ${Int[textstringhere]}
+```
 
 Echos a zero - useful if passing a string to a macro or subroutine that could be a text string or a number and you want to do different actions depending on what you recieve
 
-`/echo ${Int[123]}`
+```
+/echo ${Int[123]}
+```
 
 Echos 123
+
+[int]: ../data-types/datatype-int.md

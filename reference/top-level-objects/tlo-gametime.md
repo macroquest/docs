@@ -1,16 +1,15 @@
-# TLO:GameTime
+---
+tags:
+    - tlo
+---
 
-## Description
+# `GameTime`
 
 A time object indicating EQ Game Time.
 
 ## Forms
 
 * [_time_](../data-types/datatype-time.md) **GameTime**
-
-## Access to Type
-
-* [_time_](../data-types/datatype-time.md) **time**
 
 ## Examples
 

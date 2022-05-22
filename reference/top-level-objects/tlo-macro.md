@@ -1,11 +1,18 @@
-# TLO:Macro
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Macro`
 
-Creates an object related to the macro that is currently running.
+## Forms
 
-* [_DataType:Macro_](../data-types/datatype-macro.md)
+* [_macro_](../data-types/datatype-macro.md) **Macro**
 
-## Examples
+:   Returns an object related to the macro that is currently running.
 
-`/echo This macro has been running for: ${Macro.RunTime} seconds`
+    !!! example
+
+        ```
+        /echo This macro has been running for: ${Macro.RunTime} seconds
+        ```

@@ -1,4 +1,9 @@
-# DataType:skill
+---
+tags:
+    - datatype
+---
+
+# `skill`
 
 Data related to a particular skill
 

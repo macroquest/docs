@@ -1,13 +1,26 @@
-# TLO:DynamicZone
+---
+tags:
+    - tlo
+---
 
-## Description
+# `DynamicZone`
 
-This TLO gives you access to properties of dynamic (instanced) zones.
+Provides access to properties of the current dynamic (instanced) zone.
+
 
 ## Forms
 
-* [_dynamiczone_](../data-types/datatype-dynamiczone.md) **DynamicZone**
+[_dynamiczone_][dynamiczone] **DynamicZone**
 
-## Access to Types
+:   Gives access to the information about the current dynamic zone.
 
-* [_dynamiczone_](../data-types/datatype-dynamiczone.md) **dynamiczone**
+    !!! example
+
+        Echo the name of the dynamic zone
+
+        ```
+        /echo ${DynamicZone.Name}
+        ```
+
+
+[dynamiczone]: ../data-types/datatype-dynamiczone.md

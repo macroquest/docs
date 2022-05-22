@@ -1,6 +1,9 @@
-# TLO:FindItemBankCount
+---
+tags:
+    - tlo
+---
 
-## Description
+# `FindItemBankCount`
 
 Count of items in bank by partial name match. Using =name will find the exact match only.
 
@@ -10,10 +13,6 @@ Count of items in bank by partial name match. Using =name will find the exact ma
 | :--- | :--- |
 | [_int_](../data-types/datatype-int.md) **FindItemBankCount[**name**]** | Count of items in bank by partial name match |
 | [_int_](../data-types/datatype-int.md) **FindItemBankCount[**=name**]** | Count of items in bank by exact name match |
-
-## Access to Types
-
-* [_int_](../data-types/datatype-int.md) **int**
 
 ## Examples
 

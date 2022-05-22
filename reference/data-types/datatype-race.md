@@ -1,4 +1,9 @@
-# DataType:race
+---
+tags:
+    - datatype
+---
+
+# `race`
 
 Contains information on the specified race
 

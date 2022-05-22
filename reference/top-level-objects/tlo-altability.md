@@ -1,4 +1,9 @@
-# TLO:AltAbility
+---
+tags:
+    - tlo
+---
+
+# `AltAbility`
 
 !!! danger
     The AltAbility TLO should not be used except for when experimenting  with data. If you've already purchased the AA, use `Me.AltAbility`, which is tailored to your character and is much faster.

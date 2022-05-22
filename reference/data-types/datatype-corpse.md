@@ -1,4 +1,9 @@
-# DataType:corpse
+---
+tags:
+    - datatype
+---
+
+# `corpse`
 
 Data related to the current lootable corpse. See [Corpse](../top-level-objects/tlo-corpse.md).
 
@@ -21,8 +26,8 @@ classDiagram
 
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
-| [_item_](datatype-item.md) | **Item**[ _#_ ] | \#th item on the corpse |
-| [_item_](datatype-item.md) | **Item** [ _name_ ] | Finds an item by partial _name_ in this corpse (use **Item\[=\***name**\*]** for exact) |
+| [_item_](datatype-item.md) | **Item**[ _N_ ] | _Nth_ item on the corpse |
+| [_item_](datatype-item.md) | **Item** [ _name_ ] | Finds an item by partial _name_ in this corpse (use `=<name>` for exact match) |
 | [_int_](datatype-int.md) | **Items** | Number of items on the corpse |
 | [_bool_](datatype-bool.md) | **Open** | Corpse open? |
 | [_string_](datatype-string.md) | **To String** | Same as **Open** |

@@ -1,16 +1,16 @@
-# TLO:Raid
+---
+tags:
+    - tlo
+---
 
-## Description
+# Raid
 
 Object that has access to members that provide information on your raid.
 
 ## Forms
 
-* [_raid_](../data-types/datatype-raid.md) **Raid**
+[_raid_](../data-types/datatype-raid.md) **Raid**
 
-## Access to Types
-
-* [_raid_](../data-types/datatype-raid.md) **raid**
 
 ## Examples
 

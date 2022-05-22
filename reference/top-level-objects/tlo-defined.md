@@ -1,19 +1,22 @@
-# TLO:Defined
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Defined`
 
 Determines whether a variable, array, or timer with this name exists. The variable, array or timer must not be enclosed with ${}.
 
 ## Forms
 
-* [_bool_](../data-types/datatype-bool.md) **Defined[**name**]**
+[_bool_](../data-types/datatype-bool.md) **Defined**[_name_]
 
-## Access to Types
-
-* [_bool_](../data-types/datatype-bool.md) **bool**
+:   Returns true if the given variable _name_ is defined.
 
 ## Examples
 
-`/if (${Defined[varname]}) {`  
-`/echo ${varname}`  
-`}`
+```
+/if (${Defined[varname]}) {
+    /echo ${varname}
+}
+```

@@ -1,6 +1,13 @@
-# DataType:dztimer
+---
+tags:
+    - datatype
+---
+
+# `dztimer`
 
 Provides information about a dynamic zone lockout timer
+
+See Also: [DataType:dynamiczone](./datatype-dynamiczone.md), [TLO:DynamicZone](../top-level-objects/tlo-dynamiczone.md)
 
 ## Members
 
@@ -15,6 +22,3 @@ Provides information about a dynamic zone lockout timer
 ### Changelog
 
 * July 9th, 2021: Initial version
-
-
-

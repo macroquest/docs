@@ -1,14 +1,25 @@
-# TLO:Illusion
+---
+tags:
+    - tlo
+---
+
+# `Illusion`
 
 Used to get information about items on your illusions keyring.
 
 ## Forms
 
-|  |  |  |
-| :--- | :--- | :--- |
-| [_keyringitem_](../data-types/datatype-keyringitem.md) | **Illusion**[_N_] | Retrieves the item in your illusions keyring by index |
-| [_keyringitem_](../data-types/datatype-keyringitem.md) | **Illusion**[_name_] | Retrieve the item in your illusions keyring by name. A `=` can be prepended for an exact match. |
-| [_keyring_](../data-types/datatype-keyring.md) | **Illusion** | Access to the illusions keyring |
+[_keyring_](../data-types/datatype-keyring.md) **Mount**
+
+:   Access to the illusion keyring.
+
+[_keyringitem_](../data-types/datatype-keyringitem.md) **Mount**[_N_]
+
+:   Retrieves the item in your illusion keyring by index.
+
+[_keyringitem_](../data-types/datatype-keyringitem.md) **Mount**[_name_]
+
+:   Retrieve the item in your illusion keyring by name. A `=` can be prepended for an exact match.
 
 ## Examples
 

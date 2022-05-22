@@ -1,6 +1,11 @@
-# DataType:ground
+---
+tags:
+    - datatype
+---
 
-Contains all data related to a ground spawn
+# `ground`
+
+Represents a ground item.
 
 ## Members
 
@@ -36,6 +41,7 @@ Contains all data related to a ground spawn
 | **DoFace** | Will cause the toon to face the called for spawn if it exists |
 | **DoTarget** | Will cause the toon to target the called for spawn if it exists |
 | **Grab** | Picks up the ground spawn |
+| **Reset** | Clears the currently selected ground spawn |
 
 ## Examples
 
@@ -47,7 +53,7 @@ output: The closest Brew Barrel is 26.4 away from you.
 
 Note that both of the search functions are case insensitive and are sorted by distance closest to you. The only acceptable parameter in the search filter is by name or partial name.
 
-/echo ${Ground[egg].Doface.Distance3D}\) Will face the closest item on the ground which has the word "egg" in it. and then echo the distance to it in the mq2 window. well if it finds an item with the word "egg" in it on the ground that is, otherwise it will just echo NULL .DoFace does NOT target the ground item, it just faces it.
+`/echo ${Ground[egg].Doface.Distance3D})` Will face the closest item on the ground which has the word "egg" in it. and then echo the distance to it in the mq2 window. well if it finds an item with the word "egg" in it on the ground that is, otherwise it will just echo NULL .DoFace does NOT target the ground item, it just faces it.
 
 `/if (${Ground[egg].DoTarget.ID}) /echo we just targeted a ${Ground[egg]}`
 

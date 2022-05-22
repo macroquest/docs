@@ -1,4 +1,9 @@
-# DataType:keyring
+---
+tags:
+    - datatype
+---
+
+# `keyring`
 
 This datatype represents information about a keyring (a.k.a. a collection of mounts, illusions, etc)
 
@@ -13,13 +18,17 @@ This datatype represents information about a keyring (a.k.a. a collection of mou
 
 If **Jungle Raptor Saddle** is set as your **Stat Mount**:
 
-`/echo ${Mount.Stat}`
+```
+/echo ${Mount.Stat}
+```
 
 Outputs: Jungle Raptor Saddle
 
 If you have **3** items in your Mounts keyring:
 
-`/echo ${Mount.Count}`
+```
+/echo ${Mount.Count}
+```
 
 Outputs: 3
 

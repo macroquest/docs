@@ -1,4 +1,9 @@
-# DataType:xtarget
+---
+tags:
+    - datatype
+---
+
+# `xtarget`
 
 Contains the data related to your extended target list
 

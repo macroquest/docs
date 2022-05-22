@@ -1,4 +1,9 @@
-# DataType:mercenary
+---
+tags:
+    - datatype
+---
+
+# `mercenary`
 
 This is the type used for mercenaries.
 

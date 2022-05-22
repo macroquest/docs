@@ -1,19 +1,20 @@
-# TLO:Merchant
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Merchant`
 
 Object that interacts with the currently active merchant.
 
 ## Forms
 
-* [_merchant_](../data-types/datatype-merchant.md) **Merchant**
-
-## Access to Types
-
-* [_merchant_](../data-types/datatype-merchant.md) **merchant**
+[_merchant_](../data-types/datatype-merchant.md) **Merchant**
 
 ## Examples
 
-`/echo ${Merchant.Name}`
+```
+/echo ${Merchant.Name}
+```
 
 Echos the name of the currently open merchant.

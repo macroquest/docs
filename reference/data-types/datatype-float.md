@@ -1,6 +1,11 @@
-# DataType:float
+---
+tags:
+    - datatype
+---
 
-Contains all information related to floating point numbers
+# `float` Type
+
+Represents a single precision (32-bit) floatiang point number.
 
 * A floating-point number is one which has a decimal component (_e.g. 1.01_)
 * Members of this DataType generally manipulate the number's precision (_i.e. how many decimal places_)
@@ -15,4 +20,5 @@ Contains all information related to floating point numbers
 | [_int_](datatype-int.md) | **Int** | Integer portion of the number truncated rather than rounded, _e.g. 12.779 returns 12_ |
 | [_string_](datatype-string.md) | **Milli** | The number as a string with **three** places of precision, _i.e. ###.###_ |
 | [_string_](datatype-string.md) | **Precision**[_#_] | The number as a string with # places of precision |
+| [_string_](datatype-string.md) | **Prettify**[_precision_] | Pretty print the number with commas, with optional _precision_ |
 | [_string_](datatype-string.md) | **To String** | Same as **Centi** |

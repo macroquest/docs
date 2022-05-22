@@ -1,23 +1,45 @@
-# TLO:Select
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Select`
 
 Object used to determine if a match was made to argument in the given set of values.
 
 ## Forms
 
-* [_int_](../data-types/datatype-int.md) **Select[\***argument_,\_value1_\[,_value2_,...\]\*]\_
+[_int_](../data-types/datatype-int.md) **Select**[_argument_,_value1_[,_value2_,...]]
 
-## Access to Types
 
-* [_int_](../data-types/datatype-int.md) **int**
+!!! example
+    Given:
 
-## Examples
+    ```
+    /declare thing string outer foo
+    ```
 
-`/declare thing string outer foo`  
-`/echo ${Select[${thing},foo,bar,baz]} | output: 1`  
-`/echo ${Select[${thing},bin,foo,baz]} | output: 2`  
-`/echo ${Select[${thing},bin,baz,foo]} | output: 3`  
-`/echo ${Select[${thing},bin,bar,baz]} | output: 0`
+    The following are true:
 
-`/if (${Select[${Target.Class.ShortName},CLR,DRU,SHM]} > 0) /echo Target is a healer`
+    ```
+    | Outputs: 1
+    /echo ${Select[${thing},foo,bar,baz]}
+
+    | Outputs: 2
+    /echo ${Select[${thing},bin,foo,baz]}
+
+    | Outputs: 3
+    /echo ${Select[${thing},bin,baz,foo]}
+
+    | Outputs: 0
+    /echo ${Select[${thing},bin,bar,baz]}
+    ```
+
+!!! example
+
+    ```
+    /if (${Select[${Target.Class.ShortName},CLR,DRU,SHM]} > 0) {
+        /echo Target is a healer
+    }
+    ```
+

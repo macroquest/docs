@@ -1,4 +1,9 @@
-# DataType:class
+---
+tags:
+    - datatype
+---
+
+# class
 
 Data about a particular character class
 
@@ -7,15 +12,15 @@ Data about a particular character class
 | **Type** | **Member** | **Description** |
 | :--- | :--- | :--- |
 | [_bool_](datatype-bool.md) | **CanCast** | Can cast spells, including Bard |
-| [_bool_](datatype-bool.md) | **ClericType** | Cleric/Paladin? |
-| [_bool_](datatype-bool.md) | **DruidType** | Druid/Ranger? |
-| [_bool_](datatype-bool.md) | **HealerType** | Cleric/Druid/Shaman? |
-| [_int_](datatype-int.md) | **ID** | The class's ID # |
-| [_bool_](datatype-bool.md) | **MercType** | Mercenary? |
-| [_string_](datatype-string.md) | **Name** | The "long name" as in "Ranger" |
-| [_bool_](datatype-bool.md) | **NecromancerType** | Necromancer/Shadow Knight? |
-| [_bool_](datatype-bool.md) | **PetClass** | Any one of: Shaman, Necromancer, Mage, Beastlord |
-| [_bool_](datatype-bool.md) | **PureCaster** | Any one of: Cleric, Druid, Shaman, Necromancer, Wizard, Mage, Enchanter |
-| [_bool_](datatype-bool.md) | **ShamanType** | Shaman/Beastlord? |
-| [_string_](datatype-string.md) | **ShortName** | The "short name" as in "RNG" |
+| [_bool_](datatype-bool.md) | **ClericType** | True if class is a Cleric or Paladin |
+| [_bool_](datatype-bool.md) | **DruidType** | True if class is a Druid or Ranger |
+| [_bool_](datatype-bool.md) | **HealerType** | True if class is a Healer (Cleric, Druid or Shaman) |
+| [_int_](datatype-int.md) | **ID** | The class numeric ID |
+| [_bool_](datatype-bool.md) | **MercType** | True if class is Mercenary |
+| [_string_](datatype-string.md) | **Name** | The full name of the class. Ex: "Ranger" |
+| [_bool_](datatype-bool.md) | **NecromancerType** | True if class is a Necromancer or Shadow Knight |
+| [_bool_](datatype-bool.md) | **PetClass** | True if class is a pet class (Shaman, Necromancer, Mage or Beastlord) |
+| [_bool_](datatype-bool.md) | **PureCaster** | True if class is a pure caster (Cleric, Druid, Shaman, Necromancer, Wizard, Mage or Enchanter) |
+| [_bool_](datatype-bool.md) | **ShamanType** | True if class is Shaman or Beastlord |
+| [_string_](datatype-string.md) | **ShortName** | The short name (three letter code) of the class. Ex: `RNG` for Ranger |
 | [_string_](datatype-string.md) | **To String** | Same as **Name** |

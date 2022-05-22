@@ -1,6 +1,9 @@
-# TLO:Heading
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Heading`
 
 Object that refers to the directional heading to of a location or direction.
 
@@ -11,10 +14,6 @@ Object that refers to the directional heading to of a location or direction.
 | [_heading_](../data-types/datatype-heading.md) **Heading[**\#**]** | Creates a heading object using degrees (clockwise) |
 | [_heading_](../data-types/datatype-heading.md) **Heading[**y,x**]** | Creates a heading object using the heading to this y,x location |
 | [_heading_](../data-types/datatype-heading.md) **Heading[**N,W**]** | Same as above, just an alternate method |
-
-## Access to Types
-
-* [_heading_](../data-types/datatype-heading.md) **heading**
 
 ## Examples
 

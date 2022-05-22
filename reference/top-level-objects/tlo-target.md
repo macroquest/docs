@@ -1,48 +1,59 @@
-# TLO:Target
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Target`
 
 Object used to get information about your current target.
 
-## Access to Types
+## Forms
 
-* \_\_[_target_ ](../data-types/datatype-target.md)**target**
-* [_spawn_](../data-types/datatype-spawn.md) **spawn**
+[_spawn_](../data-types/datatype-spawn.md) **Target**
 
-## Examples
+:   Returns the spawn object for the current target.
 
-* To display the target's unique name as sent by EQ use ${Target} or ${Target.Name}
 
-`/echo ${Target} or /echo ${Target.Name}`
+!!! warning "Note"
 
-_This will return "a\_commander01" on a living mob or "a\_commander's\_corpse0" on a dead mob._
+    These examples are not specific to target but work on any spawn type.
 
-* To display the target's clean name (also similar to %t on living mobs) use ${Target.CleanName} or
+!!! note
 
-  ${Target.DisplayName}
+    To display the target's unique name as sent by EQ use `${Target}` or `${Target.Name}`
 
-`/echo ${Target.CleanName} or /echo ${Target.DisplayName}`
+    This will return `a_commander01` on a living mob or `a_commander's_corpse0` on a dead mob.
 
-_This will return "a commander" on a living mob or "a commander's corpse" on a dead mob._
+    To display the target's clean name (also similar to %t on living mobs) use
+    `${Target.CleanName}` or `${Target.DisplayName}`
 
-* To display the name as used by '%t' on a corpse use the ${Target.DisplayName}
+    This will return `a commander` on a living mob or `a commander's corpse` on a dead mob.
 
-`/echo ${Target.DisplayName}`
+    To display the name as used by '%t' on a corpse use the `${Target.DisplayName}`
 
-_This will return "a commander" when the corpse is targetted._
+    This will return `a commander` when the corpse is targetted.
 
-* To display the spell ID of the snare debuff use ${Target.Snared.ID}
+!!! example
 
-`/echo ${Target.Snared.ID}`
+    To display the spell ID of the snare debuff use ${Target.Snared.ID}
 
-* Example of using new Slowed target datatype
+    ```
+    /echo ${Target.Snared.ID}
+    ```
 
-`/echo ${Target.Slowed.Name} will fade in ${Target.Slowed.Duration.TotalSeconds}s`
+    Example of using new Slowed target datatype
 
-returns "[MQ2] Tepid Deeds will fade in 114s"
+    ```
+    /echo ${Target.Slowed.Name} will fade in ${Target.Slowed.Duration.TotalSeconds}s
+    ```
 
-* Example of using new Mezzed target datatype
+    returns "Tepid Deeds will fade in 114s"
 
-`/echo ${Target} will break mezz in ${Target.Mezzed.Duration.TotalSeconds}s`
+    Example of using new Mezzed target datatype
 
-returns "[MQ2] a\_pyre\_beetle48 will break mezz in 66s"
+    ```
+    /echo ${Target} will break mezz in ${Target.Mezzed.Duration.TotalSeconds}s`
+    ```
+
+    returns "a\_pyre\_beetle48 will break mezz in 66s"
+

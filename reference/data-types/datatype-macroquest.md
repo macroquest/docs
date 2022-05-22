@@ -1,11 +1,16 @@
-# DataType:macroquest
+---
+tags:
+    - datatype
+---
+
+# `macroquest`
 
 Data types related to the current MacroQuest2 session.  These also inherit from the [EverQuest Type](datatype-everquest.md).
 
 ## Members
 
-| **Type**                           | **Member**        | **Description**                                                                                                                                   |
-| ---------------------------------- | ----------------- | ------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Type** | **Member** | **Description**  |
+| --- | --- | --- |
 | [_int_](datatype-int.md)           | **Build**         | The build number for MQ2Main.dll                                                                                                                  |
 | [_string_](datatype-string.md)     | **BuildDate**     | Date that MQ2Main.dll was built                                                                                                                   |
 | [_string_](datatype-string.md)     | **Error**         | Last normal error message                                                                                                                         |
@@ -19,4 +24,7 @@ Data types related to the current MacroQuest2 session.  These also inherit from 
 
 ## Example
 
-`/echo ${MacroQuest.Path[config]}`
+```
+/echo ${MacroQuest.Path[config]}
+```
+

@@ -1,33 +1,32 @@
-# DataType:range
+---
+tags:
+    - datatype
+---
+
+# `range`
 
 This DataType performs a simple test on _n_ using the following members.
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_bool_](datatype-bool.md) | **Between**[_#1,#2:n_] | is _**n**_ Between the range of _\#1_ and _\#2_ both numbers included |
-| [_bool_](datatype-bool.md) | **Inside**[_#1,#2:n_] | is _**n**_ Inside the range of _\#1_ and _\#2_ both numbers excluded |
+[_bool_][bool] **Between**[_#1_,_#2_:_N_]
 
-## Examples
+:   True if _N_ is between the range of _#1_ and _#2_, inclusive.
 
-### .Between
+    ???+ Example
 
-/echo Is 50 between 33 and 66?: ${Range.Between[33,66:50]}
+        Is 50 between 33 and 66? `${Range.Between[33,66:50]}` returns TRUE
 
-`Is 50 between 33 and 66?: TRUE`
+        Is 25 between 33 and 66? `${Range.Between[33,66:25]}` returns FALSE
 
-/echo Is 25 between 33 and 66?: ${Range.Between[33,66:25]}
+[_bool_][bool] **Inside**[_#1_,_#2_:_N_]
 
-`Is 25 between 33 and 66?: FALSE`
+:   True if _N_ is within the range of _#1_ and _#2_, exclusive.
 
-### .Inside
+    ???+ Example
 
-/echo Is 50 Inside 33 and 66?: ${Range.Inside[33,66:50]}
+        Is 50 Inside 33 and 66? `${Range.Inside[33,66:50]}` returns TRUE
 
-`Is 50 Inside 33 and 66?: TRUE`
+        Is 33 inside 33 and 66? `${Range.Inside[33,66:33]}` returns FALSE
 
-/echo Is 33 inside 33 and 66?: ${Range.Inside[33,66:33]}
-
-`Is 33 between 33 and 66?: FALSE`
-
+[bool]: datatype-bool.md

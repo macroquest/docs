@@ -1,4 +1,9 @@
-# TLO:Alert
+---
+tags:
+    - tlo
+---
+
+# `Alert`
 
 Provides access to spawn search filter criteria in alerts. Alerts are created using [/alert](../../reference/commands/alert.md).
 
@@ -66,9 +71,9 @@ See Also: [Spawn Search](../general/spawn-search.md).
 | [_bool_](../data-types/datatype-bool.md)     | **bTrader**          | Any player that is a trader |
 | [_bool_](../data-types/datatype-bool.md)     | **bTributeMaster**   | Any NPC that is a tribute master |
 | [_string_](../data-types/datatype-string.md) | **Class**            | Any spawn that is the given class |
-| [_double_](../data-types/datatype-float.md)  | **FRadius**          | Any spawn that is given distance from the given **loc** filter |
+| [_double_](../data-types/datatype-double.md)  | **FRadius**          | Any spawn that is given distance from the given **loc** filter |
 | [_int_](../data-types/datatype-int.md)       | **FromSpawnID**      | Search starts at given spawn id |
-| [_int64_](../data-types/datatype-int.md)     | **GuildID**          | Any member of the guild with the given id |
+| [_int64_](../data-types/datatype-int64.md)   | **GuildID**          | Any member of the guild with the given id |
 | [_string_](../data-types/datatype-string.md) | **Light**            | Any spawn that is equipped with the given light source |
 | [_int_](../data-types/datatype-int.md)       | **MaxLevel**         | Any spawn that is at this level or lower |
 | [_int_](../data-types/datatype-int.md)       | **MinLevel**         | Any spawn that is at this level or greater |
@@ -86,7 +91,7 @@ See Also: [Spawn Search](../general/spawn-search.md).
 | [_int_](../data-types/datatype-int.md)       | **SpawnType**        | Any spawn with the given type |
 | [_float_](../data-types/datatype-float.md)   | **xLoc**             | `x` component of the **loc** filter |
 | [_float_](../data-types/datatype-float.md)   | **yLoc**             | `y` component of the **loc** filter |
-| [_double_](../data-types/datatype-float.md)  | **ZRadius**          | `z` distance component of the **loc** filter |
+| [_double_](../data-types/datatype-double.md) | **ZRadius**          | `z` distance component of the **loc** filter |
 
 ## Usage Examples
 

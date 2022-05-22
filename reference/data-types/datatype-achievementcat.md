@@ -1,4 +1,9 @@
-# DataType:achievementcat
+---
+tags:
+    - datatype
+---
+
+# `achievementcat`
 
 Provides access to achievement categories. Achievements are organized hierarchically in the achievements window by categories.
 

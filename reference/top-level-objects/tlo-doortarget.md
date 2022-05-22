@@ -1,16 +1,15 @@
-# TLO:DoorTarget
+---
+tags:
+    - tlo
+---
 
-## Description
+# `DoorTarget`
 
 Object used to return information on your doortarget.
 
 ## Forms
 
 * [_spawn_](../data-types/datatype-spawn.md) **DoorTarget**
-
-## Access to Types
-
-* [_spawn_](../data-types/datatype-spawn.md) **spawn**
 
 ## Examples
 

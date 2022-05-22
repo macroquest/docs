@@ -1,6 +1,13 @@
-# DataType:dzmember
+---
+tags:
+    - datatype
+---
+
+# `dzmember`
 
 This DataType contains information on the members of the current dynamic zone instance
+
+See Also: [DataType:dynamiczone](./datatype-dynamiczone.md), [TLO:DynamicZone](../top-level-objects/tlo-dynamiczone.md)
 
 ## Members
 

@@ -1,16 +1,15 @@
-# TLO:Ground
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Ground`
 
 Object which references the ground spawn item you have targeted.
 
 ## Forms
 
 * [_ground_](../data-types/datatype-ground.md) **Ground**
-
-## Access to Types
-
-* [_ground_](../data-types/datatype-ground.md) **ground**
 
 ## Examples
 

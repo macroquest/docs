@@ -1,34 +1,55 @@
-# TLO:Plugin
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Plugin`
 
 Object that has access to members that provide information on a plugin.
 
 ## Forms
 
-|  |  |
-| :--- | :--- |
-| [_plugin_](../data-types/datatype-plugin.md) **Plugin[**\#**]** | Plugin by number, starting with 1 and stopping whenever the list runs out of plugins. |
-| [_plugin_](../data-types/datatype-plugin.md) **Plugin[**name**]** | Finds plugin by name |
+[_plugin_][plugin] **Plugin**[_name_]
 
-## Access to Types
+:   Finds plugin by name, uses full name match, case insensitive.
 
-* [_plugin_](../data-types/datatype-plugin.md) **plugin**
+[_plugin_][plugin] **Plugin**[_N_] 
+
+:   Plugin by index, starting with 1 and stopping whenever the list runs out of plugins.
+
 
 ## Examples
 
 To see if a plugin is loaded:
 
-`/if (${Plugin[MQ2MoveUtils].Name.Length}) {`  
-`/echo MQ2MoveUtils plugin is loaded`  
-`}`
+=== "MQScript"
+
+    ```
+    /if (${Plugin[MQ2MoveUtils].IsLoaded}) {
+        /echo MQ2MoveUtils plugin is loaded!
+    }
+    ```
+
+=== "Lua"
+
+    ```lua
+    if mq.TLO.Plugin('MQ2MoveUtils').IsLoaded() then
+        print('MQ2MoveUtils plugin is loaded!')
+    end
+    ```
 
 To load a plugin if needed:
 
-`/if ( !${Plugin[MQ2MoveUtils].Name.Length} ) {`  
-`/plugin MQ2MoveUtils noauto`  
-`/if ( !${Plugin[MQ2MoveUtils].Name.Length} ) {`  
-`/echo To Use this macro you need to have MQ2MoveUtils Loaded`  
-`/endmacro`  
-`}`  
-`}`
+=== "MQScript"
+
+    ```
+    /if (!${Plugin[MQ2MoveUtils].IsLoaded}) {
+        /plugin MQ2MoveUtils noauto
+        /if (!${Plugin[MQ2MoveUtils].IsLoaded}) {
+            /echo To Use this macro you need to have MQ2MoveUtils Loaded
+            /endmacro
+        }
+    }
+    ```
+
+[plugin]: ../data-types/datatype-plugin.md

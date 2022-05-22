@@ -1,30 +1,44 @@
-# TLO:SpawnCount
+---
+tags:
+    - tlo
+---
 
-## Description
+# `SpawnCount`
 
-Object used to get information on the count(s\) of all spawns or specific spawn\(s). Uses the filters under [Spawn Search](../../reference/general/spawn-search.md).
+Object used to count spawns based on a set of queries. Uses the filters under [Spawn Search].
 
 ## Forms
 
-|  |  |
-| :--- | :--- |
-| [_int_](../data-types/datatype-int.md) **SpawnCount** | Total number of spawns in current zone |
-| [_int_](../data-types/datatype-int.md) **SpawnCount[**search string**]** | Total number of spawns in current zone matching the _search string_ |
+[_int_][int] **SpawnCount**
 
-## Access to Types
+:   Total number of spawns in current zone
 
-* [_int_](../data-types/datatype-int.md) **int**
+
+[_int_][int] **SpawnCount**[_search string_]
+
+:   Total number of spawns in current zone matching the _search string_. See [Spawn Search].
+
 
 ## Examples
 
-`/echo ${SpawnCount}`
+```
+/echo ${SpawnCount}
+```
 
 Displays the count of all spawns.
 
-`/echo ${SpawnCount[range 45 50]}`
+```
+/echo ${SpawnCount[range 45 50]}
+```
 
 Displays the count of all spawns in the level range of 45 to 50.
 
-`/echo ${SpawnCount[npc radius 100]}`
+```
+/echo ${SpawnCount[npc radius 100]}
+```
 
 Displays count of all NPCs within a radius of 100.
+
+
+[int]: ../data-types/datatype-int.md
+[Spawn Search]: ../../reference/general/spawn-search.md

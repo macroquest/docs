@@ -1,4 +1,10 @@
-# TLO:AdvLoot
+---
+tags:
+    - tlo
+    - datatype
+---
+
+# `AdvLoot`
 
 The AdvLoot TLO grants access to items in the Advanced Loot window.
 
@@ -29,7 +35,7 @@ Represents a discrete item being looted in an AdvLoot window.
 | [_spawn_](../data-types/datatype-spawn.md) | **Corpse** | The spawn representing the corpse that is being looted, if available. |
 | [_bool_](../data-types/datatype-bool.md) | **Greed** | The Greed (GD) state of the item. |
 | [_int_](../data-types/datatype-int.md) | **IconID** | The ID of the icon for the item. |
-| [_int_](../data-types/datatype-int.md) | **ID** | The ID of the item. |
+| [_int64_](../data-types/datatype-int64.md) | **ID** | The ID of the item. |
 | [_int_](../data-types/datatype-int.md) | **Index** | The positional index of the item. |
 | [_string_](../data-types/datatype-string.md) | **Name** | The name of the item. |
 | [_bool_](../data-types/datatype-bool.md) | **Need** | The Need (ND) state of the item. |

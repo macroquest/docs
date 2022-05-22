@@ -1,4 +1,9 @@
-# DataType:raidmember
+---
+tags:
+    - datatype
+---
+
+# `raidmember`
 
 Data related to the specified raid member
 
@@ -15,6 +20,3 @@ Data related to the specified raid member
 | [_bool_](datatype-bool.md) | **RaidLeader** | Returns TRUE if the member is the raid leader |
 | [_spawn_](datatype-spawn.md) | **Spawn** | Spawn object for this player if available (must be in zone) |
 | [_string_](datatype-string.md) | **To String** | Same as **Name** |
-
-
-

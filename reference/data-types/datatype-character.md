@@ -1,4 +1,9 @@
-# DataType:character
+---
+tags:
+    - datatype
+---
+
+# `character`
 
 This data type contains all the information about _your_ character.
 
@@ -28,8 +33,8 @@ If something is missing here, you can check the source to see if it exists.
 | [_int_](datatype-int.md) | **AAPointsAssigned** | Number of AA Points currently assigned |
 | [_int_](datatype-int.md) | **AAPointsSpent** | The number of points you have spent on AA abilities |
 | [_int_](datatype-int.md) | **AAPointsTotal** | The total number of AA points you have |
-| [_int_](datatype-int.md) | **AAVitality** | The total number of AA Vitality you have |
-| | **AAVitalityCap** | |
+| [_int64_](datatype-int64.md) | **AAVitality** | The total number of AA Vitality you have |
+| [_int64_](datatype-int64.md) | **AAVitalityCap** | |
 | [_string_](datatype-string.md) | **Ability**[ _name_ ] | Skill name assigned to this doability button |
 | [_int_](datatype-int.md) | **Ability**[ _#_ ] | The doability button number that the skill name is on |
 | [_bool_](datatype-bool.md) | **AbilityReady**[ _# \| name_ ] | Ability with this name or on this button # ready? |
@@ -53,7 +58,7 @@ If something is missing here, you can check the source to see if it exists.
 | [_bool_](datatype-bool.md) | **AssistComplete** | returns true/false if the assist is complete |
 | [_int_](datatype-int.md) | **AttackBonus** | Attack bonus from gear and spells |
 | [_int_](datatype-int.md) | **AttackSpeed** | Your Attack Speed. No haste spells/items = AttackSpeed of 100. A 41% haste item will result in an AttackSpeed of 141. This variable does not take into account spell or song haste. |
-| [_string_](datatype-string.md) | **Aura** | The aura effect name |
+| [_auratype_](datatype-auratype.md) | **Aura** | Aura data, if an aura is active. |
 | [_bool_](datatype-bool.md) | **AutoFire** | Is Autofire on? |
 | | **AutoSkill** | |
 | [_int_](datatype-int.md) | **AvoidanceBonus** | Avoidance bonus from gear/spells |
@@ -81,9 +86,9 @@ If something is missing here, you can check the source to see if it exists.
 | [_buff_](datatype-buff.md) | **Buff**[ _name_ ] | The buff with this name |
 | [_buff_](datatype-buff.md) | **Buff**[ _#_ ] | The buff in this slot # |
 | [_bool_](datatype-bool.md) | **CanMount** | Can you use a mount here? |
-| [_int_](datatype-int.md) | **CareerFavor** | Career favor/tribute |
-| [_int_](datatype-int.md) | **Cash** | Total cash on your character, expressed in coppers (eg. if you are carrying 100pp, Cash will return 100000) |
-| [_int_](datatype-int.md) | **CashBank** | Total cash in your bank, expressed in coppers |
+| [_int64_](datatype-int64.md) | **CareerFavor** | Career favor/tribute |
+| [_int64_](datatype-int64.md) | **Cash** | Total cash on your character, expressed in coppers (eg. if you are carrying 100pp, Cash will return 100000) |
+| [_int64_](datatype-int64.md) | **CashBank** | Total cash in your bank, expressed in coppers |
 | | **CastTimeLeft** | |
 | [_int_](datatype-int.md) | **CHA** | Character Charisma |
 | | **Charmed** | |
@@ -102,16 +107,16 @@ If something is missing here, you can check the source to see if it exists.
 | [_int_](datatype-int.md) | **CopperBank** | Copper in bank |
 | [_spell_](datatype-spell.md) | **Corrupted** | Returns the name of the Corrupted debuff if you have one |
 | [_int_](datatype-int.md) | **CountBuffs** | Number of buffs you have, not including short duration buffs |
-| | **CountersCorruption** | |
-| [_int_](datatype-int.md) | **CountersCurse** | Number of curse counters you have |
-| [_int_](datatype-int.md) | **CountersDisease** | Number of disease counters you have |
-| [_int_](datatype-int.md) | **CountersPoison** | Number of poison counters you have |
+| [_int64_](datatype-int64.md) | **CountersCorruption** | |
+| [_int64_](datatype-int64.md) | **CountersCurse** | Number of curse counters you have |
+| [_int64_](datatype-int64.md) | **CountersDisease** | Number of disease counters you have |
+| [_int64_](datatype-int64.md) | **CountersPoison** | Number of poison counters you have |
 | [_int_](datatype-int.md) | **CountSongs** | Number of songs you have |
 | | **Crippled** | |
 | | **CrystallizedFear** | |
 | | **CryrstallizedLuck** | |
 | [_int_](datatype-int.md) | **CurrentEndurance** | Current endurance |
-| [_int_](datatype-int.md) | **CurrentFavor** | Current favor/tribute |
+| [_int64_](datatype-int64.md) | **CurrentFavor** | Current favor/tribute |
 | [_int_](datatype-int.md) | **CurrentHPs** | Current hit points |
 | [_int_](datatype-int.md) | **CurrentMana** | Current mana |
 | [_int_](datatype-int.md) | **CurrentWeight** | Current weight |
@@ -123,7 +128,7 @@ If something is missing here, you can check the source to see if it exists.
 | | **CursorSilver** | |
 | [_int_](datatype-int.md) | **DamageShieldBonus** | Damage Shield bonus from gear and spells |
 | [_int_](datatype-int.md) | **DamageShieldMitigationBonus** | Damage Shield Mitigation bonus from gear and spells |
-| [_int_](datatype-int.md) | **Dar** | Damage absorption remaining (eg. from Rune-type spells) |
+| [_int64_](datatype-int64.md) | **Dar** | Damage absorption remaining (eg. from Rune-type spells) |
 | [_int_](datatype-int.md) | **DEX** | Character Dexterity |
 | | **DiamondCoins** | |
 | [_string_](datatype-string.md) | **Diseased** | Returns the name of first Disease spell on character |
@@ -141,7 +146,7 @@ If something is missing here, you can check the source to see if it exists.
 | [_int_](datatype-int.md) | **EnduranceRegenBonus** | Endurance regen bonus |
 | | **EnergyCrystals** | |
 | | **EntwinedDjinnCoins** | |
-| [_int_](datatype-int.md) | **Exp** | Experience (out of 10,000) |
+| [_int64_](datatype-int64.md) | **Exp** | Experience (out of 10,000) |
 | [_int_](datatype-int.md) | **ExpansionFlags** | Returns a numeric number representing which expansions your toon is flagged for |
 | [_int_](datatype-int.md) | **Faycites** | Faycites on your character |
 | | **Feared** | |
@@ -167,7 +172,7 @@ If something is missing here, you can check the source to see if it exists.
 | [_int_](datatype-int.md) | **GroupSize** | Size of group |
 | | **Growth** | |
 | [_int_](datatype-int.md) | **GukEarned** | Total LDoN points earned in Deepest Guk |
-| [_int_](datatype-int.md) | **GuildID** | Returns the ID number of your guild |
+| [_int64_](datatype-int64.md) | **GuildID** | Returns the ID number of your guild |
 | [_int_](datatype-int.md) | **Haste** | Total Combined Haste (worn and spell) as shown in Inventory Window stats |
 | | **Hasted** | |
 | [_bool_](datatype-bool.md) | **HaveExpansion**[ _#_ ] | Returns TRUE/FALSE if you have that expansion # |
@@ -190,7 +195,10 @@ If something is missing here, you can check the source to see if it exists.
 | [_int_](datatype-int.md) | **INT** | Character Intelligence |
 | [_item_](datatype-item.md) | **Inventory**[ _#_ ] | Item in this slot # |
 | [_item_](datatype-item.md) | **Inventory**[ _slotname_ ] |  Item in this slotname (inventory slots only). See [Slot Names](../general/slot-names.md) for a list of slotnames. |
+| [_bool_](datatype-bool.md) | **Invited** | Invited to group? |
+| [_strinrg_](datatype-string.md) | **Inviter** | Name of player sending group invite |
 | [_string_](datatype-string.md) | **Invulnerable** |  Returns the invulnerable spell name on you, can be used with spell data          type ex. ${Me.Invulnerable.Spell.ID} |
+| | **IsBerserk** | |
 | [_bool_](datatype-bool.md) | **ItemReady**[ _XXX_ ] | True/False on if the item is ready to cast. |
 | | **Krono** | |
 | [_int_](datatype-int.md) | **LADelegateMA** | Level of Delegate MA of the current group leader (not your own ability level) |
@@ -228,7 +236,7 @@ If something is missing here, you can check the source to see if it exists.
 | | **McKenzie** | |
 | | **MedalsOfConflict** | |
 | | **MedalsOfHeroism** | |
-| | **MercAAExp** | |
+| [_int64_](datatype-int64.md) | **MercAAExp** | |
 | | **MercAAPoints* | |
 | | **MercAAPointsSpent** | |
 | [_string_](datatype-string.md) | **Mercenary** | The state of your Mercenary, ACTIVE, SUSPENDED, or UNKNOWN (If it's dead). Returns NULL if you do not have a Mercenary. |
@@ -334,13 +342,13 @@ If something is missing here, you can check the source to see if it exists.
 | [_spawn_](datatype-spawn.md) | **TargetOfTarget** | Target of Target (will only work when group or raid Target of Target is active; if not, it will return NULL) |
 | | **Tashed** | |
 | [_int_](datatype-int.md) | **Thirst** | Thirst level |
-| | **TotalCounters** | |
+| [_int64_](datatype-int64.md) | **TotalCounters** | |
 | [_bool_](datatype-bool.md) | **TributeActive** | Tribute Active |
 | [_ticks_](datatype-ticks.md) | **TributeTimer** | Tribute Timer |
 | [_bool_](datatype-bool.md) | **UseAdvancedLooting** | TRUE/FALSE if using advanced looting |
 | | **VeliumShards** | |
-| [_int_](datatype-int.md) | **Vitality** | Total amount of Vitality your toon has |
-| | **VitalityCap** | |
+| [_int64_](datatype-int64.md) | **Vitality** | Total amount of Vitality your toon has |
+| [_int64_](datatype-int64.md) | **VitalityCap** | |
 | | **Voucher** | |
 | | **WarforgedEmblem** | |
 | | **WarlordsSymbol** | |

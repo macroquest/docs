@@ -1,4 +1,9 @@
-# DataType:bandolier
+---
+tags:
+    - datatype
+---
+
+# `bandolier`
 
 Used to access information about bandolier sets on your character.
 

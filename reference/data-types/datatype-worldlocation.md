@@ -1,4 +1,9 @@
-# DataType:worldlocation
+---
+tags:
+    - datatype
+---
+
+# `worldlocation`
 
 Provides access to world locations such as a character's bound location
 
@@ -12,4 +17,3 @@ Provides access to world locations such as a character's bound location
 | [_float_](datatype-float.md) | **X** | The X coordinate |
 | [_float_](datatype-float.md) | **Y** | The Y coordinate |
 | [_float_](datatype-float.md) | **Z** | The Z coordinate |
-

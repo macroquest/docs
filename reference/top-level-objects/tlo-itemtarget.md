@@ -1,14 +1,14 @@
-# TLO:ItemTarget
+---
+tags:
+    - tlo
+---
 
-## Description
+# `ItemTarget`
 
-ItemTarget _We used to allow targeting of ground spawn but then sony started sending a packet that would be a give away._  
-_So I added ItemTarget which is still a spawn but the ID is always 0, e.g. untargetable._  
-_- dont\_know\_at\_all_
+Gives access to the ground item that is previously targeted using [/itemtarget](../commands/itemtarget.md).
 
-* To check that you have a valid ground spawn targeted, use **${ItemTarget.Race.ID}**
-* Non-zero values indicate the DropID of the item.
+## Forms
 
-## Access to Types
+[_ground_](../data-types/datatype-ground.md) **ItemTarget**
 
-* [_spawn_](../data-types/datatype-spawn.md) **spawn**
+:   Returns the current ground item target.

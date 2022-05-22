@@ -1,4 +1,9 @@
-# TLO:Bool
+---
+tags:
+    - tlo
+---
+
+# `Bool`
 
 Creates a bool object from a string. The resulting value is a _bool_ depending on whether the given string is falsey or not.
 

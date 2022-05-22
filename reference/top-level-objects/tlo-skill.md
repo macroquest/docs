@@ -1,26 +1,35 @@
-# TLO:Skill
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Skill`
 
 Object used to get information on your character's skills.
 
 ## Forms
 
-|  |  |
-| :--- | :--- |
-| [_skill_](../data-types/datatype-skill.md) **Skill[**\#**]** | Retrieve skill by number |
-| [_skill_](../data-types/datatype-skill.md) **Skill[**name**]** | Retrieve skill by name |
+[_skill_][skill] **Skill**[_name_]
 
-## Access to Types
+:   Retrieve skill by name
 
-* [_skill_](../data-types/datatype-skill.md) **skill**
+[_skill_][skill] **Skill**[_N_]
+
+:   Retrieve skill by number
 
 ## Examples
 
-`/echo ${Skill[1].ReuseTime}`
+```
+/echo ${Skill[1].ReuseTime}
+```
 
 Displays the reuse time of skill 1
 
-`/echo ${Skill[backstab].ID}`
+```
+/echo ${Skill[backstab].ID}
+```
 
 Displays the skill number of the backstab skill
+
+
+[skill]: ../data-types/datatype-skill.md

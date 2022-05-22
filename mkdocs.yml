@@ -5,12 +5,16 @@ site_author: Macroquest Developers
 
 # Repository
 repo_name: MacroQuest Docs
-repo_url: https://github.com/macroquest/docs
-edit_uri: edit/master/
+repo_url: https://github.com/macroquest/macroquest
+edit_uri: https://github.com/macroquest/docs/edit/master/
 docs_dir: .
 
 # Copyright
 copyright: Copyright &copy; 2002-2022 Macroquest Developers
+
+extra_css:
+  - stylesheets/extra.css
+
 
 # Navigation
 nav:
@@ -29,6 +33,7 @@ nav:
     - CFG Files: main/features/cfg-files.md
     - Configuration: main/macroquest.ini.md
     - Custom UIs: main/features/custom-uis.md
+    - Frame Limiter: main/features/framelimiter.md
     - NamingSpawn: main/features/namingspawn.md
     - Parser Walkthrough: main/features/parser.md
 
@@ -265,11 +270,6 @@ nav:
     - Slot Names: reference/general/slot-names.md
     - Spawn Search: reference/general/spawn-search.md
 
-    - Windows:
-      - AAWindow: reference/general/windows/aawindow.md
-      - BreathWindow: reference/general/windows/breathwindow.md
-      - WindowsList: reference/general/windows/windowslist.md
-
   - Commands:
     - reference/commands/README.md
     - Slash Commands:
@@ -399,130 +399,135 @@ nav:
     
   - Top Level Objects:
     - reference/top-level-objects/README.md
-    - TLO:Achievement: reference/top-level-objects/tlo-achievement.md
-    - TLO:AdvLoot: reference/top-level-objects/tlo-advloot.md
-    - TLO:Alert: reference/top-level-objects/tlo-alert.md
-    - TLO:Alias: reference/top-level-objects/tlo-alias.md
-    - TLO:AltAbility: reference/top-level-objects/tlo-altability.md
-    - TLO:Bool: reference/top-level-objects/tlo-bool.md
-    - TLO:Corpse: reference/top-level-objects/tlo-corpse.md
-    - TLO:Cursor: reference/top-level-objects/tlo-cursor.md
-    - TLO:Defined: reference/top-level-objects/tlo-defined.md
-    - TLO:DisplayItem: reference/top-level-objects/tlo-displayitem.md
-    - TLO:DoorTarget: reference/top-level-objects/tlo-doortarget.md
-    - TLO:DynamicZone: reference/top-level-objects/tlo-dynamiczone.md
-    - TLO:EverQuest: reference/top-level-objects/tlo-everquest.md
-    - TLO:Familiar: reference/top-level-objects/tlo-familiar.md
-    - TLO:FindItem: reference/top-level-objects/tlo-finditem.md
-    - TLO:FindItemBank: reference/top-level-objects/tlo-finditembank.md
-    - TLO:FindItemBankCount: reference/top-level-objects/tlo-finditembankcount.md
-    - TLO:FindItemCount: reference/top-level-objects/tlo-finditemcount.md
-    - TLO:Float: reference/top-level-objects/tlo-float.md
-    - TLO:Friends: reference/top-level-objects/tlo-friends.md
-    - TLO:GameTime: reference/top-level-objects/tlo-gametime.md
-    - TLO:Ground: reference/top-level-objects/tlo-ground.md
-    - TLO:GroundItemCount: reference/top-level-objects/tlo-grounditemcount.md
-    - TLO:Group: reference/top-level-objects/tlo-group.md
-    - TLO:Heading: reference/top-level-objects/tlo-heading.md
-    - TLO:If: reference/top-level-objects/tlo-if.md
-    - TLO:Illusion: reference/top-level-objects/tlo-illusion.md
-    - TLO:Ini: reference/top-level-objects/tlo-ini.md
-    - TLO:Int: reference/top-level-objects/tlo-int.md
-    - TLO:ItemTarget: reference/top-level-objects/tlo-itemtarget.md
-    - TLO:LastSpawn: reference/top-level-objects/tlo-lastspawn.md
-    - TLO:LineOfSight: reference/top-level-objects/tlo-lineofsight.md
-    - TLO:Macro: reference/top-level-objects/tlo-macro.md
-    - TLO:MacroQuest: reference/top-level-objects/tlo-macroquest.md
-    - TLO:Math: reference/top-level-objects/tlo-math.md
-    - TLO:Me: reference/top-level-objects/tlo-me.md
-    - TLO:Mercenary: reference/top-level-objects/tlo-mercenary.md
-    - TLO:Merchant: reference/top-level-objects/tlo-merchant.md
-    - TLO:Mount: reference/top-level-objects/tlo-mount.md
-    - TLO:NearestSpawn: reference/top-level-objects/tlo-nearestspawn.md
-    - TLO:Pet: reference/top-level-objects/tlo-pet.md
-    - TLO:Plugin: reference/top-level-objects/tlo-plugin.md
-    - TLO:Raid: reference/top-level-objects/tlo-raid.md
-    - TLO:Range: reference/top-level-objects/tlo-range.md
-    - TLO:Select: reference/top-level-objects/tlo-select.md
-    - TLO:SelectedItem: reference/top-level-objects/tlo-selecteditem.md
-    - TLO:Skill: reference/top-level-objects/tlo-skill.md
-    - TLO:Spawn: reference/top-level-objects/tlo-spawn.md
-    - TLO:SpawnCount: reference/top-level-objects/tlo-spawncount.md
-    - TLO:Spell: reference/top-level-objects/tlo-spell.md
-    - TLO:Switch: reference/top-level-objects/tlo-switch.md
-    - TLO:Target: reference/top-level-objects/tlo-target.md
-    - TLO:Task: reference/top-level-objects/tlo-task.md
-    - TLO:Time: reference/top-level-objects/tlo-time.md
-    - TLO:Type: reference/top-level-objects/tlo-type.md
-    - TLO:Window: reference/top-level-objects/tlo-window.md
-    - TLO:Zone: reference/top-level-objects/tlo-zone.md
+    - Achievement: reference/top-level-objects/tlo-achievement.md
+    - AdvLoot: reference/top-level-objects/tlo-advloot.md
+    - Alert: reference/top-level-objects/tlo-alert.md
+    - Alias: reference/top-level-objects/tlo-alias.md
+    - AltAbility: reference/top-level-objects/tlo-altability.md
+    - Bool: reference/top-level-objects/tlo-bool.md
+    - Corpse: reference/top-level-objects/tlo-corpse.md
+    - Cursor: reference/top-level-objects/tlo-cursor.md
+    - Defined: reference/top-level-objects/tlo-defined.md
+    - DisplayItem: reference/top-level-objects/tlo-displayitem.md
+    - DoorTarget: reference/top-level-objects/tlo-doortarget.md
+    - DynamicZone: reference/top-level-objects/tlo-dynamiczone.md
+    - EverQuest: reference/top-level-objects/tlo-everquest.md
+    - Familiar: reference/top-level-objects/tlo-familiar.md
+    - FindItem: reference/top-level-objects/tlo-finditem.md
+    - FindItemBank: reference/top-level-objects/tlo-finditembank.md
+    - FindItemBankCount: reference/top-level-objects/tlo-finditembankcount.md
+    - FindItemCount: reference/top-level-objects/tlo-finditemcount.md
+    - Float: reference/top-level-objects/tlo-float.md
+    - FrameLimiter: reference/top-level-objects/tlo-framelimiter.md
+    - Friends: reference/top-level-objects/tlo-friends.md
+    - GameTime: reference/top-level-objects/tlo-gametime.md
+    - Ground: reference/top-level-objects/tlo-ground.md
+    - GroundItemCount: reference/top-level-objects/tlo-grounditemcount.md
+    - Group: reference/top-level-objects/tlo-group.md
+    - Heading: reference/top-level-objects/tlo-heading.md
+    - If: reference/top-level-objects/tlo-if.md
+    - Illusion: reference/top-level-objects/tlo-illusion.md
+    - Ini: reference/top-level-objects/tlo-ini.md
+    - Int: reference/top-level-objects/tlo-int.md
+    - ItemTarget: reference/top-level-objects/tlo-itemtarget.md
+    - LastSpawn: reference/top-level-objects/tlo-lastspawn.md
+    - LineOfSight: reference/top-level-objects/tlo-lineofsight.md
+    - Macro: reference/top-level-objects/tlo-macro.md
+    - MacroQuest: reference/top-level-objects/tlo-macroquest.md
+    - Math: reference/top-level-objects/tlo-math.md
+    - Me: reference/top-level-objects/tlo-me.md
+    - Mercenary: reference/top-level-objects/tlo-mercenary.md
+    - Merchant: reference/top-level-objects/tlo-merchant.md
+    - Mount: reference/top-level-objects/tlo-mount.md
+    - NearestSpawn: reference/top-level-objects/tlo-nearestspawn.md
+    - Pet: reference/top-level-objects/tlo-pet.md
+    - Plugin: reference/top-level-objects/tlo-plugin.md
+    - Raid: reference/top-level-objects/tlo-raid.md
+    - Range: reference/top-level-objects/tlo-range.md
+    - Select: reference/top-level-objects/tlo-select.md
+    - SelectedItem: reference/top-level-objects/tlo-selecteditem.md
+    - Skill: reference/top-level-objects/tlo-skill.md
+    - Spawn: reference/top-level-objects/tlo-spawn.md
+    - SpawnCount: reference/top-level-objects/tlo-spawncount.md
+    - Spell: reference/top-level-objects/tlo-spell.md
+    - Switch: reference/top-level-objects/tlo-switch.md
+    - Target: reference/top-level-objects/tlo-target.md
+    - Task: reference/top-level-objects/tlo-task.md
+    - Time: reference/top-level-objects/tlo-time.md
+    - Type: reference/top-level-objects/tlo-type.md
+    - Window: reference/top-level-objects/tlo-window.md
+    - Zone: reference/top-level-objects/tlo-zone.md
     
   - Data Types:
     - reference/data-types/README.md
-    - DataType:achievement: reference/data-types/datatype-achievement.md
-    - DataType:achievementcat: reference/data-types/datatype-achievementcat.md
-    - DataType:achievementcomp: reference/data-types/datatype-achievementcomp.md
-    - DataType:achievementobj: reference/data-types/datatype-achievementobj.md
-    - DataType:altability: reference/data-types/datatype-altability.md
-    - DataType:argb: reference/data-types/datatype-argb.md
-    - DataType:array: reference/data-types/datatype-array.md
-    - DataType:bandolier: reference/data-types/datatype-bandolier.md
-    - DataType:body: reference/data-types/datatype-body.md
-    - DataType:bool: reference/data-types/datatype-bool.md
-    - DataType:buff: reference/data-types/datatype-buff.md
-    - DataType:byte: reference/data-types/datatype-byte.md
-    - DataType:cachedbuff: reference/data-types/datatype-cachedbuff.md
-    - DataType:character: reference/data-types/datatype-character.md
-    - DataType:class: reference/data-types/datatype-class.md
-    - DataType:corpse: reference/data-types/datatype-corpse.md
-    - DataType:currentzone: reference/data-types/datatype-currentzone.md
-    - DataType:deity: reference/data-types/datatype-deity.md
-    - DataType:dynamiczone: reference/data-types/datatype-dynamiczone.md
-    - DataType:dzmember: reference/data-types/datatype-dzmember.md
-    - DataType:dztimer: reference/data-types/datatype-dztimer.md
-    - DataType:everquest: reference/data-types/datatype-everquest.md
-    - DataType:evolving: reference/data-types/datatype-evolving.md
-    - DataType:fellowship: reference/data-types/datatype-fellowship.md
-    - DataType:fellowshipmember: reference/data-types/datatype-fellowshipmember.md
-    - DataType:float: reference/data-types/datatype-float.md
-    - DataType:ground: reference/data-types/datatype-ground.md
-    - DataType:group: reference/data-types/datatype-group.md
-    - DataType:groupmember: reference/data-types/datatype-groupmember.md
-    - DataType:heading: reference/data-types/datatype-heading.md
-    - DataType:int: reference/data-types/datatype-int.md
-    - DataType:invslot: reference/data-types/datatype-invslot.md
-    - DataType:item: reference/data-types/datatype-item.md
-    - DataType:keyring: reference/data-types/datatype-keyring.md
-    - DataType:keyringitem: reference/data-types/datatype-keyringitem.md
-    - DataType:macro: reference/data-types/datatype-macro.md
-    - DataType:macroquest: reference/data-types/datatype-macroquest.md
-    - DataType:math: reference/data-types/datatype-math.md
-    - DataType:mercenary: reference/data-types/datatype-mercenary.md
-    - DataType:merchant: reference/data-types/datatype-merchant.md
-    - DataType:pet: reference/data-types/datatype-pet.md
-    - DataType:plugin: reference/data-types/datatype-plugin.md
-    - DataType:race: reference/data-types/datatype-race.md
-    - DataType:raid: reference/data-types/datatype-raid.md
-    - DataType:raidmember: reference/data-types/datatype-raidmember.md
-    - DataType:range: reference/data-types/datatype-range.md
-    - DataType:skill: reference/data-types/datatype-skill.md
-    - DataType:spawn: reference/data-types/datatype-spawn.md
-    - DataType:spell: reference/data-types/datatype-spell.md
-    - DataType:string: reference/data-types/datatype-string.md
-    - DataType:switch: reference/data-types/datatype-switch.md
-    - DataType:target: reference/data-types/datatype-target.md
-    - DataType:task: reference/data-types/datatype-task.md
-    - DataType:taskmember: reference/data-types/datatype-taskmember.md
-    - DataType:ticks: reference/data-types/datatype-ticks.md
-    - DataType:time: reference/data-types/datatype-time.md
-    - DataType:timer: reference/data-types/datatype-timer.md
-    - DataType:timestamp: reference/data-types/datatype-timestamp.md
-    - DataType:type: reference/data-types/datatype-type.md
-    - DataType:window: reference/data-types/datatype-window.md
-    - DataType:worldlocation: reference/data-types/datatype-worldlocation.md
-    - DataType:xtaggrocount: reference/data-types/datatype-xtaggrocount.md
-    - DataType:xtarget: reference/data-types/datatype-xtarget.md
-    - DataType:zone: reference/data-types/datatype-zone.md
+    - achievement: reference/data-types/datatype-achievement.md
+    - achievementcat: reference/data-types/datatype-achievementcat.md
+    - achievementobj: reference/data-types/datatype-achievementobj.md
+    - altability: reference/data-types/datatype-altability.md
+    - argb: reference/data-types/datatype-argb.md
+    - array: reference/data-types/datatype-array.md
+    - augtype: reference/data-types/datatype-augtype.md
+    - auratype: reference/data-types/datatype-auratype.md
+    - bandolier: reference/data-types/datatype-bandolier.md
+    - body: reference/data-types/datatype-body.md
+    - bool: reference/data-types/datatype-bool.md
+    - buff: reference/data-types/datatype-buff.md
+    - byte: reference/data-types/datatype-byte.md
+    - cachedbuff: reference/data-types/datatype-cachedbuff.md
+    - character: reference/data-types/datatype-character.md
+    - charselectlist: reference/data-types/datatype-charselectlist.md
+    - class: reference/data-types/datatype-class.md
+    - corpse: reference/data-types/datatype-corpse.md
+    - currentzone: reference/data-types/datatype-currentzone.md
+    - deity: reference/data-types/datatype-deity.md
+    - double: reference/data-types/datatype-double.md
+    - dynamiczone: reference/data-types/datatype-dynamiczone.md
+    - dzmember: reference/data-types/datatype-dzmember.md
+    - dztimer: reference/data-types/datatype-dztimer.md
+    - everquest: reference/data-types/datatype-everquest.md
+    - evolving: reference/data-types/datatype-evolving.md
+    - fellowship: reference/data-types/datatype-fellowship.md
+    - fellowshipmember: reference/data-types/datatype-fellowshipmember.md
+    - float: reference/data-types/datatype-float.md
+    - ground: reference/data-types/datatype-ground.md
+    - group: reference/data-types/datatype-group.md
+    - groupmember: reference/data-types/datatype-groupmember.md
+    - heading: reference/data-types/datatype-heading.md
+    - int: reference/data-types/datatype-int.md
+    - int64: reference/data-types/datatype-int64.md
+    - invslot: reference/data-types/datatype-invslot.md
+    - item: reference/data-types/datatype-item.md
+    - itemspell: reference/data-types/datatype-itemspell.md
+    - keyring: reference/data-types/datatype-keyring.md
+    - keyringitem: reference/data-types/datatype-keyringitem.md
+    - macro: reference/data-types/datatype-macro.md
+    - macroquest: reference/data-types/datatype-macroquest.md
+    - math: reference/data-types/datatype-math.md
+    - mercenary: reference/data-types/datatype-mercenary.md
+    - merchant: reference/data-types/datatype-merchant.md
+    - pet: reference/data-types/datatype-pet.md
+    - plugin: reference/data-types/datatype-plugin.md
+    - race: reference/data-types/datatype-race.md
+    - raid: reference/data-types/datatype-raid.md
+    - raidmember: reference/data-types/datatype-raidmember.md
+    - range: reference/data-types/datatype-range.md
+    - skill: reference/data-types/datatype-skill.md
+    - spawn: reference/data-types/datatype-spawn.md
+    - spell: reference/data-types/datatype-spell.md
+    - string: reference/data-types/datatype-string.md
+    - switch: reference/data-types/datatype-switch.md
+    - target: reference/data-types/datatype-target.md
+    - task: reference/data-types/datatype-task.md
+    - taskmember: reference/data-types/datatype-taskmember.md
+    - ticks: reference/data-types/datatype-ticks.md
+    - time: reference/data-types/datatype-time.md
+    - timer: reference/data-types/datatype-timer.md
+    - timestamp: reference/data-types/datatype-timestamp.md
+    - type: reference/data-types/datatype-type.md
+    - window: reference/data-types/datatype-window.md
+    - worldlocation: reference/data-types/datatype-worldlocation.md
+    - xtarget: reference/data-types/datatype-xtarget.md
+    - zone: reference/data-types/datatype-zone.md
 
 
 - Change Log: https://github.com/macroquest/macroquest/blob/master/data/resources/CHANGELOG.md" target="_blank
@@ -530,18 +535,25 @@ nav:
 # Theme
 theme:
   name: material
+  custom_dir: overrides
+
   logo: images/logo.png
   favicon: images/logo.png
+  
+  font:
+    code: Source Code Pro
+
   features:
     - navigation.tabs
     - search.highlight
     - search.share
     - navigation.instant
     - navigation.indexes
+    - navigation.top
   palette:
     - scheme: slate
-      primary: deep purple
-      accent: deep orange
+      primary: indigo
+      accent: indigo
       toggle:
         icon: material/toggle-switch-off-outline
         name: Switch to light mode
@@ -556,6 +568,8 @@ theme:
 plugins:
   - search
   - same-dir
+  - redirects
+  - tags
 
 # Customization
 
@@ -597,7 +611,3 @@ markdown_extensions:
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
-
-extra_javascript:
-  - https://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML
-  - assets/mathjaxhelper.js

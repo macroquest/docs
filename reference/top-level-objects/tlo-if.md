@@ -1,23 +1,35 @@
-# TLO:If
+---
+tags:
+    - tlo
+---
 
-## Description
+# `If`
 
-Performs Math.Calc on _conditions_, gives _whentrue_ if non-zero, gives _whenfalse_ if zero
+
+!!! warning
+
+    The `If` TLO is used to provide inline condition expressions for macros. It is not recommend for
+    use with Lua.
+
+Executes an inline condiition, similar to a ternary expression in other languages.
 
 ## Forms
 
-* [_string_]() **If[\***conditions,whentrue,whenfalse**\*]**
+[_string_][string] **If**[_conditions_,_whentrue_,_whenfalse_]
 
-## Access to Types
+:   Performs [Math.Calc][Math.Calc] on _conditions_, gives _whentrue_ if non-zero, gives _whenfalse_ if zero.
 
-* [_string_]() **string**
+    !!! example
 
-## Examples
+        If I am sitting, stand up. Otherwise, echo "I am not sitting down"
 
-`/docommand ${If[${Me.Sitting},/stand,/echo I am not sitting down]}`
+        ```
+        /docommand ${If[${Me.Sitting},/stand,/echo I am not sitting down]}
+        ```
 
-If I am sitting, stand up, Otherwise echo "I am not sitting down".
+[_string_][string] **If**[_conditions_|_whentrue_|_whenfalse_]
 
-`/docommand ${If[${Me.CurrentHP}<50,/cast "Gate",/goto :Continue]}`
+:   Alternate syntax, behaves the same as above but uses the pipe character as a separator instead of a comma.
 
-If my hp percent is below 50 cast the Gate spell, otherwise goto the :Continue label.
+[string]: ../data-types/datatype-string.md
+[Math.Calc]: ..//data-types/datatype-math.md#calc

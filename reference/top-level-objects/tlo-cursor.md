@@ -1,16 +1,15 @@
-# TLO:Cursor
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Cursor`
 
 Creates an object which references the item on your cursor.
 
 ## Forms
 
 * [_item_](../data-types/datatype-item.md) **Cursor**
-
-## Access to Types
-
-* [_item_](../data-types/datatype-item.md) **item**
 
 ## Examples
 

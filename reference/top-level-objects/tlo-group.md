@@ -1,16 +1,15 @@
-# TLO:Group
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Group`
 
 Access to all group-related information.
 
 ## Forms
 
 * [_group_](../data-types/datatype-group.md) **Group**
-
-## Access to Types
-
-* [_group_](../data-types/datatype-group.md) **group**
 
 ## Examples
 

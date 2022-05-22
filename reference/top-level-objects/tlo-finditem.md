@@ -1,46 +1,56 @@
-# TLO:FindItem
+---
+tags:
+    - tlo
+---
 
-## Description
+# `FindItem`
 
-A TLO used to find an item on your character, corpse, or a merchant by partial or exact name match.   _See examples below._
+A TLO used to find an item on your character, corpse, or a merchant by partial or exact name match. _See examples below._
 
 ## Forms
 
-|  |  |
-| :--- | :--- |
-| [_item_](../data-types/datatype-item.md) **FindItem[**name**]** | Returns item on your character, a corpse, or a merchant by partial name match |
-| [_item_](../data-types/datatype-item.md) **FindItem[**=name**]** | Returns item on your character, a corpse, or a merchant by exact name match |
+[_item_][item] **FindItem**[_name/id_]
 
-## Access to Types
+:   Search for an item using the given item id, or partial name match. Will search character
+    inventory and any items stored in key rings (illusion, mount, etc).
 
-* [_item_](../data-types/datatype-item.md) **item**
+    ??? example
 
-## Examples
+        Looks for an item with the name swirling in it, and prints the ID.
 
-Looks for the Cleric Epic (by exact match) and prints its ID.
+        === "MQScript"
 
-{% tabs %}
-{% tab title="Lua" %}
-```lua
-/lua parse mq.TLO.FindItem("=Water Sprinkler of Nem Ankh").ID()
-```
-{% endtab %}
+            ```
+            /echo ${FindItem[swirling].ID}
+            ```
 
-{% tab title="MQScript" %}
-`/echo ${FindItem[=Water Sprinkler of Nem Ankh].ID}`
-{% endtab %}
-{% endtabs %}
+        === "Lua"
 
-Looks for an item with the name swirling in it, and prints the ID.
+            ```lua
+            print(mq.TLO.FindItem("swirling").ID())
+            ```
 
-{% tabs %}
-{% tab title="Lua" %}
-```lua
-/lua parse mq.TLO.FindItem("swirling").ID()
-```
-{% endtab %}
 
-{% tab title="MQScript" %}
-`/echo ${FindItem[swirling].ID}`
-{% endtab %}
-{% endtabs %}
+[_item_][item] **FindItem**[=_name_]
+
+:   Search for an item using exact name match (case insensntive). Will search character inventory
+    and any items stored in key rings (illusion, mount, etc).
+
+    ??? example
+
+        Looks for the Cleric Epic (by exact match) and prints its ID.
+
+        === "MQScript"
+
+            ```
+            /echo ${FindItem[=Water Sprinkler of Nem Ankh].ID}
+            ```
+
+        === "Lua"
+
+            ```lua
+            print(mq.TLO.FindItem("=Water Sprinkler of Nem Ankh").ID())
+            ```
+
+
+[item]: ../data-types/datatype-item.md

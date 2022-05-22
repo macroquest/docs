@@ -1,27 +1,20 @@
-# \#warning
-
-## Description
-
-\#warning
+# `#warning`
 
 Add it at the top of your macro, and you will get warnings if there are undeclared variables used in it.
 
-AGAIN: IMPORTANT: Undeclared variables will slow down macro performance a LOT if they are used over and over, so, fix your macros.
+With `#warning` added to your macro, the macro will be issue a warning when it run in to an undefined, and pause.
+The warning will list the macro line number and line language, so you can go in a fix the macro.
 
-## Use
+A common source of problems is using a variable that might not exist in an `if` statement to check if it has a value.
 
-With \#warning added to your macro, the macro will be issue a warning (either in the MQ window or chat window) when it run in to an undefined, and pause. The warning will list the macro line number and line language, so you can go in a fix the macro.
+Instead, you can determine if a variable is defined by using the [Defined TLO](../top-level-objects/tlo-defined.md).
 
-A lot of times this is a matter of using [\[TLO:Defined\|${Defined\[\]}\]]
-
-As in ${blah} only gets defined in a specific situation... as such the old way of just
-
-`/if (${blah}) /dosomething`
-
-will cause a lot of extra CPU usage. Using \#warning will pause the macro and tell you where the problem is, so you can either change the macro to avoid the problem, or simply:
+For example, the following is how you would check if a variable exists before being used.
 
 ```text
-/if (${Defined[${blah}]} {
-    /if (${blah}) /dosomething
+/if (${Defined[SomeVariable]} {
+    /if (${SomeVariable})  {
+        /echo SomeVariable exists.
     }
+}
 ```

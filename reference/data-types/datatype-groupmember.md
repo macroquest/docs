@@ -1,4 +1,9 @@
-# DataType:groupmember
+---
+tags:
+    - datatype
+---
+
+# `groupmember`
 
 Contains data on a specific group member
 

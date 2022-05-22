@@ -1,6 +1,9 @@
-# TLO:LineOfSight
+---
+tags:
+    - tlo
+---
 
-## Description
+# `LineOfSight`
 
 Object that is used to check if there is Line of Sight betwen two locations.
 
@@ -11,13 +14,10 @@ Object that is used to check if there is Line of Sight betwen two locations.
 * [_bool_](../data-types/datatype-bool.md) **LineOfSight[**y,x,z:y,x,z**]**
 * [_bool_](../data-types/datatype-bool.md) **LineOfSight[**y,x,z,y,x,z**]** (For ISXEQ)
 
-## Access to Types
-
-* [_bool_](../data-types/datatype-bool.md) **bool**
-
 ## Examples
 
-`/echo ${LineOfSight[20,40,-20:100,-300,70]}`  
-`echo ${LineOfSight[20,40,-20,100,-300,70]} (for ISXEQ)`
+```
+/echo ${LineOfSight[20,40,-20:100,-300,70]}
+```
 
 Returns TRUE if Line of Sight is clear between the two locations

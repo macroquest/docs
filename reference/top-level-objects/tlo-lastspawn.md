@@ -1,6 +1,9 @@
-# TLO:LastSpawn
+---
+tags:
+    - tlo
+---
 
-## Description
+# `LastSpawn`
 
 Information about the spawns that have occurred since you entered the zone. When you enter a zone you dont know the spawn order of anything already there, just anything that spawns while you are in the zone.
 
@@ -13,9 +16,6 @@ The useful thing about ${LastSpawn[-1]} is just being able to get the first spaw
 | [_spawn_](../data-types/datatype-spawn.md) **LastSpawn[**n**]** | The nth latest spawn (chronological order) |
 | [_spawn_](../data-types/datatype-spawn.md) **LastSpawn[**-n**]** | The nth oldest spawn (chronological order) |
 
-## Access to Types
-
-* [_spawn_](../data-types/datatype-spawn.md) **spawn**
 
 ## Examples
 

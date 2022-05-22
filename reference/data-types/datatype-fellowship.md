@@ -1,4 +1,9 @@
-# DataType:fellowship
+---
+tags:
+    - datatype
+---
+
+# `fellowship`
 
 Contains all the data about your fellowship
 
@@ -12,6 +17,7 @@ Contains all the data about your fellowship
 | [_float_](datatype-float.md) | **CampfireY** | Campfire Y location |
 | [_float_](datatype-float.md) | **CampfireZ** | Campfire Z location |
 | [_zone_](datatype-zone.md) | **CampfireZone** | Zone information for the zone that contains your campfire |
+| [_bool_](datatype-bool.md) | **Exists** | Returns TRUE if a fellowship exists. |
 | [_int_](datatype-int.md) | **ID** | Fellowship ID |
 | [_string_](datatype-string.md) | **Leader** | Fellowship leader's name |
 | [_fellowshipmember_](datatype-fellowshipmember.md) | **Member**[ _name\|#_ ] | Member data by _name_ or _#_ |
@@ -23,4 +29,5 @@ Contains all the data about your fellowship
 
 ## Changelog
 
+* May 13, 2022: Added Exists
 * December 3rd, 2020: Added Sharing

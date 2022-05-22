@@ -1,4 +1,9 @@
-# TLO:Friends
+---
+tags:
+    - tlo
+---
+
+# `Friends`
 
 Grants access to your friends dlist.
 

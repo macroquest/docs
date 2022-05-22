@@ -1,4 +1,9 @@
-# DataType:timer
+---
+tags:
+    - datatype
+---
+
+# `timer`
 
 A timer data type is set in tenths of one second and counts down to zero; starting immediately after being set.
 
@@ -10,12 +15,14 @@ A timer data type is set in tenths of one second and counts down to zero; starti
 | [_int_](datatype-int.md) | **Value** | Current value of the timer |
 | [_string_](datatype-string.md) | **To String** | Same as **Value** |
 
-## Example
+## Usage
 
 Consider the following timer:
 
-`/declare BuffTimer timer local`  
-`/varset BuffTimer 360`
+```
+/declare BuffTimer timer local
+/varset BuffTimer 360
+```
 
 BuffTimer will be equal to 0 in:
 
@@ -23,15 +30,19 @@ BuffTimer will be equal to 0 in:
 * 36 seconds
 * 6 ticks (a tick is 6 seconds)
 
-Timers may also be set with an "s" (seconds\) or an "m" \(minutes) appended to the value. For example:
+Timers may also be set with an "s" (seconds) or an "m" (minutes) appended to the value. For example:
 
-`/varset BuffTimer 360s`
+```
+/varset BuffTimer 360s
+```
 
-This would set the timer to 3600 (360\*10) tenths of 1 second
+This would set the timer to 3600 (360 * 10) tenths of 1 second
 
-`/varset BuffTimer 360m`
+```
+/varset BuffTimer 360m
+```
 
-This would set the timer to 216000 (360\*60\*10) tenths of 1 second
+This would set the timer to 216000 (360 * 60 * 10) tenths of 1 second
 
 ```text
 sub main

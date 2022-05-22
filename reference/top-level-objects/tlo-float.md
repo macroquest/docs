@@ -1,16 +1,15 @@
-# TLO:Float
+---
+tags:
+    - tlo
+---
 
-## Description
+# `Float`
 
 Creates a float object from n.
 
 ## Forms
 
 * [_float_](../data-types/datatype-float.md) **Float[**n**]**
-
-## Access to Types
-
-* [_float_](../data-types/datatype-float.md) **float**
 
 ## Examples
 

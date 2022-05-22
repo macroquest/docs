@@ -1,4 +1,9 @@
-# DataType:everquest
+---
+tags:
+    - datatype
+---
+
+# `everquest`
 
 Data types related to the current EverQuest session.
 
@@ -8,12 +13,12 @@ Data types related to the current EverQuest session.
 | -------------------------------- | ------------------------------------ | --- |
 | [_int_](datatype-int.md)         | **CharSelectList**                   | Currently returns the zone ID the character is currently in |
 | [_bool_](datatype-bool.md)       | **ChatChannel**[_channelname_]       | Returns TRUE if _channelname_ is joined |
-| [_string_](datatype-string.md)   | **ChatChannel**[ _#_ ]               | Returns the name of chat channel # |
+| [_string_](datatype-string.md)   | **ChatChannel**[_#_]                 | Returns the name of chat channel _#_ |
 | [_int_](datatype-int.md)         | **ChatChannels**                     | Returns the number of channels currently joined |
 | [_string_](datatype-string.md)   | **CurrentUI**                        | return a string representing the currently loaded UI skin |
 | [_bool_](datatype-bool.md)       | **Foreground**                       | Returns TRUE if EverQuest is in Foreground |
 | [_string_](datatype-string.md)   | **GameState**                        | Shows the current game state. Values: CHARSELECT, INGAME, PRECHARSELECT, UNKNOWN |
-| [_int_](datatype-int.md)         | **HWND**                             | Window handle.|
+| [_int64_](datatype-int64.md)     | **HWND**                             | Window handle. |
 | [_bool_](datatype-bool.md)       | **IsDefaultUILoaded**                | returns a bool true or false if the "Default" UI skin is the one loaded |
 | [_string_](datatype-string.md)   | **LastCommand**                      | Last command entered |
 | [_window_](datatype-window.md)   | **LastMouseOver**                    | Returns the last window you moused over |
@@ -40,6 +45,15 @@ Data types related to the current EverQuest session.
 | [_string_](datatype-string.md)   | **WinTitle**                         | Titlebar text of the Everquest window. |
 
 ## Usage
+
+!!! Example
+
+    You can place the mouse over a window and then run the following command to see the name of the
+    window that the mouse is hovering over:
+    
+    ```
+    /echo ${EverQuest.LastMouseOver.Name}
+    ```
 
 !!! example
 

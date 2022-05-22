@@ -1,4 +1,9 @@
-# DataType:cachedbuff
+---
+tags:
+    - datatype
+---
+
+# `cachedbuff`
 
 !!! info
 

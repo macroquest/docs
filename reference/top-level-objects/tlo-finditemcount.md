@@ -1,6 +1,9 @@
-# TLO:FindItemCount
+---
+tags:
+    - tlo
+---
 
-## Description
+# `FindItemCount`
 
 Count of items on character by partial name match. Using =name will find an exact match only.
 
@@ -10,10 +13,6 @@ Count of items on character by partial name match. Using =name will find an exac
 | :--- | :--- |
 | [_int_](../data-types/datatype-int.md) **FindItemCount[**name**]** | Count of items on character by partial name match |
 | [_int_](../data-types/datatype-int.md) **FindItemCount[**=name**]** | Count of items on character by exact name match |
-
-## Access to Types
-
-* [_int_](../data-types/datatype-int.md) **int**
 
 ## Examples
 
