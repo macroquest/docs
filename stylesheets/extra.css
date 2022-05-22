@@ -1,0 +1,54 @@
+
+body[data-md-color-scheme=slate] .md-container {
+    opacity: 1 !important;
+}
+
+body[data-md-color-scheme=slate] .md-header {
+    background-color: rgba(22, 23, 29, 0.95);
+}
+
+body[data-md-color-scheme=slate] .md-tabs {
+    background-color: rgba(22, 23, 29,0.6) !important;
+}
+
+body[data-md-color-scheme=slate] .md-typeset a {
+    color: #669fff;
+}
+
+body[data-md-color-scheme=slate] .md-nav__item .md-nav__link--active {
+    color: #669fff;
+}
+
+.md-grid {
+    margin: 0;
+    max-width: 66rem;
+}
+
+.md-typeset {
+    font-size: 0.8rem;
+}
+
+
+body[data-md-color-scheme=slate] .md-sidebar--primary .md-sidebar__scrollwrap {
+    border-right: 1px solid #454755;
+}
+
+body {
+    font-size: 1.0rem;
+}
+
+html {
+    font-size: 125%;
+}
+
+@media screen and (min-width: 100em) {
+    html {
+        font-size: 137.5%;
+    }
+}
+
+@media screen and (min-width: 125em) {
+    html {
+        font-size: 150%;
+    }
+}
