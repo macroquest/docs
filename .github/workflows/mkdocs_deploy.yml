@@ -24,6 +24,7 @@ jobs:
           pip install --upgrade pip
           pip install mkdocs mkdocs-gen-files
           pip install mkdocs-material
+          pip install mkdocs-material-extensions
           pip install mkdocs-same-dir
           pip install python-markdown-math
       - name: Configure git as github-actions bot
