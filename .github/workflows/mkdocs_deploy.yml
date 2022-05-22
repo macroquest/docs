@@ -7,7 +7,7 @@ on:
     paths:
       - "**.md"
       - "mkdocs.yml"
-      - "mkdocs_deploy.yml"
+      - ".github/workflows/mkdocs_deploy.yml"
 
 jobs:
   docs:
