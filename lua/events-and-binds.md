@@ -1,6 +1,6 @@
 # Lua Events and Binds
 
-Events and binds are very similar to their macro counterparts, but use the fact that lua functions are first class
+Events and binds are very similar to their macro counterparts, but use the fact that Lua functions are first class
 to allow you to simply specify callback functions that will process events and binds when they get processed.
 The callbacks will require a specific signature to work, so this page is here to document how to use callbacks.
 
@@ -12,7 +12,7 @@ The matcher text is the same matcher text that everyone is used to from macro ev
 wildcard and `#1#` is a captured wildcard that will be the first argument. More arguments are similarly captured,
 so you can specify the argument order in a callback. 
 
-The callback is the important feature of lua. It expects a function with a signature of `(line, arg1, arg2, etc)`
+The callback is the important feature of Lua. It expects a function with a signature of `(line, arg1, arg2, etc)`
 that will process the text of the event (the full matched line and the captured arguments, ordered by number).
 A simple example would look like this:
 
