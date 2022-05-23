@@ -2,12 +2,9 @@
 
 ## Step-by-Step Building a LuaRocks Module for MQ
 
-Because this is the module I have compiled, I will provide an example of one method of compiling using [luarocks](https://luarocks.org/) with
-the [lua sqlite3](http://lua.sqlite.org/index.cgi/index) library. These instructions are available in generic form
-[in the official installation instructions](https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows),
-but I will outline the specific details needed for mq.
+This is one method of compiling using [LuaRocks](https://luarocks.org/) with the [Lua SQLite3](http://lua.sqlite.org/index.cgi/index) library. These instructions are available in generic form [in the official installation instructions](https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows); but this covers the specific details needed for MQ.
 
-1.  Grab luarocks for windows at the [luarocks download page](https://luarocks.github.io/luarocks/releases/) (you want the legacy windows package,
+1.  Grab LuaRocks for Windows at the [LuaRocks download page](https://luarocks.github.io/luarocks/releases/) (you want the legacy windows package,
     because you will need to build it yourself)
 
 2.  Extract the zip to someplace nice.
@@ -23,7 +20,7 @@ but I will outline the specific details needed for mq.
     ```
 
 4.  If you have not built mq2lua (in VS), do so now. It will run the vcpkg install of `luajit` that we need to run `luarocks` with.
-    You can alternately just install it through the mq vcpkg environment, but this is the simplest way to get what you need.
+    You can alternately just install it through the MQ vcpkg environment, but this is the simplest way to get what you need.
 
 5.  Run `install.bat` with `/SELFCONTAINED`, using `/P` to point to the install directory, and (most importantly) `/INC`, `/LIB`, and `/BIN`
     to point to the mq install of luajit that you just built, and `/NOADMIN` because this is a local install. Hit enter when prompted:
