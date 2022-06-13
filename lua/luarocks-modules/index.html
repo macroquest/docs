@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://docs.macroquest.org/lua/luarocks-modules/">
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.2.15">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.4">
     
     
       
@@ -21,11 +21,12 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.c382b1dc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.4a0965b7.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.cc9b2e1e.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.cbb835fc.min.css">
         
+      
       
     
     
@@ -8685,13 +8686,10 @@
 
 <h1 id="luarocks-modules">LuaRocks Modules<a class="headerlink" href="#luarocks-modules" title="Permanent link">&para;</a></h1>
 <h2 id="step-by-step-building-a-luarocks-module-for-mq">Step-by-Step Building a LuaRocks Module for MQ<a class="headerlink" href="#step-by-step-building-a-luarocks-module-for-mq" title="Permanent link">&para;</a></h2>
-<p>Because this is the module I have compiled, I will provide an example of one method of compiling using <a href="https://luarocks.org/">luarocks</a> with
-the <a href="http://lua.sqlite.org/index.cgi/index">lua sqlite3</a> library. These instructions are available in generic form
-<a href="https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows">in the official installation instructions</a>,
-but I will outline the specific details needed for mq.</p>
+<p>This is one method of compiling using <a href="https://luarocks.org/">LuaRocks</a> with the <a href="http://lua.sqlite.org/index.cgi/index">Lua SQLite3</a> library. These instructions are available in generic form <a href="https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows">in the official installation instructions</a>; but this covers the specific details needed for MQ.</p>
 <ol>
 <li>
-<p>Grab luarocks for windows at the <a href="https://luarocks.github.io/luarocks/releases/">luarocks download page</a> (you want the legacy windows package,
+<p>Grab LuaRocks for Windows at the <a href="https://luarocks.github.io/luarocks/releases/">LuaRocks download page</a> (you want the legacy windows package,
     because you will need to build it yourself)</p>
 </li>
 <li>
@@ -8707,7 +8705,7 @@ C:\Users\dannu\Downloads\luarocks-3.6.0-win32&gt;
 </li>
 <li>
 <p>If you have not built mq2lua (in VS), do so now. It will run the vcpkg install of <code>luajit</code> that we need to run <code>luarocks</code> with.
-    You can alternately just install it through the mq vcpkg environment, but this is the simplest way to get what you need.</p>
+    You can alternately just install it through the MQ vcpkg environment, but this is the simplest way to get what you need.</p>
 </li>
 <li>
 <p>Run <code>install.bat</code> with <code>/SELFCONTAINED</code>, using <code>/P</code> to point to the install directory, and (most importantly) <code>/INC</code>, <code>/LIB</code>, and <code>/BIN</code>
@@ -8843,10 +8841,11 @@ C:\Users\dannu\Downloads\luarocks_install&gt;
 
               
             </article>
+            
           </div>
         </div>
         
-          <a href="#" class="md-top md-icon" data-md-component="top" data-md-state="hidden">
+          <a href="#" class="md-top md-icon" data-md-component="top" hidden>
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8v12Z"/></svg>
             Back to top
           </a>
@@ -8855,7 +8854,8 @@ C:\Users\dannu\Downloads\luarocks_install&gt;
       
         <footer class="md-footer">
   
-    <nav class="md-footer__inner md-grid" aria-label="Footer">
+    
+    <nav class="md-footer__inner md-grid" aria-label="Footer" >
       
         
         <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Lua Scripting in MacroQuest" rel="prev">
@@ -8914,10 +8914,10 @@ C:\Users\dannu\Downloads\luarocks_install&gt;
     <div class="md-dialog" data-md-component="dialog">
       <div class="md-dialog__inner md-typeset"></div>
     </div>
-    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.2a1c317c.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.85cb4492.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.a6c66575.min.js"></script>
+      <script src="../../assets/javascripts/bundle.f758a944.min.js"></script>
       
     
   </body>
