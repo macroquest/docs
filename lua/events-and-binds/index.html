@@ -8699,7 +8699,7 @@
 
 
 <h1 id="lua-events-and-binds">Lua Events and Binds<a class="headerlink" href="#lua-events-and-binds" title="Permanent link">&para;</a></h1>
-<p>Events and binds are very similar to their macro counterparts, but use the fact that lua functions are first class
+<p>Events and binds are very similar to their macro counterparts, but use the fact that Lua functions are first class
 to allow you to simply specify callback functions that will process events and binds when they get processed.
 The callbacks will require a specific signature to work, so this page is here to document how to use callbacks.</p>
 <h3 id="lua-events">Lua Events<a class="headerlink" href="#lua-events" title="Permanent link">&para;</a></h3>
@@ -8708,7 +8708,7 @@ identify the event with so you can remove it later with <code>mq.unevent('name')
 The matcher text is the same matcher text that everyone is used to from macro events, where <code>#*#</code> is an uncaptured
 wildcard and <code>#1#</code> is a captured wildcard that will be the first argument. More arguments are similarly captured,
 so you can specify the argument order in a callback. </p>
-<p>The callback is the important feature of lua. It expects a function with a signature of <code>(line, arg1, arg2, etc)</code>
+<p>The callback is the important feature of Lua. It expects a function with a signature of <code>(line, arg1, arg2, etc)</code>
 that will process the text of the event (the full matched line and the captured arguments, ordered by number).
 A simple example would look like this:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="kr">function</span> <span class="nf">callback</span><span class="p">(</span><span class="n">line</span><span class="p">,</span> <span class="n">arg1</span><span class="p">,</span> <span class="n">arg2</span><span class="p">)</span>
