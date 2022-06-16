@@ -6,6 +6,7 @@ on:
       - master
     paths:
       - "**.md"
+      - "**.css"
       - "mkdocs.yml"
       - ".github/workflows/mkdocs_deploy.yml"
 
