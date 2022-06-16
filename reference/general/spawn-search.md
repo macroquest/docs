@@ -2,7 +2,7 @@
 
 All [Top-Level Objects](../reference/top-level-objects/) and [Data Types](../reference/data-types/) that support searching for spawns, can take the following options:
 
-|  |  |
+| Parameter | Description |
 | :--- | :--- |
 | **alert \#** | Any spawns on the alert list \# |
 | **aura** | Auras |
