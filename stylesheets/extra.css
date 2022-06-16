@@ -47,10 +47,10 @@ body[data-md-color-scheme=slate] td strong {
     color: #fff;
 }
 
-dd {
+.md-typeset dd {
     margin-top: .25em;
 }
-dd p {
+dd > p {
     margin-top: .25em;
 }
 
@@ -64,6 +64,11 @@ body {
 
 html {
     font-size: 125%;
+}
+
+.admonition-title,
+details {
+    line-height: 1.6;
 }
 
 @media screen and (min-width: 100em) {
