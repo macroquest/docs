@@ -33,12 +33,17 @@ body[data-md-color-scheme=slate] .md-nav__item .md-nav__link--active {
     padding: 8px 12px;
 }
 
-dt strong {
-    font-size: 18px;
+dt strong,
+td strong {
     color: #000;
 }
 
-body[data-md-color-scheme=slate] dt strong {
+dt strong {
+    font-size: 18px;
+}
+
+body[data-md-color-scheme=slate] dt strong,
+body[data-md-color-scheme=slate] td strong {
     color: #fff;
 }
 
