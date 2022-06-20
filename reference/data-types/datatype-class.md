@@ -1,9 +1,10 @@
 ---
 tags:
+    - ref
     - datatype
 ---
-
-# class
+[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
+# `class`
 
 Data about a particular character class
 

@@ -1,8 +1,9 @@
 ---
 tags:
+    - ref
     - datatype
 ---
-
+[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `merchant`
 
 This contains information related to the active merchant.

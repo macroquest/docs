@@ -1,8 +1,9 @@
 ---
 tags:
+    - ref
     - datatype
 ---
-
+[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `string`
 
 A string is an array of characters. In MQ2 there is no single character datatype, so any variable or expression that contains text is considered a string.

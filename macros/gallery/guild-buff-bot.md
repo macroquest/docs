@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Guild Buff Bot
 
 ## Description

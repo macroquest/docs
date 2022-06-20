@@ -1,8 +1,9 @@
 ---
 tags:
+    - ref
     - tlo
 ---
-
+[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # `Ini`
 
 Reads value(s) from an ini file located in a relative or absolute path.

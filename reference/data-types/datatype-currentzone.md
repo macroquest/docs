@@ -1,8 +1,9 @@
 ---
 tags:
+    - ref
     - datatype
 ---
-
+[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `currentzone`
 
 Extends the [_zone_](datatype-zone.md) type with additional information about the current zone.

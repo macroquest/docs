@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Spell Routines.inc
 
 ## Introduction

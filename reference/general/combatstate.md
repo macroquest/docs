@@ -1,3 +1,7 @@
+---
+tags:
+    - ref
+---
 # CombatState
 
 **Me.CombatState**

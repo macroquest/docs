@@ -1,8 +1,9 @@
 ---
 tags:
+    - ref
     - tlo
 ---
-
+[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # Math
 
 Creates a Math object which gives allows access to the math type members.

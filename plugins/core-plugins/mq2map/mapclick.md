@@ -1,3 +1,7 @@
+---
+tags:
+   - plugin
+---
 # /mapclick
 
 ## Syntax

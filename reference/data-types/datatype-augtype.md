@@ -1,8 +1,9 @@
 ---
 tags:
+    - ref
     - datatype
 ---
-
+[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `augtype` Type
 
 Describes data about an augmentation slot in an item.

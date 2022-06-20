@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Spell Skill Trainer
 
 This macro was originally published in the Macro Depot 3.0 Forum, and has been successfully used to max out spell casting skills (abjuration, alteration, channeling, conjuration, divination, evocation, meditation and specializations).

@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Rogue Helper
 
 RH.mac was originally designed to take some button mashing out of playing a rogue while raiding. This macro will execute "smart" backstabbing, constant evading (optionally), auto hiding and sneaking while not fighting, automatically avoid enrage riposte damage, stop fighting if you get below a certain health percentage, employ your chosen Strike discipline before wading into combat, and was later expanded to include a vast amount of other features.

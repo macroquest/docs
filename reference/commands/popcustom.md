@@ -1,3 +1,8 @@
+---
+tags:
+    - ref
+    - slash
+---
 # /popcustom
 
 ## Syntax

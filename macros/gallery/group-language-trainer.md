@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Group Language Trainer
 
 This macro was originally published in the Macro Depot 3.0 Forum, and has been successfully used to max out languages.

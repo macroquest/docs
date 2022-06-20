@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Script Examples
 
 Following are examples of scripts that have been created by ModBot users over the years. Some work great, while others work pretty well, but they all at the very least will give you some solid examples from which you can start to create your own fantactis scripts (which you will, of course, post here as an example :)

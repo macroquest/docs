@@ -1,3 +1,7 @@
+---
+tags:
+    - lua
+---
 # LuaRocks Modules
 
 ## Step-by-Step Building a LuaRocks Module for MQ

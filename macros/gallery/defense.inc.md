@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Defense.inc
 
 ## Description

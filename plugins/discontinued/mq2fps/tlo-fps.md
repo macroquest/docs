@@ -1,3 +1,7 @@
+---
+tags:
+   - plugin
+---
 # TLO:FPS
 
 ## Description

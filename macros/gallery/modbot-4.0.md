@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Modbot 4.0
 
 **WIKI PAGE UNDER CONSTRUCTION**

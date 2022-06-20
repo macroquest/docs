@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Puller.inc
 
 ## Link

@@ -1,9 +1,10 @@
 ---
 tags:
+    - ref
     - datatype
 ---
-
-# switch
+[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
+# `switch`
 
 Data related to switches (levers, buttons, etc) in the zone
 

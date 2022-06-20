@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # RDCommon.ini
 
 RDCommon.ini is a bot-independent .ini file for [AutoBot.mac](https://macroquest.org/phpBB3/viewtopic.php?t=12712)(AutoBot documentation [here](https://macroquest.org/wiki/index.php/AutoBot.mac)\). It will mostly handle itself. But it can be very useful to add your own settings here for spells not to cast ina given zone \(mez in PoK or the Guild Lobby/Hall, for example).

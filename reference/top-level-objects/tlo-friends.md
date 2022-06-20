@@ -1,8 +1,9 @@
 ---
 tags:
+    - ref
     - tlo
 ---
-
+[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # `Friends`
 
 Grants access to your friends dlist.

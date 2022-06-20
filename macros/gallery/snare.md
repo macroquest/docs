@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Snare
 
 Macro to automatically snare target

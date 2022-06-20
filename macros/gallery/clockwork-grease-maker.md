@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Clockwork Grease Maker
 
 This is a macro to make jars of clockwork grease, a very tedious combine. It does not deal well with subcombine failures yet, but is otherwise completely functional.

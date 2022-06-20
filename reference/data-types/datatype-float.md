@@ -1,8 +1,9 @@
 ---
 tags:
+    - ref
     - datatype
 ---
-
+[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `float` Type
 
 Represents a single precision (32-bit) floatiang point number.

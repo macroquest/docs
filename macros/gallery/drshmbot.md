@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # DRShmbot
 
 ## dRShmbot

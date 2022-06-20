@@ -1,3 +1,7 @@
+---
+tags:
+   - plugin
+---
 # DataType:bazaar
 
 ## Members

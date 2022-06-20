@@ -1,3 +1,8 @@
+---
+tags:
+    - ref
+    - slash
+---
 # /loadspells
 
 **/loadspells** _spellset_

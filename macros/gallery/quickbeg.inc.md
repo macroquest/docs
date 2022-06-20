@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # QuickBeg.inc
 
 ## Description

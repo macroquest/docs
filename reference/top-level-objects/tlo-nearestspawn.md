@@ -1,9 +1,10 @@
 ---
 tags:
+    - ref
     - tlo
 ---
-
-# NearestSpawn
+[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
+# `NearestSpawn`
 
 Object that is used in finding spawns nearest to you.
 

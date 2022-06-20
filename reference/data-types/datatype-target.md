@@ -1,9 +1,10 @@
 ---
 tags:
+    - ref
     - datatype
 ---
-
-# target
+[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
+# `target`
 
 This data type represents information specific to your current target. It contains additional members for querying buff information.
 

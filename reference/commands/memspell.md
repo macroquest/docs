@@ -1,3 +1,8 @@
+---
+tags:
+    - ref
+    - slash
+---
 # /memspell
 
 **/memspell \# "**_**spellname**_**"**

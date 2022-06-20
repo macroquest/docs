@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Advanced Fishing
 
 The Advanced Fishing macro by Panther can be obtained [here](https://macroquest.org/phpBB3/viewtopic.php?t=8084).
