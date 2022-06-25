@@ -2,17 +2,17 @@
 
 ## Introduction
 
-[Top-Level Objects](../reference/top-level-objects/) (TLOs) are basically "built-in" global variables that contain information from the EQ client.
+[Top-Level Objects](../reference/top-level-objects/README.md) (TLOs) are basically "built-in" global variables that contain information from the EQ client.
 
 ## Usage
 
-In order to use these built-in variables, you need to pick a Top-Level Object to start with, and then "build" the variable by adding one or more [DataType](../reference/data-types/) members of that TLO. It's best understood with some examples. **Note:** TLOs and members are all case sensitive, so enter them exactly as seen.
+In order to use these built-in variables, you need to pick a Top-Level Object to start with, and then "build" the variable by adding one or more [DataType](../reference/data-types/README.md) members of that TLO. It's best understood with some examples. **Note:** TLOs and members are all case sensitive, so enter them exactly as seen.
 
 ### Example 1: Mana Percentage
 
-Say you want to display your current Mana Percentage in a [HUD](../plugins/core-plugins/mq2hud/) or use it in a macro.
+Say you want to display your current Mana Percentage in a [HUD](../plugins/core-plugins/mq2hud/README.md) or use it in a macro.
 
-* First off, you look through the [list of TLOs](../reference/top-level-objects/) and pick one that best suits the information you're looking for. The [Me TLO](../reference/top-level-objects/tlo-me.md) looks like a good bet.
+* First off, you look through the [list of TLOs](../reference/top-level-objects/README.md) and pick one that best suits the information you're looking for. The [Me TLO](../reference/top-level-objects/tlo-me.md) looks like a good bet.
 * Opening that page, you see that the Me TLO has access to the [_character_](../reference/data-types/datatype-character.md) datatype
 
   and the [_spawn_](../reference/data-types/datatype-spawn.md) datatype. The _character_ datatype contains information about your own
