@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - tlo
 ---
-[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # `Select`
 
 Object used to determine if a match was made to argument in the given set of values.

@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - datatype
 ---
-[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `keyring`
 
 This datatype represents information about a keyring (a.k.a. a collection of mounts, illusions, etc)

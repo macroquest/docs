@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - datatype
 ---
-[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `taskmember`
 
 Describes a member in your current task

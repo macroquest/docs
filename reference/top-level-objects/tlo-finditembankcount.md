@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - tlo
 ---
-[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # `FindItemBankCount`
 
 Count of items in bank by partial name match. Using =name will find the exact match only.

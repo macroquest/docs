@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - datatype
 ---
-[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `ticks` Type
 
 Represents a count of "ticks". Ticks are units of 6 seconds that are used to represent certain measurements of time in EverQuest.

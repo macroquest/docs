@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - tlo
 ---
-[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # `Mercenary`
 
 Object used to get information about your mercenary.

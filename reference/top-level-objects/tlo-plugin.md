@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - tlo
 ---
-[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # `Plugin`
 
 Object that has access to members that provide information on a plugin.

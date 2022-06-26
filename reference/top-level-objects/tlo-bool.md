@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - tlo
 ---
-[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # `Bool`
 
 Creates a bool object from a string. The resulting value is a _bool_ depending on whether the given string is falsey or not.

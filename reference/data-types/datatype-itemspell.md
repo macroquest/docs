@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - datatype
 ---
-[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `itemspell` Type
 
 Represents a spell effect on an item.

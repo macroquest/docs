@@ -1,6 +1,5 @@
 ---
 tags:
-    - ref
     - tlo
 ---
 [DataType List](../data-types/datatype-list.md)

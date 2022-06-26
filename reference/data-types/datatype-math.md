@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - datatype
 ---
-[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `math`
 
 This DataType performs various mathematical calculations. In the following members, _n_ is any formula that consists of valid [Operators](../../macros/operators.md).

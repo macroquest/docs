@@ -1,7 +1,4 @@
----
-tags:
-    - ref
----
+
 # Spawn Search
 
 All [Top-Level Objects](../top-level-objects/tlo-list.md) and [Data Types](../data-types/datatype-list.md) that support searching for spawns, can take the following options:

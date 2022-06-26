@@ -1,10 +1,7 @@
 ---
 tags:
-    - ref
     - tlo
-    - datatype
 ---
-[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # `AdvLoot`
 
 The AdvLoot TLO grants access to items in the Advanced Loot window.

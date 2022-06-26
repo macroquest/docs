@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - tlo
 ---
-[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # `SpawnCount`
 
 Object used to count spawns based on a set of queries. Uses the filters under [Spawn Search].

@@ -1,10 +1,7 @@
 ---
 tags:
-    - ref
     - tlo
-    - datatype
 ---
-[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # `FrameLimiter`
 
 The FrameLimiter TLO provides access to the frame limiter feature

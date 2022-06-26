@@ -1,7 +1,4 @@
----
-tags:
-    - ref
----
+
 # Slot Names
 
 ## ItemSlot & ItemSlot2

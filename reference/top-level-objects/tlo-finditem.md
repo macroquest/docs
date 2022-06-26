@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - tlo
 ---
-[TLO Page](../top-level-objects/tlo-list.md) | [DataType Page](../data-types/datatype-list.md)
 # `FindItem`
 
 A TLO used to find an item on your character, corpse, or a merchant by partial or exact name match. _See examples below._

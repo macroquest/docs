@@ -1,9 +1,3 @@
----
-tags:
-  - ref
-  - slash
----
-
 # Slash Commands
 
 ## Base

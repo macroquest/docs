@@ -1,7 +1,4 @@
----
-tags:
-    - ref
----
+
 # Animations
 
 This is not a complete list. Note that the animation ID \#'s above 100 or so are for the newer models like the Drakkin.

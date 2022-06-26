@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - datatype
 ---
-[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `int` Type
 
 Represents a 32-bit integer. Can hold values from -2,147,483,648 to 2,147,483,647.

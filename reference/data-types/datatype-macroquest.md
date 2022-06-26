@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - datatype
 ---
-[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `macroquest`
 
 Data types related to the current MacroQuest2 session.  These also inherit from the [EverQuest Type](datatype-everquest.md).

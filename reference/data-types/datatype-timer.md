@@ -1,9 +1,7 @@
 ---
 tags:
-    - ref
     - datatype
 ---
-[TLO List](../top-level-objects/tlo-list.md) | [DataType List](../data-types/datatype-list.md)
 # `timer`
 
 A timer data type is set in tenths of one second and counts down to zero; starting immediately after being set.
