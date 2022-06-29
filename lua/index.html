@@ -8847,6 +8847,8 @@ info -- info for a process
 <dd>unregisters the event 'name' so that it won't react to the text anymore</dd>
 <dt><code>mq.doevents()</code></dt>
 <dd>will process queued events (binds don't queue, they execute automatically, this is only for events)</dd>
+<dt><code>mq.parse(string)</code></dt>
+<dd>runs the string through the macro parser and returns the result as a string (regardles of the data type returned).  This is not a replacement for mq.TLO or mq.TLO.MacroVariable and is only for complex operations where neither of those will work (generally converting from old ini/macro formats)</dd>
 <dt><code>mq.TLO</code></dt>
 <dd>noted in <a href="#tlo-bindings">TLO Bindings</a> below</dd>
 <dt><code>mq.cmd</code> and <code>mq.cmdf</code></dt>
