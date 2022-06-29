@@ -105,6 +105,9 @@ The first thing to do when writing a lua script for MQ2 is to `require('mq')`. T
 `mq.doevents()`
 :   will process queued events (binds don't queue, they execute automatically, this is only for events)
 
+`mq.parse(string)`
+:   runs the string through the macro parser and returns the result as a string (regardles of the data type returned).  This is not a replacement for mq.TLO or mq.TLO.MacroVariable and is only for complex operations where neither of those will work (generally converting from old ini/macro formats)
+
 `mq.TLO`
 :   noted in [TLO Bindings](#tlo-bindings) below
 
