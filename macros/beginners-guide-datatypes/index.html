@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://docs.macroquest.org/macros/beginners-guide-datatypes/">
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.8">
+      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
     
     
       
@@ -4297,10 +4297,6 @@
       
         
           
-            
-          
-        
-          
         
           
         
@@ -4320,16 +4316,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../reference/general/">General Information</a>
-          
-            <label for="__nav_5_2">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_5_2">
+          General Information
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="General Information" data-md-level="2">
         <label class="md-nav__title" for="__nav_5_2">
@@ -4337,8 +4327,6 @@
           General Information
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
-          
-            
           
             
               
@@ -6550,8 +6538,6 @@
       
         
           
-            
-          
         
           
         
@@ -6671,16 +6657,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../reference/top-level-objects/">Top Level Objects</a>
-          
-            <label for="__nav_5_4">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_5_4">
+          Top Level Objects
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Top Level Objects" data-md-level="2">
         <label class="md-nav__title" for="__nav_5_4">
@@ -6689,6 +6669,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/top-level-objects/tlo-list/" class="md-nav__link">
+        TLO List
+      </a>
+    </li>
+  
+
             
           
             
@@ -7525,8 +7517,6 @@
       
         
           
-            
-          
         
           
         
@@ -7666,16 +7656,10 @@
         
       
       
-        
-        
-        <div class="md-nav__link md-nav__link--index ">
-          <a href="../../reference/data-types/">Data Types</a>
-          
-            <label for="__nav_5_5">
-              <span class="md-nav__icon md-icon"></span>
-            </label>
-          
-        </div>
+        <label class="md-nav__link" for="__nav_5_5">
+          Data Types
+          <span class="md-nav__icon md-icon"></span>
+        </label>
       
       <nav class="md-nav" aria-label="Data Types" data-md-level="2">
         <label class="md-nav__title" for="__nav_5_5">
@@ -7684,6 +7668,18 @@
         </label>
         <ul class="md-nav__list" data-md-scrollfix>
           
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../reference/data-types/datatype-list/" class="md-nav__link">
+        DataType List
+      </a>
+    </li>
+  
+
             
           
             
@@ -8756,13 +8752,13 @@
 
 <h1 id="beginners-guide-to-tlos-and-datavars">Beginners Guide to TLOs and DataVars<a class="headerlink" href="#beginners-guide-to-tlos-and-datavars" title="Permanent link">&para;</a></h1>
 <h2 id="introduction">Introduction<a class="headerlink" href="#introduction" title="Permanent link">&para;</a></h2>
-<p><a href="../../reference/top-level-objects/">Top-Level Objects</a> (TLOs) are basically "built-in" global variables that contain information from the EQ client.</p>
+<p><a href="../reference/top-level-objects/README.md">Top-Level Objects</a> (TLOs) are basically "built-in" global variables that contain information from the EQ client.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
-<p>In order to use these built-in variables, you need to pick a Top-Level Object to start with, and then "build" the variable by adding one or more <a href="../../reference/data-types/">DataType</a> members of that TLO. It's best understood with some examples. <strong>Note:</strong> TLOs and members are all case sensitive, so enter them exactly as seen.</p>
+<p>In order to use these built-in variables, you need to pick a Top-Level Object to start with, and then "build" the variable by adding one or more <a href="../reference/data-types/README.md">DataType</a> members of that TLO. It's best understood with some examples. <strong>Note:</strong> TLOs and members are all case sensitive, so enter them exactly as seen.</p>
 <h3 id="example-1-mana-percentage">Example 1: Mana Percentage<a class="headerlink" href="#example-1-mana-percentage" title="Permanent link">&para;</a></h3>
 <p>Say you want to display your current Mana Percentage in a <a href="../../plugins/core-plugins/mq2hud/">HUD</a> or use it in a macro.</p>
 <ul>
-<li>First off, you look through the <a href="../../reference/top-level-objects/">list of TLOs</a> and pick one that best suits the information you're looking for. The <a href="../../reference/top-level-objects/tlo-me/">Me TLO</a> looks like a good bet.</li>
+<li>First off, you look through the <a href="../reference/top-level-objects/README.md">list of TLOs</a> and pick one that best suits the information you're looking for. The <a href="../../reference/top-level-objects/tlo-me/">Me TLO</a> looks like a good bet.</li>
 <li>Opening that page, you see that the Me TLO has access to the <a href="../../reference/data-types/datatype-character/"><em>character</em></a> datatype</li>
 </ul>
 <p>and the <a href="../../reference/data-types/datatype-spawn/"><em>spawn</em></a> datatype. The <em>character</em> datatype contains information about your own</p>
@@ -8942,7 +8938,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.b97dbffb.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.0238f547.min.js"></script>
+      <script src="../../assets/javascripts/bundle.6c7ad80a.min.js"></script>
       
     
   </body>
