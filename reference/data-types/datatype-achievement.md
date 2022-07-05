@@ -3,7 +3,9 @@ tags:
     - datatype
 ---
 # `achievement`
+
 Provides the details about a single achievement and allows access to an achievement's objective.
+
 ## Members
 
 | **Type** | **Member** | **Description** |

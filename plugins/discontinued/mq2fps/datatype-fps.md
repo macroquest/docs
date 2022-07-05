@@ -1,6 +1,6 @@
 ---
 tags:
-   - plugin
+   - datatype
 ---
 # DataType:fps
 

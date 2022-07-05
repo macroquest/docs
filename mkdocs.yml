@@ -53,6 +53,10 @@ nav:
     - Multiboxing: main/multiboxing.md
     - Rules: main/rules.md
 
+  - Using the Docs:
+    - main/about-docs.md
+    - Tags: tags.md
+
   - Other Applications:
     - EQEmu: main/other-applications/eqemu.md
     - Text Editors: main/other-applications/text-editors/README.md
@@ -305,11 +309,9 @@ nav:
       - /filter: reference/commands/filter.md
       - /flashontells: reference/commands/flashontells.md
       - /foreground: reference/commands/foreground.md
-      - /fps: reference/commands/fps.md
       - /help: reference/commands/help.md
       - /hotbutton: reference/commands/hotbutton.md
       - /identify: reference/commands/identify.md
-      - /ireset: reference/commands/ireset.md
       - /itemnotify: reference/commands/itemnotify.md
       - /items: reference/commands/items.md
       - /itemtarget: reference/commands/itemtarget.md
@@ -397,7 +399,7 @@ nav:
       - /lootnodrop: reference/commands/eq/lootnodrop.md
     
   - Top Level Objects:
-    - TLO List: reference/top-level-objects/tlo-list.md
+    - reference/top-level-objects/README.md
     - Achievement: reference/top-level-objects/tlo-achievement.md
     - AdvLoot: reference/top-level-objects/tlo-advloot.md
     - Alert: reference/top-level-objects/tlo-alert.md
@@ -458,7 +460,7 @@ nav:
     - Zone: reference/top-level-objects/tlo-zone.md
     
   - Data Types:
-    - DataType List: reference/data-types/datatype-list.md
+    - reference/data-types/README.md
     - achievement: reference/data-types/datatype-achievement.md
     - achievementcat: reference/data-types/datatype-achievementcat.md
     - achievementobj: reference/data-types/datatype-achievementobj.md
@@ -567,7 +569,8 @@ plugins:
   - search
   - same-dir
   - redirects
-  - tags
+  - tags:
+      tags_file: tags.md
 
 # Customization
 

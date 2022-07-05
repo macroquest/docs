@@ -1,6 +1,6 @@
 ---
 tags:
-   - plugin
+   - tlo
 ---
 # TLO:Bazaar
 

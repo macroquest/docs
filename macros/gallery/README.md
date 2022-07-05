@@ -1,7 +1,3 @@
----
-tags:
-   - macro
----
 # Examples
 
 ## Chat-Sub

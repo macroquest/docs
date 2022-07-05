@@ -1,6 +1,6 @@
 ---
 tags:
-   - plugin
+   - command
 ---
 # /maphide
 

@@ -1,6 +1,6 @@
 ---
 tags:
-   - plugin
+   - datatype
 ---
 # MQ2EQIM:DataType:buddy
 
