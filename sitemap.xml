@@ -6,6 +6,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.macroquest.org/tags/</loc>
+         <lastmod>2022-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.macroquest.org/lua/</loc>
          <lastmod>2022-07-05</lastmod>
          <changefreq>daily</changefreq>
@@ -242,6 +247,11 @@
     </url>
     <url>
          <loc>https://docs.macroquest.org/main/</loc>
+         <lastmod>2022-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.macroquest.org/main/about-docs/</loc>
          <lastmod>2022-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1086,11 +1096,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.macroquest.org/reference/commands/fps/</loc>
-         <lastmod>2022-07-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.macroquest.org/reference/commands/goto/</loc>
          <lastmod>2022-07-05</lastmod>
          <changefreq>daily</changefreq>
@@ -1122,11 +1127,6 @@
     </url>
     <url>
          <loc>https://docs.macroquest.org/reference/commands/invoke/</loc>
-         <lastmod>2022-07-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.macroquest.org/reference/commands/ireset/</loc>
          <lastmod>2022-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1471,6 +1471,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.macroquest.org/reference/data-types/</loc>
+         <lastmod>2022-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.macroquest.org/reference/data-types/datatype-achievement/</loc>
          <lastmod>2022-07-05</lastmod>
          <changefreq>daily</changefreq>
@@ -1667,11 +1672,6 @@
     </url>
     <url>
          <loc>https://docs.macroquest.org/reference/data-types/datatype-keyringitem/</loc>
-         <lastmod>2022-07-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
-         <loc>https://docs.macroquest.org/reference/data-types/datatype-list/</loc>
          <lastmod>2022-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
@@ -1906,6 +1906,11 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
+         <loc>https://docs.macroquest.org/reference/top-level-objects/</loc>
+         <lastmod>2022-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
          <loc>https://docs.macroquest.org/reference/top-level-objects/tlo-achievement/</loc>
          <lastmod>2022-07-05</lastmod>
          <changefreq>daily</changefreq>
@@ -2071,11 +2076,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.macroquest.org/reference/top-level-objects/tlo-list/</loc>
-         <lastmod>2022-07-05</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.macroquest.org/reference/top-level-objects/tlo-macro/</loc>
          <lastmod>2022-07-05</lastmod>
          <changefreq>daily</changefreq>
@@ -2197,6 +2197,11 @@
     </url>
     <url>
          <loc>https://docs.macroquest.org/reference/top-level-objects/tlo-zone/</loc>
+         <lastmod>2022-07-05</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.macroquest.org/tags/</loc>
          <lastmod>2022-07-05</lastmod>
          <changefreq>daily</changefreq>
     </url>
