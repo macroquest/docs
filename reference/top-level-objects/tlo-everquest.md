@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `EverQuest`
 
 Provides access to general information about the game and its state.

@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `taskmember`
 
 Describes a member in your current task

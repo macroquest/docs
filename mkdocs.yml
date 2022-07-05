@@ -259,7 +259,6 @@ nav:
   - reference/README.md
 
   - General Information:
-    - reference/general/README.md
     - Animations: reference/general/animations.md
     - CombatState: reference/general/combatstate.md
     - Containers List: reference/general/containers-list.md
@@ -398,7 +397,7 @@ nav:
       - /lootnodrop: reference/commands/eq/lootnodrop.md
     
   - Top Level Objects:
-    - reference/top-level-objects/README.md
+    - TLO List: reference/top-level-objects/tlo-list.md
     - Achievement: reference/top-level-objects/tlo-achievement.md
     - AdvLoot: reference/top-level-objects/tlo-advloot.md
     - Alert: reference/top-level-objects/tlo-alert.md
@@ -459,7 +458,7 @@ nav:
     - Zone: reference/top-level-objects/tlo-zone.md
     
   - Data Types:
-    - reference/data-types/README.md
+    - DataType List: reference/data-types/datatype-list.md
     - achievement: reference/data-types/datatype-achievement.md
     - achievementcat: reference/data-types/datatype-achievementcat.md
     - achievementobj: reference/data-types/datatype-achievementobj.md

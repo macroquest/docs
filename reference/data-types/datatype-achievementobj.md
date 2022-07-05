@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `achievementobj`
 
 Represents a single objective of an achievement

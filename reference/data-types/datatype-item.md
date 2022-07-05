@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `item` Type
 
 Contains the properties that describe an item.

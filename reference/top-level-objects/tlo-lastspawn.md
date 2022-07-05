@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `LastSpawn`
 
 Information about the spawns that have occurred since you entered the zone. When you enter a zone you dont know the spawn order of anything already there, just anything that spawns while you are in the zone.

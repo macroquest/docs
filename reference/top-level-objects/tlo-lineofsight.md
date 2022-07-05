@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `LineOfSight`
 
 Object that is used to check if there is Line of Sight betwen two locations.

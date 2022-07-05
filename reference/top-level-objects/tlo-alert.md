@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Alert`
 
 Provides access to spawn search filter criteria in alerts. Alerts are created using [/alert](../../reference/commands/alert.md).

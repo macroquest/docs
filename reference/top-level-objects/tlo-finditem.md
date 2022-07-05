@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `FindItem`
 
 A TLO used to find an item on your character, corpse, or a merchant by partial or exact name match. _See examples below._

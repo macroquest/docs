@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Pet`
 
 Pet object which allows you to get properties of your pet.

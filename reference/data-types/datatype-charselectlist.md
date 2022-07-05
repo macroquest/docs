@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `charselectlist`
 
 Provides information about the character list.

@@ -1,3 +1,7 @@
+---
+tags:
+    - command
+---
 # /doors
 
 ## Syntax

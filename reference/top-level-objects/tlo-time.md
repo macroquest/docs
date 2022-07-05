@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Time`
 
 Object used to return information on real time, not game time.

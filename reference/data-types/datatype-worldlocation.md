@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `worldlocation`
 
 Provides access to world locations such as a character's bound location

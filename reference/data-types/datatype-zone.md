@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `zone`
 
 Contains information related to the specified zone

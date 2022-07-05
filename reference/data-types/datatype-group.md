@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `group`
 
 Contains details about your group

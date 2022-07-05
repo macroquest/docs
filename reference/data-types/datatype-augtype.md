@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `augtype` Type
 
 Describes data about an augmentation slot in an item.

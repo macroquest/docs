@@ -1,3 +1,7 @@
+---
+tags:
+    - command
+---
 # /banklist
 
 ## Syntax

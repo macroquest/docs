@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `keyringitem`
 
 This datatype deals strictly with information items on a keyring.

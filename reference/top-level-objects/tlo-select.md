@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Select`
 
 Object used to determine if a match was made to argument in the given set of values.

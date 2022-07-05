@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Afcleric.mac - nils
 
 ## forum link

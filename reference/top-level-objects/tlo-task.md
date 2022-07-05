@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Task`
 
 Object used to return information on a current Task.

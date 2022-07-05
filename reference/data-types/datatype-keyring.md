@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `keyring`
 
 This datatype represents information about a keyring (a.k.a. a collection of mounts, illusions, etc)

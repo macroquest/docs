@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `double` Type
 
 Represents a double precision (64-bit) floating point number.

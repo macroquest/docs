@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Me`
 
 Character object which allows you to get properties of you as a character.

@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Ground`
 
 Object which references the ground spawn item you have targeted.

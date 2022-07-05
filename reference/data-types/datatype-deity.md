@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `deity` Type
 
 Contains data related to deity members

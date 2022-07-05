@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `array`
 
 Data related to arrays.

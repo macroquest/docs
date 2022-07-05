@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `merchant`
 
 This contains information related to the active merchant.

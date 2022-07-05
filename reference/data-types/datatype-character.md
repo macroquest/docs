@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `character`
 
 This data type contains all the information about _your_ character.

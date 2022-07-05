@@ -1,3 +1,7 @@
+---
+tags:
+    - command
+---
 # /makemevisible
 
 ## Syntax

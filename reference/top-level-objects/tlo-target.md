@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Target`
 
 Object used to get information about your current target.

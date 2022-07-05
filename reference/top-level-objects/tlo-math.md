@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # Math
 
 Creates a Math object which gives allows access to the math type members.

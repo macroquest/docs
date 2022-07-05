@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Necro Helper
 
 This is a simple helper macro I use when playing my necro toon. It does the following:

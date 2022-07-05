@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `type`
 
 Contains information about data types

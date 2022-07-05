@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `timer`
 
 A timer data type is set in tenths of one second and counts down to zero; starting immediately after being set.

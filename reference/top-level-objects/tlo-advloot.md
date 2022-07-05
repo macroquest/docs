@@ -1,9 +1,7 @@
 ---
 tags:
     - tlo
-    - datatype
 ---
-
 # `AdvLoot`
 
 The AdvLoot TLO grants access to items in the Advanced Loot window.

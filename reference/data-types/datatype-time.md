@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `time` Type
 
 Represents a unit of clock time.

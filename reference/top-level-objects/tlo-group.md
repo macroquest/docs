@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Group`
 
 Access to all group-related information.

@@ -2,8 +2,7 @@
 tags:
     - tlo
 ---
-
-# Raid
+# `Raid`
 
 Object that has access to members that provide information on your raid.
 

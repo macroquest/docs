@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Cursor`
 
 Creates an object which references the item on your cursor.

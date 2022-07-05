@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Window`
 
 Used to find information on a particular UI window.

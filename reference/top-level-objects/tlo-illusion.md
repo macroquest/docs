@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Illusion`
 
 Used to get information about items on your illusions keyring.

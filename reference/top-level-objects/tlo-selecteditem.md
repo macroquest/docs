@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `SelectedItem`
 
 Used to return information on the object that is selected in your own inventory while using a merchant.

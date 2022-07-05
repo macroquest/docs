@@ -1,3 +1,7 @@
+---
+tags:
+   - plugin
+---
 # MQ2HUD
 
 ## Description

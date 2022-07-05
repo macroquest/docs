@@ -1,9 +1,7 @@
 ---
 tags:
     - tlo
-    - datatype
 ---
-
 # `FrameLimiter`
 
 The FrameLimiter TLO provides access to the frame limiter feature

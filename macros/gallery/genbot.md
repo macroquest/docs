@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # GenBot
 
 Genbot was released by GrimJack sometime in early 2003 and eventually became one of the more popular bot macros. Genbot was originally designed as a core set of scripts to handle all of the non class specific functions needed in a bot while providing a means to easily "plug in" any extra code needed for a specific character.

@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `raidmember`
 
 Data related to the specified raid member

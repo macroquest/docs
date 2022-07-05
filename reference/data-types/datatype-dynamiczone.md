@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `dynamiczone`
 
 Data for the current dynamic zone instance

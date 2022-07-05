@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Spell`
 
 Object used to return information on a spell by name or by ID.

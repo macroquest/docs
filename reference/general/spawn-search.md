@@ -1,6 +1,7 @@
+
 # Spawn Search
 
-All [Top-Level Objects](../reference/top-level-objects/) and [Data Types](../reference/data-types/) that support searching for spawns, can take the following options:
+All [Top-Level Objects](../top-level-objects/tlo-list.md) and [Data Types](../data-types/datatype-list.md) that support searching for spawns, can take the following options:
 
 | Parameter | Description |
 | :--- | :--- |

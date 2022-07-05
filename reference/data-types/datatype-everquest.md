@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `everquest`
 
 Data types related to the current EverQuest session.

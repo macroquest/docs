@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Related Include Files
 
 ## AAPurchase

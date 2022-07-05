@@ -2,8 +2,7 @@
 tags:
     - datatype
 ---
-
-# switch
+# `switch`
 
 Data related to switches (levers, buttons, etc) in the zone
 

@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `body`
 
 Contains data about spawn body types

@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Mercenary`
 
 Object used to get information about your mercenary.

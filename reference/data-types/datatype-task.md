@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `task`
 
 This is the type for your current task.

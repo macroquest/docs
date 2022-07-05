@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `spell`
 
 This is the type used for spell information.

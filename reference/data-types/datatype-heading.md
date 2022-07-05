@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `heading`
 
 Represents a direction on a compass.

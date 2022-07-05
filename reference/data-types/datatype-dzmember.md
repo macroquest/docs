@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `dzmember`
 
 This DataType contains information on the members of the current dynamic zone instance

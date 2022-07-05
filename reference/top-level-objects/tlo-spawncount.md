@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `SpawnCount`
 
 Object used to count spawns based on a set of queries. Uses the filters under [Spawn Search].

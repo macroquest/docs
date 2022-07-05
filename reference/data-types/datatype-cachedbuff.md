@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `cachedbuff`
 
 !!! info

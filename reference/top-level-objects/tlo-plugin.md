@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Plugin`
 
 Object that has access to members that provide information on a plugin.

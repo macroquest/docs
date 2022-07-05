@@ -1,3 +1,7 @@
+---
+tags:
+    - command
+---
 # /memspell
 
 **/memspell \# "**_**spellname**_**"**

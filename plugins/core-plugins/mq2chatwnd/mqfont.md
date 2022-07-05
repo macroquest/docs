@@ -1,3 +1,7 @@
+---
+tags:
+   - plugin
+---
 # /mqfont
 
 ## Syntax

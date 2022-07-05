@@ -2,8 +2,7 @@
 tags:
     - datatype
 ---
-
-# class
+# `class`
 
 Data about a particular character class
 

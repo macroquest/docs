@@ -1,3 +1,7 @@
+---
+tags:
+    - lua
+---
 # Lua Events and Binds
 
 Events and binds are very similar to their macro counterparts, but use the fact that Lua functions are first class

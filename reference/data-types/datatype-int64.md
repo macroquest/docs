@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `int64` Type
 
 Represents a 64-bit integer. Can hold values from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.

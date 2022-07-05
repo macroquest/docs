@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `ItemTarget`
 
 Gives access to the ground item that is previously targeted using [/itemtarget](../commands/itemtarget.md).

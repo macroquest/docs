@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `ticks` Type
 
 Represents a count of "ticks". Ticks are units of 6 seconds that are used to represent certain measurements of time in EverQuest.

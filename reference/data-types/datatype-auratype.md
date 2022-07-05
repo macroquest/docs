@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `auratype` Type
 
 Describes an aura.

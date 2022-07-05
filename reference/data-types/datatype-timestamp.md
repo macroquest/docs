@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `timestamp`
 
 A timestamp represented in milliseconds.

@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `dztimer`
 
 Provides information about a dynamic zone lockout timer

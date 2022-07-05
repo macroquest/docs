@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `FindItemBank`
 
 Find item in bank by partial name match. Using =name will find an exact match only.

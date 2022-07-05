@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `corpse`
 
 Data related to the current lootable corpse. See [Corpse](../top-level-objects/tlo-corpse.md).

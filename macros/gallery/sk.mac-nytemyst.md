@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Sk.mac - nytemyst
 
 ## Forum Link

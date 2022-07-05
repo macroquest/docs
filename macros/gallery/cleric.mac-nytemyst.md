@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Cleric.mac - nytemyst
 
 ## Forum Link

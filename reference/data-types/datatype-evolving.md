@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `evolving`
 
 A DataType that deals with evolving items.

@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Skill`
 
 Object used to get information on your character's skills.

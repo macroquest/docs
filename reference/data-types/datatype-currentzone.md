@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `currentzone`
 
 Extends the [_zone_](datatype-zone.md) type with additional information about the current zone.

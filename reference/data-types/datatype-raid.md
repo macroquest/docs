@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `raid`
 
 Contains data on the current raid

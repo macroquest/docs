@@ -2,8 +2,7 @@
 tags:
     - tlo
 ---
-
-# NearestSpawn
+# `NearestSpawn`
 
 Object that is used in finding spawns nearest to you.
 

@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Ini`
 
 Reads value(s) from an ini file located in a relative or absolute path.

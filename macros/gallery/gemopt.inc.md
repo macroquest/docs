@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # GemOpt.inc
 
 ## Spell Gem Optimization Include

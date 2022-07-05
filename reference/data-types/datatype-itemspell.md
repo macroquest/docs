@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `itemspell` Type
 
 Represents a spell effect on an item.

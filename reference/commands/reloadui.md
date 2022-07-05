@@ -1,3 +1,7 @@
+---
+tags:
+    - command
+---
 # /reloadui
 
 ## Syntax

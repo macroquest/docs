@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `argb`
 
 Represents a color

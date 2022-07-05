@@ -1,3 +1,7 @@
+---
+tags:
+    - command
+---
 # /loadspells
 
 **/loadspells** _spellset_

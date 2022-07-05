@@ -2,8 +2,7 @@
 tags:
     - datatype
 ---
-
-# target
+# `target`
 
 This data type represents information specific to your current target. It contains additional members for querying buff information.
 

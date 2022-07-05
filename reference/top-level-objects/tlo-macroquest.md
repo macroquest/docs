@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `MacroQuest`
 
 Creates an object related to MacroQuest information.

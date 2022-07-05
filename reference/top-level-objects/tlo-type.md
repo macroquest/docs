@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Type`
 
 Used to get information on data types.

@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `macro`
 
 The Macro DataType deals with the macro currently running, and nothing else.

@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Rogue Helper Command List
 
 ## Command List Overview:

@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `DynamicZone`
 
 Provides access to properties of the current dynamic (instanced) zone.

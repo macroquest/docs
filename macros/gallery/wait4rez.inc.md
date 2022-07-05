@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Wait4Rez.inc
 
 Wait4Rez.inc by A\_Druid\_00 (originally written by fantum409) is a snippet which handles the following:

@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Corpse`
 
 Access to objects of type corpse, which is the currently active corpse (ie. the one you are looting).

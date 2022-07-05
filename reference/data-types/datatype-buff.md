@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `buff`
 
 This is the type for any buffs currently affecting you, both long duration and short duration buffs.

@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `float` Type
 
 Represents a single precision (32-bit) floatiang point number.

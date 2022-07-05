@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `string`
 
 A string is an array of characters. In MQ2 there is no single character datatype, so any variable or expression that contains text is considered a string.

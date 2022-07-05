@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # ModBot
 
 ## **ModBot - A Universal Bot Macro**

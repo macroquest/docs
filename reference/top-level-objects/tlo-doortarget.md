@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `DoorTarget`
 
 Object used to return information on your doortarget.

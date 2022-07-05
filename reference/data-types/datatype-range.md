@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `range`
 
 This DataType performs a simple test on _n_ using the following members.

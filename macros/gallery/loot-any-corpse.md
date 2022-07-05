@@ -1,3 +1,7 @@
+---
+tags:
+   - macro
+---
 # Loot Any Corpse
 
 This macro is UNTESTED, but should work fine. If it doesn't - hit edit and fix it.

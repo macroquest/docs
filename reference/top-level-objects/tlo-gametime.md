@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `GameTime`
 
 A time object indicating EQ Game Time.

@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `window`
 
 This contains data related to the specified in-game window

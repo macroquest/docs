@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Heading`
 
 Object that refers to the directional heading to of a location or direction.

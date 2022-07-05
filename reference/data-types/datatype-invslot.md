@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `invslot`
 
 Data related to an inventory slot.

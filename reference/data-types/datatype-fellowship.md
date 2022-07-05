@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `fellowship`
 
 Contains all the data about your fellowship

@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Float`
 
 Creates a float object from n.

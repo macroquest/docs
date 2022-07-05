@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `ground`
 
 Represents a ground item.

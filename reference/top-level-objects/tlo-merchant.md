@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Merchant`
 
 Object that interacts with the currently active merchant.

@@ -1,3 +1,7 @@
+---
+tags:
+   - plugin
+---
 # MQ2Labels
 
 ## Description
@@ -20,7 +24,7 @@ This plugin allows you to use MQ2Data within your EQ UI.
 * **1008:** ${Me.Dar}
 * **1009:** ${Me.Cash}
 * **1010:** ${Me.CashBank}
-* **1011:** ${Me.Platinum\)
+* **1011:** ${Me.Platinum}
 * **1012:** ${Me.PlatinumShared}
 * **1013:** ${Me.Gold}
 * **1014:** ${Me.SilverBank}

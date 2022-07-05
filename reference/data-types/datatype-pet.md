@@ -2,8 +2,7 @@
 tags:
     - datatype
 ---
-
-# pet
+# `pet`
 
 Pet object
 

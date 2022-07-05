@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `plugin`
 
 Data for the specified plugin

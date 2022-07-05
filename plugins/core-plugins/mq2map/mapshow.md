@@ -1,3 +1,7 @@
+---
+tags:
+   - plugin
+---
 # /mapshow
 
 ## Syntax

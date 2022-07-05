@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `int` Type
 
 Represents a 32-bit integer. Can hold values from -2,147,483,648 to 2,147,483,647.

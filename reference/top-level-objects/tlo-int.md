@@ -2,7 +2,6 @@
 tags:
     - tlo
 ---
-
 # `Int`
 
 Object that creates an integer from n.

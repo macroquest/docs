@@ -1,3 +1,4 @@
+
 # Skills List
 
 The list of skills that can be used with the [/skills](../commands/skills.md) command.

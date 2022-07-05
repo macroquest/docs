@@ -2,7 +2,6 @@
 tags:
     - datatype
 ---
-
 # `spawn`
 
 Represents an in-game spawn.
