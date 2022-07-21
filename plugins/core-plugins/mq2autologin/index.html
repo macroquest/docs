@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://docs.macroquest.org/plugins/core-plugins/mq2autologin/">
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.3.0, mkdocs-material-8.3.9">
+      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.3.9">
     
     
       
@@ -1282,6 +1282,27 @@
         <li class="md-nav__item">
   <a href="#ini" class="md-nav__link">
     INI
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#alternate-login-methods" class="md-nav__link">
+    Alternate login methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-server-short-names" class="md-nav__link">
+    List of server short names
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-server-names" class="md-nav__link">
+    Custom server names
   </a>
   
 </li>
@@ -8740,6 +8761,27 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#alternate-login-methods" class="md-nav__link">
+    Alternate login methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#list-of-server-short-names" class="md-nav__link">
+    List of server short names
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#custom-server-names" class="md-nav__link">
+    Custom server names
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#mq2login-profiles-gui" class="md-nav__link">
     MQ2Login Profiles GUI
   </a>
@@ -8809,108 +8851,103 @@
 <p>Pressing the "END" key at the character select screen will pause autologin, "HOME" will unpause.</p>
 <h2 id="ini">INI<a class="headerlink" href="#ini" title="Permanent link">&para;</a></h2>
 <p>MQ2AutoLogin.ini has the following global settings,
-```ini⏎
-[Settings]
-;The following settings are global. Settings changed for specific characters will override them.
-NotifyOnServerUp=1
-;0 is off, 1 is beep, 2 is email via MQ2Gmail
-KickActiveCharacter=1
-;0 is off, 1 is on. Will attempt to boot an active player to log in.
-EndAfterCharSelect=1
-;0 is off, 1 is on.
-CharSelectDelay=3
-;seconds to wait at the character select screen. Default is 3
-ConnectRetries=0
-;How many attempts to connect after a failure
-UseMQ2Login=1
-;Uses the default, encrypted method of autologin
-UseStationNamesInsteadOfSessions=0
-;Stores your login and pass in plaintext in MQ2AutoLogin.ini, but is compatible with ISBoxer/WinEQ.
-<div class="highlight"><pre><span></span><code>If you&#39;re using `UseMQ2Login=1` and have created profiles via the tray icon, there will be additional sections such as `[Profiles]` and profile names. These should be left alone, as their settings are best changed via the GUI.
+<div class="highlight"><pre><span></span><code><span class="k">[Settings]</span><span class="w"></span>
+<span class="c1">;The following settings are global. Settings changed for specific characters will override them.</span><span class="w"></span>
+<span class="na">NotifyOnServerUp</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
+<span class="c1">;0 is off, 1 is beep, 2 is email via MQ2Gmail</span><span class="w"></span>
+<span class="na">KickActiveCharacter</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
+<span class="c1">;0 is off, 1 is on. Will attempt to boot an active player to log in.</span><span class="w"></span>
+<span class="na">EndAfterCharSelect</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
+<span class="c1">;0 is off, 1 is on.</span><span class="w"></span>
+<span class="na">CharSelectDelay</span><span class="o">=</span><span class="s">3</span><span class="w"></span>
+<span class="c1">;seconds to wait at the character select screen. Default is 3</span><span class="w"></span>
+<span class="na">ConnectRetries</span><span class="o">=</span><span class="s">0</span><span class="w"></span>
+<span class="c1">;How many attempts to connect after a failure</span><span class="w"></span>
+<span class="na">UseMQ2Login</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
+<span class="c1">;Uses the default, encrypted method of autologin</span><span class="w"></span>
+<span class="na">UseStationNamesInsteadOfSessions</span><span class="o">=</span><span class="s">0</span><span class="w"></span>
+<span class="c1">;Stores your login and pass in plaintext in MQ2AutoLogin.ini, but is compatible with ISBoxer/WinEQ.</span><span class="w"></span>
+</code></pre></div>
+If you're using <code>UseMQ2Login=1</code> and have created profiles via the tray icon, there will be additional sections such as <code>[Profiles]</code> and profile names. These should be left alone, as their settings are best changed via the GUI.</p>
+<h2 id="alternate-login-methods">Alternate login methods<a class="headerlink" href="#alternate-login-methods" title="Permanent link">&para;</a></h2>
+<p>There are two alternate login methods: Sessions (compatible with the EverQuest launcher and "-patchme" login method) and Station Names (best for WinEQ and ISBoxer) </p>
+<p>If you'd like to use sessions, set <code>UseMQ2Login=0</code>, and add sessions to the MQ2AutoLogin.ini in this format, </p>
+<p><strong>Sessions example INI</strong>
+<div class="highlight"><pre><span></span><code><span class="k">[Settings]</span><span class="w"></span>
+<span class="na">UseMQ2Login</span><span class="o">=</span><span class="s">0</span><span class="w"></span>
 
-## Alternate login methods
-There are two alternate login methods: Sessions (compatible with the EverQuest launcher and &quot;-patchme&quot; login method) and Station Names (best for WinEQ and ISBoxer) 
+<span class="k">[Session1]</span><span class="w"></span>
+<span class="na">StationName</span><span class="o">=</span><span class="s">StationNameforSession</span><span class="w"></span>
+<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforSession</span><span class="w"></span>
+<span class="na">Server</span><span class="o">=</span><span class="s">ServerforSession</span><span class="w"></span>
+<span class="na">Character</span><span class="o">=</span><span class="s">Name</span><span class="w"></span>
 
-If you&#39;d like to use sessions, set `UseMQ2Login=0`, and add sessions to the MQ2AutoLogin.ini in this format, 
-
-**Sessions example INI**
-```ini⏎
-[Settings]
-UseMQ2Login=0
-
-[Session1]
-StationName=StationNameforSession
-Password=PasswordforSession
-Server=ServerforSession
-Character=Name
-
-[Session2]
-StationName=StationNameforSession
-Password=PasswordforSession
-Server=ServerforSession
-Character=Name
+<span class="k">[Session2]</span><span class="w"></span>
+<span class="na">StationName</span><span class="o">=</span><span class="s">StationNameforSession</span><span class="w"></span>
+<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforSession</span><span class="w"></span>
+<span class="na">Server</span><span class="o">=</span><span class="s">ServerforSession</span><span class="w"></span>
+<span class="na">Character</span><span class="o">=</span><span class="s">Name</span><span class="w"></span>
 </code></pre></div></p>
 <p>If you're using ISBoxer, set <code>UseMQ2Login=0</code> AND <code>UseStationNamesInsteadOfSessions=1</code>, and add station names to the MQ2AutoLogin.ini in this format, </p>
 <p><strong>Station names example INI</strong>
-```ini⏎
-[Settings]
-UseMQ2Login=0
-UseStationNamesInsteadOfSessions=1</p>
-<p>[StationName1]
-Password=PasswordforThisLoginName
-Server=ServerforThisLoginName
-Character=CharacterforThisLoginName</p>
-<p>[StationName2]
-Password=PasswordforThisLoginName
-Server=ServerforThisLoginName
-Character=CharacterforThisLoginName
-<div class="highlight"><pre><span></span><code>Additional settings from the global section, such as `KickActiveCharacter=1` can be added to session or station name sections to affect only that character.
+<div class="highlight"><pre><span></span><code><span class="k">[Settings]</span><span class="w"></span>
+<span class="na">UseMQ2Login</span><span class="o">=</span><span class="s">0</span><span class="w"></span>
+<span class="na">UseStationNamesInsteadOfSessions</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
 
+<span class="k">[StationName1]</span><span class="w"></span>
+<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforThisLoginName</span><span class="w"></span>
+<span class="na">Server</span><span class="o">=</span><span class="s">ServerforThisLoginName</span><span class="w"></span>
+<span class="na">Character</span><span class="o">=</span><span class="s">CharacterforThisLoginName</span><span class="w"></span>
 
-## List of server short names
-
-    antonius
-    bertox
-    bristle
-    cazic
-    drinal
-    erollisi
-    firiona
-    luclin
-    phinigel
-    povar
-    ragefire
-    rathe
-    rizlona
-    tunare
-    vox
-    xegony
-    zek
-    test
-    beta
-
-## Custom server names
-To add a new server with a custom short name, which is particularly important for emulators, edit your MQ2AutoLogin.ini with the following format: 
-```ini⏎
-[Servers]
-customshortname=Exact long name (as it appears on login screen)
+<span class="k">[StationName2]</span><span class="w"></span>
+<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforThisLoginName</span><span class="w"></span>
+<span class="na">Server</span><span class="o">=</span><span class="s">ServerforThisLoginName</span><span class="w"></span>
+<span class="na">Character</span><span class="o">=</span><span class="s">CharacterforThisLoginName</span><span class="w"></span>
+</code></pre></div></p>
+<p>Additional settings from the global section, such as <code>KickActiveCharacter=1</code> can be added to session or station name sections to affect only that character.</p>
+<h2 id="list-of-server-short-names">List of server short names<a class="headerlink" href="#list-of-server-short-names" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>antonius
+bertox
+bristle
+cazic
+drinal
+erollisi
+firiona
+luclin
+phinigel
+povar
+ragefire
+rathe
+rizlona
+tunare
+vox
+xegony
+zek
+test
+beta
 </code></pre></div>
-For example, here are the most popular macroquest-compatible emu servers as of 9/27/2017: 
-<code>ini⏎
-[Servers]
-peqgrand=[] [PEQ] The Grand Creation - Omens of War
-ezserver=[] EZ Server - Custom Zones, Vendors, Quests, Items, etc
-stormhaven=[] Storm Haven - High-Quality Custom Content
-alkabor=[] The Al'Kabor Project [www.takproject.net]
-thf=[] The Hidden Forest [ www.thehiddenforest.org ]
-chronicles=[] Chronicles of Norrath
-dragonsoul=[] Dragon Soul - CEQ [zh-cn/legit/PvE]
-leetsauce=[] Leetsauce Productions
-kmra=[] Raid Addicts (Fully Custom) [Solo/Group/Raid]
-scorpious=[] Scorpious2k: The Next Generation [custom]
-sod=[] Shards of Dalaya
-vegarlson=[] Vegarlson Asylum
-zek=[] Zek [Teams/Guildwars]</code></p>
+<h2 id="custom-server-names">Custom server names<a class="headerlink" href="#custom-server-names" title="Permanent link">&para;</a></h2>
+<p>To add a new server with a custom short name, which is particularly important for emulators, edit your MQ2AutoLogin.ini with the following format: 
+<div class="highlight"><pre><span></span><code><span class="k">[Servers]</span><span class="w"></span>
+<span class="na">customshortname</span><span class="o">=</span><span class="s">Exact long name (as it appears on login screen)</span><span class="w"></span>
+</code></pre></div></p>
+<p>Make sure <code>customshortname</code> matches servers internal shortname exactly.</p>
+<p>For example, here are the most popular macroquest-compatible emu servers as of 9/27/2017: 
+<div class="highlight"><pre><span></span><code><span class="k">[Servers]</span><span class="w"></span>
+<span class="na">peqgrand</span><span class="o">=</span><span class="s">[] [PEQ] The Grand Creation - Omens of War</span><span class="w"></span>
+<span class="na">ezserver</span><span class="o">=</span><span class="s">[] EZ Server - Custom Zones, Vendors, Quests, Items, etc</span><span class="w"></span>
+<span class="na">stormhaven</span><span class="o">=</span><span class="s">[] Storm Haven - High-Quality Custom Content</span><span class="w"></span>
+<span class="na">alkabor</span><span class="o">=</span><span class="s">[] The Al&#39;Kabor Project [www.takproject.net]</span><span class="w"></span>
+<span class="na">thf</span><span class="o">=</span><span class="s">[] The Hidden Forest [ www.thehiddenforest.org ]</span><span class="w"></span>
+<span class="na">chronicles</span><span class="o">=</span><span class="s">[] Chronicles of Norrath</span><span class="w"></span>
+<span class="na">dragonsoul</span><span class="o">=</span><span class="s">[] Dragon Soul - CEQ [zh-cn/legit/PvE]</span><span class="w"></span>
+<span class="na">leetsauce</span><span class="o">=</span><span class="s">[] Leetsauce Productions</span><span class="w"></span>
+<span class="na">kmra</span><span class="o">=</span><span class="s">[] Raid Addicts (Fully Custom) [Solo/Group/Raid]</span><span class="w"></span>
+<span class="na">scorpious</span><span class="o">=</span><span class="s">[] Scorpious2k: The Next Generation [custom]</span><span class="w"></span>
+<span class="na">sod</span><span class="o">=</span><span class="s">[] Shards of Dalaya</span><span class="w"></span>
+<span class="na">vegarlson</span><span class="o">=</span><span class="s">[] Vegarlson Asylum</span><span class="w"></span>
+<span class="na">zek</span><span class="o">=</span><span class="s">[] Zek [Teams/Guildwars]</span><span class="w"></span>
+</code></pre></div></p>
 <h2 id="mq2login-profiles-gui">MQ2Login Profiles GUI<a class="headerlink" href="#mq2login-profiles-gui" title="Permanent link">&para;</a></h2>
 <p>Right click on the MacroQuest tray icon -&gt; Profiles</p>
 <p><code>Check marks:</code></p>
