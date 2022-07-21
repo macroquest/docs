@@ -53,7 +53,7 @@ Pressing the "END" key at the character select screen will pause autologin, "HOM
 ## INI 
 
 MQ2AutoLogin.ini has the following global settings,
-```ini⏎
+```ini
 [Settings]
 ;The following settings are global. Settings changed for specific characters will override them.
 NotifyOnServerUp=1
@@ -79,7 +79,7 @@ There are two alternate login methods: Sessions (compatible with the EverQuest l
 If you'd like to use sessions, set `UseMQ2Login=0`, and add sessions to the MQ2AutoLogin.ini in this format, 
 
 **Sessions example INI**
-```ini⏎
+```ini
 [Settings]
 UseMQ2Login=0
 
@@ -99,7 +99,7 @@ Character=Name
 If you're using ISBoxer, set `UseMQ2Login=0` AND `UseStationNamesInsteadOfSessions=1`, and add station names to the MQ2AutoLogin.ini in this format, 
 
 **Station names example INI**
-```ini⏎
+```ini
 [Settings]
 UseMQ2Login=0
 UseStationNamesInsteadOfSessions=1
@@ -142,12 +142,15 @@ Additional settings from the global section, such as `KickActiveCharacter=1` can
 
 ## Custom server names
 To add a new server with a custom short name, which is particularly important for emulators, edit your MQ2AutoLogin.ini with the following format: 
-```ini⏎
+```ini
 [Servers]
 customshortname=Exact long name (as it appears on login screen)
 ```
+
+Make sure `customshortname` matches servers internal shortname exactly.
+
 For example, here are the most popular macroquest-compatible emu servers as of 9/27/2017: 
-```ini⏎
+```ini
 [Servers]
 peqgrand=[] [PEQ] The Grand Creation - Omens of War
 ezserver=[] EZ Server - Custom Zones, Vendors, Quests, Items, etc
