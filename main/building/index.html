@@ -8853,6 +8853,7 @@
 <h2 id="download-install-visual-studio-20192022">Download &amp; Install Visual Studio 2019/2022<a class="headerlink" href="#download-install-visual-studio-20192022" title="Permanent link">&para;</a></h2>
 <p>Links and instructions can be found at:
 <a href="https://visualstudio.microsoft.com/downloads/">https://visualstudio.microsoft.com/downloads/</a></p>
+<p>Be sure to install <code>MSVC v142 - VS2019 c++ x86/x64 build tools</code> as part of the installation.</p>
 <h2 id="how-to-build">How to Build<a class="headerlink" href="#how-to-build" title="Permanent link">&para;</a></h2>
 <h3 id="download-install-git-for-windows">Download &amp; Install Git for Windows<a class="headerlink" href="#download-install-git-for-windows" title="Permanent link">&para;</a></h3>
 <p>Links and instructions can be found at:
@@ -8880,7 +8881,7 @@
 <p>At this point, the source should be ready to compile. Proceed to Build Steps.</p>
 <h3 id="build-steps">Build Steps<a class="headerlink" href="#build-steps" title="Permanent link">&para;</a></h3>
 <ol>
-<li>Open the <code>MacroQuest.sln</code> file in the <code>src</code> directory. Double clicking this file should open Visual Studio.</li>
+<li>Open the <code>MacroQuest.sln</code> file in the <code>src</code> directory. Double clicking this file should open Visual Studio.  If prompted to upgrade, click Cancel.</li>
 <li>Select the <code>Release</code> and <code>(x64)</code>configuration from the drop-down menu near the top of the window.</li>
 <li>Since the project moved to 64-bit, ensure all project configurations are set to <code>(x64)</code> in the <strong>Solution Macroquest</strong> Property Pages. From the Visual Studio main menu, select <strong>Build</strong> then <strong>Configuration Manager</strong> then ensure the Platform column for each project is set to <code>(x64)</code>.</li>
 <li>Select <code>Build -&gt; Build Solution</code> from the menu.</li>
