@@ -1,6 +1,6 @@
 # Operators
 
-|Numeric Operator |			     | Logical Operator |                    |
+|Numeric |Operator			     | Logical | Operator                    |
 |:------ |:--------------------- |:--------- |:------------------------- |
 |+ 		 | Addition 			 | ==      	 | Equal to					 | 
 |- 		 | Subtraction			 | != 		 | Not equal to				 |
