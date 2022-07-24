@@ -1,0 +1,64 @@
+<NotepadPlus>
+    <UserLang name="LightModeMQLang" ext="mac inc ini" udlVersion="2.1">
+        <Settings>
+            <Global caseIgnored="yes" allowFoldOfComments="no" foldCompact="no" forcePureLC="0" decimalSeparator="0" />
+            <Prefix Keywords1="no" Keywords2="no" Keywords3="no" Keywords4="no" Keywords5="no" Keywords6="yes" Keywords7="no" Keywords8="yes" />
+        </Settings>
+        <KeywordLists>
+            <Keywords name="Comments">00| 01 02| 03 04</Keywords>
+            <Keywords name="Numbers, prefix1"></Keywords>
+            <Keywords name="Numbers, prefix2"></Keywords>
+            <Keywords name="Numbers, extras1"></Keywords>
+            <Keywords name="Numbers, extras2"></Keywords>
+            <Keywords name="Numbers, suffix1">s m h</Keywords>
+            <Keywords name="Numbers, suffix2"></Keywords>
+            <Keywords name="Numbers, range"></Keywords>
+            <Keywords name="Operators1">== !=</Keywords>
+            <Keywords name="Operators2"></Keywords>
+            <Keywords name="Folders in code1, open"></Keywords>
+            <Keywords name="Folders in code1, middle"></Keywords>
+            <Keywords name="Folders in code1, close"></Keywords>
+            <Keywords name="Folders in code2, open"></Keywords>
+            <Keywords name="Folders in code2, middle"></Keywords>
+            <Keywords name="Folders in code2, close"></Keywords>
+            <Keywords name="Folders in comment, open"></Keywords>
+            <Keywords name="Folders in comment, middle"></Keywords>
+            <Keywords name="Folders in comment, close"></Keywords>
+            <Keywords name="Keywords1">/aa /alert /alias /altkey /banklist /beep /bind /caption /captioncolor /cast /click /combine /ctrlkey /custombind /destroy /docommand /door /doortarget /dosocial /drop /dropbinds /exec /face /filter /foreground /help /hotbutton /hud /identify /ini /invoke /ireset /itemnotify /items /itemtarget /keepkeys /keypress /loadcfg /loadspells /location /loginname /look /memspell /mouseto /mqfond /mqlog /mqpause /multiline /nomodkey /noparse /notify /plugin /popup /ranged /reloadui /screenmode /sellitem /setautorun /setprio /shiftkey /skills /spew /squelch /substitute /timed /unload /updateitems /where /whofilter /whotarget /windows /windowstate /nav /declare /echo /varset</Keywords>
+            <Keywords name="Keywords2">/break /cleanup /clearerrors /deletevar /doevents /endmacro /for /goto /if /listmacros /macro /next /seterror /varcalc /vardata /while else /continue</Keywords>
+            <Keywords name="Keywords3">/assist /attack /autofire /con /consent /corpse /corpsedrag /corpsedrop /hidecorpses /loot /afk /alt /autosplit /bazaar /camp /claim /charinfo /decline /duck /exit /fastdrop /find /findpc /follow /keys /open /sit /stand /target /afk /doability /stopcast /stopsong /useitem /dismount /follow /invite /loc /ooc /g /tell /say /pet /shout /who /autoinv /hidecorpse /range /disband</Keywords>
+            <Keywords name="Keywords4">int local string outer float timer bool clear predict fast nolook away alert loc heading item door id jump forward hold off on up down left right stop back</Keywords>
+            <Keywords name="Keywords5">#bind #chat #define #event #include #turbo #warning Sub /return downto to NULL /call</Keywords>
+            <Keywords name="Keywords6">Bool /endm /end /delay Event_ .Open .Equal . true false TRUE FALSE /bc</Keywords>
+            <Keywords name="Keywords7">AdvLoot Alert Alias AltAbility Bandolier Corpse Cursor Defined DisplayItem DoorTarget DynamicZone EverQuest FindItem FindItemBank FindItemBankCount Float FPS Friends GameTime Ground GroundItemCount Group GroupLeader GroupLeaderName Heading If Ini Int Irc ItemTarget LastSpawn LightOfSight Macro MacroQuest Math Me Menu Mercenary Merchant Mount NearestSpawn Pet Plugin Raid Range Select SelectItem Skill Spawn SpawnCount Spell String Switch Target Task Time Type Windows</Keywords>
+            <Keywords name="Keywords8">Math. Me. Macro. Target. Group. EverQuest. Zone. Raid.</Keywords>
+            <Keywords name="Delimiters">00 01 02 03[ 04 05] 06${ 07 08} 09: 10 11((EOL)) 12/echo 13 14((EOL)) 15( 16 17) 18 19 20 21 22 23</Keywords>
+        </KeywordLists>
+        <Styles>
+            <WordsStyle name="DEFAULT" fgColor="000000" bgColor="FFFFFF" colorStyle="1" fontName="Georgia" fontStyle="0" fontSize="10" nesting="0" />
+            <WordsStyle name="COMMENTS" fgColor="FFFF00" bgColor="FFFFFF" colorStyle="1" fontStyle="0" nesting="63" />
+            <WordsStyle name="LINE COMMENTS" fgColor="00C600" bgColor="FFFFFF" colorStyle="1" fontStyle="0" nesting="0" />
+            <WordsStyle name="NUMBERS" fgColor="FF80C0" bgColor="FFFFFF" colorStyle="1" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS1" fgColor="B3AA0D" bgColor="FFFFFF" colorStyle="1" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS2" fgColor="FF00FF" bgColor="FFFFFF" colorStyle="1" fontStyle="1" fontSize="10" nesting="0" />
+            <WordsStyle name="KEYWORDS3" fgColor="D24400" bgColor="FFFFFF" colorStyle="1" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS4" fgColor="8080FF" bgColor="FFFFFF" colorStyle="1" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS5" fgColor="FF0000" bgColor="FFFFFF" colorStyle="1" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS6" fgColor="408080" bgColor="FFFFFF" colorStyle="1" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS7" fgColor="8080FF" bgColor="FFFFFF" colorStyle="1" fontStyle="1" nesting="0" />
+            <WordsStyle name="KEYWORDS8" fgColor="8080FF" bgColor="FFFFFF" colorStyle="1" fontStyle="1" nesting="0" />
+            <WordsStyle name="OPERATORS" fgColor="00FF00" bgColor="FFFFFF" colorStyle="1" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE1" fgColor="EC0000" bgColor="FFFFFF" colorStyle="1" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN CODE2" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="FOLDER IN COMMENT" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS1" fgColor="FF80FF" bgColor="FFFFFF" fontStyle="0" nesting="117702655" />
+            <WordsStyle name="DELIMITERS2" fgColor="800040" bgColor="FFFFFF" colorStyle="1" fontStyle="1" nesting="117505855" />
+            <WordsStyle name="DELIMITERS3" fgColor="400080" bgColor="FFFFFF" colorStyle="1" fontStyle="1" nesting="117702655" />
+            <WordsStyle name="DELIMITERS4" fgColor="FF8040" bgColor="FFFFFF" colorStyle="1" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS5" fgColor="008000" bgColor="FFFFFF" colorStyle="1" fontStyle="0" nesting="117441286" />
+            <WordsStyle name="DELIMITERS6" fgColor="FF8040" bgColor="FFFFFF" colorStyle="1" fontStyle="0" nesting="117702655" />
+            <WordsStyle name="DELIMITERS7" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+            <WordsStyle name="DELIMITERS8" fgColor="000000" bgColor="FFFFFF" fontStyle="0" nesting="0" />
+        </Styles>
+    </UserLang>
+</NotepadPlus>
