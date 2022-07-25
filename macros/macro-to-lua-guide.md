@@ -152,7 +152,7 @@ The following code snippet shows some macro variable related commands and their 
     nearest_npc = mq.TLO.Spawn('npc targetable')
     
 
-##1.4 Output
+## 1.4 Output
 `https://www.lua.org/pil/1.html` (hello world example, starts with printing text)
 In Lua, output text to the console using print:
 *Macro:  *```/echo some text```
@@ -179,7 +179,7 @@ another syntax for formatted strings:
 Also check out Write.lua for debug logging helpers:
 `https://www.redguides.com/community/resources/write-lua.2193/`
 
-##1.5 Functions
+## 1.5 Functions
 `https://www.lua.org/pil/5.html`
 Lua functions are the equivalent of macro subroutines. Like variables, functions
 can be declared as local or global. In most cases, they don't need to be defined globally.
@@ -269,7 +269,7 @@ print_values(name, level, class)
 ```
 
 
-##1.6 Tables
+## 1.6 Tables
 
 Before getting into flow control, some knowledge of Lua tables is needed. They will be used in several of the examples.
 
@@ -311,7 +311,7 @@ using tables as maps so that values could be looked up directly by key without h
 One approach is to treat the table as a set, where the key is the value you are interested in, and the value is just something like 1 or true.
 [Lua Sets]('https://www.lua.org/pil/11.5.html') provides an example helper function to create sets like this.
 
-##1.7 Command Line Args/Parameters
+## 1.7 Command Line Args/Parameters
 Lua provides access to command line arguments through the use of the same ```...``` which was introduced earlier with functions for variable number of arguments.
 
 Below is an example which iterates over the arguments which the script is called with:
@@ -354,7 +354,7 @@ This would output:
     Settings[ini]=server_toon.ini
     
 
-##1.8 Require
+## 1.8 Require
 The Lua ```require``` function is used to load one Lua file from another. For example, ```Write.lua```, by Knightly, is a library which provides useful functions for logging. Write.lua is meant to be used by other scripts, and would be included with a statement like ```local write = require('write')```. This would then allow a script to call the functions from Write.lua such as ```write.debug('my debug message here')```.
 This is similar to include files in macros, though works slightly differently. Include files in macros make the macro behave as if the included files code was all inserted directly where the include was done. In Lua, the results of requiring another Lua file are typically stored into a variable. So, if a script is required, and it returns a table containing several helper functions, then that table is stored into a variable and those functions are accessed through that variable.
 
@@ -386,7 +386,7 @@ local utils = require 'utils'
 utils.perform_some_task()
 ```
 
-##1.9 Scope and Processing Order
+## 1.9 Scope and Processing Order
 Scope was touched on a little bit earlier when talking about variables. The same applies to functions as well. Its always important to be aware of where variables or functions are defined, and when they will be in the correct scope to be referenced.
 An important part of this is understanding that Lua scripts are processed top down. A variable or function can only be referenced by code that occurs after it has been declared.
 
@@ -477,7 +477,7 @@ if my_name ~= 'someone' then
 end
 ```
 
-##2.2 For Loops
+## 2.2 For Loops
 `https://www.lua.org/pil/4.3.5.html`
 
 For loops in lua are most often going to be iterating over table values. This is done using either ```pairs``` or ```ipairs```.
