@@ -5,6 +5,8 @@
 Links and instructions can be found at:
 [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
 
+Be sure to install `MSVC v142 - VS2019 c++ x86/x64 build tools` as part of the installation.
+
 ## How to Build
 
 ### Download & Install Git for Windows
@@ -57,7 +59,7 @@ At this point, the source should be ready to compile. Proceed to Build Steps.
 
 ### Build Steps
 
-1. Open the `MacroQuest.sln` file in the `src` directory. Double clicking this file should open Visual Studio.
+1. Open the `MacroQuest.sln` file in the `src` directory. Double clicking this file should open Visual Studio.  If prompted to upgrade, click Cancel.
 2. Select the `Release` and `(x64)`configuration from the drop-down menu near the top of the window.
 3. Since the project moved to 64-bit, ensure all project configurations are set to `(x64)` in the **Solution Macroquest** Property Pages. From the Visual Studio main menu, select **Build** then **Configuration Manager** then ensure the Platform column for each project is set to `(x64)`.
 4. Select `Build -> Build Solution` from the menu.
