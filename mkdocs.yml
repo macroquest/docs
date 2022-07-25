@@ -258,6 +258,7 @@ nav:
   - lua/README.md
   - LuaRocks Modules: lua/luarocks-modules.md
   - Lua Events and Binds: lua/events-and-binds.md
+  - MacroScript to Lua: lua/macro-to-lua.md
 
 - Reference:
   - reference/README.md
