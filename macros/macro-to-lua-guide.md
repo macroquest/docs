@@ -1,6 +1,6 @@
 Author: aquietone : from RG `https://www.redguides.com/community/resources/macroscript-to-lua.2197/`
 
-#MacroScript to Lua 0.2
+# MacroScript to Lua 0.2
 
 This guide will cover what (I) think seem to be some of the more common building blocks of code found in macros, and ways they may be written in Lua. They may not be the only ways or the best ways, but hopefully they are useful to see.
 
@@ -64,10 +64,10 @@ Table of Contents
 
 * Common Gotchas
 
-##1. Getting Started
+## 1. Getting Started
 To get started, this guide will cover the basics of a Lua script, without getting into any of the MQ integrations.
 
-##1.1 Terminology
+## 1.1 Terminology
 - *lua script:* Like a macro, Lua are scripts which will be run in game by issuing a command like ```/lua run examples/demo_tables``` where ```examples/demo_tables.lua``` is a Lua script which exists in the MQ Lua folder.
 
 - *variable*: A variable is a symbolic name for some information. Variables are declared in a lua script like ```local script_name = 'demo_tables'```. This would define the ```script_name``` variable which can then be referenced elsewhere in the script, and its value would be the string, ```demo_tables```. Variables can be local or global, but should typically always be made local. If you're familiar with declaring variables in macros, its pretty much the same thing.
@@ -86,7 +86,7 @@ To get started, this guide will cover the basics of a Lua script, without gettin
 
 *- *[*true/false:*]('https://www.lua.org/pil/2.2.html') One quick note on true/false in Lua, numbers do not behave like booleans in conditions like they do in macros or several other languages. ```if my_int_variable then``` where my_int_variable is 0 would not evaluate to false. If you want to compare numbers in if statements, you need to actually check == or ~= in your conditions.
 
-##1.2 Hello World
+## 1.2 Hello World
 The typical Hello World example for a Lua script is relatively short. No functions need to be written, no variables declared. Simply create a file in  the MQ Lua folder called ```helloworld.lua``` with the following content:
 
 ```lua
@@ -97,7 +97,7 @@ And then execute the script in game by running the command: ```/lua run hellowor
 
 This script calls the built in Lua ```print``` function to print the string ```Hello, world```. It will print to the MQ console window. The Lua ```print``` function behaves the same way as ```/echo``` in macro script.
 
-##1.3 Variables
+## 1.3 Variables
 `https://www.lua.org/pil/4.2.html`
 Lua can have both local and global variables, similar to a macro. In most cases, variables probably don't need to be made global. Global variables may have some use cases as script grow and begin to include multiple other scripts, but even then they are unlikely to be necessary, and most likely problems can be solved other ways.
 
@@ -795,7 +795,7 @@ local eqbcLoaded = IsPluginLoaded('mq2eqbc')
 print(eqbcLoaded)
 ```
 
-##4. Storage
+## 4. Storage
 Lua can support the same storage mechanisms that were used in macros, such as INI files, JSON, YAML, sqlite. The native Lua YAML and JSON implementations I've found aren't particularly great, usually they have some caveats and often don't maintain formatting / pretty printing of files. They may be ok if you never expect users to hand edit the files, but that rarely seems to be the case in MQ.
 One new storage method which Lua makes available, is to simply persist Lua tables to a file which can then be loaded using standard Lua calls.
 
@@ -810,9 +810,9 @@ Some Lua scripts available on RG or elsewhere are including an sqlite3 DLL which
 [Several implementations]('http://lua-users.org/wiki/TableSerialization') are available online for persisting Lua tables to a file. Table serialization is also covered in [Programming in Lua.]('https://www.lua.org/pil/contents.html#12')
 Most of the implementations include both the writing and reading of tables to and from a file.
 
-##5. Extras
+## 5. Extras
 
-##5a. The /lua parse command
+## 5a. The /lua parse command
 
 MQ provides a command line utility for parsing lua, which is pretty useful for debugging. It automatically includes ```local mq = require('mq')```, and can be used like:
 
@@ -823,7 +823,7 @@ It can do much more than that, including multiple statements strung together, lo
 ```/lua parse i = 1 while mq.TLO.NearestSpawn(i..', pc')() do print(mq.TLO.NearestSpawn(i..', pc')) i=i+1 end```
 The above example would print the name of PCs incrementing over a NearestSpawn search.
 
-5b. VS Code Extensions
+## 5b. VS Code Extensions
 
 In addition to ColdBlooded's emmylua definitions mentioned at the beginning, some other extensions mentioned often include:
 - Rainbow Brackets
@@ -867,7 +867,7 @@ exports.mapper = mapper;
 //# sourceMappingURL=mapper_md.js.map
 ```
 
-5c. Mixing Lua and Macro
+## 5c. Mixing Lua and Macro
 Macro variables have always been available through the command line while a macro is running. For example, if you were running a macro that created a global variable MainAssistID, then you could /echo ${MainAssistID} and see the value of that variable at any time.
 Similarly, you were able to update macro variables with /varset.
 
@@ -875,7 +875,7 @@ Lua variables are not exposed in the same way, regardless of whether they are gl
 
 Lua does have access to Macro variables, through ```mq.TLO.Macro.Variable('macro_variable_name')()```. This makes it possible to do something like use Lua to create an ImGui based UI for an existing macro.
 
-##6. Common Problems
+## 6. Common Problems
 
 * Comparing values with data from ```mq.TLO.Something```: Due to the difference between userdata and regular lua types like numbers or strings, comparisons will often fail when the value looks like you would expect it to work.
 
