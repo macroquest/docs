@@ -76,11 +76,11 @@ To get started, this guide will cover the basics of a Lua script, without gettin
 
 - [*table*]('https://www.lua.org/pil/2.5.html'): In Lua, nearly everything is a table. Tables are the main data structure for the language. If you are familiar with arrays or maps from other programming languages, Lua combines both of these together into tables. Tables store a collection of key, value pairs, and the values can be accessed by their keys. The keys can be numbers or strings. When the keys are contiguous numbers from 1 to N, then the table can be accessed in a similar fashion to an array. They can also be iterated over by index (like an array) or by key (like a map).
 
-*- *[*userdata:*]('https://www.lua.org/pil/2.7.html') Lua represents arbitrary C data as the type ```userdata```. There will be more on this later, but it is important to note that all unevaluated data returned to Lua from MQ is of type userdata.
+*-* [*userdata:*]('https://www.lua.org/pil/2.7.html') Lua represents arbitrary C data as the type ```userdata```. There will be more on this later, but it is important to note that all unevaluated data returned to Lua from MQ is of type userdata.
 
-*- *[*nil*]('https://www.lua.org/pil/2.1.html')*: *NULL, None. nil is Luas representation of no value. One common thing to do is check that a variable is not nil, i.e. the variable has a value. This might look like ```if mob then do_something() end```. This is the same as ```if mob ~= nil then do_something() end```.
+*-* [*nil*]('https://www.lua.org/pil/2.1.html')*:* NULL, None. nil is Luas representation of no value. One common thing to do is check that a variable is not nil, i.e. the variable has a value. This might look like ```if mob then do_something() end```. This is the same as ```if mob ~= nil then do_something() end```.
 
-*-*[* string*]('https://www.lua.org/pil/2.4.html'): A string is used for data values that are made up of ordered sequences of characters, such as "hello world". I only mention strings here because in macros, everything was a string, and in lua not everything is treated as a string. In Lua, like most programming languages, strings belong inside of quotes. This was not required in macros. For example, ```local name = aquietone``` would fail. ```local name = "aquietone"``` would work.
+*-* [*string*]('https://www.lua.org/pil/2.4.html'): A string is used for data values that are made up of ordered sequences of characters, such as "hello world". I only mention strings here because in macros, everything was a string, and in lua not everything is treated as a string. In Lua, like most programming languages, strings belong inside of quotes. This was not required in macros. For example, ```local name = aquietone``` would fail. ```local name = "aquietone"``` would work.
 
 *- literal: *Defining this word here just to highlight the different between macro script and pretty much any other programming language in the world. A literal would be something like the number 2 or the string "hello world". Specifically for strings, as mentioned a few times throughout this guide, they must be in quotes. This differs from macro script.
 
@@ -421,12 +421,12 @@ print_version(version)
 ```
 While the second example works, it sort of treats ```version``` like a global variable. You could limit the scope of the ```version``` variable by passing it as an argument to the function instead.
 
-##2. Control Flow
+## 2. Control Flow
 `https://www.lua.org/pil/4.3.html`
 
 A number of options are provided to control the flow of the script, such as if then else, for loops, while loops and repeat until.
 
-##2.1 If then else
+## 2.1 If then else
 `https://www.lua.org/pil/4.3.1.html`
 
 If conditions from macros should look pretty similar in lua.
