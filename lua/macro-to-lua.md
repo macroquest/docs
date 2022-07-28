@@ -658,6 +658,8 @@ Assign the function to a command that can be run in game:
 mq.bind('/howto', bind_help)
 ```
 
+Binds can be removed using `mq.unbind(bindCommand)`.
+
 ### Events
 [Lua Events and Binds](http://localhost:8000/lua/events-and-binds/)  
 First step is to define the function which will be called when the event triggers:
@@ -676,6 +678,10 @@ Then later, typically in the main run loop of the script, call `mq.doevents`.
 ```lua
 mq.doevents()
 ```
+
+Similar to macros, events can also be flushed with `mq.flushevents()`.  
+
+Events can be deregistered using `mq.unevent(eventName)`.
 
 ### Macro ${Select[...]} Statements
 Lua doesn't have `${Select[...]}` quite like the macro language does, but it has other solutions:
@@ -836,6 +842,42 @@ end
 local eqbcLoaded = IsPluginLoaded('mq2eqbc')
 print(eqbcLoaded)
 ```
+
+### mq.parse
+
+The `mq.parse` command allows to evaluate a macro expression in Lua and assign the result to a variable. This could be useful if reading macro expressions such as conditions like those in KA or reacts from an INI file.
+
+```lua
+local mq = require 'mq'
+
+local IF_STMT = '${If[%s,1,0]}'
+
+local function testCondition(condition)
+  -- the output from mq.parse is a string
+  return mq.parse(IF_STMT:format(condition)) == '1'
+end
+
+-- pretend these conditions were just read in from some config file like a KA INI
+local conditions = {
+  '${Me.PctHPs}<50',
+  '${Me.PctHPs}>50',
+}
+
+for _,condition in ipairs(conditions) do
+  if testCondition(condition) then
+    print(('Condition "%s" was true'):format(condition))
+  else
+    print(('Condition "%s" was false'):format(condition))
+  end
+end
+```
+
+### Other commonly used TLOs
+
+- **Math**: Prefer to use the native math operations supported in Lua. There's no need to use `${Math.Calc[]}` or `/varcalc` when the language can already do `1 + 1`. For other operations like rounding, floor, ceiling, see the [math library](http://lua-users.org/wiki/MathLibraryTutorial).
+- **String**: Lua provides plenty of string related operations which can be found [here](http://lua-users.org/wiki/StringLibraryTutorial). There should be no need to use the `String` TLO.
+- **.Equal** and **.NotEqual**: No need to use macro language sorts of comparators, just use lua `==` and `~=` instead.
+- **.Arg[|,2]**: Lua provides [many examples]((http://lua-users.org/wiki/SplitJoin)) for splitting strings which remove the need to use macro `.Arg`.
 
 ## Storage
 Lua can support the same storage mechanisms that were used in macros, such as INI files, JSON, YAML, sqlite. The native Lua YAML and JSON implementations aren't particularly great, usually they have some caveats and often don't maintain formatting / pretty printing of files. They may be ok if users are never expected to hand edit the files, but that rarely seems to be the case in MQ.
