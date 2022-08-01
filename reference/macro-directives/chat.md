@@ -8,7 +8,7 @@ This is a special type of \#event which watches the specified channel. Content f
 
 ## Use
 
-Valid channels are: auc, _chat_, guild, group, raid, ooc, say, shout, and tell. (_chat_ represents channels)
+Valid channels are: tell, group, raid, ooc, say, shout, guild, auc, _chat_ (_chat_ represents channels)
 
 Only one channel may be used on the \#chat line, however multiple lines may be added.
 

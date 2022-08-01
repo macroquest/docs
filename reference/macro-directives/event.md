@@ -6,15 +6,14 @@ event is used to specify strings to be triggered after you do /doevents
 
 ## Tutorial
 
-[http://www.macroquest.org/phpBB3/viewtopic.php?f=47&t=20199](http://www.macroquest.org/phpBB3/viewtopic.php?f=47&t=20199)
+[http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&t=20199](http://www.macroquest.org/phpBB3/viewtopic.php?f=47&t=20199)
 
 ### Tutorial Macro
 
 ```text
-#event stuff "[MQ2] Ant Bat Cat Dog Emu"
-#event stuff "[MQ2] Ant #*# Cat"
-#event stuff "[MQ2] |${Me.Name}| is cool"
-#event stuff "[MQ2] eqmule is #1#"
+#event stuff "Ant Bat Cat Dog Emu"
+#event stuff "Ant #*# Cat"
+#event stuff "|${Me.Name}| is cool"
 
 sub main
    /echo starting ${Macro.Name}
@@ -31,11 +30,11 @@ sub event_stuff(Line, word1, word2, word3, word4)
 
 ### Triggering your sub event\_stuff
 
-This code will watch EQ chat for an exact message of "[MQ2] Ant Bat Cat Dog Emu" when /doevents is called it will trigger the sub event\_stuff.
+This code will watch EQ chat for an exact message of "Ant Bat Cat Dog Emu" when /doevents is called it will trigger the sub event\_stuff.
 
 /doevents will process all your events since the last time it was done If the event happened 5 times since the last /doevents then it will execute your sub 5 times
 
-It needs to be exact, nothing in front or behind of your string. If you received a tell it would not trigger but if you see it as an /echo (because /echo shows [MQ2] as first word in chat) then it will trigger
+It needs to be exact, nothing in front or behind of your string. If you received a tell it would not trigger as there are ' '.
 
 ### Multiple events calling same sub
 
@@ -45,13 +44,13 @@ You can have multiple triggers if you use the same event\_name with different st
 
 You can use wildcards via \#\*\#
 
-`#event stuff "[MQ2] Ant #*# Cat"`
+`#event stuff "Ant #*# Cat"`
 
 This would trigger with **/echo Ant Bird Cat**
 
 **/echo Ant Bird Cat Dog** Would not trigger because there is no wildcard after Cat
 
-`#event stuff "[MQ2] Ant #*# Cat #*#"`
+`#event stuff "Ant #*# Cat #*#"`
 
 This would trigger for **/echo Ant Bird Cat** and **/echo Ant Bird Cat Dog**
 
@@ -59,7 +58,7 @@ This would trigger for **/echo Ant Bird Cat** and **/echo Ant Bird Cat Dog**
 
 In the string for event\_name you can use datatypes with \|${DataType}\|
 
-`#event stuff "[MQ2] |${Me.Name}| is cool"`
+`#event stuff "|${Me.Name}| is cool"`
 
 Assuming your in game name is LamahHerder... This would call sub event\_stuff if **/echo LamahHerder is cool**
 
@@ -68,20 +67,20 @@ Assuming your in game name is LamahHerder... This would call sub event\_stuff if
 In the string for event\_name you can use \#int\# to pass a variable to the event\_name sub
 
 ```text
-#event stuff "[MQ2] #1# the mq2 dev is #2#"
+#event stuff "Quick #1# this #2#"
 
 sub event_stuff(Line, word1, word2, word3, word4)
    /echo ${word1}, ${word2}
 /return
 ```
 
-For **/echo eqmule the mq2 dev is awesome**
+For **/echo Quick burn this ${Target}**
 
-This would have ${word1}=eqmule and ${word2}=awesome as a local string variable in sub event\_stuff
+This would have ${word1}=burn and ${word2}=*Your Target* as a local string variable in sub event\_stuff
 
 ## Example Macro with Known Hit Messages
 
-* [http://www.macroquest.org/phpBB3/viewtopic.php?f=47&t=20198&p=173345\#p173345](http://www.macroquest.org/phpBB3/viewtopic.php?f=47&t=20198&p=173345#p173345)
+* [http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&t=20198&p=173345\#p173345](http://www.macroquest.org/phpBB3/viewtopic.php?f=47&t=20198&p=173345#p173345)
 
 ```text
 | hitsmode Normal
