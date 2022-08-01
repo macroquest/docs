@@ -4168,6 +4168,8 @@
         
           
         
+          
+        
       
       
         
@@ -4212,6 +4214,20 @@
     <li class="md-nav__item">
       <a href="events-and-binds/" class="md-nav__link">
         Lua Events and Binds
+      </a>
+    </li>
+  
+
+            
+          
+            
+              
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="macro-to-lua/" class="md-nav__link">
+        MacroScript to Lua
       </a>
     </li>
   
@@ -8856,8 +8872,8 @@ info -- info for a process
 <dl>
 <dt><code>print('string')</code></dt>
 <dd>as noted before</dd>
-<dt><code>mq.delay(val)</code></dt>
-<dd>where val can be an integer (which denotes milliseconds of delay) or a string that ends in 's' 'm' or 'ms' to have delays with human readable durations</dd>
+<dt><code>mq.delay(val, callback)</code></dt>
+<dd>where val can be an integer (which denotes milliseconds of delay) or a string that ends in 's' 'm' or 'ms' to have delays with human readable durations and callback is an optional lua function which evaluates to true or false to decide whether to end the delay early</dd>
 <dt><code>mq.join(args...)</code></dt>
 <dd>where args must be convertible to string inside lua. This will join all the arguments into a single string</dd>
 <dt><code>mq.exit()</code></dt>
