@@ -6,7 +6,7 @@ All [Top-Level Objects](../top-level-objects/README.md) and [Data Types](../data
 | Parameter | Description |
 | :--- | :--- |
 | **alert \#** | Any spawns on the alert list \# |     
-| * alert Examples:| `/alert add 1 id ${Me.ID}` `/alert add 1 ${Me.Name}`|
+| - alert examples:| `/alert add 1 id ${Me.ID}` `/alert add 1 ${Me.Name}`|
 | **aura** | Auras |
 | **body** _bodytype_ | Spawns with the specified _bodytype_ |
 | **chest** | Chests |
