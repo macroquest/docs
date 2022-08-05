@@ -8,8 +8,8 @@
 Current Versions of notepad will allow you to import languages 
 Open notepad++ and select language->User Defined language->Define your language
 Download the two language files:
-[DarkModeMQLang.xml](DarkModeMQLang.xml)
-[LightModeMQLang.xml](LightModeMQLang.xml)
+[DarkModeMQLang.xml](../../../uploads/DarkModeMQLang.xml)
+[LightModeMQLang.xml](../../../uploads/LightModeMQLang.xml)
 
 To Select Dark Mode in Notepad++ Select Settings->Preferences->Dark Mode and select enable dark mode.
 
