@@ -149,22 +149,26 @@ customshortname=Exact long name (as it appears on login screen)
 
 Make sure `customshortname` matches servers internal shortname exactly.
 
-For example, here are the most popular macroquest-compatible emu servers as of 9/27/2017: 
+For example, here are the most popular macroquest-compatible emu servers as of 8/5/2022: 
 ```ini
-[Servers]
-peqgrand=[] [PEQ] The Grand Creation - Omens of War
-ezserver=[] EZ Server - Custom Zones, Vendors, Quests, Items, etc
-stormhaven=[] Storm Haven - High-Quality Custom Content
-alkabor=[] The Al'Kabor Project [www.takproject.net]
-thf=[] The Hidden Forest [ www.thehiddenforest.org ]
-chronicles=[] Chronicles of Norrath
-dragonsoul=[] Dragon Soul - CEQ [zh-cn/legit/PvE]
-leetsauce=[] Leetsauce Productions
-kmra=[] Raid Addicts (Fully Custom) [Solo/Group/Raid]
-scorpious=[] Scorpious2k: The Next Generation [custom]
-sod=[] Shards of Dalaya
-vegarlson=[] Vegarlson Asylum
-zek=[] Zek [Teams/Guildwars]
+[Servers: Host=login.eqemulator.net]
+EZ (Linux) x4 Exp=[] EZ Server - Custom Zones, Vendors, Quests, Items, etc
+Imperium_EQ=[] Imperium Server - Solo Level/Duo+ Raid
+PEQTGC=[] PEQ] The Grand Creation - Omens of War
+Project Lazarus=[] Project Lazarus
+HiddenForest=[] The Hidden Forest [ www.thehiddenforest.org ]
+Haven=[] Wayfarers Haven [wayfarershaven.com]
+CWR=[] Clumsy's World [Velious, Semi-Custom, QoL+]
+DxBx=[] DreadBox:Re-Dredged BETA
+E9 Profusion=[] Enine's ProFusion
+EQTitan=[] EQT ) EQTitan [Legit PoP/LDoN/GoD]
+The Firiona Vie Project=[] FVP - The Firiona Vie Project (Kunark)
+IxiQuest=IxiQuest - (ixiquest.com) Classic to Velious +
+KMRA=Raid Atticts (Fully Custom) [Solo/Group/Raid]
+The Dark Exile=[] The Dark Exile
+Showdowrest=[[R] ] Shadowrest
+Alternate Everquest=[[R] ]Alternate
+EQ Might=[[R] ] EQ Might
 ```
 
 ## MQ2Login Profiles GUI
