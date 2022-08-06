@@ -8855,12 +8855,11 @@
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>event is used to specify strings to be triggered after you do /doevents</p>
 <h2 id="tutorial">Tutorial<a class="headerlink" href="#tutorial" title="Permanent link">&para;</a></h2>
-<p><a href="http://www.macroquest.org/phpBB3/viewtopic.php?f=47&amp;t=20199">http://www.macroquest.org/phpBB3/viewtopic.php?f=47&amp;t=20199</a></p>
+<p><a href="http://www.macroquest.org/phpBB3/viewtopic.php?f=47&amp;t=20199">http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&amp;t=20199</a></p>
 <h3 id="tutorial-macro">Tutorial Macro<a class="headerlink" href="#tutorial-macro" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>#event stuff &quot;[MQ2] Ant Bat Cat Dog Emu&quot;
-#event stuff &quot;[MQ2] Ant #*# Cat&quot;
-#event stuff &quot;[MQ2] |${Me.Name}| is cool&quot;
-#event stuff &quot;[MQ2] eqmule is #1#&quot;
+<div class="highlight"><pre><span></span><code>#event stuff &quot;Ant Bat Cat Dog Emu&quot;
+#event stuff &quot;Ant #*# Cat&quot;
+#event stuff &quot;|${Me.Name}| is cool&quot;
 
 sub main
    /echo starting ${Macro.Name}
@@ -8875,35 +8874,35 @@ sub event_stuff(Line, word1, word2, word3, word4)
 /return
 </code></pre></div>
 <h3 id="triggering-your-sub-event_stuff">Triggering your sub event_stuff<a class="headerlink" href="#triggering-your-sub-event_stuff" title="Permanent link">&para;</a></h3>
-<p>This code will watch EQ chat for an exact message of "[MQ2] Ant Bat Cat Dog Emu" when /doevents is called it will trigger the sub event_stuff.</p>
+<p>This code will watch EQ chat for an exact message of "Ant Bat Cat Dog Emu" when /doevents is called it will trigger the sub event_stuff.</p>
 <p>/doevents will process all your events since the last time it was done If the event happened 5 times since the last /doevents then it will execute your sub 5 times</p>
-<p>It needs to be exact, nothing in front or behind of your string. If you received a tell it would not trigger but if you see it as an /echo (because /echo shows [MQ2] as first word in chat) then it will trigger</p>
+<p>It needs to be exact, nothing in front or behind of your string. If you received a tell it would not trigger as there are ' '.</p>
 <h3 id="multiple-events-calling-same-sub">Multiple events calling same sub<a class="headerlink" href="#multiple-events-calling-same-sub" title="Permanent link">&para;</a></h3>
 <p>You can have multiple triggers if you use the same event_name with different strings it will trigger. Because everything in the example is #event stuff it will trigger the sub each time it sees it</p>
 <h3 id="using-wildcard">Using wildcard<a class="headerlink" href="#using-wildcard" title="Permanent link">&para;</a></h3>
 <p>You can use wildcards via #*#</p>
-<p><code>#event stuff "[MQ2] Ant #*# Cat"</code></p>
+<p><code>#event stuff "Ant #*# Cat"</code></p>
 <p>This would trigger with <strong>/echo Ant Bird Cat</strong></p>
 <p><strong>/echo Ant Bird Cat Dog</strong> Would not trigger because there is no wildcard after Cat</p>
-<p><code>#event stuff "[MQ2] Ant #*# Cat #*#"</code></p>
+<p><code>#event stuff "Ant #*# Cat #*#"</code></p>
 <p>This would trigger for <strong>/echo Ant Bird Cat</strong> and <strong>/echo Ant Bird Cat Dog</strong></p>
 <h3 id="using-parsed-datatypes">Using parsed datatypes<a class="headerlink" href="#using-parsed-datatypes" title="Permanent link">&para;</a></h3>
 <p>In the string for event_name you can use datatypes with |${DataType}|</p>
-<p><code>#event stuff "[MQ2] |${Me.Name}| is cool"</code></p>
+<p><code>#event stuff "|${Me.Name}| is cool"</code></p>
 <p>Assuming your in game name is LamahHerder... This would call sub event_stuff if <strong>/echo LamahHerder is cool</strong></p>
 <h3 id="passing-a-variable">Passing a variable<a class="headerlink" href="#passing-a-variable" title="Permanent link">&para;</a></h3>
 <p>In the string for event_name you can use #int# to pass a variable to the event_name sub</p>
-<div class="highlight"><pre><span></span><code>#event stuff &quot;[MQ2] #1# the mq2 dev is #2#&quot;
+<div class="highlight"><pre><span></span><code>#event stuff &quot;Quick #1# this #2#&quot;
 
 sub event_stuff(Line, word1, word2, word3, word4)
    /echo ${word1}, ${word2}
 /return
 </code></pre></div>
-<p>For <strong>/echo eqmule the mq2 dev is awesome</strong></p>
-<p>This would have ${word1}=eqmule and ${word2}=awesome as a local string variable in sub event_stuff</p>
+<p>For <strong>/echo Quick burn this ${Target}</strong></p>
+<p>This would have ${word1}=burn and ${word2}=<em>Your Target</em> as a local string variable in sub event_stuff</p>
 <h2 id="example-macro-with-known-hit-messages">Example Macro with Known Hit Messages<a class="headerlink" href="#example-macro-with-known-hit-messages" title="Permanent link">&para;</a></h2>
 <ul>
-<li><a href="http://www.macroquest.org/phpBB3/viewtopic.php?f=47&amp;t=20198&amp;p=173345#p173345">http://www.macroquest.org/phpBB3/viewtopic.php?f=47&amp;t=20198&amp;p=173345#p173345</a></li>
+<li><a href="http://www.macroquest.org/phpBB3/viewtopic.php?f=47&amp;t=20198&amp;p=173345#p173345">http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&amp;t=20198&amp;p=173345#p173345</a></li>
 </ul>
 <div class="highlight"><pre><span></span><code>| hitsmode Normal
 #Event hitSuccess         &quot;You backstab #1# for #2# #*# of damage.&quot;

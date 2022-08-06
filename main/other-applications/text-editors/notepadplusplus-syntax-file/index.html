@@ -1062,26 +1062,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#using-notepad-with-the-syntax-highlighting" class="md-nav__link">
-    Using Notepad++ with the Syntax Highlighting
-  </a>
-  
-    <nav class="md-nav" aria-label="Using Notepad++ with the Syntax Highlighting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-highlighted-syntax-looks-like" class="md-nav__link">
-    What Highlighted Syntax Looks Like
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -8740,26 +8720,6 @@
   
 </li>
       
-        <li class="md-nav__item">
-  <a href="#using-notepad-with-the-syntax-highlighting" class="md-nav__link">
-    Using Notepad++ with the Syntax Highlighting
-  </a>
-  
-    <nav class="md-nav" aria-label="Using Notepad++ with the Syntax Highlighting">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#what-highlighted-syntax-looks-like" class="md-nav__link">
-    What Highlighted Syntax Looks Like
-  </a>
-  
-</li>
-        
-      </ul>
-    </nav>
-  
-</li>
-      
     </ul>
   
 </nav>
@@ -8784,93 +8744,17 @@
 <h1 id="notepad-syntax-file">Notepad++ Syntax File<a class="headerlink" href="#notepad-syntax-file" title="Permanent link">&para;</a></h1>
 <h2 id="pre-requesites">Pre-requesites<a class="headerlink" href="#pre-requesites" title="Permanent link">&para;</a></h2>
 <ul>
-<li>Notepad++ version 3.6 or higher <a href="http://notepad-plus.sourceforge.net">notepad-plus.sourceforge.net</a></li>
+<li>Notepad++ version 8.2 or higher <a href="http://notepad-plus.sourceforge.net">notepad-plus.sourceforge.net</a></li>
 </ul>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
-<p>User defined languages are stored in a file named <strong>userDefineLang.xml</strong>. If you do not have any extra languages defined, create a new file called userDefineLang.xml and add two lines</p>
-<p><code>`&lt;NotepadPlus&gt;</code> ````` &lt;/NotepadPlus&gt;</p>
-<p>Note that newer versions of Notepad++ stores userDefineLang.xml in "%userprofile%\Application Data\Notepad++" (Use Start &gt; Run, and copy/paste that path). Windows 7 users will find the userDefineLang.xml under "%AppData%\Notepad++."</p>
-<p>Alternately, create a new stub language with Notepad++ using the User Define Dialog... (found under the Language menu). Edit userDefineLang.xml and add the following in between the delimiters</p>
-<p>000000sub/return( ) [ ] { } + &lt; = &gt;/aa /alert /alias /altkey /press /zapvars /varadd /sendkey</p>
-<p>/banklist /beep /bind</p>
-<p>/call /caption /captioncolor /cast /charinfo /cleanup /clearerrors /click /combine /ctrlkey /custombind</p>
-<p>/defaulthud /delay /destroy /docommand /doors /doortarget /dosocial /drop /dumpbinds /declare /deletevar /doevents</p>
-<p>/echo /endmacro</p>
-<p>/face /filter /for</p>
-<p>/goto</p>
-<p>/help /hud /highlight</p>
-<p>/identify /ini /itemnotify /items /itemtarget</p>
-<p>/keepkeys /keypress</p>
-<p>/loadcfg /loadspells /location /loginname /look /listmacros /loadhud</p>
-<p>/memspell /mouseto /mqfont /mqlog /mqpause /multiline /macro /mapclick /mapfilter /maphide /mapnames /mapshow</p>
-<p>/nomodkey /noparse /notify /next</p>
-<p>/plugin /popup</p>
-<p>/ranged</p>
-<p>/sellitem /setautorun /shiftkey /skills /spew /squelch /substitute /seterror</p>
-<p>/target /timed</p>
-<p>/unload /updateitems</p>
-<p>/varset /varcalc /vardata</p>
-<p>/where /who /whofilter /whotarget /windows /windowstate</p>
-<p>/stick /circle /moveto/1 /2 /3 /4 /5 /6 /7 /8 /9 /10</p>
-<p>/a /addraidlooter /announce /adriver /adventure /anon /anonymous /afk /agree /alignment /alternateadv /amaze /assist /apologize /applaud /approval /attack /audiodebug /auction /autofire /autoinventory /autojoin /autosplit</p>
-<p>/b /bandolier /barter /bazaar /becomenpc /beta /betabuff /bite /bird /bleed /blink /blush /bodytint /boggle /bonk /book /bored /bounce /bow /brb /broadcast /bug /bugreport /burp /buyer /bye</p>
-<p>/cackle /chuckle /calm /camp /cast /changename /channel /chat /chatfontsize /cheer /claim /clearmarks /clap /clear /clearhits /combatmusic /comfort /con /congratulate /consider /consent /corpse /corpsedrag /corpsedrop /cough /cringe /cry /curious</p>
-<p>/d /dance /decline /delcorpse /deletepetition /deny /disband /disbelief /discipline /dismount /doability /dopropertinting /drool /duck /duel /dynamiclights /dzaddplayer /dzhelp /dzlisttimers /dzmakeleader /dzplayer /dzplayerlist /dzquit /dzremoveplayer /dzswapplayer</p>
-<p>/em /edit /emote /eye /exit /eqplayersupdate /eqplayersguildupdate</p>
-<p>/facepick /fastdrop /feedback /fidget /find /findpc /finger /filter /flex /flipoff /fontface /follow /friend /friends /frown /ftell /fullscreen</p>
-<p>/g /gasp /gems /gesture /getguildmotd /giggle /glare /gmarknpc /gmarkwaypoint /grin /groan /grovel /gsay /guide /guidehelp /guild /guildsay /guildinvite /guildremove /guilddelete /guildstatus /guildleader /guildwar /guildpeace /guildmotd</p>
-<p>/happy /hail /height /help /hidecorpse /hidecorpses /hideme /hitsmode /honor /hotbutton /hug /hungry</p>
-<p>/ignore /indicator /inspect /inspectbuffs /introduce /invite /inquire /invwinlabels</p>
-<p>/jk /join /kbroadcast</p>
-<p>/key /keys /kick /kill /kiss /kneel</p>
-<p>/language /lastname /laugh /leader /leave /leaveall /lfg /list /loadskin /log /location /loc /loot /lootnodrop /lost</p>
-<p>/makeleader /makeraidleader /marknpc /massage /map /mcicontrol /microphone /me /melody /memspellset /mixahead /moan /motd /mourn /movelog /mousespeed /mp3 /msg</p>
-<p>/name /netstats /nod /nudge /note</p>
-<p>/ooc /open /outputfile</p>
-<p>/panic /paperdoll /particledensity /pat /peer /pet /petition /played /plead /point /poke /ponder /popmail /potionbelt /praise /private /purr /puzzle</p>
-<p>/quit</p>
-<p>/raidaccept /raiddecline /raiddisband /raidinvite /raise /random /ready /removeraidlooter /reply /report /resetwindows /reveal /reverb /reversesound /rmarknpc /rmarkwaypoint /roar /rofl /roleplay /rude /rsay /rtarget</p>
-<p>/salute /safelock /safemove /savespellset /say /sdriver /searchcorpse /selfkill /send /serverfilter /servers /setloottype /setstartcity /shadows /shield /shiver /shrug /shout /showgrass /shownames /shownpcnames /showplayernames /showspelleffects /sigh /sit /smack /smile /smirk /snarl /snicker /split /stand /stare /stopcast /stopsong /stoptracking /system /summon /summoncorpse /surname</p>
-<p>/tap /targetgroupbuff /testbuffme /taskaddplayer /taskmakeleader /taskplayerlist /taskswapplayer /taskquit /taskremoveplayer /tasktimers /tease /tell /tgb /thank /thirsty /time /toggleinspect /toggletell /trade /trader /trackfilter /trackplayers /tracksort /ttell</p>
-<p>/url /usecolor /usercolor</p>
-<p>/veteranreward /veteranReward /veto /vgroup /viewpetition /viewpoint /viewport /voice /vplay /vraid /vrdelay /vtell</p>
-<p>/warn /wave /webupdate /welcome /whine /whistle /who /whotarget /wincolor /wordlist /www</p>
-<p>/yawn /yell</p>
-<p>/zoneAAW_ArchetypePage AAW_ClassPage AAW_GeneralPage AAW_Page4 AAW_Page5 AAW_Page6 AAWindow ActionsAbilitiesPage ActionsCombatPage ActionsMainPage ActionsSocialsPage ActionsWindow ActorParticlesPage AdventureLeaderboardWnd AdventureMerchantWnd AdventureRequestWnd AdventureStatsWnd AlarmWnd</p>
-<p>BZW_BazaarSlotsWnd BazaarSearchWnd BazaarWnd BigBankWnd BodyTintWnd BookWindow BreathWindow BuffWindow BugReportWindow</p>
-<p>CJNPC_Layout COMBW_CombineArea COMBW_ComponentArea COMBW_ContainerArea COMBW_FavoritesArea COMBW_FlagsArea COMBW_LeftSideArea COMBW_RecipeListArea COMBW_RightSideArea COMBW_SearchArea CastSpellWnd CastingWindow ColorPickerWnd CombatAbilityWnd CombatSkillSelectWnd CompassWindow CursorAttachment</p>
-<p>DZLeaderSection DynamicZoneWnd</p>
-<p>EditLabelWnd EnvironmentParticlesPage</p>
-<p>FW_FriendsPage FW_IgnorePage FacePickWindow FeedbackWindow FileSelectionWnd FindLocationWnd FriendsWindow Friends_TimerSlider0</p>
-<p>GGW_GameView GT_MemberPage GT_NotePage GemsGameWnd GiveWnd GroupInfoPage GroupListPage GroupSearchFiltersWnd GroupSearchWnd GroupWindow GuildManagementWnd</p>
-<p>HelpWindow HotButtonWnd</p>
-<p>IW_CharacterView InspectWnd InventoryWindow</p>
-<p>JournalCatWnd JournalNPCWnd</p>
-<p>KnowledgeBasePage</p>
-<p>LEW_GroupPage LEW_RaidPage LW_LootInvWnd LargeDialogWindow LeadershipWindow LoadskinWnd LootWnd</p>
-<p>MVW_MapRenderArea MW_MerchantSlotsWnd MW_SlotsWndThree MW_SlotsWndTwo MapToolbarWnd MapViewWnd MerchantWnd MusicPlayerWnd</p>
-<p>NewTicketPage NoteWindow</p>
-<p>OpenTicketsPage OptionsChatPage OptionsColorPage OptionsDisplayPage OptionsGeneralPage OptionsKeyboardPage OptionsMousePage OptionsWindow</p>
-<p>PIW_BuffWindow PetInfoWindow PlayerInfoPage PlayerListPage PlayerNotesWindow PlayerWindow PvPMerchantWnd PvPStatsWnd PvpLeaderboardWnd</p>
-<p>QuantityWnd</p>
-<p>RAID_MemberPage RAID_NotePage RaidOptionsWindow RaidWindow</p>
-<p>SelectorWindow ShortDurationBuffWindow SkillsSelectWindow SkillsWindow SocialEditWnd SpellBookWnd SpellParticlesPage StoryWnd SystemInfoDialogBox</p>
-<p>TBW_LabelWnd TBW_Layout TMW_ActiveBenefitArea TMW_BenefitMasterArea TMW_DonateWnd TMW_LabelWnd</p>
-<p>TMW_Layout TargetOfTargetWindow TargetWindow TextEntryWnd TicketCommentWindow TicketWindow TipWindow TrackingWnd TradeWnd TradeskillWnd TrainWindow TRDW_HisName TributeBenefitWnd TributeMasterWnd</p>
-<p>VideoModesWindow#turbo #define #include #event #chat</p>
-<h2 id="using-notepad-with-the-syntax-highlighting">Using Notepad++ with the Syntax Highlighting<a class="headerlink" href="#using-notepad-with-the-syntax-highlighting" title="Permanent link">&para;</a></h2>
-<p>You will want to associate .mac (and possible .inc) files with Notepad++. This can be done inside the application and by associating the extensions with the OS.</p>
-<p>From Menu</p>
-<p>Settings &gt; Preferences &gt; File Association Tab</p>
-<p>Click on customize in left side box</p>
-<p>Type .mac in the middle box that appears then click the arrow until it shows up in registered ext in the right side box</p>
-<p>Click close</p>
-<h3 id="what-highlighted-syntax-looks-like">What Highlighted Syntax Looks Like<a class="headerlink" href="#what-highlighted-syntax-looks-like" title="Permanent link">&para;</a></h3>
-<p>Sample lines showing sytax colors.</p>
-<p><code>&lt;font color="blue"&gt;``\#event`&lt;/font&gt;` CombineError "\#_\#There was no place to put that\#_\#"````` `\| Sub DoCombine``` /varsetEndingVar 1``    
-````` /nomodkey /notifyTradeskillWndCombineButton leftmouseup\</code></p>
-<p><code>/if (${Cursor.ID}) {</code></p>
-<p><code>`&lt;font color="#3399FF"&gt;</code>/timed <code>&lt;/font&gt;</code>5 <code>&lt;font color="#993300"&gt;</code>/autoinventory`&lt;/font&gt;</p>
+<p>Current Versions of notepad will allow you to import languages 
+Open notepad++ and select language-&gt;User Defined language-&gt;Define your language
+Download the two language files:
+<a href="../../../../uploads/DarkModeMQLang.xml">DarkModeMQLang.xml</a>
+<a href="../../../../uploads/LightModeMQLang.xml">LightModeMQLang.xml</a></p>
+<p>To Select Dark Mode in Notepad++ Select Settings-&gt;Preferences-&gt;Dark Mode and select enable dark mode.</p>
+<p>I would only install one of the two but you can always remove/change the 
+Ext. in User Defined Languages to disable them.</p>
 
               
             </article>
