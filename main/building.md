@@ -21,7 +21,7 @@ The recommended way to build MacroQuest is from a source code checkout using Git
 Clone (create a local copy) the repository. This will create the subfolder `macroquest` that containes a copy of the source code.
 
 ```
-git clone git@github.com:macroquest/macroquest.git
+git clone https://github.com/macroquest/macroquest.git
 ```
 
 Initialize the submodules. Move (cd) to the newly created `macroquest` folder before executing this command. If you have run this step before, you can skip it.
