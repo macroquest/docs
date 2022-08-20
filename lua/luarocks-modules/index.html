@@ -4232,6 +4232,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#script-writers-guide-to-using-packageman" class="md-nav__link">
+    Script Writer's Guide to using PackageMan
+  </a>
+  
+    <nav class="md-nav" aria-label="Script Writer's Guide to using PackageMan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packagemanrequire" class="md-nav__link">
+    PackageMan.Require
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packagemaninstallandload" class="md-nav__link">
+    PackageMan.InstallAndLoad
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packagemaninstall" class="md-nav__link">
+    PackageMan.Install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-configuration" class="md-nav__link">
+    Advanced Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#step-by-step-building-a-luarocks-module-for-mq" class="md-nav__link">
     Step-by-Step Building a LuaRocks Module for MQ
   </a>
@@ -8698,6 +8739,47 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
+  <a href="#script-writers-guide-to-using-packageman" class="md-nav__link">
+    Script Writer's Guide to using PackageMan
+  </a>
+  
+    <nav class="md-nav" aria-label="Script Writer's Guide to using PackageMan">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#packagemanrequire" class="md-nav__link">
+    PackageMan.Require
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packagemaninstallandload" class="md-nav__link">
+    PackageMan.InstallAndLoad
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#packagemaninstall" class="md-nav__link">
+    PackageMan.Install
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#advanced-configuration" class="md-nav__link">
+    Advanced Configuration
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#step-by-step-building-a-luarocks-module-for-mq" class="md-nav__link">
     Step-by-Step Building a LuaRocks Module for MQ
   </a>
@@ -8736,7 +8818,84 @@
 
 
 <h1 id="luarocks-modules">LuaRocks Modules<a class="headerlink" href="#luarocks-modules" title="Permanent link">&para;</a></h1>
+<p>MacroQuest includes helpers for lua script writers to allow their users to install modules from LuaRocks.  MacroQuest also includes luarocks.exe with the compile for facilitating this install.</p>
+<p>The repository of tested LuaRocks exists at https://luarocks.macroquest.org/ and these are all verified as working.  Packages can be added by submitting a pull request to the <a href="https://github.com/macroquest/luarocks/blob/main/mq_luarocks.yaml">MQ LuaRocks Repo config</a></p>
+<h2 id="script-writers-guide-to-using-packageman">Script Writer's Guide to using PackageMan<a class="headerlink" href="#script-writers-guide-to-using-packageman" title="Permanent link">&para;</a></h2>
+<p>PackageMan is the primary helper for installing LuaRocks modules.  The simplest method for package installation is PackageMan.Require.  However, there are also functions for InstallAndLoad and just Install.</p>
+<h3 id="packagemanrequire">PackageMan.Require<a class="headerlink" href="#packagemanrequire" title="Permanent link">&para;</a></h3>
+<p>The simplest method of installing a required package is PackageMan.Require.  This will check for the package, try to install it if it is not found, and try to load it after the install.  If it fails, Require returns a customizable message that tells the user what happened.  By default this message just states that there was a failure.</p>
+<p>An example of how to require lsqlite3 for your script is:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">PackageMan</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">sql</span> <span class="o">=</span> <span class="n">PackageMan</span><span class="p">.</span><span class="n">Require</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>This will contact the default MacroQuest rock server, install lsqlite3 and load it to be used under the sql variable.  If there is a failure, the simplest message ("Failed to load package lsqlite3") will be displayed to the user.</p>
+<p>Require also supports overloads for packages that do not have the same name as their luarocks name would suggest.  In this case, you can use two parameters for Require.  An example of this is lfs.  The name of the package is "luafilesystem" but when you load it, you load it with "lfs" so you can pass that information to Require as below:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">PackageMan</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">lfs</span> <span class="o">=</span> <span class="n">PackageMan</span><span class="p">.</span><span class="n">Require</span><span class="p">(</span><span class="s1">&#39;luafilesystem&#39;</span><span class="p">,</span> <span class="s1">&#39;lfs&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>This will perform the same steps as above, but once the package is installed it uses the lfs name instead of the luafilesystem name for loading.</p>
+<p>Lastly, you can use Require to send your own custom message if you do not like the default message.  This is the third overload for Require.  For example, in the case that you want to return the message "[ScriptNameHere] LFS failed to install and is required for this script" you can do so as:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">PackageMan</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">lfs</span> <span class="o">=</span> <span class="n">PackageMan</span><span class="p">.</span><span class="n">Require</span><span class="p">(</span><span class="s1">&#39;luafilesystem&#39;</span><span class="p">,</span> <span class="s1">&#39;lfs&#39;</span><span class="p">,</span> <span class="s1">&#39;[ScriptNameHere] LFS failed to install and is required for this sript&#39;</span><span class="p">)</span>
+</code></pre></div>
+<p>The default message should suffice for most usages.</p>
+<p>In all cases, when there is a failure to load the package using Require, your script will be exited.  If you'd like more control, you can use the other functions of PackageMan.</p>
+<h3 id="packagemaninstallandload">PackageMan.InstallAndLoad<a class="headerlink" href="#packagemaninstallandload" title="Permanent link">&para;</a></h3>
+<p>For most use cases, Require should be sufficient.  However, for more granular control over what happens when a package fails to load, you can start with InstallAndLoad.  This will attempt to install the package and load it.  It does not check to see if the package is installed first, as that is up to the script writer.  The mq/utils library has an example of an Include function which will try to load a library and gracefully fail.  An example of using this library to do your own error handling on a package install is below:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">PackageMan</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Utils</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/Utils&#39;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">sql</span> <span class="o">=</span> <span class="n">Utils</span><span class="p">.</span><span class="n">Library</span><span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+<span class="kr">if</span> <span class="ow">not</span> <span class="n">sql</span> <span class="kr">then</span>
+    <span class="n">sql</span> <span class="o">=</span> <span class="n">PackageMan</span><span class="p">.</span><span class="n">InstallAndLoad</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kr">if</span> <span class="ow">not</span> <span class="n">sql</span> <span class="kr">then</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Could not load or install lsqlite3&#39;</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div>
+<p>Because Utils.Library.Include is a graceful failure, the above code will try to load the library, install and try to load it if the initial load fails, and lastly print a message if it is still not loaded.  This is useful if your script does not have a strict dependency on the library and would only use the library if it was available.</p>
+<p>InstallAndLoad also can be overloaded with an additional parameter for packages where the name is different.  Referencing luafilesystem, the appropriate usage for InstallAndLoad would be:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">PackageMan</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Utils</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/Utils&#39;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">lfs</span> <span class="o">=</span> <span class="n">Utils</span><span class="p">.</span><span class="n">Library</span><span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="s1">&#39;lfs&#39;</span><span class="p">)</span>
+<span class="kr">if</span> <span class="ow">not</span> <span class="n">lfs</span> <span class="kr">then</span>
+    <span class="n">lfs</span> <span class="o">=</span> <span class="n">PackageMan</span><span class="p">.</span><span class="n">InstallAndLoad</span><span class="p">(</span><span class="s1">&#39;luafilesystem&#39;</span><span class="p">,</span> <span class="s1">&#39;lfs&#39;</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="kr">if</span> <span class="ow">not</span> <span class="n">lfs</span> <span class="kr">then</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Could not load or install luafilesystem/lfs&#39;</span><span class="p">)</span>
+<span class="kr">end</span>
+</code></pre></div>
+<p>Unlike Require, InstallAndLoad does not have a third overload for a message, since you are expected to handle your own failure messages.</p>
+<h3 id="packagemaninstall">PackageMan.Install<a class="headerlink" href="#packagemaninstall" title="Permanent link">&para;</a></h3>
+<p>If Require or InstallAndLoad does not meet your needs, then Install provides the most granular control over installing a package.  Again, for most people Require should be sufficient.  However, Install will allow you to determine the REASON for failures, which none of the other methods do.</p>
+<p>Install is also only responsible for installing your package, it will not try to load your package at all and it does not check if the package is already installed.  The return on Install is a numerical error code, the most up to date details for which can be found in the source for PackageMan.lua.  The most relevant return code that a script writer would probably be handling is error code 2 -- the user declined the installation of the package.</p>
+<p>One example of usage is below:</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">PackageMan</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">Utils</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/Utils&#39;</span><span class="p">)</span>
+
+<span class="kd">local</span> <span class="n">sql</span> <span class="o">=</span> <span class="n">Utils</span><span class="p">.</span><span class="n">Library</span><span class="p">.</span><span class="n">Include</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+<span class="kr">if</span> <span class="ow">not</span> <span class="n">sql</span> <span class="kr">then</span>
+    <span class="kr">if</span> <span class="n">PackageMan</span><span class="p">.</span><span class="n">Install</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span> <span class="o">==</span> <span class="mi">2</span> <span class="kr">then</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;User canceled the install, cannot proceed&#39;</span><span class="p">)</span>
+        <span class="n">mq</span><span class="p">.</span><span class="n">exit</span><span class="p">()</span>
+    <span class="kr">else</span>
+        <span class="n">sql</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+</code></pre></div>
+<h3 id="advanced-configuration">Advanced Configuration<a class="headerlink" href="#advanced-configuration" title="Permanent link">&para;</a></h3>
+<p>PackageMan includes parameters repoUrl and repoName for pointing users at your own repo should you want to beta test with users.  However, use this at your own risk as there is no setup of maintaining multiple versions of packages from different repos.</p>
 <h2 id="step-by-step-building-a-luarocks-module-for-mq">Step-by-Step Building a LuaRocks Module for MQ<a class="headerlink" href="#step-by-step-building-a-luarocks-module-for-mq" title="Permanent link">&para;</a></h2>
+<p>While the easiest method is to allow MQ's team to build the module you're looking for, if you're trying to build something locally for testing, one set of instructions are below.</p>
 <p>This is one method of compiling using <a href="https://luarocks.org/">LuaRocks</a> with the <a href="http://lua.sqlite.org/index.cgi/index">Lua SQLite3</a> library. These instructions are available in generic form <a href="https://github.com/luarocks/luarocks/wiki/Installation-instructions-for-Windows">in the official installation instructions</a>; but this covers the specific details needed for MQ.</p>
 <ol>
 <li>
