@@ -144,10 +144,10 @@ Additional settings from the global section, such as `KickActiveCharacter=1` can
 To add a new server with a custom short name, which is particularly important for emulators, edit your MQ2AutoLogin.ini with the following format: 
 ```ini
 [Servers]
-customshortname=Exact long name (as it appears on login screen)
+shortname=Exact long name (as it appears on login screen)
 ```
 
-Make sure `customshortname` matches servers internal shortname exactly.
+Make sure `shortname` matches servers internal shortname exactly.  You can get this information from logging into the server and running `/echo ${EverQuest.Server}`
 
 For example, here are the most popular macroquest-compatible emu servers as of 8/5/2022: 
 ```ini
