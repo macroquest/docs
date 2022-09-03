@@ -151,7 +151,8 @@ Make sure `customshortname` matches servers internal shortname exactly.
 
 For example, here are the most popular macroquest-compatible emu servers as of 8/5/2022: 
 ```ini
-[Servers: Host=login.eqemulator.net]
+; Host=login.eqemulator.net
+[Servers]
 EZ (Linux) x4 Exp=[] EZ Server - Custom Zones, Vendors, Quests, Items, etc
 Imperium_EQ=[] Imperium Server - Solo Level/Duo+ Raid
 PEQTGC=[] PEQ] The Grand Creation - Omens of War
@@ -169,6 +170,12 @@ The Dark Exile=[] The Dark Exile
 Showdowrest=[[R] ] Shadowrest
 Alternate Everquest=[[R] ]Alternate
 EQ Might=[[R] ] EQ Might
+```
+
+```ini
+; Host=login.projecteq.net
+[Servers]
+Project Lazarus=Project Lazarus
 ```
 
 ## MQ2Login Profiles GUI
