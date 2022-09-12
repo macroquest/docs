@@ -2,8 +2,6 @@
 
 A quick list of plugins that have been migrated and how to add them.  Once they're all added, you can quickly update your plugins with:  `git pull --recurse-submodules`.  The solution file with all of these in it is here: [MacroQuestCustom.sln](../uploads/MacroQuestCustom.sln) (place this file in the src folder beside MacroQuest.sln)
 
-When using this solution file, make sure your build configuration is set to x64.
-
 ```bash
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2AASpend.git plugins/MQ2AASpend
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2AdvPath.git plugins/MQ2AdvPath
@@ -73,6 +71,7 @@ git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Spawns.gi
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2SpawnSort.git plugins/MQ2SpawnSort
 git submodule add -b master -f https://gitlab.com/Knightly1/MQ2SQLite.git plugins/MQ2SQLite
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Status.git plugins/MQ2Status
+git submodule add -b master -f https://github.com/MMOBugs/MQ2Targets.git plugins/MQ2Targets
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2ToolTip.git plugins/MQ2ToolTip
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2TributeManager.git plugins/MQ2TributeManager
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2TSTrophy.git plugins/MQ2TSTrophy
@@ -81,4 +80,6 @@ git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Vendors.g
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2WorstHurt.git plugins/MQ2WorstHurt
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2XAssist.git plugins/MQ2XAssist
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2XPTracker.git plugins/MQ2XPTracker
+# Emu only
+git submodule add -b main -f https://github.com/Knightly1/MQMountClassicModels.git plugins/MQMountClassicModels
 ```

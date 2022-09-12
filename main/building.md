@@ -5,6 +5,8 @@
 Links and instructions can be found at:
 [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
 
+Be sure to install `MSVC v142 - VS2019 c++ x86/x64 build tools` as part of the installation.
+
 ## How to Build
 
 ### Download & Install Git for Windows
@@ -19,7 +21,7 @@ The recommended way to build MacroQuest is from a source code checkout using Git
 Clone (create a local copy) the repository. This will create the subfolder `macroquest` that containes a copy of the source code.
 
 ```
-git clone git@github.com:macroquest/macroquest.git
+git clone https://github.com/macroquest/macroquest.git
 ```
 
 Initialize the submodules. Move (cd) to the newly created `macroquest` folder before executing this command. If you have run this step before, you can skip it.
@@ -55,14 +57,31 @@ git submodule update
 
 At this point, the source should be ready to compile. Proceed to Build Steps.
 
-### Build Steps
+### Build Steps (Live/Test)
 
-1. Open the `MacroQuest.sln` file in the `src` directory. Double clicking this file should open Visual Studio.
-2. Select the `Release` and `(x64)`configuration from the drop-down menu near the top of the window.
-3. Since the project moved to 64-bit, ensure all project configurations are set to `(x64)` in the **Solution Macroquest** Property Pages. From the Visual Studio main menu, select **Build** then **Configuration Manager** then ensure the Platform column for each project is set to `(x64)`.
+1. Open the `MacroQuest.sln` file in the `src` directory. Double clicking this file should open Visual Studio.  If prompted to upgrade, click Cancel.
+2. Make sure your eqlib branch is on `live` or `test`
+3. Select the `Release` and `(x64)`configuration from the drop-down menu near the top of the window.
+4. Since the project moved to 64-bit, ensure all project configurations are set to `(x64)` in the **Solution Macroquest** Property Pages. From the Visual Studio main menu, select **Build** then **Configuration Manager** then ensure the Platform column for each project is set to `(x64)`.
+5. Select `Build -> Build Solution` from the menu.
+
+The built files will be placed in `build/bin/Release`. To start MacroQuest, run `MacroQuest.exe`. This will launch the application to the tray, and install MacroQuest into any running EverQuest processes.
+
+### Build Steps (Emu)
+
+1. Open the `MacroQuest.sln` file in the `src` directory. Double clicking this file should open Visual Studio.  If prompted to upgrade, click Cancel.
+2. Make sure your eqlib branch is on `emu`
+3. Select the `Release` and `Win32`configuration from the drop-down menu near the top of the window.
 4. Select `Build -> Build Solution` from the menu.
 
 The built files will be placed in `build/bin/Release`. To start MacroQuest, run `MacroQuest.exe`. This will launch the application to the tray, and install MacroQuest into any running EverQuest processes.
+
+### Building Live/Test/Emu from the same folder
+
+By default MacroQuest does not separate build outputs.  Regardless whether you are building for Live or Test or Emu, all release outputs go to `build/bin/release`.  However, macroquest does
+provide an option to separate these out further by setting the environment variable MQ_BUILD_SEPARATE to 1.  When this environment variable is set to 1, the Client Target is added to your build
+path.  For example, when building for Live your output path would be `build/Live/bin/release` while when building for Emu your output path would be `build/Emu/bin/release`.  This allows you to
+share the same macroquest directory and just swap eqlib when you want to change client builds.
 
 ### Adding Your Own Plugins
 

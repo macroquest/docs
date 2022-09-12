@@ -5,6 +5,9 @@ Lua is in general a robust language with a multitude of tutorials and resources 
 - [Main Lua Page](https://www.lua.org/home.html) with getting started and documentation
 - [Programming in Lua](https://www.lua.org/pil/contents.html)
 - [Tutorials Point](https://www.tutorialspoint.com/lua/index.htm)
+- Coldblooded's Lua autocompletion. Requires [this](https://github.com/sumneko/lua-language-server) VSCode extension.
+    - [MQ definitions](https://github.com/johnfking/mq-definitions)
+    - [IMGUI definitions](https://github.com/johnfking/mq-imgui-definitions)
 
 I won't cover language conventions or features, just mention that mq2lua is built on **LuaJIT 2.0.5** if you need to know the specific flavor.
 
