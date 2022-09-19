@@ -24,8 +24,8 @@ Data about a particular character class
 | [_string_](datatype-string.md) | **ShortName** | The short name (three letter code) of the class. Ex: `RNG` for Ranger |
 | [_string_](datatype-string.md) | **To String** | Same as **Name** |
 
-### ShortName list:
-| **Class** | **ShortName** |
+### Name -> ShortName list:
+| **Name** | **ShortName** |
 | :--- | :--- |
 | Bard | BRD |
 | Beastlord | BST |
@@ -33,12 +33,12 @@ Data about a particular character class
 | Cleric | CLR |
 | Druid | DRU |
 | Enchanter | ENC |
-| Mage | MAG |
+| Magician | MAG |
 | Monk | MNK |
 | Necromancer | NEC |
 | Paladin | PAL |
 | Ranger | RNG |
-| Shadowknight | SHD |
+| Shadow Knight | SHD |
 | Shaman | SHM |
 | Warrior | WAR |
 | Wizard | WIZ |
