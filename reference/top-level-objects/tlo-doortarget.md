@@ -8,7 +8,7 @@ Object used to return information on your doortarget.
 
 ## Forms
 
-* [_spawn_](../data-types/datatype-spawn.md) **DoorTarget**
+* [_switch_](../data-types/datatype-switch.md) **DoorTarget**
 
 ## Examples
 
