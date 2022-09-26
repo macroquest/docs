@@ -25,6 +25,7 @@ A string is an array of characters. In MQ2 there is no single character datatype
 | [_bool_](datatype-bool.md) | **NotEqualCS**[_text_] | The same as **NotEqual**, except that it is case-sensitive. |
 | [_string_](datatype-string.md) | **Replace**[_ReplaceThis_,_WithThis_] | Replaces _ReplaceThis_ with _WithThis_. |
 | [_string_](datatype-string.md) | **Right**[_#_] | Returns the last _#_ characters of the string. A negative _#_ will return the whole string except for the first _#_ characters |
+| [_string_](datatype-string.md) | **StripLinks** | Returns the plain text version of a string, stripping out the links |
 | [_string_](datatype-string.md) | **Token**[_#_,_s_] | Returns the #th token of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1]. |
 | [_string_](datatype-string.md) | **Upper** | Returns the string in all upper-case |
 | [_string_](datatype-string.md) | **(To String)** | Returns the string |
