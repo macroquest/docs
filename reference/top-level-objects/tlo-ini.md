@@ -18,6 +18,10 @@ Reads value(s) from an ini file located in a relative or absolute path.
     a DOS-style filepath (relative or absolute) to locate the ini. If the macro accessing the ini
     is in the same non-root directory, you will still to provide the (relative or absolute) filepath.
 
+[_ini_](../data-types/datatype-ini.md) **Ini**
+
+:   When passed with no parameters to Ini[] the more robust form of the Ini TLO is used.  See below and the reference
+    to the [Key](../data-types/datatype-inifilesectionkey.md) datatype for further usage.
 
 ## Examples
 
@@ -66,7 +70,7 @@ SectionOne|SectionTwo||
 # `Ini` (Robust Usage)
 
 The above form of Ini usage is usable or most tasks, but a more robust usage exists.  In the more robust form `${Ini}` returns 
-an IniType instead of a string.  This allows for dealing with duplicate keys as well as looping through a section by index.
+an [IniType](../data-types/datatype-ini.md) instead of a string.  This allows for dealing with duplicate keys as well as looping through a section by index.
 
 ## Examples
 
