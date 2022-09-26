@@ -2,7 +2,7 @@
 tags:
     - datatype
 ---
-# `inifilesection`
+# `inifilesectionkey`
 
 This is the type for the referenced key in a specific section of an ini file.  The Index passed to Key[] is optional.  Passing an Index means it will search for matches to that Index.  Not passing an Index references all keys for operations that allow it.
 
