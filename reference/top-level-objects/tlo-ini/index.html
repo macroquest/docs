@@ -8766,6 +8766,11 @@
 a DOS-style filepath (relative or absolute) to locate the ini. If the macro accessing the ini
 is in the same non-root directory, you will still to provide the (relative or absolute) filepath.</p>
 </dd>
+<dt><a href="../../data-types/datatype-ini/"><em>ini</em></a> <strong>Ini</strong></dt>
+<dd>
+<p>When passed with no parameters to Ini[] the more robust form of the Ini TLO is used.  See below and the reference
+to the <a href="../../data-types/datatype-inifilesectionkey/">Key</a> datatype for further usage.</p>
+</dd>
 </dl>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>If sample.ini contains:</p>
@@ -8793,7 +8798,7 @@ is in the same non-root directory, you will still to provide the (relative or ab
 <p>SectionOne|SectionTwo||</p>
 <h1 id="ini-robust-usage"><code>Ini</code> (Robust Usage)<a class="headerlink" href="#ini-robust-usage" title="Permanent link">&para;</a></h1>
 <p>The above form of Ini usage is usable or most tasks, but a more robust usage exists.  In the more robust form <code>${Ini}</code> returns 
-an IniType instead of a string.  This allows for dealing with duplicate keys as well as looping through a section by index.</p>
+an <a href="../../data-types/datatype-ini/">IniType</a> instead of a string.  This allows for dealing with duplicate keys as well as looping through a section by index.</p>
 <h2 id="examples_1">Examples<a class="headerlink" href="#examples_1" title="Permanent link">&para;</a></h2>
 <p>If sample.ini contains:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[SectionOne]</span><span class="w"></span>
