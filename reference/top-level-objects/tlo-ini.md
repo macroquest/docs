@@ -23,31 +23,31 @@ Reads value(s) from an ini file located in a relative or absolute path.
 
 If sample.ini contains:
 
-```
-[KeyOne]
-value1=foo
-value2=bar
-[KeyTwo]
-Value3=foobar
+```ini
+[SectionOne]
+key1=foo
+key2=bar
+[SectionTwo]
+key3=foobar
 ```
 
 ```
-/echo ${Ini[sample.ini,KeyOne,value1]}
+/echo ${Ini[sample.ini,SectionOne,key1]}
 ```
 
 foo
 
 ```
-/echo ${Ini[sample.ini,KeyOne]}
+/echo ${Ini[sample.ini,SectionOne]}
 ```
 
-value1|value2||
+key1|key2||
 
 ```
 /echo ${Ini[..\sample.ini]}
 ```
 
-KeyOne|KeyTwo||
+SectionOne|SectionTwo||
 
 If sample.ini is in \Macros\iniTest folder:
 
@@ -61,4 +61,37 @@ NULL
 /echo ${Ini[iniTest\sample.ini]}
 ```
 
-KeyOne|KeyTwo||
+SectionOne|SectionTwo||
+
+# `Ini` (Robust Usage)
+
+The above form of Ini usage is usable or most tasks, but a more robust usage exists.  In the more robust form `${Ini}` returns 
+an IniType instead of a string.  This allows for dealing with duplicate keys as well as looping through a section by index.
+
+## Examples
+
+If sample.ini contains:
+
+```ini
+[SectionOne]
+key1=foo
+key=bar
+key=foobar
+```
+
+```
+> /echo ${Ini.File[sample].Section.Count}
+1
+> /echo ${Ini.File[sample].Section[SectionOne].Key.Count}
+3
+> /echo ${Ini.File[sample].Section[SectionOne].Key[key].Count}
+2
+> /echo ${Ini.File[sample].Section[SectionOne].Key[key1].Value}
+foo
+> /echo ${Ini.File[sample].Section[SectionOne].Key[key].ValueAtIndex[2]}
+foobar
+> /echo ${Ini.File[sample].Section[SectionOne].Key.ValueAtIndex[2]}
+bar
+```
+
+
