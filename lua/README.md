@@ -102,8 +102,12 @@ The first thing to do when writing a lua script for MQ2 is to `require('mq')`. T
 `mq.unevent('name')`
 :   unregisters the event 'name' so that it won't react to the text anymore
 
-`mq.doevents()`
-:   will process queued events (binds don't queue, they execute automatically, this is only for events)
+`mq.doevents(optional 'event')`
+:   will process queued events (binds don't queue, they execute automatically, this is only for events).  No arguments will process all events in the queue, and optionally you can pass in a single event that you wish to process and all other events will remain queued(but not flushed).
+
+`mq.flushevents(optional 'event')`
+:   clears all events in the queue without processing them.  No arguments will flush all events in the queue, and optionally you can pass in a single event that you wish to flush.
+
 
 `mq.parse(string)`
 :   runs the string through the macro parser and returns the result as a string (regardles of the data type returned).  This is not a replacement for mq.TLO or mq.TLO.MacroVariable and is only for complex operations where neither of those will work (generally converting from old ini/macro formats)
