@@ -14,8 +14,7 @@ Before getting started, its recommended to have [VS Code](https://code.visualstu
 
 ## Resources
 - [Programming in Lua](https://www.lua.org/pil/)
-- [Coldblooded's Lua autocompletion](https://gitlab.com/Coldblooded/mq-emmylua-definitions)
-  - [Installation Instructions](https://www.redguides.com/community/resources/mq-vs-code-lua-autocomplete-definition-library.2583/)
+- [MQ Autocompletion](https://github.com/johnfking/mq-definitions)
 
 ## Getting Started
 To get started, this guide will cover the basics of a Lua script, without getting into any of the MQ integrations.
