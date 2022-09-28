@@ -85,7 +85,7 @@ The first thing to do when writing a lua script for MQ2 is to `require('mq')`. T
 :   as noted before
 
 `mq.delay(val, --[[optional]]callback)`
-:   where val can be an integer (which denotes milliseconds of delay) or a string that ends in 's' 'm' or 'ms' to have delays with human readable durations. The callback is optinal and is a function call condition that returns a bool that can end the delay early.
+:   where val can be an integer (which denotes milliseconds of delay) or a string that ends in 's' 'm' or 'ms' to have delays with human readable durations. The callback is optinal and is a function which evaluates to true or false to decide whether to end the delay early.
 
 `mq.join(args...)`
 :   where args must be convertible to string inside lua. This will join all the arguments into a single string
