@@ -23,3 +23,23 @@ Data about a particular character class
 | [_bool_](datatype-bool.md) | **ShamanType** | True if class is Shaman or Beastlord |
 | [_string_](datatype-string.md) | **ShortName** | The short name (three letter code) of the class. Ex: `RNG` for Ranger |
 | [_string_](datatype-string.md) | **To String** | Same as **Name** |
+
+### Name -> ShortName list:
+| **Name** | **ShortName** |
+| :--- | :--- |
+| Bard | BRD |
+| Beastlord | BST |
+| Berserker | BER |
+| Cleric | CLR |
+| Druid | DRU |
+| Enchanter | ENC |
+| Magician | MAG |
+| Monk | MNK |
+| Necromancer | NEC |
+| Paladin | PAL |
+| Ranger | RNG |
+| Shadow Knight | SHD |
+| Shaman | SHM |
+| Warrior | WAR |
+| Wizard | WIZ |
+| Mercenary | MER |
