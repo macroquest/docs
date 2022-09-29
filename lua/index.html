@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://docs.macroquest.org/lua/">
       
       <link rel="icon" href="../images/logo.png">
-      <meta name="generator" content="mkdocs-1.3.1, mkdocs-material-8.5.3">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.3">
     
     
       
@@ -8954,8 +8954,10 @@ info -- info for a process
 <dd>where the callback is a lua function to execute when the text matching the matcher is detected</dd>
 <dt><code>mq.unevent('name')</code></dt>
 <dd>unregisters the event 'name' so that it won't react to the text anymore</dd>
-<dt><code>mq.doevents()</code></dt>
-<dd>will process queued events (binds don't queue, they execute automatically, this is only for events)</dd>
+<dt><code>mq.doevents(optional 'event')</code></dt>
+<dd>will process queued events (binds don't queue, they execute automatically, this is only for events).  No arguments will process all events in the queue, and optionally you can pass in a single event that you wish to process and all other events will remain queued(but not flushed).</dd>
+<dt><code>mq.flushevents(optional 'event')</code></dt>
+<dd>clears all events in the queue without processing them.  No arguments will flush all events in the queue, and optionally you can pass in a single event that you wish to flush.</dd>
 <dt><code>mq.parse(string)</code></dt>
 <dd>runs the string through the macro parser and returns the result as a string (regardles of the data type returned).  This is not a replacement for mq.TLO or mq.TLO.MacroVariable and is only for complex operations where neither of those will work (generally converting from old ini/macro formats)</dd>
 <dt><code>mq.TLO</code></dt>
