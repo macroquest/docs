@@ -13,7 +13,7 @@
         <link rel="canonical" href="https://docs.macroquest.org/lua/">
       
       <link rel="icon" href="../images/logo.png">
-      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.3">
+      <meta name="generator" content="mkdocs-1.4.0, mkdocs-material-8.5.6">
     
     
       
@@ -21,7 +21,7 @@
       
     
     
-      <link rel="stylesheet" href="../assets/stylesheets/main.7a952b86.min.css">
+      <link rel="stylesheet" href="../assets/stylesheets/main.20d9efc8.min.css">
       
         
         <link rel="stylesheet" href="../assets/stylesheets/palette.cbb835fc.min.css">
@@ -8854,6 +8854,11 @@
 <li><a href="https://www.lua.org/home.html">Main Lua Page</a> with getting started and documentation</li>
 <li><a href="https://www.lua.org/pil/contents.html">Programming in Lua</a></li>
 <li><a href="https://www.tutorialspoint.com/lua/index.htm">Tutorials Point</a></li>
+<li>Coldblooded's Lua autocompletion. Requires <a href="https://github.com/sumneko/lua-language-server">this</a> VSCode extension.<ul>
+<li><a href="https://github.com/johnfking/mq-definitions">MQ definitions</a></li>
+<li><a href="https://github.com/johnfking/mq-imgui-definitions">IMGUI definitions</a></li>
+</ul>
+</li>
 </ul>
 <p>I won't cover language conventions or features, just mention that mq2lua is built on <strong>LuaJIT 2.0.5</strong> if you need to know the specific flavor.</p>
 <h3 id="command-reference">Command Reference<a class="headerlink" href="#command-reference" title="Permanent link">&para;</a></h3>
@@ -8940,8 +8945,8 @@ info -- info for a process
 <dl>
 <dt><code>print('string')</code></dt>
 <dd>as noted before</dd>
-<dt><code>mq.delay(val, callback)</code></dt>
-<dd>where val can be an integer (which denotes milliseconds of delay) or a string that ends in 's' 'm' or 'ms' to have delays with human readable durations and callback is an optional lua function which evaluates to true or false to decide whether to end the delay early</dd>
+<dt><code>mq.delay(val, --[[optional]]callback)</code></dt>
+<dd>where val can be an integer (which denotes milliseconds of delay) or a string that ends in 's' 'm' or 'ms' to have delays with human readable durations. The callback is optinal and is a function which evaluates to true or false to decide whether to end the delay early.</dd>
 <dt><code>mq.join(args...)</code></dt>
 <dd>where args must be convertible to string inside lua. This will join all the arguments into a single string</dd>
 <dt><code>mq.exit()</code></dt>
@@ -9164,7 +9169,7 @@ info -- info for a process
     <script id="__config" type="application/json">{"base": "..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../assets/javascripts/workers/search.5bf1dace.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
     
     
-      <script src="../assets/javascripts/bundle.37e9125f.min.js"></script>
+      <script src="../assets/javascripts/bundle.078830c0.min.js"></script>
       
     
   </body>
