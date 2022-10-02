@@ -5,6 +5,9 @@ Lua is in general a robust language with a multitude of tutorials and resources 
 - [Main Lua Page](https://www.lua.org/home.html) with getting started and documentation
 - [Programming in Lua](https://www.lua.org/pil/contents.html)
 - [Tutorials Point](https://www.tutorialspoint.com/lua/index.htm)
+- Coldblooded's Lua autocompletion. Requires [this](https://github.com/sumneko/lua-language-server) VSCode extension.
+    - [MQ definitions](https://github.com/johnfking/mq-definitions)
+    - [IMGUI definitions](https://github.com/johnfking/mq-imgui-definitions)
 
 I won't cover language conventions or features, just mention that mq2lua is built on **LuaJIT 2.0.5** if you need to know the specific flavor.
 
@@ -81,8 +84,8 @@ The first thing to do when writing a lua script for MQ2 is to `require('mq')`. T
 `print('string')`
 :   as noted before
 
-`mq.delay(val, callback)`
-:   where val can be an integer (which denotes milliseconds of delay) or a string that ends in 's' 'm' or 'ms' to have delays with human readable durations and callback is an optional lua function which evaluates to true or false to decide whether to end the delay early
+`mq.delay(val, --[[optional]]callback)`
+:   where val can be an integer (which denotes milliseconds of delay) or a string that ends in 's' 'm' or 'ms' to have delays with human readable durations. The callback is optinal and is a function which evaluates to true or false to decide whether to end the delay early.
 
 `mq.join(args...)`
 :   where args must be convertible to string inside lua. This will join all the arguments into a single string
