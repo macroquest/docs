@@ -27,7 +27,7 @@ This is the type for the ini file that was referenced from `${Ini}`
 
     === "Lua"
 
-        Remove the buff named "Crerdence"
+        Does the file "sample.ini" exist?
 
         ```lua
         mq.TLO.Ini.File("sample").Exists()
