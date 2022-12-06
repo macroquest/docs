@@ -456,6 +456,7 @@ nav:
     - Target: reference/top-level-objects/tlo-target.md
     - Task: reference/top-level-objects/tlo-task.md
     - Time: reference/top-level-objects/tlo-time.md
+    - TradeskillDepot: reference/top-level-objects/tlo-tradeskilldepot.md
     - Type: reference/top-level-objects/tlo-type.md
     - Window: reference/top-level-objects/tlo-window.md
     - Zone: reference/top-level-objects/tlo-zone.md
@@ -529,6 +530,7 @@ nav:
     - time: reference/data-types/datatype-time.md
     - timer: reference/data-types/datatype-timer.md
     - timestamp: reference/data-types/datatype-timestamp.md
+    - tradeskilldepot: reference/data-types/datatype-tradeskilldepot.md
     - type: reference/data-types/datatype-type.md
     - window: reference/data-types/datatype-window.md
     - worldlocation: reference/data-types/datatype-worldlocation.md
