@@ -1,6 +1,6 @@
 # MQ2DataVars
 
-**MQ2Data was designed so that accessing information could be done utilizing a uniform system. User variables are treated as MQ2Data** [**Top-Level Objects**](../reference/top-level-objects/)**.**
+**MQ2Data was designed so that accessing information could be done utilizing a uniform system. User variables are treated as MQ2Data** [**Top-Level Objects**](../reference/top-level-objects/README.md)**.**
 
 ## Variable Basics
 
@@ -24,7 +24,7 @@ Variables of local scope only exist while within a macro function or "Sub"
 
 ### Types
 
-Variables can be declared as any of the types in [Data Types](../reference/data-types/). The default type is string.
+Variables can be declared as any of the types in [Data Types](../reference/data-types/README.md). The default type is string.
 
 ### Names
 
