@@ -13,8 +13,8 @@ This is the type for the referenced key in a specific section of an ini file.  T
 | [_int_](datatype-int.md) | **Count** | How many keys matching the Key[] index exist. |
 | [_bool_](datatype-bool.md) | **Exists** | Whether a specific key exists. |
 | [_string_](datatype-string.md) | **Value** | The value for a specific key.  Accepts an Index to allow for returning a value if the key does not exist |
-| [_string_](datatype-string.md) | **KeyAtIndex** | The name of the key at KeyAtIndex[Index] |
-| [_string_](datatype-string.md) | **ValueAtIndex** | The value at ValueAtIndex[Index] |
+| [_string_](datatype-string.md) | **KeyAtIndex** | The name of the key at the specified index |
+| [_string_](datatype-string.md) | **ValueAtIndex** | The value of the entry at the specified index |
 
 ## Examples
 
