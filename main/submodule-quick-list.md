@@ -25,6 +25,7 @@ git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Cursor.gi
 git submodule add -b master -f https://github.com/dannuic/MQ2Dan.git plugins/MQ2Dan
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Debuffs.git plugins/MQ2Debuffs
 git submodule add -b master -f https://gitlab.com/alynel/MQ2Discord.git plugins/MQ2Discord
+git submodule add -b master -f https://github.com/projecteon/MQ2DotNet.git plugins/MQ2DotNet
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2DPSAdv.git plugins/MQ2DPSAdv
 git submodule add -b master -f https://github.com/brainiac/MQ2EasyFind.git plugins/MQ2EasyFind
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2EQBC.git plugins/MQ2EQBC
