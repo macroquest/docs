@@ -12,8 +12,14 @@
       
         <link rel="canonical" href="https://docs.macroquest.org/plugins/core-plugins/mq2autologin/">
       
+      
+        <link rel="prev" href="../">
+      
+      
+        <link rel="next" href="../mq2bzsrch/">
+      
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-8.5.10">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.2">
     
     
       
@@ -21,11 +27,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.975780f9.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.f56500e0.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.2505c338.min.css">
-        
       
       
 
@@ -114,8 +119,6 @@
       <form class="md-header__option" data-md-component="palette">
         
           
-          
-          
           <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="indigo" data-md-color-accent="indigo"  aria-label="Switch to light mode"  type="radio" name="__palette" id="__palette_1">
           
             <label class="md-header__button md-icon" title="Switch to light mode" for="__palette_2" hidden>
@@ -123,8 +126,6 @@
             </label>
           
         
-          
-          
           
           <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="" data-md-color-accent=""  aria-label="Switch to dark mode"  type="radio" name="__palette" id="__palette_2">
           
@@ -8930,10 +8931,9 @@
 
 
 
-  <a href="https://github.com/macroquest/docs/edit/master/plugins/core-plugins/mq2autologin.md" title="Edit this page" class="md-content__button md-icon">
-    
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20.71 7.04c.39-.39.39-1.04 0-1.41l-2.34-2.34c-.37-.39-1.02-.39-1.41 0l-1.84 1.83 3.75 3.75M3 17.25V21h3.75L17.81 9.93l-3.75-3.75L3 17.25Z"/></svg>
-  </a>
+  
+  
+
 
 
 <h1 id="mq2autologin">MQ2AutoLogin<a class="headerlink" href="#mq2autologin" title="Permanent link">&para;</a></h1>
@@ -8968,58 +8968,58 @@
 <p>Pressing the "END" key at the character select screen will pause autologin, "HOME" will unpause.</p>
 <h2 id="ini">INI<a class="headerlink" href="#ini" title="Permanent link">&para;</a></h2>
 <p>MQ2AutoLogin.ini has the following global settings,
-<div class="highlight"><pre><span></span><code><span class="k">[Settings]</span><span class="w"></span>
-<span class="c1">;The following settings are global. Settings changed for specific characters will override them.</span><span class="w"></span>
-<span class="na">NotifyOnServerUp</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
-<span class="c1">;0 is off, 1 is beep, 2 is email via MQ2Gmail</span><span class="w"></span>
-<span class="na">KickActiveCharacter</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
-<span class="c1">;0 is off, 1 is on. Will attempt to boot an active player to log in.</span><span class="w"></span>
-<span class="na">EndAfterCharSelect</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
-<span class="c1">;0 is off, 1 is on.</span><span class="w"></span>
-<span class="na">CharSelectDelay</span><span class="o">=</span><span class="s">3</span><span class="w"></span>
-<span class="c1">;seconds to wait at the character select screen. Default is 3</span><span class="w"></span>
-<span class="na">ConnectRetries</span><span class="o">=</span><span class="s">0</span><span class="w"></span>
-<span class="c1">;How many attempts to connect after a failure</span><span class="w"></span>
-<span class="na">UseMQ2Login</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
-<span class="c1">;Uses the default, encrypted method of autologin</span><span class="w"></span>
-<span class="na">UseStationNamesInsteadOfSessions</span><span class="o">=</span><span class="s">0</span><span class="w"></span>
-<span class="c1">;Stores your login and pass in plaintext in MQ2AutoLogin.ini, but is compatible with ISBoxer/WinEQ.</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">[Settings]</span>
+<span class="c1">;The following settings are global. Settings changed for specific characters will override them.</span>
+<span class="na">NotifyOnServerUp</span><span class="o">=</span><span class="s">1</span>
+<span class="c1">;0 is off, 1 is beep, 2 is email via MQ2Gmail</span>
+<span class="na">KickActiveCharacter</span><span class="o">=</span><span class="s">1</span>
+<span class="c1">;0 is off, 1 is on. Will attempt to boot an active player to log in.</span>
+<span class="na">EndAfterCharSelect</span><span class="o">=</span><span class="s">1</span>
+<span class="c1">;0 is off, 1 is on.</span>
+<span class="na">CharSelectDelay</span><span class="o">=</span><span class="s">3</span>
+<span class="c1">;seconds to wait at the character select screen. Default is 3</span>
+<span class="na">ConnectRetries</span><span class="o">=</span><span class="s">0</span>
+<span class="c1">;How many attempts to connect after a failure</span>
+<span class="na">UseMQ2Login</span><span class="o">=</span><span class="s">1</span>
+<span class="c1">;Uses the default, encrypted method of autologin</span>
+<span class="na">UseStationNamesInsteadOfSessions</span><span class="o">=</span><span class="s">0</span>
+<span class="c1">;Stores your login and pass in plaintext in MQ2AutoLogin.ini, but is compatible with ISBoxer/WinEQ.</span>
 </code></pre></div>
 If you're using <code>UseMQ2Login=1</code> and have created profiles via the tray icon, there will be additional sections such as <code>[Profiles]</code> and profile names. These should be left alone, as their settings are best changed via the GUI.</p>
 <h2 id="alternate-login-methods">Alternate login methods<a class="headerlink" href="#alternate-login-methods" title="Permanent link">&para;</a></h2>
 <p>There are two alternate login methods: Sessions (compatible with the EverQuest launcher and "-patchme" login method) and Station Names (best for WinEQ and ISBoxer) </p>
 <p>If you'd like to use sessions, set <code>UseMQ2Login=0</code>, and add sessions to the MQ2AutoLogin.ini in this format, </p>
 <p><strong>Sessions example INI</strong>
-<div class="highlight"><pre><span></span><code><span class="k">[Settings]</span><span class="w"></span>
-<span class="na">UseMQ2Login</span><span class="o">=</span><span class="s">0</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">[Settings]</span>
+<span class="na">UseMQ2Login</span><span class="o">=</span><span class="s">0</span>
 
-<span class="k">[Session1]</span><span class="w"></span>
-<span class="na">StationName</span><span class="o">=</span><span class="s">StationNameforSession</span><span class="w"></span>
-<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforSession</span><span class="w"></span>
-<span class="na">Server</span><span class="o">=</span><span class="s">ServerforSession</span><span class="w"></span>
-<span class="na">Character</span><span class="o">=</span><span class="s">Name</span><span class="w"></span>
+<span class="k">[Session1]</span>
+<span class="na">StationName</span><span class="o">=</span><span class="s">StationNameforSession</span>
+<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforSession</span>
+<span class="na">Server</span><span class="o">=</span><span class="s">ServerforSession</span>
+<span class="na">Character</span><span class="o">=</span><span class="s">Name</span>
 
-<span class="k">[Session2]</span><span class="w"></span>
-<span class="na">StationName</span><span class="o">=</span><span class="s">StationNameforSession</span><span class="w"></span>
-<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforSession</span><span class="w"></span>
-<span class="na">Server</span><span class="o">=</span><span class="s">ServerforSession</span><span class="w"></span>
-<span class="na">Character</span><span class="o">=</span><span class="s">Name</span><span class="w"></span>
+<span class="k">[Session2]</span>
+<span class="na">StationName</span><span class="o">=</span><span class="s">StationNameforSession</span>
+<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforSession</span>
+<span class="na">Server</span><span class="o">=</span><span class="s">ServerforSession</span>
+<span class="na">Character</span><span class="o">=</span><span class="s">Name</span>
 </code></pre></div></p>
 <p>If you're using ISBoxer, set <code>UseMQ2Login=0</code> AND <code>UseStationNamesInsteadOfSessions=1</code>, and add station names to the MQ2AutoLogin.ini in this format, </p>
 <p><strong>Station names example INI</strong>
-<div class="highlight"><pre><span></span><code><span class="k">[Settings]</span><span class="w"></span>
-<span class="na">UseMQ2Login</span><span class="o">=</span><span class="s">0</span><span class="w"></span>
-<span class="na">UseStationNamesInsteadOfSessions</span><span class="o">=</span><span class="s">1</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">[Settings]</span>
+<span class="na">UseMQ2Login</span><span class="o">=</span><span class="s">0</span>
+<span class="na">UseStationNamesInsteadOfSessions</span><span class="o">=</span><span class="s">1</span>
 
-<span class="k">[StationName1]</span><span class="w"></span>
-<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforThisLoginName</span><span class="w"></span>
-<span class="na">Server</span><span class="o">=</span><span class="s">ServerforThisLoginName</span><span class="w"></span>
-<span class="na">Character</span><span class="o">=</span><span class="s">CharacterforThisLoginName</span><span class="w"></span>
+<span class="k">[StationName1]</span>
+<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforThisLoginName</span>
+<span class="na">Server</span><span class="o">=</span><span class="s">ServerforThisLoginName</span>
+<span class="na">Character</span><span class="o">=</span><span class="s">CharacterforThisLoginName</span>
 
-<span class="k">[StationName2]</span><span class="w"></span>
-<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforThisLoginName</span><span class="w"></span>
-<span class="na">Server</span><span class="o">=</span><span class="s">ServerforThisLoginName</span><span class="w"></span>
-<span class="na">Character</span><span class="o">=</span><span class="s">CharacterforThisLoginName</span><span class="w"></span>
+<span class="k">[StationName2]</span>
+<span class="na">Password</span><span class="o">=</span><span class="s">PasswordforThisLoginName</span>
+<span class="na">Server</span><span class="o">=</span><span class="s">ServerforThisLoginName</span>
+<span class="na">Character</span><span class="o">=</span><span class="s">CharacterforThisLoginName</span>
 </code></pre></div></p>
 <p>Additional settings from the global section, such as <code>KickActiveCharacter=1</code> can be added to session or station name sections to affect only that character.</p>
 <h2 id="list-of-server-short-names">List of server short names<a class="headerlink" href="#list-of-server-short-names" title="Permanent link">&para;</a></h2>
@@ -9045,34 +9045,34 @@ beta
 </code></pre></div>
 <h2 id="custom-server-names">Custom server names<a class="headerlink" href="#custom-server-names" title="Permanent link">&para;</a></h2>
 <p>To add a new server with a custom short name, which is particularly important for emulators, edit your MQ2AutoLogin.ini with the following format: 
-<div class="highlight"><pre><span></span><code><span class="k">[Servers]</span><span class="w"></span>
-<span class="na">shortname</span><span class="o">=</span><span class="s">Exact long name (as it appears on login screen)</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="k">[Servers]</span>
+<span class="na">shortname</span><span class="o">=</span><span class="s">Exact long name (as it appears on login screen)</span>
 </code></pre></div></p>
 <p>Make sure <code>shortname</code> matches servers internal shortname exactly.  You can get this information from logging into the server and running <code>/echo ${EverQuest.Server}</code></p>
 <p>For example, here are the most popular macroquest-compatible emu servers as of 8/5/2022: 
-<div class="highlight"><pre><span></span><code><span class="c1">; Host=login.eqemulator.net</span><span class="w"></span>
-<span class="k">[Servers]</span><span class="w"></span>
-<span class="na">EZ (Linux) x4 Exp</span><span class="o">=</span><span class="s">[] EZ Server - Custom Zones, Vendors, Quests, Items, etc</span><span class="w"></span>
-<span class="na">Imperium_EQ</span><span class="o">=</span><span class="s">[] Imperium Server - Solo Level/Duo+ Raid</span><span class="w"></span>
-<span class="na">PEQTGC</span><span class="o">=</span><span class="s">[] PEQ] The Grand Creation - Omens of War</span><span class="w"></span>
-<span class="na">Project Lazarus</span><span class="o">=</span><span class="s">[] Project Lazarus</span><span class="w"></span>
-<span class="na">HiddenForest</span><span class="o">=</span><span class="s">[] The Hidden Forest [ www.thehiddenforest.org ]</span><span class="w"></span>
-<span class="na">Haven</span><span class="o">=</span><span class="s">[] Wayfarers Haven [wayfarershaven.com]</span><span class="w"></span>
-<span class="na">CWR</span><span class="o">=</span><span class="s">[] Clumsy&#39;s World [Velious, Semi-Custom, QoL+]</span><span class="w"></span>
-<span class="na">DxBx</span><span class="o">=</span><span class="s">[] DreadBox:Re-Dredged BETA</span><span class="w"></span>
-<span class="na">E9 Profusion</span><span class="o">=</span><span class="s">[] Enine&#39;s ProFusion</span><span class="w"></span>
-<span class="na">EQTitan</span><span class="o">=</span><span class="s">[] EQT ) EQTitan [Legit PoP/LDoN/GoD]</span><span class="w"></span>
-<span class="na">The Firiona Vie Project</span><span class="o">=</span><span class="s">[] FVP - The Firiona Vie Project (Kunark)</span><span class="w"></span>
-<span class="na">IxiQuest</span><span class="o">=</span><span class="s">IxiQuest - (ixiquest.com) Classic to Velious +</span><span class="w"></span>
-<span class="na">KMRA</span><span class="o">=</span><span class="s">Raid Atticts (Fully Custom) [Solo/Group/Raid]</span><span class="w"></span>
-<span class="na">The Dark Exile</span><span class="o">=</span><span class="s">[] The Dark Exile</span><span class="w"></span>
-<span class="na">Showdowrest</span><span class="o">=</span><span class="s">[[R] ] Shadowrest</span><span class="w"></span>
-<span class="na">Alternate Everquest</span><span class="o">=</span><span class="s">[[R] ]Alternate</span><span class="w"></span>
-<span class="na">EQ Might</span><span class="o">=</span><span class="s">[[R] ] EQ Might</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1">; Host=login.eqemulator.net</span>
+<span class="k">[Servers]</span>
+<span class="na">EZ (Linux) x4 Exp</span><span class="o">=</span><span class="s">[] EZ Server - Custom Zones, Vendors, Quests, Items, etc</span>
+<span class="na">Imperium_EQ</span><span class="o">=</span><span class="s">[] Imperium Server - Solo Level/Duo+ Raid</span>
+<span class="na">PEQTGC</span><span class="o">=</span><span class="s">[] PEQ] The Grand Creation - Omens of War</span>
+<span class="na">Project Lazarus</span><span class="o">=</span><span class="s">[] Project Lazarus</span>
+<span class="na">HiddenForest</span><span class="o">=</span><span class="s">[] The Hidden Forest [ www.thehiddenforest.org ]</span>
+<span class="na">Haven</span><span class="o">=</span><span class="s">[] Wayfarers Haven [wayfarershaven.com]</span>
+<span class="na">CWR</span><span class="o">=</span><span class="s">[] Clumsy&#39;s World [Velious, Semi-Custom, QoL+]</span>
+<span class="na">DxBx</span><span class="o">=</span><span class="s">[] DreadBox:Re-Dredged BETA</span>
+<span class="na">E9 Profusion</span><span class="o">=</span><span class="s">[] Enine&#39;s ProFusion</span>
+<span class="na">EQTitan</span><span class="o">=</span><span class="s">[] EQT ) EQTitan [Legit PoP/LDoN/GoD]</span>
+<span class="na">The Firiona Vie Project</span><span class="o">=</span><span class="s">[] FVP - The Firiona Vie Project (Kunark)</span>
+<span class="na">IxiQuest</span><span class="o">=</span><span class="s">IxiQuest - (ixiquest.com) Classic to Velious +</span>
+<span class="na">KMRA</span><span class="o">=</span><span class="s">Raid Atticts (Fully Custom) [Solo/Group/Raid]</span>
+<span class="na">The Dark Exile</span><span class="o">=</span><span class="s">[] The Dark Exile</span>
+<span class="na">Showdowrest</span><span class="o">=</span><span class="s">[[R] ] Shadowrest</span>
+<span class="na">Alternate Everquest</span><span class="o">=</span><span class="s">[[R] ]Alternate</span>
+<span class="na">EQ Might</span><span class="o">=</span><span class="s">[[R] ] EQ Might</span>
 </code></pre></div></p>
-<div class="highlight"><pre><span></span><code><span class="c1">; Host=login.projecteq.net</span><span class="w"></span>
-<span class="k">[Servers]</span><span class="w"></span>
-<span class="na">Project Lazarus</span><span class="o">=</span><span class="s">Project Lazarus</span><span class="w"></span>
+<div class="highlight"><pre><span></span><code><span class="c1">; Host=login.projecteq.net</span>
+<span class="k">[Servers]</span>
+<span class="na">Project Lazarus</span><span class="o">=</span><span class="s">Project Lazarus</span>
 </code></pre></div>
 <h2 id="mq2login-profiles-gui">MQ2Login Profiles GUI<a class="headerlink" href="#mq2login-profiles-gui" title="Permanent link">&para;</a></h2>
 <p>Right click on the MacroQuest tray icon -&gt; Profiles</p>
@@ -9109,42 +9109,6 @@ beta
       
         <footer class="md-footer">
   
-    
-    <nav class="md-footer__inner md-grid" aria-label="Footer" >
-      
-        
-        <a href="../" class="md-footer__link md-footer__link--prev" aria-label="Previous: Core Plugins" rel="prev">
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11h12Z"/></svg>
-          </div>
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Previous
-              </span>
-              Core Plugins
-            </div>
-          </div>
-        </a>
-      
-      
-        
-        <a href="../mq2bzsrch/" class="md-footer__link md-footer__link--next" aria-label="Next: MQ2Bzsrch" rel="next">
-          <div class="md-footer__title">
-            <div class="md-ellipsis">
-              <span class="md-footer__direction">
-                Next
-              </span>
-              MQ2Bzsrch
-            </div>
-          </div>
-          <div class="md-footer__button md-icon">
-            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11H4Z"/></svg>
-          </div>
-        </a>
-      
-    </nav>
-  
   <div class="md-footer-meta md-typeset">
     <div class="md-footer-meta__inner md-grid">
       <div class="md-copyright">
@@ -9170,12 +9134,11 @@ beta
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.16e2a7d4.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.config.lang": "en", "search.config.pipeline": "trimmer, stopWordFilter", "search.config.separator": "[\\s\\-]+", "search.placeholder": "Search", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version.title": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.12658920.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.5a2dcb6a.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.5cf534bf.min.js"></script>
       
-    
     
   </body>
 </html>
