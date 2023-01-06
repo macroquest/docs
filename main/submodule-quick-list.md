@@ -74,6 +74,7 @@ git submodule add -b master -f https://gitlab.com/Knightly1/MQ2SQLite.git plugin
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Status.git plugins/MQ2Status
 git submodule add -b master -f https://github.com/MMOBugs/MQ2Targets.git plugins/MQ2Targets
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2ToolTip.git plugins/MQ2ToolTip
+git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Tracking.git plugins/MQ2Tracking
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2TributeManager.git plugins/MQ2TributeManager
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2TSTrophy.git plugins/MQ2TSTrophy
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Twist.git plugins/MQ2Twist
