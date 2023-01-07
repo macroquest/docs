@@ -30,8 +30,9 @@ This is the type used for spell information.
 | | **Category** | |
 | [_int64_](datatype-int64.md)         | **CounterNumber**            | The number of counters that the spell adds                                                                                     |
 | [_string_](datatype-string.md)       | **CounterType**              | The resist counter. Will be one of "Disease", "Poison", "Curse" or "Corruption"                                                |
-| | **Deletable** | |
+| [_bool_](datatype-string.md) | **Deletable** | Whether a spell can be deleted from the spell book |
 | | **Description** | |
+| [_bool_](datatype-string.md) | **Dispellable** | Whether a spell can be dispelled |
 | [_ticks_](datatype-ticks.md)         | **Duration**                 | Duration of the spell (if any)                                                                                                 |
 | [_ticks_](datatype-ticks.md)         | **DurationValue1**           | Duration of the spell (if any)                                                                                                 |
 | | **DurationWindow** | |
