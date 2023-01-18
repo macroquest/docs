@@ -176,6 +176,13 @@ Contains the properties that describe an item.
 | [_int_](datatype-int.md) | **WornSlots** | The number of invslots this item can be worn in (fingers/ears count as 2 slots) |
 | [_string_](datatype-string.md) | **(To String)** | Same as **Name** |
 
+## Methods
+
+| Name           | Action                 |
+| -------------- | ---------------------- |
+| **Inspect**    | Opens the item display window for this item |
+
+
 ### Spell Effect Types
 
 **EffectType** will return one of the following values:
