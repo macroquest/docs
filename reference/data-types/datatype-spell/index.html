@@ -19,7 +19,7 @@
         <link rel="next" href="../datatype-string/">
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
     
     
       
@@ -8758,6 +8758,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conversions" class="md-nav__link">
+    Conversions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#spell-ranks" class="md-nav__link">
     Spell Ranks
   </a>
@@ -9073,6 +9087,20 @@
 </li>
       
         <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#conversions" class="md-nav__link">
+    Conversions
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
   <a href="#spell-ranks" class="md-nav__link">
     Spell Ranks
   </a>
@@ -9236,9 +9264,14 @@
 <td>Cast time (unadjusted)</td>
 </tr>
 <tr>
-<td></td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>Category</strong></td>
-<td></td>
+<td>Name of the category the spell belongs to (e.g. "HP Buffs")</td>
+</tr>
+<tr>
+<td><a href="../datatype-int/"><em>int</em></a></td>
+<td><strong>CategoryID</strong></td>
+<td>Numeric ID of the category this spell belongs to</td>
 </tr>
 <tr>
 <td><a href="../datatype-int64/"><em>int64</em></a></td>
@@ -9344,6 +9377,11 @@
 <td><a href="../datatype-int/"><em>int</em></a></td>
 <td><strong>Level</strong></td>
 <td>Level</td>
+</tr>
+<tr>
+<td><a href="../datatype-string/"><em>string</em></a></td>
+<td><strong>Link</strong>[ <em>text</em> ]</td>
+<td>Generate a clickable spell link. <em>text</em> is optional and overrides the text of the link.</td>
 </tr>
 <tr>
 <td><a href="../datatype-int/"><em>int</em></a></td>
@@ -9467,18 +9505,13 @@
 </tr>
 <tr>
 <td></td>
-<td><strong>SPA</strong></td>
-<td></td>
-</tr>
-<tr>
-<td></td>
 <td><strong>SpellGroup</strong></td>
 <td></td>
 </tr>
 <tr>
 <td><a href="../datatype-int/"><em>int</em></a></td>
 <td><strong>SpellIcon</strong></td>
-<td>Icon number of the spell. Exmaple ${Spell[blah].SpellIcon}</td>
+<td>Numeric ID of the Icon used to represent the spell.</td>
 </tr>
 <tr>
 <td><a href="../datatype-string/"><em>string</em></a></td>
@@ -9516,9 +9549,14 @@
 <td></td>
 </tr>
 <tr>
-<td></td>
+<td><a href="../datatype-string/"><em>string</em></a></td>
 <td><strong>Subcategory</strong></td>
-<td></td>
+<td>Name of the subcategory this spell belongs to (e.g. "Shielding")</td>
+</tr>
+<tr>
+<td><a href="../datatype-int/"><em>int</em></a></td>
+<td><strong>SubcategoryID</strong></td>
+<td>Numeric Id of the subcategory this spell belongs to.</td>
 </tr>
 <tr>
 <td></td>
@@ -9567,14 +9605,41 @@
 </tr>
 </tbody>
 </table>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inspect</strong></td>
+<td>Opens the spell display window for this spell</td>
+</tr>
+</tbody>
+</table>
+<h2 id="conversions">Conversions<a class="headerlink" href="#conversions" title="Permanent link">&para;</a></h2>
+<p><em>Spell</em> variables can be assigned the following types with <strong>/vardata</strong>:</p>
+<ul>
+<li><a href="../datatype-int/"><em>int</em></a>: Assigns the spell by spell id</li>
+<li><a href="../datatype-string/"><em>string</em></a>: Assigns the spell by spell name</li>
+<li><a href="./"><em>spell</em></a>: Copies a spell stored in another var</li>
+</ul>
+<p><em>Spell</em> variables can also be assigned an id or name with <strong>/varset</strong>. These conversions are equivalent to the <a href="../../top-level-objects/tlo-spell/"><strong>Spell</strong></a> TLO.</p>
 <h2 id="spell-ranks">Spell Ranks<a class="headerlink" href="#spell-ranks" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>/echo I have the ${Spell[Certitude].RankName} version of Certitude. - Spell
+<p>Spell Example:</p>
+<div class="highlight"><pre><span></span><code>&gt; /echo I have the ${Spell[Certitude].RankName} version of Certitude.
+I have the Certitude Rk. II version of Ceritude.
 </code></pre></div>
-<p>Outputs: <code>I have the Certitude Rk. II version of Ceritude.</code></p>
-<p><code>/cast "${Spell[Vinespur].RankName}"</code> in your macro will cast the proper rank, since its going to be resolved as /cast "Vinespur Rk. II"</p>
-<div class="highlight"><pre><span></span><code>/echo My version of Rest is: ${Spell[Rest].RankName} - Combat ability
+<p>Combat Ability Example:
+<div class="highlight"><pre><span></span><code>&gt; /echo My version of Rest is: ${Spell[Rest].RankName}
+My version of Rest is: Rest Rk. II
+</code></pre></div></p>
+<p>To cast a spell with the proper rank, use the following:</p>
+<div class="highlight"><pre><span></span><code>/cast &quot;${Spell[Vinespur].RankName}&quot;
 </code></pre></div>
-<p>Outputs: <code>My version of Rest is: Rest Rk. II</code></p>
 <h2 id="resist-types">Resist Types<a class="headerlink" href="#resist-types" title="Permanent link">&para;</a></h2>
 <p><strong>ResistType</strong> will be one of the following:</p>
 <ul>

@@ -19,7 +19,7 @@
         <link rel="next" href="../datatype-achievementcat/">
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.5">
+      <meta name="generator" content="mkdocs-1.4.2, mkdocs-material-9.0.6">
     
     
       
@@ -7986,6 +7986,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -9091,6 +9098,13 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#methods" class="md-nav__link">
+    Methods
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -9281,7 +9295,7 @@
 
 <span class="kd">local</span> <span class="n">achievement</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Achievement</span><span class="p">.</span><span class="n">AchievementByIndex</span><span class="p">(</span><span class="n">achievementIndex</span><span class="p">)</span>
 <span class="kr">if</span> <span class="n">achievement</span><span class="p">.</span><span class="n">Completed</span><span class="p">()</span> <span class="kr">then</span>
-    <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s1">&#39;%s is completed on %s&#39;</span><span class="p">,</span> <span class="n">achievement</span><span class="p">.</span><span class="n">Name</span><span class="p">(),</span> <span class="n">achievement</span><span class="p">.</span><span class="n">CompletedTime</span><span class="p">.</span><span class="n">Date</span><span class="p">()))</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s1">&#39;%s is completed on %s&#39;</span><span class="p">,</span> <span class="n">achievement</span><span class="p">.</span><span class="n">Name</span><span class="p">(),</span> <span class="n">achievement</span><span class="p">.</span><span class="n">CompletedTime</span><span class="p">.</span><span class="n">Date</span><span class="p">())</span>
 <span class="kr">else</span>
     <span class="nb">print</span><span class="p">(</span><span class="n">achievement</span><span class="p">.</span><span class="n">Name</span><span class="p">()</span> <span class="o">..</span> <span class="s1">&#39; is not completed!&#39;</span><span class="p">)</span>
 <span class="kr">end</span>
@@ -9314,7 +9328,7 @@
 <span class="kr">else</span>
     <span class="kd">local</span> <span class="n">objective</span> <span class="o">=</span> <span class="n">achievement</span><span class="p">.</span><span class="n">Objective</span><span class="p">(</span><span class="s2">&quot;Humans&quot;</span><span class="p">)</span>
     <span class="kr">if</span> <span class="ow">not</span> <span class="n">objective</span><span class="p">.</span><span class="n">Completed</span><span class="p">()</span> <span class="kr">then</span>
-        <span class="nb">print</span><span class="p">(</span><span class="nb">string.format</span><span class="p">(</span><span class="s2">&quot;You have %d humans left to kill!&quot;</span><span class="p">,</span> <span class="n">objective</span><span class="p">.</span><span class="n">RequiredCount</span><span class="p">()</span> <span class="o">-</span> <span class="n">objective</span><span class="p">.</span><span class="n">Count</span><span class="p">()))</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;You have %d humans left to kill!&quot;</span><span class="p">,</span> <span class="n">objective</span><span class="p">.</span><span class="n">RequiredCount</span><span class="p">()</span> <span class="o">-</span> <span class="n">objective</span><span class="p">.</span><span class="n">Count</span><span class="p">())</span>
     <span class="kr">else</span>
         <span class="nb">print</span><span class="p">(</span><span class="s2">&quot;Done killing humans!&quot;</span><span class="p">)</span>
     <span class="kr">end</span>
@@ -9323,6 +9337,21 @@
 </div>
 </div>
 </div>
+<h2 id="methods">Methods<a class="headerlink" href="#methods" title="Permanent link">&para;</a></h2>
+<table>
+<thead>
+<tr>
+<th>Name</th>
+<th>Action</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>Inspect</strong></td>
+<td>Opens the achievement display window for this achievement</td>
+</tr>
+</tbody>
+</table>
 
 
 
