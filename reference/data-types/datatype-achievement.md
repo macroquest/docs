@@ -82,7 +82,7 @@ Print a message if an achievement has been completed. This example also demonstr
 
     local achievement = mq.TLO.Achievement.AchievementByIndex(achievementIndex)
     if achievement.Completed() then
-        print(string.format('%s is completed on %s', achievement.Name(), achievement.CompletedTime.Date()))
+        printf('%s is completed on %s', achievement.Name(), achievement.CompletedTime.Date())
     else
         print(achievement.Name() .. ' is not completed!')
     end
@@ -117,9 +117,15 @@ Print how many humans you have left to kill for the "**I'm a People Person!**" a
     else
         local objective = achievement.Objective("Humans")
         if not objective.Completed() then
-            print(string.format("You have %d humans left to kill!", objective.RequiredCount() - objective.Count()))
+            printf("You have %d humans left to kill!", objective.RequiredCount() - objective.Count())
         else
             print("Done killing humans!")
         end
     end
     ```
+
+## Methods
+
+| Name           | Action                 |
+| -------------- | ---------------------- |
+| **Inspect**    | Opens the achievement display window for this achievement |
