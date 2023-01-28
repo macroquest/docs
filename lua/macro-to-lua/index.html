@@ -9654,7 +9654,7 @@
 <p>The purpose of this guide is primarily to help those who know the macro language, but not necessarily Lua or other programming languages, to be able to write new scripts in Lua. Its not to suggest that existing macros should be rewritten in Lua, although that may be a good learning exercise as well.  </p>
 <p>Before getting started, its recommended to have <a href="https://code.visualstudio.com/">VS Code</a> (not the same thing as Visual Studio) installed for working with Lua files. it provides syntax highlighting out of the box and some extended capabilities when adding a Lua language server extension. Coldblooded also wrote some autocompletion utilities for MQ and ImGui which are linked below. VS Code also has an MQ macro extension, <code>vscodemq2</code> which is a nice added bonus.</p>
 <h2 id="resources">Resources<a class="headerlink" href="#resources" title="Permanent link">&para;</a></h2>
-<p><a href="lua/README.md">Getting Started</a></p>
+<p><a href="../">Getting Started</a></p>
 <h2 id="getting-started">Getting Started<a class="headerlink" href="#getting-started" title="Permanent link">&para;</a></h2>
 <p>To get started, this guide will cover the basics of a Lua script, without getting into any of the MQ integrations.</p>
 <h3 id="terminology">Terminology<a class="headerlink" href="#terminology" title="Permanent link">&para;</a></h3>
@@ -10131,7 +10131,7 @@ There is also repeat until:
 <div class="highlight"><pre><span></span><code><span class="n">mq</span><span class="p">.</span><span class="n">cmdf</span><span class="p">(</span><span class="s1">&#39;/echo %s&#39;</span><span class="p">,</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">Name</span><span class="p">())</span>
 </code></pre></div></p>
 <h3 id="bindings">Bindings<a class="headerlink" href="#bindings" title="Permanent link">&para;</a></h3>
-<p><a href="lua/events-and-binds/">Lua Events and Binds</a><br />
+<p><a href="../events-and-binds/">Lua Events and Binds</a><br />
 Define a function for the bind to call when its executed
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="kr">function</span> <span class="nf">bind_help</span><span class="p">()</span>
   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;some helpful text&#39;</span><span class="p">)</span>
@@ -10142,7 +10142,7 @@ Define a function for the bind to call when its executed
 </code></pre></div></p>
 <p>Binds can be removed using <code>mq.unbind(bindCommand)</code>.</p>
 <h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
-<p><a href="lua/events-and-binds/">Lua Events and Binds</a><br />
+<p><a href="../events-and-binds/">Lua Events and Binds</a><br />
 First step is to define the function which will be called when the event triggers:
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="kr">function</span> <span class="nf">event_handler</span><span class="p">()</span>
   <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;entered event_handler&#39;</span><span class="p">)</span>
