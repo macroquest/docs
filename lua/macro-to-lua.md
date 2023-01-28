@@ -13,7 +13,7 @@ The purpose of this guide is primarily to help those who know the macro language
 Before getting started, its recommended to have [VS Code](https://code.visualstudio.com/) (not the same thing as Visual Studio) installed for working with Lua files. it provides syntax highlighting out of the box and some extended capabilities when adding a Lua language server extension. Coldblooded also wrote some autocompletion utilities for MQ and ImGui which are linked below. VS Code also has an MQ macro extension, `vscodemq2` which is a nice added bonus.
 
 ## Resources
-[Getting Started](lua/README.md)
+[Getting Started](README.md)
 
 ## Getting Started
 To get started, this guide will cover the basics of a Lua script, without getting into any of the MQ integrations.
@@ -644,7 +644,7 @@ mq.cmdf('/echo %s', mq.TLO.Me.Name())
 ```
 
 ### Bindings
-[Lua Events and Binds](lua/events-and-binds/)  
+[Lua Events and Binds](events-and-binds.md)  
 Define a function for the bind to call when its executed
 ```lua
 local function bind_help()
@@ -660,7 +660,7 @@ mq.bind('/howto', bind_help)
 Binds can be removed using `mq.unbind(bindCommand)`.
 
 ### Events
-[Lua Events and Binds](lua/events-and-binds/)  
+[Lua Events and Binds](events-and-binds.md)  
 First step is to define the function which will be called when the event triggers:
 ```lua
 local function event_handler()
