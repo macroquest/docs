@@ -66,7 +66,7 @@ settings:
 The MQ LuaRocks server has a version of lyaml available which can be installed using the Lua PackageMan script provided by MQ.  
 
 ```lua
-local lyaml = packageMan.Require('lyaml')
+local lyaml = PackageMan.Require('lyaml')
 ```
 
 More info on lyaml [here](https://github.com/gvvaughan/lyaml).
@@ -85,7 +85,7 @@ More info on lyaml [here](https://github.com/gvvaughan/lyaml).
 The MQ LuaRocks server has a version of `cjson` available which can be installed using the Lua PackageMan script provided by MQ.  
 
 ```lua
-local cjson = packageMan.Require('lua-cjson', 'cjson')
+local cjson = PackageMan.Require('lua-cjson', 'cjson')
 ```
 
 More info on cjson [here](https://github.com/mpx/lua-cjson)
