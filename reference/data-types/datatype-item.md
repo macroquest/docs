@@ -132,7 +132,7 @@ Contains the properties that describe an item.
 | [_string_](datatype-string.md) | **Race**[_N_] | Returns the _Nth_ long race name of the listed races on an item. Items suitable for ALL races will effectively have all 15 races listed. 
 | [_int_](datatype-int.md) | **Races** | The number of races that can use the item. Items suitable for ALL races will return 15. |
 | | **Range** | |
-| | **RecommendedLevel** | |
+| [_int_](datatype-int.md) | **RecommendedLevel** | Returns the Recommended Level of an item. Items with no recommended level will return 0. |
 | [_int_](datatype-int.md) | **RequiredLevel** | Returns the Required Level of an item. Items with no required level will return 0. |
 | [_itemspell_](datatype-itemspell.md) | **Scroll** | Scroll effect, if any. |
 | [_int_](datatype-int.md) | **SellPrice** | Price to sell this item at this merchant |
