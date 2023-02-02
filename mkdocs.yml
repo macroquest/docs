@@ -561,6 +561,7 @@ theme:
     code: Source Code Pro
 
   features:
+    - content.action.edit
     - navigation.tabs
     - search.highlight
     - search.share
