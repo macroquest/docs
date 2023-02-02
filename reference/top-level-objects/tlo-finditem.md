@@ -32,7 +32,7 @@ A TLO used to find an item on your character, corpse, or a merchant by partial o
 
 [_item_][item] **FindItem**[=_name_]
 
-:   Search for an item using exact name match (case insensntive). Will search character inventory
+:   Search for an item using exact name match (case insensitive). Will search character inventory
     and any items stored in key rings (illusion, mount, etc).
 
     ??? example
