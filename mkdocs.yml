@@ -4,7 +4,9 @@ site_url: https://docs.macroquest.org/
 site_author: Macroquest Developers
 
 # Repository
+repo_name: MacroQuest Docs
 repo_url: https://github.com/macroquest/docs
+edit_uri: edit/master
 docs_dir: .
 
 # Copyright
