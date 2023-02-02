@@ -32,7 +32,7 @@ A TLO used to find a count of items on your character, corpse, or a merchant by 
 
 [_item_][item] **FindItemCount**[=_name_]
 
-:   Counts the items using exact name match (case insensntive). Will search character inventory
+:   Counts the items using exact name match (case insensitive). Will search character inventory
     and any items stored in key rings (illusion, mount, etc).
 
     ??? example

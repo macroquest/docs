@@ -33,7 +33,7 @@ Of note: The FindItemBank with ItemSlot REQUIRES that bank item containers be op
 
 [_item_][item] **FindItemBank**[=_name_]
 
-:   Search for an item in your bank using exact name match (case insensntive).
+:   Search for an item in your bank using exact name match (case insensitive).
 
     ??? example
 

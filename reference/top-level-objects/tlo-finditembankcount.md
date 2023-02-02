@@ -31,7 +31,7 @@ A TLO used to find a count of items in your bank by partial or exact name match.
 
 [_item_][item] **FindItemBankCount**[=_name_]
 
-:   Counts the items in your bank using exact name match (case insensntive).
+:   Counts the items in your bank using exact name match (case insensitive).
 
     ??? example
 
