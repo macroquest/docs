@@ -4,23 +4,52 @@ tags:
 ---
 # `FindItemBank`
 
-Find item in bank by partial name match. Using =name will find an exact match only.
+A TLO used to find an item in your bank by partial or exact name match. _See examples below._
 
 Of note: The FindItemBank with ItemSlot REQUIRES that bank item containers be open to function correctly. Due to potential exploits the command will not work if the bank containers are closed. This is in contrast to FindItem functionality with character containers, where ItemSlot was designed to allow inventory management without opening containers.
 
 ## Forms
 
-|  |  |
-| :--- | :--- |
-| [_item_](../data-types/datatype-item.md) **FindItemBank[**name**]** | Returns item in your bank by partial name match |
-| [_item_](../data-types/datatype-item.md) **FindItemBank[**=name**]** | Returns item in your bank by exact name match |
+[_item_][item] **FindItemBank**[_name/id_]
 
-## Examples
+:   Search for an item in your bank using the given item id, or partial name match.
 
-`/echo ${FindItemBank[=Swirling Shadows]}`
+    ??? example
 
-This is a simple example with little use, but If the item is found, the name of the item will be echoed
+        Looks for an item in your bank with the name swirling in it, and prints the ID.
 
-`/echo ${FindItemBank[=Swirling Shadows].ItemSlot}`
+        === "MQScript"
 
-Will return Bank's item slot
+            ```
+            /echo ${FindItemBank[swirling].ID}
+            ```
+
+        === "Lua"
+
+            ```lua
+            print(mq.TLO.FindItemBank("swirling").ID())
+            ```
+
+
+[_item_][item] **FindItemBank**[=_name_]
+
+:   Search for an item in your bank using exact name match (case insensntive).
+
+    ??? example
+
+        Looks for the Cleric Epic (by exact match) in your bank and prints its ID.
+
+        === "MQScript"
+
+            ```
+            /echo ${FindItemBank[=Water Sprinkler of Nem Ankh].ID}
+            ```
+
+        === "Lua"
+
+            ```lua
+            print(mq.TLO.FindItemBank("=Water Sprinkler of Nem Ankh").ID())
+            ```
+
+
+[item]: ../data-types/datatype-item.md
