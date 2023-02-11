@@ -53,6 +53,7 @@ All [Top-Level Objects](../top-level-objects/README.md) and [Data Types](../data
 | **tribute** | Tribute Masters |
 | **trigger** | Triggers |
 | **untargettable** | Untargettable spawns |
+| **xtarhater** | Spawn on my xtarget list that hates me |
 | **zradius \#** | Spawns within the specified Z-Axis radius |
 | _**Anything Else**_ | Anything not matched above is considered a **name** |
 
