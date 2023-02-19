@@ -91,4 +91,6 @@ git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2XAssist.g
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2XPTracker.git plugins/MQ2XPTracker
 # Emu only
 git submodule add -b main -f https://github.com/Knightly1/MQMountClassicModels.git plugins/MQMountClassicModels
+# Update submodules of these submodules
+git submodule update --init --recursive
 ```
