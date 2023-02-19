@@ -1,6 +1,9 @@
 # Plugin Submodule Quick List
 
-A quick list of plugins that have been migrated and how to add them.  Once they're all added, you can quickly update your plugins with:  `git pull --recurse-submodules`.  The solution file with all of these in it is here: [MacroQuestCustom.sln](../uploads/MacroQuestCustom.sln) (place this file in the src folder beside MacroQuest.sln)
+A quick list of plugins that have been migrated and how to add them.  Once they're all added, you can `git submodule update --init --recursive`to get their depdendencies.
+You can quickly update your plugins with:  `git pull --recurse-submodules` or `git submodule foreach git pull || :`.
+
+The solution file with all of these in it is here: [MacroQuestCustom.sln](../uploads/MacroQuestCustom.sln) (place this file in the src folder beside MacroQuest.sln)
 
 ```bash
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2AASpend.git plugins/MQ2AASpend
@@ -33,7 +36,7 @@ git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Events.gi
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Exchange.git plugins/MQ2Exchange
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2FarmTest.git plugins/MQ2FarmTest
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2FeedMe.git plugins/MQ2FeedMe
-git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2GMCheck.git plugins/MQ2GMCheck
+git submodule add -b master -f https://gitlab.com/MMOBugs/MQ2GMCheck.git plugins/MQ2GMCheck
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2GroupInfo.git plugins/MQ2GroupInfo
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2HeadShot.git plugins/MQ2HeadShot
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2HUDMove.git plugins/MQ2HUDMove
@@ -47,6 +50,7 @@ git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Log.git p
 git submodule add -b master -f https://github.com/jessebevil/MQ2LootManager.git plugins/MQ2LootManager
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Medley.git plugins/MQ2Medley
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Melee.git plugins/MQ2Melee
+git submodule add -b main -f https://github.com/wired420/MQ2MeshManager.git plugins/MQ2MeshManager
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2MoveUtils.git plugins/MQ2MoveUtils
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2MyButtons.git plugins/MQ2MyButtons
 git submodule add -b master -f https://github.com/brainiac/MQ2Nav.git plugins/MQ2Nav
@@ -73,12 +77,14 @@ git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2SpawnSort
 git submodule add -b master -f https://gitlab.com/Knightly1/MQ2SQLite.git plugins/MQ2SQLite
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Status.git plugins/MQ2Status
 git submodule add -b master -f https://github.com/MMOBugs/MQ2Targets.git plugins/MQ2Targets
+git submodule add -b main -f https://github.com/Knightly1/MQTextToSpeech.git plugins/MQ2TextToSpeech
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2ToolTip.git plugins/MQ2ToolTip
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Tracking.git plugins/MQ2Tracking
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2TributeManager.git plugins/MQ2TributeManager
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2TSTrophy.git plugins/MQ2TSTrophy
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Twist.git plugins/MQ2Twist
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Vendors.git plugins/MQ2Vendors
+git submodule add -b master -f https://github.com/MMOBugs/MQ2WinTitle.git plugins/MQ2WinTitle
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2WorstHurt.git plugins/MQ2WorstHurt
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2XAssist.git plugins/MQ2XAssist
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2XPTracker.git plugins/MQ2XPTracker

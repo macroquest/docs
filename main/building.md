@@ -1,11 +1,11 @@
 # Building MacroQuest
 
-## Download & Install Visual Studio 2019/2022
+## Download & Install Visual Studio 2022
 
 Links and instructions can be found at:
 [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)
 
-Be sure to install `MSVC v142 - VS2019 c++ x86/x64 build tools` as part of the installation.
+Be sure to install `MSVC v143 - VS2022 c++ x86/x64 build tools` as part of the installation.
 
 ## How to Build
 
@@ -59,7 +59,7 @@ At this point, the source should be ready to compile. Proceed to Build Steps.
 
 ### Build Steps (Live/Test)
 
-1. Open the `MacroQuest.sln` file in the `src` directory. Double clicking this file should open Visual Studio.  If prompted to upgrade, click Cancel.
+1. Open the `MacroQuest.sln` file in the `src` directory. Double clicking this file should open Visual Studio.
 2. Make sure your eqlib branch is on `live` or `test`
 3. Select the `Release` and `(x64)`configuration from the drop-down menu near the top of the window.
 4. Since the project moved to 64-bit, ensure all project configurations are set to `(x64)` in the **Solution Macroquest** Property Pages. From the Visual Studio main menu, select **Build** then **Configuration Manager** then ensure the Platform column for each project is set to `(x64)`.
@@ -69,7 +69,7 @@ The built files will be placed in `build/bin/Release`. To start MacroQuest, run 
 
 ### Build Steps (Emu)
 
-1. Open the `MacroQuest.sln` file in the `src` directory. Double clicking this file should open Visual Studio.  If prompted to upgrade, click Cancel.
+1. Open the `MacroQuest.sln` file in the `src` directory. Double clicking this file should open Visual Studio.
 2. Make sure your eqlib branch is on `emu`
 3. Select the `Release` and `Win32`configuration from the drop-down menu near the top of the window.
 4. Select `Build -> Build Solution` from the menu.
