@@ -1,7 +1,8 @@
 # Plugin Submodule Quick List
 
 A quick list of plugins that have been migrated and how to add them.  Once they're all added, you can `git submodule update --init --recursive`to get their depdendencies.
-You can quickly update your plugins with:  `git pull --recurse-submodules` or `git submodule foreach git pull || :`.
+You can quickly update your plugins with:  `git pull --recurse-submodules` or `git submodule foreach "git pull || :"`.  Both of these require having checked out the correct
+branch first.
 
 The solution file with all of these in it is here: [MacroQuestCustom.sln](../uploads/MacroQuestCustom.sln) (place this file in the src folder beside MacroQuest.sln)
 
