@@ -9035,7 +9035,8 @@
 
 <h1 id="plugin-submodule-quick-list">Plugin Submodule Quick List<a class="headerlink" href="#plugin-submodule-quick-list" title="Permanent link">&para;</a></h1>
 <p>A quick list of plugins that have been migrated and how to add them.  Once they're all added, you can <code>git submodule update --init --recursive</code>to get their depdendencies.
-You can quickly update your plugins with:  <code>git pull --recurse-submodules</code> or <code>git submodule foreach git pull || :</code>.</p>
+You can quickly update your plugins with:  <code>git pull --recurse-submodules</code> or <code>git submodule foreach "git pull || :"</code>.  Both of these require having checked out the correct
+branch first.</p>
 <p>The solution file with all of these in it is here: <a href="../../uploads/MacroQuestCustom.sln">MacroQuestCustom.sln</a> (place this file in the src folder beside MacroQuest.sln)</p>
 <div class="highlight"><pre><span></span><code>git<span class="w"> </span>submodule<span class="w"> </span>add<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>-f<span class="w"> </span>https://gitlab.com/redguides/plugins/MQ2AASpend.git<span class="w"> </span>plugins/MQ2AASpend
 git<span class="w"> </span>submodule<span class="w"> </span>add<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>-f<span class="w"> </span>https://gitlab.com/redguides/plugins/MQ2AdvPath.git<span class="w"> </span>plugins/MQ2AdvPath
