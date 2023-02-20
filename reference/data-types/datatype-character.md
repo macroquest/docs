@@ -299,7 +299,7 @@ If something is missing here, you can check the source to see if it exists.
 | [_int_](datatype-int.md) | **ShieldingBonus** | Shielding bonus from gear and spells |
 | | **Shining** | |
 | [_bool_](datatype-bool.md) | **Shrouded** | Am I Shrouded? |
-| [_string_](datatype-string.md) | **Silenced** | Returns the name of the Silence type effect on you |
+| [_buff_](datatype-buff.md) | **Silenced** | Returns the buff of the Silence type effect on you |
 | [_int_](datatype-int.md) | **Silver** | Silver on your character |
 | [_int_](datatype-int.md) | **SilverBank** | Silver in bank |
 | | **SilverTokens** | |
