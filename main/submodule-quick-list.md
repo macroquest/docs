@@ -37,7 +37,7 @@ git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Events.gi
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2Exchange.git plugins/MQ2Exchange
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2FarmTest.git plugins/MQ2FarmTest
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2FeedMe.git plugins/MQ2FeedMe
-git submodule add -b master -f https://gitlab.com/MMOBugs/MQ2GMCheck.git plugins/MQ2GMCheck
+git submodule add -b master -f https://github.com/MMOBugs/MQ2GMCheck.git plugins/MQ2GMCheck
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2GroupInfo.git plugins/MQ2GroupInfo
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2HeadShot.git plugins/MQ2HeadShot
 git submodule add -b master -f https://gitlab.com/redguides/plugins/MQ2HUDMove.git plugins/MQ2HUDMove
