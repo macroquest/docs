@@ -9210,7 +9210,7 @@ In this example, we define an <code>isNPC</code> function that checks whether a 
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
 
 <span class="c1">-- Call getFilteredSpawns with an inline predicate function</span>
-<span class="kd">local</span> <span class="n">npcs</span> <span class="o">=</span> <span class="n">getFilteredSpawns</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">spanw</span><span class="p">)</span> <span class="kr">return</span> <span class="n">spawn</span><span class="p">.</span><span class="n">Type</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;NPC&#39;</span> <span class="kr">end</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">npcs</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">getFilteredSpawns</span><span class="p">(</span><span class="kr">function</span><span class="p">(</span><span class="n">spawn</span><span class="p">)</span> <span class="kr">return</span> <span class="n">spawn</span><span class="p">.</span><span class="n">Type</span><span class="p">()</span> <span class="o">==</span> <span class="s1">&#39;NPC&#39;</span> <span class="kr">end</span><span class="p">)</span>
 </code></pre></div>
 <h2 id="getallspawns">getAllSpawns<a class="headerlink" href="#getallspawns" title="Permanent link">&para;</a></h2>
 <p><code>getAllSpawns</code> is another Lua function that retrieves all <code>spawn</code> objects and returns them as a Lua table. It does not take a predicate, and by default returns all spawns in the zone in a Lua table.</p>
@@ -9219,7 +9219,7 @@ In this example, we define an <code>isNPC</code> function that checks whether a 
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
 
 <span class="c1">-- Call getAllSpawns to retrieve a table of all `spawn` objects in the zone</span>
-<span class="kd">local</span> <span class="n">allSpawns</span> <span class="o">=</span> <span class="n">getAllSpawns</span><span class="p">()</span>
+<span class="kd">local</span> <span class="n">allSpawns</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">getAllSpawns</span><span class="p">()</span>
 </code></pre></div>
 In this example, we call getAllSpawns to retrieve a table of all <code>spawn</code> objects in the zone.</p>
 
