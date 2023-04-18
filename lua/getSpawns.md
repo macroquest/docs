@@ -28,7 +28,7 @@ It is also possible to write the predicate and call to `getFilteredSpawns` toget
 local mq = require('mq')
 
 -- Call getFilteredSpawns with an inline predicate function
-local npcs = getFilteredSpawns(function(spanw) return spawn.Type() == 'NPC' end)
+local npcs = mq.getFilteredSpawns(function(spawn) return spawn.Type() == 'NPC' end)
 ```
 
 ## getAllSpawns
@@ -40,6 +40,6 @@ Here's an example of how to use getAllSpawns:
 local mq = require('mq')
 
 -- Call getAllSpawns to retrieve a table of all `spawn` objects in the zone
-local allSpawns = getAllSpawns()
+local allSpawns = mq.getAllSpawns()
 ```
 In this example, we call getAllSpawns to retrieve a table of all `spawn` objects in the zone.
