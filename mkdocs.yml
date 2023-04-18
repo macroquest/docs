@@ -259,6 +259,7 @@ nav:
   - LuaRocks Modules: lua/luarocks-modules.md
   - Lua Events and Binds: lua/events-and-binds.md
   - Persisting Configuration in Lua Scripts: lua/pickle.md
+  - Improved Spawn Searching: lua/getSpawns.md
   - MacroScript to Lua: lua/macro-to-lua.md
 
 - Reference:
