@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/alias [list \| reload | ** _**aliasname**_ **delete\] \[name** _**command]**_
+**/alias [list \| reload |  _aliasname_ delete\] \[name** _**command]**_
 
 ## Description
 
