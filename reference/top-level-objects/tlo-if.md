@@ -7,7 +7,7 @@ tags:
 
 !!! warning
 
-    The `If` TLO is used to provide inline condition expressions for macros. It is not recommend for
+    The `If` TLO is used to provide inline condition expressions for macros. It is not recommended for
     use with Lua.
 
 Executes an inline condiition, similar to a ternary expression in other languages.
@@ -26,9 +26,11 @@ Executes an inline condiition, similar to a ternary expression in other language
         /docommand ${If[${Me.Sitting},/stand,/echo I am not sitting down]}
         ```
 
-[_string_][string] **If**[_conditions_|_whentrue_|_whenfalse_]
+[_string_][string] **If**[_conditions_~_whentrue_~_whenfalse_]
 
-:   Alternate syntax, behaves the same as above but uses the pipe character as a separator instead of a comma.
+:   Alternate syntax, behaves the same as above but uses the ~ character as a separator instead of a comma.
+:   Note that ~ is the default alternate separator.  This can be changed by placing IfAltDelimiter in MacroQuest.ini under [MacroQuest]
+:   E.g.   IfAltDelimiter=|
 
 [string]: ../data-types/datatype-string.md
 [Math.Calc]: ..//data-types/datatype-math.md#calc
