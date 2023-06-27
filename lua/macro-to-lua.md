@@ -4,28 +4,25 @@ tags:
 ---
 # MacroScript to Lua
 
-> Ported from RedGuides: [MacroScript to Lua](https://www.redguides.com/community/resources/macroscript-to-lua.2197/). Pardon the clunkiness.
+> Ported from RedGuides: [MacroScript to Lua](https://www.redguides.com/community/resources/macroscript-to-lua.2197/).
 
 This guide will cover some of the more common building blocks of code found in macros, and ways they may be written in Lua. They may not be the only ways or the best ways, but hopefully they are useful to see.  
 
 The purpose of this guide is primarily to help those who know the macro language, but not necessarily Lua or other programming languages, to be able to write new scripts in Lua. Its not to suggest that existing macros should be rewritten in Lua, although that may be a good learning exercise as well.  
 
-Before getting started, its recommended to have [VS Code](https://code.visualstudio.com/) (not the same thing as Visual Studio) installed for working with Lua files. it provides syntax highlighting out of the box and some extended capabilities when adding a Lua language server extension. Coldblooded also wrote some autocompletion utilities for MQ and ImGui which are linked below. VS Code also has an MQ macro extension, `vscodemq2` which is a nice added bonus.
-
-## Resources
-[Getting Started](README.md)
+Before getting started, its recommended to have [VS Code](https://code.visualstudio.com/) (not the same thing as Visual Studio) installed for working with Lua files. it provides syntax highlighting out of the box and some extended capabilities when adding a Lua language server extension. Also setup the [mq-definitions](https://github.com/macroquest/mq-definitions) for auto-completion.  
 
 ## Getting Started
-To get started, this guide will cover the basics of a Lua script, without getting into any of the MQ integrations.
+Before getting into MQ specifics, some basics about the Lua programming language should be understood.
 
 ### Terminology
-- **lua script:** Like a macro, Lua scripts are run in game by issuing a command like `/lua run examples/demo_tables` where `examples/demo_tables.lua` is a Lua script which exists in the MQ Lua folder.  
-- **variable:** A variable is a symbolic name for some information. Variables are declared in a lua script like `local script_name = 'demo_tables'`. This would define the `script_name` variable which can then be referenced elsewhere in the script, and its value would be the string, `demo_tables`. Variables can be **local** or **global**, but should typically always be made **local**.  
+- **lua script:** Like a macro, Lua scripts are run in game via command. For example, `/lua run examples/demo_tables` where `examples/demo_tables.lua` is a Lua script which exists in the MQ Lua folder.  
+- **variable:** A variable is a symbolic name for some information. `local script_name = 'demo_tables'` would define the `script_name` variable which can then be referenced elsewhere in the script, and its value would be the string, `demo_tables`. Variables can be **local** or **global**, but should typically always be made **local**.  
 - **function:** A function in lua is a callable, reusable block of code. Functions can take 0 or more arguments, as well as return 0 or more results. Lua functions would be comparable to subroutines in macro script.  
 - **table:** In Lua, nearly everything is a table. Tables are the main data structure for the language. Think of tables as a combination of arrays, maps, sets, lists, etc. from other languages. Tables store a collection of key, value pairs, and the values can be accessed by their keys. The keys can be numbers or strings. When the keys are contiguous numbers from 1 to N, then the table can be accessed in a similar fashion to an array. They can also be iterated over by index (like an array) or by key (like a map).  
 - **userdata:** Lua represents arbitrary C data as the type `userdata`. There will be more on this later, but it is important to note that all unevaluated data returned to Lua from MQ is of type `userdata`.  
 - **nil:** The Lua equivalent of macros `NULL`. nil is Luas representation of no value. One common thing to do is check that a variable is not nil, i.e. the variable has a value. This might look like `if mob then do_something() end`. This is the same as `if mob ~= nil then do_something() end`.  
-- **string:** A string is used for data values that are made up of ordered sequences of characters, such as "hello world". Strings are only mentioned here because in macros, everything was a string, and in lua not everything is treated as a string. In Lua, like most programming languages, strings belong inside of quotes. This was not required in macros. For example, `local name = aquietone` would fail. `local name = "aquietone"` would work.  
+- **string:** A string is used for data values that are made up of ordered sequences of characters, such as "hello world". Strings are only mentioned here because in macros, everything was a string, and in lua not everything is treated as a string. In Lua, like most programming languages, strings belong inside of quotes. This was not required in macros. For example, `local name = fippy darkpaw` would fail. `local name = "fippy darkpaw"` would work.  
 - **literal:** Defining this word here just to highlight the difference between macro script and pretty much any other programming language in the world. A literal would be something like the number `2` or the string `"hello world"`. Specifically for strings, as mentioned a few times throughout this guide, they must be in single (`'`) or double (`"`) quotes. This differs from macro script where strings don't need to be in quotes.  
 - **true/false:** Boolean values in Lua. They must be written lowercase, not to be confused with `TRUE` and `FALSE` seen in macros. One quick note on true/false in Lua is that numbers do not behave like booleans in conditions like they do in macros or several other languages. `if my_int_variable then` where `my_int_variable` is `0` would not evaluate to `false`. To compare numbers in if statements, the `==` or `~=` operators should be used.
 
@@ -145,6 +142,9 @@ Lua:   `print(string.format('Script Name: %s', scriptName))`
 Another syntax for formatted strings:  
 Lua:   `print(('Script Name: %s'):format(scriptName))`  
 
+MQ automatically adds a `printf` function for all Lua scripts to make use of as well, so the above string.format isn't necessary:  
+Lua:   `printf('Script Name: %s', scriptName)`  
+
 Refer to the [C++ printf](https://cplusplus.com/reference/cstdio/printf/) reference for details on formatted string specifiers.
 
 > TIP: `%s` in a formatted string can cope with a variable being `nil`.
@@ -197,7 +197,7 @@ local scriptName = 'helloworld'
 
 -- Define a local function which prints a formatted string with the script name and a message:
 local function eyecatcher(message)
-  print(string.format('\ar%s: \a-x%s', scriptName, message))
+  printf('\ar%s: \a-x%s', scriptName, message)
 end
 
 -- Call the function which we just defined, similar to a macro /call eyecatcher "section about subroutines"
@@ -267,7 +267,7 @@ Define an array by passing just a set of values. It will automatically give each
 local priests = { 'clr', 'dru', 'shm' }
 ```
 
-Values can also be indexed explicitly:
+Values can also be indexed explicitly, but prefer the example above:
 ```lua
 local casters={ [1]='enc', [2]='mag', [3]='nec', [4]='wiz' }
 ```
@@ -280,7 +280,7 @@ table.insert(tanks, 'pal')
 table.insert(tanks, 'shd')
 ```
 
-To access a value directly by its index (pretty uncommon, probably):
+To access a value directly by its index:
 ```lua
 print(priests[2])
 ```
@@ -299,24 +299,24 @@ local key = 'enc'
 print(mez_classes[key])
 ```
 
-While the above examples each just show grabbing a table value directly by index or key, tables will probably more often be accessed by iterating over the values. This will be covered more in the examples under the section on control flow.
+While the above examples each just show grabbing a table value directly by index or key, tables can also be accessed by iterating over the values. This will be covered more in the examples under the section on control flow.
 
 Deciding whether a table should be an array or a map depends on the application and how the data will be used. The examples coming up prefer using tables as maps so that values could be looked up directly by key without having to iterate over the table to find the value.
 
-One approach is to treat the table similar to a `Set` data structure, where the key is the unique value in the table like class short names, and the value is just `true`.
+The `mez_classes` example above is using a table as a `Set` data structure, where the key is the unique value in the table like class short names, and the value is `true`.
 
 [Lua Sets](https://www.lua.org/pil/11.5.html) provides an example helper function to create sets like this.
 
-### Command Line Args/Parameters
+### Command Line Arguments
 
 Lua provides access to command line arguments through the use of the same `...` which was introduced earlier with functions for variable number of arguments.
 
 Below is an example which iterates over the arguments which the script is called with:
 ```lua
 local args = {...}
-print('Script called with '..#args..' arguments:')
+printf('Script called with %d arguments:', #args)
 for i,arg in ipairs(args) do
-  print(string.format('arg[%d]: %s', i, arg))
+  printf('arg[%d]: %s', i, arg)
 end
 ```
 
@@ -345,7 +345,7 @@ for _,arg in ipairs(args) do
 end
 
 for key,value in pairs(settings) do
-  print(string.format('Settings[%s]=%s', key, value))
+  printf('Settings[%s]=%s', key, value)
 end
 ```
 
@@ -359,18 +359,18 @@ Settings[ini]=server_toon.ini
 
 ### Require
 
-The Lua `require` function is used to load one Lua file from another. For example, `Write.lua`, by Knightly, is a library which provides useful functions for logging. `Write.lua` is meant to be used by other scripts, and would be included with a statement like `local write = require('write')`. This would then allow a script to call the functions from Write.lua such as `write.debug('my debug message here')`.
+The Lua `require` function is used to load one Lua file from another. For example, `Write.lua`, by Knightly, is a library which provides useful functions for logging. `Write.lua` is meant to be used by other scripts, and would be included as a module with: `local write = require('write')`. This would then allow a script to call the functions from `Write.lua` such as `write.debug('my debug message here')`.
 
 This is similar to include files in macros, though works slightly differently. Include files in macros make the macro behave as if the included files code was all inserted directly where the include was done. In Lua, the results of requiring another Lua file are typically stored into a variable. So, if a script is required, and it returns a table containing several helper functions, then that table is stored into a variable and those functions are accessed through that variable.
 
-Require is also how MQ makes its own functionality available to Lua scripts, such as TLOs, events, bindings and commands which will all be discussed later. In short, its all made available by including the following line:
+Require is also how MQ makes its own functionality available to Lua scripts, such as TLOs, events, binds and commands which will all be discussed later. In short, its all made available by including the following line:
 ```lua
-local mq = require 'mq'
+local mq = require('mq')
 ```
 
 This provides access to all the MQ functionality that has been made available to lua, and assigns it into the variable `mq`.
 
-A short example using require:
+A couple short examples using require:
 
 Create a file named `utils.lua`
 ```lua
@@ -378,7 +378,7 @@ Create a file named `utils.lua`
 local utils = {}
 
 -- Add a function to the utils table under the key "perform_some_task"
-utils.perform_some_task = function()
+function utils.perform_some_task()
   print('successfully performed some task')
 end
 
@@ -391,6 +391,36 @@ Then include `utils.lua` into the main script using a require statement:
 local utils = require 'utils'
 
 utils.perform_some_task()
+```
+
+Another way:
+```lua
+-- Create a local function which will not be exported, so only functions in this file may use it
+local function internal_helper()
+  print('successfully performed some task')
+end
+
+-- Create a local function which will be exported and callable by scripts which require this file
+local function perform_some_task()
+  internal_helper()
+end
+
+-- Create a table which will hold everything we want to be exported from this lua file
+local exports = {
+  perform_some_task = perform_some_task
+}
+
+-- Return the export table
+return exports
+```
+
+Then include `utils.lua` into the main script using a require statement:
+```lua
+local utils = require 'utils'
+
+utils.perform_some_task()
+-- Calling utils.internal_helper() would result in an error
+--utils.internal_helper()
 ```
 
 ### Scope and Processing Order
@@ -508,14 +538,14 @@ For loops in lua are most often going to be iterating over table values. This is
 `pairs` iterates over all keys in a table (treats the table as a map).
 ```lua
 for class, value in pairs(mez_classes) do
-    print(string.format('Class %s can mez: %s', class, value))
+    printf('Class %s can mez: %s', class, value)
 end
 ```
 
 `ipairs` iterates over contiguous numeric keys in a table starting from index 1 (treats the table as an array).
 ```lua
 for index, value in ipairs(casters) do
-    print(string.format('casters[%d]=%s', index, value))
+    printf('casters[%d]=%s', index, value)
 end
 ```
 
@@ -562,7 +592,7 @@ end
 There is also repeat until:
 ```lua
 repeat
-  print('Loop #'..loop)
+  printf('Loop #%d', loop)
   loop = loop - 1
 until loop == 0
 ```
@@ -570,10 +600,17 @@ until loop == 0
 ### /goto
 This is only mentioned here because it is commonly used in macros. Avoid using this in Lua.
 
-While Lua also has goto, it should be possible to handle most situations with normal flow control like those described above.
+While Lua also has goto, it should be possible to handle most situations with normal flow control like those described above.  
+
+One valid scenario for goto would be to handle the lack of `continue` in Lua, however, this can still be avoided in most situations.
 
 ## MQ
-The first line to most lua scripts written for MQ will be `local mq = require 'mq'` which provides access to all the MQ functionality.
+The first line to most lua scripts written for MQ will be:  
+```lua
+local mq = require('mq')
+```
+
+This provides access to all the MQ functionality.
 
 ### TLOs
 Top Level Objects, or TLOs, are how data is accessed from MQ. This should already be a pretty familiar concept from doing just about anything with MQ, including echoing data to the console, writing conditions in KissAssist INIs, writing macros, writing reacts, etc. We use TLOs every day. Some examples include `${Me}`, `${Target}`, `${Spawn}` and `${FindItem}`.
@@ -581,26 +618,26 @@ Top Level Objects, or TLOs, are how data is accessed from MQ. This should alread
 To access TLOs using the `mq` variable:
 
 ```lua
-local mq = require 'mq'
+local mq = require('mq')
 
 local assist_name = mq.TLO.Group.MainAssist.CleanName()
-print(string.format('Assisting: %s', assist_name))
+printf('Assisting: %s', assist_name)
 ```
 
 ```lua
-local mq = require 'mq'
+local mq = require('mq')
 
 if mq.TLO.Target() then
     local mob_hp = mq.TLO.Target.PctHPs()
     if mob_hp < 98 then
-        print(string.format('Assisting on %s', mq.TLO.Target.CleanName()))
+        printf('Assisting on %s', mq.TLO.Target.CleanName())
         -- call some assist code
     end
 end
 ```
 
 ```lua
-local mq = require 'mq'
+local mq = require('mq')
 
 local target = mq.TLO.Target
 if target() then
@@ -613,21 +650,23 @@ end
 
 In general, to convert from a TLO in macro format to a TLO in Lua format, strip the `${ }` and add `mq.TLO.` on the front. If the goal is to evaluate the data to a Lua type, add `()` on the end. For example, `${Me.PctHPs}` becomes `mq.TLO.Me.PctHPs()`.
 
-> Background on Lua userdata: [PIL: Userdata](https://www.lua.org/pil/2.7.html)
+> To evaluate to a Lua type, it must always end in **empty** (). `mq.TLO.Spawn('npc')` will be type `userdata` while `mq.TLO.Spawn('npc')()` will be type `string`.  
+
+> Background on Lua userdata: [PIL: Userdata](https://www.lua.org/pil/2.7.html)  
 
 ```lua
-print('type(mq.TLO.Me.Name) == '..type(mq.TLO.Me.Name)) -- prints userdata
-print('type(mq.TLO.Me.Name()) == '..type(mq.TLO.Me.Name())) -- prints string
+printf('type(mq.TLO.Me.Name) == %s', type(mq.TLO.Me.Name)) -- prints userdata
+printf('type(mq.TLO.Me.Name()) == %s', type(mq.TLO.Me.Name())) -- prints string
 ```
 
 Data returned by MQ is always of type userdata. Adding () on the end will convert the MQ userdata to the appropriate lua datatype.
 ```lua
-print('type(mq.TLO.Spawn("npc") == '..type(mq.TLO.Spawn("npc")))
+printf('type(mq.TLO.Spawn("npc") == %s', type(mq.TLO.Spawn("npc")))
 -- The following print would throw an error because userdata cannot be concatenated to a string
-print('mq.TLO.Spawn("npc") == '..mq.TLO.Spawn("npc"))
+printf('mq.TLO.Spawn("npc") == %s', mq.TLO.Spawn("npc"))
 
-print('type(mq.TLO.Spawn("npc")() == '..type(mq.TLO.Spawn("npc")()))
-print('mq.TLO.Spawn("npc")() == '..mq.TLO.Spawn("npc")())
+printf('type(mq.TLO.Spawn("npc")() == %s', type(mq.TLO.Spawn("npc")()))
+printf('mq.TLO.Spawn("npc")() == %s', mq.TLO.Spawn("npc")())
 ```
 
 ### Commands
@@ -775,6 +814,35 @@ print('finished waiting')
 
 This provides a function which will be called, which should return true or false, to decide whether to cancel the delay.
 
+!!! warning
+
+    `mq.delay` cannot be used within an ImGui callback. It will result in an error, as the ImGui callback is called every frame and cannot be delayed. A required module also cannot include `mq.delay` within its global scope.  
+
+    In this example, a button click in the UI attempts to wait for an action to complete. The UI cannot be delayed, so it does not work.
+    ```lua
+    if ImGui.Button('mem spell') then
+        mq.cmd('/memspell 1 "minor healing"')
+        mq.delay(5000)
+    end
+    ```
+    A more appropriate way to solve this would be to set some state from the button, and then handle the spell memorization from the scripts main loop.
+
+    In this example, `init.lua` tries to require a module which uses `mq.delay` at the global scope, and so it does not work.
+    ```lua
+    -- navHelper.lua
+    local mq = require('mq')
+
+    mq.cmd('/nav target')
+    mq.delay(5000)
+    print('ran to target')
+    ```
+    ```lua
+    -- init.lua
+    require('navHelper')
+    ```
+    Modules which are loaded with require should generally have all logic contained within functions, which can then be called.
+
+
 ### Macro Sub Main Function
 Lua scripts are processed from top to bottom, and don't actually require code to be inside of a function, unlike how macros always have a Sub Main where execution begins. Think of the entire lua file itself as the main function, entering at line 1 of the file when the script is run.
 
@@ -847,7 +915,7 @@ print(eqbcLoaded)
 The `mq.parse` command allows to evaluate a macro expression in Lua and assign the result to a variable. This could be useful if reading macro expressions such as conditions like those in KA or reacts from an INI file.
 
 ```lua
-local mq = require 'mq'
+local mq = require('mq')
 
 local IF_STMT = '${If[%s,1,0]}'
 
@@ -864,9 +932,9 @@ local conditions = {
 
 for _,condition in ipairs(conditions) do
   if testCondition(condition) then
-    print(('Condition "%s" was true'):format(condition))
+    printf('Condition "%s" was true', condition)
   else
-    print(('Condition "%s" was false'):format(condition))
+    printf('Condition "%s" was false', condition)
   end
 end
 ```
@@ -879,22 +947,7 @@ end
 - **.Arg[|,2]**: Lua provides [many examples]((http://lua-users.org/wiki/SplitJoin)) for splitting strings which remove the need to use macro `.Arg`.
 
 ## Storage
-Lua can support the same storage mechanisms that were used in macros, such as INI files, JSON, YAML, sqlite. The native Lua YAML and JSON implementations aren't particularly great, usually they have some caveats and often don't maintain formatting / pretty printing of files. They may be ok if users are never expected to hand edit the files, but that rarely seems to be the case in MQ.
-
-One new storage method which Lua makes available, is to simply persist Lua tables to a file which can then be loaded using standard Lua calls.
-
-### INI
-Lua has a library [LIP.lua](https://github.com/Dynodzzo/Lua_INI_Parser/blob/master/LIP.lua) which can be included, which some scripts have already been using. Buttonmaster, MAUI and a few others each use LIP, but with slight modifications like for supporting a wider variety of keys.
-
-This replaces the need for the INI TLO from MQ. However, it is also still possible to use the INI TLO and /ini commands.
-
-### SQLite
-Some Lua scripts are including an sqlite3 DLL which can be used to connect to an SQLite database. This DLL has been compiled against the version of Lua used in MQ and works well. TradeSkill Construction Set NeXT and the Entropy macro are two example usages of use this.
-
-### Lua Tables
-Several implementations are available online for persisting Lua tables to a file. Table serialization is also covered in Programming in Lua.
-
-Most of the implementations include both the writing and reading of tables to and from a file.
+For more info on storage, such as persisting configuration for a Lua script, refer to [Persisting Configuration in Lua Scripts](pickle.md)  
 
 ## Extras
 
@@ -912,7 +965,7 @@ It can do much more than that, including multiple statements strung together, lo
 The above example would print the name of PCs incrementing over a NearestSpawn search.
 
 ### VS Code Extensions
-In addition to ColdBlooded's emmylua definitions mentioned at the beginning, some other extensions mentioned often include:
+In addition to `mq-definitions`, some useful VS Code extensions include:
 
 - Rainbow Brackets  
 - Indent Rainbow  
@@ -987,3 +1040,5 @@ Lua does have access to Macro variables, through `mq.TLO.Macro.Variable('macro_v
     This will have the same issue, printing `mq.TLO.Target.PctHPs` will look like a number, but it is actually `userdata`, and it needs to be evaluated by adding `()`.
 
 - Command line argument types for bindings are always going to be passed into the bind function as strings. `tonumber(variable)` can be used to convert the type to a number in order to accept a number input to a binding command. If the input can not be parsed to a valid number, then `tonumber(variable)` will return `nil`.
+
+- `mq.delay` is causing errors or being ignored. There may be scenarios, as outlined above in the section on `mq.delay`, where delays are not supported. MQ will normally throw an error saying so, but there may be scenarios which are missing the appropriate error handling.
