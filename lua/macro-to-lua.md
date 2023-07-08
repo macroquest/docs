@@ -237,7 +237,6 @@ somefunc(debug, id)
 Example 4: A function with a variable number of arguments:  
 [PIL: Variable number of arguments](https://www.lua.org/pil/5.2.html)
 ```lua
-
 local function print_values(...)
   local arg = {...}
   for _,value in ipairs(arg) do
@@ -249,6 +248,27 @@ local name = mq.TLO.Me.Name()
 local level = mq.TLO.Me.Level()
 local class = mq.TLO.Me.Class()
 print_values(name, level, class)
+```
+
+Example 5: A function which returns multiple values  
+[PIL: Multiple Results](https://www.lua.org/pil/5.1.html)  
+```lua
+local function get_class_and_race(a_spawn)
+  return a_spawn.Class(), a_spawn.Race()
+end
+
+local class, race = get_class_and_race(mq.TLO.Target)
+```
+
+Example 6: Return a table of values  
+In most cases it will be more extensible and easier to read to return multiple values in a table rather than returning multiple values.
+```lua
+local function get_class_and_race(a_spawn)
+  return {class=a_spawn.Class(), race=a_spawn.Race()}
+end
+
+local targetInfo = get_class_and_race(mq.TLO.Target)
+printf('Target class=%s, race=%s', targetInfo.class, targetInfo.race)
 ```
 
 ### Tables
@@ -909,6 +929,23 @@ end
 local eqbcLoaded = IsPluginLoaded('mq2eqbc')
 print(eqbcLoaded)
 ```
+
+### Timers
+Timer variables are used commonly throughout macros for controlling how often to attempt an action as well as other scenarios. There is no direct translation from the macro Timer type to Lua, however, a couple different options are available to implement them.  
+
+1. `mq.gettime`: MQ provides this function for getting the current time with millisecond precision.  
+2. `os.time` and `os.difftime`: These can be used to implement a timer with second precision. [PIL](https://www.lua.org/pil/22.1.html)  
+
+Example: Only use an ability when its reuse time has passed.
+```lua
+local function do_ability(ability)
+  if mq.gettime() - ability.lastUsedMillis > ability.reuseTimeMillis then
+    mq.cmdf('/useability %s', ability.name)
+    ability.lastUsedMillis = mq.gettime()
+  end
+end
+```
+Alternatively, a timer class could be created using similar logic to above for better reusability, allowing for code like `if ability.timer.is_expired() then`.
 
 ### mq.parse
 
