@@ -19,7 +19,7 @@
         <link rel="next" href="../../reference/">
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.17">
+      <meta name="generator" content="mkdocs-1.4.3, mkdocs-material-9.1.18">
     
     
       
@@ -4514,6 +4514,13 @@
           <li class="md-nav__item">
   <a href="#macro-call-and-macroreturn" class="md-nav__link">
     Macro /call and ${Macro.Return}
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#timers" class="md-nav__link">
+    Timers
   </a>
   
 </li>
@@ -9503,6 +9510,13 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#timers" class="md-nav__link">
+    Timers
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#mqparse" class="md-nav__link">
     mq.parse
   </a>
@@ -9793,6 +9807,23 @@ Sub Main
 <span class="kd">local</span> <span class="n">level</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">Level</span><span class="p">()</span>
 <span class="kd">local</span> <span class="n">class</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">Class</span><span class="p">()</span>
 <span class="n">print_values</span><span class="p">(</span><span class="n">name</span><span class="p">,</span> <span class="n">level</span><span class="p">,</span> <span class="n">class</span><span class="p">)</span>
+</code></pre></div></p>
+<p>Example 5: A function which returns multiple values<br />
+<a href="https://www.lua.org/pil/5.1.html">PIL: Multiple Results</a><br />
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="kr">function</span> <span class="nf">get_class_and_race</span><span class="p">(</span><span class="n">a_spawn</span><span class="p">)</span>
+  <span class="kr">return</span> <span class="n">a_spawn</span><span class="p">.</span><span class="n">Class</span><span class="p">(),</span> <span class="n">a_spawn</span><span class="p">.</span><span class="n">Race</span><span class="p">()</span>
+<span class="kr">end</span>
+
+<span class="kd">local</span> <span class="n">class</span><span class="p">,</span> <span class="n">race</span> <span class="o">=</span> <span class="n">get_class_and_race</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Target</span><span class="p">)</span>
+</code></pre></div></p>
+<p>Example 6: Return a table of values<br />
+In most cases it will be more extensible and easier to read to return multiple values in a table rather than returning multiple values.
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="kr">function</span> <span class="nf">get_class_and_race</span><span class="p">(</span><span class="n">a_spawn</span><span class="p">)</span>
+  <span class="kr">return</span> <span class="p">{</span><span class="n">class</span><span class="o">=</span><span class="n">a_spawn</span><span class="p">.</span><span class="n">Class</span><span class="p">(),</span> <span class="n">race</span><span class="o">=</span><span class="n">a_spawn</span><span class="p">.</span><span class="n">Race</span><span class="p">()}</span>
+<span class="kr">end</span>
+
+<span class="kd">local</span> <span class="n">targetInfo</span> <span class="o">=</span> <span class="n">get_class_and_race</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Target</span><span class="p">)</span>
+<span class="n">printf</span><span class="p">(</span><span class="s1">&#39;Target class=%s, race=%s&#39;</span><span class="p">,</span> <span class="n">targetInfo</span><span class="p">.</span><span class="n">class</span><span class="p">,</span> <span class="n">targetInfo</span><span class="p">.</span><span class="n">race</span><span class="p">)</span>
 </code></pre></div></p>
 <h3 id="tables">Tables<a class="headerlink" href="#tables" title="Permanent link">&para;</a></h3>
 <p>Before getting into flow control, some knowledge of Lua tables is needed. They will be used in several of the examples.</p>
@@ -10295,6 +10326,21 @@ Sub Main
 <span class="kd">local</span> <span class="n">eqbcLoaded</span> <span class="o">=</span> <span class="n">IsPluginLoaded</span><span class="p">(</span><span class="s1">&#39;mq2eqbc&#39;</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="n">eqbcLoaded</span><span class="p">)</span>
 </code></pre></div></p>
+<h3 id="timers">Timers<a class="headerlink" href="#timers" title="Permanent link">&para;</a></h3>
+<p>Timer variables are used commonly throughout macros for controlling how often to attempt an action as well as other scenarios. There is no direct translation from the macro Timer type to Lua, however, a couple different options are available to implement them.  </p>
+<ol>
+<li><code>mq.gettime</code>: MQ provides this function for getting the current time with millisecond precision.  </li>
+<li><code>os.time</code> and <code>os.difftime</code>: These can be used to implement a timer with second precision. <a href="https://www.lua.org/pil/22.1.html">PIL</a>  </li>
+</ol>
+<p>Example: Only use an ability when its reuse time has passed.
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="kr">function</span> <span class="nf">do_ability</span><span class="p">(</span><span class="n">ability</span><span class="p">)</span>
+  <span class="kr">if</span> <span class="n">mq</span><span class="p">.</span><span class="n">gettime</span><span class="p">()</span> <span class="o">-</span> <span class="n">ability</span><span class="p">.</span><span class="n">lastUsedMillis</span> <span class="o">&gt;</span> <span class="n">ability</span><span class="p">.</span><span class="n">reuseTimeMillis</span> <span class="kr">then</span>
+    <span class="n">mq</span><span class="p">.</span><span class="n">cmdf</span><span class="p">(</span><span class="s1">&#39;/useability %s&#39;</span><span class="p">,</span> <span class="n">ability</span><span class="p">.</span><span class="n">name</span><span class="p">)</span>
+    <span class="n">ability</span><span class="p">.</span><span class="n">lastUsedMillis</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">gettime</span><span class="p">()</span>
+  <span class="kr">end</span>
+<span class="kr">end</span>
+</code></pre></div>
+Alternatively, a timer class could be created using similar logic to above for better reusability, allowing for code like <code>if ability.timer.is_expired() then</code>.</p>
 <h3 id="mqparse">mq.parse<a class="headerlink" href="#mqparse" title="Permanent link">&para;</a></h3>
 <p>The <code>mq.parse</code> command allows to evaluate a macro expression in Lua and assign the result to a variable. This could be useful if reading macro expressions such as conditions like those in KA or reacts from an INI file.</p>
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
@@ -10454,10 +10500,10 @@ This will have the same issue, printing <code>mq.TLO.Target.PctHPs</code> will l
       <div class="md-dialog__inner md-typeset"></div>
     </div>
     
-    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.208ed371.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.74e28a9f.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.b425cdc4.min.js"></script>
+      <script src="../../assets/javascripts/bundle.220ee61c.min.js"></script>
       
     
   </body>
