@@ -53,8 +53,9 @@ This is the type used for spell information.
 | [_string_](datatype-string.md)       | **Link**[ _text_ ]           | Generate a clickable spell link. _text_ is optional and overrides the text of the link. |
 | [_int_](datatype-int.md)             | **Location**                 | Appears to be max distance                                                                                                     |
 | [_int_](datatype-int.md)             | **Mana**                     | Mana cost (unadjusted)                                                                                                         |
-| [_int64_](datatype-int64.md) | **Max** | |
-| [_int64_](datatype-int64.md) | **MaxLevel** | |
+| [_int64_](datatype-int64.md)         | **Max**                      |                                                                                                                                |
+| [_int64_](datatype-int64.md)         | **MaxLevel**                 |                                                                                                                                |
+| [_int_](datatype-int.md)             | **MinCasterLevel**           | Minimum level required by any class to cast this spell.                                                                        |
 | [_timestamp_](datatype-timestamp.md) | **MyCastTime**               | Adjusted cast time                                                                                                             |
 | | **MyDuration** | |
 | [_float_](datatype-float.md)         | **MyRange**                  | Adjusted spell range, including focus effects, etc.                                                                            |

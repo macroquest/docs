@@ -31,6 +31,7 @@ Represents a discrete item being looted in an AdvLoot window.
 | [_bool_](../data-types/datatype-bool.md) | **AlwaysNeed** | The Always Need (AN) state of the item. |
 | [_bool_](../data-types/datatype-bool.md) | **AutoRoll** | The Auto Roll state (dice icon) of the item. |
 | [_spawn_](../data-types/datatype-spawn.md) | **Corpse** | The spawn representing the corpse that is being looted, if available. |
+| [_bool_](../data-types/datatype-bool.md) | **FreeGrab** | Indicates that the item is free grab. |
 | [_bool_](../data-types/datatype-bool.md) | **Greed** | The Greed (GD) state of the item. |
 | [_int_](../data-types/datatype-int.md) | **IconID** | The ID of the icon for the item. |
 | [_int64_](../data-types/datatype-int64.md) | **ID** | The ID of the item. |

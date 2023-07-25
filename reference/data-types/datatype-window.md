@@ -69,6 +69,7 @@ Windows come in many forms, but all are represented with the generic **window** 
 | **RightMouseUp**                    | Does the action of clicking the right mouse button up               |
 | **Select**                          | Selects the specified window                                        |
 | **SetCurrentTab** [ _# or Name_ ]   | If the window is a TabBox, set the current tab by index or by name. |
+| **SetText** [ _text_ ]              | If the window is an EditBox, set the current text.                  |
 
 ## Usage
 
