@@ -19,8 +19,7 @@ tags:
 | **Example** | **Description** |
 | /doortarget | Will target closest door/switch |
 | /doortarget id 27 | If you are in PoK will target the portal stone to Rathemtn |
-| /doortarget target | Will return the targeted switch |
-| /doortarget nearest | Same as "/doortarget", returning the nearest switch |
+| /doortarget clear | Clears current doortarget |
 
 ## See Also
 
