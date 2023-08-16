@@ -23,4 +23,4 @@ tags:
 
 ## See Also
 
-For scripts, targeting the door is usually unecessary.  Instead look at [_switch_](../data-types/datatype-switch.md) TLO for discovery / triggering.
+For scripts, targeting the door is usually unecessary.  Instead look at [_Switch_](../top-level-objects/tlo-switch.md) TLO for discovery / triggering.
