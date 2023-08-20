@@ -145,7 +145,7 @@ If something is missing here, you can check the source to see if it exists.
 | [_int_](datatype-int.md) | **EnduranceRegenBonus** | Endurance regen bonus |
 | | **EnergyCrystals** | |
 | | **EntwinedDjinnCoins** | |
-| [_int64_](datatype-int64.md) | **Exp** | Experience (out of 10,000) |
+| [_int64_](datatype-int64.md) | **Exp** | Experience (out of 10,000 on Live / out of 330 on Emu) |
 | [_int_](datatype-int.md) | **ExpansionFlags** | Returns a numeric number representing which expansions your toon is flagged for |
 | [_int_](datatype-int.md) | **Faycites** | Faycites on your character |
 | | **Feared** | |
