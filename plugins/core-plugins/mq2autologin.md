@@ -155,7 +155,7 @@ For example, here are the most popular macroquest-compatible emu servers as of 8
 [Servers]
 EZ (Linux) x4 Exp=[] EZ Server - Custom Zones, Vendors, Quests, Items, etc
 Imperium_EQ=[] Imperium Server - Solo Level/Duo+ Raid
-PEQTGC=[] PEQ] The Grand Creation - Omens of War
+PEQTGC=[] PEQ] The Grand Creation | Dragons of Norrath
 Project Lazarus=[] Project Lazarus
 HiddenForest=[] The Hidden Forest [ www.thehiddenforest.org ]
 Haven=[] Wayfarers Haven [wayfarershaven.com]
