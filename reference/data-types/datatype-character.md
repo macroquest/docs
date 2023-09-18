@@ -235,6 +235,7 @@ If something is missing here, you can check the source to see if it exists.
 | | **McKenzie** | |
 | | **MedalsOfConflict** | |
 | | **MedalsOfHeroism** | |
+| [_string_](datatype-string.md) | **MembershipLevel** | Account membership level: `GOLD`, `SILVER`, `FREE`. All-Access and Lifetime All-access are both considered Gold. |
 | [_int64_](datatype-int64.md) | **MercAAExp** | |
 | | **MercAAPoints* | |
 | | **MercAAPointsSpent** | |
@@ -325,7 +326,7 @@ If something is missing here, you can check the source to see if it exists.
 | [_int_](datatype-int.md) | **StrikeThroughBonus** | Strikethrough bonus from gear and spells |
 | [_bool_](datatype-bool.md) | **Stunned** | Am I stunned? |
 | [_int_](datatype-int.md) | **StunResistBonus** | Stun Resist bonus from gear and spells |
-| [_string_](datatype-string.md) | **Subscription** | Subscription type GOLD, FREE, (Silver?) |
+| [_string_](datatype-string.md) | **Subscription** | See MembershipLevel |
 | [_int_](datatype-int.md) | **SubscriptionDays** | The number of days left before subscription expires. |
 | | **SV** | |
 | [_int_](datatype-int.md) | **svChromatic** | Your character's lowest resist |

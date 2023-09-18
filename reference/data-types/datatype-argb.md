@@ -8,27 +8,27 @@ Represents a color
 
 ## Members
 
-[_int_][int] **A**
+### [int][int] `A`
 
 :   Alpha channel value.
 
-[_int_][int] **R**
+### [int][int] `R`
 
 :   Red color value.
 
-[_int_][int] **G**
+### [int][int] `G`
 
 :   Green color value.
 
-[_int_][int] **B**
+### [int][int] `B`
 
 :   Blue color value.
 
-[_int_][int] **Int**
+### [int][int] `Int`
 
 :   The integer formed by the ARGB.
 
-[_string_][string] **(To String)**
+### [string][string] To String
 
 :   The hex value of the integer formed by the ARGB.
 
