@@ -585,6 +585,7 @@ Represents an in-game spawn.
 | -------------------------------------------------------- | ---------------------------------------------------- |
 | `${Pet.Equipment[primary].ID}`                           | ID number of the pet's primary weapon                |
 | `${Group.Member[mymagesname].Pet.Equipment[primary].ID}` | ID number of the group member's pet's primary weapon |
+
 [int]: datatype-int.md
 [string]: datatype-string.md
 [achievementobj]: datatype-achievementobj.md
