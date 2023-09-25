@@ -8,11 +8,71 @@ Provides access to world locations such as a character's bound location
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **ID** | The location's ID |
-| [_float_](datatype-float.md) | **Heading** | At the point of binding, what direction was the character facing |
-| [_zone_](datatype-zone.md) | **Zone** | Access to the zone data |
-| [_float_](datatype-float.md) | **X** | The X coordinate |
-| [_float_](datatype-float.md) | **Y** | The Y coordinate |
-| [_float_](datatype-float.md) | **Z** | The Z coordinate |
+### [int][int] `ID`
+
+:   The location's ID
+
+### [float][float] `Heading`
+
+:   At the point of binding, what direction was the character facing
+
+### [zone][zone] `Zone`
+
+:   Access to the zone data
+
+### [float][float] `X`
+
+:   The X coordinate
+
+### [float][float] `Y`
+
+:   The Y coordinate
+
+### [float][float] `Z`
+
+:   The Z coordinate
+
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md
+[double]: datatype-double.md
+[invslot]: datatype-invslot.md
+[augtype]: datatype-augtype.md
+[itemspell]: datatype-itemspell.md
+[evolving]: datatype-evolving.md
+[keyringitem]: datatype-keyringitem.md
+[raidmember]: datatype-raidmember.md
+[body]: datatype-body.md
+[cachedbuff]: datatype-cachedbuff.md
+[deity]: datatype-deity.md
+[race]: datatype-race.md
+[taskmember]: datatype-task.md

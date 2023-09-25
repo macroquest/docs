@@ -10,17 +10,42 @@ This contains information related to the active merchant.
 
 This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is active.
 
-| **Type** | **Member** | **Description**  |
-| --- | --- | --- |
-| [_bool_](datatype-bool.md) | **Full** | Returns True if the merchant's inventory is full. |
-| [_int_](datatype-int.md) | **Items** | Number of items on the merchant. |
-| [_item_](datatype-item.md) | **Item**[ _#_ ] | Item number _#_ on the merchant's list. |
-| [_item_](datatype-item.md) | **Item**[_name_] | Find an item by partial name on the merchant's list. Prefix with "=" for an exact match. |
-| [_float_](datatype-float.md) | **Markup** | <p>The number used to calculate the buy and sell value for an item. (This is what is changed by charisma and faction). This value is capped at 1.05.</p><br><ul><li>Markup * Item Value = Amount you buy item for</li><li>Item Value * (1/Markup) = Amount you sell item for</li></ul> |
-| [_bool_](datatype-bool.md) | **Open** | Returns True if the merchant window is open. |
-| [_item_](datatype-item.md) | **SelectedItem** | The currently selected item in the merchant window. Items can be selected by using [/selectitem](../commands/selectitem.md) |
-| [_bool_](datatype-bool.md) | **ItemsReceived** | True if the merchant's item list has been populated. |
-| [_string_](datatype-string.md) | **(To String)** | Same as *Open* |
+### [bool][bool] `Full`
+
+:   Returns True if the merchant's inventory is full.
+
+### [int][int] `Items`
+
+:   Number of items on the merchant.
+
+### [item][item] `Item[#]`
+
+:   Item number _#_ on the merchant's list.
+
+### [item][item] `Item[name]`
+
+:   Find an item by partial name on the merchant's list. Prefix with "=" for an exact match.
+
+### [float][float] `Markup`
+
+:   <p>The number used to calculate the buy and sell value for an item. (This is what is changed by charisma and faction). This value is capped at 1.05.</p><br><ul><li>Markup * Item Value = Amount you buy item for</li><li>Item Value * (1/Markup) = Amount you sell item for</li></ul>
+
+### [bool][bool] `Open`
+
+:   Returns True if the merchant window is open.
+
+### [item][item] `SelectedItem`
+
+:   The currently selected item in the merchant window. Items can be selected by using [/selectitem](../commands/selectitem.md)
+
+### [bool][bool] `ItemsReceived`
+
+:   True if the merchant's item list has been populated.
+
+### [string][string] `(To String)`
+
+:   Same as *Open*
+
 
 ## Methods
 
@@ -45,3 +70,41 @@ Will select a "Diamond" you can also do "=Diamond" to match EXACT name. Then you
 ```
 /invoke ${Merchant.Sell[100]}
 ```
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: ../data-types/datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md
+[double]: datatype-double.md
+[invslot]: datatype-invslot.md
+[augtype]: datatype-augtype.md
+[itemspell]: datatype-itemspell.md
+[evolving]: datatype-evolving.md
+[keyringitem]: datatype-keyringitem.md

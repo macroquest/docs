@@ -8,30 +8,94 @@ Represents a ground item.
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **ID** | Ground item ID (not the same as item ID, this is like spawn ID) |
-| [_int_](datatype-int.md) | **Distance** | Distance from player to ground item |
-| [_float_](datatype-float.md) | **X** | X coordinate |
-| [_float_](datatype-float.md) | **Y** | Y coordinate |
-| [_float_](datatype-float.md) | **Z** | Z coordinate |
-| [_heading_](datatype-heading.md) | **Heading** | Ground item is facing this heading |
-| [_string_](datatype-string.md) | **Name** | Name |
-| [_heading_](datatype-heading.md) | **HeadingTo** | Direction player must move to meet this ground item |
-| [_bool_](datatype-bool.md) | **LineOfSight** | Returns TRUE if ground spawn is in line of sight |
-| [_int_](datatype-int.md) | **Address** | ??? |
-| [_float_](datatype-float.md) | **DisplayName** | Displays name of the grounspawn |
-| [_int_](datatype-int.md) | **Distance3D** | Distance from player to ground item |
-| [_int_](datatype-int.md) | **SubID** | ??? |
-| [_int_](datatype-int.md) | **ZoneID** | ??? |
-| [_ground_](datatype-ground.md) | **First** | First spawn |
-| [_ground_](datatype-ground.md) | **Last** | Last spawn |
-| [_ground_](datatype-ground.md) | **Next** | Next spawn |
-| [_ground_](datatype-ground.md) | **Prev** | Prev spawn |
-| [_float_](datatype-float.md) | **W** | X coordinate (Westward-positive) |
-| [_float_](datatype-float.md) | **N** | Y coordinate (Northward-positive) |
-| [_float_](datatype-float.md) | **U** | Z coordinate (Upward-positive) |
-| [_string_](datatype-string.md) | **To String** | Same as ID |
+### [int][int] `ID`
+
+:   Ground item ID (not the same as item ID, this is like spawn ID)
+
+### [int][int] `Distance`
+
+:   Distance from player to ground item
+
+### [float][float] `X`
+
+:   X coordinate
+
+### [float][float] `Y`
+
+:   Y coordinate
+
+### [float][float] `Z`
+
+:   Z coordinate
+
+### [heading][heading] `Heading`
+
+:   Ground item is facing this heading
+
+### [string][string] `Name`
+
+:   Name
+
+### [heading][heading] `HeadingTo`
+
+:   Direction player must move to meet this ground item
+
+### [bool][bool] `LineOfSight`
+
+:   Returns TRUE if ground spawn is in line of sight
+
+### [int][int] `Address`
+
+:   ???
+
+### [float][float] `DisplayName`
+
+:   Displays name of the grounspawn
+
+### [int][int] `Distance3D`
+
+:   Distance from player to ground item
+
+### [int][int] `SubID`
+
+:   ???
+
+### [int][int] `ZoneID`
+
+:   ???
+
+### [ground][ground] `First`
+
+:   First spawn
+
+### [ground][ground] `Last`
+
+:   Last spawn
+
+### [ground][ground] `Next`
+
+:   Next spawn
+
+### [ground][ground] `Prev`
+
+:   Prev spawn
+
+### [float][float] `W`
+
+:   X coordinate (Westward-positive)
+
+### [float][float] `N`
+
+:   Y coordinate (Northward-positive)
+
+### [float][float] `U`
+
+:   Z coordinate (Upward-positive)
+
+### [string][string] `To String`
+
+:   Same as ID
+
 
 ## Methods
 
@@ -62,3 +126,32 @@ Will target the closest item on the ground which has the word "egg" in it. and t
 
 Will face the closest item on the ground. and then echo the distance to it in the mq2 window. well if it finds an groundspawn, otherwise it will just echo NULL .DoFace does NOT target the ground item, it just faces it.
 
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md

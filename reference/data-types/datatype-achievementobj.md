@@ -8,14 +8,30 @@ Represents a single objective of an achievement
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **ID** | The objective's unique ID. |
-| [_string_](datatype-string.md) | **Description** | Text describing this objective. |
-| [_int_](datatype-int.md) | **Count** | The current count recorded by the objective. |
-| [_int_](datatype-int.md) | **RequiredCount** | The total count required to be complete the objective. For objectives that don't require a count, this will be zero. |
-| [_bool_](datatype-bool.md) | **Completed** | True if the objective has been completed. |
-| [_int_](datatype-int.md) | **Index** | Visual index of the objective as displayed in the achievement window. Can be used with **Achievement.ObjectiveByIndex**. |
+### [int][int] `ID`
+
+:   The objective's unique ID.
+
+### [string][string] `Description`
+
+:   Text describing this objective.
+
+### [int][int] `Count`
+
+:   The current count recorded by the objective.
+
+### [int][int] `RequiredCount`
+
+:   The total count required to be complete the objective. For objectives that don't require a count, this will be zero.
+
+### [bool][bool] `Completed`
+
+:   True if the objective has been completed.
+
+### [int][int] `Index`
+
+:   Visual index of the objective as displayed in the achievement window. Can be used with **Achievement.ObjectiveByIndex**.
+
 
 ### Example
 
@@ -56,3 +72,10 @@ List the objectives that are still left to complete the achievement "**Norrathia
         end
     end
     ```
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md

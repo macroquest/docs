@@ -8,16 +8,38 @@ The AdvLoot TLO grants access to items in the Advanced Loot window.
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_itemfilterdata_](#itemfilterdata-type) | **Filter**[ _ItemID_ ] | Inspect the loot filter for a given ItemID. |
-| [_bool_](../data-types/datatype-bool.md) | **LootInProgress** | True/False if looting from AdvLoot is in progress |
-| [_int_](../data-types/datatype-int.md) | **PCount** | item count from the Personal list |
-| [_advlootitem_](#advlootitem-type) | **PList**[ _Index_ ] | Inspect the item at the specified index in the personal loot list. |
-| [_int_](../data-types/datatype-int.md) | **PWantCount** | Want count from the Personal list (AN + AG + ND + GD) |
-| [_int_](../data-types/datatype-int.md) | **SCount** | Item count from the Shared list |
-| [_advlootitem_](#advlootitem-type) | **SList**[ _Index_ ] | Inspect the item at the specified index in the shared loot list. |
-| [_int_](../data-types/datatype-int.md) | **SWantCount** | Want count from the Shared list (AN + AG + ND + GD) |
+### [itemfilterdata][itemfilterdata] `Filter[ItemID]`
+
+:   Inspect the loot filter for a given ItemID.
+
+### [bool][bool] `LootInProgress`
+
+:   True/False if looting from AdvLoot is in progress
+
+### [int][int] `PCount`
+
+:   item count from the Personal list
+
+### [advlootitem][advlootitem] `PList[Index]`
+
+:   Inspect the item at the specified index in the personal loot list.
+
+### [int][int] `PWantCount`
+
+:   Want count from the Personal list (AN + AG + ND + GD)
+
+### [int][int] `SCount`
+
+:   Item count from the Shared list
+
+### [advlootitem][advlootitem] `SList[Index]`
+
+:   Inspect the item at the specified index in the shared loot list.
+
+### [int][int] `SWantCount`
+
+:   Want count from the Shared list (AN + AG + ND + GD)
+
 
 ## Associated DataTypes
 
@@ -25,41 +47,112 @@ The AdvLoot TLO grants access to items in the Advanced Loot window.
 
 Represents a discrete item being looted in an AdvLoot window.
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_bool_](../data-types/datatype-bool.md) | **AlwaysGreed** | The Always Greed (AG) state of the item. |
-| [_bool_](../data-types/datatype-bool.md) | **AlwaysNeed** | The Always Need (AN) state of the item. |
-| [_bool_](../data-types/datatype-bool.md) | **AutoRoll** | The Auto Roll state (dice icon) of the item. |
-| [_spawn_](../data-types/datatype-spawn.md) | **Corpse** | The spawn representing the corpse that is being looted, if available. |
-| [_bool_](../data-types/datatype-bool.md) | **FreeGrab** | Indicates that the item is free grab. |
-| [_bool_](../data-types/datatype-bool.md) | **Greed** | The Greed (GD) state of the item. |
-| [_int_](../data-types/datatype-int.md) | **IconID** | The ID of the icon for the item. |
-| [_int64_](../data-types/datatype-int64.md) | **ID** | The ID of the item. |
-| [_int_](../data-types/datatype-int.md) | **Index** | The positional index of the item. |
-| [_string_](../data-types/datatype-string.md) | **Name** | The name of the item. |
-| [_bool_](../data-types/datatype-bool.md) | **Need** | The Need (ND) state of the item. |
-| [_bool_](../data-types/datatype-bool.md) | **Never** | The Never (NV) state of the item. |
-| [_bool_](../data-types/datatype-bool.md) | **No** | The No state of the item. |
-| [_bool_](../data-types/datatype-bool.md) | **NoDrop** | Indicates if the item is NO DROP. |
-| [_int_](../data-types/datatype-int.md) | **StackSize** | The size of the stack of items being looted. |
-| [_string_](../data-types/datatype-string.md) | **To String** | Same as **Name** |
+### [bool][bool] `AlwaysGreed`
+
+:   The Always Greed (AG) state of the item.
+
+### [bool][bool] `AlwaysNeed`
+
+:   The Always Need (AN) state of the item.
+
+### [bool][bool] `AutoRoll`
+
+:   The Auto Roll state (dice icon) of the item.
+
+### [spawn][spawn] `Corpse`
+
+:   The spawn representing the corpse that is being looted, if available.
+
+### [bool][bool] `FreeGrab`
+
+:   Indicates that the item is free grab.
+
+### [bool][bool] `Greed`
+
+:   The Greed (GD) state of the item.
+
+### [int][int] `IconID`
+
+:   The ID of the icon for the item.
+
+### [int64][int64] `ID`
+
+:   The ID of the item.
+
+### [int][int] `Index`
+
+:   The positional index of the item.
+
+### [string][string] `Name`
+
+:   The name of the item.
+
+### [bool][bool] `Need`
+
+:   The Need (ND) state of the item.
+
+### [bool][bool] `Never`
+
+:   The Never (NV) state of the item.
+
+### [bool][bool] `No`
+
+:   The No state of the item.
+
+### [bool][bool] `NoDrop`
+
+:   Indicates if the item is NO DROP.
+
+### [int][int] `StackSize`
+
+:   The size of the stack of items being looted.
+
+### [string][string] `To String`
+
+:   Same as **Name**
+
 
 
 ### `itemfilterdata` Type
 
 A collection of settings that together describe the loot filter for an item.
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_bool_](../data-types/datatype-bool.md) | **AutoRoll** | The Auto Roll state (dice icon). |
-| [_bool_](../data-types/datatype-bool.md) | **Greed** | The Greed (GD) state.|
-| [_int_](../data-types/datatype-int.md) | **IconID** | The ID of the icon. |
-| [_int_](../data-types/datatype-int.md) | **ID** | The ID of the item. |
-| [_string_](../data-types/datatype-string.md) | **Name** | The Name of the item. |
-| [_bool_](../data-types/datatype-bool.md) | **Need** | The Need (ND) state. |
-| [_bool_](../data-types/datatype-bool.md) | **Never** | The Never (NV) state. |
-| [_int_](../data-types/datatype-int.md) | **Types** | Bit field representing all the loot filter flags for this item. |
-| [_string_](../data-types/datatype-string.md) | **To String** | Same as **Name** |
+### [bool][bool] `AutoRoll`
+
+:   The Auto Roll state (dice icon).
+
+### [bool][bool] `Greed`
+
+:   The Greed (GD) state.
+
+### [int][int] `IconID`
+
+:   The ID of the icon.
+
+### [int][int] `ID`
+
+:   The ID of the item.
+
+### [string][string] `Name`
+
+:   The Name of the item.
+
+### [bool][bool] `Need`
+
+:   The Need (ND) state.
+
+### [bool][bool] `Never`
+
+:   The Never (NV) state.
+
+### [int][int] `Types`
+
+:   Bit field representing all the loot filter flags for this item.
+
+### [string][string] `To String`
+
+:   Same as **Name**
+
 
 ## Usage Examples
 
@@ -130,3 +223,50 @@ A collection of settings that together describe the loot filter for an item.
         print('Do something else, loot is already in progress...')
     end
     ```
+[int]: ../data-types/datatype-int.md
+[string]: ../data-types/datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: ../data-types/datatype-bool.md
+[time]: datatype-time.md
+[achievement]: ../data-types/datatype-achievement.md
+[achievementcat]: ../data-types/datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: ../data-types/datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: ../data-types/datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md
+[double]: datatype-double.md
+[invslot]: datatype-invslot.md
+[augtype]: datatype-augtype.md
+[itemspell]: datatype-itemspell.md
+[evolving]: datatype-evolving.md
+[keyringitem]: datatype-keyringitem.md
+[raidmember]: datatype-raidmember.md
+[body]: datatype-body.md
+[cachedbuff]: datatype-cachedbuff.md
+[deity]: datatype-deity.md
+[race]: datatype-race.md
+[taskmember]: datatype-task.md
+[achievementmgr]: #achievementmgr-type
+[itemfilterdata]: #itemfilterdata-type
+[advlootitem]: #advlootitem-type

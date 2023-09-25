@@ -8,17 +8,42 @@ This contains information related to a tradeskill depot.
 
 ## Members
 
-| **Type** | **Member** | **Description**  |
-| --- | --- | --- |
-| [_int_](datatype-int.md) | **Count** | Returns the number of item stacks in the tradeskill depot. |
-| [_int_](datatype-int.md) | **Capacity** | Returns the total capacity of the tradeskill depot. |
-| [_bool_](datatype-bool.md) | **Enabled** | Returns whether the tradeskill depot is enabled or not. It requires the Night of Shadows expansion. |
-| [_bool_](datatype-bool.md) | **ItemsReceived** | Returns whether the tradeskill depot has been populated with items. The window must be opened at least once for the depot to be populated with items. |
-| [_item_](datatype-item.md) | **FindItem**[ _#_ ] | Find an item with the given item ID in the tradeskill depot. |
-| [_item_](datatype-item.md) | **FindItem**[_name_] | Find an item by partial name in the tradeskill depot. Prefix with "=" for an exact match. |
-| [_int_](datatype-int.md) | **FindItemCount**[ _#_ ] | Find the number of items with the given item ID in the tradeskill depot. |
-| [_int_](datatype-int.md) | **FindItemCount**[_name_] | Find the number of items by partial name in the tradeskill depot. Prefix with "=" for an exact match. |
-| [_item_](datatype-item.md) | **SelectedItem** | Returns the currently selected item in the tradeskill depot window. |
+### [int][int] `Count`
+
+:   Returns the number of item stacks in the tradeskill depot.
+
+### [int][int] `Capacity`
+
+:   Returns the total capacity of the tradeskill depot.
+
+### [bool][bool] `Enabled`
+
+:   Returns whether the tradeskill depot is enabled or not. It requires the Night of Shadows expansion.
+
+### [bool][bool] `ItemsReceived`
+
+:   Returns whether the tradeskill depot has been populated with items. The window must be opened at least once for the depot to be populated with items.
+
+### [item][item] `FindItem[#]`
+
+:   Find an item with the given item ID in the tradeskill depot.
+
+### [item][item] `FindItem[name]`
+
+:   Find an item by partial name in the tradeskill depot. Prefix with "=" for an exact match.
+
+### [int][int] `FindItemCount[#]`
+
+:   Find the number of items with the given item ID in the tradeskill depot.
+
+### [int][int] `FindItemCount[name]`
+
+:   Find the number of items by partial name in the tradeskill depot. Prefix with "=" for an exact match.
+
+### [item][item] `SelectedItem`
+
+:   Returns the currently selected item in the tradeskill depot window.
+
 
 ## Methods
 
@@ -29,3 +54,47 @@ This contains information related to a tradeskill depot.
 | **WithdrawItem**[_name_] | Withdraw the given item name from the tradeskill depot. Will create a quantity window if there is more than one item in the stack. |
 | **WithdrawStack** | Withdraw a full stack of the selected item from the tradeskill depot. |
 | **WithdrawStack**[_name_] | Withdraw a full stack of the given item name from the tradeskill depot. |
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md
+[double]: datatype-double.md
+[invslot]: datatype-invslot.md
+[augtype]: datatype-augtype.md
+[itemspell]: datatype-itemspell.md
+[evolving]: datatype-evolving.md
+[keyringitem]: datatype-keyringitem.md
+[raidmember]: datatype-raidmember.md
+[body]: datatype-body.md
+[cachedbuff]: datatype-cachedbuff.md
+[deity]: datatype-deity.md
+[race]: datatype-race.md
+[taskmember]: datatype-task.md
