@@ -8,10 +8,14 @@ Provides access to achievements.
 
 ## Forms
 
-| **Type** | **Form** | **Description** |
-| :--- | :--- | :--- |
-| [_achievement_](../data-types/datatype-achievement.md) | **Achievement[#\|Name]** | Look up an achievement by name or by id. |
-| [_achievementmgr_](#achievementmgr-type) | **Achievement** | Access the achievement manager which provides access to information about achievements |
+### [achievement][achievement] `Achievement[#|Name]`
+
+:   Look up an achievement by name or by id.
+
+### [achievementmgr][achievementmgr] `Achievement`
+
+:   Access the achievement manager which provides access to information about achievements
+
 
 ## Associated DataTypes
 
@@ -19,18 +23,50 @@ Provides access to achievements.
 
 Provides access achievements, achievement categories, and other information surrounding the achievement system.
 
-| Type | Name | Description |
-| ---- | ---- | ---- |
-| [_achievement_](../data-types/datatype-achievement.md)           | **Achievement[#\|Name]** |  Find an achievement by its ID or by its name.         |
-| [_achievement_](../data-types/datatype-achievement.md)           | **AchievementByIndex[#]** |  Find an achievement by its index.                     |
-| [_int_](../data-types/datatype-int.md)                           | **AchievementCount**      |  The number of achievements in the manager.            |
-| [_achievementcat_](../data-types/datatype-achievementcat.md)     | **Category[#\|Name]**    |  Find an achievement category by its id or by its name.Note: If searching by name, only top-level categories are returned from the achievement manager.    |
-| [_achievementcat_](../data-types/datatype-achievementcat.md)     | **CategoryByIndex[#]**   |  Find an achievement category by its index.            |
-| [_int_](../data-types/datatype-int.md)                           | **CategoryCount**        |  The number of achievement categories in the manager.  |
-| [_int_](../data-types/datatype-int.md)                           | **Points**               |  The total number of accumulated achievement points.    |
-| [_int_](../data-types/datatype-int.md)                           | **CompletedAchievement** |  The number of completed achievements.    |
-| [_int_](../data-types/datatype-int.md)                           | **TotalAchievement**     |  The number of available achievements.    |
-| [_bool_](../data-types/datatype-bool.md)                         | **Ready**                |  Indicates that the manager has loaded all achievement data and is ready to be used.    |
+### [Type][Type] `Name`
+
+:   Description
+
+### [achievement][achievement] `Achievement[#|Name]`
+
+:   Find an achievement by its ID or by its name.
+
+### [achievement][achievement] `AchievementByIndex[#]`
+
+:   Find an achievement by its index.
+
+### [int][int] `AchievementCount`
+
+:   The number of achievements in the manager.
+
+### [achievementcat][achievementcat] `Category[#|Name]`
+
+:   Find an achievement category by its id or by its name.Note: If searching by name, only top-level categories are returned from the achievement manager.
+
+### [achievementcat][achievementcat] `CategoryByIndex[#]`
+
+:   Find an achievement category by its index.
+
+### [int][int] `CategoryCount`
+
+:   The number of achievement categories in the manager.
+
+### [int][int] `Points`
+
+:   The total number of accumulated achievement points.
+
+### [int][int] `CompletedAchievement`
+
+:   The number of completed achievements.
+
+### [int][int] `TotalAchievement`
+
+:   The number of available achievements.
+
+### [bool][bool] `Ready`
+
+:   Indicates that the manager has loaded all achievement data and is ready to be used.
+
 
 
 ## Usage
@@ -80,3 +116,48 @@ To look up an achievement's ID, you can look up an achievement by name, or you c
     -- "Wayfarers Brotherhood Adventurer's Stone (Various 20+)"
     print(mq.TLO.Achievement(500980300).Completed())
     ```
+[int]: ../data-types/datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: ../data-types/datatype-bool.md
+[time]: datatype-time.md
+[achievement]: ../data-types/datatype-achievement.md
+[achievementcat]: ../data-types/datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md
+[double]: datatype-double.md
+[invslot]: datatype-invslot.md
+[augtype]: datatype-augtype.md
+[itemspell]: datatype-itemspell.md
+[evolving]: datatype-evolving.md
+[keyringitem]: datatype-keyringitem.md
+[raidmember]: datatype-raidmember.md
+[body]: datatype-body.md
+[cachedbuff]: datatype-cachedbuff.md
+[deity]: datatype-deity.md
+[race]: datatype-race.md
+[taskmember]: datatype-task.md
+[achievementmgr]: #achievementmgr-type

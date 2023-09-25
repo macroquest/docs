@@ -13,11 +13,18 @@ Data related to arrays.
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **Dimensions** | Number of dimensions in the array |
-| [_int_](datatype-int.md) | **Size** | Total number of elements in the array |
-| [_int_](datatype-int.md) | **Size**[ _N_ ] | Total number of elements stored in the _N_ th dimension of the array |
+### [int][int] `Dimensions`
+
+:   Number of dimensions in the array
+
+### [int][int] `Size`
+
+:   Total number of elements in the array
+
+### [int][int] `Size[N]`
+
+:   Total number of elements stored in the _N_ th dimension of the array
+
 
 ## Usage
 
@@ -74,3 +81,12 @@ There is no limit to the number of dimensions or the number of elements in each 
     /return
     ```
 
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md

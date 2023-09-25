@@ -8,24 +8,70 @@ Provides the details about a single achievement and allows access to an achievem
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **ID** | The achievement's unique ID. |
-| [_string_](datatype-string.md) | **Name** | The achievement's name |
-| [_string_](datatype-string.md) | **Description** | The achievement's description |
-| [_int_](datatype-int.md) | **Points** | The point value for the achievement |
-| [_achievementobj_](datatype-achievementobj.md) | **Objective[**\#\|_Description_**]** | Find an objective by its objective ID or Description. |
-| [_achievementobj_](datatype-achievementobj.md) | **ObjectiveByIndex[**\#**]** | Find an objective by its visual ordering as displayed in the achievements window. |
-| [_int_](datatype-int.md) | **ObjectiveCount** | The number of objectives in this achievement. |
-| [_string_](datatype-string.md) | **Link[**_opt: Name_**]** | Generate an achievement link. An optional name can be provided to display in the achievement, otherwise the current character's name will be used. |
-| [_int_](datatype-int.md) | **Index** | The index of the achievement. See [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices) for more information. |
-| [_int_](datatype-int.md) | **IconID** | ID of the Achievement's Icon. See [Achievement Icon](datatype-achievement.md#achievement-icon) below. |
-| [_string_](datatype-string.md) | **State** | The achievement state. See [Achievement State](datatype-achievement.md#achievement-state) below. |
-| [_bool_](datatype-bool.md) | **Completed** | True if the achievement has been completed |
-| [_bool_](datatype-bool.md) | **Open** | True if the achievement is open |
-| [_bool_](datatype-bool.md) | **Locked** | True if the achievement is locked |
-| [_bool_](datatype-bool.md) | **Hidden** | True if the achievement is hidden |
-| [_time_](datatype-time.md) | **CompletedTime** | Calendar time when the achievement was completed. |
+### [int][int] `ID`
+
+:   The achievement's unique ID.
+
+### [string][string] `Name`
+
+:   The achievement's name
+
+### [string][string] `Description`
+
+:   The achievement's description
+
+### [int][int] `Points`
+
+:   The point value for the achievement
+
+### [achievementobj][achievementobj] `Objective[#|Description]`
+
+:   Find an objective by its objective ID or Description.
+
+### [achievementobj][achievementobj] `ObjectiveByIndex[#]`
+
+:   Find an objective by its visual ordering as displayed in the achievements window.
+
+### [int][int] `ObjectiveCount`
+
+:   The number of objectives in this achievement.
+
+### [string][string] `Link[opt: Name]`
+
+:   Generate an achievement link. An optional name can be provided to display in the achievement, otherwise the current character's name will be used.
+
+### [int][int] `Index`
+
+:   The index of the achievement. See [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices) for more information.
+
+### [int][int] `IconID`
+
+:   ID of the Achievement's Icon. See [Achievement Icon](datatype-achievement.md#achievement-icon) below.
+
+### [string][string] `State`
+
+:   The achievement state. See [Achievement State](datatype-achievement.md#achievement-state) below.
+
+### [bool][bool] `Completed`
+
+:   True if the achievement has been completed
+
+### [bool][bool] `Open`
+
+:   True if the achievement is open
+
+### [bool][bool] `Locked`
+
+:   True if the achievement is locked
+
+### [bool][bool] `Hidden`
+
+:   True if the achievement is hidden
+
+### [time][time] `CompletedTime`
+
+:   Calendar time when the achievement was completed.
+
 
 ### Achievement State
 
@@ -129,3 +175,8 @@ Print how many humans you have left to kill for the "**I'm a People Person!**" a
 | Name           | Action                 |
 | -------------- | ---------------------- |
 | **Inspect**    | Opens the achievement display window for this achievement |
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md

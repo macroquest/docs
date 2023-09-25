@@ -25,20 +25,54 @@ classDiagram
 
 This type inherits members from [_zone_](datatype-zone.md).
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_bool_](datatype-bool.md) | **Dungeon** | Same as Indoor. |
-| [_int_](datatype-int.md) | **ID** | the ID of the zone. |
-| [_bool_](datatype-bool.md) | **Indoor** | True if this is an Indoor zone. |
-| [_float_](datatype-float.md) | **MaxClip** | Maximum clip plane allowed in zone. |
-| [_float_](datatype-float.md) | **MinClip** | Minimum clip plane allowed in zone. |
-| [_string_](datatype-string.md) | **Name** | Full zone name. |
-| [_bool_](datatype-bool.md) | **NoBind** | True if binding isn't allowed in this zone outside specified bindable areas. |
-| [_bool_](datatype-bool.md) | **Outdoor** | True if this is an outdoor zone. |
-| [_string_](datatype-string.md) | **ShortName** | Short zone name |
-| [_int_](datatype-int.md) | **Type** | Zone type:0=Indoor Dungeon 1=Outdoor 2=Outdoor City 3=Dungeon City 4=Indoor City 5=Outdoor Dungeon |
-| [_int_](datatype-int.md) | **ZoneType** | Same as Type |
-| [_string_](datatype-string.md) | **To String** | Same as **Name** |
+### [bool][bool] `Dungeon`
+
+:   Same as Indoor.
+
+### [int][int] `ID`
+
+:   the ID of the zone.
+
+### [bool][bool] `Indoor`
+
+:   True if this is an Indoor zone.
+
+### [float][float] `MaxClip`
+
+:   Maximum clip plane allowed in zone.
+
+### [float][float] `MinClip`
+
+:   Minimum clip plane allowed in zone.
+
+### [string][string] `Name`
+
+:   Full zone name.
+
+### [bool][bool] `NoBind`
+
+:   True if binding isn't allowed in this zone outside specified bindable areas.
+
+### [bool][bool] `Outdoor`
+
+:   True if this is an outdoor zone.
+
+### [string][string] `ShortName`
+
+:   Short zone name
+
+### [int][int] `Type`
+
+:   Zone type:0=Indoor Dungeon 1=Outdoor 2=Outdoor City 3=Dungeon City 4=Indoor City 5=Outdoor Dungeon
+
+### [int][int] `ZoneType`
+
+:   Same as Type
+
+### [string][string] `To String`
+
+:   Same as **Name**
+
 
 ## Usage
 
@@ -57,3 +91,25 @@ This type inherits members from [_zone_](datatype-zone.md).
         -- echo if the current zone is indoors:
         print(mq.TLO.Zone.Indoor())
         ```
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md

@@ -6,8 +6,24 @@ tags:
 
 Describes an aura.
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **ID** | ID of the Aura |
-| [_string_](datatype-string.md) | **Name** | Name of the Aura |
-| [_int_](datatype-int.md) | **SpawnID** | ID of the spawn that emits aura |
+### [int][int] `ID`
+
+:   ID of the Aura
+
+### [string][string] `Name`
+
+:   Name of the Aura
+
+### [int][int] `SpawnID`
+
+:   ID of the spawn that emits aura
+
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md

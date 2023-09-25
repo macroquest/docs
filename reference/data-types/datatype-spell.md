@@ -8,94 +8,350 @@ This is the type used for spell information.
 
 ## Members
 
-| **Type**                             | **Member**                   | **Description**                                                                                                                |
-| ------------------------------------ | ---------------------------- | ------------------------------------------------------------------------------------------------------------------------------ |
-| [_float_](datatype-float.md)         | **AERange**                  | AE range (group spells use this for their range)                                                                               |
-| | **Attrib** | |
-| | **AutoCast** | |
-| [_int64_](datatype-int64.md) | **Base** | |
-| [_int64_](datatype-int64.md) | **Base2** | |
-| | **BaseEffectsFocusCap** | |
-| | **BaseName** | |
-| | **Beneficial** | |
-| | **BookIcon** | |
-| | **Calc** | |
-| | **CalcIndex** | |
-| | **CanMGB** | |
-| | **CastByMe** | |
-| | **CastByOther** | |
-| [_string_](datatype-string.md)       | **CastOnAnother**            | Message when cast on others                                                                                                    |
-| [_string_](datatype-string.md)       | **CastOnYou**                | Message when cast on yourself                                                                                                  |
-| [_timestamp_](datatype-timestamp.md) | **CastTime**                 | Cast time (unadjusted)                                                                                                         |
-| [_string_](datatype-string.md)       | **Category**                 | Name of the category the spell belongs to (e.g. "HP Buffs")                                                                    |
-| [_int_](datatype-int.md)             | **CategoryID**               | Numeric ID of the category this spell belongs to                                                                               |
-| [_int64_](datatype-int64.md)         | **CounterNumber**            | The number of counters that the spell adds                                                                                     |
-| [_string_](datatype-string.md)       | **CounterType**              | The resist counter. Will be one of "Disease", "Poison", "Curse" or "Corruption"                                                |
-| [_bool_](datatype-string.md) | **Deletable** | Whether a spell can be deleted from the spell book |
-| | **Description** | |
-| [_bool_](datatype-string.md) | **Dispellable** | Whether a spell can be dispelled |
-| [_ticks_](datatype-ticks.md)         | **Duration**                 | Duration of the spell (if any)                                                                                                 |
-| [_ticks_](datatype-ticks.md)         | **DurationValue1**           | Duration of the spell (if any)                                                                                                 |
-| | **DurationWindow** | |
-| | **EnduranceCost** | |
-| | **EQSpellDuration** | |
-| | **Extra** | |
-| [_timestamp_](datatype-timestamp.md) | **FizzleTime**               | Time to recover after fizzle                                                                                                   |
-| [_int_](datatype-int.md)             | **GemIcon**                  | Icon number of the spell. Example ${Spell\[blah].GemIcon}                                                                      |
-| | **HasSPA** | |
-| [_int_](datatype-int.md)             | **HastePct**                 | Percentage of haste, example of use ${Me.Hasted.HastePct} or ${Spell\[Speed of Milyex].HastePct}                               |
-| [_int_](datatype-int.md)             | **ID**                       | Spell ID                                                                                                                       |
-| | **IllusionOkWhenMounted** | |
-| | **IsActiveAA** | |
-| [_bool_](datatype-bool.md)           | **IsSkill**                  | is this spell a skill?                                                                                                         |
-| [_bool_](datatype-bool.md)           | **IsSwarmSpell**             | Is this spell a Swarm spell?                                                                                                   |
-| [_int_](datatype-int.md)             | **Level**                    | Level                                                                                                                          |
-| [_string_](datatype-string.md)       | **Link**[ _text_ ]           | Generate a clickable spell link. _text_ is optional and overrides the text of the link. |
-| [_int_](datatype-int.md)             | **Location**                 | Appears to be max distance                                                                                                     |
-| [_int_](datatype-int.md)             | **Mana**                     | Mana cost (unadjusted)                                                                                                         |
-| [_int64_](datatype-int64.md)         | **Max**                      |                                                                                                                                |
-| [_int64_](datatype-int64.md)         | **MaxLevel**                 |                                                                                                                                |
-| [_int_](datatype-int.md)             | **MinCasterLevel**           | Minimum level required by any class to cast this spell.                                                                        |
-| [_timestamp_](datatype-timestamp.md) | **MyCastTime**               | Adjusted cast time                                                                                                             |
-| | **MyDuration** | |
-| [_float_](datatype-float.md)         | **MyRange**                  | Adjusted spell range, including focus effects, etc.                                                                            |
-| [_string_](datatype-string.md)       | **Name**                     | Spell Name                                                                                                                     |
-| | **NoExpendReagentID** | |
-| | **NumEffects** | |
-| [_float_](datatype-float.md)         | **PushBack**                 | Push back amount                                                                                                               |
-| [_float_](datatype-float.md)         | **Range**                    | Maximum range to target (use **AERange** for AE and group spells)                                                              |
-| [_int_](datatype-int.md)             | **Rank**                     | Returns either 1, 2 or 3 for spells and 4-30 for clickables and potions.                                                       |
-| [_string_](datatype-string.md)       | **RankName**                 | Returns the spell/combat ability name rank character has.                                                                      |
-| | **ReagentCount** | |
-| | **ReagentID** | |
-| [_float_](datatype-float.md)         | **RecastTime**               | Time to recast after successful cast                                                                                           |
-| | **RecastTimerID** | |
-| [_timestamp_](datatype-timestamp.md) | **RecoveryTime**             | Same as **FizzleTime**                                                                                                         |
-| [_int_](datatype-int.md)             | **ResistAdj**                | Resist adjustment                                                                                                              |
-| [_string_](datatype-string.md)       | **ResistType**               | See below for Resist Types                                                                                                     |
-| | **Restrictions** | |
-| [_string_](datatype-string.md)       | **Skill**                    | See below for Skill Types                                                                                                      |
-| [_int_](datatype-int.md)             | **SlowPct**                  | Percentage of slow, example of use ${Target.Slowed.SlowPct} or ${Spell\[Slowing Helix].SlowPct}                                |
-| | **SpellGroup** | |
-| [_int_](datatype-int.md)             | **SpellIcon**                | Numeric ID of the Icon used to represent the spell.                                                                            |
-| [_string_](datatype-string.md)       | **SpellType**                | "Beneficial(Group)", "Beneficial", "Detrimental" or "Unknown"                                                                  |
-| [_bool_](datatype-bool.md)           | **Stacks**[ _duration_ ]     | Does the selected spell stack with your current buffs (duration is in ticks)                                                   |
-| [_bool_](datatype-bool.md)           | **StacksPet**[ _duration_ ]  | Does the selected spell stack with your pet's current buffs (duration is in ticks)                                             |
-| | **StacksSpawn** | |
-| [_bool_](datatype-bool.md)           | **StacksTarget**             | Does the selected spell stack with your target's current buffs                                                                 |
-| [_bool_](datatype-bool.md)           | **StacksWith**[ _name_ ]     | alias for .WillStack - see entry for more details                                                                              |
-| | **StacksWithDiscs** | |
-| [_string_](datatype-string.md)       | **Subcategory**              | Name of the subcategory this spell belongs to (e.g. "Shielding") |
-| [_int_](datatype-int.md)             | **SubcategoryID**            | Numeric Id of the subcategory this spell belongs to. |
-| | **SubSpellGroup** | |
-| [_string_](datatype-string.md)       | **TargetType**               | See below for Target Types                                                                                                     |
-| | **TimeOfDay** | |
-| | **Trigger** | |
-| [_string_](datatype-string.md)       | **WearOff**                  | The "wear off" message                                                                                                         |
-| [_int_](datatype-int.md)             | **WillLand**                 | This is like stacks but without the duration check.  It's a clean: "Will this spell land."  Returns the slot it would land in. |
-| [_int_](datatype-int.md)             | **WillLandPet**              | Same as WillLand, but for your pet.                                                                                            |
-| [_bool_](datatype-bool.md)           | **WillStack**[ _name_ ]      | Does the selected spell stack with the specific SPELL _name_ DOES NOT work with AAs.                                           |
-| [_string_](datatype-string.md)       | **(To String)**                | Same as **Name**                                                                                                               |
+### [float][float] `AERange`
+
+:   AE range (group spells use this for their range)
+
+### `Attrib`
+
+:   
+
+### `AutoCast`
+
+:   
+
+### [int64][int64] `Base`
+
+:   
+
+### [int64][int64] `Base2`
+
+:   
+
+### `BaseEffectsFocusCap`
+
+:   
+
+### `BaseName`
+
+:   
+
+### `Beneficial`
+
+:   
+
+### `BookIcon`
+
+:   
+
+### `Calc`
+
+:   
+
+### `CalcIndex`
+
+:   
+
+### `CanMGB`
+
+:   
+
+### `CastByMe`
+
+:   
+
+### `CastByOther`
+
+:   
+
+### [string][string] `CastOnAnother`
+
+:   Message when cast on others
+
+### [string][string] `CastOnYou`
+
+:   Message when cast on yourself
+
+### [timestamp][timestamp] `CastTime`
+
+:   Cast time (unadjusted)
+
+### [string][string] `Category`
+
+:   Name of the category the spell belongs to (e.g. "HP Buffs")
+
+### [int][int] `CategoryID`
+
+:   Numeric ID of the category this spell belongs to
+
+### [int64][int64] `CounterNumber`
+
+:   The number of counters that the spell adds
+
+### [string][string] `CounterType`
+
+:   The resist counter. Will be one of "Disease", "Poison", "Curse" or "Corruption"
+
+### [bool][bool] `Deletable`
+
+:   Whether a spell can be deleted from the spell book
+
+### `Description`
+
+:   
+
+### [bool][bool] `Dispellable`
+
+:   Whether a spell can be dispelled
+
+### [ticks][ticks] `Duration`
+
+:   Duration of the spell (if any)
+
+### [ticks][ticks] `DurationValue1`
+
+:   Duration of the spell (if any)
+
+### `DurationWindow`
+
+:   
+
+### `EnduranceCost`
+
+:   
+
+### `EQSpellDuration`
+
+:   
+
+### `Extra`
+
+:   
+
+### [timestamp][timestamp] `FizzleTime`
+
+:   Time to recover after fizzle
+
+### [int][int] `GemIcon`
+
+:   Icon number of the spell. Example ${Spell\[blah].GemIcon}
+
+### `HasSPA`
+
+:   
+
+### [int][int] `HastePct`
+
+:   Percentage of haste, example of use ${Me.Hasted.HastePct} or ${Spell\[Speed of Milyex].HastePct}
+
+### [int][int] `ID`
+
+:   Spell ID
+
+### `IllusionOkWhenMounted`
+
+:   
+
+### `IsActiveAA`
+
+:   
+
+### [bool][bool] `IsSkill`
+
+:   is this spell a skill?
+
+### [bool][bool] `IsSwarmSpell`
+
+:   Is this spell a Swarm spell?
+
+### [int][int] `Level`
+
+:   Level
+
+### [string][string] `Link[text]`
+
+:   Generate a clickable spell link. _text_ is optional and overrides the text of the link.
+
+### [int][int] `Location`
+
+:   Appears to be max distance
+
+### [int][int] `Mana`
+
+:   Mana cost (unadjusted)
+
+### [int64][int64] `Max`
+
+:   
+
+### [int64][int64] `MaxLevel`
+
+:   
+
+### [int][int] `MinCasterLevel`
+
+:   Minimum level required by any class to cast this spell.
+
+### [timestamp][timestamp] `MyCastTime`
+
+:   Adjusted cast time
+
+### `MyDuration`
+
+:   
+
+### [float][float] `MyRange`
+
+:   Adjusted spell range, including focus effects, etc.
+
+### [string][string] `Name`
+
+:   Spell Name
+
+### `NoExpendReagentID`
+
+:   
+
+### `NumEffects`
+
+:   
+
+### [float][float] `PushBack`
+
+:   Push back amount
+
+### [float][float] `Range`
+
+:   Maximum range to target (use **AERange** for AE and group spells)
+
+### [int][int] `Rank`
+
+:   Returns either 1, 2 or 3 for spells and 4-30 for clickables and potions.
+
+### [string][string] `RankName`
+
+:   Returns the spell/combat ability name rank character has.
+
+### `ReagentCount`
+
+:   
+
+### `ReagentID`
+
+:   
+
+### [float][float] `RecastTime`
+
+:   Time to recast after successful cast
+
+### `RecastTimerID`
+
+:   
+
+### [timestamp][timestamp] `RecoveryTime`
+
+:   Same as **FizzleTime**
+
+### [int][int] `ResistAdj`
+
+:   Resist adjustment
+
+### [string][string] `ResistType`
+
+:   See below for Resist Types
+
+### `Restrictions`
+
+:   
+
+### [string][string] `Skill`
+
+:   See below for Skill Types
+
+### [int][int] `SlowPct`
+
+:   Percentage of slow, example of use ${Target.Slowed.SlowPct} or ${Spell\[Slowing Helix].SlowPct}
+
+### `SpellGroup`
+
+:   
+
+### [int][int] `SpellIcon`
+
+:   Numeric ID of the Icon used to represent the spell.
+
+### [string][string] `SpellType`
+
+:   "Beneficial(Group)", "Beneficial", "Detrimental" or "Unknown"
+
+### [bool][bool] `Stacks[duration]`
+
+:   Does the selected spell stack with your current buffs (duration is in ticks)
+
+### [bool][bool] `StacksPet[duration]`
+
+:   Does the selected spell stack with your pet's current buffs (duration is in ticks)
+
+### `StacksSpawn`
+
+:   
+
+### [bool][bool] `StacksTarget`
+
+:   Does the selected spell stack with your target's current buffs
+
+### [bool][bool] `StacksWith[name]`
+
+:   alias for .WillStack - see entry for more details
+
+### `StacksWithDiscs`
+
+:   
+
+### [string][string] `Subcategory`
+
+:   Name of the subcategory this spell belongs to (e.g. "Shielding")
+
+### [int][int] `SubcategoryID`
+
+:   Numeric Id of the subcategory this spell belongs to.
+
+### `SubSpellGroup`
+
+:   
+
+### [string][string] `TargetType`
+
+:   See below for Target Types
+
+### `TimeOfDay`
+
+:   
+
+### `Trigger`
+
+:   
+
+### [string][string] `WearOff`
+
+:   The "wear off" message
+
+### [int][int] `WillLand`
+
+:   This is like stacks but without the duration check.  It's a clean: "Will this spell land."  Returns the slot it would land in.
+
+### [int][int] `WillLandPet`
+
+:   Same as WillLand, but for your pet.
+
+### [bool][bool] `WillStack[name]`
+
+:   Does the selected spell stack with the specific SPELL _name_ DOES NOT work with AAs.
+
+### [string][string] `(To String)`
+
+:   Same as **Name**
+
 
 
 ## Methods
@@ -214,3 +470,46 @@ To cast a spell with the proper rank, use the following:
 * Conjuration
 * Divination
 * Evocation
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md
+[double]: datatype-double.md
+[invslot]: datatype-invslot.md
+[augtype]: datatype-augtype.md
+[itemspell]: datatype-itemspell.md
+[evolving]: datatype-evolving.md
+[keyringitem]: datatype-keyringitem.md
+[raidmember]: datatype-raidmember.md
+[body]: datatype-body.md
+[cachedbuff]: datatype-cachedbuff.md
+[deity]: datatype-deity.md
+[race]: datatype-race.md
