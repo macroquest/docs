@@ -10,10 +10,6 @@ See Also: [DataType:dynamiczone](./datatype-dynamiczone.md), [TLO:DynamicZone](.
 
 ## Members
 
-### [Type][Type] `Name`
-
-:   Description
-
 ### [string][string] `ExpeditionName`
 
 :   The name of the expedition
