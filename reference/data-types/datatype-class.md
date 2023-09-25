@@ -80,6 +80,7 @@ Data about a particular character class
 | Warrior | WAR |
 | Wizard | WIZ |
 | Mercenary | MER |
+
 [int]: datatype-int.md
 [string]: datatype-string.md
 [achievementobj]: datatype-achievementobj.md
