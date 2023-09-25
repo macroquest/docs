@@ -23,10 +23,6 @@ Provides access to achievements.
 
 Provides access achievements, achievement categories, and other information surrounding the achievement system.
 
-### [Type][Type] `Name`
-
-:   Description
-
 ### [achievement][achievement] `Achievement[#|Name]`
 
 :   Find an achievement by its ID or by its name.
