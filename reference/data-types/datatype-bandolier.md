@@ -9,12 +9,22 @@ Used to access information about bandolier sets on your character.
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_bool_](datatype-bool.md) | **Active** | Indicates if the bandolier set is active |
-| [_int_](datatype-int.md) | **Index** | Returns the index number of the bandolier set |
-| [_bandolieritem_](#bandolieritem-datatype) | **Item**[&nbsp;_Index_&nbsp;] | Provides information about the specified item. Returns the Nth item in the set (Primary, Secondary, Ranged, Ammo) |
-| [_string_](datatype-bandolier.md) | **Name** | Returns the name of the bandolier set |
+### [bool][bool] `Active`
+
+:   Indicates if the bandolier set is active
+
+### [int][int] `Index`
+
+:   Returns the index number of the bandolier set
+
+### [bandolieritem][bandolieritem] `Item[&nbsp;Index&nbsp;]`
+
+:   Provides information about the specified item. Returns the Nth item in the set (Primary, Secondary, Ranged, Ammo)
+
+### [string][string] `Name`
+
+:   Returns the name of the bandolier set
+
 
 
 ## Methods
@@ -28,11 +38,18 @@ Used to access information about bandolier sets on your character.
 
 ### `bandolieritem` DataType
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_int_](datatype-int.md)          | **IconID** | Returns the icon id for the item |
-| [_int_](datatype-int.md)          | **ID** | Returns the item id for the item |
-| [_string_](datatype-bandolier.md) | **Name** | Returns the name of the item |
+### [int][int] `IconID`
+
+:   Returns the icon id for the item
+
+### [int][int] `ID`
+
+:   Returns the item id for the item
+
+### [string][string] `Name`
+
+:   Returns the name of the item
+
 
 
 ## Usage Examples
@@ -62,3 +79,13 @@ Used to access information about bandolier sets on your character.
     -- Print the weapon in the primary bandolier slot
     print('I have a ', mq.TLO.Me.Bandolier('1HB').Item(1).Name(), ' in my primary bandolier slot')
     ```
+[int]: datatype-int.md
+[string]: datatype-bandolier.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype

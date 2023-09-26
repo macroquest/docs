@@ -32,17 +32,42 @@ classDiagram
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_string_](datatype-string.md) | **CasterName** | Returns the name of the caster who applied the buff |
-| [_string_](datatype-string.md) | **Caster** | Same as _CasterName_, added for consistency. |
-| [_int_](datatype-int.md) | **Count** | Returns the amount of buffs catched, or -1 it none |
-| [_int_](datatype-int.md) | **Duration** | Returns the duration of the buff |
-| [_int_](datatype-int.md) | **OriginalDuration** | Original duration of the buff. |
-| [_int_](datatype-int.md) | **Slot** | Returns the buff slot the target had the buff in |
-| [_spell_](datatype-spell.md) | **Spell** | Access the spell. |
-| [_int_](datatype-int.md) | **SpellID** | Returns the buff's spell ID |
-| [_timestamp_](datatype-timestamp.md) | **Staleness** | How long it has been since this information was refreshed. |
+### [string][string] `CasterName`
+
+:   Returns the name of the caster who applied the buff
+
+### [string][string] `Caster`
+
+:   Same as _CasterName_, added for consistency.
+
+### [int][int] `Count`
+
+:   Returns the amount of buffs catched, or -1 it none
+
+### [int][int] `Duration`
+
+:   Returns the duration of the buff
+
+### [int][int] `OriginalDuration`
+
+:   Original duration of the buff.
+
+### [int][int] `Slot`
+
+:   Returns the buff slot the target had the buff in
+
+### [spell][spell] `Spell`
+
+:   Access the spell.
+
+### [int][int] `SpellID`
+
+:   Returns the buff's spell ID
+
+### [timestamp][timestamp] `Staleness`
+
+:   How long it has been since this information was refreshed.
+
 
 ## Usage
 
@@ -66,3 +91,16 @@ classDiagram
         print(mq.TLO.Group.Member(2).CachedBuff("Spirit of Wolf").Duration())
         ```
 
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md

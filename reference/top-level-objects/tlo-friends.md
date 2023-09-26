@@ -8,9 +8,10 @@ Grants access to your friends dlist.
 
 ## Forms
 
-| **Type** | **Form** | **Description** |
-| :--- | :--- | :--- |
-| [_friends_](#friends-type) | **Friends** | Access friends data |
+### [friends][friends] `Friends`
+
+:   Access friends data
+
 
 ## Associated DataTypes
 
@@ -18,11 +19,18 @@ Grants access to your friends dlist.
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_bool_](../data-types/datatype-bool.md) | **Friend**[_name_] | Returns TRUE if _name_ is on your friend list |
-| [_string_](../data-types/datatype-string.md) | **Friend**[_#_] | Returns the name of friend list member _\#_ |
-| [_string_](../data-types/datatype-string.md) | **To String** | Number of friends on your friends list |
+### [bool][bool] `Friend[name]`
+
+:   Returns TRUE if _name_ is on your friend list
+
+### [string][string] `Friend[#]`
+
+:   Returns the name of friend list member _\#_
+
+### [string][string] `To String`
+
+:   Number of friends on your friends list
+
 
 
 ## Usage
@@ -48,3 +56,53 @@ Grants access to your friends dlist.
         -- Echo the name of your firsrt friend
         print(mq.TLO.Friends.Friend(1)())
         ```
+[int]: ../data-types/datatype-int.md
+[string]: ../data-types/datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: ../data-types/datatype-bool.md
+[time]: datatype-time.md
+[achievement]: ../data-types/datatype-achievement.md
+[achievementcat]: ../data-types/datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: ../data-types/datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: ../data-types/datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: ../data-types/datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md
+[double]: ../data-types/datatype-double.md
+[invslot]: datatype-invslot.md
+[augtype]: datatype-augtype.md
+[itemspell]: datatype-itemspell.md
+[evolving]: datatype-evolving.md
+[keyringitem]: datatype-keyringitem.md
+[raidmember]: datatype-raidmember.md
+[body]: datatype-body.md
+[cachedbuff]: datatype-cachedbuff.md
+[deity]: datatype-deity.md
+[race]: datatype-race.md
+[taskmember]: datatype-task.md
+[achievementmgr]: #achievementmgr-type
+[itemfilterdata]: #itemfilterdata-type
+[advlootitem]: #advlootitem-type
+[alert]: #alert-type
+[alertlist]: #alertlist-type
+[friends]: #friends-type

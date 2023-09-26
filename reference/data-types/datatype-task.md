@@ -8,30 +8,91 @@ This is the type for your current task.
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_string_](datatype-string.md) | **Index** | Returns the task&apos;s place on the tasklist |
-| [_string_](datatype-string.md) | **Objective[#].Instruction** | Returns a tasks&apos;s Objectives |
+### [string][string] `Index`
+
+:   Returns the task&apos;s place on the tasklist
+
+### [string][string] `Objective[#].Instruction`
+
+:   Returns a tasks&apos;s Objectives
+
 | [_string_](datatype-string.md) | **Objective[#].Status** | Returns the status of the objective in the format amount done Vs total IE 0/3 |      
-| [_string_](datatype-string.md) | **Objective[#].Zone** | Returns the zone the objective is to be performed in |
-| [_int_](datatype-int.md) | **CurrentCount** | Returns the current count of the .Type needed to complete a objective |
-| [_int_](datatype-int.md) | **RequiredCount** | Returns the required count of the .Type needed to complete a objective |
-| [_bool_](datatype-bool.md) | **Optional** | Returns true or false if a objective is optional |
-| [_string_](datatype-string.md) | **RequiredItem** | Returns a string of the required item to complete a objective.|
-| [_string_](datatype-string.md) | **RequiredSkill** | Returns a string of the required skill to complete a objective.|
-| [_string_](datatype-string.md) | **RequiredSpell** | Returns a string of the required spell to complete a objective.|
-| [_int_](datatype-int.md) | **DZSwitchID** | Returns an int of the switch used in a objective.|
-| [_int_](datatype-int.md) | **ID** | Returns an int of the task ID|
-| [_string_](datatype-string.md) | **Step** | Returns description of current step in the task|
-| [_string_](datatype-string.md) | **Select** | Selects the task|
-| [_string_](datatype-string.md) | **Title** | Returns name of the shared task|
-| [_timestamp_](datatype-timestamp.md) | **Timer** | Returns amount of time before task expires|
-| [_int_](datatype-int.md) | **Members** | Returns number of members in task|
-| [_taskmember_](datatype-task.md) | **Member[</b>#<b>]** | Returns specified member in task by index|
-| [_taskmember_](datatype-task.md) | **Member[</b>name<b>]** | Returns specified member in task by name|
-| [_string_](datatype-string.md) | **Leader** | Returns task leader&apos;s name|
-| [_int_](datatype-int.md) | **WindowIndex** | Returns the Quest Window List Index. (if the window actually has the list filled)|
-| [_string_](datatype-string.md) | **Type** | Returns a string that can be one of the following:<ul><li>Unknown</li><li>None</li><li>Deliver</li><li>Kill</li><li>Loot</li><li>Hail</li><li>Explore</li><li>Tradeskill</li><li>Fishing</li><li>Foraging</li><li>Cast</li><li>UseSkill</li><li>DZSwitch</li><li>DestroyObject</li><li>Collect</li><li>Dialogue</li></ul> |
+### [string][string] `Objective[#].Zone`
+
+:   Returns the zone the objective is to be performed in
+
+### [int][int] `CurrentCount`
+
+:   Returns the current count of the .Type needed to complete a objective
+
+### [int][int] `RequiredCount`
+
+:   Returns the required count of the .Type needed to complete a objective
+
+### [bool][bool] `Optional`
+
+:   Returns true or false if a objective is optional
+
+### [string][string] `RequiredItem`
+
+:   Returns a string of the required item to complete a objective.
+
+### [string][string] `RequiredSkill`
+
+:   Returns a string of the required skill to complete a objective.
+
+### [string][string] `RequiredSpell`
+
+:   Returns a string of the required spell to complete a objective.
+
+### [int][int] `DZSwitchID`
+
+:   Returns an int of the switch used in a objective.
+
+### [int][int] `ID`
+
+:   Returns an int of the task ID
+
+### [string][string] `Step`
+
+:   Returns description of current step in the task
+
+### [string][string] `Select`
+
+:   Selects the task
+
+### [string][string] `Title`
+
+:   Returns name of the shared task
+
+### [timestamp][timestamp] `Timer`
+
+:   Returns amount of time before task expires
+
+### [int][int] `Members`
+
+:   Returns number of members in task
+
+### [taskmember][taskmember] `Member[</b>#<b>]`
+
+:   Returns specified member in task by index
+
+### [taskmember][taskmember] `Member[</b>name<b>]`
+
+:   Returns specified member in task by name
+
+### [string][string] `Leader`
+
+:   Returns task leader&apos;s name
+
+### [int][int] `WindowIndex`
+
+:   Returns the Quest Window List Index. (if the window actually has the list filled)
+
+### [string][string] `Type`
+
+:   Returns a string that can be one of the following:<ul><li>Unknown</li><li>None</li><li>Deliver</li><li>Kill</li><li>Loot</li><li>Hail</li><li>Explore</li><li>Tradeskill</li><li>Fishing</li><li>Foraging</li><li>Cast</li><li>UseSkill</li><li>DZSwitch</li><li>DestroyObject</li><li>Collect</li><li>Dialogue</li></ul>
+
 
 ## Methods
 
@@ -116,3 +177,47 @@ Output: The Hatching a Plan first objective should be completed in Hatchery Wing
     ```
     /echo I should be working on ${Task[hatch].Step} in ${Task[hatch].Step.Zone}
     ```
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md
+[double]: datatype-double.md
+[invslot]: datatype-invslot.md
+[augtype]: datatype-augtype.md
+[itemspell]: datatype-itemspell.md
+[evolving]: datatype-evolving.md
+[keyringitem]: datatype-keyringitem.md
+[raidmember]: datatype-raidmember.md
+[body]: datatype-body.md
+[cachedbuff]: datatype-cachedbuff.md
+[deity]: datatype-deity.md
+[race]: datatype-race.md
+[taskmember]: datatype-task.md

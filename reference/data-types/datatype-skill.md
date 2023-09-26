@@ -8,14 +8,78 @@ Data related to a particular skill
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_bool_](datatype-bool.md) | **Activated** | Returns TRUE if the skill has been activated |
-| [_bool_](datatype-bool.md) | **AltTimer** | Returns TRUE if the skill uses the kick/bash/slam/backstab/frenzy timer |
-| [_int_](datatype-int.md) | **ID** | Skill number |
-| [_int_](datatype-int.md) | **MinLevel** | Minimum level for your class |
-| [_string_](datatype-string.md) | **Name** | Name of the skill |
-| [_int_](datatype-int.md) | **ReuseTime** | Reuse timer _(what number format? ticks, seconds, deciseconds?)_ |
-| [_int_](datatype-int.md) | **SkillCap** | Skill cap based on your current level and class. |
-| [_int_](datatype-int.md) | **StartingSkill** | Base skill level for your class |
-| [_string_](datatype-string.md) | **To String** | Same as **Name** |
+### [bool][bool] `Activated`
+
+:   Returns TRUE if the skill has been activated
+
+### [bool][bool] `AltTimer`
+
+:   Returns TRUE if the skill uses the kick/bash/slam/backstab/frenzy timer
+
+### [int][int] `ID`
+
+:   Skill number
+
+### [int][int] `MinLevel`
+
+:   Minimum level for your class
+
+### [string][string] `Name`
+
+:   Name of the skill
+
+### [int][int] `ReuseTime`
+
+:   Reuse timer _(what number format? ticks, seconds, deciseconds?)_
+
+### [int][int] `SkillCap`
+
+:   Skill cap based on your current level and class.
+
+### [int][int] `StartingSkill`
+
+:   Base skill level for your class
+
+### [string][string] `To String`
+
+:   Same as **Name**
+
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: ../data-types/datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md
+[double]: datatype-double.md
+[invslot]: datatype-invslot.md
+[augtype]: datatype-augtype.md
+[itemspell]: datatype-itemspell.md
+[evolving]: datatype-evolving.md
+[keyringitem]: datatype-keyringitem.md
+[raidmember]: datatype-raidmember.md

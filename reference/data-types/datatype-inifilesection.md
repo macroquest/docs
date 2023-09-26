@@ -8,11 +8,18 @@ This is the type for the referenced section of an ini file.  The Index passed to
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **Count** | How many sections matching the Section[] index exist. |
-| [_bool_](datatype-bool.md) | **Exists** | Whether a specific section exists. |
-| [_inifilesectionkey_](datatype-inifilesectionkey.md) | **Key** | A reference to the named or unnamed key in this specific ini file section. |
+### [int][int] `Count`
+
+:   How many sections matching the Section[] index exist.
+
+### [bool][bool] `Exists`
+
+:   Whether a specific section exists.
+
+### [inifilesectionkey][inifilesectionkey] `Key`
+
+:   A reference to the named or unnamed key in this specific ini file section.
+
 
 ## Examples
 
@@ -79,3 +86,35 @@ Key=foobar
         false
         ```
 
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md

@@ -10,22 +10,62 @@ While not required to access achievements, categories may be useful for enumerat
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **ID** | The unique ID for the category |
-| [_string_](datatype-string.md) | **Name** | The category's display name |
-| [_string_](datatype-string.md) | **Description** | The category's description |
-| [_achievement_](datatype-achievement.md) | **Achievement[**\#\|_Name_**]** | Find an achievement in this category by its ID or name. |
-| [_achievement_](datatype-achievement.md) | **AchievementByIndex[**\#**]** | Find an achievement by its index in this category. |
-| [_int_](datatype-int.md) | **AchievementCount** | The number of achievements in this category. |
-| [_achievementcat_](datatype-achievementcat.md) | **Category[**\#\|_Name_**]** | Find a child category in this category by its ID or name. |
-| [_achievementcat_](datatype-achievementcat.md) | **CategoryByIndex** | Find a child category by its index in this category. |
-| [_int_](datatype-int.md) | **CategoryCount** | The number of child categories in this category. |
-| [_int_](datatype-int.md) | **Points** | The total earned points of achievements in this category. |
-| [_int_](datatype-int.md) | **CompletedAchievements** | The number of achievements earned in this category and its subcategories |
-| [_int_](datatype-int.md) | **TotalAchievements** | The total number of achievements in this category and its subcategories. |
-| [_string_](datatype-string.md) | **ImageTextureName** | Name of the image texture that is used to represent this category in the Achievements Window. |
-| [_int_](datatype-int.md) | **Index** | The index of the category in the achievement manager. For more information see [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices). |
+### [int][int] `ID`
+
+:   The unique ID for the category
+
+### [string][string] `Name`
+
+:   The category's display name
+
+### [string][string] `Description`
+
+:   The category's description
+
+### [achievement][achievement] `Achievement[#|Name]`
+
+:   Find an achievement in this category by its ID or name.
+
+### [achievement][achievement] `AchievementByIndex[#]`
+
+:   Find an achievement by its index in this category.
+
+### [int][int] `AchievementCount`
+
+:   The number of achievements in this category.
+
+### [achievementcat][achievementcat] `Category[#|Name]`
+
+:   Find a child category in this category by its ID or name.
+
+### [achievementcat][achievementcat] `CategoryByIndex`
+
+:   Find a child category by its index in this category.
+
+### [int][int] `CategoryCount`
+
+:   The number of child categories in this category.
+
+### [int][int] `Points`
+
+:   The total earned points of achievements in this category.
+
+### [int][int] `CompletedAchievements`
+
+:   The number of achievements earned in this category and its subcategories
+
+### [int][int] `TotalAchievements`
+
+:   The total number of achievements in this category and its subcategories.
+
+### [string][string] `ImageTextureName`
+
+:   Name of the image texture that is used to represent this category in the Achievements Window.
+
+### [int][int] `Index`
+
+:   The index of the category in the achievement manager. For more information see [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices).
+
 
 ### Examples
 
@@ -58,3 +98,10 @@ List the unearned achievements in the **EverQuest / Exploration** category:
         end
     end
     ```
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md

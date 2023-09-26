@@ -8,11 +8,18 @@ Contains data about spawn body types
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **ID** | The ID of the body type |
-| [_string_](datatype-string.md) | **Name** | The full name of the body type |
-| [_string_](datatype-string.md) | **To String** | Same as **Name** |
+### [int][int] `ID`
+
+:   The ID of the body type
+
+### [string][string] `Name`
+
+:   The full name of the body type
+
+### [string][string] `To String`
+
+:   Same as **Name**
+
 
 ## Usage
 
@@ -33,3 +40,13 @@ Contains data about spawn body types
         ```lua
         print(mq.TLO.Target.Boddy.Name === 'Undead Pet')
         ```
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype

@@ -8,27 +8,79 @@ A string is an array of characters. In MQ2 there is no single character datatype
 
 ## Members
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
 | [_string_](datatype-string.md) | **Arg**[_#_,_s_] | Returns the #th argument of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1].
-| [_int_](datatype-int.md) | **Compare**[_text_] | Determines how the initial string and the second string, _text_, compare to each other:<br/><ul><li>If both are the same, **Compare** will return 0.</li><li>If the string is alphabetically before text, **Compare** will return -1.</li><li>If text is alphabetically after string, **Compare** will return 1.</li></ul>**Compare** is case-insensitive |
-| [_int_](datatype-int.md) | **CompareCS**[_text_] | The same as **Compare**, except that it is case-sensitive |
-| [_int_](datatype-int.md) | **Count**[_c_] | Returns how many times a single character _c_ occurs in the string |
-| [_bool_](datatype-bool.md) | **Equal**[_text_] | If the initial string and the second string _text_ are exactly the same, returns TRUE.<br/>**Equal** is case-insensitive |
-| [_bool_](datatype-bool.md) | **EqualCS**[_text_] | The same as **Equal**, except that it is case-sensitive |
-| [_int_](datatype-int.md) | **Find**[_text_] | This tries to find the second string _text_ within the original string:<br/><ul><li>If it is successful, it returns the first position in the string where _text_ begins.</li><li>It returns NULL if _text_ is not found.</li></ul>**Find** is case-insensitive |
-| [_string_](datatype-string.md) | **Left**[_#_] | Returns the first # characters of the string. A negative _#_ will return the whole string except for the last # characters |
-| [_int_](datatype-int.md) | **Length** | Returns the length of the string as an integer |
-| [_string_](datatype-string.md) | **Lower** | Returns the string in all lower-case |
-| [_string_](datatype-string.md) | **Mid**[_p_,_n_] | Returns a segment of the string, starting at position _p_ and running _n_ characters. |
-| [_bool_](datatype-bool.md) | **NotEqual**[_text_] | If the initial string and the second string _text_ are exactly the same, returns FALSE. **NotEqual** is case-insensitive |
-| [_bool_](datatype-bool.md) | **NotEqualCS**[_text_] | The same as **NotEqual**, except that it is case-sensitive. |
-| [_string_](datatype-string.md) | **Replace**[_ReplaceThis_,_WithThis_] | Replaces _ReplaceThis_ with _WithThis_. |
-| [_string_](datatype-string.md) | **Right**[_#_] | Returns the last _#_ characters of the string. A negative _#_ will return the whole string except for the first _#_ characters |
-| [_string_](datatype-string.md) | **StripLinks** | Returns the plain text version of a string, stripping out the links |
-| [_string_](datatype-string.md) | **Token**[_#_,_s_] | Returns the #th token of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1]. |
-| [_string_](datatype-string.md) | **Upper** | Returns the string in all upper-case |
-| [_string_](datatype-string.md) | **(To String)** | Returns the string |
+### [int][int] `Compare[text]`
+
+:   Determines how the initial string and the second string, _text_, compare to each other:<br/><ul><li>If both are the same, **Compare** will return 0.</li><li>If the string is alphabetically before text, **Compare** will return -1.</li><li>If text is alphabetically after string, **Compare** will return 1.</li></ul>**Compare** is case-insensitive
+
+### [int][int] `CompareCS[text]`
+
+:   The same as **Compare**, except that it is case-sensitive
+
+### [int][int] `Count[c]`
+
+:   Returns how many times a single character _c_ occurs in the string
+
+### [bool][bool] `Equal[text]`
+
+:   If the initial string and the second string _text_ are exactly the same, returns TRUE.<br/>**Equal** is case-insensitive
+
+### [bool][bool] `EqualCS[text]`
+
+:   The same as **Equal**, except that it is case-sensitive
+
+### [int][int] `Find[text]`
+
+:   This tries to find the second string _text_ within the original string:<br/><ul><li>If it is successful, it returns the first position in the string where _text_ begins.</li><li>It returns NULL if _text_ is not found.</li></ul>**Find** is case-insensitive
+
+### [string][string] `Left[#]`
+
+:   Returns the first # characters of the string. A negative _#_ will return the whole string except for the last # characters
+
+### [int][int] `Length`
+
+:   Returns the length of the string as an integer
+
+### [string][string] `Lower`
+
+:   Returns the string in all lower-case
+
+### [string][string] `Mid[p,n]`
+
+:   Returns a segment of the string, starting at position _p_ and running _n_ characters.
+
+### [bool][bool] `NotEqual[text]`
+
+:   If the initial string and the second string _text_ are exactly the same, returns FALSE. **NotEqual** is case-insensitive
+
+### [bool][bool] `NotEqualCS[text]`
+
+:   The same as **NotEqual**, except that it is case-sensitive.
+
+### [string][string] `Replace[ReplaceThis,WithThis]`
+
+:   Replaces _ReplaceThis_ with _WithThis_.
+
+### [string][string] `Right[#]`
+
+:   Returns the last _#_ characters of the string. A negative _#_ will return the whole string except for the first _#_ characters
+
+### [string][string] `StripLinks`
+
+:   Returns the plain text version of a string, stripping out the links
+
+### [string][string] `Token[#,s]`
+
+:   Returns the #th token of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1].
+
+### [string][string] `Upper`
+
+:   Returns the string in all upper-case
+
+### [string][string] `(To String)`
+
+:   Returns the string
+
 
 ## Usage
 
@@ -80,4 +132,46 @@ Sub Event_SpellWornOff(string Line, string SpellName, string OnWho)
 /return
 ```
 
-[1]: #difference-between-arg-and-token
+[1]: #difference-between-arg-and-token[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md
+[double]: datatype-double.md
+[invslot]: datatype-invslot.md
+[augtype]: datatype-augtype.md
+[itemspell]: datatype-itemspell.md
+[evolving]: datatype-evolving.md
+[keyringitem]: datatype-keyringitem.md
+[raidmember]: datatype-raidmember.md
+[body]: datatype-body.md
+[cachedbuff]: datatype-cachedbuff.md
+[deity]: datatype-deity.md
+[race]: datatype-race.md

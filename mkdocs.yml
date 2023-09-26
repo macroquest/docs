@@ -91,6 +91,7 @@ nav:
       - plugins/core-plugins/mq2custombinds/README.md
 
       - /custombind: plugins/core-plugins/mq2custombinds/custombind.md
+
     - MQ2EQBugFix: plugins/core-plugins/mq2eqbugfix.md
     - MQ2HUD:
       - plugins/core-plugins/mq2hud/README.md
@@ -297,7 +298,6 @@ nav:
       - /click: reference/commands/click.md
       - /combine: reference/commands/combine.md
       - /ctrlkey: reference/commands/ctrlkey.md
-      - /custombind: reference/commands/custombind.md
       - /destroy: reference/commands/destroy.md
       - /docommand: reference/commands/docommand.md
       - /doors: reference/commands/doors.md

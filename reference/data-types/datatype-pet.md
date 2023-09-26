@@ -10,20 +10,101 @@ Pet object
 
 This type inherits members from [_spawn_](datatype-spawn.md).
 
-| **Type** | **Member** | **Description** |
-| :--- | :--- | :--- |
-| [_int_](datatype-int.md) | **Buff**[_buffname_] | Returns the slot number for _buffname_ |
-| [_string_](datatype-string.md) | **Buff**[_slot_] | Prints name of the buff at the given _slot_ |
-| [_int_](datatype-int.md) | **BuffDuration**[_buffname_] | Buff time remaining for pet buff _buffname_ in miliseconds |
-| [_int_](datatype-int.md) | **BuffDuration**[_slot_] | Buff time remaining for pet buff in slot _slot_ in miliseconds |
-| [_bool_](datatype-bool.md) | **Combat** | Combat state |
-| | **FindBuff** | |
-| [_bool_](datatype-bool.md) | **Focus** | Focus state |
-| [_bool_](datatype-bool.md) | **GHold** | GHold state |
-| [_bool_](datatype-bool.md) | **Hold** | Hold state |
-| | **Name** | |
-| [_bool_](datatype-bool.md) | **ReGroup** | ReGroup state |
-| [_string_](datatype-string.md) | **Stance** | Returns the pet's current stance, (e.g. FOLLOW, GUARD) |
-| [_bool_](datatype-bool.md) | **Stop** | Stop state |
-| [_spawn_](datatype-spawn.md) | **Target** | Returns the pet's current target. |
-| [_bool_](datatype-bool.md) | **Taunt** | Taunt state |
+### [int][int] `Buff[buffname]`
+
+:   Returns the slot number for _buffname_
+
+### [string][string] `Buff[slot]`
+
+:   Prints name of the buff at the given _slot_
+
+### [int][int] `BuffDuration[buffname]`
+
+:   Buff time remaining for pet buff _buffname_ in miliseconds
+
+### [int][int] `BuffDuration[slot]`
+
+:   Buff time remaining for pet buff in slot _slot_ in miliseconds
+
+### [bool][bool] `Combat`
+
+:   Combat state
+
+### `FindBuff`
+
+:   
+
+### [bool][bool] `Focus`
+
+:   Focus state
+
+### [bool][bool] `GHold`
+
+:   GHold state
+
+### [bool][bool] `Hold`
+
+:   Hold state
+
+### `Name`
+
+:   
+
+### [bool][bool] `ReGroup`
+
+:   ReGroup state
+
+### [string][string] `Stance`
+
+:   Returns the pet's current stance, (e.g. FOLLOW, GUARD)
+
+### [bool][bool] `Stop`
+
+:   Stop state
+
+### [spawn][spawn] `Target`
+
+:   Returns the pet's current target.
+
+### [bool][bool] `Taunt`
+
+:   Taunt state
+
+[int]: datatype-int.md
+[string]: datatype-string.md
+[achievementobj]: datatype-achievementobj.md
+[bool]: datatype-bool.md
+[time]: datatype-time.md
+[achievement]: datatype-achievement.md
+[achievementcat]: datatype-achievementcat.md
+[altability]: datatype-altability.md
+[spell]: ../data-types/datatype-spell.md
+[bandolieritem]: #bandolieritem-datatype
+[int64]: datatype-int64.md
+[timestamp]: datatype-timestamp.md
+[float]: datatype-float.md
+[buff]: datatype-buff.md
+[spawn]: datatype-spawn.md
+[auratype]: datatype-auratype.md
+[item]: datatype-item.md
+[worldlocation]: datatype-worldlocation.md
+[ticks]: datatype-ticks.md
+[fellowship]: datatype-fellowship.md
+[strinrg]: datatype-string.md
+[xtarget]: datatype-xtarget.md
+[dzmember]: datatype-dzmember.md
+[window]: datatype-window.md
+[zone]: datatype-zone.md
+[fellowshipmember]: datatype-fellowshipmember.md
+[class]: datatype-class.md
+[heading]: datatype-heading.md
+[ground]: datatype-ground.md
+[inifile]: datatype-inifile.md
+[inifilesection]: datatype-inifilesection.md
+[inifilesectionkey]: datatype-inifilesectionkey.md
+[double]: datatype-double.md
+[invslot]: datatype-invslot.md
+[augtype]: datatype-augtype.md
+[itemspell]: datatype-itemspell.md
+[evolving]: datatype-evolving.md
+[keyringitem]: datatype-keyringitem.md
