@@ -10232,6 +10232,19 @@
     Examples
   </a>
   
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actions-on-current-doortarget" class="md-nav__link">
+    Actions on current /doortarget
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -12121,6 +12134,19 @@
     Examples
   </a>
   
+    <nav class="md-nav" aria-label="Examples">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#actions-on-current-doortarget" class="md-nav__link">
+    Actions on current /doortarget
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -12162,12 +12188,18 @@
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
 <p><a href="../../data-types/datatype-switch/"><em>switch</em></a> <strong>Switch</strong></p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<p><div class="highlight"><pre><span></span><code>${Switch[foo]}
+</code></pre></div>
+Activates switch "foo"</p>
+<p><div class="highlight"><pre><span></span><code>${Switch[foo].Heading}
+</code></pre></div>
+Access "foo" <a href="../../data-types/datatype-switch/"><em>switch</em></a> datatype members</p>
+<h3 id="actions-on-current-doortarget">Actions on current /doortarget<a class="headerlink" href="#actions-on-current-doortarget" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>/echo ${Switch.Heading}
+/echo ${Switch.Open}
 </code></pre></div>
-<p>Returns the direction to the switch</p>
-<div class="highlight"><pre><span></span><code>/echo ${Switch.Open}
-</code></pre></div>
-<p>Returns TRUE or FALSE</p>
+<p>Access the current doortarget <a href="../../data-types/datatype-switch/"><em>switch</em></a> datatype members directly
+Returns TRUE or FALSE</p>
 
 
 
