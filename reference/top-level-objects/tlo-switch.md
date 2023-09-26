@@ -13,16 +13,25 @@ Object used when you want to find information on targetted doors or switches suc
 ## Examples
 
 ```
+${Switch[foo]}
+```
+Activates switch "foo"
+
+```
+${Switch[foo].Heading}
+```
+Access "foo" [_switch_](../data-types/datatype-switch.md) datatype members
+
+
+### Actions on current /doortarget
+```
 /echo ${Switch.Heading}
-```
-
-Returns the direction to the switch
-
-```
 /echo ${Switch.Open}
 ```
 
+Access the current doortarget [_switch_](../data-types/datatype-switch.md) datatype members directly
 Returns TRUE or FALSE
+
 [int]: ../data-types/datatype-int.md
 [string]: ../data-types/datatype-string.md
 [achievementobj]: datatype-achievementobj.md
