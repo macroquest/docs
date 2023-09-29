@@ -8,7 +8,7 @@ Reads value(s) from an ini file located in a relative or absolute path.
 
 ## Forms
 
-[_string_](../data-types/datatype-string.md) **Ini**[_filename_,_section_,_key_,_default_]
+[string](../data-types/datatype-string.md) **Ini**[_filename_,_section_,_key_,_default_]
 
 :   The _section_, _key_, and _default_ do not need to be given. If _section_ or _key_ are not given, multiple values are read.
 
@@ -18,7 +18,7 @@ Reads value(s) from an ini file located in a relative or absolute path.
     a DOS-style filepath (relative or absolute) to locate the ini. If the macro accessing the ini
     is in the same non-root directory, you will still to provide the (relative or absolute) filepath.
 
-[_ini_](../data-types/datatype-ini.md) **Ini**
+[ini](../data-types/datatype-ini.md) **Ini**
 
 :   When passed with no parameters to Ini[] the more robust form of the Ini TLO is used.  See below and the reference
     to the [Key](../data-types/datatype-inifilesectionkey.md) datatype for further usage.
@@ -98,54 +98,3 @@ foobar
 bar
 ```
 
-
-[int]: ../data-types/datatype-int.md
-[string]: ../data-types/datatype-string.md
-[achievementobj]: datatype-achievementobj.md
-[bool]: ../data-types/datatype-bool.md
-[time]: datatype-time.md
-[achievement]: ../data-types/datatype-achievement.md
-[achievementcat]: ../data-types/datatype-achievementcat.md
-[altability]: datatype-altability.md
-[spell]: datatype-spell.md
-[bandolieritem]: #bandolieritem-datatype
-[int64]: ../data-types/datatype-int64.md
-[timestamp]: datatype-timestamp.md
-[float]: ../data-types/datatype-float.md
-[buff]: datatype-buff.md
-[spawn]: ../data-types/datatype-spawn.md
-[auratype]: datatype-auratype.md
-[item]: datatype-item.md
-[worldlocation]: datatype-worldlocation.md
-[ticks]: datatype-ticks.md
-[fellowship]: datatype-fellowship.md
-[strinrg]: datatype-string.md
-[xtarget]: datatype-xtarget.md
-[dzmember]: datatype-dzmember.md
-[window]: datatype-window.md
-[zone]: datatype-zone.md
-[fellowshipmember]: datatype-fellowshipmember.md
-[class]: datatype-class.md
-[heading]: datatype-heading.md
-[ground]: datatype-ground.md
-[inifile]: datatype-inifile.md
-[inifilesection]: datatype-inifilesection.md
-[inifilesectionkey]: datatype-inifilesectionkey.md
-[double]: ../data-types/datatype-double.md
-[invslot]: datatype-invslot.md
-[augtype]: datatype-augtype.md
-[itemspell]: datatype-itemspell.md
-[evolving]: datatype-evolving.md
-[keyringitem]: datatype-keyringitem.md
-[raidmember]: datatype-raidmember.md
-[body]: datatype-body.md
-[cachedbuff]: datatype-cachedbuff.md
-[deity]: datatype-deity.md
-[race]: datatype-race.md
-[taskmember]: datatype-task.md
-[achievementmgr]: #achievementmgr-type
-[itemfilterdata]: #itemfilterdata-type
-[advlootitem]: #advlootitem-type
-[alert]: #alert-type
-[alertlist]: #alertlist-type
-[friends]: #friends-type

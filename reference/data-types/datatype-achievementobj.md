@@ -74,8 +74,4 @@ List the objectives that are still left to complete the achievement "**Norrathia
     ```
 [int]: datatype-int.md
 [string]: datatype-string.md
-[achievementobj]: datatype-achievementobj.md
 [bool]: datatype-bool.md
-[time]: datatype-time.md
-[achievement]: datatype-achievement.md
-[achievementcat]: datatype-achievementcat.md

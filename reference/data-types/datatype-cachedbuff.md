@@ -18,7 +18,7 @@ See also: [Cached Buffs](../../main/features/cached-buffs.md).
 
 ## Inheritance
 
-This type inherits members from [_spell_](datatype-spell.md).
+This type inherits members from [spell][spell].
 
 ```mermaid
 classDiagram
