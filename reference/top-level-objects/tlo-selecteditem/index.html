@@ -12170,21 +12170,20 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>```lua
-if mq.TLO.SelectedItem() == nil then
-    print('Nothing in your inventory is selected')
-else
-    print('Size of the item: ', mq.TLO.SelectedItem.Size())</p>
-<div class="highlight"><pre><span></span><code>if mq.TLO.SelectedItem.Charges() &lt; 1 then
-    print(&#39;The selected item is out of charges&#39;)
-end
+<div class="highlight"><pre><span></span><code><span class="kr">if</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">SelectedItem</span><span class="p">()</span> <span class="o">==</span> <span class="kc">nil</span> <span class="kr">then</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Nothing in your inventory is selected&#39;</span><span class="p">)</span>
+<span class="kr">else</span>
+    <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Size of the item: &#39;</span><span class="p">,</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">SelectedItem</span><span class="p">.</span><span class="n">Size</span><span class="p">())</span>
 
-if mq.TLO.SelectedItem.Name.Equal(&#39;rusty dagger&#39;)() then
-    print(&#39;The selected item is a rusty dagger&#39;)
-end
+    <span class="kr">if</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">SelectedItem</span><span class="p">.</span><span class="n">Charges</span><span class="p">()</span> <span class="o">&lt;</span> <span class="mi">1</span> <span class="kr">then</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The selected item is out of charges&#39;</span><span class="p">)</span>
+    <span class="kr">end</span>
+
+    <span class="kr">if</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">SelectedItem</span><span class="p">.</span><span class="n">Name</span><span class="p">.</span><span class="n">Equal</span><span class="p">(</span><span class="s1">&#39;rusty dagger&#39;</span><span class="p">)()</span> <span class="kr">then</span>
+        <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;The selected item is a rusty dagger&#39;</span><span class="p">)</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
 </code></pre></div>
-<p>end
-```[int]: ../data-types/datatype-int.md</p>
 </div>
 </div>
 </div>
