@@ -8,6 +8,7 @@ on:
       - "**.md"
       - "**.css"
       - "mkdocs.yml"
+      - "main.py"
       - ".github/workflows/mkdocs_deploy.yml"
 
 jobs:
