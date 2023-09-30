@@ -8,653 +8,653 @@ Contains the properties that describe an item.
 
 ## Members
 
-### [int][int] `AC`
+### {{ renderMember(type='int', name='AC') }} 
 
 :   AC value on item
 
-### [int][int] `Accuracy`
+### {{ renderMember(type='int', name='Accuracy') }} 
 
 :   Accuracy
 
-### [int][int] `AGI`
+### {{ renderMember(type='int', name='AGI') }} 
 
 :   AGI value on item
 
-### `Artifact`
+### {{ renderMember(name='Artifact') }} 
 
 :   
 
-### [int][int] `Attack`
+### {{ renderMember(type='int', name='Attack') }} 
 
 :   Attack value on item
 
-### [bool][bool] `Attuneable`
+### {{ renderMember(type='bool', name='Attuneable') }} 
 
 :   Attuneable?
 
-### [int][int] `AugRestrictions`
+### {{ renderMember(type='int', name='AugRestrictions') }} 
 
 :   Augment Restrictions
 
-### [int][int] `Augs`
+### {{ renderMember(type='int', name='Augs') }} 
 
 :   Number of augs on this item
 
-### [augtype][augtype] `AugSlot`
+### {{ renderMember(type='augtype', name='AugSlot') }} 
 
 :   Retrieve the augment in the specified slot number.
 
-### [int][int] `AugSlot1`
+### {{ renderMember(type='int', name='AugSlot1') }} 
 
 :   Returns the type of agument in slot 1
 
-### [int][int] `AugSlot2`
+### {{ renderMember(type='int', name='AugSlot2') }} 
 
 :   Returns the type of agument in slot 2
 
-### [int][int] `AugSlot3`
+### {{ renderMember(type='int', name='AugSlot3') }} 
 
 :   Returns the type of agument in slot 3
 
-### [int][int] `AugSlot4`
+### {{ renderMember(type='int', name='AugSlot4') }} 
 
 :   Returns the type of agument in slot 4
 
-### [int][int] `AugSlot5`
+### {{ renderMember(type='int', name='AugSlot5') }} 
 
 :   Returns the type of agument in slot 5
 
-### [int][int] `AugSlot6`
+### {{ renderMember(type='int', name='AugSlot6') }} 
 
 :   Returns the type of agument in slot 6
 
-### [int][int] `AugType`
+### {{ renderMember(type='int', name='AugType') }} 
 
 :   Augmentation slot type mask.
 
-### [int][int] `Avoidance`
+### {{ renderMember(type='int', name='Avoidance') }} 
 
 :   Avoidance
 
-### `BaneDMG`
+### {{ renderMember(name='BaneDMG') }} 
 
 :   
 
-### `BaneDMGType`
+### {{ renderMember(name='BaneDMGType') }} 
 
 :   
 
-### [int64][int64] `BuyPrice`
+### {{ renderMember(type='int64', name='BuyPrice') }} 
 
 :   The cost to buy this item from active merchant
 
-### `CanUse`
+### {{ renderMember(name='CanUse') }} 
 
 :   
 
-### [float][float] `CastTime`
+### {{ renderMember(type='float', name='CastTime') }} 
 
 :   Spell effect's cast time (in seconds)
 
-### [int][int] `CHA`
+### {{ renderMember(type='int', name='CHA') }} 
 
 :   CHA value on item
 
-### [int][int] `Charges`
+### {{ renderMember(type='int', name='Charges') }} 
 
 :   Charges
 
-### [int][int] `Clairvoyance`
+### {{ renderMember(type='int', name='Clairvoyance') }} 
 
 :   Clairvoyance
 
-### [string][string] `Class[N]`
+### {{ renderMember(type='string', name='Class', params='N') }} 
 
 :   Returns the _Nth_ long class name of the listed classes on an item. Items suitable for ALL classes will effectively have all 17 classes listed.
 
-### [int][int] `Classes`
+### {{ renderMember(type='int', name='Classes') }} 
 
 :   The number of classes that can use the item. Items suitable for ALL classes will return 16.
 
-### [itemspell][itemspell] `Clicky`
+### {{ renderMember(type='itemspell', name='Clicky') }} 
 
 :   Activatable spell effect, if any.
 
-### `Collectible`
+### {{ renderMember(name='Collectible') }} 
 
 :   
 
-### [int][int] `CombatEffects`
+### {{ renderMember(type='int', name='CombatEffects') }} 
 
 :   CombatEffects
 
-### `Combinable`
+### {{ renderMember(name='Combinable') }} 
 
 :   
 
-### [int][int] `Container`
+### {{ renderMember(type='int', name='Container') }} 
 
 :   Number of slots, if this is a container
 
-### `ContentSize`
+### {{ renderMember(name='ContentSize') }} 
 
 :   
 
-### `Damage`
+### {{ renderMember(name='Damage') }} 
 
 :   
 
-### [int][int] `DamageShieldMitigation`
+### {{ renderMember(type='int', name='DamageShieldMitigation') }} 
 
 :   Damage Shield Mitigation
 
-### [int][int] `DamShield`
+### {{ renderMember(type='int', name='DamShield') }} 
 
 :   Damage Shield value on item
 
-### [int][int] `Deities`
+### {{ renderMember(type='int', name='Deities') }} 
 
 :   The number of deities that can use the item. Items with no deity restrictions will return 0.
 
-### [string][string] `Deity[N]`
+### {{ renderMember(type='string', name='Deity', params='N') }} 
 
 :   Returns the _Nth_ deity of the listed deities on an item. Items with no deity restrictions will return NULL for all values of _N_.
 
-### `Delay`
+### {{ renderMember(name='Delay') }} 
 
 :   
 
-### [int][int] `DEX`
+### {{ renderMember(type='int', name='DEX') }} 
 
 :   DEX value on item
 
-### `DMGBonus`
+### {{ renderMember(name='DMGBonus') }} 
 
 :   
 
-### [string][string] `DMGBonusType`
+### {{ renderMember(type='string', name='DMGBonusType') }} 
 
 :   "None", "Magic", "Fire", "Cold", "Poison", "Disease"
 
-### [int][int] `DoTShielding`
+### {{ renderMember(type='int', name='DoTShielding') }} 
 
 :   DoT Shielding
 
-### [string][string] `EffectType`
+### {{ renderMember(type='string', name='EffectType') }} 
 
 :   Spell effect type ([see below](#spell-effect-types) for spell effect types)
 
-### [int][int] `Endurance`
+### {{ renderMember(type='int', name='Endurance') }} 
 
 :   Endurance
 
-### [int][int] `EnduranceRegen`
+### {{ renderMember(type='int', name='EnduranceRegen') }} 
 
 :   Endurance regen
 
-### [evolving][evolving] `Evolving`
+### {{ renderMember(type='evolving', name='Evolving') }} 
 
 :   Does this item have Evolving experience on?
 
-### `Expendable`
+### {{ renderMember(name='Expendable') }} 
 
 :   
 
-### [itemspell][itemspell] `Familiar`
+### {{ renderMember(type='itemspell', name='Familiar') }} 
 
 :   Familiar spell effect, if any.
 
-### `FirstFreeSlot`
+### {{ renderMember(name='FirstFreeSlot') }} 
 
 :   
 
-### [itemspell][itemspell] `Focus`
+### {{ renderMember(type='itemspell', name='Focus') }} 
 
 :   First focus effect, if any.
 
-### [itemspell][itemspell] `Focus2`
+### {{ renderMember(type='itemspell', name='Focus2') }} 
 
 :   Second focus effect, if any.
 
-### `FocusID`
+### {{ renderMember(name='FocusID') }} 
 
 :   
 
-### [int][int] `FreeStack`
+### {{ renderMember(type='int', name='FreeStack') }} 
 
 :   The number of items needed to fill all the stacks of the item you have (with a stacksize of 20\).  If you have 3 stacks \(1, 10, 20 in those stacks), you have room for 60 total and you have 31 on you, so **FreeStack** would return 29.
 
-### [int][int] `Haste`
+### {{ renderMember(type='int', name='Haste') }} 
 
 :   Haste value on item
 
-### [int][int] `HealAmount`
+### {{ renderMember(type='int', name='HealAmount') }} 
 
 :   HealAmount (regen?)
 
-### `Heirloiom`
+### {{ renderMember(name='Heirloiom') }} 
 
 :   
 
-### [int][int] `HeroicAGI`
+### {{ renderMember(type='int', name='HeroicAGI') }} 
 
 :   Heroic AGI value on item
 
-### [int][int] `HeroicCHA`
+### {{ renderMember(type='int', name='HeroicCHA') }} 
 
 :   Heroic CHA value on item
 
-### [int][int] `HeroicDEX`
+### {{ renderMember(type='int', name='HeroicDEX') }} 
 
 :   Heroic DEX value on item
 
-### [int][int] `HeroicINT`
+### {{ renderMember(type='int', name='HeroicINT') }} 
 
 :   Heroic INT value on item
 
-### [int][int] `HeroicSTA`
+### {{ renderMember(type='int', name='HeroicSTA') }} 
 
 :   Heroic STA value on item
 
-### [int][int] `HeroicSTR`
+### {{ renderMember(type='int', name='HeroicSTR') }} 
 
 :   Heroic STR value on item
 
-### [int][int] `HeroicSvCold`
+### {{ renderMember(type='int', name='HeroicSvCold') }} 
 
 :   Heroic SvCold value on item
 
-### [int][int] `HeroicSvCorruption`
+### {{ renderMember(type='int', name='HeroicSvCorruption') }} 
 
 :   Heroic SvCorruption value on item
 
-### [int][int] `HeroicSvDisease`
+### {{ renderMember(type='int', name='HeroicSvDisease') }} 
 
 :   Heroic SvDisease value on item
 
-### [int][int] `HeroicSvFire`
+### {{ renderMember(type='int', name='HeroicSvFire') }} 
 
 :   Heroic SvFire value on item
 
-### [int][int] `HeroicSvMagic`
+### {{ renderMember(type='int', name='HeroicSvMagic') }} 
 
 :   Heroic SvMagic value on item
 
-### [int][int] `HeroicSvPoison`
+### {{ renderMember(type='int', name='HeroicSvPoison') }} 
 
 :   Heroic SvPoison value on item
 
-### [int][int] `HeroicWIS`
+### {{ renderMember(type='int', name='HeroicWIS') }} 
 
 :   Heroic WIS value on item
 
-### [int][int] `HP`
+### {{ renderMember(type='int', name='HP') }} 
 
 :   HP value on item
 
-### [int][int] `HPRegen`
+### {{ renderMember(type='int', name='HPRegen') }} 
 
 :   HPRegen value on item
 
-### [int][int] `Icon`
+### {{ renderMember(type='int', name='Icon') }} 
 
 :   Item Icon
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   Item ID
 
-### `IDFile`
+### {{ renderMember(name='IDFile') }} 
 
 :   
 
-### `IDFile2`
+### {{ renderMember(name='IDFile2') }} 
 
 :   
 
-### [itemspell][itemspell] `Illusion`
+### {{ renderMember(type='itemspell', name='Illusion') }} 
 
 :   Illusion spell effect, if any.
 
-### [float][float] `InstrumentMod`
+### {{ renderMember(type='float', name='InstrumentMod') }} 
 
 :   Instrument Modifier Value
 
-### `InstrumentType`
+### {{ renderMember(name='InstrumentType') }} 
 
 :   
 
-### [int][int] `INT`
+### {{ renderMember(type='int', name='INT') }} 
 
 :   INT value on item
 
-### [int][int] `InvSlot`
+### {{ renderMember(type='int', name='InvSlot') }} 
 
 :   Inventory Slot Number (Historic and now deprecated, use ItemSlot and ItemSlot2)
 
-### [item][item] `Item[N]`
+### {{ renderMember(type='item', name='Item', params='N') }} 
 
 :   Item in _Nth_ slot, if this is a container or has augs
 
-### [float][float] `ItemDelay`
+### {{ renderMember(type='float', name='ItemDelay') }} 
 
 :   Returns the delay of the weapon
 
-### [string][string] `ItemLink[CLICKABLE]`
+### {{ renderMember(type='string', name='ItemLink', params='CLICKABLE') }} 
 
 :   just prints the actual hexlink for an item (not clickable) unless \[CLICKABLE] is included
 
-### [int][int] `Items`
+### {{ renderMember(type='int', name='Items') }} 
 
 :   Number of items, if this is a container.
 
-### [int][int] `ItemSlot`
+### {{ renderMember(type='int', name='ItemSlot') }} 
 
 :   Item Slot number see [Slot Names](../../reference/general/slot-names.md)
 
-### [int][int] `ItemSlot2`
+### {{ renderMember(type='int', name='ItemSlot2') }} 
 
 :   Item Slot subnumber see [Slot Names](../../reference/general/slot-names.md)
 
-### `LDoNCost`
+### {{ renderMember(name='LDoNCost') }} 
 
 :   
 
-### [string][string] `LDoNTheme`
+### {{ renderMember(type='string', name='LDoNTheme') }} 
 
 :   "All", "Deepest Guk", "Miragul's", "Mistmoore", "Rujarkian", "Takish", "Unknown"
 
-### `Level`
+### {{ renderMember(name='Level') }} 
 
 :   
 
-### `Light`
+### {{ renderMember(name='Light') }} 
 
 :   
 
-### [bool][bool] `Lore`
+### {{ renderMember(type='bool', name='Lore') }} 
 
 :   Lore?
 
-### `LoreEquipped`
+### {{ renderMember(name='LoreEquipped') }} 
 
 :   
 
-### `LoreText`
+### {{ renderMember(name='LoreText') }} 
 
 :   
 
-### `Luck`
+### {{ renderMember(name='Luck') }} 
 
 :   
 
-### [bool][bool] `Magic`
+### {{ renderMember(type='bool', name='Magic') }} 
 
 :   Magic?
 
-### [int][int] `Mana`
+### {{ renderMember(type='int', name='Mana') }} 
 
 :   Mana value on item
 
-### [int][int] `ManaRegen`
+### {{ renderMember(type='int', name='ManaRegen') }} 
 
 :   ManaRegen value on item
 
-### `MaxLuck`
+### {{ renderMember(name='MaxLuck') }} 
 
 :   
 
-### [int][int] `MaxPower`
+### {{ renderMember(type='int', name='MaxPower') }} 
 
 :   Max power on an power source
 
-### [int][int] `MerchQuantity`
+### {{ renderMember(type='int', name='MerchQuantity') }} 
 
 :   Quantity of item active merchant has
 
-### `MinLuck`
+### {{ renderMember(name='MinLuck') }} 
 
 :   
 
-### [itemspell][itemspell] `Mount`
+### {{ renderMember(type='itemspell', name='Mount') }} 
 
 :   Mount spell effect, if any.
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Name
 
-### `NoDestroy`
+### {{ renderMember(name='NoDestroy') }} 
 
 :   
 
-### [bool][bool] `NoDrop`
+### {{ renderMember(type='bool', name='NoDrop') }} 
 
 :   No Trade?
 
-### [bool][bool] `NoRent`
+### {{ renderMember(type='bool', name='NoRent') }} 
 
 :   Temporary?
 
-### `NoTrade`
+### {{ renderMember(name='NoTrade') }} 
 
 :   Synonym for NoDrop
 
-### `Open`
+### {{ renderMember(name='Open') }} 
 
 :   
 
-### `OrnamentationIcon`
+### {{ renderMember(name='OrnamentationIcon') }} 
 
 :   
 
-### `PctPower`
+### {{ renderMember(name='PctPower') }} 
 
 :   
 
-### `PendingLore`
+### {{ renderMember(name='PendingLore') }} 
 
 :   
 
-### [int][int] `Power`
+### {{ renderMember(type='int', name='Power') }} 
 
 :   Power left on power source
 
-### `Prestige`
+### {{ renderMember(name='Prestige') }} 
 
 :   
 
-### [itemspell][itemspell] `Proc`
+### {{ renderMember(type='itemspell', name='Proc') }} 
 
 :   Combat proc effect.
 
-### `ProcRate`
+### {{ renderMember(name='ProcRate') }} 
 
 :   
 
-### [int][int] `Purity`
+### {{ renderMember(type='int', name='Purity') }} 
 
 :   Purity of item
 
-### `Quality`
+### {{ renderMember(name='Quality') }} 
 
 :   
 
-### `Quest`
+### {{ renderMember(name='Quest') }} 
 
 :   
 
 | [_string_](datatype-string.md) | **Race**[_N_] | Returns the _Nth_ long race name of the listed races on an item. Items suitable for ALL races will effectively have all 15 races listed. 
-### [int][int] `Races`
+### {{ renderMember(type='int', name='Races') }} 
 
 :   The number of races that can use the item. Items suitable for ALL races will return 15.
 
-### `Range`
+### {{ renderMember(name='Range') }} 
 
 :   
 
-### [int][int] `RecommendedLevel`
+### {{ renderMember(type='int', name='RecommendedLevel') }} 
 
 :   Returns the Recommended Level of an item. Items with no recommended level will return 0.
 
-### [int][int] `RequiredLevel`
+### {{ renderMember(type='int', name='RequiredLevel') }} 
 
 :   Returns the Required Level of an item. Items with no required level will return 0.
 
-### [itemspell][itemspell] `Scroll`
+### {{ renderMember(type='itemspell', name='Scroll') }} 
 
 :   Scroll effect, if any.
 
-### [int][int] `SellPrice`
+### {{ renderMember(type='int', name='SellPrice') }} 
 
 :   Price to sell this item at this merchant
 
-### [int][int] `Shielding`
+### {{ renderMember(type='int', name='Shielding') }} 
 
 :   Shielding
 
-### [int][int] `Size`
+### {{ renderMember(type='int', name='Size') }} 
 
 :   Item size:  1 SMALL  2 MEDIUM  3 LARGE  4 GIANT
 
-### [int][int] `SizeCapacity`
+### {{ renderMember(type='int', name='SizeCapacity') }} 
 
 :   If item is a container, size of items it can hold:  1 SMALL  2 MEDIUM  3 LARGE  4 GIANT
 
-### `Skill`
+### {{ renderMember(name='Skill') }} 
 
 :   
 
-### `SkillModMax`
+### {{ renderMember(name='SkillModMax') }} 
 
 :   
 
-### `SkillModValue`
+### {{ renderMember(name='SkillModValue') }} 
 
 :   
 
-### `SlotsUsedByItem`
+### {{ renderMember(name='SlotsUsedByItem') }} 
 
 :   
 
-### [spell][spell] `Spell`
+### {{ renderMember(type='spell', name='Spell') }} 
 
 :   Spell effect
 
-### [int][int] `SpellDamage`
+### {{ renderMember(type='int', name='SpellDamage') }} 
 
 :   Spell damage
 
-### [int][int] `SpellShield`
+### {{ renderMember(type='int', name='SpellShield') }} 
 
 :   SpellShield
 
-### [int][int] `STA`
+### {{ renderMember(type='int', name='STA') }} 
 
 :   STA value on item
 
-### [int][int] `Stack`
+### {{ renderMember(type='int', name='Stack') }} 
 
 :   Number of items in the stack
 
-### [bool][bool] `Stackable`
+### {{ renderMember(type='bool', name='Stackable') }} 
 
 :   Stackable?
 
-### [int][int] `StackCount`
+### {{ renderMember(type='int', name='StackCount') }} 
 
 :   The total number of the stackable item in your inventory
 
-### [int][int] `Stacks`
+### {{ renderMember(type='int', name='Stacks') }} 
 
 :   Number of stacks of the item in your inventory
 
-### [int][int] `StackSize`
+### {{ renderMember(type='int', name='StackSize') }} 
 
 :   Maximum number if items that can be in the stack
 
-### [int][int] `STR`
+### {{ renderMember(type='int', name='STR') }} 
 
 :   STR value on item
 
-### [int][int] `StrikeThrough`
+### {{ renderMember(type='int', name='StrikeThrough') }} 
 
 :   StrikeThrough
 
-### [int][int] `StunResist`
+### {{ renderMember(type='int', name='StunResist') }} 
 
 :   Stun resist
 
-### [int][int] `svCold`
+### {{ renderMember(type='int', name='svCold') }} 
 
 :   svCold value on item
 
-### [int][int] `svCorruption`
+### {{ renderMember(type='int', name='svCorruption') }} 
 
 :   svCorruption value on item
 
-### [int][int] `svDisease`
+### {{ renderMember(type='int', name='svDisease') }} 
 
 :   svDisease value on item
 
-### [int][int] `svFire`
+### {{ renderMember(type='int', name='svFire') }} 
 
 :   svFire value on item
 
-### [int][int] `svMagic`
+### {{ renderMember(type='int', name='svMagic') }} 
 
 :   svMagic value on item
 
-### [int][int] `svPoison`
+### {{ renderMember(type='int', name='svPoison') }} 
 
 :   svPoison value on item
 
-### [ticks][ticks] `Timer`
+### {{ renderMember(type='ticks', name='Timer') }} 
 
 :   Returns the number of ticks remaining on an item recast timer
 
-### [int][int] `TimerReady`
+### {{ renderMember(type='int', name='TimerReady') }} 
 
 :   Returns the number of seconds remaining on an item recast timer
 
-### [bool][bool] `Tradeskills`
+### {{ renderMember(type='bool', name='Tradeskills') }} 
 
 :   Tradeskills?
 
-### [int][int] `Tribute`
+### {{ renderMember(type='int', name='Tribute') }} 
 
 :   Tribute value of the item
 
-### [string][string] `Type`
+### {{ renderMember(type='string', name='Type') }} 
 
 :   Type
 
-### [int][int] `Value`
+### {{ renderMember(type='int', name='Value') }} 
 
 :   Item value in coppers
 
-### [int][int] `Weight`
+### {{ renderMember(type='int', name='Weight') }} 
 
 :   Item weight
 
-### `WeightReduction`
+### {{ renderMember(name='WeightReduction') }} 
 
 :   
 
-### [int][int] `WIS`
+### {{ renderMember(type='int', name='WIS') }} 
 
 :   WIS value on item
 
-### [itemspell][itemspell] `Worn`
+### {{ renderMember(type='itemspell', name='Worn') }} 
 
 :   Passive worn effect, if any.
 
 | [_invslot_](datatype-invslot.md) | **WornSlot**[_N_] | The _Nth_ invslot this item can be worn in (fingers/ears count as 2 slots) 
-### [bool][bool] `WornSlot[name]`
+### {{ renderMember(type='bool', name='WornSlot', params='name') }} 
 
 :   Can item be worn in invslot with this _name_? (worn slots only)
 
-### [int][int] `WornSlots`
+### {{ renderMember(type='int', name='WornSlots') }} 
 
 :   The number of invslots this item can be worn in (fingers/ears count as 2 slots)
 

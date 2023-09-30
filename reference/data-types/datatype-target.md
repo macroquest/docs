@@ -22,159 +22,159 @@ classDiagram
 
 ## Members
 
-### [spell][spell] `Aego`
+### {{ renderMember(type='spell', name='Aego') }} 
 
 :   Returns the name of the Aego spell if the Target has one
 
-### [spawn][spawn] `AggroHolder`
+### {{ renderMember(type='spawn', name='AggroHolder') }} 
 
 :   Returns the target's current target.
 
-### [spell][spell] `Beneficial`
+### {{ renderMember(type='spell', name='Beneficial') }} 
 
 :   Returns the name of the Beneficial spell if the Target has one. This will skip "player" casted buffs, but will show NPC Casted buffs and some AA buffs.
 
-### [spell][spell] `Brells`
+### {{ renderMember(type='spell', name='Brells') }} 
 
 :   Returns the name of the Brells spell if the Target has one
 
-### [spell][spell] `Charmed`
+### {{ renderMember(type='spell', name='Charmed') }} 
 
 :   Returns the name of the Charmed spell if the Target has one
 
-### [spell][spell] `Clarity`
+### {{ renderMember(type='spell', name='Clarity') }} 
 
 :   Returns the name of the Clarity spell if the Target has one
 
-### [spell][spell] `Corrupted`
+### {{ renderMember(type='spell', name='Corrupted') }} 
 
 :   Returns the name of any the Corruption spell if Target has one
 
-### [spell][spell] `Cursed`
+### {{ renderMember(type='spell', name='Cursed') }} 
 
 :   Returns the name of the Curse spell if Target has one
 
-### [spell][spell] `Crippled`
+### {{ renderMember(type='spell', name='Crippled') }} 
 
 :   Returns the name of the Cripple spell if the Target has one
 
-### [string][string] `Diseased`
+### {{ renderMember(type='string', name='Diseased') }} 
 
 :   Returns the name of a Disease spell if the Target has one
 
-### [string][string] `Dotted`
+### {{ renderMember(type='string', name='Dotted') }} 
 
 :   Returns the name of a DOT spell if the Target has one
 
-### [spell][spell] `DSed`
+### {{ renderMember(type='spell', name='DSed') }} 
 
 :   Returns the name of the Damage Shield spell if the Target has one
 
-### `Feared`
+### {{ renderMember(name='Feared') }} 
 
 :   
 
-### [spell][spell] `Focus`
+### {{ renderMember(type='spell', name='Focus') }} 
 
 :   Returns the name of the Focus spell if the Target has one
 
-### [spell][spell] `Growth`
+### {{ renderMember(type='spell', name='Growth') }} 
 
 :   Returns the name of the Growth spell if the Target has one
 
-### [spell][spell] `Hasted`
+### {{ renderMember(type='spell', name='Hasted') }} 
 
 :   Returns the name of the Haste spell if the Target has one
 
-### [spell][spell] `HybridHP`
+### {{ renderMember(type='spell', name='HybridHP') }} 
 
 :   Returns the name of the Hybrid HP spell if the Target has one
 
-### `Invulnerable`
+### {{ renderMember(name='Invulnerable') }} 
 
 :   
 
-### [spell][spell] `Maloed`
+### {{ renderMember(type='spell', name='Maloed') }} 
 
 :   Returns the name of the Malo spell if the Target has one
 
-### `MaxMeleeTo`
+### {{ renderMember(name='MaxMeleeTo') }} 
 
 :   
 
-### [spell][spell] `Mezzed`
+### {{ renderMember(type='spell', name='Mezzed') }} 
 
 :   Returns the name of the Mez spell if the Target has one
 
-### `PctAggro`
+### {{ renderMember(name='PctAggro') }} 
 
 :   
 
-### [string][string] `Poisoned`
+### {{ renderMember(type='string', name='Poisoned') }} 
 
 :   Returns the name of a Poison spell if the Target has one
 
-### [spell][spell] `Pred`
+### {{ renderMember(type='spell', name='Pred') }} 
 
 :   Returns the name of the Predator spell if the Target has one
 
-### [spell][spell] `Regen`
+### {{ renderMember(type='spell', name='Regen') }} 
 
 :   Returns the name of the Regen spell if the Target has one
 
-### [spell][spell] `RevDSed`
+### {{ renderMember(type='spell', name='RevDSed') }} 
 
 :   Returns the name of the Reverse Damage Shield spell if the Target has one
 
-### [spell][spell] `Rooted`
+### {{ renderMember(type='spell', name='Rooted') }} 
 
 :   Returns the name of the Rooted spell if the Target has one
 
-### [spell][spell] `SE`
+### {{ renderMember(type='spell', name='SE') }} 
 
 :   Returns the name of the Spiritual Enlightenment spell if the Target has one
 
-### `SecondaryAggroPlayer`
+### {{ renderMember(name='SecondaryAggroPlayer') }} 
 
 :   
 
-### `SecondaryPctAggro`
+### {{ renderMember(name='SecondaryPctAggro') }} 
 
 :   
 
-### [spell][spell] `Shining`
+### {{ renderMember(type='spell', name='Shining') }} 
 
 :   Returns the name of the Shining spell if the Target has one
 
-### `Silenced`
+### {{ renderMember(name='Silenced') }} 
 
 :   
 
-### [spell][spell] `Skin`
+### {{ renderMember(type='spell', name='Skin') }} 
 
 :   Returns the name of the Skin spell if the Target has one
 
-### [spell][spell] `Slowed`
+### {{ renderMember(type='spell', name='Slowed') }} 
 
 :   Returns the name of the Slow spell if the Target has one
 
-### [spell][spell] `Snared`
+### {{ renderMember(type='spell', name='Snared') }} 
 
 :   Returns the name of the Snare spell if the Target has one
 
-### [spell][spell] `Strength`
+### {{ renderMember(type='spell', name='Strength') }} 
 
 :   Returns the name of the Strength spell if the Target has one
 
-### [spell][spell] `SV`
+### {{ renderMember(type='spell', name='SV') }} 
 
 :   Returns the name of the Spiritual Vitality spell if the Target has one
 
-### [spell][spell] `Symbol`
+### {{ renderMember(type='spell', name='Symbol') }} 
 
 :   Returns the name of the Symbol spell if the Target has one
 
-### [spell][spell] `Tashed`
+### {{ renderMember(type='spell', name='Tashed') }} 
 
 :   Returns the name of the Tash spell if the Target has one
 

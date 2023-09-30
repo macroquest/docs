@@ -8,39 +8,39 @@ This contains information related to a tradeskill depot.
 
 ## Members
 
-### [int][int] `Count`
+### {{ renderMember(type='int', name='Count') }} 
 
 :   Returns the number of item stacks in the tradeskill depot.
 
-### [int][int] `Capacity`
+### {{ renderMember(type='int', name='Capacity') }} 
 
 :   Returns the total capacity of the tradeskill depot.
 
-### [bool][bool] `Enabled`
+### {{ renderMember(type='bool', name='Enabled') }} 
 
 :   Returns whether the tradeskill depot is enabled or not. It requires the Night of Shadows expansion.
 
-### [bool][bool] `ItemsReceived`
+### {{ renderMember(type='bool', name='ItemsReceived') }} 
 
 :   Returns whether the tradeskill depot has been populated with items. The window must be opened at least once for the depot to be populated with items.
 
-### [item][item] `FindItem[#]`
+### {{ renderMember(type='item', name='FindItem', params='#') }} 
 
 :   Find an item with the given item ID in the tradeskill depot.
 
-### [item][item] `FindItem[name]`
+### {{ renderMember(type='item', name='FindItem', params='name') }} 
 
 :   Find an item by partial name in the tradeskill depot. Prefix with "=" for an exact match.
 
-### [int][int] `FindItemCount[#]`
+### {{ renderMember(type='int', name='FindItemCount', params='#') }} 
 
 :   Find the number of items with the given item ID in the tradeskill depot.
 
-### [int][int] `FindItemCount[name]`
+### {{ renderMember(type='int', name='FindItemCount', params='name') }} 
 
 :   Find the number of items by partial name in the tradeskill depot. Prefix with "=" for an exact match.
 
-### [item][item] `SelectedItem`
+### {{ renderMember(type='item', name='SelectedItem') }} 
 
 :   Returns the currently selected item in the tradeskill depot window.
 

@@ -6,35 +6,35 @@ tags:
 
 Describes data about an augmentation slot in an item.
 
-### [bool][bool] `Empty`
+### {{ renderMember(type='bool', name='Empty') }} 
 
 :   True if the slot is empty
 
-### [bool][bool] `Infusable`
+### {{ renderMember(type='bool', name='Infusable') }} 
 
 :   True if this is a hidden energeian power source slot.
 
-### [item][item] `Item`
+### {{ renderMember(type='item', name='Item') }} 
 
 :   The item socketed in this slot, if any.
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   The name of the item socketed in this slot, if any.
 
-### [int][int] `Slot`
+### {{ renderMember(type='int', name='Slot') }} 
 
 :   Index of the augment slot.
 
-### [int][int] `Solvent`
+### {{ renderMember(type='int', name='Solvent') }} 
 
 :   Item ID of the solvent used to remove this item, if any.
 
-### [int][int] `Type`
+### {{ renderMember(type='int', name='Type') }} 
 
 :   Type of augment slot.
 
-### [int][int] `Visible`
+### {{ renderMember(type='int', name='Visible') }} 
 
 :   True if this slot is visible to the user.
 

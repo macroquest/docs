@@ -8,23 +8,23 @@ Represents a color
 
 ## Members
 
-### [int][int] `A`
+### {{ renderMember(type='int', name='A') }} 
 
 :   Alpha channel value.
 
-### [int][int] `R`
+### {{ renderMember(type='int', name='R') }} 
 
 :   Red color value.
 
-### [int][int] `G`
+### {{ renderMember(type='int', name='G') }} 
 
 :   Green color value.
 
-### [int][int] `B`
+### {{ renderMember(type='int', name='B') }} 
 
 :   Blue color value.
 
-### [int][int] `Int`
+### {{ renderMember(type='int', name='Int') }} 
 
 :   The integer formed by the ARGB.
 

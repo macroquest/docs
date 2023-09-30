@@ -10,19 +10,19 @@ See Also: [DataType:dynamiczone](./datatype-dynamiczone.md), [TLO:DynamicZone](.
 
 ## Members
 
-### [string][string] `ExpeditionName`
+### {{ renderMember(type='string', name='ExpeditionName') }} 
 
 :   The name of the expedition
 
-### [string][string] `EventName`
+### {{ renderMember(type='string', name='EventName') }} 
 
 :   The name of the event
 
-### [timestamp][timestamp] `Timer`
+### {{ renderMember(type='timestamp', name='Timer') }} 
 
 :   The timestamp indicating when this lockout expires
 
-### [int][int] `EventID`
+### {{ renderMember(type='int', name='EventID') }} 
 
 :   ID of the event. These values are only unique per Expedition. Non-event lockouts (Replay Timer) will have a -1 event id.
 

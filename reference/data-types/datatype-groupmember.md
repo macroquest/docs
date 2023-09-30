@@ -10,51 +10,51 @@ Contains data on a specific group member
 
 this type inherits members from [_spawn_ ](datatype-spawn.md)if the member is in the current zone.
 
-### [int][int] `Index`
+### {{ renderMember(type='int', name='Index') }} 
 
 :   Which number in the group the member is
 
-### [bool][bool] `Leader`
+### {{ renderMember(type='bool', name='Leader') }} 
 
 :   TRUE if the member is the group's leader, FALSE otherwise
 
-### [int][int] `Level`
+### {{ renderMember(type='int', name='Level') }} 
 
 :   The member's level
 
-### [bool][bool] `MainAssist`
+### {{ renderMember(type='bool', name='MainAssist') }} 
 
 :   TRUE if the member is designated as the group's Main Assist, FALSE otherwise
 
-### [bool][bool] `MainTank`
+### {{ renderMember(type='bool', name='MainTank') }} 
 
 :   TRUE if the member is designated as the group's Main Tank, FALSE otherwise
 
-### [bool][bool] `Mercenary`
+### {{ renderMember(type='bool', name='Mercenary') }} 
 
 :   TRUE if the member is a mercenary, FALSE otherwise
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   The name of the group member. This works even if they are not in the same zone as you.
 
-### [bool][bool] `Offline`
+### {{ renderMember(type='bool', name='Offline') }} 
 
 :   TRUE if the member is offline and FALSE if online
 
-### [bool][bool] `OtherZone`
+### {{ renderMember(type='bool', name='OtherZone') }} 
 
 :   TRUE if the member is online but in another zone and FALSE if online and in same zone as you.
 
-### [bool][bool] `Present`
+### {{ renderMember(type='bool', name='Present') }} 
 
 :   TRUE if the member is online and in same zone and FALSE if online and not in same zone as you.
 
-### [bool][bool] `Puller`
+### {{ renderMember(type='bool', name='Puller') }} 
 
 :   TRUE if the member is designated as the group's Puller, FALSE otherwise
 
-### [spawn][spawn] `Spawn`
+### {{ renderMember(type='spawn', name='Spawn') }} 
 
 :   Accesses the group member's spawn. Not all members will have a spawn (if they are out of the zone).
 

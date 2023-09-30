@@ -8,7 +8,7 @@ Provides access to spawn search filter criteria in alerts. Alerts are created us
 
 ## Forms
 
-### [alert][alert] `Alert[ID]`
+### {{ renderMember(type='alert', name='Alert', params='ID') }} 
 
 :   Retrieve information for the alert category by its id
 
@@ -16,15 +16,15 @@ Provides access to spawn search filter criteria in alerts. Alerts are created us
 
 ## Associated DataTypes
 
-### `alert` Type
+### {{ renderMember(name='alert') }} 
 
 Provides access to the values of an alert.
 
-### [alertlist][alertlist] `List[Index]`
+### {{ renderMember(type='alertlist', name='List', params='Index') }} 
 
 :   Get the item from the list at the specified index
 
-### [int][int] `Size`
+### {{ renderMember(type='int', name='Size') }} 
 
 :   Get the number of alerts
 
@@ -33,238 +33,238 @@ Provides access to the values of an alert.
 :   Returns **Size** as a string.
 
 
-### `alertlist` Type
+### {{ renderMember(name='alertlist') }} 
 
 Provides access to the properties of a spawn search associated with an alert. For a spawn to be entered
 into an alert it must match all the criteria specified by the alert list.
 
 See Also: [Spawn Search](../general/spawn-search.md).
 
-### [int][int] `AlertList`
+### {{ renderMember(type='int', name='AlertList') }} 
 
 :   Any spawn on the associated alert list
 
-### [bool][bool] `bAlert`
+### {{ renderMember(type='bool', name='bAlert') }} 
 
 :   Indicates usage of **alert** filter
 
-### [bool][bool] `bAura`
+### {{ renderMember(type='bool', name='bAura') }} 
 
 :   Any aur.
 
-### [bool][bool] `bBanker`
+### {{ renderMember(type='bool', name='bBanker') }} 
 
 :   Any banker
 
-### [bool][bool] `bBanner`
+### {{ renderMember(type='bool', name='bBanner') }} 
 
 :   Any banner
 
-### [bool][bool] `bCampfire`
+### {{ renderMember(type='bool', name='bCampfire') }} 
 
 :   Any campfire
 
-### [bool][bool] `bDps`
+### {{ renderMember(type='bool', name='bDps') }} 
 
 :   Any player that is a DPS class
 
-### [bool][bool] `bExactName`
+### {{ renderMember(type='bool', name='bExactName') }} 
 
 :   Name match requiries an exact match
 
-### [bool][bool] `bFellowship`
+### {{ renderMember(type='bool', name='bFellowship') }} 
 
 :   Any member of the fellowship
 
-### [bool][bool] `bGM`
+### {{ renderMember(type='bool', name='bGM') }} 
 
 :   Any player flagged as a GM
 
-### [bool][bool] `bGroup`
+### {{ renderMember(type='bool', name='bGroup') }} 
 
 :   Any member of the group
 
-### [bool][bool] `bHealer`
+### {{ renderMember(type='bool', name='bHealer') }} 
 
 :   Any player that is a healer class
 
-### [bool][bool] `bKnight`
+### {{ renderMember(type='bool', name='bKnight') }} 
 
 :   Any player that is a knight
 
-### [bool][bool] `bKnownLocation`
+### {{ renderMember(type='bool', name='bKnownLocation') }} 
 
 :   Indicates usage of a **loc** filter
 
-### [bool][bool] `bLFG`
+### {{ renderMember(type='bool', name='bLFG') }} 
 
 :   Any player that is flagged as LFG
 
-### [bool][bool] `bLight`
+### {{ renderMember(type='bool', name='bLight') }} 
 
 :   Indicates usage of a **light** filter
 
-### [bool][bool] `bLoS`
+### {{ renderMember(type='bool', name='bLoS') }} 
 
 :   Any spawn in line of sight
 
-### [bool][bool] `bMerchant`
+### {{ renderMember(type='bool', name='bMerchant') }} 
 
 :   Any merchant
 
-### [bool][bool] `bNamed`
+### {{ renderMember(type='bool', name='bNamed') }} 
 
 :   Any "named" NPC
 
-### [bool][bool] `bNearAlert`
+### {{ renderMember(type='bool', name='bNearAlert') }} 
 
 :   Indicates usage of **nearalert** filter
 
-### [bool][bool] `bNoAlert`
+### {{ renderMember(type='bool', name='bNoAlert') }} 
 
 :   Indicates usage of **noalert** filter
 
-### [bool][bool] `bNoGroup`
+### {{ renderMember(type='bool', name='bNoGroup') }} 
 
 :   Exclude any player that is in the group
 
-### [bool][bool] `bNoGuild`
+### {{ renderMember(type='bool', name='bNoGuild') }} 
 
 :   Exclude any player that is in the guild
 
-### [bool][bool] `bNoPet`
+### {{ renderMember(type='bool', name='bNoPet') }} 
 
 :   Exclude any spawn that is a pet
 
-### [bool][bool] `bNotNearAlert`
+### {{ renderMember(type='bool', name='bNotNearAlert') }} 
 
 :   Indicates usage of **notnearalert** filter
 
-### [string][string] `BodyType`
+### {{ renderMember(type='string', name='BodyType') }} 
 
 :   Any spawn with given body type
 
-### [bool][bool] `bRaid`
+### {{ renderMember(type='bool', name='bRaid') }} 
 
 :   Any member of the raid
 
-### [bool][bool] `bSlower`
+### {{ renderMember(type='bool', name='bSlower') }} 
 
 :   Any player that is a slower
 
-### [bool][bool] `bSpawnID`
+### {{ renderMember(type='bool', name='bSpawnID') }} 
 
 :   Indicates usage of the **id** filter
 
-### [bool][bool] `bTank`
+### {{ renderMember(type='bool', name='bTank') }} 
 
 :   Any player that is a tank class
 
-### [bool][bool] `bTargetable`
+### {{ renderMember(type='bool', name='bTargetable') }} 
 
 :   Any spawn that is targetable
 
-### [bool][bool] `bTargNext`
+### {{ renderMember(type='bool', name='bTargNext') }} 
 
 :   Indicates usage of the **next** filter
 
-### [bool][bool] `bTargPrev`
+### {{ renderMember(type='bool', name='bTargPrev') }} 
 
 :   Indicates usage of the **prev** filter
 
-### [bool][bool] `bTrader`
+### {{ renderMember(type='bool', name='bTrader') }} 
 
 :   Any player that is a trader
 
-### [bool][bool] `bTributeMaster`
+### {{ renderMember(type='bool', name='bTributeMaster') }} 
 
 :   Any NPC that is a tribute master
 
-### [string][string] `Class`
+### {{ renderMember(type='string', name='Class') }} 
 
 :   Any spawn that is the given class
 
-### [double][double] `FRadius`
+### {{ renderMember(type='double', name='FRadius') }} 
 
 :   Any spawn that is given distance from the given **loc** filter
 
-### [int][int] `FromSpawnID`
+### {{ renderMember(type='int', name='FromSpawnID') }} 
 
 :   Search starts at given spawn id
 
-### [int64][int64] `GuildID`
+### {{ renderMember(type='int64', name='GuildID') }} 
 
 :   Any member of the guild with the given id
 
-### [string][string] `Light`
+### {{ renderMember(type='string', name='Light') }} 
 
 :   Any spawn that is equipped with the given light source
 
-### [int][int] `MaxLevel`
+### {{ renderMember(type='int', name='MaxLevel') }} 
 
 :   Any spawn that is at this level or lower
 
-### [int][int] `MinLevel`
+### {{ renderMember(type='int', name='MinLevel') }} 
 
 :   Any spawn that is at this level or greater
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Any spawn with the given name
 
-### [int][int] `NearAlertList`
+### {{ renderMember(type='int', name='NearAlertList') }} 
 
 :   Any spawn near the given alert list
 
-### [int][int] `NoAlertList`
+### {{ renderMember(type='int', name='NoAlertList') }} 
 
 :   Excludes any spawn in the given alert list
 
-### [int][int] `NotID`
+### {{ renderMember(type='int', name='NotID') }} 
 
 :   Excludes any spawn with the given id
 
-### [int][int] `NotNearAlertList`
+### {{ renderMember(type='int', name='NotNearAlertList') }} 
 
 :   Excludes any spawn near the given alert list
 
-### [int][int] `PlayerState`
+### {{ renderMember(type='int', name='PlayerState') }} 
 
 :   Any spawn with the given state
 
-### [string][string] `Race`
+### {{ renderMember(type='string', name='Race') }} 
 
 :   Any spawn with the given race
 
-### [float][float] `Radius`
+### {{ renderMember(type='float', name='Radius') }} 
 
 :   Excludes the spawn if any player is within this distance (**nopcnear** filter)
 
-### [int][int] `SortBy`
+### {{ renderMember(type='int', name='SortBy') }} 
 
 :   Indicates the sort order of the filter
 
-### [spawn][spawn] `Spawn`
+### {{ renderMember(type='spawn', name='Spawn') }} 
 
 :   If an ID or Name is part of the filter, attempts to return a spawn with the matching ID or Name
 
-### [int][int] `SpawnID`
+### {{ renderMember(type='int', name='SpawnID') }} 
 
 :   Any spawn with the given Spawn ID
 
-### [int][int] `SpawnType`
+### {{ renderMember(type='int', name='SpawnType') }} 
 
 :   Any spawn with the given type
 
-### [float][float] `xLoc`
+### {{ renderMember(type='float', name='xLoc') }} 
 
 :   `x` component of the **loc** filter
 
-### [float][float] `yLoc`
+### {{ renderMember(type='float', name='yLoc') }} 
 
 :   `y` component of the **loc** filter
 
-### [double][double] `ZRadius`
+### {{ renderMember(type='double', name='ZRadius') }} 
 
 :   `z` distance component of the **loc** filter
 

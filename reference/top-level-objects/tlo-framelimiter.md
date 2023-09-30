@@ -14,7 +14,7 @@ The FrameLimiter TLO provides access to the frame limiter feature
 
 ## Associated DataTypes
 
-### `framelimiter` Type
+### {{ renderMember(name='framelimiter') }} 
 
 Represents the state of the frame limiter
 

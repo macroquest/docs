@@ -8,55 +8,55 @@ Contains all the data about your fellowship
 
 ## Members
 
-### [bool][bool] `Campfire`
+### {{ renderMember(type='bool', name='Campfire') }} 
 
 :   TRUE if campfire is up, FALSE if not
 
-### [ticks][ticks] `CampfireDuration`
+### {{ renderMember(type='ticks', name='CampfireDuration') }} 
 
 :   Time left on current campfire
 
-### [float][float] `CampfireX`
+### {{ renderMember(type='float', name='CampfireX') }} 
 
 :   Campfire X location
 
-### [float][float] `CampfireY`
+### {{ renderMember(type='float', name='CampfireY') }} 
 
 :   Campfire Y location
 
-### [float][float] `CampfireZ`
+### {{ renderMember(type='float', name='CampfireZ') }} 
 
 :   Campfire Z location
 
-### [zone][zone] `CampfireZone`
+### {{ renderMember(type='zone', name='CampfireZone') }} 
 
 :   Zone information for the zone that contains your campfire
 
-### [bool][bool] `Exists`
+### {{ renderMember(type='bool', name='Exists') }} 
 
 :   Returns TRUE if a fellowship exists.
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   Fellowship ID
 
-### [string][string] `Leader`
+### {{ renderMember(type='string', name='Leader') }} 
 
 :   Fellowship leader's name
 
-### [fellowshipmember][fellowshipmember] `Member[name|#]`
+### {{ renderMember(type='fellowshipmember', name='Member', params='name|#') }} 
 
 :   Member data by _name_ or _#_
 
-### [int][int] `Members`
+### {{ renderMember(type='int', name='Members') }} 
 
 :   Number of members in the fellowship
 
-### [string][string] `MotD`
+### {{ renderMember(type='string', name='MotD') }} 
 
 :   Fellowship Message of the Day
 
-### [bool][bool] `Sharing[N]`
+### {{ renderMember(type='bool', name='Sharing', params='N') }} 
 
 :   Returns TRUE if exp sharing is enabled for the Nth member
 

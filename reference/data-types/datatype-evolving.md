@@ -8,19 +8,19 @@ A DataType that deals with evolving items.
 
 ## Members
 
-### [bool][bool] `ExpOn`
+### {{ renderMember(type='bool', name='ExpOn') }} 
 
 :   Is evolving item experience turned on for this item?
 
-### [float][float] `ExpPct`
+### {{ renderMember(type='float', name='ExpPct') }} 
 
 :   Percentage of experience that the item has gained
 
-### [int][int] `Level`
+### {{ renderMember(type='int', name='Level') }} 
 
 :   The level of the evolving item.
 
-### [int][int] `MaxLevel`
+### {{ renderMember(type='int', name='MaxLevel') }} 
 
 :   The maximum level of the evolving item
 

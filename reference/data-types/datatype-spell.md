@@ -8,343 +8,343 @@ This is the type used for spell information.
 
 ## Members
 
-### [float][float] `AERange`
+### {{ renderMember(type='float', name='AERange') }} 
 
 :   AE range (group spells use this for their range)
 
-### `Attrib`
+### {{ renderMember(name='Attrib') }} 
 
 :   
 
-### `AutoCast`
+### {{ renderMember(name='AutoCast') }} 
 
 :   
 
-### [int64][int64] `Base`
+### {{ renderMember(type='int64', name='Base') }} 
 
 :   
 
-### [int64][int64] `Base2`
+### {{ renderMember(type='int64', name='Base2') }} 
 
 :   
 
-### `BaseEffectsFocusCap`
+### {{ renderMember(name='BaseEffectsFocusCap') }} 
 
 :   
 
-### `BaseName`
+### {{ renderMember(name='BaseName') }} 
 
 :   
 
-### `Beneficial`
+### {{ renderMember(name='Beneficial') }} 
 
 :   
 
-### `BookIcon`
+### {{ renderMember(name='BookIcon') }} 
 
 :   
 
-### `Calc`
+### {{ renderMember(name='Calc') }} 
 
 :   
 
-### `CalcIndex`
+### {{ renderMember(name='CalcIndex') }} 
 
 :   
 
-### `CanMGB`
+### {{ renderMember(name='CanMGB') }} 
 
 :   
 
-### `CastByMe`
+### {{ renderMember(name='CastByMe') }} 
 
 :   
 
-### `CastByOther`
+### {{ renderMember(name='CastByOther') }} 
 
 :   
 
-### [string][string] `CastOnAnother`
+### {{ renderMember(type='string', name='CastOnAnother') }} 
 
 :   Message when cast on others
 
-### [string][string] `CastOnYou`
+### {{ renderMember(type='string', name='CastOnYou') }} 
 
 :   Message when cast on yourself
 
-### [timestamp][timestamp] `CastTime`
+### {{ renderMember(type='timestamp', name='CastTime') }} 
 
 :   Cast time (unadjusted)
 
-### [string][string] `Category`
+### {{ renderMember(type='string', name='Category') }} 
 
 :   Name of the category the spell belongs to (e.g. "HP Buffs")
 
-### [int][int] `CategoryID`
+### {{ renderMember(type='int', name='CategoryID') }} 
 
 :   Numeric ID of the category this spell belongs to
 
-### [int64][int64] `CounterNumber`
+### {{ renderMember(type='int64', name='CounterNumber') }} 
 
 :   The number of counters that the spell adds
 
-### [string][string] `CounterType`
+### {{ renderMember(type='string', name='CounterType') }} 
 
 :   The resist counter. Will be one of "Disease", "Poison", "Curse" or "Corruption"
 
-### [bool][bool] `Deletable`
+### {{ renderMember(type='bool', name='Deletable') }} 
 
 :   Whether a spell can be deleted from the spell book
 
-### `Description`
+### {{ renderMember(name='Description') }} 
 
 :   
 
-### [bool][bool] `Dispellable`
+### {{ renderMember(type='bool', name='Dispellable') }} 
 
 :   Whether a spell can be dispelled
 
-### [ticks][ticks] `Duration`
+### {{ renderMember(type='ticks', name='Duration') }} 
 
 :   Duration of the spell (if any)
 
-### [ticks][ticks] `DurationValue1`
+### {{ renderMember(type='ticks', name='DurationValue1') }} 
 
 :   Duration of the spell (if any)
 
-### `DurationWindow`
+### {{ renderMember(name='DurationWindow') }} 
 
 :   
 
-### `EnduranceCost`
+### {{ renderMember(name='EnduranceCost') }} 
 
 :   
 
-### `EQSpellDuration`
+### {{ renderMember(name='EQSpellDuration') }} 
 
 :   
 
-### `Extra`
+### {{ renderMember(name='Extra') }} 
 
 :   
 
-### [timestamp][timestamp] `FizzleTime`
+### {{ renderMember(type='timestamp', name='FizzleTime') }} 
 
 :   Time to recover after fizzle
 
-### [int][int] `GemIcon`
+### {{ renderMember(type='int', name='GemIcon') }} 
 
 :   Icon number of the spell. Example ${Spell\[blah].GemIcon}
 
-### `HasSPA`
+### {{ renderMember(name='HasSPA') }} 
 
 :   
 
-### [int][int] `HastePct`
+### {{ renderMember(type='int', name='HastePct') }} 
 
 :   Percentage of haste, example of use ${Me.Hasted.HastePct} or ${Spell\[Speed of Milyex].HastePct}
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   Spell ID
 
-### `IllusionOkWhenMounted`
+### {{ renderMember(name='IllusionOkWhenMounted') }} 
 
 :   
 
-### `IsActiveAA`
+### {{ renderMember(name='IsActiveAA') }} 
 
 :   
 
-### [bool][bool] `IsSkill`
+### {{ renderMember(type='bool', name='IsSkill') }} 
 
 :   is this spell a skill?
 
-### [bool][bool] `IsSwarmSpell`
+### {{ renderMember(type='bool', name='IsSwarmSpell') }} 
 
 :   Is this spell a Swarm spell?
 
-### [int][int] `Level`
+### {{ renderMember(type='int', name='Level') }} 
 
 :   Level
 
-### [string][string] `Link[text]`
+### {{ renderMember(type='string', name='Link', params='text') }} 
 
 :   Generate a clickable spell link. _text_ is optional and overrides the text of the link.
 
-### [int][int] `Location`
+### {{ renderMember(type='int', name='Location') }} 
 
 :   Appears to be max distance
 
-### [int][int] `Mana`
+### {{ renderMember(type='int', name='Mana') }} 
 
 :   Mana cost (unadjusted)
 
-### [int64][int64] `Max`
+### {{ renderMember(type='int64', name='Max') }} 
 
 :   
 
-### [int64][int64] `MaxLevel`
+### {{ renderMember(type='int64', name='MaxLevel') }} 
 
 :   
 
-### [int][int] `MinCasterLevel`
+### {{ renderMember(type='int', name='MinCasterLevel') }} 
 
 :   Minimum level required by any class to cast this spell.
 
-### [timestamp][timestamp] `MyCastTime`
+### {{ renderMember(type='timestamp', name='MyCastTime') }} 
 
 :   Adjusted cast time
 
-### `MyDuration`
+### {{ renderMember(name='MyDuration') }} 
 
 :   
 
-### [float][float] `MyRange`
+### {{ renderMember(type='float', name='MyRange') }} 
 
 :   Adjusted spell range, including focus effects, etc.
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Spell Name
 
-### `NoExpendReagentID`
+### {{ renderMember(name='NoExpendReagentID') }} 
 
 :   
 
-### `NumEffects`
+### {{ renderMember(name='NumEffects') }} 
 
 :   
 
-### [float][float] `PushBack`
+### {{ renderMember(type='float', name='PushBack') }} 
 
 :   Push back amount
 
-### [float][float] `Range`
+### {{ renderMember(type='float', name='Range') }} 
 
 :   Maximum range to target (use **AERange** for AE and group spells)
 
-### [int][int] `Rank`
+### {{ renderMember(type='int', name='Rank') }} 
 
 :   Returns either 1, 2 or 3 for spells and 4-30 for clickables and potions.
 
-### [string][string] `RankName`
+### {{ renderMember(type='string', name='RankName') }} 
 
 :   Returns the spell/combat ability name rank character has.
 
-### `ReagentCount`
+### {{ renderMember(name='ReagentCount') }} 
 
 :   
 
-### `ReagentID`
+### {{ renderMember(name='ReagentID') }} 
 
 :   
 
-### [float][float] `RecastTime`
+### {{ renderMember(type='float', name='RecastTime') }} 
 
 :   Time to recast after successful cast
 
-### `RecastTimerID`
+### {{ renderMember(name='RecastTimerID') }} 
 
 :   
 
-### [timestamp][timestamp] `RecoveryTime`
+### {{ renderMember(type='timestamp', name='RecoveryTime') }} 
 
 :   Same as **FizzleTime**
 
-### [int][int] `ResistAdj`
+### {{ renderMember(type='int', name='ResistAdj') }} 
 
 :   Resist adjustment
 
-### [string][string] `ResistType`
+### {{ renderMember(type='string', name='ResistType') }} 
 
 :   See below for Resist Types
 
-### `Restrictions`
+### {{ renderMember(name='Restrictions') }} 
 
 :   
 
-### [string][string] `Skill`
+### {{ renderMember(type='string', name='Skill') }} 
 
 :   See below for Skill Types
 
-### [int][int] `SlowPct`
+### {{ renderMember(type='int', name='SlowPct') }} 
 
 :   Percentage of slow, example of use ${Target.Slowed.SlowPct} or ${Spell\[Slowing Helix].SlowPct}
 
-### `SpellGroup`
+### {{ renderMember(name='SpellGroup') }} 
 
 :   
 
-### [int][int] `SpellIcon`
+### {{ renderMember(type='int', name='SpellIcon') }} 
 
 :   Numeric ID of the Icon used to represent the spell.
 
-### [string][string] `SpellType`
+### {{ renderMember(type='string', name='SpellType') }} 
 
 :   "Beneficial(Group)", "Beneficial", "Detrimental" or "Unknown"
 
-### [bool][bool] `Stacks[duration]`
+### {{ renderMember(type='bool', name='Stacks', params='duration') }} 
 
 :   Does the selected spell stack with your current buffs (duration is in ticks)
 
-### [bool][bool] `StacksPet[duration]`
+### {{ renderMember(type='bool', name='StacksPet', params='duration') }} 
 
 :   Does the selected spell stack with your pet's current buffs (duration is in ticks)
 
-### `StacksSpawn`
+### {{ renderMember(name='StacksSpawn') }} 
 
 :   
 
-### [bool][bool] `StacksTarget`
+### {{ renderMember(type='bool', name='StacksTarget') }} 
 
 :   Does the selected spell stack with your target's current buffs
 
-### [bool][bool] `StacksWith[name]`
+### {{ renderMember(type='bool', name='StacksWith', params='name') }} 
 
 :   alias for .WillStack - see entry for more details
 
-### `StacksWithDiscs`
+### {{ renderMember(name='StacksWithDiscs') }} 
 
 :   
 
-### [string][string] `Subcategory`
+### {{ renderMember(type='string', name='Subcategory') }} 
 
 :   Name of the subcategory this spell belongs to (e.g. "Shielding")
 
-### [int][int] `SubcategoryID`
+### {{ renderMember(type='int', name='SubcategoryID') }} 
 
 :   Numeric Id of the subcategory this spell belongs to.
 
-### `SubSpellGroup`
+### {{ renderMember(name='SubSpellGroup') }} 
 
 :   
 
-### [string][string] `TargetType`
+### {{ renderMember(type='string', name='TargetType') }} 
 
 :   See below for Target Types
 
-### `TimeOfDay`
+### {{ renderMember(name='TimeOfDay') }} 
 
 :   
 
-### `Trigger`
+### {{ renderMember(name='Trigger') }} 
 
 :   
 
-### [string][string] `WearOff`
+### {{ renderMember(type='string', name='WearOff') }} 
 
 :   The "wear off" message
 
-### [int][int] `WillLand`
+### {{ renderMember(type='int', name='WillLand') }} 
 
 :   This is like stacks but without the duration check.  It's a clean: "Will this spell land."  Returns the slot it would land in.
 
-### [int][int] `WillLandPet`
+### {{ renderMember(type='int', name='WillLandPet') }} 
 
 :   Same as WillLand, but for your pet.
 
-### [bool][bool] `WillStack[name]`
+### {{ renderMember(type='bool', name='WillStack', params='name') }} 
 
 :   Does the selected spell stack with the specific SPELL _name_ DOES NOT work with AAs.
 

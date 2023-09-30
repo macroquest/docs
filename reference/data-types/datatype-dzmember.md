@@ -10,15 +10,15 @@ See Also: [DataType:dynamiczone](./datatype-dynamiczone.md), [TLO:DynamicZone](.
 
 ## Members
 
-### [bool][bool] `Flagged`
+### {{ renderMember(type='bool', name='Flagged') }} 
 
 :   Returns true if the dzmember can successfully enter the dz. where x is either index or the name.
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   The name of the member
 
-### [string][string] `Status`
+### {{ renderMember(type='string', name='Status') }} 
 
 :   The status of the member - one of the following: Unknown, Online, Offline, In Dynamic Zone, Link Dead
 

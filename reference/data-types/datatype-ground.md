@@ -8,87 +8,87 @@ Represents a ground item.
 
 ## Members
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   Ground item ID (not the same as item ID, this is like spawn ID)
 
-### [int][int] `Distance`
+### {{ renderMember(type='int', name='Distance') }} 
 
 :   Distance from player to ground item
 
-### [float][float] `X`
+### {{ renderMember(type='float', name='X') }} 
 
 :   X coordinate
 
-### [float][float] `Y`
+### {{ renderMember(type='float', name='Y') }} 
 
 :   Y coordinate
 
-### [float][float] `Z`
+### {{ renderMember(type='float', name='Z') }} 
 
 :   Z coordinate
 
-### [heading][heading] `Heading`
+### {{ renderMember(type='heading', name='Heading') }} 
 
 :   Ground item is facing this heading
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Name
 
-### [heading][heading] `HeadingTo`
+### {{ renderMember(type='heading', name='HeadingTo') }} 
 
 :   Direction player must move to meet this ground item
 
-### [bool][bool] `LineOfSight`
+### {{ renderMember(type='bool', name='LineOfSight') }} 
 
 :   Returns TRUE if ground spawn is in line of sight
 
-### [int][int] `Address`
+### {{ renderMember(type='int', name='Address') }} 
 
 :   ???
 
-### [float][float] `DisplayName`
+### {{ renderMember(type='float', name='DisplayName') }} 
 
 :   Displays name of the grounspawn
 
-### [int][int] `Distance3D`
+### {{ renderMember(type='int', name='Distance3D') }} 
 
 :   Distance from player to ground item
 
-### [int][int] `SubID`
+### {{ renderMember(type='int', name='SubID') }} 
 
 :   ???
 
-### [int][int] `ZoneID`
+### {{ renderMember(type='int', name='ZoneID') }} 
 
 :   ???
 
-### [ground][ground] `First`
+### {{ renderMember(type='ground', name='First') }} 
 
 :   First spawn
 
-### [ground][ground] `Last`
+### {{ renderMember(type='ground', name='Last') }} 
 
 :   Last spawn
 
-### [ground][ground] `Next`
+### {{ renderMember(type='ground', name='Next') }} 
 
 :   Next spawn
 
-### [ground][ground] `Prev`
+### {{ renderMember(type='ground', name='Prev') }} 
 
 :   Prev spawn
 
-### [float][float] `W`
+### {{ renderMember(type='float', name='W') }} 
 
 :   X coordinate (Westward-positive)
 
-### [float][float] `N`
+### {{ renderMember(type='float', name='N') }} 
 
 :   Y coordinate (Northward-positive)
 
-### [float][float] `U`
+### {{ renderMember(type='float', name='U') }} 
 
 :   Z coordinate (Upward-positive)
 

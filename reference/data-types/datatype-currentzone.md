@@ -25,47 +25,47 @@ classDiagram
 
 This type inherits members from [_zone_](datatype-zone.md).
 
-### [bool][bool] `Dungeon`
+### {{ renderMember(type='bool', name='Dungeon') }} 
 
 :   Same as Indoor.
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   the ID of the zone.
 
-### [bool][bool] `Indoor`
+### {{ renderMember(type='bool', name='Indoor') }} 
 
 :   True if this is an Indoor zone.
 
-### [float][float] `MaxClip`
+### {{ renderMember(type='float', name='MaxClip') }} 
 
 :   Maximum clip plane allowed in zone.
 
-### [float][float] `MinClip`
+### {{ renderMember(type='float', name='MinClip') }} 
 
 :   Minimum clip plane allowed in zone.
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Full zone name.
 
-### [bool][bool] `NoBind`
+### {{ renderMember(type='bool', name='NoBind') }} 
 
 :   True if binding isn't allowed in this zone outside specified bindable areas.
 
-### [bool][bool] `Outdoor`
+### {{ renderMember(type='bool', name='Outdoor') }} 
 
 :   True if this is an outdoor zone.
 
-### [string][string] `ShortName`
+### {{ renderMember(type='string', name='ShortName') }} 
 
 :   Short zone name
 
-### [int][int] `Type`
+### {{ renderMember(type='int', name='Type') }} 
 
 :   Zone type:0=Indoor Dungeon 1=Outdoor 2=Outdoor City 3=Dungeon City 4=Indoor City 5=Outdoor Dungeon
 
-### [int][int] `ZoneType`
+### {{ renderMember(type='int', name='ZoneType') }} 
 
 :   Same as Type
 

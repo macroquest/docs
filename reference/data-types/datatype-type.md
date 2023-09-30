@@ -8,15 +8,15 @@ Contains information about data types
 
 ## Members
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Type name
 
-### [string][string] `Member[N]`
+### {{ renderMember(type='string', name='Member', params='N') }} 
 
 :   Member name based on an internal ID number (based on 1 through _N_, not all values will be used)
 
-### [int][int] `Member[name]`
+### {{ renderMember(type='int', name='Member', params='name') }} 
 
 :   Member internal ID number based on _name_ (will be a number from 1 to N)
 

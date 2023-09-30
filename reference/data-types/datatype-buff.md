@@ -10,55 +10,55 @@ This is the type for any buffs currently affecting you, both long duration and s
 
 This type inherits members from [_spell_](datatype-spell.md).
 
-### [string][string] `Caster`
+### {{ renderMember(type='string', name='Caster') }} 
 
 :   Name of the caster who cast the buff, if available.
 
-### [int64][int64] `CountersCorruption`
+### {{ renderMember(type='int64', name='CountersCorruption') }} 
 
 :   The number of corruption counters.
 
-### [int64][int64] `CountersCurse`
+### {{ renderMember(type='int64', name='CountersCurse') }} 
 
 :   The number of curse counters.
 
-### [int64][int64] `CountersDisease`
+### {{ renderMember(type='int64', name='CountersDisease') }} 
 
 :   The number of disease counters.
 
-### [int64][int64] `CountersPoison`
+### {{ renderMember(type='int64', name='CountersPoison') }} 
 
 :   The number of poison counters.
 
-### [int64][int64] `Dar`
+### {{ renderMember(type='int64', name='Dar') }} 
 
 :   The remaining damage absorption of the buff (if any). _This is not entirely accurate, it will only show you to the Dar of your spell when it was initially cast, or what it was when you last zoned (whichever is more recent)._
 
-### [timestamp][timestamp] `Duration`
+### {{ renderMember(type='timestamp', name='Duration') }} 
 
 :   The time remaining before the buff fades (not total duration)
 
-### [int][int] `HitCount`
+### {{ renderMember(type='int', name='HitCount') }} 
 
 :   
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   The ID of the buff or shortbuff slot
 
-### [int][int] `Level`
+### {{ renderMember(type='int', name='Level') }} 
 
 :   The level of the person that cast the buff on you (not the level of the spell)
 
-### [float][float] `Mod`
+### {{ renderMember(type='float', name='Mod') }} 
 
 :   The modifier to a bard song
 
-### [spell][spell] `Spell`
+### {{ renderMember(type='spell', name='Spell') }} 
 
 :   The spell
 
-### [int64][int64] `TotalCounters`
+### {{ renderMember(type='int64', name='TotalCounters') }} 
 
 :   The total number of counters on the buff.
 

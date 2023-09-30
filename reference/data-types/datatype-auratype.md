@@ -6,15 +6,15 @@ tags:
 
 Describes an aura.
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   ID of the Aura
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Name of the Aura
 
-### [int][int] `SpawnID`
+### {{ renderMember(type='int', name='SpawnID') }} 
 
 :   ID of the spawn that emits aura
 

@@ -8,11 +8,11 @@ This is the type for the ini file that was referenced from `${Ini}`
 
 ## Members
 
-### [bool][bool] `Exists`
+### {{ renderMember(type='bool', name='Exists') }} 
 
 :   Whether the ini file exists or not.
 
-### [inifilesection][inifilesection] `Section`
+### {{ renderMember(type='inifilesection', name='Section') }} 
 
 :   A reference to the named or unnamed section of this ini file.
 

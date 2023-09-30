@@ -8,58 +8,58 @@ Provides access to achievements.
 
 ## Forms
 
-### [achievement][achievement] `Achievement[#|Name]`
+### {{ renderMember(type='achievement', name='Achievement', params='#|Name') }} 
 
 :   Look up an achievement by name or by id.
 
-### [achievementmgr][achievementmgr] `Achievement`
+### {{ renderMember(type='achievementmgr', name='Achievement') }} 
 
 :   Access the achievement manager which provides access to information about achievements
 
 
 ## Associated DataTypes
 
-### `achievementmgr` Type
+### {{ renderMember(name='achievementmgr') }} 
 
 Provides access achievements, achievement categories, and other information surrounding the achievement system.
 
-### [achievement][achievement] `Achievement[#|Name]`
+### {{ renderMember(type='achievement', name='Achievement', params='#|Name') }} 
 
 :   Find an achievement by its ID or by its name.
 
-### [achievement][achievement] `AchievementByIndex[#]`
+### {{ renderMember(type='achievement', name='AchievementByIndex', params='#') }} 
 
 :   Find an achievement by its index.
 
-### [int][int] `AchievementCount`
+### {{ renderMember(type='int', name='AchievementCount') }} 
 
 :   The number of achievements in the manager.
 
-### [achievementcat][achievementcat] `Category[#|Name]`
+### {{ renderMember(type='achievementcat', name='Category', params='#|Name') }} 
 
 :   Find an achievement category by its id or by its name.Note: If searching by name, only top-level categories are returned from the achievement manager.
 
-### [achievementcat][achievementcat] `CategoryByIndex[#]`
+### {{ renderMember(type='achievementcat', name='CategoryByIndex', params='#') }} 
 
 :   Find an achievement category by its index.
 
-### [int][int] `CategoryCount`
+### {{ renderMember(type='int', name='CategoryCount') }} 
 
 :   The number of achievement categories in the manager.
 
-### [int][int] `Points`
+### {{ renderMember(type='int', name='Points') }} 
 
 :   The total number of accumulated achievement points.
 
-### [int][int] `CompletedAchievement`
+### {{ renderMember(type='int', name='CompletedAchievement') }} 
 
 :   The number of completed achievements.
 
-### [int][int] `TotalAchievement`
+### {{ renderMember(type='int', name='TotalAchievement') }} 
 
 :   The number of available achievements.
 
-### [bool][bool] `Ready`
+### {{ renderMember(type='bool', name='Ready') }} 
 
 :   Indicates that the manager has loaded all achievement data and is ready to be used.
 

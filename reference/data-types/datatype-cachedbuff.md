@@ -32,39 +32,39 @@ classDiagram
 
 ## Members
 
-### [string][string] `CasterName`
+### {{ renderMember(type='string', name='CasterName') }} 
 
 :   Returns the name of the caster who applied the buff
 
-### [string][string] `Caster`
+### {{ renderMember(type='string', name='Caster') }} 
 
 :   Same as _CasterName_, added for consistency.
 
-### [int][int] `Count`
+### {{ renderMember(type='int', name='Count') }} 
 
 :   Returns the amount of buffs catched, or -1 it none
 
-### [int][int] `Duration`
+### {{ renderMember(type='int', name='Duration') }} 
 
 :   Returns the duration of the buff
 
-### [int][int] `OriginalDuration`
+### {{ renderMember(type='int', name='OriginalDuration') }} 
 
 :   Original duration of the buff.
 
-### [int][int] `Slot`
+### {{ renderMember(type='int', name='Slot') }} 
 
 :   Returns the buff slot the target had the buff in
 
-### [spell][spell] `Spell`
+### {{ renderMember(type='spell', name='Spell') }} 
 
 :   Access the spell.
 
-### [int][int] `SpellID`
+### {{ renderMember(type='int', name='SpellID') }} 
 
 :   Returns the buff's spell ID
 
-### [timestamp][timestamp] `Staleness`
+### {{ renderMember(type='timestamp', name='Staleness') }} 
 
 :   How long it has been since this information was refreshed.
 

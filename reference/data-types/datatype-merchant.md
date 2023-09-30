@@ -10,35 +10,35 @@ This contains information related to the active merchant.
 
 This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is active.
 
-### [bool][bool] `Full`
+### {{ renderMember(type='bool', name='Full') }} 
 
 :   Returns True if the merchant's inventory is full.
 
-### [int][int] `Items`
+### {{ renderMember(type='int', name='Items') }} 
 
 :   Number of items on the merchant.
 
-### [item][item] `Item[#]`
+### {{ renderMember(type='item', name='Item', params='#') }} 
 
 :   Item number _#_ on the merchant's list.
 
-### [item][item] `Item[name]`
+### {{ renderMember(type='item', name='Item', params='name') }} 
 
 :   Find an item by partial name on the merchant's list. Prefix with "=" for an exact match.
 
-### [float][float] `Markup`
+### {{ renderMember(type='float', name='Markup') }} 
 
 :   <p>The number used to calculate the buy and sell value for an item. (This is what is changed by charisma and faction). This value is capped at 1.05.</p><br><ul><li>Markup * Item Value = Amount you buy item for</li><li>Item Value * (1/Markup) = Amount you sell item for</li></ul>
 
-### [bool][bool] `Open`
+### {{ renderMember(type='bool', name='Open') }} 
 
 :   Returns True if the merchant window is open.
 
-### [item][item] `SelectedItem`
+### {{ renderMember(type='item', name='SelectedItem') }} 
 
 :   The currently selected item in the merchant window. Items can be selected by using [/selectitem](../commands/selectitem.md)
 
-### [bool][bool] `ItemsReceived`
+### {{ renderMember(type='bool', name='ItemsReceived') }} 
 
 :   True if the merchant's item list has been populated.
 

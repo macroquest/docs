@@ -8,7 +8,7 @@ This is the type for your current task.
 
 ## Members
 
-### [string][string] `Index`
+### {{ renderMember(type='string', name='Index') }} 
 
 :   Returns the task&apos;s place on the tasklist
 
@@ -21,75 +21,75 @@ This is the type for your current task.
 
 :   Returns the zone the objective is to be performed in
 
-### [int][int] `CurrentCount`
+### {{ renderMember(type='int', name='CurrentCount') }} 
 
 :   Returns the current count of the .Type needed to complete a objective
 
-### [int][int] `RequiredCount`
+### {{ renderMember(type='int', name='RequiredCount') }} 
 
 :   Returns the required count of the .Type needed to complete a objective
 
-### [bool][bool] `Optional`
+### {{ renderMember(type='bool', name='Optional') }} 
 
 :   Returns true or false if a objective is optional
 
-### [string][string] `RequiredItem`
+### {{ renderMember(type='string', name='RequiredItem') }} 
 
 :   Returns a string of the required item to complete a objective.
 
-### [string][string] `RequiredSkill`
+### {{ renderMember(type='string', name='RequiredSkill') }} 
 
 :   Returns a string of the required skill to complete a objective.
 
-### [string][string] `RequiredSpell`
+### {{ renderMember(type='string', name='RequiredSpell') }} 
 
 :   Returns a string of the required spell to complete a objective.
 
-### [int][int] `DZSwitchID`
+### {{ renderMember(type='int', name='DZSwitchID') }} 
 
 :   Returns an int of the switch used in a objective.
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   Returns an int of the task ID
 
-### [string][string] `Step`
+### {{ renderMember(type='string', name='Step') }} 
 
 :   Returns description of current step in the task
 
-### [string][string] `Select`
+### {{ renderMember(type='string', name='Select') }} 
 
 :   Selects the task
 
-### [string][string] `Title`
+### {{ renderMember(type='string', name='Title') }} 
 
 :   Returns name of the shared task
 
-### [timestamp][timestamp] `Timer`
+### {{ renderMember(type='timestamp', name='Timer') }} 
 
 :   Returns amount of time before task expires
 
-### [int][int] `Members`
+### {{ renderMember(type='int', name='Members') }} 
 
 :   Returns number of members in task
 
-### [taskmember][taskmember] `Member[</b>#<b>]`
+### {{ renderMember(type='taskmember', name='Member', params='</b>#<b>') }} 
 
 :   Returns specified member in task by index
 
-### [taskmember][taskmember] `Member[</b>name<b>]`
+### {{ renderMember(type='taskmember', name='Member', params='</b>name<b>') }} 
 
 :   Returns specified member in task by name
 
-### [string][string] `Leader`
+### {{ renderMember(type='string', name='Leader') }} 
 
 :   Returns task leader&apos;s name
 
-### [int][int] `WindowIndex`
+### {{ renderMember(type='int', name='WindowIndex') }} 
 
 :   Returns the Quest Window List Index. (if the window actually has the list filled)
 
-### [string][string] `Type`
+### {{ renderMember(type='string', name='Type') }} 
 
 :   Returns a string that can be one of the following:<ul><li>Unknown</li><li>None</li><li>Deliver</li><li>Kill</li><li>Loot</li><li>Hail</li><li>Explore</li><li>Tradeskill</li><li>Fishing</li><li>Foraging</li><li>Cast</li><li>UseSkill</li><li>DZSwitch</li><li>DestroyObject</li><li>Collect</li><li>Dialogue</li></ul>
 

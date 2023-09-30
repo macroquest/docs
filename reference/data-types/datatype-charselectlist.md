@@ -10,27 +10,27 @@ See Also: [DataType:character](./datatype-character.md), [TLO:Me](../top-level-o
 
 ## Members
 
-### [string][string] `Class`
+### {{ renderMember(type='string', name='Class') }} 
 
 :   Class of the character
 
-### [int][int] `Count`
+### {{ renderMember(type='int', name='Count') }} 
 
 :   Number of characters in the character select list
 
-### [int][int] `Level`
+### {{ renderMember(type='int', name='Level') }} 
 
 :   Level of the character
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Name of the character
 
-### [string][string] `Race`
+### {{ renderMember(type='string', name='Race') }} 
 
 :   Race of the character
 
-### [int][int] `ZoneID`
+### {{ renderMember(type='int', name='ZoneID') }} 
 
 :   Id of the zone the character logged out in
 

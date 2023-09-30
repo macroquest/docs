@@ -8,15 +8,15 @@ Contains data related to deity members
 
 ## Members
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   The deity's ID #
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   The full deity name
 
-### [string][string] `Team`
+### {{ renderMember(type='string', name='Team') }} 
 
 :   The team name
 

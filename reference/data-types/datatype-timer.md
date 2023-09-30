@@ -8,11 +8,11 @@ A timer data type is set in tenths of one second and counts down to zero; starti
 
 ## Members
 
-### [int][int] `OriginalValue`
+### {{ renderMember(type='int', name='OriginalValue') }} 
 
 :   Original value of the timer
 
-### [int][int] `Value`
+### {{ renderMember(type='int', name='Value') }} 
 
 :   Current value of the timer
 

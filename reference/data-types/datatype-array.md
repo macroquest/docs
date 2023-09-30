@@ -13,15 +13,15 @@ Data related to arrays.
 
 ## Members
 
-### [int][int] `Dimensions`
+### {{ renderMember(type='int', name='Dimensions') }} 
 
 :   Number of dimensions in the array
 
-### [int][int] `Size`
+### {{ renderMember(type='int', name='Size') }} 
 
 :   Total number of elements in the array
 
-### [int][int] `Size[N]`
+### {{ renderMember(type='int', name='Size', params='N') }} 
 
 :   Total number of elements stored in the _N_ th dimension of the array
 

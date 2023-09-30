@@ -8,15 +8,15 @@ Describes a member in your current task
 
 ## Members
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Returns name of the mamber
 
-### [bool][bool] `Leader`
+### {{ renderMember(type='bool', name='Leader') }} 
 
 :   Returns true if member is leader
 
-### [int][int] `Index`
+### {{ renderMember(type='int', name='Index') }} 
 
 :   Returns task index for member (i.e., 1-6)
 

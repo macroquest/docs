@@ -8,35 +8,35 @@ Represents a count of "ticks". Ticks are units of 6 seconds that are used to rep
 
 ## Members
 
-### [int][int] `Hours`
+### {{ renderMember(type='int', name='Hours') }} 
 
 :   The number of hours in HH:MM:SS (0-23)
 
-### [int][int] `Minutes`
+### {{ renderMember(type='int', name='Minutes') }} 
 
 :   The number of minutes in HH:MM:SS (1-59)
 
-### [int][int] `Seconds`
+### {{ renderMember(type='int', name='Seconds') }} 
 
 :   The number of seconds in HH:MM:SS (1-59)
 
-### [int][int] `TotalMinutes`
+### {{ renderMember(type='int', name='TotalMinutes') }} 
 
 :   The total number of minutes
 
-### [int][int] `TotalSeconds`
+### {{ renderMember(type='int', name='TotalSeconds') }} 
 
 :   The total number of seconds
 
-### [int][int] `Ticks`
+### {{ renderMember(type='int', name='Ticks') }} 
 
 :   The value in ticks
 
-### [string][string] `Time`
+### {{ renderMember(type='string', name='Time') }} 
 
 :   Time in the form MM:SS
 
-### [string][string] `TimeHMS`
+### {{ renderMember(type='string', name='TimeHMS') }} 
 
 :   Time in the form HH:MM:SS (if there are no hours, the form will be MM:SS)
 

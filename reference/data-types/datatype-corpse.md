@@ -23,7 +23,7 @@ classDiagram
 
 ## Members
 
-### [item][item] `Item[N]`
+### {{ renderMember(type='item', name='Item', params='N') }} 
 
 :   _Nth_ item on the corpse
 
@@ -31,11 +31,11 @@ classDiagram
 
 :   Finds an item by partial _name_ in this corpse (use `=<name>` for exact match)
 
-### [int][int] `Items`
+### {{ renderMember(type='int', name='Items') }} 
 
 :   Number of items on the corpse
 
-### [bool][bool] `Open`
+### {{ renderMember(type='bool', name='Open') }} 
 
 :   Corpse open?
 

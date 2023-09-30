@@ -8,91 +8,91 @@ Data related to switches (levers, buttons, etc) in the zone
 
 ## Members
 
-### [float][float] `D`
+### {{ renderMember(type='float', name='D') }} 
 
 :   D coordinate (Upward-positive)
 
-### [heading][heading] `DefaultHeading`
+### {{ renderMember(type='heading', name='DefaultHeading') }} 
 
 :   Heading of "closed" switch
 
-### [float][float] `DefaultN`
+### {{ renderMember(type='float', name='DefaultN') }} 
 
 :   Y coordinate of "closed" switch (Northward-positive)
 
-### [float][float] `DefaultU`
+### {{ renderMember(type='float', name='DefaultU') }} 
 
 :   Z coordinate of "closed" switch (Upward-positive)
 
-### [float][float] `DefaultW`
+### {{ renderMember(type='float', name='DefaultW') }} 
 
 :   X coordinate of "closed" switch (Westward-positive)
 
-### [float][float] `DefaultX`
+### {{ renderMember(type='float', name='DefaultX') }} 
 
 :   X coordinate of "closed" switch
 
-### [float][float] `DefaultY`
+### {{ renderMember(type='float', name='DefaultY') }} 
 
 :   Y coordinate of "closed" switch
 
-### [float][float] `DefaultZ`
+### {{ renderMember(type='float', name='DefaultZ') }} 
 
 :   Z coordinate of "closed" switch
 
-### [float][float] `Distance`
+### {{ renderMember(type='float', name='Distance') }} 
 
 :   Distance from player to switch in (x,y)
 
-### [heading][heading] `Heading`
+### {{ renderMember(type='heading', name='Heading') }} 
 
 :   Switch is facing this heading
 
-### [heading][heading] `HeadingTo`
+### {{ renderMember(type='heading', name='HeadingTo') }} 
 
 :   Direction player must move to meet this switch
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   Switch ID
 
-### [bool][bool] `LineOfSight`
+### {{ renderMember(type='bool', name='LineOfSight') }} 
 
 :   Returns TRUE if the switch is in LoS
 
-### [float][float] `N`
+### {{ renderMember(type='float', name='N') }} 
 
 :   Y coordinate (Northward-positive)
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Name
 
-### [bool][bool] `Open`
+### {{ renderMember(type='bool', name='Open') }} 
 
 :   True if the switch is in the "open" state (State == 1)
 
-### [int][int] `State`
+### {{ renderMember(type='int', name='State') }} 
 
 :   The "state" of the switch.
 
-### [float][float] `W`
+### {{ renderMember(type='float', name='W') }} 
 
 :   X coordinate (Westward-positive)
 
-### [float][float] `X`
+### {{ renderMember(type='float', name='X') }} 
 
 :   X coordinate
 
-### [float][float] `Y`
+### {{ renderMember(type='float', name='Y') }} 
 
 :   Y coordinate
 
-### [float][float] `Z`
+### {{ renderMember(type='float', name='Z') }} 
 
 :   Z coordinate
 
-### [string][string] `ToString`
+### {{ renderMember(type='string', name='ToString') }} 
 
 :   Same as **ID**
 

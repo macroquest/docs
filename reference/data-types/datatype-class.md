@@ -8,51 +8,51 @@ Data about a particular character class
 
 ## Members
 
-### [bool][bool] `CanCast`
+### {{ renderMember(type='bool', name='CanCast') }} 
 
 :   Can cast spells, including Bard
 
-### [bool][bool] `ClericType`
+### {{ renderMember(type='bool', name='ClericType') }} 
 
 :   True if class is a Cleric or Paladin
 
-### [bool][bool] `DruidType`
+### {{ renderMember(type='bool', name='DruidType') }} 
 
 :   True if class is a Druid or Ranger
 
-### [bool][bool] `HealerType`
+### {{ renderMember(type='bool', name='HealerType') }} 
 
 :   True if class is a Healer (Cleric, Druid or Shaman)
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   The class numeric ID
 
-### [bool][bool] `MercType`
+### {{ renderMember(type='bool', name='MercType') }} 
 
 :   True if class is Mercenary
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   The full name of the class. Ex: "Ranger"
 
-### [bool][bool] `NecromancerType`
+### {{ renderMember(type='bool', name='NecromancerType') }} 
 
 :   True if class is a Necromancer or Shadow Knight
 
-### [bool][bool] `PetClass`
+### {{ renderMember(type='bool', name='PetClass') }} 
 
 :   True if class is a pet class (Shaman, Necromancer, Mage or Beastlord)
 
-### [bool][bool] `PureCaster`
+### {{ renderMember(type='bool', name='PureCaster') }} 
 
 :   True if class is a pure caster (Cleric, Druid, Shaman, Necromancer, Wizard, Mage or Enchanter)
 
-### [bool][bool] `ShamanType`
+### {{ renderMember(type='bool', name='ShamanType') }} 
 
 :   True if class is Shaman or Beastlord
 
-### [string][string] `ShortName`
+### {{ renderMember(type='string', name='ShortName') }} 
 
 :   The short name (three letter code) of the class. Ex: `RNG` for Ranger
 

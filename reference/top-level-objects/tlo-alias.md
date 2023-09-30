@@ -8,7 +8,7 @@ Provides a way to query whether a given alias exists. See [/alias](../commands/a
 
 ## Forms
 
-### [bool][bool] `Alias[Name]`
+### {{ renderMember(type='bool', name='Alias', params='Name') }} 
 
 :   Returns bool indicating if named aliase exists
 

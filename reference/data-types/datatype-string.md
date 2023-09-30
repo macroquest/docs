@@ -9,71 +9,71 @@ A string is an array of characters. In MQ2 there is no single character datatype
 ## Members
 
 | [_string_](datatype-string.md) | **Arg**[_#_,_s_] | Returns the #th argument of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1].
-### [int][int] `Compare[text]`
+### {{ renderMember(type='int', name='Compare', params='text') }} 
 
 :   Determines how the initial string and the second string, _text_, compare to each other:<br/><ul><li>If both are the same, **Compare** will return 0.</li><li>If the string is alphabetically before text, **Compare** will return -1.</li><li>If text is alphabetically after string, **Compare** will return 1.</li></ul>**Compare** is case-insensitive
 
-### [int][int] `CompareCS[text]`
+### {{ renderMember(type='int', name='CompareCS', params='text') }} 
 
 :   The same as **Compare**, except that it is case-sensitive
 
-### [int][int] `Count[c]`
+### {{ renderMember(type='int', name='Count', params='c') }} 
 
 :   Returns how many times a single character _c_ occurs in the string
 
-### [bool][bool] `Equal[text]`
+### {{ renderMember(type='bool', name='Equal', params='text') }} 
 
 :   If the initial string and the second string _text_ are exactly the same, returns TRUE.<br/>**Equal** is case-insensitive
 
-### [bool][bool] `EqualCS[text]`
+### {{ renderMember(type='bool', name='EqualCS', params='text') }} 
 
 :   The same as **Equal**, except that it is case-sensitive
 
-### [int][int] `Find[text]`
+### {{ renderMember(type='int', name='Find', params='text') }} 
 
 :   This tries to find the second string _text_ within the original string:<br/><ul><li>If it is successful, it returns the first position in the string where _text_ begins.</li><li>It returns NULL if _text_ is not found.</li></ul>**Find** is case-insensitive
 
-### [string][string] `Left[#]`
+### {{ renderMember(type='string', name='Left', params='#') }} 
 
 :   Returns the first # characters of the string. A negative _#_ will return the whole string except for the last # characters
 
-### [int][int] `Length`
+### {{ renderMember(type='int', name='Length') }} 
 
 :   Returns the length of the string as an integer
 
-### [string][string] `Lower`
+### {{ renderMember(type='string', name='Lower') }} 
 
 :   Returns the string in all lower-case
 
-### [string][string] `Mid[p,n]`
+### {{ renderMember(type='string', name='Mid', params='p,n') }} 
 
 :   Returns a segment of the string, starting at position _p_ and running _n_ characters.
 
-### [bool][bool] `NotEqual[text]`
+### {{ renderMember(type='bool', name='NotEqual', params='text') }} 
 
 :   If the initial string and the second string _text_ are exactly the same, returns FALSE. **NotEqual** is case-insensitive
 
-### [bool][bool] `NotEqualCS[text]`
+### {{ renderMember(type='bool', name='NotEqualCS', params='text') }} 
 
 :   The same as **NotEqual**, except that it is case-sensitive.
 
-### [string][string] `Replace[ReplaceThis,WithThis]`
+### {{ renderMember(type='string', name='Replace', params='ReplaceThis,WithThis') }} 
 
 :   Replaces _ReplaceThis_ with _WithThis_.
 
-### [string][string] `Right[#]`
+### {{ renderMember(type='string', name='Right', params='#') }} 
 
 :   Returns the last _#_ characters of the string. A negative _#_ will return the whole string except for the first _#_ characters
 
-### [string][string] `StripLinks`
+### {{ renderMember(type='string', name='StripLinks') }} 
 
 :   Returns the plain text version of a string, stripping out the links
 
-### [string][string] `Token[#,s]`
+### {{ renderMember(type='string', name='Token', params='#,s') }} 
 
 :   Returns the #th token of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1].
 
-### [string][string] `Upper`
+### {{ renderMember(type='string', name='Upper') }} 
 
 :   Returns the string in all upper-case
 

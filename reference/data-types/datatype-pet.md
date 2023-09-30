@@ -10,63 +10,63 @@ Pet object
 
 This type inherits members from [_spawn_](datatype-spawn.md).
 
-### [int][int] `Buff[buffname]`
+### {{ renderMember(type='int', name='Buff', params='buffname') }} 
 
 :   Returns the slot number for _buffname_
 
-### [string][string] `Buff[slot]`
+### {{ renderMember(type='string', name='Buff', params='slot') }} 
 
 :   Prints name of the buff at the given _slot_
 
-### [int][int] `BuffDuration[buffname]`
+### {{ renderMember(type='int', name='BuffDuration', params='buffname') }} 
 
 :   Buff time remaining for pet buff _buffname_ in miliseconds
 
-### [int][int] `BuffDuration[slot]`
+### {{ renderMember(type='int', name='BuffDuration', params='slot') }} 
 
 :   Buff time remaining for pet buff in slot _slot_ in miliseconds
 
-### [bool][bool] `Combat`
+### {{ renderMember(type='bool', name='Combat') }} 
 
 :   Combat state
 
-### `FindBuff`
+### {{ renderMember(name='FindBuff') }} 
 
 :   
 
-### [bool][bool] `Focus`
+### {{ renderMember(type='bool', name='Focus') }} 
 
 :   Focus state
 
-### [bool][bool] `GHold`
+### {{ renderMember(type='bool', name='GHold') }} 
 
 :   GHold state
 
-### [bool][bool] `Hold`
+### {{ renderMember(type='bool', name='Hold') }} 
 
 :   Hold state
 
-### `Name`
+### {{ renderMember(name='Name') }} 
 
 :   
 
-### [bool][bool] `ReGroup`
+### {{ renderMember(type='bool', name='ReGroup') }} 
 
 :   ReGroup state
 
-### [string][string] `Stance`
+### {{ renderMember(type='string', name='Stance') }} 
 
 :   Returns the pet's current stance, (e.g. FOLLOW, GUARD)
 
-### [bool][bool] `Stop`
+### {{ renderMember(type='bool', name='Stop') }} 
 
 :   Stop state
 
-### [spawn][spawn] `Target`
+### {{ renderMember(type='spawn', name='Target') }} 
 
 :   Returns the pet's current target.
 
-### [bool][bool] `Taunt`
+### {{ renderMember(type='bool', name='Taunt') }} 
 
 :   Taunt state
 

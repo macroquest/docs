@@ -74,10 +74,14 @@ There are some pre-built strategies that are commonly used (as seen in the comma
    - replaces the middle characters in the name with asterisks
    - `Myname` becomes `M****e`
  - class
+   {% raw %}
    - replaces the name with `"[${{Spawn[pc {0}].Level}}] ${{Spawn[pc {0}].Race}} ${{Spawn[pc {0}].Class}} ${{Spawn[pc {0}].Type}}"`
+   {% endraw %}
    - note that this assumes a pc
  - me
+   {% raw %}
    - replaces the name with `"[${Me.Level}] ${Me.Race} ${Me.Class} ${Me.Type}"`
+   {% endraw %}
    - only appropriate when anonymizing the client's character
  - where
    - this keyword allows completely generic anonymization

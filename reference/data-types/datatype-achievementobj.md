@@ -8,27 +8,27 @@ Represents a single objective of an achievement
 
 ## Members
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   The objective's unique ID.
 
-### [string][string] `Description`
+### {{ renderMember(type='string', name='Description') }} 
 
 :   Text describing this objective.
 
-### [int][int] `Count`
+### {{ renderMember(type='int', name='Count') }} 
 
 :   The current count recorded by the objective.
 
-### [int][int] `RequiredCount`
+### {{ renderMember(type='int', name='RequiredCount') }} 
 
 :   The total count required to be complete the objective. For objectives that don't require a count, this will be zero.
 
-### [bool][bool] `Completed`
+### {{ renderMember(type='bool', name='Completed') }} 
 
 :   True if the objective has been completed.
 
-### [int][int] `Index`
+### {{ renderMember(type='int', name='Index') }} 
 
 :   Visual index of the objective as displayed in the achievement window. Can be used with **Achievement.ObjectiveByIndex**.
 

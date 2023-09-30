@@ -17,7 +17,7 @@ If the string is one of these values, the resulting bool is `false`. Otherwise, 
 
 ## Forms
 
-### [bool][bool] `Bool[Text]`
+### {{ renderMember(type='bool', name='Bool', params='Text') }} 
 
 :   Converts the given _Text_ to a bool based on the rules presented above.
 

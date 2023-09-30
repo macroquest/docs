@@ -8,103 +8,103 @@ Contains all the data related to alternate abilities
 
 ## Members
 
-### [int][int] `AARankRequired`
+### {{ renderMember(type='int', name='AARankRequired') }} 
 
 :   Rank required to train
 
-### [bool][bool] `CanTrain`
+### {{ renderMember(type='bool', name='CanTrain') }} 
 
 :   Returns true/false on if the Alternative Ability can be trained
 
-### [string][string] `Category`
+### {{ renderMember(type='string', name='Category') }} 
 
 :   The name of the category that this AA belongs to.
 
-### [int][int] `Cost`
+### {{ renderMember(type='int', name='Cost') }} 
 
 :   Base cost to train
 
-### [string][string] `Description`
+### {{ renderMember(type='string', name='Description') }} 
 
 :   Basic description
 
-### [int][int] `Expansion`
+### {{ renderMember(type='int', name='Expansion') }} 
 
 :   Expansion level for the ability.
 
-### [int][int] `Flags`
+### {{ renderMember(type='int', name='Flags') }} 
 
 :   Flags value (Currently unknown?).
 
-### [int][int] `GroupID`
+### {{ renderMember(type='int', name='GroupID') }} 
 
 :   ID of the AA group that this AA belongs to
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   ID
 
-### [int][int] `Index`
+### {{ renderMember(type='int', name='Index') }} 
 
 :   Returns the index number of the Alternative Ability
 
-### [int][int] `MaxRank`
+### {{ renderMember(type='int', name='MaxRank') }} 
 
 :   Max rank available in this ability
 
-### [int][int] `MinLevel`
+### {{ renderMember(type='int', name='MinLevel') }} 
 
 :   Minimum level to train
 
-### [int][int] `MyReuseTime`
+### {{ renderMember(type='int', name='MyReuseTime') }} 
 
 :   Reuse time (in seconds) that takes into account any hastened AA abilities
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Name
 
-### [int][int] `NextIndex`
+### {{ renderMember(type='int', name='NextIndex') }} 
 
 :   Returns the next index number of the Alternative Ability
 
-### [int][int] `PointsSpent`
+### {{ renderMember(type='int', name='PointsSpent') }} 
 
 :   Returns the amount of points spent on an AA
 
-### [bool][bool] `Passive`
+### {{ renderMember(type='bool', name='Passive') }} 
 
 :   Returns true/false on if the Alternative Ability is passive
 
-### [int][int] `Rank`
+### {{ renderMember(type='int', name='Rank') }} 
 
 :   Returns the Rank of the AA
 
-### [altability][altability] `RequiresAbility`
+### {{ renderMember(type='altability', name='RequiresAbility') }} 
 
 :   Required ability (if any)
 
-### [int][int] `RequiresAbilityPoints`
+### {{ renderMember(type='int', name='RequiresAbilityPoints') }} 
 
 :   Points required in above ability
 
-### [int][int] `ReuseTime`
+### {{ renderMember(type='int', name='ReuseTime') }} 
 
 :   Reuse time in seconds
 
-### [string][string] `ShortName`
+### {{ renderMember(type='string', name='ShortName') }} 
 
 :   First line of button label (if any)
 
-### [string][string] `ShortName2`
+### {{ renderMember(type='string', name='ShortName2') }} 
 
 :   Second line of button label (if any)
 
-### [spell][spell] `Spell`
+### {{ renderMember(type='spell', name='Spell') }} 
 
 :   Spell used by the ability (if any)
 
-### [int][int] `Type`
+### {{ renderMember(type='int', name='Type') }} 
 
 :   Type (1-6)
 

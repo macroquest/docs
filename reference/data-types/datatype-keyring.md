@@ -8,11 +8,11 @@ This datatype represents information about a keyring (a.k.a. a collection of mou
 
 ## Members
 
-### [int][int] `Count`
+### {{ renderMember(type='int', name='Count') }} 
 
 :   The number of items in this keyring
 
-### [keyringitem][keyringitem] `Stat`
+### {{ renderMember(type='keyringitem', name='Stat') }} 
 
 :   The keyring item assigned as the stat item
 

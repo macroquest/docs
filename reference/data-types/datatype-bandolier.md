@@ -9,19 +9,19 @@ Used to access information about bandolier sets on your character.
 
 ## Members
 
-### [bool][bool] `Active`
+### {{ renderMember(type='bool', name='Active') }} 
 
 :   Indicates if the bandolier set is active
 
-### [int][int] `Index`
+### {{ renderMember(type='int', name='Index') }} 
 
 :   Returns the index number of the bandolier set
 
-### [bandolieritem][bandolieritem] `Item[&nbsp;Index&nbsp;]`
+### {{ renderMember(type='bandolieritem', name='Item', params='&nbsp;Index&nbsp;') }} 
 
 :   Provides information about the specified item. Returns the Nth item in the set (Primary, Secondary, Ranged, Ammo)
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Returns the name of the bandolier set
 
@@ -36,17 +36,17 @@ Used to access information about bandolier sets on your character.
 
 ## Associated DataTypes
 
-### `bandolieritem` DataType
+### {{ renderMember(name='bandolieritem') }} 
 
-### [int][int] `IconID`
+### {{ renderMember(type='int', name='IconID') }} 
 
 :   Returns the icon id for the item
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   Returns the item id for the item
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Returns the name of the item
 

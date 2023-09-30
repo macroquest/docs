@@ -8,15 +8,15 @@ This is the type for the referenced section of an ini file.  The Index passed to
 
 ## Members
 
-### [int][int] `Count`
+### {{ renderMember(type='int', name='Count') }} 
 
 :   How many sections matching the Section[] index exist.
 
-### [bool][bool] `Exists`
+### {{ renderMember(type='bool', name='Exists') }} 
 
 :   Whether a specific section exists.
 
-### [inifilesectionkey][inifilesectionkey] `Key`
+### {{ renderMember(type='inifilesectionkey', name='Key') }} 
 
 :   A reference to the named or unnamed key in this specific ini file section.
 

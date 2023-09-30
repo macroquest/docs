@@ -8,23 +8,23 @@ Represents a direction on a compass.
 
 ## Members
 
-### [int][int] `Clock`
+### {{ renderMember(type='int', name='Clock') }} 
 
 :   The nearest clock direction, e.g. 1-12
 
-### [float][float] `Degrees`
+### {{ renderMember(type='float', name='Degrees') }} 
 
 :   Heading in degrees (same as casting to float)
 
-### [float][float] `DegreesCCW`
+### {{ renderMember(type='float', name='DegreesCCW') }} 
 
 :   Heading in degrees counter-clockwise (the way the rest of MQ2 and EQ uses it)
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   The long compass direction, eg. "south", "south by southeast"
 
-### [string][string] `ShortName`
+### {{ renderMember(type='string', name='ShortName') }} 
 
 :   The short compass direction, eg. "S", "SSE"
 

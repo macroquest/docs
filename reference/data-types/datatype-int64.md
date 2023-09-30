@@ -8,31 +8,31 @@ Represents a 64-bit integer. Can hold values from -9,223,372,036,854,775,808 to 
 
 ## Members
 
-### [float][float] `Float`
+### {{ renderMember(type='float', name='Float') }} 
 
 :   The number as a float (123 is represented as 123.0)
 
-### [double][double] `Double`
+### {{ renderMember(type='double', name='Double') }} 
 
 :   The number as a double (123 is represented as 123.0)
 
-### [string][string] `Hex`
+### {{ renderMember(type='string', name='Hex') }} 
 
 :   The hex value of the integer (10 is represented as 0xA)
 
-### [int64][int64] `Reverse`
+### {{ renderMember(type='int64', name='Reverse') }} 
 
 :   Endianness reversed
 
-### [int][int] `LowPart`
+### {{ renderMember(type='int', name='LowPart') }} 
 
 :   Lower 32-bits of the value.
 
-### [int][int] `HighPart`
+### {{ renderMember(type='int', name='HighPart') }} 
 
 :   Upper 32-bits of the value.
 
-### [string][string] `Prettify[precision]`
+### {{ renderMember(type='string', name='Prettify', params='precision') }} 
 
 :   Pretty print the number with commas, with optional _precision_
 

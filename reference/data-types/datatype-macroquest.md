@@ -8,43 +8,43 @@ Data types related to the current MacroQuest2 session.  These also inherit from 
 
 ## Members
 
-### [int][int] `Build`
+### {{ renderMember(type='int', name='Build') }} 
 
 :   The build (client target) for MQ2Main.dll (1 - Live, 2 - Test, 3 - Beta, 4 - Emu)
 
-### [string][string] `BuildName`
+### {{ renderMember(type='string', name='BuildName') }} 
 
 :   The build (client target) name for MQ2Main.dll (Live, Test, Beta, Emu)
 
-### [string][string] `BuildDate`
+### {{ renderMember(type='string', name='BuildDate') }} 
 
 :   Date that MQ2Main.dll was built
 
-### [string][string] `Error`
+### {{ renderMember(type='string', name='Error') }} 
 
 :   Last normal error message
 
-### [string][string] `InternalName`
+### {{ renderMember(type='string', name='InternalName') }} 
 
 :   The internal name from MQ2Main.dll ("Next")
 
-### [string][string] `MQ2DataError`
+### {{ renderMember(type='string', name='MQ2DataError') }} 
 
 :   Last MQ2Data parsing error message
 
-### [int][int] `Parser`
+### {{ renderMember(type='int', name='Parser') }} 
 
 :   Which parser engine is currently active
 
-### [string][string] `Path[Option]`
+### {{ renderMember(type='string', name='Path', params='Option') }} 
 
 :   Directory that Macroquest.exe launched from.  When passed root/config/crashdumps/logs/mqini/macros/plugins/resources, returns the respective path
 
-### [string][string] `SyntaxError`
+### {{ renderMember(type='string', name='SyntaxError') }} 
 
 :   Last syntax error message
 
-### [string][string] `Version`
+### {{ renderMember(type='string', name='Version') }} 
 
 :   The full version of MQ2Main.dll
 

@@ -8,559 +8,559 @@ Represents an in-game spawn.
 
 ## Members
 
-### [int][int] `AARank`
+### {{ renderMember(type='int', name='AARank') }} 
 
 :   AA rank number
 
-### `AATitle`
+### {{ renderMember(name='AATitle') }} 
 
 :   
 
-### `ActorDef`
+### {{ renderMember(name='ActorDef') }} 
 
 :   
 
-### [bool][bool] `AFK`
+### {{ renderMember(type='bool', name='AFK') }} 
 
 :   AFK?
 
-### [bool][bool] `Aggressive`
+### {{ renderMember(type='bool', name='Aggressive') }} 
 
 :   returns TRUE or FALSE if a mob is aggressive or not
 
-### [int][int] `Animation`
+### {{ renderMember(type='int', name='Animation') }} 
 
 :   Current animation ID. See [Animations](../../reference/general/animations.md) for a list of animations.
 
-### [bool][bool] `Anonymous`
+### {{ renderMember(type='bool', name='Anonymous') }} 
 
 :   Anonymous
 
-### [bool][bool] `Assist`
+### {{ renderMember(type='bool', name='Assist') }} 
 
 :   Current Raid or Group assist target?
 
-### [bool][bool] `Binding`
+### {{ renderMember(type='bool', name='Binding') }} 
 
 :   Binding wounds?
 
-### `Blind`
+### {{ renderMember(name='Blind') }} 
 
 :   
 
-### [body][body] `Body`
+### {{ renderMember(type='body', name='Body') }} 
 
 :   Body type
 
-### `BodyWet`
+### {{ renderMember(name='BodyWet') }} 
 
 :   
 
-### `bShowHelm`
+### {{ renderMember(name='bShowHelm') }} 
 
 :   
 
-### `Buff`
+### {{ renderMember(name='Buff') }} 
 
 :   
 
-### `BuffCount`
+### {{ renderMember(name='BuffCount') }} 
 
 :   
 
-### `BuffDuration`
+### {{ renderMember(name='BuffDuration') }} 
 
 :   
 
-### `BuffsPopulated`
+### {{ renderMember(name='BuffsPopulated') }} 
 
 :   
 
-### [bool][bool] `Buyer`
+### {{ renderMember(type='bool', name='Buyer') }} 
 
 :   Is a buyer? (ie. Buyer in the bazaar)
 
-### [cachedbuff][cachedbuff] `CachedBuff`
+### {{ renderMember(type='cachedbuff', name='CachedBuff') }} 
 
 :   Caches buff information cast on others
 
-### `CachedBuffCount`
+### {{ renderMember(name='CachedBuffCount') }} 
 
 :   
 
-### [bool][bool] `CanSplashLand`
+### {{ renderMember(type='bool', name='CanSplashLand') }} 
 
 :   <p>TRUE/FALSE on if a splash spell can land...</p><p></p><p><strong>Note:</strong> This check is ONLY for line of sight to the targetindicator (red/green circle)</p>
 
-### [spell][spell] `Casting`
+### {{ renderMember(type='spell', name='Casting') }} 
 
 :   Spell, if currently casting (only accurate on yourself, not NPCs or other group members)
 
-### `CeilingHeightAtCurrLocation`
+### {{ renderMember(name='CeilingHeightAtCurrLocation') }} 
 
 :   
 
-### [class][class] `Class`
+### {{ renderMember(type='class', name='Class') }} 
 
 :   Class
 
-### [string][string] `CleanName`
+### {{ renderMember(type='string', name='CleanName') }} 
 
 :   The "cleaned up" name
 
-### `CombatSkillTicks`
+### {{ renderMember(name='CombatSkillTicks') }} 
 
 :   
 
-### [string][string] `ConColor`
+### {{ renderMember(type='string', name='ConColor') }} 
 
 :   GREY, GREEN, LIGHT BLUE, BLUE, WHITE, YELLOW, RED
 
-### `ContractorID`
+### {{ renderMember(name='ContractorID') }} 
 
 :   
 
-### [int][int] `CurrentEndurance`
+### {{ renderMember(type='int', name='CurrentEndurance') }} 
 
 :   Current Endurance points (only updates when target/group)
 
-### [int64][int64] `CurrentHPs`
+### {{ renderMember(type='int64', name='CurrentHPs') }} 
 
 :   Current hit points
 
-### [int][int] `CurrentMana`
+### {{ renderMember(type='int', name='CurrentMana') }} 
 
 :   Current Mana points (only updates when target/group)
 
-### [bool][bool] `Dead`
+### {{ renderMember(type='bool', name='Dead') }} 
 
 :   Dead?
 
-### [deity][deity] `Deity`
+### {{ renderMember(type='deity', name='Deity') }} 
 
 :   Deity
 
-### [string][string] `DisplayName`
+### {{ renderMember(type='string', name='DisplayName') }} 
 
 :   Name displayed in game (same as EQ's %T)
 
-### [float][float] `Distance`
+### {{ renderMember(type='float', name='Distance') }} 
 
 :   Distance from player in (x,y)
 
-### [float][float] `Distance3D`
+### {{ renderMember(type='float', name='Distance3D') }} 
 
 :   Distance from player in (x,y,z) in 3D
 
-### [float][float] `DistanceN`
+### {{ renderMember(type='float', name='DistanceN') }} 
 
 :   Distance from player in Y plane (North/South)
 
-### [float][float] `DistancePredict`
+### {{ renderMember(type='float', name='DistancePredict') }} 
 
 :   Estimated distance in (x,y), taking into account the spawn's movement speed but not the player's
 
-### [float][float] `DistanceU`
+### {{ renderMember(type='float', name='DistanceU') }} 
 
 :   Distance from player in Z plane (Up/Down)
 
-### [float][float] `DistanceW`
+### {{ renderMember(type='float', name='DistanceW') }} 
 
 :   Distance from player in X plane (East/West)
 
-### [float][float] `DistanceX`
+### {{ renderMember(type='float', name='DistanceX') }} 
 
 :   Distance from player in X plane
 
-### [float][float] `DistanceY`
+### {{ renderMember(type='float', name='DistanceY') }} 
 
 :   Distance from player in Y plane
 
-### [float][float] `DistanceZ`
+### {{ renderMember(type='float', name='DistanceZ') }} 
 
 :   Distance from player in Z plane
 
-### [bool][bool] `Ducking`
+### {{ renderMember(type='bool', name='Ducking') }} 
 
 :   Ducking?
 
-### [float][float] `EQLoc`
+### {{ renderMember(type='float', name='EQLoc') }} 
 
 :   Location using EQ format
 
-### [int][int] `Equipment`
+### {{ renderMember(type='int', name='Equipment') }} 
 
 :   returns a inttype, it takes numbers 0-8 or names: head chest arms wrists hands legs feet primary offhand
 
-### [bool][bool] `FeetWet`
+### {{ renderMember(type='bool', name='FeetWet') }} 
 
 :   Feet wet/swimming?
 
-### [bool][bool] `Feigning`
+### {{ renderMember(type='bool', name='Feigning') }} 
 
 :   Feigning?
 
-### `FindBuff`
+### {{ renderMember(name='FindBuff') }} 
 
 :   
 
-### [bool][bool] `Fleeing`
+### {{ renderMember(type='bool', name='Fleeing') }} 
 
 :   Is your target moving away from you?
 
-### `FloorZ`
+### {{ renderMember(name='FloorZ') }} 
 
 :   
 
-### [spawn][spawn] `Following`
+### {{ renderMember(type='spawn', name='Following') }} 
 
 :   The spawn a player is following using /follow on - also returns your pet's target via ${Me.Pet.Following}
 
-### [string][string] `Gender`
+### {{ renderMember(type='string', name='Gender') }} 
 
 :   Gender
 
-### [bool][bool] `GM`
+### {{ renderMember(type='bool', name='GM') }} 
 
 :   GM or Guide?
 
-### `GMRank`
+### {{ renderMember(name='GMRank') }} 
 
 :   
 
-### [bool][bool] `GroupLeader`
+### {{ renderMember(type='bool', name='GroupLeader') }} 
 
 :   Group leader?
 
-### [string][string] `Guild`
+### {{ renderMember(type='string', name='Guild') }} 
 
 :   Guild name
 
-### [string][string] `GuildStatus`
+### {{ renderMember(type='string', name='GuildStatus') }} 
 
 :   Guild status (Leader, Officer, Member) **NOTE** GuildStatus is no longer present in BETA/TEST/LIVE versions and only available in UF and ROF EMU builds.
 
-### [heading][heading] `Heading`
+### {{ renderMember(type='heading', name='Heading') }} 
 
 :   Heading in this direction
 
-### [heading][heading] `HeadingTo`
+### {{ renderMember(type='heading', name='HeadingTo') }} 
 
 :   Heading player must travel in to reach this spawn
 
-### [heading][heading] `HeadingToLoc[y, x]`
+### {{ renderMember(type='heading', name='HeadingToLoc', params='y, x') }} 
 
 :   Heading to the coordinates y,x from the spawn
 
-### `HeadWet`
+### {{ renderMember(name='HeadWet') }} 
 
 :   
 
-### [float][float] `Height`
+### {{ renderMember(type='float', name='Height') }} 
 
 :   Height
 
-### [bool][bool] `Holding`
+### {{ renderMember(type='bool', name='Holding') }} 
 
 :   Is the spawn holding an item?
 
-### `HoldingAnimation`
+### {{ renderMember(name='HoldingAnimation') }} 
 
 :   
 
-### [bool][bool] `Hovering`
+### {{ renderMember(type='bool', name='Hovering') }} 
 
 :   Hovering?
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   Spawn ID
 
-### `InPvPArea`
+### {{ renderMember(name='InPvPArea') }} 
 
 :   
 
-### [bool][bool] `Invis[ANY|0]`
+### {{ renderMember(type='bool', name='Invis', params='ANY|0') }} 
 
 :   <p>Gives TRUE/FALSE returns. Options are:</p><ul><li>ANY or 0 - ${Me.Invis[ANY]} or ${Me.Invis[0]} or ${Me.Invis}</li><li>NORMAL or 1 - ${Me.Invis[NORMAL]} or just ${Me.Invis[1]}</li><li>UNDEAD or 2 - ${Me.Invis[UNDEAD]} or just ${Me.Invis[2]}</li><li>ANIMAL or 3 - ${Me.Invis[ANIMAL]} or just ${Me.Invis[3]}</li><li>SOS or 4 - ${Me.Invis[SOS]} or just ${Me.Invis[4]} returns true IF you are a ROG AND in fact hidden AND have a skill of at least 100 in HIDE AND have the AA for SoS</li></ul>
 
-### `IsSummoned`
+### {{ renderMember(name='IsSummoned') }} 
 
 :   
 
-### `IsTouchingSwitch`
+### {{ renderMember(name='IsTouchingSwitch') }} 
 
 :   
 
-### [int][int] `Level`
+### {{ renderMember(type='int', name='Level') }} 
 
 :   Level
 
-### [bool][bool] `Levitating`
+### {{ renderMember(type='bool', name='Levitating') }} 
 
 :   Levitating?
 
-### [bool][bool] `LFG`
+### {{ renderMember(type='bool', name='LFG') }} 
 
 :   LFG?
 
-### [string][string] `Light`
+### {{ renderMember(type='string', name='Light') }} 
 
 :   Name of the light class this spawn has
 
-### [bool][bool] `LineOfSight`
+### {{ renderMember(type='bool', name='LineOfSight') }} 
 
 :   Returns TRUE if spawn is in LoS
 
-### [bool][bool] `Linkdead`
+### {{ renderMember(type='bool', name='Linkdead') }} 
 
 :   Linkdead?
 
-### [string][string] `Loc`
+### {{ renderMember(type='string', name='Loc') }} 
 
 :   Loc of the spawn
 
-### [string][string] `LocYX`
+### {{ renderMember(type='string', name='LocYX') }} 
 
 :   LocYX of the spawn
 
-### `LocYXZ`
+### {{ renderMember(name='LocYXZ') }} 
 
 :   
 
-### [float][float] `Look`
+### {{ renderMember(type='float', name='Look') }} 
 
 :   Looking this angle
 
-### [int][int] `Mark`
+### {{ renderMember(type='int', name='Mark') }} 
 
 :   Current Raid or Group marked npc mark number (raid first)
 
-### [spawn][spawn] `Master`
+### {{ renderMember(type='spawn', name='Master') }} 
 
 :   Master, if it is charmed or a pet
 
-### [int][int] `MaxEndurance`
+### {{ renderMember(type='int', name='MaxEndurance') }} 
 
 :   Maximum Endurance points (only updates when target/group)
 
-### [int64][int64] `MaxHPs`
+### {{ renderMember(type='int64', name='MaxHPs') }} 
 
 :   Maximum hit points
 
-### [int][int] `MaxMana`
+### {{ renderMember(type='int', name='MaxMana') }} 
 
 :   Maximum Mana points (only updates when target/group)
 
-### [float][float] `MaxRange`
+### {{ renderMember(type='float', name='MaxRange') }} 
 
 :   The max distance from this spawn for it to hit you
 
-### [float][float] `MaxRangeTo`
+### {{ renderMember(type='float', name='MaxRangeTo') }} 
 
 :   The Max distance from this spawn for you to hit it
 
-### `MercID`
+### {{ renderMember(name='MercID') }} 
 
 :   
 
-### [spawn][spawn] `Mount`
+### {{ renderMember(type='spawn', name='Mount') }} 
 
 :   Mount
 
-### [bool][bool] `Moving`
+### {{ renderMember(type='bool', name='Moving') }} 
 
 :   Moving?
 
-### [float][float] `MQLoc`
+### {{ renderMember(type='float', name='MQLoc') }} 
 
 :   Location using MQ format
 
-### `MyBuff`
+### {{ renderMember(name='MyBuff') }} 
 
 :   
 
-### `MyBuffCount`
+### {{ renderMember(name='MyBuffCount') }} 
 
 :   
 
-### `MyBuffDuration`
+### {{ renderMember(name='MyBuffDuration') }} 
 
 :   
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Name
 
-### [bool][bool] `Named`
+### {{ renderMember(type='bool', name='Named') }} 
 
 :   Is this a "named" spawn (ie. does it's name not start with an "a" or an "an")
 
-### [spawn][spawn] `NearestSpawn[search]`
+### {{ renderMember(type='spawn', name='NearestSpawn', params='search') }} 
 
 :   Find the nearest spawn matching this [Spawn Search](../../reference/general/spawn-search.md), to this spawn (most efficient on yourself)
 
-### [spawn][spawn] `NearestSpawn[#, search]`
+### {{ renderMember(type='spawn', name='NearestSpawn', params='#, search') }} 
 
 :   Find the #th nearest spawn matching this [Spawn Search](../../reference/general/spawn-search.md), to this spawn (most efficient on yourself)
 
-### [spawn][spawn] `Next`
+### {{ renderMember(type='spawn', name='Next') }} 
 
 :   Next spawn in the list
 
-### [spawn][spawn] `Owner`
+### {{ renderMember(type='spawn', name='Owner') }} 
 
 :   Owner, if mercenary
 
-### [int64][int64] `PctHPs`
+### {{ renderMember(type='int64', name='PctHPs') }} 
 
 :   Percent hit points
 
-### `PctMana`
+### {{ renderMember(name='PctMana') }} 
 
 :   
 
-### [spawn][spawn] `Pet`
+### {{ renderMember(type='spawn', name='Pet') }} 
 
 :   Pet
 
-### [int][int] `PlayerState`
+### {{ renderMember(type='int', name='PlayerState') }} 
 
 :   returns a mask as an inttype which has the following meaning: 0=Idle 1=Open 2=WeaponSheathed 4=Aggressive 8=ForcedAggressive 0x10=InstrumentEquipped 0x20=Stunned 0x40=PrimaryWeaponEquipped 0x80=SecondaryWeaponEquipped
 
-### [spawn][spawn] `Prev`
+### {{ renderMember(type='spawn', name='Prev') }} 
 
 :   Previous spawn in the list
 
-### [int][int] `Primary`
+### {{ renderMember(type='int', name='Primary') }} 
 
 :   Item ID of anything that may be in the Primary slot
 
-### [race][race] `Race`
+### {{ renderMember(type='race', name='Race') }} 
 
 :   Race
 
-### [bool][bool] `Roleplaying`
+### {{ renderMember(type='bool', name='Roleplaying') }} 
 
 :   Roleplaying?
 
-### [int][int] `Secondary`
+### {{ renderMember(type='int', name='Secondary') }} 
 
 :   Item ID of anything that may be in the Secondary slot
 
-### `SeeInvis`
+### {{ renderMember(name='SeeInvis') }} 
 
 :   
 
-### [bool][bool] `Sitting`
+### {{ renderMember(type='bool', name='Sitting') }} 
 
 :   Sitting?
 
-### [bool][bool] `Sneaking`
+### {{ renderMember(type='bool', name='Sneaking') }} 
 
 :   Sneaking?
 
-### `SpawnStatus`
+### {{ renderMember(name='SpawnStatus') }} 
 
 :   
 
-### [float][float] `Speed`
+### {{ renderMember(type='float', name='Speed') }} 
 
 :   Speed moving
 
-### [bool][bool] `Standing`
+### {{ renderMember(type='bool', name='Standing') }} 
 
 :   Standing?
 
-### [int][int] `StandState`
+### {{ renderMember(type='int', name='StandState') }} 
 
 :   StandState
 
-### [string][string] `State`
+### {{ renderMember(type='string', name='State') }} 
 
 :   STAND, SIT, DUCK, BIND, FEIGN, DEAD, STUN, HOVER, MOUNT, UNKNOWN
 
-### [bool][bool] `Stuck`
+### {{ renderMember(type='bool', name='Stuck') }} 
 
 :   Stuck?
 
-### [bool][bool] `Stunned`
+### {{ renderMember(type='bool', name='Stunned') }} 
 
 :   Stunned?
 
-### [string][string] `Suffix`
+### {{ renderMember(type='string', name='Suffix') }} 
 
 :   Suffix attached to name, eg. of
 
-### [string][string] `Surname`
+### {{ renderMember(type='string', name='Surname') }} 
 
 :   Last name
 
-### `Targetable`
+### {{ renderMember(name='Targetable') }} 
 
 :   
 
-### `TargetOfTarget`
+### {{ renderMember(name='TargetOfTarget') }} 
 
 :   
 
-### `TemporaryPet`
+### {{ renderMember(name='TemporaryPet') }} 
 
 :   
 
-### `TimeBeenDead`
+### {{ renderMember(name='TimeBeenDead') }} 
 
 :   
 
-### [string][string] `Title`
+### {{ renderMember(type='string', name='Title') }} 
 
 :   Prefix/Title before name
 
-### [bool][bool] `Trader`
+### {{ renderMember(type='bool', name='Trader') }} 
 
 :   Trader?
 
-### [string][string] `Type`
+### {{ renderMember(type='string', name='Type') }} 
 
 :   PC, NPC, Untargetable, Mount, Pet, Corpse, Chest, Trigger, Trap, Timer, Item, Mercenary, Aura, Object, Banner, Campfire, Flyer
 
-### [bool][bool] `Underwater`
+### {{ renderMember(type='bool', name='Underwater') }} 
 
 :   Underwater?
 
-### [float][float] `X`
+### {{ renderMember(type='float', name='X') }} 
 
 :   X coordinate
 
-### [float][float] `Y`
+### {{ renderMember(type='float', name='Y') }} 
 
 :   Y coordinate
 
-### [float][float] `Z`
+### {{ renderMember(type='float', name='Z') }} 
 
 :   Z coordinate
 
-### [float][float] `N`
+### {{ renderMember(type='float', name='N') }} 
 
 :   X, the Northward-positive coordinate
 
-### [float][float] `W`
+### {{ renderMember(type='float', name='W') }} 
 
 :   Y, the Westward-positive coordinate
 
-### [float][float] `U`
+### {{ renderMember(type='float', name='U') }} 
 
 :   Z, the Upward-positive coordinate
 
-### [float][float] `E`
+### {{ renderMember(type='float', name='E') }} 
 
 :   Shortcut for -X (makes Eastward positive)
 
-### [float][float] `S`
+### {{ renderMember(type='float', name='S') }} 
 
 :   Shortcut for -Y (makes Southward positive)
 
-### [float][float] `D`
+### {{ renderMember(type='float', name='D') }} 
 
 :   Shortcut for -Z (makes Downward positive)
 

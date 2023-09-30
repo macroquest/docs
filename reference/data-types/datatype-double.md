@@ -12,27 +12,27 @@ Represents a double precision (64-bit) floating point number.
 
 ## Members
 
-### [string][string] `Deci`
+### {{ renderMember(type='string', name='Deci') }} 
 
 :   The number as a string with **one** place of precision, _i.e. ###.#_
 
-### [string][string] `Centi`
+### {{ renderMember(type='string', name='Centi') }} 
 
 :   The number as a string with **two** places of precision, _i.e. ###.##_
 
-### [int][int] `Int`
+### {{ renderMember(type='int', name='Int') }} 
 
 :   Integer portion of the number truncated rather than rounded, _e.g. 12.779 returns 12_
 
-### [string][string] `Milli`
+### {{ renderMember(type='string', name='Milli') }} 
 
 :   The number as a string with **three** places of precision, _i.e. ###.###_
 
-### [string][string] `Precision[#]`
+### {{ renderMember(type='string', name='Precision', params='#') }} 
 
 :   The number as a string with # places of precision
 
-### [string][string] `Prettify[precision]`
+### {{ renderMember(type='string', name='Prettify', params='precision') }} 
 
 :   Pretty print the number with commas, with optional _precision_ (defaults to two decimal points).
 

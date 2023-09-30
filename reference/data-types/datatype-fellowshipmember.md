@@ -8,27 +8,27 @@ Contains all the data related to fellowship members
 
 ## Members
 
-### [class][class] `Class`
+### {{ renderMember(type='class', name='Class') }} 
 
 :   Member's class
 
-### [ticks][ticks] `LastOn`
+### {{ renderMember(type='ticks', name='LastOn') }} 
 
 :   How long since member was last online
 
-### [int][int] `Level`
+### {{ renderMember(type='int', name='Level') }} 
 
 :   Member's level
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Member's name
 
-### [bool][bool] `Sharing`
+### {{ renderMember(type='bool', name='Sharing') }} 
 
 :   TRUE if member has exp sharing enabled
 
-### [zone][zone] `Zone`
+### {{ renderMember(type='zone', name='Zone') }} 
 
 :   Zone information for the member's zone
 

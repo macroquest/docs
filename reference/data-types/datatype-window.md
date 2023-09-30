@@ -11,12 +11,12 @@ Windows come in many forms, but all are represented with the generic **window** 
 ## Members
 
 
-### [argb][argb] `BGColor`
+### {{ renderMember(type='argb', name='BGColor') }} 
 
 :   Background color of the window.
 
 
-### [bool][bool] `Checked`
+### {{ renderMember(type='bool', name='Checked') }} 
 
 :   Returns `TRUE` if the button has been checked.
 
@@ -30,7 +30,7 @@ Windows come in many forms, but all are represented with the generic **window** 
     *   `name`: Name of a child window
 
 
-### [bool][bool] `Children`
+### {{ renderMember(type='bool', name='Children') }} 
 
 :   Returns `TRUE` if the window has children.
 
@@ -42,14 +42,14 @@ Windows come in many forms, but all are represented with the generic **window** 
     Returns the `Page` window associated with the currently selected tab.
 
 
-### [int][int] `CurrentTabIndex`
+### {{ renderMember(type='int', name='CurrentTabIndex') }} 
 
 :   Applies to: `TabBox`
 
     Returns the index of the currently selected tab.
 
 
-### [bool][bool] `Enabled`
+### {{ renderMember(type='bool', name='Enabled') }} 
 
 :   Returns `TRUE` if the window is enabled.
 
@@ -59,7 +59,7 @@ Windows come in many forms, but all are represented with the generic **window** 
 :   Returns the first child window in the window hierarchy.
 
 
-### [int][int] `GetCurSel`
+### {{ renderMember(type='int', name='GetCurSel') }} 
 
 :   !!! info "Deprecation Notice"
 
@@ -70,46 +70,46 @@ Windows come in many forms, but all are represented with the generic **window** 
     Index of the currently selected/higlighted item.
 
 
-### [int][int] `Height`
+### {{ renderMember(type='int', name='Height') }} 
 
 :   Height of the window in pixels.
 
 
-### [bool][bool] `Highlighted`
+### {{ renderMember(type='bool', name='Highlighted') }} 
 
 :   Returns `TRUE` if the window is the currently focused window.
 
 
-### [bool][bool] `HisTradeReady`
+### {{ renderMember(type='bool', name='HisTradeReady') }} 
 
 :   Returns the following data from the trade window, regardless of what the current window object is:
 
     Has the other person clicked the Trade button?
 
 
-### [int][int] `HScrollMax`
+### {{ renderMember(type='int', name='HScrollMax') }} 
 
 :   Horizontal scrollbar maximum position.
 
 
-### [int][int] `HScrollPct`
+### {{ renderMember(type='int', name='HScrollPct') }} 
 
 :   Horizontal scroll bar current position as a percentage of the maximum position as a value from 0 to 100.
 
 
-### [int][int] `HScrollPos`
+### {{ renderMember(type='int', name='HScrollPos') }} 
 
 :   Horizontal scroll bar current position.
 
 
-### [int][int] `Items`
+### {{ renderMember(type='int', name='Items') }} 
 
 :   Applies to: `Combobox`, `Listbox`, `TreeView`
 
     Number of items in the list.
 
 
-### [string][string] `List[Row,Col]`
+### {{ renderMember(type='string', name='List', params='Row,Col') }} 
 
 :   Applies to: `Combobox`, `Listbox`, `TreeView`
 
@@ -121,7 +121,7 @@ Windows come in many forms, but all are represented with the generic **window** 
     *   `Col`: _[optional]_ Column index of the item in the list.
 
 
-### [int][int] `List[Text,Col]`
+### {{ renderMember(type='int', name='List', params='Text,Col') }} 
 
 :   Applies to: `Combobox`, `Listbox`, `TreeView`
 
@@ -133,24 +133,24 @@ Windows come in many forms, but all are represented with the generic **window** 
     *   `Col`: _[optional]_ Column index of the item in the item in the list. If not provided, the first column is searched.
 
 
-### [bool][bool] `Minimized`
+### {{ renderMember(type='bool', name='Minimized') }} 
 
 :   Returns `TRUE` if the window is minimized.
 
 
-### [bool][bool] `MouseOver`
+### {{ renderMember(type='bool', name='MouseOver') }} 
 
 :   Returns `TRUE` if the mouse is currently over the window.
 
 
-### [bool][bool] `MyTradeReady`
+### {{ renderMember(type='bool', name='MyTradeReady') }} 
 
 :   Returns the following data from the trade window, regardless of what the current window object is:
 
     Have I clicked the Trade button?
 
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Name of the window.
 
@@ -162,7 +162,7 @@ Windows come in many forms, but all are represented with the generic **window** 
 :   Next sibling window in the window hierarchy.
 
 
-### [bool][bool] `Open`
+### {{ renderMember(type='bool', name='Open') }} 
 
 :   Returns `TRUE` if the window is open.
 
@@ -172,31 +172,31 @@ Windows come in many forms, but all are represented with the generic **window** 
 :   Returns the parent of this window, or `NULL` if this is a top level window.
 
 
-### [string][string] `ScreenID`
+### {{ renderMember(type='string', name='ScreenID') }} 
 
 :   ScreenID of the window piece.
 
     _Note: This is **not** custom ui dependent, it must be the same on all UIs._
 
 
-### [int][int] `SelectedIndex`
+### {{ renderMember(type='int', name='SelectedIndex') }} 
 
 :   Applies to: `Combobox`, `Listbox`, `TreeView`
 
     Index of the currently selected/higlighted item.
 
 
-### [bool][bool] `Siblings`
+### {{ renderMember(type='bool', name='Siblings') }} 
 
 :   Returns `TRUE` if the window has siblings.
 
 
-### [int][int] `Style`
+### {{ renderMember(type='int', name='Style') }} 
 
 :   Returns an integer representing the window style bit flags.
 
 
-### [int][int] `TabCount`
+### {{ renderMember(type='int', name='TabCount') }} 
 
 :   Applies to: `TabBox`
 
@@ -217,7 +217,7 @@ Windows come in many forms, but all are represented with the generic **window** 
     Looks up the `Page` window that matches the provided tab text in the TabBox.
 
 
-### [string][string] `Text`
+### {{ renderMember(type='string', name='Text') }} 
 
 :   The text of the window. The actual value varies by type of window:
 
@@ -225,12 +225,12 @@ Windows come in many forms, but all are represented with the generic **window** 
     *   `Page`: Returns the name of the page's Tab.
 
 
-### [string][string] `Tooltip`
+### {{ renderMember(type='string', name='Tooltip') }} 
 
 :   The tooltip text for the window. This value comes from the window's TooltipReference.
 
 
-### [string][string] `Type`
+### {{ renderMember(type='string', name='Type') }} 
 
 :   The window's type. The type will determine the behavior of some of the other members.
 
@@ -258,32 +258,32 @@ Windows come in many forms, but all are represented with the generic **window** 
     * `HotButton`
 
 
-### [int][int] `VScrollMax`
+### {{ renderMember(type='int', name='VScrollMax') }} 
 
 :   Vertical scrollbar maximum position.
 
 
-### [int][int] `VScrollPct`
+### {{ renderMember(type='int', name='VScrollPct') }} 
 
 :   Vertical scroll bar current position as a percentage of the maximum position as a value from 0 to 100.
 
 
-### [int][int] `VScrollPos`
+### {{ renderMember(type='int', name='VScrollPos') }} 
 
 :   Vertical scroll bar current position.
 
 
-### [int][int] `Width`
+### {{ renderMember(type='int', name='Width') }} 
 
 :   Width of the window in pixels.
 
 
-### [int][int] `X`
+### {{ renderMember(type='int', name='X') }} 
 
 :   The X coordinate of the window's position, in pixels.
 
 
-### [int][int] `Y`
+### {{ renderMember(type='int', name='Y') }} 
 
 :   The Y coordinate of the window's position, in pixels.
 
@@ -296,76 +296,76 @@ Windows come in many forms, but all are represented with the generic **window** 
 ## Methods
 
 
-### `DoClose`
+### {{ renderMember(name='DoClose') }} 
 
 :   Close the window. Has the effect of hiding the window if it closed.
 
 
-### `DoOpen`
+### {{ renderMember(name='DoOpen') }} 
 
 :   Open the window. Has the effect of showing the window if it is hidden.
 
 
-### `LeftMouseDown`
+### {{ renderMember(name='LeftMouseDown') }} 
 
 :   Send a `leftmousedown` event to the window.
 
     Has the same effect as using the [/notify](../commands/notify.md) command on the window.
 
 
-### `LeftMouseHeld`
+### {{ renderMember(name='LeftMouseHeld') }} 
 
 :   Send a `leftmouseheld` event to the window.
 
     Has the same effect as using the [/notify](../commands/notify.md) command on the window.
 
-### `LeftMouseHeldUp`
+### {{ renderMember(name='LeftMouseHeldUp') }} 
 
 :   Send a `leftmouseheldup` event to the window.
 
     Has the same effect as using the [/notify](../commands/notify.md) command on the window.
 
 
-### `LeftMouseUp`
+### {{ renderMember(name='LeftMouseUp') }} 
 
 :   Send a `leftmouseup` event to the window.
 
     Has the same effect as using the [/notify](../commands/notify.md) command on the window.
 
 
-### `Move[X,Y,Width,Height]`
+### {{ renderMember(name='Move', params='X,Y,Width,Height') }} 
 
 :   Move or resize the window.
 
-### `RightMouseDown`
+### {{ renderMember(name='RightMouseDown') }} 
 
 :   Send a `rightmousedown` event to the window.
 
     Has the same effect as using the [/notify](../commands/notify.md) command on the window.
 
 
-### `RightMouseHeld`
+### {{ renderMember(name='RightMouseHeld') }} 
 
 :   Send a `rightmouseheld` event to the window.
 
     Has the same effect as using the [/notify](../commands/notify.md) command on the window.
 
 
-### `RightMouseHeldUp`
+### {{ renderMember(name='RightMouseHeldUp') }} 
 
 :   Send a `rightmouseheldup` event to the window.
 
     Has the same effect as using the [/notify](../commands/notify.md) command on the window.
 
 
-### `RightMouseUp`
+### {{ renderMember(name='RightMouseUp') }} 
 
 :   Send a `rightmouseup` event to the window.
 
     Has the same effect as using the [/notify](../commands/notify.md) command on the window.
 
 
-### `Select[Index]`
+### {{ renderMember(name='Select', params='Index') }} 
 
 :   Applies to: `Combobox`, `Listbox`, `TreeView`
 
@@ -376,7 +376,7 @@ Windows come in many forms, but all are represented with the generic **window** 
     *   `Index`: The number index of the item to select
 
 
-### `SetAlpha[Alpha]`
+### {{ renderMember(name='SetAlpha', params='Alpha') }} 
 
 :   Set the alpha value for the window.
 
@@ -385,7 +385,7 @@ Windows come in many forms, but all are represented with the generic **window** 
     *   `Alpha`: The alpha value, a number between 0 and 255.
 
 
-### `SetBGColor[Color]`
+### {{ renderMember(name='SetBGColor', params='Color') }} 
 
 :   Set the background color.
 
@@ -394,7 +394,7 @@ Windows come in many forms, but all are represented with the generic **window** 
     *   `Color`: A hex string in the form "AARRGGBB"
 
 
-### `SetCurrentTab[Index]`
+### {{ renderMember(name='SetCurrentTab', params='Index') }} 
 
 :   Applies to: `TabBox`.
 
@@ -405,7 +405,7 @@ Windows come in many forms, but all are represented with the generic **window** 
     *   `Index`: Either the text or the index of the tab to select. If text is provided, it is case insensitive.
 
 
-### `SetFadeAlpha[Alpha]`
+### {{ renderMember(name='SetFadeAlpha', params='Alpha') }} 
 
 :   Set the faded alpha value for the window.
 
@@ -414,7 +414,7 @@ Windows come in many forms, but all are represented with the generic **window** 
     *   `Alpha`: The alpha value, a number between 0 and 255.
 
 
-### `SetText[Text]`
+### {{ renderMember(name='SetText', params='Text') }} 
 
 :   Applies to: `EditBox`
 

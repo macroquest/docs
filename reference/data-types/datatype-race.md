@@ -8,11 +8,11 @@ Contains information on the specified race
 
 ## Members
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   The ID of the race
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   The name of the race
 

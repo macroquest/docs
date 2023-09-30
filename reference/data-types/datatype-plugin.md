@@ -8,11 +8,11 @@ Data for the specified plugin
 
 ## Members
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Name of the plugin
 
-### [float][float] `Version`
+### {{ renderMember(type='float', name='Version') }} 
 
 :   Version number of the plugin
 

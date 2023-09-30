@@ -8,102 +8,102 @@ The AdvLoot TLO grants access to items in the Advanced Loot window.
 
 ## Members
 
-### [itemfilterdata][itemfilterdata] `Filter[ItemID]`
+### {{ renderMember(type='itemfilterdata', name='Filter', params='ItemID') }} 
 
 :   Inspect the loot filter for a given ItemID.
 
-### [bool][bool] `LootInProgress`
+### {{ renderMember(type='bool', name='LootInProgress') }} 
 
 :   True/False if looting from AdvLoot is in progress
 
-### [int][int] `PCount`
+### {{ renderMember(type='int', name='PCount') }} 
 
 :   item count from the Personal list
 
-### [advlootitem][advlootitem] `PList[Index]`
+### {{ renderMember(type='advlootitem', name='PList', params='Index') }} 
 
 :   Inspect the item at the specified index in the personal loot list.
 
-### [int][int] `PWantCount`
+### {{ renderMember(type='int', name='PWantCount') }} 
 
 :   Want count from the Personal list (AN + AG + ND + GD)
 
-### [int][int] `SCount`
+### {{ renderMember(type='int', name='SCount') }} 
 
 :   Item count from the Shared list
 
-### [advlootitem][advlootitem] `SList[Index]`
+### {{ renderMember(type='advlootitem', name='SList', params='Index') }} 
 
 :   Inspect the item at the specified index in the shared loot list.
 
-### [int][int] `SWantCount`
+### {{ renderMember(type='int', name='SWantCount') }} 
 
 :   Want count from the Shared list (AN + AG + ND + GD)
 
 
 ## Associated DataTypes
 
-### `advlootitem` Type
+### {{ renderMember(name='advlootitem') }} 
 
 Represents a discrete item being looted in an AdvLoot window.
 
-### [bool][bool] `AlwaysGreed`
+### {{ renderMember(type='bool', name='AlwaysGreed') }} 
 
 :   The Always Greed (AG) state of the item.
 
-### [bool][bool] `AlwaysNeed`
+### {{ renderMember(type='bool', name='AlwaysNeed') }} 
 
 :   The Always Need (AN) state of the item.
 
-### [bool][bool] `AutoRoll`
+### {{ renderMember(type='bool', name='AutoRoll') }} 
 
 :   The Auto Roll state (dice icon) of the item.
 
-### [spawn][spawn] `Corpse`
+### {{ renderMember(type='spawn', name='Corpse') }} 
 
 :   The spawn representing the corpse that is being looted, if available.
 
-### [bool][bool] `FreeGrab`
+### {{ renderMember(type='bool', name='FreeGrab') }} 
 
 :   Indicates that the item is free grab.
 
-### [bool][bool] `Greed`
+### {{ renderMember(type='bool', name='Greed') }} 
 
 :   The Greed (GD) state of the item.
 
-### [int][int] `IconID`
+### {{ renderMember(type='int', name='IconID') }} 
 
 :   The ID of the icon for the item.
 
-### [int64][int64] `ID`
+### {{ renderMember(type='int64', name='ID') }} 
 
 :   The ID of the item.
 
-### [int][int] `Index`
+### {{ renderMember(type='int', name='Index') }} 
 
 :   The positional index of the item.
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   The name of the item.
 
-### [bool][bool] `Need`
+### {{ renderMember(type='bool', name='Need') }} 
 
 :   The Need (ND) state of the item.
 
-### [bool][bool] `Never`
+### {{ renderMember(type='bool', name='Never') }} 
 
 :   The Never (NV) state of the item.
 
-### [bool][bool] `No`
+### {{ renderMember(type='bool', name='No') }} 
 
 :   The No state of the item.
 
-### [bool][bool] `NoDrop`
+### {{ renderMember(type='bool', name='NoDrop') }} 
 
 :   Indicates if the item is NO DROP.
 
-### [int][int] `StackSize`
+### {{ renderMember(type='int', name='StackSize') }} 
 
 :   The size of the stack of items being looted.
 
@@ -113,39 +113,39 @@ Represents a discrete item being looted in an AdvLoot window.
 
 
 
-### `itemfilterdata` Type
+### {{ renderMember(name='itemfilterdata') }} 
 
 A collection of settings that together describe the loot filter for an item.
 
-### [bool][bool] `AutoRoll`
+### {{ renderMember(type='bool', name='AutoRoll') }} 
 
 :   The Auto Roll state (dice icon).
 
-### [bool][bool] `Greed`
+### {{ renderMember(type='bool', name='Greed') }} 
 
 :   The Greed (GD) state.
 
-### [int][int] `IconID`
+### {{ renderMember(type='int', name='IconID') }} 
 
 :   The ID of the icon.
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   The ID of the item.
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   The Name of the item.
 
-### [bool][bool] `Need`
+### {{ renderMember(type='bool', name='Need') }} 
 
 :   The Need (ND) state.
 
-### [bool][bool] `Never`
+### {{ renderMember(type='bool', name='Never') }} 
 
 :   The Never (NV) state.
 
-### [int][int] `Types`
+### {{ renderMember(type='int', name='Types') }} 
 
 :   Bit field representing all the loot filter flags for this item.
 

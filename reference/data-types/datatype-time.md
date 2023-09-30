@@ -8,55 +8,55 @@ Represents a unit of clock time.
 
 ## Members
 
-### [string][string] `Date`
+### {{ renderMember(type='string', name='Date') }} 
 
 :   Date in the format MM/DD/YYYY
 
-### [int][int] `Day`
+### {{ renderMember(type='int', name='Day') }} 
 
 :   Day of the month
 
-### [int][int] `DayOfWeek`
+### {{ renderMember(type='int', name='DayOfWeek') }} 
 
 :   Day of the week (1=sunday to 7=saturday)
 
-### [int][int] `Hour`
+### {{ renderMember(type='int', name='Hour') }} 
 
 :   Hour (0-23)
 
-### [int][int] `Hour12`
+### {{ renderMember(type='int', name='Hour12') }} 
 
 :   Hour (0-11)
 
-### [int][int] `Minute`
+### {{ renderMember(type='int', name='Minute') }} 
 
 :   Minute (0-59)
 
-### [int][int] `Month`
+### {{ renderMember(type='int', name='Month') }} 
 
 :   Month of the year (1-12)
 
-### [bool][bool] `Night`
+### {{ renderMember(type='bool', name='Night') }} 
 
 :   Gives true if the current hour is considered "night" in EQ (7:00pm-6:59am)
 
-### [int][int] `Second`
+### {{ renderMember(type='int', name='Second') }} 
 
 :   Second (0-59)
 
-### [int][int] `SecondsSinceMidnight`
+### {{ renderMember(type='int', name='SecondsSinceMidnight') }} 
 
 :   Number of seconds since midnight
 
-### [string][string] `Time12`
+### {{ renderMember(type='string', name='Time12') }} 
 
 :   Time in 12-hour format (HH:MM:SS)
 
-### [string][string] `Time24`
+### {{ renderMember(type='string', name='Time24') }} 
 
 :   Time in 24-hour format (HH:MM:SS)
 
-### [int][int] `Year`
+### {{ renderMember(type='int', name='Year') }} 
 
 :   Year
 

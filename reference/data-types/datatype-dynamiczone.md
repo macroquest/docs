@@ -10,39 +10,39 @@ See Also: [TLO:DynamicZone](../top-level-objects/tlo-dynamiczone.md)
 
 ## Members
 
-### [bool][bool] `InRaid`
+### {{ renderMember(type='bool', name='InRaid') }} 
 
 :   ??
 
-### [dzmember][dzmember] `Leader`
+### {{ renderMember(type='dzmember', name='Leader') }} 
 
 :   The leader of the dynamic zone
 
-### [bool][bool] `LeaderFlagged`
+### {{ renderMember(type='bool', name='LeaderFlagged') }} 
 
 :   Returns true if the dzleader can successfully enter the dz (this also means the dz is actually Loaded.)
 
-### [int][int] `MaxMembers`
+### {{ renderMember(type='int', name='MaxMembers') }} 
 
 :   Maximum number of characters that can enter this dynamic zone
 
-### [int][int] `MaxTimers`
+### {{ renderMember(type='int', name='MaxTimers') }} 
 
 :   The number of timers present in **Timers**
 
-### [dzmember][dzmember] `Member[&nbsp;#&nbsp;|&nbsp;name&nbsp;]`
+### {{ renderMember(type='dzmember', name='Member', params='&nbsp;#&nbsp;|&nbsp;name&nbsp;') }} 
 
 :   The dynamic zone member _#_ or _name_
 
-### [int][int] `Members`
+### {{ renderMember(type='int', name='Members') }} 
 
 :   Current number of characters in the dynamic zone
 
-### [int][int] `MinMembers`
+### {{ renderMember(type='int', name='MinMembers') }} 
 
 :   Minimum number of members required.
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   The full name of the dynamic zone.
 

@@ -6,51 +6,51 @@ tags:
 
 A timestamp represented in milliseconds.
 
-### [int][int] `Days`
+### {{ renderMember(type='int', name='Days') }} 
 
 :   Number of days remaining in the timestamp (3d 2h 23m will return 3)
 
-### [float][float] `Float`
+### {{ renderMember(type='float', name='Float') }} 
 
 :   timestamp represented in remaining seconds (1hr 23 min 53 seconds will return 5033.00)
 
-### [int64][int64] `Hours`
+### {{ renderMember(type='int64', name='Hours') }} 
 
 :   Number of hours remaining in the timestamp (1hr 23min 53 seconds will return 1)
 
-### [int64][int64] `Minutes`
+### {{ renderMember(type='int64', name='Minutes') }} 
 
 :   Number of Minutes remaining in the timestamp (1hr 23min 53 seconds will return 23)
 
-### [int64][int64] `Raw`
+### {{ renderMember(type='int64', name='Raw') }} 
 
 :   Remaining time value represented in milliseconds
 
-### [int64][int64] `Seconds`
+### {{ renderMember(type='int64', name='Seconds') }} 
 
 :   Number of Seconds remaining in the timestamp (1hr 23min 53 seconds will return 53)
 
-### [int64][int64] `Ticks`
+### {{ renderMember(type='int64', name='Ticks') }} 
 
 :   Remaining time value represented in ticks
 
-### [string][string] `TimeDHM`
+### {{ renderMember(type='string', name='TimeDHM') }} 
 
 :   Remaining time value formatted in D:H:M (Days:Hours:Minutes)
 
-### [string][string] `TimeHMS`
+### {{ renderMember(type='string', name='TimeHMS') }} 
 
 :   Remaining time value formatted in H:M:S
 
-### [string][string] `Time`
+### {{ renderMember(type='string', name='Time') }} 
 
 :   Remaining time value formatted in M:S
 
-### [int64][int64] `TotalMinutes`
+### {{ renderMember(type='int64', name='TotalMinutes') }} 
 
 :   Total number of remaining minutes in the timestamp (1hr 23min 53 seconds will return 83)
 
-### [int64][int64] `TotalSeconds`
+### {{ renderMember(type='int64', name='TotalSeconds') }} 
 
 :   Total number of remaining minutes in the timestamp (1hr 23min 53 seconds will return 5033)
 

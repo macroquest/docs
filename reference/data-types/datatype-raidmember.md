@@ -8,35 +8,35 @@ Data related to the specified raid member
 
 ## Members
 
-### [class][class] `Class`
+### {{ renderMember(type='class', name='Class') }} 
 
 :   Raid member's class (works without being in zone)
 
-### [int][int] `Group`
+### {{ renderMember(type='int', name='Group') }} 
 
 :   Current group number (or 0)
 
-### [bool][bool] `GroupLeader`
+### {{ renderMember(type='bool', name='GroupLeader') }} 
 
 :   Returns TRUE if the member is a group leader
 
-### [int][int] `Level`
+### {{ renderMember(type='int', name='Level') }} 
 
 :   Raid member's level (works without being in zone)
 
-### [bool][bool] `Looter`
+### {{ renderMember(type='bool', name='Looter') }} 
 
 :   Allowed to loot with current loot rules and looters?
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Raid member's name
 
-### [bool][bool] `RaidLeader`
+### {{ renderMember(type='bool', name='RaidLeader') }} 
 
 :   Returns TRUE if the member is the raid leader
 
-### [spawn][spawn] `Spawn`
+### {{ renderMember(type='spawn', name='Spawn') }} 
 
 :   Spawn object for this player if available (must be in zone)
 

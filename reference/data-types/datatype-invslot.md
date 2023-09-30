@@ -8,23 +8,23 @@ Data related to an inventory slot.
 
 ### Members
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   ID of this item slot (usable directly by [/itemnotify](../../reference/commands/itemnotify.md))
 
-### [item][item] `Item`
+### {{ renderMember(type='item', name='Item') }} 
 
 :   Item data for the item in this slot
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   For inventory slots not inside packs, the slot name, otherwise NULL
 
-### [invslot][invslot] `Pack`
+### {{ renderMember(type='invslot', name='Pack') }} 
 
 :   Container that must be opened to access the slot with [/itemnotify](../../reference/commands/itemnotify.md)
 
-### [int][int] `Slot`
+### {{ renderMember(type='int', name='Slot') }} 
 
 :   Slot number inside the pack which holds the item, otherwise NULL
 

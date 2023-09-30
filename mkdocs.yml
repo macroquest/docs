@@ -586,6 +586,7 @@ theme:
 # Plugins
 plugins:
   - search
+  - macros
   - same-dir
   - redirects
   - tags:

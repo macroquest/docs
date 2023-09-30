@@ -8,131 +8,131 @@ Data types related to the current EverQuest session.
 
 ## Members
 
-### [int][int] `CharSelectList`
+### {{ renderMember(type='int', name='CharSelectList') }} 
 
 :   Currently returns the zone ID the character is currently in
 
-### [bool][bool] `ChatChannel[channelname]`
+### {{ renderMember(type='bool', name='ChatChannel', params='channelname') }} 
 
 :   Returns TRUE if _channelname_ is joined
 
-### [string][string] `ChatChannel[#]`
+### {{ renderMember(type='string', name='ChatChannel', params='#') }} 
 
 :   Returns the name of chat channel _#_
 
-### [int][int] `ChatChannels`
+### {{ renderMember(type='int', name='ChatChannels') }} 
 
 :   Returns the number of channels currently joined
 
-### [string][string] `CurrentUI`
+### {{ renderMember(type='string', name='CurrentUI') }} 
 
 :   return a string representing the currently loaded UI skin
 
-### [bool][bool] `Foreground`
+### {{ renderMember(type='bool', name='Foreground') }} 
 
 :   Returns TRUE if EverQuest is in Foreground
 
-### [string][string] `GameState`
+### {{ renderMember(type='string', name='GameState') }} 
 
 :   Shows the current game state. Values: CHARSELECT, INGAME, PRECHARSELECT, UNKNOWN
 
-### [int64][int64] `HWND`
+### {{ renderMember(type='int64', name='HWND') }} 
 
 :   Window handle.
 
-### [bool][bool] `IsDefaultUILoaded`
+### {{ renderMember(type='bool', name='IsDefaultUILoaded') }} 
 
 :   returns a bool true or false if the "Default" UI skin is the one loaded
 
-### [string][string] `LastCommand`
+### {{ renderMember(type='string', name='LastCommand') }} 
 
 :   Last command entered
 
-### [window][window] `LastMouseOver`
+### {{ renderMember(type='window', name='LastMouseOver') }} 
 
 :   Returns the last window you moused over
 
-### [string][string] `LastTell`
+### {{ renderMember(type='string', name='LastTell') }} 
 
 :   Name of last person to send you a tell
 
-### [bool][bool] `LayoutCopyInProgress`
+### {{ renderMember(type='bool', name='LayoutCopyInProgress') }} 
 
 :   Returns TRUE if a layoutcopy is in progress and FALSE if not.
 
-### [bool][bool] `LClickedObject`
+### {{ renderMember(type='bool', name='LClickedObject') }} 
 
 :   Returns TRUE if an object has been left clicked
 
-### [string][string] `LoginName`
+### {{ renderMember(type='string', name='LoginName') }} 
 
 :   Your station name
 
-### [int][int] `MouseX`
+### {{ renderMember(type='int', name='MouseX') }} 
 
 :   Mouse's X location
 
-### [int][int] `MouseY`
+### {{ renderMember(type='int', name='MouseY') }} 
 
 :   Mouse's Y location
 
-### [string][string] `Path`
+### {{ renderMember(type='string', name='Path') }} 
 
 :   Path to the Everquest folder
 
-### [int][int] `PID`
+### {{ renderMember(type='int', name='PID') }} 
 
 :   Your current (Process ID)
 
-### [int][int] `Ping`
+### {{ renderMember(type='int', name='Ping') }} 
 
 :   Your current ping
 
-### [int][int] `Running`
+### {{ renderMember(type='int', name='Running') }} 
 
 :   Running time of current MQ2 session, in milliseconds
 
-### [int][int] `ScreenMode`
+### {{ renderMember(type='int', name='ScreenMode') }} 
 
 :   Returns the screenmode as an integer, 2 is Normal and 3 is No Windows
 
-### [string][string] `Server`
+### {{ renderMember(type='string', name='Server') }} 
 
 :   Full name of your server
 
-### [int][int] `PPriority`
+### {{ renderMember(type='int', name='PPriority') }} 
 
 :   Returns the processor priority that Everquest is set to. Values: UNKNOWN, LOW, BELOW NORMAL, NORMAL, ABOVE NORMAL, HIGH, REALTIME
 
-### [bool][bool] `ValidLoc[coorrdinates]`
+### {{ renderMember(type='bool', name='ValidLoc', params='coorrdinates') }} 
 
 :   Returns true if the given coordinates are valid.
 
-### [int][int] `ViewportX`
+### {{ renderMember(type='int', name='ViewportX') }} 
 
 :   EverQuest viewport upper left (X) position
 
-### [int][int] `ViewportXCenter`
+### {{ renderMember(type='int', name='ViewportXCenter') }} 
 
 :   EverQuest viewport center (X) position
 
-### [int][int] `ViewportXMax`
+### {{ renderMember(type='int', name='ViewportXMax') }} 
 
 :   EverQuest viewport lower right (X) position
 
-### [int][int] `ViewportY`
+### {{ renderMember(type='int', name='ViewportY') }} 
 
 :   EverQuest viewport upper left (Y) position
 
-### [int][int] `ViewportYCenter`
+### {{ renderMember(type='int', name='ViewportYCenter') }} 
 
 :   EverQuest viewport center (Y) position
 
-### [int][int] `ViewportYMax`
+### {{ renderMember(type='int', name='ViewportYMax') }} 
 
 :   EverQuest viewport lower right (Y) position
 
-### [string][string] `WinTitle`
+### {{ renderMember(type='string', name='WinTitle') }} 
 
 :   Titlebar text of the Everquest window.
 

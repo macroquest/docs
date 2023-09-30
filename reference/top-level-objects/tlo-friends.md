@@ -8,22 +8,22 @@ Grants access to your friends dlist.
 
 ## Forms
 
-### [friends][friends] `Friends`
+### {{ renderMember(type='friends', name='Friends') }} 
 
 :   Access friends data
 
 
 ## Associated DataTypes
 
-### `friends` Type
+### {{ renderMember(name='friends') }} 
 
 ## Members
 
-### [bool][bool] `Friend[name]`
+### {{ renderMember(type='bool', name='Friend', params='name') }} 
 
 :   Returns TRUE if _name_ is on your friend list
 
-### [string][string] `Friend[#]`
+### {{ renderMember(type='string', name='Friend', params='#') }} 
 
 :   Returns the name of friend list member _\#_
 

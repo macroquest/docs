@@ -8,35 +8,35 @@ Data related to a particular skill
 
 ## Members
 
-### [bool][bool] `Activated`
+### {{ renderMember(type='bool', name='Activated') }} 
 
 :   Returns TRUE if the skill has been activated
 
-### [bool][bool] `AltTimer`
+### {{ renderMember(type='bool', name='AltTimer') }} 
 
 :   Returns TRUE if the skill uses the kick/bash/slam/backstab/frenzy timer
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   Skill number
 
-### [int][int] `MinLevel`
+### {{ renderMember(type='int', name='MinLevel') }} 
 
 :   Minimum level for your class
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Name of the skill
 
-### [int][int] `ReuseTime`
+### {{ renderMember(type='int', name='ReuseTime') }} 
 
 :   Reuse timer _(what number format? ticks, seconds, deciseconds?)_
 
-### [int][int] `SkillCap`
+### {{ renderMember(type='int', name='SkillCap') }} 
 
 :   Skill cap based on your current level and class.
 
-### [int][int] `StartingSkill`
+### {{ renderMember(type='int', name='StartingSkill') }} 
 
 :   Base skill level for your class
 

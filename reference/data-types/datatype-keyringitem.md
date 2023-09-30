@@ -8,7 +8,7 @@ This datatype deals strictly with information items on a keyring.
 
 ## Members
 
-### [int][int] `Index`
+### {{ renderMember(type='int', name='Index') }} 
 
 :   Where on the keyring list
 
@@ -16,7 +16,7 @@ This datatype deals strictly with information items on a keyring.
 
 :   The item on the keyring
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   name of the keyring item
 

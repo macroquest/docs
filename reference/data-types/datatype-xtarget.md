@@ -8,19 +8,19 @@ Contains the data related to your extended target list
 
 ## Members
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   ID of specified XTarget
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   Name of specified XTarget
 
-### [int][int] `PctAggro`
+### {{ renderMember(type='int', name='PctAggro') }} 
 
 :   PctAggro of specified XTarget
 
-### [string][string] `TargetType`
+### {{ renderMember(type='string', name='TargetType') }} 
 
 :   Extended target type (see below)
 

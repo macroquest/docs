@@ -8,11 +8,11 @@ Contains data about spawn body types
 
 ## Members
 
-### [int][int] `ID`
+### {{ renderMember(type='int', name='ID') }} 
 
 :   The ID of the body type
 
-### [string][string] `Name`
+### {{ renderMember(type='string', name='Name') }} 
 
 :   The full name of the body type
 

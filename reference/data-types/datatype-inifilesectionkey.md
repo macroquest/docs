@@ -8,23 +8,23 @@ This is the type for the referenced key in a specific section of an ini file.  T
 
 ## Members
 
-### [int][int] `Count`
+### {{ renderMember(type='int', name='Count') }} 
 
 :   How many keys matching the Key[] index exist.
 
-### [bool][bool] `Exists`
+### {{ renderMember(type='bool', name='Exists') }} 
 
 :   Whether a specific key exists.
 
-### [string][string] `Value`
+### {{ renderMember(type='string', name='Value') }} 
 
 :   The value for a specific key.  Accepts an Index to allow for returning a value if the key does not exist
 
-### [string][string] `KeyAtIndex`
+### {{ renderMember(type='string', name='KeyAtIndex') }} 
 
 :   The name of the key at the specified index
 
-### [string][string] `ValueAtIndex`
+### {{ renderMember(type='string', name='ValueAtIndex') }} 
 
 :   The value of the entry at the specified index
 

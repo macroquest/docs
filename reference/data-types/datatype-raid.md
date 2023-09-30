@@ -8,59 +8,59 @@ Contains data on the current raid
 
 ## Members
 
-### [float][float] `AverageLevel`
+### {{ renderMember(type='float', name='AverageLevel') }} 
 
 :   Average level of raid members (more accurate than in the window)
 
-### [bool][bool] `Invited`
+### {{ renderMember(type='bool', name='Invited') }} 
 
 :   Have I been invited to the raid?
 
-### [raidmember][raidmember] `Leader`
+### {{ renderMember(type='raidmember', name='Leader') }} 
 
 :   Raid leader
 
-### [bool][bool] `Locked`
+### {{ renderMember(type='bool', name='Locked') }} 
 
 :   Returns TRUE if the raid is locked
 
-### [string][string] `Looter[#]`
+### {{ renderMember(type='string', name='Looter', params='#') }} 
 
 :   Specified looter name by number
 
-### [int][int] `Looters`
+### {{ renderMember(type='int', name='Looters') }} 
 
 :   Number of specified looters
 
-### [int][int] `LootType`
+### {{ renderMember(type='int', name='LootType') }} 
 
 :   <p>Loot type number:</p><ul><li>1 = Leader</li><li>2 = Leader & GroupLeader</li><li>3 = Leader & Assignments</li></ul>
 
-### [raidmember][raidmember] `MainAssist`
+### {{ renderMember(type='raidmember', name='MainAssist') }} 
 
 :   Raid main assist
 
-### [raidmember][raidmember] `MasterLooter`
+### {{ renderMember(type='raidmember', name='MasterLooter') }} 
 
 :   Raid Master Looter
 
-### [raidmember][raidmember] `Member[N]`
+### {{ renderMember(type='raidmember', name='Member', params='N') }} 
 
 :   Raid member by number _N_
 
-### [raidmember][raidmember] `Member[name]`
+### {{ renderMember(type='raidmember', name='Member', params='name') }} 
 
 :   Raid member by _name_.
 
-### [int][int] `Members`
+### {{ renderMember(type='int', name='Members') }} 
 
 :   Total number of raid members
 
-### [raidmember][raidmember] `Target`
+### {{ renderMember(type='raidmember', name='Target') }} 
 
 :   Raid target (clicked in raid window)
 
-### [int][int] `TotalLevels`
+### {{ renderMember(type='int', name='TotalLevels') }} 
 
 :   Sum of all raid member's levels
 

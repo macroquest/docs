@@ -8,45 +8,45 @@ Represents a spell effect on an item.
 
 ## Members
 
-### [int][int] `CastTime`
+### {{ renderMember(type='int', name='CastTime') }} 
 
 :   Spell cast time.
 
-### [int][int] `EffectiveCasterLevel`
+### {{ renderMember(type='int', name='EffectiveCasterLevel') }} 
 
 :   Effective level that is used to cast the spell.
 
-### [int][int] `EffectType`
+### {{ renderMember(type='int', name='EffectType') }} 
 
 :   The type of item spell effect.
 
-### [int][int] `MaxCharges`
+### {{ renderMember(type='int', name='MaxCharges') }} 
 
 :   The maximum number of charges supported by this spell.
 
 | [_string_](../data-types/datatype-string.md) | OverrideDescription | Overrides the normal spell description string, if set.
 | [_string_](../data-types/datatype-string.md) | OverrideName | Overrides the normal spell name string, if set.
-### [int][int] `ProcRate`
+### {{ renderMember(type='int', name='ProcRate') }} 
 
 :   Combat effect proc rate.
 
-### [int][int] `RecastType`
+### {{ renderMember(type='int', name='RecastType') }} 
 
 :   Recast type of the spell.
 
-### [int][int] `RequiredLevel`
+### {{ renderMember(type='int', name='RequiredLevel') }} 
 
 :   Level required for the spell to be usable.
 
-### [spell][spell] `Spell`
+### {{ renderMember(type='spell', name='Spell') }} 
 
 :   The spell.
 
-### [int][int] `SpellID`
+### {{ renderMember(type='int', name='SpellID') }} 
 
 :   ID of the Spell.
 
-### [int][int] `TimerID`
+### {{ renderMember(type='int', name='TimerID') }} 
 
 :   Timer ID of the spell.
 
