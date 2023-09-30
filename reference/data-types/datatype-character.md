@@ -101,7 +101,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   
 
-### [altability][altability] `AltAbility [#|name]`
+### {{ renderMember(type='altability', name='AltAbility', params='#|name') }}
 
 :   Returns the total number of points you have spent in ability # or name
 
@@ -165,7 +165,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   
 
-### [item][item] `Bank [#]`
+### {{ renderMember(type='item', name='Bank') }}
 
 :   Item in this bankslot #
 
