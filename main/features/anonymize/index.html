@@ -12334,15 +12334,27 @@ The signature is such that it satisfies 2 things: can be linked via C-style link
  - asterisk
    - replaces the middle characters in the name with asterisks
    - <code>Myname</code> becomes <code>M****e</code>
- - class
-   - replaces the name with <code>"[${{Spawn[pc {0}].Level}}] ${{Spawn[pc {0}].Race}} ${{Spawn[pc {0}].Class}} ${{Spawn[pc {0}].Type}}"</code>
-   - note that this assumes a pc
- - me
-   - replaces the name with <code>"[${Me.Level}] ${Me.Race} ${Me.Class} ${Me.Type}"</code>
-   - only appropriate when anonymizing the client's character
- - where
-   - this keyword allows completely generic anonymization
-   - the string will be processed as macro text <em>at the time of replacement</em></p>
+ - class</p>
+<ul>
+<li>
+<p>replaces the name with <code>"[${{Spawn[pc {0}].Level}}] ${{Spawn[pc {0}].Race}} ${{Spawn[pc {0}].Class}} ${{Spawn[pc {0}].Type}}"</code></p>
+</li>
+<li>
+<p>note that this assumes a pc</p>
+</li>
+<li>
+<p>me</p>
+</li>
+<li>
+<p>replaces the name with <code>"[${Me.Level}] ${Me.Race} ${Me.Class} ${Me.Type}"</code></p>
+</li>
+<li>
+<p>only appropriate when anonymizing the client's character</p>
+</li>
+<li>where</li>
+<li>this keyword allows completely generic anonymization</li>
+<li>the string will be processed as macro text <em>at the time of replacement</em></li>
+</ul>
 
 
 
