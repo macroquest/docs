@@ -175,6 +175,7 @@ Print how many humans you have left to kill for the "**I'm a People Person!**" a
 | Name           | Action                 |
 | -------------- | ---------------------- |
 | **Inspect**    | Opens the achievement display window for this achievement |
+
 [int]: datatype-int.md
 [string]: datatype-string.md
 [achievementobj]: datatype-achievementobj.md
