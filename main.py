@@ -5,4 +5,4 @@ def define_env(env):
       type_str = f"[{type}][{type}]" if type else ""
       params_str = f"[{params}]" if params else ""
 
-      return f"{type_str} `{name}` {{ #{name} data-toc-label='{name}{params_str}' }}"
+      return f"{type_str} `{name}` {{ #{name}{params_str} data-toc-label='{name}{params_str}' }}"
