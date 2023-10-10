@@ -6,6 +6,9 @@ tags:
 
 Object used to determine if a match was made to argument in the given set of values.
 
+!!! warning
+    Values must be single words.  Quoted strings do not work, as the parser will drop the quotes and uses spaces as a delimiter.
+
 ## Forms
 
 [_int_](../data-types/datatype-int.md) **Select**[_argument_,_value1_[,_value2_,...]]
