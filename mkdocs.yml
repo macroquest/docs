@@ -442,6 +442,7 @@ nav:
     - Illusion: reference/top-level-objects/tlo-illusion.md
     - Ini: reference/top-level-objects/tlo-ini.md
     - Int: reference/top-level-objects/tlo-int.md
+    - Inventory: reference/top-level-objects/tlo-inventory.md
     - ItemTarget: reference/top-level-objects/tlo-itemtarget.md
     - LastSpawn: reference/top-level-objects/tlo-lastspawn.md
     - LineOfSight: reference/top-level-objects/tlo-lineofsight.md
@@ -483,6 +484,7 @@ nav:
     - augtype: reference/data-types/datatype-augtype.md
     - auratype: reference/data-types/datatype-auratype.md
     - bandolier: reference/data-types/datatype-bandolier.md
+    - bank: reference/data-types/datatype-bank.md
     - body: reference/data-types/datatype-body.md
     - bool: reference/data-types/datatype-bool.md
     - buff: reference/data-types/datatype-buff.md
@@ -513,6 +515,7 @@ nav:
     - inifilesectionkey: reference/data-types/datatype-inifilesectionkey.md
     - int: reference/data-types/datatype-int.md
     - int64: reference/data-types/datatype-int64.md
+    - inventory: reference/data-types/datatype-inventory.md
     - invslot: reference/data-types/datatype-invslot.md
     - item: reference/data-types/datatype-item.md
     - itemspell: reference/data-types/datatype-itemspell.md
