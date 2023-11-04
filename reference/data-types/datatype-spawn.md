@@ -416,9 +416,9 @@ Represents an in-game spawn.
 
 :   Percent hit points
 
-### {{ renderMember(name='PctMana') }} 
+### {{ renderMember(type='int', name='PctMana') }} 
 
-:   
+:   Current mana as a %
 
 ### {{ renderMember(type='spawn', name='Pet') }} 
 
