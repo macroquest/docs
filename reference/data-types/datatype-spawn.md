@@ -412,9 +412,13 @@ Represents an in-game spawn.
 
 :   Owner, if mercenary
 
+### {{ renderMember(type='int', name='PctEndurance') }}
+
+: Current endurance as a %
+
 ### {{ renderMember(type='int64', name='PctHPs') }} 
 
-:   Percent hit points
+:   Current hitpoins as a %
 
 ### {{ renderMember(name='PctMana') }} 
 
