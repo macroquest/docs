@@ -420,9 +420,9 @@ Represents an in-game spawn.
 
 :   Current hitpoins as a %
 
-### {{ renderMember(name='PctMana') }} 
+### {{ renderMember(type='int', name='PctMana') }} 
 
-:   
+:   Current mana as a %
 
 ### {{ renderMember(type='spawn', name='Pet') }} 
 
