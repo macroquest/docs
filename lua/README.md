@@ -209,7 +209,7 @@ anim = mq.FindTextureAnimation('A_SpellIcons')
 -- once you know the index of the icon inside the texture, set the cell
 anim:SetTextureCell(spell.SpellIcon())
 -- render the texture at the cell
-ImGui.RenderTextureAnimation(anim)
+ImGui.DrawTextureAnimation(anim)
 ```
 
 ### Events and Binds
