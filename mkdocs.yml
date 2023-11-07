@@ -443,6 +443,7 @@ nav:
     - Ini: reference/top-level-objects/tlo-ini.md
     - Int: reference/top-level-objects/tlo-int.md
     - Inventory: reference/top-level-objects/tlo-inventory.md
+    - InvSlot: reference/top-level-objects/tlo-invslot.md
     - ItemTarget: reference/top-level-objects/tlo-itemtarget.md
     - LastSpawn: reference/top-level-objects/tlo-lastspawn.md
     - LineOfSight: reference/top-level-objects/tlo-lineofsight.md
