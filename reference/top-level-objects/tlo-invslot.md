@@ -20,9 +20,4 @@ Object used to get information on a specific inventory slot.
 
 ## Examples
 
-```
-/lua parse mq.TLO.InvSlot(1).Name()
-leftear
-```
-
-See the datatype link for more information
+See the datatype link for examples
