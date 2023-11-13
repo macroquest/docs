@@ -1,4 +1,4 @@
-# How to user Actors in C++
+# How to use Actors
 
 Actors are a subsystem added to the MQ ecosystem to allow for different clients and applications to communicate with one another simply. The underlying tech for local (same computer) communication is Windows Named Pipes, and is very fast -- essentially no different than just using shared memory. The tech for remote communication is still WIP and is currently planned to be ASIO-based TCP communication with a UDP discovery mechanism and the ability to specify peers.
 
