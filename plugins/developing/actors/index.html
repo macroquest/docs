@@ -81,7 +81,7 @@
     <div data-md-component="skip">
       
         
-        <a href="#how-to-user-actors-in-c" class="md-skip">
+        <a href="#how-to-use-actors" class="md-skip">
           Skip to content
         </a>
       
@@ -12329,7 +12329,7 @@
   
 
 
-<h1 id="how-to-user-actors-in-c">How to user Actors in C++<a class="headerlink" href="#how-to-user-actors-in-c" title="Permanent link">&para;</a></h1>
+<h1 id="how-to-use-actors">How to use Actors<a class="headerlink" href="#how-to-use-actors" title="Permanent link">&para;</a></h1>
 <p>Actors are a subsystem added to the MQ ecosystem to allow for different clients and applications to communicate with one another simply. The underlying tech for local (same computer) communication is Windows Named Pipes, and is very fast -- essentially no different than just using shared memory. The tech for remote communication is still WIP and is currently planned to be ASIO-based TCP communication with a UDP discovery mechanism and the ability to specify peers.</p>
 <p>The entire system hinges on the launcher (MacroQuest.exe) being present as the central routing mechanism. If the launcher goes down, then all routing will stop and the system will become inoperable.</p>
 <p>While messaging can use any serialization for internal mailbox communication, protobuf has been utilized to wrap these messages in routing packages to allow for system-independent communication, implicit versioning, and efficient marshalling/unmarshalling. When selecting a serialization strategy, be aware that there are protobuf examples in code and you are probably already building the library.</p>
