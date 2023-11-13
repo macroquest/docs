@@ -36,6 +36,7 @@ nav:
     - Frame Limiter: main/features/framelimiter.md
     - NamingSpawn: main/features/namingspawn.md
     - Parser Walkthrough: main/features/parser.md
+    - Actors: main/features/actors.md
 
   - MacroQuest Launcher: main/macroquest-launcher.md
 
