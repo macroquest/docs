@@ -15,9 +15,9 @@ The point of using this technology is to allow for consistent and simple communi
 - **Dropbox**: This is the sender of messages. Each actor again has exactly one, and this provides automatic return address composition as well as an interface to the application's central Post Office.
 - **Post Office**: The central authority for message routing in a single application. Each independent application will need to set one post office up for actors in that application to register mailboxes. This will maintain ownership of the mailboxes and dropboxes and route all messages received by the application.
 - **Address**: A specifier for routing a message. On the sending side, this does not have to be unique -- one could address a message to all applications that have a certain mailbox, for instance. There are two levels of addressing: mailbox, and postoffice. On the receiving side, the post office must be fully qualified with one of three strategies:
-  - By name: You can specify a unique name for an application, which is useful for external application naming. There is one name-specified application that should always be present: `launcher` -- the MQ launcher
-  - By pid: You can use the PID of the application (not very useful to the sender as it is not deterministic)
-  - By EQ information: The most available of the following three strings: account, server, character. All three of these strings present means that the address must be unique, and this type of addressing replaces name as a convenience mechanism.
+    - By name: You can specify a unique name for an application, which is useful for external application naming. There is one name-specified application that should always be present: `launcher` -- the MQ launcher
+    - By pid: You can use the PID of the application (not very useful to the sender as it is not deterministic)
+    - By EQ information: The most available of the following three strings: account, server, character. All three of these strings present means that the address must be unique, and this type of addressing replaces name as a convenience mechanism.
 - **Envelope**: This is a protobuf spec that all messages that need to be routed to actors will get wrapped in automatically (as a function of using the Dropbox) so the routing system can ensure it ends up at the correct post offices and mailboxes.
 
 ## In Plugins
