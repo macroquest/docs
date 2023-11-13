@@ -341,11 +341,6 @@
          <changefreq>daily</changefreq>
     </url>
     <url>
-         <loc>https://docs.macroquest.org/main/features/actors/</loc>
-         <lastmod>2023-11-13</lastmod>
-         <changefreq>daily</changefreq>
-    </url>
-    <url>
          <loc>https://docs.macroquest.org/main/features/anonymize/</loc>
          <lastmod>2023-11-13</lastmod>
          <changefreq>daily</changefreq>
@@ -812,6 +807,11 @@
     </url>
     <url>
          <loc>https://docs.macroquest.org/plugins/developing/</loc>
+         <lastmod>2023-11-13</lastmod>
+         <changefreq>daily</changefreq>
+    </url>
+    <url>
+         <loc>https://docs.macroquest.org/plugins/developing/actors/</loc>
          <lastmod>2023-11-13</lastmod>
          <changefreq>daily</changefreq>
     </url>
