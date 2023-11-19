@@ -28,9 +28,9 @@ Contains the properties that describe an item.
 
 :   Attack value on item
 
-### {{ renderMember(type='bool', name='Attuneable') }} 
+### {{ renderMember(type='bool', name='Attunable') }} 
 
-:   Attuneable?
+:   Attunable?
 
 ### {{ renderMember(type='int', name='AugRestrictions') }} 
 
