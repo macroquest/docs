@@ -32,6 +32,13 @@ actors.send({character='charname', mailbox='targetmailbox'}, payload, function (
 
 There are some things to notice about these functions that are essential for understanding how actors function. These will be addressed in the following sections: [What Goes in a Message](#what-goes-in-a-message), [Addressing](#addressing), [Message Handler](#message-handler), and [Response Callbacks](#response-callbacks)
 
+## The Actor
+
+The actor is the central component of this system. It's what you use to send messages, and it's where the message handler lives. The object that the register function returns is technically a dropbox, so it will provide the methods that a dropbox will provide:
+
+- `send`: the main method for sending from an actor. The overloads are the same as the anonymous `actors.send` methods.
+- `unregister`: a method to unregister the actor if you want to remove it early.
+
 ## What Goes in a Message
 
 Before we get to the register functions and the message handler, let's look at what a message is. In general, a message can contain any native lua primitive or a lua table. Different types can be added to the serialization in the plugin if they are required, so please open feature requests if there are types that need to be added. **MacroQuest datatypes can not be serialized because they are localized to the eqgame client.** In the example above, the payload is the message content, and is simple a table with a single named string entry. This could be arbitrarily complex and nested tables will serialize as well, any type in the table that can't be serialized will simply be ignored.
@@ -43,7 +50,7 @@ Next, we want to see what goes into an address. An address in lua can also be re
 ```lua
 {
     mailbox='', -- the target mailbox name for an actor
-    absolute_mailbox=false, -- if you want to provide the fully-qualified mailbox name, set this to true
+    absolute_mailbox=false, -- if you want to provide the fully-qualified mailbox name (which will look like 'plugin:mailbox' or 'lua:script:mailbox'), set this to true
     script='', -- the target script for an actor, which is a qualifier to mailbox names to gurantee uniqueness
     pid=0, -- an unsigned integer value for Windows PID. This won't likely be available, but it could be used to direct a message to a specific client
     name='', -- a name of a standalone actor client, like 'launcher' -- used to direct messages to external applications
