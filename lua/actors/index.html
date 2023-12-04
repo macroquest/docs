@@ -5933,6 +5933,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting it All Together
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12840,6 +12849,15 @@
   
 </li>
       
+        <li class="md-nav__item">
+  <a href="#putting-it-all-together" class="md-nav__link">
+    <span class="md-ellipsis">
+      Putting it All Together
+    </span>
+  </a>
+  
+</li>
+      
     </ul>
   
 </nav>
@@ -12939,6 +12957,132 @@
 <span class="n">actors</span><span class="p">.</span><span class="n">ResponseStatus</span><span class="p">.</span><span class="n">AmbiguousRecipient</span> <span class="o">=</span> <span class="o">-</span><span class="mi">4</span>
 </code></pre></div>
 <p>Of these, only the last two are something that you would have any control over in lua. <code>RoutingFailed</code> would happen if there is no recipient at the given <a href="#addressing">address</a> specified (like if you tried to address a specific character that was no longer logged in). <code>AmbiguousRecipient</code> would happen if there was too much ambiguity in the address (like if you addressed an entire server). This is important because these are RPC-style messages, and the requirement is that exactly 1 recipient will receive the message, or we wouldn't be able to provide the guarantee that you will get a response. If you need to send a response to a multi-recipient message, then just use <code>message.send</code> to do so, and handle the responses in the message handler.</p>
+<h2 id="putting-it-all-together">Putting it All Together<a class="headerlink" href="#putting-it-all-together" title="Permanent link">&para;</a></h2>
+<p>In this example we demonstrate how to use Actors to communicate across clients to beg for buffs.  This script can be found alongside other examples in the MacroQuest Git repository <a href="https://github.com/macroquest/macroquest/tree/master/src/plugins/lua/lua/examples">here</a>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">actors</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;actors&#39;</span><span class="p">)</span>
+
+<span class="c1">-- some example buffs, for demonstration purposes</span>
+<span class="kd">local</span> <span class="n">mybuffs</span> <span class="o">=</span> <span class="p">{</span>
+    <span class="n">CLR</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Aegolism&#39;</span><span class="p">},</span>
+    <span class="n">DRU</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Protection of the Glades&#39;</span><span class="p">,</span> <span class="s1">&#39;Shield of Blades&#39;</span><span class="p">,</span> <span class="s1">&#39;Spirit of Wolf&#39;</span><span class="p">},</span>
+    <span class="n">SHM</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Riotous Health&#39;</span><span class="p">,</span> <span class="s1">&#39;Focus of Spirit&#39;</span><span class="p">,</span> <span class="s1">&#39;Spirit of Wolf&#39;</span><span class="p">},</span>
+    <span class="n">ENC</span><span class="o">=</span><span class="p">{</span><span class="s1">&#39;Speed of the Shissar&#39;</span><span class="p">}</span>
+<span class="p">}</span>
+<span class="n">mybuffs</span> <span class="o">=</span> <span class="n">mybuffs</span><span class="p">[</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">Class</span><span class="p">.</span><span class="n">ShortName</span><span class="p">()]</span>
+
+<span class="kd">local</span> <span class="n">buff_queue</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">dobuffs</span><span class="p">()</span>
+    <span class="kr">for</span> <span class="n">name</span><span class="p">,</span> <span class="n">buff</span> <span class="kr">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">buff_queue</span><span class="p">)</span> <span class="kr">do</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s1">&#39;Casting %s on %s...&#39;</span><span class="p">,</span> <span class="n">buff</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+        <span class="n">mq</span><span class="p">.</span><span class="n">cmdf</span><span class="p">(</span><span class="s1">&#39;/target %s&#39;</span><span class="p">,</span> <span class="n">name</span><span class="p">)</span>
+        <span class="n">mq</span><span class="p">.</span><span class="n">delay</span><span class="p">(</span><span class="mi">5000</span><span class="p">,</span> <span class="kr">function</span><span class="p">()</span> <span class="kr">return</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Target</span><span class="p">.</span><span class="n">CleanName</span><span class="p">()</span> <span class="o">==</span> <span class="n">name</span> <span class="kr">end</span><span class="p">)</span>
+        <span class="kr">if</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Target</span><span class="p">.</span><span class="n">CleanName</span><span class="p">()</span> <span class="o">==</span> <span class="n">name</span> <span class="kr">then</span>
+            <span class="n">mq</span><span class="p">.</span><span class="n">cmdf</span><span class="p">(</span><span class="s1">&#39;/cast &quot;%s&quot;&#39;</span><span class="p">,</span> <span class="n">buff</span><span class="p">)</span>
+        <span class="kr">end</span>
+    <span class="kr">end</span>
+
+    <span class="n">buff_queue</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="kr">end</span>
+
+<span class="c1">-- store a list of buffs and who can cast them</span>
+<span class="kd">local</span> <span class="n">buffers</span> <span class="o">=</span> <span class="p">{}</span>
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">addbuffer</span><span class="p">(</span><span class="n">buff</span><span class="p">,</span> <span class="n">sender</span><span class="p">)</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s1">&#39;Received buffer %s casting %s&#39;</span><span class="p">,</span> <span class="n">sender</span><span class="p">.</span><span class="n">character</span><span class="p">,</span> <span class="n">buff</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="n">buff</span> <span class="ow">and</span> <span class="n">sender</span> <span class="kr">then</span>
+        <span class="kr">if</span> <span class="ow">not</span> <span class="n">buffers</span><span class="p">[</span><span class="n">buff</span><span class="p">]</span> <span class="kr">then</span> <span class="n">buffers</span><span class="p">[</span><span class="n">buff</span><span class="p">]</span> <span class="o">=</span> <span class="p">{}</span> <span class="kr">end</span>
+
+        <span class="kr">if</span> <span class="ow">not</span> <span class="n">buffers</span><span class="p">[</span><span class="n">buff</span><span class="p">][</span><span class="n">sender</span><span class="p">]</span> <span class="kr">then</span>
+            <span class="n">buffers</span><span class="p">[</span><span class="n">buff</span><span class="p">][</span><span class="n">sender</span><span class="p">]</span> <span class="o">=</span> <span class="kc">true</span>
+        <span class="kr">end</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="c1">-- whenever a buffer disconnects, handle that</span>
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">removebuffer</span><span class="p">(</span><span class="n">sender</span><span class="p">)</span>
+    <span class="kr">for</span> <span class="n">buff</span><span class="p">,</span> <span class="n">_</span> <span class="kr">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">buffers</span><span class="p">)</span> <span class="kr">do</span>
+        <span class="n">buffers</span><span class="p">[</span><span class="n">buff</span><span class="p">][</span><span class="n">sender</span><span class="p">]</span> <span class="o">=</span> <span class="kc">nil</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="c1">-- this is then message handler, so handle all messages we expect</span>
+<span class="c1">-- we are guaranteed that the only messages here we receive are</span>
+<span class="c1">-- ones that we send, so assume the structure of the message</span>
+<span class="kd">local</span> <span class="n">actor</span> <span class="o">=</span> <span class="n">actors</span><span class="p">.</span><span class="n">register</span><span class="p">(</span><span class="kr">function</span> <span class="p">(</span><span class="n">message</span><span class="p">)</span>
+    <span class="kr">if</span> <span class="n">message</span><span class="p">.</span><span class="n">content</span><span class="p">.</span><span class="n">id</span> <span class="o">==</span> <span class="s1">&#39;buffs&#39;</span> <span class="ow">and</span> <span class="n">message</span><span class="p">.</span><span class="n">sender</span> <span class="ow">and</span> <span class="n">mybuffs</span> <span class="kr">then</span>
+        <span class="c1">-- request to send a list of buffs I can cast</span>
+        <span class="kr">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">buff</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">mybuffs</span><span class="p">)</span> <span class="kr">do</span>
+            <span class="n">message</span><span class="p">:</span><span class="n">send</span><span class="p">({</span><span class="n">id</span><span class="o">=</span><span class="s1">&#39;announce&#39;</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="n">buff</span> <span class="p">})</span>
+        <span class="kr">end</span>
+    <span class="kr">elseif</span> <span class="n">message</span><span class="p">.</span><span class="n">content</span><span class="p">.</span><span class="n">id</span> <span class="o">==</span> <span class="s1">&#39;beg&#39;</span> <span class="kr">then</span>
+        <span class="c1">-- request for a buff, send back a reply to indicate we are a valid buffer</span>
+        <span class="n">message</span><span class="p">:</span><span class="n">reply</span><span class="p">(</span><span class="mi">0</span><span class="p">,</span> <span class="p">{})</span>
+        <span class="n">buff_queue</span><span class="p">[</span><span class="n">message</span><span class="p">.</span><span class="n">sender</span><span class="p">.</span><span class="n">character</span><span class="p">]</span> <span class="o">=</span> <span class="n">message</span><span class="p">.</span><span class="n">content</span><span class="p">.</span><span class="n">buff</span>
+    <span class="kr">elseif</span> <span class="n">message</span><span class="p">.</span><span class="n">content</span><span class="p">.</span><span class="n">id</span> <span class="o">==</span> <span class="s1">&#39;announce&#39;</span> <span class="kr">then</span>
+        <span class="c1">-- a buffer has announced themselves, add them to the list</span>
+        <span class="n">addbuffer</span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="n">content</span><span class="p">.</span><span class="n">buff</span><span class="p">,</span> <span class="n">message</span><span class="p">.</span><span class="n">sender</span><span class="p">)</span>
+    <span class="kr">elseif</span> <span class="n">message</span><span class="p">.</span><span class="n">content</span><span class="p">.</span><span class="n">id</span> <span class="o">==</span> <span class="s1">&#39;drop&#39;</span> <span class="kr">then</span>
+        <span class="c1">-- a buffer has dropped, remove them from the list</span>
+        <span class="n">removebuffer</span><span class="p">(</span><span class="n">message</span><span class="p">.</span><span class="n">sender</span><span class="p">)</span>
+    <span class="kr">end</span>
+<span class="kr">end</span><span class="p">)</span>
+
+<span class="c1">-- buffer login, notify all beggars of available buffs</span>
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">bufferlogin</span><span class="p">()</span>
+    <span class="kr">for</span> <span class="n">_</span><span class="p">,</span> <span class="n">buff</span> <span class="kr">in</span> <span class="nb">ipairs</span><span class="p">(</span><span class="n">mybuffs</span><span class="p">)</span> <span class="kr">do</span>
+        <span class="c1">-- need to specify the actor here because we&#39;re sending to beggars</span>
+        <span class="c1">-- from the buffer actor but leave it loose so that _all_ beggars</span>
+        <span class="c1">-- receive this message</span>
+        <span class="n">printf</span><span class="p">(</span><span class="s1">&#39;Registering %s on beggars&#39;</span><span class="p">,</span> <span class="n">buff</span><span class="p">)</span>
+        <span class="n">actor</span><span class="p">:</span><span class="n">send</span><span class="p">({</span><span class="n">id</span><span class="o">=</span><span class="s1">&#39;announce&#39;</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="n">buff</span><span class="p">})</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="c1">-- beggar login, request buffer buffs</span>
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">beggarlogin</span><span class="p">()</span>
+    <span class="n">actor</span><span class="p">:</span><span class="n">send</span><span class="p">({</span><span class="n">id</span><span class="o">=</span><span class="s1">&#39;buffs&#39;</span><span class="p">})</span>
+<span class="kr">end</span>
+
+<span class="c1">-- beggar buff request, choose from local list of buffers</span>
+<span class="kd">local</span> <span class="kr">function</span> <span class="nf">checkbuffs</span><span class="p">()</span>
+    <span class="kr">for</span> <span class="n">buff</span><span class="p">,</span> <span class="n">senders</span> <span class="kr">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">buffers</span><span class="p">)</span> <span class="kr">do</span>
+        <span class="kr">if</span> <span class="ow">not</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">Buff</span><span class="p">(</span><span class="n">buff</span><span class="p">)()</span> <span class="kr">then</span>
+            <span class="c1">-- get a random buffer that can cast the buff we want</span>
+            <span class="kd">local</span> <span class="n">candidates</span> <span class="o">=</span> <span class="p">{}</span>
+            <span class="kr">for</span> <span class="n">buffer</span><span class="p">,</span> <span class="n">_</span> <span class="kr">in</span> <span class="nb">pairs</span><span class="p">(</span><span class="n">senders</span><span class="p">)</span> <span class="kr">do</span>
+                <span class="nb">table.insert</span><span class="p">(</span><span class="n">candidates</span><span class="p">,</span> <span class="n">buffer</span><span class="p">)</span>
+            <span class="kr">end</span>
+
+            <span class="c1">-- once we have the random buffer, ask them to cast the buff</span>
+            <span class="kd">local</span> <span class="n">random_buffer</span> <span class="o">=</span> <span class="n">candidates</span><span class="p">[</span><span class="nb">math.random</span><span class="p">(</span><span class="o">#</span><span class="n">candidates</span><span class="p">)]</span>
+            <span class="kr">if</span> <span class="n">random_buffer</span> <span class="kr">then</span>
+                <span class="n">printf</span><span class="p">(</span><span class="s1">&#39;Requesting %s from %s...&#39;</span><span class="p">,</span> <span class="n">buff</span><span class="p">,</span> <span class="n">random_buffer</span><span class="p">.</span><span class="n">character</span><span class="p">)</span>
+                <span class="n">actor</span><span class="p">:</span><span class="n">send</span><span class="p">(</span><span class="n">random_buffer</span><span class="p">,</span> <span class="p">{</span><span class="n">id</span><span class="o">=</span><span class="s1">&#39;beg&#39;</span><span class="p">,</span> <span class="n">buff</span><span class="o">=</span><span class="n">buff</span><span class="p">},</span> <span class="kr">function</span> <span class="p">(</span><span class="n">status</span><span class="p">,</span> <span class="n">message</span><span class="p">)</span>
+                    <span class="c1">-- we have a reply here so that we can remove any buffers that didn&#39;t</span>
+                    <span class="c1">-- clean up nicely (by calling /stopbuffbeg)</span>
+                    <span class="kr">if</span> <span class="n">status</span> <span class="o">&lt;</span> <span class="mi">0</span> <span class="kr">then</span> <span class="n">removebuffer</span><span class="p">(</span><span class="n">random_buffer</span><span class="p">)</span> <span class="kr">end</span>
+                <span class="kr">end</span><span class="p">)</span>
+            <span class="kr">end</span>
+        <span class="kr">end</span>
+    <span class="kr">end</span>
+<span class="kr">end</span>
+
+<span class="kr">if</span> <span class="n">mybuffs</span> <span class="kr">then</span> <span class="n">bufferlogin</span><span class="p">()</span> <span class="kr">end</span>
+<span class="n">mq</span><span class="p">.</span><span class="n">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
+<span class="n">beggarlogin</span><span class="p">()</span>
+
+<span class="c1">-- we want to cleanup nicely so that all beggars know that we are done buffing</span>
+<span class="kd">local</span> <span class="n">runscript</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="n">mq</span><span class="p">.</span><span class="n">bind</span><span class="p">(</span><span class="s1">&#39;/stopbuffbeg&#39;</span><span class="p">,</span> <span class="kr">function</span> <span class="p">()</span> <span class="n">runscript</span> <span class="o">=</span> <span class="kc">false</span> <span class="kr">end</span><span class="p">)</span>
+
+<span class="kr">while</span> <span class="n">runscript</span> <span class="kr">do</span>
+    <span class="n">checkbuffs</span><span class="p">()</span>
+    <span class="n">dobuffs</span><span class="p">()</span>
+    <span class="n">mq</span><span class="p">.</span><span class="n">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
+<span class="kr">end</span>
+
+<span class="n">actor</span><span class="p">:</span><span class="n">send</span><span class="p">({</span><span class="n">id</span><span class="o">=</span><span class="s1">&#39;drop&#39;</span><span class="p">})</span>
+</code></pre></div></p>
 
 
 
