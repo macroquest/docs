@@ -41,7 +41,17 @@ The actor is the central component of this system. It's what you use to send mes
 
 ## What Goes in a Message
 
-Before we get to the register functions and the message handler, let's look at what a message is. In general, a message can contain any native lua primitive or a lua table. Different types can be added to the serialization in the plugin if they are required, so please open feature requests if there are types that need to be added. **MacroQuest datatypes can not be serialized because they are localized to the eqgame client.** In the example above, the payload is the message content, and is simple a table with a single named string entry. This could be arbitrarily complex and nested tables will serialize as well, any type in the table that can't be serialized will simply be ignored.
+Before we get to the register functions and the message handler, let's look at what a message is. In general, a message can contain any native lua primitive or a lua table. Different types can be added to the serialization in the plugin if they are required, so please open feature requests if there are types that need to be added. **MacroQuest datatypes can not be serialized generically because they are localized to the eqgame client.** The following datatypes are currently serializable:
+
+- nil
+- string
+- number
+- boolean
+- ImVec2
+- ImVec4
+- table (with the caveat that anything not serializable in the table will be ignored)
+
+In the example above, the payload is the message content, and is simple a table with a single named string entry. This could be arbitrarily complex and nested tables will serialize as well, any type in the table that can't be serialized will simply be ignored.
 
 ## Addressing
 
