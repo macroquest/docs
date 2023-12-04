@@ -99,3 +99,9 @@ actors.ResponseStatus.AmbiguousRecipient = -4
 ```
 
 Of these, only the last two are something that you would have any control over in lua. `RoutingFailed` would happen if there is no recipient at the given [address](#addressing) specified (like if you tried to address a specific character that was no longer logged in). `AmbiguousRecipient` would happen if there was too much ambiguity in the address (like if you addressed an entire server). This is important because these are RPC-style messages, and the requirement is that exactly 1 recipient will receive the message, or we wouldn't be able to provide the guarantee that you will get a response. If you need to send a response to a multi-recipient message, then just use `message.send` to do so, and handle the responses in the message handler.
+
+## Putting it All Together
+In this example we demonstrate how to use Actors to communicate across clients to beg for buffs.  This script can be found alongside other examples in the MacroQuest Git repository [here](https://github.com/macroquest/macroquest/tree/master/src/plugins/lua/lua/examples)
+```lua
+--8<-- "https://raw.githubusercontent.com/macroquest/macroquest/master/src/plugins/lua/lua/examples/buffbeg.lua"
+```
