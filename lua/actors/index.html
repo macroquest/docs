@@ -12915,7 +12915,17 @@
 <li><code>unregister</code>: a method to unregister the actor if you want to remove it early.</li>
 </ul>
 <h2 id="what-goes-in-a-message">What Goes in a Message<a class="headerlink" href="#what-goes-in-a-message" title="Permanent link">&para;</a></h2>
-<p>Before we get to the register functions and the message handler, let's look at what a message is. In general, a message can contain any native lua primitive or a lua table. Different types can be added to the serialization in the plugin if they are required, so please open feature requests if there are types that need to be added. <strong>MacroQuest datatypes can not be serialized because they are localized to the eqgame client.</strong> In the example above, the payload is the message content, and is simple a table with a single named string entry. This could be arbitrarily complex and nested tables will serialize as well, any type in the table that can't be serialized will simply be ignored.</p>
+<p>Before we get to the register functions and the message handler, let's look at what a message is. In general, a message can contain any native lua primitive or a lua table. Different types can be added to the serialization in the plugin if they are required, so please open feature requests if there are types that need to be added. <strong>MacroQuest datatypes can not be serialized generically because they are localized to the eqgame client.</strong> The following datatypes are currently serializable:</p>
+<ul>
+<li>nil</li>
+<li>string</li>
+<li>number</li>
+<li>boolean</li>
+<li>ImVec2</li>
+<li>ImVec4</li>
+<li>table (with the caveat that anything not serializable in the table will be ignored)</li>
+</ul>
+<p>In the example above, the payload is the message content, and is simple a table with a single named string entry. This could be arbitrarily complex and nested tables will serialize as well, any type in the table that can't be serialized will simply be ignored.</p>
 <h2 id="addressing">Addressing<a class="headerlink" href="#addressing" title="Permanent link">&para;</a></h2>
 <p>Next, we want to see what goes into an address. An address in lua can also be referred to as a header, and is a table that can optionally contain the following entries:</p>
 <div class="highlight"><pre><span></span><code><span class="p">{</span>
