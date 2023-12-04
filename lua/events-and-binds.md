@@ -58,8 +58,8 @@ local callback = function (...)
     for i = 1, #args, 1 do
         if i > 1 then
             str = str .. ' '
-            str = str .. args[i]
         end
+        str = str .. args[i]
     end
     print(str)
 end
