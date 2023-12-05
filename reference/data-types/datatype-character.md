@@ -981,8 +981,8 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Percentage of Vitality the toon has
 
-### {{ renderMember(type='int', name='PersonaLevel') }}
-:   Returns the level of the active persona
+### {{ renderMember(type='int', name='PersonaLevel', params='class') }}
+:   Given the class shortname as a param, returns level of that class persona. e.g. ${Me.PersonaLevel[DRU]} returns the level of your Druid persona.  If you do not have a Persona of the given class, the member will return 0.
 
 ### {{ renderMember(type='spell', name='PetBuff', params='#') }} 
 
