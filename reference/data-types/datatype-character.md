@@ -981,6 +981,9 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Percentage of Vitality the toon has
 
+### {{ renderMember(type='int', name='PersonaLevel') }}
+:   Returns the level of the active persona
+
 ### {{ renderMember(type='spell', name='PetBuff', params='#') }} 
 
 :   The spell in this PetBuff slot #
