@@ -56,7 +56,9 @@ local callback = function (...)
     local args = {...}
     local str = ''
     for i = 1, #args, 1 do
-        if i > 1 then str = str .. ' '
+        if i > 1 then
+            str = str .. ' '
+        end
         str = str .. args[i]
     end
     print(str)
