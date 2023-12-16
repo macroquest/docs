@@ -10,7 +10,7 @@ This guide will cover some of the more common building blocks of code found in m
 
 The purpose of this guide is primarily to help those who know the macro language, but not necessarily Lua or other programming languages, to be able to write new scripts in Lua. Its not to suggest that existing macros should be rewritten in Lua, although that may be a good learning exercise as well.  
 
-Before getting started, its recommended to have [VS Code](https://code.visualstudio.com/) (not the same thing as Visual Studio) installed for working with Lua files. it provides syntax highlighting out of the box and some extended capabilities when adding a Lua language server extension. Also setup the [mq-definitions](https://github.com/macroquest/mq-definitions) for auto-completion.  
+Before getting started, its recommended to have [VS Code](https://code.visualstudio.com/) (not the same thing as Visual Studio) installed for working with Lua files. Install the [mq-defs](https://marketplace.visualstudio.com/items?itemName=ZenithCodeForge.mq-defs) VS Code extension to make developing Lua scripts for MQ much easier.
 
 ## Getting Started
 Before getting into MQ specifics, some basics about the Lua programming language should be understood.
@@ -1002,7 +1002,7 @@ It can do much more than that, including multiple statements strung together, lo
 The above example would print the name of PCs incrementing over a NearestSpawn search.
 
 ### VS Code Extensions
-In addition to `mq-definitions`, some useful VS Code extensions include:
+In addition to `mq-defs`, some useful VS Code extensions include:
 
 - Rainbow Brackets  
 - Indent Rainbow  
