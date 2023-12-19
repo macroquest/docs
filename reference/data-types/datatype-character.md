@@ -789,6 +789,10 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Returns a timestamp of last time you zoned
 
+### {{ renderMember(name='LaurionInnVoucher') }} 
+
+:   
+
 ### {{ renderMember(name='LCK') }} 
 
 :   
@@ -1100,7 +1104,15 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Secondary Percentage aggro
 
+### {{ renderMember(name='ShadedSpecie') }} 
+
+:   
+
 ### {{ renderMember(name='ShadowStones') }} 
+
+:   
+
+### {{ renderMember(name='ShalowainsPrivateReserve') }}
 
 :   
 
@@ -1199,6 +1211,10 @@ If something is missing here, you can check the source to see if it exists.
 ### {{ renderMember(type='int', name='SpellShieldBonus') }} 
 
 :   Spell Shield bonus from gear and spells
+
+### {{ renderMember(name='SpiritualMedallions') }} 
+
+:   
 
 ### {{ renderMember(type='int', name='STA') }} 
 
