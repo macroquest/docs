@@ -12726,39 +12726,6 @@
   
 </li>
         
-      </ul>
-    </nav>
-  
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#additional-bindings" class="md-nav__link">
-    <span class="md-ellipsis">
-      Additional Bindings
-    </span>
-  </a>
-  
-    <nav class="md-nav" aria-label="Additional Bindings">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
-  <a href="#drag-and-drop-support" class="md-nav__link">
-    <span class="md-ellipsis">
-      Drag and drop support
-    </span>
-  </a>
-  
-</li>
-        
-          <li class="md-nav__item">
-  <a href="#eq-icon-rendering" class="md-nav__link">
-    <span class="md-ellipsis">
-      EQ Icon rendering
-    </span>
-  </a>
-  
-</li>
-        
           <li class="md-nav__item">
   <a href="#events-and-binds" class="md-nav__link">
     <span class="md-ellipsis">
@@ -12820,13 +12787,12 @@
 <li><a href="https://www.lua.org/home.html">Main Lua Page</a> with getting started and documentation</li>
 <li><a href="https://www.lua.org/pil/contents.html">Programming in Lua</a></li>
 <li><a href="https://www.tutorialspoint.com/lua/index.htm">Tutorials Point</a></li>
-<li>Coldblooded's Lua autocompletion. Requires <a href="https://github.com/sumneko/lua-language-server">this</a> VSCode extension.<ul>
-<li><a href="https://github.com/johnfking/mq-definitions">MQ definitions</a></li>
-<li><a href="https://github.com/johnfking/mq-imgui-definitions">IMGUI definitions</a></li>
+<li><a href="https://marketplace.visualstudio.com/items?itemName=ZenithCodeForge.mq-defs">MQ definitions VSCode Extension</a> - This is all now wrapped up in a nice tidy extension.<ul>
+<li><a href="https://github.com/macroquest/mq-definitions">MQ definitions</a> (GitHub Repo)</li>
 </ul>
 </li>
 </ul>
-<p>I won't cover language conventions or features, just mention that mq2lua is built on <strong>LuaJIT 2.0.5</strong> if you need to know the specific flavor.</p>
+<p>I won't cover language conventions or features, just mention that mq2lua is built on <strong>LuaJIT 2.1.0</strong> if you need to know the specific flavor.</p>
 <h3 id="command-reference">Command Reference<a class="headerlink" href="#command-reference" title="Permanent link">&para;</a></h3>
 <div class="highlight"><pre><span></span><code>/lua [COMMAND] {OPTIONS}
 MQ2Lua: A lua script binding plugin.
@@ -12960,55 +12926,8 @@ info -- info for a process
 <h3 id="command-bindings">Command Bindings<a class="headerlink" href="#command-bindings" title="Permanent link">&para;</a></h3>
 <p>This binding allows you to pass commands to EQ. It is very dumb in that it can take any value, and will just prepend a <code>/</code> in front of it and send it to the EQ parser. Any arguments passed to it are stringified (in lua), concatenated (with a space delimiter), and sent as part of the command. So for instance, <code>mq.cmd('/who all fred')</code> will end up getting passed to EQ as <code>/who all fred</code>. You can also use cmdf to provide a format string: <code>mq.cmdf('/who all %s', someStringValue)</code></p>
 <h3 id="imgui-bindings">ImGui Bindings<a class="headerlink" href="#imgui-bindings" title="Permanent link">&para;</a></h3>
-<p>ImGui is a feature that lua supports that has no equivalent in the macro world. For full documentation of the source binding API, this page has the source: <a href="https://github.com/macroquest/macroquest/tree/master/src/plugins/lua/contrib/imgui">sol2 ImGui Bindings</a>. As mq may have different needs, we can expand this as time goes on, and if that happens, then we will add a page on this wiki to document all the available bindings.</p>
+<p>ImGui is a feature that lua supports that has no equivalent in the macro world. For full listing of bindings, it is best to check the <a href="https://github.com/macroquest/mq-definitions/tree/master/imgui">ImGui Definitions</a> in the mq-definitionsrepository.</p>
 <p>To use imgui, you must register a callback using <code>mq.imgui.init('name', callback)</code>. The callback will be a function that will be called every imgui update, and will usually be the code to render your imgui windows. To remove the callback, you can use <code>mq.imgui.destroy('name')</code> and the callback will unregister and no longer render on imgui updates.</p>
-<h2 id="additional-bindings">Additional Bindings<a class="headerlink" href="#additional-bindings" title="Permanent link">&para;</a></h2>
-<p>In addition to the full set of binds in the MSeys repo, we have also added the following:</p>
-<h3 id="drag-and-drop-support">Drag and drop support<a class="headerlink" href="#drag-and-drop-support" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1">-- ImGui.BeginDragDropSource(...)</span>
-<span class="c1">-- Parameters: int (flags) [O]</span>
-<span class="c1">-- Returns: bool (isDragged)</span>
-<span class="c1">-- Overloads</span>
-<span class="n">isDragged</span> <span class="o">=</span> <span class="n">ImGui</span><span class="p">.</span><span class="n">BeginDragDropSource</span><span class="p">()</span>
-<span class="n">isDragged</span> <span class="o">=</span> <span class="n">ImGui</span><span class="p">.</span><span class="n">BeginDragDropSource</span><span class="p">(</span><span class="n">ImGuiDragDropFlags</span><span class="p">.</span><span class="n">SourceNoPreviewTooltip</span><span class="p">)</span>
-
-<span class="c1">-- ImGui.EndDragDropSource()</span>
-<span class="n">ImGui</span><span class="p">.</span><span class="n">EndDragDropSource</span><span class="p">()</span>
-
-<span class="c1">-- ImGui.BeginDragDropTarget()</span>
-<span class="c1">-- Returns: bool (isDropped)</span>
-<span class="n">isDropped</span> <span class="o">=</span> <span class="n">ImGui</span><span class="p">.</span><span class="n">BeginDragDropTarget</span><span class="p">()</span>
-
-<span class="c1">-- ImGui.EndDragDropTarget()</span>
-<span class="n">ImGui</span><span class="p">.</span><span class="n">EndDragDropTarget</span><span class="p">()</span>
-
-<span class="c1">-- ImGui.SetDragDropPayload(...)</span>
-<span class="c1">-- Parameters: text (type), object(data), int (cond) [O]</span>
-<span class="c1">-- Returns: bool</span>
-<span class="c1">-- Overloads</span>
-<span class="n">ImGui</span><span class="p">.</span><span class="n">SetDragDropPayload</span><span class="p">(</span><span class="s1">&#39;ITEMN&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">)</span>
-<span class="n">ImGui</span><span class="p">.</span><span class="n">SetDragDropPayload</span><span class="p">(</span><span class="s1">&#39;ITEMN&#39;</span><span class="p">,</span> <span class="n">i</span><span class="p">,</span> <span class="n">ImGuiCond</span><span class="p">.</span><span class="n">Always</span><span class="p">)</span>
-
-<span class="c1">-- ImGui.AcceptDragDropPayload(...)</span>
-<span class="c1">-- Parameters: text (type), flags (cond) [O]</span>
-<span class="c1">-- Returns: object</span>
-<span class="c1">-- Overloads</span>
-<span class="n">payload</span> <span class="o">=</span> <span class="n">ImGui</span><span class="p">.</span><span class="n">AcceptDragDropPayload</span><span class="p">(</span><span class="s1">&#39;ITEMN&#39;</span><span class="p">)</span>
-<span class="n">payload</span> <span class="o">=</span> <span class="n">ImGui</span><span class="p">.</span><span class="n">AcceptDragDropPayload</span><span class="p">(</span><span class="s1">&#39;ITEMN&#39;</span><span class="p">,</span> <span class="n">ImGuiDragDropFlags</span><span class="p">.</span><span class="n">AcceptNoDrawDefaultRect</span><span class="p">)</span>
-
-<span class="c1">-- ImGui.GetDragDropPayload()</span>
-<span class="c1">-- Returns: object</span>
-<span class="n">payload</span> <span class="o">=</span> <span class="n">ImGui</span><span class="p">.</span><span class="n">GetDragDropPayload</span><span class="p">()</span>
-</code></pre></div>
-<h3 id="eq-icon-rendering">EQ Icon rendering<a class="headerlink" href="#eq-icon-rendering" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="c1">-- Get the table of icons, which live in an animation texture</span>
-<span class="n">anim</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">FindTextureAnimation</span><span class="p">(</span><span class="s1">&#39;A_SpellIcons&#39;</span><span class="p">)</span>
-<span class="p">...</span>
-<span class="c1">-- once you know the index of the icon inside the texture, set the cell</span>
-<span class="n">anim</span><span class="p">:</span><span class="n">SetTextureCell</span><span class="p">(</span><span class="n">spell</span><span class="p">.</span><span class="n">SpellIcon</span><span class="p">())</span>
-<span class="c1">-- render the texture at the cell</span>
-<span class="n">ImGui</span><span class="p">.</span><span class="n">DrawTextureAnimation</span><span class="p">(</span><span class="n">anim</span><span class="p">)</span>
-</code></pre></div>
 <h3 id="events-and-binds">Events and Binds<a class="headerlink" href="#events-and-binds" title="Permanent link">&para;</a></h3>
 <p>As alluded to earlier, lua supports events and binds similar to the macro language. The details of how to use them are documented <a href="events-and-binds/">here</a>.</p>
 <h2 id="including-modules">Including Modules<a class="headerlink" href="#including-modules" title="Permanent link">&para;</a></h2>
