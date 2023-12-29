@@ -5,11 +5,10 @@ Lua is in general a robust language with a multitude of tutorials and resources 
 - [Main Lua Page](https://www.lua.org/home.html) with getting started and documentation
 - [Programming in Lua](https://www.lua.org/pil/contents.html)
 - [Tutorials Point](https://www.tutorialspoint.com/lua/index.htm)
-- Coldblooded's Lua autocompletion. Requires [this](https://github.com/sumneko/lua-language-server) VSCode extension.
-    - [MQ definitions](https://github.com/johnfking/mq-definitions)
-    - [IMGUI definitions](https://github.com/johnfking/mq-imgui-definitions)
+- [MQ definitions VSCode Extension](https://marketplace.visualstudio.com/items?itemName=ZenithCodeForge.mq-defs) - This is all now wrapped up in a nice tidy extension.
+    - [MQ definitions](https://github.com/macroquest/mq-definitions) (GitHub Repo)
 
-I won't cover language conventions or features, just mention that mq2lua is built on **LuaJIT 2.0.5** if you need to know the specific flavor.
+I won't cover language conventions or features, just mention that mq2lua is built on **LuaJIT 2.1.0** if you need to know the specific flavor.
 
 ### Command Reference
 
@@ -153,64 +152,10 @@ This binding allows you to pass commands to EQ. It is very dumb in that it can t
 
 ### ImGui Bindings
 
-ImGui is a feature that lua supports that has no equivalent in the macro world. For full documentation of the source binding API, this page has the source: [sol2 ImGui Bindings](https://github.com/macroquest/macroquest/tree/master/src/plugins/lua/contrib/imgui). As mq may have different needs, we can expand this as time goes on, and if that happens, then we will add a page on this wiki to document all the available bindings.
+ImGui is a feature that lua supports that has no equivalent in the macro world. For full listing of bindings, it is best to check the [ImGui Definitions](https://github.com/macroquest/mq-definitions/tree/master/imgui) in the mq-definitionsrepository.
 
 To use imgui, you must register a callback using `mq.imgui.init('name', callback)`. The callback will be a function that will be called every imgui update, and will usually be the code to render your imgui windows. To remove the callback, you can use `mq.imgui.destroy('name')` and the callback will unregister and no longer render on imgui updates.
 
-## Additional Bindings
-
-In addition to the full set of binds in the MSeys repo, we have also added the following:
-
-### Drag and drop support
-
-```lua
--- ImGui.BeginDragDropSource(...)
--- Parameters: int (flags) [O]
--- Returns: bool (isDragged)
--- Overloads
-isDragged = ImGui.BeginDragDropSource()
-isDragged = ImGui.BeginDragDropSource(ImGuiDragDropFlags.SourceNoPreviewTooltip)
-
--- ImGui.EndDragDropSource()
-ImGui.EndDragDropSource()
-
--- ImGui.BeginDragDropTarget()
--- Returns: bool (isDropped)
-isDropped = ImGui.BeginDragDropTarget()
-
--- ImGui.EndDragDropTarget()
-ImGui.EndDragDropTarget()
-
--- ImGui.SetDragDropPayload(...)
--- Parameters: text (type), object(data), int (cond) [O]
--- Returns: bool
--- Overloads
-ImGui.SetDragDropPayload('ITEMN', i)
-ImGui.SetDragDropPayload('ITEMN', i, ImGuiCond.Always)
-
--- ImGui.AcceptDragDropPayload(...)
--- Parameters: text (type), flags (cond) [O]
--- Returns: object
--- Overloads
-payload = ImGui.AcceptDragDropPayload('ITEMN')
-payload = ImGui.AcceptDragDropPayload('ITEMN', ImGuiDragDropFlags.AcceptNoDrawDefaultRect)
-
--- ImGui.GetDragDropPayload()
--- Returns: object
-payload = ImGui.GetDragDropPayload()
-```
-
-### EQ Icon rendering
-
-```lua
--- Get the table of icons, which live in an animation texture
-anim = mq.FindTextureAnimation('A_SpellIcons')
-...
--- once you know the index of the icon inside the texture, set the cell
-anim:SetTextureCell(spell.SpellIcon())
--- render the texture at the cell
-ImGui.DrawTextureAnimation(anim)
-```
 
 ### Events and Binds
 
