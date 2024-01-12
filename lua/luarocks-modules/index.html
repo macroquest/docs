@@ -5842,6 +5842,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#packagemaninstallandload" class="md-nav__link">
     <span class="md-ellipsis">
       PackageMan.InstallAndLoad
@@ -12782,6 +12791,15 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#debugging" class="md-nav__link">
+    <span class="md-ellipsis">
+      Debugging
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#packagemaninstallandload" class="md-nav__link">
     <span class="md-ellipsis">
       PackageMan.InstallAndLoad
@@ -12882,6 +12900,13 @@
 </code></pre></div>
 <p>The default message should suffice for most usages.</p>
 <p>In all cases, when there is a failure to load the package using Require, your script will be exited.  If you'd like more control, you can use the other functions of PackageMan.</p>
+<h3 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h3>
+<p>If you are having issues with packages not installing, you can enable debug logging by setting the global variable PackageMan.debug to true.  This will output the log of what is happening to the MQ window.</p>
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<span class="kd">local</span> <span class="n">PackageMan</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
+<span class="n">PackageMan</span><span class="p">.</span><span class="n">debug</span> <span class="o">=</span> <span class="kc">true</span>
+<span class="kd">local</span> <span class="n">sql</span> <span class="o">=</span> <span class="n">PackageMan</span><span class="p">.</span><span class="n">Require</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+</code></pre></div>
 <h3 id="packagemaninstallandload">PackageMan.InstallAndLoad<a class="headerlink" href="#packagemaninstallandload" title="Permanent link">&para;</a></h3>
 <p>For most use cases, Require should be sufficient.  However, for more granular control over what happens when a package fails to load, you can start with InstallAndLoad.  This will attempt to install the package and load it.  It does not check to see if the package is installed first, as that is up to the script writer.  The mq/utils library has an example of an Include function which will try to load a library and gracefully fail.  An example of using this library to do your own error handling on a package install is below:</p>
 <div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">mq</span> <span class="o">=</span> <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
