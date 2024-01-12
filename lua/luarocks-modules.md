@@ -48,6 +48,17 @@ The default message should suffice for most usages.
 
 In all cases, when there is a failure to load the package using Require, your script will be exited.  If you'd like more control, you can use the other functions of PackageMan.
 
+### Debugging
+
+If you are having issues with packages not installing, you can enable debug logging by setting the global variable PackageMan.debug to true.  This will output the log of what is happening to the MQ window.
+
+```lua
+local mq = require('mq')
+local PackageMan = require('mq/PackageMan')
+PackageMan.debug = true
+local sql = PackageMan.Require('lsqlite3')
+```
+
 ### PackageMan.InstallAndLoad
 
 For most use cases, Require should be sufficient.  However, for more granular control over what happens when a package fails to load, you can start with InstallAndLoad.  This will attempt to install the package and load it.  It does not check to see if the package is installed first, as that is up to the script writer.  The mq/utils library has an example of an Include function which will try to load a library and gracefully fail.  An example of using this library to do your own error handling on a package install is below:
