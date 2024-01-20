@@ -108,5 +108,6 @@ More info on lsqlite3 [here](http://lua.sqlite.org/index.cgi/doc/tip/doc/lsqlite
 MQ has the `Ini` TLO and `/ini` commands which are used heavily by macros and work well for reading and writing INI files. Refer to the reference pages for more info on them.
 
 #### LIP.lua Lua INI Parser
-Avoid this one, its listed here because its in use by some existing Lua scripts, but prefer `mq.TLO.Ini` and `/ini` if you really need INI file configuration.
+Lua INI Parser is a tiny Lua library allowing to handle .ini files.
+https://github.com/Dynodzzo/Lua_INI_Parser
 
