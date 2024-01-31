@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.4">
+      <meta name="generator" content="mkdocs-1.5.3, mkdocs-material-9.5.6">
     
     
       
@@ -11487,9 +11487,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Ability[#]" class="md-nav__link">
+  <a href="#Ability[#|name]" class="md-nav__link">
     <span class="md-ellipsis">
-      Ability[#]
+      Ability[#|name]
     </span>
   </a>
   
@@ -11505,9 +11505,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#AbilityTimer" class="md-nav__link">
+  <a href="#AbilityTimer[#|name]" class="md-nav__link">
     <span class="md-ellipsis">
-      AbilityTimer
+      AbilityTimer[#|name]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#AbilityTimerTotal[#|name]" class="md-nav__link">
+    <span class="md-ellipsis">
+      AbilityTimerTotal[#|name]
     </span>
   </a>
   
@@ -15907,9 +15916,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Ability[#]" class="md-nav__link">
+  <a href="#Ability[#|name]" class="md-nav__link">
     <span class="md-ellipsis">
-      Ability[#]
+      Ability[#|name]
     </span>
   </a>
   
@@ -15925,9 +15934,18 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#AbilityTimer" class="md-nav__link">
+  <a href="#AbilityTimer[#|name]" class="md-nav__link">
     <span class="md-ellipsis">
-      AbilityTimer
+      AbilityTimer[#|name]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#AbilityTimerTotal[#|name]" class="md-nav__link">
+    <span class="md-ellipsis">
+      AbilityTimerTotal[#|name]
     </span>
   </a>
   
@@ -19006,17 +19024,21 @@ If something is missing here, you can check the source to see if it exists.</p>
 <dl>
 <dd>Skill name assigned to this doability button</dd>
 </dl>
-<h3 id="Ability[#]"><a href="../datatype-int/">int</a> <code>Ability[#]</code><a class="headerlink" href="#Ability[#]" title="Permanent link">&para;</a></h3>
+<h3 id="Ability[#|name]"><a href="../datatype-bool/">bool</a> <code>Ability[#|name]</code><a class="headerlink" href="#Ability[#|name]" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>The doability button number that the skill name is on</dd>
+<dd>Whether you have this ability or not</dd>
 </dl>
 <h3 id="AbilityReady[#|name]"><a href="../datatype-bool/">bool</a> <code>AbilityReady[#|name]</code><a class="headerlink" href="#AbilityReady[#|name]" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>Ability with this name or on this button # ready?</dd>
+<dd>Whether this ability is ready (false if you do not have the ability)</dd>
 </dl>
-<h3 id="AbilityTimer"><code>AbilityTimer</code><a class="headerlink" href="#AbilityTimer" title="Permanent link">&para;</a></h3>
+<h3 id="AbilityTimer[#|name]"><a href="../datatype-timestamp/">timestamp</a> <code>AbilityTimer[#|name]</code><a class="headerlink" href="#AbilityTimer[#|name]" title="Permanent link">&para;</a></h3>
 <dl>
-<dd></dd>
+<dd>How long before an ability can be used again. Zero if it can currently be used or you do not have the ability.  nil if the skill is not an ability or the ability does not exist.</dd>
+</dl>
+<h3 id="AbilityTimerTotal[#|name]"><a href="../datatype-timestamp/">timestamp</a> <code>AbilityTimerTotal[#|name]</code><a class="headerlink" href="#AbilityTimerTotal[#|name]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>The total amount of time an ability takes to refresh. Zero if it is not currently active.</dd>
 </dl>
 <h3 id="AccuracyBonus"><a href="../datatype-int/">int</a> <code>AccuracyBonus</code><a class="headerlink" href="#AccuracyBonus" title="Permanent link">&para;</a></h3>
 <dl>
@@ -20433,10 +20455,10 @@ If something is missing here, you can check the source to see if it exists.</p>
     </div>
     
     
-    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.c011b7c0.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
+    <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.b8dbb3d2.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.7389ff0e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.e1c3ead8.min.js"></script>
       
     
   </body>
