@@ -57,17 +57,21 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Skill name assigned to this doability button
 
-### {{ renderMember(type='int', name='Ability', params='#') }} 
+### {{ renderMember(type='bool', name='Ability', params='#|name') }} 
 
-:   The doability button number that the skill name is on
+:   Whether you have this ability or not
 
 ### {{ renderMember(type='bool', name='AbilityReady', params='#|name') }} 
 
-:   Ability with this name or on this button # ready?
+:   Whether this ability is ready (false if you do not have the ability)
 
-### {{ renderMember(name='AbilityTimer') }} 
+### {{ renderMember(type='timestamp', name='AbilityTimer', params='#|name') }} 
 
-:   
+:   How long before an ability can be used again. Zero if it can currently be used or you do not have the ability.  nil if the skill is not an ability or the ability does not exist.
+
+### {{ renderMember(type='timestamp', name='AbilityTimerTotal', params='#|name') }} 
+
+:   The total amount of time an ability takes to refresh. Zero if it is not currently active.
 
 ### {{ renderMember(type='int', name='AccuracyBonus') }} 
 
