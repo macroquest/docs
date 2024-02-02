@@ -14,7 +14,7 @@ Data related to a particular skill
 
 ### {{ renderMember(type='int', name='AltTimer') }} 
 
-:   Originally intended to tell whether a skill shares a timer with another skill, this is misnamed.  It returns the category of the skill:  0 - Non Combat, 1 Combat, 2 Special
+:   Originally intended to tell whether a skill shares a timer with another skill, this is misnamed.  It returns the category of the skill:  0 - Non Combat, 1 - Combat, 2 - Special
 
 ### {{ renderMember(type='int', name='ID') }} 
 
