@@ -12,9 +12,9 @@ Data related to a particular skill
 
 :   Returns TRUE if the skill is an activatable skill (ie, an Ability)
 
-### {{ renderMember(type='bool', name='AltTimer') }} 
+### {{ renderMember(type='int', name='AltTimer') }} 
 
-:   Returns TRUE if the skill uses the kick/bash/slam/backstab/frenzy timer
+:   Originally intended to tell whether a skill shares a timer with another skill, this is misnamed.  It returns the category of the skill:  0 - Non Combat, 1 Combat, 2 Special
 
 ### {{ renderMember(type='int', name='ID') }} 
 
