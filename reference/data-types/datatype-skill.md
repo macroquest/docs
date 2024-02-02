@@ -10,7 +10,7 @@ Data related to a particular skill
 
 ### {{ renderMember(type='bool', name='Activated') }} 
 
-:   Returns TRUE if the skill has been activated
+:   Returns TRUE if the skill is an activatable skill (ie, an Ability)
 
 ### {{ renderMember(type='bool', name='AltTimer') }} 
 
