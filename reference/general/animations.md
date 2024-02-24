@@ -44,6 +44,7 @@ Animation ID's do not rely on line of sight.
 | 55 | emote\_cough |
 | 56 | emote\_duck |
 | 57 | emote\_stare |
+| 58 | emote\_dance |
 | 59 | emote\_veto |
 | 60 | emote\_glare |
 | 61 | emote\_peer |
