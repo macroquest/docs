@@ -12,7 +12,7 @@ tags:
 
 Displays _text_ in the center of your screen. Currently the text is a fixed font and color.
 
-If you desire a custom color or display duration you may perform [this modification](https://macroquest.org/phpBB3/viewtopic.php?p=138304#138304) to add a new command /popcustom
+See Also: [/popcustom](https://docs.macroquest.org/reference/commands/popcustom)
 
 ## Examples
 
