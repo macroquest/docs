@@ -36,8 +36,8 @@ Color Chart
 | :--- | :--- |
 | **Example** | **Output** |
 | **/popcustom hi there** | Will display "hi there" on the screen just like /popup |
-| **/popcustom 5 hi there** | Will display "hi there" on the screen in pink, for 3 seconds (/popup's default) |
-| **/popcustom 5 5 hi there** | Will display "hi there" on the screen in pink, for 5 seconds. |
+| **/popcustom 13 hi there** | Will display "hi there" on the screen in red, for 3 seconds (/popup's default) |
+| **/popcustom 13 5 hi there** | Will display "hi there" on the screen in red, for 5 seconds. |
 |  |  |
 
 If you type `/popcustom` with no parameters, it will display the help output for this information.
