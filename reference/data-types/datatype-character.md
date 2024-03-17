@@ -221,9 +221,13 @@ If something is missing here, you can check the source to see if it exists.
 
 :   
 
-### {{ renderMember(name='BlockedPetBuff') }} 
+### {{ renderMember(name='BlockedPetBuff', params='name') }} 
 
-:   
+:   Buff blocked by pet with this name
+
+### {{ renderMember(name='BlockedPetBuff', params='#') }} 
+
+:   Buff at this index slot # of the blocked pet buffs 
 
 ### {{ renderMember(type='int', name='Book', params='name') }} 
 
