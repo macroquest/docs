@@ -12992,9 +12992,9 @@
 <h3 id="note-about-tooltipreference">Note about ToolTipReference<a class="headerlink" href="#note-about-tooltipreference" title="Permanent link">&para;</a></h3>
 <p>There are certain characters that are used in XML Code that are reserved. If these characters are used in the tooltipreference they will cause errors and the UI will fail to load. The most notable of these characters is the "\&lt;" symbol. The "&gt;" symbol can still be used for comparisons. So In cases where you would use "\&lt;", rephase the statement to use "&gt;" instead. The "&amp;" character also causes problems. In the case where you use a "&amp;&amp;" in your if statements use nested ifs to get around the problem.</p>
 <h4 id="example_2">Example<a class="headerlink" href="#example_2" title="Permanent link">&para;</a></h4>
-<p><span Target.ID="Target.ID" class="arithmatex">\({If\[\)</span> &amp;&amp; <span Target.CleanName="Target.CleanName" class="arithmatex">\({Target.Casting},\)</span> is casting.,]}</p>
+<p><span Target.ID="Target.ID" class="arithmatex">\({If\[\)</span> &amp;&amp; <span Target.CleanName="Target.CleanName" class="arithmatex">\({Target.Casting},\)</span>} is casting.,]</p>
 <p>would become</p>
-<p><span Target.ID="Target.ID" class="arithmatex">\({If\[\)</span>,<span Target.Casting="Target.Casting" class="arithmatex">\({If\[\)</span>,${Target.CleanName} is casting.,]},]}</p>
+<p><span Target.ID="Target.ID" class="arithmatex">\({If\[\)</span>,<span Target.Casting="Target.Casting" class="arithmatex">\({If\[\)</span>},${Target.CleanName} is casting.,]},]</p>
 
 
 

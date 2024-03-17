@@ -13206,7 +13206,7 @@
 <code>| FORMAT DURATION TO 00:00:00</code><br />
 <code>|</code><br />
 <code>/varset duration ${Math.Calc[${HudArrayTime[${counter}]}-${Time.SecondsSinceMidnight}].Int}</code><br />
-<code>/if (${duration}&amp;gt;3600\) {``` /varset myhour ${Math.Calc[${duration}/3600\].Int}</code> /varset duration <span class="arithmatex" duration="duration">\({Math.Calc\[\(\(\)</span>/3600)-${myhour})*3600]}<code>`} else {</code><br />
+<code>/if (${duration}&amp;gt;3600\) {``` /varset myhour ${Math.Calc[${duration}/3600\].Int}</code> /varset duration <span class="arithmatex" duration="duration">\({Math.Calc\[\(\(\)</span>}/3600)-${myhour})*3600]<code>`} else {</code><br />
 <code>/varset myhour</code><br />
 <code>}</code></p>
 <p><code>/if (${duration}&gt;60) {</code><br />

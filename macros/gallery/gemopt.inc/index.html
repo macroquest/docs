@@ -12927,7 +12927,7 @@
 <p>GemEdit -- This sub routine takes the spell name or gem-number and switches it from switchable/not-switchable to not-switchable/switchable</p>
 <p>GemTimer -- A subroutine to be called after spell casts if you want the include to monitor the usage of the spell. Spells often will not be replaced by spells that aren't cast as often.</p>
 <p>GemFind -- A subroutine to scan the spell information, stored user-responses and available/used gems to find a suitable gem for memorization.</p>
-<p>Putting all these functions together, this include micromanages the use of spell gems within a routine. Instead of using something like /call cast 4 "Shrink" 5s, You can use this instead /if (<span ShrinkSpell="ShrinkSpell" class="arithmatex">\({Me.Gem[\)</span>]}) /call cast <span ShrinkSpell="ShrinkSpell" class="arithmatex">\({Me.Gem\[\)</span>]} ${ShrinkSpell} 5s.</p>
+<p>Putting all these functions together, this include micromanages the use of spell gems within a routine. Instead of using something like /call cast 4 "Shrink" 5s, You can use this instead /if (<span ShrinkSpell="ShrinkSpell" class="arithmatex">\({Me.Gem[\)</span>) /call cast }]<span ShrinkSpell="ShrinkSpell" class="arithmatex">\({Me.Gem\[\)</span> 5s.}]} ${ShrinkSpell</p>
 <h2 id="why-use-this">Why use this?<a class="headerlink" href="#why-use-this" title="Permanent link">&para;</a></h2>
 <p>As said before, this can allow you to dynamically assign spell gems to make a macro more flexible. Is it easier to code and use, probably not... for the moment. Can it be improved, YES!</p>
 <p>This isn't for the weak of heart. This include will allow you to do really awesome things without alot of effort on your part.</p>

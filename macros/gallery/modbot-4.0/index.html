@@ -13842,7 +13842,7 @@ Mq2Banolier (<a href="https://macroquest.org/wiki/index.php/MQ2Bandolier">Wiki P
 <li>Setting spell duration modifications (AHDurMod, ADDurMod, ABDurMod, AEDurMod) - Use the following formula to</li>
 </ul>
 <p>determine what number to set your DurMod at:</p>
-<p><span AHDurModX="AHDurModX" class="arithmatex">\({Spell[X\].Duration} \* (\)</span>+${Spell[X].Duration}) == timer duration.</p>
+<p><span AHDurModX="AHDurModX" class="arithmatex">\({Spell[X\].Duration} \* (\)</span>) == timer duration.}+${Spell[X].Duration</p>
 <p>So if you want a 25% extension on the timer, set durmod to 25 to make ${Spell[X].Duration} * 1.25 = timer. Modbot shouldn't re-cast if timer is still running.</p>
 <h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
 <ul>

@@ -13104,9 +13104,9 @@
 <p>It is important to note that parsing of variables is performed from the inside to the outside, so any ${} inside your MQ2Data statement gets evaluated before continuing.</p>
 <p><strong>Example</strong></p>
 <p><code>${MyString${MyVar}}</code></p>
-<p>The parser first evaluates ${MyVar}. If MyVar's value is 1, this gives us ${MyString1}. ${MyString1} is then evaluated, giving the value of whatever MyString1 is. <span MyString="MyString" class="arithmatex">\({\)</span>} will get the value of a MQ2Data query stored in MyString. This could be Me.Buff[1], or a variable name, or anything that is valid inside ${}. There is no limit to this recursion.</p>
-<p><span class="arithmatex">\({\)</span>{<span class="arithmatex">\({\)</span>{<span class="arithmatex">\({\)</span>{<span class="arithmatex">\({\)</span>{<span MyString="MyString" class="arithmatex">\({\)</span>}}}}}}}}} will evaluate inside to outside until there is nothing left to evaluate.</p>
-<p>This is also true for arrays: <span MyInt="MyInt" class="arithmatex">\({MyArray[\)</span>]} has no problems.</p>
+<p>The parser first evaluates ${MyVar}. If MyVar's value is 1, this gives us ${MyString1}. ${MyString1} is then evaluated, giving the value of whatever MyString1 is. <span MyString="MyString" class="arithmatex">\({\)</span>. There is no limit to this recursion.}} will get the value of a MQ2Data query stored in MyString. This could be Me.Buff[1], or a variable name, or anything that is valid inside ${</p>
+<p><span class="arithmatex">\({\)</span>{<span class="arithmatex">\({\)</span>{<span class="arithmatex">\({\)</span>{<span class="arithmatex">\({\)</span>{<span MyString="MyString" class="arithmatex">\({\)</span> will evaluate inside to outside until there is nothing left to evaluate.}}}}}}}}}</p>
+<p>This is also true for arrays: <span MyInt="MyInt" class="arithmatex">\({MyArray[\)</span> has no problems.}]</p>
 
 
 

@@ -12812,7 +12812,7 @@
 <p>The basic syntax for accessing this MQ2Data is:</p>
 <p><code>${TopLevelObject[index].Member[index].Member[index]}</code></p>
 <p>To access a property of a TLO you begin with the TLO type you want, then append successive type members or properties until you get the result you're looking for. The use of properties can become very complex (ie. extremely long), especially when using ${Math.Calc[]}.</p>
-<p><strong>Note:</strong> You absolutely MUST pay attention to the return types of each member and object. Make sure to always compare identical <a href="../reference/data-types/">Data Types</a> when doing comparisons (eg. string to a string, or a numeric to a numeric). Using .Equal or .NotEqual to compare .Name to .ID will give errors. For example, <span Me.ID="Me.ID" class="arithmatex">\({Target.Name.Equal[\)</span>]} will not work. .Name returns a string, but .ID returns an int</p>
+<p><strong>Note:</strong> You absolutely MUST pay attention to the return types of each member and object. Make sure to always compare identical <a href="../reference/data-types/">Data Types</a> when doing comparisons (eg. string to a string, or a numeric to a numeric). Using .Equal or .NotEqual to compare .Name to .ID will give errors. For example, <span Me.ID="Me.ID" class="arithmatex">\({Target.Name.Equal[\)</span> will not work. .Name returns a string, but .ID returns an int}]</p>
 <p>Also be sure to look at the To String of each type.</p>
 <p><strong>Example of building an MQ2Data string:</strong></p>
 <ul>
