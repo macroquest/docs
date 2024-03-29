@@ -12725,15 +12725,14 @@ Using PowerShell:  <code>Get-ChildItem -Directory -Force -Recurse *.git | ForEac
 Using Git Bash:  <code>find ./plugins -maxdepth 1 -type d -exec git -C {} pull \;</code><br />
 Using PowerShell:  <code>Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.FullName; Write-Host $_.Parent.FullName; git pull }</code>  </p>
 <p>The solution file with all of these in it is here: <a href="../../uploads/MacroQuestCustom.sln">MacroQuestCustom.sln</a> (place this file in the src folder beside MacroQuest.sln)</p>
-<div class="highlight"><pre><span></span><code>git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AASpend.git<span class="w"> </span>plugins/MQ2AASpend
+<div class="highlight"><pre><span></span><code><span class="c1"># All</span>
+git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AASpend.git<span class="w"> </span>plugins/MQ2AASpend
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AdvPath.git<span class="w"> </span>plugins/MQ2AdvPath
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AutoAccept.git<span class="w"> </span>plugins/MQ2AutoAccept
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AutoCamp.git<span class="w"> </span>plugins/MQ2AutoCamp
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AutoClaim.git<span class="w"> </span>plugins/MQ2AutoClaim
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AutoForage.git<span class="w"> </span>plugins/MQ2AutoForage
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AutoGroup.git<span class="w"> </span>plugins/MQ2AutoGroup
-git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AutoLoot.git<span class="w"> </span>plugins/MQ2AutoLoot
-git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AutoLootSort.git<span class="w"> </span>plugins/MQ2AutoLootSort
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AutoSize.git<span class="w"> </span>plugins/MQ2AutoSize
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2Bandolier.git<span class="w"> </span>plugins/MQ2Bandolier
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2BardSwap.git<span class="w"> </span>plugins/MQ2BardSwap
@@ -12766,7 +12765,6 @@ git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </spa
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2KissTemplate.git<span class="w"> </span>plugins/MQ2KissTemplate
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2LinkDB.git<span class="w"> </span>plugins/MQ2LinkDB
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2Log.git<span class="w"> </span>plugins/MQ2Log
-git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/jessebevil/MQ2LootManager.git<span class="w"> </span>plugins/MQ2LootManager
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2Medley.git<span class="w"> </span>plugins/MQ2Medley
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2Melee.git<span class="w"> </span>plugins/MQ2Melee
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>main<span class="w"> </span>https://github.com/wired420/MQ2MeshManager.git<span class="w"> </span>plugins/MQ2MeshManager
@@ -12807,6 +12805,10 @@ git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </spa
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2WorstHurt.git<span class="w"> </span>plugins/MQ2WorstHurt
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2XAssist.git<span class="w"> </span>plugins/MQ2XAssist
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2XPTracker.git<span class="w"> </span>plugins/MQ2XPTracker
+<span class="c1"># Live/Test only</span>
+git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AutoLoot.git<span class="w"> </span>plugins/MQ2AutoLoot
+git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/RedGuides/MQ2AutoLootSort.git<span class="w"> </span>plugins/MQ2AutoLootSort
+git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>master<span class="w"> </span>https://github.com/jessebevil/MQ2LootManager.git<span class="w"> </span>plugins/MQ2LootManager
 <span class="c1"># Emu only</span>
 git<span class="w"> </span>clone<span class="w"> </span>-b<span class="w"> </span>main<span class="w"> </span>https://github.com/Knightly1/MQMountClassicModels.git<span class="w"> </span>plugins/MQMountClassicModels
 </code></pre></div>
