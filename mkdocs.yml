@@ -25,7 +25,7 @@ nav:
   - Getting Started: main/README.md
   - Building MacroQuest:
     - main/building.md
-    - Plugin Submodule Quick List: main/submodule-quick-list.md
+    - Plugin Repository Quick List: main/plugin-quick-list.md
 
   - Features:
     - Anonymize: main/features/anonymize.md

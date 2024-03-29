@@ -97,6 +97,4 @@ git clone -b master https://github.com/RedGuides/MQ2XAssist.git plugins/MQ2XAssi
 git clone -b master https://github.com/RedGuides/MQ2XPTracker.git plugins/MQ2XPTracker
 # Emu only
 git clone -b main https://github.com/Knightly1/MQMountClassicModels.git plugins/MQMountClassicModels
-# Update submodules of these submodules
-git submodule update --init --recursive
 ```
