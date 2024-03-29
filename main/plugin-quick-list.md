@@ -13,6 +13,7 @@ Using PowerShell:  `Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Obj
 The solution file with all of these in it is here: [MacroQuestCustom.sln](../uploads/MacroQuestCustom.sln) (place this file in the src folder beside MacroQuest.sln)
 
 ```bash
+# All
 git clone -b master https://github.com/RedGuides/MQ2AASpend.git plugins/MQ2AASpend
 git clone -b master https://github.com/RedGuides/MQ2AdvPath.git plugins/MQ2AdvPath
 git clone -b master https://github.com/RedGuides/MQ2AutoAccept.git plugins/MQ2AutoAccept
@@ -20,8 +21,6 @@ git clone -b master https://github.com/RedGuides/MQ2AutoCamp.git plugins/MQ2Auto
 git clone -b master https://github.com/RedGuides/MQ2AutoClaim.git plugins/MQ2AutoClaim
 git clone -b master https://github.com/RedGuides/MQ2AutoForage.git plugins/MQ2AutoForage
 git clone -b master https://github.com/RedGuides/MQ2AutoGroup.git plugins/MQ2AutoGroup
-git clone -b master https://github.com/RedGuides/MQ2AutoLoot.git plugins/MQ2AutoLoot
-git clone -b master https://github.com/RedGuides/MQ2AutoLootSort.git plugins/MQ2AutoLootSort
 git clone -b master https://github.com/RedGuides/MQ2AutoSize.git plugins/MQ2AutoSize
 git clone -b master https://github.com/RedGuides/MQ2Bandolier.git plugins/MQ2Bandolier
 git clone -b master https://github.com/RedGuides/MQ2BardSwap.git plugins/MQ2BardSwap
@@ -54,7 +53,6 @@ git clone -b master https://github.com/RedGuides/MQ2KillTracker.git plugins/MQ2K
 git clone -b master https://github.com/RedGuides/MQ2KissTemplate.git plugins/MQ2KissTemplate
 git clone -b master https://github.com/RedGuides/MQ2LinkDB.git plugins/MQ2LinkDB
 git clone -b master https://github.com/RedGuides/MQ2Log.git plugins/MQ2Log
-git clone -b master https://github.com/jessebevil/MQ2LootManager.git plugins/MQ2LootManager
 git clone -b master https://github.com/RedGuides/MQ2Medley.git plugins/MQ2Medley
 git clone -b master https://github.com/RedGuides/MQ2Melee.git plugins/MQ2Melee
 git clone -b main https://github.com/wired420/MQ2MeshManager.git plugins/MQ2MeshManager
@@ -95,6 +93,10 @@ git clone -b master https://github.com/MMOBugs/MQ2WinTitle.git plugins/MQ2WinTit
 git clone -b master https://github.com/RedGuides/MQ2WorstHurt.git plugins/MQ2WorstHurt
 git clone -b master https://github.com/RedGuides/MQ2XAssist.git plugins/MQ2XAssist
 git clone -b master https://github.com/RedGuides/MQ2XPTracker.git plugins/MQ2XPTracker
+# Live/Test only
+git clone -b master https://github.com/RedGuides/MQ2AutoLoot.git plugins/MQ2AutoLoot
+git clone -b master https://github.com/RedGuides/MQ2AutoLootSort.git plugins/MQ2AutoLootSort
+git clone -b master https://github.com/jessebevil/MQ2LootManager.git plugins/MQ2LootManager
 # Emu only
 git clone -b main https://github.com/Knightly1/MQMountClassicModels.git plugins/MQMountClassicModels
 ```

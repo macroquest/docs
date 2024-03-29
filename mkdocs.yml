@@ -596,6 +596,8 @@ plugins:
   - macros
   - same-dir
   - redirects
+    redirect_maps:
+      'main/submodule-quick-list.md': 'main/plugin-quick-list.md'
   - tags:
       tags_file: tags.md
 
