@@ -103,3 +103,4 @@ See Also: [TLO:DynamicZone](../top-level-objects/tlo-dynamiczone.md)
 [strinrg]: datatype-string.md
 [xtarget]: datatype-xtarget.md
 [dzmember]: datatype-dzmember.md
+[dztimer]: datatype-dztimer.md

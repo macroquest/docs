@@ -135,7 +135,8 @@ Sub Event_SpellWornOff(string Line, string SpellName, string OnWho)
 /return
 ```
 
-[1]: #difference-between-arg-and-token[int]: datatype-int.md
+[1]: #difference-between-arg-and-token
+[int]: datatype-int.md
 [string]: datatype-string.md
 [achievementobj]: datatype-achievementobj.md
 [bool]: datatype-bool.md

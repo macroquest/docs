@@ -47,3 +47,5 @@ See sidebar for full list.
 [deity]: datatype-deity.md
 [race]: datatype-race.md
 [taskmember]: datatype-task.md
+[invslotwindow]: datatype-invslotwindow.md
+[taskobjective]: datatype-taskobjective.md

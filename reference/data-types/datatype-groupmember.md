@@ -34,7 +34,7 @@ this type inherits members from [_spawn_ ](datatype-spawn.md)if the member is in
 
 :   TRUE if the member is designated as the group's Master Looter, FALSE otherwise
 
-### {{ renderMember(type='bool', name='MarkNpc) }}
+### {{ renderMember(type='bool', name='MarkNpc') }}
 
 :   TRUE if the member is designated as the group roule Mark NPC, FALSE otherwise
 

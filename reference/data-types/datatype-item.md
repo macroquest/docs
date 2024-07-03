@@ -436,7 +436,7 @@ Contains the properties that describe an item.
 
 :   Temporary?
 
-### {{ renderMember(type='bool, name='NoTrade') }} 
+### {{ renderMember(type='bool', name='NoTrade') }} 
 
 :   Synonym for NoDrop
 
@@ -470,7 +470,7 @@ Contains the properties that describe an item.
 
 ### {{ renderMember(name='ProcRate') }} 
 
-:   
+:   /race
 
 ### {{ renderMember(type='int', name='Purity') }} 
 
@@ -484,7 +484,7 @@ Contains the properties that describe an item.
 
 : Quest item?  
 
-### {{ renderMember(type='string' name='Race', params='N') }}
+### {{ renderMember(type='string', name='Race', params='N') }}
 
 :   Returns the _Nth_ long race name of the listed races on an item. Items suitable for all races will effectively have all 15 races listed.
 

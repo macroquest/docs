@@ -340,7 +340,7 @@ Represents an in-game spawn.
 
 :   LocYX of the spawn
 
-### {{ renderMember(type='string, name='LocYXZ') }} 
+### {{ renderMember(type='string', name='LocYXZ') }} 
 
 :   
 

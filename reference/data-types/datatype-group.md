@@ -142,3 +142,4 @@ Contains details about your group
 [class]: datatype-class.md
 [heading]: datatype-heading.md
 [ground]: datatype-ground.md
+[groupmember]: datatype-groupmember.md
