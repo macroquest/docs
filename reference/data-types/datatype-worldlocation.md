@@ -14,7 +14,7 @@ Provides access to world locations such as a character's bound location
 
 ### {{ renderMember(type='int', name='ID') }} 
 
-:   The location's ID
+:   The zone ID
 
 ### {{ renderMember(type='float', name='X') }} 
 
