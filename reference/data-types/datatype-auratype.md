@@ -18,6 +18,12 @@ Describes an aura.
 
 :   ID of the spawn that emits aura
 
+## Methods
+
+| Name | Action |
+| :--- | :--- |
+| **Remove** | Remove the aura |
+
 [int]: datatype-int.md
 [string]: datatype-string.md
 [achievementobj]: datatype-achievementobj.md

@@ -8,75 +8,75 @@ Contains details about your group
 
 ## Members
 
-[_bool_](datatype-bool.md) **AnyoneMissing**
+### {{ renderMember(type='bool', name='AnyoneMissing') }}
 
 :   True if somebody in the group is offline, in some other zone, or just simply dead.
 
-[_int_](datatype-int.md) **CasterMercCount**
+### {{ renderMember(type='int', name='CasterMercCount') }}
 
 :   The number of caster dps mercenaries in your group.
 
-[_spawn_](datatype-spawn.md) **Cleric**
+### {{ renderMember(type='spawn', name='Cleric') }}
 
 :   The first member of the group that is a cleric.
 
-[_int_](datatype-int.md) **GroupSize**
+### {{ renderMember(type='int', name='GroupSize') }}
 
 :   The number of members in your group, including yourself.
 
-[_int_](datatype-int.md) **HealerMercCount**
+### {{ renderMember(type='int', name='HealerMercCount') }}
 
 :   The number of healer mercenaries in your group.
 
-[_int_](datatype-int.md) **Injured**[ _#_ ]
+### {{ renderMember(type='int', name='Injured', params='#') }}
 
 :   The numbers of people in the group that has an hp percent lower than _#_.
 
-[_groupmember_](datatype-groupmember.md) **Leader**
+### {{ renderMember(type='groupmember', name='Leader') }}
 
 :   The leader of the group.
 
-[_int_](datatype-int.md) **LowMana**[ _#_ ]
+### {{ renderMember(type='int', name='LowMana', params='#') }}
 
 :   The number of people in the group that have a mana percent lower than _#_.
 
-[_groupmember_](datatype-groupmember.md) **MainAssist**
+### {{ renderMember(type='groupmember', name='MainAssist') }}
 
 :   The main assist of the group, if one is assigned.
 
-[_groupmember_](datatype-groupmember.md) **MainTank**
+### {{ renderMember(type='groupmember', name='MainTank') }}
 
 :   The main tank of the group, if one is assigned.
 
-[_groupmember_](datatype-groupmember.md) **MarkNpc**
+### {{ renderMember(type='groupmember', name='MarkNpc') }}
 
 :   The group member who can mark NPCs, if one is assigned.
 
-[_groupmember_](datatype-groupmember.md) **MasterLooter**
+### {{ renderMember(type='groupmember', name='MasterLooter') }}
 
 :   The master looter of the group, if one is assigned.
 
-[_int_](datatype-int.md) **MeleeMercCount**
+### {{ renderMember(type='int', name='MeleeMercCount') }}
 
 :   The number of melee mercenaries in your group.
 
-[_groupmember_](datatype-groupmember.md) **Member**[ _N_ ]
+### {{ renderMember(type='groupmember', name='Member', params='#') }}
 
 :   The _Nth_ member of your group. 0 is always you. 1 is the first person in the group list, etc.
 
-[_int_](datatype-int.md) **Member**[ _Name_ ]
+### {{ renderMember(type='int', name='Members', params='Name') }}
 
 :   The group member of your group identified by _Name_.
 
-[_int_](datatype-int.md) **Members**
+### {{ renderMember(type='int', name='Members') }}
 
 :   The total number of group members, excluding yourself.
 
-[_int_](datatype-int.md) **MercenaryCount** 
+### {{ renderMember(type='int', name='MercenaryCount') }}
 
 :   The total number of mercenaries that are in the group.
 
-[_groupmember_](datatype-groupmember.md) **MouseOver**
+### {{ renderMember(type='groupmember', name='MouseOver') }}
 
 :   The name of the group member that the mouse is currently hovering over in the group window, if any.
 
@@ -102,15 +102,15 @@ Contains details about your group
         /bct ${Group.MouseOver.CleanName} //setprio 2
         ```
 
-[_groupmember_](datatype-groupmember.md) **Puller**
+### {{ renderMember(type='groupmember', name='Puller') }}
 
 :   The puller of the group, if one is assigned.
 
-[_int_](datatype-int.md) **TankMercCount**
+### {{ renderMember(type='int', name='TankMercCount') }}
 
 :   The number of tank mercenaries in your group.
 
-[_string_](datatype-string.md) **(To String)**
+### [string][string] `To String`
 
 :   The number of members in the group, as a string.
 [int]: datatype-int.md

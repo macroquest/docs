@@ -28,6 +28,18 @@ Represents a unit of clock time.
 
 :   Hour (0-11)
 
+### {{ renderMember(type='int', name='Millisecond') }}
+
+:   Millisecond (0-999)
+
+### {{ renderMember(type='int64', name='MillisecondsSinceEpoch') }}
+
+:   Number of milliseconds since the epoch (January 1, 1970)
+
+### {{ renderMember(type='int', name='MillisecondsSinceMidnight') }}
+
+:   Number of milliseconds since midnight
+
 ### {{ renderMember(type='int', name='Minute') }} 
 
 :   Minute (0-59)

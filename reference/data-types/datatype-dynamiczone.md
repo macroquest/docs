@@ -30,7 +30,7 @@ See Also: [TLO:DynamicZone](../top-level-objects/tlo-dynamiczone.md)
 
 :   The number of timers present in **Timers**
 
-### {{ renderMember(type='dzmember', name='Member', params='&nbsp;#&nbsp;|&nbsp;name&nbsp;') }} 
+### {{ renderMember(type='dzmember', name='Member', params='#|name') }} 
 
 :   The dynamic zone member _#_ or _name_
 
@@ -46,7 +46,10 @@ See Also: [TLO:DynamicZone](../top-level-objects/tlo-dynamiczone.md)
 
 :   The full name of the dynamic zone.
 
-| [_dztimer_](datatype-dztimer.md) | **Timer**[&nbsp;_#&nbsp;\|&nbsp;name_&nbsp;] | Access the list of current lockout timers. This is either an index from 1 to **MaxTimers**, or a "Expedition\|Event" combination. Event is optional, but if multiple Expeditions match, the timer with the earliest lockout expiration will be returned.
+### {{ renderMember(type='dztimer', name='Timer', params='#|name') }}
+
+:   Access the list of current lockout timers. This is either an index from 1 to **MaxTimers**, or a "Expedition\|Event" combination. Event is optional, but if multiple Expeditions match, the timer with the earliest lockout expiration will be returned.
+
 ### [string][string] `To String`
 
 :   Same as **Name**

@@ -32,13 +32,13 @@ classDiagram
 
 ## Members
 
-### {{ renderMember(type='string', name='CasterName') }} 
-
-:   Returns the name of the caster who applied the buff
-
 ### {{ renderMember(type='string', name='Caster') }} 
 
 :   Same as _CasterName_, added for consistency.
+
+### {{ renderMember(type='string', name='CasterName') }} 
+
+:   Returns the name of the caster who applied the buff (Deprecated, use _Caster_ instead).
 
 ### {{ renderMember(type='int', name='Count') }} 
 

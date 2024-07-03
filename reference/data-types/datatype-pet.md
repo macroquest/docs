@@ -30,7 +30,7 @@ This type inherits members from [_spawn_](datatype-spawn.md).
 
 :   Combat state
 
-### {{ renderMember(name='FindBuff') }} 
+### {{ renderMember(type='buff', name='FindBuff') }} 
 
 :   
 
@@ -46,7 +46,7 @@ This type inherits members from [_spawn_](datatype-spawn.md).
 
 :   Hold state
 
-### {{ renderMember(name='Name') }} 
+### {{ renderMember(type='string', name='Name') }} 
 
 :   
 

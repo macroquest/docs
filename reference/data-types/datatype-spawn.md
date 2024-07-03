@@ -12,11 +12,11 @@ Represents an in-game spawn.
 
 :   AA rank number
 
-### {{ renderMember(name='AATitle') }} 
+### {{ renderMember(type='string', name='AATitle') }} 
 
-:   
+:   Synonym for Title (deprecated)
 
-### {{ renderMember(name='ActorDef') }} 
+### {{ renderMember(type='string', name='ActorDef') }} 
 
 :   
 
@@ -40,11 +40,15 @@ Represents an in-game spawn.
 
 :   Current Raid or Group assist target?
 
+### {{ renderMember(type='string', name='AssistName') }}
+
+:
+
 ### {{ renderMember(type='bool', name='Binding') }} 
 
 :   Binding wounds?
 
-### {{ renderMember(name='Blind') }} 
+### {{ renderMember(type='int', name='Blind') }} 
 
 :   
 
@@ -52,27 +56,27 @@ Represents an in-game spawn.
 
 :   Body type
 
-### {{ renderMember(name='BodyWet') }} 
+### {{ renderMember(type='bool', name='BodyWet') }} 
 
 :   
 
-### {{ renderMember(name='bShowHelm') }} 
+### {{ renderMember(type='bool', name='bShowHelm') }} 
 
 :   
 
-### {{ renderMember(name='Buff') }} 
+### {{ renderMember(type='cachedbuff', name='Buff') }} 
 
 :   
 
-### {{ renderMember(name='BuffCount') }} 
+### {{ renderMember(type='int', name='BuffCount') }} 
 
 :   
 
-### {{ renderMember(name='BuffDuration') }} 
+### {{ renderMember(type='timestamp', name='BuffDuration') }} 
 
 :   
 
-### {{ renderMember(name='BuffsPopulated') }} 
+### {{ renderMember(type='bool', name='BuffsPopulated') }} 
 
 :   
 
@@ -84,7 +88,7 @@ Represents an in-game spawn.
 
 :   Caches buff information cast on others
 
-### {{ renderMember(name='CachedBuffCount') }} 
+### {{ renderMember(type='int', name='CachedBuffCount') }} 
 
 :   
 
@@ -96,7 +100,7 @@ Represents an in-game spawn.
 
 :   Spell, if currently casting (only accurate on yourself, not NPCs or other group members)
 
-### {{ renderMember(name='CeilingHeightAtCurrLocation') }} 
+### {{ renderMember(type='float', name='CeilingHeightAtCurrLocation') }} 
 
 :   
 
@@ -108,7 +112,7 @@ Represents an in-game spawn.
 
 :   The "cleaned up" name
 
-### {{ renderMember(name='CombatSkillTicks') }} 
+### {{ renderMember(type='int', name='CombatSkillTicks') }} 
 
 :   
 
@@ -116,9 +120,13 @@ Represents an in-game spawn.
 
 :   GREY, GREEN, LIGHT BLUE, BLUE, WHITE, YELLOW, RED
 
-### {{ renderMember(name='ContractorID') }} 
+### {{ renderMember(type='int', name='ContractorID') }} 
 
 :   
+
+### {{ renderMember(type='int', name='CorpseDragCount') }}
+
+:   Number of corpses being dragged
 
 ### {{ renderMember(type='int', name='CurrentEndurance') }} 
 
@@ -131,6 +139,10 @@ Represents an in-game spawn.
 ### {{ renderMember(type='int', name='CurrentMana') }} 
 
 :   Current Mana points (only updates when target/group)
+
+### {{ renderMember(type='float', name='D') }}
+
+:   Shortcut for -Z (makes Downward positive)
 
 ### {{ renderMember(type='bool', name='Dead') }} 
 
@@ -184,7 +196,11 @@ Represents an in-game spawn.
 
 :   Ducking?
 
-### {{ renderMember(type='float', name='EQLoc') }} 
+### {{ renderMember(type='float', name='E') }}
+
+:   Shortcut for -X (makes Eastward positive)
+
+### {{ renderMember(type='string', name='EQLoc') }} 
 
 :   Location using EQ format
 
@@ -200,7 +216,7 @@ Represents an in-game spawn.
 
 :   Feigning?
 
-### {{ renderMember(name='FindBuff') }} 
+### {{ renderMember(type='cachedbuff', name='FindBuff') }} 
 
 :   
 
@@ -208,7 +224,7 @@ Represents an in-game spawn.
 
 :   Is your target moving away from you?
 
-### {{ renderMember(name='FloorZ') }} 
+### {{ renderMember(type='float', name='FloorZ') }} 
 
 :   
 
@@ -224,7 +240,7 @@ Represents an in-game spawn.
 
 :   GM or Guide?
 
-### {{ renderMember(name='GMRank') }} 
+### {{ renderMember(type='int', name='GMRank') }} 
 
 :   
 
@@ -252,7 +268,7 @@ Represents an in-game spawn.
 
 :   Heading to the coordinates y,x from the spawn
 
-### {{ renderMember(name='HeadWet') }} 
+### {{ renderMember(type='bool', name='HeadWet') }} 
 
 :   
 
@@ -264,7 +280,7 @@ Represents an in-game spawn.
 
 :   Is the spawn holding an item?
 
-### {{ renderMember(name='HoldingAnimation') }} 
+### {{ renderMember(type='int', name='HoldingAnimation') }} 
 
 :   
 
@@ -276,7 +292,7 @@ Represents an in-game spawn.
 
 :   Spawn ID
 
-### {{ renderMember(name='InPvPArea') }} 
+### {{ renderMember(type='int', name='InPvPArea') }} 
 
 :   
 
@@ -284,11 +300,11 @@ Represents an in-game spawn.
 
 :   <p>Gives TRUE/FALSE returns. Options are:</p><ul><li>ANY or 0 - ${Me.Invis[ANY]} or ${Me.Invis[0]} or ${Me.Invis}</li><li>NORMAL or 1 - ${Me.Invis[NORMAL]} or just ${Me.Invis[1]}</li><li>UNDEAD or 2 - ${Me.Invis[UNDEAD]} or just ${Me.Invis[2]}</li><li>ANIMAL or 3 - ${Me.Invis[ANIMAL]} or just ${Me.Invis[3]}</li><li>SOS or 4 - ${Me.Invis[SOS]} or just ${Me.Invis[4]} returns true IF you are a ROG AND in fact hidden AND have a skill of at least 100 in HIDE AND have the AA for SoS</li></ul>
 
-### {{ renderMember(name='IsSummoned') }} 
+### {{ renderMember(type='bool', name='IsSummoned') }} 
 
-:   
+:   Is this a summoned being?
 
-### {{ renderMember(name='IsTouchingSwitch') }} 
+### {{ renderMember(type='bool', name='IsTouchingSwitch') }} 
 
 :   
 
@@ -324,7 +340,7 @@ Represents an in-game spawn.
 
 :   LocYX of the spawn
 
-### {{ renderMember(name='LocYXZ') }} 
+### {{ renderMember(type='string, name='LocYXZ') }} 
 
 :   
 
@@ -360,7 +376,7 @@ Represents an in-game spawn.
 
 :   The Max distance from this spawn for you to hit it
 
-### {{ renderMember(name='MercID') }} 
+### {{ renderMember(type='int', name='MercID') }} 
 
 :   
 
@@ -372,21 +388,24 @@ Represents an in-game spawn.
 
 :   Moving?
 
-### {{ renderMember(type='float', name='MQLoc') }} 
+### {{ renderMember(type='string', name='MQLoc') }} 
 
 :   Location using MQ format
 
-### {{ renderMember(name='MyBuff') }} 
+### {{ renderMember(type='cachedbuff', name='MyBuff') }} 
 
 :   
 
-### {{ renderMember(name='MyBuffCount') }} 
+### {{ renderMember(type='int', name='MyBuffCount') }} 
 
 :   
 
-### {{ renderMember(name='MyBuffDuration') }} 
+### {{ renderMember(type='timestamp', name='MyBuffDuration') }} 
 
 :   
+### {{ renderMember(type='float', name='N') }}
+
+:   Synonym for Y
 
 ### {{ renderMember(type='string', name='Name') }} 
 
@@ -447,12 +466,15 @@ Represents an in-game spawn.
 ### {{ renderMember(type='bool', name='Roleplaying') }} 
 
 :   Roleplaying?
+### {{ renderMember(type='float', name='S') }}
+
+:   Shortcut for -Y (makes Southward positive)
 
 ### {{ renderMember(type='int', name='Secondary') }} 
 
 :   Item ID of anything that may be in the Secondary slot
 
-### {{ renderMember(name='SeeInvis') }} 
+### {{ renderMember(type='int', name='SeeInvis') }} 
 
 :   
 
@@ -464,7 +486,7 @@ Represents an in-game spawn.
 
 :   Sneaking?
 
-### {{ renderMember(name='SpawnStatus') }} 
+### {{ renderMember(type='int', name='SpawnStatus') }} 
 
 :   
 
@@ -500,19 +522,19 @@ Represents an in-game spawn.
 
 :   Last name
 
-### {{ renderMember(name='Targetable') }} 
+### {{ renderMember(type='bool', name='Targetable') }} 
 
 :   
 
-### {{ renderMember(name='TargetOfTarget') }} 
+### {{ renderMember(type='spawn', name='TargetOfTarget') }} 
 
 :   
 
-### {{ renderMember(name='TemporaryPet') }} 
+### {{ renderMember(type='bool', name='TemporaryPet') }} 
 
 :   
 
-### {{ renderMember(name='TimeBeenDead') }} 
+### {{ renderMember(type='timestamp', name='TimeBeenDead') }} 
 
 :   
 
@@ -528,9 +550,17 @@ Represents an in-game spawn.
 
 :   PC, NPC, Untargetable, Mount, Pet, Corpse, Chest, Trigger, Trap, Timer, Item, Mercenary, Aura, Object, Banner, Campfire, Flyer
 
+### {{ renderMember(type='float', name='U') }}
+
+:   Synonym for Z
+
 ### {{ renderMember(type='bool', name='Underwater') }} 
 
 :   Underwater?
+
+### {{ renderMember(type='float', name='W') }}
+
+:   Synonym for X
 
 ### {{ renderMember(type='float', name='X') }} 
 

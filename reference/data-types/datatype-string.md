@@ -8,7 +8,10 @@ A string is an array of characters. In MQ2 there is no single character datatype
 
 ## Members
 
-| [_string_](datatype-string.md) | **Arg**[_#_,_s_] | Returns the #th argument of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1].
+### {{ renderMember(type='string', name='Arg', params='#,s') }}
+
+:   Returns the #th argument of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1].
+
 ### {{ renderMember(type='int', name='Compare', params='text') }} 
 
 :   Determines how the initial string and the second string, _text_, compare to each other:<br/><ul><li>If both are the same, **Compare** will return 0.</li><li>If the string is alphabetically before text, **Compare** will return -1.</li><li>If text is alphabetically after string, **Compare** will return 1.</li></ul>**Compare** is case-insensitive

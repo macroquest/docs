@@ -8,6 +8,10 @@ Data types related to the current MacroQuest2 session.  These also inherit from 
 
 ## Members
 
+### {{ renderMember(type='bool', name='Anonymize') }}
+
+:   Anonymize character data
+
 ### {{ renderMember(type='int', name='Build') }} 
 
 :   The build (client target) for MQ2Main.dll (1 - Live, 2 - Test, 3 - Beta, 4 - Emu)

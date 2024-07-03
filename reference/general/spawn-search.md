@@ -103,12 +103,21 @@ All [Top-Level Objects](../top-level-objects/README.md) and [Data Types](../data
 `"slower"`  
 `"los"`  
 `"targetable"`  
-````"range"`` ``MinLevel`` ``MaxLevel``````` "loc"`````KnownLocation``` `xLoc` `yLoc` ``````zLoc`````    
-`````"id"`````` `bSpawnID` ``````SpawnID`````    
-`"radius"`    
-`````"body"`````` ```````BodyType``````````` "class"```"race"``  
-`[[ "light"`  
-`Light, Lights[Light] ]]`  
+`"range"`
+`"MinLevel"`
+`"MaxLevel"`
+`"loc"`
+`"KnownLocation"`
+`"xLoc"`
+`"yLoc"`
+`"zLoc"`
+`"id"`
+`"ID"`
+`"radius"`
+`"body"`
+`"class"`
+`"race"`
+`"light"`
 `"guild"`  
 `"guildname"`  
 `"alert"`  

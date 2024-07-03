@@ -85,7 +85,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   If Tribute is active, how much it is costing you every 10 minutes. Returns NULL if tribute is inactive.
 
-### {{ renderMember(name='AdoptiveCoin') }} 
+### {{ renderMember(type='int', name='AdoptiveCoin') }} 
 
 :   
 
@@ -101,7 +101,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Character Agility
 
-### {{ renderMember(name='AirSupply') }} 
+### {{ renderMember(type='int', name='AirSupply') }} 
 
 :   
 
@@ -129,11 +129,11 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Am I the group leader?
 
-### {{ renderMember(name='AncientDraconicCoin') }} 
+### {{ renderMember(type='int', name='AncientDraconicCoin') }} 
 
 :   
 
-### {{ renderMember(name='AncientSebilisianCoins') }} 
+### {{ renderMember(type='int', name='AncientSebilisianCoins') }} 
 
 :   
 
@@ -157,7 +157,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Is Autofire on?
 
-### {{ renderMember(name='AutoSkill') }} 
+### {{ renderMember(type='skill', name='AutoSkill') }} 
 
 :   
 
@@ -165,9 +165,9 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Avoidance bonus from gear/spells
 
-### {{ renderMember(name='Bandolier') }} 
+### {{ renderMember(type='bandolier', name='Bandolier') }} 
 
-:   
+:  Gives access to the bandolier datatype. 
 
 ### {{ renderMember(type='item', name='Bank') }}
 
@@ -205,27 +205,31 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Base Wisdom
 
-### {{ renderMember(name='BathezidTradeGems') }} 
+### {{ renderMember(type='int', name='BathezidTradeGems') }} 
 
 :   
+
+### {{ renderMember(type='int', name='Bayle') }}
+
+:
 
 ### {{ renderMember(type='buff', name='Beneficial') }} 
 
 :   Returns the first Beneficial buff found in your list of buffs
 
-### {{ renderMember(name='BifurcatedCoin') }} 
+### {{ renderMember(type='int', name='BifurcatedCoin') }} 
 
 :   
 
-### {{ renderMember(name='BlockedBuff') }} 
+### {{ renderMember(type='spell', name='BlockedBuff') }} 
 
 :   
 
-### {{ renderMember(name='BlockedPetBuff', params='name') }} 
+### {{ renderMember(type='spell', name='BlockedPetBuff', params='name') }} 
 
 :   Buff blocked by pet with this name
 
-### {{ renderMember(name='BlockedPetBuff', params='#') }} 
+### {{ renderMember(type='spell', name='BlockedPetBuff', params='#') }} 
 
 :   Buff at this index slot # of the blocked pet buffs 
 
@@ -241,7 +245,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Returns information about your bind points (0-4)
 
-### {{ renderMember(name='Brellium') }} 
+### {{ renderMember(type='int', name='Brellium') }} 
 
 :   
 
@@ -249,7 +253,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Returns the Brell's line HP buff from a Paladin
 
-### {{ renderMember(name='BronzeFiats') }} 
+### {{ renderMember(type='int', name='BronzeFiats') }} 
 
 :   
 
@@ -277,7 +281,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Total cash in your bank, expressed in coppers
 
-### {{ renderMember(name='CastTimeLeft') }} 
+### {{ renderMember(type='timestamp', name='CastTimeLeft') }} 
 
 :   
 
@@ -285,7 +289,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Character Charisma
 
-### {{ renderMember(name='Charmed') }} 
+### {{ renderMember(type='buff', name='Charmed') }} 
 
 :   
 
@@ -297,7 +301,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Clairvoyance Bonus
 
-### {{ renderMember(name='Clarity') }} 
+### {{ renderMember(type='buff', name='Clarity') }} 
 
 :   
 
@@ -329,7 +333,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Returns one of the following: COMBAT, DEBUFFED, COOLDOWN, ACTIVE, RESTING, UNKNOWN
 
-### {{ renderMember(name='Commemoratives') }} 
+### {{ renderMember(type='int', name='Commemoratives') }} 
 
 :   
 
@@ -369,15 +373,15 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Number of songs you have
 
-### {{ renderMember(name='Crippled') }} 
+### {{ renderMember(type='int', name='Crippled') }} 
 
 :   
 
-### {{ renderMember(name='CrystallizedFear') }} 
+### {{ renderMember(type='int', name='CrystallizedFear') }} 
 
 :   
 
-### {{ renderMember(name='CryrstallizedLuck') }} 
+### {{ renderMember(type='int', name='CryrstallizedLuck') }} 
 
 :   
 
@@ -405,23 +409,23 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Returns the name of the Curse debuff if you are effected by one
 
-### {{ renderMember(name='CursorCopper') }} 
+### {{ renderMember(type='int', name='CursorCopper') }} 
 
 :   
 
-### {{ renderMember(name='CursorGold') }} 
+### {{ renderMember(type='int', name='CursorGold') }} 
 
 :   
 
-### {{ renderMember(name='CursorKrono') }} 
+### {{ renderMember(type='int', name='CursorKrono') }} 
 
 :   
 
-### {{ renderMember(name='CursorPlatinum') }} 
+### {{ renderMember(type='int', ame='CursorPlatinum') }} 
 
 :   
 
-### {{ renderMember(name='CursorSilver') }} 
+### {{ renderMember(type='int', name='CursorSilver') }} 
 
 :   
 
@@ -441,7 +445,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Character Dexterity
 
-### {{ renderMember(name='DiamondCoins') }} 
+### {{ renderMember(type='int', name='DiamondCoins') }} 
 
 :   
 
@@ -465,7 +469,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Downtime (Ticks left til combat timer end)
 
-### {{ renderMember(name='DreadStones') }} 
+### {{ renderMember(type='int', name='DreadStones') }} 
 
 :   
 
@@ -473,7 +477,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Drunkenness level
 
-### {{ renderMember(name='DSed') }} 
+### {{ renderMember(type='buff', name='DSed') }} 
 
 :   
 
@@ -481,7 +485,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Number of Ebon Crystals on your character
 
-### {{ renderMember(name='Endurance') }} 
+### {{ renderMember(type='int', name='Endurance') }} 
 
 :   
 
@@ -497,11 +501,11 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Endurance regen bonus
 
-### {{ renderMember(name='EnergyCrystals') }} 
+### {{ renderMember(type='int', name='EnergyCrystals') }} 
 
 :   
 
-### {{ renderMember(name='EntwinedDjinnCoins') }} 
+### {{ renderMember(type='int', name='EntwinedDjinnCoins') }} 
 
 :   
 
@@ -517,7 +521,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Faycites on your character
 
-### {{ renderMember(name='Feared') }} 
+### {{ renderMember(type='buff', name='Feared') }} 
 
 :   
 
@@ -525,19 +529,19 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Info about Fellowship
 
-### {{ renderMember(name='FetteredIfritCoins') }} 
+### {{ renderMember(type='int', name='FetteredIfritCoins') }} 
 
 :   
 
-### {{ renderMember(name='FindBuff') }} 
+### {{ renderMember(type='buff', name='FindBuff') }} 
 
 :   
 
-### {{ renderMember(name='Fists') }} 
+### {{ renderMember(type='int', name='Fists') }} 
 
 :   
 
-### {{ renderMember(name='Focus') }} 
+### {{ renderMember(type='buff', name='Focus') }} 
 
 :   
 
@@ -553,7 +557,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Number of free inventory spaces of at least # size (giant=4)
 
-### {{ renderMember(name='FroststoneDucat') }} 
+### {{ renderMember(type='int', name='FroststoneDucat') }} 
 
 :   
 
@@ -577,7 +581,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Gold in bank
 
-### {{ renderMember(name='GoldTokens') }} 
+### {{ renderMember(type='int', name='GoldTokens') }} 
 
 :   
 
@@ -601,7 +605,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Size of group
 
-### {{ renderMember(name='Growth') }} 
+### {{ renderMember(type='buff', name='Growth') }} 
 
 :   
 
@@ -617,7 +621,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Total Combined Haste (worn and spell) as shown in Inventory Window stats
 
-### {{ renderMember(name='Hasted') }} 
+### {{ renderMember(type='buff', name='Hasted') }} 
 
 :   
 
@@ -673,7 +677,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Hunger level
 
-### {{ renderMember(name='HybridHP') }} 
+### {{ renderMember(type='buff', name='HybridHP') }} 
 
 :   
 
@@ -685,7 +689,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Returns TRUE/FALSE if you are in an instance.
 
-### {{ renderMember(name='Instance') }} 
+### {{ renderMember(type='int', name='Instance') }} 
 
 :   
 
@@ -713,7 +717,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Returns the invulnerable spell name on you, can be used with spell data          type ex. ${Me.Invulnerable.Spell.ID}
 
-### {{ renderMember(name='IsBerserk') }} 
+### {{ renderMember(type='int', name='IsBerserk') }} 
 
 :   
 
@@ -721,7 +725,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   True/False on if the item is ready to cast.
 
-### {{ renderMember(name='Krono') }} 
+### {{ renderMember(type='int', name='Krono') }} 
 
 :   
 
@@ -797,11 +801,11 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Returns a timestamp of last time you zoned
 
-### {{ renderMember(name='LaurionInnVoucher') }} 
+### {{ renderMember(type='int', name='LaurionInnVoucher') }} 
 
 :   
 
-### {{ renderMember(name='LCK') }} 
+### {{ renderMember(type='int', name='LCK') }} 
 
 :   
 
@@ -809,11 +813,11 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Available LDoN points
 
-### {{ renderMember(name='LoyaltyTokens') }} 
+### {{ renderMember(type='int', name='LoyaltyTokens') }} 
 
 :   
 
-### {{ renderMember(name='Maloed') }} 
+### {{ renderMember(type='buff', name='Maloed') }} 
 
 :   
 
@@ -829,11 +833,11 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Mana regen bonus from gear and spells
 
-### {{ renderMember(name='MarksOfValor') }} 
+### {{ renderMember(type='int', name='MarksOfValor') }} 
 
 :   
 
-### {{ renderMember(name='MaxAirSupply') }} 
+### {{ renderMember(type='int', name='MaxAirSupply') }} 
 
 :   
 
@@ -849,7 +853,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Max hit points
 
-### {{ renderMember(name='MaxLevel') }} 
+### {{ renderMember(type='int', name='MaxLevel') }} 
 
 :   
 
@@ -857,15 +861,15 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Max mana
 
-### {{ renderMember(name='McKenzie') }} 
+### {{ renderMember(type='int', name='McKenzie') }} 
 
 :   
 
-### {{ renderMember(name='MedalsOfConflict') }} 
+### {{ renderMember(type='int', name='MedalsOfConflict') }} 
 
 :   
 
-### {{ renderMember(name='MedalsOfHeroism') }} 
+### {{ renderMember(type='int', name='MedalsOfHeroism') }} 
 
 :   
 
@@ -877,11 +881,11 @@ If something is missing here, you can check the source to see if it exists.
 
 :   
 
-### {{ renderMember(name='MercAAPoints') }} 
+### {{ renderMember(type='int', name='MercAAPoints') }} 
 
 :   
 
-### {{ renderMember(name='MercAAPointsSpent') }} 
+### {{ renderMember(type='int', name='MercAAPointsSpent') }} 
 
 :   
 
@@ -893,11 +897,11 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Current active mercenary stance as a string, default is NULL.
 
-### {{ renderMember(name='MercListInfo') }} 
+### {{ renderMember(type='string', name='MercListInfo') }} 
 
 :   
 
-### {{ renderMember(name='Mezzed') }} 
+### {{ renderMember(type='buff', name='Mezzed') }} 
 
 :   
 
@@ -909,7 +913,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Total LDoN points earned in Mistmoore
 
-### {{ renderMember(name='Motes') }} 
+### {{ renderMember(type='int', name='Motes') }} 
 
 :   
 
@@ -921,11 +925,11 @@ If something is missing here, you can check the source to see if it exists.
 
 :   First name
 
-### {{ renderMember(name='Nobles') }} 
+### {{ renderMember(type='int', name='Nobles') }} 
 
 :   
 
-### {{ renderMember(name='NumBagSlots') }} 
+### {{ renderMember(type='int', name='NumBagSlots') }} 
 
 :   
 
@@ -933,7 +937,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Returns the amount of spell gems your toon has
 
-### {{ renderMember(name='Origin') }} 
+### {{ renderMember(type='zone', name='Origin') }} 
 
 :   
 
@@ -941,11 +945,11 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Orux on your character
 
-### {{ renderMember(name='OverseerTetradrachm') }} 
+### {{ renderMember(type='int', name='OverseerTetradrachm') }} 
 
 :   
 
-### {{ renderMember(name='ParcelStatus') }} 
+### {{ renderMember(type='int', name='ParcelStatus') }} 
 
 :   
 
@@ -961,7 +965,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Your aggro percentage
 
-### {{ renderMember(name='PctAirSupply') }} 
+### {{ renderMember(type='int', name='PctAirSupply') }} 
 
 :   
 
@@ -973,7 +977,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Experience as a %
 
-### {{ renderMember(name='PctExpToAA') }} 
+### {{ renderMember(type='int', name='PctExpToAA') }} 
 
 :   
 
@@ -985,7 +989,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Current mana as a %
 
-### {{ renderMember(name='PctMercAAExp') }} 
+### {{ renderMember(type='float', name='PctMercAAExp') }} 
 
 :   
 
@@ -994,7 +998,12 @@ If something is missing here, you can check the source to see if it exists.
 :   Percentage of Vitality the toon has
 
 ### {{ renderMember(type='int', name='PersonaLevel', params='class') }}
+
 :   Given the class shortname as a param, returns level of that class persona. e.g. ${Me.PersonaLevel[DRU]} returns the level of your Druid persona.  If you do not have a Persona of the given class, the member will return 0.
+
+### {{ renderMember(type='int', name='PersonaLevel', params='#') }}
+
+:   Given the class ID # returns the persona level of that class. eg ${Me.PersonaLevel[11]} returns the level of your Necromancer persona.  If you do not have a Persona of the given class, the member will return 0.
 
 ### {{ renderMember(type='spell', name='PetBuff', params='#') }} 
 
@@ -1012,7 +1021,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Phosphites on your character
 
-### {{ renderMember(name='PiecesofEight') }} 
+### {{ renderMember(type='int', name='PiecesofEight') }} 
 
 :   
 
@@ -1036,7 +1045,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   
 
-### {{ renderMember(name='Pred') }} 
+### {{ renderMember(type='buff', name='Pred') }} 
 
 :   
 
@@ -1056,31 +1065,31 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Ranged attack ready?
 
-### {{ renderMember(name='RebellionChits') }} 
+### {{ renderMember(type='int', name='RebellionChits') }} 
 
 :   
 
-### {{ renderMember(name='Reclamation') }} 
+### {{ renderMember(type='int', name='Reclamation') }} 
 
 :   
 
-### {{ renderMember(name='Regen') }} 
+### {{ renderMember(type='buff', name='Regen') }} 
 
 :   
 
-### {{ renderMember(name='RemnantOfTranquility') }} 
+### {{ renderMember(type='int', name='RemnantOfTranquility') }} 
 
 :   
 
-### {{ renderMember(name='RestlessMark') }} 
+### {{ renderMember(type='int', name='RestlessMark') }} 
 
 :   
 
-### {{ renderMember(name='RevDSed') }} 
+### {{ renderMember(type='buff', name='RevDSed') }} 
 
 :   
 
-### {{ renderMember(name='Rooted') }} 
+### {{ renderMember(type='buff', name='Rooted') }} 
 
 :   
 
@@ -1092,15 +1101,15 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Do I have auto-run turned on?
 
-### {{ renderMember(name='SathirsTradeGems') }} 
+### {{ renderMember(type='int', name='SathirsTradeGems') }} 
 
 :   
 
-### {{ renderMember(name='ScarletMarks') }} 
+### {{ renderMember(type='int', name='ScarletMarks') }} 
 
 :   
 
-### {{ renderMember(name='SE') }} 
+### {{ renderMember(type='buff', name='SE') }} 
 
 :   
 
@@ -1112,19 +1121,19 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Secondary Percentage aggro
 
-### {{ renderMember(name='ShadedSpecie') }} 
+### {{ renderMember(type='int', name='ShadedSpecie') }} 
 
 :   
 
-### {{ renderMember(name='ShadowStones') }} 
+### {{ renderMember(type='int', name='ShadowStones') }} 
 
 :   
 
-### {{ renderMember(name='ShalowainsPrivateReserve') }}
+### {{ renderMember(type='int', name='ShalowainsPrivateReserve') }}
 
 :   
 
-### {{ renderMember(name='SharedBank') }} 
+### {{ renderMember(type='item', name='SharedBank') }} 
 
 :   
 
@@ -1132,7 +1141,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Shielding bonus from gear and spells
 
-### {{ renderMember(name='Shining') }} 
+### {{ renderMember(type='buff', name='Shining') }} 
 
 :   
 
@@ -1152,7 +1161,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Silver in bank
 
-### {{ renderMember(name='SilverTokens') }} 
+### {{ renderMember(type='int', name='SilverTokens') }} 
 
 :   
 
@@ -1160,7 +1169,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Skill level of skill with this name or ID #
 
-### {{ renderMember(name='SkillBase') }} 
+### {{ renderMember(type='int', name='SkillBase') }} 
 
 :   
 
@@ -1168,15 +1177,15 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Skill cap of skill with this name or ID #
 
-### {{ renderMember(name='Skin') }} 
+### {{ renderMember(type='buff', name='Skin') }} 
 
 :   
 
-### {{ renderMember(name='Slowed') }} 
+### {{ renderMember(type='buff', name='Slowed') }} 
 
 :   
 
-### {{ renderMember(name='Snared') }} 
+### {{ renderMember(type='buff', name='Snared') }} 
 
 :   
 
@@ -1188,7 +1197,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   The song in this slot #
 
-### {{ renderMember(name='SPA') }} 
+### {{ renderMember(type='int', name='SPA') }} 
 
 :   
 
@@ -1196,7 +1205,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   The character's spawn
 
-### {{ renderMember(name='Spell') }} 
+### {{ renderMember(type='spell', name='Spell') }} 
 
 :   
 
@@ -1220,7 +1229,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Spell Shield bonus from gear and spells
 
-### {{ renderMember(name='SpiritualMedallions') }} 
+### {{ renderMember(type='int', name='SpiritualMedallions') }} 
 
 :   
 
@@ -1232,7 +1241,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Character Strength
 
-### {{ renderMember(name='Strength') }} 
+### {{ renderMember(type='buff', name='Strength') }} 
 
 :   
 
@@ -1256,7 +1265,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   The number of days left before subscription expires.
 
-### {{ renderMember(name='SV') }} 
+### {{ renderMember(type='buff', name='SV') }} 
 
 :   
 
@@ -1292,7 +1301,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   The average of your character's resists
 
-### {{ renderMember(name='Symbol') }} 
+### {{ renderMember(type='buff', name='Symbol') }} 
 
 :   
 
@@ -1304,7 +1313,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Target of Target (will only work when group or raid Target of Target is active; if not, it will return NULL)
 
-### {{ renderMember(name='Tashed') }} 
+### {{ renderMember(type='buff', name='Tashed') }} 
 
 :   
 
@@ -1328,7 +1337,7 @@ If something is missing here, you can check the source to see if it exists.
 
 :   TRUE/FALSE if using advanced looting
 
-### {{ renderMember(name='VeliumShards') }} 
+### {{ renderMember(type='int', name='VeliumShards') }} 
 
 :   
 
@@ -1340,15 +1349,15 @@ If something is missing here, you can check the source to see if it exists.
 
 :   
 
-### {{ renderMember(name='Voucher') }} 
+### {{ renderMember(type='int', name='Voucher') }} 
 
 :   
 
-### {{ renderMember(name='WarforgedEmblem') }} 
+### {{ renderMember(type='int', name='WarforgedEmblem') }} 
 
 :   
 
-### {{ renderMember(name='WarlordsSymbol') }} 
+### {{ renderMember(type='int', name='WarlordsSymbol') }} 
 
 :   
 
@@ -1364,31 +1373,31 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Extended target data for the specified XTarget #. Note: Passing no index to this returns the number of current extended targets.
 
-### {{ renderMember(name='XTargetSlots') }} 
+### {{ renderMember(type='int', name='XTargetSlots') }} 
 
 :   
 
-### {{ renderMember(name='XTHaterCount') }} 
+### {{ renderMember(type='int', name='XTHaterCount') }} 
 
 :   
 
-### {{ renderMember(name='ZoneBound') }} 
+### {{ renderMember(type='zone', name='ZoneBound') }} 
 
 :   
 
-### {{ renderMember(name='ZoneBoundX') }} 
+### {{ renderMember(type='float', name='ZoneBoundX') }} 
 
 :   
 
-### {{ renderMember(name='ZoneBoundY') }} 
+### {{ renderMember(type='float', name='ZoneBoundY') }} 
 
 :   
 
-### {{ renderMember(name='ZoneBoundZ') }} 
+### {{ renderMember(type='float', name='ZoneBoundZ') }} 
 
 :   
 
-### {{ renderMember(name='Zoning') }} 
+### {{ renderMember(type='bool', name='Zoning') }} 
 
 :   
 
@@ -1428,6 +1437,7 @@ The delay will last either 5s OR until the assist is complete
 [achievementcat]: datatype-achievementcat.md
 [altability]: datatype-altability.md
 [spell]: datatype-spell.md
+[bandolier]: datatype-bandolier.md
 [bandolieritem]: #bandolieritem-datatype
 [int64]: datatype-int64.md
 [timestamp]: datatype-timestamp.md
@@ -1441,3 +1451,5 @@ The delay will last either 5s OR until the assist is complete
 [fellowship]: datatype-fellowship.md
 [strinrg]: datatype-string.md
 [xtarget]: datatype-xtarget.md
+[zone]: datatype-zone.md
+[skill]: datatype-skill.md

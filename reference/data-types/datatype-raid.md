@@ -40,6 +40,10 @@ Contains data on the current raid
 
 :   Raid main assist
 
+### {{ renderMember(type='raidmember', name='MarkNpc') }}
+
+:   Raid NPC marker
+
 ### {{ renderMember(type='raidmember', name='MasterLooter') }} 
 
 :   Raid Master Looter

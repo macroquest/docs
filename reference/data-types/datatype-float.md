@@ -12,13 +12,13 @@ Represents a single precision (32-bit) floatiang point number.
 
 ## Members
 
-### {{ renderMember(type='string', name='Deci') }} 
-
-:   The number as a string with **one** place of precision, _i.e. ###.#_
-
 ### {{ renderMember(type='string', name='Centi') }} 
 
 :   The number as a string with **two** places of precision, _i.e. ###.##_
+
+### {{ renderMember(type='string', name='Deci') }} 
+
+:   The number as a string with **one** place of precision, _i.e. ###.#_
 
 ### {{ renderMember(type='int', name='Int') }} 
 

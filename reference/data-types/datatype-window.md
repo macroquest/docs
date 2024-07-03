@@ -101,6 +101,10 @@ Windows come in many forms, but all are represented with the generic **window** 
 
 :   Horizontal scroll bar current position.
 
+### {{ renderMember(type='invslotwindow', name='InvSlot') }}
+
+:
+
 
 ### {{ renderMember(type='int', name='Items') }} 
 
@@ -190,6 +194,9 @@ Windows come in many forms, but all are represented with the generic **window** 
 
 :   Returns `TRUE` if the window has siblings.
 
+### {{ renderMember(type='string', name='Size') }}
+
+:   Returns the size of the window in the form of `Width x Height`.
 
 ### {{ renderMember(type='int', name='Style') }} 
 
@@ -277,6 +284,9 @@ Windows come in many forms, but all are represented with the generic **window** 
 
 :   Width of the window in pixels.
 
+### {{ renderMember(type='float', name='Value') }}
+
+:   
 
 ### {{ renderMember(type='int', name='X') }} 
 
