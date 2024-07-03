@@ -196,7 +196,7 @@ Windows come in many forms, but all are represented with the generic **window** 
 
 ### {{ renderMember(type='string', name='Size') }}
 
-:   Returns the size of the window in the form of `Width x Height`.
+:   Returns the size of the window in the form of `width,height`.
 
 ### {{ renderMember(type='int', name='Style') }} 
 
