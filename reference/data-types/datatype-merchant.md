@@ -14,10 +14,6 @@ This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is ac
 
 :   Returns True if the merchant's inventory is full.
 
-### {{ renderMember(type='int', name='Items') }} 
-
-:   Number of items on the merchant.
-
 ### {{ renderMember(type='item', name='Item', params='#') }} 
 
 :   Item number _#_ on the merchant's list.
@@ -25,6 +21,14 @@ This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is ac
 ### {{ renderMember(type='item', name='Item', params='name') }} 
 
 :   Find an item by partial name on the merchant's list. Prefix with "=" for an exact match.
+
+### {{ renderMember(type='int', name='Items') }} 
+
+:   Number of items on the merchant.
+
+### {{ renderMember(type='bool', name='ItemsReceived') }} 
+
+:   True if the merchant's item list has been populated.
 
 ### {{ renderMember(type='float', name='Markup') }} 
 
@@ -38,10 +42,6 @@ This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is ac
 
 :   The currently selected item in the merchant window. Items can be selected by using [/selectitem](../commands/selectitem.md)
 
-### {{ renderMember(type='bool', name='ItemsReceived') }} 
-
-:   True if the merchant's item list has been populated.
-
 ### [string][string] `(To String)`
 
 :   Same as *Open*
@@ -52,8 +52,8 @@ This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is ac
 | Name | Action |
 | :--- | :--- |
 | **Buy**[_#_] | Buys \# of whatever is selected with **Merchant.SelectItem\[xxx]** |
-| **OpenWindow** | Will open the merchant closest to you, or if you have a merchant target |
 | **CloseWindow** | Will close the merchant window |
+| **OpenWindow** | Will open the merchant closest to you, or if you have a merchant target |
 | **SelectItem**[_name_] | Select item by partial name match, case insensitive. Prefix _name_ with `=` for EXACT match |
 | **Sell**[_count_] | Sell _count_ of selected item. See examples |
 

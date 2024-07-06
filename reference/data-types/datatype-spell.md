@@ -8,15 +8,19 @@ This is the type used for spell information.
 
 ## Members
 
+### {{ renderMember(type='int', name='ActorTagId') }}
+
+:
+
 ### {{ renderMember(type='float', name='AERange') }} 
 
 :   AE range (group spells use this for their range)
 
-### {{ renderMember(name='Attrib') }} 
+### {{ renderMember(type='int', name='Attrib') }} 
 
 :   
 
-### {{ renderMember(name='AutoCast') }} 
+### {{ renderMember(type='int', name='AutoCast') }} 
 
 :   
 
@@ -28,39 +32,39 @@ This is the type used for spell information.
 
 :   
 
-### {{ renderMember(name='BaseEffectsFocusCap') }} 
+### {{ renderMember(type='int', name='BaseEffectsFocusCap') }} 
 
 :   
 
-### {{ renderMember(name='BaseName') }} 
+### {{ renderMember(type='string', name='BaseName') }} 
 
 :   
 
-### {{ renderMember(name='Beneficial') }} 
+### {{ renderMember(type='bool', name='Beneficial') }} 
 
 :   
 
-### {{ renderMember(name='BookIcon') }} 
+### {{ renderMember(type='int', name='BookIcon') }} 
+
+:   Numeric ID of the Icon used to represent the spell.
+
+### {{ renderMember(type='int', name='Calc') }} 
 
 :   
 
-### {{ renderMember(name='Calc') }} 
+### {{ renderMember(type='int', name='CalcIndex') }} 
 
 :   
 
-### {{ renderMember(name='CalcIndex') }} 
+### {{ renderMember(type='bool', name='CanMGB') }} 
 
 :   
 
-### {{ renderMember(name='CanMGB') }} 
+### {{ renderMember(type='string', name='CastByMe') }} 
 
 :   
 
-### {{ renderMember(name='CastByMe') }} 
-
-:   
-
-### {{ renderMember(name='CastByOther') }} 
+### {{ renderMember(type='string', name='CastByOther') }} 
 
 :   
 
@@ -96,7 +100,7 @@ This is the type used for spell information.
 
 :   Whether a spell can be deleted from the spell book
 
-### {{ renderMember(name='Description') }} 
+### {{ renderMember(type='string', name='Description') }} 
 
 :   
 
@@ -112,19 +116,19 @@ This is the type used for spell information.
 
 :   Duration of the spell (if any)
 
-### {{ renderMember(name='DurationWindow') }} 
+### {{ renderMember(type='int', name='DurationWindow') }} 
 
 :   
 
-### {{ renderMember(name='EnduranceCost') }} 
+### {{ renderMember(type='int', name='EnduranceCost') }} 
 
 :   
 
-### {{ renderMember(name='EQSpellDuration') }} 
+### {{ renderMember(type='ticks', name='EQSpellDuration') }} 
 
 :   
 
-### {{ renderMember(name='Extra') }} 
+### {{ renderMember(type='string', name='Extra') }} 
 
 :   
 
@@ -136,7 +140,7 @@ This is the type used for spell information.
 
 :   Icon number of the spell. Example ${Spell\[blah].GemIcon}
 
-### {{ renderMember(name='HasSPA') }} 
+### {{ renderMember(type='bool', name='HasSPA', params='#') }} 
 
 :   
 
@@ -148,11 +152,11 @@ This is the type used for spell information.
 
 :   Spell ID
 
-### {{ renderMember(name='IllusionOkWhenMounted') }} 
+### {{ renderMember(type='bool', name='IllusionOkWhenMounted') }} 
 
 :   
 
-### {{ renderMember(name='IsActiveAA') }} 
+### {{ renderMember(type='bool', name='IsActiveAA') }} 
 
 :   
 
@@ -196,7 +200,7 @@ This is the type used for spell information.
 
 :   Adjusted cast time
 
-### {{ renderMember(name='MyDuration') }} 
+### {{ renderMember(type='ticks', name='MyDuration') }} 
 
 :   
 
@@ -208,11 +212,11 @@ This is the type used for spell information.
 
 :   Spell Name
 
-### {{ renderMember(name='NoExpendReagentID') }} 
+### {{ renderMember(type='int', name='NoExpendReagentID') }} 
 
 :   
 
-### {{ renderMember(name='NumEffects') }} 
+### {{ renderMember(type='int', name='NumEffects') }} 
 
 :   
 
@@ -232,11 +236,11 @@ This is the type used for spell information.
 
 :   Returns the spell/combat ability name rank character has.
 
-### {{ renderMember(name='ReagentCount') }} 
+### {{ renderMember(type='int', name='ReagentCount') }} 
 
 :   
 
-### {{ renderMember(name='ReagentID') }} 
+### {{ renderMember(type='int', name='ReagentID') }} 
 
 :   
 
@@ -244,7 +248,7 @@ This is the type used for spell information.
 
 :   Time to recast after successful cast
 
-### {{ renderMember(name='RecastTimerID') }} 
+### {{ renderMember(type='int', name='RecastTimerID') }} 
 
 :   
 
@@ -260,7 +264,7 @@ This is the type used for spell information.
 
 :   See below for Resist Types
 
-### {{ renderMember(name='Restrictions') }} 
+### {{ renderMember(type='string', name='Restrictions') }} 
 
 :   
 
@@ -272,7 +276,7 @@ This is the type used for spell information.
 
 :   Percentage of slow, example of use ${Target.Slowed.SlowPct} or ${Spell\[Slowing Helix].SlowPct}
 
-### {{ renderMember(name='SpellGroup') }} 
+### {{ renderMember(type='int', name='SpellGroup') }} 
 
 :   
 
@@ -292,7 +296,7 @@ This is the type used for spell information.
 
 :   Does the selected spell stack with your pet's current buffs (duration is in ticks)
 
-### {{ renderMember(name='StacksSpawn') }} 
+### {{ renderMember(type='bool', name='StacksSpawn') }} 
 
 :   
 
@@ -304,7 +308,7 @@ This is the type used for spell information.
 
 :   alias for .WillStack - see entry for more details
 
-### {{ renderMember(name='StacksWithDiscs') }} 
+### {{ renderMember(type='bool', name='StacksWithDiscs') }} 
 
 :   
 
@@ -316,7 +320,7 @@ This is the type used for spell information.
 
 :   Numeric Id of the subcategory this spell belongs to.
 
-### {{ renderMember(name='SubSpellGroup') }} 
+### {{ renderMember(type='int', name='SubSpellGroup') }} 
 
 :   
 
@@ -324,11 +328,11 @@ This is the type used for spell information.
 
 :   See below for Target Types
 
-### {{ renderMember(name='TimeOfDay') }} 
+### {{ renderMember(type='int', name='TimeOfDay') }} 
 
 :   
 
-### {{ renderMember(name='Trigger') }} 
+### {{ renderMember(type='spell', name='Trigger') }} 
 
 :   
 

@@ -68,6 +68,14 @@ Data types related to the current EverQuest session.
 
 :   Your station name
 
+### {{ renderMember(type='int', name='MaxBGFPS') }}
+
+:   Maximum background FPS
+
+### {{ renderMember(type='int', name='MaxFPS') }}
+
+:   Maximum foreground FPS
+
 ### {{ renderMember(type='int', name='MouseX') }} 
 
 :   Mouse's X location
@@ -103,6 +111,10 @@ Data types related to the current EverQuest session.
 ### {{ renderMember(type='int', name='PPriority') }} 
 
 :   Returns the processor priority that Everquest is set to. Values: UNKNOWN, LOW, BELOW NORMAL, NORMAL, ABOVE NORMAL, HIGH, REALTIME
+
+### {{ renderMember(type='float', name='UiScale') }}
+
+:   Returns the current UI scale
 
 ### {{ renderMember(type='bool', name='ValidLoc', params='coorrdinates') }} 
 

@@ -8,70 +8,17 @@ This is the type for your current task.
 
 ## Members
 
-### {{ renderMember(type='string', name='Index') }} 
-
-:   Returns the task&apos;s place on the tasklist
-
-### [string][string] `Objective[#].Instruction`
-
-:   Returns a tasks&apos;s Objectives
-
-| [_string_](datatype-string.md) | **Objective[#].Status** | Returns the status of the objective in the format amount done Vs total IE 0/3 |      
-### [string][string] `Objective[#].Zone`
-
-:   Returns the zone the objective is to be performed in
-
-### {{ renderMember(type='int', name='CurrentCount') }} 
-
-:   Returns the current count of the .Type needed to complete a objective
-
-### {{ renderMember(type='int', name='RequiredCount') }} 
-
-:   Returns the required count of the .Type needed to complete a objective
-
-### {{ renderMember(type='bool', name='Optional') }} 
-
-:   Returns true or false if a objective is optional
-
-### {{ renderMember(type='string', name='RequiredItem') }} 
-
-:   Returns a string of the required item to complete a objective.
-
-### {{ renderMember(type='string', name='RequiredSkill') }} 
-
-:   Returns a string of the required skill to complete a objective.
-
-### {{ renderMember(type='string', name='RequiredSpell') }} 
-
-:   Returns a string of the required spell to complete a objective.
-
-### {{ renderMember(type='int', name='DZSwitchID') }} 
-
-:   Returns an int of the switch used in a objective.
-
 ### {{ renderMember(type='int', name='ID') }} 
 
 :   Returns an int of the task ID
 
-### {{ renderMember(type='string', name='Step') }} 
+### {{ renderMember(type='string', name='Index') }} 
 
-:   Returns description of current step in the task
+:   Returns the tasks' place on the tasklist
 
-### {{ renderMember(type='string', name='Select') }} 
+### {{ renderMember(type='string', name='Leader') }} 
 
-:   Selects the task
-
-### {{ renderMember(type='string', name='Title') }} 
-
-:   Returns name of the shared task
-
-### {{ renderMember(type='timestamp', name='Timer') }} 
-
-:   Returns amount of time before task expires
-
-### {{ renderMember(type='int', name='Members') }} 
-
-:   Returns number of members in task
+:   Returns task leader's name
 
 ### {{ renderMember(type='taskmember', name='Member', params='</b>#<b>') }} 
 
@@ -81,17 +28,33 @@ This is the type for your current task.
 
 :   Returns specified member in task by name
 
-### {{ renderMember(type='string', name='Leader') }} 
+### {{ renderMember(type='int', name='Members') }} 
 
-:   Returns task leader&apos;s name
+:   Returns number of members in task
 
-### {{ renderMember(type='int', name='WindowIndex') }} 
+### {{ renderMember(type='taskobjective', name='Objective', params='</b>#<b>') }}
 
-:   Returns the Quest Window List Index. (if the window actually has the list filled)
+:   Returns the specified objective
+
+### {{ renderMember(type='string', name='Step') }} 
+
+:   Returns description of current step in the task
+
+### {{ renderMember(type='timestamp', name='Timer') }} 
+
+:   Returns amount of time before task expires
+
+### {{ renderMember(type='string', name='Title') }} 
+
+:   Returns name of the shared task
 
 ### {{ renderMember(type='string', name='Type') }} 
 
 :   Returns a string that can be one of the following:<ul><li>Unknown</li><li>None</li><li>Deliver</li><li>Kill</li><li>Loot</li><li>Hail</li><li>Explore</li><li>Tradeskill</li><li>Fishing</li><li>Foraging</li><li>Cast</li><li>UseSkill</li><li>DZSwitch</li><li>DestroyObject</li><li>Collect</li><li>Dialogue</li></ul>
+
+### {{ renderMember(type='int', name='WindowIndex') }} 
+
+:   Returns the Quest Window List Index. (if the window actually has the list filled)
 
 
 ## Methods
@@ -177,6 +140,7 @@ Output: The Hatching a Plan first objective should be completed in Hatchery Wing
     ```
     /echo I should be working on ${Task[hatch].Step} in ${Task[hatch].Step.Zone}
     ```
+
 [int]: datatype-int.md
 [string]: datatype-string.md
 [achievementobj]: datatype-achievementobj.md
@@ -221,3 +185,4 @@ Output: The Hatching a Plan first objective should be completed in Hatchery Wing
 [deity]: datatype-deity.md
 [race]: datatype-race.md
 [taskmember]: datatype-task.md
+[taskobjective]: datatype-taskobjective.md

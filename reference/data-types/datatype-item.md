@@ -88,9 +88,9 @@ Contains the properties that describe an item.
 
 :   The cost to buy this item from active merchant
 
-### {{ renderMember(name='CanUse') }} 
+### {{ renderMember(type='bool', name='CanUse') }} 
 
-:   
+:   TRUE if you can use the item, otherwise FALSE
 
 ### {{ renderMember(type='float', name='CastTime') }} 
 
@@ -120,7 +120,11 @@ Contains the properties that describe an item.
 
 :   Activatable spell effect, if any.
 
-### {{ renderMember(name='Collectible') }} 
+### {{ renderMember(type='bool', name='Collectible') }} 
+
+:   TRUE if the item is a collectible, otherwise FALSE
+
+### {{ renderMember(name='Combinable') }} 
 
 :   
 
@@ -128,21 +132,17 @@ Contains the properties that describe an item.
 
 :   CombatEffects
 
-### {{ renderMember(name='Combinable') }} 
-
-:   
-
 ### {{ renderMember(type='int', name='Container') }} 
 
 :   Number of slots, if this is a container
 
-### {{ renderMember(name='ContentSize') }} 
+### {{ renderMember(type='int', name='ContentSize') }} 
 
 :   
 
-### {{ renderMember(name='Damage') }} 
+### {{ renderMember(type='int', name='Damage') }} 
 
-:   
+:   Base Damage of the item   
 
 ### {{ renderMember(type='int', name='DamageShieldMitigation') }} 
 
@@ -196,7 +196,7 @@ Contains the properties that describe an item.
 
 :   Does this item have Evolving experience on?
 
-### {{ renderMember(name='Expendable') }} 
+### {{ renderMember(type='bool', name='Expendable') }} 
 
 :   
 
@@ -204,7 +204,7 @@ Contains the properties that describe an item.
 
 :   Familiar spell effect, if any.
 
-### {{ renderMember(name='FirstFreeSlot') }} 
+### {{ renderMember(type='int', name='FirstFreeSlot') }} 
 
 :   
 
@@ -232,7 +232,7 @@ Contains the properties that describe an item.
 
 :   HealAmount (regen?)
 
-### {{ renderMember(name='Heirloiom') }} 
+### {{ renderMember(type='bool', name='Heirloom') }} 
 
 :   
 
@@ -376,15 +376,15 @@ Contains the properties that describe an item.
 
 :   Lore?
 
-### {{ renderMember(name='LoreEquipped') }} 
+### {{ renderMember(type='bool', name='LoreEquipped') }} 
 
-:   
+:   Lore Equipped?
 
 ### {{ renderMember(name='LoreText') }} 
 
 :   
 
-### {{ renderMember(name='Luck') }} 
+### {{ renderMember(type='int', name='Luck') }} 
 
 :   
 
@@ -400,7 +400,7 @@ Contains the properties that describe an item.
 
 :   ManaRegen value on item
 
-### {{ renderMember(name='MaxLuck') }} 
+### {{ renderMember(type='int', name='MaxLuck') }} 
 
 :   
 
@@ -412,7 +412,7 @@ Contains the properties that describe an item.
 
 :   Quantity of item active merchant has
 
-### {{ renderMember(name='MinLuck') }} 
+### {{ renderMember(type='int', name='MinLuck') }} 
 
 :   
 
@@ -424,7 +424,7 @@ Contains the properties that describe an item.
 
 :   Name
 
-### {{ renderMember(name='NoDestroy') }} 
+### {{ renderMember(type='bool', name='NoDestroy') }} 
 
 :   
 
@@ -436,19 +436,19 @@ Contains the properties that describe an item.
 
 :   Temporary?
 
-### {{ renderMember(name='NoTrade') }} 
+### {{ renderMember(type='bool', name='NoTrade') }} 
 
 :   Synonym for NoDrop
 
-### {{ renderMember(name='Open') }} 
+### {{ renderMember(type='int', name='Open') }} 
 
 :   
 
-### {{ renderMember(name='OrnamentationIcon') }} 
+### {{ renderMember(type='int', name='OrnamentationIcon') }} 
 
 :   
 
-### {{ renderMember(name='PctPower') }} 
+### {{ renderMember(type='float', name='PctPower') }} 
 
 :   
 
@@ -460,9 +460,9 @@ Contains the properties that describe an item.
 
 :   Power left on power source
 
-### {{ renderMember(name='Prestige') }} 
+### {{ renderMember(type='bool', name='Prestige') }} 
 
-:   
+:  Prestige item? 
 
 ### {{ renderMember(type='itemspell', name='Proc') }} 
 
@@ -470,7 +470,7 @@ Contains the properties that describe an item.
 
 ### {{ renderMember(name='ProcRate') }} 
 
-:   
+:   /race
 
 ### {{ renderMember(type='int', name='Purity') }} 
 
@@ -480,22 +480,30 @@ Contains the properties that describe an item.
 
 :   
 
-### {{ renderMember(name='Quest') }} 
+### {{ renderMember(type='bool', name='Quest') }} 
 
-:   
+: Quest item?  
 
-| [_string_](datatype-string.md) | **Race**[_N_] | Returns the _Nth_ long race name of the listed races on an item. Items suitable for ALL races will effectively have all 15 races listed. 
+### {{ renderMember(type='string', name='Race', params='N') }}
+
+:   Returns the _Nth_ long race name of the listed races on an item. Items suitable for all races will effectively have all 15 races listed.
+
+
 ### {{ renderMember(type='int', name='Races') }} 
 
 :   The number of races that can use the item. Items suitable for ALL races will return 15.
 
-### {{ renderMember(name='Range') }} 
+### {{ renderMember(type='int', name='Range') }} 
 
 :   
 
 ### {{ renderMember(type='int', name='RecommendedLevel') }} 
 
 :   Returns the Recommended Level of an item. Items with no recommended level will return 0.
+
+### {{ renderMember(type='int', name='RefCount') }}
+
+:
 
 ### {{ renderMember(type='int', name='RequiredLevel') }} 
 
@@ -525,15 +533,15 @@ Contains the properties that describe an item.
 
 :   
 
-### {{ renderMember(name='SkillModMax') }} 
+### {{ renderMember(type='int', name='SkillModMax') }} 
 
 :   
 
-### {{ renderMember(name='SkillModValue') }} 
+### {{ renderMember(type='int', name='SkillModValue') }} 
 
 :   
 
-### {{ renderMember(name='SlotsUsedByItem') }} 
+### {{ renderMember(type='int', name='SlotsUsedByItem') }} 
 
 :   
 
@@ -584,6 +592,10 @@ Contains the properties that describe an item.
 ### {{ renderMember(type='int', name='StunResist') }} 
 
 :   Stun resist
+
+### {{ renderMember(name='Summoned') }}
+
+:
 
 ### {{ renderMember(type='int', name='svCold') }} 
 
@@ -649,7 +661,10 @@ Contains the properties that describe an item.
 
 :   Passive worn effect, if any.
 
-| [_invslot_](datatype-invslot.md) | **WornSlot**[_N_] | The _Nth_ invslot this item can be worn in (fingers/ears count as 2 slots) 
+### {{ renderMember(type='invslot', name='WornSlot', params='N') }}
+
+:   The _Nth_ invslot this item can be worn in (fingers/ears count as 2 slots)
+
 ### {{ renderMember(type='bool', name='WornSlot', params='name') }} 
 
 :   Can item be worn in invslot with this _name_? (worn slots only)

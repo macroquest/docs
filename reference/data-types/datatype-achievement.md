@@ -8,21 +8,45 @@ Provides the details about a single achievement and allows access to an achievem
 
 ## Members
 
-### {{ renderMember(type='int', name='ID') }} 
+### {{ renderMember(type='bool', name='Completed') }} 
 
-:   The achievement's unique ID.
+:   True if the achievement has been completed
 
-### {{ renderMember(type='string', name='Name') }} 
+### {{ renderMember(type='time', name='CompletedTime') }} 
 
-:   The achievement's name
+:   Calendar time when the achievement was completed.
 
 ### {{ renderMember(type='string', name='Description') }} 
 
 :   The achievement's description
 
-### {{ renderMember(type='int', name='Points') }} 
+### {{ renderMember(type='bool', name='Hidden') }} 
 
-:   The point value for the achievement
+:   True if the achievement is hidden
+
+### {{ renderMember(type='int', name='IconID') }} 
+
+:   ID of the Achievement's Icon. See [Achievement Icon](datatype-achievement.md#achievement-icon) below.
+
+### {{ renderMember(type='int', name='ID') }} 
+
+:   The achievement's unique ID.
+
+### {{ renderMember(type='int', name='Index') }} 
+
+:   The index of the achievement. See [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices) for more information.
+
+### {{ renderMember(type='string', name='Link', params='opt: Name') }} 
+
+:   Generate an achievement link. An optional name can be provided to display in the achievement, otherwise the current character's name will be used.
+
+### {{ renderMember(type='bool', name='Locked') }} 
+
+:   True if the achievement is locked
+
+### {{ renderMember(type='string', name='Name') }} 
+
+:   The achievement's name
 
 ### {{ renderMember(type='achievementobj', name='Objective', params='#|Description') }} 
 
@@ -36,41 +60,17 @@ Provides the details about a single achievement and allows access to an achievem
 
 :   The number of objectives in this achievement.
 
-### {{ renderMember(type='string', name='Link', params='opt: Name') }} 
-
-:   Generate an achievement link. An optional name can be provided to display in the achievement, otherwise the current character's name will be used.
-
-### {{ renderMember(type='int', name='Index') }} 
-
-:   The index of the achievement. See [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices) for more information.
-
-### {{ renderMember(type='int', name='IconID') }} 
-
-:   ID of the Achievement's Icon. See [Achievement Icon](datatype-achievement.md#achievement-icon) below.
-
-### {{ renderMember(type='string', name='State') }} 
-
-:   The achievement state. See [Achievement State](datatype-achievement.md#achievement-state) below.
-
-### {{ renderMember(type='bool', name='Completed') }} 
-
-:   True if the achievement has been completed
-
 ### {{ renderMember(type='bool', name='Open') }} 
 
 :   True if the achievement is open
 
-### {{ renderMember(type='bool', name='Locked') }} 
+### {{ renderMember(type='int', name='Points') }} 
 
-:   True if the achievement is locked
+:   The point value for the achievement
 
-### {{ renderMember(type='bool', name='Hidden') }} 
+### {{ renderMember(type='string', name='State') }} 
 
-:   True if the achievement is hidden
-
-### {{ renderMember(type='time', name='CompletedTime') }} 
-
-:   Calendar time when the achievement was completed.
+:   The achievement state. See [Achievement State](datatype-achievement.md#achievement-state) below.
 
 
 ### Achievement State

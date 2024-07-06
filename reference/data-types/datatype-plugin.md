@@ -8,6 +8,10 @@ Data for the specified plugin
 
 ## Members
 
+### {{ renderMember(type='bool', name='IsLoaded') }}
+
+:   Returns true if the plugin is loaded
+
 ### {{ renderMember(type='string', name='Name') }} 
 
 :   Name of the plugin

@@ -20,6 +20,13 @@ A timer data type is set in tenths of one second and counts down to zero; starti
 
 :   Same as **Value**
 
+## Methods
+
+| Name | Action |
+| :--- | :--- |
+| **Expire** | Set the timer to 0 
+| **Reset** | Reset the timer to the original value
+| **Set**[_value_] | Set the timer to the given value
 
 ## Usage
 

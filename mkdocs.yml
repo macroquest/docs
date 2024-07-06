@@ -521,6 +521,7 @@ nav:
     - int64: reference/data-types/datatype-int64.md
     - inventory: reference/data-types/datatype-inventory.md
     - invslot: reference/data-types/datatype-invslot.md
+    - invslotwindow: reference/data-types/datatype-invslotwindow.md
     - item: reference/data-types/datatype-item.md
     - itemspell: reference/data-types/datatype-itemspell.md
     - keyring: reference/data-types/datatype-keyring.md
@@ -544,6 +545,7 @@ nav:
     - target: reference/data-types/datatype-target.md
     - task: reference/data-types/datatype-task.md
     - taskmember: reference/data-types/datatype-taskmember.md
+    - taskobjective: reference/data-types/datatype-taskobjective.md
     - ticks: reference/data-types/datatype-ticks.md
     - time: reference/data-types/datatype-time.md
     - timer: reference/data-types/datatype-timer.md

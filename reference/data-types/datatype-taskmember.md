@@ -8,17 +8,17 @@ Describes a member in your current task
 
 ## Members
 
-### {{ renderMember(type='string', name='Name') }} 
+### {{ renderMember(type='int', name='Index') }} 
 
-:   Returns name of the mamber
+:   Returns task index for member (i.e., 1-6)
 
 ### {{ renderMember(type='bool', name='Leader') }} 
 
 :   Returns true if member is leader
 
-### {{ renderMember(type='int', name='Index') }} 
+### {{ renderMember(type='string', name='Name') }} 
 
-:   Returns task index for member (i.e., 1-6)
+:   Returns name of the mamber
 
 [int]: datatype-int.md
 [string]: datatype-string.md

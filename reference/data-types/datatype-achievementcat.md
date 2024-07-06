@@ -10,18 +10,6 @@ While not required to access achievements, categories may be useful for enumerat
 
 ## Members
 
-### {{ renderMember(type='int', name='ID') }} 
-
-:   The unique ID for the category
-
-### {{ renderMember(type='string', name='Name') }} 
-
-:   The category's display name
-
-### {{ renderMember(type='string', name='Description') }} 
-
-:   The category's description
-
 ### {{ renderMember(type='achievement', name='Achievement', params='#|Name') }} 
 
 :   Find an achievement in this category by its ID or name.
@@ -46,17 +34,17 @@ While not required to access achievements, categories may be useful for enumerat
 
 :   The number of child categories in this category.
 
-### {{ renderMember(type='int', name='Points') }} 
-
-:   The total earned points of achievements in this category.
-
 ### {{ renderMember(type='int', name='CompletedAchievements') }} 
 
 :   The number of achievements earned in this category and its subcategories
 
-### {{ renderMember(type='int', name='TotalAchievements') }} 
+### {{ renderMember(type='string', name='Description') }} 
 
-:   The total number of achievements in this category and its subcategories.
+:   The category's description
+
+### {{ renderMember(type='int', name='ID') }} 
+
+:   The unique ID for the category
 
 ### {{ renderMember(type='string', name='ImageTextureName') }} 
 
@@ -66,6 +54,18 @@ While not required to access achievements, categories may be useful for enumerat
 
 :   The index of the category in the achievement manager. For more information see [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices).
 
+### {{ renderMember(type='string', name='Name') }} 
+
+:   The category's display name
+
+### {{ renderMember(type='int', name='Points') }} 
+
+:   The total earned points of achievements in this category.
+
+
+### {{ renderMember(type='int', name='TotalAchievements') }} 
+
+:   The total number of achievements in this category and its subcategories.
 
 ### Examples
 

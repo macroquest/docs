@@ -14,6 +14,14 @@ This type inherits members from [_spawn_](datatype-spawn.md).
 
 :   AA Points spent on mercenary abilities
 
+### {{ renderMember(type='string', name='Index') }} 
+
+:   Index
+
+### {{ renderMember(type='string', name='Name') }}
+
+:   Name of the mercenary
+
 ### {{ renderMember(type='string', name='Stance') }} 
 
 :   Current stance of the mercenary
@@ -25,10 +33,6 @@ This type inherits members from [_spawn_](datatype-spawn.md).
 ### {{ renderMember(type='int', name='StateID') }} 
 
 :   Current state ID of the mercenary as a number.
-
-### {{ renderMember(type='string', name='Index') }} 
-
-:   Index
 
 ### [string][string] `To String`
 

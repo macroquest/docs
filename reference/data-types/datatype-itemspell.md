@@ -24,8 +24,22 @@ Represents a spell effect on an item.
 
 :   The maximum number of charges supported by this spell.
 
-| [_string_](../data-types/datatype-string.md) | OverrideDescription | Overrides the normal spell description string, if set.
-| [_string_](../data-types/datatype-string.md) | OverrideName | Overrides the normal spell name string, if set.
+### {{ renderMember(type='int', name='OtherID') }}
+
+:
+
+### {{ renderMember(type='string', name='OtherName') }}
+
+: Synonym of _OverrideName_
+
+### {{ renderMember(type='string', name='OverrideDescription') }}
+
+: Overrides the normal spell description string, if set.
+
+### {{ renderMember(type='string', name='OverrideName') }}
+
+: Overrides the normal spell name string, if set.
+
 ### {{ renderMember(type='int', name='ProcRate') }} 
 
 :   Combat effect proc rate.

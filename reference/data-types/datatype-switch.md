@@ -8,25 +8,9 @@ Data related to switches (levers, buttons, etc) in the zone
 
 ## Members
 
-### {{ renderMember(type='float', name='D') }} 
-
-:   D coordinate (Upward-positive)
-
 ### {{ renderMember(type='heading', name='DefaultHeading') }} 
 
 :   Heading of "closed" switch
-
-### {{ renderMember(type='float', name='DefaultN') }} 
-
-:   Y coordinate of "closed" switch (Northward-positive)
-
-### {{ renderMember(type='float', name='DefaultU') }} 
-
-:   Z coordinate of "closed" switch (Upward-positive)
-
-### {{ renderMember(type='float', name='DefaultW') }} 
-
-:   X coordinate of "closed" switch (Westward-positive)
 
 ### {{ renderMember(type='float', name='DefaultX') }} 
 
@@ -44,6 +28,10 @@ Data related to switches (levers, buttons, etc) in the zone
 
 :   Distance from player to switch in (x,y)
 
+### {{ renderMember(type='float', name='Distance3D') }} 
+
+:   Distance from player to switch in (x,y,z)
+
 ### {{ renderMember(type='heading', name='Heading') }} 
 
 :   Switch is facing this heading
@@ -56,13 +44,13 @@ Data related to switches (levers, buttons, etc) in the zone
 
 :   Switch ID
 
+### {{ renderMember(type='bool', name='IsTargeted') }}
+
+:   Returns TRUE if the switch is targeted
+
 ### {{ renderMember(type='bool', name='LineOfSight') }} 
 
 :   Returns TRUE if the switch is in LoS
-
-### {{ renderMember(type='float', name='N') }} 
-
-:   Y coordinate (Northward-positive)
 
 ### {{ renderMember(type='string', name='Name') }} 
 
@@ -75,10 +63,6 @@ Data related to switches (levers, buttons, etc) in the zone
 ### {{ renderMember(type='int', name='State') }} 
 
 :   The "state" of the switch.
-
-### {{ renderMember(type='float', name='W') }} 
-
-:   X coordinate (Westward-positive)
 
 ### {{ renderMember(type='float', name='X') }} 
 

@@ -34,6 +34,10 @@ A timestamp represented in milliseconds.
 
 :   Remaining time value represented in ticks
 
+### {{ renderMember(type='string', name='Time') }} 
+
+:   Remaining time value formatted in M:S
+
 ### {{ renderMember(type='string', name='TimeDHM') }} 
 
 :   Remaining time value formatted in D:H:M (Days:Hours:Minutes)
@@ -41,10 +45,6 @@ A timestamp represented in milliseconds.
 ### {{ renderMember(type='string', name='TimeHMS') }} 
 
 :   Remaining time value formatted in H:M:S
-
-### {{ renderMember(type='string', name='Time') }} 
-
-:   Remaining time value formatted in M:S
 
 ### {{ renderMember(type='int64', name='TotalMinutes') }} 
 

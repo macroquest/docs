@@ -8,7 +8,7 @@ This DataType performs a simple test on _n_ using the following members.
 
 ## Members
 
-[_bool_][bool] **Between**[_#1_,_#2_:_N_]
+### {{ renderMember(type='bool', name='Between', params='#1,#2:N') }}
 
 :   True if _N_ is between the range of _#1_ and _#2_, inclusive.
 
@@ -18,7 +18,7 @@ This DataType performs a simple test on _n_ using the following members.
 
         Is 25 between 33 and 66? `${Range.Between[33,66:25]}` returns FALSE
 
-[_bool_][bool] **Inside**[_#1_,_#2_:_N_]
+### {{ renderMember(type='bool', name='Inside', params='#1,#2:N') }}
 
 :   True if _N_ is within the range of _#1_ and _#2_, exclusive.
 

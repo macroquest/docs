@@ -30,6 +30,14 @@ this type inherits members from [_spawn_ ](datatype-spawn.md)if the member is in
 
 :   TRUE if the member is designated as the group's Main Tank, FALSE otherwise
 
+### {{ renderMember(type='bool', name='MasterLooter') }}
+
+:   TRUE if the member is designated as the group's Master Looter, FALSE otherwise
+
+### {{ renderMember(type='bool', name='MarkNpc') }}
+
+:   TRUE if the member is designated as the group roule Mark NPC, FALSE otherwise
+
 ### {{ renderMember(type='bool', name='Mercenary') }} 
 
 :   TRUE if the member is a mercenary, FALSE otherwise
@@ -46,6 +54,10 @@ this type inherits members from [_spawn_ ](datatype-spawn.md)if the member is in
 
 :   TRUE if the member is online but in another zone and FALSE if online and in same zone as you.
 
+### {{ renderMember(type='int', name='PctAggro') }}
+
+:
+
 ### {{ renderMember(type='bool', name='Present') }} 
 
 :   TRUE if the member is online and in same zone and FALSE if online and not in same zone as you.
@@ -54,7 +66,7 @@ this type inherits members from [_spawn_ ](datatype-spawn.md)if the member is in
 
 :   TRUE if the member is designated as the group's Puller, FALSE otherwise
 
-### {{ renderMember(type='spawn', name='Spawn') }} 
+### {{ renderMember(type='spawn', name='Spawn') }}
 
 :   Accesses the group member's spawn. Not all members will have a spawn (if they are out of the zone).
 

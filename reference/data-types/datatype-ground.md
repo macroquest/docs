@@ -8,13 +8,45 @@ Represents a ground item.
 
 ## Members
 
-### {{ renderMember(type='int', name='ID') }} 
+### {{ renderMember(type='float', name='DisplayName') }} 
 
-:   Ground item ID (not the same as item ID, this is like spawn ID)
+:   Displays name of the grounspawn
 
 ### {{ renderMember(type='int', name='Distance') }} 
 
 :   Distance from player to ground item
+
+### {{ renderMember(type='int', name='Distance3D') }} 
+
+:   Distance from player to ground item
+
+### {{ renderMember(type='heading', name='Heading') }} 
+
+:   Ground item is facing this heading
+
+### {{ renderMember(type='heading', name='HeadingTo') }} 
+
+:   Direction player must move to meet this ground item
+
+### {{ renderMember(type='int', name='ID') }} 
+
+:   Ground item ID (not the same as item ID, this is like spawn ID)
+
+### {{ renderMember(type='bool', name='LineOfSight') }} 
+
+:   Returns TRUE if ground spawn is in line of sight
+
+### {{ renderMember(type='string', name='Name') }} 
+
+:   Name
+
+### {{ renderMember(type='int', name='SubID') }} 
+
+:   ???
+
+### {{ renderMember(type='int', name='ZoneID') }} 
+
+:   ???
 
 ### {{ renderMember(type='float', name='X') }} 
 
@@ -28,41 +60,17 @@ Represents a ground item.
 
 :   Z coordinate
 
-### {{ renderMember(type='heading', name='Heading') }} 
+### {{ renderMember(type='float', name='W') }} 
 
-:   Ground item is facing this heading
+:   X coordinate (Westward-positive)
 
-### {{ renderMember(type='string', name='Name') }} 
+### {{ renderMember(type='float', name='N') }} 
 
-:   Name
+:   Y coordinate (Northward-positive)
 
-### {{ renderMember(type='heading', name='HeadingTo') }} 
+### {{ renderMember(type='float', name='U') }} 
 
-:   Direction player must move to meet this ground item
-
-### {{ renderMember(type='bool', name='LineOfSight') }} 
-
-:   Returns TRUE if ground spawn is in line of sight
-
-### {{ renderMember(type='int', name='Address') }} 
-
-:   ???
-
-### {{ renderMember(type='float', name='DisplayName') }} 
-
-:   Displays name of the grounspawn
-
-### {{ renderMember(type='int', name='Distance3D') }} 
-
-:   Distance from player to ground item
-
-### {{ renderMember(type='int', name='SubID') }} 
-
-:   ???
-
-### {{ renderMember(type='int', name='ZoneID') }} 
-
-:   ???
+:   Z coordinate (Upward-positive)
 
 ### {{ renderMember(type='ground', name='First') }} 
 
@@ -79,18 +87,6 @@ Represents a ground item.
 ### {{ renderMember(type='ground', name='Prev') }} 
 
 :   Prev spawn
-
-### {{ renderMember(type='float', name='W') }} 
-
-:   X coordinate (Westward-positive)
-
-### {{ renderMember(type='float', name='N') }} 
-
-:   Y coordinate (Northward-positive)
-
-### {{ renderMember(type='float', name='U') }} 
-
-:   Z coordinate (Upward-positive)
 
 ### [string][string] `To String`
 

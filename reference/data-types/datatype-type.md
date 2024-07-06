@@ -8,6 +8,12 @@ Contains information about data types
 
 ## Members
 
+### {{ renderMember(type='int', name='InheritedType') }}
+
+:   Type of inherited type, if applicable.
+
+    Ex: character inherits from spawn, so its inherited type will be spawn.
+
 ### {{ renderMember(type='string', name='Name') }} 
 
 :   Type name
@@ -19,12 +25,6 @@ Contains information about data types
 ### {{ renderMember(type='int', name='Member', params='name') }} 
 
 :   Member internal ID number based on _name_ (will be a number from 1 to N)
-
-### {{ renderMember(type='int', name='InheritedType') }}
-
-:   Type of inherited type, if applicable.
-
-    Ex: character inherits from spawn, so its inherited type will be spawn.
 
 ### [string][string] `(To String)`
 

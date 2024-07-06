@@ -17,7 +17,7 @@ Used to access information about bandolier sets on your character.
 
 :   Returns the index number of the bandolier set
 
-### {{ renderMember(type='bandolieritem', name='Item', params='&nbsp;Index&nbsp;') }} 
+### {{ renderMember(type='bandolieritem', name='Item', params='Index') }} 
 
 :   Provides information about the specified item. Returns the Nth item in the set (Primary, Secondary, Ranged, Ammo)
 

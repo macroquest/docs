@@ -8,17 +8,13 @@ Provides access to world locations such as a character's bound location
 
 ## Members
 
-### {{ renderMember(type='int', name='ID') }} 
-
-:   The location's ID
-
-### {{ renderMember(type='float', name='Heading') }} 
+### {{ renderMember(type='heading', name='Heading') }} 
 
 :   At the point of binding, what direction was the character facing
 
-### {{ renderMember(type='zone', name='Zone') }} 
+### {{ renderMember(type='int', name='ID') }} 
 
-:   Access to the zone data
+:   The zone ID
 
 ### {{ renderMember(type='float', name='X') }} 
 
@@ -31,6 +27,10 @@ Provides access to world locations such as a character's bound location
 ### {{ renderMember(type='float', name='Z') }} 
 
 :   The Z coordinate
+
+### {{ renderMember(type='zone', name='Zone') }} 
+
+:   Access to the zone data
 
 [int]: datatype-int.md
 [string]: datatype-string.md

@@ -8,10 +8,6 @@ Contains information related to the specified zone
 
 ## Members
 
-### {{ renderMember(type='int64', name='Flags') }} 
-
-:   Flags for this zone
-
 ### {{ renderMember(type='int', name='ID') }} 
 
 :   ID of the zone
@@ -23,6 +19,10 @@ Contains information related to the specified zone
 ### {{ renderMember(type='string', name='ShortName') }} 
 
 :   Short zone name
+
+### {{ renderMember(type='int64', name='ZoneFlags') }} 
+
+:   Flags for this zone
 
 ### [string][string] `To String`
 

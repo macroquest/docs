@@ -68,13 +68,13 @@ Contains all the data related to alternate abilities
 
 :   Returns the next index number of the Alternative Ability
 
-### {{ renderMember(type='int', name='PointsSpent') }} 
-
-:   Returns the amount of points spent on an AA
-
 ### {{ renderMember(type='bool', name='Passive') }} 
 
 :   Returns true/false on if the Alternative Ability is passive
+
+### {{ renderMember(type='int', name='PointsSpent') }} 
+
+:   Returns the amount of points spent on an AA
 
 ### {{ renderMember(type='int', name='Rank') }} 
 
