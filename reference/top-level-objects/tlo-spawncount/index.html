@@ -10692,12 +10692,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#SpawnCount" class="md-nav__link">
+    <span class="md-ellipsis">
+      SpawnCount
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SpawnCount[SearchString]" class="md-nav__link">
+    <span class="md-ellipsis">
+      SpawnCount[SearchString]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12802,12 +12826,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#SpawnCount" class="md-nav__link">
+    <span class="md-ellipsis">
+      SpawnCount
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#SpawnCount[SearchString]" class="md-nav__link">
+    <span class="md-ellipsis">
+      SpawnCount[SearchString]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12850,17 +12898,15 @@
 <h1 id="spawncount"><code>SpawnCount</code><a class="headerlink" href="#spawncount" title="Permanent link">&para;</a></h1>
 <p>Object used to count spawns based on a set of queries. Uses the filters under <a href="../../general/spawn-search/">Spawn Search</a>.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
+<h3 id="SpawnCount"><a href="../../data-types/datatype-int/">int</a> <code>SpawnCount</code><a class="headerlink" href="#SpawnCount" title="Permanent link">&para;</a></h3>
 <dl>
-<dt><a href="../../data-types/datatype-int/"><em>int</em></a> <strong>SpawnCount</strong></dt>
-<dd>
-<p>Total number of spawns in current zone</p>
-</dd>
-<dt><a href="../../data-types/datatype-int/"><em>int</em></a> <strong>SpawnCount</strong>[<em>search string</em>]</dt>
-<dd>
-<p>Total number of spawns in current zone matching the <em>search string</em>. See <a href="../../general/spawn-search/">Spawn Search</a>.</p>
-</dd>
+<dd>Total number of spawns in current zone</dd>
 </dl>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h3 id="SpawnCount[SearchString]"><a href="../../data-types/datatype-int/">int</a> <code>SpawnCount[SearchString]</code><a class="headerlink" href="#SpawnCount[SearchString]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Total number of spawns in current zone matching the <code>SearchString</code>. See <a href="../../general/spawn-search/">Spawn Search</a>.</dd>
+</dl>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>/echo ${SpawnCount}
 </code></pre></div>
 <p>Displays the count of all spawns.</p>

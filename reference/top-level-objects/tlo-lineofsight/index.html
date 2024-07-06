@@ -10335,12 +10335,27 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#LineOfSight[y,x,z:y,x,z]" class="md-nav__link">
+    <span class="md-ellipsis">
+      LineOfSight[y,x,z:y,x,z]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12802,12 +12817,27 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#LineOfSight[y,x,z:y,x,z]" class="md-nav__link">
+    <span class="md-ellipsis">
+      LineOfSight[y,x,z:y,x,z]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12849,13 +12879,12 @@
 
 <h1 id="lineofsight"><code>LineOfSight</code><a class="headerlink" href="#lineofsight" title="Permanent link">&para;</a></h1>
 <p>Object that is used to check if there is Line of Sight betwen two locations.</p>
-<p><code>Note: For ISXEQ all 6 parameters are required and will return NULL otherwise</code></p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../../data-types/datatype-bool/"><em>bool</em></a> <strong>LineOfSight[**y,x,z:y,x,z</strong>]**</li>
-<li><a href="../../data-types/datatype-bool/"><em>bool</em></a> <strong>LineOfSight[**y,x,z,y,x,z</strong>]** (For ISXEQ)</li>
-</ul>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h3 id="LineOfSight[y,x,z:y,x,z]"><a href="../../data-types/datatype-bool/">bool</a> <code>LineOfSight[y,x,z:y,x,z]</code><a class="headerlink" href="#LineOfSight[y,x,z:y,x,z]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Check for line-of-sight between the two specified coordinates.</dd>
+</dl>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>/echo ${LineOfSight[20,40,-20:100,-300,70]}
 </code></pre></div>
 <p>Returns TRUE if Line of Sight is clear between the two locations</p>

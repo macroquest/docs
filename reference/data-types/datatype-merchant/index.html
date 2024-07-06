@@ -13065,7 +13065,13 @@
 </dl>
 <h3 id="Markup"><a href="../datatype-float/">float</a> <code>Markup</code><a class="headerlink" href="#Markup" title="Permanent link">&para;</a></h3>
 <dl>
-<dd><p>The number used to calculate the buy and sell value for an item. (This is what is changed by charisma and faction). This value is capped at 1.05.</p><br><ul><li>Markup * Item Value = Amount you buy item for</li><li>Item Value * (1/Markup) = Amount you sell item for</li></ul></dd>
+<dd>
+<p>The number used to calculate the buy and sell value for an item. (This is what is changed by charisma and faction). This value is capped at 1.05.</p>
+<ul>
+<li>Amount you buy item for = Item Value * Markup</li>
+<li>Amount you sell item for = Item Value * (1/Markup)</li>
+</ul>
+</dd>
 </dl>
 <h3 id="Open"><a href="../datatype-bool/">bool</a> <code>Open</code><a class="headerlink" href="#Open" title="Permanent link">&para;</a></h3>
 <dl>
@@ -13073,7 +13079,7 @@
 </dl>
 <h3 id="SelectedItem"><a href="../datatype-item/">item</a> <code>SelectedItem</code><a class="headerlink" href="#SelectedItem" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>The currently selected item in the merchant window. Items can be selected by using <a href="../../commands/selectitem/">/selectitem</a></dd>
+<dd>The currently selected item in the merchant window. Items can be selected by using <a href="../../commands/selectitem/">/selectitem</a> or the <code>SelectItem</code> method</dd>
 </dl>
 <h3 id="string-to-string"><a href="../datatype-string/">string</a> <code>(To String)</code><a class="headerlink" href="#string-to-string" title="Permanent link">&para;</a></h3>
 <dl>
@@ -13111,7 +13117,7 @@
 </tbody>
 </table>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p>Using <code>${Merchant.Sell[#]}</code>:</p>
+<p>Using Sell:</p>
 <div class="highlight"><pre><span></span><code>/selectitem &quot;Diamond&quot;
 </code></pre></div>
 <p>Will select a "Diamond" you can also do "=Diamond" to match EXACT name. Then you can the following command to sell 100 of it:</p>

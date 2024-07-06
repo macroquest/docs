@@ -13268,7 +13268,7 @@
 
 
 <h1 id="string"><code>string</code><a class="headerlink" href="#string" title="Permanent link">&para;</a></h1>
-<p>A string is an array of characters. In MQ2 there is no single character datatype, so any variable or expression that contains text is considered a string.</p>
+<p>A string is an array of characters. In MacroQuest there is no single character datatype, so any variable or expression that contains text is considered a string.</p>
 <h2 id="members">Members<a class="headerlink" href="#members" title="Permanent link">&para;</a></h2>
 <h3 id="Arg[#,s]"><a href="./">string</a> <code>Arg[#,s]</code><a class="headerlink" href="#Arg[#,s]" title="Permanent link">&para;</a></h3>
 <dl>
@@ -13373,8 +13373,8 @@
 </div>
 <div class="highlight"><pre><span></span><code>#Event SpellWornOff  &quot;Your #1# spell has worn off of #2#.&quot;
 
-Sub Event_SpellWornOff(string Line, string SpellName, string OnWho) 
-   | You can put all kinds of logic here, on what to do when certain 
+Sub Event_SpellWornOff(string Line, string SpellName, string OnWho)
+   | You can put all kinds of logic here, on what to do when certain
    | buffs or debuffs wear off.
    | In this example, we&#39;ll just check to see if the spell that wore
    | off is a particular spell multiple words seperated by spaces.

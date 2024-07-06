@@ -10125,12 +10125,27 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12802,12 +12817,27 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Group" class="md-nav__link">
+    <span class="md-ellipsis">
+      Group
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12850,16 +12880,20 @@
 <h1 id="group"><code>Group</code><a class="headerlink" href="#group" title="Permanent link">&para;</a></h1>
 <p>Access to all group-related information.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
-<ul>
-<li><a href="../../data-types/datatype-group/"><em>group</em></a> <strong>Group</strong></li>
-</ul>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p><code>/echo ${Group.Leader.ID}</code></p>
+<h3 id="Group"><a href="../../data-types/datatype-group/">group</a> <code>Group</code><a class="headerlink" href="#Group" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Retrieve information about your group</dd>
+</dl>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>/echo ${Group.Leader.ID}
+</code></pre></div>
 <p>Echo Groupleader ID, if any.</p>
-<p><code>/echo ${Group.Member[0]}</code></p>
-<p>Echo's your own name</p>
-<p><code>/echo ${Group.Member[1]}</code></p>
-<p>Echo's the next person on the list, after yourself.</p>
+<div class="highlight"><pre><span></span><code>/echo ${Group.Member[0]}
+</code></pre></div>
+<p>Echos your own name</p>
+<div class="highlight"><pre><span></span><code>`/echo ${Group.Member[1]}
+</code></pre></div>
+<p>Echos the next person on the list, after yourself.</p>
 
 
 

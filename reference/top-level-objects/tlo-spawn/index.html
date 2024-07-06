@@ -10665,27 +10665,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    <span class="md-ellipsis">
-      Description
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#forms" class="md-nav__link">
     <span class="md-ellipsis">
       Forms
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Spawn[N]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spawn[N]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Spawn[SearchString]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spawn[SearchString]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12805,27 +12820,42 @@
     <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
       
         <li class="md-nav__item">
-  <a href="#description" class="md-nav__link">
-    <span class="md-ellipsis">
-      Description
-    </span>
-  </a>
-  
-</li>
-      
-        <li class="md-nav__item">
   <a href="#forms" class="md-nav__link">
     <span class="md-ellipsis">
       Forms
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Spawn[N]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spawn[N]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Spawn[SearchString]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spawn[SearchString]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12866,20 +12896,17 @@
 
 
 <h1 id="spawn"><code>Spawn</code><a class="headerlink" href="#spawn" title="Permanent link">&para;</a></h1>
-<h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>Object used to get information on a specific spawn. Uses the filters under <a href="../../general/spawn-search/">Spawn Search</a>.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
+<h3 id="Spawn[N]"><a href="../../data-types/datatype-spawn/">spawn</a> <code>Spawn[N]</code><a class="headerlink" href="#Spawn[N]" title="Permanent link">&para;</a></h3>
 <dl>
-<dt><a href="../../data-types/datatype-spawn/"><em>spawn</em></a> <strong>Spawn</strong>[<em>N</em>]</dt>
-<dd>
-<p>Spawn matching ID <em>N</em>.</p>
-</dd>
-<dt><a href="../../data-types/datatype-spawn/"><em>spawn</em></a> <strong>Spawn</strong>[<em>search string</em>]</dt>
-<dd>
-<p>Any spawns matching <em>search string</em>. See <a href="../../general/spawn-search/">Spawn Search</a>.</p>
-</dd>
+<dd>Spawn matching ID <em>N</em>.</dd>
 </dl>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h3 id="Spawn[SearchString]"><a href="../../data-types/datatype-spawn/">spawn</a> <code>Spawn[SearchString]</code><a class="headerlink" href="#Spawn[SearchString]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Any spawns matching <code>SearchString</code>. See <a href="../../general/spawn-search/">Spawn Search</a>.</dd>
+</dl>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>/echo ${Spawn[1000]}
 </code></pre></div>
 <p>Displays the name of the spawn with id number 1000.</p>

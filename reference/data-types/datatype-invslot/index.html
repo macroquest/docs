@@ -12983,12 +12983,29 @@
 <dd>Same as <strong>ID</strong></dd>
 </dl>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <p>Bag is a defined variable in a for loop in this case:</p>
+<div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
+<div class="tabbed-content">
+<div class="tabbed-block">
 <div class="highlight"><pre><span></span><code>/if (${InvSlot[pack${Bag}].Item.Item[${Slot}].NoDrop}) {
     /echo I found a No Drop Item: \ag${InvSlot[pack${Bag}].Item.Item[${Slot}].Name}
     /return
 }
 </code></pre></div>
+</div>
+<div class="tabbed-block">
+<div class="highlight"><pre><span></span><code><span class="kd">local</span> <span class="n">item</span> <span class="o">=</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">InvSlot</span><span class="p">(</span><span class="s2">&quot;pack&quot;</span> <span class="o">..</span> <span class="n">Bag</span><span class="p">).</span><span class="n">Item</span><span class="p">.</span><span class="n">Item</span><span class="p">(</span><span class="n">Slot</span><span class="p">)</span>
+<span class="kr">if</span> <span class="n">item</span><span class="p">.</span><span class="n">NoDrop</span><span class="p">()</span> <span class="kr">then</span>
+    <span class="n">printf</span><span class="p">(</span><span class="s2">&quot;I found a No Drop Item: </span><span class="se">\a</span><span class="s2">g%s</span><span class="se">\a</span><span class="s2">x&quot;</span><span class="p">,</span> <span class="n">item</span><span class="p">.</span><span class="n">Name</span><span class="p">())</span>
+    <span class="kr">return</span>
+<span class="kr">end</span>
+</code></pre></div>
+</div>
+</div>
+</div>
+</div>
 
 
 

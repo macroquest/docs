@@ -11866,9 +11866,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Section" class="md-nav__link">
+  <a href="#Section[opt:" class="md-nav__link">
     <span class="md-ellipsis">
-      Section
+      Section[opt: Section]
     </span>
   </a>
   
@@ -12839,9 +12839,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Section" class="md-nav__link">
+  <a href="#Section[opt:" class="md-nav__link">
     <span class="md-ellipsis">
-      Section
+      Section[opt: Section]
     </span>
   </a>
   
@@ -12896,28 +12896,30 @@
 
 
 <h1 id="inifile"><code>inifile</code><a class="headerlink" href="#inifile" title="Permanent link">&para;</a></h1>
-<p>This is the type for the ini file that was referenced from <code>${Ini}</code></p>
+<p>This is the type for the ini file that was referenced from <a href="../../top-level-objects/tlo-ini/">TLO:Ini</a></p>
 <h2 id="members">Members<a class="headerlink" href="#members" title="Permanent link">&para;</a></h2>
 <h3 id="Exists"><a href="../datatype-bool/">bool</a> <code>Exists</code><a class="headerlink" href="#Exists" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>Whether the ini file exists or not.</dd>
 </dl>
-<h3 id="Section"><a href="../datatype-inifilesection/">inifilesection</a> <code>Section</code><a class="headerlink" href="#Section" title="Permanent link">&para;</a></h3>
+<h3 Section_="Section]" id="Section[opt:"><a href="../datatype-inifilesection/">inifilesection</a> <code>Section[opt: Section]</code><a class="headerlink" href="#Section[opt:" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>A reference to the named or unnamed section of this ini file.</dd>
+<dd>
+<p>A reference to the named or unnamed section of this ini file.</p>
+<p>The index is optional. Passing an index means it will search for matches to that index. Not passing an index references all sections for operations that allow it.</p>
+</dd>
 </dl>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
+<p>Does the file "sample.ini" exist?</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Does the file "sample.ini" exist?</p>
 <div class="highlight"><pre><span></span><code>/echo ${Ini.File[sample].Exists}
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Does the file "sample.ini" exist?</p>
 <div class="highlight"><pre><span></span><code><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Ini</span><span class="p">.</span><span class="n">File</span><span class="p">(</span><span class="s2">&quot;sample&quot;</span><span class="p">).</span><span class="n">Exists</span><span class="p">()</span>
 </code></pre></div>
 </div>

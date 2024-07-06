@@ -10167,6 +10167,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#If" class="md-nav__link">
+    <span class="md-ellipsis">
+      If
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if_alternate" class="md-nav__link">
+    <span class="md-ellipsis">
+      If - Alternate Syntax
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -12793,6 +12817,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#If" class="md-nav__link">
+    <span class="md-ellipsis">
+      If
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#if_alternate" class="md-nav__link">
+    <span class="md-ellipsis">
+      If - Alternate Syntax
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -12832,15 +12880,15 @@
 <h1 id="if"><code>If</code><a class="headerlink" href="#if" title="Permanent link">&para;</a></h1>
 <div class="admonition warning">
 <p class="admonition-title">Warning</p>
-<p>The <code>If</code> TLO is used to provide inline condition expressions for macros. It is not recommended for
+<p>The <code>If</code> TLO is used to provide inline condition expressions for macros. It is not intended for
 use with Lua.</p>
 </div>
 <p>Executes an inline condiition, similar to a ternary expression in other languages.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
+<h3 id="If"><a href="../../data-types/datatype-string/">string</a> <code>If[conditions,whentrue,whenfalse]</code><a class="headerlink" href="#If" title="Permanent link">&para;</a></h3>
 <dl>
-<dt><a href="../../data-types/datatype-string/">string</a> <strong>If</strong>[<em>conditions</em>,<em>whentrue</em>,<em>whenfalse</em>]</dt>
 <dd>
-<p>Performs <a href="../../data-types/datatype-math/#calc">Math.Calc</a> on <em>conditions</em>, gives <em>whentrue</em> if non-zero, gives <em>whenfalse</em> if zero.</p>
+<p>Performs <a href="../../data-types/datatype-math/#Calc[n]">Math.Calc</a> on <code>conditions</code>, gives <code>whentrue</code> if non-zero, gives <code>whenfalse</code> if zero.</p>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>If I am sitting, stand up. Otherwise, echo "I am not sitting down"</p>
@@ -12848,10 +12896,10 @@ use with Lua.</p>
 </code></pre></div>
 </div>
 </dd>
-<dt><a href="../../data-types/datatype-string/">string</a> <strong>If</strong>[<em>conditions</em>~<em>whentrue</em>~<em>whenfalse</em>]</dt>
-<dd>
-<p>Alternate syntax, behaves the same as above but uses the ~ character as a separator instead of a comma.   </p>
-</dd>
+</dl>
+<h3 id="if_alternate"><a href="../../data-types/datatype-string/">string</a> <code>If[conditions~whentrue~whenfalse]</code><a class="headerlink" href="#if_alternate" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Alternate syntax, behaves the same as above but uses the ~ character as a separator instead of a comma.   </dd>
 </dl>
 
 

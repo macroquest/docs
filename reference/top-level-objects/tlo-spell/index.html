@@ -10713,12 +10713,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Spell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Spell[Name]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spell[Name]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12802,12 +12826,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Spell" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spell
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Spell[Name]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Spell[Name]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12850,17 +12898,15 @@
 <h1 id="spell"><code>Spell</code><a class="headerlink" href="#spell" title="Permanent link">&para;</a></h1>
 <p>Object used to return information on a spell by name or by ID.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
+<h3 id="Spell"><a href="../../data-types/datatype-spell/">spell</a> <code>Spell</code><a class="headerlink" href="#Spell" title="Permanent link">&para;</a></h3>
 <dl>
-<dt><a href="../../data-types/datatype-spell/"><em>spell</em></a> <strong>Spell</strong>[<em>N</em>]</dt>
-<dd>
-<p>Find spell by ID</p>
-</dd>
-<dt><a href="../../data-types/datatype-spell/"><em>spell</em></a> <strong>Spell</strong>[<em>name</em>]</dt>
-<dd>
-<p>Find spell by name</p>
-</dd>
+<dd>Find spell by ID</dd>
 </dl>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h3 id="Spell[Name]"><a href="../../data-types/datatype-spell/">spell</a> <code>Spell[Name]</code><a class="headerlink" href="#Spell[Name]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Find spell by name</dd>
+</dl>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>/echo ${Spell[Splurt].ID}
 </code></pre></div>
 <p>Will return 1620</p>

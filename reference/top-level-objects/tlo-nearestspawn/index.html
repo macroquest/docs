@@ -10503,12 +10503,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#NearestSpawn[N]" class="md-nav__link">
+    <span class="md-ellipsis">
+      NearestSpawn[N]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#NearestSpawn[Search]" class="md-nav__link">
+    <span class="md-ellipsis">
+      NearestSpawn[Search]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#NearestSpawn[N,Search]" class="md-nav__link">
+    <span class="md-ellipsis">
+      NearestSpawn[N,Search]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12802,12 +12835,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#NearestSpawn[N]" class="md-nav__link">
+    <span class="md-ellipsis">
+      NearestSpawn[N]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#NearestSpawn[Search]" class="md-nav__link">
+    <span class="md-ellipsis">
+      NearestSpawn[Search]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#NearestSpawn[N,Search]" class="md-nav__link">
+    <span class="md-ellipsis">
+      NearestSpawn[N,Search]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12850,21 +12916,19 @@
 <h1 id="nearestspawn"><code>NearestSpawn</code><a class="headerlink" href="#nearestspawn" title="Permanent link">&para;</a></h1>
 <p>Object that is used in finding spawns nearest to you.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
+<h3 id="NearestSpawn[N]"><a href="../../data-types/datatype-spawn/">spawn</a> <code>NearestSpawn[N]</code><a class="headerlink" href="#NearestSpawn[N]" title="Permanent link">&para;</a></h3>
 <dl>
-<dt><a href="../../data-types/datatype-spawn/"><em>spawn</em></a> <strong>NearestSpawn</strong>[<em>N</em>]</dt>
-<dd>
-<p>The <em>Nth</em> nearest spawn</p>
-</dd>
-<dt><a href="../../data-types/datatype-spawn/"><em>spawn</em></a> <strong>NearestSpawn</strong>[<em>search</em>]</dt>
-<dd>
-<p>The nearest spawn matching this search string (see <a href="../../general/spawn-search/">Spawn Search</a>).</p>
-</dd>
-<dt><a href="../../data-types/datatype-spawn/"><em>spawn</em></a> <strong>NearestSpawn</strong>[<em>N</em>,<em>search</em>]</dt>
-<dd>
-<p>The <em>Nth</em> nearest spawn matching this search string (see <a href="../../general/spawn-search/">Spawn Search</a>).</p>
-</dd>
+<dd>The <em>Nth</em> nearest spawn</dd>
 </dl>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h3 id="NearestSpawn[Search]"><a href="../../data-types/datatype-spawn/">spawn</a> <code>NearestSpawn[Search]</code><a class="headerlink" href="#NearestSpawn[Search]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>The nearest spawn matching this search string (see <a href="../../general/spawn-search/">Spawn Search</a>).</dd>
+</dl>
+<h3 id="NearestSpawn[N,Search]"><a href="../../data-types/datatype-spawn/">spawn</a> <code>NearestSpawn[N,Search]</code><a class="headerlink" href="#NearestSpawn[N,Search]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>The <em>Nth</em> nearest spawn matching this search string (see <a href="../../general/spawn-search/">Spawn Search</a>).</dd>
+</dl>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>/echo ${NearestSpawn[npc radius 100 &quot;orc pawn&quot;]}
 </code></pre></div>
 <p>Finds the npc containing orc pawn in its name that is within 100 of you.</p>

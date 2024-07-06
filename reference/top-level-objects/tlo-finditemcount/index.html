@@ -9978,6 +9978,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#FindItemCount[name|id]" class="md-nav__link">
+    <span class="md-ellipsis">
+      FindItemCount[name|id]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-finditemcountname" class="md-nav__link">
+    <span class="md-ellipsis">
+      FindItemCount[=name]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -12793,6 +12817,30 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#FindItemCount[name|id]" class="md-nav__link">
+    <span class="md-ellipsis">
+      FindItemCount[name|id]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#int-finditemcountname" class="md-nav__link">
+    <span class="md-ellipsis">
+      FindItemCount[=name]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
     </ul>
@@ -12832,12 +12880,12 @@
 <h1 id="finditemcount"><code>FindItemCount</code><a class="headerlink" href="#finditemcount" title="Permanent link">&para;</a></h1>
 <p>A TLO used to find a count of items on your character, corpse, or a merchant by partial or exact name match. <em>See examples below.</em></p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
+<h3 id="FindItemCount[name|id]"><a href="../../data-types/datatype-int/">int</a> <code>FindItemCount[name|id]</code><a class="headerlink" href="#FindItemCount[name|id]" title="Permanent link">&para;</a></h3>
 <dl>
-<dt><a href="../../data-types/datatype-item/">item</a> <strong>FindItemCount</strong>[<em>name/id</em>]</dt>
 <dd>
 <p>Counts the items using the given item id, or partial name match. Will search character
 inventory and any items stored in key rings (illusion, mount, etc).</p>
-<details class="example">
+<details class="example" open="open">
 <summary>Example</summary>
 <p>Echos the number of items in your inventory with the name swirling in it.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
@@ -12854,11 +12902,13 @@ inventory and any items stored in key rings (illusion, mount, etc).</p>
 </div>
 </details>
 </dd>
-<dt><a href="../../data-types/datatype-item/">item</a> <strong>FindItemCount</strong>[=<em>name</em>]</dt>
+</dl>
+<h3 _FindItemCount_="name]" id="int-finditemcountname"><a href="../../data-types/datatype-int/">int</a> <code>FindItemCount[=name]</code><a class="headerlink" href="#int-finditemcountname" title="Permanent link">&para;</a></h3>
+<dl>
 <dd>
 <p>Counts the items using exact name match (case insensitive). Will search character inventory
 and any items stored in key rings (illusion, mount, etc).</p>
-<details class="example">
+<details class="example" open="open">
 <summary>Example</summary>
 <p>Echoes the number of Water Flasks you have in your inventory.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="2:2"><input checked="checked" id="__tabbed_2_1" name="__tabbed_2" type="radio" /><input id="__tabbed_2_2" name="__tabbed_2" type="radio" /><div class="tabbed-labels"><label for="__tabbed_2_1">MQScript</label><label for="__tabbed_2_2">Lua</label></div>

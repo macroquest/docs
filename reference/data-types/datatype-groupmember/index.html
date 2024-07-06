@@ -13150,7 +13150,7 @@
 <h1 id="groupmember"><code>groupmember</code><a class="headerlink" href="#groupmember" title="Permanent link">&para;</a></h1>
 <p>Contains data on a specific group member</p>
 <h2 id="members">Members<a class="headerlink" href="#members" title="Permanent link">&para;</a></h2>
-<p>this type inherits members from <a href="../datatype-spawn/"><em>spawn</em> </a>if the member is in the current zone.</p>
+<p>This type inherits members from <a href="../datatype-spawn/"><em>spawn</em> </a>if the member is in the current zone.</p>
 <h3 id="Index"><a href="../datatype-int/">int</a> <code>Index</code><a class="headerlink" href="#Index" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>Which number in the group the member is</dd>
@@ -13196,7 +13196,9 @@
 <dd>TRUE if the member is online but in another zone and FALSE if online and in same zone as you.</dd>
 </dl>
 <h3 id="PctAggro"><a href="../datatype-int/">int</a> <code>PctAggro</code><a class="headerlink" href="#PctAggro" title="Permanent link">&para;</a></h3>
-<p>:</p>
+<dl>
+<dd>???</dd>
+</dl>
 <h3 id="Present"><a href="../datatype-bool/">bool</a> <code>Present</code><a class="headerlink" href="#Present" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>TRUE if the member is online and in same zone and FALSE if online and not in same zone as you.</dd>
@@ -13214,9 +13216,11 @@
 <dd>Same as <strong>Name</strong></dd>
 </dl>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p><code>/echo ${Group.Member[0].Leader}</code></p>
+<div class="highlight"><pre><span></span><code>/echo ${Group.Member[0].Leader}
+</code></pre></div>
 <p>Echo TRUE if you are Group Leader.</p>
-<p><code>/echo ${Group.Member[3].Puller}</code></p>
+<div class="highlight"><pre><span></span><code>/echo ${Group.Member[3].Puller}
+</code></pre></div>
 <p>Echo TRUE if Group Member 3 is marked as Role Puller</p>
 
 

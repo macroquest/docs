@@ -10314,12 +10314,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#LastSpawn[N]" class="md-nav__link">
+    <span class="md-ellipsis">
+      LastSpawn[N]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#LastSpawn[-N]" class="md-nav__link">
+    <span class="md-ellipsis">
+      LastSpawn[-N]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12802,12 +12826,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#LastSpawn[N]" class="md-nav__link">
+    <span class="md-ellipsis">
+      LastSpawn[N]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#LastSpawn[-N]" class="md-nav__link">
+    <span class="md-ellipsis">
+      LastSpawn[-N]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12849,30 +12897,22 @@
 
 <h1 id="lastspawn"><code>LastSpawn</code><a class="headerlink" href="#lastspawn" title="Permanent link">&para;</a></h1>
 <p>Information about the spawns that have occurred since you entered the zone. When you enter a zone you dont know the spawn order of anything already there, just anything that spawns while you are in the zone.</p>
-<p>The useful thing about ${LastSpawn[-1]} is just being able to get the first spawn in the list which you might use in conjunction with other spawn members to go through the entire spawn list in a loop.</p>
+<p>The useful thing about <code>${LastSpawn[-1]}</code> is just being able to get the first spawn in the list which you might use in conjunction with other spawn members to go through the entire spawn list in a loop.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"></th>
-<th style="text-align: left;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../../data-types/datatype-spawn/"><em>spawn</em></a> <strong>LastSpawn[**n</strong>]**</td>
-<td style="text-align: left;">The nth latest spawn (chronological order)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../../data-types/datatype-spawn/"><em>spawn</em></a> <strong>LastSpawn[</strong>-n**]**</td>
-<td style="text-align: left;">The nth oldest spawn (chronological order)</td>
-</tr>
-</tbody>
-</table>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p><code>/echo ${LastSpawn[10].ID}</code></p>
+<h3 id="LastSpawn[N]"><a href="../../data-types/datatype-spawn/">spawn</a> <code>LastSpawn[N]</code><a class="headerlink" href="#LastSpawn[N]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>The nth latest spawn (chronological order)</dd>
+</dl>
+<h3 id="LastSpawn[-N]"><a href="../../data-types/datatype-spawn/">spawn</a> <code>LastSpawn[-N]</code><a class="headerlink" href="#LastSpawn[-N]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>The nth oldest spawn (chronological order)</dd>
+</dl>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>/echo ${LastSpawn[10].ID}
+</code></pre></div>
 <p>Echos the spawnID of the 10<sup>th</sup> mob to spawn in the zone</p>
-<p><code>/echo ${LastSpawn[-10]}</code></p>
+<div class="highlight"><pre><span></span><code>/echo ${LastSpawn[-10]}
+</code></pre></div>
 <p>Echos the name of the 10<sup>th</sup> to last spawn in the zone</p>
 
 

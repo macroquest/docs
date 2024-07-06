@@ -13371,13 +13371,20 @@
 </table>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>Extended the Ground TLO to accept searches</p>
-<p><code>/echo The closest ${Ground[brew].DisplayName} is ${Ground[brew].Distance3D} away from you.</code></p>
-<p>output: The closest Brew Barrel is 26.4 away from you.</p>
+<div class="highlight"><pre><span></span><code>/echo The closest ${Ground[brew].DisplayName} is ${Ground[brew].Distance3D} away from you.
+</code></pre></div>
+<p>Output:
+<div class="highlight"><pre><span></span><code>The closest Brew Barrel is 26.4 away from you.
+</code></pre></div></p>
 <p>Note that both of the search functions are case insensitive and are sorted by distance closest to you. The only acceptable parameter in the search filter is by name or partial name.</p>
-<p><code>/echo ${Ground[egg].Doface.Distance3D})</code> Will face the closest item on the ground which has the word "egg" in it. and then echo the distance to it in the mq2 window. well if it finds an item with the word "egg" in it on the ground that is, otherwise it will just echo NULL .DoFace does NOT target the ground item, it just faces it.</p>
-<p><code>/if (${Ground[egg].DoTarget.ID}) /echo we just targeted a ${Ground[egg]}</code></p>
+<div class="highlight"><pre><span></span><code>/echo ${Ground[egg].Doface.Distance3D}
+</code></pre></div>
+<p>Will face the closest item on the ground which has the word "egg" in it. and then echo the distance to it in the mq2 window. well if it finds an item with the word "egg" in it on the ground that is, otherwise it will just echo NULL .DoFace does NOT target the ground item, it just faces it.</p>
+<div class="highlight"><pre><span></span><code>/if (${Ground[egg].DoTarget.ID}) /echo we just targeted a ${Ground[egg]}
+</code></pre></div>
 <p>Will target the closest item on the ground which has the word "egg" in it. and then echo the distance to it in the mq2 window.</p>
-<p><code>/if (${Ground[1].Doface.Distance3D}) /echo we just targeted a ${Ground[1].DisplayName}</code></p>
+<div class="highlight"><pre><span></span><code>/if (${Ground[1].Doface.Distance3D}) /echo we just targeted a ${Ground[1].DisplayName}
+</code></pre></div>
 <p>Will face the closest item on the ground. and then echo the distance to it in the mq2 window. well if it finds an groundspawn, otherwise it will just echo NULL .DoFace does NOT target the ground item, it just faces it.</p>
 
 

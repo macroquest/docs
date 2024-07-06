@@ -10209,12 +10209,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Ini[filename,section,key,default]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ini[filename,section,key,default]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Ini" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ini
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12802,12 +12826,36 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Ini[filename,section,key,default]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ini[filename,section,key,default]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Ini" class="md-nav__link">
+    <span class="md-ellipsis">
+      Ini
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12850,8 +12898,8 @@
 <h1 id="ini"><code>Ini</code><a class="headerlink" href="#ini" title="Permanent link">&para;</a></h1>
 <p>Reads value(s) from an ini file located in a relative or absolute path.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
+<h3 id="Ini[filename,section,key,default]"><a href="../../data-types/datatype-string/">string</a> <code>Ini[filename,section,key,default]</code><a class="headerlink" href="#Ini[filename,section,key,default]" title="Permanent link">&para;</a></h3>
 <dl>
-<dt><a href="../../data-types/datatype-string/">string</a> <strong>Ini</strong>[<em>filename</em>,<em>section</em>,<em>key</em>,<em>default</em>]</dt>
 <dd>
 <p>The <em>section</em>, <em>key</em>, and <em>default</em> do not need to be given. If <em>section</em> or <em>key</em> are not given, multiple values are read.</p>
 <p><em>Section</em> and <em>key</em> may be set to -1 to skip them and give a new value.</p>
@@ -12859,13 +12907,13 @@
 a DOS-style filepath (relative or absolute) to locate the ini. If the macro accessing the ini
 is in the same non-root directory, you will still to provide the (relative or absolute) filepath.</p>
 </dd>
-<dt><a href="../../data-types/datatype-ini/">ini</a> <strong>Ini</strong></dt>
-<dd>
-<p>When passed with no parameters to Ini[] the more robust form of the Ini TLO is used.  See below and the reference
-to the <a href="../../data-types/datatype-inifilesectionkey/">Key</a> datatype for further usage.</p>
-</dd>
 </dl>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h3 id="Ini"><a href="../../data-types/datatype-ini/">ini</a> <code>Ini</code><a class="headerlink" href="#Ini" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>When passed with no parameters to Ini[] the more robust form of the Ini TLO is used.  See below and the reference
+to the <a href="../../data-types/datatype-inifilesectionkey/">Key</a> datatype for further usage.</dd>
+</dl>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p>If sample.ini contains:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[SectionOne]</span>
 <span class="na">key1</span><span class="o">=</span><span class="s">foo</span>
@@ -12892,7 +12940,7 @@ to the <a href="../../data-types/datatype-inifilesectionkey/">Key</a> datatype f
 <h1 id="ini-robust-usage"><code>Ini</code> (Robust Usage)<a class="headerlink" href="#ini-robust-usage" title="Permanent link">&para;</a></h1>
 <p>The above form of Ini usage is usable or most tasks, but a more robust usage exists.  In the more robust form <code>${Ini}</code> returns 
 an <a href="../../data-types/datatype-ini/">IniType</a> instead of a string.  This allows for dealing with duplicate keys as well as looping through a section by index.</p>
-<h2 id="examples_1">Examples<a class="headerlink" href="#examples_1" title="Permanent link">&para;</a></h2>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>If sample.ini contains:</p>
 <div class="highlight"><pre><span></span><code><span class="k">[SectionOne]</span>
 <span class="na">key1</span><span class="o">=</span><span class="s">foo</span>

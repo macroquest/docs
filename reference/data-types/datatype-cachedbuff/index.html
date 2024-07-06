@@ -13098,17 +13098,15 @@ buffs is now discouraged.</p>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
+<p>Check the time left on a group member's buff. Assumes that data has already been populated by targeting them
+at some point in the recent past.</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<p>Check the time left on a group member's buff. Assumes that data has already been populated by targeting them
-at some point in the recent past.</p>
 <div class="highlight"><pre><span></span><code>/echo ${Group.Member[2].CachedBuff[Spirit of Wolf].Duration}
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<p>Check the time left on a group member's buff. Assumes that data has already been populated by targeting them
-at some point in the recent past.</p>
 <div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Group</span><span class="p">.</span><span class="n">Member</span><span class="p">(</span><span class="mi">2</span><span class="p">).</span><span class="n">CachedBuff</span><span class="p">(</span><span class="s2">&quot;Spirit of Wolf&quot;</span><span class="p">).</span><span class="n">Duration</span><span class="p">())</span>
 </code></pre></div>
 </div>

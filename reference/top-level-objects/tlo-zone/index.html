@@ -10881,12 +10881,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Zone[N]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zone[N]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Zone[ShortName]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zone[ShortName]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12802,12 +12835,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Zone" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zone
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Zone[N]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zone[N]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Zone[ShortName]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Zone[ShortName]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12850,23 +12916,21 @@
 <h1 id="zone"><code>Zone</code><a class="headerlink" href="#zone" title="Permanent link">&para;</a></h1>
 <p>Used to find information about a particular zone.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
+<h3 id="Zone"><a href="../../data-types/datatype-currentzone/">currentzone</a> <code>Zone</code><a class="headerlink" href="#Zone" title="Permanent link">&para;</a></h3>
 <dl>
-<dt><a href="../../data-types/datatype-currentzone/">currentzone</a> <strong>Zone</strong></dt>
-<dd>
-<p>Retrieves the current zone information</p>
-</dd>
-<dt><a href="../../data-types/datatype-zone/">zone</a> <strong>Zone</strong>[<em>N</em>]</dt>
-<dd>
-<p>Retrieves information about a zone by zone ID. If this zone is the current zone, then
-this will return <a href="../../data-types/datatype-currentzone/">currentzone</a>.</p>
-</dd>
-<dt><a href="../../data-types/datatype-zone/">zone</a> <strong>Zone</strong>[<em>shortname</em>]</dt>
-<dd>
-<p>Retrieves information about a zone by short name. If this zone is the current zone, then
-this will return <a href="../../data-types/datatype-currentzone/">currentzone</a>.</p>
-</dd>
+<dd>Retrieves the current zone information</dd>
 </dl>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h3 id="Zone[N]"><a href="../../data-types/datatype-zone/">zone</a> <code>Zone[N]</code><a class="headerlink" href="#Zone[N]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Retrieves information about a zone by zone ID. If this zone is the current zone, then
+this will return <a href="../../data-types/datatype-currentzone/">currentzone</a>.</dd>
+</dl>
+<h3 id="Zone[ShortName]"><a href="../../data-types/datatype-zone/">zone</a> <code>Zone[ShortName]</code><a class="headerlink" href="#Zone[ShortName]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Retrieves information about a zone by short name. If this zone is the current zone, then
+this will return <a href="../../data-types/datatype-currentzone/">currentzone</a>.</dd>
+</dl>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <div class="highlight"><pre><span></span><code>/echo ${Zone.Type}
 </code></pre></div>
 <p>Returns an integer representing the zone you are currently in.</p>

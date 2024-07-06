@@ -13007,7 +13007,15 @@
 </dl>
 <h3 id="State"><a href="../datatype-string/">string</a> <code>State</code><a class="headerlink" href="#State" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>Current state of the mercenary (returns "DEAD","SUSPENDED","ACTIVE", or "UNKNOWN"</dd>
+<dd>
+<p>Current state of the mercenary:</p>
+<ul>
+<li>"DEAD"</li>
+<li>"SUSPENDED"</li>
+<li>"ACTIVE"</li>
+<li>"UNKNOWN"</li>
+</ul>
+</dd>
 </dl>
 <h3 id="StateID"><a href="../datatype-int/">int</a> <code>StateID</code><a class="headerlink" href="#StateID" title="Permanent link">&para;</a></h3>
 <dl>
@@ -13018,11 +13026,14 @@
 <dd>Same as <strong>Name</strong></dd>
 </dl>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <p>Check on if you have an active mercenary, mercenary is a cleric, and if it's stance is NOT reactive.... then change it TO reactive.</p>
 <div class="highlight"><pre><span></span><code>/if (${Mercenary.State.Equal[ACTIVE]} &amp;&amp; ${Mercenary.Class.Name.Equal[Cleric]} &amp;&amp; ${Mercenary.Stance.NotEqual[REACTIVE]}) {
     /stance reactive
 }
 </code></pre></div>
+</div>
 
 
 

@@ -11346,17 +11346,17 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Associated DataTypes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#bandolieritem" class="md-nav__link">
     <span class="md-ellipsis">
       bandolieritem
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="bandolieritem">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#IconID" class="md-nav__link">
@@ -11391,9 +11391,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage-examples" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Usage Examples
+      Examples
     </span>
   </a>
   
@@ -12964,17 +12964,17 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Associated DataTypes">
-      <ul class="md-nav__list">
-        
-          <li class="md-nav__item">
+</li>
+      
+        <li class="md-nav__item">
   <a href="#bandolieritem" class="md-nav__link">
     <span class="md-ellipsis">
       bandolieritem
     </span>
   </a>
   
-</li>
+    <nav class="md-nav" aria-label="bandolieritem">
+      <ul class="md-nav__list">
         
           <li class="md-nav__item">
   <a href="#IconID" class="md-nav__link">
@@ -13009,9 +13009,9 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#usage-examples" class="md-nav__link">
+  <a href="#examples" class="md-nav__link">
     <span class="md-ellipsis">
-      Usage Examples
+      Examples
     </span>
   </a>
   
@@ -13062,7 +13062,7 @@
 <dl>
 <dd>Returns the index number of the bandolier set</dd>
 </dl>
-<h3 id="Item[Index]"><a href="#bandolieritem-datatype">bandolieritem</a> <code>Item[Index]</code><a class="headerlink" href="#Item[Index]" title="Permanent link">&para;</a></h3>
+<h3 id="Item[Index]"><a href="./#bandolieritem">bandolieritem</a> <code>Item[Index]</code><a class="headerlink" href="#Item[Index]" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>Provides information about the specified item. Returns the Nth item in the set (Primary, Secondary, Ranged, Ammo)</dd>
 </dl>
@@ -13086,7 +13086,7 @@
 </tbody>
 </table>
 <h2 id="associated-datatypes">Associated DataTypes<a class="headerlink" href="#associated-datatypes" title="Permanent link">&para;</a></h2>
-<h3 id="bandolieritem"><code>bandolieritem</code><a class="headerlink" href="#bandolieritem" title="Permanent link">&para;</a></h3>
+<h2 id="bandolieritem"><code>bandolieritem</code><a class="headerlink" href="#bandolieritem" title="Permanent link">&para;</a></h2>
 <h3 id="IconID"><a href="../datatype-int/">int</a> <code>IconID</code><a class="headerlink" href="#IconID" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>Returns the icon id for the item</dd>
@@ -13099,7 +13099,9 @@
 <dl>
 <dd>Returns the name of the item</dd>
 </dl>
-<h2 id="usage-examples">Usage Examples<a class="headerlink" href="#usage-examples" title="Permanent link">&para;</a></h2>
+<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
@@ -13123,6 +13125,7 @@
 <span class="c1">-- Print the weapon in the primary bandolier slot</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I have a &#39;</span><span class="p">,</span> <span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Me</span><span class="p">.</span><span class="n">Bandolier</span><span class="p">(</span><span class="s1">&#39;1HB&#39;</span><span class="p">).</span><span class="n">Item</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="n">Name</span><span class="p">(),</span> <span class="s1">&#39; in my primary bandolier slot&#39;</span><span class="p">)</span>
 </code></pre></div>
+</div>
 </div>
 </div>
 </div>

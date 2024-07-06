@@ -10734,16 +10734,49 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Switch" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Switch
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Examples">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Switch[ID]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch[ID]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Switch[Search]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch[Search]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -12817,16 +12850,49 @@
     </span>
   </a>
   
-</li>
-      
-        <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Switch" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Switch
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Examples">
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Switch[ID]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch[ID]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Switch[Search]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Switch[Search]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#usage" class="md-nav__link">
+    <span class="md-ellipsis">
+      Usage
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Usage">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -12880,11 +12946,29 @@
 <h1 id="switch"><code>Switch</code><a class="headerlink" href="#switch" title="Permanent link">&para;</a></h1>
 <p>Object used when you want to find information on targetted doors or switches such as the portals in PoK.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
-<p><a href="../../data-types/datatype-switch/"><em>switch</em></a> <strong>Switch</strong></p>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
+<h3 id="Switch"><a href="../../data-types/datatype-switch/">switch</a> <code>Switch</code><a class="headerlink" href="#Switch" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Returns the currently targeted switch</dd>
+</dl>
+<h3 id="Switch[ID]"><a href="../../data-types/datatype-switch/">switch</a> <code>Switch[ID]</code><a class="headerlink" href="#Switch[ID]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Returns a switch matching the provided numeric ID</dd>
+</dl>
+<h3 id="Switch[Search]"><a href="../../data-types/datatype-switch/">switch</a> <code>Switch[Search]</code><a class="headerlink" href="#Switch[Search]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p>Based on the value of <code>Search</code>, return a switch:</p>
+<ul>
+<li><code>target</code>: Return the currently targeted switch</li>
+<li><code>nearest</code>: Return the nearest switch.</li>
+<li>Otherwise, return switch by searching by name</li>
+</ul>
+</dd>
+</dl>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <p><div class="highlight"><pre><span></span><code>${Switch[foo]}
 </code></pre></div>
-Activates switch "foo"</p>
+Access switch "foo"</p>
 <p><div class="highlight"><pre><span></span><code>${Switch[foo].Heading}
 </code></pre></div>
 Access "foo" <a href="../../data-types/datatype-switch/"><em>switch</em></a> datatype members</p>

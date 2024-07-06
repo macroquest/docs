@@ -11896,9 +11896,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Key" class="md-nav__link">
+  <a href="#Key[opt:" class="md-nav__link">
     <span class="md-ellipsis">
-      Key
+      Key[opt: Key]
     </span>
   </a>
   
@@ -12857,9 +12857,9 @@
 </li>
         
           <li class="md-nav__item">
-  <a href="#Key" class="md-nav__link">
+  <a href="#Key[opt:" class="md-nav__link">
     <span class="md-ellipsis">
-      Key
+      Key[opt: Key]
     </span>
   </a>
   
@@ -12914,7 +12914,7 @@
 
 
 <h1 id="inifilesection"><code>inifilesection</code><a class="headerlink" href="#inifilesection" title="Permanent link">&para;</a></h1>
-<p>This is the type for the referenced section of an ini file.  The Index passed to Section[] is optional.  Passing an Index means it will search for matches to that Index.  Not passing an Index references all sections for operations that allow it.</p>
+<p>This is the type for the referenced section of an ini file.</p>
 <h2 id="members">Members<a class="headerlink" href="#members" title="Permanent link">&para;</a></h2>
 <h3 id="Count"><a href="../datatype-int/">int</a> <code>Count</code><a class="headerlink" href="#Count" title="Permanent link">&para;</a></h3>
 <dl>
@@ -12924,9 +12924,12 @@
 <dl>
 <dd>Whether a specific section exists.</dd>
 </dl>
-<h3 id="Key"><a href="../datatype-inifilesectionkey/">inifilesectionkey</a> <code>Key</code><a class="headerlink" href="#Key" title="Permanent link">&para;</a></h3>
+<h3 Key_="Key]" id="Key[opt:"><a href="../datatype-inifilesectionkey/">inifilesectionkey</a> <code>Key[opt: Key]</code><a class="headerlink" href="#Key[opt:" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>A reference to the named or unnamed key in this specific ini file section.</dd>
+<dd>
+<p>A reference to the named or unnamed key in this specific ini file section.</p>
+<p>The index is optional. Passing an index means it will reference all keys that match that index. Not passing an index references all keys for operations that allow it.</p>
+</dd>
 </dl>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>Given the sample.ini file:</p>
@@ -12947,30 +12950,30 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>How many sections are there?</p>
-<div class="highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section.Count}
-3
+<div class="highlight"><pre><span></span><code>| Prints 3
+/echo ${Ini.File[Sample].Section.Count}
 </code></pre></div>
 <p>How many sections named "Section1" are there?</p>
-<div class="highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section1].Count}
-2
+<div class="highlight"><pre><span></span><code>| Orints 2
+/echo ${Ini.File[Sample].Section[Section1].Count}
 </code></pre></div>
 <p>Does "Section3" exist?</p>
-<div class="highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section3].Exists}
-FALSE
+<div class="highlight"><pre><span></span><code>| Prints FALSE
+/echo ${Ini.File[Sample].Section[Section3].Exists}
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <p>How many sections are there?</p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Ini</span><span class="p">.</span><span class="n">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="n">Section</span><span class="p">.</span><span class="n">Count</span><span class="p">())</span>
-<span class="mi">3</span>
+<div class="highlight"><pre><span></span><code><span class="c1">-- prints 3</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Ini</span><span class="p">.</span><span class="n">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="n">Section</span><span class="p">.</span><span class="n">Count</span><span class="p">())</span>
 </code></pre></div>
 <p>How many sections named "Section1" are there?</p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Ini</span><span class="p">.</span><span class="n">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="n">Section</span><span class="p">(</span><span class="s2">&quot;Section1&quot;</span><span class="p">).</span><span class="n">Count</span><span class="p">()}</span>
-<span class="mi">2</span>
+<div class="highlight"><pre><span></span><code><span class="c1">-- prints 2</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Ini</span><span class="p">.</span><span class="n">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="n">Section</span><span class="p">(</span><span class="s2">&quot;Section1&quot;</span><span class="p">).</span><span class="n">Count</span><span class="p">())</span>
 </code></pre></div>
 <p>Does "Section3" exist?</p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Ini</span><span class="p">.</span><span class="n">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="n">Section</span><span class="p">(</span><span class="s2">&quot;Section3&quot;</span><span class="p">).</span><span class="n">Exists</span><span class="p">()}</span>
-<span class="kc">false</span>
+<div class="highlight"><pre><span></span><code><span class="c1">-- prints false</span>
+<span class="nb">print</span><span class="p">(</span><span class="n">mq</span><span class="p">.</span><span class="n">TLO</span><span class="p">.</span><span class="n">Ini</span><span class="p">.</span><span class="n">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="n">Section</span><span class="p">(</span><span class="s2">&quot;Section3&quot;</span><span class="p">).</span><span class="n">Exists</span><span class="p">())</span>
 </code></pre></div>
 </div>
 </div>

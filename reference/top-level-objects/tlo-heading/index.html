@@ -10146,12 +10146,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Heading[#]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heading[#]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Heading[y,x]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heading[y,x]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Heading[N,W]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heading[N,W]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12802,12 +12835,45 @@
     </span>
   </a>
   
+    <nav class="md-nav" aria-label="Forms">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#Heading[#]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heading[#]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Heading[y,x]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heading[y,x]
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#Heading[N,W]" class="md-nav__link">
+    <span class="md-ellipsis">
+      Heading[N,W]
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
 </li>
       
         <li class="md-nav__item">
-  <a href="#examples" class="md-nav__link">
+  <a href="#usage" class="md-nav__link">
     <span class="md-ellipsis">
-      Examples
+      Usage
     </span>
   </a>
   
@@ -12850,32 +12916,24 @@
 <h1 id="heading"><code>Heading</code><a class="headerlink" href="#heading" title="Permanent link">&para;</a></h1>
 <p>Object that refers to the directional heading to of a location or direction.</p>
 <h2 id="forms">Forms<a class="headerlink" href="#forms" title="Permanent link">&para;</a></h2>
-<table>
-<thead>
-<tr>
-<th style="text-align: left;"></th>
-<th style="text-align: left;"></th>
-</tr>
-</thead>
-<tbody>
-<tr>
-<td style="text-align: left;"><a href="../../data-types/datatype-heading/">heading</a> <strong>Heading[</strong>#<strong>]</strong></td>
-<td style="text-align: left;">Creates a heading object using degrees (clockwise)</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../../data-types/datatype-heading/">heading</a> <strong>Heading[**y,x</strong>]**</td>
-<td style="text-align: left;">Creates a heading object using the heading to this y,x location</td>
-</tr>
-<tr>
-<td style="text-align: left;"><a href="../../data-types/datatype-heading/">heading</a> <strong>Heading[**N,W</strong>]**</td>
-<td style="text-align: left;">Same as above, just an alternate method</td>
-</tr>
-</tbody>
-</table>
-<h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p><code>/echo ${Heading[15].ShortName}</code></p>
+<h3 id="Heading[#]"><a href="../../data-types/datatype-heading/">heading</a> <code>Heading[#]</code><a class="headerlink" href="#Heading[#]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Creates a heading object using degrees (clockwise)</dd>
+</dl>
+<h3 id="Heading[y,x]"><a href="../../data-types/datatype-heading/">heading</a> <code>Heading[y,x]</code><a class="headerlink" href="#Heading[y,x]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Creates a heading object using the heading to this y,x location</dd>
+</dl>
+<h3 id="Heading[N,W]"><a href="../../data-types/datatype-heading/">heading</a> <code>Heading[N,W]</code><a class="headerlink" href="#Heading[N,W]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Same as above, just an alternate method</dd>
+</dl>
+<h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
+<div class="highlight"><pre><span></span><code>/echo ${Heading[15].ShortName}
+</code></pre></div>
 <p>Echos the shortname of the heading of 15 degrees.</p>
-<p><code>/echo ${Heading[-342,700].ShortName}</code></p>
+<div class="highlight"><pre><span></span><code>/echo ${Heading[-342,700].ShortName}
+</code></pre></div>
 <p>Echos the shortname heading to the location -342,700</p>
 
 

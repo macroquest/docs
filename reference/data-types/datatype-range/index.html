@@ -12886,8 +12886,14 @@
 <p>True if <em>N</em> is between the range of <em>#1</em> and <em>#2</em>, inclusive.</p>
 <details class="example" open="open">
 <summary>Example</summary>
-<p>Is 50 between 33 and 66? <code>${Range.Between[33,66:50]}</code> returns TRUE</p>
-<p>Is 25 between 33 and 66? <code>${Range.Between[33,66:25]}</code> returns FALSE</p>
+<p>Is 50 between 33 and 66?</p>
+<div class="highlight"><pre><span></span><code>| Prints TRUE
+/echo ${Range.Between[33,66:50]}
+</code></pre></div>
+<p>Is 25 between 33 and 66?</p>
+<div class="highlight"><pre><span></span><code>| Prints FALSE
+/echo ${Range.Between[33,66:25]}
+</code></pre></div>
 </details>
 </dd>
 </dl>
@@ -12897,8 +12903,14 @@
 <p>True if <em>N</em> is within the range of <em>#1</em> and <em>#2</em>, exclusive.</p>
 <details class="example" open="open">
 <summary>Example</summary>
-<p>Is 50 Inside 33 and 66? <code>${Range.Inside[33,66:50]}</code> returns TRUE</p>
-<p>Is 33 inside 33 and 66? <code>${Range.Inside[33,66:33]}</code> returns FALSE</p>
+<p>Is 50 Inside 33 and 66?</p>
+<div class="highlight"><pre><span></span><code>| Prints TRUE
+/echo ${Range.Inside[33,66:50]}
+</code></pre></div>
+<p>Is 33 inside 33 and 66?</p>
+<div class="highlight"><pre><span></span><code>| Prints FALSE
+${Range.Inside[33,66:33]}
+</code></pre></div>
 </details>
 </dd>
 </dl>

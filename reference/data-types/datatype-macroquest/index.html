@@ -13084,15 +13084,51 @@
 </dl>
 <h3 id="Build"><a href="../datatype-int/">int</a> <code>Build</code><a class="headerlink" href="#Build" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>The build (client target) for MQ2Main.dll (1 - Live, 2 - Test, 3 - Beta, 4 - Emu)</dd>
+<dd>
+<p>The build (client target) for MacroQuest</p>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Value</th>
+<th style="text-align: left;">Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">1</td>
+<td style="text-align: left;">Live</td>
+</tr>
+<tr>
+<td style="text-align: left;">2</td>
+<td style="text-align: left;">Test</td>
+</tr>
+<tr>
+<td style="text-align: left;">3</td>
+<td style="text-align: left;">Beta</td>
+</tr>
+<tr>
+<td style="text-align: left;">4</td>
+<td style="text-align: left;">Emu</td>
+</tr>
+</tbody>
+</table>
+</dd>
 </dl>
 <h3 id="BuildName"><a href="../datatype-string/">string</a> <code>BuildName</code><a class="headerlink" href="#BuildName" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>The build (client target) name for MQ2Main.dll (Live, Test, Beta, Emu)</dd>
+<dd>
+<p>The build (client target) name for MacroQuest:</p>
+<ul>
+<li>"Live"</li>
+<li>"Test"</li>
+<li>"Beta"</li>
+<li>"Emu"</li>
+</ul>
+</dd>
 </dl>
 <h3 id="BuildDate"><a href="../datatype-string/">string</a> <code>BuildDate</code><a class="headerlink" href="#BuildDate" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>Date that MQ2Main.dll was built</dd>
+<dd>Date that MacroQuest was built</dd>
 </dl>
 <h3 id="Error"><a href="../datatype-string/">string</a> <code>Error</code><a class="headerlink" href="#Error" title="Permanent link">&para;</a></h3>
 <dl>
@@ -13100,11 +13136,11 @@
 </dl>
 <h3 id="InternalName"><a href="../datatype-string/">string</a> <code>InternalName</code><a class="headerlink" href="#InternalName" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>The internal name from MQ2Main.dll ("Next")</dd>
+<dd>The internal name from MacroQuest("Next")</dd>
 </dl>
 <h3 id="MQ2DataError"><a href="../datatype-string/">string</a> <code>MQ2DataError</code><a class="headerlink" href="#MQ2DataError" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>Last MQ2Data parsing error message</dd>
+<dd>Last Macro parsing error message</dd>
 </dl>
 <h3 id="Parser"><a href="../datatype-int/">int</a> <code>Parser</code><a class="headerlink" href="#Parser" title="Permanent link">&para;</a></h3>
 <dl>
@@ -13112,7 +13148,57 @@
 </dl>
 <h3 id="Path[Option]"><a href="../datatype-string/">string</a> <code>Path[Option]</code><a class="headerlink" href="#Path[Option]" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>Directory that Macroquest.exe launched from.  When passed root/config/crashdumps/logs/mqini/macros/plugins/resources, returns the respective path</dd>
+<dd>
+<p>Retrieves the path to the specified location. If no path is provided, the root path
+of MacroQuest (where the MacroQuest.exe lives) is returned.</p>
+<div class="admonition important">
+<p class="admonition-title">Important</p>
+<p>Be sure to use this member to access these paths, and do not hard code paths. These locations in MacroQuest are configurable and may not be in the default locations!</p>
+</div>
+<table>
+<thead>
+<tr>
+<th style="text-align: left;">Option</th>
+<th style="text-align: left;">Result</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align: left;">root</td>
+<td style="text-align: left;">Returns the path to the root directory.</td>
+</tr>
+<tr>
+<td style="text-align: left;">config</td>
+<td style="text-align: left;">Returns path to the config directory</td>
+</tr>
+<tr>
+<td style="text-align: left;">crashdumps</td>
+<td style="text-align: left;">Returns the path to where crash dumps are stored</td>
+</tr>
+<tr>
+<td style="text-align: left;">logs</td>
+<td style="text-align: left;">Returns the path to the logs directory</td>
+</tr>
+<tr>
+<td style="text-align: left;">mqini</td>
+<td style="text-align: left;">Returns the path to MacroQuest.ini</td>
+</tr>
+<tr>
+<td style="text-align: left;">macros</td>
+<td style="text-align: left;">Returns the path to the macros directory</td>
+</tr>
+<tr>
+<td style="text-align: left;">plugins</td>
+<td style="text-align: left;">Returns the path to the plugins directory</td>
+</tr>
+<tr>
+<td style="text-align: left;">resources</td>
+<td style="text-align: left;">Returns the path to the resources directory</td>
+</tr>
+</tbody>
+</table>
+<p>If no path is provided, the root path is returned.</p>
+</dd>
 </dl>
 <h3 id="SyntaxError"><a href="../datatype-string/">string</a> <code>SyntaxError</code><a class="headerlink" href="#SyntaxError" title="Permanent link">&para;</a></h3>
 <dl>
@@ -13120,13 +13206,14 @@
 </dl>
 <h3 id="Version"><a href="../datatype-string/">string</a> <code>Version</code><a class="headerlink" href="#Version" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>The full version of MQ2Main.dll</dd>
+<dd>The full version of MacroQuest</dd>
 </dl>
 <h3 id="string-to-string"><a href="../datatype-string/">string</a> <code>To String</code><a class="headerlink" href="#string-to-string" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>None</dd>
 </dl>
 <h2 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h2>
+<p>Get the path to the config directory.</p>
 <div class="highlight"><pre><span></span><code>/echo ${MacroQuest.Path[config]}
 </code></pre></div>
 
