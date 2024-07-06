@@ -1,6 +1,10 @@
+material
 mkdocs
 mkdocs-gen-files
-material
+mkdocs-gen-files
+mkdocs-macros-plugin
+mkdocs-material
+mkdocs-material-extensions
+mkdocs-redirects
 mkdocs-same-dir
 python-markdown-math
-mkdocs-redirects
