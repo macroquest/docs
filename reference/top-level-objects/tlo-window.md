@@ -10,4 +10,8 @@ You can display a list of window names using the /windows command or by using th
 
 ## Forms
 
-[_window_](../data-types/datatype-window.md) **Window**[_name_]
+### {{ renderMember(type='window', name='Window', params='Name') }}
+
+:   Retrieve window by searching for the first window matching `Name`.
+
+[window]: ../data-types/datatype-window.md

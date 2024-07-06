@@ -8,9 +8,10 @@ Object used to return information on a current Task.
 
 ## Forms
 
-[task](../data-types/datatype-task.md) **Task**
+### {{ renderMember(type='task', name='Task') }}
 
-## Examples
+
+## Usage
 
 ```
 /echo ${Task[1].Title}
@@ -18,3 +19,4 @@ Object used to return information on a current Task.
 
 Will return the name of the first task, or the current shared task if one exists.
 
+[task]: ../data-types/datatype-task.md

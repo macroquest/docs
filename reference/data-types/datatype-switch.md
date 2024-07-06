@@ -8,39 +8,39 @@ Data related to switches (levers, buttons, etc) in the zone
 
 ## Members
 
-### {{ renderMember(type='heading', name='DefaultHeading') }} 
+### {{ renderMember(type='heading', name='DefaultHeading') }}
 
 :   Heading of "closed" switch
 
-### {{ renderMember(type='float', name='DefaultX') }} 
+### {{ renderMember(type='float', name='DefaultX') }}
 
 :   X coordinate of "closed" switch
 
-### {{ renderMember(type='float', name='DefaultY') }} 
+### {{ renderMember(type='float', name='DefaultY') }}
 
 :   Y coordinate of "closed" switch
 
-### {{ renderMember(type='float', name='DefaultZ') }} 
+### {{ renderMember(type='float', name='DefaultZ') }}
 
 :   Z coordinate of "closed" switch
 
-### {{ renderMember(type='float', name='Distance') }} 
+### {{ renderMember(type='float', name='Distance') }}
 
 :   Distance from player to switch in (x,y)
 
-### {{ renderMember(type='float', name='Distance3D') }} 
+### {{ renderMember(type='float', name='Distance3D') }}
 
 :   Distance from player to switch in (x,y,z)
 
-### {{ renderMember(type='heading', name='Heading') }} 
+### {{ renderMember(type='heading', name='Heading') }}
 
 :   Switch is facing this heading
 
-### {{ renderMember(type='heading', name='HeadingTo') }} 
+### {{ renderMember(type='heading', name='HeadingTo') }}
 
 :   Direction player must move to meet this switch
 
-### {{ renderMember(type='int', name='ID') }} 
+### {{ renderMember(type='int', name='ID') }}
 
 :   Switch ID
 
@@ -48,79 +48,40 @@ Data related to switches (levers, buttons, etc) in the zone
 
 :   Returns TRUE if the switch is targeted
 
-### {{ renderMember(type='bool', name='LineOfSight') }} 
+### {{ renderMember(type='bool', name='LineOfSight') }}
 
 :   Returns TRUE if the switch is in LoS
 
-### {{ renderMember(type='string', name='Name') }} 
+### {{ renderMember(type='string', name='Name') }}
 
 :   Name
 
-### {{ renderMember(type='bool', name='Open') }} 
+### {{ renderMember(type='bool', name='Open') }}
 
 :   True if the switch is in the "open" state (State == 1)
 
-### {{ renderMember(type='int', name='State') }} 
+### {{ renderMember(type='int', name='State') }}
 
 :   The "state" of the switch.
 
-### {{ renderMember(type='float', name='X') }} 
+### {{ renderMember(type='float', name='X') }}
 
 :   X coordinate
 
-### {{ renderMember(type='float', name='Y') }} 
+### {{ renderMember(type='float', name='Y') }}
 
 :   Y coordinate
 
-### {{ renderMember(type='float', name='Z') }} 
+### {{ renderMember(type='float', name='Z') }}
 
 :   Z coordinate
 
-### {{ renderMember(type='string', name='ToString') }} 
+### {{ renderMember(type='string', name='ToString') }}
 
 :   Same as **ID**
 
-
+[bool]: datatype-bool.md
+[float]: datatype-float.md
+[heading]: datatype-heading.md
 [int]: datatype-int.md
 [string]: datatype-string.md
-[achievementobj]: datatype-achievementobj.md
-[bool]: datatype-bool.md
-[time]: datatype-time.md
-[achievement]: datatype-achievement.md
-[achievementcat]: datatype-achievementcat.md
-[altability]: datatype-altability.md
-[spell]: datatype-spell.md
-[bandolieritem]: #bandolieritem-datatype
-[int64]: datatype-int64.md
-[timestamp]: datatype-timestamp.md
-[float]: datatype-float.md
-[buff]: datatype-buff.md
-[spawn]: datatype-spawn.md
-[auratype]: datatype-auratype.md
-[item]: datatype-item.md
-[worldlocation]: datatype-worldlocation.md
-[ticks]: datatype-ticks.md
-[fellowship]: datatype-fellowship.md
-[strinrg]: datatype-string.md
-[xtarget]: datatype-xtarget.md
-[dzmember]: datatype-dzmember.md
-[window]: datatype-window.md
-[zone]: datatype-zone.md
-[fellowshipmember]: datatype-fellowshipmember.md
-[class]: datatype-class.md
-[heading]: datatype-heading.md
-[ground]: datatype-ground.md
-[inifile]: datatype-inifile.md
-[inifilesection]: datatype-inifilesection.md
-[inifilesectionkey]: datatype-inifilesectionkey.md
-[double]: datatype-double.md
-[invslot]: datatype-invslot.md
-[augtype]: datatype-augtype.md
-[itemspell]: datatype-itemspell.md
-[evolving]: datatype-evolving.md
-[keyringitem]: datatype-keyringitem.md
-[raidmember]: datatype-raidmember.md
-[body]: datatype-body.md
-[cachedbuff]: datatype-cachedbuff.md
-[deity]: datatype-deity.md
-[race]: datatype-race.md

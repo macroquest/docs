@@ -8,14 +8,17 @@ Determines whether a variable, array, or timer with this name exists. The variab
 
 ## Forms
 
-[_bool_](../data-types/datatype-bool.md) **Defined**[_name_]
+### {{ renderMember(type='bool', name='Defined', params='Name') }}
 
 :   Returns true if the given variable _name_ is defined.
 
-## Examples
+
+## Usage
 
 ```
 /if (${Defined[varname]}) {
     /echo ${varname}
 }
 ```
+
+[bool]: ../data-types/datatype-bool.md

@@ -8,7 +8,7 @@ Used to return information on the object that is selected in your own inventory 
 
 ## Forms
 
-[_item_](../data-types/datatype-item.md) **SelectedItem**
+### {{ renderMember(type='item', name='SelectedItem') }}
 
 :   !!! example
 
@@ -47,3 +47,5 @@ Used to return information on the object that is selected in your own inventory 
                 end
             end
             ```
+
+[item]: ../data-types/datatype-item.md

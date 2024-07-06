@@ -8,12 +8,12 @@ A TLO used to find a count of items on your character, corpse, or a merchant by 
 
 ## Forms
 
-[item][item] **FindItemCount**[_name/id_]
+### {{ renderMember(type='int', name='FindItemCount', params='name|id') }}
 
 :   Counts the items using the given item id, or partial name match. Will search character
     inventory and any items stored in key rings (illusion, mount, etc).
 
-    ??? example
+    ???+ example
 
         Echos the number of items in your inventory with the name swirling in it.
 
@@ -30,12 +30,12 @@ A TLO used to find a count of items on your character, corpse, or a merchant by 
             ```
 
 
-[item][item] **FindItemCount**[=_name_]
+### {{ renderMember(type='int', name='FindItemCount', params='=name') }}
 
 :   Counts the items using exact name match (case insensitive). Will search character inventory
     and any items stored in key rings (illusion, mount, etc).
 
-    ??? example
+    ???+ example
 
         Echoes the number of Water Flasks you have in your inventory.
 
@@ -52,4 +52,4 @@ A TLO used to find a count of items on your character, corpse, or a merchant by 
             ```
 
 
-[item]: ../data-types/datatype-item.md
+[int]: ../data-types/datatype-int.md

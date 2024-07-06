@@ -6,17 +6,19 @@ tags:
 
 Object that is used to check if there is Line of Sight betwen two locations.
 
-`Note: For ISXEQ all 6 parameters are required and will return NULL otherwise`
-
 ## Forms
 
-* [_bool_](../data-types/datatype-bool.md) **LineOfSight[**y,x,z:y,x,z**]**
-* [_bool_](../data-types/datatype-bool.md) **LineOfSight[**y,x,z,y,x,z**]** (For ISXEQ)
+### {{ renderMember(type='bool', name='LineOfSight', params='y,x,z:y,x,z') }}
 
-## Examples
+:   Check for line-of-sight between the two specified coordinates.
+
+
+## Usage
 
 ```
 /echo ${LineOfSight[20,40,-20:100,-300,70]}
 ```
 
 Returns TRUE if Line of Sight is clear between the two locations
+
+[bool]: ../data-types/datatype-bool.md

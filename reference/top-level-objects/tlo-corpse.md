@@ -8,11 +8,17 @@ Access to objects of type corpse, which is the currently active corpse (ie. the 
 
 ## Forms
 
-* [_corpse_](../data-types/datatype-corpse.md) **Corpse**: Corpse you are looting.
+### {{ renderMember(type='corpse', name='Corpse') }}
 
-## Examples
+:   Corpse you are looting.
 
-`/if (${Corpse.Open}) {`  
-`/echo Corpse is open, proceeding with looting`  
-`}`
 
+## Usage
+
+```
+/if (${Corpse.Open}) {
+    /echo Corpse is open, proceeding with looting
+}
+```
+
+[corpse]: ../data-types/datatype-corpse.md

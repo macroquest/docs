@@ -8,11 +8,12 @@ Creates a Math object which gives allows access to the math type members.
 
 ## Forms
 
-[_math_](../data-types/datatype-math.md) **Math**
+### {{ renderMember(type='math', name='Math') }}
 
 :   Returns the math object which is used to perform math operations.
 
-## Examples
+
+## Usage
 
 ```
 /echo ${Math.Calc[3-1]}
@@ -45,3 +46,5 @@ Math.Rand now takes an optional min argument so you can get a random number betw
 ```
 
 this would return a randum number between 5 and 10.
+
+[math]: ../data-types/datatype-math.md

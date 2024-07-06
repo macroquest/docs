@@ -8,31 +8,31 @@ Represents a 32-bit integer. Can hold values from -2,147,483,648 to 2,147,483,64
 
 ## Members
 
-### {{ renderMember(type='float', name='Float') }} 
+### {{ renderMember(type='float', name='Float') }}
 
 :   The number as a float (123 is represented as 123.0)
 
-### {{ renderMember(type='double', name='Double') }} 
+### {{ renderMember(type='double', name='Double') }}
 
 :   The number as a double (123 is represented as 123.0)
 
-### {{ renderMember(type='string', name='Hex') }} 
+### {{ renderMember(type='string', name='Hex') }}
 
 :   The hex value of the integer (10 is represented as 0xA)
 
-### {{ renderMember(type='int', name='Reverse') }} 
+### {{ renderMember(type='int', name='Reverse') }}
 
 :   Endianness reversed
 
-### {{ renderMember(type='int', name='LowPart') }} 
+### {{ renderMember(type='int', name='LowPart') }}
 
 :   Lower 16-bits of the value.
 
-### {{ renderMember(type='int', name='HighPart') }} 
+### {{ renderMember(type='int', name='HighPart') }}
 
 :   Upper 16-bits of the value.
 
-### {{ renderMember(type='string', name='Prettify', params='precision') }} 
+### {{ renderMember(type='string', name='Prettify', params='precision') }}
 
 :   Pretty print the number with commas, with optional _precision_
 
@@ -40,36 +40,7 @@ Represents a 32-bit integer. Can hold values from -2,147,483,648 to 2,147,483,64
 
 :   The number as a string
 
+[double]: datatype-double.md
+[float]: datatype-float.md
 [int]: datatype-int.md
 [string]: datatype-string.md
-[achievementobj]: datatype-achievementobj.md
-[bool]: datatype-bool.md
-[time]: datatype-time.md
-[achievement]: datatype-achievement.md
-[achievementcat]: datatype-achievementcat.md
-[altability]: datatype-altability.md
-[spell]: datatype-spell.md
-[bandolieritem]: #bandolieritem-datatype
-[int64]: datatype-int64.md
-[timestamp]: datatype-timestamp.md
-[float]: datatype-float.md
-[buff]: datatype-buff.md
-[spawn]: datatype-spawn.md
-[auratype]: datatype-auratype.md
-[item]: datatype-item.md
-[worldlocation]: datatype-worldlocation.md
-[ticks]: datatype-ticks.md
-[fellowship]: datatype-fellowship.md
-[strinrg]: datatype-string.md
-[xtarget]: datatype-xtarget.md
-[dzmember]: datatype-dzmember.md
-[window]: datatype-window.md
-[zone]: datatype-zone.md
-[fellowshipmember]: datatype-fellowshipmember.md
-[class]: datatype-class.md
-[heading]: datatype-heading.md
-[ground]: datatype-ground.md
-[inifile]: datatype-inifile.md
-[inifilesection]: datatype-inifilesection.md
-[inifilesectionkey]: datatype-inifilesectionkey.md
-[double]: datatype-double.md

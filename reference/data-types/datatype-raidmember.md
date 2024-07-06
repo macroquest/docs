@@ -8,35 +8,35 @@ Data related to the specified raid member
 
 ## Members
 
-### {{ renderMember(type='class', name='Class') }} 
+### {{ renderMember(type='class', name='Class') }}
 
 :   Raid member's class (works without being in zone)
 
-### {{ renderMember(type='int', name='Group') }} 
+### {{ renderMember(type='int', name='Group') }}
 
 :   Current group number (or 0)
 
-### {{ renderMember(type='bool', name='GroupLeader') }} 
+### {{ renderMember(type='bool', name='GroupLeader') }}
 
 :   Returns TRUE if the member is a group leader
 
-### {{ renderMember(type='int', name='Level') }} 
+### {{ renderMember(type='int', name='Level') }}
 
 :   Raid member's level (works without being in zone)
 
-### {{ renderMember(type='bool', name='Looter') }} 
+### {{ renderMember(type='bool', name='Looter') }}
 
 :   Allowed to loot with current loot rules and looters?
 
-### {{ renderMember(type='string', name='Name') }} 
+### {{ renderMember(type='string', name='Name') }}
 
 :   Raid member's name
 
-### {{ renderMember(type='bool', name='RaidLeader') }} 
+### {{ renderMember(type='bool', name='RaidLeader') }}
 
 :   Returns TRUE if the member is the raid leader
 
-### {{ renderMember(type='spawn', name='Spawn') }} 
+### {{ renderMember(type='spawn', name='Spawn') }}
 
 :   Spawn object for this player if available (must be in zone)
 
@@ -44,42 +44,8 @@ Data related to the specified raid member
 
 :   Same as **Name**
 
-[int]: datatype-int.md
-[string]: datatype-string.md
-[achievementobj]: datatype-achievementobj.md
 [bool]: datatype-bool.md
-[time]: datatype-time.md
-[achievement]: datatype-achievement.md
-[achievementcat]: datatype-achievementcat.md
-[altability]: datatype-altability.md
-[spell]: ../data-types/datatype-spell.md
-[bandolieritem]: #bandolieritem-datatype
-[int64]: datatype-int64.md
-[timestamp]: datatype-timestamp.md
-[float]: datatype-float.md
-[buff]: datatype-buff.md
-[spawn]: datatype-spawn.md
-[auratype]: datatype-auratype.md
-[item]: datatype-item.md
-[worldlocation]: datatype-worldlocation.md
-[ticks]: datatype-ticks.md
-[fellowship]: datatype-fellowship.md
-[strinrg]: datatype-string.md
-[xtarget]: datatype-xtarget.md
-[dzmember]: datatype-dzmember.md
-[window]: datatype-window.md
-[zone]: datatype-zone.md
-[fellowshipmember]: datatype-fellowshipmember.md
 [class]: datatype-class.md
-[heading]: datatype-heading.md
-[ground]: datatype-ground.md
-[inifile]: datatype-inifile.md
-[inifilesection]: datatype-inifilesection.md
-[inifilesectionkey]: datatype-inifilesectionkey.md
-[double]: datatype-double.md
-[invslot]: datatype-invslot.md
-[augtype]: datatype-augtype.md
-[itemspell]: datatype-itemspell.md
-[evolving]: datatype-evolving.md
-[keyringitem]: datatype-keyringitem.md
-[raidmember]: datatype-raidmember.md
+[int]: datatype-int.md
+[spawn]: datatype-spawn.md
+[string]: datatype-string.md

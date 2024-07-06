@@ -8,16 +8,16 @@ Object that has access to members that provide information on a plugin.
 
 ## Forms
 
-[_plugin_][plugin] **Plugin**[_name_]
+### {{ renderMember(type='plugin', name='Plugin', params='Name') }}
 
 :   Finds plugin by name, uses full name match, case insensitive.
 
-[_plugin_][plugin] **Plugin**[_N_] 
+### {{ renderMember(type='plugin', name='Plugin', params='N') }}
 
 :   Plugin by index, starting with 1 and stopping whenever the list runs out of plugins.
 
 
-## Examples
+## Usage
 
 To see if a plugin is loaded:
 

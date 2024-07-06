@@ -8,12 +8,16 @@ Creates an object related to MacroQuest information.
 
 ## Forms
 
-* [_macroquest_](../data-types/datatype-macroquest.md) **MacroQuest**
+### {{ renderMember(type='macroquest', name='MacroQuest') }}
 
-## Examples
+
+## Usage
 
 ```
 /echo ${MacroQuest.LastTell}
 ```
 
 Returns the name of the last person that sent you a tell.
+
+
+[macroquest]: ../data-types/datatype-macroquest.md

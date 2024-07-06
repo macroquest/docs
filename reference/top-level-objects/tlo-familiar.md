@@ -8,18 +8,21 @@ Used to get information about items on your familiars keyring.
 
 ## Forms
 
-[_keyring_](../data-types/datatype-keyring.md) **Mount**
+### {{ renderMember(type='keyring', name='Familiar') }}
 
 :   Access to the familiar keyring.
 
-[_keyringitem_](../data-types/datatype-keyringitem.md) **Mount**[_N_]
+### {{ renderMember(type='keyringitem', name='Familiar', params='N') }}
 
 :   Retrieves the item in your familiar keyring by index.
 
-[_keyringitem_](../data-types/datatype-keyringitem.md) **Mount**[_name_]
+### {{ renderMember(type='keyringitem', name='Familiar', params='Name') }}
 
 :   Retrieve the item in your familiar keyring by name. A `=` can be prepended for an exact match.
 
 ## Examples
 
-See: [DataType:keyring](../data-types/datatype-keyring.md) and [DataType:keyringitem](../data-types/datatype-keyringitem.md)
+See Also: [keyring][keyring] and [keyringitem][keyringitem]
+
+[keyring]: ../data-types/datatype-keyring.md
+[keyringitem]: ../data-types/datatype-keyringitem.md

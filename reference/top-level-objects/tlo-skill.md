@@ -8,15 +8,16 @@ Object used to get information on your character's skills.
 
 ## Forms
 
-[_skill_][skill] **Skill**[_name_]
+### {{ renderMember(type='skill', name='Skill', params='name') }}
 
 :   Retrieve skill by name
 
-[_skill_][skill] **Skill**[_N_]
+### {{ renderMember(type='skill', name='Skill', params='N') }}
 
 :   Retrieve skill by number
 
-## Examples
+
+## Usage
 
 ```
 /echo ${Skill[1].ReuseTime}

@@ -8,10 +8,10 @@ Object used to get information about your mercenary.
 
 ## Forms
 
-[_mercenary_](../data-types/datatype-mercenary.md) **Mercenary**
+### {{ renderMember(type='mercenary', name='Mercenary') }}
 
 
-## Examples
+## Usage
 
 ```
 /echo ${Mercenary.Stance}
@@ -24,3 +24,5 @@ Displays the current stance of the mercenary based on the type (Passive, Balance
 ```
 
 Displays whether the mercenary is suspended or not.
+
+[mercenary]: ../data-types/datatype-mercenary.md

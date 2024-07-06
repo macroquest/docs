@@ -8,15 +8,16 @@ Object used to return information on a spell by name or by ID.
 
 ## Forms
 
-[_spell_][spell] **Spell**[_N_]
+### {{ renderMember(type='spell', name='Spell') }}
 
 :   Find spell by ID
 
-[_spell_][spell] **Spell**[_name_]
+### {{ renderMember(type='spell', name='Spell', params='Name') }}
 
 :   Find spell by name
 
-## Examples
+
+## Usage
 
 ```
 /echo ${Spell[Splurt].ID}

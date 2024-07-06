@@ -8,18 +8,21 @@ Used to get information about items on your illusions keyring.
 
 ## Forms
 
-[keyring](../data-types/datatype-keyring.md) **Mount**
+### {{ renderMember(type='keyring', name='Illusion') }}
 
 :   Access to the illusion keyring.
 
-[keyringitem](../data-types/datatype-keyringitem.md) **Mount**[_N_]
+### {{ renderMember(type='keyringitem', name='Illusion', params='N') }}
 
 :   Retrieves the item in your illusion keyring by index.
 
-[keyringitem](../data-types/datatype-keyringitem.md) **Mount**[_name_]
+### {{ renderMember(type='keyringitem', name='Illusion', params='Name') }}
 
 :   Retrieve the item in your illusion keyring by name. A `=` can be prepended for an exact match.
 
-## Examples
+## Usage
 
-See: [DataType:keyring](../data-types/datatype-keyring.md) and [DataType:keyringitem](../data-types/datatype-keyring.md)
+See Also: [DataType:keyring](../data-types/datatype-keyring.md) and [DataType:keyringitem](../data-types/datatype-keyring.md)
+
+[keyring]: ../data-types/datatype-keyring.md
+[keyringitem]: ../data-types/datatype-keyringitem.md

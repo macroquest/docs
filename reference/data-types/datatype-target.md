@@ -22,159 +22,159 @@ classDiagram
 
 ## Members
 
-### {{ renderMember(type='cachedbuff', name='Aego') }} 
+### {{ renderMember(type='cachedbuff', name='Aego') }}
 
 :   Returns the name of the Aego spell if the Target has one
 
-### {{ renderMember(type='spawn', name='AggroHolder') }} 
+### {{ renderMember(type='spawn', name='AggroHolder') }}
 
 :   Returns the target's current target.
 
-### {{ renderMember(type='cachedbuff', name='Beneficial') }} 
+### {{ renderMember(type='cachedbuff', name='Beneficial') }}
 
 :   Returns the name of the Beneficial spell if the Target has one. This will skip "player" casted buffs, but will show NPC Casted buffs and some AA buffs.
 
-### {{ renderMember(type='cachedbuff', name='Brells') }} 
+### {{ renderMember(type='cachedbuff', name='Brells') }}
 
 :   Returns the name of the Brells spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Charmed') }} 
+### {{ renderMember(type='cachedbuff', name='Charmed') }}
 
 :   Returns the name of the Charmed spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Clarity') }} 
+### {{ renderMember(type='cachedbuff', name='Clarity') }}
 
 :   Returns the name of the Clarity spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Corrupted') }} 
+### {{ renderMember(type='cachedbuff', name='Corrupted') }}
 
 :   Returns the name of any the Corruption spell if Target has one
 
-### {{ renderMember(type='cachedbuff', name='Cursed') }} 
+### {{ renderMember(type='cachedbuff', name='Cursed') }}
 
 :   Returns the name of the Curse spell if Target has one
 
-### {{ renderMember(type='cachedbuff', name='Crippled') }} 
+### {{ renderMember(type='cachedbuff', name='Crippled') }}
 
 :   Returns the name of the Cripple spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Diseased') }} 
+### {{ renderMember(type='cachedbuff', name='Diseased') }}
 
 :   Returns the name of a Disease spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Dotted') }} 
+### {{ renderMember(type='cachedbuff', name='Dotted') }}
 
 :   Returns the name of a DOT spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='DSed') }} 
+### {{ renderMember(type='cachedbuff', name='DSed') }}
 
 :   Returns the name of the Damage Shield spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Feared') }} 
+### {{ renderMember(type='cachedbuff', name='Feared') }}
 
-:   
+:   ???
 
-### {{ renderMember(type='cachedbuff', name='Focus') }} 
+### {{ renderMember(type='cachedbuff', name='Focus') }}
 
 :   Returns the name of the Focus spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Growth') }} 
+### {{ renderMember(type='cachedbuff', name='Growth') }}
 
 :   Returns the name of the Growth spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Hasted') }} 
+### {{ renderMember(type='cachedbuff', name='Hasted') }}
 
 :   Returns the name of the Haste spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='HybridHP') }} 
+### {{ renderMember(type='cachedbuff', name='HybridHP') }}
 
 :   Returns the name of the Hybrid HP spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Invulnerable') }} 
+### {{ renderMember(type='cachedbuff', name='Invulnerable') }}
 
-:   
+:   ???
 
-### {{ renderMember(type='cachedbuff', name='Maloed') }} 
+### {{ renderMember(type='cachedbuff', name='Maloed') }}
 
 :   Returns the name of the Malo spell if the Target has one
 
-### {{ renderMember(type='float', name='MaxMeleeTo') }} 
+### {{ renderMember(type='float', name='MaxMeleeTo') }}
 
-:   
+:   ???
 
-### {{ renderMember(type='cachedbuff', name='Mezzed') }} 
+### {{ renderMember(type='cachedbuff', name='Mezzed') }}
 
 :   Returns the name of the Mez spell if the Target has one
 
-### {{ renderMember(type='int', name='PctAggro') }} 
+### {{ renderMember(type='int', name='PctAggro') }}
 
-:   
+:   ???
 
-### {{ renderMember(type='cachedbuff', name='Poisoned') }} 
+### {{ renderMember(type='cachedbuff', name='Poisoned') }}
 
 :   Returns the name of a Poison spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Pred') }} 
+### {{ renderMember(type='cachedbuff', name='Pred') }}
 
 :   Returns the name of the Predator spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Regen') }} 
+### {{ renderMember(type='cachedbuff', name='Regen') }}
 
 :   Returns the name of the Regen spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='RevDSed') }} 
+### {{ renderMember(type='cachedbuff', name='RevDSed') }}
 
 :   Returns the name of the Reverse Damage Shield spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Rooted') }} 
+### {{ renderMember(type='cachedbuff', name='Rooted') }}
 
 :   Returns the name of the Rooted spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='SE') }} 
+### {{ renderMember(type='cachedbuff', name='SE') }}
 
 :   Returns the name of the Spiritual Enlightenment spell if the Target has one
 
-### {{ renderMember(type='spawn', name='SecondaryAggroPlayer') }} 
+### {{ renderMember(type='spawn', name='SecondaryAggroPlayer') }}
 
-:   
+:   ???
 
-### {{ renderMember(type='int', name='SecondaryPctAggro') }} 
+### {{ renderMember(type='int', name='SecondaryPctAggro') }}
 
-:   
+:   ???
 
-### {{ renderMember(type='cachedbuff', name='Shining') }} 
+### {{ renderMember(type='cachedbuff', name='Shining') }}
 
 :   Returns the name of the Shining spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Silenced') }} 
+### {{ renderMember(type='cachedbuff', name='Silenced') }}
 
-:   
+:   ???
 
-### {{ renderMember(type='cachedbuff', name='Skin') }} 
+### {{ renderMember(type='cachedbuff', name='Skin') }}
 
 :   Returns the name of the Skin spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Slowed') }} 
+### {{ renderMember(type='cachedbuff', name='Slowed') }}
 
 :   Returns the name of the Slow spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Snared') }} 
+### {{ renderMember(type='cachedbuff', name='Snared') }}
 
 :   Returns the name of the Snare spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Strength') }} 
+### {{ renderMember(type='cachedbuff', name='Strength') }}
 
 :   Returns the name of the Strength spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='SV') }} 
+### {{ renderMember(type='cachedbuff', name='SV') }}
 
 :   Returns the name of the Spiritual Vitality spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Symbol') }} 
+### {{ renderMember(type='cachedbuff', name='Symbol') }}
 
 :   Returns the name of the Symbol spell if the Target has one
 
-### {{ renderMember(type='cachedbuff', name='Tashed') }} 
+### {{ renderMember(type='cachedbuff', name='Tashed') }}
 
 :   Returns the name of the Tash spell if the Target has one
 
@@ -191,46 +191,9 @@ classDiagram
 /target pet
 /delay 5s ${Target.ID}==${Pet.ID} && ${Target.BuffsPopulated}==TRUE
 ```
-[int]: datatype-int.md
-[string]: datatype-string.md
-[achievementobj]: datatype-achievementobj.md
-[bool]: datatype-bool.md
-[time]: datatype-time.md
-[achievement]: datatype-achievement.md
-[achievementcat]: datatype-achievementcat.md
-[altability]: datatype-altability.md
-[spell]: datatype-spell.md
-[bandolieritem]: #bandolieritem-datatype
-[int64]: datatype-int64.md
-[timestamp]: datatype-timestamp.md
-[float]: datatype-float.md
-[buff]: datatype-buff.md
-[spawn]: datatype-spawn.md
-[auratype]: datatype-auratype.md
-[item]: datatype-item.md
-[worldlocation]: datatype-worldlocation.md
-[ticks]: datatype-ticks.md
-[fellowship]: datatype-fellowship.md
-[strinrg]: datatype-string.md
-[xtarget]: datatype-xtarget.md
-[dzmember]: datatype-dzmember.md
-[window]: datatype-window.md
-[zone]: datatype-zone.md
-[fellowshipmember]: datatype-fellowshipmember.md
-[class]: datatype-class.md
-[heading]: datatype-heading.md
-[ground]: datatype-ground.md
-[inifile]: datatype-inifile.md
-[inifilesection]: datatype-inifilesection.md
-[inifilesectionkey]: datatype-inifilesectionkey.md
-[double]: datatype-double.md
-[invslot]: datatype-invslot.md
-[augtype]: datatype-augtype.md
-[itemspell]: datatype-itemspell.md
-[evolving]: datatype-evolving.md
-[keyringitem]: datatype-keyringitem.md
-[raidmember]: datatype-raidmember.md
-[body]: datatype-body.md
+
 [cachedbuff]: datatype-cachedbuff.md
-[deity]: datatype-deity.md
-[race]: datatype-race.md
+[float]: datatype-float.md
+[int]: datatype-int.md
+[spawn]: datatype-spawn.md
+[string]: datatype-string.md

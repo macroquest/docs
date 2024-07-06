@@ -4,57 +4,56 @@ tags:
 ---
 # `FrameLimiter`
 
-The FrameLimiter TLO provides access to the frame limiter feature
+The FrameLimiter TLO provides access to the [frame limiter](../../main/features/framelimiter.md) feature.
 
 ## Forms
 
-[framelimiter](#framelimiter-type) **FrameLimiter**
+### {{ renderMember(type='framelimiter', name='FrameLimiter') }}
 
 :   The frame limiter object
 
-## Associated DataTypes
 
-### {{ renderMember(name='framelimiter') }} 
+## datatype `framelimiter`
 
 Represents the state of the frame limiter
 
-[float][float] **BackgroundFPS**:
+### {{ renderMember(type='float', name='BackgroundFPS') }}
 
 :   Value of the target background fps setting.
 
-[bool][bool] **ClearScreen**
+### {{ renderMember(type='bool', name='ClearScreen') }}
 
 :   Value of the clear screen when not rendering setting.
 
-[float][float] **CPU**:
+### {{ renderMember(type='float', name='CPU') }}
 
 :   Current CPU usage as %
 
-[bool][bool] **Enabled**
+### {{ renderMember(type='bool', name='Enabled') }}
 
 :   TRUE if the frame limiter feature is currently active.
 
-[float][float] **ForegroundFPS**:
+### {{ renderMember(type='float', name='ForegroundFPS') }}
 
 :   Value of the target foreground fps setting.
 
-[float][float] **MinSimulationFPS**:
+### {{ renderMember(type='float', name='MinSimulationFPS') }}
 
 :   Value of the minimum simualtion rate setting.
 
-[float][float] **RenderFPS**:
+### {{ renderMember(type='float', name='RenderFPS') }}
 
 :   Current graphics scene frame rate (visible fps).
 
-[bool][bool] **SaveByChar**
+### {{ renderMember(type='bool', name='SaveByChar') }}
 
 :   TRUE if settings for the frame limiter are being saved by character.
 
-[float][float] **SimulationFPS**:
+### {{ renderMember(type='float', name='SimulationFPS') }}
 
 :   Current simulation frame rate (game updates per second).
 
-[string][string] **Status**
+### {{ renderMember(type='string', name='Status') }}
 
 :   Either "Foreground" or "Background".
 
@@ -70,5 +69,4 @@ Indicates that the frame limiter is enabled:
 [bool]: ../data-types/datatype-bool.md
 [string]: ../data-types/datatype-string.md
 [float]: ../data-types/datatype-float.md
-[Frame Limiter]: ../../main/features/framelimiter.md
-
+[framelimiter]: #datatype-framelimiter

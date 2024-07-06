@@ -8,7 +8,9 @@ Gives access to the ground item that is previously targeted using [/itemtarget](
 
 ## Forms
 
-[_ground_](../data-types/datatype-ground.md) **ItemTarget**
+### {{ renderMember(type='ground', name='ItemTarget') }}
 
 :   Returns the current ground item target.
 
+
+[ground]: ../data-types/datatype-ground.md

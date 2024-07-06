@@ -8,10 +8,16 @@ A time object indicating EQ Game Time.
 
 ## Forms
 
-* [_time_](../data-types/datatype-time.md) **GameTime**
+### {{ renderMember(type='time', name='GameTime') }}
 
-## Examples
+:   Access the current in-game time
 
-`/echo ${GameTime.Date}`
+## Usage
+
+```
+/echo ${GameTime.Date}
+```
 
 Echos todays in-game date to the chat window.
+
+[time]: ../data-types/datatype-time.md

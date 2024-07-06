@@ -8,10 +8,19 @@ Creates an object which references the item on your cursor.
 
 ## Forms
 
-* [_item_](../data-types/datatype-item.md) **Cursor**
+### {{ renderMember(type='item', name='Cursor') }}
 
-## Examples
+:   Access the item on the cursor
 
-`/if (${Cursor.ID}) /autoinv`
 
-_If something is on your cursor, auto-inventory it._
+## Usage
+
+!!! Example
+
+    If something is on your cursor, auto-inventory it.
+
+    ```
+    /if (${Cursor.ID}) /autoinventory
+    ```
+
+[item]: ../data-types/datatype-item.md

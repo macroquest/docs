@@ -10,11 +10,11 @@ Of note: The FindItemBank with ItemSlot REQUIRES that bank item containers be op
 
 ## Forms
 
-[item][item] **FindItemBank**[_name/id_]
+### {{ renderMember(type='item', name='FindItemBank', params='name|id') }}
 
 :   Search for an item in your bank using the given item id, or partial name match.
 
-    ??? example
+    ???+ example
 
         Looks for an item in your bank with the name swirling in it, and prints the ID.
 
@@ -31,11 +31,11 @@ Of note: The FindItemBank with ItemSlot REQUIRES that bank item containers be op
             ```
 
 
-[item][item] **FindItemBank**[=_name_]
+### {{ renderMember(type='item', name='FindItemBank', params='=name') }}
 
 :   Search for an item in your bank using exact name match (case insensitive).
 
-    ??? example
+    ???+ example
 
         Looks for the Cleric Epic (by exact match) in your bank and prints its ID.
 

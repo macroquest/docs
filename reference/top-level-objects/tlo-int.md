@@ -8,11 +8,11 @@ Object that creates an integer from n.
 
 ## Forms
 
-[int][int] **Int**[n]
+### {{ renderMember(type='int', name='Int') }}
 
 :   Parses whatever value for _n_ is provided and converts it into an [int].
 
-## Examples
+## Usage
 
 ```
 /echo ${Int[123].Hex}

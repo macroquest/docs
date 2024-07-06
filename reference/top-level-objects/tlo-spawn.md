@@ -4,21 +4,20 @@ tags:
 ---
 # `Spawn`
 
-## Description
-
 Object used to get information on a specific spawn. Uses the filters under [Spawn Search].
 
 ## Forms
 
-[_spawn_][spawn] **Spawn**[_N_]
+### {{ renderMember(type='spawn', name='Spawn', params='N') }}
 
 :   Spawn matching ID _N_.
 
-[_spawn_][spawn] **Spawn**[_search string_]
+### {{ renderMember(type='spawn', name='Spawn', params='SearchString') }}
 
-:   Any spawns matching _search string_. See [Spawn Search].
+:   Any spawns matching `SearchString`. See [Spawn Search].
 
-## Examples
+
+## Usage
 
 ```
 /echo ${Spawn[1000]}

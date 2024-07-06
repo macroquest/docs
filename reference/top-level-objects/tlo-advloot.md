@@ -8,102 +8,100 @@ The AdvLoot TLO grants access to items in the Advanced Loot window.
 
 ## Members
 
-### {{ renderMember(type='itemfilterdata', name='Filter', params='ItemID') }} 
+### {{ renderMember(type='itemfilterdata', name='Filter', params='ItemID') }}
 
 :   Inspect the loot filter for a given ItemID.
 
-### {{ renderMember(type='bool', name='LootInProgress') }} 
+### {{ renderMember(type='bool', name='LootInProgress') }}
 
 :   True/False if looting from AdvLoot is in progress
 
-### {{ renderMember(type='int', name='PCount') }} 
+### {{ renderMember(type='int', name='PCount') }}
 
 :   item count from the Personal list
 
-### {{ renderMember(type='advlootitem', name='PList', params='Index') }} 
+### {{ renderMember(type='advlootitem', name='PList', params='Index') }}
 
 :   Inspect the item at the specified index in the personal loot list.
 
-### {{ renderMember(type='int', name='PWantCount') }} 
+### {{ renderMember(type='int', name='PWantCount') }}
 
 :   Want count from the Personal list (AN + AG + ND + GD)
 
-### {{ renderMember(type='int', name='SCount') }} 
+### {{ renderMember(type='int', name='SCount') }}
 
 :   Item count from the Shared list
 
-### {{ renderMember(type='advlootitem', name='SList', params='Index') }} 
+### {{ renderMember(type='advlootitem', name='SList', params='Index') }}
 
 :   Inspect the item at the specified index in the shared loot list.
 
-### {{ renderMember(type='int', name='SWantCount') }} 
+### {{ renderMember(type='int', name='SWantCount') }}
 
 :   Want count from the Shared list (AN + AG + ND + GD)
 
 
-## Associated DataTypes
-
-### {{ renderMember(name='advlootitem') }} 
+## datatype `advlootitem`
 
 Represents a discrete item being looted in an AdvLoot window.
 
-### {{ renderMember(type='bool', name='AlwaysGreed') }} 
+### {{ renderMember(type='bool', name='AlwaysGreed') }}
 
 :   The Always Greed (AG) state of the item.
 
-### {{ renderMember(type='bool', name='AlwaysNeed') }} 
+### {{ renderMember(type='bool', name='AlwaysNeed') }}
 
 :   The Always Need (AN) state of the item.
 
-### {{ renderMember(type='bool', name='AutoRoll') }} 
+### {{ renderMember(type='bool', name='AutoRoll') }}
 
 :   The Auto Roll state (dice icon) of the item.
 
-### {{ renderMember(type='spawn', name='Corpse') }} 
+### {{ renderMember(type='spawn', name='Corpse') }}
 
 :   The spawn representing the corpse that is being looted, if available.
 
-### {{ renderMember(type='bool', name='FreeGrab') }} 
+### {{ renderMember(type='bool', name='FreeGrab') }}
 
 :   Indicates that the item is free grab.
 
-### {{ renderMember(type='bool', name='Greed') }} 
+### {{ renderMember(type='bool', name='Greed') }}
 
 :   The Greed (GD) state of the item.
 
-### {{ renderMember(type='int', name='IconID') }} 
+### {{ renderMember(type='int', name='IconID') }}
 
 :   The ID of the icon for the item.
 
-### {{ renderMember(type='int64', name='ID') }} 
+### {{ renderMember(type='int64', name='ID') }}
 
 :   The ID of the item.
 
-### {{ renderMember(type='int', name='Index') }} 
+### {{ renderMember(type='int', name='Index') }}
 
 :   The positional index of the item.
 
-### {{ renderMember(type='string', name='Name') }} 
+### {{ renderMember(type='string', name='Name') }}
 
 :   The name of the item.
 
-### {{ renderMember(type='bool', name='Need') }} 
+### {{ renderMember(type='bool', name='Need') }}
 
 :   The Need (ND) state of the item.
 
-### {{ renderMember(type='bool', name='Never') }} 
+### {{ renderMember(type='bool', name='Never') }}
 
 :   The Never (NV) state of the item.
 
-### {{ renderMember(type='bool', name='No') }} 
+### {{ renderMember(type='bool', name='No') }}
 
 :   The No state of the item.
 
-### {{ renderMember(type='bool', name='NoDrop') }} 
+### {{ renderMember(type='bool', name='NoDrop') }}
 
 :   Indicates if the item is NO DROP.
 
-### {{ renderMember(type='int', name='StackSize') }} 
+### {{ renderMember(type='int', name='StackSize') }}
 
 :   The size of the stack of items being looted.
 
@@ -112,40 +110,39 @@ Represents a discrete item being looted in an AdvLoot window.
 :   Same as **Name**
 
 
-
-### {{ renderMember(name='itemfilterdata') }} 
+## datatype `itemfilterdata`
 
 A collection of settings that together describe the loot filter for an item.
 
-### {{ renderMember(type='bool', name='AutoRoll') }} 
+### {{ renderMember(type='bool', name='AutoRoll') }}
 
 :   The Auto Roll state (dice icon).
 
-### {{ renderMember(type='bool', name='Greed') }} 
+### {{ renderMember(type='bool', name='Greed') }}
 
 :   The Greed (GD) state.
 
-### {{ renderMember(type='int', name='IconID') }} 
+### {{ renderMember(type='int', name='IconID') }}
 
 :   The ID of the icon.
 
-### {{ renderMember(type='int', name='ID') }} 
+### {{ renderMember(type='int', name='ID') }}
 
 :   The ID of the item.
 
-### {{ renderMember(type='string', name='Name') }} 
+### {{ renderMember(type='string', name='Name') }}
 
 :   The Name of the item.
 
-### {{ renderMember(type='bool', name='Need') }} 
+### {{ renderMember(type='bool', name='Need') }}
 
 :   The Need (ND) state.
 
-### {{ renderMember(type='bool', name='Never') }} 
+### {{ renderMember(type='bool', name='Never') }}
 
 :   The Never (NV) state.
 
-### {{ renderMember(type='int', name='Types') }} 
+### {{ renderMember(type='int', name='Types') }}
 
 :   Bit field representing all the loot filter flags for this item.
 
@@ -154,7 +151,7 @@ A collection of settings that together describe the loot filter for an item.
 :   Same as **Name**
 
 
-## Usage Examples
+## Usage
 
 === "MQScript"
 
@@ -223,11 +220,11 @@ A collection of settings that together describe the loot filter for an item.
         print('Do something else, loot is already in progress...')
     end
     ```
+
 [int]: ../data-types/datatype-int.md
 [string]: ../data-types/datatype-string.md
 [bool]: ../data-types/datatype-bool.md
-[bandolieritem]: #bandolieritem-datatype
 [int64]: ../data-types/datatype-int64.md
 [spawn]: ../data-types/datatype-spawn.md
-[itemfilterdata]: #itemfilterdata-type
-[advlootitem]: #advlootitem-type
+[itemfilterdata]: #datatype-itemfilterdata
+[advlootitem]: #datatype-advlootitem

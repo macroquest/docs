@@ -6,7 +6,7 @@ tags:
 
 ## Forms
 
-* [_macro_](../data-types/datatype-macro.md) **Macro**
+### {{ renderMember(type='macro', name='Macro') }}
 
 :   Returns an object related to the macro that is currently running.
 
@@ -15,3 +15,5 @@ tags:
         ```
         /echo This macro has been running for: ${Macro.RunTime} seconds
         ```
+
+[macro]: ../data-types/datatype-macro.md

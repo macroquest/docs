@@ -8,21 +8,22 @@ Used to find information about a particular zone.
 
 ## Forms
 
-[currentzone][currentzone] **Zone**
+### {{ renderMember(type='currentzone', name='Zone') }}
 
 :   Retrieves the current zone information
 
-[zone][zone] **Zone**[_N_]
+### {{ renderMember(type='zone', name='Zone', params='N') }}
 
 :   Retrieves information about a zone by zone ID. If this zone is the current zone, then
     this will return [currentzone].
 
-[zone][zone] **Zone**[_shortname_]
+### {{ renderMember(type='zone', name='Zone', params='ShortName') }}
 
 :   Retrieves information about a zone by short name. If this zone is the current zone, then
     this will return [currentzone].
 
-## Examples
+
+## Usage
 
 ```
 /echo ${Zone.Type}
@@ -51,4 +52,3 @@ Returns the short name of the zone with ID _zoneid_.
 
 [zone]: ../data-types/datatype-zone.md
 [currentzone]: ../data-types/datatype-currentzone.md
-

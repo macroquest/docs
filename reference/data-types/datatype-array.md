@@ -13,15 +13,15 @@ Data related to arrays.
 
 ## Members
 
-### {{ renderMember(type='int', name='Dimensions') }} 
+### {{ renderMember(type='int', name='Dimensions') }}
 
 :   Number of dimensions in the array
 
-### {{ renderMember(type='int', name='Size') }} 
+### {{ renderMember(type='int', name='Size') }}
 
 :   Total number of elements in the array
 
-### {{ renderMember(type='int', name='Size', params='N') }} 
+### {{ renderMember(type='int', name='Size', params='N') }}
 
 :   Total number of elements stored in the _N_ th dimension of the array
 
@@ -35,7 +35,7 @@ To create an array, attach square brackets to the end of the variable name and p
     This array syntax only applies to MQScript. For lua, use tables instead.
 
 
-### Array Examples
+## Examples
 
 This creates a single-dimension local array of int with 10 elements (1-10) all 0:
 
@@ -59,8 +59,6 @@ There is no limit to the number of dimensions or the number of elements in each 
 
 **Note:** You cannot make an array of timers.
 
-### Example Snippets
-
 !!! example
 
     ```text title="ArrayExample.mac"
@@ -82,11 +80,3 @@ There is no limit to the number of dimensions or the number of elements in each 
     ```
 
 [int]: datatype-int.md
-[string]: datatype-string.md
-[achievementobj]: datatype-achievementobj.md
-[bool]: datatype-bool.md
-[time]: datatype-time.md
-[achievement]: datatype-achievement.md
-[achievementcat]: datatype-achievementcat.md
-[altability]: datatype-altability.md
-[spell]: datatype-spell.md

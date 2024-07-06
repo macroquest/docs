@@ -4,20 +4,22 @@ tags:
 ---
 # `InvSlot`
 
-## Description
-
 Object used to get information on a specific inventory slot.
 
 ## Forms
 
-[_invslot_](../data-types/datatype-invslot.md) **InvSlot**[_N_]
+### {{ renderMember(type='invslot', name='InvSlot', params='N') }}
 
 :   Inventory slot by index _N_.
 
-[_invslot_](../data-types/datatype-invslot.md) **InvSlot**[_slot name_]
+### {{ renderMember(type='invslot', name='InvSlot', params='SlotName') }}
 
-:   Inventory slot matching _slot name_.
+:   Inventory slot matching `SlotName`.
 
-## Examples
+
+## Usage
 
 See the datatype link for examples
+
+
+[invslot]: ../data-types/datatype-invslot.md

@@ -8,7 +8,7 @@ Reads value(s) from an ini file located in a relative or absolute path.
 
 ## Forms
 
-[string](../data-types/datatype-string.md) **Ini**[_filename_,_section_,_key_,_default_]
+### {{ renderMember(type='string', name='Ini', params='filename,section,key,default') }}
 
 :   The _section_, _key_, and _default_ do not need to be given. If _section_ or _key_ are not given, multiple values are read.
 
@@ -18,12 +18,12 @@ Reads value(s) from an ini file located in a relative or absolute path.
     a DOS-style filepath (relative or absolute) to locate the ini. If the macro accessing the ini
     is in the same non-root directory, you will still to provide the (relative or absolute) filepath.
 
-[ini](../data-types/datatype-ini.md) **Ini**
+### {{ renderMember(type='ini', name='Ini') }}
 
 :   When passed with no parameters to Ini[] the more robust form of the Ini TLO is used.  See below and the reference
     to the [Key](../data-types/datatype-inifilesectionkey.md) datatype for further usage.
 
-## Examples
+## Usage
 
 If sample.ini contains:
 
@@ -98,3 +98,5 @@ foobar
 bar
 ```
 
+[ini]: ../data-types/datatype-ini.md
+[string]: ../data-types/datatype-string.md

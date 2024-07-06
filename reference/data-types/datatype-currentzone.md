@@ -25,47 +25,56 @@ classDiagram
 
 This type inherits members from [_zone_](datatype-zone.md).
 
-### {{ renderMember(type='bool', name='Dungeon') }} 
+### {{ renderMember(type='bool', name='Dungeon') }}
 
 :   Same as Indoor.
 
-### {{ renderMember(type='int', name='ID') }} 
+### {{ renderMember(type='int', name='ID') }}
 
 :   the ID of the zone.
 
-### {{ renderMember(type='bool', name='Indoor') }} 
+### {{ renderMember(type='bool', name='Indoor') }}
 
 :   True if this is an Indoor zone.
 
-### {{ renderMember(type='float', name='MaxClip') }} 
+### {{ renderMember(type='float', name='MaxClip') }}
 
 :   Maximum clip plane allowed in zone.
 
-### {{ renderMember(type='float', name='MinClip') }} 
+### {{ renderMember(type='float', name='MinClip') }}
 
 :   Minimum clip plane allowed in zone.
 
-### {{ renderMember(type='string', name='Name') }} 
+### {{ renderMember(type='string', name='Name') }}
 
 :   Full zone name.
 
-### {{ renderMember(type='bool', name='NoBind') }} 
+### {{ renderMember(type='bool', name='NoBind') }}
 
 :   True if binding isn't allowed in this zone outside specified bindable areas.
 
-### {{ renderMember(type='bool', name='Outdoor') }} 
+### {{ renderMember(type='bool', name='Outdoor') }}
 
 :   True if this is an outdoor zone.
 
-### {{ renderMember(type='string', name='ShortName') }} 
+### {{ renderMember(type='string', name='ShortName') }}
 
 :   Short zone name
 
-### {{ renderMember(type='int', name='Type') }} 
+### {{ renderMember(type='int', name='Type') }}
 
-:   Zone type:0=Indoor Dungeon 1=Outdoor 2=Outdoor City 3=Dungeon City 4=Indoor City 5=Outdoor Dungeon
+:   Zone type
 
-### {{ renderMember(type='int', name='ZoneType') }} 
+    | Value | Meaning |
+    | :--- | :--- |
+    | 0 | Indoor Dungeon |
+    | 1 | Outdoor |
+    | 2 | Outdoor City |
+    | 3 | Dungeon City |
+    | 4 | Indoor City |
+    | 5 | Outdoor Dungeon |
+
+### {{ renderMember(type='int', name='ZoneType') }}
 
 :   Same as Type
 
@@ -91,25 +100,8 @@ This type inherits members from [_zone_](datatype-zone.md).
         -- echo if the current zone is indoors:
         print(mq.TLO.Zone.Indoor())
         ```
+
+[bool]: datatype-bool.md
+[float]: datatype-float.md
 [int]: datatype-int.md
 [string]: datatype-string.md
-[achievementobj]: datatype-achievementobj.md
-[bool]: datatype-bool.md
-[time]: datatype-time.md
-[achievement]: datatype-achievement.md
-[achievementcat]: datatype-achievementcat.md
-[altability]: datatype-altability.md
-[spell]: datatype-spell.md
-[bandolieritem]: #bandolieritem-datatype
-[int64]: datatype-int64.md
-[timestamp]: datatype-timestamp.md
-[float]: datatype-float.md
-[buff]: datatype-buff.md
-[spawn]: datatype-spawn.md
-[auratype]: datatype-auratype.md
-[item]: datatype-item.md
-[worldlocation]: datatype-worldlocation.md
-[ticks]: datatype-ticks.md
-[fellowship]: datatype-fellowship.md
-[strinrg]: datatype-string.md
-[xtarget]: datatype-xtarget.md

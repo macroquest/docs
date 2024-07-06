@@ -8,22 +8,18 @@ Grants access to your friends dlist.
 
 ## Forms
 
-### {{ renderMember(type='friends', name='Friends') }} 
+### {{ renderMember(type='friends', name='Friends') }}
 
 :   Access friends data
 
 
-## Associated DataTypes
+## datatype `friends`
 
-### {{ renderMember(name='friends') }} 
-
-## Members
-
-### {{ renderMember(type='bool', name='Friend', params='name') }} 
+### {{ renderMember(type='bool', name='Friend', params='name') }}
 
 :   Returns TRUE if _name_ is on your friend list
 
-### {{ renderMember(type='string', name='Friend', params='#') }} 
+### {{ renderMember(type='string', name='Friend', params='#') }}
 
 :   Returns the name of friend list member _\#_
 
@@ -43,7 +39,7 @@ Grants access to your friends dlist.
         | Echo the number of friends that you have
         /echo ${Friends}
 
-        | Ech othe name of your first friend
+        | Echo the name of your first friend
         /echo ${Friends.Friend[1]}
         ```
 
@@ -56,6 +52,7 @@ Grants access to your friends dlist.
         -- Echo the name of your firsrt friend
         print(mq.TLO.Friends.Friend(1)())
         ```
+
 [string]: ../data-types/datatype-string.md
 [bool]: ../data-types/datatype-bool.md
-[friends]: #friends-type
+[friends]: #datatype-friends

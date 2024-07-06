@@ -8,9 +8,12 @@ Used to get information on data types.
 
 ## Forms
 
-[type](../data-types/datatype-type.md) **Type**[_name_]
+### {{ renderMember(type='type', name='Type', params='Name') }}
 
-## Examples
+:   Retrieve metadata about the type with given `Name`
+
+
+## Usage
 
 Determines if a member of a type exists:
 
@@ -25,3 +28,5 @@ Enumerate members of a type using a loop:
     /echo ${Type[spawn].Member[${n}]}
 /next n
 ```
+
+[type]: ../data-types/datatype-type.md

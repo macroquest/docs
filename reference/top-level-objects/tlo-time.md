@@ -8,13 +8,15 @@ Object used to return information on real time, not game time.
 
 ## Forms
 
-[time](../data-types/datatype-time.md) **Time**
+### {{ renderMember(type='time', name='Time') }}
 
 
-## Examples
+## Usage
 
 ```
 /echo ${Time.DayOfWeek}
 ```
 
 Returns the day of the week
+
+[time]: ../data-types/datatype-time.md

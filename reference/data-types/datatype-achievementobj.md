@@ -8,31 +8,32 @@ Represents a single objective of an achievement
 
 ## Members
 
-### {{ renderMember(type='bool', name='Completed') }} 
+### {{ renderMember(type='bool', name='Completed') }}
 
 :   True if the objective has been completed.
 
-### {{ renderMember(type='int', name='Count') }} 
+### {{ renderMember(type='int', name='Count') }}
 
 :   The current count recorded by the objective.
 
-### {{ renderMember(type='string', name='Description') }} 
+### {{ renderMember(type='string', name='Description') }}
 
 :   Text describing this objective.
 
-### {{ renderMember(type='int', name='ID') }} 
+### {{ renderMember(type='int', name='ID') }}
 
 :   The objective's unique ID.
 
-### {{ renderMember(type='int', name='Index') }} 
+### {{ renderMember(type='int', name='Index') }}
 
 :   Visual index of the objective as displayed in the achievement window. Can be used with **Achievement.ObjectiveByIndex**.
 
-### {{ renderMember(type='int', name='RequiredCount') }} 
+### {{ renderMember(type='int', name='RequiredCount') }}
 
 :   The total count required to be complete the objective. For objectives that don't require a count, this will be zero.
 
-### Example
+
+## Example
 
 List the objectives that are still left to complete the achievement "**Norrathian Explorer**":
 
@@ -71,6 +72,7 @@ List the objectives that are still left to complete the achievement "**Norrathia
         end
     end
     ```
+
 [int]: datatype-int.md
 [string]: datatype-string.md
 [bool]: datatype-bool.md

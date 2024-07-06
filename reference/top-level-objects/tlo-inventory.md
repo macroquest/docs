@@ -8,9 +8,13 @@ This is a hierarchical container for things relating to inventory (Bank, etc).  
 
 ## Forms
 
-* [_inventory_](../data-types/datatype-inventory.md) **Inventory**: Your inventory.
+### {{ renderMember(type='inventory', name='Inventory') }}
 
-## Examples
+:   Your inventory.
+
+## Usage
 
 See the datatype link for examples
 
+
+[inventory]: ../data-types/datatype-inventory.md

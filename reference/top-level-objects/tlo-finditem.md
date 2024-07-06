@@ -8,12 +8,12 @@ A TLO used to find an item on your character, corpse, or a merchant by partial o
 
 ## Forms
 
-[item][item] **FindItem**[_name/id_]
+### {{ renderMember(type='item', name='FindItem', params='name|id') }}
 
 :   Search for an item using the given item id, or partial name match. Will search character
     inventory and any items stored in key rings (illusion, mount, etc).
 
-    ??? example
+    ???+ example
 
         Looks for an item with the name swirling in it, and prints the ID.
 
@@ -30,12 +30,12 @@ A TLO used to find an item on your character, corpse, or a merchant by partial o
             ```
 
 
-[item][item] **FindItem**[=_name_]
+### {{ renderMember(type='item', name='FindItem', params='=name') }}
 
 :   Search for an item using exact name match (case insensitive). Will search character inventory
     and any items stored in key rings (illusion, mount, etc).
 
-    ??? example
+    ???+ example
 
         Looks for the Cleric Epic (by exact match) and prints its ID.
 

@@ -8,13 +8,13 @@ Provides a way to query whether a given alias exists. See [/alias](../commands/a
 
 ## Forms
 
-### {{ renderMember(type='bool', name='Alias', params='Name') }} 
+### {{ renderMember(type='bool', name='Alias', params='Name') }}
 
 :   Returns bool indicating if named aliase exists
 
 
 
-## Usage Examples
+## Usage
 
 === "MQScript"
 
@@ -29,4 +29,5 @@ Provides a way to query whether a given alias exists. See [/alias](../commands/a
     -- prints true if the /yes alias exists
     print(mq.TLO.Alias('/yes')())
     ```
+
 [bool]: ../data-types/datatype-bool.md

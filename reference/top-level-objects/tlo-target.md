@@ -8,7 +8,7 @@ Object used to get information about your current target.
 
 ## Forms
 
-[_spawn_](../data-types/datatype-spawn.md) **Target**
+### {{ renderMember(type='target', name='Target') }}
 
 :   Returns the spawn object for the current target.
 
@@ -54,5 +54,7 @@ Object used to get information about your current target.
     /echo ${Target} will break mezz in ${Target.Mezzed.Duration.TotalSeconds}s`
     ```
 
-    returns "a\_pyre\_beetle48 will break mezz in 66s"
+    returns "a_pyre_beetle48 will break mezz in 66s"
 
+
+[target]: ../data-types/datatype-target.md

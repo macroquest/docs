@@ -8,7 +8,7 @@ This datatype deals strictly with information items on a keyring.
 
 ## Members
 
-### {{ renderMember(type='int', name='Index') }} 
+### {{ renderMember(type='int', name='Index') }}
 
 :   Where on the keyring list
 
@@ -16,30 +16,32 @@ This datatype deals strictly with information items on a keyring.
 
 :   The item on the keyring
 
-### {{ renderMember(type='string', name='Name') }} 
+### {{ renderMember(type='string', name='Name') }}
 
 :   name of the keyring item
 
 
 ## Examples
 
-```
-/echo ${Mount[1].Name}
-```
+!!! examples
 
-Outputs: Whirligig Flyer Control Device
+    ```
+    /echo ${Mount[1].Name}
+    ```
 
-```
-/echo ${Mount[2].Name}
-```
+    Outputs: Whirligig Flyer Control Device
 
-Outputs: Abyssal Steed
+    ```
+    /echo ${Mount[2].Name}
+    ```
 
-```
-/echo ${Mount[Abyssal Steed].Index}
-```
+    Outputs: Abyssal Steed
 
-Outputs: 2
+    ```
+    /echo ${Mount[Abyssal Steed].Index}
+    ```
+
+    Outputs: 2
 
 [int]: datatype-int.md
 [string]: datatype-string.md

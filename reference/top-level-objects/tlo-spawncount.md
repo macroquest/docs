@@ -8,17 +8,17 @@ Object used to count spawns based on a set of queries. Uses the filters under [S
 
 ## Forms
 
-[_int_][int] **SpawnCount**
+### {{ renderMember(type='int', name='SpawnCount') }}
 
 :   Total number of spawns in current zone
 
 
-[_int_][int] **SpawnCount**[_search string_]
+### {{ renderMember(type='int', name='SpawnCount', params='SearchString') }}
 
-:   Total number of spawns in current zone matching the _search string_. See [Spawn Search].
+:   Total number of spawns in current zone matching the `SearchString`. See [Spawn Search].
 
 
-## Examples
+## Usage
 
 ```
 /echo ${SpawnCount}

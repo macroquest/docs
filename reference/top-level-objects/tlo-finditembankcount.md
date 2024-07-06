@@ -8,11 +8,11 @@ A TLO used to find a count of items in your bank by partial or exact name match.
 
 ## Forms
 
-[_item_][item] **FindItemBankCount**[_name/id_]
+### {{ renderMember(type='int', name='FindItemBankCount', params='name|id') }}
 
 :   Counts the items in your bank using the given item id, or partial name match.
 
-    ??? example
+    ???+ example
 
         Echos the number of items in your bank with the name swirling in it.
 
@@ -29,7 +29,7 @@ A TLO used to find a count of items in your bank by partial or exact name match.
             ```
 
 
-[_item_][item] **FindItemBankCount**[=_name_]
+### {{ renderMember(type='int', name='FindItemBankCount', params='=name') }}
 
 :   Counts the items in your bank using exact name match (case insensitive).
 
@@ -50,4 +50,4 @@ A TLO used to find a count of items in your bank by partial or exact name match.
             ```
 
 
-[item]: ../data-types/datatype-item.md
+[int]: ../data-types/datatype-int.md

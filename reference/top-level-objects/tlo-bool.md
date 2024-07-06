@@ -17,13 +17,12 @@ If the string is one of these values, the resulting bool is `false`. Otherwise, 
 
 ## Forms
 
-### {{ renderMember(type='bool', name='Bool', params='Text') }} 
+### {{ renderMember(type='bool', name='Bool', params='Text') }}
 
 :   Converts the given _Text_ to a bool based on the rules presented above.
 
 
-
-## Usage Examples
+## Usage
 
 === "MQScript"
 
@@ -53,4 +52,5 @@ If the string is one of these values, the resulting bool is `false`. Otherwise, 
     myVar = mq.TLO.Bool('NULL')()
     print(myVar)
     ```
+
 [bool]: ../data-types/datatype-bool.md

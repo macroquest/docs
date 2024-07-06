@@ -8,7 +8,7 @@ Character object which allows you to get properties of you as a character.
 
 ## Forms
 
-[_character_](../data-types/datatype-character.md) **Me**
+### {{ renderMember(type='character', name='Me') }}
 
 :   Returns the character object which provides access to information about your own character.
 
@@ -17,8 +17,11 @@ Character object which allows you to get properties of you as a character.
     [character](../data-types/datatype-character.md) type. The [character](../data-types/datatype-character.md)
     type also has access to the properties of the [spawn](../data-types/datatype-spawn.md) type.
 
-## Examples
+
+## Usage
 
 ```
 /echo Current Mana: ${Me.PctMana}%
 ```
+
+[character]: ../data-types/datatype-character.md

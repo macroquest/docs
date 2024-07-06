@@ -8,14 +8,29 @@ Object used when you want to find information on targetted doors or switches suc
 
 ## Forms
 
-[_switch_](../data-types/datatype-switch.md) **Switch**
+### {{ renderMember(type='switch', name='Switch') }}
 
-## Examples
+:   Returns the currently targeted switch
+
+### {{ renderMember(type='switch', name='Switch', params='ID') }}
+
+:   Returns a switch matching the provided numeric ID
+
+### {{ renderMember(type='switch', name='Switch', params='Search') }}
+
+:   Based on the value of `Search`, return a switch:
+
+    - `target`: Return the currently targeted switch
+    - `nearest`: Return the nearest switch.
+    - Otherwise, return switch by searching by name
+
+
+## Usage
 
 ```
 ${Switch[foo]}
 ```
-Activates switch "foo"
+Access switch "foo"
 
 ```
 ${Switch[foo].Heading}
@@ -32,3 +47,5 @@ Access "foo" [_switch_](../data-types/datatype-switch.md) datatype members
 Access the current doortarget [_switch_](../data-types/datatype-switch.md) datatype members directly
 Returns TRUE or FALSE
 
+
+[switch]: ../data-types/datatype-switch.md

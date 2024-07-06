@@ -8,72 +8,72 @@ Provides the details about a single achievement and allows access to an achievem
 
 ## Members
 
-### {{ renderMember(type='bool', name='Completed') }} 
+### {{ renderMember(type='bool', name='Completed') }}
 
 :   True if the achievement has been completed
 
-### {{ renderMember(type='time', name='CompletedTime') }} 
+### {{ renderMember(type='time', name='CompletedTime') }}
 
 :   Calendar time when the achievement was completed.
 
-### {{ renderMember(type='string', name='Description') }} 
+### {{ renderMember(type='string', name='Description') }}
 
 :   The achievement's description
 
-### {{ renderMember(type='bool', name='Hidden') }} 
+### {{ renderMember(type='bool', name='Hidden') }}
 
 :   True if the achievement is hidden
 
-### {{ renderMember(type='int', name='IconID') }} 
+### {{ renderMember(type='int', name='IconID') }}
 
 :   ID of the Achievement's Icon. See [Achievement Icon](datatype-achievement.md#achievement-icon) below.
 
-### {{ renderMember(type='int', name='ID') }} 
+### {{ renderMember(type='int', name='ID') }}
 
 :   The achievement's unique ID.
 
-### {{ renderMember(type='int', name='Index') }} 
+### {{ renderMember(type='int', name='Index') }}
 
 :   The index of the achievement. See [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices) for more information.
 
-### {{ renderMember(type='string', name='Link', params='opt: Name') }} 
+### {{ renderMember(type='string', name='Link', params='opt: Name') }}
 
 :   Generate an achievement link. An optional name can be provided to display in the achievement, otherwise the current character's name will be used.
 
-### {{ renderMember(type='bool', name='Locked') }} 
+### {{ renderMember(type='bool', name='Locked') }}
 
 :   True if the achievement is locked
 
-### {{ renderMember(type='string', name='Name') }} 
+### {{ renderMember(type='string', name='Name') }}
 
 :   The achievement's name
 
-### {{ renderMember(type='achievementobj', name='Objective', params='#|Description') }} 
+### {{ renderMember(type='achievementobj', name='Objective', params='#|Description') }}
 
 :   Find an objective by its objective ID or Description.
 
-### {{ renderMember(type='achievementobj', name='ObjectiveByIndex', params='#') }} 
+### {{ renderMember(type='achievementobj', name='ObjectiveByIndex', params='#') }}
 
 :   Find an objective by its visual ordering as displayed in the achievements window.
 
-### {{ renderMember(type='int', name='ObjectiveCount') }} 
+### {{ renderMember(type='int', name='ObjectiveCount') }}
 
 :   The number of objectives in this achievement.
 
-### {{ renderMember(type='bool', name='Open') }} 
+### {{ renderMember(type='bool', name='Open') }}
 
 :   True if the achievement is open
 
-### {{ renderMember(type='int', name='Points') }} 
+### {{ renderMember(type='int', name='Points') }}
 
 :   The point value for the achievement
 
-### {{ renderMember(type='string', name='State') }} 
+### {{ renderMember(type='string', name='State') }}
 
 :   The achievement state. See [Achievement State](datatype-achievement.md#achievement-state) below.
 
 
-### Achievement State
+## Achievement State
 
 An achievement has one of the following mutually exclusive states, accessed via **State**
 
@@ -84,11 +84,11 @@ An achievement has one of the following mutually exclusive states, accessed via 
 | LOCKED | The achievement is "locked" and has criteria that must be completed to be unlocked. |
 | HIDDEN | The achievement is hidden and not available to be earned. Hidden achievements include those that do not apply to the current character class. |
 
-### Achievement Icon
+## Achievement Icon
 
 Each achievement has an icon associated with it. This icon id represents a cell in the `A_DragItem` texture. To access the cell, subtract 500 from the icon id.
 
-### Examples
+## Examples
 
 Link an achievement into chat
 

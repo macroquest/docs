@@ -8,19 +8,20 @@ Object that is used in finding spawns nearest to you.
 
 ## Forms
 
-[_spawn_][spawn] **NearestSpawn**[_N_]
+### {{ renderMember(type='spawn', name='NearestSpawn', params='N') }}
 
 :   The _Nth_ nearest spawn
 
-[_spawn_][spawn] **NearestSpawn**[_search_]
+### {{ renderMember(type='spawn', name='NearestSpawn', params='Search') }}
 
 :   The nearest spawn matching this search string (see [Spawn Search]).
 
-[_spawn_][spawn] **NearestSpawn**[_N_,_search_]
+### {{ renderMember(type='spawn', name='NearestSpawn', params='N,Search') }}
 
 :   The _Nth_ nearest spawn matching this search string (see [Spawn Search]).
 
-## Examples
+
+## Usage
 
 ```
 /echo ${NearestSpawn[npc radius 100 "orc pawn"]}

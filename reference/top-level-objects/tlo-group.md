@@ -8,18 +8,28 @@ Access to all group-related information.
 
 ## Forms
 
-* [_group_](../data-types/datatype-group.md) **Group**
+### {{ renderMember(type='group', name='Group') }}
 
-## Examples
+:   Retrieve information about your group
 
-`/echo ${Group.Leader.ID}`
+## Usage
+
+```
+/echo ${Group.Leader.ID}
+```
 
 Echo Groupleader ID, if any.
 
-`/echo ${Group.Member[0]}`
+```
+/echo ${Group.Member[0]}
+```
 
-Echo's your own name
+Echos your own name
 
-`/echo ${Group.Member[1]}`
+```
+`/echo ${Group.Member[1]}
+```
 
-Echo's the next person on the list, after yourself.
+Echos the next person on the list, after yourself.
+
+[group]: ../data-types/datatype-group.md

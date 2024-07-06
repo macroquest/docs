@@ -8,10 +8,16 @@ Creates a float object from n.
 
 ## Forms
 
-* [float](../data-types/datatype-float.md) **Float[**n**]**
+### {{ renderMember(type='float', name='Float', params='n') }}
 
-## Examples
+:   Returns a float with value _n_.
 
-`/echo ${Float[12.345].Deci}`
+## Usage
+
+```
+/echo ${Float[12.345].Deci}
+```
 
 Creates a float object of 12.345 and truncates the decimal to one decimal place.
+
+[float]: ../data-types/datatype-float.md
