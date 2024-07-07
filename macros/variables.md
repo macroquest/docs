@@ -38,7 +38,7 @@ Name lookup is case insensitive.
 
 Variables are declared (initially defined) in the following format:
 
-```bash
+```text
 /declare varname|varname[array extents] [type] [local|global|outer] [defaultvalue]
 ```
 

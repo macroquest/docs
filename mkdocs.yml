@@ -465,6 +465,7 @@ nav:
     - Select: reference/top-level-objects/tlo-select.md
     - SelectedItem: reference/top-level-objects/tlo-selecteditem.md
     - Skill: reference/top-level-objects/tlo-skill.md
+    - Social: reference/top-level-objects/tlo-social.md
     - Spawn: reference/top-level-objects/tlo-spawn.md
     - SpawnCount: reference/top-level-objects/tlo-spawncount.md
     - Spell: reference/top-level-objects/tlo-spell.md
@@ -513,6 +514,7 @@ nav:
     - group: reference/data-types/datatype-group.md
     - groupmember: reference/data-types/datatype-groupmember.md
     - heading: reference/data-types/datatype-heading.md
+    - hotbuttonwindow: reference/data-types/datatype-hotbuttonwindow.md
     - ini: reference/data-types/datatype-ini.md
     - inifile: reference/data-types/datatype-inifile.md
     - inifilesection: reference/data-types/datatype-inifilesection.md
@@ -538,6 +540,7 @@ nav:
     - raidmember: reference/data-types/datatype-raidmember.md
     - range: reference/data-types/datatype-range.md
     - skill: reference/data-types/datatype-skill.md
+    - social: reference/data-types/datatype-social.md
     - spawn: reference/data-types/datatype-spawn.md
     - spell: reference/data-types/datatype-spell.md
     - string: reference/data-types/datatype-string.md

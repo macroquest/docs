@@ -20,8 +20,7 @@ Windows come in many forms, but all are represented with the generic **window** 
 
 :   Returns `TRUE` if the button has been checked.
 
-
-### [window](datatype-window.md) `Child[name]`
+### {{ renderMember(type='window', name='Child', params='name') }}
 
 :   Find a child window with the provided name.
 
@@ -35,7 +34,7 @@ Windows come in many forms, but all are represented with the generic **window** 
 :   Returns `TRUE` if the window has children.
 
 
-### [window](datatype-window.md) `CurrentTab`
+### {{ renderMember(type='window', name='CurrentTab') }}
 
 :   Applies to: `TabBox`
 
@@ -53,8 +52,7 @@ Windows come in many forms, but all are represented with the generic **window** 
 
 :   Returns `TRUE` if the window is enabled.
 
-
-### [window](datatype-window.md) `FirstChild`
+### {{ renderMember(type='window', name='FirstChild') }}
 
 :   Returns the first child window in the window hierarchy.
 
@@ -86,6 +84,11 @@ Windows come in many forms, but all are represented with the generic **window** 
 
     Has the other person clicked the Trade button?
 
+### {{ renderMember(type='hotbuttonwindow', name='HotButton') }}
+
+:   Applies to: `HotButton`
+
+    Returns the HotButton associated with this window object.
 
 ### {{ renderMember(type='int', name='HScrollMax') }}
 
@@ -163,7 +166,7 @@ Windows come in many forms, but all are represented with the generic **window** 
     _Note: this value may be affected by custom ui._
 
 
-### [window](datatype-window.md) `Next`
+### {{ renderMember(type='window', name='Next') }}
 
 :   Next sibling window in the window hierarchy.
 
@@ -173,7 +176,7 @@ Windows come in many forms, but all are represented with the generic **window** 
 :   Returns `TRUE` if the window is open.
 
 
-### [window](datatype-window.md) `Parent`
+### {{ renderMember(type='window', name='Parent') }}
 
 :   Returns the parent of this window, or `NULL` if this is a top level window.
 
@@ -212,14 +215,14 @@ Windows come in many forms, but all are represented with the generic **window** 
     The number of tabs present in the TabBox.
 
 
-### [window](datatype-window.md) `Tab[Index]`
+### {{ renderMember(type='window', name='Tab', params='Index') }}
 
 :   Applies to: `TabBox`
 
     Looks up the `Page` window that matches the provided tab index in the TabBox.
 
 
-### [window](datatype-window.md) `Tab[Text]`
+### {{ renderMember(type='window', name='Tab', params='Text') }}
 
 :   Applies to: `TabBox`
 
@@ -483,6 +486,7 @@ Returns the name of the 2nd option in the list of rewards for the tab titled "Br
 [argb]: datatype-argb.md
 [bool]: datatype-bool.md
 [float]: datatype-float.md
+[hotbuttonwindow]: datatype-hotbuttonwindow.md
 [int]: datatype-int.md
 [invslot]: datatype-invslot.md
 [invslotwindow]: datatype-invslotwindow.md
