@@ -1,14 +1,38 @@
 # Plugin repository Quick List
 
-A quick list of plugins that have been migrated and how to add them.  Once they're all added, you may need to initialize submodules for any plugins which have any.
+Below you will find a command listing to clone the repositories of many public open-source plugins.
 
-You can initialize submodules of any plugin which has them with:  
-Using Git Bash:  `find ./plugins -maxdepth 1 -type d -exec git -C {} submodule update --init --recursive \;`  
-Using PowerShell:  `Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.FullName; Write-Host $_.Parent.FullName; git submodule update --init --recursive }`  
+The commands below are provided as a quick way to download them from Git. Some plugins may have submodules, so also make sure th run the submodule update command to initialize any submodules.
 
-You can quickly update your plugins with:  
-Using Git Bash:  `find ./plugins -maxdepth 1 -type d -exec git -C {} pull \;`  
-Using PowerShell:  `Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.FullName; Write-Host $_.Parent.FullName; git pull }`  
+!!! Tip
+    You can initialize submodules of any plugin which has them with:
+
+    === "Git Bash"
+
+        ```bash
+        find ./plugins -maxdepth 1 -type d -exec git -C {} submodule update --init --recursive \;
+        ```
+
+    === "Powershell"
+
+        ```powershell
+        Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.FullName; Write-Host $_.Parent.FullName; git submodule update --init --recursive }
+        ```
+
+!!! Tip
+    You can quickly update your plugins with:
+
+    === "Git Bash"
+
+        ```bash
+        find ./plugins -maxdepth 1 -type d -exec git -C {} pull \;
+        ```
+
+    === "Powershell"
+
+        ```powershell
+        Get-ChildItem -Directory -Force -Recurse *.git | ForEach-Object { cd $_.Parent.FullName; Write-Host $_.Parent.FullName; git pull }
+        ```
 
 The solution file with all of these in it is here: [MacroQuestCustom.sln](../uploads/MacroQuestCustom.sln) (place this file in the src folder beside MacroQuest.sln)
 
