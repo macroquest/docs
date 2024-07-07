@@ -6,7 +6,7 @@ tags:
 
 Data related to hotbuttons
 
-### Members
+## Members
 
 ### {{ renderMember(type='altability', name='AltAbility') }}
 
@@ -102,6 +102,31 @@ Data related to hotbuttons
 ### {{ renderMember(type='string', name='TypeName') }}
 
 :   Returns the type name of hotbutton. See [HotButton Types](#hotbutton-types).
+
+
+## Methods
+
+
+### {{ renderMember(name='Activate') }}
+
+:   Activates the hotbutton as if it were clicked.
+
+    !!! Example
+
+        Activate the first hotbutton on the first hotbar
+
+        === "Lua"
+
+            ```lua
+            mq.TLO.Window("HotButtonWnd/HB_Button1").HotButton.Activate()
+            ```
+
+        === "MQScript"
+
+            ```text
+            /invoke ${Window[HotButtonWnd/HB_Button1].HotButton.Activate}
+            ```
+
 
 ## HotButton Types
 
