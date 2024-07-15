@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.28">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.29">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.6543a935.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.76a95c52.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -6009,8 +6009,6 @@
       
         
       
-        
-      
     
     
       
@@ -6054,27 +6052,6 @@
   
   <span class="md-ellipsis">
     Animations
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
-      <a href="../../general/combatstate/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    CombatState
   </span>
   
 
@@ -19494,7 +19471,46 @@ If something is missing here, you can check the source to see if it exists.</p>
 </dl>
 <h3 id="CombatState"><a href="../datatype-string/">string</a> <code>CombatState</code><a class="headerlink" href="#CombatState" title="Permanent link">&para;</a></h3>
 <dl>
-<dd>Returns one of the following: COMBAT, DEBUFFED, COOLDOWN, ACTIVE, RESTING, UNKNOWN</dd>
+<dd>
+<p>Returns the current out-of-combat resting state.</p>
+<table>
+<thead>
+<tr>
+<th>Value</th>
+<th>Meaning</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>COMBAT</td>
+<td>You are currently in a combat state and can not rest yet</td>
+</tr>
+<tr>
+<td>DEBUFFED</td>
+<td>You can't rest now. You need to be cleansed before the cooldown will start</td>
+</tr>
+<tr>
+<td>COOLDOWN</td>
+<td>You are cooling down. OOC regen is ready when you are done cooling down</td>
+</tr>
+<tr>
+<td>ACTIVE</td>
+<td>You can rest now. You can use the OOC regen if you want</td>
+</tr>
+<tr>
+<td>RESTING</td>
+<td>You ARE resting now. the OOC regen is active</td>
+</tr>
+</tbody>
+</table>
+<p>If the client does not support this feature, ACTIVE will always be returned.</p>
+<div class="admonition example">
+<p class="admonition-title">Example</p>
+<div class="highlight"><pre><span></span><code>/if ${Me.CombatState.Equal[ACTIVE]} /echo I can now sit and regen fast
+/if ${Me.CombatState.Equal[DEBUFFED]} /echo I need cures before I can rest
+</code></pre></div>
+</div>
+</dd>
 </dl>
 <h3 id="Commemoratives"><a href="../datatype-int/">int</a> <code>Commemoratives</code><a class="headerlink" href="#Commemoratives" title="Permanent link">&para;</a></h3>
 <dl>
