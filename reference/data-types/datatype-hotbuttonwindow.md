@@ -146,7 +146,7 @@ determines the meaning of the Slot
 | 8    | PetCommand        | Pet command from the pet window | Which pet command |
 | 9    | Skill             | Skill or innate ability | 0-100 = skill by id, 101-125 = innate skill |
 | 10   | MeleeAbility      | _unused (deprecated)_ | _n/a_ |
-| 11   | LeadershipAbility | Leadership ability button (emu only) | Which ability |
+| 11   | LeadershipAbility | Leadership ability button (emu only) | First 3 bits (Slot & 7) is the button number (1, 2, 3). Shift right 3 bits to get the leader ability id. |
 | 12   | ItemLink          | A specific item | Not used (uses item guid/id instead)  |
 | 13   | KronoSlot         | The krono slot | _n/a_ |
 | 14   | Command           | Keybind command | ID of the command |
