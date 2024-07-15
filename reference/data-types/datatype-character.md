@@ -331,7 +331,24 @@ If something is missing here, you can check the source to see if it exists.
 
 ### {{ renderMember(type='string', name='CombatState') }}
 
-:   Returns one of the following: COMBAT, DEBUFFED, COOLDOWN, ACTIVE, RESTING, UNKNOWN
+:   Returns the current out-of-combat resting state.
+
+    | Value | Meaning |
+    | --- | --- |
+    | COMBAT | You are currently in a combat state and can not rest yet |
+    | DEBUFFED | You can't rest now. You need to be cleansed before the cooldown will start |
+    | COOLDOWN | You are cooling down. OOC regen is ready when you are done cooling down |
+    | ACTIVE | You can rest now. You can use the OOC regen if you want |
+    | RESTING | You ARE resting now. the OOC regen is active |
+
+    If the client does not support this feature, ACTIVE will always be returned.
+
+    !!! Example
+
+        ```text
+        /if ${Me.CombatState.Equal[ACTIVE]} /echo I can now sit and regen fast
+        /if ${Me.CombatState.Equal[DEBUFFED]} /echo I need cures before I can rest
+        ```
 
 ### {{ renderMember(type='int', name='Commemoratives') }}
 

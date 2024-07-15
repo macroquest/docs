@@ -271,7 +271,6 @@ nav:
 
   - General Information:
     - Animations: reference/general/animations.md
-    - CombatState: reference/general/combatstate.md
     - Containers List: reference/general/containers-list.md
     - Languages: reference/general/languages.md
     - List of spawn heights: reference/general/list-of-spawn-heights.md
@@ -603,6 +602,7 @@ plugins:
   - redirects:
       redirect_maps:
         'main/submodule-quick-list.md': 'main/plugin-quick-list.md'
+        'reference/general/combatstate.md': 'reference/data-types/datatype-character#CombatState'
   - tags:
       tags_file: tags.md
 
