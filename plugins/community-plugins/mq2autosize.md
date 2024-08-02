@@ -2,25 +2,25 @@
 
 ## Description
 
-`This plugin will automatically shrink everyone within range down to minimum`<br>
-`allowed size. They will automatically resize back to normal when they move`<br>
-`out of range. (Current range is set at 50' - Can be changed in MQ Settings -> plugin -> AutoSize)`<br>
-`NOTE: These effects are CLIENT SIDE ONLY!`<br>
+This plugin will automatically shrink everyone within range down to minimum allowed size. They will automatically resize back to normal when they move out of range. (Current range is set at 50' - Can be changed in MQ Settings -> plugin -> AutoSize)<br>
+NOTE: These effects are CLIENT SIDE ONLY!<br>
 
-`You can find the latest version of MQ2AutoSize`[`here`](https://github.com/RedGuides/MQ2AutoSize)`.`
+You can find the latest version of MQ2AutoSize [here](https://github.com/RedGuides/MQ2AutoSize).
 
 ## Commands
 
 `/autosize [on | off] - Toggles AutoSize functionality or set the functionality on or off directly`<br>
 `/autosize [pc | npc | pets | mercs | mounts | corpse | everything | self ] [on | off] - Toggles AutoSizing for the specified type or set the functionality on or off directly`<br>
-`/autosize dist [on | off] - Toggles distance-based vs Zonewide or set the functionality to distance-based(on) or Zonewide(off)`<br>
+`/autosize dist [on | off] - Toggles distance-based (on) vs Zonewide (off) or set the functionality with on or off.`<br>
 `/autosize range ### - Sets range for distance-based checking`<br>
-`/autosize [ sizepc | sizenpc | sizepets | sizemercs | sizemounts | sizecorpse | sizetarget | sizeself ]  ### (1-250)`<br>
+`/autosize [ range |  sizepc | sizenpc | sizepets | sizemercs | sizemounts | sizecorpse | sizetarget | sizeself ]  ### (1-250 size) (1-1000 range)`<br>
 `/autosize [help | status | autosave | save | load ]`<br>
 
 ## MQSettings
 
 Settings for AutoSize can be modified in MQ Settings -> plugin -> AutoSize
+
+![MQSettings AutoSize](../../images/autosize-mqsettings.png){ align=center }
 
 | **Setting** | **Values** | **Description** |
 | :---------- | :-------- | :------------- |
@@ -43,9 +43,9 @@ Settings for AutoSize can be modified in MQ Settings -> plugin -> AutoSize
 
 | **Type**                                              | **Member Name**  | **Description**                                            |
 | :---------------------------------------------------- | :--------------- | :--------------------------------------------------------- |
-| [_bool_](../../reference/data-types/datatype-bool.md) | **Active**       | Whether the plugin is actively resizing something or not   |
-| [_bool_](../../reference/data-types/datatype-bool.md) | **AutoSave**     | Whether the plugin should autosave or not                  |
 | [_bool_](../../reference/data-types/datatype-bool.md) | **Enabled**      | Whether the plugin is enabled or not                       |
+| [_bool_](../../reference/data-types/datatype-bool.md) | **AutoSave**     | Whether the plugin should autosave or not                  |
+| [_bool_](../../reference/data-types/datatype-bool.md) | **Active**       | Whether the plugin is actively resizing something or not   |
 | [_int_](../../reference/data-types/datatype-int.md)   | **Range**        | Distance within which the plugin will resize enabled types |
 | [_bool_](../../reference/data-types/datatype-bool.md) | **ResizeCorpse** | Whether the plugin should resize corpses or not            |
 | [_bool_](../../reference/data-types/datatype-bool.md) | **ResizeMercs**  | Whether the plugin should resize mercanaries or not        |
