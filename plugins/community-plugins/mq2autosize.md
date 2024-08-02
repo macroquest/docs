@@ -16,7 +16,7 @@
 `/autosize dist - Toggles distance-based vs Zonewide`<br>
 `/autosize range ### - Sets range for distance checking`<br>
 `/autosize [ sizepc | sizenpc | sizepets | sizemercs | sizemounts | sizecorpse | sizetarget | sizeself ]  ### (1-250)`<br>
-`/autosize [help | status | autosave | save | load }`<br>
+`/autosize [help | status | autosave | save | load ]`<br>
 
 ## INI Entries
 
