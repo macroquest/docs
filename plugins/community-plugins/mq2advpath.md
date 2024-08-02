@@ -6,14 +6,14 @@ This plugin allows you to record and playback player movement.
 
 ## Commands
 
-* /afollow \[on\|off\] \[nodoor\|\*door\]
-* /afollow \[pause\|unpause\]
-* /afollow spawn \# \[nodoor\|\*door\]
-* /afollow \[nodoor\|\*door\]
-* /play \[PathName\|off\] \[reverse\|\*normal\] \[loop\|\*noloop\] \[smart\] \[pause\|\*unpause\] \[nodoor\|\*door\]
-* /record 
-* /record save 
-* /record checkpoint 
+* /afollow [on|off] [nodoor|door]
+* /afollow [pause|unpause]
+* /afollow spawn # [nodoor|door]
+* /afollow [nodoor|door]
+* /play [PathName|off] [reverse|*normal] [loop|*noloop] [smart] [pause|*unpause] [nodoor|*door]
+* /record
+* /record save
+* /record checkpoint
 
 ## TLOs
 
