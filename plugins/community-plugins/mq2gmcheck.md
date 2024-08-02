@@ -10,26 +10,29 @@ You can find the latest version of MQ2GMCheck [here](https://macroquest.org/phpB
 
 ## Commands
 
-`/gmcheck on|off - enable/disable scanning for GMs`  
-`/gmcheck char on|off - toggle chat channel alert`  
-`/gmcheck chattimer X - set frequency of chant channel alert, default=15s`  
-`/gmcheck popup on|off - toggle popup alert`  
-`/gmcheck popuptimer X - set frequency of popup alert, default is 30s`  
-`/gmcheck audio on|off - toggle audio alert`  
-`/gmcheck audiotimer X - set frequency of audio alert, default is 30s`  
-`/gmcheck list - list all known GMs currently in zone`  
-`/gmcheck reset - reset list of known GMs in zone`  
-`/gmcheck history - complete history dump`  
-`/gmcheck zone - history of GMs in this zone`  
-`/gmcheck server - history of GMs on this server`  
-`/gmcheck servers - history of GMs on all servers`  
-`/gmcheck timer X - set scan delay to X seconds, default is 2s`  
-`/gmcheck help - show the available commands`
+`/gmcheck on|off` - enable/disable scanning for GMs<br>
+`/gmcheck char on|off` - toggle chat channel alert<br>
+`/gmcheck chattimer X` - set frequency of chant channel alert, default=15s<br>
+`/gmcheck popup on|off` - toggle popup alert<br>
+`/gmcheck popuptimer X` - set frequency of popup alert, default is 30s<br>
+`/gmcheck audio on|off` - toggle audio alert<br>
+`/gmcheck audiotimer X` - set frequency of audio alert, default is 30s<br>
+`/gmcheck list` - list all known GMs currently in zone<br>
+`/gmcheck reset` - reset list of known GMs in zone<br>
+`/gmcheck history` - complete history dump<br>
+`/gmcheck zone` - history of GMs in this zone<br>
+`/gmcheck server` - history of GMs on this server<br>
+`/gmcheck servers` - history of GMs on all servers<br>
+`/gmcheck timer X` - set scan delay to X seconds, default is 2s<br>
+`/gmcheck help` - show the available commands<br>
 
-## Datatype
+## Top-Level Object: ${GMCheck}
 
-`${GMCheck} returns TRUE, FALSE, or DISABLED.`  
-`${GMCheck.Status} returns TRUE, FALSE, or DISABLED.`  
-`${GMCheck.Count} returns the number of GMs known in this zone.`
+
+| **Type**                                              | **Member Name**  | **Description**                                            |
+| :---------------------------------------------------- | :--------------- | :--------------------------------------------------------- |
+| [_string_](../../reference/data-types/datatype-string.md) | **${GMCheck}** | returns TRUE, FALSE, or DISABLED. |
+| [_string_](../../reference/data-types/datatype-string.md) | **Status** | returns TRUE, FALSE, or DISABLED. |
+| [_int_](../../reference/data-types/datatype-int.md) | **Count** | returns the number of GMs known in this zone. |
 
 audio - put an entry for GMCHECK in the MQ2Sound.ini
