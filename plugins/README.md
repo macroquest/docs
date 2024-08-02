@@ -234,8 +234,6 @@ See [/plugin](../reference/commands/plugin.md) for information on loading and un
           </li>
           <li><a href="../plugins/discontinued/mq2telnet/">MQ2Telnet</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2timer/">MQ2Timer</a>
-          </li>
           <li><a href="../plugins/community-plugins/mq2timestamp/">MQ2Timestamp</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2tracking/">MQ2Tracking</a>
