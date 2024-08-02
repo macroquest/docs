@@ -131,9 +131,7 @@ nav:
     - MQ2BuffTool: plugins/community-plugins/mq2bufftool.md
     - MQ2Cast: plugins/community-plugins/mq2cast.md
     - MQ2ChatEvents: plugins/community-plugins/mq2chatevents.md
-    - MQ2Clip: plugins/community-plugins/mq2clip.md
     - MQ2Cursor: plugins/community-plugins/mq2cursor.md
-    - MQ2DPS: plugins/community-plugins/mq2dps.md
     - MQ2DPSAdv: plugins/community-plugins/mq2dpsadv.md
     - MQ2Debuffs: plugins/community-plugins/mq2debuffs.md
     - MQ2Cecho: plugins/community-plugins/mq2cecho.md

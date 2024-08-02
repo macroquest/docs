@@ -146,24 +146,20 @@ See [/plugin](../reference/commands/plugin.md) for information on loading and un
           </li>
           <li><a href="../plugins/core-plugins/mq2chatwnd/">MQ2ChatWnd</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2clip/">MQ2Clip</a>
-          </li>
           <li><a href="../plugins/community-plugins/mq2cursor/">MQ2Cursor</a>
           </li>
           <li><a href="../plugins/core-plugins/mq2custombinds/">MQ2CustomBinds</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2debuffs/">MQ2Debuffs</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2dps/">MQ2DPS</a>
-          </li>
           <li><a href="../plugins/community-plugins/mq2dpsadv/">MQ2DPSAdv</a>
+          </li>
+          <li><a href="../plugins/community-plugins/mq2eqbc/">MQ2EQBC</a>
           </li>
         </ul>
       </th>
       <th style="text-align:left">
         <ul>
-          <li><a href="../plugins/community-plugins/mq2eqbc/">MQ2EQBC</a>
-          </li>
           <li><a href="../plugins/core-plugins/mq2eqbugfix/">MQ2EQBugFix</a>
           </li>
           <li><a href="../plugins/discontinued/mq2eqim/">MQ2EQIM</a>
