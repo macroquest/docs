@@ -9,18 +9,17 @@ You can find the latest version of MQ2AutoSize [here](https://github.com/RedGuid
 
 ## Commands
 
-`/autosize [on | off] - Toggles AutoSize functionality or set the functionality on or off directly`<br>
-`/autosize [pc | npc | pets | mercs | mounts | corpse | everything | self ] [on | off] - Toggles AutoSizing for the specified type or set the functionality on or off directly`<br>
-`/autosize dist [on | off] - Toggles distance-based (on) vs Zonewide (off) or set the functionality with on or off.`<br>
-`/autosize range ### - Sets range for distance-based checking`<br>
-`/autosize [ range |  sizepc | sizenpc | sizepets | sizemercs | sizemounts | sizecorpse | sizetarget | sizeself ]  ### (1-250 size) (1-1000 range)`<br>
+`/autosize [on | off]` - Toggles AutoSize functionality or set the functionality on or off directly<br>
+`/autosize [pc | npc | pets | mercs | mounts | corpse | everything | self ] [on | off]` - Toggles AutoSizing for the specified type or set the functionality on or off directly<br>
+`/autosize dist [on | off]` - Toggles distance-based (on) vs Zonewide (off) or set the functionality with on or off.<br>
+`/autosize [ range |  sizepc | sizenpc | sizepets | sizemercs | sizemounts | sizecorpse | sizetarget | sizeself ]  ### (1-250)`<br>
 `/autosize [help | status | autosave | save | load ]`<br>
 
 ## MQSettings
 
 Settings for AutoSize can be modified in MQ Settings -> plugin -> AutoSize
 
-![MQSettings AutoSize](../../images/autosize-mqsettings.png){ align=center }
+![MQSettings AutoSize](../../images/autosize-mqsettings.png)
 
 | **Setting** | **Values** | **Description** |
 | :---------- | :-------- | :------------- |
