@@ -4,40 +4,40 @@
 
 `This plugin will automatically shrink everyone within range down to minimum`<br>
 `allowed size. They will automatically resize back to normal when they move`<br>
-`out of range. (Current range is set at 50' - adjust with Range settings in INI)`<br>
+`out of range. (Current range is set at 50' - Can be changed in MQ Settings -> plugin -> AutoSize)`<br>
 `NOTE: These effects are CLIENT SIDE ONLY!`<br>
 
 `You can find the latest version of MQ2AutoSize`[`here`](https://github.com/RedGuides/MQ2AutoSize)`.`
 
 ## Commands
 
-`/autosize [on | off] - Toggles AutoSize functionality on/off`<br>
-`/autosize [pc | npc | pets | mercs | mounts | corpse | everything | self ] [on | off] - Toggles   AutoSizing on/off for the specified type`<br>
-`/autosize dist - Toggles distance-based vs Zonewide`<br>
-`/autosize range ### - Sets range for distance checking`<br>
+`/autosize [on | off] - Toggles AutoSize functionality or set the functionality on or off directly`<br>
+`/autosize [pc | npc | pets | mercs | mounts | corpse | everything | self ] [on | off] - Toggles AutoSizing for the specified type or set the functionality on or off directly`<br>
+`/autosize dist [on | off] - Toggles distance-based vs Zonewide or set the functionality to distance-based(on) or Zonewide(off)`<br>
+`/autosize range ### - Sets range for distance-based checking`<br>
 `/autosize [ sizepc | sizenpc | sizepets | sizemercs | sizemounts | sizecorpse | sizetarget | sizeself ]  ### (1-250)`<br>
 `/autosize [help | status | autosave | save | load ]`<br>
 
-## INI Entries
+## MQSettings
 
-`[Config]`<br>
-`AutoSave=off`<br>
-`ResizePC=on`<br>
-`ResizeNPC=off`<br>
-`ResizePets=off`<br>
-`ResizeMercs=off`<br>
-`ResizeMounts=off`<br>
-`ResizeCorpse=off`<br>
-`ResizeSelf=off`<br>
-`Range=50`<br>
-`SizeDefault=1`<br>
-`SizePC=1`<br>
-`SizeNPC=1`<br>
-`SizePets=1`<br>
-`SizeMercs=1`<br>
-`SizeMounts=1`<br>
-`SizeCorpse=1`<br>
-`SizeSelf=1`<br>
+Settings for AutoSize can be modified in MQ Settings -> plugin -> AutoSize
+
+| **Setting** | **Values** | **Description** |
+| :---------- | :-------- | :------------- |
+| AutoSave | on/off | Whether the plugin should autosave or not |
+| ZoneWide/Distance | Distance (50) | Distance-based or zonewide resizing |
+| Synchronize Clients | None/MQ2DanNet/MQ2EQBC | Synchronize with other clients |
+
+| **Setting** | **Default Value** | **Default Size Value** | **Description** |
+| :---------- | :---------------- | :-------------- | :------------- |
+| ResizeSelf | off | 1 | Whether the plugin should resize self and to what size |
+| ResizePC | off | 1 | Whether the plugin should resize PCs (including mounted) and to what size |
+| ResizePets | off | 1 | Whether the plugin should resize pets and to what size |
+| ResizeMercs | off | 1 | Whether the plugin should resize mercanaries and to what size |
+| ResizeMounts | off | 1 | Whether the plugin should resize mounts (and the player(s) on them) and to what size |
+| ResizeCorpse | off | 1 | Whether the plugin should resize corpses and to what size |
+| ResizeNPC | off | 1 | Whether the plugin should resize NPCs and to what size |
+| Resize Everything | button | | Sets all resize types to on |
 
 ## Top-Level Object: ${AutoSize}
 
