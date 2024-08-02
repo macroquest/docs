@@ -10,21 +10,13 @@ You can find the source to the plugin in the VIP forums [here](https://macroques
 
 ## Commands
 
-* **/createset**  _**slotname1\|slotnumber1 slotname2\|slotnumber2 ... \(slotname21\|slotnumber22\)**_
-
-Creates a set in MQ2Bandolier\_.ini using the selected equipment slots. If you use the name of an existing set, it will be over-written.
-
-* **/deleteset** 
-
-Deletes the specified setname from the characters ini.
-
-* **/equipset** 
-
-Equips all items of the specified set.
+`/createset  [slotname1 | slotnumber1 slotname2 | slotnumber2 ... slotname21|slotnumber22]` - Creates a set in MQ2Bandolier\_.ini using the selected equipment slots. If you use the name of an existing set, it will be over-written.<br>
+`/deleteset` - Deletes the specified setname from the characters ini.<br>
+`/equipset` - Equips all items in the specified set.<br>
 
 ## Examples
 
-`/createset ThisSet chest mainhand offhand`  
+`/createset ThisSet chest mainhand offhand`
 `/createset ThisSet 17 13 14`
 
 Both of the above examples will create the following INI entry:
