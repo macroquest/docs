@@ -8,25 +8,25 @@ You can find the latest version of MQ2AutoGroup [here](https://macroquest.org/ph
 
 ## Commands
 
-/autogroup \[help \| on \| off \| guild \| load \| save \| add \| del \| clear \| list \]
+`/autogroup [help | on | off \| guild | load | save | add | del | clear | list ]`<br>
 
 * help = list of ingame options
 * on = turn plugin on
 * off = turn plugin off
 * guild = toggles automatic guild/raid invite accept from your guild members
 * load = loads options and names from ini file
-* \( any current unsaved names will be lost\)
+* (any current unsaved names will be lost)
 * save = updates .ini to match current options and names
-* add = add a new character name \(ex: /autogroup add bubbawar\)
-* del = delete a character name \(ex: /autogroup del 15 , deletes name number 15\)
+* add = add a new character name (ex: /autogroup add bubbawar)
+* del = delete a character name (ex: /autogroup del 15 , deletes name number 15)
 * clear = clears all character names
 * list = lists current character names
 
 ## INI Entries
 
-`[Settings]`  
-`AutoGroup=on`  
-`[Names]`  
-`Name0=bob`  
-`Name1=fred`  
-`Name2=harry`
+`[Settings]`<br>
+`AutoGroup=on`<br>
+`[Names]`<br>
+`Name0=bob`<br>
+`Name1=fred`<br>
+`Name2=harry`<br>
