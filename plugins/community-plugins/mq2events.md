@@ -2,13 +2,12 @@
 
 ## Description
 
+**MQ2Events** allows you to configure a reaction to any text-based event. For example, if you want to /cry when the text "has become ENRAGED" appears, you're in the right place.
+
 ## Commands
 
-* _'/event \[_ load\*&lt;/span&gt; \|
-
-  _deletename_\| _settriggernametrigger text_\|
-
-  _setcommandnamecommand text_\| \*list'' \]
+`/event [option] [<name> <trigger text|command text>]` - Adds, lists, deletes, and controls all events.<br>
+`/eventdebug [on|off]` - Turns event debugging on or off.<br>
 
 ### Variables
 
