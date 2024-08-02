@@ -140,8 +140,6 @@ See [/plugin](../reference/commands/plugin.md) for information on loading and un
           </li>
           <li><a href="../plugins/community-plugins/mq2cast/">MQ2Cast</a>
           </li>
-          <li><a href>MQ2CEcho</a>
-          </li>
           <li><a href="../plugins/core-plugins/mq2chat/">MQ2Chat</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2chatevents/">MQ2ChatEvents</a>
