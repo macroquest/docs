@@ -291,6 +291,7 @@ nav:
       - /beep: reference/commands/beep.md
       - /beepontells: reference/commands/beepontells.md
       - /bind: reference/commands/bind.md
+      - /cachedbuffs: reference/commands/cachedbuffs.md
       - /caption: reference/commands/caption.md
       - /captioncolor: reference/commands/captioncolor.md
       - /cast: reference/commands/cast.md
@@ -509,6 +510,7 @@ nav:
     - fellowship: reference/data-types/datatype-fellowship.md
     - fellowshipmember: reference/data-types/datatype-fellowshipmember.md
     - float: reference/data-types/datatype-float.md
+    - framelmiter: reference/data-types/datatype-framelimiter.md
     - ground: reference/data-types/datatype-ground.md
     - group: reference/data-types/datatype-group.md
     - groupmember: reference/data-types/datatype-groupmember.md
