@@ -12,9 +12,9 @@ Plugins are written in C++ whereas macros use MQ2's internal scripting language.
 
 Plugins can be found in the following forum:
 
-[MQ2::Development::Plugins](https://macroquest.org/phpBB3/viewforum.php?f=31) (VIP Only)
+[MQ2::Development::Plugins](https://macroquest2.com/phpBB3/viewforum.php?f=31) (VIP Only)
 
-ImaNoob posted a very helpful thread [here.](https://macroquest.org/phpBB3/viewtopic.php?f=31&t=6310) (VIP Only) Titled appropriately "The Complete Idiots Guide to MQ2 and plugins"
+ImaNoob posted a very helpful thread [here.](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=6310) (VIP Only) Titled appropriately "The Complete Idiots Guide to MQ2 and plugins"
 
 ## Compiling Plugins
 
