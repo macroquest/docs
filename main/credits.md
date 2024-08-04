@@ -56,7 +56,7 @@ Terramantian was given an honorary VIP for his numerous contributions to the Wik
 
 **Other notable users**
 
-* aChallenged1 ([noob's best friend](https://macroquest.org/phpBB3/viewtopic.php?t=10464))
+* aChallenged1 ([noob's best friend](https://macroquest2.com/phpBB3/viewtopic.php?t=10464))
 * eqjoe
 * MacroFiend
 * vzmule
