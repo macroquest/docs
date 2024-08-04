@@ -2,7 +2,7 @@
 
 ## Description
 
-MQ2Missing was written by s0rcier and is found in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?p=112910#112910). This plugin compares characters in one list of names to another, determining which names are missing from one list or the other. This plugin was released as a beta and never fully supported.
+MQ2Missing was written by s0rcier and is found in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?p=112910#112910). This plugin compares characters in one list of names to another, determining which names are missing from one list or the other. This plugin was released as a beta and never fully supported.
 
 ## Commands
 

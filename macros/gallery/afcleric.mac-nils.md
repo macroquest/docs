@@ -6,7 +6,7 @@ tags:
 
 ## forum link
 
-* [AFCleric.mac](https://macroquest.org/phpBB3/viewtopic.php?t=14508)
+* [AFCleric.mac](https://macroquest2.com/phpBB3/viewtopic.php?t=14508)
 
 ## nils downloads
 
@@ -14,23 +14,23 @@ tags:
 
 ## Required Plugins
 
-* [MQ2Debuffs](https://macroquest.org/phpBB3/viewtopic.php?t=13495)
-* [MQ2EQBC](https://macroquest.org/phpBB3/viewtopic.php?t=12147)
-* [MQ2Exchange](https://macroquest.org/phpBB3/viewtopic.php?t=7603)
-* [MQ2MoveUtils](https://macroquest.org/phpBB3/viewtopic.php?t=11732)
+* [MQ2Debuffs](https://macroquest2.com/phpBB3/viewtopic.php?t=13495)
+* [MQ2EQBC](https://macroquest2.com/phpBB3/viewtopic.php?t=12147)
+* [MQ2Exchange](https://macroquest2.com/phpBB3/viewtopic.php?t=7603)
+* [MQ2MoveUtils](https://macroquest2.com/phpBB3/viewtopic.php?t=11732)
 
 ## Required Include Files
 
-* [QuickBeg.inc](https://macroquest.org/phpBB3/viewtopic.php?t=12011)
-* [Spell\_Routines.inc](https://macroquest.org/phpBB3/viewtopic.php?t=11656)
-* [Wait4Rez.inc](https://macroquest.org/phpBB3/viewtopic.php?t=10119&highlight=wait4rez)
+* [QuickBeg.inc](https://macroquest2.com/phpBB3/viewtopic.php?t=12011)
+* [Spell\_Routines.inc](https://macroquest2.com/phpBB3/viewtopic.php?t=11656)
+* [Wait4Rez.inc](https://macroquest2.com/phpBB3/viewtopic.php?t=10119&highlight=wait4rez)
 * Ninjadvloot.inc included with zip
 * AFClericCCH.inc included with zip
 
 ## Previous Versions
 
-* [Original AFCleric by Fantum409](https://macroquest.org/phpBB3/viewtopic.php?t=7567&highlight=afcleric)
-* [AFCleric by DigitalMocking Jan.2005](https://macroquest.org/phpBB3/viewtopic.php?t=11779)
+* [Original AFCleric by Fantum409](https://macroquest2.com/phpBB3/viewtopic.php?t=7567&highlight=afcleric)
+* [AFCleric by DigitalMocking Jan.2005](https://macroquest2.com/phpBB3/viewtopic.php?t=11779)
 
 ## Updates
 

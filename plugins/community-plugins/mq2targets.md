@@ -6,7 +6,7 @@ MQ2Targets is a HUD Display-type spawn tracker with syntax similar to the [/wher
 
 ### Links
 
-* [**MQ2Targets**](https://macroquest.org/phpBB3/viewtopic.php?t=12912) source and discussion.
+* [**MQ2Targets**](https://macroquest2.com/phpBB3/viewtopic.php?t=12912) source and discussion.
 
 ### Features
 
@@ -105,35 +105,35 @@ MQ2Targets is a HUD Display-type spawn tracker with syntax similar to the [/wher
 
 ## Examples
 
-**/watch add paladin pc range 65 70**  
+**/watch add paladin pc range 65 70**
 Show all Player character paladins between level 65 and 70 in current zone
 
-**/watch add guild**  
+**/watch add guild**
 Show everyone in your guild in current zone
 
-**/watch add damlin lingering npc**  
+**/watch add damlin lingering npc**
 Show when damlin in CoA pops \(but not his corpse\)'''
 
-**/watch remove damlin lingering npc**  
+**/watch remove damlin lingering npc**
 Remove damlin from HUD tracking
 
-**/watch list**  
+**/watch list**
 Lists the current targets being watched for in current zone
 
-**/watch show 10**  
+**/watch show 10**
 Change the HUD display to track the 10 nearest targets
 
-**/watch x 200**  
+**/watch x 200**
 Display the leftmost edge of the HUD list at screen x position 200
 
-**/watch y 50**  
-Display the topmost edge of the HUD list at screen y position 50 **/watch increment 20**  
+**/watch y 50**
+Display the topmost edge of the HUD list at screen y position 50 **/watch increment 20**
 Change the spacing between spawns in the HUD to 20 pixels
 
-**/watch notify hanvar**  
+**/watch notify hanvar**
 Pop up message if Hanvar spawns/despawns
 
-**/watch remove 2**  
+**/watch remove 2**
 Removes search spawn criteria string \#2 according to /watch list
 
 **/watch hud ${Target.CleanName} ${Target.Level}${Target.Class.ShortName}\(${Target.HeadingTo}\)${Target.Distance}&arr**

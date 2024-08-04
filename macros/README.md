@@ -1,19 +1,19 @@
 # Macro Reference
 
-The use of macros is what really makes MacroQuest2 extremely powerful. Additional in-game functionality like [the map](../plugins/core-plugins/mq2map/), cross-zone targeting, enhanced [/who](../reference/commands/who.md), custom binds, [the HUD](../plugins/core-plugins/mq2hud/) and [plugins](../plugins/README.md) are useful, but macroing is what **Macro**Quest is all about.
+The use of macros is what really makes MacroQuest extremely powerful. Additional in-game functionality like [the map](../plugins/core-plugins/mq2map/), cross-zone targeting, enhanced [/who](../reference/commands/who.md), custom binds, [the HUD](../plugins/core-plugins/mq2hud/) and [plugins](../plugins/README.md) are useful, but macroing is what **Macro**Quest is all about.
 
 See [Getting Started](getting-started.md) for some introductory information about macros. This page is concerned primarily with all the relevant information required to create your own macros.
 
 ## Macro Fundamentals
 
-The MQ2 scripting language primarily involves the use of [Slash Commands](../reference/commands/README.md), [variables](variables.md), [Top-Level Objects](../reference/top-level-objects/) and some [Flow Control](flow-control.md) to help the macro along.
+The MQ scripting language primarily involves the use of [Slash Commands](../reference/commands/README.md), [variables](variables.md), [Top-Level Objects](../reference/top-level-objects/) and some [Flow Control](flow-control.md) to help the macro along.
 
 Accessing and manipulating data can be done with:
 
-* [Variables](variables.md) 
+* [Variables](variables.md)
 * [MQ2Data](mqdata.md)
-  * [Top-Level Objects](../reference/top-level-objects/)
-  * [Data Types](../reference/data-types/)
+    * [Top-Level Objects](../reference/top-level-objects/)
+    * [Data Types](../reference/data-types/)
 * [Slash Commands](../reference/commands/)
 
 Things that can be added to the macro file:

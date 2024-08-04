@@ -6,25 +6,17 @@
 
 * It requires [MQ2Exchange](mq2exchange.md) in order to perform the item swapping.
 
-You can find the source to the plugin in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?t=12793).
+You can find the source to the plugin in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?t=12793).
 
 ## Commands
 
-* **/createset**  _**slotname1\|slotnumber1 slotname2\|slotnumber2 ... \(slotname21\|slotnumber22\)**_
-
-Creates a set in MQ2Bandolier\_.ini using the selected equipment slots. If you use the name of an existing set, it will be over-written.
-
-* **/deleteset** 
-
-Deletes the specified setname from the characters ini.
-
-* **/equipset** 
-
-Equips all items of the specified set.
+`/createset  [slotname1 | slotnumber1 slotname2 | slotnumber2 ... slotname21|slotnumber22]` - Creates a set in MQ2Bandolier\_.ini using the selected equipment slots. If you use the name of an existing set, it will be over-written.<br>
+`/deleteset` - Deletes the specified setname from the characters ini.<br>
+`/equipset` - Equips all items in the specified set.<br>
 
 ## Examples
 
-`/createset ThisSet chest mainhand offhand`  
+`/createset ThisSet chest mainhand offhand`
 `/createset ThisSet 17 13 14`
 
 Both of the above examples will create the following INI entry:

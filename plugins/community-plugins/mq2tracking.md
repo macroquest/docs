@@ -4,7 +4,7 @@
 
 MQ2Tracking, by MacroFiend is a plugin which mimics the functionality of the Tracking skill of Rangers, Bards and Druids.
 
-The source to the plugin can be downloaded [here](https://macroquest.org/phpBB3/viewtopic.php?t=5891).
+The source to the plugin can be downloaded [here](https://macroquest2.com/phpBB3/viewtopic.php?t=5891).
 
 ## Commands
 

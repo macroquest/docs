@@ -12,7 +12,7 @@
 
   quantity in the merchant window\).
 
-MQ2Vendors was created by Ceghkmv and can be found [here](https://macroquest.org/phpBB3/viewtopic.php?p=109662#109662).
+MQ2Vendors was created by Ceghkmv and can be found [here](https://macroquest2.com/phpBB3/viewtopic.php?p=109662#109662).
 
 ## Commands
 

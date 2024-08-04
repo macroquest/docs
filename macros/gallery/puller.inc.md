@@ -6,7 +6,7 @@ tags:
 
 ## Link
 
-[Click Here to go to the MQ2 forum thread](https://macroquest.org/phpBB3/viewtopic.php?t=11693&highlight=)
+[Click Here to go to the MQ2 forum thread](https://macroquest2.com/phpBB3/viewtopic.php?t=11693&highlight=)
 
 ## Features
 
@@ -31,16 +31,16 @@ tags:
 
 ## REQUIRED Include's
 
-`#include spell_routines.inc`  
-`#include advpath.inc`  
-`#include system_events.inc`  
+`#include spell_routines.inc`
+`#include advpath.inc`
+`#include system_events.inc`
 `#include outlander.inc`
 
 ## Initialization Calls
 
-`/call InitAPFVars 1 15 20`  
-`/call SysEventInit`  
-`/call PullerInit`  
+`/call InitAPFVars 1 15 20`
+`/call SysEventInit`
+`/call PullerInit`
 `/call MoveStuckInit`
 
 ## To Do:

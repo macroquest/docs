@@ -16,7 +16,7 @@ tags:
 * Now supports mixed groups of MQ2 and Non-MQ2 users/players
 * ModBot is under constant improvement effort, open to suggestions / additions / adjustments, etc
 
-[**ModBot\_4.x Source**](https://macroquest.org/phpBB3/viewtopic.php?f=49&t=20032)
+[**ModBot\_4.x Source**](https://macroquest2.com/phpBB3/viewtopic.php?f=49&t=20032)
 
 **General Note on Wiki Entries - Release ZIP packages** - While the majority of entries in the Wiki apply to ModBot in general, there are always some entries that apply to changes, additional functionality, new commands, etc. Please keep this note in the back of your mind as you work with the Wiki - if you come across a command, etc. that will just not seem to work for you (and you have already _thoroughly_ researched it, checked syntax, re-checked syntax, etc.), please take a moment to check your version of the module that it applies to - you may need to update.
 
@@ -61,31 +61,31 @@ For examples of complete class ModBot INI files, please go to the [example INI p
 
 ## Reference to Understanding the ModBot WiKi
 
-`- Replace this with the respective descriptor`  
-`Example 1 -_is luclin_bobby`  
+`- Replace this with the respective descriptor`
+`Example 1 -_is luclin_bobby`
 `Example 2 -is bobby`
 
-`(text) - These are "comments" and should be removed when saving the respective file`  
-`Example 1 - Send=1 (If set to 1 it will send netbots information over the network) This text:`  
-``````*``\(If`````set`````` `to` `1` `it` `will` `send` `netbots` `information` `over` `the` ``````network)``\*`should NOT appear in the INI file`    
+`(text) - These are "comments" and should be removed when saving the respective file`
+`Example 1 - Send=1 (If set to 1 it will send netbots information over the network) This text:`
+``````*``\(If`````set`````` `to` `1` `it` `will` `send` `netbots` `information` `over` `the` ``````network)``\*`should NOT appear in the INI file`
 ````` [text\] - This is to show different options or series of options`````` Example 1 - /bc cast\[, %t, grp,, etc]\`\`
 
 ## Plugin Requirements & Examples
 
 I suggest you have a good understanding of how to configure each of these plugins. Any misconfiguration can have an adverse affect on the performance of ModBot
 
-**Prefered versions are found within the Plugins\_Other.zip file that can be found** [**Here**](https://macroquest.org/phpBB3/viewtopic.php?f=49&t=20032) (Our thanks go out to the orignal makers and maintainers of these plugins)
+**Prefered versions are found within the Plugins\_Other.zip file that can be found** [**Here**](https://macroquest2.com/phpBB3/viewtopic.php?f=49&t=20032) (Our thanks go out to the orignal makers and maintainers of these plugins)
 
-MQ2AdvPath ([Wiki page](https://macroquest.org/wiki/index.php/MQ2AdvPath))  
-MQ2Cast ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2Cast))  
-MQ2eqbc ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2EQBC))  
-MQ2Exchange ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2Exchange))  
-MQ2Melee ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2Melee))  
-MQ2MoveUtils ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2MoveUtils))  
-MQ2NetBots ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2NetBots))  
-MQ2Twist ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2Twist))  
-and a modified version of MQ2Main\MQ2Utilities  
-Optional:  
+MQ2AdvPath ([Wiki page](https://macroquest.org/wiki/index.php/MQ2AdvPath))
+MQ2Cast ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2Cast))
+MQ2eqbc ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2EQBC))
+MQ2Exchange ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2Exchange))
+MQ2Melee ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2Melee))
+MQ2MoveUtils ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2MoveUtils))
+MQ2NetBots ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2NetBots))
+MQ2Twist ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2Twist))
+and a modified version of MQ2Main\MQ2Utilities
+Optional:
 Mq2Banolier ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2Bandolier))
 
 * If you plan to use item swapping and spell foci items, you may need to configure "sets"
@@ -94,96 +94,96 @@ Mq2Banolier ([Wiki Page](https://macroquest.org/wiki/index.php/MQ2Bandolier))
 
 Example \_.INI for MQ2NetBots, MQ2Cast, MQ2Melee:
 
-`[MQ2NetBots]`  
-`Stat=1`  
-`Send=1`  
-`Grab=1`  
-`[MQ2Cast(SpellSet)]`  
-`ModBot2=1111|1 12345|2 22342|3 43241|4 42342|5 23423|6 12532|7 22334|8 33221|9 11225|10 55443|11 22337|12 88559`  
-`[MQ2Melee]`  
-`enrage=1`  
-`facing=1`  
-`infuriate=1`  
-`jugular=0`  
-`petassist=1`  
-`petengagehps=94`  
-`petrange=45`  
-`plugin=1`  
-`resume=75`  
-`stickrange=75`  
+`[MQ2NetBots]`
+`Stat=1`
+`Send=1`
+`Grab=1`
+`[MQ2Cast(SpellSet)]`
+`ModBot2=1111|1 12345|2 22342|3 43241|4 42342|5 23423|6 12532|7 22334|8 33221|9 11225|10 55443|11 22337|12 88559`
+`[MQ2Melee]`
+`enrage=1`
+`facing=1`
+`infuriate=1`
+`jugular=0`
+`petassist=1`
+`petengagehps=94`
+`petrange=45`
+`plugin=1`
+`resume=75`
+`stickrange=75`
 `version=8.000`
 
 Example MQ2MoveUtils.INI for MQ2MoveUtils:
 
-`[Defaults]`  
-`AutoPause=on`  
-`BreakOnWarp=on`  
-`BreakDist=250.0`  
-`BreakOnGate=on`  
-`Verbosity=1`  
-`stuckDist=0.8`  
-`turnDirection=10.0`  
-`stuckCheck=5`  
+`[Defaults]`
+`AutoPause=on`
+`BreakOnWarp=on`
+`BreakDist=250.0`
+`BreakOnGate=on`
+`Verbosity=1`
+`stuckDist=0.8`
+`turnDirection=10.0`
+`stuckCheck=5`
 `StuckLogic=off`
 
 Example MQ2Bandolier\_.ini for MQ2Bandolier:
 
-`[ThisSet]`  
-`17=12345`  
-`13=23456`  
+`[ThisSet]`
+`17=12345`
+`13=23456`
 `14=34567`
 
 ## ModBot HUD
 
-`[_]`  
-`Last=ModBotHUD`  
-`SkipParse=7`  
-`CheckINI=100`  
-`UpdateInBackGround=on`  
-`ClassHUD=on`  
+`[_]`
+`Last=ModBotHUD`
+`SkipParse=7`
+`CheckINI=100`
+`UpdateInBackGround=on`
+`ClassHUD=on`
 `ZoneHUD=on`
 
-`[ModBotHUD]`  
-`Target= 3,060,210,225,225,225,${If[${Target.ID},Dis:${Int[${Target.Distance}]}-Lvl:${Target.Level}-${Target.Class.ShortName}-${Target.PctHPs}%,]}`  
-`Name1= 3,060,220,240,240,000,${If[${NetBots.Counts}>=1,${NetBots.Client.Arg[1]} ${NetBots[${NetBots.Client.Arg[1]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[1]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[1]}].PctAAExp}]},NA]}`  
-`HP1= 3,060,230,255,100,100,HP:${If[${NetBots.Counts}>=1,${NetBots[${NetBots.Client.Arg[1]}].PctHPs},]}%`  
-`Mana1= 3,105,230,100,100,255,M:${If[${NetBots.Counts}>=1,${NetBots[${NetBots.Client.Arg[1]}].PctMana},]}%`  
-`End1= 3,145,230,255,234,008,E:${If[${NetBots.Counts}>=1,${NetBots[${NetBots.Client.Arg[1]}].PctEndurance},]}%`  
-`Pet1= 3,185,230,255,255,255,Pet:${If[${NetBots.Counts}>=1 && ${NetBots[${NetBots.Client.Arg[1]}].PetID}>0,${NetBots[${NetBots.Client.Arg[1]}].PetHP},]}%`  
-`Name2= 3,060,240,240,240,000,${If[${NetBots.Counts}>=2,${NetBots.Client.Arg[2]} ${NetBots[${NetBots.Client.Arg[2]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[2]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[2]}].PctAAExp}]},NA]}`  
-`HP2= 3,060,250,255,100,100,HP:${If[${NetBots.Counts}>=2,${NetBots[${NetBots.Client.Arg[2]}].PctHPs},]}%`  
-`Mana2= 3,105,250,100,100,255,M:${If[${NetBots.Counts}>=2,${NetBots[${NetBots.Client.Arg[2]}].PctMana},]}%`  
-`End2= 3,145,250,255,234,008,E:${If[${NetBots.Counts}>=2,${NetBots[${NetBots.Client.Arg[2]}].PctEndurance},]}%`  
-`Pet2= 3,185,250,255,255,255,Pet:${If[${NetBots.Counts}>=2 && ${NetBots[${NetBots.Client.Arg[2]}].PetID}>0,${NetBots[${NetBots.Client.Arg[2]}].PetHP},]}%`  
-`Name3= 3,060,260,240,240,000,${If[${NetBots.Counts}>=3,${NetBots.Client.Arg[3]} ${NetBots[${NetBots.Client.Arg[3]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[3]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[3]}].PctAAExp}]},NA]}`  
-`HP3= 3,060,270,255,100,100,HP:${If[${NetBots.Counts}>=3,${NetBots[${NetBots.Client.Arg[3]}].PctHPs},]}%`  
-`Mana3= 3,105,270,100,100,255,M:${If[${NetBots.Counts}>=3,${NetBots[${NetBots.Client.Arg[3]}].PctMana},]}%`  
-`End3= 3,145,270,255,234,008,E:${If[${NetBots.Counts}>=3,${NetBots[${NetBots.Client.Arg[3]}].PctEndurance},]}%`  
-`Pet3= 3,185,270,255,255,255,Pet:${If[${NetBots.Counts}>=3 && ${NetBots[${NetBots.Client.Arg[3]}].PetID}>0,${NetBots[${NetBots.Client.Arg[3]}].PetHP},]}%`  
-`Name4= 3,060,280,240,240,000,${If[${NetBots.Counts}>=4,${NetBots.Client.Arg[4]} ${NetBots[${NetBots.Client.Arg[4]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[4]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[4]}].PctAAExp}]},NA]}`  
-`HP4= 3,060,290,255,100,100,HP:${If[${NetBots.Counts}>=4,${NetBots[${NetBots.Client.Arg[4]}].PctHPs},]}%`  
-`Mana4= 3,105,290,100,100,255,M:${If[${NetBots.Counts}>=4,${NetBots[${NetBots.Client.Arg[4]}].PctMana},]}%`  
-`End4= 3,145,290,255,234,008,E:${If[${NetBots.Counts}>=4,${NetBots[${NetBots.Client.Arg[4]}].PctEndurance},]}%`  
-`Pet4= 3,185,290,255,255,255,Pet:${If[${NetBots.Counts}>=4 && ${NetBots[${NetBots.Client.Arg[4]}].PetID}>0,${NetBots[${NetBots.Client.Arg[4]}].PetHP},]}%`  
-`Name5= 3,060,300,240,240,000,${If[${NetBots.Counts}>=5,${NetBots.Client.Arg[5]} ${NetBots[${NetBots.Client.Arg[5]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[5]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[5]}].PctAAExp}]},NA]}`  
-`HP5= 3,060,310,255,100,100,HP:${If[${NetBots.Counts}>=5,${NetBots[${NetBots.Client.Arg[5]}].PctHPs},]}%`  
-`Mana5= 3,105,310,100,100,255,M:${If[${NetBots.Counts}>=5,${NetBots[${NetBots.Client.Arg[5]}].PctMana},]}%`  
-`End5= 3,145,310,255,234,008,E:${If[${NetBots.Counts}>=5,${NetBots[${NetBots.Client.Arg[5]}].PctEndurance},]}%`  
-`Pet5= 3,185,310,255,255,255,Pet:${If[${NetBots.Counts}>=5 && ${NetBots[${NetBots.Client.Arg[5]}].PetID}>0,${NetBots[${NetBots.Client.Arg[5]}].PetHP},]}%`  
-`Name6= 3,060,320,240,240,000,${If[${NetBots.Counts}>=6,${NetBots.Client.Arg[6]} ${NetBots[${NetBots.Client.Arg[6]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[6]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[6]}].PctAAExp}]},NA]}`  
-`HP6= 3,060,330,255,100,100,HP:${If[${NetBots.Counts}>=6,${NetBots[${NetBots.Client.Arg[6]}].PctHPs},]}%`  
-`Mana6= 3,105,330,100,100,255,M:${If[${NetBots.Counts}>=6,${NetBots[${NetBots.Client.Arg[6]}].PctMana},]}%`  
-`End6= 3,145,330,255,234,008,E:${If[${NetBots.Counts}>=6,${NetBots[${NetBots.Client.Arg[6]}].PctEndurance},]}%`  
+`[ModBotHUD]`
+`Target= 3,060,210,225,225,225,${If[${Target.ID},Dis:${Int[${Target.Distance}]}-Lvl:${Target.Level}-${Target.Class.ShortName}-${Target.PctHPs}%,]}`
+`Name1= 3,060,220,240,240,000,${If[${NetBots.Counts}>=1,${NetBots.Client.Arg[1]} ${NetBots[${NetBots.Client.Arg[1]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[1]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[1]}].PctAAExp}]},NA]}`
+`HP1= 3,060,230,255,100,100,HP:${If[${NetBots.Counts}>=1,${NetBots[${NetBots.Client.Arg[1]}].PctHPs},]}%`
+`Mana1= 3,105,230,100,100,255,M:${If[${NetBots.Counts}>=1,${NetBots[${NetBots.Client.Arg[1]}].PctMana},]}%`
+`End1= 3,145,230,255,234,008,E:${If[${NetBots.Counts}>=1,${NetBots[${NetBots.Client.Arg[1]}].PctEndurance},]}%`
+`Pet1= 3,185,230,255,255,255,Pet:${If[${NetBots.Counts}>=1 && ${NetBots[${NetBots.Client.Arg[1]}].PetID}>0,${NetBots[${NetBots.Client.Arg[1]}].PetHP},]}%`
+`Name2= 3,060,240,240,240,000,${If[${NetBots.Counts}>=2,${NetBots.Client.Arg[2]} ${NetBots[${NetBots.Client.Arg[2]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[2]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[2]}].PctAAExp}]},NA]}`
+`HP2= 3,060,250,255,100,100,HP:${If[${NetBots.Counts}>=2,${NetBots[${NetBots.Client.Arg[2]}].PctHPs},]}%`
+`Mana2= 3,105,250,100,100,255,M:${If[${NetBots.Counts}>=2,${NetBots[${NetBots.Client.Arg[2]}].PctMana},]}%`
+`End2= 3,145,250,255,234,008,E:${If[${NetBots.Counts}>=2,${NetBots[${NetBots.Client.Arg[2]}].PctEndurance},]}%`
+`Pet2= 3,185,250,255,255,255,Pet:${If[${NetBots.Counts}>=2 && ${NetBots[${NetBots.Client.Arg[2]}].PetID}>0,${NetBots[${NetBots.Client.Arg[2]}].PetHP},]}%`
+`Name3= 3,060,260,240,240,000,${If[${NetBots.Counts}>=3,${NetBots.Client.Arg[3]} ${NetBots[${NetBots.Client.Arg[3]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[3]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[3]}].PctAAExp}]},NA]}`
+`HP3= 3,060,270,255,100,100,HP:${If[${NetBots.Counts}>=3,${NetBots[${NetBots.Client.Arg[3]}].PctHPs},]}%`
+`Mana3= 3,105,270,100,100,255,M:${If[${NetBots.Counts}>=3,${NetBots[${NetBots.Client.Arg[3]}].PctMana},]}%`
+`End3= 3,145,270,255,234,008,E:${If[${NetBots.Counts}>=3,${NetBots[${NetBots.Client.Arg[3]}].PctEndurance},]}%`
+`Pet3= 3,185,270,255,255,255,Pet:${If[${NetBots.Counts}>=3 && ${NetBots[${NetBots.Client.Arg[3]}].PetID}>0,${NetBots[${NetBots.Client.Arg[3]}].PetHP},]}%`
+`Name4= 3,060,280,240,240,000,${If[${NetBots.Counts}>=4,${NetBots.Client.Arg[4]} ${NetBots[${NetBots.Client.Arg[4]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[4]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[4]}].PctAAExp}]},NA]}`
+`HP4= 3,060,290,255,100,100,HP:${If[${NetBots.Counts}>=4,${NetBots[${NetBots.Client.Arg[4]}].PctHPs},]}%`
+`Mana4= 3,105,290,100,100,255,M:${If[${NetBots.Counts}>=4,${NetBots[${NetBots.Client.Arg[4]}].PctMana},]}%`
+`End4= 3,145,290,255,234,008,E:${If[${NetBots.Counts}>=4,${NetBots[${NetBots.Client.Arg[4]}].PctEndurance},]}%`
+`Pet4= 3,185,290,255,255,255,Pet:${If[${NetBots.Counts}>=4 && ${NetBots[${NetBots.Client.Arg[4]}].PetID}>0,${NetBots[${NetBots.Client.Arg[4]}].PetHP},]}%`
+`Name5= 3,060,300,240,240,000,${If[${NetBots.Counts}>=5,${NetBots.Client.Arg[5]} ${NetBots[${NetBots.Client.Arg[5]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[5]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[5]}].PctAAExp}]},NA]}`
+`HP5= 3,060,310,255,100,100,HP:${If[${NetBots.Counts}>=5,${NetBots[${NetBots.Client.Arg[5]}].PctHPs},]}%`
+`Mana5= 3,105,310,100,100,255,M:${If[${NetBots.Counts}>=5,${NetBots[${NetBots.Client.Arg[5]}].PctMana},]}%`
+`End5= 3,145,310,255,234,008,E:${If[${NetBots.Counts}>=5,${NetBots[${NetBots.Client.Arg[5]}].PctEndurance},]}%`
+`Pet5= 3,185,310,255,255,255,Pet:${If[${NetBots.Counts}>=5 && ${NetBots[${NetBots.Client.Arg[5]}].PetID}>0,${NetBots[${NetBots.Client.Arg[5]}].PetHP},]}%`
+`Name6= 3,060,320,240,240,000,${If[${NetBots.Counts}>=6,${NetBots.Client.Arg[6]} ${NetBots[${NetBots.Client.Arg[6]}].Level} XP:${Int[${NetBots[${NetBots.Client.Arg[6]}].PctExp}]} AXP:${Int[${NetBots[${NetBots.Client.Arg[6]}].PctAAExp}]},NA]}`
+`HP6= 3,060,330,255,100,100,HP:${If[${NetBots.Counts}>=6,${NetBots[${NetBots.Client.Arg[6]}].PctHPs},]}%`
+`Mana6= 3,105,330,100,100,255,M:${If[${NetBots.Counts}>=6,${NetBots[${NetBots.Client.Arg[6]}].PctMana},]}%`
+`End6= 3,145,330,255,234,008,E:${If[${NetBots.Counts}>=6,${NetBots[${NetBots.Client.Arg[6]}].PctEndurance},]}%`
 `Pet6= 3,185,330,255,255,255,Pet:${If[${NetBots.Counts}>=6 && ${NetBots[${NetBots.Client.Arg[6]}].PetID}>0,${NetBots[${NetBots.Client.Arg[6]}].PetHP},]}%`
 
 ## ModBot Commands & Syntax
 
 ModBot commands are executed in a few different ways:
 
-* /bc   
-* /bc    
-* /bct    
-* /bct  
+* /bc
+* /bc
+* /bct
+* /bct
 
 Are probably most common but check out the EQBC Forum thread for more methods / features.
 
@@ -197,10 +197,10 @@ Or change the LoadAlias variable in MBCommon.inc [Settings] section from 0 to 1 
 
 With this alias you can tell your bot locally what to do:
 
-* /mb makecamp  
-* /mb buffup  
-* /mb letsroll  
-* /mb 
+* /mb makecamp
+* /mb buffup
+* /mb letsroll
+* /mb
 
 ### Command Reference
 
@@ -266,8 +266,8 @@ ABTarTypeX=self
 
     This command is mainly used for manual, "one off" type casts.
 
-`Example 1 - /bc cast buffhp grp haste bob haste jane dmgshld bob`  
-`Example 2 - /bc cast dmgshld bob nuke tash`  
+`Example 1 - /bc cast buffhp grp haste bob haste jane dmgshld bob`
+`Example 2 - /bc cast dmgshld bob nuke tash`
 `Example 3 - /bc cast slow "nasty add"`
 
 * **doafk** [on, true, off, false, ]
@@ -462,39 +462,39 @@ _(restart macro - had 0 count before)_
 
 ## ModBot in game usage and commands
 
-`Example commands:`  
-`/bc Bob follow me [This tells bob and only bob to follow me]`  
-`/bc cast dd [this tells every bot to cast the spell alias dd]`  
-`/bc shamandude cast buffsta grp buffhp focus grp buffhp %T [buffsta on the group, buffhp on the requester, focus on the group, buffhp on requesters target]`  
-`/bc necroguy makecamp [this tells "necroguy" to makecamp]`  
-`/bc campout [tells all bots to camp to desktop]`  
-`/bc exclude ${Target.CleanName} [tells all bots to add your target to the exclude / ignore list, toons will not attack any spawn with that name.]`  
-`/bc clericname dobuffs on [tells the cleric to set DoBuffs to true and will then begin buffing group]`  
+`Example commands:`
+`/bc Bob follow me [This tells bob and only bob to follow me]`
+`/bc cast dd [this tells every bot to cast the spell alias dd]`
+`/bc shamandude cast buffsta grp buffhp focus grp buffhp %T [buffsta on the group, buffhp on the requester, focus on the group, buffhp on requesters target]`
+`/bc necroguy makecamp [this tells "necroguy" to makecamp]`
+`/bc campout [tells all bots to camp to desktop]`
+`/bc exclude ${Target.CleanName} [tells all bots to add your target to the exclude / ignore list, toons will not attack any spawn with that name.]`
+`/bc clericname dobuffs on [tells the cleric to set DoBuffs to true and will then begin buffing group]`
 `/bc pallyguy cast bmb %t buffhp grp [bmb on requesters target, buffhp on the group]`
 
-`Typical commands sequence for an EXP group:`  
-`/bc letsroll`  
-`/bc makecamp`  
+`Typical commands sequence for an EXP group:`
+`/bc letsroll`
+`/bc makecamp`
 `You then begin to pull mobs and they will react accordingly.`
 
-`Mobile Camp Example:`  
-`/bc follow`  
-`/bc buffup`  
-`[once ready zone into the instance]`  
-`/bc stop`  
-`/bc letsroll`  
-`[clear first room lets say]`  
-`/bc follow`  
-`[move to next room]`  
-`/bc makecamp`  
+`Mobile Camp Example:`
+`/bc follow`
+`/bc buffup`
+`[once ready zone into the instance]`
+`/bc stop`
+`/bc letsroll`
+`[clear first room lets say]`
+`/bc follow`
+`[move to next room]`
+`/bc makecamp`
 `[etc, repeat]`
 
-`Example movement options with or without invis`  
-`/bc mbp on`  
+`Example movement options with or without invis`
+`/bc mbp on`
 `/bc follow`
 
-`Make a EQBC Channel and do things like (using this technique you don't even have to be a master)`  
-`/bct mycoolchannelname //mb letsroll`  
+`Make a EQBC Channel and do things like (using this technique you don't even have to be a master)`
+`/bct mycoolchannelname //mb letsroll`
 `/bct mycoolchannelname //mb campout`
 
 ## ModBot INI Settings
@@ -505,32 +505,32 @@ _(restart macro - had 0 count before)_
 
   Obsolete? 06272011 -Changed - ?
 
-`"cast" command usage now allows for multiple aliases. If you have several spells with the same alias, using /bc castwill now cast all spells marked.`  
-`Example, for shaman you can have Fo7, Talisman of Boar, Talisman of Wrulan, Talisman of Tribunal, ect.. all marked with "fullgroup". "/mb cast fullgroup" will`  
-`cast each spell in the order they are found in the .ini file.`  
-````Buffing -```Group buffs can now be seperated to different classes, and will allow keeping the spell on netbots members in seperate groups from the caster with the inclusion of keyword``    
-`"raid". Example -`````  Code: ``````[AB2]``    
-`ABGem=8`    
-`ABSpell=Focus of the Seventh`    
-`ABSpellFoci=`    
-`ABDurMod=50`    
-`ABSpellAlias=fo7|grpfocus|fullgroup`    
-`ABAnnounce=`    
-`ABSpellMinMana=20`    
-`ABTarCnt=2`    
-`ABTarType=war shd pal rng mnk rog brd bst ber shm dru wiz mag enc nec raid`    
-`ABRecast=FALSE`    
-`ABSpellIcon=`    
-`ABPreCondition=TRUE`    
-````` Note from the above example that clr is not included in the TarType.. My clerics have the spell blocked. Attempting to cast on them will cause a chain loop of``````casting until the cleric gets self buff on that doesn't "stack" with focus. - so watch spell stacking and make sure to set your toons accordingly.``````````` Old format of "self" will also work with no change if you don't want to buff other groups with the spell.`````    
-`Commands -`    
-`Tell commands will now check buff aliases, and don't need "cast" to ask for buffs.. "/tellfullgroup" from a non-master toon will make the shaman cast`    
-`every spell with that alias on the sender of the tell. Masters still require use of "cast". - This does allow guildies or whoever else knows your aliases to get`    
-`buffs easily.`    
-`/say is not affected and is still not enabled for modbot.`    
-````` Added "docommand" -```Master toons that aren't in netbots can now directly command toons. "/telldocommand /sit" will make the receiving toon sit, or execute any command after``````  
-`the "docommand" keyword. - Word of caution - You can cause macro errors with this if you aren't careful. The command sent is executed directly with /docommand in the macro.`  
-`A tell received of "/telldocommand /sit" will locally execute "/docommand /sit" Watch extra characters and or brackets.. - Because of the nature of this one,`  
+`"cast" command usage now allows for multiple aliases. If you have several spells with the same alias, using /bc castwill now cast all spells marked.`
+`Example, for shaman you can have Fo7, Talisman of Boar, Talisman of Wrulan, Talisman of Tribunal, ect.. all marked with "fullgroup". "/mb cast fullgroup" will`
+`cast each spell in the order they are found in the .ini file.`
+````Buffing -```Group buffs can now be seperated to different classes, and will allow keeping the spell on netbots members in seperate groups from the caster with the inclusion of keyword``
+`"raid". Example -`````  Code: ``````[AB2]``
+`ABGem=8`
+`ABSpell=Focus of the Seventh`
+`ABSpellFoci=`
+`ABDurMod=50`
+`ABSpellAlias=fo7|grpfocus|fullgroup`
+`ABAnnounce=`
+`ABSpellMinMana=20`
+`ABTarCnt=2`
+`ABTarType=war shd pal rng mnk rog brd bst ber shm dru wiz mag enc nec raid`
+`ABRecast=FALSE`
+`ABSpellIcon=`
+`ABPreCondition=TRUE`
+````` Note from the above example that clr is not included in the TarType.. My clerics have the spell blocked. Attempting to cast on them will cause a chain loop of``````casting until the cleric gets self buff on that doesn't "stack" with focus. - so watch spell stacking and make sure to set your toons accordingly.``````````` Old format of "self" will also work with no change if you don't want to buff other groups with the spell.`````
+`Commands -`
+`Tell commands will now check buff aliases, and don't need "cast" to ask for buffs.. "/tellfullgroup" from a non-master toon will make the shaman cast`
+`every spell with that alias on the sender of the tell. Masters still require use of "cast". - This does allow guildies or whoever else knows your aliases to get`
+`buffs easily.`
+`/say is not affected and is still not enabled for modbot.`
+````` Added "docommand" -```Master toons that aren't in netbots can now directly command toons. "/telldocommand /sit" will make the receiving toon sit, or execute any command after``````
+`the "docommand" keyword. - Word of caution - You can cause macro errors with this if you aren't careful. The command sent is executed directly with /docommand in the macro.`
+`A tell received of "/telldocommand /sit" will locally execute "/docommand /sit" Watch extra characters and or brackets.. - Because of the nature of this one,`
 `the commanding toon MUST be listed in MasterList.`
 
 * You should be familiar or at least capable of making MQ2Bandolier sets as they are used by MQ2Cast for "foci"
@@ -572,7 +572,7 @@ So if you want a 25% extension on the timer, set durmod to 25 to make ${Spell[X]
 ### References
 
 * tnt = TankName Target
-* grp = group  
+* grp = group
 
 ### Settings Section [Settings]
 
@@ -767,12 +767,12 @@ For group heal spells, you must set the TarCnt to something greater than 1 in or
 * **AHHealOOBC=TRUE\|FALSE**
   * Do I heal characters outside of Netbots and EQBC (e.g. folks not running MQ2 or mercenaries.)
 
-`AHHealOOBC`  
-`Thinking of an english name for that setting, all that comes up is "Heal Outside Of BC".`  
-`So, in other words, if the setting is FALSE, it won't heal anyone that's not on YOUR EQBC server with the netbots plugin set up correctly, even if they're in your group.`  
-`That is why I recommend you connect all toons and run modbot on all of them at least once, even if you don't plan to run it as a regular thing for the other toons.. It assures the plugins are set correctly.`  
-`If AHHealOOBC=TRUE, then modbot will heal group members and pets even if there's no netbots connection.`  
-`Out of group healing can only be done by the macro if there's a netbots connection, or if the other toon is a master and uses the cast command via /tell.`  
+`AHHealOOBC`
+`Thinking of an english name for that setting, all that comes up is "Heal Outside Of BC".`
+`So, in other words, if the setting is FALSE, it won't heal anyone that's not on YOUR EQBC server with the netbots plugin set up correctly, even if they're in your group.`
+`That is why I recommend you connect all toons and run modbot on all of them at least once, even if you don't plan to run it as a regular thing for the other toons.. It assures the plugins are set correctly.`
+`If AHHealOOBC=TRUE, then modbot will heal group members and pets even if there's no netbots connection.`
+`Out of group healing can only be done by the macro if there's a netbots connection, or if the other toon is a master and uses the cast command via /tell.`
 `I do recommend AHHealOOBC=TRUE setting, but I still left the default FALSE so people could check their connections before setting TRUE.`
 
 * **AHHealMode=\#\|\#\|\#**
@@ -994,23 +994,23 @@ For group heal spells, you must set the TarCnt to something greater than 1 in or
 
 Code:
 
-`[AD1]`  
-`Gem=2`  
-`Spell=Turgur's Insects`  
-`SpellFoci=`  
-`DurMod=0`  
-`SpellAlias=slow`  
-`Announce=/bc Slowed <<[+y+] %t [+x+]>> with[+g+] %s [+x+]`  
-`SpellMinMana=10`  
-`SpellRecast=2`  
-`SpellCastonResist=malos`  
-`SpellDelay=0`  
-`TarCnt=1`  
-`TarType=11`  
-`TarBegHP=200`  
-`TarEndHP=15`  
-`IfSpellImmune=`  
-`UseHoTT=0`  
+`[AD1]`
+`Gem=2`
+`Spell=Turgur's Insects`
+`SpellFoci=`
+`DurMod=0`
+`SpellAlias=slow`
+`Announce=/bc Slowed <<[+y+] %t [+x+]>> with[+g+] %s [+x+]`
+`SpellMinMana=10`
+`SpellRecast=2`
+`SpellCastonResist=malos`
+`SpellDelay=0`
+`TarCnt=1`
+`TarType=11`
+`TarBegHP=200`
+`TarEndHP=15`
+`IfSpellImmune=`
+`UseHoTT=0`
 `PreCondition=TRUE`
 
 "Notice the TarBegHP setting. I have the same spell set with TarType=12 directly after this one to make sure he slows adds. (sometimes he pulls em too..\) Everything else - mainly ACAssistPct is set to a lower value. Most around 95 or so. Buffs are a pita because if the debuff sub is called \(it is called first\) it won't cast the debuffs if there's any reason not to, then the macro runs through the whole buff loop before getting back to debuffs again.. Setting the TarBegHP at least over the level of all other functions at least attempts to keep the slow first. Also.. I find the macro works best if you always set your ACManaPct very low. Usually keep mine around 5 or so for every toon. I should change the default on that, but clearing targets and such is something your toon will do quite often if his mana is under that value." - Ptarp on the forums on Wed Mar 09, 2011 7:54 pm. \(edited into Wiki by Arblis)
@@ -1270,36 +1270,36 @@ _C1=/bc cast stun_
 
 Shaman cannibalization example. In this case, settings like AEEventMinMana and AEMinMana both refer to the shaman as he is both the event triggerer as well as the target of the event:
 
-`AEGem1=5`  
-`AESpell1=Cannibalize III`  
-`AESpellFoci1=`  
-`AEDurMod1=0`  
-`AEDelay1=0`  
-`AEEventMinMana1=0`  
-`AEEventMinHP1=30`  
-`AEMinMana1=0`  
-`AEMaxMana1=90`  
-`AEMinHP1=50`  
-`AEMaxHP1=100`  
-`AETarType1=self`  
-`AESpellAlias1=canni`  
+`AEGem1=5`
+`AESpell1=Cannibalize III`
+`AESpellFoci1=`
+`AEDurMod1=0`
+`AEDelay1=0`
+`AEEventMinMana1=0`
+`AEEventMinHP1=30`
+`AEMinMana1=0`
+`AEMaxMana1=90`
+`AEMinHP1=50`
+`AEMaxHP1=100`
+`AETarType1=self`
+`AESpellAlias1=canni`
 `AEAnnounce1=`
 
 Necromancer mana feed example (where the necro is feeding mana to another character\). In this case, AEEventMinMana refers to the necro's mana and AEMinMana refer to the mana of the target \(as defined by AETarType):
 
-`AEGem2=4`  
-`AESpell2=Rapacious Subvention`  
-`AESpellFoci2=`  
-`AEDurMod2=0`  
-`AEDelay2=0`  
-`AEEventMinMana2=50`  
-`AEEventMinHP2=50`  
-`AEMinMana2=20`  
-`AEMaxMana2=45`  
-`AEMinHP2=0`  
-`AEMaxHP2=100`  
-`AETarType2=clr enc`  
-`AESpellAlias2=manafeed`  
+`AEGem2=4`
+`AESpell2=Rapacious Subvention`
+`AESpellFoci2=`
+`AEDurMod2=0`
+`AEDelay2=0`
+`AEEventMinMana2=50`
+`AEEventMinHP2=50`
+`AEMinMana2=20`
+`AEMaxMana2=45`
+`AEMinHP2=0`
+`AEMaxHP2=100`
+`AETarType2=clr enc`
+`AESpellAlias2=manafeed`
 `AEAnnounce2=/bc`
 
 ### AdvCure Section [AdvCure]
@@ -1424,17 +1424,17 @@ Necromancer mana feed example (where the necro is feeding mana to another charac
   * Annoucements also support formatting (makes it a bit easier to see in the MQ window). For example:
     * _Announce=/bc [+r+\]Cured\[+x+\] \&lt;\&lt;\[+y+\] %t \[+x+\]&gt;&gt; with\[+g+\] %s \[+x+]_
 
-`[AQ2]`  
-`Gem=2`  
-`Spell=Counteract Disease`  
-`SpellCntr=0`  
-`SpellFoci=`  
-`SpellCureType=Diseased Slowed`  
-`SpellMinMana=0`  
-`SpellRecast=0`  
-`TarCnt=1`  
-`TarType=pc grp pet cbt idle`  
-`SpellAlias=`  
+`[AQ2]`
+`Gem=2`
+`Spell=Counteract Disease`
+`SpellCntr=0`
+`SpellFoci=`
+`SpellCureType=Diseased Slowed`
+`SpellMinMana=0`
+`SpellRecast=0`
+`TarCnt=1`
+`TarType=pc grp pet cbt idle`
+`SpellAlias=`
 `Announce=/bc`
 
 ### AdvPull Section [AdvPull]
@@ -1560,9 +1560,9 @@ It defaults to the ./macros folder, but the line can be changed to any path.
 
 An entry in the spell section might look something like this:
 
-`[Mystify]`  
-`MaxLevel=83`  
-`thalassius_bImmune=|a sea mephit defender||a sea mephit evoker|`  
+`[Mystify]`
+`MaxLevel=83`
+`thalassius_bImmune=|a sea mephit defender||a sea mephit evoker|`
 `OverwritesID=|14569|14570|14530|`
 
 ## ModBot Class INI Examples
@@ -1571,7 +1571,7 @@ An entry in the spell section might look something like this:
 
 ## Scripts and ModBot Variable Usage
 
-ModBot allows VERY customizable sripts to such an extent you can actually program your own sub-procedures within your INI file. You can harness ANY global variable within ModBot to use with the scripts.  
+ModBot allows VERY customizable sripts to such an extent you can actually program your own sub-procedures within your INI file. You can harness ANY global variable within ModBot to use with the scripts.
 Scripts match MQ2 code to every extent, below are several examples of scripts and common variables one would use to create complex scripts
 
 ### Understanding scripts, syntax, example, how to
@@ -1602,18 +1602,18 @@ Scripts match MQ2 code to every extent, below are several examples of scripts an
 
 * Syntax
 
-`[Script-]`  
-`Commands=`  
-`C1=`  
-`.`  
+`[Script-]`
+`Commands=`
+`C1=`
+`.`
 `Cn=`
 
 What does a script look like in your INI file:
 
-`[Script-HelloWorld]`  
-`Commands=2`  
-`C1=/echo Hello World`  
-`C2=/if ({Timer}>50) /varset Timer 5s`  
+`[Script-HelloWorld]`
+`Commands=2`
+`C1=/echo Hello World`
+`C2=/if ({Timer}>50) /varset Timer 5s`
 `C3=/goto :Top`
 
 In the example above it will echo to the MQ2ChatWindow "Hello World" for 5s. Notice how I do NOT use a $ to reference the "Timer" variable.
@@ -1628,89 +1628,89 @@ Please see the below examples for complex script code.
 
 **Common Variables** (You can use ANY mq2 variable without the $, you can even CREATE new global vars and use them, all from the INI file via Scripts)
 
-`{ACState} = If greater than 0, ModBot thinks you are in combat`  
-`{ACMATarget} = The target of the main assist`  
-`{CampStatus} = If greater than 0, means I've been given a /bc makecamp command`  
-`{FollowFlag} = If greater than 0, means I should be following something`  
-`{TankName} = The acting main assist`  
+`{ACState} = If greater than 0, ModBot thinks you are in combat`
+`{ACMATarget} = The target of the main assist`
+`{CampStatus} = If greater than 0, means I've been given a /bc makecamp command`
+`{FollowFlag} = If greater than 0, means I should be following something`
+`{TankName} = The acting main assist`
 `{Me}, {Spawn}, etc = See MQ2 Manual`
 
-**Examples**  
+**Examples**
 This example is triggered from an event OR a heal and it will remove the necro "Lich" spell:
 
-`[AdvHeal]`  
-`[AH3]`  
-`Gem=Script`  
-`Spell=DropLich`  
-`SpellFoci=`  
-`DurMod=0`  
-`SpellAlias=droplich`  
-`SpellMinMana=0`  
-`Announce=/bc`  
-`TarCnt=1`  
+`[AdvHeal]`
+`[AH3]`
+`Gem=Script`
+`Spell=DropLich`
+`SpellFoci=`
+`DurMod=0`
+`SpellAlias=droplich`
+`SpellMinMana=0`
+`Announce=/bc`
+`TarCnt=1`
 `Class=pc hp40 nec`
 
-`[AdvEvent]`  
-`[AE3]`  
-`Gem=Script`  
-`Spell=DropLich`  
-`SpellFoci=`  
-`DurMod=0`  
-`Delay=0`  
-`EventMinMana=100`  
-`EventMinHP=40`  
-`MinMana=20`  
-`MaxMana=100`  
-`MinHP=0`  
-`MaxHP=90`  
-`TarType=tnt`  
-`SpellAlias=`  
+`[AdvEvent]`
+`[AE3]`
+`Gem=Script`
+`Spell=DropLich`
+`SpellFoci=`
+`DurMod=0`
+`Delay=0`
+`EventMinMana=100`
+`EventMinHP=40`
+`MinMana=20`
+`MaxMana=100`
+`MinHP=0`
+`MaxHP=90`
+`TarType=tnt`
+`SpellAlias=`
 `Announce=/bc`
 
-`[Script-DropLich]`  
-`Commands=1`  
+`[Script-DropLich]`
+`Commands=1`
 `C1=/if ({Me.Buff[Lich].ID}) /notify BuffWindow Buff{Math.Calc[{Me.Buff[Lich].ID}-1].Int} leftmouseup`
 
 This example is launched via the ACBefore command from the [Melee] section, I've got Sneak Attack bound to hotkey 6. What the bot will do is to trigger Sneak Attack, attempt proper position, backstab the mob, then revert to "normal"
 
-`[Script-SneakAttack]`  
-`Commands=10`  
-`C1=/if ({Melee.Enable}) /melee plugin=0`  
-`C2=/if ({Me.CombatAbilityReady[Sneak Attack]}) /keypress 6`  
-`C3=/if (!{Me.Moving} && !{Stick.MoveBehind} && {Stick.Distance}!={Math.Calc[{Spawn[{ACMATarget}].MaxRangeTo}+5]}) /stick {Math.Calc[{Spawn[{ACMATarget}].MaxRangeTo}+5]} behind id {ACMATarget}`  
-`C4=/if ({Target.ID}!={ACMATarget}) /multiline ; /target id {ACMATarget};/delay 5`  
-`C5=/if ({Melee.BackAngle}>60 || {Melee.BackAngle}<-60) /goto :Top`  
-`C6=/if ({Target.Distance3D}>={Spawn[{ACMATarget}].MaxRangeTo}) /stick {Math.Calc[{Spawn[{ACMATarget}].MaxRangeTo}-5]} hold behind id {ACMATarget}`  
-`C7=/if ({Target.Distance3D}>={Spawn[{ACMATarget}].MaxRangeTo}-3) /goto :Top`  
-`C8=/delay 5`  
-`C9=/if ({Me.AbilityReady[Backstab]}) /doability backstab`  
+`[Script-SneakAttack]`
+`Commands=10`
+`C1=/if ({Melee.Enable}) /melee plugin=0`
+`C2=/if ({Me.CombatAbilityReady[Sneak Attack]}) /keypress 6`
+`C3=/if (!{Me.Moving} && !{Stick.MoveBehind} && {Stick.Distance}!={Math.Calc[{Spawn[{ACMATarget}].MaxRangeTo}+5]}) /stick {Math.Calc[{Spawn[{ACMATarget}].MaxRangeTo}+5]} behind id {ACMATarget}`
+`C4=/if ({Target.ID}!={ACMATarget}) /multiline ; /target id {ACMATarget};/delay 5`
+`C5=/if ({Melee.BackAngle}>60 || {Melee.BackAngle}<-60) /goto :Top`
+`C6=/if ({Target.Distance3D}>={Spawn[{ACMATarget}].MaxRangeTo}) /stick {Math.Calc[{Spawn[{ACMATarget}].MaxRangeTo}-5]} hold behind id {ACMATarget}`
+`C7=/if ({Target.Distance3D}>={Spawn[{ACMATarget}].MaxRangeTo}-3) /goto :Top`
+`C8=/delay 5`
+`C9=/if ({Me.AbilityReady[Backstab]}) /doability backstab`
 `C10=/melee plugin=1`
 
 This example will confirm you are hidden and sneaking when I'm at "camp" and not sneaking when I'm in follow mode. It will also re-engage if MQ2Melee lost "stick" because of too much mob movement
 
-`[Script-HideSneak]`  
-`Commands=4`  
-`C1=/if ({FollowFlag} && {Me.Sneaking}) /multiline ; /doability sneak;/return`  
-`C2=/if (!{FollowFlag} && !{ACState} && {Select[{MakeCamp},on]} && {Me.AbilityReady[Hide]} && !{Me.Moving} && !{Melee.Combat}) /multiline ; /doability Hide;/delay 5`  
-`C3=/if (!{FollowFlag} && !{ACState} && {Select[{MakeCamp},on]} && {Me.AbilityReady[Sneak]} && !{Me.AbilityReady[Hide]} && !{Me.Moving} && !{Melee.Combat}) /multiline ; /doability Sneak;/delay 5`  
+`[Script-HideSneak]`
+`Commands=4`
+`C1=/if ({FollowFlag} && {Me.Sneaking}) /multiline ; /doability sneak;/return`
+`C2=/if (!{FollowFlag} && !{ACState} && {Select[{MakeCamp},on]} && {Me.AbilityReady[Hide]} && !{Me.Moving} && !{Melee.Combat}) /multiline ; /doability Hide;/delay 5`
+`C3=/if (!{FollowFlag} && !{ACState} && {Select[{MakeCamp},on]} && {Me.AbilityReady[Sneak]} && !{Me.AbilityReady[Hide]} && !{Me.Moving} && !{Melee.Combat}) /multiline ; /doability Sneak;/delay 5`
 `C4=/if ({ACState} && {ACMATarget} && {Target.ID} && {Me.AbilityReady[Backstab]}) /keypress q`
 
 Example of createing a new global var and an example of using it
 
-`[Script-EventsOff]`  
-`Commands=2`  
-`C1=/if (!{Defined[CheckSlow]}) /declare CheckSlow int outer 1`  
+`[Script-EventsOff]`
+`Commands=2`
+`C1=/if (!{Defined[CheckSlow]}) /declare CheckSlow int outer 1`
 `C2=/if ({DoEvents}) /multiline ; /varset DoEvents FALSE;/varset CheckSlow 1`
 
-`[Script-EventsOn]`  
-`Commands=2`  
-`C1=/if (!{Defined[CheckSlow]}) /declare CheckSlow int outer 3`  
+`[Script-EventsOn]`
+`Commands=2`
+`C1=/if (!{Defined[CheckSlow]}) /declare CheckSlow int outer 3`
 `C1=/if (!{DoEvents}) /multiline ; /varset DoEvents TRUE;/varcalc CheckSlow {CheckSlow}+1`
 
-`[Script-IsSlowed]`  
-`Commands=3`  
-`C1=/if (!{Defined[CheckSlow]}) /multiline ; /varset DoEvents FALSE;/return`  
-`C2=/if ({CheckSlow}<=4) /varset DoEvents FALSE`  
+`[Script-IsSlowed]`
+`Commands=3`
+`C1=/if (!{Defined[CheckSlow]}) /multiline ; /varset DoEvents FALSE;/return`
+`C2=/if ({CheckSlow}<=4) /varset DoEvents FALSE`
 `C3=/if ({CheckSlow}>4) /varset DoEvents TRUE;/varset CheckSlow 1`
 
 Example of using a ModBot global string. This will create a new pet, say when your existing pet is about to die
@@ -1719,45 +1719,45 @@ Example of using a ModBot global string. This will create a new pet, say when yo
 
 you must encapsulated in quotes, script code uses apostrophies in place of quotes.
 
-`[Script-NewPet]`  
-`Commands=4`  
-`C1=/multiline ; /casting ''{PetCast}'' -maxtries|5;/delay 2s`  
-`C2=/if ({Cast.Timing}>600) /goto :Top`  
-`C3=/multiline ; /if ({Me.Pet.ID}) /pet go away;/delay 2s !{Me.Casting.ID}`  
+`[Script-NewPet]`
+`Commands=4`
+`C1=/multiline ; /casting ''{PetCast}'' -maxtries|5;/delay 2s`
+`C2=/if ({Cast.Timing}>600) /goto :Top`
+`C3=/multiline ; /if ({Me.Pet.ID}) /pet go away;/delay 2s !{Me.Casting.ID}`
 `C4=/if (!{Me.Pet.ID}) /goto :Top`
 
 Example of using PetCast for a cleric hammer, to be called from a ACBefore command
 
-`[Settings]`  
-`DoPet=FALSE`  
-`PetCast=Unswerving hammer of awesomeness|gem1`  
-`[Melee]`  
-`ACBefore=/if (!{Me.Pet.ID} && {ACMATarget} && {Spawn[{ACMATarget}].Type.Equal[NPC]} && {Spawn[{ACMATarget}].Distance3D}<={ACLeash}) /call MBScript SumHam`  
-`[Script-SumHam]`  
-`Commands=2`  
-`C1=/if ({Target.ID}!={ACMATarget}) /multiline ; /target id {ACMATarget};/delay 5`  
+`[Settings]`
+`DoPet=FALSE`
+`PetCast=Unswerving hammer of awesomeness|gem1`
+`[Melee]`
+`ACBefore=/if (!{Me.Pet.ID} && {ACMATarget} && {Spawn[{ACMATarget}].Type.Equal[NPC]} && {Spawn[{ACMATarget}].Distance3D}<={ACLeash}) /call MBScript SumHam`
+`[Script-SumHam]`
+`Commands=2`
+`C1=/if ({Target.ID}!={ACMATarget}) /multiline ; /target id {ACMATarget};/delay 5`
 `C2=/if (!{Me.Pet.ID}) /multiline ; /casting ''{PetCast}'' -maxtries|2;/delay 3s`
 
 Example of a CH script to be run from a non cleric .ini (warrior)
 
-`I figure I might as well be posting some of the script versions of other macros that I've been seeing around, but written my own thing so I could just keep modbot running.`  
+`I figure I might as well be posting some of the script versions of other macros that I've been seeing around, but written my own thing so I could just keep modbot running.`
 ````` Modbot script version of CH chain that seems to work, though might have problems I haven't noticed.... I use this with a hotkey from my tank -```"/mb script chain 50" (yes it's in MB\_tank.ini - NOT the cleric.ini.. ) It finds all clerics in netbots, then runs through the list telling each````` to cast CH after the delay you specify. This script does require the clerics to all be running modbot with an alias of CH for complete heal spell,```and connection to the same EQBCS server.``
 
 ```text
-`Commands=13`  
-`C1=/multiline ; /declare clrlist string local;/declare x int local 1;/declare StopLoop bool local FALSE`  
-`C2=/if ({Spawn[{NetBots.Client.Arg[{x}]}].Class.ShortName.Equal[clr]}) /varset clrlist {clrlist} {NetBots.Client.Arg[{x}]}`  
-`C3=/if ({x} < {NetBots.Counts}) /multiline ; /varset a 1;/varcalc x {x}+1`  
-`C4=/echo Clerics: {clrlist} casting {Math.Calc[{Param1}/10]}s apart`  
-`C5=/varset x 0`  
-`C6=/varset Timer 100`  
-`C7=/varcalc x {x}+1`  
-`C8=/if ((!{Spawn[{clrlist.Arg[{x}]}].ID} || {NetBots[{clrlist.Arg[{x}]}].PctMana} < 3) && {x} <= {clrlist.Count[ ]}) /varset a 5`  
-`C9=/if ((!{Spawn[{clrlist.Arg[{x}]}].ID} || {NetBots[{clrlist.Arg[{x}]}].PctMana} < 3) && {x} > {clrlist.Count[ ]}) /varset a 4`  
-`C10=/bc {clrlist.Arg[{x}]} cast ch`  
-`C11=/delay {Param1}`  
-`C12=/if ({x}>{clrlist.Count[ ]}) /varset a 4`  
-`C13=/if (!{StopLoop}) /varset a 5`  
+`Commands=13`
+`C1=/multiline ; /declare clrlist string local;/declare x int local 1;/declare StopLoop bool local FALSE`
+`C2=/if ({Spawn[{NetBots.Client.Arg[{x}]}].Class.ShortName.Equal[clr]}) /varset clrlist {clrlist} {NetBots.Client.Arg[{x}]}`
+`C3=/if ({x} < {NetBots.Counts}) /multiline ; /varset a 1;/varcalc x {x}+1`
+`C4=/echo Clerics: {clrlist} casting {Math.Calc[{Param1}/10]}s apart`
+`C5=/varset x 0`
+`C6=/varset Timer 100`
+`C7=/varcalc x {x}+1`
+`C8=/if ((!{Spawn[{clrlist.Arg[{x}]}].ID} || {NetBots[{clrlist.Arg[{x}]}].PctMana} < 3) && {x} <= {clrlist.Count[ ]}) /varset a 5`
+`C9=/if ((!{Spawn[{clrlist.Arg[{x}]}].ID} || {NetBots[{clrlist.Arg[{x}]}].PctMana} < 3) && {x} > {clrlist.Count[ ]}) /varset a 4`
+`C10=/bc {clrlist.Arg[{x}]} cast ch`
+`C11=/delay {Param1}`
+`C12=/if ({x}>{clrlist.Count[ ]}) /varset a 4`
+`C13=/if (!{StopLoop}) /varset a 5`
 `````  Posted By Ptarp Tue Apr 12, 2011 1:01 am. Moved to Wiki by Arblis\`
 
 ## Script Examples
@@ -1778,79 +1778,79 @@ Here you will find a collection of little gems pulled from the ModBot thread. At
 
 Please note- when you are posting on the forum for help (after reading this wiki of course!\) include the MQ2 version, winEQ version and the EQ install type \(Titanium / sod / UF)
 
-`If you want to have colored messages in Announce=/bc you can try some of these:`  
-`b = black`  
-`g = green`  
-`m = magenta`  
-`o = orange`  
-`p = purple`  
-`r = red`  
-`t = cyan`  
-`u = blue`  
-`w = white`  
-`y = yellow`  
-`Example:`  
-`Announce=/bc [+t+]`  
+`If you want to have colored messages in Announce=/bc you can try some of these:`
+`b = black`
+`g = green`
+`m = magenta`
+`o = orange`
+`p = purple`
+`r = red`
+`t = cyan`
+`u = blue`
+`w = white`
+`y = yellow`
+`Example:`
+`Announce=/bc [+t+]`
 `would color the text cyan`
 
-`Although covered previously on the Wiki quite a few times - If you are having trouble with mobs keeping you from doing non combat things (buff, loot etc) try using the following:`  
-`exclude <mob name,save>`  
-````` "What I do.. (while targeted on the mob you want to ignore)```On my tank I have a hotkey. I target the mob to exclude and press it.``  
-`First line is /bcaa //mb exclude ${Target.CleanName}`  
-`second line - /bcaa //mb exclude save`  
-````` /echo ${ADMobCount} (use this after your exclude to see if the char in question has any mobs on the exclude list. Can be used with /bcaa to see all of your toons mobcounts)```If you fight near non-combatant mobs, always use the exclude command so the macro doesn't "see" them, and set your Radius= in your toon's .ini file to a minimum.``  
+`Although covered previously on the Wiki quite a few times - If you are having trouble with mobs keeping you from doing non combat things (buff, loot etc) try using the following:`
+`exclude <mob name,save>`
+````` "What I do.. (while targeted on the mob you want to ignore)```On my tank I have a hotkey. I target the mob to exclude and press it.``
+`First line is /bcaa //mb exclude ${Target.CleanName}`
+`second line - /bcaa //mb exclude save`
+````` /echo ${ADMobCount} (use this after your exclude to see if the char in question has any mobs on the exclude list. Can be used with /bcaa to see all of your toons mobcounts)```If you fight near non-combatant mobs, always use the exclude command so the macro doesn't "see" them, and set your Radius= in your toon's .ini file to a minimum.``
 `I normally keep mine at around 60 to 80 depending on what I'm doing. Remember you can "/varset Radius 50" or something in game with the mac running to find a happy medium." -Ptap Mon Sep 20, 2010 1:18 pm`
 
 `It also sounds like an exclude hotkey, and pause hotkey would be your best friends.. Here's a few of the hotkeys I use.`
 
-`_EQTitan.ini in your everquest folder.`  
-````` Code:```[Socials]``  
-`Page10Button1Name=TankName`  
-`Page10Button1Color=0`  
-`Page10Button1Line1=/bcaa //varset TankName ${Me.Name}`  
-`Page10Button7Name=Masters`  
-`Page10Button7Color=0`  
-`Page10Button7Line1=/bcaa //varset MasterList ${NetBots.Client}`  
-`Page10Button5Name=pause`  
-`Page10Button5Color=0`  
-`Page10Button5Line1=/bcaa //mb mbpause on`  
-`Page10Button11Name=unpause`  
-`Page10Button11Color=0`  
-`Page10Button11Line1=/bcaa //mb mbpause off`  
-`Page10Button6Name=follow`  
-`Page10Button6Color=0`  
-`Page10Button6Line1=/bca follow`  
-`Page10Button12Name=stop`  
-`Page10Button12Color=0`  
-`Page10Button12Line1=/bcaa //mb stop`  
-`Page10Button10Name=letsroll`  
-`Page10Button10Color=0`  
-`Page10Button10Line1=/bcaa //mb letsroll`  
-`Page2Button1Name=corpse`  
-`Page2Button1Color=0`  
-`Page2Button1Line1=/corpse`  
-`Page2Button6Name=sellitem`  
-`Page2Button6Color=0`  
-`Page2Button6Line1=/ini loot.ini ${Cursor.Name.Left[1]} "${Cursor.Name}" Sell`  
-`Page8Button1Name=include`  
-`Page8Button1Color=0`  
-`Page8Button1Line1=/bcaa //mb include ${Target.CleanName}`  
-`Page8Button1Line2=/pause 5`  
-`Page8Button1Line3=/bcaa //mb exclude save`  
-`Page8Button7Name=exclude`  
-`Page8Button7Color=0`  
-`Page8Button7Line1=/bcaa //mb exclude ${Target.CleanName}`  
-`Page8Button7Line2=/pause 5`  
-`Page8Button7Line3=/bcaa //mb exclude save`  
+`_EQTitan.ini in your everquest folder.`
+````` Code:```[Socials]``
+`Page10Button1Name=TankName`
+`Page10Button1Color=0`
+`Page10Button1Line1=/bcaa //varset TankName ${Me.Name}`
+`Page10Button7Name=Masters`
+`Page10Button7Color=0`
+`Page10Button7Line1=/bcaa //varset MasterList ${NetBots.Client}`
+`Page10Button5Name=pause`
+`Page10Button5Color=0`
+`Page10Button5Line1=/bcaa //mb mbpause on`
+`Page10Button11Name=unpause`
+`Page10Button11Color=0`
+`Page10Button11Line1=/bcaa //mb mbpause off`
+`Page10Button6Name=follow`
+`Page10Button6Color=0`
+`Page10Button6Line1=/bca follow`
+`Page10Button12Name=stop`
+`Page10Button12Color=0`
+`Page10Button12Line1=/bcaa //mb stop`
+`Page10Button10Name=letsroll`
+`Page10Button10Color=0`
+`Page10Button10Line1=/bcaa //mb letsroll`
+`Page2Button1Name=corpse`
+`Page2Button1Color=0`
+`Page2Button1Line1=/corpse`
+`Page2Button6Name=sellitem`
+`Page2Button6Color=0`
+`Page2Button6Line1=/ini loot.ini ${Cursor.Name.Left[1]} "${Cursor.Name}" Sell`
+`Page8Button1Name=include`
+`Page8Button1Color=0`
+`Page8Button1Line1=/bcaa //mb include ${Target.CleanName}`
+`Page8Button1Line2=/pause 5`
+`Page8Button1Line3=/bcaa //mb exclude save`
+`Page8Button7Name=exclude`
+`Page8Button7Color=0`
+`Page8Button7Line1=/bcaa //mb exclude ${Target.CleanName}`
+`Page8Button7Line2=/pause 5`
+`Page8Button7Line3=/bcaa //mb exclude save`
 `````
 ```
 
-`I normally just keep my keys on page 10 and click from there, but as you can see there's include and exclude keys on pg 8 and another on pg2 I use for setting items to`  
-`"sell" in my loot.ini file.`  
-`The /bcaa stuff might not work for some depending on plugin versions, so that cn be replaced with a /bca and /mb on a second line. I find it very handy to have some keys I can`  
+`I normally just keep my keys on page 10 and click from there, but as you can see there's include and exclude keys on pg 8 and another on pg2 I use for setting items to`
+`"sell" in my loot.ini file.`
+`The /bcaa stuff might not work for some depending on plugin versions, so that cn be replaced with a /bca and /mb on a second line. I find it very handy to have some keys I can`
 `press quickly, and always either pause all my toons or exclude npcs before I go into areas that I don't want something attacked.`
 
-`Having trouble with your background session toons not moving properly? You might try this:`  
+`Having trouble with your background session toons not moving properly? You might try this:`
 ````` WinEQ=on```to the [Defaults] section of your mq2moveutils.ini.````` TrueHeading=off might help also in the same section, though I'm not sure if that's needed.\`
 
 ### Do your toons wander where they are not supposed to?
@@ -1864,7 +1864,7 @@ Those who have toon wandering issues or whatnot - when you say "radius", what ra
     * /makecamp radius x leash=on (or something like that)
   * Please see the MQ2MoveUtils (PMS version)
 
-    [[http://www.macroquest.org/phpBB3/viewtopic.php?f=31&t=15909](http://www.macroquest.org/phpBB3/viewtopic.php?f=31&t=15909)**thread**] and
+    [[http://www.macroquest2.com/phpBB3/viewtopic.php?f=31&t=15909](http://www.macroquest2.com/phpBB3/viewtopic.php?f=31&t=15909)**thread**] and
 
     MQ2MoveUtils:v11 for more detailed information.
 * **/melee x x x**
@@ -1872,7 +1872,7 @@ Those who have toon wandering issues or whatnot - when you say "radius", what ra
 
     **WITH** modbot
 
-  * Please see the MQ2Melee [[http://www.macroquest.org/phpBB3/viewtopic.php?f=50&t=17045](http://www.macroquest.org/phpBB3/viewtopic.php?f=50&t=17045)**thread**] for more
+  * Please see the MQ2Melee [[http://www.macroquest2.com/phpBB3/viewtopic.php?f=50&t=17045](http://www.macroquest2.com/phpBB3/viewtopic.php?f=50&t=17045)**thread**] for more
 
     detailed information.
 * **Modbot INI**

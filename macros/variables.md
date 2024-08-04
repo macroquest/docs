@@ -157,8 +157,8 @@ You can use [/varcalc](../reference/commands/varcalc.md) to set a variable direc
 **Examples:**
 
 ```text
- /varcalc MyInt 1+2*2+1 
- /varcalc MyInt 1+(2*2)+1 
+ /varcalc MyInt 1+2*2+1
+ /varcalc MyInt 1+(2*2)+1
  /varcalc NumBuffSlots ${Me.FreeBuffSlots}+${Me.CountBuffs}
 ```
 
@@ -188,7 +188,7 @@ It is important to note that parsing of variables is performed from the inside t
 
 The parser first evaluates ${MyVar}. If MyVar's value is 1, this gives us ${MyString1}. ${MyString1} is then evaluated, giving the value of whatever MyString1 is. ${${MyString}} will get the value of a MQ2Data query stored in MyString. This could be Me.Buff[1], or a variable name, or anything that is valid inside ${}. There is no limit to this recursion.
 
-${${${${${${${${${${MyString}}}}}}}}}} will evaluate inside to outside until there is nothing left to evaluate.
+`${${${${${${${${${${MyString}}}}}}}}}}` will evaluate inside to outside until there is nothing left to evaluate.
 
-This is also true for arrays: ${MyArray[${MyInt}]} has no problems.
+This is also true for arrays: `${MyArray[${MyInt}]}` has no problems.
 

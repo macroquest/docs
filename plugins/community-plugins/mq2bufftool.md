@@ -2,7 +2,7 @@
 
 ## Description
 
-MQ2BuffTool was written by s0rcier and is found in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?t=11890). This plugin was written a replacement for his previous work, MQ2BuffUtils, offering an easier approach to buff management for the end user and less robotic interaction to be less detectable by others.
+MQ2BuffTool was written by s0rcier and is found in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?t=11890). This plugin was written a replacement for his previous work, MQ2BuffUtils, offering an easier approach to buff management for the end user and less robotic interaction to be less detectable by others.
 
 ## Features
 

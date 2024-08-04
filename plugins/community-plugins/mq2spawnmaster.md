@@ -16,17 +16,17 @@ The plugin currently stores the mob's x/y/z location, the system and in-game tim
 
 Anything set in the OnSpawnCommand key in the Settings section of the INI fille will be executed as a command when the spawn is first matched so that for example "/speak ${SpawnMaster.LastMatch} just spawned!" will give you a nice spawn alert if using the MQ2Speech plugin.
 
-You can find the latest version of MQ2 [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=9853&hilit=mq2spawnmaster).
+You can find the latest version of MQ2 [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=9853&hilit=mq2spawnmaster).
 
 ### Commands
 
 /spawnmaster commands
 
-`on|off - Toggles SpawnMaster plugin on or off`  
-`add \"spawn name\" - Add spawn name to watch list (or target if no name given`  
-`delete \"spawn name\" - Delete spawn name from watch list (or target if no name given`  
-`list - Display watch list for zone`  
-`case [off|on] - Control whether to use exact case matching in any compare. Omit on or off to toggle.`  
-`uplist - Display any mobs on watch list that are currently up`  
-`downlist - Display any watched mobs that have died or despawned`  
+`on|off - Toggles SpawnMaster plugin on or off`
+`add \"spawn name\" - Add spawn name to watch list (or target if no name given`
+`delete \"spawn name\" - Delete spawn name from watch list (or target if no name given`
+`list - Display watch list for zone`
+`case [off|on] - Control whether to use exact case matching in any compare. Omit on or off to toggle.`
+`uplist - Display any mobs on watch list that are currently up`
+`downlist - Display any watched mobs that have died or despawned`
 `load - Load spawns from INI`

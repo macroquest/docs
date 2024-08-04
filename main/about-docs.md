@@ -1,9 +1,8 @@
-
 # Working with the Documentation
 
 ## Making Edits
 
-TOOD
+TODO
 
 ## Searching for Content
 

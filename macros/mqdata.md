@@ -10,7 +10,7 @@ The basic syntax for accessing this MQ2Data is:
 
 To access a property of a TLO you begin with the TLO type you want, then append successive type members or properties until you get the result you're looking for. The use of properties can become very complex (ie. extremely long), especially when using ${Math.Calc[]}.
 
-**Note:** You absolutely MUST pay attention to the return types of each member and object. Make sure to always compare identical [Data Types](../reference/data-types/) when doing comparisons (eg. string to a string, or a numeric to a numeric). Using .Equal or .NotEqual to compare .Name to .ID will give errors. For example, ${Target.Name.Equal[${Me.ID}]} will not work. .Name returns a string, but .ID returns an int
+**Note:** You absolutely MUST pay attention to the return types of each member and object. Make sure to always compare identical [Data Types](../reference/data-types/) when doing comparisons (eg. string to a string, or a numeric to a numeric). Using .Equal or .NotEqual to compare .Name to .ID will give errors. For example, `${Target.Name.Equal[${Me.ID}]}` will not work. .Name returns a string, but .ID returns an int.
 
 Also be sure to look at the To String of each type.
 
@@ -23,22 +23,16 @@ Also be sure to look at the To String of each type.
 
   [_spawn_](../reference/data-types/datatype-spawn.md) reference type members.
 
-* Looking at the [_spawn_](../reference/data-types/datatype-spawn.md) reference type, you will find a list of the properties and
+* Looking at the [_spawn_](../reference/data-types/datatype-spawn.md) reference type, you will find a list of the properties and members of spawn, to which **Target** has access to.
 
-  members of spawn, to which **Target** has access to.
-
-* Since you want to find the distance to the target, you would select one of the Distance members. For this example we
-
-  will use:
+* Since you want to find the distance to the target, you would select one of the Distance members. For this example we will use:
 
 [_float_](../reference/data-types/datatype-float.md) **Distance**
 
 Distance from player in (x,y)
 
 * So you append append .Distance to the TLO name to get: Target.Distance
-* Once you have gotten to the information you want, you MUST enclose the entire string in ${ }, so the end result of
-
-  the example would be:
+* Once you have gotten to the information you want, you MUST enclose the entire string in ${ }, so the end result of the example would be:
 
 `/echo Distance to target is: ${Target.Distance}`
 
@@ -73,9 +67,7 @@ Inheritance is a way to get less specific about what "type" of object you are lo
 
 _woodendesk_ **ThisDesk**
 
-* Remember that "desk" we said has a member called **Screws** of type _int_. "woodendesk" IS a desk, so it
-
-  automatically gets a member called **Screws**.
+* Remember that "desk" we said has a member called **Screws** of type _int_. "woodendesk" IS a desk, so it automatically gets a member called **Screws**.
 
 * Therefore, "ThisDesk.Screws", even though it is a wooden desk and not just "desk", is valid.
 

@@ -4,8 +4,8 @@
 
 ## Guide to Revision Numbering
 
-_Version numbering currently follows incrementing sequence theory._  
-~~All future releases are numbered based on date of release.~~  
+_Version numbering currently follows incrementing sequence theory._
+~~All future releases are numbered based on date of release.~~
 ~~The letter in the revision number indicates who made the contribution.~~
 
 * Author: Omnictrl \(o\)
@@ -72,7 +72,7 @@ _Update by three-p-o_
 
 New Features
 
-* /bccmd iniconnect 
+* /bccmd iniconnect
 
 -- you can now save regularly used servers to your ini and connect to them by the key name in the event you have your own server, and a few others for your mates. Example, in your ini you could do
 
@@ -98,7 +98,7 @@ and then /bccmd iniconnect mine or /bccmd iniconnect myserver
 
 and so on...
 
-* /bccmd forceconnect 
+* /bccmd forceconnect
 
 -- will disconnect you from your current server and attempt to connect to the new one rather than warn you that you are already connected and do nothing.
 
@@ -149,7 +149,7 @@ or
 or
 /bccmd set tellwatch off
 
-this applies to all setting options. 
+this applies to all setting options.
 
 /bccmd set reconnectsecs #  <---this is the only one that does not support on/off, and the only that accepts a number as a parameter
 ```
@@ -158,7 +158,7 @@ as seen in the source, valid settings are: autoconnect control compatmode reconn
 
 * Rather than pretend it will be fixed again one day, removed the 'relog' command parameter \(and all related
 
-  functions\) as [MQ2SwitchChar](https://macroquest.org/phpBB3/viewtopic.php?t=16201) by ieatacid provides all the
+  functions\) as [MQ2SwitchChar](https://macroquest2.com/phpBB3/viewtopic.php?t=16201) by ieatacid provides all the
 
   functionality needed.
 
@@ -313,7 +313,7 @@ Irrelevant
   the channel.
 
 * * New command: /bccmd channels channel\_list
-* * Added ability to escape characters  will be translated to just 
+* * Added ability to escape characters  will be translated to just
 
 ### Version 1.0.a16 - 20060701
 
@@ -440,7 +440,7 @@ Irrelevant
 
 * * Added support for pseudo-channels. A /bct to channel goes to everyone in the channel.
 * * New command: /bccmd channels channel\_list
-* * Added ability to escape characters  will be translated to just 
+* * Added ability to escape characters  will be translated to just
 
 ### Version 1.0.a8 - 20060701
 

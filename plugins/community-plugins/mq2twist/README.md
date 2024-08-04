@@ -6,9 +6,9 @@
 
 MQ2Twist is a plugin for bards which allows them to "twist" a number of songs and/or items together very reliably. It takes care of missed notes and interrupts automatically, and can swap in items to cast too.
 
-This plugin was developed by koad, CyberTech, Cr4zyb4rd and Pheph, and can be downloaded from [here](https://macroquest.org/phpBB3/viewtopic.php?t=8895) _VIP ACCESS REQUIRED_ it was last edited by Cr4zyb4rd on Wed Jun 21, 2006.
+This plugin was developed by koad, CyberTech, Cr4zyb4rd and Pheph, and can be downloaded from [here](https://macroquest2.com/phpBB3/viewtopic.php?t=8895) _VIP ACCESS REQUIRED_ it was last edited by Cr4zyb4rd on Wed Jun 21, 2006.
 
-Winnower is the last one to post an updated file but it is user modified and that was on Wed Jul 29, 2015 [here](https://macroquest.org/phpBB3/viewtopic.php?f=31&t=8895&start=465),
+Winnower is the last one to post an updated file but it is user modified and that was on Wed Jul 29, 2015 [here](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=8895&start=465),
 
 **I am unable to find a current stable version. If you happen to find one please update this Wiki.** -\(Description updated by Valendar 6-15-16\)
 
@@ -102,10 +102,10 @@ Alias for /twist stop
 
 ## Examples
 
-`/twist 1 Sing gem 1 forever`  
-`/twist 1 2 3 Twist gems 1,2, and 3 forever`  
-`/twist 1 2 3 10 Twist gems 1,2,3, and clicky 10, forever`  
-`/twist hold 4 Sing gem 4 forever, until another singing-related /twist command is given`  
+`/twist 1 Sing gem 1 forever`
+`/twist 1 2 3 Twist gems 1,2, and 3 forever`
+`/twist 1 2 3 10 Twist gems 1,2,3, and clicky 10, forever`
+`/twist hold 4 Sing gem 4 forever, until another singing-related /twist command is given`
 `/sing 4 Same as above`
 
 /twist set 16 32 120 "Cassindra's Chorus of Clarity" AA
@@ -114,17 +114,17 @@ Alias for /twist stop
 
 ## INI File
 
-`[MQ2Twist]`  
-`Delay=32 Delay between twists (in 10ths of a second). Lag & System dependant.`  
-`Adjust=1 This defines how many ticks before the 'normal'`  
+`[MQ2Twist]`
+`Delay=32 Delay between twists (in 10ths of a second). Lag & System dependant.`
+`Adjust=1 This defines how many ticks before the 'normal'`
 `recast time to cast a long song.`
 
 Long songs are defined as songs greater than 3 ticks in length. If set to 1 tick, and a song lasts 10 ticks, the song will be recast at the 8 tick mark, instead of at the 9 tick mark as it normally would.
 
-`[Click_21] through [Click_29]`  
-`CastTime=30 Casting Time, -1 to use the normal song delay`  
-`ReCastTime=0 How often to recast, 0 to twist normally.`  
-`Name="Fife of Battle" Item name for /itemnotify`  
+`[Click_21] through [Click_29]`
+`CastTime=30 Casting Time, -1 to use the normal song delay`
+`ReCastTime=0 How often to recast, 0 to twist normally.`
+`Name="Fife of Battle" Item name for /itemnotify`
 `Slot=neck Slot name for /itemnotify`
 
 * Delay, CastTime and ReCastTime are specified in 10ths of a second \(so 10 = 1 second\)
@@ -144,10 +144,10 @@ Long songs are defined as songs greater than 3 ticks in length. If set to 1 tick
 
 `MQ2Twist uses /itemnotify slotname rightmouseup to perform item clicks.`
 
-`The INI file allows you to specify items by name (with name=itemname), or by`  
-`inventory slot (with slot=slotname). If both a name and slot are defined for an`  
-`item, the plugin will attempt to swap the item into that slot (via the /exchange`  
-`command) and replace the original item when casting is complete.`  
+`The INI file allows you to specify items by name (with name=itemname), or by`
+`inventory slot (with slot=slotname). If both a name and slot are defined for an`
+`item, the plugin will attempt to swap the item into that slot (via the /exchange`
+`command) and replace the original item when casting is complete.`
 ````````` The example INI file below contains examples of the types of usage.\`````
 
 ### ini file example

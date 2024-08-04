@@ -26,6 +26,7 @@ _If you are not prepared for such circumstances, stop here and do not continue._
 * [Getting Started](main/README.md)
 * [Building MacroQuest](main/building.md)
 * [Macros/Snippets](macros/getting-started.md)
+* [Lua](lua/README.md)
 * [Plugins](plugins/README.md)
 
 ## Getting Help

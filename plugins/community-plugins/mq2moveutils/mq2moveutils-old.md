@@ -2,12 +2,12 @@
 
 ## Description
 
-**For updated plugin information see MQ2MoveUtils:v9.**  
+**For updated plugin information see MQ2MoveUtils:v9.**
 The information below applies to the 7.0518 and earlier versions of MQ2MoveUtils.
 
 MQ2MoveUtils is a very popular plugin which assists with most aspects of moving around within EQ. It has been worked on by a number of developers over the years \(tonio, CyberTech, Quagmire and Outlander\). For the history of this plugin and development notes please see [MQ2MoveUtils:History](mq2moveutils-history.md).
 
-The old forum thread for MQ2MoveUtils can be found [here](https://macroquest.org/phpBB3/viewtopic.php?t=11732), in the VIP forums. Source for the [version 7.0 MQ2MoveUtils](http://mq2.whyarewehappening.com/MQ2MoveUtils/archive/07.0518/) is available.
+The old forum thread for MQ2MoveUtils can be found [here](https://macroquest2.com/phpBB3/viewtopic.php?t=11732), in the VIP forums. Source for the [version 7.0 MQ2MoveUtils](http://mq2.whyarewehappening.com/MQ2MoveUtils/archive/07.0518/) is available.
 
 ## Features
 
@@ -341,19 +341,19 @@ A default INI file is created \(if it doesn't exist\) when you issue one of the 
 
 The \[Defaults\] section contains global defaults for all users. New sections can be added with character names as titles to override the default values. An example INI file is below, with explanations of the options underneath:
 
-`[Defaults]`  
-`AutoPause=on`  
-`BreakOnWarp=on`  
-`BreakDist=250.0`  
-`BreakOnGate=on`  
-`Verbosity=1`  
-`ManualPause=on`  
-`MinDelay=500`  
-`MaxDelay=5000`  
-`CampRadius=0.0`  
-`LeashLength=0.0`  
-`StuckLogic=on`  
-`stuckCheck=5`  
+`[Defaults]`
+`AutoPause=on`
+`BreakOnWarp=on`
+`BreakDist=250.0`
+`BreakOnGate=on`
+`Verbosity=1`
+`ManualPause=on`
+`MinDelay=500`
+`MaxDelay=5000`
+`CampRadius=0.0`
+`LeashLength=0.0`
+`StuckLogic=on`
+`stuckCheck=5`
 `stuckDist=0.1`
 
 * **AutoPause \[on/off\]**

@@ -6,7 +6,7 @@ event is used to specify strings to be triggered after you do /doevents
 
 ## Tutorial
 
-[http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&t=20199](http://www.macroquest.org/phpBB3/viewtopic.php?f=47&t=20199)
+[http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&t=20199](http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&t=20199)
 
 ### Tutorial Macro
 
@@ -80,7 +80,7 @@ This would have ${word1}=burn and ${word2}=*Your Target* as a local string varia
 
 ## Example Macro with Known Hit Messages
 
-* [http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&t=20198&p=173345\#p173345](http://www.macroquest.org/phpBB3/viewtopic.php?f=47&t=20198&p=173345#p173345)
+* [http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&t=20198&p=173345\#p173345](http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&t=20198&p=173345#p173345)
 
 ```text
 | hitsmode Normal

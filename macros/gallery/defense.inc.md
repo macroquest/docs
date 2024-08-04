@@ -12,7 +12,7 @@ There is no INI file to go with this, this is simply my version of what each cla
 
 Currently set up for use with AA, disc's, and BP clicks up to level 105. Currently set up for SK,Pal, and War.
 
-You can find the latest version [posted here](https://macroquest.org/phpBB3/viewtopic.php?f=49&t=19817)
+You can find the latest version [posted here](https://macroquest2.com/phpBB3/viewtopic.php?f=49&t=19817)
 
 ## Requirements
 
