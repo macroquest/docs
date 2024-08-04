@@ -13,4 +13,22 @@
 
 `^x keywords: Slowed Rooted Mezzed Crippled Maloed Tashed Snared and Beneficial`
 
--Using CachedBuff to get buff info on targets, group members etc, only requires you to target the entity once. after thats done, buffs are cached. -The upside is obviously that we don't have to target back and forth constantly.
+-Using CachedBuff to get buff info on targets, group members etc, only requires you to target the entity once. after thats done, buffs are cached. The upside is obviously that we don't have to target back and forth constantly.
+
+### Examples
+
+`${Group.Member[2].CachedBuff[Spirit of Wolf].Duration}`
+
+This will show the duration of the spirit of wolf on the second member of the group.
+
+`${Target.Clarity.Name}`
+
+This will show you the name of the clarity spell on your target
+
+`/cachedbuffs reset`
+
+This will clear the cached buffs for all targets.
+
+For more information on the `/cachedbuffs` command see [here](../../../reference/commands/cachedbuffs/).
+
+For more information on the `cachedbuff` datatype see [here](../../../reference/data-types/datatype-cachedbuff/)
