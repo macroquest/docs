@@ -6,7 +6,7 @@ tags:
 
 ## Description
 
-AutoLogin is a plugin that automatically logs in your characters. It can also switch characters, servers and login new accounts via commandline. It was originally made by [ieatacid](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=16427).
+AutoLogin is a plugin that automatically logs in your characters. It can also switch characters, servers and login new accounts via commandline. It was originally made by [ieatacid](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427).
 
 ## Setting up profiles via tray icon
 
@@ -16,12 +16,12 @@ Select Profiles-&gt;Create New.
 
 You'll be asked to enter nine fields:
 
-1. Profile Set: (This creates "groups" of profiles, enter any custom name) 
+1. Profile Set: (This creates "groups" of profiles, enter any custom name)
 2. EQ Path: (Path to eqgame.exe)
 3. Login: (EverQuest login)
 4. Password:  (EverQuest password)
 5. Server: (Server short name)
-6. Character Name: 
+6. Character Name:
 7. Class: (Optional)
 8. Level: (Optional)
 9. Hotkey: (Assign a key or combination of keys to bring this character's window to the front)
@@ -32,11 +32,11 @@ Upon clicking "Save", your profile will be encrypted and saved in MQ2AutoLogin.i
 
 `/switchserver <server short name> <character name>`
 
-Will log out your current character and log in the specified server/character on the same account. 
+Will log out your current character and log in the specified server/character on the same account.
 
 `/switchchar <name>`
 
-Will log out your current character and log in the specified character on the same account/server. 
+Will log out your current character and log in the specified character on the same account/server.
 
 `/loginchar [server:character|profile_server:character|server^login^character^password|server^login^password]`
 
@@ -50,7 +50,7 @@ Will log character out, and then log back in after specified time. Default time 
 
 Pressing the "END" key at the character select screen will pause autologin, "HOME" will unpause.
 
-## INI 
+## INI
 
 MQ2AutoLogin.ini has the following global settings,
 ```ini
@@ -74,9 +74,9 @@ UseStationNamesInsteadOfSessions=0
 If you're using `UseMQ2Login=1` and have created profiles via the tray icon, there will be additional sections such as `[Profiles]` and profile names. These should be left alone, as their settings are best changed via the GUI.
 
 ## Alternate login methods
-There are two alternate login methods: Sessions (compatible with the EverQuest launcher and "-patchme" login method) and Station Names (best for WinEQ and ISBoxer) 
+There are two alternate login methods: Sessions (compatible with the EverQuest launcher and "-patchme" login method) and Station Names (best for WinEQ and ISBoxer)
 
-If you'd like to use sessions, set `UseMQ2Login=0`, and add sessions to the MQ2AutoLogin.ini in this format, 
+If you'd like to use sessions, set `UseMQ2Login=0`, and add sessions to the MQ2AutoLogin.ini in this format,
 
 **Sessions example INI**
 ```ini
@@ -96,7 +96,7 @@ Server=ServerforSession
 Character=Name
 ```
 
-If you're using ISBoxer, set `UseMQ2Login=0` AND `UseStationNamesInsteadOfSessions=1`, and add station names to the MQ2AutoLogin.ini in this format, 
+If you're using ISBoxer, set `UseMQ2Login=0` AND `UseStationNamesInsteadOfSessions=1`, and add station names to the MQ2AutoLogin.ini in this format,
 
 **Station names example INI**
 ```ini
@@ -141,7 +141,7 @@ Additional settings from the global section, such as `KickActiveCharacter=1` can
     beta
 
 ## Custom server names
-To add a new server with a custom short name, which is particularly important for emulators, edit your MQ2AutoLogin.ini with the following format: 
+To add a new server with a custom short name, which is particularly important for emulators, edit your MQ2AutoLogin.ini with the following format:
 ```ini
 [Servers]
 shortname=Exact long name (as it appears on login screen)
@@ -149,7 +149,7 @@ shortname=Exact long name (as it appears on login screen)
 
 Make sure `shortname` matches servers internal shortname exactly.  You can get this information from logging into the server and running `/echo ${EverQuest.Server}`
 
-For example, here are the most popular macroquest-compatible emu servers as of 8/5/2022: 
+For example, here are the most popular macroquest-compatible emu servers as of 8/5/2022:
 ```ini
 ; Host=login.eqemulator.net
 [Servers]
@@ -200,7 +200,7 @@ If you make profiles via the tray icon GUI, they are encrypted in your MQ2AutoLo
 
 `Import/Export`
 
-This helps export and import login profiles, which are otherwise hard to decrypt. 
+This helps export and import login profiles, which are otherwise hard to decrypt.
 
 `Launch Clean`
 
