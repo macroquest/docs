@@ -8,7 +8,7 @@ Visual Studio Code ([Download](https://code.visualstudio.com/?wt.mc_id=vscom_dow
 ## Crimson Editor
 
 Crimson Editor ([Download](http://www.crimsoneditor.com/))
-[Crimson Editor Syntax](https://macroquest.org/phpBB3/viewtopic.php?f=3&t=3299)
+[Crimson Editor Syntax](https://macroquest2.com/phpBB3/viewtopic.php?f=3&t=3299)
 
 ## Notepad++
 
@@ -18,7 +18,7 @@ Notepad++ ([Download](https://notepad-plus-plus.org/))
 ## TextPad
 
 TextPad ([Download](https://www.textpad.com/home))
-[Textpad Syntax](https://macroquest.org/phpBB3/viewtopic.php?t=879)
+[Textpad Syntax](https://macroquest2.com/phpBB3/viewtopic.php?t=879)
 
 ## UltraEdit
 
