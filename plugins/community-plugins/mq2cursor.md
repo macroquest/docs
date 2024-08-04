@@ -7,7 +7,7 @@
 * It also tries to keep you above a certain hunger/thirst level (so that you don't eat your stat food).
 * Additionally, it can be used to loot your own corpse.
 
-MQ2Cursor can be found [here](https://macroquest.org/phpBB3/viewtopic.php?t=12368), in the VIP forums.
+MQ2Cursor can be found [here](https://macroquest2.com/phpBB3/viewtopic.php?t=12368), in the VIP forums.
 
 **Features:**
 

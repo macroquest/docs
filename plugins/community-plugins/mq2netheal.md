@@ -2,10 +2,10 @@
 
 ## Description
 
-MQ2NetHeal was written by s0rcier \(With Major Credits A\_Druid\_00 and pinkfloydx33\) and is found in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?t=12312).
+MQ2NetHeal was written by s0rcier \(With Major Credits A\_Druid\_00 and pinkfloydx33\) and is found in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?t=12312).
 
-MQ2NetHeal is used to provide more flexible way for macros, plugins and huds designers to access those information about healing and curing.  
-MQ2NetHeal has three sections. NetHeal,NetCure, and NetWorst.  
+MQ2NetHeal is used to provide more flexible way for macros, plugins and huds designers to access those information about healing and curing.
+MQ2NetHeal has three sections. NetHeal,NetCure, and NetWorst.
 \* MQ2NetHeal provides linked MQ2EQBC clients a method of sharing status and statistics.
 
 * It makes that information available via Top-Level Object members for macro writers and HUD designers.
@@ -157,7 +157,7 @@ Return how old is This?
 ### ${NetCure}
 
 * **Correct parameters are.**
-* **self,myself,pet,warder,spellid,spellidlist,${NetBots\[\].Buff}**  
+* **self,myself,pet,warder,spellid,spellidlist,${NetBots\[\].Buff}**
 * [_string_]() **${NetCure\[X\]}**
 
 Return list of harmfull effects.

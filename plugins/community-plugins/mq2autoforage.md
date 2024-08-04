@@ -6,7 +6,7 @@
 
 Simple plugin to automate the task of foraging (and eventually fishing).
 
-You can find the latest version of MQ2AutoForage [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=9588&hilit=MQ2AutoForage).
+You can find the latest version of MQ2AutoForage [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=9588&hilit=MQ2AutoForage).
 
 ## Commands
 

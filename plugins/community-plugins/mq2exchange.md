@@ -4,7 +4,7 @@
 
 **MQ2Exchange**, by Wassup, allows you to exchange items or unequip items without having any inventory windows or bags opened.
 
-The thread where this plugin began can be found in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?t=7603). The current code being maintained by pms can be found [here](https://macroquest.org/phpBB3/viewtopic.php?p=152499#p152499).
+The thread where this plugin began can be found in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?t=7603). The current code being maintained by pms can be found [here](https://macroquest2.com/phpBB3/viewtopic.php?p=152499#p152499).
 
 ## Commands
 

@@ -2,9 +2,9 @@
 
 ## Introduction
 
-[MQ2Cast](https://macroquest.org/phpBB3/viewtopic.php?t=12758) by s0rCieR and A\_Enchanter\_00 is a plugin to handle most things related to spell casting, item clicking and activating of AAs.
+[MQ2Cast](https://macroquest2.com/phpBB3/viewtopic.php?t=12758) by s0rCieR and A\_Enchanter\_00 is a plugin to handle most things related to spell casting, item clicking and activating of AAs.
 
-The official forum thread for MQ2Cast is [here](https://macroquest.org/phpBB3/viewtopic.php?t=12758) (VIP Only).
+The official forum thread for MQ2Cast is [here](https://macroquest2.com/phpBB3/viewtopic.php?t=12758) (VIP Only).
 
 ## Features
 
@@ -18,7 +18,7 @@ The official forum thread for MQ2Cast is [here](https://macroquest.org/phpBB3/vi
 
 ## Requirements
 
-[MQ2Bandolier](https://macroquest.org/phpBB3/viewtopic.php?t=12793) _For swapping in sets of items before casting (ie. focus items)_
+[MQ2Bandolier](https://macroquest2.com/phpBB3/viewtopic.php?t=12793) _For swapping in sets of items before casting (ie. focus items)_
 
 [MQ2Exchange](mq2exchange.md) _For equipping clickies before using them_
 

@@ -38,17 +38,17 @@ This isn't for the weak of heart. This include will allow you to do really aweso
 
 Add to your macro before main loop:
 
-`/declare numGem int outer`  
-`/declare OWgem int outer`  
+`/declare numGem int outer`
+`/declare OWgem int outer`
 `/call GemOpt`
 
 #### Subs for use within macro
 
 _/call GemMem ${SpellGem} ${SpellName} ${SpellGemState} ${MOWState}_
 
-`ex. /call GemMem ${NukeGem} ${Nuke} ${NukeStatus} TRUE`  
-`/call GemMem 4 "Ice Spear of Solist" TRUE FALSE`  
-`/call GemMem 0 "Complete Healing" FALSE ${CHAlwaysOW}`  
+`ex. /call GemMem ${NukeGem} ${Nuke} ${NukeStatus} TRUE`
+`/call GemMem 4 "Ice Spear of Solist" TRUE FALSE`
+`/call GemMem 0 "Complete Healing" FALSE ${CHAlwaysOW}`
 `/call GemMem 9 "Ancient: Hallowed Light" ${KeepAH} ${AHOverWrite}`
 
 * SpellNameHere must be a string, SpellGemHere must be a integer, SpellGemState must be TRUE/FALSE
@@ -73,9 +73,9 @@ _/call GemMem ${SpellGem} ${SpellName} ${SpellGemState} ${MOWState}_
 
 _/call GemEdit ${SpellName - OR - SpellGem}_
 
-`ex. /if (${SpGem[1,2]}) /call GemEdit 1`  
-`/call GemEdit "Complete Healing"`  
-`/call GemEdit ${QuickHeal}`  
+`ex. /if (${SpGem[1,2]}) /call GemEdit 1`
+`/call GemEdit "Complete Healing"`
+`/call GemEdit ${QuickHeal}`
 `/if (${Nuke.Equal[${SpGem[${NukeGem},1]}]}) /call GemEdit ${NukeGem}`
 
 * This sub is used to switch states of memorized spells or spell gems. IF the spell name isnt found, no change will
@@ -88,5 +88,5 @@ If you want access to the code for this include, you must donate to the dev's. T
 
 If you paid, you may of course just follow this link!!
 
-[Spell Gem Optimization Include](https://macroquest.org/phpBB3/viewtopic.php?t=13340) Note: This currently goes to the DRShmBot Page
+[Spell Gem Optimization Include](https://macroquest2.com/phpBB3/viewtopic.php?t=13340) Note: This currently goes to the DRShmBot Page
 

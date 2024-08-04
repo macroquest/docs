@@ -10,16 +10,16 @@ This plugin is no longer under active development and no new contributions have 
 
 * Link to the latest stable source: \[16-Nov-2016th patch fix by
 
-  trevyn\]\([https://macroquest.org/phpBB3/download/file.php?id=988](https://macroquest.org/phpBB3/download/file.php?id=988)\)
+  trevyn\]\([https://macroquest2.com/phpBB3/download/file.php?id=988](https://macroquest2.com/phpBB3/download/file.php?id=988)\)
 
 * Link to older sources: [MQ2MoveUtils v11.x Source](http://mq2.whyarewehappening.com/MQ2MoveUtils/)
 * Link to emulator version of the source that works with the December 19, 2008 client: \[MoveUtils v11 for EMU by
 
-  pms\]\([https://macroquest.org/phpBB3/viewtopic.php?p=155710\#p155710](https://macroquest.org/phpBB3/viewtopic.php?p=155710#p155710)\)
+  pms\]\([https://macroquest2.com/phpBB3/viewtopic.php?p=155710\#p155710](https://macroquest2.com/phpBB3/viewtopic.php?p=155710#p155710)\)
 
 * Link to current discussion thread: \[MQ2MoveUtils v16.x
 
-  Thread\]\([https://macroquest.org/phpBB3/viewtopic.php?t=15909](https://macroquest.org/phpBB3/viewtopic.php?t=15909)\)
+  Thread\]\([https://macroquest2.com/phpBB3/viewtopic.php?t=15909](https://macroquest2.com/phpBB3/viewtopic.php?t=15909)\)
 
 ### Development Notes
 
@@ -90,7 +90,7 @@ _These parameters can be used from any of the four main plugin commands \('/stic
 
 * * Outputs current verbosity flags setting \(this one displays even if totalsilence is enabled. too bad.\)
 
-=== Main Plugin Settings === _These setting parameters can be used from any of the four main plugin commands._  
+=== Main Plugin Settings === _These setting parameters can be used from any of the four main plugin commands._
 _The following can be used with_ **toggle** _or_ **set** _**name**_ **on \| off.**
 
 \* **/stick toggle** _**name**_
@@ -99,7 +99,7 @@ _The following can be used with_ **toggle** _or_ **set** _**name**_ **on \| off.
 
   off\*\*
 
-_**name**_ **can be one of the following:**  
+_**name**_ **can be one of the following:**
 \* **mpause \| mousepause**
 
 * * Pause current command if \[ keyboard \| mouse \] movement
@@ -313,7 +313,7 @@ _The following option is unique_
   * true: actual keypressing -- **does not work with wineq=on**
   * loose: simulated incremental turning -- fast: instantly set heading
 
-_The following 'set' commands require a numeric value, and can be used from any of the four main plugin commands. \(stick used for example purposes only\)_  
+_The following 'set' commands require a numeric value, and can be used from any of the four main plugin commands. \(stick used for example purposes only\)_
 \* **/stick set pulsecheck \#**
 
 * * Number of pulses used to calculate average movement distance in stucklogic
@@ -447,7 +447,7 @@ _The following 'set' commands require a numeric value, and can be used from any 
 * * Current plugin verbosity flags
   * Valid: see verbosity section near bottom of this wiki entry
 
-_The following settings are command-specific, use the command in the example only_  
+_The following settings are command-specific, use the command in the example only_
 \* **/stick set backupdist \#.\#\#**
 
 * * Range that stick will walk backwards instead of turning to face target, if useback enabled
@@ -786,7 +786,7 @@ _The circle command spins you in a circle. If you are like me, looking at this f
 
   * Read the \_set **name**\_section for explanation of what these parameters do
 
-=== Other Plugin Commands === _Less popular commands of MQ2MoveUtils_  
+=== Other Plugin Commands === _Less popular commands of MQ2MoveUtils_
 \* '''/calcangle
 
 * * Displays lots of basic numerical information related to moving such as Dist values, angular distance, 3D
@@ -1103,7 +1103,7 @@ This section is for default plugin settings
 
   alt keys and mouse buttons in background sessions
 
-**note: if WinEQ is enabled, true heading is NOT possible**  
+**note: if WinEQ is enabled, true heading is NOT possible**
 ==== \[Stick\] ==== This section is for settings related to _/stick_
 
 * _AlwaysUW=_ - on or off, if enabled stick will always use the 'uw' parameter as if it were typed inline

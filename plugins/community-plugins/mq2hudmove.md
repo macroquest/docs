@@ -2,7 +2,7 @@
 
 ## Description
 
-MQ2HUDMove by ieatacid allows you to move HUDs or sections of HUDs easily. The plugin can be downloaded [here](https://macroquest.org/phpBB3/viewtopic.php?t=9087).
+MQ2HUDMove by ieatacid allows you to move HUDs or sections of HUDs easily. The plugin can be downloaded [here](https://macroquest2.com/phpBB3/viewtopic.php?t=9087).
 
 * It requires the [MQ2HUD](../core-plugins/mq2hud/) plugin
 

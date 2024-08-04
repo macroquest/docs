@@ -4,7 +4,7 @@
 
 **MQ2Feedme**, by s0rCieR, is a plugin which will eat/drink items that you specify, in order to keep your hunger/thirst above a certain level (and thus not eat your stat food).
 
-* It can be found [here](https://macroquest.org/phpBB3/viewtopic.php?t=11490). \*\*An updated version of the plugin, with a few changes, can be found in [this](https://macroquest.org/phpBB3/viewtopic.php?t=11490&start=107) post by jaq.\*\*
+* It can be found [here](https://macroquest2.com/phpBB3/viewtopic.php?t=11490). \*\*An updated version of the plugin, with a few changes, can be found in [this](https://macroquest2.com/phpBB3/viewtopic.php?t=11490&start=107) post by jaq.\*\*
 
 ## Commands
 

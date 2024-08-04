@@ -14,7 +14,7 @@ This plugin shows spell and item data in the item display window.
 
 [**/inote**](inote.md)   **"Comment"** Add/delete a note to a specific item number. This information will be displayed within the item info window, under all the other information.
 
-### 
+###
 
 ## Top-Level Objects
 
@@ -39,20 +39,20 @@ In the following example, the line is broken into 4 for readability, in the MQ2I
 
 `0017910<br>Field.....Round....Large....Wood....16<br>Field.....Round....Medium.Wood...36<br>Field.....Parab.....Large....Wood...46<br>Field.....Round....Small...Wood....56<br>Field.....Round....Large...Bone.....68<br>Field.....Shield....Large...Wood....82<br>Hooked.Round....Large...Wood....102<br>Field.....Wood*...Large...Wood....122<br>Field.....Round....Large..Ceramic.135<br>Field.....Bone*....Large..Wood.....162<br>Silver....Round....Large..Wood.....182<br>Field....Ceramic*.Large..Wood.....202`
 
-The info displayed would look like this:  
-**Note:  
-Field.....Round....Large....Wood....16  
-Field.....Round....Medium.Wood...36  
-Field.....Parab.....Large....Wood...46  
-Field.....Round....Small...Wood....56  
-Field.....Round....Large...Bone.....68  
-Field.....Shield....Large...Wood....82  
-Hooked.Round....Large...Wood....102  
-Field.....Wood\*...Large...Wood....122  
-Field.....Round....Large..Ceramic.135  
-Field.....Bone\*....Large..Wood.....162  
-Silver....Round....Large..Wood.....182  
+The info displayed would look like this:
+**Note:
+Field.....Round....Large....Wood....16
+Field.....Round....Medium.Wood...36
+Field.....Parab.....Large....Wood...46
+Field.....Round....Small...Wood....56
+Field.....Round....Large...Bone.....68
+Field.....Shield....Large...Wood....82
+Hooked.Round....Large...Wood....102
+Field.....Wood\*...Large...Wood....122
+Field.....Round....Large..Ceramic.135
+Field.....Bone\*....Large..Wood.....162
+Silver....Round....Large..Wood.....182
 Field....Ceramic\*.Large..Wood.....202**
 
-See [here](https://macroquest.org/phpBB3/viewtopic.php?t=11549) and [here](https://macroquest.org/phpBB3/viewtopic.php?t=12022) \(VIP only\) for some user-contributed ini file entries.
+See [here](https://macroquest2.com/phpBB3/viewtopic.php?t=11549) and [here](https://macroquest2.com/phpBB3/viewtopic.php?t=12022) \(VIP only\) for some user-contributed ini file entries.
 

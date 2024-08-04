@@ -10,7 +10,7 @@ tags:
 
 ### Description
 
-[MQ2FPS](https://macroquest.org/phpBB3/viewtopic.php?t=8346) \(VIP only\) is a plugin that changes the frames per second of the Everquest screen when it is in focus and when it is in the background.
+[MQ2FPS](https://macroquest2.com/phpBB3/viewtopic.php?t=8346) \(VIP only\) is a plugin that changes the frames per second of the Everquest screen when it is in focus and when it is in the background.
 
 **Commands**
 
@@ -18,8 +18,8 @@ tags:
 * /render
 * /maxfps
 
-**/fps \[on\|off\]**  
-**/fps \[x\|y\]**  
+**/fps \[on\|off\]**
+**/fps \[x\|y\]**
 **/fps mode \[absolute\|calculate\]**
 
 * On/Off enables or disables the FPS display.
@@ -44,7 +44,7 @@ This sets the foreground or background rendering rate \(ie. how many frames will
  /render bg ~3             Draws 2 out of 3 frames
 ```
 
-**/maxfps \[ bg \| fg \] \[ \# \]**  
+**/maxfps \[ bg \| fg \] \[ \# \]**
 Sets the foreground or background framerate.
 
 **Example**
@@ -64,24 +64,24 @@ _fps_ [**FPS**](tlo-fps.md)
 
 ### Examples
 
-`/maxfps fg 25`  
-`/maxfps bg 25`  
-`/fps on`  
-`/fps mode absolute`  
-`/fps 10,25`  
-`/render fg 1`  
+`/maxfps fg 25`
+`/maxfps bg 25`
+`/fps on`
+`/fps mode absolute`
+`/fps 10,25`
+`/render fg 1`
 `/render bg 75`
 
 ### Sample INI File
 
-`ForegroundMaxFPS=25`  
-`BackgroundMaxFPS=25`  
-`Indicator=1`  
-`Mode=1`  
-`IndicatorX=10`  
-`IndicatorY=25`  
-`[Rendering]`  
-`FGRate=1`  
-`ReverseFGRate=0`  
-`BGRate=75`  
+`ForegroundMaxFPS=25`
+`BackgroundMaxFPS=25`
+`Indicator=1`
+`Mode=1`
+`IndicatorX=10`
+`IndicatorY=25`
+`[Rendering]`
+`FGRate=1`
+`ReverseFGRate=0`
+`BGRate=75`
 `ReverseBGRate=0`

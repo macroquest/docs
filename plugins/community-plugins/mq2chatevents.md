@@ -4,7 +4,7 @@
 
 **MQ2ChatEvents** The purpose of this plugin is to handle chat events in various ways. When a string (and optionally a corresponding color) is matched, several possible actions can be taken. Events are defined in the .ini file and can be enabled per character\_server. I've used this as a general replacement for in-game macros, Audio Triggers, and even some tasks I wanted available outside of a running MQ macro. I realize there are other plugins that do these various pieces individually, but I liked the idea of having it all under one configuration. Parts of the code were pieced together from other plugins and I tried to give credit where appropriate.
 
-You can find the latest version of MQ2ChatEvents [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=18906&hilit=mq2chatevents).
+You can find the latest version of MQ2ChatEvents [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=18906&hilit=mq2chatevents).
 
 ## Features
 

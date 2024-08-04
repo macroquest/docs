@@ -4,7 +4,7 @@
 
 **MQ2DPSAdv** CREATED BY WARNEN 2008-2009
 
-You can find the latest version of MQ2DPSAdv [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=16340&hilit=MQ2DPSAdv).
+You can find the latest version of MQ2DPSAdv [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16340&hilit=MQ2DPSAdv).
 
 ## Commands
 `/dpsadv show` - Shows the DPSAdv window.<br>

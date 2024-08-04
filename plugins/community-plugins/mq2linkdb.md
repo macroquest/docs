@@ -4,9 +4,9 @@
 
 MQ2LinkDB allows you to keep your own personalised database of item links. There are two versions of the plugin:
 
-* **v1:** The original, by Ziggy is available [here](https://macroquest.org/phpBB3/viewtopic.php?t=10375&start=0)
+* **v1:** The original, by Ziggy is available [here](https://macroquest2.com/phpBB3/viewtopic.php?t=10375&start=0)
 
-* **v2:** An updated version of the plugin, which includes a TLO and linkbot functionality, was created by rswiders and is available in the VIP Forums [here](https://macroquest.org/phpBB3/viewtopic.php?t=14876)
+* **v2:** An updated version of the plugin, which includes a TLO and linkbot functionality, was created by rswiders and is available in the VIP Forums [here](https://macroquest2.com/phpBB3/viewtopic.php?t=14876)
 
 ### Features
 

@@ -8,9 +8,9 @@ Author: PinkFloyd33 Author: s0rcier Version: 1.2 Date: 20061223 v2.0 - Eqmule 07
 
 ## MQ2Debuffs
 
-MQ2Debuffs was posted to the VIP section of MQ2 by pinkfloydx33 you can read the thread by following [This Link.](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=13495&hilit=debuff) (VIP REQUIRED)
+MQ2Debuffs was posted to the VIP section of MQ2 by pinkfloydx33 you can read the thread by following [This Link.](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=13495&hilit=debuff) (VIP REQUIRED)
 
-Updated Apr 03, 2016 by Trevyn [here](https://macroquest.org/phpBB3/viewtopic.php?f=50&t=13495&hilit=debuff&start=15) Updated July 22, 2016 by EQMule: included in MQ2Update
+Updated Apr 03, 2016 by Trevyn [here](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=13495&hilit=debuff&start=15) Updated July 22, 2016 by EQMule: included in MQ2Update
 
 ## Top-Level Object: ${Debuff}
 

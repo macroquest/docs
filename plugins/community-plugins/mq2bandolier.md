@@ -6,7 +6,7 @@
 
 * It requires [MQ2Exchange](mq2exchange.md) in order to perform the item swapping.
 
-You can find the source to the plugin in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?t=12793).
+You can find the source to the plugin in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?t=12793).
 
 ## Commands
 

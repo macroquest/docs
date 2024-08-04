@@ -18,7 +18,7 @@ This is the next evolution of MQ2Twist.
 * Automatically switch to maintaining 7 songs when Tune is up<br>
 * Switch from medley to medley while still remembering the duration of current songs. Named up? just do switch to your burn medley to introduce new songs to the mix, while knowing what songs are already up.<br>
 
-You can find the latest version of MQ2Medley [here](https://macroquest.org/phpBB3/viewtopic.php?f=31&t=19781).
+You can find the latest version of MQ2Medley [here](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=19781).
 
 ## Plugin Interaction
 
