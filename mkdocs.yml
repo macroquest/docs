@@ -60,8 +60,10 @@ nav:
   - Other Applications:
     - EQEmu: main/other-applications/eqemu.md
     - Text Editors: main/other-applications/text-editors/README.md
+    - Visual Studio Code Syntax File: main/other-applications/text-editors/vscode-syntax-file.md
     - Notepad++ Syntax File: main/other-applications/text-editors/notepadplusplus-syntax-file.md
     - UltraEdit Syntax File: main/other-applications/text-editors/ultraedit-syntax-file.md
+    - NeoVim Syntax File: main/other-applications/text-editors/nvim-syntax-file.md
 
 - Plugins:
   - plugins/README.md
