@@ -13,14 +13,14 @@
         <link rel="canonical" href="https://docs.macroquest.org/plugins/community-plugins/mq2cursor/">
       
       
-        <link rel="prev" href="../mq2clip/">
+        <link rel="prev" href="../mq2chatevents/">
       
       
-        <link rel="next" href="../mq2dps/">
+        <link rel="next" href="../mq2dpsadv/">
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.29">
+      <meta name="generator" content="mkdocs-1.6.0, mkdocs-material-9.5.31">
     
     
       
@@ -28,7 +28,7 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.76a95c52.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.3cba04c6.min.css">
       
         
         <link rel="stylesheet" href="../../../assets/stylesheets/palette.06af60db.min.css">
@@ -196,7 +196,7 @@
         <a href="https://github.com/macroquest/macroquest" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     MacroQuest
@@ -371,7 +371,7 @@
       <a href="https://github.com/macroquest/macroquest" title="Go to repository" class="md-source" data-md-component="source">
   <div class="md-source__icon md-icon">
     
-    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.5.2 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 496 512"><!--! Font Awesome Free 6.6.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2024 Fonticons, Inc.--><path d="M165.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6zm-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3zm44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9zM244.8 8C106.1 8 0 113.3 0 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C428.2 457.8 496 362.9 496 252 496 113.3 383.5 8 244.8 8zM97.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1zm-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7zm32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1zm-11.4-14.7c-1.6 1-1.6 3.6 0 5.9 1.6 2.3 4.3 3.3 5.6 2.3 1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2z"/></svg>
   </div>
   <div class="md-source__repository">
     MacroQuest
@@ -1251,6 +1251,10 @@
       
         
       
+        
+      
+        
+      
     
     
       
@@ -1320,6 +1324,27 @@
   
   
     <li class="md-nav__item">
+      <a href="../../../main/other-applications/text-editors/vscode-syntax-file/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    Visual Studio Code Syntax File
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
       <a href="../../../main/other-applications/text-editors/notepadplusplus-syntax-file/" class="md-nav__link">
         
   
@@ -1346,6 +1371,27 @@
   
   <span class="md-ellipsis">
     UltraEdit Syntax File
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../main/other-applications/text-editors/nvim-syntax-file/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    NeoVim Syntax File
   </span>
   
 
@@ -2564,10 +2610,6 @@
         
       
         
-      
-        
-      
-        
           
         
       
@@ -2894,27 +2936,6 @@
                 
   
   
-  
-  
-    <li class="md-nav__item">
-      <a href="../mq2clip/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    MQ2Clip
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
     
   
   
@@ -3006,27 +3027,6 @@
   
   
     <li class="md-nav__item">
-      <a href="../mq2dps/" class="md-nav__link">
-        
-  
-  <span class="md-ellipsis">
-    MQ2DPS
-  </span>
-  
-
-      </a>
-    </li>
-  
-
-              
-            
-              
-                
-  
-  
-  
-  
-    <li class="md-nav__item">
       <a href="../mq2dpsadv/" class="md-nav__link">
         
   
@@ -3069,7 +3069,7 @@
   
   
     <li class="md-nav__item">
-      <a href="../mq2cecho/" class="md-nav__link">
+      <a href="../mq2cecho.md" class="md-nav__link">
         
   
   <span class="md-ellipsis">
@@ -6546,6 +6546,8 @@
       
         
       
+        
+      
     
     
       
@@ -6757,6 +6759,27 @@
   
   <span class="md-ellipsis">
     /bind
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/commands/cachedbuffs/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    /cachedbuffs
   </span>
   
 
@@ -11089,6 +11112,8 @@
       
         
       
+        
+      
     
     
       
@@ -11751,6 +11776,27 @@
   
   <span class="md-ellipsis">
     float
+  </span>
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../../reference/data-types/datatype-framelimiter/" class="md-nav__link">
+        
+  
+  <span class="md-ellipsis">
+    framelmiter
   </span>
   
 
@@ -12904,54 +12950,38 @@
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p><strong>MQ2Cursor</strong> by s0rCieR is a plugin that tries to keep your cursor free of items. It was inspired by the plugins <a href="../mq2feedme/">MQ2FeedMe</a> and MQ2AutoDestroy.</p>
 <ul>
-<li>It also tries to keep you above a certain hunger/thirst level <span class="arithmatex">\(so that you don't eat your stat food\)</span>.</li>
+<li>It also tries to keep you above a certain hunger/thirst level (so that you don't eat your stat food).</li>
 <li>Additionally, it can be used to loot your own corpse.</li>
 </ul>
-<p>MQ2Cursor can be found <a href="https://macroquest.org/phpBB3/viewtopic.php?t=12368">here</a>, in the VIP forums.</p>
+<p>MQ2Cursor can be found <a href="https://macroquest2.com/phpBB3/viewtopic.php?t=12368">here</a>, in the VIP forums.</p>
 <p><strong>Features:</strong></p>
 <ul>
 <li>Auto Keep item from list up to a certain quantity.</li>
 <li>Consume, Drop, or Destroy when quantity is reached.</li>
-<li>Auto Sleep with certain windows are open (Spellbook, Casting, Bank, Give, Merchant, Trade, GuildTributemaster,</li>
-</ul>
-<p>TributeMaster, GuildBank, Inventory but not Loot window, Loot window but not Inventory).</p>
-<ul>
+<li>Auto Sleep with certain windows are open (Spellbook, Casting, Bank, Give, Merchant, Trade, GuildTributemaster, TributeMaster, GuildBank, Inventory but not Loot window, Loot window but not Inventory).</li>
 <li>Quiet/Silent Operating Mode and Global On/Off flags.</li>
 <li>Autoloot your corpse when loot Window Up.</li>
 </ul>
 <p>All settings are saved to the INI file _.ini.</p>
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
-<p><strong>/cursor on|off|auto</strong></p>
-<p>Turn plugin On/Off or Toggle</p>
-<p><strong>/cursor silent on|off|auto</strong></p>
-<p>Turn Quiet Mode On/Off or Toggle</p>
-<p><strong>/cursor feeding</strong></p>
-<p>Turn Feeding Mode On/Off or Toggle</p>
-<p><strong>/cursor dropping</strong></p>
-<p>Turn Dropping Mode On/Off or Toggle</p>
-<p><strong>/cursor load|save</strong></p>
-<p>Save/Load information from the INI file.</p>
-<p><strong>/cursor rem<span class="arithmatex">\(ove\)</span>|del<span class="arithmatex">\(ete\)</span> id</strong></p>
-<p>Remove ID or <span class="arithmatex">\(Item on Cursor\)</span>.</p>
-<p><strong>/cursor list <script type="math/tex; mode=display">partial name</script></strong></p>
-<p>List items in the cursor list along with their status <span class="arithmatex">\(drop, protected, etc\)</span>. A partial name can be supplied to further narrow down the list, but please remember that the partial name is case sensitive.</p>
-<p><strong>/cursor al<span class="arithmatex">\(l\(ways\)</span></strong></p>
-<p>Always keep those <span class="arithmatex">\(Item On Cursor\)</span>.</p>
-<p><strong>/cursor # <script type="math/tex; mode=display">st<span class="arithmatex">\(acks\)</span></script></strong></p>
-<p>Keep quantity # <span class="arithmatex">\(Item On Cursor\)</span>.</p>
-<p><strong>/cursor random #</strong></p>
-<p>Random humanish delay in ms 0=off.</p>
-<p><strong>/keep</strong></p>
-<p>Keep Item on Cursor <span class="arithmatex">\(and don't add it to the list\)</span>.</p>
-<p><strong>/lootme on|off|auto</strong></p>
-<p>Turn Plugin On/Off or Toggle.</p>
-<p><strong>/lootme silent on|off|auto</strong></p>
-<p>Turn Quiet Mode On/Off or Toggle.</p>
+<p><code>/cursor on|off|auto</code> - Turns on or off the plugin.<br>
+<code>/cursor silent on|off|auto</code> - Turn Quiet Mode On/Off or Toggle.<br>
+<code>/cursor feeding on|off|auto</code> - Turn Feeding Mode On/Off or Toggle.<br>
+<code>/cursor dropping on|off|auto</code> - Turn Dropping Mode On/Off or Toggle.<br>
+<code>/cursor load|save</code> - Load/Save information from the INI file.<br>
+<code>/cursor reim(ove)|del(ete) id</code> - Remove ID or (Item on Cursor).<br>
+<code>/cursor list [partial name]</code> - List items in the cursor list along with their status (drop, protected, etc). A partial name can be supplied to further narrow down the list, but please remember that the partial name is case sensitive.<br>
+<code>/cursor al(l(ways)</code> - Always keep those (Item On Cursor).<br>
+<code>/cursor # [st(acks)]</code> - Keep quantity (Item On Cursor).<br>
+<code>/cursor random #</code> - Random humanish delay in ms 0=off.<br>
+<code>/keep</code> - Keep Item on Cursor (and don't add it to the list).<br>
+<code>/lootme on|off|auto</code> - Turn Plugin On/Off or Toggle.<br>
+<code>/lootme silent on|off|auto</code> - Turn Quiet Mode On/Off or Toggle.<br></p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<p><code>/cursor 2 st</code><br />
-<code>/cursor rem 1685</code><br />
-<code>/cursor silent on</code><br />
-<code>/cursor list Water</code></p>
+<p><code>/cursor 2 st</code><br>
+<code>/cursor rem 1685</code><br>
+<code>/cursor silent on</code><br>
+<code>/cursor list Water</code><br></p>
 
 
 
