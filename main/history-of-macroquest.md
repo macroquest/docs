@@ -22,7 +22,7 @@ A little bit less than a month later he posted again, this time with a link to a
 
 ### MacroQuest 2
 
-Macroquest2 was developed from the existing MacroQuest project, initially by Lax. You may find the original post about MacroQuest2 replacing MacroQuest [here](https://macroquest.org/phpBB3/viewtopic.php?t=4023).
+Macroquest2 was developed from the existing MacroQuest project, initially by Lax. You may find the original post about MacroQuest2 replacing MacroQuest [here](https://macroquest2.com/phpBB3/viewtopic.php?t=4023).
 
 >  ***Post subject: Nonbelievers of Lax soon to be disproven!***
 >

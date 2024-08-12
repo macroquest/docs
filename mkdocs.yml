@@ -60,8 +60,10 @@ nav:
   - Other Applications:
     - EQEmu: main/other-applications/eqemu.md
     - Text Editors: main/other-applications/text-editors/README.md
+    - Visual Studio Code Syntax File: main/other-applications/text-editors/vscode-syntax-file.md
     - Notepad++ Syntax File: main/other-applications/text-editors/notepadplusplus-syntax-file.md
     - UltraEdit Syntax File: main/other-applications/text-editors/ultraedit-syntax-file.md
+    - NeoVim Syntax File: main/other-applications/text-editors/nvim-syntax-file.md
 
 - Plugins:
   - plugins/README.md
@@ -131,9 +133,7 @@ nav:
     - MQ2BuffTool: plugins/community-plugins/mq2bufftool.md
     - MQ2Cast: plugins/community-plugins/mq2cast.md
     - MQ2ChatEvents: plugins/community-plugins/mq2chatevents.md
-    - MQ2Clip: plugins/community-plugins/mq2clip.md
     - MQ2Cursor: plugins/community-plugins/mq2cursor.md
-    - MQ2DPS: plugins/community-plugins/mq2dps.md
     - MQ2DPSAdv: plugins/community-plugins/mq2dpsadv.md
     - MQ2Debuffs: plugins/community-plugins/mq2debuffs.md
     - MQ2Cecho: plugins/community-plugins/mq2cecho.md
@@ -291,6 +291,7 @@ nav:
       - /beep: reference/commands/beep.md
       - /beepontells: reference/commands/beepontells.md
       - /bind: reference/commands/bind.md
+      - /cachedbuffs: reference/commands/cachedbuffs.md
       - /caption: reference/commands/caption.md
       - /captioncolor: reference/commands/captioncolor.md
       - /cast: reference/commands/cast.md
@@ -509,6 +510,7 @@ nav:
     - fellowship: reference/data-types/datatype-fellowship.md
     - fellowshipmember: reference/data-types/datatype-fellowshipmember.md
     - float: reference/data-types/datatype-float.md
+    - framelmiter: reference/data-types/datatype-framelimiter.md
     - ground: reference/data-types/datatype-ground.md
     - group: reference/data-types/datatype-group.md
     - groupmember: reference/data-types/datatype-groupmember.md

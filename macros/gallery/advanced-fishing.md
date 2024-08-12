@@ -4,7 +4,7 @@ tags:
 ---
 # Advanced Fishing
 
-The Advanced Fishing macro by Panther can be obtained [here](https://macroquest.org/phpBB3/viewtopic.php?t=8084).
+The Advanced Fishing macro by Panther can be obtained [here](https://macroquest2.com/phpBB3/viewtopic.php?t=8084).
 
 ## Requirements
 

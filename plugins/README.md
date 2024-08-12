@@ -12,9 +12,9 @@ Plugins are written in C++ whereas macros use MQ2's internal scripting language.
 
 Plugins can be found in the following forum:
 
-[MQ2::Development::Plugins](https://macroquest.org/phpBB3/viewforum.php?f=31) (VIP Only)
+[MQ2::Development::Plugins](https://macroquest2.com/phpBB3/viewforum.php?f=31) (VIP Only)
 
-ImaNoob posted a very helpful thread [here.](https://macroquest.org/phpBB3/viewtopic.php?f=31&t=6310) (VIP Only) Titled appropriately "The Complete Idiots Guide to MQ2 and plugins"
+ImaNoob posted a very helpful thread [here.](https://macroquest2.com/phpBB3/viewtopic.php?f=31&t=6310) (VIP Only) Titled appropriately "The Complete Idiots Guide to MQ2 and plugins"
 
 ## Compiling Plugins
 
@@ -120,133 +120,125 @@ See [/plugin](../reference/commands/plugin.md) for information on loading and un
     <tr>
       <th style="text-align:left">
         <ul>
-          <li><a href="../plugins/community-plugins/mq2aapurchase.md">MQ2AAPurchase</a>
+          <li><a href="../plugins/community-plugins/mq2aapurchase/">MQ2AAPurchase</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2advpath.md">MQ2AdvPath</a>
+          <li><a href="../plugins/community-plugins/mq2advpath/">MQ2AdvPath</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2autoforage.md">MQ2AutoForage</a>
+          <li><a href="../plugins/community-plugins/mq2autoforage/">MQ2AutoForage</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2autogroup.md">MQ2AutoGroup</a>
+          <li><a href="../plugins/community-plugins/mq2autogroup/">MQ2AutoGroup</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2autologin.md">MQ2AutoLogin</a>
+          <li><a href="../plugins/core-plugins/mq2autologin/">MQ2AutoLogin</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2autosize.md">MQ2AutoSize</a>
+          <li><a href="../plugins/community-plugins/mq2autosize/">MQ2AutoSize</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2autoskills.md">MQ2AutoSkills</a>
+          <li><a href="../plugins/community-plugins/mq2autoskills/">MQ2AutoSkills</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2bandolier.md">MQ2Bandolier</a>
+          <li><a href="../plugins/community-plugins/mq2bandolier/">MQ2Bandolier</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2bufftool.md">MQ2BuffTool</a>
+          <li><a href="../plugins/community-plugins/mq2bufftool/">MQ2BuffTool</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2cast.md">MQ2Cast</a>
+          <li><a href="../plugins/community-plugins/mq2cast/">MQ2Cast</a>
           </li>
-          <li><a href>MQ2CEcho</a>
+          <li><a href="../plugins/core-plugins/mq2chat/">MQ2Chat</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2chat.md">MQ2Chat</a>
-          </li>
-          <li><a href="../plugins/community-plugins/mq2chatevents.md">MQ2ChatEvents</a>
+          <li><a href="../plugins/community-plugins/mq2chatevents/">MQ2ChatEvents</a>
           </li>
           <li><a href="../plugins/core-plugins/mq2chatwnd/">MQ2ChatWnd</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2clip.md">MQ2Clip</a>
-          </li>
-          <li><a href="../plugins/community-plugins/mq2cursor.md">MQ2Cursor</a>
+          <li><a href="../plugins/community-plugins/mq2cursor/">MQ2Cursor</a>
           </li>
           <li><a href="../plugins/core-plugins/mq2custombinds/">MQ2CustomBinds</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2debuffs.md">MQ2Debuffs</a>
+          <li><a href="../plugins/community-plugins/mq2debuffs/">MQ2Debuffs</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2dps.md">MQ2DPS</a>
+          <li><a href="../plugins/community-plugins/mq2dpsadv/">MQ2DPSAdv</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2dpsadv.md">MQ2DPSAdv</a>
+          <li><a href="../plugins/community-plugins/mq2eqbc/">MQ2EQBC</a>
           </li>
         </ul>
       </th>
       <th style="text-align:left">
         <ul>
-          <li><a href="../plugins/community-plugins/mq2eqbc/">MQ2EQBC</a>
-          </li>
-          <li><a href="../plugins/core-plugins/mq2eqbugfix.md">MQ2EQBugFix</a>
+          <li><a href="../plugins/core-plugins/mq2eqbugfix/">MQ2EQBugFix</a>
           </li>
           <li><a href="../plugins/discontinued/mq2eqim/">MQ2EQIM</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2events.md">MQ2Events</a>
+          <li><a href="../plugins/community-plugins/mq2events/">MQ2Events</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2exchange.md">MQ2Exchange</a>
+          <li><a href="../plugins/community-plugins/mq2exchange/">MQ2Exchange</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2eqbc/">MQ2EQBC</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2fakelink.md">MQ2FakeLink</a>
+          <li><a href="../plugins/community-plugins/mq2fakelink/">MQ2FakeLink</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2feedme.md">MQ2FeedMe</a>
+          <li><a href="../plugins/community-plugins/mq2feedme/">MQ2FeedMe</a>
           </li>
           <li><a href="../plugins/discontinued/mq2fps/">MQ2FPS</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2gmcheck.md">MQ2GMCheck</a>
+          <li><a href="../plugins/community-plugins/mq2gmcheck/">MQ2GMCheck</a>
           </li>
           <li><a href="../plugins/core-plugins/mq2hud/">MQ2HUD</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2hudmove.md">MQ2HUDMove</a>
+          <li><a href="../plugins/community-plugins/mq2hudmove/">MQ2HUDMove</a>
           </li>
           <li><a href="../plugins/discontinued/mq2irc/">MQ2IRC</a>
           </li>
           <li><a href="../plugins/core-plugins/mq2itemdisplay/">MQ2ItemDisplay</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2labels.md">MQ2Labels</a>
+          <li><a href="../plugins/core-plugins/mq2labels/">MQ2Labels</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2linkdb.md">MQ2Linkdb</a>
+          <li><a href="../plugins/community-plugins/mq2linkdb/">MQ2Linkdb</a>
           </li>
           <li><a href="../plugins/core-plugins/mq2map/">MQ2Map</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2melee.md">MQ2Melee</a>
+          <li><a href="../plugins/community-plugins/mq2melee/">MQ2Melee</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2medley.md">MQ2Medley</a>
+          <li><a href="../plugins/community-plugins/mq2medley/">MQ2Medley</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2melee.md">MQ2Melee</a>
+          <li><a href="../plugins/community-plugins/mq2melee/">MQ2Melee</a>
           </li>
         </ul>
       </th>
       <th style="text-align:left">
         <ul>
-          <li><a href="../plugins/community-plugins/mq2missing.md">MQ2Missing</a>
+          <li><a href="../plugins/community-plugins/mq2missing/">MQ2Missing</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2moveutils/">MQ2MoveUtils</a>
           </li>
-          <li><a href="MQ2MoveUtils:v11">MQ2MoveUtils:v11</a>
+          <li><a href="../plugins/community-plugins/mq2moveutils/mq2moveutils-v11-faq/">MQ2MoveUtils:v11</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2netbots.md">MQ2NetBots</a>
+          <li><a href="../plugins/community-plugins/mq2netbots/">MQ2NetBots</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2netheal.md">MQ2NetHeal</a>
+          <li><a href="../plugins/community-plugins/mq2netheal/">MQ2NetHeal</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2pq.md">MQ2PQ</a>
+          <li><a href="../plugins/community-plugins/mq2pq/">MQ2PQ</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2relaytells.md">MQ2RelayTells</a>
+          <li><a href="../plugins/community-plugins/mq2relaytells/">MQ2RelayTells</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2rez.md">MQ2Rez</a>
+          <li><a href="../plugins/community-plugins/mq2rez/">MQ2Rez</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2sound.md">MQ2Sound</a>
+          <li><a href="../plugins/community-plugins/mq2sound/">MQ2Sound</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2spawn.md">MQ2Spawn</a>
+          <li><a href="../plugins/community-plugins/mq2spawn/">MQ2Spawn</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2spawnmaster.md">MQ2SpawnMaster</a>
+          <li><a href="../plugins/community-plugins/mq2spawnmaster/">MQ2SpawnMaster</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2targets.md">MQ2Targets</a>
+          <li><a href="../plugins/community-plugins/mq2targets/">MQ2Targets</a>
           </li>
           <li><a href="../plugins/discontinued/mq2telnet/">MQ2Telnet</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2timer.md">MQ2Timer</a>
+          <li><a href="../plugins/community-plugins/mq2timestamp/">MQ2Timestamp</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2timestamp.md">MQ2Timestamp</a>
-          </li>
-          <li><a href="../plugins/community-plugins/mq2tracking.md">MQ2Tracking</a>
+          <li><a href="../plugins/community-plugins/mq2tracking/">MQ2Tracking</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2twist/">MQ2Twist</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2vendors.md">MQ2Vendors</a>
+          <li><a href="../plugins/community-plugins/mq2vendors/">MQ2Vendors</a>
           </li>
-          <li><a href="../plugins/discontinued/mq2web.md">MQ2Web</a>
+          <li><a href="../plugins/discontinued/mq2web/">MQ2Web</a>
           </li>
-          <li><a href="../plugins/community-plugins/mq2xptracker.md">MQ2XPTracker</a>
+          <li><a href="../plugins/community-plugins/mq2xptracker/">MQ2XPTracker</a>
           </li>
         </ul>
       </th>

@@ -22,7 +22,7 @@ The remainder of the article continues to focus on _botting_ and multi-botting, 
 
 ## Controlling bots
 
-Prior to MQ2 controlling bots was best handled by the creation of many specific hotkeys and moving between instances of EQ to click those hotkeys. MQ2 provides several macros such as [AutoBot.mac](../macros/gallery/autobot.mac.md) and [ModBot](../macros/gallery/modbot.md) and a plugin or two like [MQ2Melee](../plugins/community-plugins/mq2melee.md) that provide some ability for bots to act on their own.
+Prior to MQ controlling bots was best handled by the creation of many specific hotkeys and moving between instances of EQ to click those hotkeys. MQ provides several macros such as [AutoBot.mac](../macros/gallery/autobot.mac.md) and [ModBot](../macros/gallery/modbot.md) and a plugin or two like [MQ2Melee](../plugins/community-plugins/mq2melee.md) that provide some ability for bots to act on their own.
 
 ### Communication between EQ instances
 

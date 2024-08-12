@@ -15,9 +15,9 @@
 
 This plugin was originally written by Omnictrl, with ascii38 and pms providing maintenance for a period. The plugin and server currently have no active maintainer.
 
-The discussion thread regarding this plugin is found in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?t=12147).  
-The current client source release is located [here](https://macroquest.org/phpBB3/viewtopic.php?p=170061#p170061).  
-The current compiled server application, which also will compile and run on Linux, can be found at the link in [this post](https://macroquest.org/phpBB3/viewtopic.php?p=161994#p161994).
+The discussion thread regarding this plugin is found in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?t=12147).
+The current client source release is located [here](https://macroquest2.com/phpBB3/viewtopic.php?p=170061#p170061).
+The current compiled server application, which also will compile and run on Linux, can be found at the link in [this post](https://macroquest2.com/phpBB3/viewtopic.php?p=161994#p161994).
 
 For the development history of this plugin see the article [here](mq2eqbc-revisions.md).
 
@@ -38,15 +38,15 @@ For the development history of this plugin see the article [here](mq2eqbc-revisi
 
 #### /bccmd
 
-* **/bccmd** connect   
+* **/bccmd** connect
 
 Connect to _server_ on _port_ using _password_ \(defaults: 127.0.0.1 2112\). **Note:** Once you connect, it will remember that connection, so next time you just have to type: _/bccmd connect_
 
-* **/bccmd** forceconnect   
+* **/bccmd** forceconnect
 
 Connect to _server_ on _port_ using _password_ \(defaults: 127.0.0.1 2112\). This differs from _connect_ in that it works while already connected to a server.
 
-* **/bccmd** iniconnect 
+* **/bccmd** iniconnect
 
 Connect to a server by ini key name using information defined in your MQ2EQBC.ini file. Example:
 
@@ -166,7 +166,7 @@ Set the number of seconds to wait until reconnecting \(default 15\)
 
 Stop trying to reconnect for now
 
-* **/bccmd** channels 
+* **/bccmd** channels
 
 Set the list of channels to receive tells from.
 
@@ -222,7 +222,7 @@ Clears the buffer of the UI window, similar to the [/mqclear](../../core-plugins
 
 ### Configuration File
 
-The EQBC client will create the configuration file **MQ2EQBC.ini** in your root MQ2 folder.  
+The EQBC client will create the configuration file **MQ2EQBC.ini** in your root MQ2 folder.
 An example of this configuration file is as follows:
 
 ```text
@@ -364,7 +364,7 @@ C:\> eqbcs ftp          Does not work, it does not look up service names to map 
 
 #### Compiling EQBCS \(Windows\)
 
-'''This guide for compiling EQBCS for Windows is credited to Tinydru from [this post](https://macroquest.org/phpBB3/viewtopic.php?p=108811#108811)
+'''This guide for compiling EQBCS for Windows is credited to Tinydru from [this post](https://macroquest2.com/phpBB3/viewtopic.php?p=108811#108811)
 
 ## Copy the two parts of the eqbsc post in to a single eqbcs.cpp file \(you can just use Notepad to do this - just
 
@@ -423,7 +423,7 @@ remember to replace the .txt extension with .cpp\).
 
 #### Compiling EQBCS \(Windows cmd line\)
 
-'''This guide for compiling EQBCS from the Windows cmd line is credited to dont\_know\_at\_all from [this post](https://macroquest.org/phpBB3/viewtopic.php?p=145001#145001)
+'''This guide for compiling EQBCS from the Windows cmd line is credited to dont\_know\_at\_all from [this post](https://macroquest2.com/phpBB3/viewtopic.php?p=145001#145001)
 
 ## ctrl-esc Run
 
@@ -433,7 +433,7 @@ remember to replace the .txt extension with .cpp\).
 4. cl eqbcs.cpp
 5. that's it.
 
-=== Compiling EQBCS \(Linux\) === '''This guide for compiling EQBCS for Linux is credited to ascii38 from [this post](https://macroquest.org/phpBB3/viewtopic.php?p=144868#144868)
+=== Compiling EQBCS \(Linux\) === '''This guide for compiling EQBCS for Linux is credited to ascii38 from [this post](https://macroquest2.com/phpBB3/viewtopic.php?p=144868#144868)
 
 ## g++ -fpermissive eqbcs.cpp -o eqbcs
 
@@ -495,8 +495,8 @@ C:\MQ2\eqbcs.exe
 
 ### EQBC Interface
 
-EQBC Interface is an application developed by ieatacid to allow communication with EQBCS outside of the EverQuest game client.  
-The discussion thread for this application is found in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?t=15835).  
+EQBC Interface is an application developed by ieatacid to allow communication with EQBCS outside of the EverQuest game client.
+The discussion thread for this application is found in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?t=15835).
 The most recent release of this application also allows you to view detailed information about characters connected to your server by selecting their name, which will display their statistics on the right-hand side of EQBC Interface. The interval of how often to poll the selected character is configurable by the user so that this information can be very close to real-time.
 
-Jimbob extended the functionality of this program in July 2015. The discussion thread for his fork of the project is found in the VIP forums [here](https://macroquest.org/phpBB3/viewtopic.php?p=169990#p169990).
+Jimbob extended the functionality of this program in July 2015. The discussion thread for his fork of the project is found in the VIP forums [here](https://macroquest2.com/phpBB3/viewtopic.php?p=169990#p169990).

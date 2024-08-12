@@ -17,8 +17,8 @@ tags:
   clicking of an item.
 
 * As with many of the inc files on the forums, there are 2 versions of spell\_routines.inc:
-* [Non-VIP](https://macroquest.org/phpBB3/viewtopic.php?t=7568). This is the original from ~rusty.
-* [VIP](https://macroquest.org/phpBB3/viewtopic.php?t=11656). This is the updated version, maintained by A\_Druid\_00.
+* [Non-VIP](https://macroquest2.com/phpBB3/viewtopic.php?t=7568). This is the original from ~rusty.
+* [VIP](https://macroquest2.com/phpBB3/viewtopic.php?t=11656). This is the updated version, maintained by A\_Druid\_00.
 * The VIP version has been improved slightly and it a bit smaller (and thus faster). It also improves speed by making use of the MQ2Exchange plugin which is available in the VIP area. Both versions are interchangeable, and there are only minor differences between them. Both are fully functional.
 
 ## Usage
@@ -39,9 +39,9 @@ This will cast a spell or AA, or click an item.
 
 **Examples:**
 
-`/call Cast "Complete Healing" | Cast Complete Healing if it is memmed`  
-`/call Cast "Arcane Rune" gem5 7s | Cast Arcane Rune, memorizing it in gem5 if not already, and keep casting for 7s in case of interrupts`  
-`/call Cast "Eldritch Rune" alt | Cast Eldritch Rune`  
+`/call Cast "Complete Healing" | Cast Complete Healing if it is memmed`
+`/call Cast "Arcane Rune" gem5 7s | Cast Arcane Rune, memorizing it in gem5 if not already, and keep casting for 7s in case of interrupts`
+`/call Cast "Eldritch Rune" alt | Cast Eldritch Rune`
 `/call Cast "173" alt | Cast Eldritch Rune`
 
 The most useful part about this routine is the custom subroutine. Take the following example:
@@ -50,8 +50,8 @@ The most useful part about this routine is the custom subroutine. Take the follo
 
 The CheckHP subroutine is as follows:
 
-`Sub CheckHP`  
-`/if ( ${Target.PctHPs}>=80 ) /call Interrupt`  
+`Sub CheckHP`
+`/if ( ${Target.PctHPs}>=80 ) /call Interrupt`
 `/return`
 
 This will continuously /call the CheckHP subroutine while the spell is casting, and if the target's HPs rise above 80% (ie. they got a heal from someone else), it will interrupt the casting.
@@ -76,9 +76,9 @@ This will equip an item into the slot you specify. It returns "old item\|slotnam
 
 Note the following example:
 
-`/call EquipItem "Sharp Ended Broken Lever"`  
-`/declare olditem string outer ${Macro.Return}`  
-`| Do something with your new main hand...`  
+`/call EquipItem "Sharp Ended Broken Lever"`
+`/declare olditem string outer ${Macro.Return}`
+`| Do something with your new main hand...`
 `/call EquipItem "${Macro.Return}"`
 
 ## /call Interrupt
@@ -123,8 +123,8 @@ This will make it return CAST\_INVIS if you're invis
 
 * Below is a list of outer scope variables you can access in your macros:
 
-`refreshTime | How much time is left till you're done recovering from casting`  
-`castEndTime | How much time left till you're done casting the current spell... usable in custom spell Subs`  
-`spellNotHold | 1 if your last spell didn't take hold, 0 otherwise`  
+`refreshTime | How much time is left till you're done recovering from casting`
+`castEndTime | How much time left till you're done casting the current spell... usable in custom spell Subs`
+`spellNotHold | 1 if your last spell didn't take hold, 0 otherwise`
 `spellRecastTime1-9 | How much time left until the spell is back up`
 

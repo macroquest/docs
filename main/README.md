@@ -54,13 +54,13 @@ A full list is available on the [Slash Commands](../reference/commands/) page.
 
 * [NamingSpawn](features/namingspawn.md) Article about manipulating the ini
 
-## Macros and Plugins
+## Macros, Plugins, and Lua
 
 ### Macros
 
 You can load a macro with the following command:
 
-``/macro`<arguments>``eg. /macro autobot\`
+`/macro <arguments>` e.g. `/macro autobot`
 
 To end a macro, use this command:
 
@@ -74,15 +74,29 @@ MQ plugins are modular and can be loaded and unloaded on demand.
 
 To load a plugin, type:
 
-`/plugin`  
+`/plugin`
 `eg. /plugin mq2melee`
 
 To unload a plugin:
 
-`/pluginunload`  
+`/pluginunload`
 `eg. /plugin mq2melee unload`
 
 See the [Plugins](../plugins/README.md) section for further information on plugins, and [/plugin](../reference/commands/plugin.md) for starting and stopping.
+
+### Lua
+
+You can start a Lua script with the following command:
+
+`/lua run <arguments>` e.g. `/lua run eval`
+
+You can stop a Lua script with the following command:
+
+`/lua stop <arguments>` e.g. `/lua stop eval`
+
+Lua is a more advanced scripting language than Macros, and is capable of running multiple scripts simultaneously.
+
+For more information on Lua, see the [Lua](../lua/README.md) page.
 
 ## Custom UIs
 

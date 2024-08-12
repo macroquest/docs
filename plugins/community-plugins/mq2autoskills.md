@@ -27,59 +27,36 @@ Currently supported skills are:
 * Taunt
 * Tiger Claw
 
-The plugin can be downloaded from [here](https://macroquest.org/phpBB3/viewtopic.php?t=9079).
+The plugin can be downloaded from [here](https://macroquest2.com/phpBB3/viewtopic.php?t=9079).
 
-'**'Note:** This plugin was developed many years ago and has been superceded by other more fully-featured plugins, the most popular being [MQ2Melee](mq2melee.md).
+**Note:** This plugin was developed many years ago and has been superceded by other more fully-featured plugins, the most popular being [MQ2Melee](mq2melee.md).
 
 ## Commands
 
 In order for MQ2AutoSkills to use any of your skills, you must have the skill mapped to an ability button.
 
-* **/autoskills help**
-
-This lists all options
-
-* **/autoskills list**
-
-List available skills and whether they are enabled
-
-* **/autoskills settings**
-
-List settings/thresholds
-
-* **/autoskills backoff \[\#\]**
-
-%HP at which to not re-engage after FD/Evade
-
-* **/autoskills melee \[\#\]**
-
-Range to be considered "in melee range"
-
-* **/autoskills mendhp \[\#\]**
-
-%HP at which to use the mend ability
-
-* **/autoskills \[skill\]**
-
-Toggle a skill on/off and update the INI
-
-* **/autoskills \[skill\] \[on\|off\]**
-
-Enable/disable a skill
+`/autoskills help` - This lists all options<br>
+`/autoskills list` - List available skills and whether they are enabled<br>
+`/autoskills settings` - List settings/thresholds<br>
+`/autoskills backoff [#]` - %HP at which to not re-engage after FD/Evade<br>
+`/autoskills melee [#]` - Range to be considered "in melee range"<br>
+`/autoskills mendhp [#]` - %HP at which to use the mend ability<br>
+`/autoskills [skill]` - Toggle a skill on/off and update the INI<br>
+`/autoskills [skill] [on|off]` - Enable/disable a skill<br>
 
 ## Examples
 
 * For a Warrior, you could use something like the following
 
-`/autoskills taunt`  
-`/autoskills bash`  
-`/autoskills melee 15`
+`/autoskills taunt`<br>
+`/autoskills bash`<br>
+`/autoskills melee 15`<br>
 
 * For a Berserker , trying to optimize dps while watching cooldown timers
 
-`/autoskills Frenzy`  
-`/autoskills Volley`  
-`/autoskills War Cry`
+`/autoskills Frenzy`<br>
+`/autoskills Volley`<br>
+`/autoskills War Cry`<br>
 
 ## Bugs
 

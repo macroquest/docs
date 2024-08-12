@@ -13,20 +13,13 @@ In order to use these built-in variables, you need to pick a Top-Level Object to
 Say you want to display your current Mana Percentage in a [HUD](../plugins/core-plugins/mq2hud/README.md) or use it in a macro.
 
 * First off, you look through the [list of TLOs](../reference/top-level-objects/README.md) and pick one that best suits the information you're looking for. The [Me TLO](../reference/top-level-objects/tlo-me.md) looks like a good bet.
-* Opening that page, you see that the Me TLO has access to the [_character_](../reference/data-types/datatype-character.md) datatype
-
-  and the [_spawn_](../reference/data-types/datatype-spawn.md) datatype. The _character_ datatype contains information about your own
-
-  character, mostly things that only you will know (eg. how much mana you have, what spells you have loaded, etc).
-
-  Since your character is also a spawn in the EQ world (ie. other people can see you and interact with you), you are also able to access the _spawn_ datatype, which gives information that other characters in the same zone may know (eg. your location, your race, your class, etc).
-
+* Opening that page, you see that the Me TLO has access to the [_character_](../reference/data-types/datatype-character.md) datatype and the [_spawn_](../reference/data-types/datatype-spawn.md) datatype. The _character_ datatype contains information about your own character, mostly things that only you will know (eg. how much mana you have, what spells you have loaded, etc). Since your character is also a spawn in the EQ world (ie. other people can see you and interact with you), you are also able to access the _spawn_ datatype, which gives information that other characters in the same zone may know (eg. your location, your race, your class, etc).
 * Since we're looking for your Mana Percentage, this is something that only you can know, so choose the _character_ datatype page.
 * This will display a list of all the members that are available to _character_. In the front of each datatype is an italic word, which is the datatype that the member belongs to. It may seem a bit confusing right now but should get easier as we progress to more complex examples.
 * Scroll down the list until you find a member that looks like it will give us what we need. The **PctMana** member looks good.
 * The _int_ in front of **PctMana** shows that it is an integer. Since we're expecting a number, this seems correct.
 * Click on the [_int_](../reference/data-types/datatype-int.md) link and you'll notice another table similar to the _character_ datatype. This table has all the members of the _int_ datatype. Note that the bottom line of the list is **To String_*, which is the default for the datatype. The default for the_ int* datatype is the number. Since we're just looking for the number, we can stop here.
-* So now we can "build" our variable. Remember, all variables start with a $-sign and are surrounded by braces { }. 
+* So now we can "build" our variable. Remember, all variables start with a $-sign and are surrounded by braces { }.
 
 We start with our TLO:
 
@@ -109,7 +102,7 @@ For the next example, we will use the variable and compare it to a string in an 
 * But this is actually an /if statement, and we need to close that off to, so lets make it echo something if we're a bard.
 
 ```
-/if (${Me.Class.ShortName.Equal[BRD]}) {  
+/if (${Me.Class.ShortName.Equal[BRD]}) {
   /echo Catch me if you can!
 }
 ```
@@ -117,9 +110,9 @@ For the next example, we will use the variable and compare it to a string in an 
 * We'll flesh this out a bit more by echoing one thing if we're a bard and another if we're not:
 
 ```
-/if (${Me.Class.ShortName.Equal[BRD]}) {  
-  /echo Catch me if you can!  
-} else {  
+/if (${Me.Class.ShortName.Equal[BRD]}) {
+  /echo Catch me if you can!
+} else {
   /echo Nerf bards!
 }
 ```
