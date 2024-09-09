@@ -71,7 +71,7 @@ git clone -b master https://github.com/RedGuides/MQ2GroupInfo.git plugins/MQ2Gro
 git clone -b master https://github.com/RedGuides/MQ2HeadShot.git plugins/MQ2HeadShot
 git clone -b master https://github.com/RedGuides/MQ2HUDMove.git plugins/MQ2HUDMove
 git clone -b master https://github.com/RedGuides/MQ2Ice.git plugins/MQ2Ice
-git clone -b main https://gitlab.com/Ortster/MQItemColor.git plugins/MQItemColor
+git clone -b main https://github.com/RedGuides/MQItemColor.git plugins/MQItemColor
 git clone -b master https://github.com/RedGuides/MQ2ItemScore.git plugins/MQ2ItemScore
 git clone -b master https://github.com/RedGuides/MQ2KillTracker.git plugins/MQ2KillTracker
 git clone -b master https://github.com/RedGuides/MQ2KissTemplate.git plugins/MQ2KissTemplate
