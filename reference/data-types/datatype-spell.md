@@ -142,7 +142,7 @@ This is the type used for spell information.
 
 ### {{ renderMember(type='bool', name='HasSPA', params='#') }}
 
-:   ???
+:   Returns true if the spell has a spell effect corresponding to the # parameter.  Example ${Spell\[Cascading Darkness].HasSPA\[3]} would return true.  (See https://docs.eqemu.io/server/spells/spell-effect-ids/ for a list of spell effect ids on emulator.  Unsure about a live list).  Common ones to check for immunities could be: Snare - 3, Slow - 11, 98, 371, Mez - 31, Stun - 21, 64 (spin)
 
 ### {{ renderMember(type='int', name='HastePct') }}
 
