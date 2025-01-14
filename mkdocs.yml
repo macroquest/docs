@@ -271,6 +271,7 @@ nav:
 
   - General Information:
     - Animations: reference/general/animations.md
+    - Body Types: reference/general/body-types.md
     - Containers List: reference/general/containers-list.md
     - Languages: reference/general/languages.md
     - List of spawn heights: reference/general/list-of-spawn-heights.md
@@ -290,7 +291,9 @@ nav:
       - /banklist: reference/commands/banklist.md
       - /beep: reference/commands/beep.md
       - /beepontells: reference/commands/beepontells.md
+      - /benchmark: reference/commands/benchmark.md
       - /bind: reference/commands/bind.md
+      - /buyitem: reference/commands/buyitem.md
       - /cachedbuffs: reference/commands/cachedbuffs.md
       - /caption: reference/commands/caption.md
       - /captioncolor: reference/commands/captioncolor.md
@@ -563,6 +566,9 @@ nav:
 
 
 - Change Log: https://github.com/macroquest/macroquest/blob/master/data/resources/CHANGELOG.md" target="_blank
+
+validation:
+  unrecognized_links: ignore # Since we use README.md rather than index.md, mkdocs thinks we have a lot of unrecognized links.
 
 # Theme
 theme:

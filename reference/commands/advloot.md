@@ -6,29 +6,40 @@ tags:
 
 ## Syntax
 
-**/advloot [personal/shared\] \[\#(index) or "item name"\] \[window commands\] \[option** _**command]**_
-
-|  |  |
-| :--- | :--- |
-| **Window Commands** | **Descritpion** |
-| **giveto** | Gives item to that character IE "/advloot share 1 giveto billybob" |
-| **leave** | Leaves the item on the corpse (Note: to unlock the corpse from timer, ALL items related to that corpse must be looted or left on it) |
-|  |  |
+**/advloot {personal | shared} {set |** _"item name"_ **|** _#index_ **}** _window option_ **[** _quantity_ **]**
 
 ## Description
 
-Used for sending commands to the AdvLoot window (some require you to be the master looter)
+Extends EverQuest's `/advloot` command to allow control of the advloot window, including item-specific control.
+
+
+### Personal Loot Window
+
+**Options:**
+
+* `item`, `name`, `loot`, `leave`, `an`, `ag`, `never`
+
+### Shared Loot Window
+
+**Options:**
+
+* `item`, `name`, `status`, `action`, `manage`, `autoroll`, `nd`, `gd`, `no`, `an`, `ag`, `nv`
+
+**Window Commands:**
+
+* `giveto <name> [<quantity>]` - Give to player (must be in group/raid)
+* `leave` - Leaves the item on the corpse (Note: to unlock the corpse from timer, ALL items related to that corpse must be looted or left on it)
+* `set <option>` - Option from the "Set all to:" combo box. Can be a player name or any of the other names that exist in that combo box
 
 ## Examples
 
-|  |  |
-| :--- | :--- |
-| **Command** | **Description** |
-| **/advloot shared 1 leave** | If you are the Master Looter this will cause item 1 on the share loot list to be left on the corpse |
-| **/advloot shared "spiderling silk" leave** | If you are the Master Looter this will cause the first "spiderling silk" it finds in the shared list to be left on the corpse... |
-| **/advloot shared 3 ag** | That will select AG on the shared loot list for item 3 |
-| **/advloot shared 1 giveto** _**player**_ **1** | If you are the Master Looter this will take the item 1 from the Shared list and give it to _player_ |
-|  |  |
+| Command | Description |
+|---------|-------------|
+| `/advloot shared 2 leave` | Leave second item on corpse |
+| `/advloot shared "spiderling silk" leave` | Leave first matching silk on corpse |
+| `/advloot personal 3 ag` | Set third item to Always Greed |
+| `/advloot shared 1 giveto brainiac 10` | Give 10 of first item to brainiac |
+
 
 
 

@@ -6,6 +6,8 @@ tags:
 
 Describes an aura.
 
+## Members
+
 ### {{ renderMember(type='int', name='ID') }}
 
 :   ID of the Aura

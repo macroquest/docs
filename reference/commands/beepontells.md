@@ -6,9 +6,17 @@ tags:
 
 ## Syntax
 
-**/beepontells**
+**/beepontells [on|off]**
 
 ## Description
 
-Is a toggle, can be set in MacroQuest.ini BeepOnTells=1 in the [MacroQuest] section. well... thats what it does, u get a tell... it beeps..
+Beeps when you receive a tell from another player. If no parameter is provided, it toggles the current setting.
 
+## Notes
+
+- The setting is saved in MacroQuest.ini under the [MacroQuest] section as `BeepOnTells=1` or `BeepOnTells=0`
+- Only triggers on tells from other players (ignores tells from NPCs, merchants, and your own pet)
+
+## See Also
+
+- [/flashontells](../commands/flashontells.md) - Controls window flashing on tells

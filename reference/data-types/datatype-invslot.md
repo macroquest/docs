@@ -6,7 +6,7 @@ tags:
 
 Data related to an inventory slot.
 
-### Members
+## Members
 
 ### {{ renderMember(type='int', name='ID') }}
 

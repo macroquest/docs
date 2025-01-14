@@ -27,7 +27,7 @@ classDiagram
 
 :   _Nth_ item on the corpse
 
-### [item][item] `Item [name]`
+### {{ renderMember(type='item', name='Item', params='name') }}
 
 :   Finds an item by partial _name_ in this corpse (use `=<name>` for exact match)
 

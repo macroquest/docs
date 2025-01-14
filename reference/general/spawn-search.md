@@ -1,131 +1,80 @@
-
 # Spawn Search
 
-All [Top-Level Objects](../top-level-objects/README.md) and [Data Types](../data-types/README.md) that support searching for spawns, can take the following options:
+All [Top-Level Objects](../top-level-objects/), [Data Types](../data-types/) and [Commands](../commands/) that support searching for spawns can take the following options:
 
 | Parameter | Description |
 | :--- | :--- |
-| **alert \#** | Any spawns on the alert list \# |
+| _**Anything Else**_ | Anything not matched below is considered a **name** |
+| **=** | Exact name |
+| _#_ | Any number is considered the minimum level |
+| **alert** _#_ | Spawns on your alert list _#_ |
+| **any** | All types |
 | **aura** | Auras |
-| **body** _bodytype_ | Spawns with the specified _bodytype_ |
+| **banker** | NPC bankers |
+| **banner** | Banners |
+| **body** _bodytype_ | Spawns with the specified [_bodytype_](..general/body-types.md) |
+| **campfire** | Campfires |
 | **chest** | Chests |
 | **class** _classname_ | Spawns with this class name (long name) |
 | **corpse** | Corpses |
-| **dps** | Returns Wizards, Rangers and Rogues |
-| **fellowship** | includes toons in your fellowship that is in zone |
-| **gm** | GMs and Guides |
+| **dps** | Returns Wizards, Rangers, Berserkers and Rogues |
+| **fellowship** | Characters in your fellowship |
+| **flyer** | Flying monsters |
+| **gm** | GMs and Guides who have chosen to be visible |
 | **group** | Group members |
-| **guildname** _name_ | Members of _name_ guild |
-| **guildname** | Members of your own guild |
-| **healer** | Returns Druids and Clerics |
-| **id \#** | Spawn with ID \# |
-| **invis** | Invisible spawns |
+| **guild** | Returns spawns in your own guild |
+| **guildname** _name_ | Returns spawns with the specified guild name, if blank, returns players with any guild name.  |
+| **healer** | Returns Druids, Clerics and Shaman |
+| **id** _#_ | Spawn with ID _#_ |
 | **knight** | Returns Paladins and Shadow Knights |
 | **lfg** | All spawns Looking For Group |
 | **light** _lightsource_ | Spawns with the specified _lightsource_ |
-| **loc \#x \#y [\#z]** | Spawn at the specified loc, Z is optional, if Z is not supplied it will use your current Z. (note: you must use radius with this keyword) |
-| **los** | Spawns in Line of Sight (from your point of view) |
-| **mercenary** | Spawn which is a mercenary |
+| **loc** _#x_ _#y_ [_#z_] | Spawn at the specified loc, z is optional (defaults to your Z). Must be used with radius |
+| **los** | Spawns in Line of Sight |
+| **mercenary** | Mercenaries |
 | **merchant** | NPC Merchants |
-| **name** | Spawn with this name |
+| **mount** | Mounts |
 | **named** | "Named" spawns (spawns whose names start with a \#, or whose name does not start with "a" or "an") |
-| **nearalert \#** | Spawns close to alert list \# |
-| **next** | Next spawn matching the search criteria |
-| **noalert \#** | Spawns not on the alert list \# |
+| **nearalert** _#_ | Spawns near alert list _#_ |
+| **next** | Next spawn matching the search criteria (when using [/mqtarget](../commands/mqtarget.md)) |
+| **noalert** _#_ | Spawns not on alert list _#_ |
+| **nogroup** | Characters that aren't in your group |
 | **noguild** | Spawns with no guild tag |
-| **notid \#** | Spawns not matching ID \# |
+| **nopcnear** _#_ | Spawns with no players within specified radius (defaults to 200) |
+| **nopet** | Not a pet |
+| **notid** _#_ | Spawns not matching ID _#_ |
+| **notnearalert** _#_ | Spawns not near alert list _#_ |
 | **npc** | Non-Player Characters |
 | **npccorpse** | Non-Player Characters Corpses |
 | **npcpet** | Pets Owned by Non-Player Characters |
+| **object** | Objects |
 | **pc** | Player Characters (default) |
 | **pccorpse** | Player corpses |
 | **pcpet** | Pets Owned by Player Characters |
 | **pet** | Pets |
-| **prev** | Previous spawn matching the search criteria |
+| **playerstate** _#_ | Spawns that match the PlayerState int |
+| **prev** | Previous spawn matching the search criteria (when using [/mqtarget](../commands/mqtarget.md))|
 | **race** _racename_ | Spawns with the race _racename_ |
-| **radius \#** | Within the radius \# |
-| **range low\# high\#** | Within the level range \#(low\) and \#\(high) |
-| **slower** | Returns Shamans, Enchanters and Beastlords |
+| **radius** _#_ | Within the radius _#_ |
+| **raid** | Characters who are in your raid |
+| **range** _low#_ _high#_ | Within the level range _low#_ and _high#_ |
+| **slower** | Returns Shamans, Enchanters, Beastlords, and Bards |
 | **tank** | Returns Paladins, Shadow Knights and Warriors |
 | **targetable** | Spawns that can be targeted |
 | **timer** | Timer spawns |
+| **trader** | Characters who are in trader mode |
 | **trap** | Traps |
 | **tribute** | Tribute Masters |
 | **trigger** | Triggers |
-| **untargettable** | Untargettable spawns |
+| **untargetable** | Untargettable spawns |
 | **xtarhater** | Spawn on my xtarget list that hates me |
-| **zradius \#** | Spawns within the specified Z-Axis radius |
-| _**Anything Else**_ | Anything not matched above is considered a **name** |
+| **zradius** _#_ | Spawns within the specified Z-Axis radius |
 
-* Complete list of searchables as of 30 march 2020
+## See also
 
-`"pc"`
-`"npc"`
-`"mount"`
-`"pet"`
-`"pcpet"`
-`"npcpet"`
-`"xtarhater"`
-`"nopet"`
-`"corpse"`
-`"npccorpse"`
-`"pccorpse"`
-`"trigger"`
-`"untargetable"`
-`"trap"`
-`"chest"`
-`"timer"`
-`"aura"`
-`"object"`
-`"banner"`
-`"campfire"`
-`"mercenary"`
-`"flyer"`
-`"any"`
-`"next"`
-`"prev"`
-`"lfg"`
-`"gm"`
-`"group"`
-`"fellowship"`
-`"nogroup"`
-`"raid"`
-`"noguild"`
-`"trader"`
-`"named"`
-`"merchant"`
-`"banker"`
-`"tribute"`
-`"knight"`
-`"tank"`
-`"healer"`
-`"dps"`
-`"slower"`
-`"los"`
-`"targetable"`
-`"range"`
-`"MinLevel"`
-`"MaxLevel"`
-`"loc"`
-`"KnownLocation"`
-`"xLoc"`
-`"yLoc"`
-`"zLoc"`
-`"id"`
-`"ID"`
-`"radius"`
-`"body"`
-`"class"`
-`"race"`
-`"light"`
-`"guild"`
-`"guildname"`
-`"alert"`
-`"noalert"`
-`"notnearalert"`
-`"nearalert"`
-`"zradius"`
-`"notid"`
-`"nopcnear"`
-`"playerstate"`
-
+- [Spawn (Top-Level Object)](../top-level-objects/tlo-spawn.md)
+- [spawn (DataType)](../data-types/datatype-spawn.md)
+- [/who](../commands/who.md)
+- [/alert](../commands/alert.md)
+- [/mqtarget](../commands/mqtarget.md)
+- [NearestSpawn (Top-Level Object)](../top-level-objects/tlo-nearestspawn.md)
