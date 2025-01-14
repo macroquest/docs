@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/aa [list (all \| timers)\] \[info** _**abilityname**_**\] \[act** _**abilityname**_**]**
+**/aa [list (all | timers)] [info** _abilityname_ **] [act** _abilityname_ **]**
 
 ## Description
 
