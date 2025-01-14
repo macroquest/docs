@@ -6,7 +6,7 @@ tags:
 
 Data related to an Everquest social macro.
 
-### Members
+## Members
 
 ### {{ renderMember(type='string', name='Cmd', params='opt: lineNo') }}
 

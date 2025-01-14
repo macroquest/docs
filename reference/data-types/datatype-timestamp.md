@@ -6,6 +6,8 @@ tags:
 
 A timestamp represented in milliseconds.
 
+## Members
+
 ### {{ renderMember(type='int', name='Days') }}
 
 :   Number of days remaining in the timestamp (3d 2h 23m will return 3)
