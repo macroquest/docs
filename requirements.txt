@@ -4,7 +4,6 @@ mkdocs-gen-files
 mkdocs-gen-files
 mkdocs-macros-plugin
 mkdocs-material
-mkdocs-material-extensions
 mkdocs-redirects
 mkdocs-same-dir
 python-markdown-math
