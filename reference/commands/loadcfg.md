@@ -6,39 +6,27 @@ tags:
 
 ## Syntax
 
-**/loadcfg** _**filename**_
+**/loadcfg** _filename_
 
 ## Description
 
-Loads the specified .cfg file.
+Loads the specified .cfg file. To use .cfg files, [see this guide](../../main/features/cfg-files.md).
+
+## Notes
 
 * Plugins can use LoadCfgFile(filename)
-* Some cfg files are loaded automatically. You may use /loadcfg to load them at your own desire.
-  * **autoexec.cfg**
+* Automatic config loading occurs for:
 
-```text
-Executed on the first pulse
+  - **autoexec.cfg** - Executed on first initialization
 
--   **charselect.cfg**
+  - **charselect.cfg** - Runs at character selection screen
 
+  - _server_character_**.cfg** (e.g. `bertox_lordsoth.cfg`) - Character-specific config
 
-Executed when you enter character select
+  - _mapshortname_**.cfg** (e.g. `oot.cfg`) - Zone-specific config
 
--   **server_character.cfg**
+  - _pluginname_**-autoexec.cfg** (e.g. `MQ2Map-AutoExec.cfg`) - Plugin initialization config
 
-
-Executed when this *character* on *server* enters the world
-
--   **mapshortname.cfg**
-
-
-Executed upon entering the zone *mapshortname*
-
--   **pluginname-autoexec.cfg**
-
-
-Executed when this plugin is loaded (after its initialization is complete)
-```
 
 ## Examples
 

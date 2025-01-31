@@ -14,7 +14,7 @@ Bind a key combination to a specific key.
 
 |  |  |
 | :--- | :--- |
-| **/bind list** | Lists all MQ2 binds |
+| **/bind list** | Lists all MQ binds |
 | **/bind eqlist** | Lists all EverQuest binds |
 | **/bind** _name_ _keycombo_ | Binds name to the normal key combination _keycombo_ |
 | **/bind ~**_name_ _keycombo_ | Binds name to the alternate key combination _keycombo_ |

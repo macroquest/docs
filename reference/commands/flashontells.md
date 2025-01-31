@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/flashontells [on\|off]**
+**/flashontells [on|off]**
 
 ## Description
 

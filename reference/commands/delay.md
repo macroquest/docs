@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/delay \#[s\|m\] \[**_**condition**_**]**
+**/delay** _#_**[s|m]** **[** _condition_ **]**
 
 ## Description
 

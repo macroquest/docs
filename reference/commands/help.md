@@ -10,5 +10,4 @@ tags:
 
 ## Description
 
-Lists all MQ2 commands available to the client.
-
+Extends the EverQuest command to add the "macro" parameter, which lists all MacroQuest commands available to the client.

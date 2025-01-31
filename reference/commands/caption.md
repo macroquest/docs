@@ -6,50 +6,59 @@ tags:
 
 ## Syntax
 
-**/caption list \| type** _**value**_ **\| update \# \| MQCaptions [ on \| off ]**
+**/caption list | update** _#_ **| MQCaptions [on|off] | reload | _type_** _value_ 
 
 ## Description
 
-Sets the custom captions from in-game. Using this command will also change the ini settings for the particular level.
+Customize spawn captions (names, titles, linkdead, etc.). You can also limit how many captions are processed to improve performance.
 
-EQ itself constantly updates the name of every spawn in the zone, even though only a small portion of those are displayed. Using /caption allows you to modify how many spawn captions updated. The default setting for /caption update is 35.
+## Options
 
-Player1 through Player4 in MacroQuest.ini are directly related to which /shownames level you use.
+* **list** - List custom captions
+* **reload** - Update captions from .ini
+* **Update** - The number of nearest spawns which will have their caption updated each pass. The default is 35.
+* **MQCaptions [on|off]** - Turns captions on or off
+* The anon option has been deprecated, please use [/mqanon](mqanon.md) instead
+* **_type_** _value_ - The spawn type and the value for its caption. Available types are:
 
-```text
-Player1 is linked to /shownames 1
-Player2 is linked to /shownames 2
-Player3 is linked to /shownames 3
-Player4 is linked to /shownames 4
-```
+  | Type       | Description                          |
+  |------------|--------------------------------------|
+  | Player1-6  | Player captions for /shownames 1-6   | 
+  | Pet        | Pet captions                         | 
+  | Merc       | Mercenary captions                  | 
+  | NPC        | NPC captions                        | 
+  | Corpse     | Corpse captions                     |
 
 ## Examples
 
-```text
-Player1=${If[${NamingSpawn.Trader},Trader,]}${If[${NamingSpawn.Invis},(${NamingSpawn.DisplayName})
+Default captions can be overriden in the `[Captions]` section of your MacroQuest.ini file. 
+
+```ini
+[Captions]
+# Player1 (basic), /shownames 1
+Player1=${If[${NamingSpawn.Mark},${NamingSpawn.Mark} - ,]}${If[${NamingSpawn.Trader},Trader ,]}${If[${NamingSpawn.Invis},(${NamingSpawn.DisplayName}),${NamingSpawn.DisplayName}]}${If[${NamingSpawn.AFK}, AFK,]}${If[${NamingSpawn.Linkdead}, LD,]}${If[${NamingSpawn.LFG}, LFG,]}${If[${NamingSpawn.GroupLeader}, LDR,]}
+
+# Player3 (with guild), /shownames 3
+Player3=${If[${NamingSpawn.Mark},${NamingSpawn.Mark} - ,]}${If[${NamingSpawn.Trader},Trader ,]}${If[${NamingSpawn.Invis},(${NamingSpawn.DisplayName}),${NamingSpawn.DisplayName}]}${If[${NamingSpawn.Surname.Length}, ${NamingSpawn.Surname},]}${If[${NamingSpawn.AFK}, AFK,]}${If[${NamingSpawn.Linkdead}, LD,]}${If[${NamingSpawn.LFG}, LFG,]}${If[${NamingSpawn.GroupLeader}, LDR,]}${If[${NamingSpawn.Guild.Length},\n<${NamingSpawn.Guild}>,]}
+
+# NPC
+NPC=${If[${NamingSpawn.Mark},${NamingSpawn.Mark} - ,]}${If[${NamingSpawn.Assist},>> ,]}${NamingSpawn.DisplayName}${If[${NamingSpawn.Assist}, - ${NamingSpawn.PctHPs}%<<,]}${If[${NamingSpawn.Surname.Length},\n(${NamingSpawn.Surname}),]}
+
+# Corpse
+Corpse=${NamingSpawn.DisplayName}'s corpse
 ```
 
-* Use "\n" to add a new line when setting captions
-* To use the default (EQ settings\) clear the specific setting\(Player1-Player4) in the ini using:
-
+* NamingSpawn is an internal TLO, so it's not documented along with other TLOs since it will always return NULL outside of caption processing. It inherits all [spawn](../data-types/datatype-spawn.md) members. (e.g., DisplayName from `${NamingSpawn.DisplayName}` is a spawn member.)
+* Use `\n` to add a new line when setting captions
+* To set a caption in-game,
   ```text
-  /caption Player1
+  /caption Corpse ${NamingSpawn.DisplayName}'s corpse
+  ```
+* To revert to the default, you can delete the [Captions] section of your MacroQuest.ini file or clear the specific type with an empty value command like so,
+  ```text
+  /caption Corpse
   ```
 
-* You can also configure Player1 - Player4 from the EQ client using:
+## See Also
 
-  ```text
-  /caption Player# configsettings
-  ```
-
-\*Sets the number of nearest spawns for MQ2 to update the name of each pass to 20. By default, this is 35.
-
-\*:
-
-```text
-/caption update 20
-```
-
-\*When using MQCaption if no parameter is given, the default parameter is off
-
-* Look at the Macroquest.ini file in the zip file under [Captions] for examples of configuring Player1-Player4.
+* [/captioncolor](captioncolor.md)

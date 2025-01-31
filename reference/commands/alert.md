@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/alert { add | remove | clear | list }** _#list_ **[** _spawn search parameters_ **]**
+**/alert { add | remove | clear | list }** _#list_ **[** _Spawn Search_ **]**
 
 ## Description
 
@@ -20,7 +20,7 @@ Used to manipulate alert lists which "watch" for spawns. Uses [Spawn Search](../
 | `clear` | Clear all entries from the specified alert list |
 | `list` | Display all entries in the specified alert list |
 
-## Spawn Search Parameters
+## Spawn Search
 
 Any valid [Spawn Search](../general/spawn-search.md) parameter can be used. Common examples include:
 

@@ -6,11 +6,11 @@ tags:
 
 ## Syntax
 
-**/hotbutton [ Name \] \[ color\# \] \[ Line\#:Cursor\#:/YourCommand YourText ]**
+**/hotbutton** _name_ **[**_color_**]** **[**_line_**:][**_cursor_**:]**_text_**]**
 
 ## Description
 
-Extends the built in /hotbutton command with multiple lines support
+Extends the built in /hotbutton command with multiple lines support, cursor attachment, and "names with spaces" (in quotes) support.
 
 ## Examples
 
