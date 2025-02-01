@@ -12,7 +12,7 @@ All [Top-Level Objects](../top-level-objects/), [Data Types](../data-types/) and
 | **aura** | Auras |
 | **banker** | NPC bankers |
 | **banner** | Banners |
-| **body** _bodytype_ | Spawns with the specified [_bodytype_](..general/body-types.md) |
+| **body** _bodytype_ | Spawns with the specified [_bodytype_](body-types.md) |
 | **campfire** | Campfires |
 | **chest** | Chests |
 | **class** _classname_ | Spawns with this class name (long name) |
