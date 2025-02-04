@@ -21,9 +21,15 @@ Echoes the specified text (or variables) to the MQ Console window.
 ```
 
 **Output:**
+<style>
+span[style*="#FF00FF"] { color: #FF00FF !important; }
+span[style*="#00FF00"] { color: #00FF00 !important; }
+span[style*="#FF0000"] { color: #FF0000 !important; }
+span[style*="#00FFFF"] { color: #00FFFF !important; }
+</style>
 
-<span style="color:#FF00FF">[MQ]</span> <span style="color:#FF00FF">This is a</span> <span style="color:#00FF00">test</span>  
-<span style="color:#00FF00">All done, let's show a backslash:</span> <span style="color:#FF0000"> \ </span>
+<span style="color:#FF00FF">[MQ]</span> <span style="color:#FF00FF">This is a</span> <span style="color:#00FFFF">test</span>  
+<span style="color:#009900">All done, let's show a backslash:</span> <span style="color:#FF0000"> \\ </span>
 
 **Variable usage**
 

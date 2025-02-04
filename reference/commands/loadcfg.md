@@ -17,15 +17,15 @@ Loads the specified .cfg file. To use .cfg files, [see this guide](../../main/fe
 * Plugins can use LoadCfgFile(filename)
 * Automatic config loading occurs for:
 
-  - **autoexec.cfg** - Executed on first initialization
+    - **autoexec.cfg** - Executed on first initialization
 
-  - **charselect.cfg** - Runs at character selection screen
+    - **charselect.cfg** - Runs at character selection screen
 
-  - _server_character_**.cfg** (e.g. `bertox_lordsoth.cfg`) - Character-specific config
+    - _server_character_**.cfg** (e.g. `bertox_lordsoth.cfg`) - Character-specific config
 
-  - _mapshortname_**.cfg** (e.g. `oot.cfg`) - Zone-specific config
+    - _mapshortname_**.cfg** (e.g. `oot.cfg`) - Zone-specific config
 
-  - _pluginname_**-autoexec.cfg** (e.g. `MQ2Map-AutoExec.cfg`) - Plugin initialization config
+    - _pluginname_**-autoexec.cfg** (e.g. `MQ2Map-AutoExec.cfg`) - Plugin initialization config
 
 
 ## Examples

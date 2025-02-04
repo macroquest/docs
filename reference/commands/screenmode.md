@@ -6,13 +6,11 @@ tags:
 
 ## Syntax
 
-**/screenmode** **\#**
-
-Valid values for screen mode: 1, 2, or 3.
+**/screenmode** _#_
 
 ## Description
 
-Where 2 is normal and 3 is no windows. 1 is Unknown.
+Where 2 is normal and 3 is no windows. 1 is Unknown. Experimental. 
 
 ## Examples
 

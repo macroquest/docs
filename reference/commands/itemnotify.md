@@ -17,7 +17,7 @@ Simulates inventory interactions. Similar to [/click](click.md) without the mous
 * _slotname_ - any one of the equipment [Slot Names](../../reference/general/slot-names.md).
 * _#_ - any slot number.
 * **in** _bag_ _slot#_ - can be pack1-pack8 or bank1-bank24, followed by a slot number.
-  - *Not supported: sharedbank, trade slots*
+    - *Not supported: sharedbank, trade slots*
 * _itemname_ - first match in inventory
 * _notification_ can be any one of the following:
 

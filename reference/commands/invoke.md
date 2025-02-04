@@ -66,6 +66,3 @@ if spawn "eqmule" is found, will target
 `/invoke ${Me.Buff[Cred].Remove}`
 
 If a buff with the partial name "Cred" is found it will remove it
-
-[Return to Slash Commands](..//)
-

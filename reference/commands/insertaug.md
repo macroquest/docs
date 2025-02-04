@@ -17,3 +17,7 @@ Inserts an augment from your cursor into a target item. Requires an augment item
 `/insertaug 41302` - insters the aug into item ID 41302
 
 `/insertaug "Darkened Thick Banded Belt"` - insters the aug into item name "Darkened Thick Banded Belt"
+
+## See Also
+
+- [/removeaug](removeaug.md)

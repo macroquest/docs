@@ -4,5 +4,10 @@ tags:
 ---
 # /useitem
 
-/useitem "some item" (or partial name\) or without the quotes... this one works for items in keyrings as well \(illusions, mounts)
+## Syntax
 
+**/useitem** _item name_
+
+## Description
+
+Extends the default EverQuest command to support partial matching for the item name.

@@ -31,9 +31,7 @@ Time can be specified in 10ths of a second (a number by itself\) or in seconds \
 /delay ${Math.Calc[${Math.Rand[10]}+5]}s       Delays the macro for a random amount of seconds in the range of 5 to 15
 ```
 
-* The below example will hold down the forward key and will execute "/keypress forward" (press forward once) when
-
-  ${Spawn[1234\].Distance} \&lt; ${Spawn\[1234].MaxMeleeTo} evaluates to TRUE or after 1 second passes.
+* The below example will hold down the forward key and will execute "/keypress forward" (press forward once) when `${Spawn[1234\].Distance}<${$Spawn[1234].MaxMeleeTo}` evaluates to TRUE or after 1 second passes.
 
 ```text
 /keypress forward hold

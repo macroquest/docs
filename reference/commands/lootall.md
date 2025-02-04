@@ -10,7 +10,7 @@ tags:
 
 ## Description
 
-Automatically loots all non-"No Trade" items from corpses. Single No Trade items leave others lootable, while multiple No Trade items disable auto-looting entirely, requiring manual collection of all items.
+Automatically loots all non-"No Trade" items from corpses. If EverQuest's `/lootnodrop` command is enabled, it will loot all items. Otherwise, single No Trade items leave others lootable, while multiple No Trade items disable auto-looting entirely, requiring manual collection of all items.
 
 ## Examples
 

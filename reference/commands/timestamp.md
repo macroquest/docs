@@ -6,14 +6,9 @@ tags:
 
 ## Syntax
 
-**/timestamp**
+**/timestamp [on|off]**
 
 ## Description
+Toggles timestamps on all chat messages. It can be set in MacroQuest.ini via `TimeStampChat=1` (1=ON, 0=OFF) in the [MacroQuest] section.
 
-* Is a toggle, can be set in MacroQuest.ini TimeStampChat=0 in the [MacroQuest] section.
-* Basically it timestamps all chat when its on...
-
-`NOTE: The timestamp takes place AFTER chatevents are handled, so at least in theory`
-
-this should NOT have any adverse effects when turned on.
-
+`NOTE:` The timestamp is added *before* the message reaches game UI but *after* MQ's chat event processing. This should not have any adverse effects when turned on.

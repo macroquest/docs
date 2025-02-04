@@ -17,9 +17,9 @@ Executes a macro file. Supports passing parameters to the macro's `Sub Main` ent
 * Calling a macro from another macro will immediately terminate the calling macro (no cleanup).  
 * Parameters are passed as space-separated values to `Sub Main` (params with spaces must be quoted)
 * File resolution:
-  - Appends `.mac` extension if missing
-  - Searches relative to `Macros/` directory
-  - Supports absolute paths
+    - Appends `.mac` extension if missing
+    - Searches relative to `Macros/` directory
+    - Supports absolute paths
 
 ## Examples
 ```text
