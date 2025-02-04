@@ -1,5 +1,4 @@
 # Slash Commands
-
 ## Base
 
 |   |   |   |   |   |   |
@@ -7,7 +6,7 @@
 | [/aa](aa)                       | [/advloot](advloot)             | [/alert](alert)                 | [/alias](alias)                 | [/altkey](altkey)               | [/banklist](banklist)           |
 | [/beep](beep)                   | [/benchmark](benchmark)          | [/beepontells](beepontells)     | [/bind](bind)                   | [/buyitem](buyitem)             | [/caption](caption)             |
 | [/captioncolor](captioncolor)   | [/cast](cast)                   | [/cecho](cecho)                 | [/cleanup](cleanup)             | [/char](char)           | [/click](click)                 |
-| [/combine](combine)             | [/ctrlkey](ctrlkey)             | [/custombind](custombind)       | [/destroy](destroy)             | [/docommand](docommand)         | [/doors](doors)                 |
+| [/combine](combine)             | [/ctrlkey](ctrlkey)             | [/custombind](/plugins/core-plugins/mq2custombinds/custombind/)       | [/destroy](destroy)             | [/docommand](docommand)         | [/doors](doors)                 |
 | [/doortarget](doortarget)       | [/dosocial](dosocial)           | [/drop](drop)                   | [/dumpbinds](dumpbinds)         | [/echo](echo)                   | [/eqtarget](eqtarget)           |
 | [/exec](exec)                   | [/face](face)                   | [/filter](filter)               | [/flashontells](flashontells)   | [/foreground](foreground)       | [/framelimiter](framelimiter)   |
 | [/help](help)                   | [/hotbutton](hotbutton)         | [/identify](identify)           | [/ini](ini)                     | [/itemnotify](itemnotify)       | [/items](items)                 |
@@ -18,10 +17,13 @@
 | [/popup](popup)                 | [/popupecho](popupecho)         | [/ranged](ranged)               | [/reloadui](reloadui)           | [/removeaura](removeaura)       | [/removebuff](removebuff)       |
 | [/removelev](removelev)         | [/removepetbuff](removepetbuff) | [/screenmode](screenmode)       | [/selectitem](selectitem)       | [/sellitem](sellitem)           | [/setautorun](setautorun)       |
 | [/setprio](setprio)             | [/setwintitle](setwintitle)     | [/shiftkey](shiftkey)           | [/skills](skills)               | [/spellslotinfo](spellslotinfo) | [/spew](spew)                   |
-| [/squelch](squelch)             | [/substitute](substitute)       | [/target](target)               | [/timed](timed)                 | [/timestamp](timestamp)         | [/unload](unload)               |
-| [/updateitems](updateitems)     | [/useitem](useitem)             | [/where](where)                 | [/who](who)                     | [/whofilter](whofilter)         | [/whotarget](whotarget)         |
-| [/windows](windows)             | [/windowstate](windowstate)     |
-
+| [/squelch](squelch)             | [/target](target)               | [/timed](timed)                 | [/timestamp](timestamp)         | [/unload](unload)               | [/useitem](useitem)             |
+| [/where](where)                 | [/who](who)                     | [/whofilter](whofilter)         | [/whotarget](whotarget)         | [/cachedbuffs](cachedbuffs)     | [/convertitem](convertitem)     |
+| [/crash](crash)                 | [/doability](doability)         | [/dumpstack](dumpstack)         | [/engine](engine)               | [/executelink](executelink)     | [/getwintitle](getwintitle)     |
+| [/insertaug](insertaug)         | [/itemslots](itemslots)         | [/makemevisible](makemevisible) | [/mercswitch](mercswitch)       | [/mqanon](mqanon)               | [/mqconsole](mqconsole)         |
+| [/mqlistmodules](mqlistmodules) | [/mqlistprocesses](mqlistprocesses) | [/mqoverlay](mqoverlay)       | [/msgbox](msgbox)               | [/no](no)                       | [/pet](pet)                     |
+| [/pickzone](pickzone)           | [/profile](profile)             | [/quit](quit)                   | [/removeaug](removeaug)         | [/taskquit](taskquit)           | [/tloc](tloc)                   |
+| [/usercamera](usercamera)       | [/yes](yes)                     | [/windows](windows)             | [/windowstate](windowstate)     |
 
 ## Macroing/Flow Control
 
