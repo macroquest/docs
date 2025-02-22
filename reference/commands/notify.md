@@ -6,35 +6,42 @@ tags:
 
 ## Syntax
 
-**/notify** _**windowname**_ **\*\*\_**0**\_**\|**\_**controlname**\_** [ **\_**notification**\_** \[**\_**data**\_**\] ]\*\*
+**/notify** _windowname_ _control_ **[** _notification_ **[** _data_ **] ]**
 
 ## Description
 
-This is used to interact with UI windows instead of using the mouse (/notify cannot be used to interact with objects).
+This command is used to interact with UI windows. It can simulate various mouse and keyboard interactions with UI elements.
 
-* Entering "0" for _controlname_ would send the message to the window itself \(used for "close" at least, possibly
+## Parameters
 
-  others\).
+- _windowname_ is the name of the window (e.g., "HotButtonWnd"). Use the Window Inspector (preferred) within the [/mqconsole](mqconsole.md) or the [/windows](windows.md) command to list all available windows.
+- _control_ can be:
+    * Control name (e.g., "HB_Button1")
+    * "0" to send the notification to the window itself (commonly used for "close" and other window-level notifications)
+- The _data_ parameter is primarily used with notifications like "newvalue" for sliders or "listselect" for lists
 
-* The use of _data_ will usually not be necessary unless you are notifying a slider control or a list.
+### Notifications:
 
-|  |  |
-| :--- | :--- |
-| **leftmouseup** | Left-click _controlname_ |
-| **leftmouseheld** | Left-click and hold _controlname_ until _leftmouseheldup_ is performed |
-| **leftmouseheldup** | Releases the mouse from _leftmouseheld_ |
-| **rightmouseup** | Right-click _controlname_ |
-| **rightmouseheld** | Right-click and hold _controlname_ until _rightmouseheldup_ is performed |
-| **rightmouseheldup** | Releases the mouse from _rightmouseheld_ |
-| **enter** | Press the enter key on _controlname_ |
-| **close** | Clicks the Close Window gadget of _windowname_ |
-| **mouseover** | Hovers the mouse over _controlname_ |
-| **newvalue \#** | Changes the value in _controlname_ to \# |
-| **listselect \#** | Selects the \#th item in the _controlname_ list |
-| **leftmouse \#** | Clicks the \#th item in the _controlname_ list |
-| **tabselect \#** | Selects the \#th tab in the _controlname_ list |
-
-**Notifications:**
+| Notification | Description | Data Required |
+|-------------|-------------|---------------|
+| leftmouseup | Left-click on _controlname_ | No |
+| leftmouseheld | Left-click and hold _controlname_ until _leftmouseheldup_ is performed | No |
+| leftmouseheldup | Releases the mouse from _leftmouseheld_ | No |
+| rightmouseup | Right-click on _controlname_ | No |
+| rightmouseheld | Right-click and hold _controlname_ until _rightmouseheldup_ is performed | No |
+| rightmouseheldup | Releases the mouse from _rightmouseheld_ | No |
+| enter | Press the enter key on _controlname_ | No |
+| close | Clicks the Close Window gadget of _windowname_ | No |
+| mouseover | Hovers the mouse over _controlname_ | No |
+| newvalue # | Changes the value in _controlname_ to # | Yes - number |
+| listselect # | Selects the #th item in the _controlname_ list | Yes - number |
+| leftmouse # | Clicks the #th item in the _controlname_ list | Yes - number |
+| tabselect # | Selects the #th tab in the _controlname_ list | Yes - number |
+| menuselect | Selects context menu item | Yes - menu item number/text |
+| history | Used for command history in input boxes | No |
+| link | Handles clickable links in windows | No |
+| contextmenu | Opens context menu | No |
+| resetdefaultposition | Resets window position to default | No |
 
 ## Examples
 
@@ -72,4 +79,3 @@ Select Parcel tab on Parcel Merchant and click Receive All button
 /delay 1s
 /notify MerchantWnd MW_Retrieve_All_Button leftmouseup
 ```
-

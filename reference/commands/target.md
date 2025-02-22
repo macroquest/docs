@@ -4,6 +4,9 @@ tags:
 ---
 # /target
 
+!!! warning "Deprecated"
+    This command name has been deprecated and may be removed in a future version. Please update your scripts to use [/mqtarget](mqtarget.md) instead. Users who rightly want the native command should use [/eqtarget](eqtarget.md) for now.
+
 ## Syntax
 
 **/target** _**option**_
@@ -28,3 +31,7 @@ Targets whatever is matched by one or more of the following _options_:
 /target ${Spawn[alert 1]}
 /target ${Spawn[noalert 1]}
 ```
+## See Also
+
+- [/mqtarget](mqtarget.md)
+- [/eqtarget](eqtarget.md)

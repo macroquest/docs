@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/captioncolor [list \|"name'' \[off \| on \| \# \# \#\]]**
+**/captioncolor list |** _"name"_ **[ off | on |**  _r g b_ **]**
 
 ## Description
 
@@ -47,3 +47,7 @@ Below are the default settings for each of the possible Caption Colors:
 `/captioncolor pcclass on`  
 `/captioncolor pctrader on`  
 `/captioncolor pctrader 255 128 0`
+
+## See Also
+
+* [/caption](caption.md)

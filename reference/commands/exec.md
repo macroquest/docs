@@ -6,9 +6,7 @@ tags:
 
 ## Syntax
 
-```text
-/exec command ["parameters" | bg] [bg]
-```
+**/exec** _command_ **[** _parameters_ **| bg] [bg]**
 
 ## Description
 

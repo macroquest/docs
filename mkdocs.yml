@@ -271,6 +271,7 @@ nav:
 
   - General Information:
     - Animations: reference/general/animations.md
+    - Body Types: reference/general/body-types.md
     - Containers List: reference/general/containers-list.md
     - Languages: reference/general/languages.md
     - List of spawn heights: reference/general/list-of-spawn-heights.md
@@ -290,39 +291,50 @@ nav:
       - /banklist: reference/commands/banklist.md
       - /beep: reference/commands/beep.md
       - /beepontells: reference/commands/beepontells.md
+      - /benchmark: reference/commands/benchmark.md
       - /bind: reference/commands/bind.md
+      - /buyitem: reference/commands/buyitem.md
       - /cachedbuffs: reference/commands/cachedbuffs.md
       - /caption: reference/commands/caption.md
       - /captioncolor: reference/commands/captioncolor.md
       - /cast: reference/commands/cast.md
+      - /char: reference/commands/char.md
       - /cecho: reference/commands/cecho.md
-      - /charinfo: reference/commands/charinfo.md
       - /cleanup: reference/commands/cleanup.md
       - /click: reference/commands/click.md
       - /combine: reference/commands/combine.md
+      - /convertitem: reference/commands/convertitem.md
+      - /crash: reference/commands/crash.md
       - /ctrlkey: reference/commands/ctrlkey.md
       - /destroy: reference/commands/destroy.md
+      - /doability: reference/commands/doability.md
       - /docommand: reference/commands/docommand.md
       - /doors: reference/commands/doors.md
       - /doortarget: reference/commands/doortarget.md
       - /dosocial: reference/commands/dosocial.md
       - /drop: reference/commands/drop.md
       - /dumpbinds: reference/commands/dumpbinds.md
+      - /dumpstack: reference/commands/dumpstack.md
       - /echo: reference/commands/echo.md
+      - /engine: reference/commands/engine.md
       - /eqtarget: reference/commands/eqtarget.md
       - /exec: reference/commands/exec.md
+      - /executelink: reference/commands/executelink.md
       - /face: reference/commands/face.md
       - /filter: reference/commands/filter.md
       - /flashontells: reference/commands/flashontells.md
       - /foreground: reference/commands/foreground.md
       - /framelimiter: reference/commands/framelimiter.md
+      - /getwintitle: reference/commands/getwintitle.md
       - /help: reference/commands/help.md
       - /hotbutton: reference/commands/hotbutton.md
       - /identify: reference/commands/identify.md
+      - /insertaug: reference/commands/insertaug.md
       - /ini: reference/commands/ini.md
       - /itemnotify: reference/commands/itemnotify.md
       - /items: reference/commands/items.md
       - /itemtarget: reference/commands/itemtarget.md
+      - /itemslots: reference/commands/itemslots.md
       - /keepkeys: reference/commands/keepkeys.md
       - /keypress: reference/commands/keypress.md
       - /loadcfg: reference/commands/loadcfg.md
@@ -333,23 +345,36 @@ nav:
       - /lootall: reference/commands/lootall.md
       - /makemevisible: reference/commands/makemevisible.md
       - /memspell: reference/commands/memspell.md
+      - /mercswitch: reference/commands/mercswitch.md
       - /mouseto: reference/commands/mouseto.md
+      - /mqanon: reference/commands/mqanon.md
+      - /mqconsole: reference/commands/mqconsole.md
       - /mqcopylayout: reference/commands/mqcopylayout.md
+      - /mqlistmodules: reference/commands/mqlistmodules.md
+      - /mqlistprocesses: reference/commands/mqlistprocesses.md
       - /mqlog: reference/commands/mqlog.md
+      - /mqoverlay: reference/commands/mqoverlay.md
       - /mqsettings: reference/commands/mqsettings.md
       - /mqtarget: reference/commands/mqtarget.md
+      - /msgbox: reference/commands/msgbox.md
       - /multiline: reference/commands/multiline.md
       - /netstatusxpos: reference/commands/netstatusxpos.md
       - /netstatusypos: reference/commands/netstatusypos.md
+      - /no: reference/commands/no.md
       - /nomodkey: reference/commands/nomodkey.md
       - /noparse: reference/commands/noparse.md
       - /notify: reference/commands/notify.md
+      - /pet: reference/commands/pet.md
+      - /pickzone: reference/commands/pickzone.md
       - /plugin: reference/commands/plugin.md
       - /popcustom: reference/commands/popcustom.md
       - /popup: reference/commands/popup.md
       - /popupecho: reference/commands/popupecho.md
+      - /profile: reference/commands/profile.md
+      - /quit: reference/commands/quit.md
       - /ranged: reference/commands/ranged.md
       - /reloadui: reference/commands/reloadui.md
+      - /removeaug: reference/commands/removeaug.md
       - /removeaura: reference/commands/removeaura.md
       - /removebuff: reference/commands/removebuff.md
       - /removelev: reference/commands/removelev.md
@@ -365,12 +390,13 @@ nav:
       - /spellslotinfo: reference/commands/spellslotinfo.md
       - /spew: reference/commands/spew.md
       - /squelch: reference/commands/squelch.md
-      - /substitute: reference/commands/substitute.md
       - /target: reference/commands/target.md
+      - /taskquit: reference/commands/taskquit.md
       - /timed: reference/commands/timed.md
       - /timestamp: reference/commands/timestamp.md
+      - /tloc: reference/commands/tloc.md
       - /unload: reference/commands/unload.md
-      - /updateitems: reference/commands/updateitems.md
+      - /usercamera: reference/commands/usercamera.md
       - /useitem: reference/commands/useitem.md
       - /where: reference/commands/where.md
       - /who: reference/commands/who.md
@@ -378,6 +404,7 @@ nav:
       - /whotarget: reference/commands/whotarget.md
       - /windows: reference/commands/windows.md
       - /windowstate: reference/commands/windowstate.md
+      - /yes: reference/commands/yes.md
 
     - Macro Commands:
       - /break: reference/commands/break.md
@@ -563,6 +590,9 @@ nav:
 
 
 - Change Log: https://github.com/macroquest/macroquest/blob/master/data/resources/CHANGELOG.md" target="_blank
+
+validation:
+  unrecognized_links: ignore # Since we use README.md rather than index.md, mkdocs thinks we have a lot of unrecognized links.
 
 # Theme
 theme:

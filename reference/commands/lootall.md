@@ -10,13 +10,7 @@ tags:
 
 ## Description
 
-* **/lootall** allows you to loot everything on the corpse that is _not_ No Trade. You must manually loot those unless
-
-  you have [/lootnodrop](../commands/eq/lootnodrop.md) set to never.
-
-* Using **/lootall** will loot _everything_ on the corpse automatically unless there is more than one No Trade item on
-
-  it. In this case, you will have to loot everything (including the item\(s\) that are not No Trade) manually.
+Automatically loots all non-"No Trade" items from corpses. If EverQuest's `/lootnodrop` command is enabled, it will loot all items. Otherwise, single No Trade items leave others lootable, while multiple No Trade items disable auto-looting entirely, requiring manual collection of all items.
 
 ## Examples
 

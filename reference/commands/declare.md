@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/declare** _**varname**_**\|**_**varname[array extents\]**_ **\[type\] \[local\|global\|outer\] \[**_**defaultvalue**_**]**
+**/declare** _varname_ **|** _varname[array extents]_ **[** _type_ **]** **[ local | global | outer ]** **[** _defaultvalue_ **]**
 
 ## Description
 

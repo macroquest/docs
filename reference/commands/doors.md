@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/doors [**_**"filter"**_**]**
+**/doors [** _filter_ **]**
 
 ## Description
 

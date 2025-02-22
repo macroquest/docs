@@ -6,35 +6,46 @@ tags:
 
 ## Syntax
 
-**/mqcopylayout \| opt:** **(not specifying a res, will default to "Windowed")\|** **nohot** **\|** **noload** **\|** **nosoc** **\|** **none \]**
+**/mqcopylayout** _charname_ _server_ **[res:**_W_**x**_H_**]** **[nohot]** **[noload]** **[nosoc]** **[none]**
 
 ## Description
 
-Uses MQ2 to copy a UI layout.
+Intelligent copying of EverQuest's UI layout. By default copies all options (hotbuttons, loadouts, socials) using the windowed resolution.
+
+## Options
+
+
+- _charname_ - Name of the character whose UI to copy
+- _server_ - Server shortname where character exists
+- **[res:**_W_**x**_H_**]** - Specific resolution to copy (if exists in UI INI)
+- **nohot** - Exclude hotbuttons
+- **noload** - Exclude loadouts
+- **nosoc** - Exclude socials
+- **none** - Exclude all options (equivalent to nohot+noload+nosoc)
+
 
 ## Examples
 
-`/mqcopylayout eqmule test`
+`/mqcopylayout bobby vox`
 
-Will Copy the layout from UI\_eqmule\_test.ini setting including hotbuttons loadouts and socials to your UI. Ok, so the default behaviour is to copy everything. Now if you wish to exclude stuff:
+Copies everything including hotbuttons, loadouts, and socials using windowed resolution
 
-`/mqcopylayout eqmule test nohot`
+`/mqcopylayout bobby vox nohot`
 
-Will Copy the layout from UI\_eqmule\_test.ini setting including loadouts and socials to your UI but NOT hotbuttons.
+Copies layout excluding hotbuttons
 
-`/mqcopylayout eqmule test nohot noload`
+`/mqcopylayout bobby vox nohot noload`
 
-Will Copy the layout from UI\_eqmule\_test.ini setting including socials to your UI but NOT hotbuttons and NOT loadouts.
+Copies layout excluding hotbuttons and loadouts
 
-`/mqcopylayout eqmule test nohot noload nosoc`
+`/mqcopylayout bobby vox nohot noload nosoc`
 
-Will Copy the layout from UI\_eqmule\_test.ini setting excluding hotbuttons loadouts and socials to your UI.
+Copies layout excluding hotbuttons, loadouts, and socials
 
-`/mqcopylayout eqmule test none`
+`/mqcopylayout bobby vox none`
 
-Will Copy the layout from UI\_eqmule\_test.ini setting excluding hotbuttons loadouts and socials to your UI.
+Same as above (excludes all options)
 
-```/mqcopylayout eqmule test ``res:1600x900```
+`/mqcopylayout bobby vox res:1600x900`
 
-Will Copy the layout from UI\_eqmule\_test.ini setting including hotbuttons loadouts and socials to your 1600x900 UI (if that resolution actually exist in your UI ini).
-
+Copies layout for specific 1600x900 resolution (if exists)

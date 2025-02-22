@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/listmacros [**_**filter**_**]**
+**/listmacros [**_filter_**]**
 
 ## Description
 

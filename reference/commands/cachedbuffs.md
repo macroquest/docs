@@ -7,7 +7,7 @@ tags:
 
 ## Syntax
 
-**`/cachedbuffs [cleartarget|reset]`**
+**/cachedbuffs [cleartarget|reset]**
 
 ## Description
 

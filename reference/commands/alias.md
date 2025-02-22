@@ -6,17 +6,16 @@ tags:
 
 ## Syntax
 
-**/alias [list \| reload | ** _**aliasname**_ **delete\] \[name** _**command]**_
+**/alias** _aliasname_ _command_ **| [list | reload |** _aliasname_ **delete]**
 
 ## Description
-
-Useful for creating shorter versions of a command.
+Creates custom command shortcuts. Aliases are saved in MacroQuest.ini and persist between sessions.
 
 ## Examples
 
-|  |  |
+| Command | Description |
 | :--- | :--- |
-| **/alias list** | Lists all aliases |
-| **/alias reload** | Reloads all aliases |
-| **/alias /hp /echo My health is ${Me.PctHPs}** | Typing /hp in the EQ chat box will display: My health is % in the MQ2 chat window |
-| **/alias** _**aliasname**_ **delete**'' | Deletes _aliasname_ from MacroQuest.ini |
+| **/alias /hp /echo My health is ${Me.PctHPs}** | Creates an alias where typing /hp will display your current health percentage |
+| **/alias list** | Lists all currently defined aliases |
+| **/alias reload** | Reloads all aliases from MacroQuest.ini |
+| **/alias** _**aliasname**_ **delete** | Deletes the specified alias |

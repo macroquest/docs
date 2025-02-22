@@ -4,17 +4,13 @@ tags:
 ---
 # /loadspells
 
-**/loadspells** _spellset_
+## Syntax
+**/loadspells** [list|"name"]
 
-Loads the specified spellset.
+## Description
+Loads or lists saved spell sets. Similar to /memspellset, but it only memorizes the spellset if it's not already memorized. This command was part of MQ years before EQ was inspired to add /memspellset.
 
-This is the same as the EQ command /memspellset, with the addition that it only memorizes the spellset if it is not already memorized. This command was part of MQ2 long before EQ added the same functionality.
+## Parameters
 
-**/loadspells list**
-
-Lists all of your saved spellsets.
-
-**/loadspells list** _**spellset**_
-
-List the spells in the specified spellset.
-
+- **/loadspells list** - Shows all saved spell sets with their index numbers
+- **/loadspells "name"** - Loads a spell set by exact name match (case insensitive)

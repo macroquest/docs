@@ -12,7 +12,7 @@ tags:
 
 Displays _text_ in the center of your screen. Currently the text is a fixed font and color.
 
-See Also: [/popcustom](https://docs.macroquest.org/reference/commands/popcustom)
+See Also: [/popcustom](popcustom.md)
 
 ## Examples
 

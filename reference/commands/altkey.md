@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/altkey** _**command**_
+**/altkey** _command_
 
 ## Description
 

@@ -6,12 +6,8 @@ tags:
 
 ## Syntax
 
-'''/foreground
+**/foreground**
 
 ## Description
 
-Puts EQ in the foreground
-
-## Examples
-
-`/bct //foreground`
+Brings the EverQuest game window that entered the command to the front of your desktop. Useful when switching between multiple EQ windows or other applications.

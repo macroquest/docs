@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/doevents [ flush \] \[** _**specificevent**_ **]**
+**/doevents [ flush ] [** _specificevent_ **]**
 
 ## Description
 

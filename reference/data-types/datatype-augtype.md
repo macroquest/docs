@@ -6,6 +6,8 @@ tags:
 
 Describes data about an augmentation slot in an item.
 
+## Members
+
 ### {{ renderMember(type='bool', name='Empty') }}
 
 :   True if the slot is empty

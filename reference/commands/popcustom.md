@@ -6,17 +6,16 @@ tags:
 
 ## Syntax
 
-**/popcustom [color\] \[time in seconds to display message] message**
+**/popcustom [**_color_**] [**_time_in_seconds_to_display_message_**]** _message_
 
 ## Description
 
-* Creates a custome pop up message on your screen
+Creates an in-game overlay message. See also [/popupecho](popupecho.md).
 
-Color Chart
+## Color Chart
 
-|  |  |
-| :--- | :--- |
 | **Number** | **Color** |
+| :--- | :--- |
 | 1, 3, 8, 9, 11, 17, 19, 21+ | dark grey |
 | 2 | light green |
 | 4 | dark blue |
@@ -32,13 +31,12 @@ Color Chart
 
 ## Examples
 
-|  |  |
-| :--- | :--- |
 | **Example** | **Output** |
+| :--- | :--- |
 | **/popcustom hi there** | Will display "hi there" on the screen just like /popup |
 | **/popcustom 13 hi there** | Will display "hi there" on the screen in red, for 3 seconds (/popup's default) |
 | **/popcustom 13 5 hi there** | Will display "hi there" on the screen in red, for 5 seconds. |
-|  |  |
+
 
 If you type `/popcustom` with no parameters, it will display the help output for this information.
 

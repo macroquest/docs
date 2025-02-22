@@ -6,13 +6,12 @@ tags:
 
 ## Syntax
 
-```text
-/setwintitle <Window Name>
-```
+**/setwintitle** _Window Name_
 
 ## Description
 
 Sets the window title (the name shown at the top of the window and in the task bar tray) to whatever text you specify.
+
 
 ## Examples
 

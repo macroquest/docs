@@ -6,26 +6,29 @@ tags:
 
 ## Syntax
 
-**/itemnotify slotname\|\#\|\|itemname ''notification**''  
-**/itemnotify in** _**bagslot**_ **slot\#** _**notification**_
+**/itemnotify [** _slotname_ **|** _#_ **|** **in** _bag_ _slot#_ **|** _itemname_ **]** _notification_
 
 ## Description
 
-Similar to the /click function, but does not involve the use of the mouse.
+Simulates inventory interactions. Similar to [/click](click.md) without the mouse click.
 
-* _Slotname_ can be any one of the equipment [Slot Names](../../reference/general/slot-names.md).
-* _Bagslot_ can be pack1-pack8 or bank1-bank16. \*\*Sharedbank1, sharedbank2 and trade1-trade8 are not yet implemented
+## Parameters
 
-  in /itemnotify.\*\*
+* _slotname_ - any one of the equipment [Slot Names](../../reference/general/slot-names.md).
+* _#_ - any slot number.
+* **in** _bag_ _slot#_ - can be pack1-pack8 or bank1-bank24, followed by a slot number.
+    - *Not supported: sharedbank, trade slots*
+* _itemname_ - first match in inventory
+* _notification_ can be any one of the following:
 
-_Notification_ can be any one of the following:
-
-|  |  |
-| :--- | :--- |
-| **leftmouseup** | Puts the item on the cursor, or returns it to _slotname_ if its already on the cursor (same as left clicking an inventory item). |
-| **leftmouseheld** | Clicks and holds _slotname_. Used for making hotkeys. |
-| **rightmouseup** | Casts the item, or opens the container. This is the same as right clicking an inventory slot. |
-| **rightmouseheld** | Opens up the item display window. |
+| Notification        | Action                              |
+|---------------------|-------------------------------------|
+| leftmouseup         | Left click (press + release)        |
+| leftmouseheld       | Left mouse hold                     |
+| leftmouseheldup     | Release after left hold             |
+| rightmouseup        | Right click (press + release)       |
+| rightmouseheld      | Right mouse hold                    |
+| rightmouseheldup    | Release after right hold  
 
 ## Examples
 

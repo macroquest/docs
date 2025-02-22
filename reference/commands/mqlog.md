@@ -6,11 +6,11 @@ tags:
 
 ## Syntax
 
-**/mqlog clear \|** _**text**_
+**/mqlog clear |** _text_
 
 ## Description
 
-This will log _text_ to a log file in the "Logs" directory
+This will log _text_ to a log file in the "Logs" directory. Clear will delete everything in the log file.
 
 **Notes**
 
@@ -22,4 +22,3 @@ This will log _text_ to a log file in the "Logs" directory
 ```text
 /mqlog The number of combines completed is: ${CombineCount}
 ```
-

@@ -6,7 +6,7 @@ tags:
 
 ## Syntax
 
-**/dosocial** [list \| "social name"]
+**/dosocial [ list |** _social name_ **]**
 
 ## Description
 

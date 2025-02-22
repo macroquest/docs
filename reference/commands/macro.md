@@ -6,23 +6,24 @@ tags:
 
 ## Syntax
 
-**/macro** _**filename**_ **[** _**param0**_ **\[** _**param1**_ **\[...\]\]]**
+**/macro** _filename_ **[** _param0_ **[** _param1_ **[**...**]]]**
 
 ## Description
 
-Starts running a macro. Optional parameters can be added to the end of the /macro line, and the parameters will be passed to Sub Main within that macro.
+Executes a macro file. Supports passing parameters to the macro's `Sub Main` entry point.
 
-**Notes**
+## Notes
 
-* Calling a macro from another macro will end the calling macro.  
-* \*\*Invoking a /macro from within a macro will cause the first line to be skipped in the new
-
-  macro. Deal with it.&lt;/span&gt;\*\*
+* Calling a macro from another macro will immediately terminate the calling macro (no cleanup).  
+* Parameters are passed as space-separated values to `Sub Main` (params with spaces must be quoted)
+* File resolution:
+    - Appends `.mac` extension if missing
+    - Searches relative to `Macros/` directory
+    - Supports absolute paths
 
 ## Examples
-
 ```text
 /macro mymacro
-
-/macro mymacro "water flask" "metal bits"
+/macro subdir/mymacro "goblin" 5
+/macro "/full/path/to/macros/tradeskill.mac" "Smithing"
 ```
