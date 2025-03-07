@@ -7,7 +7,7 @@ tags:
 ## Syntax
 
 ```eqcommand
-/return [value\|${varname}]
+/return [value|${varname}]
 ```
 
 ## Description

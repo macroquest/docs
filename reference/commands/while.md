@@ -8,11 +8,9 @@ tags:
 
 ```eqcommand
 /while (condition) {
-```
-
 `...`
-
-**}**
+}
+```
 
 ## Description
 

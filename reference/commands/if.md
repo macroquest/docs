@@ -8,15 +8,11 @@ tags:
 
 ```eqcommand
 /if ( <formula> ) {
+<commands>
+} [ else [/if ( <formula> ) ] {
+<...>
+} ]
 ```
-
-_**commands**_
-
-**} [ else \[/if (**_**formula**_**)\] { ]**
-
-**...**
-
-**}**
 
 ## Description
 

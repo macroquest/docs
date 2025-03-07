@@ -7,7 +7,7 @@ tags:
 ## Syntax
 
 ```eqcommand
-/goto <:labelname>
+/goto :<labelname>
 ```
 
 ## Description

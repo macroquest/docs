@@ -7,7 +7,7 @@ tags:
 ## Syntax
 
 ```eqcommand
-/call <subroutine> [Param0... \[Param\#\]]
+/call <subroutine> [Param0... [Param#]]
 ```
 
 ### Description
