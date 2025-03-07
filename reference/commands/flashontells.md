@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/flashontells [on|off]**
+```eqcommand
+/flashontells [on|off]
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/msgbox** _message_
+```eqcommand
+/msgbox <message>
+```
 
 ## Description
 

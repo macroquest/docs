@@ -5,7 +5,9 @@ tags:
 # /mouseto
 
 ## Syntax
-**/mouseto** _X or X offset_ **[** _Y or Y offset_ **]**
+```eqcommand
+/mouseto <X or X offset> [ <Y or Y offset> ]
+```
 
 ## Description
 

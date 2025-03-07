@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/click [ left | right ] [ target | item | door | switch | center |** _x_ _y_ **]**
+```eqcommand
+/click [ left | right ] [ target | item | door | switch | center | <x> <y> ]
+```
 
 ## Description
 

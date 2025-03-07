@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/eqtarget** _name_ **| group** _1-6_
+```eqcommand
+/eqtarget <name> | group <1-6>
+```
 
 ## Description
 

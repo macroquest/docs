@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/foreground**
+```eqcommand
+/foreground
+```
 
 ## Description
 

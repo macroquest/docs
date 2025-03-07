@@ -9,7 +9,9 @@ tags:
 
 ## Syntax
 
-**/target** _**option**_
+```eqcommand
+/target <option>
+```
 
 ## Description
 

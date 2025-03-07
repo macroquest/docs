@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/itemtarget "**_**itemname**_**"**
+```eqcommand
+/itemtarget "<itemname>"
+```
 
 ## Description
 

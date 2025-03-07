@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/face [predict] [fast] [nolook] [away] [ loc** _y,x[,z]_ **| heading** _angle_ **| item | door|switch | id** _#_ **|** _Spawn Search_ **]**
+```eqcommand
+/face [predict] [fast] [nolook] [away] [ loc <y,x[,z]> | heading <angle> | item | door|switch | id <#> | <Spawn Search> ]
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/ranged [** _**spawnID**_ **]**
+```eqcommand
+/ranged [ <spawnID> ]
+```
 
 ## Description
 

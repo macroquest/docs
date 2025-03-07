@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/mqlistmodules [**_name_**]**
+```eqcommand
+/mqlistmodules [<name>]
+```
 
 ## Description
 List loaded modules in the MQ directory to help with debugging stuck and/or broken dependencies/plugins. `<name>` is a filter. 

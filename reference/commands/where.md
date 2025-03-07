@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/where [ pc \| npc \] \[** _**spawnname**_ **]**
+```eqcommand
+/where [ pc | npc ] [ <spawnname> ]
+```
 
 ## Description
 

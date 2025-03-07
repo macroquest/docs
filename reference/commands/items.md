@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/items [**_**filter**_**]**
+```eqcommand
+/items [<filter>]
+```
 
 ## Description
 

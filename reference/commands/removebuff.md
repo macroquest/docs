@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/removebuff [-pet\|-both] Name Of Buff**
+```eqcommand
+/removebuff [-pet|-both] <Name Of Buff>
+```
 
 ## Description
 

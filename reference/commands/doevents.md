@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/doevents [ flush ] [** _specificevent_ **]**
+```eqcommand
+/doevents [ flush ] [ <specificevent> ]
+```
 
 ## Description
 

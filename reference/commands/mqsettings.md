@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/mqsettings [Section to Open]**
+```eqcommand
+/mqsettings [Section to Open]
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/continue**
+```eqcommand
+/continue
+```
 
 ## Description
 

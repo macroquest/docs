@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/drop**
+```eqcommand
+/drop
+```
 
 ## Description
 

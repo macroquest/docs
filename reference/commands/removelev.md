@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/removelev**
+```eqcommand
+/removelev
+```
 
 ## Description
 

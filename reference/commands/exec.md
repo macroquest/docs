@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/exec** _command_ **[** _parameters_ **| bg] [bg]**
+```eqcommand
+/exec <command> [ <parameters> | bg] [bg]
+```
 
 ## Description
 

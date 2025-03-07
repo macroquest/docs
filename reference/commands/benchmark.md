@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/benchmark [**_command_**]**
+```eqcommand
+/benchmark [<command>]
+```
 
 ## Description
 

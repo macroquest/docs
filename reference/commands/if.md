@@ -6,15 +6,13 @@ tags:
 
 ## Syntax
 
-**/if (** _**formula**_ **) {**
-
-_**commands**_
-
-**} [ else \[/if (**_**formula**_**)\] { ]**
-
-**...**
-
-**}**
+```eqcommand
+/if ( <formula> ) {
+<commands>
+} [ else [/if ( <formula> ) ] {
+<...>
+} ]
+```
 
 ## Description
 

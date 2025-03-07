@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/captioncolor list |** _"name"_ **[ off | on |**  _r g b_ **]**
+```eqcommand
+/captioncolor list | <"name"> [ off | on |  <r g b> ]
+```
 
 ## Description
 

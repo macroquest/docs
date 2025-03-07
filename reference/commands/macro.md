@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/macro** _filename_ **[** _param0_ **[** _param1_ **[**...**]]]**
+```eqcommand
+/macro <filename> [ <param0> [ <param1> [...]]]
+```
 
 ## Description
 

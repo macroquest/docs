@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/notify** _windowname_ _control_ **[** _notification_ **[** _data_ **] ]**
+```eqcommand
+/notify <windowname> <control> [ <notification> [ <data> ] ]
+```
 
 ## Description
 

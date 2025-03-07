@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/cast [ list |** _"spellname"_ **| item** _"itemname"_ **] [ loc** _x y z_ **]**
+```eqcommand
+/cast [ list | <"spellname"> | item <"itemname"> ] [ loc <x y z> ]
+```
 
 ## Description
 

@@ -32,6 +32,7 @@ jobs:
           pip install mkdocs-same-dir
           pip install python-markdown-math
           pip install mkdocs-macros-plugin
+          pip install eq_lexers
       - name: Configure git as github-actions bot
         run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Publish docs

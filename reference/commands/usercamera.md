@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/usercamera [** _0-7_ **|on|off|save [** _charname_ **]|load [** _charname_ **]]**
+```eqcommand
+/usercamera [ <0-7> |on|off|save [ <charname> ]|load [ <charname> ]]
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/itemnotify [** _slotname_ **|** _#_ **|** **in** _bag_ _slot#_ **|** _itemname_ **]** _notification_
+```eqcommand
+/itemnotify [ <slotname> | <#> | in <bag> <slot#> | <itemname> ] <notification>
+```
 
 ## Description
 

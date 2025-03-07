@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/netstatusxpos** _**XXX**_
+```eqcommand
+/netstatusxpos <XXX>
+```
 
 ## Description
 

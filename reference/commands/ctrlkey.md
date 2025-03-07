@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/ctrlkey** _command_
+```eqcommand
+/ctrlkey <command>
+```
 
 ## Description
 

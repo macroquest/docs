@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/setwintitle** _Window Name_
+```eqcommand
+/setwintitle <Window Name>
+```
 
 ## Description
 

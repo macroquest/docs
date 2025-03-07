@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/doors [** _filter_ **]**
+```eqcommand
+/doors [ <filter> ]
+```
 
 ## Description
 

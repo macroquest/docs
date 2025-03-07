@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/help macro**
+```eqcommand
+/help macro
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/useitem** _item name_
+```eqcommand
+/useitem <item name>
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/vardata varname** _**newMQ2Datavalue**_
+```eqcommand
+/vardata varname <newMQ2Datavalue>
+```
 
 ## Description
 

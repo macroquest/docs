@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/spew [on\|off]**
+```eqcommand
+/spew [on|off]
+```
 
 ## Description
 

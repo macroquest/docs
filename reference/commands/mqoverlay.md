@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/mqoverlay [reload | resume | stop | start | cursor [on|off] debug [mouse|graphics|fonts|cursor]]**
+```eqcommand
+/mqoverlay [reload | resume | stop | start | cursor [on|off] debug [mouse|graphics|fonts|cursor]]
+```
 
 ## Description
 

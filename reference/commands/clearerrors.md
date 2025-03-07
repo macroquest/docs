@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/clearerrors**
+```eqcommand
+/clearerrors
+```
 
 ## Description
 

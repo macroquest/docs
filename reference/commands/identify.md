@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/identify**
+```eqcommand
+/identify
+```
 
 ## Description
 

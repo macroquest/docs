@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/sellitem [\#]**
+```eqcommand
+/sellitem [<#quantity>]
+```
 
 ## Description
 

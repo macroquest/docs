@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/quit**
+```eqcommand
+/quit
+```
 
 ## Description
 

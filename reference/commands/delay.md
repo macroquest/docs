@@ -6,13 +6,15 @@ tags:
 
 ## Syntax
 
-**/delay** _#_**[s|m]** **[** _condition_ **]**
+```eqcommand
+/delay <#deciseconds>[s|m] [ <condition> ]
+```
 
 ## Description
 
 Fully pauses the macro for the amount of time specified, or until _condition_ is met.
 
-Time can be specified in 10ths of a second (a number by itself\) or in seconds \(number followed by an "s"\) or minutes \(number followed by "m").
+Time can be specified in 10ths of a second (a number by itself) or in seconds (number followed by an "s") or minutes (number followed by "m").
 
 ## Examples
 

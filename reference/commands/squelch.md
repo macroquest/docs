@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/squelch** _**command**_
+```eqcommand
+/squelch <command>
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/convertitem** _item name_
+```eqcommand
+/convertitem <"item name">
+```
 
 ## Description
 Triggers convert on the item.

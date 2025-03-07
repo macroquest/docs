@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/makemevisible**
+```eqcommand
+/makemevisible
+```
 
 ## Description
 

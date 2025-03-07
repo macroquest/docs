@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/varset varname [** _**newvalue**_ **]**
+```eqcommand
+/varset varname [ <newvalue> ]
+```
 
 ## Description
 

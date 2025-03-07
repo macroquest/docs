@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/echo** _text_
+```eqcommand
+/echo <text>
+```
 
 ## Description
 
@@ -61,3 +63,6 @@ span[style*="#00FFFF"] { color: #00FFFF !important; }
 |------|--------------------------------------|
 | `\n` | Newline                              |
 | `\d` | Down (same as newline, LamahHerder knows not why) |
+
+## See also
+* [/cecho](cecho.md)

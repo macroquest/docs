@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/taskquit** [_name_]
+```eqcommand
+/taskquit [<name>]
+```
 
 ## Description
 

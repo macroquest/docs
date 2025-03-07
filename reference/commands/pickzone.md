@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/pickzone** _#_
+```eqcommand
+/pickzone <#>
+```
 
 ## Description
 

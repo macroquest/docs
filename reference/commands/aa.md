@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/aa [list (all | timers)] [info** _abilityname_ **] [act** _abilityname_ **]**
+```eqcommand
+/aa [list (all | timers)] [info <abilityname> ] [act <abilityname> ]
+```
 
 ## Description
 

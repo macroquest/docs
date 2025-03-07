@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/break**
+```eqcommand
+/break
+```
 
 ## **Description**
 

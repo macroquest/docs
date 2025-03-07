@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/alert { add | remove | clear | list }** _#list_ **[** _Spawn Search_ **]**
+```eqcommand
+/alert { add | remove | clear | list } <#list> [ <Spawn Search> ]
+```
 
 ## Description
 

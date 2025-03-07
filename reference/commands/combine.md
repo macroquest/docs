@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/combine pack\#**
+```eqcommand
+/combine pack<#>
+```
 
 ## Description
 

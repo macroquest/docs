@@ -6,11 +6,11 @@ tags:
 
 ## Syntax
 
-**/while (condition) {**
-
+```eqcommand
+/while (condition) {
 `...`
-
-**}**
+}
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/buyitem** [_quantity_]
+```eqcommand
+/buyitem [<quantity>]
+```
 
 ## Description
 

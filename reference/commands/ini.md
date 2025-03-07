@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/ini "filename" "keyname" "valuename" "value"**
+```eqcommand
+/ini "filename" "keyname" "valuename" "value"
+```
 
 ## Description
 

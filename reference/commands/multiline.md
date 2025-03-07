@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/multiline** _**delimiter command**_ **\[** _**delimiter command**_ **\[...] ]**
+```eqcommand
+/multiline <delimiter> <command> [ <delimiter> <command> [...] ]
+```
 
 ## Description
 

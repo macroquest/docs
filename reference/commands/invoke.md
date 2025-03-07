@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/invoke ${TLO.[XXX].Action}**
+```eqcommand
+/invoke ${TLO.[XXX].Action}
+```
 
 ## Description
 

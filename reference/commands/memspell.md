@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/memspell** _gem_ "_spellname_"
+```eqcommand
+/memspell <gem> "<spellname>"
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/alias** _aliasname_ _command_ **| [list | reload |** _aliasname_ **delete]**
+```eqcommand
+/alias <aliasname> <command> | [list | reload | <aliasname> delete]
+```
 
 ## Description
 Creates custom command shortcuts. Aliases are saved in MacroQuest.ini and persist between sessions.

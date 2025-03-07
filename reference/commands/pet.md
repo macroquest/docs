@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/pet** _action_ _spawnid_
+```eqcommand
+/pet <action> <spawnid>
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/executelink** _&lt;link text&gt;_
+```eqcommand
+/executelink <link text>
+```
 
 ## Description
 Simulates clicking on formatted link text.

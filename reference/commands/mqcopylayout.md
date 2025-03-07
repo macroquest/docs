@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/mqcopylayout** _charname_ _server_ **[res:**_W_**x**_H_**]** **[nohot]** **[noload]** **[nosoc]** **[none]**
+```eqcommand
+/mqcopylayout <charname> <server> [res:<W>x<H>] [nohot] [noload] [nosoc] [none]
+```
 
 ## Description
 

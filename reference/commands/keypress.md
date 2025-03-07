@@ -5,7 +5,9 @@ tags:
 # /keypress
 
 ## Syntax
-**/keypress** _name_ **[hold|chat]**
+```eqcommand
+/keypress <name> [hold|chat]
+```
 
 ## Description
 Simulates key presses for keybinds (e.g. "jump", "forward"), virtual keyboard (e.g. "shift+b"), or direct chat window input. Does not physically press keys, making it safe for background operation.

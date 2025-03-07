@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/plugin** _name_ **[ load | unload | toggle ] [noauto] | [list]**
+```eqcommand
+/plugin <name> [ load | unload | toggle ] [noauto] | [list]
+```
 
 ## Description
 

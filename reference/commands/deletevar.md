@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/deletevar** _varname_ [**\* global**]
+```eqcommand
+/deletevar <varname> [* global]
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/listmacros [**_filter_**]**
+```eqcommand
+/listmacros [<filter>]
+```
 
 ## Description
 

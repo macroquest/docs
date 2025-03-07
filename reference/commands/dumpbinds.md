@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/dumpbinds** [ _filename_ ]
+```eqcommand
+/dumpbinds [ <filename> ]
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/who** _**options**_
+```eqcommand
+/who <options>
+```
 
 ## Description
 

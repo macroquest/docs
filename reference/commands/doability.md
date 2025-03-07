@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/doability** [**list** | _ability_]
+```eqcommand
+/doability [list | <ability>]
+```
 
 ## Description
 Extends EverQuest's doability command (/doability 1-10) to list available abilities and perform them by name or ID. 
