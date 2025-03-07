@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/banklist**
+```eqcommand
+/banklist
+```
 
 ## Description
 

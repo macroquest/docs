@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/cecho** _**text**_
+```eqcommand
+/cecho <text>
+```
 
 ## Description
 

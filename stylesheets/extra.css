@@ -97,3 +97,32 @@ details {
         transform: none;
     }
 }
+
+/* Syntax highlighting for eq_lexers */
+.language-eqcommand .nt { 
+    font-weight: bold; 
+}  /* Slash commands */
+
+.language-eqcommand .nl { 
+    color: var(--md-code-hl-constant-color);
+}  /* optional keywords */
+
+.language-eqcommand .no { 
+    font-weight: bold; 
+    color: var(--md-code-hl-keyword-color)
+}  /* required keywords */
+
+.language-eqcommand .p { 
+    font-weight: normal; 
+}  /* Punctuation ({|[]<>...}) */
+
+.language-eqcommand .nv { 
+    font-style: italic; 
+    font-weight: normal; 
+}  /* optional variable placeholders */
+
+.language-eqcommand .nv-Required { 
+    font-style: italic; 
+    font-weight: bold; 
+    color: var(--md-code-hl-name-color);
+}  /* required variable placeholders */

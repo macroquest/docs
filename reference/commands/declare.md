@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/declare** _varname_ **|** _varname[array extents]_ **[** _type_ **]** **[ local | global | outer ]** **[** _defaultvalue_ **]**
+```eqcommand
+/declare <varname> | <varname[array extents]> [ <type> ] [ local | global | outer ] [ <defaultvalue> ]
+```
 
 ## Description
 

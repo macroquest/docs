@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/windows [** _windowname_ **| open ]**
+```eqcommand
+/windows [ <windowname> | open ]
+```
 
 ## Description
 

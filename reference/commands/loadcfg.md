@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/loadcfg** _filename_
+```eqcommand
+/loadcfg <filename>
+```
 
 ## Description
 

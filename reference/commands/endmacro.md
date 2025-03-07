@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/endmacro**
+```eqcommand
+/endmacro
+```
 
 ## Description
 

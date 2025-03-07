@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/bind [~]**_name_ **[** _keycombo_ **| clear] | [list | eqlist]**
+```eqcommand
+/bind [~]<name> [ <keycombo> | clear] | [list | eqlist]
+```
 
 ## Description
 

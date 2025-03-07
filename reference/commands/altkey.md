@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/altkey** _command_
+```eqcommand
+/altkey <command>
+```
 
 ## Description
 

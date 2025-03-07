@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/dumpstack**
+```eqcommand
+/dumpstack
+```
 
 ## Description
 For debugging macroscript, outputs the current macro call stack

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/advloot {personal | shared} {set |** _"item name"_ **|** _#index_ **}** _window option_ **[** _quantity_ **]**
+```eqcommand
+/advloot {personal | shared} {set | <"item name"> | <#index> } <window option> [ <quantity> ]
+```
 
 ## Description
 

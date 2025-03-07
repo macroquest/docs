@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/noparse** _**command**_
+```eqcommand
+/noparse <command>
+```
 
 ## Description
 

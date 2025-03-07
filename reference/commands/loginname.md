@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/loginname**
+```eqcommand
+/loginname
+```
 
 ## Description
 

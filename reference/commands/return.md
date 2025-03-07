@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/return [value\|${varname}]**
+```eqcommand
+/return [value\|${varname}]
+```
 
 ## Description
 

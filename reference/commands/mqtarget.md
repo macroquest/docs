@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/mqtarget** _**option**_
+```eqcommand
+/mqtarget <option>
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/location**
+```eqcommand
+/location
+```
 
 ## Description
 

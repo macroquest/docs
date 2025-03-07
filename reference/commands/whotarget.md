@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/whotarget**
+```eqcommand
+/whotarget
+```
 
 ## Description
 

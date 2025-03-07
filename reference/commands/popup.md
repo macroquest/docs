@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/popup** _**text**_
+```eqcommand
+/popup <text>
+```
 
 ## Description
 

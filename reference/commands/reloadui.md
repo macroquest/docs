@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/reloadui**
+```eqcommand
+/reloadui
+```
 
 ## Description
 

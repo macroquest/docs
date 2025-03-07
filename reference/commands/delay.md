@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/delay** _#_**[s|m]** **[** _condition_ **]**
+```eqcommand
+/delay <#>[s|m] [ <condition> ]
+```
 
 ## Description
 

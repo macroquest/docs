@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/hotbutton** _name_ **[**_color_**]** **[**_line_**:][**_cursor_**:]**_text_**]**
+```eqcommand
+/hotbutton <name> [<color>] [<line>:][<cursor>:]<text>]
+```
 
 ## Description
 

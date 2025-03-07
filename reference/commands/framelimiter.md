@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/framelimiter [COMMAND] {OPTIONS}**
+```eqcommand
+/framelimiter [COMMAND] {OPTIONS}
+```
 
 ## Description
 

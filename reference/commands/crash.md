@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/crash [force]**
+```eqcommand
+/crash [force]
+```
 
 ## Description
 Create a synthetic crash for debugging purposes.

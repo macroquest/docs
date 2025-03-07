@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/skills [** _**skillname**_ **]**
+```eqcommand
+/skills [ <skillname> ]
+```
 
 ## Description
 

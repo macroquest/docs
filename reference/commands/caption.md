@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/caption list | update** _#_ **| MQCaptions [on|off] | reload | _type_** _value_ 
+```eqcommand
+/caption list | update <#> | MQCaptions [on|off] | reload | <type> <value> 
+```
 
 ## Description
 

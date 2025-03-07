@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/goto** _**:labelname**_
+```eqcommand
+/goto <:labelname>
+```
 
 ## Description
 

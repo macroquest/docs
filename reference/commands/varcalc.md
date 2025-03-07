@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/varcalc varname** _**formula**_
+```eqcommand
+/varcalc varname <formula>
+```
 
 ## Description
 

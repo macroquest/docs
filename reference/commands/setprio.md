@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/setprio** \#
+```eqcommand
+/setprio <#priority>
+```
 
 ## Description
 

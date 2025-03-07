@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/profile** _profile_
+```eqcommand
+/profile <profile>
+```
 
 ## Description
 

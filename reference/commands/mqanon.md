@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/mqanon** [*command*] [*parameters*] [*strategy*]
+```eqcommand
+/mqanon [*command*] [*parameters*] [*strategy*]
+```
 
 ## Description
 

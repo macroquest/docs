@@ -5,7 +5,9 @@ tags:
 # /loadspells
 
 ## Syntax
-**/loadspells** [list|"name"]
+```eqcommand
+/loadspells [list|<"name">]
+```
 
 ## Description
 Loads or lists saved spell sets. Similar to /memspellset, but it only memorizes the spellset if it's not already memorized. This command was part of MQ years before EQ was inspired to add /memspellset.

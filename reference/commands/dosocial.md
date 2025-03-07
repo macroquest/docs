@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/dosocial [ list |** _social name_ **]**
+```eqcommand
+/dosocial [ list | <social name> ]
+```
 
 ## Description
 

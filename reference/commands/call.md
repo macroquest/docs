@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/call** _**subroutine**_ **[Param0... \[Param\#\]]**
+```eqcommand
+/call <subroutine> [Param0... \[Param\#\]]
+```
 
 ### Description
 

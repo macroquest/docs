@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/setautorun**
+```eqcommand
+/setautorun
+```
 
 ## Description
 

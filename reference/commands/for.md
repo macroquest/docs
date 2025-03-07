@@ -6,7 +6,9 @@ tags:
 
 ### Syntax
 
-**/for** _**varname** initial-value_ **to\|downto** final-value **[step** _interval_**]**
+```eqcommand
+/for <varname initial-value> to\|downto final-value [step <interval>]
+```
 
 **/next** _**varname**_
 

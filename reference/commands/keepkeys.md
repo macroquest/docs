@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/keepkeys [off|on]**
+```eqcommand
+/keepkeys [off|on]
+```
 
 ## Description
 

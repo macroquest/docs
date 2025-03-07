@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/tloc**
+```eqcommand
+/tloc
+```
 
 ## Description
 

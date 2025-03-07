@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/if (** _**formula**_ **) {**
+```eqcommand
+/if ( <formula> ) {
+```
 
 _**commands**_
 

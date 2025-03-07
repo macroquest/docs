@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/seterror [** _**error**_ **]**
+```eqcommand
+/seterror [ <error> ]
+```
 
 ## Description
 

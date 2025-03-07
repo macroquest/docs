@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/mqconsole [clear | toggle | show | hide]**
+```eqcommand
+/mqconsole [clear | toggle | show | hide]
+```
 
 ## Description
 

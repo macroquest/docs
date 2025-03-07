@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/nomodkey** _**command**_
+```eqcommand
+/nomodkey <command>
+```
 
 ## Description
 

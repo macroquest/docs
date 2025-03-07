@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/destroy**
+```eqcommand
+/destroy
+```
 
 ## Description
 

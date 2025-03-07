@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/docommand** _command_
+```eqcommand
+/docommand <command>
+```
 
 ## Description
 

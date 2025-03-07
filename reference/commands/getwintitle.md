@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/getwintitle**
+```eqcommand
+/getwintitle
+```
 
 ## Description
 

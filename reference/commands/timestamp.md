@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/timestamp [on|off]**
+```eqcommand
+/timestamp [on|off]
+```
 
 ## Description
 Toggles timestamps on all chat messages. It can be set in MacroQuest.ini via `TimeStampChat=1` (1=ON, 0=OFF) in the [MacroQuest] section.

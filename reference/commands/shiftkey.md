@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/shiftkey** _**command**_
+```eqcommand
+/shiftkey <command>
+```
 
 ## Description
 

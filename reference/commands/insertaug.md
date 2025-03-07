@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/insertaug [** _itemID_ **|** _"Item Name"_ **|** _slot1_ _slot2_ **]**
+```eqcommand
+/insertaug [ <itemID> | <"Item Name"> | <slot1> <slot2> ]
+```
 
 ## Description
 

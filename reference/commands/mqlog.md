@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/mqlog clear |** _text_
+```eqcommand
+/mqlog clear | <text>
+```
 
 ## Description
 

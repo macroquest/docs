@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/unload**
+```eqcommand
+/unload
+```
 
 ## Description
 

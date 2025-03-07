@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/cleanup**
+```eqcommand
+/cleanup
+```
 
 ## Description
 

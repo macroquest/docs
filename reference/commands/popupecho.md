@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/popupecho [**_color_**] [**_time_in_seconds_to_display_message_**]** _message_
+```eqcommand
+/popupecho [<#color>] [<#seconds>] <message>
+```
 
 ## Description
 

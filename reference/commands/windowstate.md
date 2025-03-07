@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/windowstate** _window_ **[open|close]**
+```eqcommand
+/windowstate <window> [open|close]
+```
 
 ## Description
 

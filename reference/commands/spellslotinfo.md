@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/spellslotinfo** **[\#\|"spell name"]**
+```eqcommand
+/spellslotinfo [#|"<spell name>"]
+```
 
 ## Description
 

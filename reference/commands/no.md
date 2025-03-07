@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/no**
+```eqcommand
+/no
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/beepontells [on|off]**
+```eqcommand
+/beepontells [on|off]
+```
 
 ## Description
 

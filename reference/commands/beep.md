@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/beep** [ _filename_ ]
+```eqcommand
+/beep [ <filename> ]
+```
 
 ## Description
 

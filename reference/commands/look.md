@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/look [**_angle_**]**
+```eqcommand
+/look [<angle>]
+```
 
 ## Description
 

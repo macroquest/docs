@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/doortarget [ clear | id** _#_ **|** _name_ **]**
+```eqcommand
+/doortarget [ clear | id <#> | <name> ]
+```
 
 ## Description
 

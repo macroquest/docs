@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/mqpause [on|off] | chat [on|off]**
+```eqcommand
+/mqpause [on|off] | chat [on|off]
+```
 
 ## Description
 

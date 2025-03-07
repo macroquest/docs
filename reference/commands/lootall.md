@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/lootall**
+```eqcommand
+/lootall
+```
 
 ## Description
 

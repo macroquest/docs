@@ -7,7 +7,9 @@ tags:
 
 ## Syntax
 
-**/removeaug** _augment_ _item_
+```eqcommand
+/removeaug <augment> <item>
+```
 
 ## Description
 

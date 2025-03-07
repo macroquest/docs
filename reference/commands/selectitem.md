@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/selecitem** "itemname"
+```eqcommand
+/selecitem "itemname"
+```
 
 ## Description
 

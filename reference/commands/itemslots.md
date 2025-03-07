@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/itemslots**
+```eqcommand
+/itemslots
+```
 
 ## Description
 

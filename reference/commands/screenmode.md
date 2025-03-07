@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/screenmode** _#_
+```eqcommand
+/screenmode <#>
+```
 
 ## Description
 

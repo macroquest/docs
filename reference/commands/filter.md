@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/filter [macros {all|enhanced|none}] [skills {all|increase|none}] [target|money|food|encumber|debug {on|off}] [name {add|remove}** _text_ **] [zrange** _#_ **] [mq {on|off}]**
+```eqcommand
+/filter [macros {all|enhanced|none}] [skills {all|increase|none}] [target|money|food|encumber|debug {on|off}] [name {add|remove} <text> ] [zrange <#> ] [mq {on|off}]
+```
 
 ## Description
 

@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/timed \#** _**command**_
+```eqcommand
+/timed <#deciseconds> <command>
+```
 
 ## Description
 

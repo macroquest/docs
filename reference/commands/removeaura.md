@@ -6,7 +6,9 @@ tags:
 
 ## Syntax
 
-**/removeaura Name Of Aura**
+```eqcommand
+/removeaura <Name Of Aura>
+```
 
 ## Description
 
