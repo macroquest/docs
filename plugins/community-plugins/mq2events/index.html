@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14159,7 +14159,7 @@
 <p><code>/event [option] [&lt;name&gt; &lt;trigger text|command text&gt;]</code> - Adds, lists, deletes, and controls all events.<br>
 <code>/eventdebug [on|off]</code> - Turns event debugging on or off.<br></p>
 <h3 id="variables">Variables<a class="headerlink" href="#variables" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>EventArg1 these are set acording to last event triggered and correspond to #1# .. #9#
+<div class="language-text highlight"><pre><span></span><code>EventArg1 these are set acording to last event triggered and correspond to #1# .. #9#
 EventArg2 these are not cleared so you can have one event use #9# and once set it will stay set until another #9# is encountered.
 EventArg3
 EventArg4
@@ -14172,13 +14172,13 @@ EventArg9
 <h3 id="ini-file">INI file<a class="headerlink" href="#ini-file" title="Permanent link">&para;</a></h3>
 <p>MQ2Events_CharacterName.ini</p>
 <p>Format:</p>
-<div class="highlight"><pre><span></span><code>[eventname]
+<div class="language-text highlight"><pre><span></span><code>[eventname]
 trigger=trigger text
 command=command to execute when triggered
 </code></pre></div>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="ini-entries">INI Entries<a class="headerlink" href="#ini-entries" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>[enrage]
+<div class="language-text highlight"><pre><span></span><code>[enrage]
 trigger=|${Target.DisplayName}| has become ENRAGED#2#
 command=/attack off
 
@@ -14253,7 +14253,7 @@ command=/timed ${Math.Calc[3+${Math.Rand[4]}].Int}s /raidaccept
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

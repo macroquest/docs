@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14088,11 +14088,12 @@
 
 <h1 id="if">/if<a class="headerlink" href="#if" title="Permanent link">&para;</a></h1>
 <h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
-<p><strong>/if (</strong> <em><strong>formula</strong></em> <strong>) {</strong></p>
-<p><em><strong>commands</strong></em></p>
-<p><strong>} [ else <script type="math/tex; mode=display">/if (**_**formula**_**)</script> { ]</strong></p>
-<p><strong>...</strong></p>
-<p><strong>}</strong></p>
+<div class="language-eqcommand highlight"><pre><span></span><code><span class="nt">/if</span> <span class="no">(</span> <span class="p">&lt;</span><span class="nv nv-Required">formula</span><span class="p">&gt;</span> <span class="no">)</span> <span class="p">{</span>
+<span class="p">&lt;</span><span class="nv nv-Required">commands</span><span class="p">&gt;</span>
+<span class="p">}</span> <span class="p">[</span> <span class="nl">else</span> <span class="p">[</span><span class="nl">/if</span> <span class="nl">(</span> <span class="p">&lt;</span><span class="nv">formula</span><span class="p">&gt;</span> <span class="nl">)</span> <span class="p">]</span> <span class="p">{</span>
+<span class="p">&lt;</span><span class="nv nv-Required">...</span><span class="p">&gt;</span>
+<span class="p">}</span> <span class="p">]</span>
+</code></pre></div>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>This will run all <em>commands</em> between the braces ( {} ) if <em>formula</em> evaluates to something other than 0.</p>
 <ul>
@@ -14110,7 +14111,7 @@
 <li>This will not work on some older versions of MQ2 (IE Jan 25, 2004) You will get a "Failed to parse /if command"</li>
 </ul>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code>/if (${Target.ID}) {
+<div class="language-text highlight"><pre><span></span><code>/if (${Target.ID}) {
  /call Cast &quot;Complete Healing&quot; gem1
 }
 
@@ -14191,7 +14192,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

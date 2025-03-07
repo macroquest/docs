@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14060,86 +14060,86 @@
 <h2 id="explanation-without-colors">Explanation without Colors<a class="headerlink" href="#explanation-without-colors" title="Permanent link">&para;</a></h2>
 <p>For this explanation, <code>${Me.Name}</code> will return "Knightly" and <code>${Me.Class}</code> will return "Programancer."  I'm also going to reference the Spawn ID of Knightly with <code>${Spawn[=Knightly].ID}</code> returning "007" even though this is meaningless outside of the context of this explanation.</p>
 <p><strong>The MacroQuest parser first parses from left to right to tokenize the variables that need to be parsed.  That means in the command:</strong></p>
-<div class="highlight"><pre><span></span><code>/echo My name is ${Me.Name} and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>/echo My name is ${Me.Name} and my class is ${Me.Class}.
 </code></pre></div>
 <p>MacroQuest first parses <code>${Me.Name}</code> so that the above becomes:</p>
-<div class="highlight"><pre><span></span><code>My name is Knightly and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>My name is Knightly and my class is ${Me.Class}.
 </code></pre></div>
 <p>And then parses <code>${Me.Class}</code> so that the above returns:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] My name is Knightly and my class is Programancer.
+<div class="language-text highlight"><pre><span></span><code>[MQ2] My name is Knightly and my class is Programancer.
 </code></pre></div>
 <p><strong>Nested queries are processed from right to left AFTER it has been tokenized.  What this means is that in:</strong></p>
-<div class="highlight"><pre><span></span><code>/echo My ID is ${Spawn[=${Me.Name}].ID} and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>/echo My ID is ${Spawn[=${Me.Name}].ID} and my class is ${Me.Class}.
 </code></pre></div>
 <p>MacroQuest first tokenizes to get <code>${Spawn[=${Me.Name}].ID}</code> and then parses <code>${Me.Name}</code> becoming:</p>
-<div class="highlight"><pre><span></span><code>My ID is ${Spawn[=Knightly].ID} and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>My ID is ${Spawn[=Knightly].ID} and my class is ${Me.Class}.
 </code></pre></div>
 <p>Since there are still items to parse it continues to the left to get:</p>
-<div class="highlight"><pre><span></span><code>My ID is 007 and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>My ID is 007 and my class is ${Me.Class}.
 </code></pre></div>
 <p>And finally returns:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] My ID is 007 and my class is Programancer
+<div class="language-text highlight"><pre><span></span><code>[MQ2] My ID is 007 and my class is Programancer
 </code></pre></div>
 <p><strong>The exception to this is when you override the parser with the <code>${Parse[]}</code> functionality.  This tells the parser to "START HERE" on any tokenized string.  The outermost Parse function always wins.  The number after the brace tells the Parse override how many times to iterate.  This means in the command:</strong></p>
-<div class="highlight"><pre><span></span><code>/echo My ID is ${Parse[0,${Spawn[=${Me.Name}].ID}]} and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>/echo My ID is ${Parse[0,${Spawn[=${Me.Name}].ID}]} and my class is ${Me.Class}.
 </code></pre></div>
 <p>MacroQuest first tokenizes to get <code>${Parse[0,${Spawn[=${Me.Name}].ID}]}</code> and, because there is a  <code>${Parse[]}</code> that gets evaluated first.  In this case, the parse is 0 which means "do not parse" so this becomes:</p>
-<div class="highlight"><pre><span></span><code>My ID is ${Spawn[=${Me.Name}].ID} and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>My ID is ${Spawn[=${Me.Name}].ID} and my class is ${Me.Class}.
 </code></pre></div>
 <p>And MacroQuest moves on to evaluating the <code>${Me.Class}</code> token to output:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] My ID is ${Spawn[=${Me.Name}].ID} and my class is Programancer.
+<div class="language-text highlight"><pre><span></span><code>[MQ2] My ID is ${Spawn[=${Me.Name}].ID} and my class is Programancer.
 </code></pre></div>
 <p><strong>You can use this to stop the parsing after one iteration:</strong></p>
-<div class="highlight"><pre><span></span><code>/echo My ID is ${Parse[1,${Spawn[=${Me.Name}].ID}]} and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>/echo My ID is ${Parse[1,${Spawn[=${Me.Name}].ID}]} and my class is ${Me.Class}.
 </code></pre></div>
 <p>MacroQuest first tokenizes to get <code>${Parse[1,${Spawn[=${Me.Name}].ID}]}</code> and because there is a <code>${Parse[]}</code> that gets evaluated first.  In this case, the parse is 1 which means "parse one time" so this becomes:</p>
-<div class="highlight"><pre><span></span><code>My ID is ${Parse[0,${Spawn[=Knightly].ID}]} and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>My ID is ${Parse[0,${Spawn[=Knightly].ID}]} and my class is ${Me.Class}.
 </code></pre></div>
 <p>Which then becomes:</p>
-<div class="highlight"><pre><span></span><code>My ID is ${Spawn[=Knightly].ID} and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>My ID is ${Spawn[=Knightly].ID} and my class is ${Me.Class}.
 </code></pre></div>
 <p>And MacroQuest moves on to evaluating the <code>${Me.Class}</code> token to output:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] My ID is ${Spawn[=Knightly].ID} and my class is Programancer.
+<div class="language-text highlight"><pre><span></span><code>[MQ2] My ID is ${Spawn[=Knightly].ID} and my class is Programancer.
 </code></pre></div>
 <p><strong>Setting this to higher numbers allows you to iterate as many times as necessary, but each iteration only parses the innermost variable.  That means, too many iterations will end up as if you hadn't used <code>${Parse[]}</code> at all.  In this same scenario consider if we used 2 iterations:</strong></p>
-<div class="highlight"><pre><span></span><code>/echo My ID is ${Parse[2,${Spawn[=${Me.Name}].ID}]} and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>/echo My ID is ${Parse[2,${Spawn[=${Me.Name}].ID}]} and my class is ${Me.Class}.
 </code></pre></div>
 <p>Again, starting with the first token <code>${Parse[2,${Spawn[=${Me.Name}].ID}]}</code> the line becomes:</p>
-<div class="highlight"><pre><span></span><code>My ID is ${Parse[1,${Spawn[=Knightly].ID}]} and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>My ID is ${Parse[1,${Spawn[=Knightly].ID}]} and my class is ${Me.Class}.
 </code></pre></div>
 <p>And then the next iteration it becomes:</p>
-<div class="highlight"><pre><span></span><code>My ID is ${Parse[0,007]} and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>My ID is ${Parse[0,007]} and my class is ${Me.Class}.
 </code></pre></div>
 <p>And then:</p>
-<div class="highlight"><pre><span></span><code>My ID is 007 and my class is ${Me.Class}.
+<div class="language-text highlight"><pre><span></span><code>My ID is 007 and my class is ${Me.Class}.
 </code></pre></div>
 <p>Until, finally, the Parse section is done and the parser moves on to <code>${Me.Class}</code> and outputs:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] My ID is 007 and my class is Programancer.
+<div class="language-text highlight"><pre><span></span><code>[MQ2] My ID is 007 and my class is Programancer.
 </code></pre></div>
 <p>So you can see that in this case <code>${Parse[2,${Spawn[=${Me.Name}].ID}]}</code> and <code>${Spawn[=${Me.Name}].ID}</code> are functionally equivalent.</p>
 <p><strong>Parse priority is also true for NESTED parses, so the outermost parse gets evaluated first and the action on that determines how the inner parses will get handled.  Consider for example:</strong></p>
-<div class="highlight"><pre><span></span><code>/echo This test is ${Parse[0,${Parse[1,${Me.Name}]}]}.
+<div class="language-text highlight"><pre><span></span><code>/echo This test is ${Parse[0,${Parse[1,${Me.Name}]}]}.
 </code></pre></div>
 <p>Which will return:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] This test is ${Parse[1,${Me.Name}]}.
+<div class="language-text highlight"><pre><span></span><code>[MQ2] This test is ${Parse[1,${Me.Name}]}.
 </code></pre></div>
 <p>Changing the first 0 to a 1 to make the command:</p>
-<div class="highlight"><pre><span></span><code>/echo This test is ${Parse[1,${Parse[1,${Me.Name}]}]}.
+<div class="language-text highlight"><pre><span></span><code>/echo This test is ${Parse[1,${Parse[1,${Me.Name}]}]}.
 </code></pre></div>
 <p>Will become:</p>
-<div class="highlight"><pre><span></span><code>This test is ${Parse[0,${Parse[0,Knightly]}]}.
+<div class="language-text highlight"><pre><span></span><code>This test is ${Parse[0,${Parse[0,Knightly]}]}.
 </code></pre></div>
 <p>Which will return:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] This test is ${Parse[0,Knightly]}
+<div class="language-text highlight"><pre><span></span><code>[MQ2] This test is ${Parse[0,Knightly]}
 </code></pre></div>
 <p>Finally, swapping the 0 and 1 from the first command will make the command:</p>
-<div class="highlight"><pre><span></span><code>/echo This test is ${Parse[1,${Parse[0,${Me.Name}]}]}.
+<div class="language-text highlight"><pre><span></span><code>/echo This test is ${Parse[1,${Parse[0,${Me.Name}]}]}.
 </code></pre></div>
 <p>Which will become:</p>
-<div class="highlight"><pre><span></span><code>This test is ${Parse[0,${Me.Name}]}.
+<div class="language-text highlight"><pre><span></span><code>This test is ${Parse[0,${Me.Name}]}.
 </code></pre></div>
 <p>And then output:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] This test is ${Me.Name}
+<div class="language-text highlight"><pre><span></span><code>[MQ2] This test is ${Me.Name}
 </code></pre></div>
 <h2 id="explanation-colorized-requires-latex-viewer">Explanation Colorized (requires LaTeX viewer)<a class="headerlink" href="#explanation-colorized-requires-latex-viewer" title="Permanent link">&para;</a></h2>
 <p>For this explanation, <span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span> will return "<span class="arithmatex">\(<code>\textcolor{teal}{\text{Knightly}}</code>\)</span>" and <span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span> will return "<span class="arithmatex">\(<code>\textcolor{green}{\text{Programancer}}</code>\)</span>."  I'm also going to reference the Spawn ID of Knightly with <span class="arithmatex">\(<code>\textcolor{purple}{\text{\$\{Spawn[=Knightly].ID\}}}</code>\)</span> returning "<span class="arithmatex">\(<code>\textcolor{purple}{\text{007}}</code>\)</span>" even though this is meaningless outside of the context of this explanation.</p>
@@ -14148,7 +14148,7 @@
 <p>MacroQuest first parses <span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span> so that the above becomes:</p>
 <p><code>My name is</code><span class="arithmatex">\(<code>\textcolor{teal}{\text{Knightly}}</code>\)</span><code>and my class is</code><span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span><code>.</code></p>
 <p>And then parses <span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span> so that the above returns:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] My name is Knightly and my class is Programancer.
+<div class="language-text highlight"><pre><span></span><code>[MQ2] My name is Knightly and my class is Programancer.
 </code></pre></div>
 <p><strong>Nested queries are processed from right to left AFTER it has been tokenized.  What this means is that in:</strong></p>
 <p><code>/echo My ID is</code><span class="arithmatex">\(<code>\textcolor{purple}{\text{\$\{Spawn[=}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{].ID\}}}</code>\)</span><code>and my class is</code><span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span><code>.</code></p>
@@ -14157,14 +14157,14 @@
 <p>Since there are still items to parse it continues to the left to get:</p>
 <p><code>My ID is</code><span class="arithmatex">\(<code>\textcolor{purple}{\text{007}}</code>\)</span><code>and my class is</code><span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span><code>.</code></p>
 <p>And finally returns:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] My ID is 007 and my class is Programancer
+<div class="language-text highlight"><pre><span></span><code>[MQ2] My ID is 007 and my class is Programancer
 </code></pre></div>
 <p><strong>The exception to this is when you override the parser with the <span class="arithmatex">(<code>\textcolor{red}{\text{\$\{Parse[]\}}}</code>\)</span> functionality.  This tells the parser to "START HERE" on any tokenized string.  The outermost Parse function always wins.  The number after the brace tells the Parse override how many times to iterate.  This means in the command:</strong></p>
 <p><code>/echo My ID is</code><span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Parse[0,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{\$\{Spawn[=}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{].ID\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{]\}}}</code>\)</span><code>and my class is</code><span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span><code>.</code></p>
 <p>MacroQuest first tokenizes to get <span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Parse[0,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{\$\{Spawn[=}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{].ID\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{]\}}}</code>\)</span> and, because there is a <span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Parse[]\}}}</code>\)</span> that gets evaluated first.  In this case, the parse is 0 which means "do not parse" so this becomes:</p>
 <p><code>My ID is</code><span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Spawn[=\$\{Me.Name\}].ID\}}}</code>\)</span><code>and my class is</code><span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span><code>.</code></p>
 <p>And MacroQuest moves on to evaluating the <span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span> token to output:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] My ID is ${Spawn[=${Me.Name}].ID} and my class is Programancer.
+<div class="language-text highlight"><pre><span></span><code>[MQ2] My ID is ${Spawn[=${Me.Name}].ID} and my class is Programancer.
 </code></pre></div>
 <p><strong>You can use this to stop the parsing after one iteration:</strong></p>
 <p><code>/echo My ID is</code><span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Parse[1,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{\$\{Spawn[=}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{].ID\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{]\}}}</code>\)</span><code>and my class is</code><span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span><code>.</code></p>
@@ -14173,7 +14173,7 @@
 <p>Which then becomes:</p>
 <p>My ID is <span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Spawn[=Knightly].ID\}\}}}</code>\)</span><code>and my class is</code><span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span><code>.</code></p>
 <p>And MacroQuest moves on to evaluating the <span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span> token to output:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] My ID is ${Spawn[=Knightly].ID} and my class is Programancer.
+<div class="language-text highlight"><pre><span></span><code>[MQ2] My ID is ${Spawn[=Knightly].ID} and my class is Programancer.
 </code></pre></div>
 <p><strong>Setting this to higher numbers allows you to iterate as many times as necessary, but each iteration only parses the innermost variable.  That means, too many iterations will end up as if you hadn't used <span class="arithmatex">(<code>\textcolor{red}{\text{\$\{Parse[]\}}}</code>\)</span> at all.  In this same scenario consider if we used 2 iterations:</strong></p>
 <p><code>/echo My ID is</code><span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Parse[2,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{\$\{Spawn[=}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{].ID\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{]\}}}</code>\)</span><code>and my class is</code><span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span><code>.</code></p>
@@ -14184,27 +14184,27 @@
 <p>And then:</p>
 <p><code>My ID is</code><span class="arithmatex">\(<code>\textcolor{purple}{\text{007}}</code>\)</span><code>and my class is</code><span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span><code>.</code></p>
 <p>Until, finally, the Parse section is done and the parser moves on to <span class="arithmatex">\(<code>\textcolor{green}{\text{\$\{Me.Class\}}}</code>\)</span> and outputs:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] My ID is 007 and my class is Programancer.
+<div class="language-text highlight"><pre><span></span><code>[MQ2] My ID is 007 and my class is Programancer.
 </code></pre></div>
 <p>So you can see that in this case <span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Parse[2,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{\$\{Spawn[=}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{].ID\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{]\}}}</code>\)</span> and <span class="arithmatex">\(<code>\textcolor{purple}{\text{\$\{Spawn[=}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{purple}{\text{].ID\}}}</code>\)</span> are functionally equivalent.</p>
 <p><strong>Parse priority is also true for NESTED parses, so the outermost parse gets evaluated first and the action on that determines how the inner parses will get handled.  Consider for example:</strong></p>
 <p><code>/echo This test is</code><span class="arithmatex">\(<code>\textcolor{orange}{\text{\$\{Parse[0,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Parse[1,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{]\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{orange}{\text{]\}}}</code>\)</span><code>.</code></p>
 <p>Which will return:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] This test is ${Parse[1,${Me.Name}]}.
+<div class="language-text highlight"><pre><span></span><code>[MQ2] This test is ${Parse[1,${Me.Name}]}.
 </code></pre></div>
 <p>Changing the first 0 to a 1 to make the command:</p>
 <p><code>/echo This test is</code><span class="arithmatex">\(<code>\textcolor{orange}{\text{\$\{Parse[1,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Parse[1,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{]\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{orange}{\text{]\}}}</code>\)</span><code>.</code></p>
 <p>Will become:</p>
 <p><code>This test is</code><span class="arithmatex">\(<code>\textcolor{orange}{\text{\$\{Parse[0,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Parse[0,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{Knightly}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{]\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{orange}{\text{]\}}}</code>\)</span><code>.</code></p>
 <p>Which will return:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] This test is ${Parse[0,Knightly]}
+<div class="language-text highlight"><pre><span></span><code>[MQ2] This test is ${Parse[0,Knightly]}
 </code></pre></div>
 <p>Finally, swapping the 0 and 1 from the first command will make the command:</p>
 <p><code>/echo This test is</code><span class="arithmatex">\(<code>\textcolor{orange}{\text{\$\{Parse[1,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Parse[0,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{]\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{orange}{\text{]\}}}</code>\)</span><code>.</code></p>
 <p>Which will become:</p>
 <p><code>This test is</code><span class="arithmatex">\(<code>\textcolor{red}{\text{\$\{Parse[0,}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{teal}{\text{\$\{Me.Name\}}}</code>\)</span><span class="arithmatex">\(<code>\textcolor{red}{\text{]\}}}</code>\)</span><code>.</code></p>
 <p>And then output:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] This test is ${Me.Name}
+<div class="language-text highlight"><pre><span></span><code>[MQ2] This test is ${Me.Name}
 </code></pre></div>
 
 
@@ -14265,7 +14265,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

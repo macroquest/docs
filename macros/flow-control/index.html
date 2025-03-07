@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14122,26 +14122,26 @@
 <li>The syntax for an <em>/if</em> statement can be found <a href="../../reference/commands/if/">here</a>.</li>
 <li>The simplest statements are one-liners like the following:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>/if (${Me.Sitting}) /stand
+<div class="language-text highlight"><pre><span></span><code>/if (${Me.Sitting}) /stand
 </code></pre></div>
 <p>This will stand you up if you're sitting.</p>
 <p>*One-line <a href="../../reference/commands/if/">/if</a> statements do not require curly braces ( {} )</p>
 <ul>
 <li>If you wish to execute more than one command, you must wrap your set of commands in braces:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>/if (${Me.Sitting}) {
+<div class="language-text highlight"><pre><span></span><code>/if (${Me.Sitting}) {
   /stand
   /echo I&#39;m standing now!
 }
 </code></pre></div>
 <p>*If statements can also match multiple conditions for fine-grained control:</p>
-<div class="highlight"><pre><span></span><code>/if (${Me.Standing} &amp;&amp; !${Me.Combat} &amp;&amp; !${Me.Casting.ID}) {
+<div class="language-text highlight"><pre><span></span><code>/if (${Me.Standing} &amp;&amp; !${Me.Combat} &amp;&amp; !${Me.Casting.ID}) {
   /sit
   /echo Medding now
 }
 </code></pre></div>
 <p>The above example will only be matched if you're currently standing <strong>and</strong> you're not in combat <strong>and</strong> you're not casting. Any of the <a href="../operators/">Operators</a> can be used to "fine-tune" the matching of any conditions. Also, brackets can be used to group certain sets of statements together.</p>
-<div class="highlight"><pre><span></span><code>/if ( (${Me.Sitting} &amp;&amp; !${Window[SpellBookWnd].Open}) || ${Me.Standing} ) /call Cast &quot;Complete Healing&quot; 10s
+<div class="language-text highlight"><pre><span></span><code>/if ( (${Me.Sitting} &amp;&amp; !${Window[SpellBookWnd].Open}) || ${Me.Standing} ) /call Cast &quot;Complete Healing&quot; 10s
 </code></pre></div>
 <p>This will only cast the spell if:</p>
 <ul>
@@ -14152,7 +14152,7 @@
 <li>I'm standing.</li>
 </ul>
 <p>You will also need the curly braces any time you're using <em>else</em> or <em>else if</em> statements. An example:</p>
-<div class="highlight"><pre><span></span><code>/if (${Me.Sitting}) {
+<div class="language-text highlight"><pre><span></span><code>/if (${Me.Sitting}) {
   /stand
   /echo I&#39;m standing now!
 } else {
@@ -14161,7 +14161,7 @@
 </code></pre></div>
 <p>Else blocks are extremely useful for catching "everything else" that is not matched by the <a href="../../reference/commands/if/">/if</a> statement.</p>
 <p>You can go one further and add some further matching with additional /if statments, like the following:</p>
-<div class="highlight"><pre><span></span><code>/declare random int local ${Math.Rand[10]}
+<div class="language-text highlight"><pre><span></span><code>/declare random int local ${Math.Rand[10]}
 /if (${random}&lt;=3) {
   /echo The number is less than or equal to 3
 } else /if (${random}&lt;=5) {
@@ -14175,7 +14175,7 @@
 <p>You can also nest /if statements within other /if statements, to make your matching and macro flow very powerful.</p>
 <h2 id="while-loops">While loops<a class="headerlink" href="#while-loops" title="Permanent link">&para;</a></h2>
 <p>Similar to for loops, while loops can be used to execute a series of commands as long as a certain set of conditions are or are not true.</p>
-<div class="highlight"><pre><span></span><code>/while (${Me.PctHPs}&lt;100 || ${Me.PctMana}&lt;100) {
+<div class="language-text highlight"><pre><span></span><code>/while (${Me.PctHPs}&lt;100 || ${Me.PctMana}&lt;100) {
  /if (${Me.Standing}) {
   /echo Sitting because I am standing.
    /sit
@@ -14188,20 +14188,20 @@
 <h2 id="for-loops">For loops<a class="headerlink" href="#for-loops" title="Permanent link">&para;</a></h2>
 <p>For loops are used when you want to perform the same set of commands on a list of items. With a /for loop, you define a starting number, an end number and (if necessary) a number to increment by. The loop will perform the set of commands with the starting number, then will increment it (by 1 as a default, unless you specify the number) and will then re-run all the commands with the next number. It will continue to do that until it reaches the end number, at which time it will exit.</p>
 <p>Take this example, which will give a list of all your buff slots:</p>
-<div class="highlight"><pre><span></span><code>/declare x int local
+<div class="language-text highlight"><pre><span></span><code>/declare x int local
 /for x 1 to 15
  /echo Buff ${x} is ${Me.Buff[${x}]}
 /next x
 </code></pre></div>
 <p>The problem with this example is that you'll get a couple of NULLs if you have no buffs in those slots, so we can further refine the loop to make use of an <a href="../../reference/commands/if/">/if</a> statement as well, like this:</p>
-<div class="highlight"><pre><span></span><code>/declare x int local
+<div class="language-text highlight"><pre><span></span><code>/declare x int local
 /for x 1 to 15
  /if (${Me.Buff[${x}].ID}) /echo Buff ${x} is ${Me.Buff[${x}]}
 /next x
 </code></pre></div>
 <p>This will have a look and see if the buff in slot ${x} has an ID (remember that /if statements only deal with numbers) and if the number is positive (ie. not 0), then it will echo the buff name.</p>
 <p>You could easily list the buffs in reverse order by using "downto" instead of "to" in the /for loop.</p>
-<div class="highlight"><pre><span></span><code>/declare x int local
+<div class="language-text highlight"><pre><span></span><code>/declare x int local
 /for x 15 downto 1
  /if (${Me.Buff[${x}].ID}) /echo Buff ${x} is ${Me.Buff[${x}]}
 /next x
@@ -14210,10 +14210,10 @@
 <h2 id="goto-jumps">Goto jumps<a class="headerlink" href="#goto-jumps" title="Permanent link">&para;</a></h2>
 <p>As with most programming and scripting languages, the use of the "goto" function is frowned upon (generally because it's slow and there are better ways of achieving the same result). In MQ2 it's not much different, and since MQ2 originally didn't include any type of "while" function, many older macros still include goto statements.</p>
 <p>First off, you need a marker to denote where the <a href="../../reference/commands/goto/">/goto</a> function should move to. A marker is created in the following format:</p>
-<div class="highlight"><pre><span></span><code>:marker
+<div class="language-text highlight"><pre><span></span><code>:marker
 </code></pre></div>
 <p>To utilize that marker with a <a href="../../reference/commands/goto/">/goto</a> statment, do something like the following:</p>
-<div class="highlight"><pre><span></span><code>Sub Main
+<div class="language-text highlight"><pre><span></span><code>Sub Main
   /echo start here
 
   :marker
@@ -14222,7 +14222,7 @@
 /return
 </code></pre></div>
 <p>In the above example, your MQ2 chat window would be filled with "just passed the marker" echoed constantly until you ended the macro. We've created an infinite loop above, which is the most common use of /goto. A conditional /goto (ie. a /goto after an /if statment) is the closest you can get to a "while" function. Take the following example:</p>
-<div class="highlight"><pre><span></span><code>Sub Main
+<div class="language-text highlight"><pre><span></span><code>Sub Main
   /declare num int local 1
   :marker
   /echo Number is ${num}
@@ -14231,7 +14231,7 @@
 /return
 </code></pre></div>
 <p>This would output:</p>
-<div class="highlight"><pre><span></span><code>[MQ2] Number is 1
+<div class="language-text highlight"><pre><span></span><code>[MQ2] Number is 1
 [MQ2] Number is 2
 [MQ2] Number is 3
 [MQ2] Number is 4
@@ -14242,7 +14242,7 @@
 <p>Anything included after that label will be called whenever an /endmacro command is issued. To use this feature, the label must be at the end of your 'Sub Main' function and end with a /return. Please note that this is NOT required of macros, so no macros will have to be altered unless you wish to take advantage of this feature.</p>
 <p>OnExit will not function upon a macro ending while paused.</p>
 <p>example:</p>
-<div class="highlight"><pre><span></span><code>Sub Main
+<div class="language-text highlight"><pre><span></span><code>Sub Main
 /while (1) {
   /delay 5
 }
@@ -14310,7 +14310,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

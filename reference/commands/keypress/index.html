@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14238,7 +14238,8 @@
 
 <h1 id="keypress">/keypress<a class="headerlink" href="#keypress" title="Permanent link">&para;</a></h1>
 <h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
-<p><strong>/keypress</strong> <em>name</em> <strong>[hold|chat]</strong></p>
+<div class="language-eqcommand highlight"><pre><span></span><code><span class="nt">/keypress</span> <span class="p">&lt;</span><span class="nv nv-Required">name</span><span class="p">&gt;</span> <span class="p">[</span><span class="nl">hold</span><span class="p">|</span><span class="nl">chat</span><span class="p">]</span>
+</code></pre></div>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>Simulates key presses for keybinds (e.g. "jump", "forward"), virtual keyboard (e.g. "shift+b"), or direct chat window input. Does not physically press keys, making it safe for background operation.</p>
 <p>Note: /keypress usage outside of a script is not recommended nor consistent.</p>
@@ -14264,17 +14265,17 @@
 <p>Note: Cannot use both together. For chat input, use simple key names ("X" not "shift+x"). "hold" works with movement/toggle commands.</p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <h3 id="equi-and-mq-keybinds">EQUI and MQ Keybinds<a class="headerlink" href="#equi-and-mq-keybinds" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/keypress jump         # Simulate the key mapped to JUMP
+<div class="language-text highlight"><pre><span></span><code>/keypress jump         # Simulate the key mapped to JUMP
 /keypress HAIL         # Simulate the key mapped to the HAIL emote
 /keypress NETSTAT      # Simulate the key mapped to the NETSTAT command
 </code></pre></div>
 <h3 id="keys-and-key-combinations">Keys and Key Combinations<a class="headerlink" href="#keys-and-key-combinations" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/keypress h              # Virtual h key press (will trigger HAIL by default)
+<div class="language-text highlight"><pre><span></span><code>/keypress h              # Virtual h key press (will trigger HAIL by default)
 /keypress shift+b        # Virtual shift+B key press
 /keypress ctrl+i         # Virtual control+I key press
 </code></pre></div>
 <h3 id="advanced-usage">Advanced Usage<a class="headerlink" href="#advanced-usage" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/keypress forward hold # Begin moving forward
+<div class="language-text highlight"><pre><span></span><code>/keypress forward hold # Begin moving forward
 /keypress forward      # Stop moving forward
 /keypress r chat       # Type &#39;r&#39; in chat input
 /keypress R chat       # Type &#39;R&#39; in chat input
@@ -14309,7 +14310,7 @@
 </table>
 <p><em>Use the <a href="../bind/">/bind</a> command to view your client's EQ binds <code>/bind eqlist</code> or all binds <code>/bind list</code>.</em></p>
 <h3 id="virtual-keys">Virtual Keys<a class="headerlink" href="#virtual-keys" title="Permanent link">&para;</a></h3>
-<p><div class="highlight"><pre><span></span><code>Esc  F1-F12  ` 1 2 3 4 5 6 7 8 9 0 - = [ ] \
+<p><div class="language-text highlight"><pre><span></span><code>Esc  F1-F12  ` 1 2 3 4 5 6 7 8 9 0 - = [ ] \
 Tab  Q W E R T Y U I O P 
 Caps_Lock A S D F G H J K L ; &#39; 
 Shift Z X C V B N M , . / Right_Shift
@@ -14379,7 +14380,7 @@ For complete key names and codes, including mouse and media keys, see: <a href="
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14567,7 +14567,7 @@
 </dl>
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="simple-examples">Simple Examples<a class="headerlink" href="#simple-examples" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/declare TestString abcdebc
+<div class="language-text highlight"><pre><span></span><code>/declare TestString abcdebc
 /echo ${TestString.Find[bc]}         | Will return 2
 /echo ${TestString.Left[2]}          | Will return &quot;ab&quot;
 /echo ${TestString.Left[-2]}         | Will return &quot;abcde&quot;
@@ -14577,7 +14577,7 @@
 </code></pre></div>
 <h3 id="difference-between-arg-and-token">Difference between Arg and Token<a class="headerlink" href="#difference-between-arg-and-token" title="Permanent link">&para;</a></h3>
 <p><strong>Arg</strong>[<em>#</em>,<em>s</em>] and <strong>Token</strong>[<em>#</em>,<em>s</em>] are very similar. The only difference between them is <strong>Token</strong> will include null values, while <strong>Arg</strong> will skip them. For example:</p>
-<div class="highlight"><pre><span></span><code>/declare TestString ABC,,DEF
+<div class="language-text highlight"><pre><span></span><code>/declare TestString ABC,,DEF
 
 | Will return &quot;DEF&quot; because it is the second non-null string separated by a comma:
 /echo ${TestString.Arg[2,,]}
@@ -14590,7 +14590,7 @@
 <p class="admonition-title">Warning</p>
 <p>There is a temptation by some novice macro writers to put the string inside quotes within brackets. Don't!</p>
 </div>
-<div class="highlight"><pre><span></span><code>#Event SpellWornOff  &quot;Your #1# spell has worn off of #2#.&quot;
+<div class="language-text highlight"><pre><span></span><code>#Event SpellWornOff  &quot;Your #1# spell has worn off of #2#.&quot;
 
 Sub Event_SpellWornOff(string Line, string SpellName, string OnWho)
    | You can put all kinds of logic here, on what to do when certain
@@ -14666,7 +14666,7 @@ Sub Event_SpellWornOff(string Line, string SpellName, string OnWho)
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

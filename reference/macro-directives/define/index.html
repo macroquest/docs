@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14116,7 +14116,7 @@
 <p>When the macro executes, all occurrences of "Me" will be replaced by "charactername". You can't use variables with</p>
 <h2 id="define-since-they-execute-before-sub-main">define (since they execute before Sub Main).<a class="headerlink" href="#define-since-they-execute-before-sub-main" title="Permanent link">&para;</a></h2>
 <h3 id="example">Example<a class="headerlink" href="#example" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>#define DEBUG /echo
+<div class="language-text highlight"><pre><span></span><code>#define DEBUG /echo
 Sub Main
   /declare spell string local Complete Healing
   DEBUG I am casting ${spell}
@@ -14125,11 +14125,11 @@ Sub Main
 </code></pre></div>
 <p>In this situation, DEBUG would be replaced by /echo before the macro started, thereby giving you some information on which spell you were casting.</p>
 <p>Changing the <strong>#define</strong> line to this:</p>
-<div class="highlight"><pre><span></span><code>#define DEBUG /squelch /echo
+<div class="language-text highlight"><pre><span></span><code>#define DEBUG /squelch /echo
 </code></pre></div>
 <p>Would effectively disable the debugging, since there would be no output to the screen.</p>
 <p>Also useful for color coding your echoes. For example:</p>
-<div class="highlight"><pre><span></span><code>#define DEBUG &quot;/echo \aw[\arDEBUG\aw]\ax&quot;
+<div class="language-text highlight"><pre><span></span><code>#define DEBUG &quot;/echo \aw[\arDEBUG\aw]\ax&quot;
 Sub Main
   /declare spell string local Complete Healing
   DEBUG I am casting ${spell}
@@ -14137,7 +14137,7 @@ Sub Main
 /return
 </code></pre></div>
 <p>Would allow your debug message to show up with a color coded prefix denoting that this message is from the debug side, and not a standard echo. In this case echoing out:</p>
-<div class="highlight"><pre><span></span><code>[DEBUG] I am casting Yaulp
+<div class="language-text highlight"><pre><span></span><code>[DEBUG] I am casting Yaulp
 </code></pre></div>
 <p>Where the brackets are white, the word debug is red, and the text is your default color.</p>
 
@@ -14199,7 +14199,7 @@ Sub Main
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

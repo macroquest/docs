@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14088,28 +14088,29 @@
 
 <h1 id="delay">/delay<a class="headerlink" href="#delay" title="Permanent link">&para;</a></h1>
 <h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
-<p><strong>/delay</strong> <em>#</em><strong>[s|m]</strong> <strong>[</strong> <em>condition</em> <strong>]</strong></p>
+<div class="language-eqcommand highlight"><pre><span></span><code><span class="nt">/delay</span> <span class="p">&lt;</span><span class="nv nv-Required">#deciseconds</span><span class="p">&gt;[</span><span class="nl">s</span><span class="p">|</span><span class="nl">m</span><span class="p">]</span> <span class="p">[</span> <span class="p">&lt;</span><span class="nv">condition</span><span class="p">&gt;</span> <span class="p">]</span>
+</code></pre></div>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>Fully pauses the macro for the amount of time specified, or until <em>condition</em> is met.</p>
-<p>Time can be specified in 10ths of a second (a number by itself) or in seconds <span class="arithmatex">\(number followed by an "s"\)</span> or minutes (number followed by "m").</p>
+<p>Time can be specified in 10ths of a second (a number by itself) or in seconds (number followed by an "s") or minutes (number followed by "m").</p>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <ul>
 <li>Simple examples:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>/delay 7                                       Delays the macro for 7 tenths of a second
+<div class="language-text highlight"><pre><span></span><code>/delay 7                                       Delays the macro for 7 tenths of a second
 /delay 2s                                      Delays the macro for 2 seconds
 /delay 3m                                      Delays the macro for 3 minutes
 </code></pre></div>
 <ul>
 <li>Example using MQ2Data:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>/delay ${Math.Rand[10]}s                       Delays the macro for a random amount of seconds in the range of 0 to 10
+<div class="language-text highlight"><pre><span></span><code>/delay ${Math.Rand[10]}s                       Delays the macro for a random amount of seconds in the range of 0 to 10
 /delay ${Math.Calc[${Math.Rand[10]}+5]}s       Delays the macro for a random amount of seconds in the range of 5 to 15
 </code></pre></div>
 <ul>
 <li>The below example will hold down the forward key and will execute "/keypress forward" (press forward once) when <code>${Spawn[1234\].Distance}&lt;${$Spawn[1234].MaxMeleeTo}</code> evaluates to TRUE or after 1 second passes.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>/keypress forward hold
+<div class="language-text highlight"><pre><span></span><code>/keypress forward hold
 /delay 1s ${Spawn[1234].Distance}&lt;${Spawn[1234].MaxMeleeTo}
 /keypress forward
 </code></pre></div>
@@ -14175,7 +14176,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

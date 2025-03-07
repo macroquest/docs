@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -3647,7 +3647,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Movement & Heading">
+    <nav class="md-nav" aria-label="Movement &amp; Heading">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -14582,7 +14582,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="Movement & Heading">
+    <nav class="md-nav" aria-label="Movement &amp; Heading">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -14890,7 +14890,7 @@
 <ul>
 <li>it was "stuck" i.e. turning and jumping.</li>
 </ul>
-<div class="highlight"><pre><span></span><code>That&#39;s the plugin trying to get to the point your leader was at when the follow command was actually started..
+<div class="language-text highlight"><pre><span></span><code>That&#39;s the plugin trying to get to the point your leader was at when the follow command was actually started..
 It doesn&#39;t work like this plugin, ie - you get stuck behind a wall, leader moves back and you unstick..
 It won&#39;t do that if it&#39;s last recorded follow point is past the wall... You have to turn off following to get a new follow path.
 </code></pre></div>
@@ -14899,7 +14899,7 @@ It won&#39;t do that if it&#39;s last recorded follow point is past the wall... 
 </ul>
 <p>they "adjust"</p>
 <p>trying to move forward a bit or something, even though their distance is less than 20, and the master isn't even moving.</p>
-<div class="highlight"><pre><span></span><code>This happens if you have DoSit on and using AdvPath plugin to follow. Your stick setting is not used, and MQ2AdvPath has no setting to change it&#39;s follow distance.
+<div class="language-text highlight"><pre><span></span><code>This happens if you have DoSit on and using AdvPath plugin to follow. Your stick setting is not used, and MQ2AdvPath has no setting to change it&#39;s follow distance.
 Not sure why MQ2Advpath is coded this way, but it will force your toon to stand if your distance is over 10 from your leader...
 The modbot macro is just trying to force your position so it&#39;s possible to sit without standing back up every second or so..
 I&#39;ll increase the delay that&#39;s used there, and see if I can make one smooth movement..
@@ -14928,7 +14928,7 @@ P.S. If you WANT to use this plugin and not MQ2AdvPath for following, either unl
 <h3 id="you-setup-a-camp-but-have-problems-returning-to-it">You setup a camp but have problems returning to it<a class="headerlink" href="#you-setup-a-camp-but-have-problems-returning-to-it" title="Permanent link">&para;</a></h3>
 <p>The most common cause of this is having a target. By default, automatic camp returns require nothing on target.</p>
 <p>Verify what camp settings you have enabled. Certain features behave different ways, for example</p>
-<div class="highlight"><pre><span></span><code>ReturnNoAggro will only return to the camp if you do not have aggro.
+<div class="language-text highlight"><pre><span></span><code>ReturnNoAggro will only return to the camp if you do not have aggro.
 ReturnHaveTarget will allow you to return even if you have a target.
 ReturnNotLooting will not return if you have an open corpse being looted.
 </code></pre></div>
@@ -14960,7 +14960,7 @@ ReturnNotLooting will not return if you have an open corpse being looted.
 </ul>
 <p>You may only have a Break or a Pause on for a single option, but not both. However, you may have a pause for one option and a break for a different option on. That is: Keyboard can either be breakonkb or mpause, and mouse can either be breakonmouse or mousepause, but you may not have breakonkb AND mpause Thus, you may have breakonkb and mousepause or mpause and breakonmouse.</p>
 <p>Results:</p>
-<div class="highlight"><pre><span></span><code>MoveUtils:
+<div class="language-text highlight"><pre><span></span><code>MoveUtils:
 mpause on - pressing a movement key pauses stick for a defined amount of time
 (resume timer starts when all movement keys have been let go)
 breakonkb on - pressing a movement key breaks stick entirely
@@ -14992,7 +14992,7 @@ both off - stick will not break from movement key input, MQ2Melee&#39;s attack k
 <p>Stucklogic is an effort to overcome this problem by measuring an average distance moved per pulse based on Y X location. When the average distance declines dramatically, the plugin is able to be aware that forward motion is no longer happening and attempts to correct this.</p>
 <h3 id="explain-what-stucklogic-values-do">Explain what stucklogic values do<a class="headerlink" href="#explain-what-stucklogic-values-do" title="Permanent link">&para;</a></h3>
 <p>TryToJump - will jump every few pulses to attempt scaling over small rocks and stumps <span class="arithmatex">\(very helpful to **food races** such as gnomes that frequently get stuck\)</span> TurnHalf - if stucklogic has turned half way around <span class="arithmatex">\(256 deg\)</span> without making any progress, it will reset heading to the starting point and try turning the other direction</p>
-<div class="highlight"><pre><span></span><code>/stick set pulsecheck #
+<div class="language-text highlight"><pre><span></span><code>/stick set pulsecheck #
 -pulsecheck defaults to 4
 -this value is sort of what &quot;stuckcheck&quot; was before.
 -it serves as the size of your pulse history to be used to calculate your average movement distance.
@@ -15050,7 +15050,7 @@ of some incorrect math in the formulas. try to stick with more logical values an
 <p>Angular Dist - what moveutils uses to determine pin/behind/front/!front, useful for configuring your !frontarc and behindarc settings. Adjust - this is how much adjustment is required in order to be facing your current target. This value relates to the new allowmove setting. Dist - the distance to your target provided by GetDistance <span class="arithmatex">\(what stick and some moveto, campreturns use\)</span>, useful in configuring your ArrivalDist values Dist3D - the distance to your target provided by GetDistance3D <span class="arithmatex">\(what snaproll, stucklogic and some moveto parameters use\)</span>, useful in configuring your ArrivalDist values</p>
 <h2 id="mq2melee">MQ2Melee<a class="headerlink" href="#mq2melee" title="Permanent link">&para;</a></h2>
 <h3 id="what-changes-did-you-make-that-are-not-found-in-the-normal-melee-wiki">What changes did you make that are not found in the normal melee wiki<a class="headerlink" href="#what-changes-did-you-make-that-are-not-found-in-the-normal-melee-wiki" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>stickrange=75
+<div class="language-text highlight"><pre><span></span><code>stickrange=75
 sticknorange=1
 stickdelay=whatever
 stickmode=1
@@ -15132,7 +15132,7 @@ stickbreak=1  - allows breakonkb to work with new mq2melee changes
     <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

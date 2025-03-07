@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14001,35 +14001,35 @@
 <p>--Update-- [QUOTE=KingArthur;348346] And is there anyway to reload the settings other than a totally relog?? is there any slash command like /reload or something? Ty'''</p>
 <p>I completely overlooked this question. The answer is YES~!</p>
 <p>So if you make changes and want to test them you have to type</p>
-<div class="highlight"><pre><span></span><code>/unload
+<div class="language-text highlight"><pre><span></span><code>/unload
 </code></pre></div>
 <p>Then right click on the tray icon for MQ2 and hit "Refresh injections"</p>
 <p>That will effectively reload the MacroQuest.ini and update your [Captions]</p>
 <p>I don't know of any other way other than this.</p>
 <p><strong>How does an ${If[,,,]} statement work?</strong></p>
 <p>The following is how an ${If[,,,]} statement works.</p>
-<div class="highlight"><pre><span></span><code>${If[ThisIsTrue,DoThis,ElseDoThis]}
+<div class="language-text highlight"><pre><span></span><code>${If[ThisIsTrue,DoThis,ElseDoThis]}
 </code></pre></div>
 <p><strong>How does a ${Select[,]} statement work?</strong></p>
 <p>The following is how a ${Select[,]} statement works.</p>
-<div class="highlight"><pre><span></span><code>${Select[CompareThis,toThis,andThis,andThis]}
+<div class="language-text highlight"><pre><span></span><code>${Select[CompareThis,toThis,andThis,andThis]}
 </code></pre></div>
 <p>if CompareThis is equal toThis, OR andThis, OR andThis then it evaluates TRUE.</p>
 <p>Example of a Select statement.</p>
-<div class="highlight"><pre><span></span><code>${Select[${NamingSpawn.ID},${Group.Member[1].ID},${Group.Member[2].ID},${Group.Member[3].ID}]}
+<div class="language-text highlight"><pre><span></span><code>${Select[${NamingSpawn.ID},${Group.Member[1].ID},${Group.Member[2].ID},${Group.Member[3].ID}]}
 </code></pre></div>
 <p>The above code evaluates true if the Spawn's ID is the first, second, or third group member in your group window.</p>
 <p><strong>How do I nest an ${Select[,]} inside an ${If[,,,]}</strong></p>
 <p>You would do</p>
-<div class="highlight"><pre><span></span><code>${If[${Select[CompareThis,toThis,andThis,andThis]},IfTrueDoThis,IfFalseDoThis]}
+<div class="language-text highlight"><pre><span></span><code>${If[${Select[CompareThis,toThis,andThis,andThis]},IfTrueDoThis,IfFalseDoThis]}
 </code></pre></div>
 <p><strong>What if I don't want it to do anything if it's false?</strong></p>
 <p>You leave the Else portion blank.</p>
-<div class="highlight"><pre><span></span><code>${If[ThisIsTrue,DoThis,]}
+<div class="language-text highlight"><pre><span></span><code>${If[ThisIsTrue,DoThis,]}
 </code></pre></div>
 <p><strong>What can I do with ${NamingSpawn}</strong></p>
 <p>NamingSpawn appears to inherit all members of ${Spawn[]} TLO. Therefore the following list should be available to ${NamingSpawn}. Some things may only apply to the current character you are playing.</p>
-<div class="highlight"><pre><span></span><code>[spawn]
+<div class="language-text highlight"><pre><span></span><code>[spawn]
 Member1=ID
 Member2=Name
 Member3=Level
@@ -14177,10 +14177,10 @@ Member148=IsSummoned
 Member149=TargetOfTarget
 </code></pre></div>
 <p>Mez Detection for NPC's.</p>
-<div class="highlight"><pre><span></span><code>${If[${Select[${NamingSpawn.Animation},110,26,32,71,72,111]} &amp;&amp; ${Select[${NamingSpawn.ID},${Me.XTarget[1].ID},${Me.XTarget[2].ID},${Me.XTarget[3].ID},${Me.XTarget[4].ID},${Me.XTarget[5].ID},${Me.XTarget[5].ID},${Me.XTarget[6].ID},${Me.XTarget[7].ID},${Me.XTarget[8].ID},${Me.XTarget[9].ID},${Me.XTarget[10].ID},${Me.XTarget[11].ID},${Me.XTarget[12].ID},${Me.XTarget[13].ID},${Me.XTarget[14].ID},${Me.XTarget[15].ID}]},&gt;&gt;&gt;Mezzed&lt;&lt;&lt;,]}
+<div class="language-text highlight"><pre><span></span><code>${If[${Select[${NamingSpawn.Animation},110,26,32,71,72,111]} &amp;&amp; ${Select[${NamingSpawn.ID},${Me.XTarget[1].ID},${Me.XTarget[2].ID},${Me.XTarget[3].ID},${Me.XTarget[4].ID},${Me.XTarget[5].ID},${Me.XTarget[5].ID},${Me.XTarget[6].ID},${Me.XTarget[7].ID},${Me.XTarget[8].ID},${Me.XTarget[9].ID},${Me.XTarget[10].ID},${Me.XTarget[11].ID},${Me.XTarget[12].ID},${Me.XTarget[13].ID},${Me.XTarget[14].ID},${Me.XTarget[15].ID}]},&gt;&gt;&gt;Mezzed&lt;&lt;&lt;,]}
 </code></pre></div>
 <p>Group Role Detection for Main Tank, Main Assist, and Puller to go on Player#</p>
-<div class="highlight"><pre><span></span><code>${If[${NamingSpawn.ID}==${Group.MainAssist.ID}, MA,]}
+<div class="language-text highlight"><pre><span></span><code>${If[${NamingSpawn.ID}==${Group.MainAssist.ID}, MA,]}
 ${If[${NamingSpawn.ID}==${Group.MainTank.ID}, MT,]}
 ${If[${NamingSpawn.ID}==${Group.Puller.ID}, Puller,]}
 </code></pre></div>
@@ -14243,7 +14243,7 @@ ${If[${NamingSpawn.ID}==${Group.Puller.ID}, Puller,]}
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

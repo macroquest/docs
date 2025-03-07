@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14161,11 +14161,11 @@
 </ul>
 <h2 id="in-plugins">In Plugins<a class="headerlink" href="#in-plugins" title="Permanent link">&para;</a></h2>
 <p>Plugins are a special case for the actor API as the post office itself is maintained within mq2main.dll and is not exposed at all to any plugins. Instead, plugins will have access to an actor API by including:</p>
-<div class="highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;mq/api/ActorAPI.h&quot;</span>
+<div class="language-cpp highlight"><pre><span></span><code><span class="cp">#include</span><span class="w"> </span><span class="cpf">&quot;mq/api/ActorAPI.h&quot;</span>
 </code></pre></div>
 <p>This include provides everything necessary for creating and registering an actor, as well as sending (and receiving) messages. There is one free function (with two overloads) that creates a new actor provided as part of this API:</p>
 <h3 id="addactor">AddActor<a class="headerlink" href="#addactor" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">ReceiveCallbackAPI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Message</span><span class="o">&gt;&amp;</span><span class="p">)</span><span class="o">&gt;</span><span class="p">;</span>
+<div class="language-cpp highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">ReceiveCallbackAPI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Message</span><span class="o">&gt;&amp;</span><span class="p">)</span><span class="o">&gt;</span><span class="p">;</span>
 
 <span class="n">DropboxAPI</span><span class="w"> </span><span class="nf">AddActor</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="kt">char</span><span class="o">*</span><span class="w"> </span><span class="n">localAddress</span><span class="p">,</span><span class="w"> </span><span class="n">ReceiveCallbackAPI</span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">receive</span><span class="p">);</span>
 <span class="n">DropboxAPI</span><span class="w"> </span><span class="nf">AddActor</span><span class="p">(</span><span class="n">ReceiveCallbackAPI</span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">receive</span><span class="p">);</span>
@@ -14173,7 +14173,7 @@
 <p>Both of these functions return a <code>DropboxAPI</code> object, which serves as the interface to the dropbox functionality needed to operate the actor. If a <code>localAddress</code> is not specified, then the canonical name of the plugin is used as the mailbox name (convenient for when you only need one mailbox in a plugin, which should be pretty common).</p>
 <p>An important implementation detail is that mailbox names are mutated when they are set to ensure that they are unique in the post office. The <code>localAddress</code> specified is the mailbox name <em>local to the plugin</em> and not the full mailbox name that is stored in the mailbox. This registration function will prepend the mailbox with the canonical plugin name followed by a colon like so: <code>myplugin:mymailbox</code>. This is only important to the plugin author if they need to send messages to mailboxes outside their plugin, otherwise the send functions will handle this implementation detail opaquely.</p>
 <p>There is one more free function provided by the API to send "anonymous" messages to actors. The point of using this function is when you want to send a message to a recipient, but don't want to set up an actor and message handler in the local script. The signature is as follows:</p>
-<div class="highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">ResponseCallbackAPI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Message</span><span class="o">&gt;&amp;</span><span class="p">)</span><span class="o">&gt;</span><span class="p">;</span>
+<div class="language-cpp highlight"><pre><span></span><code><span class="k">using</span><span class="w"> </span><span class="n">ResponseCallbackAPI</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">function</span><span class="o">&lt;</span><span class="kt">void</span><span class="p">(</span><span class="kt">int</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">std</span><span class="o">::</span><span class="n">shared_ptr</span><span class="o">&lt;</span><span class="n">Message</span><span class="o">&gt;&amp;</span><span class="p">)</span><span class="o">&gt;</span><span class="p">;</span>
 
 <span class="k">template</span><span class="w"> </span><span class="o">&lt;</span><span class="k">typename</span><span class="w"> </span><span class="nc">T</span><span class="o">&gt;</span>
 <span class="kt">void</span><span class="w"> </span><span class="n">SendToActor</span><span class="p">(</span><span class="k">const</span><span class="w"> </span><span class="n">Address</span><span class="o">&amp;</span><span class="w"> </span><span class="n">address</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">T</span><span class="o">&amp;</span><span class="w"> </span><span class="n">obj</span><span class="p">,</span><span class="w"> </span><span class="k">const</span><span class="w"> </span><span class="n">ResponseCallbackAPI</span><span class="o">&amp;</span><span class="w"> </span><span class="n">callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="k">nullptr</span><span class="p">);</span>
@@ -14182,7 +14182,7 @@
 <p>There are three more structures to explore in a plugin, <code>Address</code>, <code>Message</code>, and <code>DropboxAPI</code>.</p>
 <h3 id="address">Address<a class="headerlink" href="#address" title="Permanent link">&para;</a></h3>
 <p>An address is a shim to the protobuf-defined address, and follows the same rules as the <a href="#terminology">terminology section above</a>. The API provides this shim as a simple struct where you can set the address parameters directly like this (as an example):</p>
-<div class="highlight"><pre><span></span><code><span class="n">postoffice</span><span class="o">::</span><span class="n">Address</span><span class="w"> </span><span class="n">addr</span><span class="p">;</span>
+<div class="language-cpp highlight"><pre><span></span><code><span class="n">postoffice</span><span class="o">::</span><span class="n">Address</span><span class="w"> </span><span class="n">addr</span><span class="p">;</span>
 <span class="n">addr</span><span class="p">.</span><span class="n">Server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;test&quot;</span><span class="p">;</span>
 <span class="n">addr</span><span class="p">.</span><span class="n">Character</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">&quot;target&quot;</span><span class="p">;</span>
 </code></pre></div>
@@ -14263,7 +14263,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

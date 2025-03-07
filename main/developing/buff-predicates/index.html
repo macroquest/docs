@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14045,7 +14045,7 @@ Four useful classes that inherit from <code>SpellAttribute&lt;T&gt;</code> were 
 <li><code>SpellClassMask(PlayerClass...)</code></li>
 </ul>
 <p>These objects can be chained together with normal boolean operators (&amp;&amp;, ||, and the unary ! for <code>SpellClassMask</code>) to create a predicate function. Use of this is something like:</p>
-<div class="highlight"><span class="filename">Example (C++)</span><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">buffslot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetSelfBuff</span><span class="p">(</span><span class="n">SpellAffect</span><span class="p">(</span><span class="n">SPA_AC</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span>
+<div class="language-cpp highlight"><span class="filename">Example (C++)</span><pre><span></span><code><span class="k">auto</span><span class="w"> </span><span class="n">buffslot</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">GetSelfBuff</span><span class="p">(</span><span class="n">SpellAffect</span><span class="p">(</span><span class="n">SPA_AC</span><span class="p">,</span><span class="w"> </span><span class="nb">true</span><span class="p">)</span>
 <span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">SpellCategory</span><span class="p">(</span><span class="n">SPELLCAT_HP_BUFFS</span><span class="p">)</span>
 <span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="p">(</span><span class="n">SpellSubCat</span><span class="p">(</span><span class="n">SPELLCAT_AEGOLISM</span><span class="p">)</span><span class="w"> </span><span class="o">||</span><span class="w"> </span><span class="n">SpellSubCat</span><span class="p">(</span><span class="n">SPELLCAT_SYMBOL</span><span class="p">))</span>
 <span class="w">    </span><span class="o">&amp;&amp;</span><span class="w"> </span><span class="n">SpellClassMask</span><span class="p">(</span><span class="n">Cleric</span><span class="p">));</span>
@@ -14121,7 +14121,7 @@ Four useful classes that inherit from <code>SpellAttribute&lt;T&gt;</code> were 
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

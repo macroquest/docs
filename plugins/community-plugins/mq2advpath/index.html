@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14503,7 +14503,7 @@
 <p>This plugin allows you to record and playback player movement.</p>
 <h2 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h2>
 <h3 id="play"><strong><code>/play</code></strong><a class="headerlink" href="#play" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/play [pathName|off] [stop] [pause|unpause] [loop|noloop] [normal|reverse] [smart|nosmart] [flee|noflee] [door|nodoor] [fast|slow]
+<div class="language-text highlight"><pre><span></span><code>/play [pathName|off] [stop] [pause|unpause] [loop|noloop] [normal|reverse] [smart|nosmart] [flee|noflee] [door|nodoor] [fast|slow]
 [eval|noeval] [zone|nozone] [list] [listcustom] [show] [help] [setflag1]-[setflag9] y/n [resetflags]
 The /play command will execute each command on the line. The commands that should be used single, or at the end of a line:
 [off] [list] [listcustom] [show] [help]
@@ -14514,14 +14514,14 @@ AdvPath flags can be accessed using ${AdvPath.Flag1} - ${AdvPath.Flag9}
 /play resetflags resets all flags(1-9) to &#39;y&#39;
 </code></pre></div>
 <h3 id="record"><strong><code>/record</code></strong><a class="headerlink" href="#record" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/record
+<div class="language-text highlight"><pre><span></span><code>/record
 /record save &lt;PathName&gt; ##
 /record Checkpoint &lt;checkpointname&gt;
 /record help
 ## is the distance between checkpoints to force checkpoints to be writen to the path file
 </code></pre></div>
 <h3 id="afollow"><strong><code>/afollow</code></strong><a class="headerlink" href="#afollow" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/afollow [on|off] [pause|unpause] [slow|fast] [intercept]
+<div class="language-text highlight"><pre><span></span><code>/afollow [on|off] [pause|unpause] [slow|fast] [intercept]
 /afollow spawn # [slow|fast] - default=fast
 /afollow help
 </code></pre></div>
@@ -14589,12 +14589,12 @@ AdvPath flags can be accessed using ${AdvPath.Flag1} - ${AdvPath.Flag9}
 <dd>Paused</dd>
 </dl>
 <h2 id="ini">INI<a class="headerlink" href="#ini" title="Permanent link">&para;</a></h2>
-<div class="highlight"><pre><span></span><code><span class="k">[settings.server.ToonName]</span>
+<div class="language-ini highlight"><pre><span></span><code><span class="k">[settings.server.ToonName]</span>
 <span class="na">AutoStopFollow</span><span class="o">=</span><span class="s">0</span>
 <span class="na">AutoStopPath</span><span class="o">=</span><span class="s">0</span>
 <span class="na">UseStuckLogic</span><span class="o">=</span><span class="s">1</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>AutoStopFollow=0/1/2 - how it works now/pause/turns off
+<div class="language-text highlight"><pre><span></span><code>AutoStopFollow=0/1/2 - how it works now/pause/turns off
 AutoStopPath=0/1/2 - how it works now/pause/turns off
 UseStuckLogic= 0/1 = off/on
 </code></pre></div>
@@ -14660,7 +14660,7 @@ UseStuckLogic= 0/1 = off/on
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

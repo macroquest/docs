@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14964,7 +14964,7 @@
 <li>I left the old <em>dist</em> as-is to not cause macro conflict.</li>
 <li><strong>Note: In the case of</strong> <em><strong>id</strong></em><strong>, you must use mdist first if you are not supplying the spawn id, i.e.</strong></li>
 </ul>
-<div class="highlight"><pre><span></span><code>/moveto mdist 100 id
+<div class="language-text highlight"><pre><span></span><code>/moveto mdist 100 id
 
 NOT
 
@@ -15014,7 +15014,7 @@ NOT
 <ul>
 <li>To change plugin default headings, use:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>/stick set heading true
+<div class="language-text highlight"><pre><span></span><code>/stick set heading true
 /stick set heading loose
 /stick set heading fast
 </code></pre></div>
@@ -15035,7 +15035,7 @@ NOT
 <p>inline to apply it to the current command, and once the command has ended the next command will revert back to the</p>
 <p>INI defaults. As an example, if your snaproll default distance was 10.0 and you wanted to make your snaproll</p>
 <p>distance larger for a single mob, you could:</p>
-<div class="highlight"><pre><span></span><code>/stick snaproll rear snapdist 20.0
+<div class="language-text highlight"><pre><span></span><code>/stick snaproll rear snapdist 20.0
 </code></pre></div>
 <p>...and this would snaproll 20 distance behind the target. The next snaproll you issued would then revert to using 10.0</p>
 <ul>
@@ -15196,7 +15196,7 @@ NOT
 <p>table and details on how it works, and what specific messages are tied to what bit flags. I have converted the old</p>
 <p>system, so if the new system is a bit confusing, <em>verbosity</em>, <em>fullverbosity</em>, <em>autopauseoutput</em>, and <em>totalsilence</em></p>
 <p>still work very close to as before. I have not updated the wiki yet with the new commands, Usage:</p>
-<div class="highlight"><pre><span></span><code>/stick verbflags - Lists your current verbosity bit flags (useful for knowing what to add/subtract from if you want to make a single change)
+<div class="language-text highlight"><pre><span></span><code>/stick verbflags - Lists your current verbosity bit flags (useful for knowing what to add/subtract from if you want to make a single change)
 /stick set verbflags # - Sets your verbosity flags to # (where # is the total sum of whatever flags you added up, check the wiki link)
 note: if you set # to 0 or a negative number, it is equivalent to totalsilence
 
@@ -15214,7 +15214,7 @@ Numerical flags value saves to the INI under [Defaults] as &quot;VerbosityFlags&
 <p>prevent future MoveUtils command usage until you unlock it <span class="arithmatex">\(same command as BreakOnSummon - _/stick imsafe_\)</span>. I</p>
 <p>highly recommend you turn on the verbosity bit flags for this if you are using this feature, as otherwise you may</p>
 <p>wonder why your commands are not working. Usage:</p>
-<div class="highlight"><pre><span></span><code>/stick toggle breakongm
+<div class="language-text highlight"><pre><span></span><code>/stick toggle breakongm
 Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 </code></pre></div>
 <ul>
@@ -15252,7 +15252,7 @@ Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 <li>Added an optional dedicated UI window for the plugin.</li>
 </ul>
 <p>Usage <span class="arithmatex">\(may use any of the 4 commands\)</span>:</p>
-<div class="highlight"><pre><span></span><code>/stick toggle window - toggles window display
+<div class="language-text highlight"><pre><span></span><code>/stick toggle window - toggles window display
 /stick set font # - sets window font size (1 to 10)
 /stick min - minimizes the window (like /mqmin)
 /stick clear - clears the window (like /mqclear)
@@ -15564,12 +15564,12 @@ ${MoveUtils.TryToJump} - bool<br />
 <ul>
 <li><em>snaproll</em> will now accept destination as a parameter. Usage:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>/stick snaproll rear
+<div class="language-text highlight"><pre><span></span><code>/stick snaproll rear
 </code></pre></div>
 <ul>
 <li><span class="arithmatex">\(normal behavior and not necessary, you can use _/stick snaproll_ as before\)</span></li>
 </ul>
-<div class="highlight"><pre><span></span><code>    /stick snaproll face
+<div class="language-text highlight"><pre><span></span><code>    /stick snaproll face
 
 -   front of target
 
@@ -15607,7 +15607,7 @@ ${MoveUtils.TryToJump} - bool<br />
 <ul>
 <li>Stucklogic uses new values for a new formula written by deadchicken. This formula calculates your pulse averages based on a table, with greater accuracy than before. The new values are configured as such:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>/stick set pulsecheck #
+<div class="language-text highlight"><pre><span></span><code>/stick set pulsecheck #
 </code></pre></div>
 <ul>
 <li>pulsecheck defaults to 4</li>
@@ -15620,7 +15620,7 @@ ${MoveUtils.TryToJump} - bool<br />
 <p>fast enough, you would do the opposite and lower this value.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>    /stick set pulseunstuck #
+<div class="language-text highlight"><pre><span></span><code>    /stick set pulseunstuck #
 
 -   pulseunstuck defaults to 5
 -   this value is new
@@ -15686,12 +15686,12 @@ ${MoveUtils.TryToJump} - bool<br />
 <ul>
 <li>To configure the values the commands are:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>/makecamp toggle usescatter
+<div class="language-text highlight"><pre><span></span><code>/makecamp toggle usescatter
 </code></pre></div>
 <ul>
 <li>Turn on/off scattering</li>
 </ul>
-<div class="highlight"><pre><span></span><code>    /makecamp set bearing #.##
+<div class="language-text highlight"><pre><span></span><code>    /makecamp set bearing #.##
 
 -   set scatter bearing
 
@@ -15753,7 +15753,7 @@ ${MoveUtils.TryToJump} - bool<br />
 <li>All options that could previously be toggled or previously be set on/off now may be used both ways. So for example</li>
 </ul>
 <p>autopause, you have the option of doing:</p>
-<div class="highlight"><pre><span></span><code>/stick toggle autopause
+<div class="language-text highlight"><pre><span></span><code>/stick toggle autopause
 /stick set autopause off
 /stick set autopause on
 </code></pre></div>
@@ -15783,7 +15783,7 @@ ${MoveUtils.TryToJump} - bool<br />
 </ul>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>    /makecamp set campmindelay #.##
+<div class="language-text highlight"><pre><span></span><code>    /makecamp set campmindelay #.##
 
     /makecamp set campmaxdelay #.##
 
@@ -15801,14 +15801,14 @@ ${MoveUtils.TryToJump} - bool<br />
 <ul>
 <li>For mpause/mousepause:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>[Defaults]
+<div class="language-text highlight"><pre><span></span><code>[Defaults]
 PauseMinDelay=125
 PauseMaxDelay=250
 </code></pre></div>
 <ul>
 <li>For makecamp return times:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>[MakeCamp]
+<div class="language-text highlight"><pre><span></span><code>[MakeCamp]
 MinDelay=250
 MaxDelay=500
 </code></pre></div>
@@ -15824,7 +15824,7 @@ MaxDelay=500
 <li>This change has allowed for the return of inline min/max delay for makecamp, you can use it as it was before.</li>
 </ul>
 <p>Examples:</p>
-<div class="highlight"><pre><span></span><code>/makecamp mindelay 150 maxdelay 500
+<div class="language-text highlight"><pre><span></span><code>/makecamp mindelay 150 maxdelay 500
 /makecamp on maxdelay 500
 /makecamp on mindelay 150 maxdelay 500
 </code></pre></div>
@@ -15891,12 +15891,12 @@ MaxDelay=500
 <p>target or aggro, there is a new option ReturnNoTarget. The previous new feature ReturnNoAggro will ignore target as</p>
 <p>well, but only return if you do not have aggro. ReturnNoTarget works with ReturnNoAggro OFF, and will return when</p>
 <p>you exceed the camp radius, target or not. Thanks to Muley for the suggestion. Usage <span class="arithmatex">\(**/makecamp enforced**\)</span>:</p>
-<div class="highlight"><pre><span></span><code>/makecamp set returnnotarget on|off
+<div class="language-text highlight"><pre><span></span><code>/makecamp set returnnotarget on|off
 </code></pre></div>
 <ul>
 <li>This saves to the INI</li>
 </ul>
-<div class="highlight"><pre><span></span><code>[MakeCamp]
+<div class="language-text highlight"><pre><span></span><code>[MakeCamp]
 ReturnNoTarget=on
 </code></pre></div>
 <ul>
@@ -15999,11 +15999,11 @@ ReturnNoTarget=on
 <li>These will display regardless of if you have totalsilence set to on</li>
 <li>Example:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>    /stick status
+<div class="language-text highlight"><pre><span></span><code>    /stick status
 
 will output
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>MQ2MoveUtils Current Status
+<div class="language-text highlight"><pre><span></span><code>MQ2MoveUtils Current Status
 Stick: Status(on) Dir(Behind) Dist(10.0) Mod(0.0) Mod%(0.0) Loose(yes) Water(no) MoveBack(yes) Hold(yes) Always(yes)
 Stick: Holding to ID(1115) Name(Guide Peyote)   &lt;---only displays if holding
 Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
@@ -16021,7 +16021,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <li>Using it with <em>/moveto id</em> or the new <em>/moveto yloc/xloc</em> will likely cause problems so don't do it</li>
 <li>Usage example:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>    /moveto loc -100 -200 precisey
+<div class="language-text highlight"><pre><span></span><code>    /moveto loc -100 -200 precisey
 
 -   will head towards -100 -200, but stop when it gets within acceptable Y arrival distance even if your loc is -100
     -500
@@ -16034,7 +16034,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <li>These also save to the ini under <script type="math/tex; mode=display">MoveTo</script> as "ArrivalDistY" and "ArrivalDistX"</li>
 <li>Usage:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>/moveto set xdist 10.00
+<div class="language-text highlight"><pre><span></span><code>/moveto set xdist 10.00
 /moveto set ydist 10.00 (default is 10, can use any .2 digit float)
 </code></pre></div>
 <ul>
@@ -16054,7 +16054,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <p>enable this using:</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>    /makecamp toggle returnnoaggro
+<div class="language-text highlight"><pre><span></span><code>    /makecamp toggle returnnoaggro
 
 -   this will also save to the ini under \[MakeCamp\] &quot;ReturnNoAggro&quot; (on/off)
 </code></pre></div>
@@ -16090,7 +16090,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <p>Usage:</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>/stick set mindelay 125
+<div class="language-text highlight"><pre><span></span><code>/stick set mindelay 125
 /circle set maxdelay 250
 </code></pre></div>
 <ul>
@@ -16123,7 +16123,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <li>Adding on to the ability to <em>/stick set stucklogic on/off</em>, you can now set more values. "stuckcheck #" and</li>
 </ul>
 <p>"stuckdist #", i.e.:</p>
-<div class="highlight"><pre><span></span><code>/stick set stuckdist 0.001
+<div class="language-text highlight"><pre><span></span><code>/stick set stuckdist 0.001
 /moveto set stuckcheck 8
 </code></pre></div>
 <ul>
@@ -16352,7 +16352,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <li>The help output doesnt reflect any of this yet.</li>
 <li>Where /command can be <span class="arithmatex">\(/stick, /moveto, /circle, /makecamp\)</span></li>
 </ul>
-<div class="highlight"><pre><span></span><code>//The same as before
+<div class="language-text highlight"><pre><span></span><code>//The same as before
 
 /command help
 /command debug
@@ -16624,7 +16624,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <p>implementation only is good for stopping you from moving if already stationary then casting.</p>
 </li>
 </ul>
-<div class="highlight"><pre><span></span><code>*this doesnt work, need a better way to check if casting before the bar pops up*
+<div class="language-text highlight"><pre><span></span><code>*this doesnt work, need a better way to check if casting before the bar pops up*
 </code></pre></div>
 <h4 id="beta-81013-minor">Beta - 8.1013 - minor<a class="headerlink" href="#beta-81013-minor" title="Permanent link">&para;</a></h4>
 <ul>
@@ -16638,7 +16638,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 <ul>
 <li>Before you had to set the mod with: <em>/stick -5</em></li>
 </ul>
-<div class="highlight"><pre><span></span><code>This would subtract 5 from whatever value you used (or mob melee range, which i believe is the intention of this
+<div class="language-text highlight"><pre><span></span><code>This would subtract 5 from whatever value you used (or mob melee range, which i believe is the intention of this
 whole thing) every time.
 
 It defaulted to 0, but once you set it, you were stuck with negative forever.
@@ -16763,7 +16763,7 @@ original verbosity still exists and fullverbosity does NOT turn on original stic
 *<em>StuckLogic Toggle</em> - added a toggle for stucklogic, no longer need to reload ini file<br />
 *<em>AutoPause Toggle</em> - added a toggle for autopause, no longer need to reload ini file<br />
 *<em>New Stick Parameter 'always'</em> - Usage:</p>
-<div class="highlight"><pre><span></span><code>/stick [other parameters] always
+<div class="language-text highlight"><pre><span></span><code>/stick [other parameters] always
 </code></pre></div>
 <ul>
 <li>
@@ -16796,12 +16796,12 @@ original verbosity still exists and fullverbosity does NOT turn on original stic
 <ul>
 <li>every 'break' function that used this method to stop moving seems to be failing:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>MQ2Globals::ExecuteCmd(FindMappableCommand(&quot;forward&quot;),0,0);
+<div class="language-text highlight"><pre><span></span><code>MQ2Globals::ExecuteCmd(FindMappableCommand(&quot;forward&quot;),0,0);
 </code></pre></div>
 <ul>
 <li>Changed the ExecuteCmds to supply a down then up to stop the issue:</li>
 </ul>
-<div class="highlight"><pre><span></span><code>MQ2Globals::ExecuteCmd(FindMappableCommand(&quot;forward&quot;),1,0);
+<div class="language-text highlight"><pre><span></span><code>MQ2Globals::ExecuteCmd(FindMappableCommand(&quot;forward&quot;),1,0);
 MQ2Globals::ExecuteCmd(FindMappableCommand(&quot;forward&quot;),0,0);
 </code></pre></div>
 
@@ -16863,7 +16863,7 @@ MQ2Globals::ExecuteCmd(FindMappableCommand(&quot;forward&quot;),0,0);
     <script id="__config" type="application/json">{"base": "../../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

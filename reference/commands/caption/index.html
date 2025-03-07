@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14124,7 +14124,8 @@
 
 <h1 id="caption">/caption<a class="headerlink" href="#caption" title="Permanent link">&para;</a></h1>
 <h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
-<p><strong>/caption list | update</strong> <em>#</em> <strong>| MQCaptions [on|off] | reload | <em>type</em></strong> <em>value</em> </p>
+<div class="language-eqcommand highlight"><pre><span></span><code><span class="nt">/caption</span> <span class="no">list</span> <span class="p">|</span> <span class="no">update</span> <span class="p">&lt;</span><span class="nv nv-Required">#</span><span class="p">&gt;</span> <span class="p">|</span> <span class="no">MQCaptions</span> <span class="p">[</span><span class="nl">on</span><span class="p">|</span><span class="nl">off</span><span class="p">]</span> <span class="p">|</span> <span class="no">reload</span> <span class="p">|</span> <span class="p">&lt;</span><span class="nv nv-Required">type</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nv nv-Required">value</span><span class="p">&gt;</span> 
+</code></pre></div>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
 <p>Customize spawn captions (names, titles, linkdead, etc.). You can also limit how many captions are processed to improve performance.</p>
 <h2 id="options">Options<a class="headerlink" href="#options" title="Permanent link">&para;</a></h2>
@@ -14168,7 +14169,7 @@
 </table>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>Default captions can be overriden in the <code>[Captions]</code> section of your MacroQuest.ini file. </p>
-<div class="highlight"><pre><span></span><code><span class="k">[Captions]</span>
+<div class="language-ini highlight"><pre><span></span><code><span class="k">[Captions]</span>
 <span class="c1"># Player1 (basic), /shownames 1</span>
 <span class="na">Player1</span><span class="o">=</span><span class="s">${If[${NamingSpawn.Mark},${NamingSpawn.Mark} - ,]}${If[${NamingSpawn.Trader},Trader ,]}${If[${NamingSpawn.Invis},(${NamingSpawn.DisplayName}),${NamingSpawn.DisplayName}]}${If[${NamingSpawn.AFK}, AFK,]}${If[${NamingSpawn.Linkdead}, LD,]}${If[${NamingSpawn.LFG}, LFG,]}${If[${NamingSpawn.GroupLeader}, LDR,]}</span>
 
@@ -14185,10 +14186,10 @@
 <li>NamingSpawn is an internal TLO, so it's not documented along with other TLOs since it will always return NULL outside of caption processing. It inherits all <a href="../../data-types/datatype-spawn/">spawn</a> members. (e.g., DisplayName from <code>${NamingSpawn.DisplayName}</code> is a spawn member.)</li>
 <li>Use <code>\n</code> to add a new line when setting captions</li>
 <li>To set a caption in-game,
-  <div class="highlight"><pre><span></span><code>/caption Corpse ${NamingSpawn.DisplayName}&#39;s corpse
+  <div class="language-text highlight"><pre><span></span><code>/caption Corpse ${NamingSpawn.DisplayName}&#39;s corpse
 </code></pre></div></li>
 <li>To revert to the default, you can delete the [Captions] section of your MacroQuest.ini file or clear the specific type with an empty value command like so,
-  <div class="highlight"><pre><span></span><code>/caption Corpse
+  <div class="language-text highlight"><pre><span></span><code>/caption Corpse
 </code></pre></div></li>
 </ul>
 <h2 id="see-also">See Also<a class="headerlink" href="#see-also" title="Permanent link">&para;</a></h2>
@@ -14257,7 +14258,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14712,7 +14712,7 @@
 <h3 id="hello-world">Hello World<a class="headerlink" href="#hello-world" title="Permanent link">&para;</a></h3>
 <p><a href="https://www.lua.org/pil/1.html">PIL: Hello World</a><br />
 The typical Hello World example for a Lua script is relatively short. No functions need to be written, no variables declared. Simply create a file in  the MQ Lua folder called <code>helloworld.lua</code> with the following content:</p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, world&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Hello, world&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>And then execute the script in game by running the command: <code>/lua run helloworld</code></p>
 <p>This script calls the built in Lua <code>print</code> function to print the string <code>Hello, world</code>. It will print to the MQ console window. The Lua <code>print</code> function behaves the same way as <code>/echo</code> in macro script.</p>
@@ -14720,7 +14720,7 @@ The typical Hello World example for a Lua script is relatively short. No functio
 <p><a href="https://www.lua.org/pil/4.2.html">PIL: Local Variables and Blocks</a><br />
 Lua can have both local and global variables within the scope of a lua script, similar to a macro. In most cases, variables probably don't need to be made global. Global variables may have some use cases as script grow and begin to include multiple other scripts, but even then they are unlikely to be necessary, and most likely problems can be solved other ways.  </p>
 <p>To declare a variable, its as simple as:
-<div class="highlight"><pre><span></span><code><span class="c1">-- DEBUG_FLAGS will be a global variable with a value of 0</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="c1">-- DEBUG_FLAGS will be a global variable with a value of 0</span>
 <span class="nv">DEBUG_FLAGS</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span>
 
 <span class="c1">-- healPct will be a local variable with a value of 70</span>
@@ -14733,7 +14733,7 @@ Lua can have both local and global variables within the scope of a lua script, s
 <p>NOTE: <code>--</code> is used to write comments (text which will not be executed as part of the script) in Lua.</p>
 </blockquote>
 <p>Local variables are valid for the block of code in which they are declared in. For example:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">myLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Level</span><span class="p">()</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">myLevel</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Level</span><span class="p">()</span>
 <span class="kr">if</span><span class="w"> </span><span class="nv">myLevel</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="mi">5</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">canUseKick</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
 <span class="kr">end</span>
@@ -14744,31 +14744,31 @@ Lua can have both local and global variables within the scope of a lua script, s
 <p>Variables in Lua are not strongly typed, and can be assigned all sorts of values to any variable. To keep code simple and easy to follow, avoid reusing one variable for multiple different types of data. Just note that there is nothing stopping assigning a variable a number value in one line, and then assigning it a string value in the next.  </p>
 <p>The following code snippet shows some macro variable related commands and their lua equivalents:  </p>
 <p>Create a local variable <code>scriptName</code> with the value <code>helloworld</code>.
-<div class="highlight"><pre><span></span><code>| /declare variable_name type scope value
+<div class="language-text highlight"><pre><span></span><code>| /declare variable_name type scope value
 /declare scriptName string local helloworld
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">scriptName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;helloworld&#39;</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">scriptName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;helloworld&#39;</span>
 </code></pre></div></p>
 <p>Create a global variable with the value <code>1</code>:
-<div class="highlight"><pre><span></span><code>/declare mobCount int global 1
+<div class="language-text highlight"><pre><span></span><code>/declare mobCount int global 1
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nv">mobCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nv">mobCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
 </code></pre></div></p>
 <p>Update the value of variable <code>mobCount</code> to <code>2</code>:
-<div class="highlight"><pre><span></span><code>/varset mobCount 2
+<div class="language-text highlight"><pre><span></span><code>/varset mobCount 2
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nv">mobCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nv">mobCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">2</span>
 </code></pre></div></p>
 <p>Perform some math operation on a variable:
-<div class="highlight"><pre><span></span><code>/varcalc mobCount ${mobCount}+1
+<div class="language-text highlight"><pre><span></span><code>/varcalc mobCount ${mobCount}+1
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="nv">mobCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mobCount</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nv">mobCount</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mobCount</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
 </code></pre></div></p>
 <p>Store an MQ DataType in a variable:
-<div class="highlight"><pre><span></span><code>/declare nearestNPC spawn local
+<div class="language-text highlight"><pre><span></span><code>/declare nearestNPC spawn local
 /vardata nearestNPC Spawn[npc targetable]
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">nearestNPC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">nil</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">nearestNPC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">nil</span>
 <span class="nv">nearestNPC</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="nf">Spawn</span><span class="p">(</span><span class="s1">&#39;npc targetable&#39;</span><span class="p">)</span>
 </code></pre></div></p>
 <h3 id="output">Output<a class="headerlink" href="#output" title="Permanent link">&para;</a></h3>
@@ -14804,7 +14804,7 @@ Lua:   <code>printf('Script Name: %s', scriptName)</code>  </p>
 Lua functions are the equivalent of macro subroutines. Like variables, functions can be declared as <code>local</code> or <code>global</code>. In most cases, they don't need to be defined globally.  </p>
 <p>Example 1: A function which takes no arguments</p>
 <p>Macro:
-<div class="highlight"><pre><span></span><code>Sub echoMyName
+<div class="language-text highlight"><pre><span></span><code>Sub echoMyName
   /echo ${Me.Name}
 /return
 
@@ -14813,7 +14813,7 @@ Sub Main
 /return
 </code></pre></div></p>
 <p>Lua:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">printMyName</span><span class="p">()</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">printMyName</span><span class="p">()</span>
 <span class="w">  </span><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Name</span><span class="p">())</span>
 <span class="kr">end</span>
 
@@ -14821,7 +14821,7 @@ Sub Main
 </code></pre></div></p>
 <p>Example 2: A function with 1 named argument</p>
 <p>Macro:
-<div class="highlight"><pre><span></span><code>Sub Main
+<div class="language-text highlight"><pre><span></span><code>Sub Main
   /declare scriptName global helloworld
   /call eyecatcher &quot;section about subroutines&quot;
 /return
@@ -14831,7 +14831,7 @@ Sub eyecatcher(string message)
 /return
 </code></pre></div></p>
 <p>Lua:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">scriptName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;helloworld&#39;</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">scriptName</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;helloworld&#39;</span>
 
 <span class="c1">-- Define a local function which prints a formatted string with the script name and a message:</span>
 <span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">eyecatcher</span><span class="p">(</span><span class="nv">message</span><span class="p">)</span>
@@ -14843,7 +14843,7 @@ Sub eyecatcher(string message)
 </code></pre></div></p>
 <p>Example 3: A function with multiple named arguments</p>
 <p>Macro:
-<div class="highlight"><pre><span></span><code>Sub somefunc(bool arg1, int arg2)
+<div class="language-text highlight"><pre><span></span><code>Sub somefunc(bool arg1, int arg2)
   /echo ${arg1}
   /echo ${arg2}
 /return
@@ -14855,7 +14855,7 @@ Sub Main
 /return
 </code></pre></div></p>
 <p>Lua:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">somefunc</span><span class="p">(</span><span class="nv">arg1</span><span class="p">,</span><span class="w"> </span><span class="nv">arg2</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">somefunc</span><span class="p">(</span><span class="nv">arg1</span><span class="p">,</span><span class="w"> </span><span class="nv">arg2</span><span class="p">)</span>
 <span class="w">  </span><span class="nb">print</span><span class="p">(</span><span class="nv">arg1</span><span class="p">)</span>
 <span class="w">  </span><span class="nb">print</span><span class="p">(</span><span class="nv">arg2</span><span class="p">)</span>
 <span class="kr">end</span>
@@ -14866,7 +14866,7 @@ Sub Main
 </code></pre></div>
 <p>Example 4: A function with a variable number of arguments:<br />
 <a href="https://www.lua.org/pil/5.2.html">PIL: Variable number of arguments</a>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">print_values</span><span class="p">(...)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">print_values</span><span class="p">(...)</span>
 <span class="w">  </span><span class="kd">local</span><span class="w"> </span><span class="nv">arg</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{...}</span>
 <span class="w">  </span><span class="kr">for</span><span class="w"> </span><span class="nv">_</span><span class="p">,</span><span class="nv">value</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nv">arg</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
 <span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="nv">value</span><span class="p">)</span>
@@ -14880,7 +14880,7 @@ Sub Main
 </code></pre></div></p>
 <p>Example 5: A function which returns multiple values<br />
 <a href="https://www.lua.org/pil/5.1.html">PIL: Multiple Results</a><br />
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">get_class_and_race</span><span class="p">(</span><span class="nv">a_spawn</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">get_class_and_race</span><span class="p">(</span><span class="nv">a_spawn</span><span class="p">)</span>
 <span class="w">  </span><span class="kr">return</span><span class="w"> </span><span class="nv">a_spawn</span><span class="p">.</span><span class="nf">Class</span><span class="p">(),</span><span class="w"> </span><span class="nv">a_spawn</span><span class="p">.</span><span class="nf">Race</span><span class="p">()</span>
 <span class="kr">end</span>
 
@@ -14888,7 +14888,7 @@ Sub Main
 </code></pre></div></p>
 <p>Example 6: Return a table of values<br />
 In most cases it will be more extensible and easier to read to return multiple values in a table rather than returning multiple values.
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">get_class_and_race</span><span class="p">(</span><span class="nv">a_spawn</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">get_class_and_race</span><span class="p">(</span><span class="nv">a_spawn</span><span class="p">)</span>
 <span class="w">  </span><span class="kr">return</span><span class="w"> </span><span class="p">{</span><span class="nv">class</span><span class="o">=</span><span class="nv">a_spawn</span><span class="p">.</span><span class="nf">Class</span><span class="p">(),</span><span class="w"> </span><span class="nv">race</span><span class="o">=</span><span class="nv">a_spawn</span><span class="p">.</span><span class="nf">Race</span><span class="p">()}</span>
 <span class="kr">end</span>
 
@@ -14904,26 +14904,26 @@ In most cases it will be more extensible and easier to read to return multiple v
 </blockquote>
 <p>Array table examples: </p>
 <p>Define an array by passing just a set of values. It will automatically give each value an index starting from <code>1</code>.
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">priests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s1">&#39;clr&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;dru&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;shm&#39;</span><span class="w"> </span><span class="p">}</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">priests</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="s1">&#39;clr&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;dru&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;shm&#39;</span><span class="w"> </span><span class="p">}</span>
 </code></pre></div></p>
 <p>Values can also be indexed explicitly, but prefer the example above:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">casters</span><span class="o">=</span><span class="p">{</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;enc&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;mag&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;nec&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;wiz&#39;</span><span class="w"> </span><span class="p">}</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">casters</span><span class="o">=</span><span class="p">{</span><span class="w"> </span><span class="p">[</span><span class="mi">1</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;enc&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">2</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;mag&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">3</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;nec&#39;</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">4</span><span class="p">]</span><span class="o">=</span><span class="s1">&#39;wiz&#39;</span><span class="w"> </span><span class="p">}</span>
 </code></pre></div></p>
 <p>Lua also provides a table function for appending to arrays:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">tanks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">tanks</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
 <span class="nb">table.insert</span><span class="p">(</span><span class="nv">tanks</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;war&#39;</span><span class="p">)</span>
 <span class="nb">table.insert</span><span class="p">(</span><span class="nv">tanks</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;pal&#39;</span><span class="p">)</span>
 <span class="nb">table.insert</span><span class="p">(</span><span class="nv">tanks</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;shd&#39;</span><span class="p">)</span>
 </code></pre></div></p>
 <p>To access a value directly by its index:
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">priests</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">priests</span><span class="p">[</span><span class="mi">2</span><span class="p">])</span>
 </code></pre></div>
 This would print <code>dru</code>.</p>
 <p>Tables can also be maps instead of arrays:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mez_classes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">brd</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nv">enc</span><span class="o">=</span><span class="kc">true</span><span class="w"> </span><span class="p">}</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mez_classes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">brd</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nv">enc</span><span class="o">=</span><span class="kc">true</span><span class="w"> </span><span class="p">}</span>
 </code></pre></div></p>
 <p>Values from the table can be looked up by key:
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mez_classes</span><span class="p">.</span><span class="py">brd</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mez_classes</span><span class="p">.</span><span class="py">brd</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="nv">mez_classes</span><span class="p">[</span><span class="s1">&#39;brd&#39;</span><span class="p">])</span>
 <span class="kd">local</span><span class="w"> </span><span class="nv">key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;enc&#39;</span>
 <span class="nb">print</span><span class="p">(</span><span class="nv">mez_classes</span><span class="p">[</span><span class="nv">key</span><span class="p">])</span>
@@ -14935,7 +14935,7 @@ This would print <code>dru</code>.</p>
 <h3 id="command-line-arguments">Command Line Arguments<a class="headerlink" href="#command-line-arguments" title="Permanent link">&para;</a></h3>
 <p>Lua provides access to command line arguments through the use of the same <code>...</code> which was introduced earlier with functions for variable number of arguments.</p>
 <p>Below is an example which iterates over the arguments which the script is called with:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{...}</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{...}</span>
 <span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;Script called with %d arguments:&#39;</span><span class="p">,</span><span class="w"> </span><span class="o">#</span><span class="nv">args</span><span class="p">)</span>
 <span class="kr">for</span><span class="w"> </span><span class="nv">i</span><span class="p">,</span><span class="nv">arg</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nv">args</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
 <span class="w">  </span><span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;arg[%d]: %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">i</span><span class="p">,</span><span class="w"> </span><span class="nv">arg</span><span class="p">)</span>
@@ -14943,13 +14943,13 @@ This would print <code>dru</code>.</p>
 </code></pre></div></p>
 <p>Add this code to a lua script <code>testarg1.lua</code> and execute it with: <code>/lua run testarg1 assist ini server_toon.ini</code></p>
 <p>This would output:
-<div class="highlight"><pre><span></span><code><span class="nv">Script</span><span class="w"> </span><span class="nv">called</span><span class="w"> </span><span class="nv">with</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="nv">arguments</span><span class="p">:</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nv">Script</span><span class="w"> </span><span class="nv">called</span><span class="w"> </span><span class="nv">with</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="nv">arguments</span><span class="p">:</span>
 <span class="py">arg</span><span class="p">[</span><span class="mi">1</span><span class="p">]:</span><span class="w"> </span><span class="nv">assist</span>
 <span class="nv">arg</span><span class="p">[</span><span class="mi">2</span><span class="p">]:</span><span class="w"> </span><span class="nv">ini</span>
 <span class="nv">arg</span><span class="p">[</span><span class="mi">3</span><span class="p">]:</span><span class="w"> </span><span class="nv">server_toon</span><span class="p">.</span><span class="py">ini</span>
 </code></pre></div></p>
 <p>Another example, uses named key/value arguments to add the args directly to a settings table:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">settings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">settings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
 <span class="kd">local</span><span class="w"> </span><span class="nv">current_key</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">nil</span>
 
 <span class="kr">for</span><span class="w"> </span><span class="nv">_</span><span class="p">,</span><span class="nv">arg</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nv">args</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
@@ -14967,19 +14967,19 @@ This would print <code>dru</code>.</p>
 </code></pre></div></p>
 <p>Add this code to a lua script <code>testarg2.lua</code> and execute it with: <code>/lua run testarg2 role assist ini server_toon.ini</code></p>
 <p>This would output:
-<div class="highlight"><pre><span></span><code>Settings[role]=assist
+<div class="language-text highlight"><pre><span></span><code>Settings[role]=assist
 Settings[ini]=server_toon.ini
 </code></pre></div></p>
 <h3 id="require">Require<a class="headerlink" href="#require" title="Permanent link">&para;</a></h3>
 <p>The Lua <code>require</code> function is used to load one Lua file from another. For example, <code>Write.lua</code>, by Knightly, is a library which provides useful functions for logging. <code>Write.lua</code> is meant to be used by other scripts, and would be included as a module with: <code>local write = require('write')</code>. This would then allow a script to call the functions from <code>Write.lua</code> such as <code>write.debug('my debug message here')</code>.</p>
 <p>This is similar to include files in macros, though works slightly differently. Include files in macros make the macro behave as if the included files code was all inserted directly where the include was done. In Lua, the results of requiring another Lua file are typically stored into a variable. So, if a script is required, and it returns a table containing several helper functions, then that table is stored into a variable and those functions are accessed through that variable.</p>
 <p>Require is also how MQ makes its own functionality available to Lua scripts, such as TLOs, events, binds and commands which will all be discussed later. In short, its all made available by including the following line:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
 </code></pre></div></p>
 <p>This provides access to all the MQ functionality that has been made available to lua, and assigns it into the variable <code>mq</code>.</p>
 <p>A couple short examples using require:</p>
 <p>Create a file named <code>utils.lua</code>
-<div class="highlight"><pre><span></span><code><span class="c1">-- Create a table which will hold everything we want to be exported from this lua file</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="c1">-- Create a table which will hold everything we want to be exported from this lua file</span>
 <span class="kd">local</span><span class="w"> </span><span class="nv">utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
 
 <span class="c1">-- Add a function to the utils table under the key &quot;perform_some_task&quot;</span>
@@ -14991,12 +14991,12 @@ Settings[ini]=server_toon.ini
 <span class="kr">return</span><span class="w"> </span><span class="nv">utils</span>
 </code></pre></div></p>
 <p>Then include <code>utils.lua</code> into the main script using a require statement:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="w"> </span><span class="s1">&#39;utils&#39;</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="w"> </span><span class="s1">&#39;utils&#39;</span>
 
 <span class="nv">utils</span><span class="p">.</span><span class="nf">perform_some_task</span><span class="p">()</span>
 </code></pre></div></p>
 <p>Another way:
-<div class="highlight"><pre><span></span><code><span class="c1">-- Create a local function which will not be exported, so only functions in this file may use it</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="c1">-- Create a local function which will not be exported, so only functions in this file may use it</span>
 <span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">internal_helper</span><span class="p">()</span>
 <span class="w">  </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;successfully performed some task&#39;</span><span class="p">)</span>
 <span class="kr">end</span>
@@ -15015,7 +15015,7 @@ Settings[ini]=server_toon.ini
 <span class="kr">return</span><span class="w"> </span><span class="nv">exports</span>
 </code></pre></div></p>
 <p>Then include <code>utils.lua</code> into the main script using a require statement:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="w"> </span><span class="s1">&#39;utils&#39;</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="w"> </span><span class="s1">&#39;utils&#39;</span>
 
 <span class="nv">utils</span><span class="p">.</span><span class="nf">perform_some_task</span><span class="p">()</span>
 <span class="c1">-- Calling utils.internal_helper() would result in an error</span>
@@ -15025,7 +15025,7 @@ Settings[ini]=server_toon.ini
 <p>Scope was touched on a little bit earlier when talking about variables. The same applies to functions as well. Its always important to be aware of where variables or functions are defined, and when they will be in the correct scope to be referenced.</p>
 <p>An important part of this is understanding that Lua scripts are processed top down. A variable or function can only be referenced by code that occurs after it has been declared.</p>
 <p>Compare these three examples:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">print_version</span><span class="p">()</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">print_version</span><span class="p">()</span>
 <span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="nv">version</span><span class="p">)</span>
 <span class="kr">end</span>
 
@@ -15033,7 +15033,7 @@ Settings[ini]=server_toon.ini
 <span class="nf">print_version</span><span class="p">()</span>
 </code></pre></div></p>
 <p>This will print <code>nil</code> because <code>version</code> has not been defined ahead of the function <code>print_version</code>, so it will be printing an unknown variable.
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;1.0.0&#39;</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;1.0.0&#39;</span>
 <span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">print_version</span><span class="p">()</span>
 <span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="nv">version</span><span class="p">)</span>
 <span class="kr">end</span>
@@ -15041,7 +15041,7 @@ Settings[ini]=server_toon.ini
 <span class="nf">print_version</span><span class="p">()</span>
 </code></pre></div></p>
 <p>This will print <code>1.0.0</code> because <code>version</code> has been defined ahead of the function <code>print_version</code>, so it will be able to find the correct variable.
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">print_version</span><span class="p">(</span><span class="nv">version</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">print_version</span><span class="p">(</span><span class="nv">version</span><span class="p">)</span>
 <span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="nv">version</span><span class="p">)</span>
 <span class="kr">end</span>
 
@@ -15056,7 +15056,7 @@ A number of options are provided to control the flow of the script, such as if t
 <p><a href="https://www.lua.org/pil/4.3.1.html">PIL: if then else</a><br />
 If conditions from macros should look pretty similar in lua.</p>
 <p>Macro:
-<div class="highlight"><pre><span></span><code>/declare my_name string local noone
+<div class="language-text highlight"><pre><span></span><code>/declare my_name string local noone
 /declare max_level int local 115
 /if (${my_name.Equal[noone]}) {
     /echo the values match
@@ -15072,7 +15072,7 @@ If conditions from macros should look pretty similar in lua.</p>
 }
 </code></pre></div></p>
 <p>Lua:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">my_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;noone&#39;</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">my_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;noone&#39;</span>
 <span class="kd">local</span><span class="w"> </span><span class="nv">max_level</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">115</span>
 <span class="kr">if</span><span class="w"> </span><span class="nv">my_name</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;noone&#39;</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;the values match&#39;</span><span class="p">)</span>
@@ -15089,53 +15089,53 @@ If conditions from macros should look pretty similar in lua.</p>
 <span class="kr">end</span>
 </code></pre></div></p>
 <p>Macro:
-<div class="highlight"><pre><span></span><code>/if (${my_name.NotEqual[someone]}) {
+<div class="language-text highlight"><pre><span></span><code>/if (${my_name.NotEqual[someone]}) {
     /echo =~ is not equals in lua
 }
 </code></pre></div></p>
 <p>Lua:
-<div class="highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">my_name</span><span class="w"> </span><span class="o">~=</span><span class="w"> </span><span class="s1">&#39;someone&#39;</span><span class="w"> </span><span class="kr">then</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">my_name</span><span class="w"> </span><span class="o">~=</span><span class="w"> </span><span class="s1">&#39;someone&#39;</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;~= is not equals in lua&#39;</span><span class="p">)</span>
 <span class="kr">end</span>
 </code></pre></div></p>
 <blockquote>
 <p>NOTE: Do not write a condition that combines both <code>not</code> and <code>==</code>.
 For example, instead of this:
-<div class="highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">myName</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;aquietone&#39;</span><span class="w"> </span><span class="kr">then</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">myName</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;aquietone&#39;</span><span class="w"> </span><span class="kr">then</span>
 </code></pre></div>
 use this:
-<div class="highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">myName</span><span class="w"> </span><span class="o">~=</span><span class="w"> </span><span class="s1">&#39;aquietone&#39;</span><span class="w"> </span><span class="kr">then</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">myName</span><span class="w"> </span><span class="o">~=</span><span class="w"> </span><span class="s1">&#39;aquietone&#39;</span><span class="w"> </span><span class="kr">then</span>
 </code></pre></div></p>
 </blockquote>
 <h3 id="for-loops">For Loops<a class="headerlink" href="#for-loops" title="Permanent link">&para;</a></h3>
 <p><a href="https://www.lua.org/pil/4.3.5.html">PIL: For Loops</a><br />
 For loops in lua are most often going to be iterating over table values. This is done using either <code>pairs</code> or <code>ipairs</code>. Both <code>pairs(a_table)</code> and <code>ipairs(a_table)</code> will return 2 values on each pass of the loop, the key and the value for that key.</p>
 <p><code>pairs</code> iterates over all keys in a table (treats the table as a map).
-<div class="highlight"><pre><span></span><code><span class="kr">for</span><span class="w"> </span><span class="nv">class</span><span class="p">,</span><span class="w"> </span><span class="nv">value</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">pairs</span><span class="p">(</span><span class="nv">mez_classes</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">for</span><span class="w"> </span><span class="nv">class</span><span class="p">,</span><span class="w"> </span><span class="nv">value</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">pairs</span><span class="p">(</span><span class="nv">mez_classes</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
 <span class="w">    </span><span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;Class %s can mez: %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">class</span><span class="p">,</span><span class="w"> </span><span class="nv">value</span><span class="p">)</span>
 <span class="kr">end</span>
 </code></pre></div></p>
 <p><code>ipairs</code> iterates over contiguous numeric keys in a table starting from index 1 (treats the table as an array).
-<div class="highlight"><pre><span></span><code><span class="kr">for</span><span class="w"> </span><span class="nv">index</span><span class="p">,</span><span class="w"> </span><span class="nv">value</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nv">casters</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">for</span><span class="w"> </span><span class="nv">index</span><span class="p">,</span><span class="w"> </span><span class="nv">value</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">ipairs</span><span class="p">(</span><span class="nv">casters</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span>
 <span class="w">    </span><span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;casters[%d]=%s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">index</span><span class="p">,</span><span class="w"> </span><span class="nv">value</span><span class="p">)</span>
 <span class="kr">end</span>
 </code></pre></div></p>
 <p><a href="https://www.lua.org/pil/4.3.4.html">PIL: Numeric For</a><br />
 Lua also allowed to iterate over a range like 1 to N:
-<div class="highlight"><pre><span></span><code><span class="kr">for</span><span class="w"> </span><span class="nv">spellIter</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="w"> </span><span class="kr">do</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">for</span><span class="w"> </span><span class="nv">spellIter</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="mi">5</span><span class="w"> </span><span class="kr">do</span>
 <span class="w">  </span><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Book</span><span class="p">(</span><span class="nv">spellIter</span><span class="p">).</span><span class="nf">Name</span><span class="p">())</span>
 <span class="kr">end</span>
 </code></pre></div></p>
 <p>Or, an example taken from <code>pocketfarm.mac</code> but changed so it doesn't print a lot of stuff:<br />
 Macro:
-<div class="highlight"><pre><span></span><code>/for i 1 to ${SpawnCount[pc targetable]}
+<div class="language-text highlight"><pre><span></span><code>/for i 1 to ${SpawnCount[pc targetable]}
   /if (${NearestSpawn[${i},pc targetable].Name.Equal[${Me.Name}]}) {
     /echo ${NearestSpawn[${i},pc targetable].Name.Length}
   }
 /next i
 </code></pre></div></p>
 <p>Lua:
-<div class="highlight"><pre><span></span><code><span class="kr">for</span><span class="w"> </span><span class="nv">i</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="nf">SpawnCount</span><span class="p">(</span><span class="s1">&#39;pc targetable&#39;</span><span class="p">)()</span><span class="w"> </span><span class="kr">do</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">for</span><span class="w"> </span><span class="nv">i</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="nf">SpawnCount</span><span class="p">(</span><span class="s1">&#39;pc targetable&#39;</span><span class="p">)()</span><span class="w"> </span><span class="kr">do</span>
 <span class="w">  </span><span class="kr">if</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="nf">NearestSpawn</span><span class="p">(</span><span class="nv">i</span><span class="o">..</span><span class="s1">&#39;, pc targetable&#39;</span><span class="p">).</span><span class="nf">Name</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Name</span><span class="p">()</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="nf">NearestSpawn</span><span class="p">(</span><span class="nv">i</span><span class="o">..</span><span class="s1">&#39;, pc targetable&#39;</span><span class="p">).</span><span class="nv">Name</span><span class="p">.</span><span class="nf">Length</span><span class="p">())</span>
 <span class="w">  </span><span class="kr">end</span>
@@ -15144,7 +15144,7 @@ Macro:
 <h3 id="while-loops">While Loops<a class="headerlink" href="#while-loops" title="Permanent link">&para;</a></h3>
 <p><a href="https://www.lua.org/pil/4.3.2.html">PIL: While Loops</a><br />
 While loops can also be used to iterate over a range:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span>
 <span class="kr">while</span><span class="w"> </span><span class="nv">loop</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">3</span><span class="w"> </span><span class="kr">do</span>
 <span class="w">  </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Loop #&#39;</span><span class="o">..</span><span class="nv">loop</span><span class="p">)</span>
 <span class="w">  </span><span class="nv">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">loop</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="mi">1</span>
@@ -15153,7 +15153,7 @@ While loops can also be used to iterate over a range:
 <h3 id="repeat-until">Repeat Until<a class="headerlink" href="#repeat-until" title="Permanent link">&para;</a></h3>
 <p><a href="https://www.lua.org/pil/4.3.3.html">PIL: Repeat Until</a><br />
 There is also repeat until:
-<div class="highlight"><pre><span></span><code><span class="kr">repeat</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">repeat</span>
 <span class="w">  </span><span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;Loop #%d&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">loop</span><span class="p">)</span>
 <span class="w">  </span><span class="nv">loop</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">loop</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="mi">1</span>
 <span class="kr">until</span><span class="w"> </span><span class="nv">loop</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">0</span>
@@ -15164,18 +15164,18 @@ There is also repeat until:
 <p>One valid scenario for goto would be to handle the lack of <code>continue</code> in Lua, however, this can still be avoided in most situations.</p>
 <h2 id="mq">MQ<a class="headerlink" href="#mq" title="Permanent link">&para;</a></h2>
 <p>The first line to most lua scripts written for MQ will be:<br />
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
 </code></pre></div></p>
 <p>This provides access to all the MQ functionality.</p>
 <h3 id="tlos">TLOs<a class="headerlink" href="#tlos" title="Permanent link">&para;</a></h3>
 <p>Top Level Objects, or TLOs, are how data is accessed from MQ. This should already be a pretty familiar concept from doing just about anything with MQ, including echoing data to the console, writing conditions in KissAssist INIs, writing macros, writing reacts, etc. We use TLOs every day. Some examples include <code>${Me}</code>, <code>${Target}</code>, <code>${Spawn}</code> and <code>${FindItem}</code>.</p>
 <p>To access TLOs using the <code>mq</code> variable:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
 
 <span class="kd">local</span><span class="w"> </span><span class="nv">assist_name</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Group</span><span class="p">.</span><span class="py">MainAssist</span><span class="p">.</span><span class="nf">CleanName</span><span class="p">()</span>
 <span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;Assisting: %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">assist_name</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
 
 <span class="kr">if</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="nf">Target</span><span class="p">()</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">mob_hp</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Target</span><span class="p">.</span><span class="nf">PctHPs</span><span class="p">()</span>
@@ -15185,7 +15185,7 @@ There is also repeat until:
 <span class="w">    </span><span class="kr">end</span>
 <span class="kr">end</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
 
 <span class="kd">local</span><span class="w"> </span><span class="nv">target</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Target</span>
 <span class="kr">if</span><span class="w"> </span><span class="nf">target</span><span class="p">()</span><span class="w"> </span><span class="kr">then</span>
@@ -15200,11 +15200,11 @@ There is also repeat until:
 <p>To evaluate to a Lua type, it must always end in <strong>empty</strong> (). <code>mq.TLO.Spawn('npc')</code> will be type <code>userdata</code> while <code>mq.TLO.Spawn('npc')()</code> will be type <code>string</code>.  </p>
 <p>Background on Lua userdata: <a href="https://www.lua.org/pil/2.7.html">PIL: Userdata</a>  </p>
 </blockquote>
-<div class="highlight"><pre><span></span><code><span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;type(mq.TLO.Me.Name) == %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">type</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="py">Name</span><span class="p">))</span><span class="w"> </span><span class="c1">-- prints userdata</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;type(mq.TLO.Me.Name) == %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">type</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="py">Name</span><span class="p">))</span><span class="w"> </span><span class="c1">-- prints userdata</span>
 <span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;type(mq.TLO.Me.Name()) == %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">type</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Name</span><span class="p">()))</span><span class="w"> </span><span class="c1">-- prints string</span>
 </code></pre></div>
 <p>Data returned by MQ is always of type userdata. Adding () on the end will convert the MQ userdata to the appropriate lua datatype.
-<div class="highlight"><pre><span></span><code><span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;type(mq.TLO.Spawn(&quot;npc&quot;) == %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">type</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="nf">Spawn</span><span class="p">(</span><span class="s2">&quot;npc&quot;</span><span class="p">)))</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;type(mq.TLO.Spawn(&quot;npc&quot;) == %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nb">type</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="nf">Spawn</span><span class="p">(</span><span class="s2">&quot;npc&quot;</span><span class="p">)))</span>
 <span class="c1">-- The following print would throw an error because userdata cannot be concatenated to a string</span>
 <span class="nf">printf</span><span class="p">(</span><span class="s1">&#39;mq.TLO.Spawn(&quot;npc&quot;) == %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="nf">Spawn</span><span class="p">(</span><span class="s2">&quot;npc&quot;</span><span class="p">))</span>
 
@@ -15213,36 +15213,36 @@ There is also repeat until:
 </code></pre></div></p>
 <h3 id="commands">Commands<a class="headerlink" href="#commands" title="Permanent link">&para;</a></h3>
 <p>Execute EQ and MQ commands from Lua scripts like so:
-<div class="highlight"><pre><span></span><code><span class="nv">mq</span><span class="p">.</span><span class="nf">cmd</span><span class="p">(</span><span class="s1">&#39;/keypress DUCK&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nv">mq</span><span class="p">.</span><span class="nf">cmd</span><span class="p">(</span><span class="s1">&#39;/keypress DUCK&#39;</span><span class="p">)</span>
 <span class="nv">mq</span><span class="p">.</span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 <span class="nv">mq</span><span class="p">.</span><span class="nf">cmd</span><span class="p">(</span><span class="s1">&#39;/keypress DUCK&#39;</span><span class="p">)</span>
 </code></pre></div></p>
 <p>To run a command with formatted input, use <code>mq.cmdf</code>:
-<div class="highlight"><pre><span></span><code><span class="nv">mq</span><span class="p">.</span><span class="nf">cmdf</span><span class="p">(</span><span class="s1">&#39;/echo %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Name</span><span class="p">())</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nv">mq</span><span class="p">.</span><span class="nf">cmdf</span><span class="p">(</span><span class="s1">&#39;/echo %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Name</span><span class="p">())</span>
 </code></pre></div></p>
 <h3 id="bindings">Bindings<a class="headerlink" href="#bindings" title="Permanent link">&para;</a></h3>
 <p><a href="../events-and-binds/">Lua Events and Binds</a><br />
 Define a function for the bind to call when its executed
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">bind_help</span><span class="p">()</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">bind_help</span><span class="p">()</span>
 <span class="w">  </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;some helpful text&#39;</span><span class="p">)</span>
 <span class="kr">end</span>
 </code></pre></div></p>
 <p>Assign the function to a command that can be run in game:
-<div class="highlight"><pre><span></span><code><span class="nv">mq</span><span class="p">.</span><span class="nf">bind</span><span class="p">(</span><span class="s1">&#39;/howto&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">bind_help</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nv">mq</span><span class="p">.</span><span class="nf">bind</span><span class="p">(</span><span class="s1">&#39;/howto&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">bind_help</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Binds can be removed using <code>mq.unbind(bindCommand)</code>.</p>
 <h3 id="events">Events<a class="headerlink" href="#events" title="Permanent link">&para;</a></h3>
 <p><a href="../events-and-binds/">Lua Events and Binds</a><br />
 First step is to define the function which will be called when the event triggers:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">event_handler</span><span class="p">()</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">event_handler</span><span class="p">()</span>
 <span class="w">  </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;entered event_handler&#39;</span><span class="p">)</span>
 <span class="kr">end</span>
 </code></pre></div></p>
 <p>Next, define the event using <code>mq.event</code> and pass the event name, match text, and the function.
-<div class="highlight"><pre><span></span><code><span class="nv">mq</span><span class="p">.</span><span class="nf">event</span><span class="p">(</span><span class="s1">&#39;BrokenPole&#39;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#*#You can&#39;t fish without a fishing pole, go buy one.#*#&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">event_handler</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nv">mq</span><span class="p">.</span><span class="nf">event</span><span class="p">(</span><span class="s1">&#39;BrokenPole&#39;</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;#*#You can&#39;t fish without a fishing pole, go buy one.#*#&quot;</span><span class="p">,</span><span class="w"> </span><span class="nv">event_handler</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Then later, typically in the main run loop of the script, call <code>mq.doevents</code>.
-<div class="highlight"><pre><span></span><code><span class="nv">mq</span><span class="p">.</span><span class="nf">doevents</span><span class="p">()</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nv">mq</span><span class="p">.</span><span class="nf">doevents</span><span class="p">()</span>
 </code></pre></div></p>
 <p>Similar to macros, events can also be flushed with <code>mq.flushevents()</code>.  </p>
 <p>Events can be deregistered using <code>mq.unevent(eventName)</code>.</p>
@@ -15252,7 +15252,7 @@ First step is to define the function which will be called when the event trigger
 <li>
 <p>Use a loop and iterate through values:</p>
 <p>Consider a select statement like <code>${Select[${Me.Class.ShortName},clr,dru,shm]}</code></p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">my_class</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="py">Class</span><span class="p">.</span><span class="nf">ShortName</span><span class="p">()</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">my_class</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="py">Class</span><span class="p">.</span><span class="nf">ShortName</span><span class="p">()</span>
 <span class="kr">for</span><span class="w"> </span><span class="nv">_</span><span class="p">,</span><span class="nv">class</span><span class="w"> </span><span class="kr">in</span><span class="w">  </span><span class="nb">ipairs</span><span class="p">({</span><span class="s1">&#39;clr&#39;</span><span class="p">,</span><span class="s1">&#39;dru&#39;</span><span class="p">,</span><span class="s1">&#39;shm&#39;</span><span class="p">})</span><span class="w"> </span><span class="kr">do</span>
 <span class="w">    </span><span class="kr">if</span><span class="w"> </span><span class="nv">my_class</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="nv">class</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">        </span><span class="c1">-- assign something or perform some action based on matching class</span>
@@ -15263,7 +15263,7 @@ First step is to define the function which will be called when the event trigger
 <li>
 <p>Use logical operators like "or" (https://www.lua.org/pil/3.3.html)</p>
 <p>Consider a select statement like <code>${Select[${role},pullertank,tank]}</code></p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">role</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;tank&#39;</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">role</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;tank&#39;</span>
 <span class="kr">if</span><span class="w"> </span><span class="nv">role</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;pullertank&#39;</span><span class="w"> </span><span class="ow">or</span><span class="w"> </span><span class="nv">role</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;tank&#39;</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">    </span><span class="c1">-- assign something or perform some action based on matching role</span>
 <span class="kr">end</span>
@@ -15272,14 +15272,14 @@ First step is to define the function which will be called when the event trigger
 <li>
 <p>Use tables by checking for the presence of the value in the table</p>
 <p>Consider a select statement like <code>${Select[${Zone.ID},345,344,202,203,279,151,33506]}</code></p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">safe_zones</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">[</span><span class="mi">345</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">344</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">202</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">203</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w">  </span><span class="p">[</span><span class="mi">279</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">151</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">33506</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">}</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">safe_zones</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="p">[</span><span class="mi">345</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">344</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">202</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">203</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w">  </span><span class="p">[</span><span class="mi">279</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">151</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="p">[</span><span class="mi">33506</span><span class="p">]</span><span class="o">=</span><span class="kc">true</span><span class="p">}</span>
 <span class="kd">local</span><span class="w"> </span><span class="nv">current_zone</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Zone</span><span class="p">.</span><span class="nf">ID</span><span class="p">()</span>
 <span class="kr">if</span><span class="w"> </span><span class="nv">safe_zones</span><span class="p">[</span><span class="nv">current_zone</span><span class="p">]</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">    </span><span class="c1">-- disable some functionality because we are in a safe zone</span>
 <span class="kr">end</span>
 </code></pre></div>
 <p>The above example checks the current zone ID against a list of zone IDs which have been classified as safe zones.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mez_classes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">brd</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nv">enc</span><span class="o">=</span><span class="kc">true</span><span class="w"> </span><span class="p">}</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mez_classes</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">brd</span><span class="o">=</span><span class="kc">true</span><span class="p">,</span><span class="w"> </span><span class="nv">enc</span><span class="o">=</span><span class="kc">true</span><span class="w"> </span><span class="p">}</span>
 <span class="kd">local</span><span class="w"> </span><span class="nv">my_class</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="py">Class</span><span class="p">.</span><span class="nf">ShortName</span><span class="p">()</span>
 <span class="kr">if</span><span class="w"> </span><span class="nv">mez_classes</span><span class="p">[</span><span class="nv">my_class</span><span class="p">]</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">    </span><span class="c1">-- enter into mez handling routines</span>
@@ -15287,7 +15287,7 @@ First step is to define the function which will be called when the event trigger
 </code></pre></div>
 <p>The above example checks the characters class against a list of mez capable classes to gate entering mez handling functions.</p>
 <p>Taking this a bit further, table values can also be functions:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">enc_mez</span><span class="p">()</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">enc_mez</span><span class="p">()</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;handle mezzing as an enc&#39;</span><span class="p">)</span>
 <span class="kr">end</span>
 
@@ -15306,12 +15306,12 @@ First step is to define the function which will be called when the event trigger
 <h3 id="macro-delay">Macro /delay<a class="headerlink" href="#macro-delay" title="Permanent link">&para;</a></h3>
 <p>Use mq.delay to achieve the same thing as a macros /delay command.</p>
 <p>Delay a fixed amount of time:
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;wait 1 second then print again&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;wait 1 second then print again&#39;</span><span class="p">)</span>
 <span class="nv">mq</span><span class="p">.</span><span class="nf">delay</span><span class="p">(</span><span class="mi">1000</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;finished waiting&#39;</span><span class="p">)</span>
 </code></pre></div></p>
 <p>Delay with a condition to end the delay early:
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">should_stop_waiting</span><span class="p">()</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">should_stop_waiting</span><span class="p">()</span>
 <span class="w">  </span><span class="c1">-- implement some more complex condition for when to break</span>
 <span class="w">  </span><span class="c1">-- early from the delay.</span>
 <span class="w">  </span><span class="kr">return</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Casting</span><span class="p">()</span>
@@ -15326,21 +15326,21 @@ First step is to define the function which will be called when the event trigger
 <p class="admonition-title">Warning</p>
 <p><code>mq.delay</code> cannot be used within an ImGui callback. It will result in an error, as the ImGui callback is called every frame and cannot be delayed. A required module also cannot include <code>mq.delay</code> within its global scope.  </p>
 <p>In this example, a button click in the UI attempts to wait for an action to complete. The UI cannot be delayed, so it does not work.
-<div class="highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">ImGui</span><span class="p">.</span><span class="nf">Button</span><span class="p">(</span><span class="s1">&#39;mem spell&#39;</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">ImGui</span><span class="p">.</span><span class="nf">Button</span><span class="p">(</span><span class="s1">&#39;mem spell&#39;</span><span class="p">)</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">    </span><span class="nv">mq</span><span class="p">.</span><span class="nf">cmd</span><span class="p">(</span><span class="s1">&#39;/memspell 1 &quot;minor healing&quot;&#39;</span><span class="p">)</span>
 <span class="w">    </span><span class="nv">mq</span><span class="p">.</span><span class="nf">delay</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
 <span class="kr">end</span>
 </code></pre></div>
 A more appropriate way to solve this would be to set some state from the button, and then handle the spell memorization from the scripts main loop.</p>
 <p>In this example, <code>init.lua</code> tries to require a module which uses <code>mq.delay</code> at the global scope, and so it does not work.
-<div class="highlight"><pre><span></span><code><span class="c1">-- navHelper.lua</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="c1">-- navHelper.lua</span>
 <span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
 
 <span class="nv">mq</span><span class="p">.</span><span class="nf">cmd</span><span class="p">(</span><span class="s1">&#39;/nav target&#39;</span><span class="p">)</span>
 <span class="nv">mq</span><span class="p">.</span><span class="nf">delay</span><span class="p">(</span><span class="mi">5000</span><span class="p">)</span>
 <span class="nb">print</span><span class="p">(</span><span class="s1">&#39;ran to target&#39;</span><span class="p">)</span>
 </code></pre></div>
-<div class="highlight"><pre><span></span><code><span class="c1">-- init.lua</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="c1">-- init.lua</span>
 <span class="nb">require</span><span class="p">(</span><span class="s1">&#39;navHelper&#39;</span><span class="p">)</span>
 </code></pre></div>
 Modules which are loaded with require should generally have all logic contained within functions, which can then be called.</p>
@@ -15349,7 +15349,7 @@ Modules which are loaded with require should generally have all logic contained 
 <p>Lua scripts are processed from top to bottom, and don't actually require code to be inside of a function, unlike how macros always have a Sub Main where execution begins. Think of the entire lua file itself as the main function, entering at line 1 of the file when the script is run.</p>
 <p>There will often times still be blocks of code that perform a similar function to the main subroutine of a macro, like the typical /while or /goto loops people are familiar with from macros.</p>
 <p>For example, consider a macro Sub Main like below:
-<div class="highlight"><pre><span></span><code>Sub Main
+<div class="language-text highlight"><pre><span></span><code>Sub Main
   /while (1) {
     /doevents
     /call check_target
@@ -15358,7 +15358,7 @@ Modules which are loaded with require should generally have all logic contained 
 /return
 </code></pre></div></p>
 <p>This could be accomplished in lua using a while loop:
-<div class="highlight"><pre><span></span><code><span class="kr">while</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="kr">do</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">while</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="kr">do</span>
 <span class="w">  </span><span class="nv">mq</span><span class="p">.</span><span class="nf">doevents</span><span class="p">()</span>
 <span class="w">  </span><span class="nf">check_target</span><span class="p">()</span>
 <span class="w">  </span><span class="nv">mq</span><span class="p">.</span><span class="nf">delay</span><span class="p">(</span><span class="mi">10</span><span class="p">)</span>
@@ -15366,7 +15366,7 @@ Modules which are loaded with require should generally have all logic contained 
 </code></pre></div></p>
 <p>Code like the above example will usually be near the bottom of the file, due to how lua scripts are processed. Variables and functions can only refer to things which have already been defined, i.e. were declared earlier in the file (unless defined globally, but avoid that unless necessary).</p>
 <p>Alternatively, the code could be placed inside of a function, which is then called later on near the bottom of the file.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">main</span><span class="p">()</span>
 <span class="w">  </span><span class="kr">while</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="kr">do</span>
 <span class="w">    </span><span class="nv">mq</span><span class="p">.</span><span class="nf">doevents</span><span class="p">()</span>
 <span class="w">    </span><span class="nv">mq</span><span class="p">.</span><span class="nf">delay</span><span class="p">(</span><span class="mi">100</span><span class="p">)</span>
@@ -15379,7 +15379,7 @@ Modules which are loaded with require should generally have all logic contained 
 <p>Macro subroutines call other subroutines using <code>/call my_function "${arg1}"</code>. Lua functions are just called like <code>my_function(arg1)</code>.</p>
 <p>Macro subroutines return results using <code>/return ${result}</code>. Lua functions return similarly, using <code>return result</code>.</p>
 <p>Example: The macro Main sub calls subroutine IsPluginLoaded with argument "mq2eqbc". IsPluginLoaded returns the result of the Plugin.IsLoaded TLO Member, which is TRUE or FALSE.
-<div class="highlight"><pre><span></span><code>Sub IsPluginLoaded(plugin)
+<div class="language-text highlight"><pre><span></span><code>Sub IsPluginLoaded(plugin)
     /if (${Plugin[${plugin}].IsLoaded}) /return TRUE
 /return FALSE
 
@@ -15389,7 +15389,7 @@ Sub Main
 /return
 </code></pre></div></p>
 <p>Example: The lua script calls function IsPluginLoaded with argument 'mq2eqbc'. IsPluginLoaded returns the result of the Plugin.IsLoaded TLO Member, which is true or false.
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">IsPluginLoaded</span><span class="p">(</span><span class="nv">plugin</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">IsPluginLoaded</span><span class="p">(</span><span class="nv">plugin</span><span class="p">)</span>
 <span class="w">    </span><span class="kr">return</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="nf">Plugin</span><span class="p">(</span><span class="nv">plugin</span><span class="p">).</span><span class="nf">IsLoaded</span><span class="p">()</span>
 <span class="kr">end</span>
 
@@ -15403,7 +15403,7 @@ Sub Main
 <li><code>os.time</code> and <code>os.difftime</code>: These can be used to implement a timer with second precision. <a href="https://www.lua.org/pil/22.1.html">PIL</a>  </li>
 </ol>
 <p>Example: Only use an ability when its reuse time has passed.
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">do_ability</span><span class="p">(</span><span class="nv">ability</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">do_ability</span><span class="p">(</span><span class="nv">ability</span><span class="p">)</span>
 <span class="w">  </span><span class="kr">if</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="nf">gettime</span><span class="p">()</span><span class="w"> </span><span class="o">-</span><span class="w"> </span><span class="nv">ability</span><span class="p">.</span><span class="py">lastUsedMillis</span><span class="w"> </span><span class="o">&gt;</span><span class="w"> </span><span class="nv">ability</span><span class="p">.</span><span class="py">reuseTimeMillis</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">    </span><span class="nv">mq</span><span class="p">.</span><span class="nf">cmdf</span><span class="p">(</span><span class="s1">&#39;/useability %s&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">ability</span><span class="p">.</span><span class="py">name</span><span class="p">)</span>
 <span class="w">    </span><span class="nv">ability</span><span class="p">.</span><span class="py">lastUsedMillis</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="nf">gettime</span><span class="p">()</span>
@@ -15413,7 +15413,7 @@ Sub Main
 Alternatively, a timer class could be created using similar logic to above for better reusability, allowing for code like <code>if ability.timer.is_expired() then</code>.</p>
 <h3 id="mqparse">mq.parse<a class="headerlink" href="#mqparse" title="Permanent link">&para;</a></h3>
 <p>The <code>mq.parse</code> command allows to evaluate a macro expression in Lua and assign the result to a variable. This could be useful if reading macro expressions such as conditions like those in KA or reacts from an INI file.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
 
 <span class="kd">local</span><span class="w"> </span><span class="nv">IF_STMT</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;${If[%s,1,0]}&#39;</span>
 
@@ -15448,10 +15448,10 @@ Alternatively, a timer class could be created using similar logic to above for b
 <h2 id="extras">Extras<a class="headerlink" href="#extras" title="Permanent link">&para;</a></h2>
 <h3 id="the-lua-parse-command">The /lua parse command<a class="headerlink" href="#the-lua-parse-command" title="Permanent link">&para;</a></h3>
 <p>MQ provides a command line utility for parsing lua, which is pretty useful for debugging. It automatically includes <code>local mq = require('mq')</code>, and can be used like:
-<div class="highlight"><pre><span></span><code>/lua parse mq.TLO.Me.Name()
+<div class="language-text highlight"><pre><span></span><code>/lua parse mq.TLO.Me.Name()
 </code></pre></div></p>
 <p>It can do much more than that, including multiple statements strung together, loops, etc. The output gets printed to the console.
-<div class="highlight"><pre><span></span><code>/lua parse i = 1 while mq.TLO.NearestSpawn(i..&#39;, pc&#39;)() do print(mq.TLO.NearestSpawn(i..&#39;, pc&#39;)) i=i+1 end
+<div class="language-text highlight"><pre><span></span><code>/lua parse i = 1 while mq.TLO.NearestSpawn(i..&#39;, pc&#39;)() do print(mq.TLO.NearestSpawn(i..&#39;, pc&#39;)) i=i+1 end
 </code></pre></div></p>
 <p>The above example would print the name of PCs incrementing over a NearestSpawn search.</p>
 <h3 id="vs-code-extensions">VS Code Extensions<a class="headerlink" href="#vs-code-extensions" title="Permanent link">&para;</a></h3>
@@ -15464,7 +15464,7 @@ Alternatively, a timer class could be created using similar logic to above for b
 </ul>
 <p>For the codemap extension, add a reference to this javascript file (ColdBlooded's handywork again) to the codemap section in <code>settings.json</code>:</p>
 <p><code>"codemap.mac": "&lt;location of that file&gt;",</code></p>
-<div class="highlight"><pre><span></span><code><span class="s2">&quot;use strict&quot;</span><span class="p">;</span>
+<div class="language-javascript highlight"><pre><span></span><code><span class="s2">&quot;use strict&quot;</span><span class="p">;</span>
 
 <span class="nb">Object</span><span class="p">.</span><span class="nx">defineProperty</span><span class="p">(</span><span class="nx">exports</span><span class="p">,</span><span class="w"> </span><span class="s2">&quot;__esModule&quot;</span><span class="p">,</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nx">value</span><span class="o">:</span><span class="w"> </span><span class="kc">true</span><span class="w"> </span><span class="p">});</span>
 <span class="kd">const</span><span class="w"> </span><span class="nx">fs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nx">require</span><span class="p">(</span><span class="s2">&quot;fs&quot;</span><span class="p">);</span>
@@ -15507,13 +15507,13 @@ Alternatively, a timer class could be created using similar logic to above for b
 <li>
 <p>Comparing values with data from <code>mq.TLO.Something</code>: Due to the difference between userdata and regular lua types like numbers or strings, comparisons will often fail when the values visibly look like they should be the expected type.</p>
 <p>Example: 
-<div class="highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Target</span><span class="p">.</span><span class="py">CleanName</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;aquietone&#39;</span><span class="w"> </span><span class="kr">then</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Target</span><span class="p">.</span><span class="py">CleanName</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;aquietone&#39;</span><span class="w"> </span><span class="kr">then</span>
 </code></pre></div>
 This will never succeed because <code>mq.TLO.Target.CleanName</code> is of type <code>userdata</code>, not <code>string</code>. It needs <code>()</code> on the end to trigger the evaluation from <code>userdata</code> to a lua <code>string</code>, like:
-<div class="highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Target</span><span class="p">.</span><span class="nf">CleanName</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;aquietone&#39;</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Target</span><span class="p">.</span><span class="nf">CleanName</span><span class="p">()</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;aquietone&#39;</span>
 </code></pre></div></p>
 <p>Example:
-<div class="highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Target</span><span class="p">.</span><span class="py">PctHPs</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">90</span><span class="w"> </span><span class="kr">then</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">if</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Target</span><span class="p">.</span><span class="py">PctHPs</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="mi">90</span><span class="w"> </span><span class="kr">then</span>
 </code></pre></div>
 This will have the same issue, printing <code>mq.TLO.Target.PctHPs</code> will look like a number, but it is actually <code>userdata</code>, and it needs to be evaluated by adding <code>()</code>.</p>
 </li>
@@ -15586,7 +15586,7 @@ This will have the same issue, printing <code>mq.TLO.Target.PctHPs</code> will l
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

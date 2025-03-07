@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14178,7 +14178,7 @@
 <p>The lua plugin has been equipped with a method to utilize the actor subsystem of MQ. This system will allow script writers to communicate between scripts, clients, or even external applications using the same framework that is available <a href="../../plugins/developing/actors/">to plugins</a>. There are some few specializations unique to lua, and this document aims to provide a reference for them. Please refer to the <a href="../../plugins/developing/actors/#terminology">terminology section</a> in the other actors document for a glossary of terms.</p>
 <h2 id="module">Module<a class="headerlink" href="#module" title="Permanent link">&para;</a></h2>
 <p>The module is loaded by requiring <code>actors</code>. This module has a method <code>register</code> for creating actors, and a method <code>send</code> for sending anonymous messages to actors. Both of these methods provide overloads for various use cases:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">actors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;actors&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">actors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;actors&#39;</span><span class="p">)</span>
 
 <span class="c1">-- create an actor for the script -- the actor is addressed using script</span>
 <span class="kd">local</span><span class="w"> </span><span class="nv">script_actor</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">actors</span><span class="p">.</span><span class="nf">register</span><span class="p">(</span><span class="kr">function</span><span class="w"> </span><span class="p">(</span><span class="nv">message</span><span class="p">)</span><span class="w"> </span><span class="p">...</span><span class="w"> </span><span class="kr">end</span><span class="p">)</span>
@@ -14221,7 +14221,7 @@
 <p>In the example above, the payload is the message content, and is simple a table with a single named string entry. This could be arbitrarily complex and nested tables will serialize as well, any type in the table that can't be serialized will simply be ignored.</p>
 <h2 id="addressing">Addressing<a class="headerlink" href="#addressing" title="Permanent link">&para;</a></h2>
 <p>Next, we want to see what goes into an address. An address in lua can also be referred to as a header, and is a table that can optionally contain the following entries:</p>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">    </span><span class="nv">mailbox</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">-- the target mailbox name for an actor</span>
 <span class="w">    </span><span class="nv">absolute_mailbox</span><span class="o">=</span><span class="kc">false</span><span class="p">,</span><span class="w"> </span><span class="c1">-- if you want to provide the fully-qualified mailbox name (which will look like &#39;plugin:mailbox&#39; or &#39;lua:script:mailbox&#39;), set this to true</span>
 <span class="w">    </span><span class="nv">script</span><span class="o">=</span><span class="s1">&#39;&#39;</span><span class="p">,</span><span class="w"> </span><span class="c1">-- the target script for an actor, which is a qualifier to mailbox names to gurantee uniqueness</span>
@@ -14235,7 +14235,7 @@
 <p>All of these entries are completely optional, and can be ambiguous if you want to send messages to multiple clients. If mailbox and script are not specified, then the target is assumed to be the current actor's mailbox (or just script if sent anonymously). Everything else can be used to disambiguate.</p>
 <h2 id="message-handler">Message Handler<a class="headerlink" href="#message-handler" title="Permanent link">&para;</a></h2>
 <p>Now we get to the meat of the actors, the message handler. The function that is specified when you register an actor is what is called a "message handler". The function takes a message and returns nothing, to be used to handle incoming messages as you receive them. <strong>Delay will not work in the message handler and will throw a script error.</strong> The typical message handler would look something like this:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">handler</span><span class="p">(</span><span class="nv">message</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">handler</span><span class="p">(</span><span class="nv">message</span><span class="p">)</span>
 <span class="w">    </span><span class="kr">if</span><span class="w"> </span><span class="nv">message</span><span class="p">.</span><span class="py">content</span><span class="p">.</span><span class="py">id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;something&#39;</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">        </span><span class="p">...</span>
 <span class="w">    </span><span class="kr">elseif</span><span class="w"> </span><span class="nv">message</span><span class="p">.</span><span class="py">content</span><span class="p">.</span><span class="py">id</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="s1">&#39;somethingelse&#39;</span><span class="w"> </span><span class="kr">then</span>
@@ -14254,7 +14254,7 @@
 </ul>
 <h2 id="response-callbacks">Response Callbacks<a class="headerlink" href="#response-callbacks" title="Permanent link">&para;</a></h2>
 <p>A response callback is similar to a message handler, but has an additional argument for <code>status</code>, which is just an integer value indicating response status. And important thing to consider is that these response messages will <em>not</em> be routed through your message handler, but will instead be routed directly through the response callback specified. The message is the same as <a href="#message-structure">in the message handler</a>, so the only additional information needed for the callback is status. Typically, negative values indicate some kind of failure and should be handled, while positive values indicate something meaningful with 0 being the nominal "acknowledge" status. The follow enums are provided as they are errors that can happen external to the lua plugin:</p>
-<div class="highlight"><pre><span></span><code><span class="nv">actors</span><span class="p">.</span><span class="py">ResponseStatus</span><span class="p">.</span><span class="py">ConnectionClosed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nv">actors</span><span class="p">.</span><span class="py">ResponseStatus</span><span class="p">.</span><span class="py">ConnectionClosed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">1</span>
 <span class="nv">actors</span><span class="p">.</span><span class="py">ResponseStatus</span><span class="p">.</span><span class="py">NoConnection</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">2</span>
 <span class="nv">actors</span><span class="p">.</span><span class="py">ResponseStatus</span><span class="p">.</span><span class="py">RoutingFailed</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">3</span>
 <span class="nv">actors</span><span class="p">.</span><span class="py">ResponseStatus</span><span class="p">.</span><span class="py">AmbiguousRecipient</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="o">-</span><span class="mi">4</span>
@@ -14262,7 +14262,7 @@
 <p>Of these, only the last two are something that you would have any control over in lua. <code>RoutingFailed</code> would happen if there is no recipient at the given <a href="#addressing">address</a> specified (like if you tried to address a specific character that was no longer logged in). <code>AmbiguousRecipient</code> would happen if there was too much ambiguity in the address (like if you addressed an entire server). This is important because these are RPC-style messages, and the requirement is that exactly 1 recipient will receive the message, or we wouldn't be able to provide the guarantee that you will get a response. If you need to send a response to a multi-recipient message, then just use <code>message.send</code> to do so, and handle the responses in the message handler.</p>
 <h2 id="putting-it-all-together">Putting it All Together<a class="headerlink" href="#putting-it-all-together" title="Permanent link">&para;</a></h2>
 <p>In this example we demonstrate how to use Actors to communicate across clients to beg for buffs.  This script can be found alongside other examples in the MacroQuest Git repository <a href="https://github.com/macroquest/macroquest/tree/master/src/plugins/lua/lua/examples">here</a>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
 <span class="kd">local</span><span class="w"> </span><span class="nv">actors</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;actors&#39;</span><span class="p">)</span>
 
 <span class="c1">-- some example buffs, for demonstration purposes</span>
@@ -14445,7 +14445,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

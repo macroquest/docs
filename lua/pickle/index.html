@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14330,7 +14330,7 @@
 <h3 id="lua-tables">Lua Tables<a class="headerlink" href="#lua-tables" title="Permanent link">&para;</a></h3>
 <p>The most straightforward approach to persisting configuration in Lua is to use Lua itself. Tables in Lua can be persisted to files and loaded back in by Lua scripts. Tables look very similar to JSON in structure.  </p>
 <p>Example Lua table as a configuration file:
-<div class="highlight"><pre><span></span><code><span class="kr">return</span><span class="w"> </span><span class="p">{</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">return</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nv">setting1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nv">setting2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
 <span class="w">  </span><span class="p">[</span><span class="s1">&#39;multiple word setting&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;some value&#39;</span><span class="p">,</span>
@@ -14342,7 +14342,7 @@
 </code></pre></div></p>
 <h4 id="mqpickle">mq.pickle<a class="headerlink" href="#mqpickle" title="Permanent link">&para;</a></h4>
 <p>This is a built-in function provided by MQ for serializing a Lua table to a file.  </p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
 
 <span class="c1">-- initialize your config table</span>
 <span class="kd">local</span><span class="w"> </span><span class="nv">myconfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
@@ -14369,18 +14369,18 @@
 <p>The <a href="http://lua-users.org/wiki/TableSerialization">lua-users</a> wiki provides many example Lua table serialization implementations.</p>
 <h3 id="yaml">YAML<a class="headerlink" href="#yaml" title="Permanent link">&para;</a></h3>
 <p>YAML provides an easy to read format if you don't mind being dependent on proper indentation.</p>
-<div class="highlight"><pre><span></span><code><span class="nt">settings</span><span class="p">:</span>
+<div class="language-yaml highlight"><pre><span></span><code><span class="nt">settings</span><span class="p">:</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">setting1</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">somevalue</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">setting2</span><span class="p">:</span>
 <span class="w">  </span><span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">nestedSetting</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">anothervalue</span>
 </code></pre></div>
 <h4 id="lyaml-luarock">lyaml LuaRock<a class="headerlink" href="#lyaml-luarock" title="Permanent link">&para;</a></h4>
 <p>The MQ LuaRocks server has a version of lyaml available which can be installed using the Lua PackageMan script provided by MQ.  </p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">lyaml</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;lyaml&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">lyaml</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;lyaml&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>More info on lyaml <a href="https://github.com/gvvaughan/lyaml">here</a>.</p>
 <h3 id="json">JSON<a class="headerlink" href="#json" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code><span class="p">{</span>
+<div class="language-json highlight"><pre><span></span><code><span class="p">{</span>
 <span class="w">  </span><span class="nt">&quot;setting1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;somevalue&quot;</span><span class="p">,</span>
 <span class="w">  </span><span class="nt">&quot;setting2&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nt">&quot;nestedSetting&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;anothervalue&quot;</span>
@@ -14389,14 +14389,14 @@
 </code></pre></div>
 <h4 id="cjson-luarock">cjson LuaRock<a class="headerlink" href="#cjson-luarock" title="Permanent link">&para;</a></h4>
 <p>The MQ LuaRocks server has a version of <code>cjson</code> available which can be installed using the Lua PackageMan script provided by MQ.  </p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">cjson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;lua-cjson&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;cjson&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">cjson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;lua-cjson&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;cjson&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>More info on cjson <a href="https://github.com/mpx/lua-cjson">here</a></p>
 <h3 id="sqlite3">SQLite3<a class="headerlink" href="#sqlite3" title="Permanent link">&para;</a></h3>
 <p>If you would prefer to use a database over a text based configuration file, SQLite3 is supported as well.  </p>
 <h4 id="libsqlite3">libsqlite3<a class="headerlink" href="#libsqlite3" title="Permanent link">&para;</a></h4>
 <p>The MQ LuaRocks server has a version of <code>lsqlite3</code> available which can be installed using the Lua PackageMan script provided by MQ.</p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
 </code></pre></div>
 <p>More info on lsqlite3 <a href="http://lua.sqlite.org/index.cgi/doc/tip/doc/lsqlite3.wiki">here</a></p>
 <h3 id="ini">INI<a class="headerlink" href="#ini" title="Permanent link">&para;</a></h3>
@@ -14464,7 +14464,7 @@ https://github.com/Dynodzzo/Lua_INI_Parser</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

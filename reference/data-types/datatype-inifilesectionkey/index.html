@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14193,7 +14193,7 @@
 </dl>
 <h2 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h2>
 <p>Given the sample.ini file:</p>
-<div class="highlight"><pre><span></span><code><span class="k">[Section1]</span>
+<div class="language-ini highlight"><pre><span></span><code><span class="k">[Section1]</span>
 <span class="na">Key1</span><span class="o">=</span><span class="s">foo</span>
 <span class="na">Key2</span><span class="o">=</span><span class="s">bar</span>
 <span class="k">[Section2]</span>
@@ -14208,53 +14208,53 @@
 <div class="tabbed-content">
 <div class="tabbed-block">
 <p>How many keys are there in Section1?</p>
-<div class="highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section1].Key.Count}
+<div class="language-text highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section1].Key.Count}
 2
 </code></pre></div>
 <p>How many keys named "Key" are there in Section2?</p>
-<div class="highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section2].Key[Key].Count}
+<div class="language-text highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section2].Key[Key].Count}
 3
 </code></pre></div>
 <p>What is the value of Key1 in Section1?</p>
-<div class="highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section1].Key[Key1].Value}
+<div class="language-text highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section1].Key[Key1].Value}
 foo
 </code></pre></div>
 <p>What is the value of Key in Section2?</p>
-<div class="highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section2].Key[Key].Value}
+<div class="language-text highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section2].Key[Key].Value}
 foo
 </code></pre></div>
 <p>What is the value of the 2<sup>nd</sup> key named "Key" in Section 2?</p>
-<div class="highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section2].Key[Key].ValueAtIndex[2]}
+<div class="language-text highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section2].Key[Key].ValueAtIndex[2]}
 bar
 </code></pre></div>
 <p>Get the value of Section2, Key5 and if it doesn't exist, return "foobarfive":</p>
-<div class="highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section2].Key[Key5].Value[foobarfive]}
+<div class="language-text highlight"><pre><span></span><code>/echo ${Ini.File[Sample].Section[Section2].Key[Key5].Value[foobarfive]}
 foobarfive
 </code></pre></div>
 </div>
 <div class="tabbed-block">
 <p>How many keys are there in Section1?</p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section1&quot;</span><span class="p">).</span><span class="nv">Key</span><span class="p">.</span><span class="nf">Count</span><span class="p">())</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section1&quot;</span><span class="p">).</span><span class="nv">Key</span><span class="p">.</span><span class="nf">Count</span><span class="p">())</span>
 <span class="mi">2</span>
 </code></pre></div>
 <p>How many keys named "Key" are there in Section2?</p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">).</span><span class="nf">Count</span><span class="p">())</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">).</span><span class="nf">Count</span><span class="p">())</span>
 <span class="mi">3</span>
 </code></pre></div>
 <p>What is the value of Key1 in Section1?</p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section1&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key1&quot;</span><span class="p">).</span><span class="nf">Value</span><span class="p">())</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section1&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key1&quot;</span><span class="p">).</span><span class="nf">Value</span><span class="p">())</span>
 <span class="nv">foo</span>
 </code></pre></div>
 <p>What is the value of Key in Section2?</p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">).</span><span class="nf">Value</span><span class="p">())</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">).</span><span class="nf">Value</span><span class="p">())</span>
 <span class="nv">foo</span>
 </code></pre></div>
 <p>What is the value of the 2<sup>nd</sup> key named "Key" in Section 2?</p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">).</span><span class="nf">ValueAtIndex</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">).</span><span class="nf">ValueAtIndex</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
 <span class="nv">bar</span>
 </code></pre></div>
 <p>Get the value of Section2, Key5 and if it doesn't exist, return "foobarfive":</p>
-<div class="highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key5&quot;</span><span class="p">).</span><span class="nf">Value</span><span class="p">(</span><span class="s2">&quot;foobarfive&quot;</span><span class="p">))</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key5&quot;</span><span class="p">).</span><span class="nf">Value</span><span class="p">(</span><span class="s2">&quot;foobarfive&quot;</span><span class="p">))</span>
 <span class="nv">foobarfive</span>
 </code></pre></div>
 </div>
@@ -14323,7 +14323,7 @@ foobarfive
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

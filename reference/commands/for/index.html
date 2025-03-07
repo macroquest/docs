@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14100,13 +14100,14 @@
 
 <h1 id="for">/for<a class="headerlink" href="#for" title="Permanent link">&para;</a></h1>
 <h3 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h3>
-<p><strong>/for</strong> <em><strong>varname</strong> initial-value</em> <strong>to|downto</strong> final-value <strong>[step</strong> <em>interval</em><strong>]</strong></p>
-<p><strong>/next</strong> <em><strong>varname</strong></em></p>
+<div class="language-eqcommand highlight"><pre><span></span><code><span class="nt">/for</span> <span class="p">&lt;</span><span class="nv nv-Required">varname</span><span class="p">&gt;</span> <span class="p">&lt;</span><span class="nv nv-Required">initial-value</span><span class="p">&gt;</span> <span class="no">to</span><span class="p">|</span><span class="no">downto</span> <span class="p">&lt;</span><span class="nv nv-Required">final-value</span><span class="p">&gt;</span> <span class="p">[</span><span class="nl">step</span> <span class="p">&lt;</span><span class="nv">interval</span><span class="p">&gt;]</span>
+<span class="nt">/next</span> <span class="p">&lt;</span><span class="nv nv-Required">varname</span><span class="p">&gt;</span>
+</code></pre></div>
 <h2 id="description">Description<a class="headerlink" href="#description" title="Permanent link">&para;</a></h2>
-<p>This runs all commands between the /for line and the /next line, after which it increments/decrements the <em>varname</em> number (#1) by <em>step</em> number <span class="arithmatex">\(\#3\)</span> (default is 1) before running through the commands again. It will keep doing this until the <em>varname</em> number equals #2. You can end a /for loop immediately with /break or try the next iteration with /continue.</p>
+<p>This runs all commands between the /for line and the /next line, after which it increments/decrements the <em>varname</em> number (#1) by <em>step</em> number (#3) (default is 1) before running through the commands again. It will keep doing this until the <em>varname</em> number equals #2. You can end a /for loop immediately with /break or try the next iteration with /continue.</p>
 <h3 id="examples">Examples<a class="headerlink" href="#examples" title="Permanent link">&para;</a></h3>
 <p><strong>Simplest</strong></p>
-<div class="highlight"><pre><span></span><code>/declare varname int local
+<div class="language-text highlight"><pre><span></span><code>/declare varname int local
 /for varname 1 to 5
     /echo ${varname}
 /next varname
@@ -14120,7 +14121,7 @@
 |  5
 </code></pre></div>
 <p><strong>Using /continue</strong></p>
-<div class="highlight"><pre><span></span><code>/declare varname int local
+<div class="language-text highlight"><pre><span></span><code>/declare varname int local
 /for varname 1 to 5
    /if ({$varname} == 3) /continue
    /echo ${varname}
@@ -14134,7 +14135,7 @@
 |  5
 </code></pre></div>
 <p><strong>Using /break</strong></p>
-<div class="highlight"><pre><span></span><code>/declare varname int local
+<div class="language-text highlight"><pre><span></span><code>/declare varname int local
 /for varname 1 to 5
     /if (${varname} == 3) /break
     /echo ${varname}
@@ -14146,7 +14147,7 @@
 |  2
 </code></pre></div>
 <p><strong>With a pre-defined ending variable</strong></p>
-<div class="highlight"><pre><span></span><code>/declare foo int local 5
+<div class="language-text highlight"><pre><span></span><code>/declare foo int local 5
 
 /declare varname int local
 /for varname 1 ${foo}
@@ -14222,7 +14223,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

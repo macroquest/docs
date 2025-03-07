@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14077,7 +14077,7 @@ so you can specify the argument order in a callback. </p>
 <p>The callback is the important feature of Lua. It expects a function with a signature of <code>(line, arg1, arg2, etc)</code>
 that will process the text of the event (the full matched line and the captured arguments, ordered by number).
 A simple example would look like this:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">callback</span><span class="p">(</span><span class="nv">line</span><span class="p">,</span><span class="w"> </span><span class="nv">arg1</span><span class="p">,</span><span class="w"> </span><span class="nv">arg2</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="nf">callback</span><span class="p">(</span><span class="nv">line</span><span class="p">,</span><span class="w"> </span><span class="nv">arg1</span><span class="p">,</span><span class="w"> </span><span class="nv">arg2</span><span class="p">)</span>
 <span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="nv">arg1</span><span class="p">)</span>
 <span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="nv">arg2</span><span class="p">)</span>
 <span class="kr">end</span>
@@ -14085,7 +14085,7 @@ A simple example would look like this:</p>
 <span class="nv">mq</span><span class="p">.</span><span class="nf">event</span><span class="p">(</span><span class="s1">&#39;mysay&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;#1# says, #2#&#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">callback</span><span class="p">)</span>
 </code></pre></div>
 <p>Finally, events will not automatically process (much like in the macro language) -- you will have to call <code>mq.doevents()</code> when it makes sense in your lua script to process the queue of captured events:</p>
-<div class="highlight"><pre><span></span><code><span class="kr">while</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">terminate</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kr">while</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">terminate</span>
 <span class="kr">do</span>
 <span class="w">    </span><span class="nv">mq</span><span class="p">.</span><span class="nf">doevents</span><span class="p">()</span>
 <span class="w">    </span><span class="nv">mq</span><span class="p">.</span><span class="nf">delay</span><span class="p">(</span><span class="mi">1</span><span class="p">)</span><span class="w"> </span><span class="c1">-- just yield the frame every loop</span>
@@ -14099,7 +14099,7 @@ beginning of the next frame always (no need to call <code>mq.doevents()</code>).
 what the bind is indexed by to unbind with <code>mq.unbind('/command')</code> when you no longer want the bind to
 function while your script is running.</p>
 <p>The callback now has a function signature of <code>(arg1, arg2, etc)</code>. A simple example would look like this:</p>
-<div class="highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="p">(...)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">callback</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">function</span><span class="w"> </span><span class="p">(...)</span>
 <span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">args</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{...}</span>
 <span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">str</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;&#39;</span>
 <span class="w">    </span><span class="kr">for</span><span class="w"> </span><span class="nv">i</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="o">#</span><span class="nv">args</span><span class="p">,</span><span class="w"> </span><span class="mi">1</span><span class="w"> </span><span class="kr">do</span>
@@ -14176,7 +14176,7 @@ function while your script is running.</p>
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

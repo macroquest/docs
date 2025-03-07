@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14287,20 +14287,20 @@
 <h2 id="manipulating-variables">Manipulating Variables<a class="headerlink" href="#manipulating-variables" title="Permanent link">&para;</a></h2>
 <h3 id="declaring">Declaring<a class="headerlink" href="#declaring" title="Permanent link">&para;</a></h3>
 <p>Variables are declared (initially defined) in the following format:</p>
-<div class="highlight"><pre><span></span><code>/declare varname|varname[array extents] [type] [local|global|outer] [defaultvalue]
+<div class="language-text highlight"><pre><span></span><code>/declare varname|varname[array extents] [type] [local|global|outer] [defaultvalue]
 </code></pre></div>
 <p>The parameters must be given in order, but any after <em>varname</em> may be skipped to use the default.</p>
 <p><strong>Some Examples</strong></p>
 <ol>
 <li>This creates an int variable named MyVar that exists while the macro is running:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>/declare MyVar int outer
+<div class="language-text highlight"><pre><span></span><code>/declare MyVar int outer
 </code></pre></div>
 <p>This creates a string variable named MyVar that exists within the Sub it was created in:</p>
-<div class="highlight"><pre><span></span><code>/declare MyVar local
+<div class="language-text highlight"><pre><span></span><code>/declare MyVar local
 </code></pre></div>
 <p>This creates a timer named MyTime that is set to 3000 at creation and exists while the macro is running:</p>
-<div class="highlight"><pre><span></span><code>/declare MyTimer timer outer 3000
+<div class="language-text highlight"><pre><span></span><code>/declare MyTimer timer outer 3000
 </code></pre></div>
 <h3 id="arrays">Arrays<a class="headerlink" href="#arrays" title="Permanent link">&para;</a></h3>
 <p>To create an array, attach square brackets to the end of the variable name and place in it the number of elements per dimension.</p>
@@ -14308,13 +14308,13 @@
 <ol>
 <li>This creates a single-dimension local array of int with 10 elements (1-10) all 0:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>/declare MyArray[10] int
+<div class="language-text highlight"><pre><span></span><code>/declare MyArray[10] int
 </code></pre></div>
 <p>This creates a 2-dimensional 10x10 elements(1-10,1-10) int array of scope outer with all values of 5:</p>
-<div class="highlight"><pre><span></span><code>/declare MyArray[10,10] int outer 5
+<div class="language-text highlight"><pre><span></span><code>/declare MyArray[10,10] int outer 5
 </code></pre></div>
 <p>This creates a 3-dimensional array with 4x5x6 elements (1-4,1-5, 1-6) with UNDEFINED-ARRAY-ELEMENT in each location:</p>
-<div class="highlight"><pre><span></span><code>/declare MyArray[4,5,6] string outer UNDEFINED-ARRAY-ELEMENT
+<div class="language-text highlight"><pre><span></span><code>/declare MyArray[4,5,6] string outer UNDEFINED-ARRAY-ELEMENT
 </code></pre></div>
 <p>There is no limit to the number of dimensions or the number of elements in each dimension but use your own good judgment.</p>
 <p><strong>Note:</strong> You cannot make an array of timers.</p>
@@ -14323,10 +14323,10 @@
 <ol>
 <li>Deletes the variable varname. Using * global will delete all global variables:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>/deletevar varname [* global]
+<div class="language-text highlight"><pre><span></span><code>/deletevar varname [* global]
 </code></pre></div>
 <p>Sets a variable directly to a new value. Keep in mind that the type itself may reject this value depending on what you give it.</p>
-<div class="highlight"><pre><span></span><code>/varset varname [newvalue]
+<div class="language-text highlight"><pre><span></span><code>/varset varname [newvalue]
 </code></pre></div>
 <p>To clear the value of the variable, you may omit the new value.</p>
 <h3 id="settingchanging-variables">Setting/Changing Variables<a class="headerlink" href="#settingchanging-variables" title="Permanent link">&para;</a></h3>
@@ -14334,37 +14334,37 @@
 <ol>
 <li>This concatenates (joins one to the other) "stuff" to the end a string variable:</li>
 </ol>
-<div class="highlight"><pre><span></span><code>/varset MyString ${MyString}stuff
+<div class="language-text highlight"><pre><span></span><code>/varset MyString ${MyString}stuff
 </code></pre></div>
 <p>This inserts stuff at the front of ${MyString}:</p>
-<div class="highlight"><pre><span></span><code>/varset MyString stuff${MyString}
+<div class="language-text highlight"><pre><span></span><code>/varset MyString stuff${MyString}
 </code></pre></div>
 <p>This sets MyInt to 123:</p>
-<div class="highlight"><pre><span></span><code>/varset MyInt 123
+<div class="language-text highlight"><pre><span></span><code>/varset MyInt 123
 </code></pre></div>
 <p>This sets MyTimer to 123 seconds:</p>
-<div class="highlight"><pre><span></span><code>/varset MyTimer 123s
+<div class="language-text highlight"><pre><span></span><code>/varset MyTimer 123s
 </code></pre></div>
 <p>This sets MyFloat to 1.23:</p>
-<div class="highlight"><pre><span></span><code>/varset MyFloat 1.23
+<div class="language-text highlight"><pre><span></span><code>/varset MyFloat 1.23
 </code></pre></div>
 <p>This sets array element n to 123:</p>
-<div class="highlight"><pre><span></span><code>/varset MyIntArray[n] 123
+<div class="language-text highlight"><pre><span></span><code>/varset MyIntArray[n] 123
 </code></pre></div>
 <h3 id="setting-variables-to-results-of-calculations">Setting Variables to Results of Calculations<a class="headerlink" href="#setting-variables-to-results-of-calculations" title="Permanent link">&para;</a></h3>
 <p>You can use <a href="../../reference/commands/varcalc/">/varcalc</a> to set a variable directly to the numeric result of a calculation. Keep in mind that the type itself may reject this value depending on what you give it. <em><strong>This will NOT work on strings!</strong></em></p>
 <p><strong>Examples:</strong></p>
-<div class="highlight"><pre><span></span><code> /varcalc MyInt 1+2*2+1
+<div class="language-text highlight"><pre><span></span><code> /varcalc MyInt 1+2*2+1
  /varcalc MyInt 1+(2*2)+1
  /varcalc NumBuffSlots ${Me.FreeBuffSlots}+${Me.CountBuffs}
 </code></pre></div>
 <h3 id="setting-variables-to-the-result-of-mq2data-strings">Setting Variables to the Result of MQ2Data Strings<a class="headerlink" href="#setting-variables-to-the-result-of-mq2data-strings" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>/vardata varname newMQ2Datavalue
+<div class="language-text highlight"><pre><span></span><code>/vardata varname newMQ2Datavalue
 </code></pre></div>
 <p>Sets a variable directly to the end result of a MQ2Data string. To use this, do NOT put ${} around the outer data to parse.</p>
 <p><em>This is most useful for when you want to keep the result of something instead of trying to make the variable accept a string with /varset.</em></p>
 <p><strong>For Example:</strong></p>
-<div class="highlight"><pre><span></span><code>/vardata MyFloat Math.Calc[${Me.X}+${Me.Y}]
+<div class="language-text highlight"><pre><span></span><code>/vardata MyFloat Math.Calc[${Me.X}+${Me.Y}]
 </code></pre></div>
 <h2 id="parsing">Parsing<a class="headerlink" href="#parsing" title="Permanent link">&para;</a></h2>
 <p>It is important to note that parsing of variables is performed from the inside to the outside, so any ${} inside your MQ2Data statement gets evaluated before continuing.</p>
@@ -14432,7 +14432,7 @@
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -6455,7 +6455,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="ItemSlot & ItemSlot2">
+    <nav class="md-nav" aria-label="ItemSlot &amp; ItemSlot2">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -14132,7 +14132,7 @@
     </span>
   </a>
   
-    <nav class="md-nav" aria-label="ItemSlot & ItemSlot2">
+    <nav class="md-nav" aria-label="ItemSlot &amp; ItemSlot2">
       <ul class="md-nav__list">
         
           <li class="md-nav__item">
@@ -14286,13 +14286,13 @@
 <p>The reason for this is that they work without having to open the bags.</p>
 <p><strong>Example:</strong></p>
 <p>Picking up an item from pack 10 first slot in that pack:</p>
-<div class="highlight"><pre><span></span><code>/itemnotify in pack${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot}-22].Int} ${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot2} + 1].Int} leftmouseup
+<div class="language-text highlight"><pre><span></span><code>/itemnotify in pack${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot}-22].Int} ${Math.Calc[${Me.Inventory[32].Item[1].ItemSlot2} + 1].Int} leftmouseup
 </code></pre></div>
 <p>Why not just /itemnotify in ${Me.Inventory[32].Item<script type="math/tex; mode=display">1</script>.ItemSlot} ${Me.Inventory<script type="math/tex; mode=display">32</script>.Item[1].ItemSlot2} you may ask...</p>
 <p>well, we didn't have .ItemSlot and .ItemSlot2 until recently, so /itemnotify works with the old pack system that starts at slot 1 not 0</p>
 <p>I can't change it to use real slotnumbers because then it will break a lot of old macros. So use the above calculation.</p>
 <p>-eqmule</p>
-<div class="highlight"><pre><span></span><code>ItemSlot Inventory
+<div class="language-text highlight"><pre><span></span><code>ItemSlot Inventory
 +----+----+
 | 23 | 24 |
 +----+----+
@@ -14310,17 +14310,17 @@
 <p>Or say you want an Iron Ration, which is in bag 1 in slot 8 Doing /echo ${FindItem[=Iron Ration].ItemSlot} will return 23</p>
 <p>Doing /echo ${FindItem[=Iron Ration].ItemSlot2} will return 7 (slots start at 0 so this is in fact correct)</p>
 <p>For the above example, you would be using this:</p>
-<div class="highlight"><pre><span></span><code>/itemnotify in pack${Math.Calc[${Me.Inventory[23].ItemSlot}-22].Int} ${Math.Calc[${Me.Inventory[23].Item[7].ItemSlot2} + 1].Int} leftmouseup
+<div class="language-text highlight"><pre><span></span><code>/itemnotify in pack${Math.Calc[${Me.Inventory[23].ItemSlot}-22].Int} ${Math.Calc[${Me.Inventory[23].Item[7].ItemSlot2} + 1].Int} leftmouseup
 </code></pre></div>
 <p>and programatically:</p>
-<div class="highlight"><pre><span></span><code>/itemnotify in pack${Math.Calc[${Me.Inventory[${FindItem[=Iron Ration].ItemSlot}].ItemSlot}-22].Int}
+<div class="language-text highlight"><pre><span></span><code>/itemnotify in pack${Math.Calc[${Me.Inventory[${FindItem[=Iron Ration].ItemSlot}].ItemSlot}-22].Int}
 </code></pre></div>
 <p>Line above, then a space, and the following(I couldn't do a single line due to lack of linewrap):</p>
-<div class="highlight"><pre><span></span><code>${Math.Calc[${Me.Inventory[${FindItem[=Iron Ration].ItemSlot}].Item[${FindItem[=Iron Ration].ItemSlot2}].ItemSlot2} + 1].Int} leftmouseup
+<div class="language-text highlight"><pre><span></span><code>${Math.Calc[${Me.Inventory[${FindItem[=Iron Ration].ItemSlot}].Item[${FindItem[=Iron Ration].ItemSlot2}].ItemSlot2} + 1].Int} leftmouseup
 </code></pre></div>
 <h2 id="invslot">InvSlot<a class="headerlink" href="#invslot" title="Permanent link">&para;</a></h2>
 <h3 id="inventory-diagram">Inventory Diagram<a class="headerlink" href="#inventory-diagram" title="Permanent link">&para;</a></h3>
-<div class="highlight"><pre><span></span><code>InvSlot Inventory
+<div class="language-text highlight"><pre><span></span><code>InvSlot Inventory
 +----+----+
 | 24 | 25 |
 +----+----+
@@ -15687,7 +15687,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

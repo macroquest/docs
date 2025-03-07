@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14070,7 +14070,7 @@
 <p>The Problem is in the return to Sub main from the Sub Event on the /doevents call. To remedy replace /Return with /Return Main or /goto :body.</p>
 <h2 id="macro-errors">Macro Errors<a class="headerlink" href="#macro-errors" title="Permanent link">&para;</a></h2>
 <p>With the recent changes for ${String[ an attempt was made to fix an existing statement.</p>
-<div class="highlight"><pre><span></span><code>:CounterLoop 
+<div class="language-text highlight"><pre><span></span><code>:CounterLoop 
    /if (${String[${Ini[${FileName},${SectionName},${ArrayType}${nValues}]}].Equal[null]}) { 
       /varcalc nValues ${nValues}-1 
       /goto :MakeArray 
@@ -14079,16 +14079,16 @@
    /goto :CounterLoop
 </code></pre></div>
 <p>Error:</p>
-<div class="highlight"><pre><span></span><code>Unparsable in calculation &#39;E&#39;
+<div class="language-text highlight"><pre><span></span><code>Unparsable in calculation &#39;E&#39;
 adv_fishing.mac@145(ReadINI(FileName,SectionName,ArrayType)):/if ($Ini{$FileName},${SectionName},${ArrayType}${nValues}]}.Equal[null]}){adv_Fishing.mac@41(Main): /call ReadINI FishingLoot.ini &quot;$Zone.Name}&quot; Loot
 Failed to parse /if condition (NULL.Equal}), non-numeric encountered.
 </code></pre></div>
 <p>Attempted fixes: assumption - remove string syntax and clear check for null value,</p>
-<div class="highlight"><pre><span></span><code>/if (${Ini[${FileName},${SectionName},${ArrayType}${nValues}] &gt; 0)
+<div class="language-text highlight"><pre><span></span><code>/if (${Ini[${FileName},${SectionName},${ArrayType}${nValues}] &gt; 0)
 </code></pre></div>
 <p>this resulted in script working but all loot was dropped, the array was not populated from ini file.</p>
 <p>Solution:</p>
-<div class="highlight"><pre><span></span><code>:CounterLoop 
+<div class="language-text highlight"><pre><span></span><code>:CounterLoop 
    /if (${Ini[${FileName},${SectionName},${ArrayType}${nValues},NULL].Equal[NULL]}) { 
      /varcalc nValues ${nValues}-1 
      /goto :MakeArray 
@@ -14156,7 +14156,7 @@ Failed to parse /if condition (NULL.Equal}), non-numeric encountered.
     <script id="__config" type="application/json">{"base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>

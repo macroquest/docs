@@ -20,7 +20,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.5">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.6.7">
     
     
       
@@ -14467,7 +14467,7 @@
 <h2 id="usage">Usage<a class="headerlink" href="#usage" title="Permanent link">&para;</a></h2>
 <h3 id="indexing-tasks">Indexing Tasks<a class="headerlink" href="#indexing-tasks" title="Permanent link">&para;</a></h3>
 <p>Task TLO can be accessed by index to make iteration possible.</p>
-<div class="highlight"><pre><span></span><code>/echo ${Task[2].Title}
+<div class="language-text highlight"><pre><span></span><code>/echo ${Task[2].Title}
 </code></pre></div>
 <p>Don't use <code>${Task[1].ID}</code> and expect it to be whatever is the first list item. Always refer to tasks by their name.</p>
 <div class="admonition note">
@@ -14475,17 +14475,17 @@
 <p>This index is not the same index as the one you see in the quest window list.</p>
 <p>Tasks are accessed in memory order, not in the order they are displayed in the UI. If you want the UI order, you'll need to use the <a href="../../top-level-objects/tlo-window/">Window TLO</a>.</p>
 </div>
-<div class="highlight"><pre><span></span><code>/echo ${Task[3].WindowIndex}
+<div class="language-text highlight"><pre><span></span><code>/echo ${Task[3].WindowIndex}
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>/echo ${Task[Into The Muck].WindowIndex}
+<div class="language-text highlight"><pre><span></span><code>/echo ${Task[Into The Muck].WindowIndex}
 </code></pre></div>
-<div class="highlight"><pre><span></span><code>/echo ${Task[hatch].Type}
+<div class="language-text highlight"><pre><span></span><code>/echo ${Task[hatch].Type}
 </code></pre></div>
 <p>Output: Shared (Can be Shared or Quest in this context)</p>
 <h2 id="selection">Selection<a class="headerlink" href="#selection" title="Permanent link">&para;</a></h2>
 <p>The Task TLO also has a <code>Select</code> Method:</p>
 <p><code>Select</code> can select list items and combobox items. It returns TRUE if a selection was made and FALSE if not.</p>
-<div class="highlight"><pre><span></span><code>/if (${Task[hatch].Select}) {
+<div class="language-text highlight"><pre><span></span><code>/if (${Task[hatch].Select}) {
     /echo I just Selected a task that has the name &quot;hatch&quot; in it...
 } else {
     /echo I did not find a task that has the word &quot;hatch&quot; in it, so nothing was selected.
@@ -14497,31 +14497,31 @@
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>Output: The task with "hatch" in is name is called: Hatching a Plan</p>
-<div class="highlight"><pre><span></span><code>/echo ${Task[hatch]} is listed as number ${Task[hatch].Index} in the tasklist.
+<div class="language-text highlight"><pre><span></span><code>/echo ${Task[hatch]} is listed as number ${Task[hatch].Index} in the tasklist.
 </code></pre></div>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>Output: Hatching a Plan is listed as number 1 in the tasklist.</p>
-<div class="highlight"><pre><span></span><code>/echo The ${Task[hatch]} first objective is to ${Task[hatch].Objective[1].Instruction}
+<div class="language-text highlight"><pre><span></span><code>/echo The ${Task[hatch]} first objective is to ${Task[hatch].Objective[1].Instruction}
 </code></pre></div>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>Output: The Hatching a Plan first objective is to find where the eggs are being incubated</p>
-<div class="highlight"><pre><span></span><code>/echo The ${Task[hatch]} first objective status is ${Task[hatch].Objective[1].Status}
+<div class="language-text highlight"><pre><span></span><code>/echo The ${Task[hatch]} first objective status is ${Task[hatch].Objective[1].Status}
 </code></pre></div>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>Output: The Hatching a Plan first objective status is 0/1</p>
-<div class="highlight"><pre><span></span><code>/echo The ${Task[hatch]} first objective should be completed in ${Task[hatch].Objective[1].Zone}
+<div class="language-text highlight"><pre><span></span><code>/echo The ${Task[hatch]} first objective should be completed in ${Task[hatch].Objective[1].Zone}
 </code></pre></div>
 </div>
 <div class="admonition example">
 <p class="admonition-title">Example</p>
 <p>Output: The Hatching a Plan first objective should be completed in Hatchery Wing</p>
-<div class="highlight"><pre><span></span><code>/echo I should be working on ${Task[hatch].Step} in ${Task[hatch].Step.Zone}
+<div class="language-text highlight"><pre><span></span><code>/echo I should be working on ${Task[hatch].Step} in ${Task[hatch].Step.Zone}
 </code></pre></div>
 </div>
 
@@ -14586,7 +14586,7 @@
     <script id="__config" type="application/json">{"base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.f8cc74c7.min.js", "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.f1b6f286.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c8b220af.min.js"></script>
       
     
   </body>
