@@ -77,7 +77,7 @@ nav:
   - Core Plugins:
     - plugins/core-plugins/README.md
 
-    - MQ2AutoLogin: plugins/core-plugins/mq2autologin.md
+    - AutoLogin: plugins/core-plugins/autologin/index.md
     - MQ2Bzsrch:
       - plugins/core-plugins/mq2bzsrch/README.md
 
@@ -635,6 +635,7 @@ plugins:
       redirect_maps:
         'main/submodule-quick-list.md': 'main/plugin-quick-list.md'
         'reference/general/combatstate.md': 'reference/data-types/datatype-character#CombatState'
+        'plugins/core-plugins/mq2autologin.md': 'plugins/core-plugins/autologin/index.md'
   - tags:
       tags_file: tags.md
 

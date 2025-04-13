@@ -2,7 +2,7 @@
 tags:
    - plugin
 ---
-# MQ2AutoLogin
+# AutoLogin
 
 ## Description
 
@@ -12,7 +12,7 @@ AutoLogin is a plugin that automatically logs in your characters. It can also sw
 
 Right click on your MacroQuest tray icon
 
-Select Profiles-&gt;Create New.
+Select Profiles-&gt;Create New. 
 
 You'll be asked to enter nine fields:
 
@@ -30,25 +30,26 @@ Upon clicking "Save", your profile will be encrypted and saved in MQ2AutoLogin.i
 
 ## Commands
 
-`/switchserver <server short name> <character name>`
+{{ embedCommand('plugins/core-plugins/autologin/loginchar.md') }}
 
-Will log out your current character and log in the specified server/character on the same account.
+{{ embedCommand('plugins/core-plugins/autologin/relog.md') }}
 
-`/switchchar <name>`
+{{ embedCommand('plugins/core-plugins/autologin/switchchar.md') }}
 
-Will log out your current character and log in the specified character on the same account/server.
-
-`/loginchar [server:character|profile_server:character|server^login^character^password|server^login^password]`
-
-Will open a new EverQuest instance and login the specified character. Example: `/loginchar vox:bobby`
-
-`/relog [#s|#m]`
-
-Will log character out, and then log back in after specified time. Default time is in seconds. Example: `/relog 5m`
+{{ embedCommand('plugins/core-plugins/autologin/switchserver.md') }}
 
 `END` and `HOME`
+:   Pressing the "END" key at the character select screen will pause autologin, "HOME" will unpause.
 
-Pressing the "END" key at the character select screen will pause autologin, "HOME" will unpause.
+## Top-Level Objects
+
+{{ embedMQType('plugins/core-plugins/autologin/tlo-autologin.md') }}
+
+## Datatypes
+
+{{ embedMQType('plugins/core-plugins/autologin/datatype-autologin.md') }}
+
+{{ embedMQType('plugins/core-plugins/autologin/datatype-loginprofile.md') }}
 
 ## INI
 
@@ -178,7 +179,7 @@ EQ Might=[[R] ] EQ Might
 Project Lazarus=Project Lazarus
 ```
 
-## MQ2Login Profiles GUI
+## Profiles GUI
 
 Right click on the MacroQuest tray icon -> Profiles
 
