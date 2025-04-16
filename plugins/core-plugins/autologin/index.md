@@ -4,8 +4,6 @@ tags:
 ---
 # AutoLogin
 
-## Description
-
 AutoLogin is a plugin that automatically logs in your characters. It can also switch characters, servers and login new accounts via commandline. It was originally made by [ieatacid](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427).
 
 ## Setting up profiles via tray icon
@@ -40,16 +38,6 @@ Upon clicking "Save", your profile will be encrypted and saved in MQ2AutoLogin.i
 
 `END` and `HOME`
 :   Pressing the "END" key at the character select screen will pause autologin, "HOME" will unpause.
-
-## Top-Level Objects
-
-{{ embedMQType('plugins/core-plugins/autologin/tlo-autologin.md') }}
-
-## Datatypes
-
-{{ embedMQType('plugins/core-plugins/autologin/datatype-autologin.md') }}
-
-{{ embedMQType('plugins/core-plugins/autologin/datatype-loginprofile.md') }}
 
 ## INI
 
@@ -206,3 +194,13 @@ This helps export and import login profiles, which are otherwise hard to decrypt
 `Launch Clean`
 
 Launch single sessions without logging in.
+
+## Top-Level Objects
+
+{{ embedMQType('plugins/core-plugins/autologin/tlo-autologin.md') }}
+
+## Datatypes
+
+{{ embedMQType('plugins/core-plugins/autologin/datatype-autologin.md') }}
+
+{{ embedMQType('plugins/core-plugins/autologin/datatype-loginprofile.md') }}

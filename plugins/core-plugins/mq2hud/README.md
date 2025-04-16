@@ -4,8 +4,6 @@ tags:
 ---
 # MQ2HUD
 
-## Description
-
 This plugin provides a Heads Up Display for your EQ window, which can provide a large amount of information in a relatively small amount of space. The HUD acts as a transparent background layer, upon which any information can be displayed. Each element of the HUD gets parsed each time MQ2Data is displayed, so there is no need to reload the HUD after making changes to the .ini file, they are instantly available as soon as you save.
 
 The HUD is customized by entries in the MQ2HUD.ini file. The .ini file allows any number of HUDs to be created and saved within. Loading a new HUD from the .ini file can be done with `/loadhud`. The entry names are not case-sensitive.
