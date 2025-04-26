@@ -20,5 +20,3 @@ This plugin adds bazaar search access and commands.
 
 {{ embedMQType('plugins/core-plugins/bzsrch/bzsrch-datatype-bazaar.md') }}
 {{ embedMQType('plugins/core-plugins/bzsrch/bzsrch-datatype-bazaaritem.md') }}
-{{ embedMQType('plugins/core-plugins/autologin/datatype-loginprofile.md') }}
-{{ embedMQType('reference/data-types/datatype-body.md') }}
