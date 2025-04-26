@@ -14,5 +14,5 @@ tags:
 
 You can use this to see the spell slot
 
-Information for any spell without having to right-click display through the MQ2ItemDisplay plugin.
+Information for any spell without having to right-click display through the ItemDisplay plugin.
 

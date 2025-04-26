@@ -80,11 +80,11 @@ _These parameters can be used from any of the four main plugin commands \('/stic
 
 \* **/stick min**
 
-* * Minimizes custom user window similar to [/mqmin](../../core-plugins/mq2chatwnd/mqmin.md)
+* * Minimizes custom user window similar to [/mqmin](../../core-plugins/chatwnd/mqmin.md)
 
 \* **/stick clear**
 
-* * Clears custom user window buffer similar to [/mqclear](../../core-plugins/mq2chatwnd/mqclear.md)
+* * Clears custom user window buffer similar to [/mqclear](../../core-plugins/chatwnd/mqclear.md)
 
 \* **/stick verbflags**
 

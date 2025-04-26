@@ -28,4 +28,4 @@ Prior to MQ controlling bots was best handled by the creation of many specific h
 
 There are several ways that bots can communicate between EQ instances. You can set up a shared chat channel in EQ. One character can write a formatted message to the channel that bots can read and respond. You can also use [MQ2IRC](../plugins/discontinued/mq2irc/), [MQ2Telnet](../plugins/discontinued/mq2telnet/) or [MQ2EQBC](../plugins/community-plugins/mq2eqbc/) that all keep the communication outside of EQ.
 
-Once your bots are setup and running you can use [Custom UIs](./features/custom-uis.md) or [MQ2HUD](../plugins/core-plugins/mq2hud/) to see information about each of your bots. You can use EQ HotKeys to send commands to your bots.
+Once your bots are setup and running you can use [Custom UIs](./features/custom-uis.md) or [HUD](../plugins/core-plugins/hud/) to see information about each of your bots. You can use EQ HotKeys to send commands to your bots.

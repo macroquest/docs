@@ -76,49 +76,69 @@ nav:
 
   - Core Plugins:
     - plugins/core-plugins/README.md
-
-    - AutoLogin: plugins/core-plugins/autologin/index.md
-    - MQ2Bzsrch:
-      - plugins/core-plugins/mq2bzsrch/README.md
-
-      - TLO:Bazaar: plugins/core-plugins/mq2bzsrch/mq2bzsrch-tlo-bazaar.md
-      - DataType:bazaar: plugins/core-plugins/mq2bzsrch/mq2bzsrch-datatype-bazaar.md
-      - DataType:bazaaritem: plugins/core-plugins/mq2bzsrch/mq2bzsrch-datatype-bazaaritem.md
-    - MQ2Chat: plugins/core-plugins/mq2chat.md
-    - MQ2ChatWnd:
-      - plugins/core-plugins/mq2chatwnd/README.md
-
-      - /mqclear: plugins/core-plugins/mq2chatwnd/mqclear.md
-      - /mqfont: plugins/core-plugins/mq2chatwnd/mqfont.md
-      - /mqmin: plugins/core-plugins/mq2chatwnd/mqmin.md
-    - MQ2CustomBinds:
-      - plugins/core-plugins/mq2custombinds/README.md
-
-      - /custombind: plugins/core-plugins/mq2custombinds/custombind.md
-
-    - MQ2EQBugFix: plugins/core-plugins/mq2eqbugfix.md
-    - MQ2HUD:
-      - plugins/core-plugins/mq2hud/README.md
-
-      - /classhud: plugins/core-plugins/mq2hud/classhud.md
-      - /defaulthud: plugins/core-plugins/mq2hud/defaulthud.md
-      - /hud: plugins/core-plugins/mq2hud/hud.md
-      - /loadhud: plugins/core-plugins/mq2hud/loadhud.md
-      - /zonehud: plugins/core-plugins/mq2hud/zonehud.md
-    - MQ2ItemDisplay:
-      - plugins/core-plugins/mq2itemdisplay/README.md
-
-      - /inote: plugins/core-plugins/mq2itemdisplay/inote.md
-    - MQ2Labels: plugins/core-plugins/mq2labels.md
-    - MQ2Map:
-      - plugins/core-plugins/mq2map/README.md
-
-      - /highlight: plugins/core-plugins/mq2map/highlight.md
-      - /mapclick: plugins/core-plugins/mq2map/mapclick.md
-      - /mapfilter: plugins/core-plugins/mq2map/mapfilter.md
-      - /maphide: plugins/core-plugins/mq2map/maphide.md
-      - /mapnames: plugins/core-plugins/mq2map/mapnames.md
-      - /mapshow: plugins/core-plugins/mq2map/mapshow.md
+    - AutoBank: plugins/core-plugins/autobank/index.md
+    - AutoLogin:
+      - plugins/core-plugins/autologin/index.md
+      - DataType:AutoLogin: plugins/core-plugins/autologin/datatype-autologin.md
+      - DataType:LoginProfile: plugins/core-plugins/autologin/datatype-loginprofile.md
+      - TLO:AutoLogin: plugins/core-plugins/autologin/tlo-autologin.md
+      - /loginchar: plugins/core-plugins/autologin/loginchar.md
+      - /relog: plugins/core-plugins/autologin/relog.md
+      - /switchchar: plugins/core-plugins/autologin/switchchar.md
+      - /switchserver: plugins/core-plugins/autologin/switchserver.md
+    - Bzsrch:
+      - plugins/core-plugins/bzsrch/README.md
+      - /bzsrch: plugins/core-plugins/bzsrch/bzsrch.md
+      - /breset: plugins/core-plugins/bzsrch/breset.md
+      - /bzquery: plugins/core-plugins/bzsrch/bzquery.md
+      - TLO:Bazaar: plugins/core-plugins/bzsrch/bzsrch-tlo-bazaar.md
+      - DataType:bazaar: plugins/core-plugins/bzsrch/bzsrch-datatype-bazaar.md
+      - DataType:bazaaritem: plugins/core-plugins/bzsrch/bzsrch-datatype-bazaaritem.md
+    - Chat: plugins/core-plugins/chat/index.md
+    - ChatWnd:
+      - plugins/core-plugins/chatwnd/README.md
+      - /mqchat: plugins/core-plugins/chatwnd/mqchat.md
+      - /mqclear: plugins/core-plugins/chatwnd/mqclear.md
+      - /mqfont: plugins/core-plugins/chatwnd/mqfont.md
+      - /mqmin: plugins/core-plugins/chatwnd/mqmin.md
+      - /setchattitle: plugins/core-plugins/chatwnd/setchattitle.md
+      - /style: plugins/core-plugins/chatwnd/style.md
+    - CustomBinds:
+      - plugins/core-plugins/custombinds/README.md
+      - /custombind: plugins/core-plugins/custombinds/custombind.md
+    - EQBugFix: plugins/core-plugins/eqbugfix/index.md
+    - HUD:
+      - plugins/core-plugins/hud/README.md
+      - /classhud: plugins/core-plugins/hud/classhud.md
+      - /defaulthud: plugins/core-plugins/hud/defaulthud.md
+      - /loadhud: plugins/core-plugins/hud/loadhud.md
+      - /zonehud: plugins/core-plugins/hud/zonehud.md
+      - /unloadhud: plugins/core-plugins/hud/unloadhud.md
+      - TLO:HUD: plugins/core-plugins/hud/tlo-hud.md
+    - ItemDisplay:
+      - plugins/core-plugins/itemdisplay/README.md
+      - /itemdisplay: plugins/core-plugins/itemdisplay/itemdisplay.md
+      - /inote: plugins/core-plugins/itemdisplay/inote.md
+      - Datatype:DisplayItem: plugins/core-plugins/itemdisplay/datatype-displayitem.md
+      - TLO:DisplayItem: plugins/core-plugins/itemdisplay/tlo-displayitem.md
+    - Labels: plugins/core-plugins/labels/index.md
+    - Map:
+      - plugins/core-plugins/map/README.md
+      - /highlight: plugins/core-plugins/map/highlight.md
+      - /mapactivelayer: plugins/core-plugins/map/mapactivelayer.md
+      - /mapclick: plugins/core-plugins/map/mapclick.md
+      - /mapfilter: plugins/core-plugins/map/mapfilter.md
+      - /maphide: plugins/core-plugins/map/maphide.md
+      - /maploc: plugins/core-plugins/map/maploc.md
+      - /mapnames: plugins/core-plugins/map/mapnames.md
+      - /mapshow: plugins/core-plugins/map/mapshow.md
+      - TLO:MapSpawn: plugins/core-plugins/map/tlo-mapspawn.md
+    - TargetInfo:
+      - plugins/core-plugins/targetinfo/index.md
+      - /targetinfo: plugins/core-plugins/targetinfo/targetinfo.md
+    - XTarInfo:
+      - plugins/core-plugins/xtarinfo/index.md
+      - /xtarinfo: plugins/core-plugins/xtarinfo/xtarinfo.md
 
   - Community Plugins:
     - plugins/community-plugins/README.md
@@ -328,6 +348,7 @@ nav:
       - /getwintitle: reference/commands/getwintitle.md
       - /help: reference/commands/help.md
       - /hotbutton: reference/commands/hotbutton.md
+      - /hud: reference/commands/hud.md
       - /identify: reference/commands/identify.md
       - /insertaug: reference/commands/insertaug.md
       - /ini: reference/commands/ini.md
@@ -435,10 +456,10 @@ nav:
       - /lootnodrop: reference/commands/eq/lootnodrop.md
 
     - Commands From Plugins:
-      - MQ2HUD:
-        - /hud: plugins/core-plugins/mq2hud/hud
-      - MQ2ChatWnd:
-        - /mqfont: plugins/core-plugins/mq2chatwnd/mqfont.md
+      - HUD:
+        - /loadhud: plugins/core-plugins/hud/loadhud.md
+      - ChatWnd:
+        - /mqfont: plugins/core-plugins/chatwnd/mqfont.md
 
   - Top Level Objects:
     - reference/top-level-objects/README.md
@@ -636,6 +657,15 @@ plugins:
         'main/submodule-quick-list.md': 'main/plugin-quick-list.md'
         'reference/general/combatstate.md': 'reference/data-types/datatype-character#CombatState'
         'plugins/core-plugins/mq2autologin.md': 'plugins/core-plugins/autologin/index.md'
+        'plugins/core-plugins/mq2bzsrch/README.md': 'plugins/core-plugins/bzsrch/README.md'
+        'plugins/core-plugins/mq2chat.md': 'plugins/core-plugins/chat/index.md'
+        'plugins/core-plugins/mq2chatwnd/README.md': 'plugins/core-plugins/chatwnd/README.md'
+        'plugins/core-plugins/mq2custombinds/README.md': 'plugins/core-plugins/custombinds/README.md'
+        'plugins/core-plugins/mq2eqbugfix.md': 'plugins/core-plugins/eqbugfix/index.md'
+        'plugins/core-plugins/mq2hud/README.md': 'plugins/core-plugins/hud/README.md'
+        'plugins/core-plugins/mq2itemdisplay/README.md': 'plugins/core-plugins/itemdisplay/README.md'
+        'plugins/core-plugins/mq2labels.md': 'plugins/core-plugins/labels/index.md'
+        'plugins/core-plugins/mq2map.md': 'plugins/core-plugins/map/README.md'
   - tags:
       tags_file: tags.md
 

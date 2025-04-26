@@ -4,7 +4,7 @@
 
 MacroQuest has several built-in EQTypes that can be used to customize your UI. These EQTypes function the same as those in EQ, however allow you to display information in your UI that you normally would not be able to see. Alternatively, if there is no built-in EQType, you can use Tooltips to display custom MQ2 information (including data/variables from plugins).
 
-See the [MQ2Labels](../../plugins/core-plugins/mq2labels.md) page for the EQType definitions and examples.
+See the [Labels](../../plugins/core-plugins/labels/index.md) page for the EQType definitions and examples.
 
 ## List of Custom UIs
 

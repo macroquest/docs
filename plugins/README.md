@@ -100,17 +100,17 @@ See [/plugin](../reference/commands/plugin.md) for information on loading and un
 
 ## Plugins included with MacroQuest2
 
-* [MQ2Bzsrch](../plugins/core-plugins/mq2bzsrch/) -- a bazaar search plug-in
-* [MQ2Chat](../plugins/core-plugins/mq2chat.md) -- Directs MQ2 output to the regular chat window
-* [MQ2ChatWnd](../plugins/core-plugins/mq2chatwnd/) -- Directs MQ2 output to a special chat window (safer)
-* [MQ2CustomBinds](../plugins/core-plugins/mq2custombinds/) -- Allows you to specify custom commands to execute on a key combination
-* [MQ2EQBugFix](../plugins/core-plugins/mq2eqbugfix.md) -- Currently nothing, but reserved for fixing bugs in EQ itself
+* [Bzsrch](../plugins/core-plugins/bzsrch/) -- a bazaar search plug-in
+* [Chat](../plugins/core-plugins/chat/) -- Directs MQ2 output to the regular chat window
+* [ChatWnd](../plugins/core-plugins/chatwnd/) -- Directs MQ2 output to a special chat window (safer)
+* [CustomBinds](../plugins/core-plugins/custombinds/) -- Allows you to specify custom commands to execute on a key combination
+* [EQBugFix](../plugins/core-plugins/eqbugfix/) -- Currently nothing, but reserved for fixing bugs in EQ itself
 * [MQ2EQIM](../plugins/discontinued/mq2eqim/) -- EQIM
-* [MQ2HUD](../plugins/core-plugins/mq2hud/) -- Provides additional functionality to the HUD included with MQ2
+* [HUD](../plugins/core-plugins/hud/) -- Provides additional functionality to the HUD included with MQ2
 * [MQ2IRC](../plugins/discontinued/mq2irc/) -- IRC plugin
-* [MQ2ItemDisplay](../plugins/core-plugins/mq2itemdisplay/) -- Add extra data to item windows
-* [MQ2Labels](../plugins/core-plugins/mq2labels.md) -- allows custom UI labels
-* [MQ2Map](../plugins/core-plugins/mq2map/) -- enhanced map
+* [ItemDisplay](../plugins/core-plugins/itemdisplay/) -- Add extra data to item windows
+* [Labels](../plugins/core-plugins/labels/) -- allows custom UI labels
+* [Map](../plugins/core-plugins/map/) -- enhanced map
 * [MQ2Telnet](../plugins/discontinued/mq2telnet/) -- act as a telnet server for macro output
 
 ## List of Plugins with wiki pages
@@ -128,7 +128,7 @@ See [/plugin](../reference/commands/plugin.md) for information on loading and un
           </li>
           <li><a href="../plugins/community-plugins/mq2autogroup/">MQ2AutoGroup</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2autologin/">MQ2AutoLogin</a>
+          <li><a href="../plugins/core-plugins/autologin/">AutoLogin</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2autosize/">MQ2AutoSize</a>
           </li>
@@ -140,15 +140,15 @@ See [/plugin](../reference/commands/plugin.md) for information on loading and un
           </li>
           <li><a href="../plugins/community-plugins/mq2cast/">MQ2Cast</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2chat/">MQ2Chat</a>
+          <li><a href="../plugins/core-plugins/chat/">Chat</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2chatevents/">MQ2ChatEvents</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2chatwnd/">MQ2ChatWnd</a>
+          <li><a href="../plugins/core-plugins/chatwnd/">ChatWnd</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2cursor/">MQ2Cursor</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2custombinds/">MQ2CustomBinds</a>
+          <li><a href="../plugins/core-plugins/custombinds/">CustomBinds</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2debuffs/">MQ2Debuffs</a>
           </li>
@@ -160,7 +160,7 @@ See [/plugin](../reference/commands/plugin.md) for information on loading and un
       </th>
       <th style="text-align:left">
         <ul>
-          <li><a href="../plugins/core-plugins/mq2eqbugfix/">MQ2EQBugFix</a>
+          <li><a href="../plugins/core-plugins/eqbugfix/">EQBugFix</a>
           </li>
           <li><a href="../plugins/discontinued/mq2eqim/">MQ2EQIM</a>
           </li>
@@ -178,19 +178,19 @@ See [/plugin](../reference/commands/plugin.md) for information on loading and un
           </li>
           <li><a href="../plugins/community-plugins/mq2gmcheck/">MQ2GMCheck</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2hud/">MQ2HUD</a>
+          <li><a href="../plugins/core-plugins/hud/">HUD</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2hudmove/">MQ2HUDMove</a>
           </li>
           <li><a href="../plugins/discontinued/mq2irc/">MQ2IRC</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2itemdisplay/">MQ2ItemDisplay</a>
+          <li><a href="../plugins/core-plugins/itemdisplay/">ItemDisplay</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2labels/">MQ2Labels</a>
+          <li><a href="../plugins/core-plugins/labels/">Labels</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2linkdb/">MQ2Linkdb</a>
           </li>
-          <li><a href="../plugins/core-plugins/mq2map/">MQ2Map</a>
+          <li><a href="../plugins/core-plugins/map/">Map</a>
           </li>
           <li><a href="../plugins/community-plugins/mq2melee/">MQ2Melee</a>
           </li>

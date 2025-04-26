@@ -17,7 +17,7 @@ MacroQuest becomes part of EverQuest when you play, and anything you do inside o
 The following common EverQuest slash commands are enhanced by MacroQuest:
 
 * [/cast](../reference/commands/cast.md)
-* [/charinfo](../reference/commands/charinfo.md)
+* [/char](../reference/commands/char.md)
 * [/help](../reference/commands/help.md)
 * [/location](../reference/commands/location.md)
 * [/target](../reference/commands/mqtarget.md)
@@ -38,7 +38,7 @@ The following commonly used slash commands are added by MacroQuest:
 * [/itemtarget](../reference/commands/itemtarget.md)
 * [/macro](../reference/commands/macro.md)
 * [/memspell](../reference/commands/memspell.md)
-* [/mqfont](../plugins/core-plugins/mq2chatwnd/mqfont.md)
+* [/mqfont](../plugins/core-plugins/chatwnd/mqfont.md)
 * [/mqpause](../reference/commands/mqpause.md)
 * [/multiline](../reference/commands/multiline.md)
 * [/popup](../reference/commands/popup.md)
@@ -106,7 +106,7 @@ See the [Custom UIs](./features/custom-uis.md) page for further information on w
 
 ## HUDs
 
-MacroQuest can enable a custom Heads Up Display to show almost any kind of data on top of your UI. Instructions for configuration as well as further information can be found on the [MQ2HUD](../plugins/core-plugins/mq2hud/) page.
+MacroQuest can enable a custom Heads Up Display to show almost any kind of data on top of your UI. Instructions for configuration as well as further information can be found on the [HUD](../plugins/core-plugins/hud/) page.
 
 ## CFG Files
 
@@ -118,7 +118,7 @@ See the [CFG Files](./features/cfg-files.md) section for further information.
 
   Chat window.\*\*
 
-You need to load the [MQ2Map](../plugins/core-plugins/mq2map/) plugin using the command "/plugin MQ2Map" in-game.
+You need to load the [Map](../plugins/core-plugins/map/) plugin using the command "/plugin Map" in-game.
 
 * **When you execute /mapfilter with any options, all layers that were previously visible disappear.**
 

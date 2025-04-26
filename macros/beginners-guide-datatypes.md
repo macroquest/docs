@@ -10,7 +10,7 @@ In order to use these built-in variables, you need to pick a Top-Level Object to
 
 ### Example 1: Mana Percentage
 
-Say you want to display your current Mana Percentage in a [HUD](../plugins/core-plugins/mq2hud/README.md) or use it in a macro.
+Say you want to display your current Mana Percentage in a [HUD](../plugins/core-plugins/hud/README.md) or use it in a macro.
 
 * First off, you look through the [list of TLOs](../reference/top-level-objects/README.md) and pick one that best suits the information you're looking for. The [Me TLO](../reference/top-level-objects/tlo-me.md) looks like a good bet.
 * Opening that page, you see that the Me TLO has access to the [_character_](../reference/data-types/datatype-character.md) datatype and the [_spawn_](../reference/data-types/datatype-spawn.md) datatype. The _character_ datatype contains information about your own character, mostly things that only you will know (eg. how much mana you have, what spells you have loaded, etc). Since your character is also a spawn in the EQ world (ie. other people can see you and interact with you), you are also able to access the _spawn_ datatype, which gives information that other characters in the same zone may know (eg. your location, your race, your class, etc).
