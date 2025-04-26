@@ -1,4 +1,5 @@
 import re
+import textwrap
 from pathlib import Path, PurePosixPath
 
 def define_env(env):
@@ -21,7 +22,8 @@ def define_env(env):
 
     @env.macro
     def embedCommand(command_file):
-        data = parse_command_file(command_file)
+        page = env.variables.page
+        data = parse_command_file(command_file, page)
 
         doc_url = data.get("doc_url", "#")
         syntax_content = data.get("syntax_content")
@@ -30,7 +32,8 @@ def define_env(env):
         full_description = data.get("full_description", "")
         has_more_content = data.get("has_more_content", False)
 
-        syntax = f'<a href="{doc_url}">⚠️ Syntax missing</a>' 
+        # we use html links here because markdown wasn't able to link a codeblock.
+        syntax = f'<a href="{doc_url}">⚠️ Syntax missing</a>'
         if syntax_content:
             if is_codeblock:
                 lexer_str = lexer or ''
@@ -38,28 +41,18 @@ def define_env(env):
             else:
                 syntax = f'<a href="{doc_url}">{syntax_content}</a>'
 
-        # Format Description (add "read more" link if it's long)
-        formatted_description = ""
-        if full_description:
-            description = full_description
-            read_more_link = f' [:material-book-arrow-right-outline:]({doc_url})'
-            max_description_length = 280
-            if len(description) > max_description_length:
-                # Find a space between words before cutting off a long description
-                break_point = description.rfind(' ', 0, max_description_length - len(read_more_link) - 3)
-                if break_point == -1:
-                    break_point = max_description_length - len(read_more_link) - 3
-                formatted_description = description[:break_point] + '...' + read_more_link
-            elif has_more_content:
-                formatted_description = description + read_more_link
-            else:
-                formatted_description = description
-        
-        return f"{syntax}\n:   {formatted_description}"
+        formatted_description = truncate_description(
+            full_description,
+            doc_url,
+            has_more_content
+        )
+
+        return f"{syntax}\n:   {formatted_description}\n"
 
     @env.macro
     def embedMQType(doc_file):
-        data = parse_mq_type(doc_file)
+        page = env.variables.page 
+        data = parse_type_file(doc_file, page)
 
         doc_url = data.get("doc_url", "#") # the default URL is a same page link
         name = data.get("name", "Unknown Type")
@@ -71,225 +64,296 @@ def define_env(env):
         if members:
             members_table = "\n\n" + render_members_table(members, link_refs) + "\n\n"
 
-        link_refs_part = ""
-        if link_refs:
-            formatted_links = "\n".join([f"[{ref_name}]: {ref_url}" for ref_name, ref_url in link_refs])
-            link_refs_part = f"\n\n{formatted_links}"
-
-        # Add read more link only if description exists
-        read_more_indicator = f" [:material-book-arrow-right-outline:]({doc_url})" if description else ""
+        # Unified truncation using shared helper
+        formatted_desc = truncate_description(
+            data.get("full_description", data.get("description", "")),
+            doc_url,
+            data.get("has_more_content", False)
+        )
 
         result = (
             f"### [`{name}`]({doc_url})\n\n"
-            f"{description}{read_more_indicator}\n\n"
+            f"{formatted_desc}\n\n"  # Use processed description
             f"{members_table}"
-            f"{link_refs_part}"
         )
 
         return result
 
 # == Helper functions ==
 
-def parse_command_file(command_file):
-    """
-    Parse command file for syntax and description.
-    """
-    try:
-        content = Path(command_file).read_text()
-        base_dir = Path(command_file).parent
-        doc_url = make_content_link(command_file)
-    except FileNotFoundError:
-        return {
-            "doc_url": "#",
-            "syntax_content": "Error: File not found",
-            "lexer": "",
-            "is_codeblock": False,
-            "full_description": "",
-            "has_more_content": False,
-        }
+# Parse for syntax and description.
+def parse_command_file(command_file, page):
+    SYNTAX_CODEBLOCK_PATTERN = r'## Syntax\s*\n\s*```(\w+)?\s*\n(.*?)\n```'
+    SYNTAX_NOCODE_PATTERN = r'## Syntax\s+\n+(.+?)(?=\n\n|\n##)'
+    DESCRIPTION_PATTERN = r'## Description\s*\n(.*?)(?=\n\n\*\*|\n##|$)'
 
-    syntax_content = None
-    lexer = ""
-    is_codeblock = False
-    full_description = ""
-    has_more_content = False
+    file_result = read_file(command_file, page)
 
-    # Extract syntax (and lexer) that's in a code block so we can render the link correctly.
-    syntax_match = re.search(
-        r'## Syntax\s*\n\s*```(\w+)?\s*\n(.*?)\n```',
-        content, re.DOTALL
-    )
+    # Initialize for clarity
+    data = {
+        "doc_url": file_result["doc_url"],
+        "syntax_content": None,
+        "lexer": "",
+        "is_codeblock": False,
+        "full_description": "",
+        "has_more_content": False
+    }
+
+    # return on error
+    if not file_result["success"]:
+        data["syntax_content"] = f"Error: {file_result['error']}"
+        data["full_description"] = "Documentation file could not be loaded"
+        return data
+
+    content = file_result["content"]
+    base_dir = file_result["base_dir"]
+
+    # This keeps track of how far down the file we've parsed for the has_more_content check
+    end_pos = 0
+
+    # Syntax is in codeblocks
+    syntax_match = re.search(SYNTAX_CODEBLOCK_PATTERN, content, re.DOTALL)
     if syntax_match:
-        is_codeblock = True
-        lexer = syntax_match.group(1) or ""
-        syntax_content = syntax_match.group(2).strip()
+        data.update({
+            "is_codeblock": True,
+            "lexer": syntax_match.group(1) or "",
+            "syntax_content": syntax_match.group(2).strip()
+        })
+        end_pos = max(end_pos, syntax_match.end())
     else:
-        # Extract syntax that's not in a code block, which is much simpler to render:
-        syntax_match = re.search(
-            r'## Syntax\s+\n+(.+?)(?=\n\n|\n##)',
-            content, re.DOTALL
-        )
-        if syntax_match:
-            syntax_content = syntax_match.group(1).strip()
+        # Syntax if no codeblocks, we use extract_section for help.
+        syntax_content_nocode, syntax_end = extract_section(SYNTAX_NOCODE_PATTERN, content)
+        if syntax_content_nocode:
+            data["syntax_content"] = syntax_content_nocode
+            end_pos = max(end_pos, syntax_end)
+        else:
+             data["syntax_content"] = "⚠️ Syntax missing"
 
-    # Extract first paragraph of description (before any subsections)
-    description_match = re.search(
-        r'## Description\s+\n+(.*?)(?=\n\n\*\*|\n##|$)',
-        content, re.DOTALL
+    description_text, desc_end = extract_section(
+        DESCRIPTION_PATTERN, 
+        content,
+        clean_whitespace=True,
+        convert_links=True,
+        base_dir=base_dir,
+        page=page
     )
-    if description_match:
-        description_text = description_match.group(1).strip()
-        # Convert links and collapse whitespace
-        full_description = convert_relative_links(description_text, base_dir)
-        full_description = re.sub(r'\s*\n\s*', ' ', full_description)
-        # Check if there's more content after the description paragraph
-        remaining_content = content[description_match.end():]
-        if re.search(r'\n\n\*\*|\n##', remaining_content):
-            has_more_content = True
 
-    return {
-        "doc_url": doc_url,
-        "syntax_content": syntax_content,
-        "lexer": lexer,
-        "is_codeblock": is_codeblock,
-        "full_description": full_description,
-        "has_more_content": has_more_content,
-    }
+    if description_text:
+        data["full_description"] = description_text
+        end_pos = max(end_pos, desc_end)
+    # else: # No need for else, default is ""
 
-def parse_mq_type(doc_file):
-    """
-    Extract information from a TLO or datatype file
-    """
+    data["has_more_content"] = bool(re.search(r'\S', content[end_pos:].strip()))
+
+    return data
+
+def read_file(file_path, page):
     try:
-        content = Path(doc_file).read_text()
-        doc_path = Path(doc_file)
+        doc_path = Path(file_path)
+        content = doc_path.read_text()
         base_dir = doc_path.parent
-        doc_url = make_content_link(doc_file)
-    except FileNotFoundError:
+        doc_url = relative_link(file_path, page.file.src_uri) # src_uri is the path to the embedding page
         return {
-            "name": "Error: File not found",
-            "description": "",
-            "section_name": "",
-            "members": [],
-            "link_refs": [],
+            "content": content,
+            "base_dir": base_dir,
+            "doc_url": doc_url,
+            "success": True,
+            "error": None
+        }
+    except Exception as e:
+        return {
+            "content": "",
+            "base_dir": None,
             "doc_url": "#",
+            "success": False,
+            "error": str(e)
         }
 
-    # Initialize variables with default values
-    name = ""
-    description = ""
-    section_name = ""
-    members = []
-    link_refs = [] # Initialize link_refs as an empty list
+# create a url that's relative to the embedding page
+def relative_link(target_file_path, embedding_page_src_uri, base_dir=None):
+    # i could only get this working with pureposixpath
+    target_path = PurePosixPath(base_dir) / target_file_path if base_dir else PurePosixPath(target_file_path)
+    embedding_dir = PurePosixPath(embedding_page_src_uri).parent
 
-    # Extract the name from the top of the page.
-    name_match = re.search(r'# `(.+?)`', content)
-    if name_match:
-        name = name_match.group(1)
+    relative_path = target_path.relative_to(embedding_dir, walk_up=True)
 
-    # Extract the description as the first paragraph after the header.
-    desc_match = re.search(r'# `.+?`\s*\n+(.*?)(?=\n\n|\n##|$)', content, re.DOTALL)
-    if desc_match: # Check if match was found
-        description_text = desc_match.group(1).strip()
-        description = re.sub(r'\s*\n\s*', ' ', description_text)
-        description = convert_relative_links(description, base_dir)
+    # special case for index and readme files
+    if relative_path.name.lower() in ('index.md', 'readme.md'):
+        parent_dir = relative_path.parent
+        return './' if str(parent_dir) == '.' else f"{parent_dir}/"
 
-    # Extract the Members or Forms section. Stops when a new level-2 header (##) appears.
-    section_match = re.search(r'## (Forms|Members)\s*\n+(.*?)(?=\n##(?!#)|$)', content, re.DOTALL)
-    if section_match:
-        section_name = section_match.group(1)
-        raw_section_content = section_match.group(2).strip()
-        # Parse out the individual member definitions.
-        members = parse_render_members(raw_section_content, base_dir)
+    # otherwise, remove the .md extension and add a trailing slash
+    return f"{relative_path.with_suffix('')}/"
 
-    # Process link references using helper
-    link_ref_matches = re.findall(r'^\[([^\]]+)\]:\s*(.+?)(?:\s*)$', content, re.MULTILINE)
-    for ref_name, ref_url in link_ref_matches:
-        if ref_url.endswith('.md'):  # Only process .md links
-            try:
-                absolute_ref = make_content_link(ref_url, base_dir)
-                link_refs.append((ref_name, absolute_ref))
-            except Exception as e:
-                print(f"Warning: Could not process link ref [{ref_name}]: {ref_url} in {doc_file}. Error: {e}")
+def extract_section(pattern, content, clean_whitespace=False, convert_links=False, base_dir=None, page=None):
+    match = re.search(pattern, content, re.DOTALL)
 
-    return {
-        "name": name,
-        "description": description,
-        "section_name": section_name,
-        "members": members,
-        "link_refs": link_refs,
-        "doc_url": doc_url,
+    if not match:
+        return None, None
+        
+    extracted = match.group(1).strip()
+    
+    if clean_whitespace:
+        extracted = re.sub(r'\s*\n\s*', ' ', extracted)
+        
+    if convert_links and base_dir and page:
+        extracted = rewrite_markdown_links(extracted, base_dir, page)
+    
+    return extracted, match.end()
+
+def parse_type_file(doc_file, page):
+    NAME_PATTERN = r'# `(.+?)`'
+    DESCRIPTION_PATTERN = r'# `.+?`\s*\n+(.*?)(?=\n\n|\n##|$)'
+    SECTION_PATTERN = r'## (Forms|Members)\s*\n+(.*?)(?=\n##(?!#)|$)'
+    LINK_REF_PATTERN = r'^\[([^\]]+)\]:\s*(.+?)(?:\s*)$'
+
+    file_result = read_file(doc_file, page)
+
+    # Initialize for clarity
+    data = {
+        "doc_url": file_result["doc_url"], 
+        "name": "Unknown Type",
+        "full_description": "",
+        "section_name": "",
+        "members": [],
+        "link_refs": [], 
+        "has_more_content": False,
     }
 
-def parse_render_members(raw_content, base_dir):
-    """
-    parse renderMember macro calls for member info.
-    """
-    # Pattern captures the parameters inside renderMember and then the description
-    pattern = r"###\s*\{\{\s*renderMember\s*\((.*?)\)\s*\}\}\s*\n\s*\:\s*(.*?)(?=\n###|\Z)"
-    matches = re.findall(pattern, raw_content, re.DOTALL)
+    # return on error
+    if not file_result["success"]:
+        data["name"] = "Error loading type"
+        data["full_description"] = f"Error: {file_result['error']}"
+        return data
+
+    content = file_result["content"]
+    base_dir = file_result["base_dir"]
     
+    # This keeps track of how far down the file we've parsed for the has_more_content check
+    end_pos = 0
+
+    # Name extraction
+    name_match = re.search(NAME_PATTERN, content)
+    if name_match:
+        data["name"] = name_match.group(1) # Update data dict
+        # Update end_pos to the end of the name section if it's further
+        end_pos = max(end_pos, name_match.end())
+
+    description_text, desc_end = extract_section(
+        DESCRIPTION_PATTERN,
+        content,
+        clean_whitespace=True,
+        convert_links=True,
+        base_dir=base_dir,
+        page=page
+    )
+
+    if description_text:
+        data["full_description"] = description_text
+        end_pos = max(end_pos, desc_end)
+
+    # Members section extraction
+    section_match = re.search(
+        SECTION_PATTERN,
+        content, re.DOTALL
+    )
+
+    if section_match:
+        data["section_name"] = section_match.group(1) # Forms or Members
+        raw_content = section_match.group(2).strip()
+        data["members"] = parse_render_members(raw_content, base_dir, page) 
+        end_pos = max(end_pos, section_match.end())
+
+    # Link reference extraction
+    link_ref_matches = re.findall(LINK_REF_PATTERN, content, re.MULTILINE)
+    processed_link_refs = [] 
+    for ref_name, ref_url in link_ref_matches:
+        if ref_url.endswith('.md'):
+            relative_ref_url = relative_link(ref_url, page.file.src_uri, base_dir=base_dir)
+            processed_link_refs.append((ref_name, relative_ref_url))
+    data["link_refs"] = processed_link_refs
+
+    data["has_more_content"] = bool(re.search(r'\S', content[end_pos:].strip()))
+
+    return data
+
+# parse renderMember macro calls
+def parse_render_members(raw_content, base_dir, page):
+    MEMBER_PATTERN = r"###\s*\{\{\s*renderMember\s*\((.*?)\)\s*\}\}(?:\s*\n\s*\:\s*(.*?))?(?=\n\n|\n###|\Z)"
+    KV_PAIR_PATTERN = r"(\w+)\s*=\s*'([^']+)'"
+
+    matches = re.findall(MEMBER_PATTERN, raw_content, re.DOTALL)
     members = []
     for params_str, description in matches:
-        # Capture key='value' pairs from the renderMember call.
-        kv_pattern = r"(\w+)\s*=\s*'([^']+)'"
-        kv_pairs = re.findall(kv_pattern, params_str)
-        params = {k: v for k, v in kv_pairs}
-        
-        member_name = params.get("name", "").strip()
-        member_type = params.get("type", "").strip()
+        kv_pairs = re.findall(KV_PAIR_PATTERN, params_str)
+        params_dict = {k: v for k, v in kv_pairs}
+
+        member_name = params_dict.get("name", "").strip()
+        member_type = params_dict.get("type", "").strip()
+        member_params = params_dict.get("params", "").strip()
+        # convert any links in the description
+        cleaned_description = rewrite_markdown_links(description.strip(), base_dir, page) if description else ""
         members.append({
             "name": member_name,
             "type": member_type,
-            "description": convert_relative_links(description.strip(), base_dir)
+            "params": member_params,
+            "description": cleaned_description
         })
     return members
 
-def make_content_link(file_path, base_dir=None):
-    """
-    Convert a file path to mkdocs url
-    - (when base_dir=None): "commands/foo.md" → "/commands/foo/"
-    - (with base_dir): "../datatypes/bar.md" → "/datatypes/bar/"
-    """
-    if base_dir:
-        # For relative links within embedded content
-        full_path = PurePosixPath(base_dir / file_path)
-    else:
-        # For main document (embed-er) links
-        full_path = PurePosixPath(file_path)
-        
-    return f"/{full_path.with_suffix('')}/"
+def rewrite_markdown_links(content, base_dir, page): 
+    MARKDOWN_LINK_PATTERN = r'\[([^\]]+)\]\(([^\)]+\.md)\)'
 
-def convert_relative_links(content, base_dir):
-    """
-    Convert relative links to absolute links for embedded content
-    """
     def replace_link(match):
-        text = match.group(1)
+        name = match.group(1)
         rel_path = match.group(2)
-        return f"[{text}]({make_content_link(rel_path, base_dir)})"
-    
+        return f"[{name}]({relative_link(rel_path, page.file.src_uri, base_dir=base_dir)})"
+
     return re.sub(
-        r'\[([^\]]+)\]\(([^\)]+\.md)\)',
+        MARKDOWN_LINK_PATTERN,
         replace_link,
         content
     )
 
+# a nice little markdown table
 def render_members_table(members, link_refs):
-    """
-    Use members and link_refs to create a markdown table.
-    """
     lines = [
         "| Type | Member | Description |",
         "| ---- | ------ | ----------- |"
     ]
-    # Convert link_refs to a dictionary for easier lookup
     link_dict = {ref_name: ref_url for ref_name, ref_url in link_refs}
     for m in members:
         type_val = m["type"]
-        if type_val in link_dict:
+        if type_val in link_dict: # does it match a link ref?
             type_rendered = f"[{type_val}]({link_dict[type_val]})"
+        elif type_val:
+            type_rendered = f"`{type_val}`"
         else:
-            type_rendered = type_val
-        lines.append(f"| {type_rendered} | `{m['name']}` | {m['description']} |")
+            type_rendered = ''
+
+        member_name = m['name']
+        member_params = m.get('params')
+        if member_params:
+            member_name_rendered = f"`{member_name}[{member_params}]`"
+        else:
+            member_name_rendered = f"`{member_name}`"
+
+        lines.append(f"| {type_rendered} | {member_name_rendered} | {m['description']} |")
     return "\n".join(lines)
+
+def truncate_description(description_text, doc_url, has_more_content, max_length=280):
+    if not description_text:
+        return ""
+    
+    read_more_link = f' [:material-book-arrow-right-outline:]({doc_url})'
+    max_desc_length = max(max_length - len(read_more_link), 0)
+    
+    shortened = textwrap.shorten(description_text, width=max_desc_length, break_long_words=False, placeholder='...')
+    
+    if has_more_content:
+        return f"{shortened}{read_more_link}"
+    
+    if len(shortened) < len(description_text):
+        return f"{shortened}{read_more_link}"
+    
+    return description_text
