@@ -721,7 +721,7 @@ Contains the properties that describe an item.
 
 !!! warning
 
-    This section needs to be moved to the MQ2ItemDisplay article
+    This section needs to be moved to the ItemDisplay article
 
 **${DisplayItem}** now takes an index as an option parameter index can be 0-5 you can still just do ${DsiplayItem} and it will just pick whatever you inspected last.
 

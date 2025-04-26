@@ -6,7 +6,7 @@
 | [/aa](aa)                       | [/advloot](advloot)             | [/alert](alert)                 | [/alias](alias)                 | [/altkey](altkey)               | [/banklist](banklist)           |
 | [/beep](beep)                   | [/benchmark](benchmark)          | [/beepontells](beepontells)     | [/bind](bind)                   | [/buyitem](buyitem)             | [/caption](caption)             |
 | [/captioncolor](captioncolor)   | [/cast](cast)                   | [/cecho](cecho)                 | [/cleanup](cleanup)             | [/char](char)           | [/click](click)                 |
-| [/combine](combine)             | [/ctrlkey](ctrlkey)             | [/custombind](/plugins/core-plugins/mq2custombinds/custombind/)       | [/destroy](destroy)             | [/docommand](docommand)         | [/doors](doors)                 |
+| [/combine](combine)             | [/ctrlkey](ctrlkey)             | [/custombind](/plugins/core-plugins/custombinds/custombind/)       | [/destroy](destroy)             | [/docommand](docommand)         | [/doors](doors)                 |
 | [/doortarget](doortarget)       | [/dosocial](dosocial)           | [/drop](drop)                   | [/dumpbinds](dumpbinds)         | [/echo](echo)                   | [/eqtarget](eqtarget)           |
 | [/exec](exec)                   | [/face](face)                   | [/filter](filter)               | [/flashontells](flashontells)   | [/foreground](foreground)       | [/framelimiter](framelimiter)   |
 | [/help](help)                   | [/hotbutton](hotbutton)         | [/identify](identify)           | [/ini](ini)                     | [/itemnotify](itemnotify)       | [/items](items)                 |
@@ -37,11 +37,11 @@
 | [/vardata](vardata)         | [/varset](varset)           | [/while](while)             |
 
 ## From Plugins
-| [MQ2ChatWnd](/plugins/core-plugins/mq2chatwnd/)       | [MQ2HUD](/plugins/core-plugins/mq2hud/)                | [MQ2ItemDisplay](/plugins/core-plugins/mq2itemdisplay/) | [MQ2Map](/plugins/core-plugins/mq2map/)           |
+| [ChatWnd](/plugins/core-plugins/chatwnd/)       | [HUD](/plugins/core-plugins/hud/)                | [ItemDisplay](/plugins/core-plugins/itemdisplay/) | [Map](/plugins/core-plugins/map/)           |
 | :--- | :--- | :--- | :--- |
-| [/mqfont](/plugins/core-plugins/mq2chatwnd/mqfont)   | [/hud](/plugins/core-plugins/mq2hud/hud)               | [/inote](/plugins/core-plugins/mq2itemdisplay/inote)    | [/highlight](/plugins/core-plugins/mq2map/highlight) |
-|                                                       | [/defaulthud](/plugins/core-plugins/mq2hud/defaulthud) |                                                         | [/mapclick](/plugins/core-plugins/mq2map/mapclick)   |
-|                                                       | [/loadhud](/plugins/core-plugins/mq2hud/loadhud)       |                                                         | [/mapfilter](/plugins/core-plugins/mq2map/mapfilter) |
-|                                                       | [/classhud](/plugins/core-plugins/mq2hud/classhud)     |                                                         | [/maphide](/plugins/core-plugins/mq2map/maphide)     |
-|                                                       | [/zonehud](/plugins/core-plugins/mq2hud/zonehud)       |                                                         | [/mapnames](/plugins/core-plugins/mq2map/mapnames)   |
-|                                                       |                                                        |                                                         | [/mapshow](/plugins/core-plugins/mq2map/mapshow)     |
+| [/mqfont](/plugins/core-plugins/chatwnd/mqfont)   | [/hud](/plugins/core-plugins/hud/hud)               | [/inote](/plugins/core-plugins/itemdisplay/inote)    | [/highlight](/plugins/core-plugins/map/highlight) |
+|                                                       | [/defaulthud](/plugins/core-plugins/hud/defaulthud) |                                                         | [/mapclick](/plugins/core-plugins/map/mapclick)   |
+|                                                       | [/loadhud](/plugins/core-plugins/hud/loadhud)       |                                                         | [/mapfilter](/plugins/core-plugins/map/mapfilter) |
+|                                                       | [/classhud](/plugins/core-plugins/hud/classhud)     |                                                         | [/maphide](/plugins/core-plugins/map/maphide)     |
+|                                                       | [/zonehud](/plugins/core-plugins/hud/zonehud)       |                                                         | [/mapnames](/plugins/core-plugins/map/mapnames)   |
+|                                                       |                                                        |                                                         | [/mapshow](/plugins/core-plugins/map/mapshow)     |

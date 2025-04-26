@@ -206,19 +206,19 @@ Send /command to all connected clients, _including_ the client you issued the co
 
 * **/bcfont** \#
 
-Sets the font size of the UI window, similar to the [/mqfont](../../core-plugins/mq2chatwnd/mqfont.md) command
+Sets the font size of the UI window, similar to the [/mqfont](../../core-plugins/chatwnd/mqfont.md) command
 
 #### /bcmin
 
 * **/bcmin**
 
-Minimizes the UI window, similar to the [/mqmin](../../core-plugins/mq2chatwnd/mqmin.md) command
+Minimizes the UI window, similar to the [/mqmin](../../core-plugins/chatwnd/mqmin.md) command
 
 #### /bcclear
 
 * **/bcclear**
 
-Clears the buffer of the UI window, similar to the [/mqclear](../../core-plugins/mq2chatwnd/mqclear.md) command
+Clears the buffer of the UI window, similar to the [/mqclear](../../core-plugins/chatwnd/mqclear.md) command
 
 ### Configuration File
 
