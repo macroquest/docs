@@ -108,9 +108,6 @@ def parse_command_file(command_file, page):
     content = file_result["content"]
     base_dir = file_result["base_dir"]
 
-    # This keeps track of how far down the file we've parsed for the has_more_content check
-    end_pos = 0
-
     # Syntax is in codeblocks
     syntax_match = re.search(SYNTAX_CODEBLOCK_PATTERN, content, re.DOTALL)
     if syntax_match:
@@ -119,18 +116,16 @@ def parse_command_file(command_file, page):
             "lexer": syntax_match.group(1) or "",
             "syntax_content": syntax_match.group(2).strip()
         })
-        end_pos = max(end_pos, syntax_match.end())
     else:
         # Syntax if no codeblocks, we use extract_section for help.
-        syntax_content_nocode, syntax_end = extract_section(SYNTAX_NOCODE_PATTERN, content)
+        syntax_content_nocode = extract_section(SYNTAX_NOCODE_PATTERN, content)
         if syntax_content_nocode:
             data["syntax_content"] = syntax_content_nocode
-            end_pos = max(end_pos, syntax_end)
         else:
              data["syntax_content"] = "⚠️ Syntax missing"
 
-    description_text, desc_end = extract_section(
-        DESCRIPTION_PATTERN, 
+    description_text = extract_section(
+        DESCRIPTION_PATTERN,
         content,
         clean_whitespace=True,
         convert_links=True,
@@ -140,10 +135,9 @@ def parse_command_file(command_file, page):
 
     if description_text:
         data["full_description"] = description_text
-        end_pos = max(end_pos, desc_end)
     # else: # No need for else, default is ""
 
-    data["has_more_content"] = bool(re.search(r'\S', content[end_pos:].strip()))
+    data["has_more_content"] = check_for_extra_sections(content)
 
     return data
 
@@ -169,37 +163,43 @@ def read_file(file_path, page):
             "error": str(e)
         }
 
-# create a url that's relative to the embedding page
+# create an mkdocs-style url that's relative to the embedding page
 def relative_link(target_file_path, embedding_page_src_uri, base_dir=None):
-    # i could only get this working with pureposixpath
-    target_path = PurePosixPath(base_dir) / target_file_path if base_dir else PurePosixPath(target_file_path)
-    embedding_dir = PurePosixPath(embedding_page_src_uri).parent
+    # Absolute path of the target markdown file
+    target_path = (PurePosixPath(base_dir) / target_file_path if base_dir else PurePosixPath(target_file_path))
 
-    relative_path = target_path.relative_to(embedding_dir, walk_up=True)
+    embedding_file = PurePosixPath(embedding_page_src_uri)
+    if embedding_file.stem.lower() in ("readme", "index"):
+        # main/guide/README.md   ->  main/guide/
+        output_dir = embedding_file.parent
+    else:
+        # main/foo.md       ->  main/foo/
+        output_dir = embedding_file.parent / embedding_file.stem
 
-    # special case for index and readme files
-    if relative_path.name.lower() in ('index.md', 'readme.md'):
+    # Relative path from the embedding page to the target file
+    relative_path = target_path.relative_to(output_dir, walk_up=True)
+
+    # strip .md, add trailing slash
+    if relative_path.name.lower() in ("index.md", "readme.md"):
         parent_dir = relative_path.parent
-        return './' if str(parent_dir) == '.' else f"{parent_dir}/"
-
-    # otherwise, remove the .md extension and add a trailing slash
+        return "./" if str(parent_dir) == "." else f"{parent_dir}/"
     return f"{relative_path.with_suffix('')}/"
 
 def extract_section(pattern, content, clean_whitespace=False, convert_links=False, base_dir=None, page=None):
     match = re.search(pattern, content, re.DOTALL)
 
     if not match:
-        return None, None
-        
+        return None
+
     extracted = match.group(1).strip()
-    
+
     if clean_whitespace:
         extracted = re.sub(r'\s*\n\s*', ' ', extracted)
-        
+
     if convert_links and base_dir and page:
         extracted = rewrite_markdown_links(extracted, base_dir, page)
-    
-    return extracted, match.end()
+
+    return extracted
 
 def parse_type_file(doc_file, page):
     NAME_PATTERN = r'# `(.+?)`'
@@ -211,7 +211,7 @@ def parse_type_file(doc_file, page):
 
     # Initialize for clarity
     data = {
-        "doc_url": file_result["doc_url"], 
+        "doc_url": file_result["doc_url"],
         "name": "Unknown Type",
         "full_description": "",
         "section_name": "",
@@ -228,18 +228,13 @@ def parse_type_file(doc_file, page):
 
     content = file_result["content"]
     base_dir = file_result["base_dir"]
-    
-    # This keeps track of how far down the file we've parsed for the has_more_content check
-    end_pos = 0
 
     # Name extraction
     name_match = re.search(NAME_PATTERN, content)
     if name_match:
         data["name"] = name_match.group(1) # Update data dict
-        # Update end_pos to the end of the name section if it's further
-        end_pos = max(end_pos, name_match.end())
 
-    description_text, desc_end = extract_section(
+    description_text = extract_section(
         DESCRIPTION_PATTERN,
         content,
         clean_whitespace=True,
@@ -250,7 +245,6 @@ def parse_type_file(doc_file, page):
 
     if description_text:
         data["full_description"] = description_text
-        end_pos = max(end_pos, desc_end)
 
     # Members section extraction
     section_match = re.search(
@@ -261,19 +255,18 @@ def parse_type_file(doc_file, page):
     if section_match:
         data["section_name"] = section_match.group(1) # Forms or Members
         raw_content = section_match.group(2).strip()
-        data["members"] = parse_render_members(raw_content, base_dir, page) 
-        end_pos = max(end_pos, section_match.end())
+        data["members"] = parse_render_members(raw_content, base_dir, page)
 
     # Link reference extraction
     link_ref_matches = re.findall(LINK_REF_PATTERN, content, re.MULTILINE)
-    processed_link_refs = [] 
+    processed_link_refs = []
     for ref_name, ref_url in link_ref_matches:
         if ref_url.endswith('.md'):
             relative_ref_url = relative_link(ref_url, page.file.src_uri, base_dir=base_dir)
             processed_link_refs.append((ref_name, relative_ref_url))
     data["link_refs"] = processed_link_refs
 
-    data["has_more_content"] = bool(re.search(r'\S', content[end_pos:].strip()))
+    data["has_more_content"] = check_for_extra_sections(content)
 
     return data
 
@@ -301,7 +294,7 @@ def parse_render_members(raw_content, base_dir, page):
         })
     return members
 
-def rewrite_markdown_links(content, base_dir, page): 
+def rewrite_markdown_links(content, base_dir, page):
     MARKDOWN_LINK_PATTERN = r'\[([^\]]+)\]\(([^\)]+\.md)\)'
 
     def replace_link(match):
@@ -314,6 +307,19 @@ def rewrite_markdown_links(content, base_dir, page):
         replace_link,
         content
     )
+
+def check_for_extra_sections(content):
+    SECTION_HEADER_PATTERN = r'^##\s+(.+?)\s*$'
+    allowed_sections = {"Forms", "Members", "Syntax", "Description"}
+    allowed_prefix = "Associated"
+
+    headers = re.findall(SECTION_HEADER_PATTERN, content, re.MULTILINE)
+
+    for header in headers:
+        header_stripped = header.strip()
+        if header_stripped not in allowed_sections and not header_stripped.startswith(allowed_prefix):
+            return True
+    return False
 
 # a nice little markdown table
 def render_members_table(members, link_refs):
