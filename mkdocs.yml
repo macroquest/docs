@@ -650,6 +650,7 @@ theme:
 # Plugins
 plugins:
   - search
+  - include-markdown
   - macros
   - same-dir
   - redirects:
