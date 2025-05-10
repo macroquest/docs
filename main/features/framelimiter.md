@@ -11,12 +11,66 @@ Frame lmiter settings can be modified in the MacroQuest Settings window.
 
 ## Commands
 
-{{ embedCommand('reference/commands/framelimiter.md') }}
+<a href="../../../reference/commands/framelimiter/">
+{% 
+  include-markdown "reference/commands/framelimiter.md" 
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "reference/commands/framelimiter.md" 
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('reference/commands/framelimiter.md') }}
+{% 
+  include-markdown "reference/commands/framelimiter.md" 
+  start="<!--cmd-options-start-->" 
+  end="<!--cmd-options-end-->" 
+%}
 
 ## Top-Level Objects
 
-{{ embedMQType('reference/top-level-objects/tlo-framelimiter.md') }}
+## [FrameLimiter](../../reference/top-level-objects/tlo-framelimiter.md)
+{%
+  include-markdown "reference/top-level-objects/tlo-framelimiter.md"
+  start="<!--tlo-desc-start-->"
+  end="<!--tlo-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/top-level-objects/tlo-framelimiter.md') }}
+
+<h2>Forms</h2>
+{%
+  include-markdown "reference/top-level-objects/tlo-framelimiter.md"
+  start="<!--tlo-forms-start-->"
+  end="<!--tlo-forms-end-->"
+  heading-offset=0
+%}
+{% 
+  include-markdown "reference/top-level-objects/tlo-framelimiter.md" 
+  start="<!--tlo-linkrefs-start-->"
+  end="<!--tlo-linkrefs-end-->"
+%}
 
 ## Associated DataTypes
 
-{{ embedMQType('reference/data-types/datatype-framelimiter.md') }}
+## [framelimiter](../../reference/data-types/datatype-framelimiter.md)
+{%
+  include-markdown "reference/data-types/datatype-framelimiter.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-framelimiter.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-framelimiter.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-framelimiter.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%} 
