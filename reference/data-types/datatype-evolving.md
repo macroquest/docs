@@ -4,10 +4,11 @@ tags:
 ---
 # `evolving`
 
+<!--dt-desc-start-->
 A DataType that deals with evolving items.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='ExpOn') }}
 
 :   Is evolving item experience turned on for this item?
@@ -27,7 +28,7 @@ A DataType that deals with evolving items.
 ### [string][string] `To String`
 
 :   Same as **ExpOn**
-
+<!--dt-members-end-->
 
 ## Usage
 
@@ -44,8 +45,9 @@ A DataType that deals with evolving items.
         ```lua
         print(mq.TLO.FindItem("Blade of the Eclipse").Evolving.ExpPct())
         ```
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [float]: datatype-float.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

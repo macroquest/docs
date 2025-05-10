@@ -4,10 +4,11 @@ tags:
 ---
 # `social`
 
+<!--dt-desc-start-->
 Data related to an Everquest social macro.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='string', name='Cmd', params='opt: lineNo') }}
 
 :   Command lines of social. Provide `lineNo` (line number) to retrieve individual lines. If
@@ -21,7 +22,7 @@ Data related to an Everquest social macro.
 ### {{ renderMember(type='string', name='Name') }} 
 
 :   Name of the social.
-
+<!--dt-members-end-->
 
 ## Example
 
@@ -41,6 +42,7 @@ Data related to an Everquest social macro.
         print(mq.TLO.Social(3).Name())
         ```
 
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

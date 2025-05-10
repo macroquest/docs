@@ -4,10 +4,11 @@ tags:
 ---
 # `pet`
 
+<!--dt-desc-start-->
 Pet object
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 This type inherits members from [_spawn_](datatype-spawn.md).
 
 ### {{ renderMember(type='int', name='Buff', params='buffname') }}
@@ -69,9 +70,11 @@ This type inherits members from [_spawn_](datatype-spawn.md).
 ### {{ renderMember(type='bool', name='Taunt') }}
 
 :   Taunt state
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [buff]: datatype-buff.md
 [int]: datatype-int.md
 [spawn]: datatype-spawn.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

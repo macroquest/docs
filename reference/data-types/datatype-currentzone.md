@@ -4,8 +4,9 @@ tags:
 ---
 # `currentzone`
 
+<!--dt-desc-start-->
 Extends the [_zone_](datatype-zone.md) type with additional information about the current zone.
-
+<!--dt-desc-end-->
 ## Inheritance
 
 This type inherits members from [_zone_](datatype-zone.md).
@@ -22,7 +23,7 @@ classDiagram
 ```
 
 ## Members
-
+<!--dt-members-start-->
 This type inherits members from [_zone_](datatype-zone.md).
 
 ### {{ renderMember(type='bool', name='Dungeon') }}
@@ -81,7 +82,7 @@ This type inherits members from [_zone_](datatype-zone.md).
 ### [string][string] `To String`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
 
 ## Usage
 
@@ -100,8 +101,9 @@ This type inherits members from [_zone_](datatype-zone.md).
         -- echo if the current zone is indoors:
         print(mq.TLO.Zone.Indoor())
         ```
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [float]: datatype-float.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

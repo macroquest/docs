@@ -4,10 +4,11 @@ tags:
 ---
 # `timer`
 
+<!--dt-desc-start-->
 A timer data type is set in tenths of one second and counts down to zero; starting immediately after being set.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='OriginalValue') }}
 
 :   Original value of the timer
@@ -19,6 +20,7 @@ A timer data type is set in tenths of one second and counts down to zero; starti
 ### [string][string] `To String`
 
 :   Same as **Value**
+<!--dt-members-end-->
 
 ## Methods
 
@@ -68,7 +70,7 @@ sub main
 ```
 
 This would loop while myTimer is above 0
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [achievementobj]: datatype-achievementobj.md
@@ -113,3 +115,4 @@ This would loop while myTimer is above 0
 [deity]: datatype-deity.md
 [race]: datatype-race.md
 [taskmember]: datatype-task.md
+<!--dt-linkrefs-end-->

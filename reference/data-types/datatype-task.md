@@ -4,10 +4,11 @@ tags:
 ---
 # `task`
 
+<!--dt-desc-start-->
 This is the type for your current task.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='ID') }}
 
 :   Returns an int of the task ID
@@ -72,7 +73,7 @@ This is the type for your current task.
 ### {{ renderMember(type='int', name='WindowIndex') }}
 
 :   Returns the Quest Window List Index. (if the window actually has the list filled)
-
+<!--dt-members-end-->
 
 ## Methods
 
@@ -170,9 +171,10 @@ The Task TLO also has a `Select` Method:
     ```
     /echo I should be working on ${Task[hatch].Step} in ${Task[hatch].Step.Zone}
     ```
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [taskmember]: datatype-task.md
 [taskobjective]: datatype-taskobjective.md
 [timestamp]: datatype-timestamp.md
+<!--dt-linkrefs-end-->

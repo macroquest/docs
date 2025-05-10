@@ -3,11 +3,11 @@ tags:
     - datatype
 ---
 # `time` Type
-
+<!--dt-desc-start-->
 Represents a unit of clock time.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='string', name='Date') }}
 
 :   Date in the format MM/DD/YYYY
@@ -75,9 +75,10 @@ Represents a unit of clock time.
 ### [string][string] `(To String)`
 
 :   Same as **Time24**
-
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [int]: datatype-int.md
 [int64]: datatype-int64.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

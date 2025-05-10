@@ -4,10 +4,11 @@ tags:
 ---
 # `everquest`
 
+<!--dt-desc-start-->
 Data types related to the current EverQuest session.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='CharSelectList') }}
 
 :   Currently returns the zone ID the character is currently in
@@ -147,7 +148,7 @@ Data types related to the current EverQuest session.
 ### {{ renderMember(type='string', name='WinTitle') }}
 
 :   Titlebar text of the Everquest window.
-
+<!--dt-members-end-->
 
 ## Usage
 
@@ -177,7 +178,7 @@ Data types related to the current EverQuest session.
         -- Will print true or false if the location is valid
         print(mq.TLO.EverQuest.ValidLoc("123 456 789")())
         ```
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [float]: datatype-float.md
 [int]: datatype-int.md
@@ -185,3 +186,4 @@ Data types related to the current EverQuest session.
 [string]: datatype-string.md
 [window]: datatype-window.md
 [worldlocation]: datatype-worldlocation.md
+<!--dt-linkrefs-end-->

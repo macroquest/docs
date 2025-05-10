@@ -4,10 +4,11 @@ tags:
 ---
 # `argb`
 
+<!--dt-desc-start-->
 Represents a color
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='A') }}
 
 :   Alpha channel value.
@@ -31,6 +32,9 @@ Represents a color
 ### [string][string] To String
 
 :   The hex value of the integer formed by the ARGB.
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->
+

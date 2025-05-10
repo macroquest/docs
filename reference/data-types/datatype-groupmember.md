@@ -4,10 +4,11 @@ tags:
 ---
 # `groupmember`
 
+<!--dt-desc-start-->
 Contains data on a specific group member
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 This type inherits members from [_spawn_ ](datatype-spawn.md)if the member is in the current zone.
 
 ### {{ renderMember(type='int', name='Index') }}
@@ -73,7 +74,7 @@ This type inherits members from [_spawn_ ](datatype-spawn.md)if the member is in
 ### [string][string] `To String`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
 
 ## Examples
 
@@ -88,8 +89,9 @@ Echo TRUE if you are Group Leader.
 ```
 
 Echo TRUE if Group Member 3 is marked as Role Puller
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [int]: datatype-int.md
 [spawn]: datatype-spawn.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

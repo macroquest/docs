@@ -4,10 +4,11 @@ tags:
 ---
 # `taskobjective`
 
+<!--dt-desc-start-->
 This is the type for your current task objective.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='CurrentCount') }}
 
 :   Returns the current count of the .Type needed to complete a objective
@@ -72,7 +73,9 @@ This is the type for your current task objective.
 ### {{ renderMember(type='string', name='Zone') }}
 
 :   Returns the zone the objective is to be performed in
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [bool]: datatype-bool.md
+<!--dt-linkrefs-end-->

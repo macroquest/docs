@@ -4,10 +4,11 @@ tags:
 ---
 # `invslotwindow`
 
+<!--dt-desc-start-->
 Contains information related to the specified inventory slot
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='string', name='Background') }}
 
 :   Background image for the slot
@@ -63,8 +64,10 @@ Contains information related to the specified inventory slot
 ### {{ renderMember(type='string', name='Text') }}
 
 :   ???
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [int]: datatype-int.md
 [item]: datatype-item.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

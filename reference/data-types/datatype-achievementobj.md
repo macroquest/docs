@@ -4,10 +4,11 @@ tags:
 ---
 # `achievementobj`
 
+<!--dt-desc-start-->
 Represents a single objective of an achievement
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='Completed') }}
 
 :   True if the objective has been completed.
@@ -31,7 +32,7 @@ Represents a single objective of an achievement
 ### {{ renderMember(type='int', name='RequiredCount') }}
 
 :   The total count required to be complete the objective. For objectives that don't require a count, this will be zero.
-
+<!--dt-members-end-->
 
 ## Example
 
@@ -72,7 +73,8 @@ List the objectives that are still left to complete the achievement "**Norrathia
         end
     end
     ```
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [bool]: datatype-bool.md
+<!--dt-linkrefs-end-->

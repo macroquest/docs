@@ -3,15 +3,15 @@ tags:
     - datatype
 ---
 # `double` Type
-
+<!--dt-desc-start-->
 Represents a double precision (64-bit) floating point number.
 
 * A floating-point number is one which has a decimal component (_e.g. 1.01_)
 * Members of this DataType generally manipulate the number's precision (_i.e. how many decimal places_)
 * They all round correctly with the exception of _int_
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='string', name='Deci') }}
 
 :   The number as a string with **one** place of precision, _i.e. ###.#_
@@ -39,6 +39,8 @@ Represents a double precision (64-bit) floating point number.
 ### [string][string] `To String`
 
 :   Same as **Centi**
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

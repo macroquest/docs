@@ -4,10 +4,11 @@ tags:
 ---
 # `spawn`
 
+<!--dt-desc-start-->
 Represents an in-game spawn.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='AARank') }}
 
 :   AA rank number
@@ -659,7 +660,7 @@ Represents an in-game spawn.
 ### [string][string] `To String`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
 
 ## Methods
 
@@ -677,7 +678,7 @@ Represents an in-game spawn.
 | --- | --- |
 | `${Pet.Equipment[primary].ID}` | ID number of the pet's primary weapon |
 | `${Group.Member[mymagesname].Pet.Equipment[primary].ID}` | ID number of the group member's pet's primary weapon |
-
+<!--dt-linkrefs-start-->
 [body]: datatype-body.md
 [bool]: datatype-bool.md
 [buff]: datatype-buff.md
@@ -693,3 +694,4 @@ Represents an in-game spawn.
 [spell]: datatype-spell.md
 [string]: datatype-string.md
 [timestamp]: datatype-timestamp.md
+<!--dt-linkrefs-end-->

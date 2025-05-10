@@ -4,10 +4,11 @@ tags:
 ---
 # `string`
 
+<!--dt-desc-start-->
 A string is an array of characters. In MacroQuest there is no single character datatype, so any variable or expression that contains text is considered a string.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='string', name='Arg', params='#,s') }}
 
 :   Returns the #th argument of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1].
@@ -83,7 +84,7 @@ A string is an array of characters. In MacroQuest there is no single character d
 ### [string][string] `(To String)`
 
 :   Returns the string
-
+<!--dt-members-end-->
 
 ## Usage
 
@@ -134,7 +135,7 @@ Sub Event_SpellWornOff(string Line, string SpellName, string OnWho)
    /if (${SpellName.Equal[Enveloping Roots]}) /echo Yikes, Root wore off ... run!
 /return
 ```
-
+<!--dt-linkrefs-start-->
 [1]: #difference-between-arg-and-token
 [achievement]: datatype-achievement.md
 [achievementcat]: datatype-achievementcat.md
@@ -179,3 +180,4 @@ Sub Event_SpellWornOff(string Line, string SpellName, string OnWho)
 [worldlocation]: datatype-worldlocation.md
 [xtarget]: datatype-xtarget.md
 [zone]: datatype-zone.md
+<!--dt-linkrefs-end-->

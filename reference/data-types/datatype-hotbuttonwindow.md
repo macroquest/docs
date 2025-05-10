@@ -4,10 +4,11 @@ tags:
 ---
 # `hotbuttonwindow`
 
+<!--dt-desc-start-->
 Data related to hotbuttons
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='altability', name='AltAbility') }}
 
 :   If this hotbutton activates an alternate ability, this will return the alternate
@@ -102,7 +103,7 @@ Data related to hotbuttons
 ### {{ renderMember(type='string', name='TypeName') }}
 
 :   Returns the type name of hotbutton. See [HotButton Types](#hotbutton-types).
-
+<!--dt-members-end-->
 
 ## Methods
 
@@ -176,9 +177,10 @@ To access a hot button, go through the Window TLO:
 
 The Window Inspector can be used to identify hotbars and hotbuttons.
 
-
+<!--dt-linkrefs-start-->
 [altability]: datatype-altability.md
 [item]: datatype-item.md
 [int]: datatype-int.md
 [social]: datatype-social.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

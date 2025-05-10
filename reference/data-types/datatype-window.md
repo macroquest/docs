@@ -4,13 +4,13 @@ tags:
 ---
 # `window`
 
+<!--dt-desc-start-->
 This contains data related to the specified in-game window
 
 Windows come in many forms, but all are represented with the generic **window** type. In some of the descriptions, a **bold** window type may be specified, which defines the behavior for that type of window.
-
+<!--dt-desc-end-->
 ## Members
-
-
+<!--dt-members-start-->
 ### {{ renderMember(type='argb', name='BGColor') }}
 
 :   Background color of the window.
@@ -306,7 +306,7 @@ Windows come in many forms, but all are represented with the generic **window** 
 ### [string][string] To String
 
 :   `TRUE` if the window is open, `FALSE` if not, matching [Open](#bool-open)
-
+<!--dt-members-end-->
 
 ## Methods
 
@@ -482,7 +482,7 @@ Return TRUE if I have clicked the Trade button in the Trade Window (TradeWnd)
 
 Returns the name of the 2nd option in the list of rewards for the tab titled "Brew for the Day"
 
-
+<!--dt-linkrefs-start-->
 [argb]: datatype-argb.md
 [bool]: datatype-bool.md
 [float]: datatype-float.md
@@ -492,3 +492,4 @@ Returns the name of the 2nd option in the list of rewards for the tab titled "Br
 [invslotwindow]: datatype-invslotwindow.md
 [string]: datatype-string.md
 [window]: datatype-window.md
+<!--dt-linkrefs-end-->

@@ -4,10 +4,11 @@ tags:
 ---
 # `group`
 
+<!--dt-desc-start-->
 Contains details about your group
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='AnyoneMissing') }}
 
 :   True if somebody in the group is offline, in some other zone, or just simply dead.
@@ -113,9 +114,11 @@ Contains details about your group
 ### [string][string] `To String`
 
 :   The number of members in the group, as a string.
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [groupmember]: datatype-groupmember.md
 [int]: datatype-int.md
 [spawn]: datatype-spawn.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

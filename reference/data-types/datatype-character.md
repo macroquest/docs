@@ -4,8 +4,9 @@ tags:
 ---
 # `character`
 
+<!--dt-desc-start-->
 This data type contains all the information about _your_ character.
-
+<!--dt-desc-end-->
 ## Inheritance
 
 This type inherits members from [_spawn_](datatype-spawn.md).
@@ -21,7 +22,7 @@ classDiagram
 ```
 
 ## Members
-
+<!--dt-members-start-->
 The [source](https://github.com/macroquest/macroquest/blob/master/src/main/datatypes/MQ2CharacterType.cpp) always has the latest data members.
 If something is missing here, you can check the source to see if it exists.
 
@@ -1425,7 +1426,7 @@ If something is missing here, you can check the source to see if it exists.
 ### [string][string] `To String`
 
 :   The character's name
-
+<!--dt-members-end-->
 
 ## Methods
 
@@ -1448,7 +1449,7 @@ If something is missing here, you can check the source to see if it exists.
 ```
 
 The delay will last either 5s OR until the assist is complete
-
+<!--dt-linkrefs-start-->
 [altability]: datatype-altability.md
 [auratype]: datatype-auratype.md
 [bandolier]: datatype-bandolier.md
@@ -1470,3 +1471,4 @@ The delay will last either 5s OR until the assist is complete
 [worldlocation]: datatype-worldlocation.md
 [xtarget]: datatype-xtarget.md
 [zone]: datatype-zone.md
+<!--dt-linkrefs-end-->

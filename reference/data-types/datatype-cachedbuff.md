@@ -11,11 +11,11 @@ tags:
     buffs is now discouraged.
 
     You should only used this type if you need access to its "unique" style of buff lookup.
-
+<!--dt-desc-start-->
 Information about cached buffs on a player. Data must be populated on a player by first targeting them.
 
 See also: [Cached Buffs](../../main/features/cached-buffs.md).
-
+<!--dt-desc-end-->
 ## Inheritance
 
 This type inherits members from [spell][spell].
@@ -31,7 +31,7 @@ classDiagram
 ```
 
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='string', name='Caster') }}
 
 :   Same as _CasterName_, added for consistency.
@@ -67,7 +67,7 @@ classDiagram
 ### {{ renderMember(type='timestamp', name='Staleness') }}
 
 :   How long it has been since this information was refreshed.
-
+<!--dt-members-end-->
 
 ## Usage
 
@@ -87,8 +87,9 @@ classDiagram
         ```lua
         print(mq.TLO.Group.Member(2).CachedBuff("Spirit of Wolf").Duration())
         ```
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [spell]: datatype-spell.md
 [timestamp]: datatype-timestamp.md
+<!--dt-linkrefs-end-->

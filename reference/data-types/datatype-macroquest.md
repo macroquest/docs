@@ -4,10 +4,11 @@ tags:
 ---
 # `macroquest`
 
+<!--dt-desc-start-->
 Data types related to the current MacroQuest2 session.  These also inherit from the [EverQuest Type](datatype-everquest.md).
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='Anonymize') }}
 
 :   Anonymize character data
@@ -84,7 +85,7 @@ Data types related to the current MacroQuest2 session.  These also inherit from 
 ### [string][string] `To String`
 
 :   None
-
+<!--dt-members-end-->
 
 ## Example
 
@@ -93,7 +94,8 @@ Get the path to the config directory.
 ```
 /echo ${MacroQuest.Path[config]}
 ```
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

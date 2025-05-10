@@ -4,10 +4,11 @@ tags:
 ---
 # `inifilesection`
 
+<!--dt-desc-start-->
 This is the type for the referenced section of an ini file.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='Count') }}
 
 :   How many sections matching the Section[] index exist.
@@ -21,7 +22,7 @@ This is the type for the referenced section of an ini file.
 :   A reference to the named or unnamed key in this specific ini file section.
 
     The index is optional. Passing an index means it will reference all keys that match that index. Not passing an index references all keys for operations that allow it.
-
+<!--dt-members-end-->
 
 ## Examples
 
@@ -87,7 +88,8 @@ Key=foobar
         -- prints false
         print(mq.TLO.Ini.File("Sample").Section("Section3").Exists())
         ```
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [inifilesectionkey]: datatype-inifilesectionkey.md
 [int]: datatype-int.md
+<!--dt-linkrefs-end-->

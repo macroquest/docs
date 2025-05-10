@@ -4,10 +4,11 @@ tags:
 ---
 # `keyring`
 
+<!--dt-desc-start-->
 This datatype represents information about a keyring (a.k.a. a collection of mounts, illusions, etc)
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='Count') }}
 
 :   The number of items in this keyring
@@ -15,7 +16,7 @@ This datatype represents information about a keyring (a.k.a. a collection of mou
 ### {{ renderMember(type='keyringitem', name='Stat') }}
 
 :   The keyring item assigned as the stat item
-
+<!--dt-members-end-->
 
 ## Examples
 
@@ -36,6 +37,7 @@ This datatype represents information about a keyring (a.k.a. a collection of mou
     ```
 
     Outputs: 3
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [keyringitem]: datatype-keyringitem.md
+<!--dt-linkrefs-end-->

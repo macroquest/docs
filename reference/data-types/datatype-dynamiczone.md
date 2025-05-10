@@ -4,12 +4,13 @@ tags:
 ---
 # `dynamiczone`
 
+<!--dt-desc-start-->
 Data for the current dynamic zone instance
 
 See Also: [TLO:DynamicZone](../top-level-objects/tlo-dynamiczone.md)
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='InRaid') }}
 
 :   ??
@@ -53,7 +54,7 @@ See Also: [TLO:DynamicZone](../top-level-objects/tlo-dynamiczone.md)
 ### [string][string] `To String`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
 
 ## Usage
 
@@ -80,9 +81,10 @@ See Also: [TLO:DynamicZone](../top-level-objects/tlo-dynamiczone.md)
 
 * January 19th, 2022: Added MinMembers
 * July 9th, 2021: Added MaxTimers, Timer
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [dzmember]: datatype-dzmember.md
 [dztimer]: datatype-dztimer.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

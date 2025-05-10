@@ -4,10 +4,11 @@ tags:
 ---
 # `range`
 
+<!--dt-desc-start-->
 This DataType performs a simple test on _n_ using the following members.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='Between', params='#1,#2:N') }}
 
 :   True if _N_ is between the range of _#1_ and _#2_, inclusive.
@@ -48,5 +49,7 @@ This DataType performs a simple test on _n_ using the following members.
         ${Range.Inside[33,66:33]}
         ```
 
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
+<!--dt-linkrefs-end-->

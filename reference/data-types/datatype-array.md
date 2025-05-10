@@ -4,15 +4,15 @@ tags:
 ---
 # `array`
 
+<!--dt-desc-start-->
 Data related to arrays.
 
 !!! Note
 
     Array indexing starts at 1.
-
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='Dimensions') }}
 
 :   Number of dimensions in the array
@@ -24,7 +24,7 @@ Data related to arrays.
 ### {{ renderMember(type='int', name='Size', params='N') }}
 
 :   Total number of elements stored in the _N_ th dimension of the array
-
+<!--dt-members-end-->
 
 ## Usage
 
@@ -78,5 +78,6 @@ There is no limit to the number of dimensions or the number of elements in each 
         /next myCounter
     /return
     ```
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
+<!--dt-linkrefs-end-->

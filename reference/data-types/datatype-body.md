@@ -4,10 +4,11 @@ tags:
 ---
 # `body`
 
+<!--dt-desc-start-->
 Contains data about spawn body types
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='ID') }}
 
 :   The ID of the body type
@@ -19,7 +20,7 @@ Contains data about spawn body types
 ### [string][string] `To String`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
 
 ## Usage
 
@@ -38,6 +39,7 @@ Contains data about spawn body types
         ```lua
         print(mq.TLO.Target.Boddy.Name === 'Undead Pet')
         ```
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

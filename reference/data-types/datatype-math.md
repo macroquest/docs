@@ -4,10 +4,11 @@ tags:
 ---
 # `math`
 
+<!--dt-desc-start-->
 This DataType performs various mathematical calculations. In the following members, _n_ is any formula that consists of valid [Operators](../../macros/operators.md).
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='float', name='Abs', params='n') }}
 
 :   The absolute value of the result of _n_
@@ -67,8 +68,9 @@ This DataType performs various mathematical calculations. In the following membe
 ### {{ renderMember(type='float', name='Tan', params='n') }}
 
 :   Tangent of _n_ (in degrees)
-
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [float]: datatype-float.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

@@ -4,10 +4,11 @@ tags:
 ---
 # `raid`
 
+<!--dt-desc-start-->
 Contains data on the current raid
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='float', name='AverageLevel') }}
 
 :   Average level of raid members (more accurate than in the window)
@@ -73,10 +74,11 @@ Contains data on the current raid
 ### {{ renderMember(type='int', name='TotalLevels') }}
 
 :   Sum of all raid member's levels
-
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [float]: datatype-float.md
 [int]: datatype-int.md
 [raidmember]: datatype-raidmember.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

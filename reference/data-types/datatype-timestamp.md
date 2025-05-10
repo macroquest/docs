@@ -4,10 +4,11 @@ tags:
 ---
 # `timestamp`
 
+<!--dt-desc-start-->
 A timestamp represented in milliseconds.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='Days') }}
 
 :   Number of days remaining in the timestamp (3d 2h 23m will return 3)
@@ -60,12 +61,14 @@ A timestamp represented in milliseconds.
 
 :   Same as **Raw**
 
+<!--dt-members-end-->
 
 ### Changelog
 
 * July 9th, 2021: Added Days, TimeDHM
-
+<!--dt-linkrefs-start-->
 [float]: datatype-float.md
 [int]: datatype-int.md
 [int64]: datatype-int64.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->
