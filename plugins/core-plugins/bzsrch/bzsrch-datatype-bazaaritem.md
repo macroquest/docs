@@ -4,10 +4,12 @@ tags:
 ---
 # `bazaaritem`
 
+<!--dt-desc-start-->
 Represents an individual item in bazaar search results, providing access to item details and trader information.
+<!--dt-desc-end-->
 
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='string', name='Name') }}
 :   The name of the item.
 
@@ -25,6 +27,7 @@ Represents an individual item in bazaar search results, providing access to item
 
 ### {{ renderMember(type='int', name='ItemID') }}
 :   EQ item ID number
+<!--dt-members-end-->  
 
 ## Methods
 
@@ -56,6 +59,7 @@ Represents an individual item in bazaar search results, providing access to item
         mq.TLO.Bazaar.Item(1).Select()
         print(mq.TLO.Bazaar.Item(3).FullName())
         ```
-
+<!--dt-linkrefs-start-->  
 [int]: ../../../reference/data-types/datatype-int.md
 [string]: ../../../reference/data-types/datatype-string.md
+<!--dt-linkrefs-end-->  

@@ -5,12 +5,24 @@ tags:
 # XTarInfo
 
 ## Description
-
+<!--desc-start-->
 XTarInfo adds distance and other information to the Extended Target Window
-
+<!--desc-end-->
 ## Commands
 
-{{ embedCommand('plugins/core-plugins/xtarinfo/xtarinfo.md') }}
+<a href="xtarinfo/">
+{% 
+  include-markdown "plugins/core-plugins/xtarinfo/xtarinfo.md"  
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/xtarinfo/xtarinfo.md"
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/xtarinfo/xtarinfo.md') }}
+
 
 ## Settings
 

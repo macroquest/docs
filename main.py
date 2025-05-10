@@ -19,9 +19,9 @@ def define_env(env):
 
         return f"{type_str} `{name}{params_str}` {{ #{toc_label} data-toc-label='{toc_label}' }}"
 
+    # output a read more link if the file has sections beyond Members/Forms/Description
     @env.macro
     def readMore(doc_file):
-        """Outputs 'Read more' link if file has sections beyond Members/Forms/Description"""
         page = env.variables.page
         file_result = read_file(doc_file, page)
         
@@ -81,8 +81,8 @@ def relative_link(target_file_path, embedding_page_src_uri, base_dir=None):
         return "./" if str(parent_dir) == "." else f"{parent_dir}/"
     return f"{relative_path.with_suffix('')}/"
 
+# extra sections beyond Members/Forms/Description
 def has_extra_sections(content):
-    """Check if content has sections beyond Members, Forms, or Description"""
     SECTION_PATTERN = r'^##\s+(.+?)\s*$'
     target_sections = {"Members", "Forms", "Description"}
     

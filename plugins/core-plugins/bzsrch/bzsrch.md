@@ -5,14 +5,16 @@ tags:
 # /bzsrch
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /bzsrch [params] [name]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Searches the bazaar for items matching the specified criteria. Parameters mirror the bazaar window.
+<!--cmd-desc-end-->
 
 ## Parameters
 

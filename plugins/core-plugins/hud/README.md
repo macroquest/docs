@@ -3,9 +3,9 @@ tags:
    - plugin
 ---
 # HUD
-
+<!--desc-start-->
 This plugin provides a Heads Up Display for your EQ window, which can provide a large amount of information in a relatively small amount of space. The HUD acts as a transparent background layer, upon which any information can be displayed. Each element of the HUD gets parsed each time MQ2Data is displayed, so there is no need to reload the HUD after making changes to the .ini file, they are instantly available as soon as you save.
-
+<!--desc-end-->
 The HUD is customized by entries in the MQ2HUD.ini file. The .ini file allows any number of HUDs to be created and saved within. Loading a new HUD from the .ini file can be done with `/loadhud`. The entry names are not case-sensitive.
 
 The default HUD entry is called [Elements] and can be loaded with the `/defaulthud` command.
@@ -14,11 +14,70 @@ You can toggle the display of the HUD by using F11.
 
 ## Commands
 
-{{ embedCommand('plugins/core-plugins/hud/loadhud.md') }}
-{{ embedCommand('plugins/core-plugins/hud/defaulthud.md') }}
-{{ embedCommand('plugins/core-plugins/hud/classhud.md') }}
-{{ embedCommand('plugins/core-plugins/hud/zonehud.md') }}
-{{ embedCommand('plugins/core-plugins/hud/unloadhud.md') }}
+<a href="loadhud/">
+{% 
+  include-markdown "plugins/core-plugins/hud/loadhud.md" 
+  start="<!--cmd-syntax-start-->"
+  end="<!--cmd-syntax-end-->"
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/hud/loadhud.md"
+        start="<!--cmd-desc-start-->"
+        end="<!--cmd-desc-end-->"
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/hud/loadhud.md') }}
+
+<a href="defaulthud/">
+{% 
+  include-markdown "plugins/core-plugins/hud/defaulthud.md" 
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/hud/defaulthud.md"
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/hud/defaulthud.md') }}
+
+<a href="classhud/">
+{% 
+  include-markdown "plugins/core-plugins/hud/classhud.md" 
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/hud/classhud.md"
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/hud/classhud.md') }}
+
+<a href="zonehud/">
+{% 
+  include-markdown "plugins/core-plugins/hud/zonehud.md" 
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/hud/zonehud.md"
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/hud/zonehud.md') }}
+
+<a href="unloadhud/">
+{% 
+  include-markdown "plugins/core-plugins/hud/unloadhud.md" 
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/hud/unloadhud.md"
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/hud/unloadhud.md') }}
 
 ## INI File Format
 
@@ -105,4 +164,23 @@ RDPauseInd2=3,85,122,225,0,0,${RDPause}
 
 ## Top-Level Objects
 
-{{ embedMQType('plugins/core-plugins/hud/tlo-hud.md') }}
+## [HUD](tlo-hud.md)
+{%
+  include-markdown "plugins/core-plugins/hud/tlo-hud.md"
+  start="<!--tlo-desc-start-->"
+  end="<!--tlo-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('plugins/core-plugins/hud/tlo-hud.md') }}
+
+<h2>Forms</h2>
+{%
+  include-markdown "plugins/core-plugins/hud/tlo-hud.md"
+  start="<!--tlo-forms-start-->"
+  end="<!--tlo-forms-end-->"
+  heading-offset=0
+%}
+{% 
+  include-markdown "plugins/core-plugins/hud/tlo-hud.md" 
+  start="<!--tlo-linkrefs-start-->"
+  end="<!--tlo-linkrefs-end-->"
+%}

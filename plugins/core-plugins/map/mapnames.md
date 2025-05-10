@@ -5,15 +5,16 @@ tags:
 # /mapnames
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /mapnames {target | normal} <option> | reset 
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Controls how spawn names are displayed on the map, from minimal information to a very log name with ID#, class, race, level, etc. With no arguments, /mapnames will display the current settings for _target_ and _normal_ (both are set to %N by default).
-
+<!--cmd-desc-end-->
 ## Options
 *   **target**: Changes the naming scheme of your target only.
 *   **normal**: Changes the naming scheme of all spawns except for your target.

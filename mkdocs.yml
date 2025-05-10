@@ -650,8 +650,8 @@ theme:
 # Plugins
 plugins:
   - search
-  - include-markdown
   - macros
+  - include-markdown
   - same-dir
   - redirects:
       redirect_maps:

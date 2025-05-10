@@ -3,13 +3,37 @@ tags:
    - plugin
 ---
 # ItemDisplay
-
+<!--desc-start-->
 This plugin shows spell information and item data in their respective display windows. It can also show custom notes. 
+<!--desc-end-->
 
 ## Commands
 
-{{ embedCommand('plugins/core-plugins/itemdisplay/itemdisplay.md') }}
-{{ embedCommand('plugins/core-plugins/itemdisplay/inote.md') }}
+<a href="itemdisplay/">
+{% 
+  include-markdown "plugins/core-plugins/itemdisplay/itemdisplay.md" 
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/itemdisplay/itemdisplay.md"
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/itemdisplay/itemdisplay.md') }}
+
+<a href="inote/">
+{% 
+  include-markdown "plugins/core-plugins/itemdisplay/inote.md" 
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/itemdisplay/inote.md"
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/itemdisplay/inote.md') }}
 
 ## INI File
 
@@ -33,8 +57,46 @@ ShowSpellsInfoOnItems=0
 
 ## Top-Level Objects
 
-{{ embedMQType('plugins/core-plugins/itemdisplay/tlo-displayitem.md') }}
+## [DisplayItem](tlo-displayitem.md)
+{%
+  include-markdown "plugins/core-plugins/itemdisplay/tlo-displayitem.md"
+  start="<!--tlo-desc-start-->"
+  end="<!--tlo-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('plugins/core-plugins/itemdisplay/tlo-displayitem.md') }}
+
+<h2>Forms</h2>
+{%
+  include-markdown "plugins/core-plugins/itemdisplay/tlo-displayitem.md"
+  start="<!--tlo-forms-start-->"
+  end="<!--tlo-forms-end-->"
+  heading-offset=0
+%}
+{% 
+  include-markdown "plugins/core-plugins/itemdisplay/tlo-displayitem.md" 
+  start="<!--tlo-linkrefs-start-->"
+  end="<!--tlo-linkrefs-end-->"
+%}
 
 ## Datatypes
 
-{{ embedMQType('plugins/core-plugins/itemdisplay/datatype-displayitem.md') }}
+## [displayitem](datatype-displayitem.md)
+{% 
+  include-markdown "plugins/core-plugins/itemdisplay/datatype-displayitem.md" 
+  start="<!--dt-desc-start-->" 
+  end="<!--dt-desc-end-->" 
+  trailing-newlines=false
+%} {{ readMore('plugins/core-plugins/itemdisplay/datatype-displayitem.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "plugins/core-plugins/itemdisplay/datatype-displayitem.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "plugins/core-plugins/itemdisplay/datatype-displayitem.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}

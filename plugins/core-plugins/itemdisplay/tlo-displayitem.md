@@ -4,10 +4,11 @@ tags:
 ---
 # `DisplayItem`
 
+<!--tlo-desc-start-->
 Gives information on item windows
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='DisplayItem', name='DisplayItem') }}
 
 ### {{ renderMember(type='DisplayItem', name='DisplayItem', params='x') }}
@@ -15,5 +16,8 @@ Gives information on item windows
 
 ### {{ renderMember(type='DisplayItem', name='DisplayItem', params='<itemname>') }}
 :   Return the Item display window for the specified item name, if one exists.
+<!--tlo-forms-end-->
 
+<!--tlo-linkrefs-start-->
 [DisplayItem]: datatype-displayitem.md
+<!--tlo-linkrefs-end-->

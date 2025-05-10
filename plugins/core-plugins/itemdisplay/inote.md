@@ -5,14 +5,16 @@ tags:
 # /inote
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand  
 /inote <add|del> <itemno> <comment>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
+<!--cmd-desc-start-->
 Adds a note to the display window for a the specified item. The _comment_ can contain html `<br>` tags to break the line of text.
-
+<!--cmd-desc-end-->
 ## Example
 
 ```text

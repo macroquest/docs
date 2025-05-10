@@ -4,10 +4,11 @@ tags:
 ---
 # `LoginProfile`
 
+<!--dt-desc-start-->
 Datatype providing access to AutoLogin profile information.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='string', name='Account')}}
 
 :   Account name associated with the profile
@@ -43,6 +44,7 @@ Datatype providing access to AutoLogin profile information.
 ### {{ renderMember(type='string', name='ToString') }}
 
 :   Returns formatted profile info as "Profile: Character (Server)"
+<!--dt-members-end-->
 
 ## Examples
 
@@ -52,7 +54,8 @@ Datatype providing access to AutoLogin profile information.
 /echo ${AutoLogin.Profile}          # Show formatted profile info e.g. "MyProfile: MyCharacter (MyServer)"
 /echo ${AutoLogin.Profile.Profile}  # Show profile name only
 ```
-
+<!--dt-linkrefs-start-->
 [string]: ../../../reference/data-types/datatype-string.md  
 [int]: ../../../reference/data-types/datatype-int.md
 [class]: ../../../reference/data-types/datatype-class.md
+<!--dt-linkrefs-end-->

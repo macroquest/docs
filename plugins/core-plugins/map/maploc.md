@@ -5,15 +5,16 @@ tags:
 # /maploc
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /maploc <x> <y> [<z>] [options] | [options]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Places a big X on a location or target. Helpful when you're given a loc and want to see it on the map. It's as simple as `/maploc 1 2 3`
-
+<!--cmd-desc-end-->
 ## Options
 
 * **size `<10-200>`**  
