@@ -4,10 +4,11 @@ tags:
 ---
 # `Switch`
 
+<!--tlo-desc-start-->
 Object used when you want to find information on targetted doors or switches such as the portals in PoK.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='switch', name='Switch') }}
 
 :   Returns the currently targeted switch
@@ -23,7 +24,7 @@ Object used when you want to find information on targetted doors or switches suc
     - `target`: Return the currently targeted switch
     - `nearest`: Return the nearest switch.
     - Otherwise, return switch by searching by name
-
+<!--tlo-forms-end-->
 
 ## Usage
 
@@ -47,5 +48,6 @@ Access "foo" [_switch_](../data-types/datatype-switch.md) datatype members
 Access the current doortarget [_switch_](../data-types/datatype-switch.md) datatype members directly
 Returns TRUE or FALSE
 
-
+<!--tlo-linkrefs-start-->
 [switch]: ../data-types/datatype-switch.md
+<!--tlo-linkrefs-end-->

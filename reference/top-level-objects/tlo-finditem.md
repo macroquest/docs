@@ -4,10 +4,11 @@ tags:
 ---
 # `FindItem`
 
+<!--tlo-desc-start-->
 A TLO used to find an item on your character, corpse, or a merchant by partial or exact name match. _See examples below._
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='item', name='FindItem', params='name|id') }}
 
 :   Search for an item using the given item id, or partial name match. Will search character
@@ -50,6 +51,7 @@ A TLO used to find an item on your character, corpse, or a merchant by partial o
             ```lua
             print(mq.TLO.FindItem("=Water Sprinkler of Nem Ankh").ID())
             ```
-
-
+<!--tlo-forms-end-->
+<!--tlo-linkrefs-start-->
 [item]: ../data-types/datatype-item.md
+<!--tlo-linkrefs-end-->

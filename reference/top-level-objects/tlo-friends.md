@@ -4,14 +4,15 @@ tags:
 ---
 # `Friends`
 
+<!--tlo-desc-start-->
 Grants access to your friends dlist.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='friends', name='Friends') }}
 
 :   Access friends data
-
+<!--tlo-forms-end-->
 
 ## datatype `friends`
 
@@ -52,7 +53,8 @@ Grants access to your friends dlist.
         -- Echo the name of your firsrt friend
         print(mq.TLO.Friends.Friend(1)())
         ```
-
+<!--tlo-linkrefs-start-->
 [string]: ../data-types/datatype-string.md
 [bool]: ../data-types/datatype-bool.md
 [friends]: #datatype-friends
+<!--tlo-linkrefs-end-->

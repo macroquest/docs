@@ -4,10 +4,11 @@ tags:
 ---
 # `Ini`
 
+<!--tlo-desc-start-->
 Reads value(s) from an ini file located in a relative or absolute path.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='string', name='Ini', params='filename,section,key,default') }}
 
 :   The _section_, _key_, and _default_ do not need to be given. If _section_ or _key_ are not given, multiple values are read.
@@ -22,6 +23,7 @@ Reads value(s) from an ini file located in a relative or absolute path.
 
 :   When passed with no parameters to Ini[] the more robust form of the Ini TLO is used.  See below and the reference
     to the [Key](../data-types/datatype-inifilesectionkey.md) datatype for further usage.
+<!--tlo-forms-end-->
 
 ## Usage
 
@@ -97,6 +99,7 @@ foobar
 > /echo ${Ini.File[sample].Section[SectionOne].Key.ValueAtIndex[2]}
 bar
 ```
-
+<!--tlo-linkrefs-start-->
 [ini]: ../data-types/datatype-ini.md
 [string]: ../data-types/datatype-string.md
+<!--tlo-linkrefs-end-->

@@ -4,13 +4,15 @@ tags:
 ---
 # `Group`
 
+<!--tlo-desc-start-->
 Access to all group-related information.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='group', name='Group') }}
 
 :   Retrieve information about your group
+<!--tlo-forms-end-->
 
 ## Usage
 
@@ -31,5 +33,6 @@ Echos your own name
 ```
 
 Echos the next person on the list, after yourself.
-
+<!--tlo-linkrefs-start-->
 [group]: ../data-types/datatype-group.md
+<!--tlo-linkrefs-end-->

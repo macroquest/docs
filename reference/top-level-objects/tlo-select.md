@@ -4,13 +4,14 @@ tags:
 ---
 # `Select`
 
+<!--tlo-desc-start-->
 Object used to determine if a match was made to argument in the given set of values.
 
 !!! warning
     Values must be single words.  Quoted strings do not work, as the parser will drop the quotes and uses spaces as a delimiter.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='int', name='Select', params='argument,value1[,value2,...]') }}
 
 !!! example
@@ -43,5 +44,7 @@ Object used to determine if a match was made to argument in the given set of val
         /echo Target is a healer
     }
     ```
-
+<!--tlo-forms-end-->
+<!--tlo-linkrefs-start-->
 [int]: ../data-types/datatype-int.md
+<!--tlo-linkrefs-end-->

@@ -4,16 +4,17 @@ tags:
 ---
 # `Alert`
 
+<!--tlo-desc-start-->
 Provides access to spawn search filter criteria in alerts. Alerts are created using [/alert](../../reference/commands/alert.md).
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='alert', name='Alert', params='ID') }}
 
 :   Retrieve information for the alert category by its id
 
 | [string][string] | **Alert** | Returns pipe `|` separated list of alert ids |
-
+<!--tlo-forms-end-->
 
 ## datatype `alert`
 
@@ -307,7 +308,7 @@ See Also: [Spawn Search](../general/spawn-search.md).
     -- Will output the number of alerts in list 1
     print(mq.TLO.Alert(1).Size())
     ```
-
+<!--tlo-linkrefs-start-->
 [alert]: #datatype-alert
 [alertlist]: #datatype-alertlist
 [bool]: ../data-types/datatype-bool.md
@@ -317,3 +318,4 @@ See Also: [Spawn Search](../general/spawn-search.md).
 [int64]: ../data-types/datatype-int64.md
 [spawn]: ../data-types/datatype-spawn.md
 [string]: ../data-types/datatype-string.md
+<!--tlo-linkrefs-end-->

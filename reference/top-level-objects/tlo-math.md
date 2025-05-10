@@ -3,15 +3,15 @@ tags:
     - tlo
 ---
 # Math
-
+<!--tlo-desc-start-->
 Creates a Math object which gives allows access to the math type members.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='math', name='Math') }}
 
 :   Returns the math object which is used to perform math operations.
-
+<!--tlo-forms-end-->
 
 ## Usage
 
@@ -46,5 +46,6 @@ Math.Rand now takes an optional min argument so you can get a random number betw
 ```
 
 this would return a randum number between 5 and 10.
-
+<!--tlo-linkrefs-start-->
 [math]: ../data-types/datatype-math.md
+<!--tlo-linkrefs-end-->

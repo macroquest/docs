@@ -4,10 +4,11 @@ tags:
 ---
 # `FindItemBankCount`
 
+<!--tlo-desc-start-->
 A TLO used to find a count of items in your bank by partial or exact name match. _See examples below._
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='int', name='FindItemBankCount', params='name|id') }}
 
 :   Counts the items in your bank using the given item id, or partial name match.
@@ -48,6 +49,7 @@ A TLO used to find a count of items in your bank by partial or exact name match.
             ```lua
             print(mq.TLO.FindItemBankCount("=Swirling Shadows"))
             ```
-
-
+<!--tlo-forms-end-->
+<!--tlo-linkrefs-start-->
 [int]: ../data-types/datatype-int.md
+<!--tlo-linkrefs-end-->

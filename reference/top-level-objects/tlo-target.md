@@ -4,10 +4,11 @@ tags:
 ---
 # `Target`
 
+<!--tlo-desc-start-->
 Object used to get information about your current target.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='target', name='Target') }}
 
 :   Returns the spawn object for the current target.
@@ -55,6 +56,7 @@ Object used to get information about your current target.
     ```
 
     returns "a_pyre_beetle48 will break mezz in 66s"
-
-
+<!--tlo-forms-end-->
+<!--tlo-linkrefs-start-->
 [target]: ../data-types/datatype-target.md
+<!--tlo-linkrefs-end-->

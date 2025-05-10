@@ -4,10 +4,11 @@ tags:
 ---
 # `FindItemCount`
 
+<!--tlo-desc-start-->
 A TLO used to find a count of items on your character, corpse, or a merchant by partial or exact name match. _See examples below._
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='int', name='FindItemCount', params='name|id') }}
 
 :   Counts the items using the given item id, or partial name match. Will search character
@@ -50,6 +51,7 @@ A TLO used to find a count of items on your character, corpse, or a merchant by 
             ```lua
             print(mq.TLO.FindItemCount("=Water Flask"))
             ```
-
-
+<!--tlo-forms-end-->
+<!--tlo-linkrefs-start-->
 [int]: ../data-types/datatype-int.md
+<!--tlo-linkrefs-end-->

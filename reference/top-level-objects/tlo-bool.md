@@ -4,6 +4,7 @@ tags:
 ---
 # `Bool`
 
+<!--tlo-desc-start-->
 Creates a bool object from a string. The resulting value is a _bool_ depending on whether the given string is falsey or not.
 
 "Falsey" is defined as any of the following values:
@@ -14,13 +15,13 @@ Creates a bool object from a string. The resulting value is a _bool_ depending o
 * The string "0"
 
 If the string is one of these values, the resulting bool is `false`. Otherwise, it is `true`.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='bool', name='Bool', params='Text') }}
 
 :   Converts the given _Text_ to a bool based on the rules presented above.
-
+<!--tlo-forms-end-->
 
 ## Usage
 
@@ -52,5 +53,6 @@ If the string is one of these values, the resulting bool is `false`. Otherwise, 
     myVar = mq.TLO.Bool('NULL')()
     print(myVar)
     ```
-
+<!--tlo-linkrefs-start-->
 [bool]: ../data-types/datatype-bool.md
+<!--tlo-linkrefs-end-->

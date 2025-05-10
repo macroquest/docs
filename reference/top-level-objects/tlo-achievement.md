@@ -4,10 +4,11 @@ tags:
 ---
 # `Achievement`
 
+<!--tlo-desc-start-->
 Provides access to achievements.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='achievement', name='Achievement', params='#|Name') }}
 
 :   Look up an achievement by name or by id.
@@ -15,7 +16,7 @@ Provides access to achievements.
 ### {{ renderMember(type='achievementmgr', name='Achievement') }}
 
 :   Access the achievement manager which provides access to information about achievements
-
+<!--tlo-forms-end-->
 
 ## Associated DataTypes
 
@@ -112,9 +113,9 @@ To look up an achievement's ID, you can look up an achievement by name, or you c
     -- "Wayfarers Brotherhood Adventurer's Stone (Various 20+)"
     print(mq.TLO.Achievement(500980300).Completed())
     ```
-
+<!--tlo-linkrefs-start-->
 [int]: ../data-types/datatype-int.md
 [bool]: ../data-types/datatype-bool.md
 [achievement]: ../data-types/datatype-achievement.md
 [achievementcat]: ../data-types/datatype-achievementcat.md
-[achievementmgr]: #achievementmgr-type
+<!--tlo-linkrefs-end-->
