@@ -5,15 +5,16 @@ tags:
 # /ini
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /ini "filename" "keyname" "valuename" "value"
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 This is used to write data to an ini file. Currently there is no way to delete an ini file entry.
-
+<!--cmd-desc-end-->
 ## Example
 
 _Stuff.ini_ contains the following data:

@@ -5,20 +5,21 @@ tags:
 # /vardata
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /vardata varname <newMQ2Datavalue>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Sets a variable directly to the end result of a MQ2Data string.  
 \*To use this, **do not** put ${} around the outer data to parse.
 
 * This is more efficient than using _/varset_ as it skips a step
   * _/varset_ first converts the MQ2Data to text, and then back to MQ2Data
   * _/vardata_ converts directly through MQ2Data
-
+<!--cmd-desc-end-->
 ## Examples
 
 ```text

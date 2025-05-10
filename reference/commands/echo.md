@@ -5,15 +5,16 @@ tags:
 # /echo
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /echo <text>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Echoes the specified text (or variables) to the MQ Console window.
-
+<!--cmd-desc-end-->
 ## Examples
 
 **Colorized usage**

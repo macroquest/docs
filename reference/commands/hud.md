@@ -5,15 +5,16 @@ tags:
 # /hud
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /hud [ normal | underui | always ] 
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Defines how the HUD is displayed.
-
+<!--cmd-desc-end-->
 ## Options
 
 - **Normal**

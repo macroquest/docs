@@ -5,15 +5,16 @@ tags:
 # /continue
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /continue
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 When in a /for or /while loop try the next iteration.
-
+<!--cmd-desc-end-->
 ## Example
 
 ```text

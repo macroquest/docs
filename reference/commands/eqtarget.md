@@ -5,15 +5,16 @@ tags:
 # /eqtarget
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /eqtarget <name> | group <1-6>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
-Functions identically to how `/target` worked prior to loading MacroQuest, targets `<name>` or group member `<#>`. 
-
+<!--cmd-desc-start-->
+Functions identically to how `/target` worked prior to loading MacroQuest, targets `<name>` or group member `<#>`.
+<!--cmd-desc-end-->
 ## Options
 
 * _name_   - Name to target

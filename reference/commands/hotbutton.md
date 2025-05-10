@@ -5,15 +5,16 @@ tags:
 # /hotbutton
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /hotbutton <name> [<color>] [<line>:][<cursor>:]<text>]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Extends the built in /hotbutton command with multiple lines support, cursor attachment, and "names with spaces" (in quotes) support.
-
+<!--cmd-desc-end-->
 ## Examples
 
 |  |  |

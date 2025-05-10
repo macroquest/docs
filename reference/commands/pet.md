@@ -5,15 +5,16 @@ tags:
 # /pet
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /pet <action> <spawnid>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 MacroQuest extends EverQuest's `/pet` command to allow attacking by spawn #.
-
+<!--cmd-desc-end-->
 ## Options
 
 - **attack** _#_ - Can specify the spawn ID number to attack

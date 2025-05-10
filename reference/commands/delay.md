@@ -5,17 +5,18 @@ tags:
 # /delay
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /delay <#deciseconds>[s|m] [ <condition> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Fully pauses the macro for the amount of time specified, or until _condition_ is met.
 
 Time can be specified in 10ths of a second (a number by itself) or in seconds (number followed by an "s") or minutes (number followed by "m").
-
+<!--cmd-desc-end-->
 ## Examples
 
 * Simple examples:

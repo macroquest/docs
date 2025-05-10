@@ -5,16 +5,16 @@ tags:
 # /setwintitle
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /setwintitle <Window Name>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Sets the window title (the name shown at the top of the window and in the task bar tray) to whatever text you specify.
-
-
+<!--cmd-desc-end-->
 ## Examples
 
 Set the window title to "My Very Cool Window"

@@ -5,15 +5,16 @@ tags:
 # /location
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /location
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
-Extends the EverQuest Y, X, Z coordinates to add the direction you're facing from a 16-wind compass. 
-
+<!--cmd-desc-start-->
+Extends the EverQuest Y, X, Z coordinates to add the direction you're facing from a 16-wind compass.
+<!--cmd-desc-end-->
 ## Example Output
 
 ```text

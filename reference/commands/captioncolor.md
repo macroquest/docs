@@ -5,17 +5,18 @@ tags:
 # /captioncolor
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /captioncolor list | <"name"> [ off | on |  <r g b> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Allows you to change the color of the captions that appear above the heads of PCs and NPCs, based on various factors.
 
 **Note:** raid class colors can only be set through the raid options window.
-
+<!--cmd-desc-end-->
 ## Settings
 
 Below are the default settings for each of the possible Caption Colors:

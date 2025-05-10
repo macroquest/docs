@@ -5,15 +5,16 @@ tags:
 # /aa
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /aa [list (all | timers)] [info <abilityname> ] [act <abilityname> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Used to retrieve information on AA Abilities, or to activate an AA ability.
-
+<!--cmd-desc-end-->
 ## Examples
 
 |  |  |

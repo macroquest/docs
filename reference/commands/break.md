@@ -5,14 +5,16 @@ tags:
 # /break
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /break
 ```
+<!--cmd-syntax-end-->
 
-## **Description**
-
+## Description
+<!--cmd-desc-start-->
 End a /for or /while loop immediately.
+<!--cmd-desc-end-->
 
 ## Example
 

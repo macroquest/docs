@@ -5,14 +5,16 @@ tags:
 # /mqanon
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /mqanon [*command*] [*parameters*] [*strategy*]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Anonymization tool that filters words in-game, designed for streaming and recording. It handles both the active player and any party/raid/fellowship members. It does **not** grant full-fledged anonymization, but is a tool to help with the process of anonymizing words (names, guilds, etc) in-game. For more (especially for plugin authors), see the [Anonymize](../../main/features/anonymize.md) feature.
+<!--cmd-desc-end-->
 
 **Important Notes:**
 - Login/character screens contain no anonymization, this command is in-game only. Any text at server select, character select, login, etc ***will not be filtered***. Please make any considerations necessary to prevent visibility of the client outside of actual in-game experiences.

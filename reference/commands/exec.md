@@ -5,17 +5,18 @@ tags:
 # /exec
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /exec <command> [ <parameters> | bg] [bg]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Executes the specified command as if from the command line.  If parameters are passed in, it will execute those parameters.  If "bg" is passed as either the second or third parameter, it will execute the program in the background, otherwise it executes in the foreground.
 
 The Application Paths section in the MacroQuest.ini file allows you to specify aliases for applications, but it's not necessary for usage.
-
+<!--cmd-desc-end-->
 ## Ini Example
 
 MacroQuest.ini

@@ -5,15 +5,16 @@ tags:
 # /usercamera
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /usercamera [ <0-7> |on|off|save [ <charname> ]|load [ <charname> ]]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Switch to a specified camera view or manage the User Camera 1 position settings.
-
+<!--cmd-desc-end-->
 ## Options
 
 ### Camera Numbers (0-7)

@@ -5,15 +5,16 @@ tags:
 # /timed
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /timed <#deciseconds> <command>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Executes _command_ after a specified duration, given in deciseconds.
-
+<!--cmd-desc-end-->
 **Notes**
 
 * This does not pause successive commands.

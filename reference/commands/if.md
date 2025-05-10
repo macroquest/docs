@@ -5,7 +5,7 @@ tags:
 # /if
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /if ( <formula> ) {
 <commands>
@@ -13,11 +13,12 @@ tags:
 <...>
 } ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 This will run all _commands_ between the braces ( {} ) if _formula_ evaluates to something other than 0.
-
+<!--cmd-desc-end-->
 * _Formulas_ are numeric operations ONLY. You must use MQ2Data string comparison to turn strings comparisons into
 
   numeric operations (eg. Using .Equal or .NotEqual).

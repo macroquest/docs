@@ -5,15 +5,16 @@ tags:
 # /multiline
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /multiline <delimiter> <command> [ <delimiter> <command> [...] ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Executes multiple commands using a single line separated by the delimiter.
-
+<!--cmd-desc-end-->
 **Notes**
 
 * This is useful for keybinds

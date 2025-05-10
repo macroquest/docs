@@ -5,15 +5,16 @@ tags:
 # /mqcopylayout
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /mqcopylayout <charname> <server> [res:<W>x<H>] [nohot] [noload] [nosoc] [none]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Intelligent copying of EverQuest's UI layout. By default copies all options (hotbuttons, loadouts, socials) using the windowed resolution.
-
+<!--cmd-desc-end-->
 ## Options
 
 

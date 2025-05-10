@@ -5,18 +5,18 @@ tags:
 # /call
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /call <subroutine> [Param0... [Param#]]
 ```
-
-### Description
-
+<!--cmd-syntax-end-->
+## Description
+<!--cmd-desc-start-->
 Calls _subroutine_ (defined later in the macro by "Sub _subroutine_").
-
+<!--cmd-desc-end-->
 (_See_ [_Subroutines_](../../macros/subroutines.md) _for detailed information_)
 
-### Examples
+## Examples
 
 | \*\*\*\* |  |
 | :--- | :--- |

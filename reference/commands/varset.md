@@ -5,18 +5,19 @@ tags:
 # /varset
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /varset varname [ <newvalue> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Sets a variable directly to a new value.
 
 * Keep in mind that the type of the variable may itself reject this value depending on what you give it.
 * To clear the value of the variable, you may omit the new value.
-
+<!--cmd-desc-end-->
 ## Examples
 
 ```text

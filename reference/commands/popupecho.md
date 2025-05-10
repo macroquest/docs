@@ -5,15 +5,16 @@ tags:
 # /popupecho
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /popupecho [<#color>] [<#seconds>] <message>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Same as [/popcustom](popcustom.md) but also echos the message to chat.
-
+<!--cmd-desc-end-->
 ## Color Chart
 
 | **Number** | **Color** |

@@ -5,15 +5,16 @@ tags:
 # /mqsettings
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /mqsettings [Section to Open]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Open the MacroQuest Settings window -- optionally, to a specific area.
-
+<!--cmd-desc-end-->
 ## Examples
 
 |  |  |

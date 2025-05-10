@@ -5,14 +5,16 @@ tags:
 # /doability
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /doability [list | <ability>]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-Extends EverQuest's doability command (/doability 1-10) to list available abilities and perform them by name or ID. 
-
+<!--cmd-desc-start-->
+Extends EverQuest's doability command (/doability 1-10) to list available abilities and perform them by name or ID.
+<!--cmd-desc-end-->
 ## Options
 
 * **list** - List all available abilities.

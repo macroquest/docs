@@ -5,15 +5,18 @@ tags:
 # /invoke
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /invoke ${TLO.[XXX].Action}
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 This will invoke the action portion of some of the new TLO additions. This has the potential to shorten macros and make them more powerful.
+<!--cmd-desc-end-->
 
+## Methods
 The current methods that are available for use and testing are:
 
 For the Task TLO:
