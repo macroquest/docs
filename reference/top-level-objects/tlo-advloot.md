@@ -4,10 +4,10 @@ tags:
 ---
 # `AdvLoot`
 
+<!--tlo-desc-start-->
 The AdvLoot TLO grants access to items in the Advanced Loot window.
-
+<!--tlo-desc-end-->
 ## Members
-
 ### {{ renderMember(type='itemfilterdata', name='Filter', params='ItemID') }}
 
 :   Inspect the loot filter for a given ItemID.
@@ -39,7 +39,6 @@ The AdvLoot TLO grants access to items in the Advanced Loot window.
 ### {{ renderMember(type='int', name='SWantCount') }}
 
 :   Want count from the Shared list (AN + AG + ND + GD)
-
 
 ## datatype `advlootitem`
 
@@ -220,7 +219,7 @@ A collection of settings that together describe the loot filter for an item.
         print('Do something else, loot is already in progress...')
     end
     ```
-
+<!--tlo-linkrefs-start-->
 [int]: ../data-types/datatype-int.md
 [string]: ../data-types/datatype-string.md
 [bool]: ../data-types/datatype-bool.md
@@ -228,3 +227,4 @@ A collection of settings that together describe the loot filter for an item.
 [spawn]: ../data-types/datatype-spawn.md
 [itemfilterdata]: #datatype-itemfilterdata
 [advlootitem]: #datatype-advlootitem
+<!--tlo-linkrefs-end-->

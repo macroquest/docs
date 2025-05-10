@@ -4,10 +4,11 @@ tags:
 ---
 # `Zone`
 
+<!--tlo-desc-start-->
 Used to find information about a particular zone.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='currentzone', name='Zone') }}
 
 :   Retrieves the current zone information
@@ -21,7 +22,7 @@ Used to find information about a particular zone.
 
 :   Retrieves information about a zone by short name. If this zone is the current zone, then
     this will return [currentzone].
-
+<!--tlo-forms-end-->
 
 ## Usage
 
@@ -49,6 +50,7 @@ Returns the ID of _zonename_, even if you aren't in the zone.
 
 Returns the short name of the zone with ID _zoneid_.
 
-
+<!--tlo-linkrefs-start-->
 [zone]: ../data-types/datatype-zone.md
 [currentzone]: ../data-types/datatype-currentzone.md
+<!--tlo-linkrefs-end-->

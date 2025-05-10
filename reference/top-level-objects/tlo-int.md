@@ -4,13 +4,15 @@ tags:
 ---
 # `Int`
 
+<!--tlo-desc-start-->
 Object that creates an integer from n.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='int', name='Int') }}
 
 :   Parses whatever value for _n_ is provided and converts it into an [int].
+<!--tlo-forms-end-->
 
 ## Usage
 
@@ -31,5 +33,6 @@ Echos a zero - useful if passing a string to a macro or subroutine that could be
 ```
 
 Echos 123
-
+<!--tlo-linkrefs-start-->
 [int]: ../data-types/datatype-int.md
+<!--tlo-linkrefs-end-->

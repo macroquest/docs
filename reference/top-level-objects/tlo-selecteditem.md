@@ -4,10 +4,11 @@ tags:
 ---
 # `SelectedItem`
 
+<!--tlo-desc-start-->
 Used to return information on the object that is selected in your own inventory while using a merchant.
-
+<!--tlo-desc-end-->
 ## Forms
-
+<!--tlo-forms-start-->
 ### {{ renderMember(type='item', name='SelectedItem') }}
 
 :   !!! example
@@ -47,5 +48,7 @@ Used to return information on the object that is selected in your own inventory 
                 end
             end
             ```
-
+<!--tlo-forms-end-->
+<!--tlo-linkrefs-start-->
 [item]: ../data-types/datatype-item.md
+<!--tlo-linkrefs-end-->
