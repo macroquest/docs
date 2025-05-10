@@ -5,10 +5,13 @@ tags:
 # /zonehud
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /zonehud {on|off}
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-Toggles loading the HUD section for the current zone. You must have a `[zone]` section in `MQ2HUD.ini`, long names are used. 
+<!--cmd-desc-start-->
+Toggles loading the HUD section for the current zone. You must have a `[zone]` section in `MQ2HUD.ini`, long names are used.
+<!--cmd-desc-end-->

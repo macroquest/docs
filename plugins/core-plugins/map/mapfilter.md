@@ -5,15 +5,16 @@ tags:
 # Mapfilter
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /mapfilter <filter> [show|hide] [color <R# G# B#>] 
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 This controls what appears or does not appear on the in-game map. There's a nice GUI for these filters in [/mqsettings](../../../reference/commands/mqsettings.md).
-
+<!--cmd-desc-end-->
 ## Options
 
 * **`help`** will show all current settings.

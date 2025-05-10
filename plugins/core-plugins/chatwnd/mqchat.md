@@ -5,15 +5,16 @@ tags:
 # /mqchat
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /mqchat [reset | ui | autoscroll {on|off} | NoCharSelect {on|off} | SaveByChar {on|off}]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
-Configure and manage mqchatwnd's settings. 
-
+<!--cmd-desc-start-->
+Configure and manage mqchatwnd's settings.
+<!--cmd-desc-end-->
 ## Options
 
 - **reset**: Resets window and INI settings.

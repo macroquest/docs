@@ -5,15 +5,16 @@ tags:
 # /mapclick
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /mapclick [left] {list|<key[+key[...]]> {clear|<command>}}
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Define custom commands to execute when clicking on an in-game map object while holding down a specific key combination.
-
+<!--cmd-desc-end-->
 ## Options
 * `left` - Left-click (default is right-click)
 * `list` - List the current mapclicks that have been defined.

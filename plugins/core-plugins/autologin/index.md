@@ -3,8 +3,9 @@ tags:
    - plugin
 ---
 # AutoLogin
-
+<!--desc-start-->
 AutoLogin is a plugin that automatically logs in your characters. It can also switch characters, servers and login new accounts via commandline. It was originally made by [ieatacid](https://macroquest2.com/phpBB3/viewtopic.php?f=50&t=16427).
+<!--desc-end-->
 
 ## Setting up profiles via tray icon
 
@@ -27,14 +28,57 @@ You'll be asked to enter nine fields:
 Upon clicking "Save", your profile will be encrypted and saved in MQ2AutoLogin.ini
 
 ## Commands
+<a href="loginchar/">
+{% 
+  include-markdown "plugins/core-plugins/autologin/loginchar.md" 
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/autologin/loginchar.md" 
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/autologin/loginchar.md') }}
 
-{{ embedCommand('plugins/core-plugins/autologin/loginchar.md') }}
+<a href="relog/">
+{% 
+  include-markdown "plugins/core-plugins/autologin/relog.md" 
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/autologin/relog.md" 
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/autologin/relog.md') }}
 
-{{ embedCommand('plugins/core-plugins/autologin/relog.md') }}
+<a href="switchchar/">
+{% 
+  include-markdown "plugins/core-plugins/autologin/switchchar.md" 
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/autologin/switchchar.md" 
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/autologin/switchchar.md') }}
 
-{{ embedCommand('plugins/core-plugins/autologin/switchchar.md') }}
-
-{{ embedCommand('plugins/core-plugins/autologin/switchserver.md') }}
+<a href="switchserver/">
+{% 
+  include-markdown "plugins/core-plugins/autologin/switchserver.md" 
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/autologin/switchserver.md" 
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/autologin/switchserver.md') }}
 
 `END` and `HOME`
 :   Pressing the "END" key at the character select screen will pause autologin, "HOME" will unpause.
@@ -196,11 +240,66 @@ This helps export and import login profiles, which are otherwise hard to decrypt
 Launch single sessions without logging in.
 
 ## Top-Level Objects
+## [AutoLogin](tlo-autologin.md)
+{%
+  include-markdown "plugins/core-plugins/autologin/tlo-autologin.md"
+  start="<!--tlo-desc-start-->"
+  end="<!--tlo-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('plugins/core-plugins/autologin/tlo-autologin.md') }}
 
-{{ embedMQType('plugins/core-plugins/autologin/tlo-autologin.md') }}
+<h2>Forms</h2>
+{%
+  include-markdown "plugins/core-plugins/autologin/tlo-autologin.md"
+  start="<!--tlo-forms-start-->"
+  end="<!--tlo-forms-end-->"
+  heading-offset=0
+%}
+{% 
+  include-markdown "plugins/core-plugins/autologin/tlo-autologin.md" 
+  start="<!--tlo-linkrefs-start-->"
+  end="<!--tlo-linkrefs-end-->"
+%}
 
 ## Datatypes
+## [AutoLogin](datatype-autologin.md)
+{% 
+  include-markdown "plugins/core-plugins/autologin/datatype-autologin.md" 
+  start="<!--dt-desc-start-->" 
+  end="<!--dt-desc-end-->" 
+  trailing-newlines=false
+%} {{ readMore('plugins/core-plugins/autologin/datatype-autologin.md') }}
 
-{{ embedMQType('plugins/core-plugins/autologin/datatype-autologin.md') }}
+<h2>Members</h2>
+{%
+  include-markdown "plugins/core-plugins/autologin/datatype-autologin.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "plugins/core-plugins/autologin/datatype-autologin.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
 
-{{ embedMQType('plugins/core-plugins/autologin/datatype-loginprofile.md') }}
+## [LoginProfile](datatype-loginprofile.md)
+{% 
+  include-markdown "plugins/core-plugins/autologin/datatype-loginprofile.md" 
+  start="<!--dt-desc-start-->" 
+  end="<!--dt-desc-end-->" 
+  trailing-newlines=false 
+%} {{ readMore('plugins/core-plugins/autologin/datatype-loginprofile.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "plugins/core-plugins/autologin/datatype-loginprofile.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "plugins/core-plugins/autologin/datatype-loginprofile.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}

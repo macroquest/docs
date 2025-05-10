@@ -5,12 +5,23 @@ tags:
 # TargetInfo
 
 ## Description
-
-Distance, line of sight and place-holder info directly on target. 
-
+<!--desc-start-->
+Distance, line of sight and place-holder info directly on target.
+<!--desc-end-->
 ## Commands
 
-{{ embedCommand('plugins/core-plugins/targetinfo/targetinfo.md') }}
+<a href="targetinfo/">
+{% 
+  include-markdown "plugins/core-plugins/targetinfo/targetinfo.md"  
+  start="<!--cmd-syntax-start-->" 
+  end="<!--cmd-syntax-end-->" 
+%}
+</a>
+:    {% include-markdown "plugins/core-plugins/targetinfo/targetinfo.md"
+        start="<!--cmd-desc-start-->" 
+        end="<!--cmd-desc-end-->" 
+        trailing-newlines=false 
+     %} {{ readMore('plugins/core-plugins/targetinfo/targetinfo.md') }}
 
 ## Settings
 

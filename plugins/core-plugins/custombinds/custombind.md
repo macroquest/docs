@@ -5,15 +5,16 @@ tags:
 # /custombind
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /custombind [ list ] | [add|delete] <bindname> | [set|clear] <bindname>[-down|-up] [command]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 This command is used to add, delete, list or change custom key bindings. See [/bind](../../../reference/commands/bind.md) and [/dumpbinds](../../../reference/commands/dumpbinds.md).
-
+<!--cmd-desc-end-->
 ## Parameters
 
 | Parameter | Description |

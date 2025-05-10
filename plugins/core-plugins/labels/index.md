@@ -3,9 +3,9 @@ tags:
    - plugin
 ---
 # Labels
-
+<!--desc-start-->
 This plugin allows you to use MQ2Data within your EQ UI.
-
+<!--desc-end-->
 * It provides a number of EQTypes that can be used exactly as you use the built-in EQTypes.
 * If there is not a suitable EQType for your use, you can use ToolTips to display custom information.
 

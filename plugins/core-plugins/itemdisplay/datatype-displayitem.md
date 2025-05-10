@@ -4,10 +4,11 @@ tags:
 ---
 # `displayitem`
 
+<!--dt-desc-start-->
 Holds members that can control and return status on item display windows. This datatype inherits all members from the **[item]** datatype.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='string', name='Info') }}
 :   Returns details from the item. Note that this is different from the "Information" member.
 
@@ -41,10 +42,13 @@ Holds members that can control and return status on item display windows. This d
 :   Gives access to the **[item]** datatype, although its members are already inherited. e.g. `/echo ${DisplayItem[2].Item.HP}`
 
 ### {{ renderMember(type='DisplayItem', name='Next') }}
+<!--dt-members-end-->
 
+<!--dt-linkrefs-start-->
 [DisplayItem]: datatype-displayitem.md
 [bool]: ../../../reference/data-types/datatype-bool.md
 [int]: ../../../reference/data-types/datatype-int.md
 [item]: ../../../reference/data-types/datatype-item.md
 [string]: ../../../reference/data-types/datatype-string.md
 [window]: ../../../reference/data-types/datatype-window.md
+<!--dt-linkrefs-end-->
