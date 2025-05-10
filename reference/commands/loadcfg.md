@@ -5,15 +5,16 @@ tags:
 # /loadcfg
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /loadcfg <filename>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Loads the specified .cfg file. To use .cfg files, [see this guide](../../main/features/cfg-files.md).
-
+<!--cmd-desc-end-->
 ## Notes
 
 * Plugins can use LoadCfgFile(filename)

@@ -5,15 +5,16 @@ tags:
 # /popcustom
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /popcustom [<#color>] [<#seconds>] <message>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Creates an in-game overlay message. See also [/popupecho](popupecho.md).
-
+<!--cmd-desc-end-->
 ## Color Chart
 
 | **Number** | **Color** |

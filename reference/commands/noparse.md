@@ -5,15 +5,16 @@ tags:
 # /noparse
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /noparse <command>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Prevents any MQ2Data from being parsed when used in _command_.
-
+<!--cmd-desc-end-->
 ## Example
 
 * Here the literal string "${stuff}" is added to the ini file, as opposed to the current value of ${stuff}.

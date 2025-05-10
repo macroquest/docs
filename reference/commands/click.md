@@ -5,15 +5,16 @@ tags:
 # /click
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /click [ left | right ] [ target | item | door | switch | center | <x> <y> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Executes a left or right mouse button click on targets or specific screen location.  
-
+<!--cmd-desc-end-->
 ### Click targets
 
 - **target**: Clicks your current target (PC, NPC)

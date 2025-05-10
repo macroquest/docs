@@ -5,15 +5,16 @@ tags:
 # /itemnotify
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /itemnotify [ <slotname> | <#> | in <bag> <slot#> | <itemname> ] <notification>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Simulates inventory interactions. Similar to [/click](click.md) without the mouse click.
-
+<!--cmd-desc-end-->
 ## Parameters
 
 * _slotname_ - any one of the equipment [Slot Names](../../reference/general/slot-names.md).

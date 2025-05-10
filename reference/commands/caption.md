@@ -5,15 +5,16 @@ tags:
 # /caption
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /caption list | update <#> | MQCaptions [on|off] | reload | <type> <value> 
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Customize spawn captions (names, titles, linkdead, etc.). You can also limit how many captions are processed to improve performance.
-
+<!--cmd-desc-end-->
 ## Options
 
 * **list** - List custom captions

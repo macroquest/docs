@@ -5,15 +5,16 @@ tags:
 # /notify
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /notify <windowname> <control> [ <notification> [ <data> ] ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 This command is used to interact with UI windows. It can simulate various mouse and keyboard interactions with UI elements.
-
+<!--cmd-desc-end-->
 ## Parameters
 
 - _windowname_ is the name of the window (e.g., "HotButtonWnd"). Use the Window Inspector (preferred) within the [/mqconsole](mqconsole.md) or the [/windows](windows.md) command to list all available windows.

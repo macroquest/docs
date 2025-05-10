@@ -5,17 +5,18 @@ tags:
 # /while
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /while (condition) {
 `...`
 }
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Executes the commands between { and } while the expression condition evaluates to true. Note that } must be on a line by its own. You can end a /while loop immediately with /break or try the next iteration with /continue.
-
+<!--cmd-desc-end-->
 ## Examples
 
 ```text

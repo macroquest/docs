@@ -5,15 +5,18 @@ tags:
 # /keypress
 
 ## Syntax
+<!--cmd-syntax-start-->
 ```eqcommand
 /keypress <name> [hold|chat]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
+<!--cmd-desc-start-->
 Simulates key presses for keybinds (e.g. "jump", "forward"), virtual keyboard (e.g. "shift+b"), or direct chat window input. Does not physically press keys, making it safe for background operation.
 
 Note: /keypress usage outside of a script is not recommended nor consistent.
-
+<!--cmd-desc-end-->
 ## Parameters
 | Parameter | Description |
 |-----------|-------------|

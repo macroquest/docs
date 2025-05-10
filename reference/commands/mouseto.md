@@ -5,18 +5,18 @@ tags:
 # /mouseto
 
 ## Syntax
+<!--cmd-syntax-start-->
 ```eqcommand
 /mouseto <X or X offset> [ <Y or Y offset> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Moves the mouse to the specified location.
-
 When an absolute location is specified (a number from 0 through 9) the mouse is moved to the absolute position.
-
 When a relative position is specified (using - or + in front of the X or Y) the mouse is moved by that offset.
-
+<!--cmd-desc-end-->
 ## Examples
 
 Move the mouse to X=1 Y=1

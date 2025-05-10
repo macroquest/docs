@@ -5,15 +5,16 @@ tags:
 # /return
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /return [value|${varname}]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Returns to the line immediately following the call. Can return values or variables.
-
+<!--cmd-desc-end-->
 ## Examples
 
 ```text

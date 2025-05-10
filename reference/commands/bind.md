@@ -5,15 +5,16 @@ tags:
 # /bind
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /bind [~]<name> [ <keycombo> | clear] | [list | eqlist]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Bind a key combination to a specific key.
-
+<!--cmd-desc-end-->
 |  |  |
 | :--- | :--- |
 | **/bind list** | Lists all MQ binds |

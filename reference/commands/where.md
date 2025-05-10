@@ -5,19 +5,20 @@ tags:
 # /where
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /where [ pc | npc ] [ <spawnname> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Lists where the closest PC, NPC or _spawnname_ is. The message returned is:
 
 ```text
 The closest 'spawnname' is a level # <race> <class> and <distance> away to the <direction>, Z difference = #.##.
 ```
-
+<!--cmd-desc-end-->
 ## Examples
 
 ```text

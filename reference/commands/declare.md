@@ -5,13 +5,14 @@ tags:
 # /declare
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /declare <varname> | <varname[array extents]> [ <type> ] [ local | global | outer ] [ <defaultvalue> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 This creates a variable or array of a particular type with a particular scope, and a default value if desired. The parameters must be given in order, but any after _varname_ may be skipped to use the defaults.
 
 **Notes**
@@ -21,3 +22,4 @@ This creates a variable or array of a particular type with a particular scope, a
 * The default value is nothing (empty string, or 0)
 
 These variables can be of any type that exist in MQ2DataVars. The variable will then have access to the members of that type.
+<!--cmd-desc-end-->

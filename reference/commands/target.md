@@ -8,15 +8,16 @@ tags:
     This command name has been deprecated and may be removed in a future version. Please update your scripts to use [/mqtarget](mqtarget.md) instead. Users who rightly want the native command should use [/eqtarget](eqtarget.md) for now.
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /target <option>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Targets whatever is matched by one or more of the following _options_:
-
+<!--cmd-desc-end-->
 |  |  |
 | :--- | :--- |
 | **clear** | Clears your current target |

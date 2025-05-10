@@ -5,14 +5,16 @@ tags:
 # /alias
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /alias <aliasname> <command> | [list | reload | <aliasname> delete]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
+<!--cmd-desc-start-->
 Creates custom command shortcuts. Aliases are saved in MacroQuest.ini and persist between sessions.
-
+<!--cmd-desc-end-->
 ## Examples
 
 | Command | Description |

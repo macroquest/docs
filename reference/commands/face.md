@@ -5,15 +5,16 @@ tags:
 # /face
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /face [predict] [fast] [nolook] [away] [ loc <y,x[,z]> | heading <angle> | item | door|switch | id <#> | <Spawn Search> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Turns your character in the specified direction.
-
+<!--cmd-desc-end-->
 ## Options
 
 | Option | Description |

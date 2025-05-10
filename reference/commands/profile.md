@@ -5,15 +5,16 @@ tags:
 # /profile
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /profile <profile>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 This runs a macro just like [/mac](macro.md) does, but when the macro ends it will output a csv file of every subroutine that has been called, and how long it took. The file will be in Macros/profiles, named for the macro and the time it started.
-
+<!--cmd-desc-end-->
 ## Settings
 
 The output file contains one line per subroutine call, in the order they were called in. The columns are:

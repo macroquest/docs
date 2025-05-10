@@ -5,15 +5,16 @@ tags:
 # /yes
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /yes
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Clicks "yes" on in-game dialogues and popups. Technically not a command, this is an [/alias](alias.md) that's included by default.
-
+<!--cmd-desc-end-->
 ## Examples
 Here's what the alias is really doing behind the scenes. From your MacroQuest.ini, 
 

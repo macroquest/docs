@@ -5,15 +5,16 @@ tags:
 # /mqconsole
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /mqconsole [clear | toggle | show | hide]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
-Brings up an external MacroQuest console 
-
+<!--cmd-desc-start-->
+Brings up an external MacroQuest console
+<!--cmd-desc-end-->
 ## Parameters
 
 - **clear** - Clears the text in the console

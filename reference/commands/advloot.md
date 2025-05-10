@@ -5,15 +5,16 @@ tags:
 # /advloot
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /advloot {personal | shared} {set | <"item name"> | <#index> } <window option> [ <quantity> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Extends EverQuest's `/advloot` command to allow control of the advloot window, including item-specific control.
-
+<!--cmd-desc-end-->
 
 ### Personal Loot Window
 

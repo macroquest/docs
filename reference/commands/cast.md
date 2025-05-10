@@ -5,15 +5,16 @@ tags:
 # /cast
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /cast [ list | <"spellname"> | item <"itemname"> ] [ loc <x y z> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 MacroQuest adds additional functionality to EverQuest's `/cast #` (gem number) command: cast by spell name, use items that have a "click" spell effect, and cast splash spells at a specific location.
-
+<!--cmd-desc-end-->
 ## Options
 
 - **list** - List of spells currently memorized and their gems

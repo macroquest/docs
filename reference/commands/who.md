@@ -5,19 +5,20 @@ tags:
 # /who
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /who <options>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Searches the current zone for the spawns matching the specified [Spawn Search](../../reference/general/spawn-search.md) _options_, with the addition of:
 
 * all: Scan all zones. Note: this reverts to the native /who command.
 * concolor: Displays the results in consider colors
 * sort \: Sort by this metric
-
+<!--cmd-desc-end-->
 ## Examples
 
 * **/who npc named**

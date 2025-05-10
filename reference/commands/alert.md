@@ -5,15 +5,16 @@ tags:
 # /alert
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /alert { add | remove | clear | list } <#list> [ <Spawn Search> ]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Used to manipulate alert lists which "watch" for spawns. Uses [Spawn Search](../general/spawn-search.md).
-
+<!--cmd-desc-end-->
 ## Options
 
 | Option | Description |

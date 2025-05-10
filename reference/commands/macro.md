@@ -5,15 +5,16 @@ tags:
 # /macro
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /macro <filename> [ <param0> [ <param1> [...]]]
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Executes a macro file. Supports passing parameters to the macro's `Sub Main` entry point.
-
+<!--cmd-desc-end-->
 ## Notes
 
 * Calling a macro from another macro will immediately terminate the calling macro (no cleanup).  

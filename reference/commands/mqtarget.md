@@ -5,13 +5,14 @@ tags:
 # /mqtarget
 
 ## Syntax
-
+<!--cmd-syntax-start-->
 ```eqcommand
 /mqtarget <option>
 ```
+<!--cmd-syntax-end-->
 
 ## Description
-
+<!--cmd-desc-start-->
 Targets whatever is matched by one or more of the following _options_:
 
 |  |  |
@@ -20,7 +21,7 @@ Targets whatever is matched by one or more of the following _options_:
 | **mycorpse** | Your own corpse (nearest) |
 | **myself** | Target yourself |
 | _Anything Else_ | Anything else is considered a [Spawn Search](../../reference/general/spawn-search.md) |
-
+<!--cmd-desc-end-->
 ## Examples
 
 ```text
