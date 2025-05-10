@@ -4,10 +4,11 @@ tags:
 ---
 # `bank`
 
+<!--dt-desc-start-->
 This is the type for your bank (not including shared bank or other bank features).
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='BagSlots') }}
 
 :   How many bag slots (base slots for bags/items) your bank has.
@@ -35,7 +36,7 @@ This is the type for your bank (not including shared bank or other bank features
 ### {{ renderMember(type='int', name='Copper') }}
 
 :   How much copper you have in your bank.
-
+<!--dt-members-end-->
 
 ## Examples
 
@@ -100,5 +101,6 @@ This is the type for your bank (not including shared bank or other bank features
     ```lua
     print(mq.TLO.Inventory.Bank.TotalSlots(3)())
     ```
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
+<!--dt-linkrefs-end-->

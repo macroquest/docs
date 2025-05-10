@@ -4,10 +4,11 @@ tags:
 ---
 # `skill`
 
+<!--dt-desc-start-->
 Data related to a particular skill
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='Activated') }}
 
 :   Returns TRUE if the skill is an activatable skill (ie, an Ability)
@@ -53,8 +54,9 @@ Data related to a particular skill
 ### [string][string] `To String`
 
 :   Same as **Name**
-
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

@@ -4,10 +4,11 @@ tags:
 ---
 # `ground`
 
+<!--dt-desc-start-->
 Represents a ground item.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='float', name='DisplayName') }}
 
 :   Displays name of the grounspawn
@@ -91,7 +92,7 @@ Represents a ground item.
 ### [string][string] `To String`
 
 :   Same as ID
-
+<!--dt-members-end-->
 
 ## Methods
 
@@ -135,10 +136,11 @@ Will target the closest item on the ground which has the word "egg" in it. and t
 ```
 
 Will face the closest item on the ground. and then echo the distance to it in the mq2 window. well if it finds an groundspawn, otherwise it will just echo NULL .DoFace does NOT target the ground item, it just faces it.
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [float]: datatype-float.md
 [ground]: datatype-ground.md
 [heading]: datatype-heading.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

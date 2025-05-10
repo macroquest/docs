@@ -4,10 +4,12 @@ tags:
 ---
 # `itemspell` Type
 
+<!--dt-desc-start-->
 Represents a spell effect on an item.
+<!--dt-desc-end-->
 
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='CastTime') }}
 
 :   Spell cast time.
@@ -63,8 +65,9 @@ Represents a spell effect on an item.
 ### {{ renderMember(type='int', name='TimerID') }}
 
 :   Timer ID of the spell.
-
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [int]: ../data-types/datatype-int.md
 [spell]: ../data-types/datatype-spell.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

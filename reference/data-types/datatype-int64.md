@@ -4,10 +4,11 @@ tags:
 ---
 # `int64` Type
 
+<!--dt-desc-start-->
 Represents a 64-bit integer. Can hold values from -9,223,372,036,854,775,808 to 9,223,372,036,854,775,807.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='float', name='Float') }}
 
 :   The number as a float (123 is represented as 123.0)
@@ -39,9 +40,11 @@ Represents a 64-bit integer. Can hold values from -9,223,372,036,854,775,808 to 
 ### [string][string] `(To String)`
 
 :   The number as a string
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [double]: datatype-double.md
 [float]: datatype-float.md
 [int]: datatype-int.md
 [int64]: datatype-int64.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

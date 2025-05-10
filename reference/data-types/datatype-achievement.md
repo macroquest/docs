@@ -4,10 +4,11 @@ tags:
 ---
 # `achievement`
 
+<!--dt-desc-start-->
 Provides the details about a single achievement and allows access to an achievement's objective.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='Completed') }}
 
 :   True if the achievement has been completed
@@ -71,7 +72,7 @@ Provides the details about a single achievement and allows access to an achievem
 ### {{ renderMember(type='string', name='State') }}
 
 :   The achievement state. See [Achievement State](datatype-achievement.md#achievement-state) below.
-
+<!--dt-members-end-->
 
 ## Achievement State
 
@@ -175,9 +176,10 @@ Print how many humans you have left to kill for the "**I'm a People Person!**" a
 | Name           | Action                 |
 | -------------- | ---------------------- |
 | **Inspect**    | Opens the achievement display window for this achievement |
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [achievementobj]: datatype-achievementobj.md
 [bool]: datatype-bool.md
 [time]: datatype-time.md
+<!--dt-linkrefs-end-->

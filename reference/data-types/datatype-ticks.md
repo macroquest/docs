@@ -3,11 +3,11 @@ tags:
     - datatype
 ---
 # `ticks` Type
-
+<!--dt-desc-start-->
 Represents a count of "ticks". Ticks are units of 6 seconds that are used to represent certain measurements of time in EverQuest.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='Hours') }}
 
 :   The number of hours in HH:MM:SS (0-23)
@@ -43,7 +43,8 @@ Represents a count of "ticks". Ticks are units of 6 seconds that are used to rep
 ### [string][string] `To String`
 
 :   Same as **Ticks**
-
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

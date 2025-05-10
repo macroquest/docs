@@ -4,10 +4,11 @@ tags:
 ---
 # `framelimiter`
 
+<!--dt-desc-start-->
 Data type to access frame limiter information.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='float', name='BackgroundFPS') }}
 
 :   Value of the target background fps setting.
@@ -47,7 +48,9 @@ Data type to access frame limiter information.
 ### {{ renderMember(type='string', name='Status') }}
 
 :   Either "Foreground" or "Background".
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [float]: datatype-float.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

@@ -4,10 +4,11 @@ tags:
 ---
 # `altability`
 
+<!--dt-desc-start-->
 Contains all the data related to alternate abilities
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='AARankRequired') }}
 
 :   Rank required to train
@@ -111,7 +112,7 @@ Contains all the data related to alternate abilities
 ### [string][string] `To String`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
 
 ## Examples
 
@@ -132,9 +133,10 @@ If the AA "Companion's Aegis" can be trained, buy the next index/rank of it
         mq.cmd.alt('buy '..mq.TLO.AltAbility("Companion's Aegis").NextIndex())
     end
     ```
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [bool]: datatype-bool.md
 [spell]: datatype-spell.md
 [altability]: datatype-altability.md
+<!--dt-linkrefs-end-->

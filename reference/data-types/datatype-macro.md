@@ -4,10 +4,11 @@ tags:
 ---
 # `macro`
 
+<!--dt-desc-start-->
 The Macro DataType deals with the macro currently running, and nothing else.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='string', name='CurCommand') }}
 
 :   list the current line number, macro name, and code of the macro being processed
@@ -59,15 +60,16 @@ The Macro DataType deals with the macro currently running, and nothing else.
 ### {{ renderMember(type='varies', name='Variable') }}
 
 :   returns the value given the name of Macro variable. The type of this member depends on the type of the variable being accessed.
-
+<!--dt-members-end-->
 
 ## Methods
 
 | Method Name | Action |
 | :--- | :--- |
 | Undeclared | List all undeclared variables |
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [int]: datatype-int.md
 [int64]: datatype-int64.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

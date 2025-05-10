@@ -4,8 +4,9 @@ tags:
 ---
 # `corpse`
 
+<!--dt-desc-start-->
 Data related to the current lootable corpse. See [Corpse](../top-level-objects/tlo-corpse.md).
-
+<!--dt-desc-end-->
 ## Inheritance
 
 This type inherits members from [_spawn_](datatype-spawn.md).
@@ -22,7 +23,7 @@ classDiagram
 ```
 
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='item', name='Item', params='N') }}
 
 :   _Nth_ item on the corpse
@@ -42,7 +43,7 @@ classDiagram
 ### [string][string] `To String`
 
 :   Same as **Open**
-
+<!--dt-members-end-->
 
 ## Usage
 
@@ -63,8 +64,9 @@ classDiagram
             print('We are currently looting a corpse with items')
         end
         ```
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [int]: datatype-int.md
 [item]: datatype-item.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

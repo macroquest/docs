@@ -4,10 +4,11 @@ tags:
 ---
 # `heading`
 
+<!--dt-desc-start-->
 Represents a direction on a compass.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='Clock') }}
 
 :   The nearest clock direction, e.g. 1-12
@@ -31,7 +32,9 @@ Represents a direction on a compass.
 ### [string][string] `(To String)`
 
 :   Same as **ShortName**
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [float]: datatype-float.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

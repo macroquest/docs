@@ -4,12 +4,13 @@ tags:
 ---
 # `dztimer`
 
+<!--dt-desc-start-->
 Provides information about a dynamic zone lockout timer
 
 See Also: [DataType:dynamiczone](./datatype-dynamiczone.md), [TLO:DynamicZone](../top-level-objects/tlo-dynamiczone.md)
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='string', name='ExpeditionName') }}
 
 :   The name of the expedition
@@ -29,11 +30,12 @@ See Also: [DataType:dynamiczone](./datatype-dynamiczone.md), [TLO:DynamicZone](.
 ### [string][string] `To String`
 
 :   Returns the string formatted as `"ExpeditionName|EventName"` |
-
+<!--dt-members-end-->
 ### Changelog
 
 * July 9th, 2021: Initial version
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [timestamp]: datatype-timestamp.md
+<!--dt-linkrefs-end-->

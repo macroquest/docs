@@ -4,10 +4,11 @@ tags:
 ---
 # `fellowship`
 
+<!--dt-desc-start-->
 Contains all the data about your fellowship
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='Campfire') }}
 
 :   TRUE if campfire is up, FALSE if not
@@ -63,14 +64,13 @@ Contains all the data about your fellowship
 ### [string][string] `To String`
 
 :   TRUE if currently in a fellowship, FALSE if not
-
-
+<!--dt-members-end-->
 
 ## Changelog
 
 * May 13, 2022: Added Exists
 * December 3rd, 2020: Added Sharing
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [fellowshipmember]: datatype-fellowshipmember.md
 [float]: datatype-float.md
@@ -78,3 +78,4 @@ Contains all the data about your fellowship
 [string]: datatype-string.md
 [ticks]: datatype-ticks.md
 [zone]: datatype-zone.md
+<!--dt-linkrefs-end-->

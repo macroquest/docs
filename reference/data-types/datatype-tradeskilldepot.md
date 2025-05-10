@@ -4,10 +4,11 @@ tags:
 ---
 # `tradeskilldepot`
 
+<!--dt-desc-start-->
 This contains information related to a tradeskill depot.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='Capacity') }}
 
 :   Returns the total capacity of the tradeskill depot.
@@ -43,7 +44,7 @@ This contains information related to a tradeskill depot.
 ### {{ renderMember(type='item', name='SelectedItem') }}
 
 :   Returns the currently selected item in the tradeskill depot window.
-
+<!--dt-members-end-->
 
 ## Methods
 
@@ -55,7 +56,8 @@ This contains information related to a tradeskill depot.
 | **WithdrawItem**[_name_] | Withdraw the given item name from the tradeskill depot. Will create a quantity window if there is more than one item in the stack. |
 | **WithdrawStack** | Withdraw a full stack of the selected item from the tradeskill depot. |
 | **WithdrawStack**[_name_] | Withdraw a full stack of the given item name from the tradeskill depot. |
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [bool]: datatype-bool.md
 [item]: datatype-item.md
+<!--dt-linkrefs-end-->

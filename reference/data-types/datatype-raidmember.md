@@ -4,10 +4,11 @@ tags:
 ---
 # `raidmember`
 
+<!--dt-desc-start-->
 Data related to the specified raid member
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='class', name='Class') }}
 
 :   Raid member's class (works without being in zone)
@@ -43,9 +44,11 @@ Data related to the specified raid member
 ### [string][string] `To String`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [class]: datatype-class.md
 [int]: datatype-int.md
 [spawn]: datatype-spawn.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

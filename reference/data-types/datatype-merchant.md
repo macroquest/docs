@@ -4,10 +4,11 @@ tags:
 ---
 # `merchant`
 
+<!--dt-desc-start-->
 This contains information related to the active merchant.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is active.
 
 ### {{ renderMember(type='bool', name='Full') }}
@@ -48,7 +49,7 @@ This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is ac
 ### [string][string] `(To String)`
 
 :   Same as *Open*
-
+<!--dt-members-end-->
 
 ## Methods
 
@@ -73,9 +74,10 @@ Will select a "Diamond" you can also do "=Diamond" to match EXACT name. Then you
 ```
 /invoke ${Merchant.Sell[100]}
 ```
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [float]: datatype-float.md
 [int]: datatype-int.md
 [item]: datatype-item.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

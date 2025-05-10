@@ -4,10 +4,11 @@ tags:
 ---
 # `invslot`
 
+<!--dt-desc-start-->
 Data related to an inventory slot.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='ID') }}
 
 :   ID of this item slot (usable directly by [/itemnotify](../../reference/commands/itemnotify.md))
@@ -31,7 +32,7 @@ Data related to an inventory slot.
 ### [string][string] `To String`
 
 :   Same as **ID**
-
+<!--dt-members-end-->
 
 ## Example
 
@@ -57,7 +58,7 @@ Data related to an inventory slot.
         end
         ```
 
-
+<!--dt-linkrefs-start-->
 [achievement]: datatype-achievement.md
 [achievementcat]: datatype-achievementcat.md
 [achievementobj]: datatype-achievementobj.md
@@ -92,3 +93,4 @@ Data related to an inventory slot.
 [worldlocation]: datatype-worldlocation.md
 [xtarget]: datatype-xtarget.md
 [zone]: datatype-zone.md
+<!--dt-linkrefs-end-->

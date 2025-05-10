@@ -4,10 +4,11 @@ tags:
 ---
 # `switch`
 
+<!--dt-desc-start-->
 Data related to switches (levers, buttons, etc) in the zone
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='heading', name='DefaultHeading') }}
 
 :   Heading of "closed" switch
@@ -79,9 +80,11 @@ Data related to switches (levers, buttons, etc) in the zone
 ### {{ renderMember(type='string', name='ToString') }}
 
 :   Same as **ID**
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [float]: datatype-float.md
 [heading]: datatype-heading.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

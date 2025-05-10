@@ -4,8 +4,9 @@ tags:
 ---
 # `target`
 
+<!--dt-desc-start-->
 This data type represents information specific to your current target. It contains additional members for querying buff information.
-
+<!--dt-desc-end-->
 ## Inheritance
 
 This type inherits members from [_spawn_](datatype-spawn.md).
@@ -21,7 +22,7 @@ classDiagram
 ```
 
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='cachedbuff', name='Aego') }}
 
 :   Returns the name of the Aego spell if the Target has one
@@ -181,7 +182,7 @@ classDiagram
 ### [string][string] `(To String)`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
 
 ## Examples
 
@@ -191,9 +192,10 @@ classDiagram
 /target pet
 /delay 5s ${Target.ID}==${Pet.ID} && ${Target.BuffsPopulated}==TRUE
 ```
-
+<!--dt-linkrefs-start-->
 [cachedbuff]: datatype-cachedbuff.md
 [float]: datatype-float.md
 [int]: datatype-int.md
 [spawn]: datatype-spawn.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

@@ -4,10 +4,11 @@ tags:
 ---
 # `zone`
 
+<!--dt-desc-start-->
 Contains information related to the specified zone
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='ID') }}
 
 :   ID of the zone
@@ -28,6 +29,9 @@ Contains information related to the specified zone
 
 :   Same as **Name**
 
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [int64]: datatype-int64.md
+<!--dt-linkrefs-end-->

@@ -4,10 +4,11 @@ tags:
 ---
 # `buff`
 
+<!--dt-desc-start-->
 This is the type for any buffs currently affecting you, both long duration and short duration buffs.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 This type inherits members from [_spell_](datatype-spell.md).
 
 ### {{ renderMember(type='string', name='Caster') }}
@@ -65,7 +66,7 @@ This type inherits members from [_spell_](datatype-spell.md).
 ### [string][string] `To String`
 
 :   Same as Name
-
+<!--dt-members-end-->
 
 ## Methods
 
@@ -91,7 +92,7 @@ This type inherits members from [_spell_](datatype-spell.md).
         ```lua
         mq.TLO.Me.Buff("Credence").Remove()
         ```
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [bool]: datatype-bool.md
@@ -99,3 +100,4 @@ This type inherits members from [_spell_](datatype-spell.md).
 [spell]: datatype-spell.md
 [int64]: datatype-int64.md
 [float]: datatype-float.md
+<!--dt-linkrefs-end-->

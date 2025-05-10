@@ -4,10 +4,11 @@ tags:
 ---
 # `spell`
 
+<!--dt-desc-start-->
 This is the type used for spell information.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='ActorTagId') }}
 
 :   ???
@@ -417,7 +418,7 @@ This is the type used for spell information.
 ### [string][string] `(To String)`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
 
 ## Methods
 
@@ -457,7 +458,7 @@ To cast a spell with the proper rank, use the following:
 /cast "${Spell[Vinespur].RankName}"
 ```
 
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [float]: datatype-float.md
 [int]: datatype-int.md
@@ -466,3 +467,4 @@ To cast a spell with the proper rank, use the following:
 [string]: datatype-string.md
 [ticks]: datatype-ticks.md
 [timestamp]: datatype-timestamp.md
+<!--dt-linkrefs-end-->

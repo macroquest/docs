@@ -4,10 +4,11 @@ tags:
 ---
 # `worldlocation`
 
+<!--dt-desc-start-->
 Provides access to world locations such as a character's bound location
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='heading', name='Heading') }}
 
 :   At the point of binding, what direction was the character facing
@@ -31,8 +32,10 @@ Provides access to world locations such as a character's bound location
 ### {{ renderMember(type='zone', name='Zone') }}
 
 :   Access to the zone data
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [heading]: datatype-heading.md
 [int]: datatype-int.md
 [string]: datatype-string.md
 [zone]: datatype-zone.md
+<!--dt-linkrefs-end-->

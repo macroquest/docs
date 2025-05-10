@@ -4,11 +4,11 @@ tags:
 ---
 # `bandolier`
 
+<!--dt-desc-start-->
 Used to access information about bandolier sets on your character.
-
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='Active') }}
 
 :   Indicates if the bandolier set is active
@@ -24,7 +24,7 @@ Used to access information about bandolier sets on your character.
 ### {{ renderMember(type='string', name='Name') }}
 
 :   Returns the name of the bandolier set
-
+<!--dt-members-end-->
 
 ## Methods
 
@@ -80,8 +80,9 @@ Used to access information about bandolier sets on your character.
         -- Print the weapon in the primary bandolier slot
         print('I have a ', mq.TLO.Me.Bandolier('1HB').Item(1).Name(), ' in my primary bandolier slot')
         ```
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-bandolier.md
 [bool]: datatype-bool.md
 [bandolieritem]: datatype-bandolier.md#bandolieritem
+<!--dt-linkrefs-end-->

@@ -4,10 +4,11 @@ tags:
 ---
 # `xtarget`
 
+<!--dt-desc-start-->
 Contains the data related to your extended target list
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='ID') }}
 
 :   ID of specified XTarget
@@ -54,6 +55,8 @@ Contains the data related to your extended target list
 
 :   Number of current extended targets
 
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

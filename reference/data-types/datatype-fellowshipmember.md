@@ -4,10 +4,11 @@ tags:
 ---
 # `fellowshipmember`
 
+<!--dt-desc-start-->
 Contains all the data related to fellowship members
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='class', name='Class') }}
 
 :   Member's class
@@ -35,15 +36,16 @@ Contains all the data related to fellowship members
 ### [string][string] `To String`
 
 :   player name
-
+<!--dt-members-end-->
 
 ## Changelog
 
 * March 7th, 2021: Added Sharing
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [class]: datatype-class.md
 [int]: datatype-int.md
 [string]: datatype-string.md
 [ticks]: datatype-ticks.md
 [zone]: datatype-zone.md
+<!--dt-linkrefs-end-->

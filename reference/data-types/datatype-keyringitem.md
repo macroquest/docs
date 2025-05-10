@@ -4,10 +4,11 @@ tags:
 ---
 # `keyringitem`
 
+<!--dt-desc-start-->
 This datatype deals strictly with information items on a keyring.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='Index') }}
 
 :   Where on the keyring list
@@ -19,7 +20,7 @@ This datatype deals strictly with information items on a keyring.
 ### {{ renderMember(type='string', name='Name') }}
 
 :   name of the keyring item
-
+<!--dt-members-end-->
 
 ## Examples
 
@@ -42,7 +43,8 @@ This datatype deals strictly with information items on a keyring.
     ```
 
     Outputs: 2
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [item]: datatype-item.md
+<!--dt-linkrefs-end-->

@@ -4,10 +4,11 @@ tags:
 ---
 # `class`
 
+<!--dt-desc-start-->
 Data about a particular character class
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='CanCast') }}
 
 :   Can cast spells, including Bard
@@ -59,7 +60,7 @@ Data about a particular character class
 ### [string][string] `To String`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
 
 ## Class name and ShortName list:
 | **Name** | **ShortName** |
@@ -80,7 +81,8 @@ Data about a particular character class
 | Warrior | WAR |
 | Wizard | WIZ |
 | Mercenary | MER |
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

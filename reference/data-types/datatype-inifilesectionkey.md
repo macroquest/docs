@@ -4,10 +4,11 @@ tags:
 ---
 # `inifilesectionkey`
 
+<!--dt-desc-start-->
 This is the type for the referenced key in a specific section of an ini file.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='Count') }}
 
 :   How many keys matching the Key[] index exist.
@@ -27,7 +28,7 @@ This is the type for the referenced key in a specific section of an ini file.
 ### {{ renderMember(type='string', name='ValueAtIndex') }}
 
 :   The value of the entry at the specified index
-
+<!--dt-members-end-->
 
 ## Examples
 
@@ -134,7 +135,8 @@ Key4=foobarfour
         foobarfive
         ```
 
-
+<!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

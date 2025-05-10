@@ -4,12 +4,13 @@ tags:
 ---
 # `achievementcat`
 
+<!--dt-desc-start-->
 Provides access to achievement categories. Achievements are organized hierarchically in the achievements window by categories.
 
 While not required to access achievements, categories may be useful for enumerating lists of achievements.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='achievement', name='Achievement', params='#|Name') }}
 
 :   Find an achievement in this category by its ID or name.
@@ -66,7 +67,7 @@ While not required to access achievements, categories may be useful for enumerat
 ### {{ renderMember(type='int', name='TotalAchievements') }}
 
 :   The total number of achievements in this category and its subcategories.
-
+<!--dt-members-end-->
 
 ### Examples
 
@@ -99,8 +100,9 @@ List the unearned achievements in the **EverQuest / Exploration** category:
         end
     end
     ```
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
 [achievement]: datatype-achievement.md
 [achievementcat]: datatype-achievementcat.md
+<!--dt-linkrefs-end-->

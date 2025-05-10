@@ -4,10 +4,12 @@ tags:
 ---
 # `deity` Type
 
+<!--dt-desc-start-->
 Contains data related to deity members
+<!--dt-desc-end-->
 
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='ID') }}
 
 :   The deity's ID #
@@ -23,6 +25,8 @@ Contains data related to deity members
 ### [string][string] `To String`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

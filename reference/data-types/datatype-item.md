@@ -3,11 +3,11 @@ tags:
     - datatype
 ---
 # `item` Type
-
+<!--dt-desc-start-->
 Contains the properties that describe an item.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='int', name='AC') }}
 
 :   AC value on item
@@ -681,6 +681,7 @@ Contains the properties that describe an item.
 
 :   Same as **Name**
 
+<!--dt-members-end-->
 
 ## Methods
 
@@ -735,7 +736,7 @@ Contains the properties that describe an item.
 * DisplayIndex = 6
 
 **NOTE:** There is a difference between .Info and .Information .Info contains for example: .Info can return text like; this item is placable in yards, guild yards blah blah , This item can be used in tradeskills .Information can return text like Item Information: Placing this augment into blah blah, this armor can only be used in blah blah
-
+<!--dt-linkrefs-start-->
 [augtype]: datatype-augtype.md
 [bool]: datatype-bool.md
 [evolving]: datatype-evolving.md
@@ -748,3 +749,4 @@ Contains the properties that describe an item.
 [spell]: datatype-spell.md
 [string]: datatype-string.md
 [ticks]: datatype-ticks.md
+<!--dt-linkrefs-end-->

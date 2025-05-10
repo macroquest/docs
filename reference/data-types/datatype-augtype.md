@@ -4,10 +4,12 @@ tags:
 ---
 # `augtype` Type
 
+<!--dt-desc-start-->
 Describes data about an augmentation slot in an item.
+<!--dt-desc-end-->
 
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='bool', name='Empty') }}
 
 :   True if the slot is empty
@@ -39,9 +41,10 @@ Describes data about an augmentation slot in an item.
 ### {{ renderMember(type='int', name='Visible') }}
 
 :   True if this slot is visible to the user.
-
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [int]: ./datatype-int.md
 [bool]: ./datatype-bool.md
 [string]: ./datatype-string.md
 [item]: ./datatype-item.md
+<!--dt-linkrefs-end-->

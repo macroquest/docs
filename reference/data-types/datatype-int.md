@@ -3,11 +3,11 @@ tags:
     - datatype
 ---
 # `int` Type
-
+<!--dt-desc-start-->
 Represents a 32-bit integer. Can hold values from -2,147,483,648 to 2,147,483,647.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 ### {{ renderMember(type='float', name='Float') }}
 
 :   The number as a float (123 is represented as 123.0)
@@ -39,8 +39,10 @@ Represents a 32-bit integer. Can hold values from -2,147,483,648 to 2,147,483,64
 ### [string][string] `(To String)`
 
 :   The number as a string
-
+<!--dt-members-end-->
+<!--dt-linkrefs-start-->
 [double]: datatype-double.md
 [float]: datatype-float.md
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->

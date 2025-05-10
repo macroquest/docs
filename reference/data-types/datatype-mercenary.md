@@ -4,10 +4,11 @@ tags:
 ---
 # `mercenary`
 
+<!--dt-desc-start-->
 This is the type used for mercenaries.
-
+<!--dt-desc-end-->
 ## Members
-
+<!--dt-members-start-->
 This type inherits members from [_spawn_](datatype-spawn.md).
 
 ### {{ renderMember(type='int', name='AAPoints') }}
@@ -42,7 +43,7 @@ This type inherits members from [_spawn_](datatype-spawn.md).
 ### [string][string] `To String`
 
 :   Same as **Name**
-
+<!--dt-members-end-->
 
 ## Examples
 
@@ -55,6 +56,7 @@ This type inherits members from [_spawn_](datatype-spawn.md).
         /stance reactive
     }
     ```
-
+<!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md
+<!--dt-linkrefs-end-->
