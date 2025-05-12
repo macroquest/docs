@@ -28,8 +28,8 @@ The FrameLimiter TLO provides access to the [frame limiter](../../main/features/
 <h2>Members</h2>
 {%
   include-markdown "reference/data-types/datatype-framelimiter.md"
-  start="<!--dt-members-start -->"
-  end="<!--dt-members-end -->"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
   heading-offset=0
 %}
 {%

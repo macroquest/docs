@@ -2,7 +2,7 @@
 tags:
    - command
 ---
-# Mapfilter
+# /mapfilter
 
 ## Syntax
 <!--cmd-syntax-start-->
