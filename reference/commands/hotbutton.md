@@ -7,7 +7,7 @@ tags:
 ## Syntax
 <!--cmd-syntax-start-->
 ```eqcommand
-/hotbutton <name> [<color>] [<line>:][<cursor>:]<text>]
+/hotbutton <name> [<color>] [<line>:][<cursor>:][<text>]
 ```
 <!--cmd-syntax-end-->
 
