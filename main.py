@@ -84,7 +84,7 @@ def relative_link(target_file_path, embedding_page_src_uri, base_dir=None):
 # extra sections beyond Members/Forms/Description
 def has_extra_sections(content):
     SECTION_PATTERN = r'^##\s+(.+?)\s*$'
-    target_sections = {"Members", "Forms", "Description"}
+    target_sections = {"Members", "Forms", "Description", "Associated DataTypes", "DataTypes"}
     
     lines = content.split('\n')
     sections = []

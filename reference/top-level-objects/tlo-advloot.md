@@ -7,147 +7,71 @@ tags:
 <!--tlo-desc-start-->
 The AdvLoot TLO grants access to items in the Advanced Loot window.
 <!--tlo-desc-end-->
-## Members
-### {{ renderMember(type='itemfilterdata', name='Filter', params='ItemID') }}
 
-:   Inspect the loot filter for a given ItemID.
-
-### {{ renderMember(type='bool', name='LootInProgress') }}
-
-:   True/False if looting from AdvLoot is in progress
-
-### {{ renderMember(type='int', name='PCount') }}
-
-:   item count from the Personal list
-
-### {{ renderMember(type='advlootitem', name='PList', params='Index') }}
-
-:   Inspect the item at the specified index in the personal loot list.
-
-### {{ renderMember(type='int', name='PWantCount') }}
-
-:   Want count from the Personal list (AN + AG + ND + GD)
-
-### {{ renderMember(type='int', name='SCount') }}
-
-:   Item count from the Shared list
-
-### {{ renderMember(type='advlootitem', name='SList', params='Index') }}
-
-:   Inspect the item at the specified index in the shared loot list.
-
-### {{ renderMember(type='int', name='SWantCount') }}
-
-:   Want count from the Shared list (AN + AG + ND + GD)
-
-## datatype `advlootitem`
-
-Represents a discrete item being looted in an AdvLoot window.
-
-### {{ renderMember(type='bool', name='AlwaysGreed') }}
-
-:   The Always Greed (AG) state of the item.
-
-### {{ renderMember(type='bool', name='AlwaysNeed') }}
-
-:   The Always Need (AN) state of the item.
-
-### {{ renderMember(type='bool', name='AutoRoll') }}
-
-:   The Auto Roll state (dice icon) of the item.
-
-### {{ renderMember(type='spawn', name='Corpse') }}
-
-:   The spawn representing the corpse that is being looted, if available.
-
-### {{ renderMember(type='bool', name='FreeGrab') }}
-
-:   Indicates that the item is free grab.
-
-### {{ renderMember(type='bool', name='Greed') }}
-
-:   The Greed (GD) state of the item.
-
-### {{ renderMember(type='int', name='IconID') }}
-
-:   The ID of the icon for the item.
-
-### {{ renderMember(type='int64', name='ID') }}
-
-:   The ID of the item.
-
-### {{ renderMember(type='int', name='Index') }}
-
-:   The positional index of the item.
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   The name of the item.
-
-### {{ renderMember(type='bool', name='Need') }}
-
-:   The Need (ND) state of the item.
-
-### {{ renderMember(type='bool', name='Never') }}
-
-:   The Never (NV) state of the item.
-
-### {{ renderMember(type='bool', name='No') }}
-
-:   The No state of the item.
-
-### {{ renderMember(type='bool', name='NoDrop') }}
-
-:   Indicates if the item is NO DROP.
-
-### {{ renderMember(type='int', name='StackSize') }}
-
-:   The size of the stack of items being looted.
-
-### [string][string] `To String`
-
-:   Same as **Name**
-
-
-## datatype `itemfilterdata`
-
-A collection of settings that together describe the loot filter for an item.
-
-### {{ renderMember(type='bool', name='AutoRoll') }}
-
-:   The Auto Roll state (dice icon).
-
-### {{ renderMember(type='bool', name='Greed') }}
-
-:   The Greed (GD) state.
-
-### {{ renderMember(type='int', name='IconID') }}
-
-:   The ID of the icon.
-
-### {{ renderMember(type='int', name='ID') }}
-
-:   The ID of the item.
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   The Name of the item.
-
-### {{ renderMember(type='bool', name='Need') }}
-
-:   The Need (ND) state.
-
-### {{ renderMember(type='bool', name='Never') }}
-
-:   The Never (NV) state.
-
-### {{ renderMember(type='int', name='Types') }}
-
-:   Bit field representing all the loot filter flags for this item.
-
-### [string][string] `To String`
-
-:   Same as **Name**
+## Associated DataTypes
+
+## [advloot](../data-types/datatype-advloot.md)
+{%
+  include-markdown "reference/data-types/datatype-advloot.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-advloot.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-advloot.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-advloot.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
+## [advlootitem](../data-types/datatype-advlootitem.md)
+{%
+  include-markdown "reference/data-types/datatype-advlootitem.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-advlootitem.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-advlootitem.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-advlootitem.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
+## [itemfilterdata](../data-types/datatype-itemfilterdata.md)
+{%
+  include-markdown "reference/data-types/datatype-itemfilterdata.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-itemfilterdata.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-itemfilterdata.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-itemfilterdata.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
 
 
 ## Usage
@@ -220,11 +144,12 @@ A collection of settings that together describe the loot filter for an item.
     end
     ```
 <!--tlo-linkrefs-start-->
-[int]: ../data-types/datatype-int.md
-[string]: ../data-types/datatype-string.md
+[advloot]: ../data-types/datatype-advloot.md
+[advlootitem]: ../data-types/datatype-advlootitem.md
 [bool]: ../data-types/datatype-bool.md
+[int]: ../data-types/datatype-int.md
 [int64]: ../data-types/datatype-int64.md
+[itemfilterdata]: ../data-types/datatype-itemfilterdata.md
 [spawn]: ../data-types/datatype-spawn.md
-[itemfilterdata]: #datatype-itemfilterdata
-[advlootitem]: #datatype-advlootitem
+[string]: ../data-types/datatype-string.md
 <!--tlo-linkrefs-end-->

@@ -14,19 +14,28 @@ Grants access to your friends dlist.
 :   Access friends data
 <!--tlo-forms-end-->
 
-## datatype `friends`
+## Associated DataTypes
 
-### {{ renderMember(type='bool', name='Friend', params='name') }}
+## [friends](../data-types/datatype-friends.md)
+{%
+  include-markdown "reference/data-types/datatype-friends.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-friends.md') }}
 
-:   Returns TRUE if _name_ is on your friend list
-
-### {{ renderMember(type='string', name='Friend', params='#') }}
-
-:   Returns the name of friend list member _\#_
-
-### [string][string] `To String`
-
-:   Number of friends on your friends list
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-friends.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-friends.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
 
 
 
@@ -56,5 +65,5 @@ Grants access to your friends dlist.
 <!--tlo-linkrefs-start-->
 [string]: ../data-types/datatype-string.md
 [bool]: ../data-types/datatype-bool.md
-[friends]: #datatype-friends
+[friends]: ../data-types/datatype-friends.md
 <!--tlo-linkrefs-end-->
