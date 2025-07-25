@@ -80,7 +80,7 @@ Upon clicking "Save", your profile will be encrypted and saved in MQ2AutoLogin.i
         trailing-newlines=false 
      %} {{ readMore('plugins/core-plugins/autologin/switchserver.md') }}
 
-`END` and `HOME`
+++end++ and ++home++
 :   Pressing the "END" key at the character select screen will pause autologin, "HOME" will unpause.
 
 ## INI
