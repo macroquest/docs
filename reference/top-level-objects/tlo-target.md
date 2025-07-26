@@ -12,7 +12,9 @@ Object used to get information about your current target.
 ### {{ renderMember(type='target', name='Target') }}
 
 :   Returns the spawn object for the current target.
+<!--tlo-forms-end-->
 
+## Examples
 
 !!! warning "Note"
 
@@ -56,7 +58,30 @@ Object used to get information about your current target.
     ```
 
     returns "a_pyre_beetle48 will break mezz in 66s"
-<!--tlo-forms-end-->
+
+## Associated DataTypes
+
+## [target](../data-types/datatype-target.md)
+{%
+  include-markdown "reference/data-types/datatype-target.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-target.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-target.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-target.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
 <!--tlo-linkrefs-start-->
 [target]: ../data-types/datatype-target.md
 <!--tlo-linkrefs-end-->

@@ -51,7 +51,7 @@ This is the type for your current task objective.
 
 ### {{ renderMember(type='string', name='Type') }}
 
-:   Returns a string that can be one of the following:<
+:   Returns a string that can be one of the following:
 
     - Unknown
     - None

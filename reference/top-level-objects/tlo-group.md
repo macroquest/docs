@@ -14,6 +14,50 @@ Access to all group-related information.
 :   Retrieve information about your group
 <!--tlo-forms-end-->
 
+## Associated DataTypes
+
+## [group](../data-types/datatype-group.md)
+{%
+  include-markdown "reference/data-types/datatype-group.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-group.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-group.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-group.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
+## [groupmember](../data-types/datatype-groupmember.md)
+{%
+  include-markdown "reference/data-types/datatype-groupmember.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-groupmember.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-groupmember.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-groupmember.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
 ## Usage
 
 ```
@@ -29,10 +73,15 @@ Echo Groupleader ID, if any.
 Echos your own name
 
 ```
-`/echo ${Group.Member[1]}
+/echo ${Group.Member[1]}
 ```
 
 Echos the next person on the list, after yourself.
 <!--tlo-linkrefs-start-->
+[bool]: ../data-types/datatype-bool.md
 [group]: ../data-types/datatype-group.md
+[groupmember]: ../data-types/datatype-groupmember.md
+[int]: ../data-types/datatype-int.md
+[spawn]: ../data-types/datatype-spawn.md
+[string]: ../data-types/datatype-string.md
 <!--tlo-linkrefs-end-->

@@ -15,6 +15,29 @@ Pet object which allows you to get properties of your pet.
     has access to the properties of the [spawn](../data-types/datatype-spawn.md) type as well.
 <!--tlo-forms-end-->
 
+## Associated DataTypes
+
+## [pet](../data-types/datatype-pet.md)
+{%
+  include-markdown "reference/data-types/datatype-pet.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-pet.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-pet.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-pet.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
 ## Usage
 
 ```

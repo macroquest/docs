@@ -25,6 +25,92 @@ Reads value(s) from an ini file located in a relative or absolute path.
     to the [Key](../data-types/datatype-inifilesectionkey.md) datatype for further usage.
 <!--tlo-forms-end-->
 
+## Associated DataTypes
+
+## [ini](../data-types/datatype-ini.md)
+{%
+  include-markdown "reference/data-types/datatype-ini.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-ini.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-ini.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-ini.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
+## [inifile](../data-types/datatype-inifile.md)
+{%
+  include-markdown "reference/data-types/datatype-inifile.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-inifile.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-inifile.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-inifile.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
+## [inifilesection](../data-types/datatype-inifilesection.md)
+{%
+  include-markdown "reference/data-types/datatype-inifilesection.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-inifilesection.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-inifilesection.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-inifilesection.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
+## [inifilesectionkey](../data-types/datatype-inifilesectionkey.md)
+{%
+  include-markdown "reference/data-types/datatype-inifilesectionkey.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-inifilesectionkey.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-inifilesectionkey.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-inifilesectionkey.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
 ## Usage
 
 If sample.ini contains:
