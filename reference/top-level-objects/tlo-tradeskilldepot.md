@@ -12,6 +12,29 @@ Object that interacts with the personal tradeskill depot, introduced in the Nigh
 ### {{ renderMember(type='tradeskilldepot', name='TradeskillDepot') }}
 <!--tlo-forms-end-->
 
+## Associated DataTypes
+
+## [tradeskilldepot](../data-types/datatype-tradeskilldepot.md)
+{%
+  include-markdown "reference/data-types/datatype-tradeskilldepot.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-tradeskilldepot.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-tradeskilldepot.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-tradeskilldepot.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
 ## Examples
 
 ```

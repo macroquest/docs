@@ -24,6 +24,50 @@ Used to find information about a particular zone.
     this will return [currentzone].
 <!--tlo-forms-end-->
 
+## Associated DataTypes
+
+## [zone](../data-types/datatype-zone.md)
+{%
+  include-markdown "reference/data-types/datatype-zone.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-zone.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-zone.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-zone.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
+## [currentzone](../data-types/datatype-currentzone.md)
+{%
+  include-markdown "reference/data-types/datatype-currentzone.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-currentzone.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-currentzone.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-currentzone.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
 ## Usage
 
 ```

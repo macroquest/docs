@@ -26,6 +26,29 @@ Object used when you want to find information on targetted doors or switches suc
     - Otherwise, return switch by searching by name
 <!--tlo-forms-end-->
 
+## Associated DataTypes
+
+## [switch](../data-types/datatype-switch.md)
+{%
+  include-markdown "reference/data-types/datatype-switch.md"
+  start="<!--dt-desc-start-->"
+  end="<!--dt-desc-end-->"
+  trailing-newlines=false
+%} {{ readMore('reference/data-types/datatype-switch.md') }}
+
+<h2>Members</h2>
+{%
+  include-markdown "reference/data-types/datatype-switch.md"
+  start="<!--dt-members-start-->"
+  end="<!--dt-members-end-->"
+  heading-offset=0
+%}
+{%
+  include-markdown "reference/data-types/datatype-switch.md"
+  start="<!--dt-linkrefs-start-->"
+  end="<!--dt-linkrefs-end-->"
+%}
+
 ## Usage
 
 ```
