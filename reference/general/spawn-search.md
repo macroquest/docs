@@ -1,6 +1,6 @@
 # Spawn Search
 
-All [Top-Level Objects](../top-level-objects/), [Data Types](../data-types/) and [Commands](../commands/) that support searching for spawns can take the following options:
+All top-level objects, data types and commands that support searching for spawns can take the following options:
 
 | Parameter | Description |
 | :--- | :--- |

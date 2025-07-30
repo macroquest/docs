@@ -1,532 +1,536 @@
 
 # SPA List
 
-Spell Affects (yea they have bad engrish)  
-Spell Effects  
-Source Info (Updated 2018-12)
+A list of every SPA (spell affect), an internal EverQuest term. While divulging this list, developers explained that every spell has an <strong>a</strong>ffect which determines the spell <strong>e</strong>ffect(s). ([source](https://forums.daybreakgames.com/eq/index.php?threads/enumerated-spa-list.206288/page-2#post-3101174)) While SPA lists have been [documented](https://forums.daybreakgames.com/eq/index.php?threads/enumerated-spa-list.206288/) [elsewhere](https://everquest.fanra.info/wiki/SPA_list), this specific list is formatted for MacroQuest ([MQ2Spells.cpp](https://github.com/macroquest/macroquest/blob/master/src/main/MQ2Spells.cpp#L205)).
+
+## Affect number | Affect_name | Notes
 
 ```text
-AFFECTNUMBER - AFFECTNAME
-0 - HP
-1 - AC
-2 - Attack Power
-3 - Movement Rate
-4 - STR
-5 - DEX
-6 - AGI
-7 - STA
-8 - INT
-9 - WIS
-10 - CHA
-11 - Melee Speed
-12 - Invisibility
-13 - See Invis
-14 - Enduring Breath
-15 - Mana
-16 - NPC-Frenzy
-17 - NPC-Awareness
-18 - NPC Aggro
-19 - NPC Faction
-20 - Blindness
-21 - Stun
-22 - Charm
-23 - Fear
-24 - Fatigue
-25 - Bind Affinity
-26 - Gate
-27 - Dispel Magic
-28 - Invis Vs Undead
-29 - Invis Vs Animals
-30 - NPC-ReactRange
-31 - Enthrall (Mez)
-32 - Create Item
-33 - Spawn NPC
-34 - Confuse
-35 - Disease
-36 - Poison
-37 - DetectHostile
-38 - DetectMagic
-39 - NoTwincast
-40 - Invulnerability
-41 - Banish
-42 - Shadow Step
-43 - Berserk
-44 - Lycanthropy
-45 - Vampirism
-46 - Resist Fire
-47 - Resist Cold
-48 - Resist Poison
-49 - Resist Disease
-50 - Resist Magic
-51 - Detect (Switch) Traps
-52 - Detect Undead
-53 - Detect Summoned
-54 - Detect Animals
-55 - Stoneskin
-56 - True North
-57 - Levitation
-58 - Change Form
-59 - Damage Attackers (DS)
-60 - TransferItem
-61 - Identify
-62 - Item ID
-63 - NPC-WipeHatelist
-64 - Spin Stun
-65 - Infravision
-66 - Ultravision
-67 - NPC-POV
-68 - Reclaim Energy
-69 - Max HP
-70 - CorpseBomb
-71 - Create Undead
-72 - PreserveCorpse
-73 - TargetsView
-74 - FeignDeath
-75 - Ventriloquism
-76 - Sentinel
-77 - LocateCorpse
-78 - SpellShield
-79 - InstantHP
-80 - Enchant:Light
-81 - Resurrect
-82 - Summon Target
-83 - Portal
-84 - Hp-NPC-ONLY
-85 - Contact Ability (Melee Proc)
-86 - NPC-Help-Radius
-87 - Telescope
-88 - Combat Portal
-89 - Height
-90 - IgnorePet
-91 - SummonCorpse
-92 - Hate (On Spell Land)
-93 - WeatherControl
-94 - Fragile
-95 - Sacrifice
-96 - Silence
-97 - Max Mana
-98 - Bard Haste
-99 - Root
-100 - HP Duration Only
-101 - Complete Heal (Residual Buff)
-102 - Pet No Fear
-103 - Summon Pet
-104 - Translocate
-105 - Anti-Gate (NPC Only)
-106 - BeastLordPet
-107 - Alter Pet Level
-108 - Familiar
-109 - CreateItemInBag
-110 - Removed (Archery RNG Acc%)
-111 - Resistances
-112 - Adjust Casting Skill (Fizzles)
-113 - SummonMount
-114 - Modify Hate
-115 - Cornucopia
-116 - Curse
-117 - HitMagic
-118 - Amplification
-119 - BardHaste2
-120 - HealMod
-121 - IronMaiden
-122 - ReduceSkill
-123 - Immunity
-124 - Fc_Damage_%
-125 - Fc_HealMod
-126 - Fc_ResistMod
-127 - Fc_CastTimeMod1
-128 - Fc_DurationMod
-129 - Fc_RangeMod
-130 - Fc_HateMod
-131 - Fc_ReagentMod
-132 - Fc_ManaMod
-133 - Fc_StunTimeMod
-134 - Ff_LevelMax
-135 - Ff_ResistType
-136 - Ff_TargetType
-137 - Ff_WhichSPA
-138 - Ff_Beneficial
-139 - Ff_WhichSpellID
-140 - Ff_DurationMin
-141 - Ff_InstantOnly
-142 - Ff_LevelMin
-143 - Ff_CastTimeMin
-144 - Ff_CastTimeMax
-145 - Portal NPC Warder Banish
-146 - Portal Locations
-147 - Percent Heal
-148 - StackingBlocker
-149 - StripVirtualSlot
-150 - Divine Intervention/Death Pact
-151 - PocketPet
-152 - PetSwarm
-153 - Damage Balance
-154 - Cancel Negative
-155 - PoP Resurrect
-156 - Mirror Form
-157 - Feedback
-158 - Reflect
-159 - Mod all Stats
-160 - Inebriation | Sobriety
-161 - Spell Guard
-162 - Melee Guard
-163 - Absorb Hit
-164 - Object - Sense Trap
-165 - Object - Disarm Trap
-166 - Object - Picklock
-167 - Fc_Pet
-168 - Defensive
-169 - Critical Melee (PC Only)
-170 - Spell Crit Damage
-171 - Crippling Blow
-172 - Evasion
-173 - Riposte
-174 - Dodge
-175 - Parry
-176 - Dual Wield
-177 - Double Attack
-178 - Melee Resource Drain
-179 - Puretone
-180 - Sanctification
-181 - Fearless
-182 - Hundred Hands
-183 - UNUSED - Skill Increase Chance
-184 - Accuracy %
-185 - Skill Damage Mod 1
-186 - Min Damage Done Mod
-187 - Mana Balance
-188 - Block
-189 - Endurance
-190 - Max Endurance
-191 - Amnesia
-192 - Hate (Duration Only)
-193 - Skill Attack
-194 - Fade
-195 - Stun Resist (Melee+Spell)
-196 - Deprecated (strikethrough)
-197 - Skill Damage Taken Incoming
-198 - Instant Endurance
-199 - Taunt
-200 - Weapon Proc Chance
-201 - Ranged Proc
-202 - IllusionOther
-203 - MassBuff
-204 - Group Fear Immunity
-205 - AE Rampage Instant (PC Only)
-206 - AE Taunt
-207 - Flesh to Bone
-208 - Purge Poison
-209 - Cancel Beneficial
-210 - Shield Caster
-211 - AE Melee (PC Only)
-212 - Fc_FrenziedDevastation
-213 - Pet % HP
-214 - HP Max Percent
-215 - Pet Avoidance %
-216 - Melee Accuracy Amt
-217 - Headshot
-218 - Pet Crit Melee Chance (Owner)
-219 - Slay Undead
-220 - Skill Min_Damage Amt 1
-221 - ReduceWeight
-222 - BlockBehind
-223 - Double Riposte
-224 - AddRiposte
-225 - Give Double Attack
-226 - 2hbash
-227 - ReduceSkillTimer
-228 - ReduceFallDmg
-229 - CastThroughStun
-230 - Increase Shield Distance
-231 - StunBashChance
-232 - Divine Save
-233 - Metabolism
-234 - Poison Mastery
-235 - FocusChannelling
-236 - Free Pet
-237 - PetAffinity
-238 - Permanent Illusion
-239 - Stonewall
-240 - String Unbreakable
-241 - Improve Reclaim Energy
-242 - IncreaseChanceMemwipe
-243 - NoBreakCharmChance
-244 - RootBreakChance
-245 - Trap Circumvention
-246 - Lung Capacity
-247 - IncreaseSkillCap
-248 - ExtraSpecialization
-249 - Offhand Weapon MinDamage Bonus
-250 - Increase ContactAbility Chance
-251 - EndlessQuiver
-252 - Backstab FullDamage From Front
-253 - Chaotic Stab
-254 - NoSpell
-255 - Shielding Duration Mod
-256 - Shroud of Stealth
-257 - DEPRECATED - GivePetHold
-258 - Triple Backstab
-259 - ACLimitMod
-260 - AddInstrumentMod
-261 - SongModCap
-262 - StatsCap
-263 - TradeskillMasteries
-264 - ReduceAATimer
-265 - NoFizzle
-266 - AddExtraAttack% (2h)
-267 - AddPetCommands
-268 - AlcFailRate
-269 - Bandage Max HP Limit %
-270 - Bard Song Beneficial Radius %
-271 - BaseRunMod
-272 - Bard Song Level
-273 - Critical DoT
-274 - CriticalHeal
-275 - Critical Mend %
-276 - DualWieldAmt
-277 - ExtraDIChance
-278 - FinishingBlow
-279 - FlurryChance (PC Only)
-280 - Pet Flurry Chance (Owner)
-281 - GivePetFeign
-282 - Increase Bandage Heal %
-283 - SpecialAttackChain
-284 - LoHSetHeal
-285 - Allow Hide/Evade While Moving
-286 - Fc_Damage_Amt
-287 - Fc_DurationMod (static)
-288 - Add Proc Hit (AA)
-289 - Doom Duration
-290 - Increase Movement Cap
-291 - Purify
-292 - Strikethrough
-293 - StunResist2 (Melee)
-294 - Spell Crit Chance
-295 - ReduceTimerSpecial
-296 - Fc_Spell_Damage_%_Incoming
-297 - Fc_Spell_Damage_Amt_Incoming
-298 - Height (Small)
-299 - Wake the Dead 1 (Corpse Class)
-300 - Doppelganger
-301 - Increase Range Damage
-302 - Fc_Damage_%_Crit
-303 - Fc_Damage_Amt_Crit
-304 - Secondary Riposte Mod
-305 - Mitigate Damage Shield Offhand
-306 - Wake the Dead 2 (File Class)
-307 - Appraisal
-308 - Zone Suspend Minion
-309 - Teleport Caster's Bindpoint
-310 - Fc_ReuseTimer
-311 - Ff_CombatSkill
-312 - Observer
-313 - Forage Master
-314 - Improved Invis
-315 - Improved Invis Undead
-316 - Improved Invis Animals
-317 - Worn Regen Cap
-318 - Worn Mana Regen Cap
-319 - Critical HP Regen
-320 - Shield Block Chance
-321 - Reduce Target Hate
-322 - Gate Starting City
-323 - Defensive Proc
-324 - HP for Mana
-325 - No Break AE Sneak
-326 - Spell Slots
-327 - Buff Slots
-328 - Negative HP Limit
-329 - Mana Absorb % Damage
-330 - Critical Melee Damage Mod
-331 - Alchemy Item Recovery
-332 - Summon to Corpse
-333 - Doom Rune Consumed
-334 - HP No Move
-335 - Fc_Immunity_Focus
-336 - Illusionary Target
-337 - Increase Exp %
-338 - Expedient Recovery
-339 - Fc_CastProc
-340 - Chance Spell
-341 - Worn Attack Cap
-342 - No Panic
-343 - Spell Interrupt
-344 - Item Channeling
-345 - Assassinate Max Level / Chance
-346 - Headshot Max
-347 - Double Ranged Attack
-348 - Ff_Mana_Min
-349 - Increase Damage With Shield
-350 - Manaburn
-351 - Spawn Interactive Object
-352 - Increase Trap Count
-353 - Increase SOI Count
-354 - Deactivate All Traps
-355 - Learn Trap
-356 - Change Trigger Type
-357 - Fc_Mute
-358 - Instant Mana
-359 - Passive Sense Trap
-360 - Proc On Kill Shot
-361 - Proc On Death
-362 - Potion Belt
-363 - Bandolier
-364 - AddTripleAttackChance
-365 - Proc On Spell Kill Shot
-366 - Group Shielding
-367 - Modify Body Type
-368 - Modify Faction
-369 - Corruption
-370 - ResistCorruption
-371 - Slow
-372 - Grant Foraging
-373 - Doom Always
-374 - Trigger Spell
-375 - Critical DoT Damage Mod %
-376 - Fling
-377 - Removed (Doom Entity)
-378 - Resist Other SPA
-379 - Directional Shadowstep
-380 - Knockback Explosive (PC Only)
-381 - Fling Target to Caster
-382 - Suppression
-383 - Fc_CastProcNormalized
-384 - Fling Caster to Target
-385 - Ff_WhichSpellGroup
-386 - Doom Dispeller
-387 - Doom Dispelled
-388 - Summon All Corpses
-389 - Fc_Timer_Refresh
-390 - Fc_Timer_Lockout
-391 - Ff_Mana_Max
-392 - Fc_Heal_Amt
-393 - Fc_Heal_%_Incoming
-394 - Fc_Heal_Amt_Incoming
-395 - Fc_Heal_%_Crit
-396 - Fc_Heal_Amt_Crit
-397 - Pet Add AC
-398 - Fc_Swarm_Pet_Duration
-399 - Fc_Twincast
-400 - Healburn
-401 - Mana Ignite
-402 - Endurance Ignite
-403 - Ff_SpellClass
-404 - Ff_SpellSubclass
-405 - Staff Block Chance
-406 - Doom Limit Use
-407 - Doom Focus Used
-408 - Limit HP
-409 - Limit Mana
-410 - Limit Endurance
-411 - Ff_ClassPlayer
-412 - Ff_Race
-413 - Fc_BaseEffects
-414 - Ff_CastingSkill
-415 - Ff_ItemClass
-416 - AC_2
-417 - Mana_2
-418 - Skill Min_Damage Amt 2
-419 - Contact Ability 2 (Melee Proc)
-420 - Fc_Limit_Use
-421 - Fc_Limit_Use_Amt
-422 - Ff_Limit_Use_Min
-423 - Ff_Limit_Use_Type
-424 - Gravitate
-425 - Fly
-426 - AddExtTargetSlots
-427 - Skill Proc (Attempt)
-428 - Proc Skill Modifier
-429 - Skill Proc (Success)
-430 - PostEffect
-431 - PostEffectData
-432 - ExpandMaxActiveTrophyBenefits
-433 - Normalized Skill Min_Dmg Amt 1
-434 - Normalized Skill Min_Dmg Amt 2
-435 - Fragile Defense
-436 - Toggle Freeze Buff Timers
-437 - Teleport to Anchor
-438 - Translocate to Anchor
-439 - Assassinate Chance / DMG
-440 - FinishingBlowMax
-441 - Distance Removal
-442 - Doom Req Bearer
-443 - Doom Req Caster
-444 - Improved Taunt
-445 - Add Merc Slot
-446 - A_Stacker
-447 - B_Stacker
-448 - C_Stacker
-449 - D_Stacker
-450 - DoT Guard
-451 - Melee Threshold Guard
-452 - Spell Threshold Guard
-453 - Doom Melee Threshold
-454 - Doom Spell Threshold
-455 - Add Hate % (On Land)
-456 - Add Hate Over Time %
-457 - Resource Tap
-458 - Faction Mod %
-459 - Skill Damage Mod 2
-460 - Ff_Override_NotFocusable
-461 - Fc_Damage_%_Crit 2
-462 - Fc_Damage_Amt 2
-463 - Shield Target
-464 - PC Pet Rampage
-465 - PC Pet AE Rampage
-466 - PC Pet Flurry Chance
-467 - DS Mitigation Amount
-468 - DS Mitigation Percentage
-469 - Chance Best in Spell Group
-470 - Trigger Best in Spell Group
-471 - Double Melee Round (PC Only)
-472 - Buy AA Rank
-473 - Double Backstab From Front
-474 - Pet Crit Melee Damage% (Owner)
-475 - Trigger Spell Non-Item
-476 - Weapon Stance
-477 - Hatelist To Top Index
-478 - Hatelist To Tail Index
-479 - Ff_Value_Min
-480 - Ff_Value_Max
-481 - Fc_Cast_Spell_On_Land
-482 - Skill Base Damage Mod
-483 - Fc_Spell_Damage_%_IncomingPC
-484 - Fc_Spell_Damage_Amt_IncomingPC
-485 - Ff_CasterClass
-486 - Ff_Same_Caster
-487 - Extend Tradeskill Cap
-488 - Defender Melee Force % (PC)
-489 - Worn Endurance Regen Cap
-490 - Ff_ReuseTimeMin
-491 - Ff_ReuseTimeMax
-492 - Ff_Endurance_Min
-493 - Ff_Endurance_Max
-494 - Pet Add Atk
-495 - Ff_DurationMax
-496 - Critical Melee Damage Mod Max
-497 - Ff_FocusCastProcNoBypass
-498 - AddExtraAttack% (1h-Primary)
-499 - AddExtraAttack% (1h-Secondary)
-500 - Fc_CastTimeMod2
-501 - Fc_CastTimeAmt
-502 - Fearstun
-503 - Melee Damage Position Mod
-504 - Melee Damage Position Amt
-505 - Damage Taken Position Mod
-506 - Damage Taken Position Amt
-507 - Fc_Amplify_Mod
-508 - Fc_Amplify_Amt
-509 - Health Transfer
-510 - Fc_ResistIncoming
-511 - Ff_FocusTimerMin
-512 - Proc Timer Modifier
-513 - Mana Max Percent
-514 - Endurance Max Percent
-515 - AC Avoidance Max Percent
-516 - AC Mitigation Max Percent
-517 - Attack Offense Max Percent
-518 - Attack Accuracy Max Percent
-519 - Luck Amount
-520 - Luck Percent
+0   - HP
+1   - AC
+2   - ATTACK_POWER
+3   - MOVEMENT_RATE
+4   - STR
+5   - DEX
+6   - AGI
+7   - STA
+8   - INT
+9   - WIS
+10  - CHA
+11  - HASTE (Melee Speed)
+12  - INVISIBILITY
+13  - SEE_INVIS
+14  - ENDURING_BREATH
+15  - MANA
+16  - NPC_FRENZY
+17  - NPC_AWARENESS
+18  - NPC_AGGRO
+19  - NPC_FACTION
+20  - BLINDNESS
+21  - STUN
+22  - CHARM
+23  - FEAR
+24  - FATIGUE
+25  - BIND_AFFINITY
+26  - GATE
+27  - DISPEL_MAGIC
+28  - INVIS_VS_UNDEAD
+29  - INVIS_VS_ANIMALS
+30  - NPC_AGGRO_RADIUS (NPC-ReactRange)
+31  - ENTHRALL (Mez)
+32  - CREATE_ITEM
+33  - SUMMON_PET (Spawn NPC)
+34  - CONFUSE
+35  - DISEASE
+36  - POISON
+37  - DETECT_HOSTILE
+38  - DETECT_MAGIC
+39  - NO_TWINCAST
+40  - INVULNERABILITY
+41  - BANISH
+42  - SHADOW_STEP
+43  - BERSERK
+44  - LYCANTHROPY
+45  - VAMPIRISM
+46  - RESIST_FIRE
+47  - RESIST_COLD
+48  - RESIST_POISON
+49  - RESIST_DISEASE
+50  - RESIST_MAGIC
+51  - DETECT_TRAPS (Detect Switch Traps)
+52  - DETECT_UNDEAD
+53  - DETECT_SUMMONED
+54  - DETECT_ANIMALS
+55  - STONESKIN
+56  - TRUE_NORTH
+57  - LEVITATION
+58  - CHANGE_FORM
+59  - DAMAGE_SHIELD (Damage Attackers, DS)
+60  - TRANSFER_ITEM
+61  - ITEM_LORE (Identify)
+62  - ITEM_IDENTIFY
+63  - NPC_WIPE_HATE_LIST
+64  - SPIN_STUN
+65  - INFRAVISION
+66  - ULTRAVISION
+67  - EYE_OF_ZOMM (NPC-POV)
+68  - RECLAIM_ENERGY
+69  - MAX_HP
+70  - CORPSE_BOMB
+71  - CREATE_UNDEAD
+72  - PRESERVE_CORPSE
+73  - BIND_SIGHT (TargetsView)
+74  - FEIGN_DEATH
+75  - VENTRILOQUISM
+76  - SENTINEL
+77  - LOCATE_CORPSE
+78  - SPELL_SHIELD
+79  - INSTANT_HP
+80  - ENCHANT_LIGHT
+81  - RESURRECT
+82  - SUMMON_TARGET
+83  - PORTAL
+84  - HP_NPC_ONLY
+85  - MELEE_PROC (Contact Ability)
+86  - NPC_HELP_RADIUS
+87  - MAGNIFICATION (Telescope)
+88  - EVACUATE (Combat Portal)
+89  - HEIGHT
+90  - IGNORE_PET
+91  - SUMMON_CORPSE
+92  - HATE (On Spell Land)
+93  - WEATHER_CONTROL
+94  - FRAGILE
+95  - SACRIFICE
+96  - SILENCE
+97  - MAX_MANA
+98  - BARD_HASTE
+99  - ROOT
+100 - HEALDOT (HP Duration Only)
+101 - COMPLETEHEAL (Complete Heal Residual Buff)
+102 - PET_FEARLESS (Pet No Fear)
+103 - CALL_PET (Summon Pet)
+104 - TRANSLOCATE
+105 - NPC_ANTI_GATE (Anti-Gate NPC Only)
+106 - BEASTLORD_PET
+107 - ALTER_PET_LEVEL
+108 - FAMILIAR
+109 - CREATE_ITEM_IN_BAG
+110 - ARCHERY (Removed - Archery RNG Acc%)
+111 - RESIST_ALL (Resistances)
+112 - FIZZLE_SKILL (Adjust Casting Skill - Fizzles)
+113 - SUMMON_MOUNT
+114 - MODIFY_HATE
+115 - CORNUCOPIA
+116 - CURSE
+117 - HIT_MAGIC
+118 - AMPLIFICATION
+119 - ATTACK_SPEED_MAX (BardHaste2)
+120 - HEALMOD
+121 - IRONMAIDEN
+122 - REDUCESKILL
+123 - IMMUNITY
+124 - FOCUS_DAMAGE_MOD (Fc_Damage_%)
+125 - FOCUS_HEAL_MOD
+126 - FOCUS_RESIST_MOD
+127 - FOCUS_CAST_TIME_MOD (Fc_CastTimeMod1)
+128 - FOCUS_DURATION_MOD
+129 - FOCUS_RANGE_MOD
+130 - FOCUS_HATE_MOD
+131 - FOCUS_REAGENT_MOD
+132 - FOCUS_MANACOST_MOD (Fc_ManaMod)
+133 - FOCUS_STUNTIME_MOD
+134 - FOCUS_LEVEL_MAX (Ff_LevelMax)
+135 - FOCUS_RESIST_TYPE (Ff_ResistType)
+136 - FOCUS_TARGET_TYPE (Ff_TargetType)
+137 - FOCUS_WHICH_SPA (Ff_WhichSPA)
+138 - FOCUS_BENEFICIAL (Ff_Beneficial)
+139 - FOCUS_WHICH_SPELL (Ff_WhichSpellID)
+140 - FOCUS_DURATION_MIN (Ff_DurationMin)
+141 - FOCUS_INSTANT_ONLY (Ff_InstantOnly)
+142 - FOCUS_LEVEL_MIN (Ff_LevelMin)
+143 - FOCUS_CASTTIME_MIN (Ff_CastTimeMin)
+144 - FOCUS_CASTTIME_MAX (Ff_CastTimeMax)
+145 - NPC_PORTAL_WARDER_BANISH (Portal NPC Warder Banish)
+146 - PORTAL_LOCATIONS
+147 - PERCENT_HEAL
+148 - STACKING_BLOCK (StackingBlocker)
+149 - STRIP_VIRTUAL_SLOT
+150 - DIVINE_INTERVENTION (Divine Intervention/Death Pact)
+151 - POCKET_PET
+152 - PET_SWARM
+153 - HEALTH_BALANCE (Damage Balance)
+154 - CANCEL_NEGATIVE_MAGIC (Cancel Negative)
+155 - POP_RESURRECT
+156 - MIRROR (Mirror Form)
+157 - FEEDBACK
+158 - REFLECT
+159 - MODIFY_ALL_STATS (Mod all Stats)
+160 - CHANGE_SOBRIETY (Inebriation | Sobriety)
+161 - SPELL_GUARD
+162 - MELEE_GUARD
+163 - ABSORB_HIT
+164 - OBJECT_SENSE_TRAP
+165 - OBJECT_DISARM_TRAP
+166 - OBJECT_PICKLOCK
+167 - FOCUS_PET (Fc_Pet)
+168 - DEFENSIVE
+169 - CRITICAL_MELEE (PC Only)
+170 - CRITICAL_SPELL (Spell Crit Damage)
+171 - CRIPPLING_BLOW
+172 - EVASION
+173 - RIPOSTE
+174 - DODGE
+175 - PARRY
+176 - DUAL_WIELD
+177 - DOUBLE_ATTACK
+178 - MELEE_LIFETAP (Melee Resource Drain)
+179 - PURETONE
+180 - SANCTIFICATION
+181 - FEARLESS
+182 - HUNDRED_HANDS
+183 - SKILL_INCREASE_CHANCE (UNUSED)
+184 - ACCURACY (Accuracy %)
+185 - SKILL_DAMAGE_MOD (Skill Damage Mod 1)
+186 - MIN_DAMAGE_DONE_MOD
+187 - MANA_BALANCE
+188 - BLOCK
+189 - ENDURANCE
+190 - INCREASE_MAX_ENDURANCE (Max Endurance)
+191 - AMNESIA
+192 - HATE_OVER_TIME (Hate Duration Only)
+193 - SKILL_ATTACK
+194 - FADE
+195 - STUN_RESIST (Melee+Spell)
+196 - STRIKETHROUGH1 (Deprecated)
+197 - SKILL_DAMAGE_TAKEN (Skill Damage Taken Incoming)
+198 - INSTANT_ENDURANCE
+199 - TAUNT
+200 - PROC_CHANCE (Weapon Proc Chance)
+201 - RANGE_ABILITY (Ranged Proc)
+202 - ILLUSION_OTHERS
+203 - MASS_GROUP_BUFF (MassBuff)
+204 - GROUP_FEAR_IMMUNITY
+205 - RAMPAGE (AE Rampage Instant PC Only)
+206 - AE_TAUNT
+207 - FLESH_TO_BONE
+208 - PURGE_POISON
+209 - CANCEL_BENEFICIAL
+210 - SHIELD_CASTER
+211 - DESTRUCTIVE_FORCE (AE Melee PC Only)
+212 - FOCUS_FRENZIED_DEVASTATION (Fc_FrenziedDevastation)
+213 - PET_PCT_MAX_HP (Pet % HP)
+214 - HP_MAX_HP (HP Max Percent)
+215 - PET_PCT_AVOIDANCE (Pet Avoidance %)
+216 - MELEE_ACCURACY (Melee Accuracy Amt)
+217 - HEADSHOT
+218 - PET_CRIT_MELEE (Pet Crit Melee Chance Owner)
+219 - SLAY_UNDEAD
+220 - INCREASE_SKILL_DAMAGE (Skill Min_Damage Amt 1)
+221 - REDUCE_WEIGHT
+222 - BLOCK_BEHIND
+223 - DOUBLE_RIPOSTE
+224 - ADD_RIPOSTE
+225 - GIVE_DOUBLE_ATTACK
+226 - 2H_BASH (2hbash)
+227 - REDUCE_SKILL_TIMER
+228 - ACROBATICS (ReduceFallDmg)
+229 - CAST_THROUGH_STUN
+230 - EXTENDED_SHIELDING (Increase Shield Distance)
+231 - BASH_CHANCE (StunBashChance)
+232 - DIVINE_SAVE
+233 - METABOLISM
+234 - POISON_MASTERY
+235 - FOCUS_CHANNELING (FocusChannelling)
+236 - FREE_PET
+237 - PET_AFFINITY
+238 - PERM_ILLUSION (Permanent Illusion)
+239 - STONEWALL
+240 - STRING_UNBREAKABLE
+241 - IMPROVE_RECLAIM_ENERGY
+242 - INCREASE_CHANGE_MEMWIPE (IncreaseChanceMemwipe)
+243 - ENHANCED_CHARM (NoBreakCharmChance)
+244 - ENHANCED_ROOT (RootBreakChance)
+245 - TRAP_CIRCUMVENTION
+246 - INCREASE_AIR_SUPPLY (Lung Capacity)
+247 - INCREASE_MAX_SKILL (IncreaseSkillCap)
+248 - EXTRA_SPECIALIZATION
+249 - OFFHAND_MIN_WEAPON_DAMAGE (Offhand Weapon MinDamage Bonus)
+250 - INCREASE_PROC_CHANCE (Increase ContactAbility Chance)
+251 - ENDLESS_QUIVER
+252 - BACKSTAB_FRONT (Backstab FullDamage From Front)
+253 - CHAOTIC_STAB
+254 - NOSPELL
+255 - SHIELDING_DURATION_MOD
+256 - SHROUD_OF_STEALTH
+257 - GIVE_PET_HOLD (DEPRECATED)
+258 - TRIPLE_BACKSTAB
+259 - AC_LIMIT_MOD
+260 - ADD_INSTRUMENT_MOD
+261 - SONG_MOD_CAP
+262 - INCREASE_STAT_CAP (StatsCap)
+263 - TRADESKILL_MASTERY (TradeskillMasteries)
+264 - REDUCE_AA_TIMER
+265 - NO_FIZZLE
+266 - ADD_2H_ATTACK_CHANCE (AddExtraAttack% 2h)
+267 - ADD_PET_COMMANDS
+268 - ALCHEMY_FAIL_RATE
+269 - FIRST_AID (Bandage Max HP Limit %)
+270 - EXTEND_SONG_RANGE (Bard Song Beneficial Radius %)
+271 - BASE_RUN_MOD
+272 - INCREASE_CASTING_LEVEL (Bard Song Level)
+273 - DOTCRIT (Critical DoT)
+274 - HEALCRIT (CriticalHeal)
+275 - MENDCRIT (Critical Mend %)
+276 - DUAL_WIELD_AMT
+277 - EXTRA_DI_CHANCE
+278 - FINISHING_BLOW
+279 - FLURRY (FlurryChance PC Only)
+280 - PET_FLURRY (Pet Flurry Chance Owner)
+281 - PET_FEIGN (GivePetFeign)
+282 - INCREASE_BANDAGE_AMT (Increase Bandage Heal %)
+283 - WU_ATTACK (SpecialAttackChain)
+284 - IMPROVE_LOH (LoHSetHeal)
+285 - NIMBLE_EVASION (Allow Hide/Evade While Moving)
+286 - FOCUS_DAMAGE_AMT
+287 - FOCUS_DURATION_AMT (Fc_DurationMod static)
+288 - ADD_PROC_HIT (AA)
+289 - DOOM_EFFECT (Doom Duration)
+290 - INCREASE_RUN_SPEED_CAP (Increase Movement Cap)
+291 - PURIFY
+292 - STRIKETHROUGH
+293 - STUN_RESIST2 (Melee)
+294 - SPELL_CRIT_CHANCE
+295 - REDUCE_SPECIAL_TIMER (ReduceTimerSpecial)
+296 - FOCUS_DAMAGE_MOD_DETRIMENTAL (Fc_Spell_Damage_%_Incoming)
+297 - FOCUS_DAMAGE_AMT_DETRIMENTAL (Fc_Spell_Damage_Amt_Incoming)
+298 - TINY_COMPANION (Height Small)
+299 - WAKE_DEAD (Wake the Dead 1 Corpse Class)
+300 - DOPPELGANGER
+301 - INCREASE_RANGE_DMG
+302 - FOCUS_DAMAGE_MOD_CRIT (Fc_Damage_%_Crit)
+303 - FOCUS_DAMAGE_AMT_CRIT
+304 - SECONDARY_RIPOSTE_MOD
+305 - DAMAGE_SHIELD_MOD (Mitigate Damage Shield Offhand)
+306 - WEAK_DEAD_2 (Wake the Dead 2 File Class)
+307 - APPRAISAL
+308 - ZONE_SUSPEND_MINION
+309 - TELEPORT_CASTERS_BINDPOINT (Teleport Caster's Bindpoint)
+310 - FOCUS_REUSE_TIMER (Fc_ReuseTimer)
+311 - FOCUS_COMBAT_SKILL (Ff_CombatSkill)
+312 - OBSERVER
+313 - FORAGE_MASTER
+314 - IMPROVED_INVIS
+315 - IMPROVED_INVIS_UNDEAD
+316 - IMPROVED_INVIS_ANIMALS
+317 - INCREASE_WORN_HP_REGEN_CAP (Worn Regen Cap)
+318 - INCREASE_WORN_MANA_REGEN_CAP (Worn Mana Regen Cap)
+319 - CRITICAL_HP_REGEN
+320 - SHIELD_BLOCK_CHANCE
+321 - REDUCE_TARGET_HATE
+322 - GATE_STARTING_CITY
+323 - DEFENSIVE_PROC
+324 - HP_FOR_MANA
+325 - NO_BREAK_AE_SNEAK
+326 - ADD_SPELL_SLOTS (Spell Slots)
+327 - ADD_BUFF_SLOTS (Buff Slots)
+328 - INCREASE_NEGATIVE_HP_LIMIT (Negative HP Limit)
+329 - MANA_ABSORB_PCT_DMG (Mana Absorb % Damage)
+330 - CRIT_ATTACK_MODIFIER (Critical Melee Damage Mod)
+331 - FAIL_ALCHEMY_ITEM_RECOVERY (Alchemy Item Recovery)
+332 - SUMMON_TO_CORPSE
+333 - DOOM_RUNE_EFFECT (Doom Rune Consumed)
+334 - NO_MOVE_HP (HP No Move)
+335 - FOCUSED_IMMUNITY (Fc_Immunity_Focus)
+336 - ILLUSIONARY_TARGET
+337 - INCREASE_EXP_MOD (Increase Exp %)
+338 - EXPEDIENT_RECOVERY
+339 - FOCUS_CASTING_PROC (Fc_CastProc)
+340 - CHANCE_SPELL
+341 - WORN_ATTACK_CAP
+342 - NO_PANIC
+343 - SPELL_INTERRUPT
+344 - ITEM_CHANNELING
+345 - ASSASSINATE_MAX_LEVEL (Assassinate Max Level / Chance)
+346 - HEADSHOT_MAX_LEVEL (Headshot Max)
+347 - DOUBLE_RANGED_ATTACK
+348 - FOCUS_MANA_MIN (Ff_Mana_Min)
+349 - INCREASE_SHIELD_DMG (Increase Damage With Shield)
+350 - MANABURN
+351 - SPAWN_INTERACTIVE_OBJECT
+352 - INCREASE_TRAP_COUNT
+353 - INCREASE_SOI_COUNT
+354 - DEACTIVATE_ALL_TRAPS
+355 - LEARN_TRAP
+356 - CHANGE_TRIGGER_TYPE
+357 - FOCUS_MUTE (Fc_Mute)
+358 - INSTANT_MANA
+359 - PASSIVE_SENSE_TRAP
+360 - PROC_ON_KILL_SHOT
+361 - PROC_ON_DEATH
+362 - POTION_BELT
+363 - BANDOLIER
+364 - ADD_TRIPLE_ATTACK_CHANCE
+365 - PROC_ON_SPELL_KILL_SHOT
+366 - GROUP_SHIELDING
+367 - MODIFY_BODY_TYPE
+368 - MODIFY_FACTION
+369 - CORRUPTION
+370 - RESIST_CORRUPTION
+371 - SLOW
+372 - GRANT_FORAGING
+373 - DOOM_ALWAYS
+374 - TRIGGER_SPELL
+375 - CRIT_DOT_DMG_MOD (Critical DoT Damage Mod %)
+376 - FLING
+377 - DOOM_ENTITY (Removed)
+378 - RESIST_OTHER_SPA
+379 - DIRECTIONAL_TELEPORT (Directional Shadowstep)
+380 - EXPLOSIVE_KNOCKBACK (Knockback Explosive PC Only)
+381 - FLING_TOWARD (Fling Target to Caster)
+382 - SUPPRESSION
+383 - FOCUS_CASTING_PROC_NORMALIZED (Fc_CastProcNormalized)
+384 - FLING_AT (Fling Caster to Target)
+385 - FOCUS_WHICH_GROUP (Ff_WhichSpellGroup)
+386 - DOOM_DISPELLER
+387 - DOOM_DISPELLEE (Doom Dispelled)
+388 - SUMMON_ALL_CORPSES
+389 - REFRESH_SPELL_TIMER (Fc_Timer_Refresh)
+390 - LOCKOUT_SPELL_TIMER (Fc_Timer_Lockout)
+391 - FOCUS_MANA_MAX (Ff_Mana_Max)
+392 - FOCUS_HEAL_AMT
+393 - FOCUS_HEAL_MOD_BENEFICIAL (Fc_Heal_%_Incoming)
+394 - FOCUS_HEAL_AMT_BENEFICIAL (Fc_Heal_Amt_Incoming)
+395 - FOCUS_HEAL_MOD_CRIT (Fc_Heal_%_Crit)
+396 - FOCUS_HEAL_AMT_CRIT
+397 - ADD_PET_AC (Pet Add AC)
+398 - FOCUS_SWARM_PET_DURATION (Fc_Swarm_Pet_Duration)
+399 - FOCUS_TWINCAST_CHANCE (Fc_Twincast)
+400 - HEALBURN
+401 - MANA_IGNITE
+402 - ENDURANCE_IGNITE
+403 - FOCUS_SPELL_CLASS (Ff_SpellClass)
+404 - FOCUS_SPELL_SUBCLASS (Ff_SpellSubclass)
+405 - STAFF_BLOCK_CHANCE
+406 - DOOM_LIMIT_USE
+407 - DOOM_FOCUS_USED
+408 - LIMIT_HP
+409 - LIMIT_MANA
+410 - LIMIT_ENDURANCE
+411 - FOCUS_LIMIT_CLASS (Ff_ClassPlayer)
+412 - FOCUS_LIMIT_RACE (Ff_Race)
+413 - FOCUS_BASE_EFFECTS
+414 - FOCUS_LIMIT_SKILL (Ff_CastingSkill)
+415 - FOCUS_LIMIT_ITEM_CLASS (Ff_ItemClass)
+416 - AC2
+417 - MANA2
+418 - FOCUS_INCREASE_SKILL_DMG_2 (Skill Min_Damage Amt 2)
+419 - PROC_EFFECT_2 (Contact Ability 2 Melee Proc)
+420 - FOCUS_LIMIT_USE
+421 - FOCUS_LIMIT_USE_AMT
+422 - FOCUS_LIMIT_USE_MIN (Ff_Limit_Use_Min)
+423 - FOCUS_LIMIT_USE_TYPE (Ff_Limit_Use_Type)
+424 - GRAVITATE
+425 - FLY
+426 - ADD_EXTENDED_TARGET_SLOTS (AddExtTargetSlots)
+427 - SKILL_PROC (Skill Proc Attempt)
+428 - PROC_SKILL_MODIFIER
+429 - SKILL_PROC_SUCCESS (Skill Proc Success)
+430 - POST_EFFECT
+431 - POST_EFFECT_DATA
+432 - EXPAND_MAX_ACTIVE_TROPHY_BENEFITS (ExpandMaxActiveTrophyBenefits)
+433 - ADD_NORMALIZED_SKILL_MIN_DMG_AMT (Normalized Skill Min_Dmg Amt 1)
+434 - ADD_NORMALIZED_SKILL_MIN_DMG_AMT_2 (Normalized Skill Min_Dmg Amt 2)
+435 - FRAGILE_DEFENSE
+436 - FREEZE_BUFF_TIMER (Toggle Freeze Buff Timers)
+437 - TELEPORT_TO_ANCHOR
+438 - TRANSLOCATE_TO_ANCHOR
+439 - ASSASSINATE (Assassinate Chance / DMG)
+440 - FINISHING_BLOW_MAX
+441 - DISTANCE_REMOVAL
+442 - REQUIRE_TARGET_DOOM (Doom Req Bearer)
+443 - REQUIRE_CASTER_DOOM (Doom Req Caster)
+444 - IMPROVED_TAUNT
+445 - ADD_MERC_SLOT
+446 - STACKER_A
+447 - STACKER_B
+448 - STACKER_C
+449 - STACKER_D
+450 - DOT_GUARD
+451 - MELEE_THRESHOLD_GUARD
+452 - SPELL_THRESHOLD_GUARD
+453 - MELEE_THRESHOLD_DOOM (Doom Melee Threshold)
+454 - SPELL_THRESHOLD_DOOM (Doom Spell Threshold)
+455 - ADD_HATE_PCT (Add Hate % On Land)
+456 - ADD_HATE_OVER_TIME_PCT
+457 - RESOURCE_TAP
+458 - FACTION_MOD (Faction Mod %)
+459 - SKILL_DAMAGE_MOD_2
+460 - OVERRIDE_NOT_FOCUSABLE (Ff_Override_NotFocusable)
+461 - FOCUS_DAMAGE_MOD_2 (Fc_Damage_%_Crit 2)
+462 - FOCUS_DAMAGE_AMT_2
+463 - SHIELD (Shield Target)
+464 - PC_PET_RAMPAGE
+465 - PC_PET_AE_RAMPAGE
+466 - PC_PET_FLURRY (PC Pet Flurry Chance)
+467 - DAMAGE_SHIELD_MITIGATION_AMT (DS Mitigation Amount)
+468 - DAMAGE_SHIELD_MITIGATION_PCT (DS Mitigation Percentage)
+469 - CHANCE_BEST_IN_SPELL_GROUP
+470 - TRIGGER_BEST_IN_SPELL_GROUP
+471 - DOUBLE_MELEE_ATTACKS (Double Melee Round PC Only)
+472 - AA_BUY_NEXT_RANK (Buy AA Rank)
+473 - DOUBLE_BACKSTAB_FRONT
+474 - PET_MELEE_CRIT_DMG_MOD (Pet Crit Melee Damage% Owner)
+475 - TRIGGER_SPELL_NON_ITEM
+476 - WEAPON_STANCE
+477 - HATELIST_TO_TOP (Hatelist To Top Index)
+478 - HATELIST_TO_TAIL (Hatelist To Tail Index)
+479 - FOCUS_LIMIT_MIN_VALUE (Ff_Value_Min)
+480 - FOCUS_LIMIT_MAX_VALUE (Ff_Value_Max)
+481 - FOCUS_CAST_SPELL_ON_LAND
+482 - SKILL_BASE_DAMAGE_MOD
+483 - FOCUS_INCOMING_DMG_MOD (Fc_Spell_Damage_%_IncomingPC)
+484 - FOCUS_INCOMING_DMG_AMT (Fc_Spell_Damage_Amt_IncomingPC)
+485 - FOCUS_LIMIT_CASTER_CLASS (Ff_CasterClass)
+486 - FOCUS_LIMIT_SAME_CASTER (Ff_Same_Caster)
+487 - EXTEND_TRADESKILL_CAP
+488 - DEFENDER_MELEE_FORCE_PCT (Defender Melee Force % PC)
+489 - WORN_ENDURANCE_REGEN_CAP
+490 - FOCUS_MIN_REUSE_TIME (Ff_ReuseTimeMin)
+491 - FOCUS_MAX_REUSE_TIME (Ff_ReuseTimeMax)
+492 - FOCUS_ENDURANCE_MIN (Ff_Endurance_Min)
+493 - FOCUS_ENDURANCE_MAX (Ff_Endurance_Max)
+494 - PET_ADD_ATK
+495 - FOCUS_DURATION_MAX (Ff_DurationMax)
+496 - CRIT_MELEE_DMG_MOD_MAX (Critical Melee Damage Mod Max)
+497 - FOCUS_CAST_PROC_NO_BYPASS (Ff_FocusCastProcNoBypass)
+498 - ADD_EXTRA_PRIMARY_ATTACK_PCT (AddExtraAttack% 1h-Primary)
+499 - ADD_EXTRA_SECONDARY_ATTACK_PCT (AddExtraAttack% 1h-Secondary)
+500 - FOCUS_CAST_TIME_MOD2
+501 - FOCUS_CAST_TIME_AMT
+502 - FEARSTUN
+503 - MELEE_DMG_POSITION_MOD (Melee Damage Position Mod)
+504 - MELEE_DMG_POSITION_AMT (Melee Damage Position Amt)
+505 - DMG_TAKEN_POSITION_MOD (Damage Taken Position Mod)
+506 - DMG_TAKEN_POSITION_AMT (Damage Taken Position Amt)
+507 - AMPLIFY_MOD (Fc_Amplify_Mod)
+508 - AMPLIFY_AMT (Fc_Amplify_Amt)
+509 - HEALTH_TRANSFER
+510 - FOCUS_RESIST_INCOMING
+511 - FOCUS_TIMER_MIN (Ff_FocusTimerMin)
+512 - PROC_TIMER_MOD (Proc Timer Modifier)
+513 - MANA_MAX (Mana Max Percent)
+514 - ENDURANCE_MAX (Endurance Max Percent)
+515 - AC_AVOIDANCE_MAX (AC Avoidance Max Percent)
+516 - AC_MITIGATION_MAX (AC Mitigation Max Percent)
+517 - ATTACK_OFFENSE_MAX (Attack Offense Max Percent)
+518 - ATTACK_ACCURACY_MAX (Attack Accuracy Max Percent)
+519 - LUCK_AMT (Luck Amount)
+520 - LUCK_PCT (Luck Percent)
+521 - ENDURANCE_ABSORB_PCT_DMG
+522 - INSTANT_MANA_PCT
+523 - INSTANT_ENDURANCE_PCT
+524 - DURATION_HP_PCT
+525 - DURATION_MANA_PCT
+526 - DURATION_ENDURANCE_PCT
 ```
-
