@@ -3,7 +3,7 @@
 
 ## ItemSlot & ItemSlot2
 
-These are not top level objects they are only members of [DataType:item](../data-types/datatype-item.md)
+These are not top level objects they are only members of [DataType item](../data-types/datatype-item.md)
 
 ### ItemSlot Diagram
 
@@ -129,6 +129,12 @@ InvSlot Inventory
 | **30** | pack8 |
 | **31** | pack9 |
 | **32** | pack10 |
+| **33** | pack11 |
+| **34** | pack12 |
+| **35** | cursor |
+
+#### Subindex
+A slot within a bag is referred to as a subindex. Bag slot numbers start at 0, left to right, top to bottom. e.g. To use an item the 2nd slot in pack5, you'd type `/useitem 27 1`
 
 ### Bank Slots
 
@@ -160,6 +166,10 @@ InvSlot Inventory
 | **2023** | bank24 |
 | **2500** | sharedbank1 |
 | **2501** | sharedbank2 |
+| **2502** | sharedbank3 |
+| **2503** | sharedbank4 |
+| **2504** | sharedbank5 |
+| **2505** | sharedbank6 |
 
 ### Trade Slots
 
@@ -430,3 +440,8 @@ InvSlot Inventory
 | **8028** | inspect29 |
 | **8029** | inspect30 |
 | **8030** | inspect31 |
+
+## See also
+
+* [DataType:item](../data-types/datatype-item.md)
+* [TLO:FindItem](../top-level-objects/tlo-finditem.md)
