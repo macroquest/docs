@@ -248,19 +248,6 @@ Launch single sessions without logging in.
   trailing-newlines=false
 %} {{ readMore('plugins/core-plugins/autologin/tlo-autologin.md') }}
 
-<h2>Forms</h2>
-{%
-  include-markdown "plugins/core-plugins/autologin/tlo-autologin.md"
-  start="<!--tlo-forms-start-->"
-  end="<!--tlo-forms-end-->"
-  heading-offset=0
-%}
-{% 
-  include-markdown "plugins/core-plugins/autologin/tlo-autologin.md" 
-  start="<!--tlo-linkrefs-start-->"
-  end="<!--tlo-linkrefs-end-->"
-%}
-
 ## Datatypes
 ## [AutoLogin](datatype-autologin.md)
 {% 

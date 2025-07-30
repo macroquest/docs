@@ -171,16 +171,3 @@ RDPauseInd2=3,85,122,225,0,0,${RDPause}
   end="<!--tlo-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('plugins/core-plugins/hud/tlo-hud.md') }}
-
-<h2>Forms</h2>
-{%
-  include-markdown "plugins/core-plugins/hud/tlo-hud.md"
-  start="<!--tlo-forms-start-->"
-  end="<!--tlo-forms-end-->"
-  heading-offset=0
-%}
-{% 
-  include-markdown "plugins/core-plugins/hud/tlo-hud.md" 
-  start="<!--tlo-linkrefs-start-->"
-  end="<!--tlo-linkrefs-end-->"
-%}
