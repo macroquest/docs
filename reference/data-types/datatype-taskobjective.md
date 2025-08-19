@@ -74,6 +74,7 @@ This is the type for your current task objective.
 
 :   Returns the zone the objective is to be performed in
 <!--dt-members-end-->
+
 <!--dt-linkrefs-start-->
 [int]: datatype-int.md
 [string]: datatype-string.md

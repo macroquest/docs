@@ -35,8 +35,6 @@ trigger=trigger text
 command=command to execute when triggered
 ```
 
-## Examples
-
 ### INI Entries
 
 ```text

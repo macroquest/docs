@@ -16,7 +16,6 @@ tags:
 This command allows you to list all your current socials, by name and number, or activate them by name.  
 It is useful in that you could activate a social by name as long as it is in your social window without having to change hotbar pages, or call a social by name from a macro.
 <!--cmd-desc-end-->
-## Examples
 
 ### list parameter
 

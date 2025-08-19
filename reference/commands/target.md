@@ -16,14 +16,25 @@ tags:
 
 ## Description
 <!--cmd-desc-start-->
-Targets whatever is matched by one or more of the following _options_:
+Targets yourself, your corpse, or a spawn search. Replaces the native `/target` and its functionality.
 <!--cmd-desc-end-->
-|  |  |
-| :--- | :--- |
-| **clear** | Clears your current target |
-| **mycorpse** | Your own corpse (nearest) |
-| **myself** | Target yourself |
-| _Anything Else_ | Anything else is considered a [Spawn Search](../../reference/general/spawn-search.md) |
+
+## Options
+
+No parameter
+:   With no parameter, will target yourself.
+
+`clear`
+:   Clears your current target
+
+`mycorpse`
+:   Your own corpse (nearest)
+
+`myself`
+:   Target yourself
+
+_Anything Else_
+:   Anything else is considered a [Spawn Search](../../reference/general/spawn-search.md)
 
 ## Examples
 

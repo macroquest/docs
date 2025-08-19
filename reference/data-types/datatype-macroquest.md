@@ -5,7 +5,7 @@ tags:
 # `macroquest`
 
 <!--dt-desc-start-->
-Data types related to the current MacroQuest2 session.  These also inherit from the [EverQuest Type](datatype-everquest.md).
+Data types related to the current MacroQuest session.  These also inherit from the [EverQuest Type](datatype-everquest.md).
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
