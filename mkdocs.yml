@@ -656,7 +656,7 @@ plugins:
   - redirects:
       redirect_maps:
         'main/submodule-quick-list.md': 'main/plugin-quick-list.md'
-        'reference/general/combatstate.md': 'reference/data-types/datatype-character#CombatState'
+        'reference/general/combatstate.md': 'reference/data-types/datatype-character.md#CombatState'
         'plugins/core-plugins/mq2autologin.md': 'plugins/core-plugins/autologin/index.md'
         'plugins/core-plugins/mq2bzsrch/README.md': 'plugins/core-plugins/bzsrch/README.md'
         'plugins/core-plugins/mq2chat.md': 'plugins/core-plugins/chat/index.md'

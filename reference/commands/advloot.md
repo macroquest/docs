@@ -7,7 +7,7 @@ tags:
 ## Syntax
 <!--cmd-syntax-start-->
 ```eqcommand
-/advloot {personal | shared} {set | <"item name"> | <#index> } <window option> [ <quantity> ]
+/advloot {personal | shared} {set | <"item name"> | <#index> } <loot option> [ <quantity> ]
 ```
 <!--cmd-syntax-end-->
 

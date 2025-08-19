@@ -5,7 +5,7 @@ tags:
 # `body`
 
 <!--dt-desc-start-->
-Contains data about spawn body types
+Contains data about spawn [body types](../general/body-types.md)
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->

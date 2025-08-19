@@ -55,7 +55,7 @@ Represents an in-game spawn.
 
 ### {{ renderMember(type='body', name='Body') }}
 
-:   Body type
+:   Body type (see [body types](../general/body-types.md))
 
 ### {{ renderMember(type='bool', name='BodyWet') }}
 

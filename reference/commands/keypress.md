@@ -25,8 +25,6 @@ Note: /keypress usage outside of a script is not recommended nor consistent.
 
 Note: Cannot use both together. For chat input, use simple key names ("X" not "shift+x"). "hold" works with movement/toggle commands.
 
-## Examples
-
 ### EQUI and MQ Keybinds
 ```text
 /keypress jump         # Simulate the key mapped to JUMP

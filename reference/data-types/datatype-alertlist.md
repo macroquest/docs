@@ -113,7 +113,7 @@ See Also: [Spawn Search](../general/spawn-search.md).
 
 ### {{ renderMember(type='string', name='BodyType') }}
 
-:   Any spawn with given body type
+:   Any spawn with given [body type](../general/body-types.md)
 
 ### {{ renderMember(type='bool', name='bRaid') }}
 
