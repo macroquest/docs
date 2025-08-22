@@ -23,16 +23,10 @@ jobs:
           fetch-depth: 0
       - name: Setup Python
         uses: actions/setup-python@v2
-      - name: Install mkdocs
+      - name: Install dependencies
         run:  |
           pip install --upgrade pip
-          pip install mkdocs mkdocs-gen-files
-          pip install mkdocs-material
-          pip install mkdocs-redirects
-          pip install mkdocs-same-dir
-          pip install python-markdown-math
-          pip install mkdocs-macros-plugin
-          pip install eq_lexers
+          pip install -r requirements.txt
       - name: Configure git as github-actions bot
         run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
       - name: Publish docs

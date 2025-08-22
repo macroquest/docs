@@ -1,5 +1,3 @@
-material
-mkdocs
 mkdocs-gen-files
 mkdocs-macros-plugin
 mkdocs-material
@@ -7,3 +5,4 @@ mkdocs-redirects
 mkdocs-same-dir
 python-markdown-math
 mkdocs-include-markdown-plugin
+eq_lexers
