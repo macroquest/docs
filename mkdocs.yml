@@ -613,7 +613,7 @@ nav:
 - Change Log: https://github.com/macroquest/macroquest/blob/master/data/resources/CHANGELOG.md" target="_blank
 
 validation:
-  unrecognized_links: ignore # Since we use README.md rather than index.md, mkdocs thinks we have a lot of unrecognized links.
+  unrecognized_links: ignore
 
 # Theme
 theme:
