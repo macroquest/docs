@@ -29,20 +29,19 @@ Information about the macro that's currently running.
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('reference/data-types/datatype-macro.md') }}
+:    <h2>Members</h2>
+    {%
+    include-markdown "reference/data-types/datatype-macro.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "reference/data-types/datatype-macro.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
-<h2>Members</h2>
-{%
-  include-markdown "reference/data-types/datatype-macro.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "reference/data-types/datatype-macro.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
-
-<!--tlo-linkrefs-start-->
-[macro]: ../data-types/datatype-macro.md
-<!--tlo-linkrefs-end-->
+    <!--tlo-linkrefs-start-->
+    [macro]: ../data-types/datatype-macro.md
+    <!--tlo-linkrefs-end-->

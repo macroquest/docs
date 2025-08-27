@@ -20,11 +20,10 @@ Access to menu objects when a menu is open.
 
 ## [`menu`](../data-types/datatype-menu.md)
 {% include-markdown "reference/data-types/datatype-menu.md" start="<!--dt-desc-start-->" end="<!--dt-desc-end-->" trailing-newlines=false %} {{ readMore('reference/data-types/datatype-menu.md') }}
+:    <h3>Members</h3>
+    {% include-markdown "reference/data-types/datatype-menu.md" start="<!--dt-members-start-->" end="<!--dt-members-end-->" %}
+    {% include-markdown "reference/data-types/datatype-menu.md" start="<!--dt-linkrefs-start-->" end="<!--dt-linkrefs-end-->" %}
 
-<h3>Members</h3>
-{% include-markdown "reference/data-types/datatype-menu.md" start="<!--dt-members-start-->" end="<!--dt-members-end-->" %}
-{% include-markdown "reference/data-types/datatype-menu.md" start="<!--dt-linkrefs-start-->" end="<!--dt-linkrefs-end-->" %}
-
-<!--tlo-linkrefs-start-->
-[menu]: ../data-types/datatype-menu.md
-<!--tlo-linkrefs-end-->
+    <!--tlo-linkrefs-start-->
+    [menu]: ../data-types/datatype-menu.md
+    <!--tlo-linkrefs-end-->

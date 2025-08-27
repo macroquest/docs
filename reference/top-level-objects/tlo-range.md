@@ -21,20 +21,19 @@ Test if _n_ is inside a range of 2 numbers or between 2 numbers
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('reference/data-types/datatype-range.md') }}
+:    <h2>Members</h2>
+    {%
+    include-markdown "reference/data-types/datatype-range.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "reference/data-types/datatype-range.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
-<h2>Members</h2>
-{%
-  include-markdown "reference/data-types/datatype-range.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "reference/data-types/datatype-range.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
-
-<!--tlo-linkrefs-start-->
-[range]: ../data-types/datatype-range.md
-<!--tlo-linkrefs-end-->
+    <!--tlo-linkrefs-start-->
+    [range]: ../data-types/datatype-range.md
+    <!--tlo-linkrefs-end-->
