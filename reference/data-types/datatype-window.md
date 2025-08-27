@@ -291,7 +291,6 @@ Windows come in many forms, but all are represented with the generic **window** 
 
 ### {{ renderMember(type='float', name='Value') }}
 
-:
 
 ### {{ renderMember(type='int', name='X') }}
 
