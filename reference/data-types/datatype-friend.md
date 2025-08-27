@@ -2,7 +2,7 @@
 tags:
     - datatype
 ---
-# `friends`
+# `friend`
 
 <!--dt-desc-start-->
 Provides access to your friends list data.
