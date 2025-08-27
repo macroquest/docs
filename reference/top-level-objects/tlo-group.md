@@ -23,19 +23,18 @@ Access to all group-related information.
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('reference/data-types/datatype-group.md') }}
-
-<h2>Members</h2>
-{%
-  include-markdown "reference/data-types/datatype-group.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "reference/data-types/datatype-group.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
+:    <h2>Members</h2>
+    {%
+    include-markdown "reference/data-types/datatype-group.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "reference/data-types/datatype-group.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
 ## [groupmember](../data-types/datatype-groupmember.md)
 {%
@@ -44,19 +43,18 @@ Access to all group-related information.
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('reference/data-types/datatype-groupmember.md') }}
-
-<h2>Members</h2>
-{%
-  include-markdown "reference/data-types/datatype-groupmember.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "reference/data-types/datatype-groupmember.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
+:    <h2>Members</h2>
+    {%
+    include-markdown "reference/data-types/datatype-groupmember.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "reference/data-types/datatype-groupmember.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
 ## Usage
 

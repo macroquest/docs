@@ -27,19 +27,18 @@ Object used to return information on a spell by name or by ID.
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('reference/data-types/datatype-spell.md') }}
-
-<h2>Members</h2>
-{%
-  include-markdown "reference/data-types/datatype-spell.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "reference/data-types/datatype-spell.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
+:    <h2>Members</h2>
+    {%
+    include-markdown "reference/data-types/datatype-spell.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "reference/data-types/datatype-spell.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
 ## Usage
 

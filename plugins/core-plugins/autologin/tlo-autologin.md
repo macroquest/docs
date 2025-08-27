@@ -23,19 +23,18 @@ Returns "AutoLogin" string when plugin is loaded, provides access to AutoLogin f
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('plugins/core-plugins/autologin/datatype-autologin.md') }}
-
-<h2>Members</h2>
-{%
-  include-markdown "plugins/core-plugins/autologin/datatype-autologin.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "plugins/core-plugins/autologin/datatype-autologin.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
+:    <h2>Members</h2>
+    {%
+    include-markdown "plugins/core-plugins/autologin/datatype-autologin.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "plugins/core-plugins/autologin/datatype-autologin.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
 ## [LoginProfile](datatype-loginprofile.md)
 {%
@@ -44,19 +43,18 @@ Returns "AutoLogin" string when plugin is loaded, provides access to AutoLogin f
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('plugins/core-plugins/autologin/datatype-loginprofile.md') }}
-
-<h2>Members</h2>
-{%
-  include-markdown "plugins/core-plugins/autologin/datatype-loginprofile.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "plugins/core-plugins/autologin/datatype-loginprofile.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
+:    <h2>Members</h2>
+    {%
+    include-markdown "plugins/core-plugins/autologin/datatype-loginprofile.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "plugins/core-plugins/autologin/datatype-loginprofile.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
 ## Example
 

@@ -23,19 +23,18 @@ This is a hierarchical container for things relating to inventory (Bank, etc).  
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('reference/data-types/datatype-inventory.md') }}
-
-<h2>Members</h2>
-{%
-  include-markdown "reference/data-types/datatype-inventory.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "reference/data-types/datatype-inventory.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
+:    <h2>Members</h2>
+    {%
+    include-markdown "reference/data-types/datatype-inventory.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "reference/data-types/datatype-inventory.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
 ## Usage
 

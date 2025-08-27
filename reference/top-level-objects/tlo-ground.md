@@ -23,19 +23,18 @@ Object which references the ground spawn item you have targeted.
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('reference/data-types/datatype-ground.md') }}
-
-<h2>Members</h2>
-{%
-  include-markdown "reference/data-types/datatype-ground.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "reference/data-types/datatype-ground.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
+:    <h2>Members</h2>
+    {%
+    include-markdown "reference/data-types/datatype-ground.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "reference/data-types/datatype-ground.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
 ## Usage
 

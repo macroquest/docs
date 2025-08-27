@@ -23,19 +23,18 @@ Provides access to properties of the current dynamic (instanced) zone.
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('reference/data-types/datatype-dynamiczone.md') }}
-
-<h2>Members</h2>
-{%
-  include-markdown "reference/data-types/datatype-dynamiczone.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "reference/data-types/datatype-dynamiczone.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
+:    <h2>Members</h2>
+    {%
+    include-markdown "reference/data-types/datatype-dynamiczone.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "reference/data-types/datatype-dynamiczone.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
 ## [dzmember](../data-types/datatype-dzmember.md)
 {%
@@ -44,19 +43,18 @@ Provides access to properties of the current dynamic (instanced) zone.
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('reference/data-types/datatype-dzmember.md') }}
-
-<h2>Members</h2>
-{%
-  include-markdown "reference/data-types/datatype-dzmember.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "reference/data-types/datatype-dzmember.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
+:    <h2>Members</h2>
+    {%
+    include-markdown "reference/data-types/datatype-dzmember.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "reference/data-types/datatype-dzmember.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
 ## [dztimer](../data-types/datatype-dztimer.md)
 {%
@@ -65,19 +63,18 @@ Provides access to properties of the current dynamic (instanced) zone.
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('reference/data-types/datatype-dztimer.md') }}
-
-<h2>Members</h2>
-{%
-  include-markdown "reference/data-types/datatype-dztimer.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "reference/data-types/datatype-dztimer.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
+:    <h2>Members</h2>
+    {%
+    include-markdown "reference/data-types/datatype-dztimer.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "reference/data-types/datatype-dztimer.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
 ## Usage
 

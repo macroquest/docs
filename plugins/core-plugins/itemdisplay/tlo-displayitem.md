@@ -27,20 +27,19 @@ Gives information on item windows
   end="<!--dt-desc-end-->"
   trailing-newlines=false
 %} {{ readMore('plugins/core-plugins/itemdisplay/datatype-displayitem.md') }}
+:    <h2>Members</h2>
+    {%
+    include-markdown "plugins/core-plugins/itemdisplay/datatype-displayitem.md"
+    start="<!--dt-members-start-->"
+    end="<!--dt-members-end-->"
+    heading-offset=0
+    %}
+    {%
+    include-markdown "plugins/core-plugins/itemdisplay/datatype-displayitem.md"
+    start="<!--dt-linkrefs-start-->"
+    end="<!--dt-linkrefs-end-->"
+    %}
 
-<h2>Members</h2>
-{%
-  include-markdown "plugins/core-plugins/itemdisplay/datatype-displayitem.md"
-  start="<!--dt-members-start-->"
-  end="<!--dt-members-end-->"
-  heading-offset=0
-%}
-{%
-  include-markdown "plugins/core-plugins/itemdisplay/datatype-displayitem.md"
-  start="<!--dt-linkrefs-start-->"
-  end="<!--dt-linkrefs-end-->"
-%}
-
-<!--tlo-linkrefs-start-->
-[DisplayItem]: datatype-displayitem.md
-<!--tlo-linkrefs-end-->
+    <!--tlo-linkrefs-start-->
+    [DisplayItem]: datatype-displayitem.md
+    <!--tlo-linkrefs-end-->
