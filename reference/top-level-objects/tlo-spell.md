@@ -19,7 +19,7 @@ Object used to return information on a spell by name or by ID.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [spell](../data-types/datatype-spell.md)
 {%
   include-markdown "reference/data-types/datatype-spell.md"
@@ -39,6 +39,7 @@ Object used to return information on a spell by name or by ID.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

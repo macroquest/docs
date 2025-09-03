@@ -19,7 +19,7 @@ Object used to get information on your character's skills.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [skill](../data-types/datatype-skill.md)
 {%
   include-markdown "reference/data-types/datatype-skill.md"
@@ -39,6 +39,7 @@ Object used to get information on your character's skills.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

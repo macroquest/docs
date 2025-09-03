@@ -13,7 +13,7 @@ Object that interacts with the currently active merchant.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [merchant](../data-types/datatype-merchant.md)
 {%
   include-markdown "reference/data-types/datatype-merchant.md"
@@ -33,6 +33,7 @@ Object that interacts with the currently active merchant.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

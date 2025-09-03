@@ -19,7 +19,7 @@ Provides access to spawn search filter criteria in alerts. Alerts are created us
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [alert](../data-types/datatype-alert.md)
 {%
   include-markdown "reference/data-types/datatype-alert.md"
@@ -59,7 +59,7 @@ Provides access to spawn search filter criteria in alerts. Alerts are created us
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
+<!--tlo-datatypes-end-->
 
 ## Usage
 

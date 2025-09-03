@@ -23,7 +23,7 @@ Used to get information about items on your Mount keyring.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [keyring](../data-types/datatype-keyring.md)
 {%
   include-markdown "reference/data-types/datatype-keyring.md"
@@ -64,7 +64,9 @@ Used to get information about items on your Mount keyring.
     end="<!--dt-linkrefs-end-->"
     %}
 
-    <!--tlo-linkrefs-start-->
-    [keyring]: ../data-types/datatype-keyring.md
-    [keyringitem]: ../data-types/datatype-keyringitem.md
-    <!--tlo-linkrefs-end-->
+<!--tlo-datatypes-end-->
+
+<!--tlo-linkrefs-start-->
+[keyring]: ../data-types/datatype-keyring.md
+[keyringitem]: ../data-types/datatype-keyringitem.md
+<!--tlo-linkrefs-end-->

@@ -13,7 +13,7 @@ Object that interacts with the personal tradeskill depot, introduced in the Nigh
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [tradeskilldepot](../data-types/datatype-tradeskilldepot.md)
 {%
   include-markdown "reference/data-types/datatype-tradeskilldepot.md"
@@ -33,7 +33,7 @@ Object that interacts with the personal tradeskill depot, introduced in the Nigh
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
+<!--tlo-datatypes-end-->
 ## Examples
 
 ```

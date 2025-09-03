@@ -15,7 +15,7 @@ Provides access to properties of the current dynamic (instanced) zone.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [dynamiczone](../data-types/datatype-dynamiczone.md)
 {%
   include-markdown "reference/data-types/datatype-dynamiczone.md"
@@ -75,6 +75,7 @@ Provides access to properties of the current dynamic (instanced) zone.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

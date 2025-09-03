@@ -16,7 +16,7 @@ Pet object which allows you to get properties of your pet.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [pet](../data-types/datatype-pet.md)
 {%
   include-markdown "reference/data-types/datatype-pet.md"
@@ -36,13 +36,13 @@ Pet object which allows you to get properties of your pet.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 
 ```
 /echo My Pet's Stance is currently set to: ${Pet.Stance}
 ```
-
 ```
 /echo My Pet's Name: ${Pet.CleanName}%
 ```
@@ -53,3 +53,4 @@ Pet object which allows you to get properties of your pet.
 <!--tlo-linkrefs-start-->
 [pet]: ../data-types/datatype-pet.md
 <!--tlo-linkrefs-end-->
+

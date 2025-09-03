@@ -19,7 +19,7 @@ Provides access to achievements.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [achievementmgr](../data-types/datatype-achievementmgr.md)
 {%
   include-markdown "reference/data-types/datatype-achievementmgr.md"
@@ -39,8 +39,7 @@ Provides access to achievements.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
-
+<!--tlo-datatypes-end-->
 
 ## Usage
 

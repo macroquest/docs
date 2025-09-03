@@ -13,7 +13,7 @@ Object used to get information about your mercenary.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [mercenary](../data-types/datatype-mercenary.md)
 {%
   include-markdown "reference/data-types/datatype-mercenary.md"
@@ -33,7 +33,7 @@ Object used to get information about your mercenary.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
+<!--tlo-datatypes-end-->
 ## Usage
 
 ```

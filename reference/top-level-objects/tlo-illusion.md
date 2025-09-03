@@ -23,7 +23,7 @@ Used to get information about items on your illusions keyring.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [keyring](../data-types/datatype-keyring.md)
 {%
   include-markdown "reference/data-types/datatype-keyring.md"
@@ -63,6 +63,7 @@ Used to get information about items on your illusions keyring.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

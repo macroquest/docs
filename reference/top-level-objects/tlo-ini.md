@@ -26,7 +26,7 @@ Reads value(s) from an ini file located in a relative or absolute path.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [ini](../data-types/datatype-ini.md)
 {%
   include-markdown "reference/data-types/datatype-ini.md"
@@ -106,6 +106,7 @@ Reads value(s) from an ini file located in a relative or absolute path.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

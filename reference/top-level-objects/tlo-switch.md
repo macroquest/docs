@@ -27,7 +27,7 @@ Object used when you want to find information on targetted doors or switches suc
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [switch](../data-types/datatype-switch.md)
 {%
   include-markdown "reference/data-types/datatype-switch.md"
@@ -47,7 +47,7 @@ Object used when you want to find information on targetted doors or switches suc
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
+<!--tlo-datatypes-end-->
 ## Usage
 
 ```

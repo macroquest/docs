@@ -21,7 +21,7 @@ Information about the macro that's currently running.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [macro](../data-types/datatype-macro.md)
 {%
   include-markdown "reference/data-types/datatype-macro.md"
@@ -41,7 +41,8 @@ Information about the macro that's currently running.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
+<!--tlo-linkrefs-start-->
+[macro]: ../data-types/datatype-macro.md
+<!--tlo-linkrefs-end-->
 
-    <!--tlo-linkrefs-start-->
-    [macro]: ../data-types/datatype-macro.md
-    <!--tlo-linkrefs-end-->

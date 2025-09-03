@@ -19,7 +19,7 @@ Object that has access to members that provide information on a plugin.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [plugin](../data-types/datatype-plugin.md)
 {%
   include-markdown "reference/data-types/datatype-plugin.md"
@@ -39,6 +39,7 @@ Object that has access to members that provide information on a plugin.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

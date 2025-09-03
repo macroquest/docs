@@ -84,25 +84,23 @@ def relative_link(target_file_path, embedding_page_src_uri, base_dir=None):
 # extra sections beyond Members/Forms/Description
 def has_extra_sections(content):
     SECTION_PATTERN = r'^##\s+(.+?)\s*$'
-    target_sections = {"Members", "Forms", "Description", "Associated DataTypes", "DataTypes"}
+    target_sections = {"Syntax", "Members", "Forms", "Description", "Associated DataTypes", "DataTypes", "See also"}
     
     lines = content.split('\n')
-    sections = []
+    in_datatypes_section = False
     
-    # Find all section headers and their positions
+    # Find all section headers that aren't within an include block
     for i, line in enumerate(lines):
-        match = re.match(SECTION_PATTERN, line)
-        if match:
-            sections.append((i, match.group(1).strip()))
-    
-    # Find last occurrence of target sections
-    last_target_index = -1
-    for idx, (line_num, section) in enumerate(sections):
-        if section in target_sections:
-            last_target_index = idx
-    
-    # Check if there are sections after the last target section
-    if last_target_index != -1 and len(sections) > last_target_index + 1:
-        return True
+        if '<!--tlo-datatypes-start-->' in line:
+            in_datatypes_section = True
+        elif '<!--tlo-datatypes-end-->' in line:
+            in_datatypes_section = False
+            
+        if not in_datatypes_section:
+            match = re.match(SECTION_PATTERN, line)
+            if match:
+                section = match.group(1).strip()
+                if section not in target_sections:
+                    return True
         
     return False
