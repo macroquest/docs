@@ -1,3 +1,8 @@
+---
+search:
+    exclude: true
+---
+
 # Top-Level Objects
 
 A "Top-Level Object" is any kind of object that you can start with when trying to find a property.
