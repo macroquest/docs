@@ -14,8 +14,8 @@ MacroQuest is as useful as you wish to make it. You can utilize it just for the 
 
 However, there are some issues you need to understand:
 
-* First and foremost, the use of MacroQuest is a violation of the commercial EverQuest EULA.
-* This means that if you use MacroQuest on commercial EverQuest servers, you risk your account being suspended for a period of time, or in extreme cases, having your account(s) permanently banned.
+* First and foremost, the use of MacroQuest is a violation of the EULA of EverQuest.  
+* This means that if you use MacroQuest, you risk your account being suspended for a period of time, or in extreme cases, having your account(s) permanently banned.  
 
 _If you are not prepared for such circumstances, stop here and do not continue._
 
