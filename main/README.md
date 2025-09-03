@@ -66,7 +66,7 @@ To end a macro, use this command:
 
 `/endmacro`
 
-See the [Getting Startaed](../macros/getting-started.md) section for further information on macros, and [/macro](../reference/commands/macro.md) and [/endmacro](../reference/commands/endmacro.md) for starting and stopping.
+See the [Getting Started](../macros/getting-started.md) section for further information on macros, and [/macro](../reference/commands/macro.md) and [/endmacro](../reference/commands/endmacro.md) for starting and stopping.
 
 ### Plugins
 
