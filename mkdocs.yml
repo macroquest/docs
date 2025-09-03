@@ -502,12 +502,14 @@ nav:
     - MacroQuest: reference/top-level-objects/tlo-macroquest.md
     - Math: reference/top-level-objects/tlo-math.md
     - Me: reference/top-level-objects/tlo-me.md
+    - Menu: reference/top-level-objects/tlo-menu.md
     - Mercenary: reference/top-level-objects/tlo-mercenary.md
     - Merchant: reference/top-level-objects/tlo-merchant.md
     - Mount: reference/top-level-objects/tlo-mount.md
     - NearestSpawn: reference/top-level-objects/tlo-nearestspawn.md
     - Pet: reference/top-level-objects/tlo-pet.md
     - Plugin: reference/top-level-objects/tlo-plugin.md
+    - PointMerchant: reference/top-level-objects/tlo-pointmerchant.md
     - Raid: reference/top-level-objects/tlo-raid.md
     - Range: reference/top-level-objects/tlo-range.md
     - Select: reference/top-level-objects/tlo-select.md
@@ -517,9 +519,13 @@ nav:
     - Spawn: reference/top-level-objects/tlo-spawn.md
     - SpawnCount: reference/top-level-objects/tlo-spawncount.md
     - Spell: reference/top-level-objects/tlo-spell.md
+    - String: reference/top-level-objects/tlo-string.md
+    - SubDefined: reference/top-level-objects/tlo-subdefined.md
     - Switch: reference/top-level-objects/tlo-switch.md
+    - SwitchTarget: reference/top-level-objects/tlo-switchtarget.md
     - Target: reference/top-level-objects/tlo-target.md
     - Task: reference/top-level-objects/tlo-task.md
+    - TeleportationItem: reference/top-level-objects/tlo-teleportationitem.md
     - Time: reference/top-level-objects/tlo-time.md
     - TradeskillDepot: reference/top-level-objects/tlo-tradeskilldepot.md
     - Type: reference/top-level-objects/tlo-type.md
@@ -531,6 +537,11 @@ nav:
     - achievement: reference/data-types/datatype-achievement.md
     - achievementcat: reference/data-types/datatype-achievementcat.md
     - achievementobj: reference/data-types/datatype-achievementobj.md
+    - achievementmgr: reference/data-types/datatype-achievementmgr.md
+    - advloot: reference/data-types/datatype-advloot.md
+    - advlootitem: reference/data-types/datatype-advlootitem.md
+    - alert: reference/data-types/datatype-alert.md
+    - alertlist: reference/data-types/datatype-alertlist.md
     - altability: reference/data-types/datatype-altability.md
     - argb: reference/data-types/datatype-argb.md
     - array: reference/data-types/datatype-array.md
@@ -558,7 +569,8 @@ nav:
     - fellowship: reference/data-types/datatype-fellowship.md
     - fellowshipmember: reference/data-types/datatype-fellowshipmember.md
     - float: reference/data-types/datatype-float.md
-    - framelmiter: reference/data-types/datatype-framelimiter.md
+    - framelimiter: reference/data-types/datatype-framelimiter.md
+    - friend: reference/data-types/datatype-friend.md
     - ground: reference/data-types/datatype-ground.md
     - group: reference/data-types/datatype-group.md
     - groupmember: reference/data-types/datatype-groupmember.md
@@ -574,16 +586,20 @@ nav:
     - invslot: reference/data-types/datatype-invslot.md
     - invslotwindow: reference/data-types/datatype-invslotwindow.md
     - item: reference/data-types/datatype-item.md
+    - itemfilterdata: reference/data-types/datatype-itemfilterdata.md
     - itemspell: reference/data-types/datatype-itemspell.md
     - keyring: reference/data-types/datatype-keyring.md
     - keyringitem: reference/data-types/datatype-keyringitem.md
     - macro: reference/data-types/datatype-macro.md
     - macroquest: reference/data-types/datatype-macroquest.md
     - math: reference/data-types/datatype-math.md
+    - menu: reference/data-types/datatype-menu.md
     - mercenary: reference/data-types/datatype-mercenary.md
     - merchant: reference/data-types/datatype-merchant.md
     - pet: reference/data-types/datatype-pet.md
     - plugin: reference/data-types/datatype-plugin.md
+    - pointmerchant: reference/data-types/datatype-pointmerchant.md
+    - pointmerchantitem: reference/data-types/datatype-pointmerchantitem.md
     - race: reference/data-types/datatype-race.md
     - raid: reference/data-types/datatype-raid.md
     - raidmember: reference/data-types/datatype-raidmember.md
