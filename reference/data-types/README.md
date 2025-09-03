@@ -1,3 +1,8 @@
+---
+search:
+    exclude: true
+---
+
 # Data Types
 
 See Also: [Top Level Objects Reference](../top-level-objects/README.md).
