@@ -53,7 +53,7 @@ While not required to access achievements, categories may be useful for enumerat
 
 ### {{ renderMember(type='int', name='Index') }}
 
-:   The index of the category in the achievement manager. For more information see [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices).
+:   The index of the category in the achievement manager. For more information see [Achievement Indices](../top-level-objects/tlo-achievement.md#usage).
 
 ### {{ renderMember(type='string', name='Name') }}
 
