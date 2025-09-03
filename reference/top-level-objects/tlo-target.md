@@ -60,7 +60,7 @@ Object used to get information about your current target.
     returns "a_pyre_beetle48 will break mezz in 66s"
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [target](../data-types/datatype-target.md)
 {%
   include-markdown "reference/data-types/datatype-target.md"
@@ -80,7 +80,8 @@ Object used to get information about your current target.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
-    <!--tlo-linkrefs-start-->
-    [target]: ../data-types/datatype-target.md
-    <!--tlo-linkrefs-end-->
+<!--tlo-linkrefs-start-->
+[target]: ../data-types/datatype-target.md
+<!--tlo-linkrefs-end-->

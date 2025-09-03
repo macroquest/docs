@@ -13,7 +13,7 @@ Object used to return information on a current Task.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [task](../data-types/datatype-task.md)
 {%
   include-markdown "reference/data-types/datatype-task.md"
@@ -73,7 +73,7 @@ Object used to return information on a current Task.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
+<!--tlo-datatypes-end-->
 ## Usage
 
 ```

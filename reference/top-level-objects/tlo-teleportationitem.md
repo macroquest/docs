@@ -25,6 +25,7 @@ Returns data on the teleportation item in your keyring.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
+<!--tlo-datatypes-start-->
 ## [`keyring`](../data-types/datatype-keyring.md)
 {% include-markdown "reference/data-types/datatype-keyring.md" start="<!--dt-desc-start-->" end="<!--dt-desc-end-->" trailing-newlines=false %} {{ readMore('reference/data-types/datatype-keyring.md') }}
 :    <h3>Members</h3>
@@ -36,8 +37,9 @@ Returns data on the teleportation item in your keyring.
 :    <h3>Members</h3>
     {% include-markdown "reference/data-types/datatype-keyringitem.md" start="<!--dt-members-start-->" end="<!--dt-members-end-->" %}
     {% include-markdown "reference/data-types/datatype-keyringitem.md" start="<!--dt-linkrefs-start-->" end="<!--dt-linkrefs-end-->" %}
+<!--tlo-datatypes-end-->
 
-    <!--tlo-linkrefs-start-->
-    [keyring]: ../data-types/datatype-keyring.md
-    [keyringitem]: ../data-types/datatype-keyringitem.md
-    <!--tlo-linkrefs-end-->
+<!--tlo-linkrefs-start-->
+[keyring]: ../data-types/datatype-keyring.md
+[keyringitem]: ../data-types/datatype-keyringitem.md
+<!--tlo-linkrefs-end-->

@@ -9,7 +9,7 @@ The AdvLoot TLO grants access to items in the Advanced Loot window.
 <!--tlo-desc-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [advloot](../data-types/datatype-advloot.md)
 {%
   include-markdown "reference/data-types/datatype-advloot.md"
@@ -69,7 +69,7 @@ The AdvLoot TLO grants access to items in the Advanced Loot window.
       start="<!--dt-linkrefs-start-->"
       end="<!--dt-linkrefs-end-->"
     %}
-
+<!--tlo-datatypes-end-->
 
 ## Usage
 

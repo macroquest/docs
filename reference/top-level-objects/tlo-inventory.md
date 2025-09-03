@@ -15,7 +15,7 @@ This is a hierarchical container for things relating to inventory (Bank, etc).  
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [inventory](../data-types/datatype-inventory.md)
 {%
   include-markdown "reference/data-types/datatype-inventory.md"
@@ -35,6 +35,7 @@ This is a hierarchical container for things relating to inventory (Bank, etc).  
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

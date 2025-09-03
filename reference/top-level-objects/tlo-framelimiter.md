@@ -16,7 +16,7 @@ The FrameLimiter TLO provides access to the [frame limiter](../../main/features/
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [framelimiter](../data-types/datatype-framelimiter.md)
 {%
   include-markdown "reference/data-types/datatype-framelimiter.md"
@@ -36,6 +36,8 @@ The FrameLimiter TLO provides access to the [frame limiter](../../main/features/
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %} 
+
+<!--tlo-datatypes-end-->
 
 ## Usage
 

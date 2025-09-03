@@ -15,7 +15,7 @@ Access to objects of type corpse, which is the currently active corpse (ie. the 
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [corpse](../data-types/datatype-corpse.md)
 {%
   include-markdown "reference/data-types/datatype-corpse.md"
@@ -35,6 +35,7 @@ Access to objects of type corpse, which is the currently active corpse (ie. the 
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

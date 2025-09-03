@@ -15,7 +15,7 @@ Used to get information on data types.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [type](../data-types/datatype-type.md)
 {%
   include-markdown "reference/data-types/datatype-type.md"
@@ -35,7 +35,7 @@ Used to get information on data types.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
+<!--tlo-datatypes-end-->
 ## Usage
 
 Determines if a member of a type exists:

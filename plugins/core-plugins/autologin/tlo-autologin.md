@@ -15,6 +15,7 @@ Returns "AutoLogin" string when plugin is loaded, provides access to AutoLogin f
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
+<!--tlo-datatypes-start-->
 
 ## [AutoLogin](datatype-autologin.md)
 {%
@@ -55,6 +56,8 @@ Returns "AutoLogin" string when plugin is loaded, provides access to AutoLogin f
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+
+<!--tlo-datatypes-end-->
 
 ## Example
 

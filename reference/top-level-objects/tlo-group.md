@@ -15,7 +15,7 @@ Access to all group-related information.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [group](../data-types/datatype-group.md)
 {%
   include-markdown "reference/data-types/datatype-group.md"
@@ -55,6 +55,7 @@ Access to all group-related information.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

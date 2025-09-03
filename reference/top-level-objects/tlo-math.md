@@ -14,7 +14,7 @@ Creates a Math object which gives allows access to the math type members.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [math](../data-types/datatype-math.md)
 {%
   include-markdown "reference/data-types/datatype-math.md"
@@ -34,6 +34,7 @@ Creates a Math object which gives allows access to the math type members.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

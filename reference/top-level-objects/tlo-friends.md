@@ -15,7 +15,7 @@ Grants access to your friends list.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [friend](../data-types/datatype-friend.md)
 {%
   include-markdown "reference/data-types/datatype-friend.md"
@@ -35,8 +35,7 @@ Grants access to your friends list.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
-
+<!--tlo-datatypes-end-->
 
 ## Usage
 

@@ -23,7 +23,7 @@ tags:
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [altability](../data-types/datatype-altability.md)
 {%
   include-markdown "reference/data-types/datatype-altability.md"
@@ -43,6 +43,7 @@ tags:
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

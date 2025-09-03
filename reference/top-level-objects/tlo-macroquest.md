@@ -13,7 +13,7 @@ Creates an object related to MacroQuest information.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [macroquest](../data-types/datatype-macroquest.md)
 {%
   include-markdown "reference/data-types/datatype-macroquest.md"
@@ -33,6 +33,7 @@ Creates an object related to MacroQuest information.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

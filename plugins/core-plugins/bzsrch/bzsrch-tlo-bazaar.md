@@ -15,6 +15,7 @@ Provides access to bazaar search functionality and results.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
+<!--tlo-datatypes-start-->
 
 ## [Bazaar](bzsrch-datatype-bazaar.md)
 {%
@@ -56,6 +57,8 @@ Provides access to bazaar search functionality and results.
     end="<!--dt-linkrefs-end-->"
     %}
 
-    <!--tlo-linkrefs-start-->
-    [bazaar]: bzsrch-datatype-bazaar.md
-    <!--tlo-linkrefs-end-->
+<!--tlo-datatypes-end-->
+
+<!--tlo-linkrefs-start-->
+[bazaar]: bzsrch-datatype-bazaar.md
+<!--tlo-linkrefs-end-->

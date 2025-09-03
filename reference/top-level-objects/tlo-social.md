@@ -17,7 +17,7 @@ Access data about socials (in-game macro buttons)
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [social](../data-types/datatype-social.md)
 {%
   include-markdown "reference/data-types/datatype-social.md"
@@ -37,7 +37,7 @@ Access data about socials (in-game macro buttons)
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
+<!--tlo-datatypes-end-->
 ## Usage
 
 !!! Example

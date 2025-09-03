@@ -13,7 +13,7 @@ Provides access to general information about the game and its state.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [everquest](../data-types/datatype-everquest.md)
 {%
   include-markdown "reference/data-types/datatype-everquest.md"
@@ -33,6 +33,7 @@ Provides access to general information about the game and its state.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

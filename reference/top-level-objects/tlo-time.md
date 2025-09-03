@@ -13,7 +13,7 @@ Object used to return information on real time, not game time.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [time](../data-types/datatype-time.md)
 {%
   include-markdown "reference/data-types/datatype-time.md"
@@ -33,7 +33,7 @@ Object used to return information on real time, not game time.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
+<!--tlo-datatypes-end-->
 ## Usage
 
 ```

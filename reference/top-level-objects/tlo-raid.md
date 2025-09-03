@@ -13,7 +13,7 @@ Object that has access to members that provide information on your raid.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [raid](../data-types/datatype-raid.md)
 {%
   include-markdown "reference/data-types/datatype-raid.md"
@@ -53,7 +53,7 @@ Object that has access to members that provide information on your raid.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
+<!--tlo-datatypes-end-->
 ## Usage
 
 ```

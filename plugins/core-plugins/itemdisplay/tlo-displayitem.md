@@ -19,6 +19,7 @@ Gives information on item windows
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
+<!--tlo-datatypes-start-->
 
 ## [DisplayItem](datatype-displayitem.md)
 {%
@@ -40,6 +41,7 @@ Gives information on item windows
     end="<!--dt-linkrefs-end-->"
     %}
 
-    <!--tlo-linkrefs-start-->
-    [DisplayItem]: datatype-displayitem.md
-    <!--tlo-linkrefs-end-->
+<!--tlo-datatypes-end-->
+<!--tlo-linkrefs-start-->
+[DisplayItem]: datatype-displayitem.md
+<!--tlo-linkrefs-end-->

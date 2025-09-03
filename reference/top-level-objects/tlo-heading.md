@@ -23,7 +23,7 @@ Object that refers to the directional heading to of a location or direction.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [heading](../data-types/datatype-heading.md)
 {%
   include-markdown "reference/data-types/datatype-heading.md"
@@ -43,6 +43,8 @@ Object that refers to the directional heading to of a location or direction.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+
+<!--tlo-datatypes-end-->
 
 ## Usage
 

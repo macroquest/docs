@@ -13,7 +13,7 @@ Test if _n_ is inside a range of 2 numbers or between 2 numbers
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [range](../data-types/datatype-range.md)
 {%
   include-markdown "reference/data-types/datatype-range.md"
@@ -33,7 +33,7 @@ Test if _n_ is inside a range of 2 numbers or between 2 numbers
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
-    <!--tlo-linkrefs-start-->
-    [range]: ../data-types/datatype-range.md
-    <!--tlo-linkrefs-end-->
+<!--tlo-datatypes-end-->
+<!--tlo-linkrefs-start-->
+[range]: ../data-types/datatype-range.md
+<!--tlo-linkrefs-end-->

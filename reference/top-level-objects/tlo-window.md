@@ -17,7 +17,7 @@ You can display a list of window names using the /windows command or by using th
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [window](../data-types/datatype-window.md)
 {%
   include-markdown "reference/data-types/datatype-window.md"
@@ -37,7 +37,7 @@ You can display a list of window names using the /windows command or by using th
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
-
-    <!--tlo-linkrefs-start-->
-    [window]: ../data-types/datatype-window.md
-    <!--tlo-linkrefs-end-->
+<!--tlo-datatypes-end-->
+<!--tlo-linkrefs-start-->
+[window]: ../data-types/datatype-window.md
+<!--tlo-linkrefs-end-->

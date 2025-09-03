@@ -19,7 +19,7 @@ Object used to get information on a specific inventory slot.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [invslot](../data-types/datatype-invslot.md)
 {%
   include-markdown "reference/data-types/datatype-invslot.md"
@@ -39,6 +39,7 @@ Object used to get information on a specific inventory slot.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 

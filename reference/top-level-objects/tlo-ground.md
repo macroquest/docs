@@ -15,7 +15,7 @@ Object which references the ground spawn item you have targeted.
 <!--tlo-forms-end-->
 
 ## Associated DataTypes
-
+<!--tlo-datatypes-start-->
 ## [ground](../data-types/datatype-ground.md)
 {%
   include-markdown "reference/data-types/datatype-ground.md"
@@ -35,6 +35,7 @@ Object which references the ground spawn item you have targeted.
     start="<!--dt-linkrefs-start-->"
     end="<!--dt-linkrefs-end-->"
     %}
+<!--tlo-datatypes-end-->
 
 ## Usage
 
