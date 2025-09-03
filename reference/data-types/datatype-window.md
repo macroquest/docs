@@ -61,7 +61,7 @@ Windows come in many forms, but all are represented with the generic **window** 
 
 :   !!! info "Deprecation Notice"
 
-        This member is deprecated and discouraged from continued use. Please use [SelectedIndex](#int-selectedindex) instead.
+        This member is deprecated and discouraged from continued use. Please use [SelectedIndex](#SelectedIndex) instead.
 
     Applies to: `Combobox`, `Listbox`, `TreeView`
 
@@ -304,7 +304,7 @@ Windows come in many forms, but all are represented with the generic **window** 
 
 ### [string][string] To String
 
-:   `TRUE` if the window is open, `FALSE` if not, matching [Open](#bool-open)
+:   `TRUE` if the window is open, `FALSE` if not, matching [Open](#Open)
 <!--dt-members-end-->
 
 ## Methods

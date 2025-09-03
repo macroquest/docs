@@ -35,7 +35,7 @@ Provides the details about a single achievement and allows access to an achievem
 
 ### {{ renderMember(type='int', name='Index') }}
 
-:   The index of the achievement. See [Achievement Indices](../top-level-objects/tlo-achievement.md#note-about-achievement-indices) for more information.
+:   The index of the achievement. See [Achievement Indices](../top-level-objects/tlo-achievement.md#usage) for more information.
 
 ### {{ renderMember(type='string', name='Link', params='opt: Name') }}
 
