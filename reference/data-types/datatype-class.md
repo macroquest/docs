@@ -62,25 +62,6 @@ Data about a particular character class
 :   Same as **Name**
 <!--dt-members-end-->
 
-## Class name and ShortName list:
-| **Name** | **ShortName** |
-| :--- | :--- |
-| Bard | BRD |
-| Beastlord | BST |
-| Berserker | BER |
-| Cleric | CLR |
-| Druid | DRU |
-| Enchanter | ENC |
-| Magician | MAG |
-| Monk | MNK |
-| Necromancer | NEC |
-| Paladin | PAL |
-| Ranger | RNG |
-| Shadow Knight | SHD |
-| Shaman | SHM |
-| Warrior | WAR |
-| Wizard | WIZ |
-| Mercenary | MER |
 <!--dt-linkrefs-start-->
 [bool]: datatype-bool.md
 [int]: datatype-int.md
