@@ -17,7 +17,6 @@ MacroQuest becomes part of EverQuest when you play, and anything you do inside o
 The following common EverQuest slash commands are enhanced by MacroQuest:
 
 * [/cast](../reference/commands/cast.md)
-* [/char](../reference/commands/char.md)
 * [/help](../reference/commands/help.md)
 * [/location](../reference/commands/location.md)
 * [/target](../reference/commands/mqtarget.md)
