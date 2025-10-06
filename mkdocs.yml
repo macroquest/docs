@@ -455,12 +455,6 @@ nav:
     - EQ Commands:
       - /lootnodrop: reference/commands/eq/lootnodrop.md
 
-    - Commands From Plugins:
-      - HUD:
-        - /loadhud: plugins/core-plugins/hud/loadhud.md
-      - ChatWnd:
-        - /mqfont: plugins/core-plugins/chatwnd/mqfont.md
-
   - Top Level Objects:
     - reference/top-level-objects/README.md
     - Achievement: reference/top-level-objects/tlo-achievement.md
