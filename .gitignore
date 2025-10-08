@@ -2,3 +2,13 @@ site/
 .vscode/
 .venv
 __pycache__/
+
+# external docs
+plugins/community-plugins/mq2camera/
+plugins/community-plugins/mq2dannet/
+plugins/community-plugins/mq2discord/
+plugins/community-plugins/mq2easyfind/
+plugins/community-plugins/mq2lootmanager/
+plugins/community-plugins/mq2nav/
+plugins/community-plugins/mq2sqlite/
+plugins/community-plugins/mqtexttospeech/
