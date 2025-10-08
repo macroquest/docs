@@ -1,0 +1,42 @@
+{
+  "plugins/community-plugins/mq2discord": {
+    "url": "https://gitlab.com/Redbot/mq2discord.git",
+    "branch": "docs-dir",
+    "docs_path": "docs"
+  },
+  "plugins/community-plugins/mq2sqlite": {
+    "url": "https://gitlab.com/Redbot/mq2sqlite.git",
+    "branch": "docs-dir",
+    "docs_path": "docs"
+  },
+  "plugins/community-plugins/mq2camera": {
+    "url": "https://github.com/Redbot/MQ2Camera.git",
+    "branch": "docs-dir",
+    "docs_path": "docs"
+  },
+  "plugins/community-plugins/mq2dannet": {
+    "url": "https://github.com/Redbot/MQ2Dan.git",
+    "branch": "docs-dir",
+    "docs_path": "MQ2DanNet/docs"
+  },
+  "plugins/community-plugins/mq2easyfind": {
+    "url": "https://github.com/Redbot/MQ2EasyFind.git",
+    "branch": "docs-dir",
+    "docs_path": "docs"
+  },
+  "plugins/community-plugins/mq2lootmanager": {
+    "url": "https://github.com/Redbot/MQ2LootManager.git",
+    "branch": "docs-dir",
+    "docs_path": "docs"
+  },
+  "plugins/community-plugins/mq2nav": {
+    "url": "https://github.com/Redbot/MQ2Nav.git",
+    "branch": "doc",
+    "docs_path": "doc"
+  },
+  "plugins/community-plugins/mqtexttospeech": {
+    "url": "https://github.com/Redbot/MQTextToSpeech.git",
+    "branch": "docs-dir",
+    "docs_path": "docs"
+  }
+}
