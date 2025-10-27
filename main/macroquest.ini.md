@@ -19,6 +19,7 @@ MacroQuest.ini is the configuration file used by MacroQuest. By default it is st
     CyclePrevWindow=
     ParserEngine=1
     ShowMacroQuestConsole=1
+    NetworkPeerPort=7781
     ```
 
 ### [Crash Handler]
