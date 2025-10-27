@@ -1,26 +1,6 @@
 # How to use Actors
 
-Actors are a subsystem added to the MQ ecosystem to allow for different clients and applications to communicate with one another simply. The underlying tech for local (same computer) communication is Windows Named Pipes, and is very fast -- essentially no different than just using shared memory. The tech for remote communication is still WIP and is currently planned to be ASIO-based TCP communication with a UDP discovery mechanism and the ability to specify peers.
-
-The entire system hinges on the launcher (MacroQuest.exe) being present as the central routing mechanism. If the launcher goes down, then all routing will stop and the system will become inoperable.
-
-While messaging can use any serialization for internal mailbox communication, protobuf has been utilized to wrap these messages in routing packages to allow for system-independent communication, implicit versioning, and efficient marshalling/unmarshalling. When selecting a serialization strategy, be aware that there are protobuf examples in code and you are probably already building the library.
-
-The point of using this technology is to allow for consistent and simple communication between processes that couldn't communicate before. The framework is ideally highly extensible with a minimum amount of boilerplate needed to set up, feedback is welcome.
-
-## Terminology
-
-- **Actor**: An actor is self-contained computational entity that receives messages and performs actions based on the content of those messages such as side effects and composing replies.
-- **Mailbox**: This is the receiver of messages. Each actor has exactly one, and this provides the unique address for said actor. A mailbox is set up by taking a callback function to process a message.
-- **Dropbox**: This is the sender of messages. Each actor again has exactly one, and this provides automatic return address composition as well as an interface to the application's central Post Office.
-- **Post Office**: The central authority for message routing in a single application. Each independent application will need to set one post office up for actors in that application to register mailboxes. This will maintain ownership of the mailboxes and dropboxes and route all messages received by the application.
-- **Address**: A specifier for routing a message. On the sending side, this does not have to be unique -- one could address a message to all applications that have a certain mailbox, for instance. There are two levels of addressing: mailbox, and postoffice. On the receiving side, the post office must be fully qualified with one of three strategies:
-    - By name: You can specify a unique name for an application, which is useful for external application naming. There is one name-specified application that should always be present: `launcher` -- the MQ launcher
-    - By pid: You can use the PID of the application (not very useful to the sender as it is not deterministic)
-    - By EQ information: The most available of the following three strings: account, server, character. All three of these strings present means that the address must be unique, and this type of addressing replaces name as a convenience mechanism.
-- **Envelope**: This is a protobuf spec that all messages that need to be routed to actors will get wrapped in automatically (as a function of using the Dropbox) so the routing system can ensure it ends up at the correct post offices and mailboxes.
-
-## In Plugins
+General Actor documenation available at [Actors](../../main/features/actors.md). Please refer to the [terminology section](../../main/features/actors.md#terminology) in the other actors document for a glossary of terms.
 
 Plugins are a special case for the actor API as the post office itself is maintained within mq2main.dll and is not exposed at all to any plugins. Instead, plugins will have access to an actor API by including:
 
@@ -30,7 +10,7 @@ Plugins are a special case for the actor API as the post office itself is mainta
 
 This include provides everything necessary for creating and registering an actor, as well as sending (and receiving) messages. There is one free function (with two overloads) that creates a new actor provided as part of this API:
 
-### AddActor
+## AddActor
 
 ```cpp
 using ReceiveCallbackAPI = std::function<void(const std::shared_ptr<Message>&)>;
@@ -56,7 +36,7 @@ Because the default handling of objects is protobuf, T is assumed to be a protob
 
 There are three more structures to explore in a plugin, `Address`, `Message`, and `DropboxAPI`.
 
-### Address
+## Address
 
 An address is a shim to the protobuf-defined address, and follows the same rules as the [terminology section above](#terminology). The API provides this shim as a simple struct where you can set the address parameters directly like this (as an example):
 
@@ -71,14 +51,14 @@ The one difference to note is that there is a member of this address called `Abs
 - If no mailbox is specified at all, then the plugin name becomes the target mailbox.
 - If a mailbox is specified, then the target mailbox becomes `<pluginName>:<mailbox>` as was noted in [the implementation details specified in `AddActor`](#addactor)
 
-### Message
+## Message
 
 A message consists of 2 parts useful to the plugin author, `Sender` and `Payload`. Both are optional (and are wrapped in `std::optional`), so the author will need to handle the absence of either.
 
 - `Sender`: This is the address of the message sender. It's useful if message handling is dependent on the source of the message.
 - `Payload`: This is the actual message payload. It is represented as a string, which is a convenient data storage mechanism that provides bytes and length, and is deserializable directly as a protobuf message. It could be any data that your plugin can handle though, since the handling of it is local to your plugin.
 
-### DropboxAPI
+## DropboxAPI
 
 This is the object that is returned when an actor is added to the postoffice via the API. The plugin author should store this somewhere where it can be accessed because they will need to use it to send messages and unregister the actor. The object provides the following functions:
 

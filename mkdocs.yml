@@ -28,6 +28,7 @@ nav:
     - Plugin Repository Quick List: main/plugin-quick-list.md
 
   - Features:
+    - Actors: main/features/actors.md
     - Anonymize: main/features/anonymize.md
     - Cached Buffs: main/features/cached-buffs.md
     - CFG Files: main/features/cfg-files.md

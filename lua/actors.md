@@ -1,6 +1,8 @@
 # Actors in Lua
 
-The lua plugin has been equipped with a method to utilize the actor subsystem of MQ. This system will allow script writers to communicate between scripts, clients, or even external applications using the same framework that is available [to plugins](../plugins/developing/actors.md). There are some few specializations unique to lua, and this document aims to provide a reference for them. Please refer to the [terminology section](../plugins/developing/actors.md#terminology) in the other actors document for a glossary of terms.
+General Actor documenation available at [Actors](../../main/features/actors.md). Please refer to the [terminology section](../../main/features/actors.md#terminology) in the other actors document for a glossary of terms.
+
+The lua plugin has been equipped with a method to utilize the actor subsystem of MQ. This system will allow script writers to communicate between scripts, clients, or even external applications using the same framework that is available [to plugins](../plugins/developing/actors.md). There are some few specializations unique to lua, and this document aims to provide a reference for them.
 
 ## Module
 
