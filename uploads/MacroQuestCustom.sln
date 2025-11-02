@@ -81,6 +81,9 @@ EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "MQ2Collections", "MQ2Collections", "{6D240D09-FA17-4241-B9F7-02281F53D869}"
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MQ2Collections", "..\plugins\MQ2Collections\plugin\MQ2Collections.vcxproj", "{D2CF825E-1F39-4F0C-AF30-15DE7BB51347}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2A0A06A4-E9C6-4229-82EE-BD2D4E0A7221} = {2A0A06A4-E9C6-4229-82EE-BD2D4E0A7221}
+	EndProjectSection
 EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MQ2DanNet", "..\plugins\MQ2Dan\MQ2DanNet\MQ2DanNet.vcxproj", "{739B2A7A-677B-47DB-8A49-C66A89FF6921}"
 	ProjectSection(ProjectDependencies) = postProject
@@ -546,7 +549,10 @@ Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MQ2MeshManager", "..\plugin
 		{70752189-B826-4E5D-816B-61B9147881CB} = {70752189-B826-4E5D-816B-61B9147881CB}
 	EndProjectSection
 EndProject
-Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "UnitTests", "..\plugins\MQ2Collections\tests\UnitTests.vcxproj", "{625585BA-4834-4B19-9569-D44A4EEF8B85}"
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MQ2CollectionsTests", "..\plugins\MQ2Collections\tests\UnitTests.vcxproj", "{625585BA-4834-4B19-9569-D44A4EEF8B85}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2A0A06A4-E9C6-4229-82EE-BD2D4E0A7221} = {2A0A06A4-E9C6-4229-82EE-BD2D4E0A7221}
+	EndProjectSection
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
