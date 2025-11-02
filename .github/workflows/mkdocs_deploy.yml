@@ -29,5 +29,7 @@ jobs:
           pip install -r requirements.txt
       - name: Configure git as github-actions bot
         run: git config user.name 'github-actions[bot]' && git config user.email 'github-actions[bot]@users.noreply.github.com'
+      - name: Update community plugin docs
+        run: python update_community_docs.py
       - name: Publish docs
         run: mkdocs gh-deploy

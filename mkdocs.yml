@@ -6,7 +6,7 @@ site_author: Macroquest Developers
 # Repository
 repo_name: MacroQuest
 repo_url: https://github.com/macroquest/macroquest
-edit_uri: https://github.com/macroquest/docs/edit/master
+edit_uri: ../docs/edit/master
 docs_dir: .
 
 # Copyright
@@ -15,6 +15,8 @@ copyright: Copyright &copy; 2002-2022 Macroquest Developers
 extra_css:
   - stylesheets/extra.css
 
+hooks:
+  - hooks/mkdocs_hooks.py
 
 # Navigation
 nav:
@@ -152,14 +154,48 @@ nav:
     - MQ2AutoSkills: plugins/community-plugins/mq2autoskills.md
     - MQ2Bandolier: plugins/community-plugins/mq2bandolier.md
     - MQ2BuffTool: plugins/community-plugins/mq2bufftool.md
+    - MQ2Camera:
+      - plugins/community-plugins/mq2camera/index.md
+      - /camera: plugins/community-plugins/mq2camera/cmd-camera.md
     - MQ2Cast: plugins/community-plugins/mq2cast.md
     - MQ2ChatEvents: plugins/community-plugins/mq2chatevents.md
     - MQ2Cursor: plugins/community-plugins/mq2cursor.md
+    - MQ2DanNet: 
+      - plugins/community-plugins/mq2dannet/index.md
+      - /djoin: plugins/community-plugins/mq2dannet/cmd-djoin.md
+      - /dleave: plugins/community-plugins/mq2dannet/cmd-dleave.md
+      - /dtell: plugins/community-plugins/mq2dannet/cmd-dtell.md
+      - /dgtell: plugins/community-plugins/mq2dannet/cmd-dgtell.md
+      - /dexecute: plugins/community-plugins/mq2dannet/cmd-dexecute.md
+      - /dgexecute: plugins/community-plugins/mq2dannet/cmd-dgexecute.md
+      - /dggexecute: plugins/community-plugins/mq2dannet/cmd-dggexecute.md
+      - /dgrexecute: plugins/community-plugins/mq2dannet/cmd-dgrexecute.md
+      - /dgzexecute: plugins/community-plugins/mq2dannet/cmd-dgzexecute.md
+      - /dgaexecute: plugins/community-plugins/mq2dannet/cmd-dgaexecute.md
+      - /dggaexecute: plugins/community-plugins/mq2dannet/cmd-dggaexecute.md
+      - /dgraexecute: plugins/community-plugins/mq2dannet/cmd-dgraexecute.md
+      - /dgzaexecute: plugins/community-plugins/mq2dannet/cmd-dgzaexecute.md
+      - /dnet: plugins/community-plugins/mq2dannet/cmd-dnet.md
+      - /dobserve: plugins/community-plugins/mq2dannet/cmd-dobserve.md
+      - /dquery: plugins/community-plugins/mq2dannet/cmd-dquery.md
+      - TLO:DanNet: plugins/community-plugins/mq2dannet/tlo-dannet.md
+      - DataType:DanNet: plugins/community-plugins/mq2dannet/datatype-dannet.md
+      - DataType:DanObservation: plugins/community-plugins/mq2dannet/datatype-danobservation.md
     - MQ2DPSAdv: plugins/community-plugins/mq2dpsadv.md
     - MQ2Debuffs: plugins/community-plugins/mq2debuffs.md
+    - MQ2Discord:
+      - plugins/community-plugins/mq2discord/index.md
+      - /discord: plugins/community-plugins/mq2discord/cmd-discord.md
+      - Create a Discord Bot Account: plugins/community-plugins/mq2discord/Create_Bot_Account.md
     - MQ2Cecho: plugins/community-plugins/mq2cecho.md
     - MQ2EQBC: plugins/community-plugins/mq2eqbc/README.md
     - MQ2EQBC:Revisions: plugins/community-plugins/mq2eqbc/mq2eqbc-revisions.md
+    - MQ2EasyFind:
+      - plugins/community-plugins/mq2easyfind/index.md
+      - /easyfind: plugins/community-plugins/mq2easyfind/cmd-easyfind.md
+      - /travelto: plugins/community-plugins/mq2easyfind/cmd-travelto.md
+      - TLO:EasyFind: plugins/community-plugins/mq2easyfind/tlo-easyfind.md
+      - DataType:EasyFind: plugins/community-plugins/mq2easyfind/datatype-easyfind.md
     - MQ2Events: plugins/community-plugins/mq2events.md
     - MQ2Exchange: plugins/community-plugins/mq2exchange.md
     - MQ2FakeLink: plugins/community-plugins/mq2fakelink.md
@@ -167,6 +203,9 @@ nav:
     - MQ2GMCheck: plugins/community-plugins/mq2gmcheck.md
     - MQ2HUDMove: plugins/community-plugins/mq2hudmove.md
     - MQ2LinkDB: plugins/community-plugins/mq2linkdb.md
+    - MQ2LootManager:
+      - plugins/community-plugins/mq2lootmanager/index.md
+      - /lootmanager: plugins/community-plugins/mq2lootmanager/cmd-lootmanager.md
     - MQ2Medley: plugins/community-plugins/mq2medley.md
     - MQ2Melee: plugins/community-plugins/mq2melee.md
     - MQ2Missing: plugins/community-plugins/mq2missing.md
@@ -175,6 +214,11 @@ nav:
     - MQ2MoveUtils:v11 Revisions: plugins/community-plugins/mq2moveutils/mq2moveutils-v11-revisions.md
     - MQ2MoveUtils:v11 FAQ: plugins/community-plugins/mq2moveutils/mq2moveutils-v11-faq.md
     - MQ2MoveUtils (old): plugins/community-plugins/mq2moveutils/mq2moveutils-old.md
+    - MQ2Nav:
+      - plugins/community-plugins/mq2nav/index.md
+      - /navigate: plugins/community-plugins/mq2nav/cmd-navigate.md
+      - TLO:Navigation: plugins/community-plugins/mq2nav/tlo-navigation.md
+      - DataType:Navigation: plugins/community-plugins/mq2nav/datatype-navigation.md
     - MQ2NetBots: plugins/community-plugins/mq2netbots.md
     - MQ2NetHeal: plugins/community-plugins/mq2netheal.md
     - MQ2PQ: plugins/community-plugins/mq2pq.md
@@ -183,11 +227,21 @@ nav:
     - MQ2Sound: plugins/community-plugins/mq2sound.md
     - MQ2Spawn: plugins/community-plugins/mq2spawn.md
     - MQ2SpawnMaster: plugins/community-plugins/mq2spawnmaster.md
+    - MQ2SQLite:
+      - plugins/community-plugins/mq2sqlite/index.md
+      - /sqlite: plugins/community-plugins/mq2sqlite/cmd-sqlite.md
+      - TLO:Sqlite: plugins/community-plugins/mq2sqlite/tlo-sqlite.md
+      - DataType:Sqlite: plugins/community-plugins/mq2sqlite/datatype-sqlite.md
     - MQ2Targets: plugins/community-plugins/mq2targets.md
     - MQ2Timestamp: plugins/community-plugins/mq2timestamp.md
     - MQ2Tracking: plugins/community-plugins/mq2tracking.md
     - MQ2Twist: plugins/community-plugins/mq2twist/README.md
     - MQ2Twist:Revisions: plugins/community-plugins/mq2twist/mq2twist-revisions.md
+    - MQTextToSpeech:
+      - plugins/community-plugins/mqtexttospeech/index.md
+      - /tts: plugins/community-plugins/mqtexttospeech/cmd-tts.md
+      - TLO:TTS: plugins/community-plugins/mqtexttospeech/tlo-tts.md
+      - DataType:TTS: plugins/community-plugins/mqtexttospeech/datatype-tts.md
     - MQ2Vendors: plugins/community-plugins/mq2vendors.md
     - MQ2MQ2Web: plugins/community-plugins/mq2web.md
     - MQ2XPTracker: plugins/community-plugins/mq2xptracker.md
@@ -669,6 +723,7 @@ plugins:
   - search
   - macros
   - include-markdown
+  - meta
   - same-dir
   - redirects:
       redirect_maps:
@@ -697,7 +752,6 @@ markdown_extensions:
   - def_list
   - footnotes
   - mdx_math
-  - meta
   - toc:
       permalink: true
   - pymdownx.arithmatex:
