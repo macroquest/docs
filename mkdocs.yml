@@ -10,7 +10,7 @@ edit_uri: https://github.com/macroquest/docs/edit/master
 docs_dir: .
 
 # Copyright
-copyright: Copyright &copy; 2002-2022 Macroquest Developers
+copyright: Copyright &copy; 2002-present Macroquest Developers
 
 extra_css:
   - stylesheets/extra.css
