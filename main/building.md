@@ -1,6 +1,6 @@
 # Building MacroQuest
 
-## Download & Install Visual Studio 2022
+## Download & Install Visual Studio
 
 Links and instructions can be found at:
 [https://visualstudio.microsoft.com/downloads/](https://visualstudio.microsoft.com/downloads/)

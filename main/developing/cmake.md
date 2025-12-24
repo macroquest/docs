@@ -60,7 +60,7 @@ The `gen_solution.ps1` PowerShell script provides a convenient wrapper around CM
 
 - **Git** - For submodule management
 - **CMake 3.20+** - Build system generator
-- **Visual Studio 2022** - C++ compiler and toolchain
+- **Visual Studio** - C++ compiler and toolchain
 - **PowerShell 5.1+** - Script execution (included with Windows)
 
 ### Basic Usage
