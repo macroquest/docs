@@ -59,6 +59,7 @@ nav:
 
       - Other Applications:
           - EQEmu: main/other-applications/eqemu.md
+          - Claude Code Integration: main/claude-code-integration.md
           - Text Editors: main/other-applications/text-editors/README.md
           - Visual Studio Code Syntax File: main/other-applications/text-editors/vscode-syntax-file.md
           - Notepad++ Syntax File: main/other-applications/text-editors/notepadplusplus-syntax-file.md
@@ -668,6 +669,9 @@ plugins:
   - macros
   - include-markdown
   - same-dir
+  - exclude:
+      glob:
+        - ai_helpers/*
   - redirects:
       redirect_maps:
         "main/submodule-quick-list.md": "main/plugin-quick-list.md"
