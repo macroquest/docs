@@ -32,7 +32,7 @@ This adds the LuaJIT include path and links `lua51.lib`.
 PreSetup("MQ2MyPlugin");
 PLUGIN_VERSION(1.0);
 
-extern "C" __declspec(dllexport) sol::object CreateLuaModule(sol::this_state s)
+PLUGIN_API sol::object CreateLuaModule(sol::this_state s)
 {
     sol::state_view sv{ s };
     sol::table module = sv.create_table();
