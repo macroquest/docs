@@ -74,6 +74,7 @@ nav:
           - plugins/developing/README.md
 
           - Actors: plugins/developing/actors.md
+          - Lua Modules: plugins/developing/lua-modules.md
 
       - Core Plugins:
           - plugins/core-plugins/README.md
