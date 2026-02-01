@@ -165,6 +165,8 @@ As alluded to earlier, lua supports events and binds similar to the macro langua
 
 In general, if you have some lua code from somewhere, you can simply `require('thescript')` and it will be usable in your code. The `fishb` example does this with an external behavior tree module. There is something special to consider about loading modules like this -- they can sometimes be quite large, and in order to prevent some errors the implementation of mq2lua turns off the normal frame yielding operation to load requires. What this means is that your client can hang when you require a file, especially if it is large. The good news is that lua caches requires, so it will only hang on the first load, and won't hang again until the plugin restarts.
 
+MQ2Lua also supports modules provided by other plugins. Those modules are loaded the same way with `require('pluginname')`. See [Lua Modules from Plugins](../plugins/developing/lua-modules.md) for details.
+
 There is another type of module that lua can include: compiled dlls. This is slightly more complex because you have to build it against the version of lua that we use in mq2lua. Luckily, this version of lua is in our vcpkg repo, so everything you need to link against is available in the mq git. LuaRocks is a great resource for these kinds of packages, and I have made detailed instructions for building these [here](./luarocks-modules.md).
 
 
