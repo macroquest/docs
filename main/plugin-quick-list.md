@@ -57,7 +57,7 @@ git clone -b master https://github.com/RedGuides/MQ2CPULoad.git plugins/MQ2CPULo
 git clone -b master https://github.com/RedGuides/MQ2Cursor.git plugins/MQ2Cursor
 git clone -b master https://github.com/dannuic/MQ2Dan.git plugins/MQ2Dan
 git clone -b master https://github.com/RedGuides/MQ2Debuffs.git plugins/MQ2Debuffs
-git clone -b master https://gitlab.com/alynel/MQ2Discord.git plugins/MQ2Discord
+git clone -b master https://github.com/RedGuides/MQ2Discord.git plugins/MQ2Discord
 git clone -b master https://github.com/projecteon/MQ2DotNet.git plugins/MQ2DotNet
 git clone -b master https://github.com/RedGuides/MQ2DPSAdv.git plugins/MQ2DPSAdv
 git clone -b master https://github.com/brainiac/MQ2EasyFind.git plugins/MQ2EasyFind
