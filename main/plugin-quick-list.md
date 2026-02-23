@@ -96,6 +96,7 @@ git clone -b master https://github.com/RedGuides/MQ2Rand.git plugins/MQ2Rand
 git clone -b master https://github.com/RedGuides/MQ2React.git plugins/MQ2React
 git clone -b master https://github.com/RedGuides/MQ2RelayTells.git plugins/MQ2RelayTells
 git clone -b master https://github.com/RedGuides/MQ2Relocate.git plugins/MQ2Relocate
+git clone -b main https://github.com/peonMQ/MQRemote.git plugins/MQRemote
 git clone -b master https://github.com/RedGuides/MQ2Rewards.git plugins/MQ2Rewards
 git clone -b master https://github.com/RedGuides/MQ2Rez.git plugins/MQ2Rez
 git clone -b master https://github.com/RedGuides/MQ2Say.git plugins/MQ2Say
@@ -122,5 +123,6 @@ git clone -b master https://github.com/RedGuides/MQ2AutoLoot.git plugins/MQ2Auto
 git clone -b master https://github.com/RedGuides/MQ2AutoLootSort.git plugins/MQ2AutoLootSort
 git clone -b master https://github.com/jessebevil/MQ2LootManager.git plugins/MQ2LootManager
 # Emu only
+git clone -b main https://github.com/Knightly1/MQGammaLess.git plugins/MQGammaLess
 git clone -b main https://github.com/Knightly1/MQMountClassicModels.git plugins/MQMountClassicModels
 ```
