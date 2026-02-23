@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 17
-VisualStudioVersion = 17.7.34202.233
+# Visual Studio Version 18
+VisualStudioVersion = 18.1.11312.151 d18.0
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "plugins", "plugins", "{A648B03F-7642-4857-A62A-AFABC7CAB451}"
 EndProject
@@ -545,6 +545,16 @@ EndProject
 Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MQ2MeshManager", "..\plugins\MQ2MeshManager\MQ2MeshManager.vcxproj", "{D2B98AEB-5F1E-4C21-8F36-DE8CFFF63AFB}"
 	ProjectSection(ProjectDependencies) = postProject
 		{70752189-B826-4E5D-816B-61B9147881CB} = {70752189-B826-4E5D-816B-61B9147881CB}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MQGammaLess", "..\plugins\MQGammaLess\MQGammaLess.vcxproj", "{50F926BC-34D3-07B0-46F9-8FFAD1396838}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2A0A06A4-E9C6-4229-82EE-BD2D4E0A7221} = {2A0A06A4-E9C6-4229-82EE-BD2D4E0A7221}
+	EndProjectSection
+EndProject
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "MQRemote", "..\plugins\MQRemote\MQRemote.vcxproj", "{C0B422BF-64BD-811B-921F-1B794E266FFF}"
+	ProjectSection(ProjectDependencies) = postProject
+		{2A0A06A4-E9C6-4229-82EE-BD2D4E0A7221} = {2A0A06A4-E9C6-4229-82EE-BD2D4E0A7221}
 	EndProjectSection
 EndProject
 Global
@@ -1442,6 +1452,20 @@ Global
 		{D2B98AEB-5F1E-4C21-8F36-DE8CFFF63AFB}.Release|Win32.Build.0 = Release|Win32
 		{D2B98AEB-5F1E-4C21-8F36-DE8CFFF63AFB}.Release|x64.ActiveCfg = Release|x64
 		{D2B98AEB-5F1E-4C21-8F36-DE8CFFF63AFB}.Release|x64.Build.0 = Release|x64
+		{50F926BC-34D3-07B0-46F9-8FFAD1396838}.Debug|Win32.ActiveCfg = Debug|Win32
+		{50F926BC-34D3-07B0-46F9-8FFAD1396838}.Debug|Win32.Build.0 = Debug|Win32
+		{50F926BC-34D3-07B0-46F9-8FFAD1396838}.Debug|x64.ActiveCfg = Debug|x64
+		{50F926BC-34D3-07B0-46F9-8FFAD1396838}.Release|Win32.ActiveCfg = Release|Win32
+		{50F926BC-34D3-07B0-46F9-8FFAD1396838}.Release|Win32.Build.0 = Release|Win32
+		{50F926BC-34D3-07B0-46F9-8FFAD1396838}.Release|x64.ActiveCfg = Release|x64
+		{C0B422BF-64BD-811B-921F-1B794E266FFF}.Debug|Win32.ActiveCfg = Debug|Win32
+		{C0B422BF-64BD-811B-921F-1B794E266FFF}.Debug|Win32.Build.0 = Debug|Win32
+		{C0B422BF-64BD-811B-921F-1B794E266FFF}.Debug|x64.ActiveCfg = Debug|x64
+		{C0B422BF-64BD-811B-921F-1B794E266FFF}.Debug|x64.Build.0 = Debug|x64
+		{C0B422BF-64BD-811B-921F-1B794E266FFF}.Release|Win32.ActiveCfg = Release|Win32
+		{C0B422BF-64BD-811B-921F-1B794E266FFF}.Release|Win32.Build.0 = Release|Win32
+		{C0B422BF-64BD-811B-921F-1B794E266FFF}.Release|x64.ActiveCfg = Release|x64
+		{C0B422BF-64BD-811B-921F-1B794E266FFF}.Release|x64.Build.0 = Release|x64
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -1573,6 +1597,8 @@ Global
 		{8FB2D4B3-9530-4F50-90E8-4D36889FBCC1} = {B25A20F7-8E41-4C70-97BA-605D9E439639}
 		{3D4E0F3F-D168-4991-8B12-2A73617C0EFB} = {97722087-A7EB-46FC-BCDF-6575C109BB98}
 		{D2B98AEB-5F1E-4C21-8F36-DE8CFFF63AFB} = {97722087-A7EB-46FC-BCDF-6575C109BB98}
+		{50F926BC-34D3-07B0-46F9-8FFAD1396838} = {7C989858-C30A-41DC-9CE8-1FA6F6D5B67E}
+		{C0B422BF-64BD-811B-921F-1B794E266FFF} = {97722087-A7EB-46FC-BCDF-6575C109BB98}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {3A5F6FC6-8612-4587-9706-DC0A4B559E22}
