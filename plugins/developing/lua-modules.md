@@ -23,27 +23,41 @@ src/plugins/lua/LuaPlugin.props
 
 This adds the LuaJIT include path and links `lua51.lib`.
 
-### Minimal Example
+### Example
 
+#### Plugin
 ```cpp
 #include <mq/Plugin.h>
 #include <sol/sol.hpp>
 
-PreSetup("MQ2MyPlugin");
-PLUGIN_VERSION(1.0);
+PreSetup("MQLuaModuleTest");
+PLUGIN_VERSION(0.1);
 
-PLUGIN_API sol::object CreateLuaModule(sol::this_state s)
+void EchoPrimitive(const int value)
 {
-    sol::state_view sv{ s };
-    sol::table module = sv.create_table();
-
-    module.set_function("hello", []() {
-        WriteChatf("Hello from MyPlugin!");
-    });
-
-    module.set_function("add", [](int a, int b) { return a + b; });
-    return sol::make_object(s, module);
+	WriteChatf("[LuaModuleTest] EchoPrimitive called with value=%d", value);
 }
+
+PLUGIN_API bool CreateLuaModule(const sol::this_state luaState, sol::object& outModule)
+{
+	sol::state_view lua(luaState);
+	sol::table module = lua.create_table();
+
+	module["version"] = 1;
+	module["EchoPrimitive"] = &EchoPrimitive;
+
+	outModule = module;
+	return true;
+}
+```
+
+#### Script
+```lua
+local module = require("plugin.MQLuaModuleTest")
+printf("\ag[LuaModuleTest Script] Loaded Module version %d", module.version)
+print("\ay[LuaModuleTest Script] Calling EchoPrimitive(42)")
+module.EchoPrimitive(42)
+print("\ag[LuaModuleTest Script] Exercise complete")
 ```
 
 ### Usage Notes
