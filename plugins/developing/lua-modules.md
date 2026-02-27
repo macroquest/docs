@@ -54,10 +54,10 @@ PLUGIN_API bool CreateLuaModule(const sol::this_state luaState, sol::object& out
 #### Script
 ```lua
 local module = require("plugin.MQLuaModuleTest")
-print("\ag[LuaModuleTest Script] Loaded Module version %d",module.version)
-printf("\ay[LuaModuleTest Script] Calling EchoPrimitive(42)")
+printf("\ag[LuaModuleTest Script] Loaded Module version %d", module.version)
+print("\ay[LuaModuleTest Script] Calling EchoPrimitive(42)")
 module.EchoPrimitive(42)
-printf("\ag[LuaModuleTest Script] Exercise complete")
+print("\ag[LuaModuleTest Script] Exercise complete")
 ```
 
 ### Usage Notes
