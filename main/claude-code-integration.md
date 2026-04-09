@@ -16,20 +16,25 @@ The system uses two specialized agents:
 | `MacroQuest-Researcher` | Read-only documentation lookups and API questions |
 | `MacroQuest-Expert` | Code creation, editing, debugging, and review |
 
-## Getting the Documentation
+## Getting the Documentation and Definitions
 
-First, clone the MacroQuest documentation repository. Open a command prompt or PowerShell and run:
+First, clone the MacroQuest documentation repository and the Lua definitions. Open a command prompt or PowerShell and run:
 
 ```powershell
 git clone https://github.com/macroquest/docs.git C:\mq_docs
+git clone https://github.com/macroquest/mq-definitions.git C:\mq-definitions
 ```
 
-Or if you already have it, pull the latest:
+Or if you already have them, pull the latest:
 
 ```powershell
 cd C:\mq_docs
 git pull
+cd C:\mq-definitions
+git pull
 ```
+
+The **mq-definitions** repo contains LuaLS type annotation files that define the complete MQ Lua API -- exact method signatures, field types, return types, and enum values. These are strongly recommended for any Lua work.
 
 ## Installation
 
@@ -57,6 +62,10 @@ Edit `%USERPROFILE%\.claude\commands\mq.md` and update the paths:
 ## Documentation Path (required)
 DOCS_DIR: C:\mq_docs\
 
+## Lua Definitions Path (strongly recommended for Lua work)
+Clone from: https://github.com/macroquest/mq-definitions.git
+DEFINITIONS_DIR: C:\mq-definitions\
+
 ## MacroQuest Installations
 Define one or more installations. First one is the default.
 
@@ -76,6 +85,7 @@ LUA_DIR: D:\EQEmu\MacroQuest\lua\
 **Configuration rules:**
 
 - `DOCS_DIR` is required - points to your cloned mq_docs folder
+- `DEFINITIONS_DIR` is strongly recommended for Lua work - points to your cloned mq-definitions folder
 - Add as many installations as you need (### Name sections)
 - First installation is the default
 - `MACROS_DIR` and `LUA_DIR` are optional, but at least one must be defined to work with scripts (LUA_DIR preferred)
@@ -152,10 +162,12 @@ Or specify upfront:
 
 ## Updating
 
-To get updates, pull the latest mq_docs:
+To get updates, pull the latest docs and definitions:
 
 ```powershell
 cd C:\mq_docs
+git pull
+cd C:\mq-definitions
 git pull
 ```
 

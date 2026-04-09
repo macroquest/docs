@@ -21,8 +21,9 @@ The stub file that loaded you contains configuration. Before doing anything else
 
 **Parse the configuration from the stub:**
 1. Find `DOCS_DIR:` - extract the path
-2. Find each `### Name` section - these are installations
-3. Within each installation, find `MACROS_DIR:` and `LUA_DIR:` if present
+2. Find `DEFINITIONS_DIR:` - extract the path (may be absent or placeholder)
+3. Find each `### Name` section - these are installations
+4. Within each installation, find `MACROS_DIR:` and `LUA_DIR:` if present
 
 **Validation Rules:**
 
@@ -40,22 +41,49 @@ The stub file that loaded you contains configuration. Before doing anything else
    - MACROS_DIR and LUA_DIR are optional per installation
    - First installation is the primary/default
 
-5. **Task-specific validation**:
+5. **DEFINITIONS_DIR validation**:
+   - DEFINITIONS_DIR is not strictly required, but is **strongly recommended** for any Lua work
+   - If set and not a placeholder: verify the path exists and contains definition files (e.g., `mq/` and `imgui/` subdirectories)
+   - If invalid/missing: **always warn the user on every Lua-related request** (see Lua Definitions Reminder below)
+
+6. **Task-specific validation**:
    - For macro tasks: The selected installation must have MACROS_DIR set (not placeholder)
    - For Lua tasks: The selected installation must have LUA_DIR set (not placeholder)
    - For research-only tasks: No path validation needed beyond DOCS_DIR
 
-6. **Multi-installation handling**:
+7. **Multi-installation handling**:
    - If user specifies an installation name, use that one
    - If user doesn't specify and multiple valid installations exist, ask which one
    - If only one installation exists, use it without asking
 
-7. **Helpful error messages**:
+8. **Helpful error messages**:
    - If DOCS_DIR invalid: "Please configure your mq.md file. Set DOCS_DIR to your mq_docs folder location (e.g., `DOCS_DIR: C:\mq_docs\`)"
    - If no installations: "Please add at least one MacroQuest installation to your mq.md file."
    - If MACROS_DIR needed but not set: "To work with macros, please set MACROS_DIR in your mq.md configuration for the [Name] installation."
    - If LUA_DIR needed but not set: "To work with Lua scripts, please set LUA_DIR in your mq.md configuration for the [Name] installation."
    - If installation not found: "I don't see an installation named '[Name]'. Available installations: [list names]"
+
+---
+
+## Lua Definitions Reminder
+
+**Every time** the user asks a Lua-related question or requests Lua code, check whether DEFINITIONS_DIR is configured and valid. If it is not, display this reminder **before** doing anything else:
+
+> **Lua Definitions Not Configured**
+>
+> You don't have the MacroQuest Lua definitions set up. These definition files are the authoritative source for the MQ Lua API -- they contain exact method signatures, field types, return types, and enum values for every TLO, data type, and ImGui binding. Without them, I'm working from documentation alone and may produce less accurate code.
+>
+> To set them up:
+> 1. Clone the definitions repo:
+>    `git clone https://github.com/macroquest/mq-definitions.git C:\mq-definitions`
+> 2. Edit your `~/.claude/commands/mq.md` file
+> 3. Set `DEFINITIONS_DIR:` to the path where you cloned it (e.g., `DEFINITIONS_DIR: C:\mq-definitions\`)
+>
+> I'll continue without them for now, but I strongly recommend setting this up for the best results.
+
+**This reminder must be shown every time** for Lua requests when DEFINITIONS_DIR is missing or invalid. Do not skip it, do not suppress it after the first time. The user should be reminded until they configure it.
+
+After showing the reminder (or if DEFINITIONS_DIR is valid), proceed normally.
 
 ---
 
@@ -111,6 +139,7 @@ Read and follow the instructions at:
 [DOCS_DIR]/ai_helpers/claude/MacroQuest-Researcher-Full.md
 
 DOCS_DIR: [path]
+DEFINITIONS_DIR: [path or 'not configured']
 
 User's question: [question]
 ")
@@ -129,6 +158,7 @@ Read and follow the instructions at:
 
 Paths:
 - DOCS_DIR: [path]
+- DEFINITIONS_DIR: [path or 'not configured']
 - MACROS_DIR: [path or 'not configured']
 - LUA_DIR: [path or 'not configured']
 

@@ -17,5 +17,6 @@ This folder contains the Claude Code integration for MacroQuest.
 ## Quick Install
 
 1. Copy `mq-stub.md` to `~/.claude/commands/mq.md`
-2. Edit the paths in your copy
-3. Use `/mq` in Claude Code
+2. Clone the Lua definitions: `git clone https://github.com/macroquest/mq-definitions.git`
+3. Edit the paths in your copy (DEFINITIONS_DIR is where you cloned the Lua definitions)
+4. Use `/mq` in Claude Code

@@ -16,6 +16,10 @@ Use the configuration below. Pass paths to agents when delegating tasks.
 ## Documentation Path (required)
 DOCS_DIR: D:\path\to\mq_docs\
 
+## Lua Definitions Path (strongly recommended for Lua work)
+Clone from: https://github.com/macroquest/mq-definitions.git
+DEFINITIONS_DIR: D:\path\to\mq-definitions\
+
 ## MacroQuest Installations
 Define one or more installations below. The first one is the primary (default).
 Each installation needs a name, and optionally LUA_DIR and/or MACROS_DIR.
