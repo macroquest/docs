@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.3">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
     
     
       
@@ -1726,10 +1726,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-the-documentation" class="md-nav__link">
+  <a href="#getting-the-documentation-and-definitions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Getting the Documentation
+        Getting the Documentation and Definitions
       
     </span>
   </a>
@@ -18863,10 +18863,10 @@
 </li>
       
         <li class="md-nav__item">
-  <a href="#getting-the-documentation" class="md-nav__link">
+  <a href="#getting-the-documentation-and-definitions" class="md-nav__link">
     <span class="md-ellipsis">
       
-        Getting the Documentation
+        Getting the Documentation and Definitions
       
     </span>
   </a>
@@ -19031,14 +19031,18 @@
 </tr>
 </tbody>
 </table>
-<h2 id="getting-the-documentation">Getting the Documentation<a class="headerlink" href="#getting-the-documentation" title="Permanent link">&para;</a></h2>
-<p>First, clone the MacroQuest documentation repository. Open a command prompt or PowerShell and run:</p>
+<h2 id="getting-the-documentation-and-definitions">Getting the Documentation and Definitions<a class="headerlink" href="#getting-the-documentation-and-definitions" title="Permanent link">&para;</a></h2>
+<p>First, clone the MacroQuest documentation repository and the Lua definitions. Open a command prompt or PowerShell and run:</p>
 <div class="language-powershell highlight"><pre><span></span><code><span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">://</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">macroquest</span><span class="p">/</span><span class="n">docs</span><span class="p">.</span><span class="n">git</span> <span class="n">C</span><span class="p">:\</span><span class="n">mq_docs</span>
+<span class="n">git</span> <span class="n">clone</span> <span class="n">https</span><span class="p">://</span><span class="n">github</span><span class="p">.</span><span class="n">com</span><span class="p">/</span><span class="n">macroquest</span><span class="p">/</span><span class="n">mq-definitions</span><span class="p">.</span><span class="n">git</span> <span class="n">C</span><span class="p">:\</span><span class="n">mq-definitions</span>
 </code></pre></div>
-<p>Or if you already have it, pull the latest:</p>
+<p>Or if you already have them, pull the latest:</p>
 <div class="language-powershell highlight"><pre><span></span><code><span class="nb">cd </span><span class="n">C</span><span class="p">:\</span><span class="n">mq_docs</span>
 <span class="n">git</span> <span class="n">pull</span>
+<span class="nb">cd </span><span class="n">C</span><span class="p">:\</span><span class="n">mq-definitions</span>
+<span class="n">git</span> <span class="n">pull</span>
 </code></pre></div>
+<p>The <strong>mq-definitions</strong> repo contains LuaLS type annotation files that define the complete MQ Lua API -- exact method signatures, field types, return types, and enum values. These are strongly recommended for any Lua work.</p>
 <h2 id="installation">Installation<a class="headerlink" href="#installation" title="Permanent link">&para;</a></h2>
 <h3 id="step-1-copy-the-stub-file">Step 1: Copy the stub file<a class="headerlink" href="#step-1-copy-the-stub-file" title="Permanent link">&para;</a></h3>
 <p>Copy <code>C:\mq_docs\ai_helpers\claude\mq-stub.md</code> to your Claude configuration folder:</p>
@@ -19053,6 +19057,10 @@
 
 <span class="gu">## Documentation Path (required)</span>
 DOCS_DIR: C:\mq_docs\
+
+<span class="gu">## Lua Definitions Path (strongly recommended for Lua work)</span>
+Clone from: https://github.com/macroquest/mq-definitions.git
+DEFINITIONS_DIR: C:\mq-definitions\
 
 <span class="gu">## MacroQuest Installations</span>
 Define one or more installations. First one is the default.
@@ -19072,6 +19080,7 @@ LUA_DIR: D:\EQEmu\MacroQuest\lua\
 <p><strong>Configuration rules:</strong></p>
 <ul>
 <li><code>DOCS_DIR</code> is required - points to your cloned mq_docs folder</li>
+<li><code>DEFINITIONS_DIR</code> is strongly recommended for Lua work - points to your cloned mq-definitions folder</li>
 <li>Add as many installations as you need (### Name sections)</li>
 <li>First installation is the default</li>
 <li><code>MACROS_DIR</code> and <code>LUA_DIR</code> are optional, but at least one must be defined to work with scripts (LUA_DIR preferred)</li>
@@ -19165,8 +19174,10 @@ LUA_DIR: D:\EQEmu\MacroQuest\lua\
 </tbody>
 </table>
 <h2 id="updating">Updating<a class="headerlink" href="#updating" title="Permanent link">&para;</a></h2>
-<p>To get updates, pull the latest mq_docs:</p>
+<p>To get updates, pull the latest docs and definitions:</p>
 <div class="language-powershell highlight"><pre><span></span><code><span class="nb">cd </span><span class="n">C</span><span class="p">:\</span><span class="n">mq_docs</span>
+<span class="n">git</span> <span class="n">pull</span>
+<span class="nb">cd </span><span class="n">C</span><span class="p">:\</span><span class="n">mq-definitions</span>
 <span class="n">git</span> <span class="n">pull</span>
 </code></pre></div>
 <p>Your stub file never needs to change unless you add/move installations.</p>
