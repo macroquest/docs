@@ -79,10 +79,10 @@ git clone -b master https://github.com/RedGuides/MQ2LinkDB.git plugins/MQ2LinkDB
 git clone -b master https://github.com/RedGuides/MQ2Log.git plugins/MQ2Log
 git clone -b master https://github.com/RedGuides/MQ2Medley.git plugins/MQ2Medley
 git clone -b master https://github.com/RedGuides/MQ2Melee.git plugins/MQ2Melee
-git clone -b main https://github.com/Knightly1/MQ2MeshManager.git plugins/MQ2MeshManager
+git clone -b main https://github.com/wired420/MQ2MeshManager.git plugins/MQ2MeshManager
 git clone -b master https://github.com/RedGuides/MQ2MoveUtils.git plugins/MQ2MoveUtils
 git clone -b master https://github.com/RedGuides/MQ2MyButtons.git plugins/MQ2MyButtons
-git clone -b master https://github.com/Knightly1/MQ2Nav.git plugins/MQ2Nav
+git clone -b master https://github.com/brainiac/MQ2Nav.git plugins/MQ2Nav
 git clone -b master https://github.com/RedGuides/MQ2NetBots.git plugins/MQ2NetBots
 git clone -b master https://github.com/RedGuides/MQ2Notepad.git plugins/MQ2Notepad
 git clone -b master https://github.com/RedGuides/MQ2OTD.git plugins/MQ2OTD
@@ -125,4 +125,5 @@ git clone -b master https://github.com/jessebevil/MQ2LootManager.git plugins/MQ2
 # Emu only
 git clone -b main https://github.com/Knightly1/MQGammaLess.git plugins/MQGammaLess
 git clone -b main https://github.com/Knightly1/MQMountClassicModels.git plugins/MQMountClassicModels
+git clone -b main https://github.com/Knightly1/MQXWorks.git plugins/MQXWorks
 ```
