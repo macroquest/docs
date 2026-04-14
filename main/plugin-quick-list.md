@@ -39,6 +39,7 @@ The solution file with all of these in it is here: [MacroQuestCustom.sln](../upl
 ```bash
 # All
 git clone -b master https://github.com/RedGuides/MQ2AASpend.git plugins/MQ2AASpend
+git clone -b main https://github.com/peonMQ/MQActorFollow.git plugins/MQActorFollow
 git clone -b master https://github.com/RedGuides/MQ2AdvPath.git plugins/MQ2AdvPath
 git clone -b master https://github.com/RedGuides/MQ2AutoAccept.git plugins/MQ2AutoAccept
 git clone -b master https://github.com/RedGuides/MQ2AutoCamp.git plugins/MQ2AutoCamp
@@ -51,6 +52,7 @@ git clone -b master https://github.com/RedGuides/MQ2BardSwap.git plugins/MQ2Bard
 git clone -b master https://github.com/RedGuides/MQ2Boxr.git plugins/MQ2Boxr
 git clone -b master https://github.com/brainiac/MQ2Camera.git plugins/MQ2Camera
 git clone -b master https://github.com/RedGuides/MQ2Cast.git plugins/MQ2Cast
+git clone -b main https://github.com/Cezero/MQCharInfo.git plugins/MQCharInfo.git
 git clone -b master https://github.com/RedGuides/MQ2Clipboard.git plugins/MQ2Clipboard
 git clone -b master https://github.com/RedGuides/MQ2Collections.git plugins/MQ2Collections
 git clone -b master https://github.com/RedGuides/MQ2CPULoad.git plugins/MQ2CPULoad
@@ -98,6 +100,7 @@ git clone -b master https://github.com/RedGuides/MQ2RelayTells.git plugins/MQ2Re
 git clone -b master https://github.com/RedGuides/MQ2Relocate.git plugins/MQ2Relocate
 git clone -b main https://github.com/peonMQ/MQRemote.git plugins/MQRemote
 git clone -b master https://github.com/RedGuides/MQ2Rewards.git plugins/MQ2Rewards
+git clone -b main https://github.com/peonMQ/MQRespawn.git plugins/MQRespawn
 git clone -b master https://github.com/RedGuides/MQ2Rez.git plugins/MQ2Rez
 git clone -b master https://github.com/RedGuides/MQ2Say.git plugins/MQ2Say
 git clone -b master https://gitlab.com/Knightly1/MQ2ShellCmd.git plugins/MQ2ShellCmd
@@ -106,6 +109,7 @@ git clone -b master https://github.com/RedGuides/MQ2Spawns.git plugins/MQ2Spawns
 git clone -b master https://github.com/RedGuides/MQ2SpawnSort.git plugins/MQ2SpawnSort
 git clone -b master https://gitlab.com/Knightly1/MQ2SQLite.git plugins/MQ2SQLite
 git clone -b master https://github.com/RedGuides/MQ2Status.git plugins/MQ2Status
+git clone -b main https://github.com/jessebevil/MQSearchItem.git plugins/MQSearchItem
 git clone -b master https://github.com/MMOBugs/MQ2Targets.git plugins/MQ2Targets
 git clone -b main https://github.com/Knightly1/MQTextToSpeech.git plugins/MQTextToSpeech
 git clone -b master https://github.com/RedGuides/MQ2ToolTip.git plugins/MQ2ToolTip
