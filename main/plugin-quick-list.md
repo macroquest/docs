@@ -52,7 +52,7 @@ git clone -b master https://github.com/RedGuides/MQ2BardSwap.git plugins/MQ2Bard
 git clone -b master https://github.com/RedGuides/MQ2Boxr.git plugins/MQ2Boxr
 git clone -b master https://github.com/brainiac/MQ2Camera.git plugins/MQ2Camera
 git clone -b master https://github.com/RedGuides/MQ2Cast.git plugins/MQ2Cast
-git clone -b main https://github.com/Cezero/MQCharInfo.git plugins/MQCharInfo.git
+git clone -b main https://github.com/Cezero/MQCharInfo.git plugins/MQCharInfo
 git clone -b master https://github.com/RedGuides/MQ2Clipboard.git plugins/MQ2Clipboard
 git clone -b master https://github.com/RedGuides/MQ2Collections.git plugins/MQ2Collections
 git clone -b master https://github.com/RedGuides/MQ2CPULoad.git plugins/MQ2CPULoad
