@@ -126,7 +126,7 @@ git clone -b master https://github.com/RedGuides/MQ2XPTracker.git plugins/MQ2XPT
 git clone -b master https://github.com/RedGuides/MQ2AutoLoot.git plugins/MQ2AutoLoot
 git clone -b master https://github.com/RedGuides/MQ2AutoLootSort.git plugins/MQ2AutoLootSort
 git clone -b master https://github.com/jessebevil/MQ2LootManager.git plugins/MQ2LootManager
-# Emu only
+# RoF2 only
 git clone -b main https://github.com/Knightly1/MQGammaLess.git plugins/MQGammaLess
 git clone -b main https://github.com/Knightly1/MQMountClassicModels.git plugins/MQMountClassicModels
 git clone -b main https://github.com/Knightly1/MQXWorks.git plugins/MQXWorks
