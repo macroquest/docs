@@ -43,7 +43,7 @@ This is the type used for spell information.
 
 ### {{ renderMember(type='bool', name='Beneficial') }}
 
-:   ???
+:   Returns true if the spell is beneficial (or beneficial group)
 
 ### {{ renderMember(type='int', name='BookIcon') }}
 
@@ -220,6 +220,10 @@ This is the type used for spell information.
 ### {{ renderMember(type='int', name='NumEffects') }}
 
 :   ???
+
+### {{ renderMember(type='bool', name='PreventsRegen') }}
+
+:   Returns true if the spell is a detrimental effect that prevents OOC regen
 
 ### {{ renderMember(type='float', name='PushBack') }}
 
