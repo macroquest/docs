@@ -18914,6 +18914,8 @@ info -- info for a process
 <dd>as noted before</dd>
 <dt><code>mq.delay(val, --[[optional]]callback)</code></dt>
 <dd>where val can be an integer (which denotes milliseconds of delay) or a string that ends in 's' 'm' or 'ms' to have delays with human readable durations. The callback is optinal and is a function which evaluates to true or false to decide whether to end the delay early.</dd>
+<dt><code>mq.canDelay()</code></dt>
+<dd>returns <code>true</code> if the current context allows yielding (i.e. <code>mq.delay</code> would be able to sleep), or <code>false</code> if it would error. The most common reason it returns <code>false</code> is that the caller is running at the top level of a module being loaded via <code>require</code>, where yielding is disabled.</dd>
 <dt><code>mq.join(args...)</code></dt>
 <dd>where args must be convertible to string inside lua. This will join all the arguments into a single string</dd>
 <dt><code>mq.exit()</code></dt>
