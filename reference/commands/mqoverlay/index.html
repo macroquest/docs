@@ -18831,7 +18831,7 @@
 <h1 id="mqoverlay">/mqoverlay<a class="headerlink" href="#mqoverlay" title="Permanent link">&para;</a></h1>
 <h2 id="syntax">Syntax<a class="headerlink" href="#syntax" title="Permanent link">&para;</a></h2>
 <!--cmd-syntax-start-->
-<div class="language-eqcommand highlight"><pre><span></span><code><span class="nt">/mqoverlay</span> <span class="p">[</span><span class="nl">reload</span> <span class="p">|</span> <span class="nl">resume</span> <span class="p">|</span> <span class="nl">stop</span> <span class="p">|</span> <span class="nl">start</span> <span class="p">|</span> <span class="nl">cursor</span> <span class="p">[</span><span class="nl">on</span><span class="p">|</span><span class="nl">off</span><span class="p">]</span> <span class="nl">debug</span> <span class="p">[</span><span class="nl">mouse</span><span class="p">|</span><span class="nl">graphics</span><span class="p">|</span><span class="nl">fonts</span><span class="p">|</span><span class="nl">cursor</span><span class="p">]]</span>
+<div class="language-eqcommand highlight"><pre><span></span><code><span class="nt">/mqoverlay</span> <span class="p">[</span><span class="nl">reload</span> <span class="p">|</span> <span class="nl">resume</span> <span class="p">|</span> <span class="nl">stop</span> <span class="p">|</span> <span class="nl">start</span> <span class="p">|</span> <span class="nl">cursor</span> <span class="p">[</span><span class="nl">on</span><span class="p">|</span><span class="nl">off</span><span class="p">]</span> <span class="p">|</span> <span class="nl">perchar</span> <span class="p">[</span><span class="nl">on</span><span class="p">|</span><span class="nl">off</span><span class="p">]</span> <span class="p">|</span> <span class="nl">copy</span> <span class="p">{[</span><span class="nl">server</span><span class="p">]</span> <span class="p">&lt;</span><span class="nv nv-Required">character</span><span class="p">&gt;</span> <span class="p">|</span> <span class="no">default</span><span class="p">}</span> <span class="p">|</span> <span class="nl">debug</span> <span class="p">[</span><span class="nl">mouse</span><span class="p">|</span><span class="nl">graphics</span><span class="p">|</span><span class="nl">fonts</span><span class="p">|</span><span class="nl">cursor</span><span class="p">]]</span>
 </code></pre></div>
 <!--cmd-syntax-end-->
 
@@ -18841,9 +18841,17 @@
 <!--cmd-desc-end-->
 <h2 id="parameters">Parameters<a class="headerlink" href="#parameters" title="Permanent link">&para;</a></h2>
 <ul>
-<li><strong>reload</strong> - Reloads the overlay</li>
-<li><strong>resume</strong> - If imgui crashes, it can be resumed with this option.</li>
-<li><strong>start|stop</strong> - Starts or stops the overlay</li>
+<li><strong>reload</strong> - Reload the overlay by shutting it down and starting it back up again.</li>
+<li><strong>resume</strong> - Resumes the overlay in the event that an error has occurred.</li>
+<li><strong>stop</strong> - Turns off the overlay. This state does not persist between MQ sessions.</li>
+<li><strong>start</strong> - Turns on the overlay.</li>
+<li><strong>cursor [on|off]</strong> - Turn cursor attachment emulation on/off (no param will toggle).</li>
+<li><strong>perchar [on|off]</strong> - Turn per character overlay INI file on/off (no param will toggle).</li>
+<li><strong>copy</strong> - Copy an overlay INI configuration to the currently logged in character.<ul>
+<li><code>copy [server] character</code> - From the specified server+character (defaults to current server).</li>
+<li><code>copy default</code> - From the default overlay INI file.</li>
+</ul>
+</li>
 <li><strong>debug</strong> - overlay debug info</li>
 </ul>
 
