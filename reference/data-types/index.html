@@ -22049,6 +22049,28 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#BuffDuration[name]" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BuffDuration[name]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#BuffDuration[#]" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        BuffDuration[#]
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#CanMount" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -39338,6 +39360,14 @@ If something is missing here, you can check the source to see if it exists.</p>
 <h3 id="Buff[#]"><a href="datatype-buff/">buff</a> <code>Buff[#]</code><a class="headerlink" href="#Buff[#]" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>The buff in this slot #</dd>
+</dl>
+<h3 id="BuffDuration[name]"><a href="datatype-timestamp/">timestamp</a> <code>BuffDuration[name]</code><a class="headerlink" href="#BuffDuration[name]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Override on the Spawn version for consistency. The time remaining on the buff or song matching this name. The name is matched as a case-insensitive substring; prefix <code>=</code> to require a case-insensitive exact match instead. Consistent with <code>Me.Buff[name].Duration</code>.</dd>
+</dl>
+<h3 id="BuffDuration[#]"><a href="datatype-timestamp/">timestamp</a> <code>BuffDuration[#]</code><a class="headerlink" href="#BuffDuration[#]" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>Override on the Spawn version for consistency. The time remaining on the buff or song in this slot #. Slots are numbered from 1 and span the long-duration buffs followed by the short-duration (song) buffs.</dd>
 </dl>
 <h3 id="CanMount"><a href="datatype-bool/">bool</a> <code>CanMount</code><a class="headerlink" href="#CanMount" title="Permanent link">&para;</a></h3>
 <dl>
