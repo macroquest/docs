@@ -266,6 +266,14 @@ If something is missing here, you can check the source to see if it exists.
 
 :   The buff in this slot #
 
+### {{ renderMember(type='timestamp', name='BuffDuration', params='name') }}
+
+:   Override on the Spawn version for consistency. The time remaining on the buff or song matching this name. The name is matched as a case-insensitive substring; prefix `=` to require a case-insensitive exact match instead. Consistent with `Me.Buff[name].Duration`.
+
+### {{ renderMember(type='timestamp', name='BuffDuration', params='#') }}
+
+:   Override on the Spawn version for consistency. The time remaining on the buff or song in this slot #. Slots are numbered from 1 and span the long-duration buffs followed by the short-duration (song) buffs.
+
 ### {{ renderMember(type='bool', name='CanMount') }}
 
 :   Can you use a mount here?
