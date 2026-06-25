@@ -7,6 +7,7 @@ All top-level objects, data types and commands that support searching for spawns
 | _**Anything Else**_ | Anything not matched below is considered a **name** |
 | **=** | Exact name |
 | _#_ | Any number is considered the minimum level |
+| _classname_ | A class long name (`Warrior`) or short name (`WAR`) on its own is treated as a **class** filter (matched before being considered a name) |
 | **alert** _#_ | Spawns on your alert list _#_ |
 | **any** | All types |
 | **aura** | Auras |
@@ -34,6 +35,7 @@ All top-level objects, data types and commands that support searching for spawns
 | **mercenary** | Mercenaries |
 | **merchant** | NPC Merchants |
 | **mount** | Mounts |
+| **name** _spawnname_ | Search by name. Prefix with **=** for an exact match (`name =Fippy`); quote multi-word names (`name "a rat"`). Use this when the name would otherwise be read as a keyword (`name pet`) |
 | **named** | "Named" spawns (spawns whose names start with a \#, or whose name does not start with "a" or "an") |
 | **nearalert** _#_ | Spawns near alert list _#_ |
 | **next** | Next spawn matching the search criteria (when using [/mqtarget](../commands/mqtarget.md)) |
