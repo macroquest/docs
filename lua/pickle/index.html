@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -19114,7 +19114,7 @@
 <div class="language-lua highlight"><pre><span></span><code><span class="kr">return</span><span class="w"> </span><span class="p">{</span>
 <span class="w">  </span><span class="nv">setting1</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">  </span><span class="nv">setting2</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">5</span><span class="p">,</span>
-<span class="w">  </span><span class="p">[</span><span class="s1">&#39;multiple word setting&#39;</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;some value&#39;</span><span class="p">,</span>
+<span class="w">  </span><span class="p">[</span><span class="s1">'multiple word setting'</span><span class="p">]</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'some value'</span><span class="p">,</span>
 <span class="w">  </span><span class="nv">nestedSettings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">    </span><span class="nv">settingA</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1</span><span class="p">,</span>
 <span class="w">    </span><span class="nv">settingB</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">false</span>
@@ -19123,14 +19123,14 @@
 </code></pre></div></p>
 <h4 id="mqpickle">mq.pickle<a class="headerlink" href="#mqpickle" title="Permanent link">&para;</a></h4>
 <p>This is a built-in function provided by MQ for serializing a Lua table to a file.  </p>
-<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq'</span><span class="p">)</span>
 
 <span class="c1">-- initialize your config table</span>
 <span class="kd">local</span><span class="w"> </span><span class="nv">myconfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{}</span>
 <span class="c1">-- name of config file in config folder</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;pickletestcfg.lua&#39;</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">path</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'pickletestcfg.lua'</span>
 <span class="c1">-- attempt to read the config file</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">configData</span><span class="p">,</span><span class="w"> </span><span class="nv">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">loadfile</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">configDir</span><span class="o">..</span><span class="s1">&#39;/&#39;</span><span class="o">..</span><span class="nv">path</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">configData</span><span class="p">,</span><span class="w"> </span><span class="nv">err</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">loadfile</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">configDir</span><span class="o">..</span><span class="s1">'/'</span><span class="o">..</span><span class="nv">path</span><span class="p">)</span>
 <span class="kr">if</span><span class="w"> </span><span class="nv">err</span><span class="w"> </span><span class="kr">then</span>
 <span class="w">    </span><span class="c1">-- failed to read the config file, create it using pickle</span>
 <span class="w">    </span><span class="nv">mq</span><span class="p">.</span><span class="nf">pickle</span><span class="p">(</span><span class="nv">path</span><span class="p">,</span><span class="w"> </span><span class="nv">myconfig</span><span class="p">)</span>
@@ -19141,7 +19141,7 @@
 <span class="c1">-- print the contents</span>
 <span class="kr">for</span><span class="w"> </span><span class="nv">k</span><span class="p">,</span><span class="nv">v</span><span class="w"> </span><span class="kr">in</span><span class="w"> </span><span class="nb">pairs</span><span class="p">(</span><span class="nv">myconfig</span><span class="p">)</span><span class="w"> </span><span class="kr">do</span><span class="w"> </span><span class="nb">print</span><span class="p">(</span><span class="nv">k</span><span class="p">,</span><span class="nv">v</span><span class="p">)</span><span class="w"> </span><span class="kr">end</span>
 
-<span class="nv">myconfig</span><span class="p">.</span><span class="py">testkey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">&#39;testvalue&#39;</span>
+<span class="nv">myconfig</span><span class="p">.</span><span class="py">testkey</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s1">'testvalue'</span>
 
 <span class="c1">-- save the config</span>
 <span class="nv">mq</span><span class="p">.</span><span class="nf">pickle</span><span class="p">(</span><span class="nv">path</span><span class="p">,</span><span class="w"> </span><span class="nv">myconfig</span><span class="p">)</span>
@@ -19157,27 +19157,27 @@
 </code></pre></div>
 <h4 id="lyaml-luarock">lyaml LuaRock<a class="headerlink" href="#lyaml-luarock" title="Permanent link">&para;</a></h4>
 <p>The MQ LuaRocks server has a version of lyaml available which can be installed using the Lua PackageMan script provided by MQ.  </p>
-<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">lyaml</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;lyaml&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">lyaml</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">'lyaml'</span><span class="p">)</span>
 </code></pre></div>
 <p>More info on lyaml <a href="https://github.com/gvvaughan/lyaml">here</a>.</p>
 <h3 id="json">JSON<a class="headerlink" href="#json" title="Permanent link">&para;</a></h3>
 <div class="language-json highlight"><pre><span></span><code><span class="p">{</span>
-<span class="w">  </span><span class="nt">&quot;setting1&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;somevalue&quot;</span><span class="p">,</span>
-<span class="w">  </span><span class="nt">&quot;setting2&quot;</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
-<span class="w">    </span><span class="nt">&quot;nestedSetting&quot;</span><span class="p">:</span><span class="w"> </span><span class="s2">&quot;anothervalue&quot;</span>
+<span class="w">  </span><span class="nt">"setting1"</span><span class="p">:</span><span class="w"> </span><span class="s2">"somevalue"</span><span class="p">,</span>
+<span class="w">  </span><span class="nt">"setting2"</span><span class="p">:</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="nt">"nestedSetting"</span><span class="p">:</span><span class="w"> </span><span class="s2">"anothervalue"</span>
 <span class="w">  </span><span class="p">}</span>
 <span class="p">}</span>
 </code></pre></div>
 <h4 id="cjson-luarock">cjson LuaRock<a class="headerlink" href="#cjson-luarock" title="Permanent link">&para;</a></h4>
 <p>The MQ LuaRocks server has a version of <code>cjson</code> available which can be installed using the Lua PackageMan script provided by MQ.  </p>
-<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">cjson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;lua-cjson&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;cjson&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">cjson</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">'lua-cjson'</span><span class="p">,</span><span class="w"> </span><span class="s1">'cjson'</span><span class="p">)</span>
 </code></pre></div>
 <p>More info on cjson <a href="https://github.com/mpx/lua-cjson">here</a></p>
 <h3 id="sqlite3">SQLite3<a class="headerlink" href="#sqlite3" title="Permanent link">&para;</a></h3>
 <p>If you would prefer to use a database over a text based configuration file, SQLite3 is supported as well.  </p>
 <h4 id="libsqlite3">libsqlite3<a class="headerlink" href="#libsqlite3" title="Permanent link">&para;</a></h4>
 <p>The MQ LuaRocks server has a version of <code>lsqlite3</code> available which can be installed using the Lua PackageMan script provided by MQ.</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">'lsqlite3'</span><span class="p">)</span>
 </code></pre></div>
 <p>More info on lsqlite3 <a href="http://lua.sqlite.org/index.cgi/doc/tip/doc/lsqlite3.wiki">here</a></p>
 <h3 id="ini">INI<a class="headerlink" href="#ini" title="Permanent link">&para;</a></h3>
@@ -19245,10 +19245,10 @@ https://github.com/Dynodzzo/Lua_INI_Parser</p>
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

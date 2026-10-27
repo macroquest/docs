@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -18997,27 +18997,27 @@ foobarfive
 </div>
 <div class="tabbed-block">
 <p>How many keys are there in Section1?</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section1&quot;</span><span class="p">).</span><span class="nv">Key</span><span class="p">.</span><span class="nf">Count</span><span class="p">())</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">"Sample"</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">"Section1"</span><span class="p">).</span><span class="nv">Key</span><span class="p">.</span><span class="nf">Count</span><span class="p">())</span>
 <span class="mi">2</span>
 </code></pre></div>
 <p>How many keys named "Key" are there in Section2?</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">).</span><span class="nf">Count</span><span class="p">())</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">"Sample"</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">"Section2"</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">"Key"</span><span class="p">).</span><span class="nf">Count</span><span class="p">())</span>
 <span class="mi">3</span>
 </code></pre></div>
 <p>What is the value of Key1 in Section1?</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section1&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key1&quot;</span><span class="p">).</span><span class="nf">Value</span><span class="p">())</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">"Sample"</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">"Section1"</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">"Key1"</span><span class="p">).</span><span class="nf">Value</span><span class="p">())</span>
 <span class="nv">foo</span>
 </code></pre></div>
 <p>What is the value of Key in Section2?</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">).</span><span class="nf">Value</span><span class="p">())</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">"Sample"</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">"Section2"</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">"Key"</span><span class="p">).</span><span class="nf">Value</span><span class="p">())</span>
 <span class="nv">foo</span>
 </code></pre></div>
 <p>What is the value of the 2<sup>nd</sup> key named "Key" in Section 2?</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key&quot;</span><span class="p">).</span><span class="nf">ValueAtIndex</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">"Sample"</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">"Section2"</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">"Key"</span><span class="p">).</span><span class="nf">ValueAtIndex</span><span class="p">(</span><span class="mi">2</span><span class="p">))</span>
 <span class="nv">bar</span>
 </code></pre></div>
 <p>Get the value of Section2, Key5 and if it doesn't exist, return "foobarfive":</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">&quot;Sample&quot;</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">&quot;Section2&quot;</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">&quot;Key5&quot;</span><span class="p">).</span><span class="nf">Value</span><span class="p">(</span><span class="s2">&quot;foobarfive&quot;</span><span class="p">))</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="nb">print</span><span class="p">(</span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Ini</span><span class="p">.</span><span class="nf">File</span><span class="p">(</span><span class="s2">"Sample"</span><span class="p">).</span><span class="nf">Section</span><span class="p">(</span><span class="s2">"Section2"</span><span class="p">).</span><span class="nf">Key</span><span class="p">(</span><span class="s2">"Key5"</span><span class="p">).</span><span class="nf">Value</span><span class="p">(</span><span class="s2">"foobarfive"</span><span class="p">))</span>
 <span class="nv">foobarfive</span>
 </code></pre></div>
 </div>
@@ -19088,10 +19088,10 @@ foobarfive
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

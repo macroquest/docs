@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -20117,7 +20117,7 @@ NOT
 /stick set verbflags # - Sets your verbosity flags to # (where # is the total sum of whatever flags you added up, check the wiki link)
 note: if you set # to 0 or a negative number, it is equivalent to totalsilence
 
-Numerical flags value saves to the INI under [Defaults] as &quot;VerbosityFlags&quot; and to [server.char] section as well.
+Numerical flags value saves to the INI under [Defaults] as "VerbosityFlags" and to [server.char] section as well.
 </code></pre></div>
 <ul>
 <li>The <em>totalsilence</em> option now applies to everything, and not 'almost everything'.</li>
@@ -20132,7 +20132,7 @@ Numerical flags value saves to the INI under [Defaults] as &quot;VerbosityFlags&
 <p>highly recommend you turn on the verbosity bit flags for this if you are using this feature, as otherwise you may</p>
 <p>wonder why your commands are not working. Usage:</p>
 <div class="language-text highlight"><pre><span></span><code>/stick toggle breakongm
-Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
+Saves to the INI under [Defaults] as "BreakOnGM"
 </code></pre></div>
 <ul>
 <li>Added a new TLO member ${MoveUtils.GM}, which returns TRUE if the GM detection has fired and the plugin is currently</li>
@@ -20310,7 +20310,7 @@ Saves to the INI under [Defaults] as &quot;BreakOnGM&quot;
 <p>loose heading because you want fast heading, you will now also need to disable true heading. When enabled (again, it</p>
 <p>is on by default) it will apply to stick and moveto both, not separately like loose heading works.</p>
 <p>Ways to use this:</p>
-<p><em>/stick ____ truehead _- usable inline with any other parameters</em> /stick toggle truehead <em>- toggle truehead for current command in process</em> /stick toggle alwaystruehead <em>- toggle using it always Saves to INI as TrueHeading under <script type="math/tex; mode=display">Defaults</script>. This also saves to the character-specific setting if _savebychar</em> is turned on.</p>
+<p>_/stick ____ truehead <em>- usable inline with any other parameters</em> /stick toggle truehead <em>- toggle truehead for current command in process</em> /stick toggle alwaystruehead <em>- toggle using it always Saves to INI as TrueHeading under <script type="math/tex; mode=display">Defaults</script>. This also saves to the character-specific setting if _savebychar</em> is turned on.</p>
 <ul>
 <li>Added an optional strafe delay timer to prevent instant strafing when mobs turn for a short period of time such as</li>
 </ul>
@@ -20493,12 +20493,12 @@ ${MoveUtils.TryToJump} - bool<br />
 
     /stick snaproll left
 
--   snaproll to the target&#39;s right shoulder
+-   snaproll to the target's right shoulder
 
 
     /stick snaproll right
 
--   snaproll to the target&#39;s left shoulder
+-   snaproll to the target's left shoulder
 </code></pre></div>
 <ul>
 <li><strong>If enabled...</strong></li>
@@ -20544,9 +20544,9 @@ ${MoveUtils.TryToJump} - bool<br />
 -   this is the amount of pulses you have successfully moved forward before hard-forcing stucklogic to be considered
     unstuck. this serves the purpose in that if you were stuck for 20 pulses, your stuck counter would normally try
     to move forward for 20 more pulses before considering itself free. there was some handling for this that had
-    some issues so now you can set a value such as this one to force a faster &quot;im unstuck&quot; process.
+    some issues so now you can set a value such as this one to force a faster "im unstuck" process.
 -   the higher your framerate, the higher you want this value. 5 may not be enough on better computers and you may
-    end up getting restuck again, it will look like what we are calling &quot;snaking&quot;. If you notice yourself &quot;snaking&quot;
+    end up getting restuck again, it will look like what we are calling "snaking". If you notice yourself "snaking"
     then this would be the first value to try increasing.
 
 
@@ -20943,7 +20943,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 -   will head towards -100 -200, but stop when it gets within acceptable Y arrival distance even if your loc is -100
     -500
 -   This is not the same as new command */moveto yloc/xloc* in that it does head in the desired direction first
-    until it reaches the &quot;precise&quot; desired
+    until it reaches the "precise" desired
 -   The other command below will beeline with no regard to the other coordinate
 </code></pre></div>
 <ul>
@@ -20973,7 +20973,7 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 </ul>
 <div class="language-text highlight"><pre><span></span><code>    /makecamp toggle returnnoaggro
 
--   this will also save to the ini under \[MakeCamp\] &quot;ReturnNoAggro&quot; (on/off)
+-   this will also save to the ini under \[MakeCamp\] "ReturnNoAggro" (on/off)
 </code></pre></div>
 <ul>
 <li>Makecamp returning on its own <span class="arithmatex">\(meaning any case other than typing in _/makecamp return_\)</span> will no longer display the</li>
@@ -21279,13 +21279,13 @@ Stick Options: AlwaysLoose(on) BreakOnWarp(on) BreakDist(300.00) BreakOnGate(on)
 /command load
 /command imsafe
 
-//Different: &quot;set&quot; - this is just a basic foundation
+//Different: "set" - this is just a basic foundation
 
 /command set verbosity on|off
 /command set fullverbosity on|off
 /command set stucklogic on|off
 
-//Different: &quot;toggle&quot; - this is used to toggle values
+//Different: "toggle" - this is used to toggle values
 
 /command toggle mpause
 /command toggle mousepause
@@ -21713,13 +21713,13 @@ original verbosity still exists and fullverbosity does NOT turn on original stic
 <ul>
 <li>every 'break' function that used this method to stop moving seems to be failing:</li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code>MQ2Globals::ExecuteCmd(FindMappableCommand(&quot;forward&quot;),0,0);
+<div class="language-text highlight"><pre><span></span><code>MQ2Globals::ExecuteCmd(FindMappableCommand("forward"),0,0);
 </code></pre></div>
 <ul>
 <li>Changed the ExecuteCmds to supply a down then up to stop the issue:</li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code>MQ2Globals::ExecuteCmd(FindMappableCommand(&quot;forward&quot;),1,0);
-MQ2Globals::ExecuteCmd(FindMappableCommand(&quot;forward&quot;),0,0);
+<div class="language-text highlight"><pre><span></span><code>MQ2Globals::ExecuteCmd(FindMappableCommand("forward"),1,0);
+MQ2Globals::ExecuteCmd(FindMappableCommand("forward"),0,0);
 </code></pre></div>
 
 
@@ -21780,10 +21780,10 @@ MQ2Globals::ExecuteCmd(FindMappableCommand(&quot;forward&quot;),0,0);
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

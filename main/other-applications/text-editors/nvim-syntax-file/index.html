@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -18809,7 +18809,7 @@
 <li>Modify the configuration of your LSP to load your third party syntax files and enable them.</li>
 </ul>
 <div class="language-lua highlight"><pre><span></span><code><span class="nv">lua_ls</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kr">function</span><span class="p">()</span>
-<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">lspconfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">&quot;lspconfig&quot;</span><span class="p">)</span>
+<span class="w">    </span><span class="kd">local</span><span class="w"> </span><span class="nv">lspconfig</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s2">"lspconfig"</span><span class="p">)</span>
 <span class="w">    </span><span class="nv">lspconfig</span><span class="p">.</span><span class="py">lua_ls</span><span class="p">.</span><span class="nf">setup</span><span class="p">({</span>
 <span class="w">        </span><span class="nv">capabilities</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">capabilities</span><span class="p">,</span>
 <span class="w">        </span><span class="nv">settings</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
@@ -18818,22 +18818,22 @@
 <span class="w">                    </span><span class="nv">preloadFileSize</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">1000</span><span class="p">,</span>
 <span class="w">                    </span><span class="nv">checkThirdParty</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span><span class="p">,</span>
 <span class="w">                    </span><span class="nv">library</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                        </span><span class="s2">&quot;C:/Users/&lt;user&gt;/AppData/Local/nvim/lua/mq-syntax&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">"C:/Users/&lt;user&gt;/AppData/Local/nvim/lua/mq-syntax"</span><span class="p">,</span>
 <span class="w">                    </span><span class="p">},</span>
 <span class="w">                </span><span class="p">},</span>
 
-<span class="w">                </span><span class="nv">runtime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">&quot;Lua 5.2&quot;</span><span class="w"> </span><span class="p">},</span>
+<span class="w">                </span><span class="nv">runtime</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="nv">version</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s2">"Lua 5.2"</span><span class="w"> </span><span class="p">},</span>
 <span class="w">                </span><span class="nv">diagnostics</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
 <span class="w">                    </span><span class="nv">globals</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="p">{</span>
-<span class="w">                        </span><span class="s2">&quot;bit&quot;</span><span class="p">,</span>
-<span class="w">                        </span><span class="s2">&quot;vim&quot;</span><span class="p">,</span>
-<span class="w">                        </span><span class="s2">&quot;it&quot;</span><span class="p">,</span>
-<span class="w">                        </span><span class="s2">&quot;describe&quot;</span><span class="p">,</span>
-<span class="w">                        </span><span class="s2">&quot;before_each&quot;</span><span class="p">,</span>
-<span class="w">                        </span><span class="s2">&quot;after_each&quot;</span><span class="p">,</span>
-<span class="w">                        </span><span class="s2">&quot;mq&quot;</span><span class="p">,</span>
-<span class="w">                        </span><span class="s2">&quot;Mq&quot;</span><span class="p">,</span>
-<span class="w">                        </span><span class="s2">&quot;ImGui&quot;</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">"bit"</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">"vim"</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">"it"</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">"describe"</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">"before_each"</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">"after_each"</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">"mq"</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">"Mq"</span><span class="p">,</span>
+<span class="w">                        </span><span class="s2">"ImGui"</span><span class="p">,</span>
 <span class="w">                    </span><span class="p">},</span>
 <span class="w">                </span><span class="p">},</span>
 <span class="w">            </span><span class="p">},</span>
@@ -18900,10 +18900,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

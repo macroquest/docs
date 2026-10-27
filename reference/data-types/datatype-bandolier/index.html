@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -19107,7 +19107,7 @@
 <div class="tabbed-set tabbed-alternate" data-tabs="1:2"><input checked="checked" id="__tabbed_1_1" name="__tabbed_1" type="radio" /><input id="__tabbed_1_2" name="__tabbed_1" type="radio" /><div class="tabbed-labels"><label for="__tabbed_1_1">MQScript</label><label for="__tabbed_1_2">Lua</label></div>
 <div class="tabbed-content">
 <div class="tabbed-block">
-<div class="language-text highlight"><pre><span></span><code>| Activate the bandolier set named &quot;1HB&quot;
+<div class="language-text highlight"><pre><span></span><code>| Activate the bandolier set named "1HB"
 /if (!${Me.Bandolier[1HB].Active}) {
     /echo Player want us to activate Bandolier: 1HB.
     /invoke ${Me.Bandolier[1HB].Activate}
@@ -19118,14 +19118,14 @@
 </code></pre></div>
 </div>
 <div class="tabbed-block">
-<div class="language-lua highlight"><pre><span></span><code><span class="c1">-- Activate the bandolier set named &quot;1HB&quot;</span>
-<span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Bandolier</span><span class="p">(</span><span class="s1">&#39;1HB&#39;</span><span class="p">).</span><span class="nf">Active</span><span class="p">()</span><span class="w"> </span><span class="kr">then</span>
-<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Player wants us to activate Bandodlier: 1HB&#39;</span><span class="p">)</span>
-<span class="w">    </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Bandolier</span><span class="p">(</span><span class="s1">&#39;1HB&#39;</span><span class="p">).</span><span class="nf">Activate</span><span class="p">()</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="c1">-- Activate the bandolier set named "1HB"</span>
+<span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Bandolier</span><span class="p">(</span><span class="s1">'1HB'</span><span class="p">).</span><span class="nf">Active</span><span class="p">()</span><span class="w"> </span><span class="kr">then</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s1">'Player wants us to activate Bandodlier: 1HB'</span><span class="p">)</span>
+<span class="w">    </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Bandolier</span><span class="p">(</span><span class="s1">'1HB'</span><span class="p">).</span><span class="nf">Activate</span><span class="p">()</span>
 <span class="kr">end</span>
 
 <span class="c1">-- Print the weapon in the primary bandolier slot</span>
-<span class="nb">print</span><span class="p">(</span><span class="s1">&#39;I have a &#39;</span><span class="p">,</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Bandolier</span><span class="p">(</span><span class="s1">&#39;1HB&#39;</span><span class="p">).</span><span class="nf">Item</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="nf">Name</span><span class="p">(),</span><span class="w"> </span><span class="s1">&#39; in my primary bandolier slot&#39;</span><span class="p">)</span>
+<span class="nb">print</span><span class="p">(</span><span class="s1">'I have a '</span><span class="p">,</span><span class="w"> </span><span class="nv">mq</span><span class="p">.</span><span class="py">TLO</span><span class="p">.</span><span class="py">Me</span><span class="p">.</span><span class="nf">Bandolier</span><span class="p">(</span><span class="s1">'1HB'</span><span class="p">).</span><span class="nf">Item</span><span class="p">(</span><span class="mi">1</span><span class="p">).</span><span class="nf">Name</span><span class="p">(),</span><span class="w"> </span><span class="s1">' in my primary bandolier slot'</span><span class="p">)</span>
 </code></pre></div>
 </div>
 </div>
@@ -19195,10 +19195,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

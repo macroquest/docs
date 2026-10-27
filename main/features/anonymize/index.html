@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -18975,7 +18975,7 @@
 <h2 id="reason-for-existence">Reason for Existence<a class="headerlink" href="#reason-for-existence" title="Permanent link">&para;</a></h2>
 <p>MQ2Anonymize has the singular purpose of filtering text displayed to the user. It is mostly useful in streaming/recording applications with the hope that any identifying information is not visible to others. This, of course, is an intractable problem so the best that we can do is filter <em>words</em> and hope it works. It is by no means a perfect safety tool and if the user cares about anonymity, should be used <em>in service</em> of supporting a larger anonymization strategy.</p>
 <h2 id="word-of-warning">Word of Warning<a class="headerlink" href="#word-of-warning" title="Permanent link">&para;</a></h2>
-<p>This plugin will only filter <strong>in game</strong>. What that means is that any text at server select, character select, login, etc <strong><em>will not be filtered</em></strong>. Please make any considerations necessary to prevent visibility of the client outside of actual in-game experiences.</p>
+<p>This plugin will only filter <strong>in game</strong>. What that means is that any text at server select, character select, login, etc <em><strong>will not be filtered</strong></em>. Please make any considerations necessary to prevent visibility of the client outside of actual in-game experiences.</p>
 <h2 id="how-your-plugin-can-anonymize">How Your Plugin Can Anonymize<a class="headerlink" href="#how-your-plugin-can-anonymize" title="Permanent link">&para;</a></h2>
 <p>MQ2Anonymize cannot control what plugin authors do, so instead we provide the API to anonymize any text that the plugin may render <em>if anonymization is turned on</em>. We are able to anonymize central points of text display (such as writing the the MQ2 console with <code>WriteChatColor</code> and variants of it), but anything that renders text outside those plugins will need to have explicit API calls to <code>Anonymize()</code>. For plugin authors: when in doubt make sure to test that anonymization works in game with your plugin before releasing it!</p>
 <h3 id="api">API<a class="headerlink" href="#api" title="Permanent link">&para;</a></h3>
@@ -19117,10 +19117,10 @@ The signature is such that it satisfies 2 things: can be linked via C-style link
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

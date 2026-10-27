@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -18748,7 +18748,8 @@
 <code>/delay 1s</code><br />
 <code>/nomodkey /notify TradeSkillWnd COMBW_ExperimentButton leftmouseup</code><br />
 <code>/delay 1s</code><br />
-<code>`/if (!${FindItem[=Water Flask].InvSlot}) /goto :Done</code> /nomodkey /ctrl /itemnotify ${FindItem[=Water Flask].InvSlot} leftmouseup<code>`/nomodkey /itemnotify enviro1 leftmouseup`````  /if (!${FindItem[=Block of Clay].InvSlot}) /goto :Done``` /nomodkey /ctrl /itemnotify ${FindItem[=Block of Clay].InvSlot} leftmouseup</code><br />
+<code>if (!${FindItem[=Water Flask].InvSlot}) /goto :Done``` /nomodkey /ctrl /itemnotify ${FindItem[=Water Flask].InvSlot} leftmouseup``    
+`/nomodkey /itemnotify enviro1 leftmouseup</code>  /if (!${FindItem[=Block of Clay].InvSlot}) /goto :Done<code>` /nomodkey /ctrl /itemnotify ${FindItem[=Block of Clay].InvSlot} leftmouseup</code><br />
 <code>/nomodkey /itemnotify enviro2 leftmouseup</code></p>
 <p><code>/if (!${FindItem[=Small Jar Sketch].InvSlot}) /goto :Done</code><br />
 <code>/nomodkey /ctrl /itemnotify ${FindItem[=Small Jar Sketch].InvSlot} leftmouseup</code><br />
@@ -18777,7 +18778,9 @@
 <code>/nomodkey /keypress esc</code><br />
 <code>/delay 1s</code></p>
 <p><code>| Open our new jar and put 2 greases in it</code><br />
-<code>`/itemnotify pack8 rightmouseup</code> /delay 1s<code>```  /if (!${FindItem[=Clockwork Grease].InvSlot}) /goto :Done</code> /nomodkey /ctrl /itemnotify ${FindItem[=Clockwork Grease].InvSlot} leftmouseup<code>`</code>/nomodkey /itemnotify in pack8 1 leftmouseup<code></code>/delay 5`</p>
+<code>temnotify pack8 rightmouseup``` /delay 1s</code>  /if (!${FindItem[=Clockwork Grease].InvSlot}) /goto :Done<code>` /nomodkey /ctrl /itemnotify ${FindItem[=Clockwork Grease].InvSlot} leftmouseup</code><br />
+<code>/nomodkey /itemnotify in pack8 1 leftmouseup</code><br />
+<code>/delay 5</code></p>
 <p><code>/if (!${FindItem[=Clockwork Grease].InvSlot}) /goto :Done</code><br />
 <code>/nomodkey /ctrl /itemnotify ${FindItem[=Clockwork Grease].InvSlot} leftmouseup</code><br />
 <code>/nomodkey /itemnotify in pack8 2 leftmouseup</code><br />
@@ -18876,10 +18879,10 @@
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

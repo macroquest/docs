@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -19940,10 +19940,10 @@
 <span class="c"># Skip dependency installation (faster reconfiguration)</span>
 <span class="p">.\</span><span class="n">gen_solution</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-SkipVcpkg</span>
 
-<span class="c"># Don&#39;t build custom plugins from plugins/ directory</span>
+<span class="c"># Don't build custom plugins from plugins/ directory</span>
 <span class="p">.\</span><span class="n">gen_solution</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-SkipCustom</span>
 
-<span class="c"># Don&#39;t build core MQ plugins (chat, lua, map, etc.)</span>
+<span class="c"># Don't build core MQ plugins (chat, lua, map, etc.)</span>
 <span class="p">.\</span><span class="n">gen_solution</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-SkipPlugins</span>
 
 <span class="c"># Build without the MacroQuest.exe loader</span>
@@ -19988,8 +19988,8 @@
 <span class="c"># Platform: x64</span>
 <span class="c"># Toolset: v143</span>
 
-<span class="nb">add_custom_vcxproj</span><span class="p">(</span><span class="s2">&quot;plugins/MQ2Nav&quot;</span><span class="w"> </span><span class="s2">&quot;MQ2Nav&quot;</span><span class="w"> </span><span class="s2">&quot;external&quot;</span><span class="p">)</span>
-<span class="nb">add_subdirectory</span><span class="p">(</span><span class="s2">&quot;C:/dev/MyCustomPlugin&quot;</span><span class="p">)</span>
+<span class="nb">add_custom_vcxproj</span><span class="p">(</span><span class="s2">"plugins/MQ2Nav"</span><span class="w"> </span><span class="s2">"MQ2Nav"</span><span class="w"> </span><span class="s2">"external"</span><span class="p">)</span>
+<span class="nb">add_subdirectory</span><span class="p">(</span><span class="s2">"C:/dev/MyCustomPlugin"</span><span class="p">)</span>
 </code></pre></div>
 <p><strong>Use a custom plugin list:</strong></p>
 <div class="language-powershell highlight"><pre><span></span><code><span class="c"># Override auto-detection with a custom file</span>
@@ -20016,36 +20016,36 @@ development environment.</p>
 <span class="n">git</span> <span class="n">submodule</span> <span class="n">update</span> <span class="p">-</span><span class="n">-init</span> <span class="p">-</span><span class="n">-recursive</span>
 
 <span class="c"># Generate x64 solution</span>
-<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">&quot;Visual Studio 17 2022&quot;</span> <span class="n">-A</span> <span class="n">x64</span>
+<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">"Visual Studio 17 2022"</span> <span class="n">-A</span> <span class="n">x64</span>
 
 <span class="c"># Generate Win32 solution</span>
-<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">&quot;Visual Studio 17 2022&quot;</span> <span class="n">-A</span> <span class="n">Win32</span>
+<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">"Visual Studio 17 2022"</span> <span class="n">-A</span> <span class="n">Win32</span>
 </code></pre></div>
 <h3 id="cmake-options">CMake Options<a class="headerlink" href="#cmake-options" title="Permanent link">&para;</a></h3>
 <p>All options are prefixed with <code>MQ_</code>:</p>
 <div class="language-powershell highlight"><pre><span></span><code><span class="c"># Disable vcpkg dependency management</span>
-<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">&quot;Visual Studio 17 2022&quot;</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_BUILD_VCPKG</span><span class="p">=</span><span class="n">OFF</span>
+<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">"Visual Studio 17 2022"</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_BUILD_VCPKG</span><span class="p">=</span><span class="n">OFF</span>
 
-<span class="c"># Don&#39;t build custom plugins</span>
-<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">&quot;Visual Studio 17 2022&quot;</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_BUILD_CUSTOM_PLUGINS</span><span class="p">=</span><span class="n">OFF</span>
+<span class="c"># Don't build custom plugins</span>
+<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">"Visual Studio 17 2022"</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_BUILD_CUSTOM_PLUGINS</span><span class="p">=</span><span class="n">OFF</span>
 
-<span class="c"># Don&#39;t build core plugins</span>
-<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">&quot;Visual Studio 17 2022&quot;</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_BUILD_PLUGINS</span><span class="p">=</span><span class="n">OFF</span>
+<span class="c"># Don't build core plugins</span>
+<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">"Visual Studio 17 2022"</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_BUILD_PLUGINS</span><span class="p">=</span><span class="n">OFF</span>
 
-<span class="c"># Don&#39;t build launcher</span>
-<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">&quot;Visual Studio 17 2022&quot;</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_BUILD_LOADER</span><span class="p">=</span><span class="n">OFF</span>
+<span class="c"># Don't build launcher</span>
+<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">"Visual Studio 17 2022"</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_BUILD_LOADER</span><span class="p">=</span><span class="n">OFF</span>
 
 <span class="c"># Enable test projects</span>
-<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">&quot;Visual Studio 17 2022&quot;</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_BUILD_TESTS</span><span class="p">=</span><span class="n">ON</span>
+<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">"Visual Studio 17 2022"</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_BUILD_TESTS</span><span class="p">=</span><span class="n">ON</span>
 
 <span class="c"># Add MQ2Main dependency to custom plugins</span>
-<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">&quot;Visual Studio 17 2022&quot;</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_ADD_MQ2MAIN_DEPENDENCY</span><span class="p">=</span><span class="n">ON</span>
+<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">"Visual Studio 17 2022"</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_ADD_MQ2MAIN_DEPENDENCY</span><span class="p">=</span><span class="n">ON</span>
 
 <span class="c"># Use custom plugin list file</span>
-<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">&quot;Visual Studio 17 2022&quot;</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_CUSTOM_PLUGINS_FILE</span><span class="p">=</span><span class="n">my_plugins</span><span class="p">.</span><span class="n">cmake</span><span class="p">.</span><span class="n">custom</span>
+<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">"Visual Studio 17 2022"</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_CUSTOM_PLUGINS_FILE</span><span class="p">=</span><span class="n">my_plugins</span><span class="p">.</span><span class="n">cmake</span><span class="p">.</span><span class="n">custom</span>
 
 <span class="c"># Write detected plugins to file</span>
-<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">&quot;Visual Studio 17 2022&quot;</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_WRITE_PLUGINS_FILE</span><span class="p">=</span><span class="n">my_plugins</span><span class="p">.</span><span class="n">cmake</span><span class="p">.</span><span class="n">custom</span>
+<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">"Visual Studio 17 2022"</span> <span class="n">-A</span> <span class="n">x64</span> <span class="n">-DMQ_WRITE_PLUGINS_FILE</span><span class="p">=</span><span class="n">my_plugins</span><span class="p">.</span><span class="n">cmake</span><span class="p">.</span><span class="n">custom</span>
 </code></pre></div>
 <h3 id="reconfiguration">Reconfiguration<a class="headerlink" href="#reconfiguration" title="Permanent link">&para;</a></h3>
 <div class="language-powershell highlight"><pre><span></span><code><span class="c"># Reconfigure (keeps cache, updates changed files)</span>
@@ -20056,7 +20056,7 @@ development environment.</p>
 
 <span class="c"># Clean and reconfigure</span>
 <span class="nb">Remove-Item</span> <span class="n">-Recurse</span> <span class="n">-Force</span> <span class="n">build</span>
-<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">&quot;Visual Studio 17 2022&quot;</span> <span class="n">-A</span> <span class="n">x64</span>
+<span class="n">cmake</span> <span class="n">-B</span> <span class="n">build</span> <span class="n">-G</span> <span class="s2">"Visual Studio 17 2022"</span> <span class="n">-A</span> <span class="n">x64</span>
 </code></pre></div>
 <h3 id="building-from-command-line">Building from Command Line<a class="headerlink" href="#building-from-command-line" title="Permanent link">&para;</a></h3>
 <div class="language-powershell highlight"><pre><span></span><code><span class="c"># Build entire solution (Release)</span>
@@ -20281,8 +20281,8 @@ development environment.</p>
 <h3 id="cmakeliststxt-method">CMakeLists.txt Method<a class="headerlink" href="#cmakeliststxt-method" title="Permanent link">&para;</a></h3>
 <p>For advanced plugin configuration, create <code>plugins/MQ2YourPlugin/CMakeLists.txt</code>:</p>
 <div class="language-cmake highlight"><pre><span></span><code><span class="c"># Collect source files</span>
-<span class="nb">file</span><span class="p">(</span><span class="s">GLOB_RECURSE</span><span class="w"> </span><span class="s">SOURCES</span><span class="w"> </span><span class="s2">&quot;*.cpp&quot;</span><span class="w"> </span><span class="s2">&quot;*.c&quot;</span><span class="p">)</span>
-<span class="nb">file</span><span class="p">(</span><span class="s">GLOB_RECURSE</span><span class="w"> </span><span class="s">HEADERS</span><span class="w"> </span><span class="s2">&quot;*.h&quot;</span><span class="p">)</span>
+<span class="nb">file</span><span class="p">(</span><span class="s">GLOB_RECURSE</span><span class="w"> </span><span class="s">SOURCES</span><span class="w"> </span><span class="s2">"*.cpp"</span><span class="w"> </span><span class="s2">"*.c"</span><span class="p">)</span>
+<span class="nb">file</span><span class="p">(</span><span class="s">GLOB_RECURSE</span><span class="w"> </span><span class="s">HEADERS</span><span class="w"> </span><span class="s2">"*.h"</span><span class="p">)</span>
 
 <span class="c"># Create plugin library</span>
 <span class="nb">add_library</span><span class="p">(</span><span class="s">MQ2YourPlugin</span><span class="w"> </span><span class="s">MODULE</span><span class="w"> </span><span class="o">${</span><span class="nv">SOURCES</span><span class="o">}</span><span class="w"> </span><span class="o">${</span><span class="nv">HEADERS</span><span class="o">}</span><span class="p">)</span>
@@ -20292,8 +20292,8 @@ development environment.</p>
 
 <span class="c"># Set output directory</span>
 <span class="nb">set_target_properties</span><span class="p">(</span><span class="s">MQ2YourPlugin</span><span class="w"> </span><span class="s">PROPERTIES</span>
-<span class="w">    </span><span class="s">FOLDER</span><span class="w"> </span><span class="s2">&quot;CustomPlugins&quot;</span>
-<span class="w">    </span><span class="s">RUNTIME_OUTPUT_DIRECTORY</span><span class="w"> </span><span class="s2">&quot;${CMAKE_BINARY_DIR}/bin/${CONFIG}/plugins&quot;</span>
+<span class="w">    </span><span class="s">FOLDER</span><span class="w"> </span><span class="s2">"CustomPlugins"</span>
+<span class="w">    </span><span class="s">RUNTIME_OUTPUT_DIRECTORY</span><span class="w"> </span><span class="s2">"${CMAKE_BINARY_DIR}/bin/${CONFIG}/plugins"</span>
 <span class="p">)</span>
 </code></pre></div>
 <h3 id="vcxproj-method">.vcxproj Method<a class="headerlink" href="#vcxproj-method" title="Permanent link">&para;</a></h3>
@@ -20333,13 +20333,13 @@ development environment.</p>
 <div class="language-cmake highlight"><pre><span></span><code><span class="c"># Custom plugin configuration</span>
 
 <span class="c"># CMake-based plugin</span>
-<span class="nb">add_subdirectory</span><span class="p">(</span><span class="s2">&quot;C:/dev/MyPlugin1&quot;</span><span class="p">)</span>
+<span class="nb">add_subdirectory</span><span class="p">(</span><span class="s2">"C:/dev/MyPlugin1"</span><span class="p">)</span>
 
 <span class="c"># vcxproj-based plugin</span>
-<span class="nb">add_custom_vcxproj</span><span class="p">(</span><span class="s2">&quot;plugins/MQ2Legacy&quot;</span><span class="w"> </span><span class="s2">&quot;MQ2Legacy&quot;</span><span class="w"> </span><span class="s2">&quot;external&quot;</span><span class="p">)</span>
+<span class="nb">add_custom_vcxproj</span><span class="p">(</span><span class="s2">"plugins/MQ2Legacy"</span><span class="w"> </span><span class="s2">"MQ2Legacy"</span><span class="w"> </span><span class="s2">"external"</span><span class="p">)</span>
 
 <span class="c"># External plugin from different location</span>
-<span class="nb">add_custom_vcxproj</span><span class="p">(</span><span class="s2">&quot;D:/projects/MQ2Special&quot;</span><span class="w"> </span><span class="s2">&quot;MQ2Special&quot;</span><span class="w"> </span><span class="s2">&quot;external&quot;</span><span class="p">)</span>
+<span class="nb">add_custom_vcxproj</span><span class="p">(</span><span class="s2">"D:/projects/MQ2Special"</span><span class="w"> </span><span class="s2">"MQ2Special"</span><span class="w"> </span><span class="s2">"external"</span><span class="p">)</span>
 </code></pre></div>
 <ol>
 <li><strong>Use the custom list:</strong></li>
@@ -20351,7 +20351,7 @@ development environment.</p>
 </ol>
 <div class="language-text highlight"><pre><span></span><code># Team plugin configuration
 git add my_plugins.cmake
-git commit -m &quot;Add team plugin list&quot;
+git commit -m "Add team plugin list"
 </code></pre></div>
 <hr />
 <h2 id="troubleshooting">Troubleshooting<a class="headerlink" href="#troubleshooting" title="Permanent link">&para;</a></h2>
@@ -20501,7 +20501,7 @@ git commit -m &quot;Add team plugin list&quot;
 
 <span class="c"># Commit to repository</span>
 <span class="n">git</span> <span class="n">add</span> <span class="n">team_plugins</span><span class="p">.</span><span class="n">cmake</span>
-<span class="n">git</span> <span class="n">commit</span> <span class="n">-m</span> <span class="s2">&quot;Team plugin configuration&quot;</span>
+<span class="n">git</span> <span class="n">commit</span> <span class="n">-m</span> <span class="s2">"Team plugin configuration"</span>
 
 <span class="c"># Team members use it</span>
 <span class="p">.\</span><span class="n">gen_solution</span><span class="p">.</span><span class="n">ps1</span> <span class="n">-CustomPluginsFile</span> <span class="n">team_plugins</span><span class="p">.</span><span class="n">cmake</span>
@@ -20515,7 +20515,7 @@ git commit -m &quot;Add team plugin list&quot;
 </li>
 </ol>
 <div class="language-yaml highlight"><pre><span></span><code><span class="c1"># GitHub Actions example</span>
-<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cmake -B build -G &quot;Visual Studio 17 2022&quot; -A x64</span>
+<span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cmake -B build -G "Visual Studio 17 2022" -A x64</span>
 <span class="p p-Indicator">-</span><span class="w"> </span><span class="nt">run</span><span class="p">:</span><span class="w"> </span><span class="l l-Scalar l-Scalar-Plain">cmake --build build --config Release</span>
 </code></pre></div>
 <hr />
@@ -20588,10 +20588,10 @@ git commit -m &quot;Add team plugin list&quot;
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

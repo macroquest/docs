@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -18932,59 +18932,59 @@
 <h3 id="packagemanrequire">PackageMan.Require<a class="headerlink" href="#packagemanrequire" title="Permanent link">&para;</a></h3>
 <p>The simplest method of installing a required package is PackageMan.Require.  This will check for the package, try to install it if it is not found, and try to load it after the install.  If it fails, Require returns a customizable message that tells the user what happened.  By default this message just states that there was a failure.</p>
 <p>An example of how to require lsqlite3 for your script is:</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq/PackageMan'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">'lsqlite3'</span><span class="p">)</span>
 </code></pre></div>
 <p>This will contact the default MacroQuest rock server, install lsqlite3 and load it to be used under the sql variable.  If there is a failure, the simplest message ("Failed to load package lsqlite3") will be displayed to the user.</p>
 <p>Require also supports overloads for packages that do not have the same name as their luarocks name would suggest.  In this case, you can use two parameters for Require.  An example of this is lfs.  The name of the package is "luafilesystem" but when you load it, you load it with "lfs" so you can pass that information to Require as below:</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">lfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;luafilesystem&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lfs&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq/PackageMan'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">lfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">'luafilesystem'</span><span class="p">,</span><span class="w"> </span><span class="s1">'lfs'</span><span class="p">)</span>
 </code></pre></div>
 <p>This will perform the same steps as above, but once the package is installed it uses the lfs name instead of the luafilesystem name for loading.</p>
 <p>Lastly, you can use Require to send your own custom message if you do not like the default message.  This is the third overload for Require.  For example, in the case that you want to return the message "[ScriptNameHere] LFS failed to install and is required for this script" you can do so as:</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">lfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;luafilesystem&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lfs&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;[ScriptNameHere] LFS failed to install and is required for this sript&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq/PackageMan'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">lfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">'luafilesystem'</span><span class="p">,</span><span class="w"> </span><span class="s1">'lfs'</span><span class="p">,</span><span class="w"> </span><span class="s1">'[ScriptNameHere] LFS failed to install and is required for this sript'</span><span class="p">)</span>
 </code></pre></div>
 <p>The default message should suffice for most usages.</p>
 <p>In all cases, when there is a failure to load the package using Require, your script will be exited.  If you'd like more control, you can use the other functions of PackageMan.</p>
 <h3 id="debugging">Debugging<a class="headerlink" href="#debugging" title="Permanent link">&para;</a></h3>
 <p>If you are having issues with packages not installing, you can enable debug logging by setting the global variable PackageMan.debug to true.  This will output the log of what is happening to the MQ window.</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq/PackageMan'</span><span class="p">)</span>
 <span class="nv">PackageMan</span><span class="p">.</span><span class="py">debug</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="kc">true</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Require</span><span class="p">(</span><span class="s1">'lsqlite3'</span><span class="p">)</span>
 </code></pre></div>
 <h3 id="packagemaninstallandload">PackageMan.InstallAndLoad<a class="headerlink" href="#packagemaninstallandload" title="Permanent link">&para;</a></h3>
 <p>For most use cases, Require should be sufficient.  However, for more granular control over what happens when a package fails to load, you can start with InstallAndLoad.  This will attempt to install the package and load it.  It does not check to see if the package is installed first, as that is up to the script writer.  The mq/utils library has an example of an Include function which will try to load a library and gracefully fail.  An example of using this library to do your own error handling on a package install is below:</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">Utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/Utils&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq/PackageMan'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">Utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq/Utils'</span><span class="p">)</span>
 
-<span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Utils</span><span class="p">.</span><span class="py">Library</span><span class="p">.</span><span class="nf">Include</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Utils</span><span class="p">.</span><span class="py">Library</span><span class="p">.</span><span class="nf">Include</span><span class="p">(</span><span class="s1">'lsqlite3'</span><span class="p">)</span>
 <span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="kr">then</span>
-<span class="w">    </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">InstallAndLoad</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">InstallAndLoad</span><span class="p">(</span><span class="s1">'lsqlite3'</span><span class="p">)</span>
 <span class="kr">end</span>
 
 <span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="kr">then</span>
-<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Could not load or install lsqlite3&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s1">'Could not load or install lsqlite3'</span><span class="p">)</span>
 <span class="kr">end</span>
 </code></pre></div>
 <p>Because Utils.Library.Include is a graceful failure, the above code will try to load the library, install and try to load it if the initial load fails, and lastly print a message if it is still not loaded.  This is useful if your script does not have a strict dependency on the library and would only use the library if it was available.</p>
 <p>InstallAndLoad also can be overloaded with an additional parameter for packages where the name is different.  Referencing luafilesystem, the appropriate usage for InstallAndLoad would be:</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">Utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/Utils&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq/PackageMan'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">Utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq/Utils'</span><span class="p">)</span>
 
-<span class="kd">local</span><span class="w"> </span><span class="nv">lfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Utils</span><span class="p">.</span><span class="py">Library</span><span class="p">.</span><span class="nf">Include</span><span class="p">(</span><span class="s1">&#39;lfs&#39;</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">lfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Utils</span><span class="p">.</span><span class="py">Library</span><span class="p">.</span><span class="nf">Include</span><span class="p">(</span><span class="s1">'lfs'</span><span class="p">)</span>
 <span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">lfs</span><span class="w"> </span><span class="kr">then</span>
-<span class="w">    </span><span class="nv">lfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">InstallAndLoad</span><span class="p">(</span><span class="s1">&#39;luafilesystem&#39;</span><span class="p">,</span><span class="w"> </span><span class="s1">&#39;lfs&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="nv">lfs</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">InstallAndLoad</span><span class="p">(</span><span class="s1">'luafilesystem'</span><span class="p">,</span><span class="w"> </span><span class="s1">'lfs'</span><span class="p">)</span>
 <span class="kr">end</span>
 
 <span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">lfs</span><span class="w"> </span><span class="kr">then</span>
-<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;Could not load or install luafilesystem/lfs&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="nb">print</span><span class="p">(</span><span class="s1">'Could not load or install luafilesystem/lfs'</span><span class="p">)</span>
 <span class="kr">end</span>
 </code></pre></div>
 <p>Unlike Require, InstallAndLoad does not have a third overload for a message, since you are expected to handle your own failure messages.</p>
@@ -18992,17 +18992,17 @@
 <p>If Require or InstallAndLoad does not meet your needs, then Install provides the most granular control over installing a package.  Again, for most people Require should be sufficient.  However, Install will allow you to determine the REASON for failures, which none of the other methods do.</p>
 <p>Install is also only responsible for installing your package, it will not try to load your package at all and it does not check if the package is already installed.  The return on Install is a numerical error code, the most up to date details for which can be found in the source for PackageMan.lua.  The most relevant return code that a script writer would probably be handling is error code 2 -- the user declined the installation of the package.</p>
 <p>One example of usage is below:</p>
-<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/PackageMan&#39;</span><span class="p">)</span>
-<span class="kd">local</span><span class="w"> </span><span class="nv">Utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;mq/Utils&#39;</span><span class="p">)</span>
+<div class="language-lua highlight"><pre><span></span><code><span class="kd">local</span><span class="w"> </span><span class="nv">mq</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">PackageMan</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq/PackageMan'</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">Utils</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'mq/Utils'</span><span class="p">)</span>
 
-<span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Utils</span><span class="p">.</span><span class="py">Library</span><span class="p">.</span><span class="nf">Include</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+<span class="kd">local</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nv">Utils</span><span class="p">.</span><span class="py">Library</span><span class="p">.</span><span class="nf">Include</span><span class="p">(</span><span class="s1">'lsqlite3'</span><span class="p">)</span>
 <span class="kr">if</span><span class="w"> </span><span class="ow">not</span><span class="w"> </span><span class="nv">sql</span><span class="w"> </span><span class="kr">then</span>
-<span class="w">    </span><span class="kr">if</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Install</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="kr">then</span>
-<span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="s1">&#39;User canceled the install, cannot proceed&#39;</span><span class="p">)</span>
+<span class="w">    </span><span class="kr">if</span><span class="w"> </span><span class="nv">PackageMan</span><span class="p">.</span><span class="nf">Install</span><span class="p">(</span><span class="s1">'lsqlite3'</span><span class="p">)</span><span class="w"> </span><span class="o">==</span><span class="w"> </span><span class="mi">2</span><span class="w"> </span><span class="kr">then</span>
+<span class="w">        </span><span class="nb">print</span><span class="p">(</span><span class="s1">'User canceled the install, cannot proceed'</span><span class="p">)</span>
 <span class="w">        </span><span class="nv">mq</span><span class="p">.</span><span class="nf">exit</span><span class="p">()</span>
 <span class="w">    </span><span class="kr">else</span>
-<span class="w">        </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">&#39;lsqlite3&#39;</span><span class="p">)</span>
+<span class="w">        </span><span class="nv">sql</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="nb">require</span><span class="p">(</span><span class="s1">'lsqlite3'</span><span class="p">)</span>
 <span class="w">    </span><span class="kr">end</span>
 <span class="kr">end</span>
 </code></pre></div>
@@ -19034,7 +19034,7 @@ C:\Users\dannu\Downloads\luarocks-3.6.0-win32&gt;
 <li>
 <p>Run <code>install.bat</code> with <code>/SELFCONTAINED</code>, using <code>/P</code> to point to the install directory, and (most importantly) <code>/INC</code>, <code>/LIB</code>, and <code>/BIN</code>
     to point to the mq install of luajit that you just built, and <code>/NOADMIN</code> because this is a local install. Hit enter when prompted:</p>
-<div class="language-text highlight"><pre><span></span><code>C:\Users\dannu\Downloads\luarocks-3.6.0-win32&gt;.\install.bat /P C:\Users\dannu\Downloads\luarocks_install /SELFCONTAINED /INC &quot;C:\Users\dannu\workspace\mqnext\contrib\vcpkg\installed\x86-windows-static\include\luajit&quot; /LIB &quot;C:\Users\dannu\workspace\mqnext\contrib\vcpkg\installed\x86-windows-static\lib&quot; /BIN &quot;C:\Users\dannu\workspace\mqnext\contrib\vcpkg\installed\x86-windows-static\tools&quot; /NOADMIN
+<div class="language-text highlight"><pre><span></span><code>C:\Users\dannu\Downloads\luarocks-3.6.0-win32&gt;.\install.bat /P C:\Users\dannu\Downloads\luarocks_install /SELFCONTAINED /INC "C:\Users\dannu\workspace\mqnext\contrib\vcpkg\installed\x86-windows-static\include\luajit" /LIB "C:\Users\dannu\workspace\mqnext\contrib\vcpkg\installed\x86-windows-static\lib" /BIN "C:\Users\dannu\workspace\mqnext\contrib\vcpkg\installed\x86-windows-static\tools" /NOADMIN
 
 C:\Users\dannu\Downloads\luarocks-3.6.0-win32&gt;rem=rem --[[--lua
 LuaRocks 3.6.x installer.
@@ -19096,8 +19096,8 @@ Created LuaRocks hardcoded settings file: C:\Users\dannu\Downloads\luarocks_inst
 Created LuaRocks config file: C:\Users\dannu\Downloads\luarocks_install\config-5.1.lua
 
 Creating rocktrees...
-Created system rocktree    : &quot;C:\Users\dannu\Downloads\luarocks_install\systree&quot;
-Local user rocktree exists : &quot;C:\Users\dannu\AppData\Roaming\LuaRocks&quot;
+Created system rocktree    : "C:\Users\dannu\Downloads\luarocks_install\systree"
+Local user rocktree exists : "C:\Users\dannu\AppData\Roaming\LuaRocks"
 
 ============================
 == LuaRocks is installed! ==
@@ -19141,16 +19141,16 @@ C:\Users\dannu\Downloads\luarocks_install&gt;
 Installing https://luarocks.org/lsqlite3complete-0.9.5-1.src.rock
 
 lsqlite3complete 0.9.5-1 depends on lua &gt;= 5.1, &lt; 5.5 (5.1-1 provided by VM)
-cl /nologo /MD /O2 -c -Folsqlite3.obj -IC:\Users\dannu\workspace\mqnext\contrib\vcpkg\installed\x86-windows-static\include\luajit lsqlite3.c -DLSQLITE_VERSION=&quot;0.9.5&quot; -Dluaopen_lsqlite3=luaopen_lsqlite3complete
+cl /nologo /MD /O2 -c -Folsqlite3.obj -IC:\Users\dannu\workspace\mqnext\contrib\vcpkg\installed\x86-windows-static\include\luajit lsqlite3.c -DLSQLITE_VERSION="0.9.5" -Dluaopen_lsqlite3=luaopen_lsqlite3complete
 lsqlite3.c
-cl /nologo /MD /O2 -c -Fosqlite3.obj -IC:\Users\dannu\workspace\mqnext\contrib\vcpkg\installed\x86-windows-static\include\luajit sqlite3.c -DLSQLITE_VERSION=&quot;0.9.5&quot; -Dluaopen_lsqlite3=luaopen_lsqlite3complete
+cl /nologo /MD /O2 -c -Fosqlite3.obj -IC:\Users\dannu\workspace\mqnext\contrib\vcpkg\installed\x86-windows-static\include\luajit sqlite3.c -DLSQLITE_VERSION="0.9.5" -Dluaopen_lsqlite3=luaopen_lsqlite3complete
 sqlite3.c
 link -dll -def:lsqlite3complete.def -out:lsqlite3complete.dll C:\Users\dannu\workspace\mqnext\contrib\vcpkg\installed\x86-windows-static\lib/lua51.lib lsqlite3.obj sqlite3.obj
 Microsoft (R) Incremental Linker Version 14.28.29913.0
 Copyright (C) Microsoft Corporation.  All rights reserved.
 
 Creating library lsqlite3complete.lib and object lsqlite3complete.exp
-LINK : warning LNK4098: defaultlib &#39;LIBCMT&#39; conflicts with use of other libs; use /NODEFAULTLIB:library
+LINK : warning LNK4098: defaultlib 'LIBCMT' conflicts with use of other libs; use /NODEFAULTLIB:library
 No existing manifest. Attempting to rebuild...
 lsqlite3complete 0.9.5-1 is now installed in C:\Users\dannu\Downloads\luarocks_install\systree (license: MIT)
 
@@ -19224,10 +19224,10 @@ C:\Users\dannu\Downloads\luarocks_install&gt;
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

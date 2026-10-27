@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -19783,19 +19783,19 @@
 <ul>
 <li>it was "stuck" i.e. turning and jumping.</li>
 </ul>
-<div class="language-text highlight"><pre><span></span><code>That&#39;s the plugin trying to get to the point your leader was at when the follow command was actually started..
-It doesn&#39;t work like this plugin, ie - you get stuck behind a wall, leader moves back and you unstick..
-It won&#39;t do that if it&#39;s last recorded follow point is past the wall... You have to turn off following to get a new follow path.
+<div class="language-text highlight"><pre><span></span><code>That's the plugin trying to get to the point your leader was at when the follow command was actually started..
+It doesn't work like this plugin, ie - you get stuck behind a wall, leader moves back and you unstick..
+It won't do that if it's last recorded follow point is past the wall... You have to turn off following to get a new follow path.
 </code></pre></div>
 <ul>
 <li>After issuing the /bc follow, with an ini setting of /stick 20 hold uw, the bots will follow, but every 2-3 secs,</li>
 </ul>
 <p>they "adjust"</p>
 <p>trying to move forward a bit or something, even though their distance is less than 20, and the master isn't even moving.</p>
-<div class="language-text highlight"><pre><span></span><code>This happens if you have DoSit on and using AdvPath plugin to follow. Your stick setting is not used, and MQ2AdvPath has no setting to change it&#39;s follow distance.
+<div class="language-text highlight"><pre><span></span><code>This happens if you have DoSit on and using AdvPath plugin to follow. Your stick setting is not used, and MQ2AdvPath has no setting to change it's follow distance.
 Not sure why MQ2Advpath is coded this way, but it will force your toon to stand if your distance is over 10 from your leader...
-The modbot macro is just trying to force your position so it&#39;s possible to sit without standing back up every second or so..
-I&#39;ll increase the delay that&#39;s used there, and see if I can make one smooth movement..
+The modbot macro is just trying to force your position so it's possible to sit without standing back up every second or so..
+I'll increase the delay that's used there, and see if I can make one smooth movement..
 
 P.S. If you WANT to use this plugin and not MQ2AdvPath for following, either unload MQ2AdvPath, or change this line at the top of modbot.mac to FALSE. 
 /declare AdvPlug bool outer TRUE
@@ -19861,9 +19861,9 @@ both off - stick will not break from movement key input (i.e. it will fight you 
 
 MoveUtils with MQ2Melee
 mpause on - pressing a movement key pauses stick for a defined amount of time (resume timer starts when all movement keys have been let go)
-breakonkb on - pressing a movement key breaks stick entirely. MQ2Melee then turns it back on instantly if MQ2Melee&#39;s attack is on
-and you are within MQ2Melee&#39;s stickrange of the target.
-both off - stick will not break from movement key input, MQ2Melee&#39;s attack key will toggle stick state
+breakonkb on - pressing a movement key breaks stick entirely. MQ2Melee then turns it back on instantly if MQ2Melee's attack is on
+and you are within MQ2Melee's stickrange of the target.
+both off - stick will not break from movement key input, MQ2Melee's attack key will toggle stick state
 </code></pre></div>
 <h3 id="how-do-i-make-the-plugin-output-less-or-more-chatwnd-messages">How do I make the plugin output less or more ChatWnd messages<a class="headerlink" href="#how-do-i-make-the-plugin-output-less-or-more-chatwnd-messages" title="Permanent link">&para;</a></h3>
 <p>See the Verbosity section at the bottom of the main article.</p>
@@ -19887,11 +19887,11 @@ both off - stick will not break from movement key input, MQ2Melee&#39;s attack k
 <p>TryToJump - will jump every few pulses to attempt scaling over small rocks and stumps <span class="arithmatex">\(very helpful to **food races** such as gnomes that frequently get stuck\)</span> TurnHalf - if stucklogic has turned half way around <span class="arithmatex">\(256 deg\)</span> without making any progress, it will reset heading to the starting point and try turning the other direction</p>
 <div class="language-text highlight"><pre><span></span><code>/stick set pulsecheck #
 -pulsecheck defaults to 4
--this value is sort of what &quot;stuckcheck&quot; was before.
+-this value is sort of what "stuckcheck" was before.
 -it serves as the size of your pulse history to be used to calculate your average movement distance.
 the largest you can set this value to is 32 (defined by MAXRINGSIZE).
 The higher you set this number, the less often stucklogic would misfire (so if you are getting the
-&quot;jittery&quot; problem you will want to increase this value). This also means it will take longer to know
+"jittery" problem you will want to increase this value). This also means it will take longer to know
 that it is stuck, so if you are getting stuck and not responding fast enough, you would do the opposite and lower this value.
 
 /stick set pulseunstuck #
@@ -19900,9 +19900,9 @@ that it is stuck, so if you are getting stuck and not responding fast enough, yo
 -this is the amount of pulses you have successfully moved forward before hard-forcing stucklogic to be considered unstuck.
 this serves the purpose in that if you were stuck for 20 pulses, your stuck counter would normally try to move forward
 for 20 more pulses before considering itself free. there was some handling for this that had some issues so now you can set a value
-such as this one to force a faster &quot;im unstuck&quot; process.
+such as this one to force a faster "im unstuck" process.
 -the higher your framerate, the higher you want this value. 5 may not be enough on better computers and you may end up
-getting restuck again, it will look like what we are calling &quot;snaking&quot;. If you notice yourself &quot;snaking&quot; then this would be the first value to try increasing.
+getting restuck again, it will look like what we are calling "snaking". If you notice yourself "snaking" then this would be the first value to try increasing.
 
 /stick set diststuck #.##
 -diststuck defaults to 0.5
@@ -19960,7 +19960,7 @@ sticknorange=1 (no range checking takes place for stick to happen automatically 
 
 update on sticknorange: MQ2Melee does not allow for attacking anything greater than 250 range away
 regardless of any settings, and sticknorange does not overcome that (though maybe it should be possible?).
-So sticknorange is effectively &quot;stick at 250 or less&quot;, without checking the stickrange value
+So sticknorange is effectively "stick at 250 or less", without checking the stickrange value
 (which defaults to 75 if you do not set it). 
 
 
@@ -20025,10 +20025,10 @@ stickbreak=1  - allows breakonkb to work with new mq2melee changes
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>

@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.6">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
     
     
       
@@ -31,10 +31,10 @@
       
     
     
-      <link rel="stylesheet" href="../../../assets/stylesheets/main.484c7ddc.min.css">
+      <link rel="stylesheet" href="../../../assets/stylesheets/main.57a0d79d.min.css">
       
         
-        <link rel="stylesheet" href="../../../assets/stylesheets/palette.ab4e12ef.min.css">
+        <link rel="stylesheet" href="../../../assets/stylesheets/palette.fb2fffe2.min.css">
       
       
 
@@ -18965,9 +18965,9 @@
 <h2 id="tutorial">Tutorial<a class="headerlink" href="#tutorial" title="Permanent link">&para;</a></h2>
 <p><a href="http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&amp;t=20199">http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&amp;t=20199</a></p>
 <h3 id="tutorial-macro">Tutorial Macro<a class="headerlink" href="#tutorial-macro" title="Permanent link">&para;</a></h3>
-<div class="language-text highlight"><pre><span></span><code>#event stuff &quot;Ant Bat Cat Dog Emu&quot;
-#event stuff &quot;Ant #*# Cat&quot;
-#event stuff &quot;|${Me.Name}| is cool&quot;
+<div class="language-text highlight"><pre><span></span><code>#event stuff "Ant Bat Cat Dog Emu"
+#event stuff "Ant #*# Cat"
+#event stuff "|${Me.Name}| is cool"
 
 sub main
    /echo starting ${Macro.Name}
@@ -19000,7 +19000,7 @@ sub event_stuff(Line, word1, word2, word3, word4)
 <p>Assuming your in game name is LamahHerder... This would call sub event_stuff if <strong>/echo LamahHerder is cool</strong></p>
 <h3 id="passing-a-variable">Passing a variable<a class="headerlink" href="#passing-a-variable" title="Permanent link">&para;</a></h3>
 <p>In the string for event_name you can use #int# to pass a variable to the event_name sub</p>
-<div class="language-text highlight"><pre><span></span><code>#event stuff &quot;Quick #1# this #2#&quot;
+<div class="language-text highlight"><pre><span></span><code>#event stuff "Quick #1# this #2#"
 
 sub event_stuff(Line, word1, word2, word3, word4)
    /echo ${word1}, ${word2}
@@ -19013,79 +19013,79 @@ sub event_stuff(Line, word1, word2, word3, word4)
 <li><a href="http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&amp;t=20198&amp;p=173345#p173345">http://www.macroquest2.com/phpBB3/viewtopic.php?f=47&amp;t=20198&amp;p=173345#p173345</a></li>
 </ul>
 <div class="language-text highlight"><pre><span></span><code>| hitsmode Normal
-#Event hitSuccess         &quot;You backstab #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You bash #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You bite #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You claw #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You crush #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You frenzy on #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You gore #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You hit #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You kick #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You maul #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You pierce #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You punch #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You rend #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You shoot #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You slash #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You slice #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You smash #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You stab #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You sting #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You strike #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;You sweep #1# for #2# #*# of damage.&quot;
+#Event hitSuccess         "You backstab #1# for #2# #*# of damage."
+#Event hitSuccess         "You bash #1# for #2# #*# of damage."
+#Event hitSuccess         "You bite #1# for #2# #*# of damage."
+#Event hitSuccess         "You claw #1# for #2# #*# of damage."
+#Event hitSuccess         "You crush #1# for #2# #*# of damage."
+#Event hitSuccess         "You frenzy on #1# for #2# #*# of damage."
+#Event hitSuccess         "You gore #1# for #2# #*# of damage."
+#Event hitSuccess         "You hit #1# for #2# #*# of damage."
+#Event hitSuccess         "You kick #1# for #2# #*# of damage."
+#Event hitSuccess         "You maul #1# for #2# #*# of damage."
+#Event hitSuccess         "You pierce #1# for #2# #*# of damage."
+#Event hitSuccess         "You punch #1# for #2# #*# of damage."
+#Event hitSuccess         "You rend #1# for #2# #*# of damage."
+#Event hitSuccess         "You shoot #1# for #2# #*# of damage."
+#Event hitSuccess         "You slash #1# for #2# #*# of damage."
+#Event hitSuccess         "You slice #1# for #2# #*# of damage."
+#Event hitSuccess         "You smash #1# for #2# #*# of damage."
+#Event hitSuccess         "You stab #1# for #2# #*# of damage."
+#Event hitSuccess         "You sting #1# for #2# #*# of damage."
+#Event hitSuccess         "You strike #1# for #2# #*# of damage."
+#Event hitSuccess         "You sweep #1# for #2# #*# of damage."
 
 | hitsmode Abbreviated
-#Event hitSuccess         &quot;backstab #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;bash #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;bite #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;claw #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;crush #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;frenzy on #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;gore #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;hit #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;kick #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;maul #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;pierce #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;punch #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;rend #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;shoot #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;slash #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;slice #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;smash #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;stab #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;sting #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;strike #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;sweep #1# for #2# #*# of damage.&quot;
+#Event hitSuccess         "backstab #1# for #2# #*# of damage."
+#Event hitSuccess         "bash #1# for #2# #*# of damage."
+#Event hitSuccess         "bite #1# for #2# #*# of damage."
+#Event hitSuccess         "claw #1# for #2# #*# of damage."
+#Event hitSuccess         "crush #1# for #2# #*# of damage."
+#Event hitSuccess         "frenzy on #1# for #2# #*# of damage."
+#Event hitSuccess         "gore #1# for #2# #*# of damage."
+#Event hitSuccess         "hit #1# for #2# #*# of damage."
+#Event hitSuccess         "kick #1# for #2# #*# of damage."
+#Event hitSuccess         "maul #1# for #2# #*# of damage."
+#Event hitSuccess         "pierce #1# for #2# #*# of damage."
+#Event hitSuccess         "punch #1# for #2# #*# of damage."
+#Event hitSuccess         "rend #1# for #2# #*# of damage."
+#Event hitSuccess         "shoot #1# for #2# #*# of damage."
+#Event hitSuccess         "slash #1# for #2# #*# of damage."
+#Event hitSuccess         "slice #1# for #2# #*# of damage."
+#Event hitSuccess         "smash #1# for #2# #*# of damage."
+#Event hitSuccess         "stab #1# for #2# #*# of damage."
+#Event hitSuccess         "sting #1# for #2# #*# of damage."
+#Event hitSuccess         "strike #1# for #2# #*# of damage."
+#Event hitSuccess         "sweep #1# for #2# #*# of damage."
 
 | Spells and Procs
-#Event hitSuccess         &quot;#1# has taken #2# damage from your #3#.&quot;
-#Event hitSuccess         &quot;#1# was hit by non-melee for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me}| hit #1# for #2# #*# of non-melee damage.&quot;
+#Event hitSuccess         "#1# has taken #2# damage from your #3#."
+#Event hitSuccess         "#1# was hit by non-melee for #2# #*# of damage."
+#Event hitSuccess         "|${Me}| hit #1# for #2# #*# of non-melee damage."
 
-| Pet hit&#39;s
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| backstabs #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| bashes #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| bites #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| claws #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| crushes #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| frenzies on #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| gores #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| hit #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| hits #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| kicks #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| mauls #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| pierces #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| punches #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| rends #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| shoots #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| slashes #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| slices #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| smashes #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| stabs #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| stings #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| strikes #1# for #2# #*# of damage.&quot;
-#Event hitSuccess         &quot;|${Me.Pet.CleanName}| sweeps #1# for #2# #*# of damage.&quot;
+| Pet hit's
+#Event hitSuccess         "|${Me.Pet.CleanName}| backstabs #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| bashes #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| bites #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| claws #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| crushes #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| frenzies on #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| gores #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| hit #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| hits #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| kicks #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| mauls #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| pierces #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| punches #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| rends #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| shoots #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| slashes #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| slices #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| smashes #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| stabs #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| stings #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| strikes #1# for #2# #*# of damage."
+#Event hitSuccess         "|${Me.Pet.CleanName}| sweeps #1# for #2# #*# of damage."
 
 Sub Main
     /echo This Macro loops and triggers an event with an /echo when you hit something!
@@ -19162,10 +19162,10 @@ Sub Event_hitSuccess(Line, hitTarget, hitDMG, hitType)
     
       
       
-      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+      <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.79ae519e.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
       
     
   </body>
