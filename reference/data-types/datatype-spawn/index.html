@@ -18415,6 +18415,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#CanEngage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CanEngage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#CanSplashLand" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -18705,6 +18716,28 @@
     <span class="md-ellipsis">
       
         E
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#EncounterLockOwner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EncounterLockOwner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#EncounterLockStatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EncounterLockStatus
       
     </span>
   </a>
@@ -20646,6 +20679,17 @@
 </li>
         
           <li class="md-nav__item">
+  <a href="#CanEngage" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        CanEngage
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
   <a href="#CanSplashLand" class="md-nav__link">
     <span class="md-ellipsis">
       
@@ -20936,6 +20980,28 @@
     <span class="md-ellipsis">
       
         E
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#EncounterLockOwner" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EncounterLockOwner
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#EncounterLockStatus" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        EncounterLockStatus
       
     </span>
   </a>
@@ -22206,6 +22272,13 @@
 <dl>
 <dd>???</dd>
 </dl>
+<h3 id="CanEngage"><a href="../datatype-bool/">bool</a> <code>CanEngage</code><a class="headerlink" href="#CanEngage" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p>TRUE if you are allowed to engage this spawn under encounter locking (FTE), i.e. <strong>EncounterLockStatus</strong> is "Unlocked" or "Mine". FALSE only when the spawn is locked to someone outside your group or raid.</p>
+<p>On clients without encounter locking, this is always TRUE.</p>
+</dd>
+</dl>
 <h3 id="CanSplashLand"><a href="../datatype-bool/">bool</a> <code>CanSplashLand</code><a class="headerlink" href="#CanSplashLand" title="Permanent link">&para;</a></h3>
 <dl>
 <dd><p>TRUE/FALSE on if a splash spell can land...</p><p></p><p><strong>Note:</strong> This check is ONLY for line of sight to the targetindicator (red/green circle)</p></dd>
@@ -22324,6 +22397,22 @@
 <h3 id="E"><a href="../datatype-float/">float</a> <code>E</code><a class="headerlink" href="#E" title="Permanent link">&para;</a></h3>
 <dl>
 <dd>Shortcut for -X (makes Eastward positive)</dd>
+</dl>
+<h3 id="EncounterLockOwner"><a href="./">spawn</a> <code>EncounterLockOwner</code><a class="headerlink" href="#EncounterLockOwner" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>The spawn that currently holds the encounter lock (FTE) on this spawn, or NULL if there is no lock owner. Use sub-members for more detail, e.g. <code>${Target.EncounterLockOwner.CleanName}</code> or <code>${Target.EncounterLockOwner.ID}</code>.</dd>
+</dl>
+<h3 id="EncounterLockStatus"><a href="../datatype-string/">string</a> <code>EncounterLockStatus</code><a class="headerlink" href="#EncounterLockStatus" title="Permanent link">&para;</a></h3>
+<dl>
+<dd>
+<p>Encounter lock (FTE) status of the spawn, relative to you:</p>
+<ul>
+<li>"Unlocked" - not locked, or opened up with /yell. Anyone can engage.</li>
+<li>"Mine" - locked to you, a member of your group, or a member of your raid.</li>
+<li>"Other" - locked to someone you are not grouped or raided with (also returned if the lock owner can't be resolved).</li>
+</ul>
+<p>On clients without encounter locking, this is always "Unlocked".</p>
+</dd>
 </dl>
 <h3 id="EQLoc"><a href="../datatype-string/">string</a> <code>EQLoc</code><a class="headerlink" href="#EQLoc" title="Permanent link">&para;</a></h3>
 <dl>
@@ -22871,6 +22960,22 @@
 <tr>
 <td><code>${Group.Member[mymagesname].Pet.Equipment[primary].ID}</code></td>
 <td>ID number of the group member's pet's primary weapon</td>
+</tr>
+<tr>
+<td><code>${Target.CanEngage}</code></td>
+<td>TRUE if your target isn't encounter locked to someone outside your group/raid</td>
+</tr>
+<tr>
+<td><code>${Target.EncounterLockStatus}</code></td>
+<td>"Unlocked", "Mine", or "Other"</td>
+</tr>
+<tr>
+<td><code>${Target.EncounterLockOwner.CleanName}</code></td>
+<td>Name of the player holding the encounter lock on your target</td>
+</tr>
+<tr>
+<td><code>/if (!${Target.CanEngage}) /squelch /target clear</code></td>
+<td>Drop a target that's locked to another player</td>
 </tr>
 </tbody>
 </table>
