@@ -93,6 +93,12 @@ Represents an in-game spawn.
 
 :   ???
 
+### {{ renderMember(type='bool', name='CanEngage') }}
+
+:   TRUE if you are allowed to engage this spawn under encounter locking (FTE), i.e. **EncounterLockStatus** is "Unlocked" or "Mine". FALSE only when the spawn is locked to someone outside your group or raid.
+
+    On clients without encounter locking, this is always TRUE.
+
 ### {{ renderMember(type='bool', name='CanSplashLand') }}
 
 :   <p>TRUE/FALSE on if a splash spell can land...</p><p></p><p><strong>Note:</strong> This check is ONLY for line of sight to the targetindicator (red/green circle)</p>
@@ -208,6 +214,20 @@ Represents an in-game spawn.
 ### {{ renderMember(type='float', name='E') }}
 
 :   Shortcut for -X (makes Eastward positive)
+
+### {{ renderMember(type='spawn', name='EncounterLockOwner') }}
+
+:   The spawn that currently holds the encounter lock (FTE) on this spawn, or NULL if there is no lock owner. Use sub-members for more detail, e.g. `${Target.EncounterLockOwner.CleanName}` or `${Target.EncounterLockOwner.ID}`.
+
+### {{ renderMember(type='string', name='EncounterLockStatus') }}
+
+:   Encounter lock (FTE) status of the spawn, relative to you:
+
+    - "Unlocked" - not locked, or opened up with /yell. Anyone can engage.
+    - "Mine" - locked to you, a member of your group, or a member of your raid.
+    - "Other" - locked to someone you are not grouped or raided with (also returned if the lock owner can't be resolved).
+
+    On clients without encounter locking, this is always "Unlocked".
 
 ### {{ renderMember(type='string', name='EQLoc') }}
 
@@ -678,6 +698,10 @@ Represents an in-game spawn.
 | --- | --- |
 | `${Pet.Equipment[primary].ID}` | ID number of the pet's primary weapon |
 | `${Group.Member[mymagesname].Pet.Equipment[primary].ID}` | ID number of the group member's pet's primary weapon |
+| `${Target.CanEngage}` | TRUE if your target isn't encounter locked to someone outside your group/raid |
+| `${Target.EncounterLockStatus}` | "Unlocked", "Mine", or "Other" |
+| `${Target.EncounterLockOwner.CleanName}` | Name of the player holding the encounter lock on your target |
+| `/if (!${Target.CanEngage}) /squelch /target clear` | Drop a target that's locked to another player |
 <!--dt-linkrefs-start-->
 [body]: datatype-body.md
 [bool]: datatype-bool.md
