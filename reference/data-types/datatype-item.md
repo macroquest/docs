@@ -178,7 +178,7 @@ Contains the properties that describe an item.
 
 ### {{ renderMember(type='string', name='EffectType') }}
 
-:   Spell effect type ([see below](#spell-effect-types) for spell effect types)
+:   Spell effect type ([see below](datatype-item.md#spell-effect-types) for spell effect types)
 
 ### {{ renderMember(type='int', name='Endurance') }}
 

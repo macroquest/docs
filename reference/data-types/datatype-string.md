@@ -136,14 +136,14 @@ Sub Event_SpellWornOff(string Line, string SpellName, string OnWho)
 /return
 ```
 <!--dt-linkrefs-start-->
-[1]: #difference-between-arg-and-token
+[1]: datatype-string.md#difference-between-arg-and-token
 [achievement]: datatype-achievement.md
 [achievementcat]: datatype-achievementcat.md
 [achievementobj]: datatype-achievementobj.md
 [altability]: datatype-altability.md
 [augtype]: datatype-augtype.md
 [auratype]: datatype-auratype.md
-[bandolieritem]: #bandolieritem-datatype
+[bandolieritem]: datatype-bandolier.md#bandolieritem
 [body]: datatype-body.md
 [bool]: datatype-bool.md
 [buff]: datatype-buff.md

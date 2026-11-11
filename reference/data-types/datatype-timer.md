@@ -80,7 +80,7 @@ This would loop while myTimer is above 0
 [achievementcat]: datatype-achievementcat.md
 [altability]: datatype-altability.md
 [spell]: datatype-spell.md
-[bandolieritem]: #bandolieritem-datatype
+[bandolieritem]: datatype-bandolier.md#bandolieritem
 [int64]: datatype-int64.md
 [timestamp]: datatype-timestamp.md
 [float]: datatype-float.md

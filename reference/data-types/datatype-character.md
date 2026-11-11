@@ -823,10 +823,6 @@ If something is missing here, you can check the source to see if it exists.
 
 :   Size of your largest free inventory space
 
-### {{ renderMember(type='int', name='LargestFreeInventory') }}
-
-:   Size of your largest free inventory space
-
 ### {{ renderMember(type='timestamp', name='LastZoned') }}
 
 :   Returns a timestamp of last time you zoned
@@ -1461,7 +1457,7 @@ The delay will last either 5s OR until the assist is complete
 [altability]: datatype-altability.md
 [auratype]: datatype-auratype.md
 [bandolier]: datatype-bandolier.md
-[bandolieritem]: #bandolieritem-datatype
+[bandolieritem]: datatype-bandolier.md#bandolieritem
 [bool]: datatype-bool.md
 [buff]: datatype-buff.md
 [fellowship]: datatype-fellowship.md

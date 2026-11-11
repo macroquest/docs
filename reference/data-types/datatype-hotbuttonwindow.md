@@ -82,7 +82,7 @@ Data related to hotbuttons
 :   The meaning of this value depends on the type of hotbutton. The type of hotbutton can be
     determined with the `Type` member.
 
-    See [HotButton Types](#hotbutton-types) for the meaning of the Slot parameter.
+    See [HotButton Types](datatype-hotbuttonwindow.md#hotbutton-types) for the meaning of the Slot parameter.
 
 ### {{ renderMember(type='social', name='Social') }}
 
@@ -98,11 +98,11 @@ Data related to hotbuttons
 
 ### {{ renderMember(type='int', name='Type') }}
 
-:   Returns the type of hotbutton. See [HotButton Types](#hotbutton-types).
+:   Returns the type of hotbutton. See [HotButton Types](datatype-hotbuttonwindow.md#hotbutton-types).
 
 ### {{ renderMember(type='string', name='TypeName') }}
 
-:   Returns the type name of hotbutton. See [HotButton Types](#hotbutton-types).
+:   Returns the type name of hotbutton. See [HotButton Types](datatype-hotbuttonwindow.md#hotbutton-types).
 <!--dt-members-end-->
 
 ## Methods

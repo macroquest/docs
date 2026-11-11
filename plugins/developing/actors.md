@@ -38,7 +38,7 @@ There are three more structures to explore in a plugin, `Address`, `Message`, an
 
 ## Address
 
-An address is a shim to the protobuf-defined address, and follows the same rules as the [terminology section above](#terminology). The API provides this shim as a simple struct where you can set the address parameters directly like this (as an example):
+An address is a shim to the protobuf-defined address, and follows the same rules as the [terminology section above](../../main/features/actors.md#terminology). The API provides this shim as a simple struct where you can set the address parameters directly like this (as an example):
 
 ```cpp
 postoffice::Address addr;
