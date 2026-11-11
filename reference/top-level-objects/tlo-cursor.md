@@ -9,9 +9,9 @@ Creates an object which references the item on your cursor.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='item', name='Cursor') }}
-
-:   Access the item on the cursor
+/// member | item Cursor
+Access the item on the cursor
+///
 <!--tlo-forms-end-->
 
 ## Usage

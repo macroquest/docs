@@ -11,45 +11,45 @@ See Also: [TLO:DynamicZone](../top-level-objects/tlo-dynamiczone.md)
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='InRaid') }}
+/// member | bool InRaid
+??
+///
 
-:   ??
+/// member | dzmember Leader
+The leader of the dynamic zone
+///
 
-### {{ renderMember(type='dzmember', name='Leader') }}
+/// member | bool LeaderFlagged
+Returns true if the dzleader can successfully enter the dz (this also means the dz is actually Loaded.)
+///
 
-:   The leader of the dynamic zone
+/// member | int MaxMembers
+Maximum number of characters that can enter this dynamic zone
+///
 
-### {{ renderMember(type='bool', name='LeaderFlagged') }}
+/// member | int MaxTimers
+The number of timers present in **Timers**
+///
 
-:   Returns true if the dzleader can successfully enter the dz (this also means the dz is actually Loaded.)
+/// member | dzmember Member[#|name]
+The dynamic zone member _#_ or _name_
+///
 
-### {{ renderMember(type='int', name='MaxMembers') }}
+/// member | int Members
+Current number of characters in the dynamic zone
+///
 
-:   Maximum number of characters that can enter this dynamic zone
+/// member | int MinMembers
+Minimum number of members required.
+///
 
-### {{ renderMember(type='int', name='MaxTimers') }}
+/// member | string Name
+The full name of the dynamic zone.
+///
 
-:   The number of timers present in **Timers**
-
-### {{ renderMember(type='dzmember', name='Member', params='#|name') }}
-
-:   The dynamic zone member _#_ or _name_
-
-### {{ renderMember(type='int', name='Members') }}
-
-:   Current number of characters in the dynamic zone
-
-### {{ renderMember(type='int', name='MinMembers') }}
-
-:   Minimum number of members required.
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   The full name of the dynamic zone.
-
-### {{ renderMember(type='dztimer', name='Timer', params='#|name') }}
-
-:   Access the list of current lockout timers. This is either an index from 1 to **MaxTimers**, or a "Expedition\|Event" combination. Event is optional, but if multiple Expeditions match, the timer with the earliest lockout expiration will be returned.
+/// member | dztimer Timer[#|name]
+Access the list of current lockout timers. This is either an index from 1 to **MaxTimers**, or a "Expedition\|Event" combination. Event is optional, but if multiple Expeditions match, the timer with the earliest lockout expiration will be returned.
+///
 
 ### [string][string] `To String`
 

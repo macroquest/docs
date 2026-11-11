@@ -10,9 +10,9 @@ The FrameLimiter TLO provides access to the [frame limiter](../../main/features/
 
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='framelimiter', name='FrameLimiter') }}
-
-:   The frame limiter object
+/// member | framelimiter FrameLimiter
+The frame limiter object
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

@@ -9,70 +9,70 @@ This is the type for your current task.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='ID') }}
+/// member | int ID
+Returns an int of the task ID
+///
 
-:   Returns an int of the task ID
+/// member | string Index
+Returns the tasks' place on the tasklist
+///
 
-### {{ renderMember(type='string', name='Index') }}
+/// member | string Leader
+Returns task leader's name
+///
 
-:   Returns the tasks' place on the tasklist
+/// member | taskmember Member[#]
+Returns specified member in task by index
+///
 
-### {{ renderMember(type='string', name='Leader') }}
+/// member | taskmember Member[name]
+Returns specified member in task by name
+///
 
-:   Returns task leader's name
+/// member | int Members
+Returns number of members in task
+///
 
-### {{ renderMember(type='taskmember', name='Member', params='#') }}
+/// member | taskobjective Objective[#]
+Returns the specified objective
+///
 
-:   Returns specified member in task by index
+/// member | string Step
+Returns description of current step in the task
+///
 
-### {{ renderMember(type='taskmember', name='Member', params='name') }}
+/// member | timestamp Timer
+Returns amount of time before task expires
+///
 
-:   Returns specified member in task by name
+/// member | string Title
+Returns name of the shared task
+///
 
-### {{ renderMember(type='int', name='Members') }}
+/// member | string Type
+Returns a string that can be one of the following:
 
-:   Returns number of members in task
+- Unknown
+- None
+- Deliver
+- Kill
+- Loot
+- Hail
+- Explore
+- Tradeskill
+- Fishing
+- Foraging
+- Cast
+- UseSkill
+- DZSwitch
+- DestroyObject
+- Collect
+- Dialogue
+///
 
-### {{ renderMember(type='taskobjective', name='Objective', params='#') }}
-
-:   Returns the specified objective
-
-### {{ renderMember(type='string', name='Step') }}
-
-:   Returns description of current step in the task
-
-### {{ renderMember(type='timestamp', name='Timer') }}
-
-:   Returns amount of time before task expires
-
-### {{ renderMember(type='string', name='Title') }}
-
-:   Returns name of the shared task
-
-### {{ renderMember(type='string', name='Type') }}
-
-:   Returns a string that can be one of the following:
-
-    - Unknown
-    - None
-    - Deliver
-    - Kill
-    - Loot
-    - Hail
-    - Explore
-    - Tradeskill
-    - Fishing
-    - Foraging
-    - Cast
-    - UseSkill
-    - DZSwitch
-    - DestroyObject
-    - Collect
-    - Dialogue
-
-### {{ renderMember(type='int', name='WindowIndex') }}
-
-:   Returns the Quest Window List Index. (if the window actually has the list filled)
+/// member | int WindowIndex
+Returns the Quest Window List Index. (if the window actually has the list filled)
+///
 <!--dt-members-end-->
 
 ## Methods

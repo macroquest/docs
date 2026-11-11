@@ -9,21 +9,21 @@ Used to access information about bandolier sets on your character.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='Active') }}
+/// member | bool Active
+Indicates if the bandolier set is active
+///
 
-:   Indicates if the bandolier set is active
+/// member | int Index
+Returns the index number of the bandolier set
+///
 
-### {{ renderMember(type='int', name='Index') }}
+/// member | bandolieritem Item[Index]
+Provides information about the specified item. Returns the Nth item in the set (Primary, Secondary, Ranged, Ammo)
+///
 
-:   Returns the index number of the bandolier set
-
-### {{ renderMember(type='bandolieritem', name='Item', params='Index') }}
-
-:   Provides information about the specified item. Returns the Nth item in the set (Primary, Secondary, Ranged, Ammo)
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   Returns the name of the bandolier set
+/// member | string Name
+Returns the name of the bandolier set
+///
 <!--dt-members-end-->
 
 ## Methods
@@ -37,17 +37,18 @@ Used to access information about bandolier sets on your character.
 
 ## `bandolieritem`
 
-### {{ renderMember(type='int', name='IconID') }}
+/// member | int IconID
+Returns the icon id for the item
+///
 
-:   Returns the icon id for the item
+/// member | int ID
+Returns the item id for the item
+///
 
-### {{ renderMember(type='int', name='ID') }}
-
-:   Returns the item id for the item
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   Returns the name of the item
+/// member | string Name
+    label: Name (bandolieritem)
+Returns the name of the item
+///
 
 
 

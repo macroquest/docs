@@ -9,9 +9,9 @@ This is a hierarchical container for things relating to inventory (Bank, etc).  
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='inventory', name='Inventory') }}
-
-:   Your inventory.
+/// member | inventory Inventory
+Your inventory.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

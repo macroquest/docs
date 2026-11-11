@@ -9,7 +9,8 @@ Object that interacts with the personal tradeskill depot, introduced in the Nigh
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='tradeskilldepot', name='TradeskillDepot') }}
+/// member | tradeskilldepot TradeskillDepot
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

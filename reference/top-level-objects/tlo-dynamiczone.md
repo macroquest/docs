@@ -9,9 +9,9 @@ Provides access to properties of the current dynamic (instanced) zone.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='dynamiczone', name='DynamicZone') }}
-
-:   Gives access to the information about the current dynamic zone.
+/// member | dynamiczone DynamicZone
+Gives access to the information about the current dynamic zone.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

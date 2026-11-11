@@ -9,9 +9,9 @@ Returns "AutoLogin" string when plugin is loaded, provides access to AutoLogin f
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='AutoLogin', name='AutoLogin') }}
-
-:   Returns "AutoLogin" string when plugin is loaded
+/// member | AutoLogin AutoLogin
+Returns "AutoLogin" string when plugin is loaded
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

@@ -9,9 +9,9 @@ A time object indicating EQ Game Time.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='time', name='GameTime') }}
-
-:   Access the current in-game time
+/// member | time GameTime
+Access the current in-game time
+///
 <!--tlo-forms-end-->
 
 ## Usage

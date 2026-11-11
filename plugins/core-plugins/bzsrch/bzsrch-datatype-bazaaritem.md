@@ -10,23 +10,29 @@ Represents an individual item in bazaar search results, providing access to item
 
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='Name') }}
-:   The name of the item.
+/// member | string Name
+The name of the item.
+///
 
-### {{ renderMember(type='string', name='FullName') }}
-:   Full item name including special characters (e.g. `Burynai Burial Regalia (Caza)`)
+/// member | string FullName
+Full item name including special characters (e.g. `Burynai Burial Regalia (Caza)`)
+///
 
-### {{ renderMember(type='string', name='Trader') }}
-:   The name of the trader selling the item.
+/// member | string Trader
+The name of the trader selling the item.
+///
 
-### {{ renderMember(type='int', name='Price') }}
-:   Price per unit
+/// member | int Price
+Price per unit
+///
 
-### {{ renderMember(type='int', name='Quantity') }}
-:   Available quantity from this trader **per stack**. If the item id is stackable, this will return the stack size. If the item id is not stackable, this will return 1.
+/// member | int Quantity
+Available quantity from this trader **per stack**. If the item id is stackable, this will return the stack size. If the item id is not stackable, this will return 1.
+///
 
-### {{ renderMember(type='int', name='ItemID') }}
-:   EQ item ID number
+/// member | int ItemID
+EQ item ID number
+///
 <!--dt-members-end-->  
 
 ## Methods

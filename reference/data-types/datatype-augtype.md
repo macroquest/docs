@@ -10,37 +10,37 @@ Describes data about an augmentation slot in an item.
 
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='Empty') }}
+/// member | bool Empty
+True if the slot is empty
+///
 
-:   True if the slot is empty
+/// member | bool Infusable
+True if this is a hidden energeian power source slot.
+///
 
-### {{ renderMember(type='bool', name='Infusable') }}
+/// member | item Item
+The item socketed in this slot, if any.
+///
 
-:   True if this is a hidden energeian power source slot.
+/// member | string Name
+The name of the item socketed in this slot, if any.
+///
 
-### {{ renderMember(type='item', name='Item') }}
+/// member | int Slot
+Index of the augment slot.
+///
 
-:   The item socketed in this slot, if any.
+/// member | int Solvent
+Item ID of the solvent used to remove this item, if any.
+///
 
-### {{ renderMember(type='string', name='Name') }}
+/// member | int Type
+Type of augment slot.
+///
 
-:   The name of the item socketed in this slot, if any.
-
-### {{ renderMember(type='int', name='Slot') }}
-
-:   Index of the augment slot.
-
-### {{ renderMember(type='int', name='Solvent') }}
-
-:   Item ID of the solvent used to remove this item, if any.
-
-### {{ renderMember(type='int', name='Type') }}
-
-:   Type of augment slot.
-
-### {{ renderMember(type='int', name='Visible') }}
-
-:   True if this slot is visible to the user.
+/// member | int Visible
+True if this slot is visible to the user.
+///
 <!--dt-members-end-->
 <!--dt-linkrefs-start-->
 [int]: ./datatype-int.md

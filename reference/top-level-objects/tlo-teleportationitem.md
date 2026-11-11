@@ -10,17 +10,16 @@ Returns data on the teleportation item in your keyring.
 
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='keyringitem', name='TeleportationItem', params='#') }}
+/// member | keyringitem TeleportationItem[#]
+Retrieves the item in your keyring by index
+///
 
-:   Retrieves the item in your keyring by index
+/// member | keyringitem TeleportationItem[name]
+Retrieves the item in your keyring by name. A = can be prepended for an exact match.
+///
 
-### {{ renderMember(type='keyringitem', name='TeleportationItem', params='name') }}
-
-:   Retrieves the item in your keyring by name. A = can be prepended for an exact match.
-
-### {{ renderMember(type='keyring', name='TeleportationItem') }}
-
-:   
+/// member | keyring TeleportationItem
+///
 
 <!--tlo-forms-end-->
 

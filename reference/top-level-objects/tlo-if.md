@@ -13,17 +13,18 @@ Executes an inline condiition, similar to a ternary expression in other language
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='string', name='If', params='conditions,whentrue,whenfalse', toc_label='If') }}
+/// member | string If[conditions,whentrue,whenfalse]
+    label: If
+Performs [Math.Calc][Math.Calc] on `conditions`, gives `whentrue` if non-zero, gives `whenfalse` if zero.
 
-:   Performs [Math.Calc][Math.Calc] on `conditions`, gives `whentrue` if non-zero, gives `whenfalse` if zero.
+!!! example
 
-    !!! example
+    If I am sitting, stand up. Otherwise, echo "I am not sitting down"
 
-        If I am sitting, stand up. Otherwise, echo "I am not sitting down"
-
-        ```
-        /docommand ${If[${Me.Sitting},/stand,/echo I am not sitting down]}
-        ```
+    ```
+    /docommand ${If[${Me.Sitting},/stand,/echo I am not sitting down]}
+    ```
+///
 
 ### [string][string] `If[conditions~whentrue~whenfalse]` { #if_alternate data-toc-label="If - Alternate Syntax" }
 

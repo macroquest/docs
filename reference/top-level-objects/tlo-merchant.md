@@ -9,7 +9,8 @@ Object that interacts with the currently active merchant.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='merchant', name='Merchant') }}
+/// member | merchant Merchant
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

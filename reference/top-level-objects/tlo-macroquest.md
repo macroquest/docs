@@ -9,7 +9,8 @@ Creates an object related to MacroQuest information.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='macroquest', name='MacroQuest') }}
+/// member | macroquest MacroQuest
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

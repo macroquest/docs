@@ -49,65 +49,65 @@ AdvPath flags can be accessed using ${AdvPath.Flag1} - ${AdvPath.Flag9}
 
 ## Members
 
-### {{ renderMember(type='bool', name='Active') }}
+/// member | bool Active
+Plugin loaded and ready
+///
 
-:   Plugin loaded and ready
+/// member | int State
+FollowState, 0 = off, 1 = Following, 2 = Playing, 3 = Recording
+///
 
-### {{ renderMember(type='int', name='State') }}
+/// member | int Waypoints
+Total Number of Waypoints
+///
 
-:   FollowState, 0 = off, 1 = Following, 2 = Playing, 3 = Recording
+/// member | int NextWaypoint
+Number of NextWaypoint
+///
 
-### {{ renderMember(type='int', name='Waypoints') }}
+/// member | string Y[Waypoint Name|#]
+Y Location of Waypoint
+///
 
-:   Total Number of Waypoints
+/// member | string X[Waypoint Name|#]
+X Location of Waypoint
+///
 
-### {{ renderMember(type='int', name='NextWaypoint') }}
+/// member | string Z[Waypoint Name|#]
+Z Location of Waypoint
+///
 
-:   Number of NextWaypoint
+/// member | spawn Monitor
+Spawn you're Following
+///
 
-### {{ renderMember(type='string', name='Y', params='Waypoint Name|#') }}
+/// member | int Idle
+Idle time when following and not moving
+///
 
-:   Y Location of Waypoint
+/// member | float Length
+Estimated length of the follow PathName
+///
 
-### {{ renderMember(type='string', name='X', params='Waypoint Name|#') }}
+/// member | bool Following
+Following Spawn
+///
 
-:   X Location of Waypoint
+/// member | bool Playing
+Playing path
+///
 
-### {{ renderMember(type='string', name='Z', params='Waypoint Name|#') }}
+/// member | bool Recording
+Recording path
+///
 
-:   Z Location of Waypoint
+/// member | int Status
+Status 0 = off , 1 = on , 2 = Paused
+///
 
-### {{ renderMember(type='spawn', name='Monitor') }}
-
-:   Spawn you're Following
-
-### {{ renderMember(type='int', name='Idle') }}
-
-:   Idle time when following and not moving
-
-### {{ renderMember(type='float', name='Length') }}
-
-:   Estimated length of the follow PathName
-
-### {{ renderMember(type='bool', name='Following') }}
-
-:   Following Spawn
-
-### {{ renderMember(type='bool', name='Playing') }}
-
-:   Playing path
-
-### {{ renderMember(type='bool', name='Recording') }}
-
-:   Recording path
-
-### {{ renderMember(type='int', name='Status') }}
-
-:   Status 0 = off , 1 = on , 2 = Paused
-
-### {{ renderMember(type='bool', name='Paused') }}
-
-:   Paused
+/// member | bool Paused
+Paused
+///
 
 ## INI
 

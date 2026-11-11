@@ -9,29 +9,29 @@ Contains all the data related to fellowship members
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='class', name='Class') }}
+/// member | class Class
+Member's class
+///
 
-:   Member's class
+/// member | ticks LastOn
+How long since member was last online
+///
 
-### {{ renderMember(type='ticks', name='LastOn') }}
+/// member | int Level
+Member's level
+///
 
-:   How long since member was last online
+/// member | string Name
+Member's name
+///
 
-### {{ renderMember(type='int', name='Level') }}
+/// member | bool Sharing
+TRUE if member has exp sharing enabled
+///
 
-:   Member's level
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   Member's name
-
-### {{ renderMember(type='bool', name='Sharing') }}
-
-:   TRUE if member has exp sharing enabled
-
-### {{ renderMember(type='zone', name='Zone') }}
-
-:   Zone information for the member's zone
+/// member | zone Zone
+Zone information for the member's zone
+///
 
 ### [string][string] `To String`
 

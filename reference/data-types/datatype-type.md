@@ -9,23 +9,23 @@ Contains information about data types
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='InheritedType') }}
+/// member | int InheritedType
+Type of inherited type, if applicable.
 
-:   Type of inherited type, if applicable.
+Ex: character inherits from spawn, so its inherited type will be spawn.
+///
 
-    Ex: character inherits from spawn, so its inherited type will be spawn.
+/// member | string Name
+Type name
+///
 
-### {{ renderMember(type='string', name='Name') }}
+/// member | string Member[N]
+Member name based on an internal ID number (based on 1 through _N_, not all values will be used)
+///
 
-:   Type name
-
-### {{ renderMember(type='string', name='Member', params='N') }}
-
-:   Member name based on an internal ID number (based on 1 through _N_, not all values will be used)
-
-### {{ renderMember(type='int', name='Member', params='name') }}
-
-:   Member internal ID number based on _name_ (will be a number from 1 to N)
+/// member | int Member[name]
+Member internal ID number based on _name_ (will be a number from 1 to N)
+///
 
 ### [string][string] `(To String)`
 

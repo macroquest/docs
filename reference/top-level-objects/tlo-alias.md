@@ -9,9 +9,9 @@ Provides a way to query whether a given alias exists. See [/alias](../commands/a
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='bool', name='Alias', params='Name') }}
-
-:   Returns bool indicating if named aliase exists
+/// member | bool Alias[Name]
+Returns bool indicating if named aliase exists
+///
 <!--tlo-forms-end-->
 
 ## Usage

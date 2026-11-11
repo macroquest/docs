@@ -9,7 +9,8 @@ Object used to return information on real time, not game time.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='time', name='Time') }}
+/// member | time Time
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

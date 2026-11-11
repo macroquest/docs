@@ -9,9 +9,9 @@ Creates a float object from n.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='float', name='Float', params='n') }}
-
-:   Returns a float with value _n_.
+/// member | float Float[n]
+Returns a float with value _n_.
+///
 <!--tlo-forms-end-->
 
 ## Usage

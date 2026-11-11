@@ -9,9 +9,9 @@ Object that is used to check if there is Line of Sight betwen two locations.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='bool', name='LineOfSight', params='y,x,z:y,x,z') }}
-
-:   Check for line-of-sight between the two specified coordinates.
+/// member | bool LineOfSight[y,x,z:y,x,z]
+Check for line-of-sight between the two specified coordinates.
+///
 <!--tlo-forms-end-->
 
 ## Usage

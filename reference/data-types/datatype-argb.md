@@ -9,25 +9,25 @@ Represents a color
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='A') }}
+/// member | int A
+Alpha channel value.
+///
 
-:   Alpha channel value.
+/// member | int R
+Red color value.
+///
 
-### {{ renderMember(type='int', name='R') }}
+/// member | int G
+Green color value.
+///
 
-:   Red color value.
+/// member | int B
+Blue color value.
+///
 
-### {{ renderMember(type='int', name='G') }}
-
-:   Green color value.
-
-### {{ renderMember(type='int', name='B') }}
-
-:   Blue color value.
-
-### {{ renderMember(type='int', name='Int') }}
-
-:   The integer formed by the ARGB.
+/// member | int Int
+The integer formed by the ARGB.
+///
 
 ### [string][string] To String
 

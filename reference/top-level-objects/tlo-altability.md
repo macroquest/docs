@@ -13,13 +13,13 @@ tags:
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='altability', name='AltAbility', params='Number') }}
+/// member | altability AltAbility[Number]
+Look up an AltAbility by its altability id.
+///
 
-:   Look up an AltAbility by its altability id.
-
-### {{ renderMember(type='altability', name='AltAbility', params='Name') }}
-
-:   Look up an AltAbility by its name.
+/// member | altability AltAbility[Name]
+Look up an AltAbility by its name.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

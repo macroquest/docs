@@ -9,13 +9,13 @@ This datatype represents information about a keyring (a.k.a. a collection of mou
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='Count') }}
+/// member | int Count
+The number of items in this keyring
+///
 
-:   The number of items in this keyring
-
-### {{ renderMember(type='keyringitem', name='Stat') }}
-
-:   The keyring item assigned as the stat item
+/// member | keyringitem Stat
+The keyring item assigned as the stat item
+///
 <!--dt-members-end-->
 
 ## Examples

@@ -9,9 +9,9 @@ Grants access to your friends list.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='friend', name='Friends') }}
-
-:   Access friends data
+/// member | friend Friends
+Access friends data
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

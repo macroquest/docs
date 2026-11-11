@@ -11,65 +11,65 @@ Contains data on a specific group member
 <!--dt-members-start-->
 This type inherits members from [_spawn_ ](datatype-spawn.md)if the member is in the current zone.
 
-### {{ renderMember(type='int', name='Index') }}
+/// member | int Index
+Which number in the group the member is
+///
 
-:   Which number in the group the member is
+/// member | bool Leader
+TRUE if the member is the group's leader, FALSE otherwise
+///
 
-### {{ renderMember(type='bool', name='Leader') }}
+/// member | int Level
+The member's level
+///
 
-:   TRUE if the member is the group's leader, FALSE otherwise
+/// member | bool MainAssist
+TRUE if the member is designated as the group's Main Assist, FALSE otherwise
+///
 
-### {{ renderMember(type='int', name='Level') }}
+/// member | bool MainTank
+TRUE if the member is designated as the group's Main Tank, FALSE otherwise
+///
 
-:   The member's level
+/// member | bool MasterLooter
+TRUE if the member is designated as the group's Master Looter, FALSE otherwise
+///
 
-### {{ renderMember(type='bool', name='MainAssist') }}
+/// member | bool MarkNpc
+TRUE if the member is designated as the group roule Mark NPC, FALSE otherwise
+///
 
-:   TRUE if the member is designated as the group's Main Assist, FALSE otherwise
+/// member | bool Mercenary
+TRUE if the member is a mercenary, FALSE otherwise
+///
 
-### {{ renderMember(type='bool', name='MainTank') }}
+/// member | string Name
+The name of the group member. This works even if they are not in the same zone as you.
+///
 
-:   TRUE if the member is designated as the group's Main Tank, FALSE otherwise
+/// member | bool Offline
+TRUE if the member is offline and FALSE if online
+///
 
-### {{ renderMember(type='bool', name='MasterLooter') }}
+/// member | bool OtherZone
+TRUE if the member is online but in another zone and FALSE if online and in same zone as you.
+///
 
-:   TRUE if the member is designated as the group's Master Looter, FALSE otherwise
+/// member | int PctAggro
+???
+///
 
-### {{ renderMember(type='bool', name='MarkNpc') }}
+/// member | bool Present
+TRUE if the member is online and in same zone and FALSE if online and not in same zone as you.
+///
 
-:   TRUE if the member is designated as the group roule Mark NPC, FALSE otherwise
+/// member | bool Puller
+TRUE if the member is designated as the group's Puller, FALSE otherwise
+///
 
-### {{ renderMember(type='bool', name='Mercenary') }}
-
-:   TRUE if the member is a mercenary, FALSE otherwise
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   The name of the group member. This works even if they are not in the same zone as you.
-
-### {{ renderMember(type='bool', name='Offline') }}
-
-:   TRUE if the member is offline and FALSE if online
-
-### {{ renderMember(type='bool', name='OtherZone') }}
-
-:   TRUE if the member is online but in another zone and FALSE if online and in same zone as you.
-
-### {{ renderMember(type='int', name='PctAggro') }}
-
-:   ???
-
-### {{ renderMember(type='bool', name='Present') }}
-
-:   TRUE if the member is online and in same zone and FALSE if online and not in same zone as you.
-
-### {{ renderMember(type='bool', name='Puller') }}
-
-:   TRUE if the member is designated as the group's Puller, FALSE otherwise
-
-### {{ renderMember(type='spawn', name='Spawn') }}
-
-:   Accesses the group member's spawn. Not all members will have a spawn (if they are out of the zone).
+/// member | spawn Spawn
+Accesses the group member's spawn. Not all members will have a spawn (if they are out of the zone).
+///
 
 ### [string][string] `To String`
 

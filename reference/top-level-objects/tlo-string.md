@@ -10,9 +10,9 @@ Access the string datatype
 
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='string', name='String', params='text') }}
-
-:   Access text as a string
+/// member | string String[text]
+Access text as a string
+///
 
 <!--tlo-forms-end-->
 

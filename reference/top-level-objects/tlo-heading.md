@@ -9,17 +9,17 @@ Object that refers to the directional heading to of a location or direction.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='heading', name='Heading', params='#') }}
+/// member | heading Heading[#]
+Creates a heading object using degrees (clockwise)
+///
 
-:   Creates a heading object using degrees (clockwise)
+/// member | heading Heading[y,x]
+Creates a heading object using the heading to this y,x location
+///
 
-### {{ renderMember(type='heading', name='Heading', params='y,x') }}
-
-:   Creates a heading object using the heading to this y,x location
-
-### {{ renderMember(type='heading', name='Heading', params='N,W') }}
-
-:   Same as above, just an alternate method
+/// member | heading Heading[N,W]
+Same as above, just an alternate method
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

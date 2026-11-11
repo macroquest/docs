@@ -9,9 +9,9 @@ Object that creates an integer from n.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='int', name='Int', params='N') }}
-
-:   Parses whatever value for _n_ is provided and converts it into an [int].
+/// member | int Int[N]
+Parses whatever value for _n_ is provided and converts it into an [int].
+///
 <!--tlo-forms-end-->
 
 ## Usage

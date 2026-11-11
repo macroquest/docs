@@ -8,69 +8,69 @@ Represents a unit of clock time.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='Date') }}
+/// member | string Date
+Date in the format MM/DD/YYYY
+///
 
-:   Date in the format MM/DD/YYYY
+/// member | int Day
+Day of the month
+///
 
-### {{ renderMember(type='int', name='Day') }}
+/// member | int DayOfWeek
+Day of the week (1=sunday to 7=saturday)
+///
 
-:   Day of the month
+/// member | int Hour
+Hour (0-23)
+///
 
-### {{ renderMember(type='int', name='DayOfWeek') }}
+/// member | int Hour12
+Hour (0-11)
+///
 
-:   Day of the week (1=sunday to 7=saturday)
+/// member | int Millisecond
+Millisecond (0-999)
+///
 
-### {{ renderMember(type='int', name='Hour') }}
+/// member | int64 MillisecondsSinceEpoch
+Number of milliseconds since the epoch (January 1, 1970)
+///
 
-:   Hour (0-23)
+/// member | int MillisecondsSinceMidnight
+Number of milliseconds since midnight
+///
 
-### {{ renderMember(type='int', name='Hour12') }}
+/// member | int Minute
+Minute (0-59)
+///
 
-:   Hour (0-11)
+/// member | int Month
+Month of the year (1-12)
+///
 
-### {{ renderMember(type='int', name='Millisecond') }}
+/// member | bool Night
+Gives true if the current hour is considered "night" in EQ (7:00pm-6:59am)
+///
 
-:   Millisecond (0-999)
+/// member | int Second
+Second (0-59)
+///
 
-### {{ renderMember(type='int64', name='MillisecondsSinceEpoch') }}
+/// member | int SecondsSinceMidnight
+Number of seconds since midnight
+///
 
-:   Number of milliseconds since the epoch (January 1, 1970)
+/// member | string Time12
+Time in 12-hour format (HH:MM:SS)
+///
 
-### {{ renderMember(type='int', name='MillisecondsSinceMidnight') }}
+/// member | string Time24
+Time in 24-hour format (HH:MM:SS)
+///
 
-:   Number of milliseconds since midnight
-
-### {{ renderMember(type='int', name='Minute') }}
-
-:   Minute (0-59)
-
-### {{ renderMember(type='int', name='Month') }}
-
-:   Month of the year (1-12)
-
-### {{ renderMember(type='bool', name='Night') }}
-
-:   Gives true if the current hour is considered "night" in EQ (7:00pm-6:59am)
-
-### {{ renderMember(type='int', name='Second') }}
-
-:   Second (0-59)
-
-### {{ renderMember(type='int', name='SecondsSinceMidnight') }}
-
-:   Number of seconds since midnight
-
-### {{ renderMember(type='string', name='Time12') }}
-
-:   Time in 12-hour format (HH:MM:SS)
-
-### {{ renderMember(type='string', name='Time24') }}
-
-:   Time in 24-hour format (HH:MM:SS)
-
-### {{ renderMember(type='int', name='Year') }}
-
-:   Year
+/// member | int Year
+Year
+///
 
 ### [string][string] `(To String)`
 

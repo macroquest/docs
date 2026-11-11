@@ -9,9 +9,9 @@ Object used to get information about your current target.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='target', name='Target') }}
-
-:   Returns the spawn object for the current target.
+/// member | target Target
+Returns the spawn object for the current target.
+///
 <!--tlo-forms-end-->
 
 ## Examples

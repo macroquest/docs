@@ -9,57 +9,57 @@ Contains all the data about your fellowship
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='Campfire') }}
+/// member | bool Campfire
+TRUE if campfire is up, FALSE if not
+///
 
-:   TRUE if campfire is up, FALSE if not
+/// member | ticks CampfireDuration
+Time left on current campfire
+///
 
-### {{ renderMember(type='ticks', name='CampfireDuration') }}
+/// member | float CampfireX
+Campfire X location
+///
 
-:   Time left on current campfire
+/// member | float CampfireY
+Campfire Y location
+///
 
-### {{ renderMember(type='float', name='CampfireX') }}
+/// member | float CampfireZ
+Campfire Z location
+///
 
-:   Campfire X location
+/// member | zone CampfireZone
+Zone information for the zone that contains your campfire
+///
 
-### {{ renderMember(type='float', name='CampfireY') }}
+/// member | bool Exists
+Returns TRUE if a fellowship exists.
+///
 
-:   Campfire Y location
+/// member | int ID
+Fellowship ID
+///
 
-### {{ renderMember(type='float', name='CampfireZ') }}
+/// member | string Leader
+Fellowship leader's name
+///
 
-:   Campfire Z location
+/// member | fellowshipmember Member[name|#]
+Member data by _name_ or _#_
+///
 
-### {{ renderMember(type='zone', name='CampfireZone') }}
+/// member | int Members
+Number of members in the fellowship
+///
 
-:   Zone information for the zone that contains your campfire
+/// member | string MotD
+Fellowship Message of the Day
+///
 
-### {{ renderMember(type='bool', name='Exists') }}
-
-:   Returns TRUE if a fellowship exists.
-
-### {{ renderMember(type='int', name='ID') }}
-
-:   Fellowship ID
-
-### {{ renderMember(type='string', name='Leader') }}
-
-:   Fellowship leader's name
-
-### {{ renderMember(type='fellowshipmember', name='Member', params='name|#') }}
-
-:   Member data by _name_ or _#_
-
-### {{ renderMember(type='int', name='Members') }}
-
-:   Number of members in the fellowship
-
-### {{ renderMember(type='string', name='MotD') }}
-
-:   Fellowship Message of the Day
-
-### {{ renderMember(type='bool', name='Sharing', params='N') }}
-
-:   Returns TRUE if exp sharing is enabled for the Nth member
+/// member | bool Sharing[N]
+Returns TRUE if exp sharing is enabled for the Nth member
+///
 
 ### [string][string] `To String`
 

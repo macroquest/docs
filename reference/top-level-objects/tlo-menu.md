@@ -10,9 +10,9 @@ Access to menu objects when a menu is open.
 
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='menu', name='Menu') }}
-
-:   If no menu open, returns "No Menu Open"
+/// member | menu Menu
+If no menu open, returns "No Menu Open"
+///
 
 <!--tlo-forms-end-->
 

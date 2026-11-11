@@ -12,29 +12,29 @@ Represents a double precision (64-bit) floating point number.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='Deci') }}
+/// member | string Deci
+The number as a string with **one** place of precision, _i.e. ###.#_
+///
 
-:   The number as a string with **one** place of precision, _i.e. ###.#_
+/// member | string Centi
+The number as a string with **two** places of precision, _i.e. ###.##_
+///
 
-### {{ renderMember(type='string', name='Centi') }}
+/// member | int Int
+Integer portion of the number truncated rather than rounded, _e.g. 12.779 returns 12_
+///
 
-:   The number as a string with **two** places of precision, _i.e. ###.##_
+/// member | string Milli
+The number as a string with **three** places of precision, _i.e. ###.###_
+///
 
-### {{ renderMember(type='int', name='Int') }}
+/// member | string Precision[#]
+The number as a string with # places of precision
+///
 
-:   Integer portion of the number truncated rather than rounded, _e.g. 12.779 returns 12_
-
-### {{ renderMember(type='string', name='Milli') }}
-
-:   The number as a string with **three** places of precision, _i.e. ###.###_
-
-### {{ renderMember(type='string', name='Precision', params='#') }}
-
-:   The number as a string with # places of precision
-
-### {{ renderMember(type='string', name='Prettify', params='precision') }}
-
-:   Pretty print the number with commas, with optional _precision_ (defaults to two decimal points).
+/// member | string Prettify[precision]
+Pretty print the number with commas, with optional _precision_ (defaults to two decimal points).
+///
 
 ### [string][string] `To String`
 

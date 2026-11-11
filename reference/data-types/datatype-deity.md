@@ -10,17 +10,17 @@ Contains data related to deity members
 
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='ID') }}
+/// member | int ID
+The deity's ID #
+///
 
-:   The deity's ID #
+/// member | string Name
+The full deity name
+///
 
-### {{ renderMember(type='string', name='Name') }}
-
-:   The full deity name
-
-### {{ renderMember(type='string', name='Team') }}
-
-:   The team name
+/// member | string Team
+The team name
+///
 
 ### [string][string] `To String`
 

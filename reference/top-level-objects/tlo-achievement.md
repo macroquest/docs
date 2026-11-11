@@ -9,13 +9,13 @@ Provides access to achievements.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='achievement', name='Achievement', params='#|Name') }}
+/// member | achievement Achievement[#|Name]
+Look up an achievement by name or by id.
+///
 
-:   Look up an achievement by name or by id.
-
-### {{ renderMember(type='achievementmgr', name='Achievement') }}
-
-:   Access the achievement manager which provides access to information about achievements
+/// member | achievementmgr Achievement
+Access the achievement manager which provides access to information about achievements
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

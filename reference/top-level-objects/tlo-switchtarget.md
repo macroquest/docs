@@ -10,9 +10,9 @@ Object used to return information on your switch target. Replaces DoorTarget
 
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='switch', name='SwitchTarget') }}
-
-:   True if switch (aka door) targeted
+/// member | switch SwitchTarget
+True if switch (aka door) targeted
+///
 
 <!--tlo-forms-end-->
 

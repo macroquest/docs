@@ -9,9 +9,9 @@ Provides access to bazaar search functionality and results.
 
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='bazaar', name='Bazaar') }}
-
-:   TRUE if there are search results
+/// member | bazaar Bazaar
+TRUE if there are search results
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

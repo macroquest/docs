@@ -9,13 +9,13 @@ Provides information on alerts. (Alerts are created using [/alert](../../referen
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='alertlist', name='List', params='Index') }}
+/// member | alertlist List[Index]
+Get the item from the list at the specified index
+///
 
-:   Get the item from the list at the specified index
-
-### {{ renderMember(type='int', name='Size') }}
-
-:   Get the number of alerts
+/// member | int Size
+Get the number of alerts
+///
 
 ### [string][string] `To String`
 

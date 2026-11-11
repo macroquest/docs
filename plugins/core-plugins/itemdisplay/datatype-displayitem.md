@@ -9,39 +9,52 @@ Holds members that can control and return status on item display windows. This d
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='Info') }}
-:   Returns details from the item. Note that this is different from the "Information" member.
+/// member | string Info
+Returns details from the item. Note that this is different from the "Information" member.
+///
 
-### {{ renderMember(type='string', name='WindowTitle') }}
-:   Returns the title of the window
+/// member | string WindowTitle
+Returns the title of the window
+///
 
-### {{ renderMember(type='string', name='AdvancedLore') }}
-:   Displays lore text
+/// member | string AdvancedLore
+Displays lore text
+///
 
-### {{ renderMember(type='string', name='MadeBy') }}
-:   Displays the maker of the crafted item
+/// member | string MadeBy
+Displays the maker of the crafted item
+///
 
-### {{ renderMember(type='bool', name='Collected') }}
+/// member | bool Collected
+///
 
-### {{ renderMember(type='bool', name='CollectedReceived') }}
+/// member | bool CollectedReceived
+///
 
-### {{ renderMember(type='bool', name='Scribed') }}
+/// member | bool Scribed
+///
 
-### {{ renderMember(type='bool', name='ScribedReceived') }}
+/// member | bool ScribedReceived
+///
 
-### {{ renderMember(type='string', name='Information') }}
-:   Returns the "item information" text from the item window.
+/// member | string Information
+Returns the "item information" text from the item window.
+///
 
-### {{ renderMember(type='int', name='DisplayIndex') }}
-:   Shows the index number of the item window
+/// member | int DisplayIndex
+Shows the index number of the item window
+///
 
-### {{ renderMember(type='window', name='Window') }}
-:   Gives access to the **[window]** datatype, allowing you to do things like `/invoke ${DisplayItem[5].Window.DoClose}`
+/// member | window Window
+Gives access to the **[window]** datatype, allowing you to do things like `/invoke ${DisplayItem[5].Window.DoClose}`
+///
 
-### {{ renderMember(type='item', name='Item') }}
-:   Gives access to the **[item]** datatype, although its members are already inherited. e.g. `/echo ${DisplayItem[2].Item.HP}`
+/// member | item Item
+Gives access to the **[item]** datatype, although its members are already inherited. e.g. `/echo ${DisplayItem[2].Item.HP}`
+///
 
-### {{ renderMember(type='DisplayItem', name='Next') }}
+/// member | DisplayItem Next
+///
 <!--dt-members-end-->
 
 <!--dt-linkrefs-start-->

@@ -9,65 +9,65 @@ Represents a discrete item being looted in an AdvLoot window.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='AlwaysGreed') }}
+/// member | bool AlwaysGreed
+The Always Greed (AG) state of the item.
+///
 
-:   The Always Greed (AG) state of the item.
+/// member | bool AlwaysNeed
+The Always Need (AN) state of the item.
+///
 
-### {{ renderMember(type='bool', name='AlwaysNeed') }}
+/// member | bool AutoRoll
+The Auto Roll state (dice icon) of the item.
+///
 
-:   The Always Need (AN) state of the item.
+/// member | spawn Corpse
+The spawn representing the corpse that is being looted, if available.
+///
 
-### {{ renderMember(type='bool', name='AutoRoll') }}
+/// member | bool FreeGrab
+Indicates that the item is free grab.
+///
 
-:   The Auto Roll state (dice icon) of the item.
+/// member | bool Greed
+The Greed (GD) state of the item.
+///
 
-### {{ renderMember(type='spawn', name='Corpse') }}
+/// member | int IconID
+The ID of the icon for the item.
+///
 
-:   The spawn representing the corpse that is being looted, if available.
+/// member | int64 ID
+The ID of the item.
+///
 
-### {{ renderMember(type='bool', name='FreeGrab') }}
+/// member | int Index
+The positional index of the item.
+///
 
-:   Indicates that the item is free grab.
+/// member | string Name
+The name of the item.
+///
 
-### {{ renderMember(type='bool', name='Greed') }}
+/// member | bool Need
+The Need (ND) state of the item.
+///
 
-:   The Greed (GD) state of the item.
+/// member | bool Never
+The Never (NV) state of the item.
+///
 
-### {{ renderMember(type='int', name='IconID') }}
+/// member | bool No
+The No state of the item.
+///
 
-:   The ID of the icon for the item.
+/// member | bool NoDrop
+Indicates if the item is NO DROP.
+///
 
-### {{ renderMember(type='int64', name='ID') }}
-
-:   The ID of the item.
-
-### {{ renderMember(type='int', name='Index') }}
-
-:   The positional index of the item.
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   The name of the item.
-
-### {{ renderMember(type='bool', name='Need') }}
-
-:   The Need (ND) state of the item.
-
-### {{ renderMember(type='bool', name='Never') }}
-
-:   The Never (NV) state of the item.
-
-### {{ renderMember(type='bool', name='No') }}
-
-:   The No state of the item.
-
-### {{ renderMember(type='bool', name='NoDrop') }}
-
-:   Indicates if the item is NO DROP.
-
-### {{ renderMember(type='int', name='StackSize') }}
-
-:   The size of the stack of items being looted.
+/// member | int StackSize
+The size of the stack of items being looted.
+///
 
 ### [string][string] `To String`
 

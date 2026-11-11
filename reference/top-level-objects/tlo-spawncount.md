@@ -9,14 +9,14 @@ Object used to count spawns based on a set of queries. Uses the filters under [S
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='int', name='SpawnCount') }}
+/// member | int SpawnCount
+Total number of spawns in current zone
+///
 
-:   Total number of spawns in current zone
 
-
-### {{ renderMember(type='int', name='SpawnCount', params='SearchString') }}
-
-:   Total number of spawns in current zone matching the `SearchString`. See [Spawn Search].
+/// member | int SpawnCount[SearchString]
+Total number of spawns in current zone matching the `SearchString`. See [Spawn Search].
+///
 <!--tlo-forms-end-->
 
 ## Usage

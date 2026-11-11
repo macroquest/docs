@@ -9,7 +9,8 @@ Object used to return information on a current Task.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='task', name='Task') }}
+/// member | task Task
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

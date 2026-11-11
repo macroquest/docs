@@ -9,13 +9,13 @@ Provides access to your friends list data.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='Friend', params='name') }}
+/// member | bool Friend[name]
+Returns TRUE if _name_ is on your friend list
+///
 
-:   Returns TRUE if _name_ is on your friend list
-
-### {{ renderMember(type='string', name='Friend', params='#') }}
-
-:   Returns the name of friend list member _\#_
+/// member | string Friend[#]
+Returns the name of friend list member _\#_
+///
 
 ### [string][string] `To String`
 

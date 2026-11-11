@@ -9,33 +9,33 @@ This is the type for your bank (not including shared bank or other bank features
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='BagSlots') }}
+/// member | int BagSlots
+How many bag slots (base slots for bags/items) your bank has.
+///
 
-:   How many bag slots (base slots for bags/items) your bank has.
+/// member | int FreeSlots
+How many free (empty) slots your bank has.  This includes slots where you have a bag and the bag has empty slots.  It accepts an index specifying one of the case insensitive bag sizes (tiny, small, medium, large, giant) or the corresponding number (0, 1, 2, 3, 4).  An invalid string specifying size will return NULL.  Specifying a numeric value less than 0 will use 0 and a value greater than 4 will use 4.
+///
 
-### {{ renderMember(type='int', name='FreeSlots') }}
+/// member | int TotalSlots
+How many total slots your bank has.  This includes slots where you have a bag and the bag has items in.  It accepts an index specifying one of the bag sizes or the corresponding number (see FreeSlots for a longer explanation).
+///
 
-:   How many free (empty) slots your bank has.  This includes slots where you have a bag and the bag has empty slots.  It accepts an index specifying one of the case insensitive bag sizes (tiny, small, medium, large, giant) or the corresponding number (0, 1, 2, 3, 4).  An invalid string specifying size will return NULL.  Specifying a numeric value less than 0 will use 0 and a value greater than 4 will use 4.
+/// member | int Platinum
+How much platinum you have in your bank.
+///
 
-### {{ renderMember(type='int', name='TotalSlots') }}
+/// member | int Gold
+How much gold you have in your bank.
+///
 
-:   How many total slots your bank has.  This includes slots where you have a bag and the bag has items in.  It accepts an index specifying one of the bag sizes or the corresponding number (see FreeSlots for a longer explanation).
+/// member | int Silver
+How much silver you have in your bank.
+///
 
-### {{ renderMember(type='int', name='Platinum') }}
-
-:   How much platinum you have in your bank.
-
-### {{ renderMember(type='int', name='Gold') }}
-
-:   How much gold you have in your bank.
-
-### {{ renderMember(type='int', name='Silver') }}
-
-:   How much silver you have in your bank.
-
-### {{ renderMember(type='int', name='Copper') }}
-
-:   How much copper you have in your bank.
+/// member | int Copper
+How much copper you have in your bank.
+///
 <!--dt-members-end-->
 
 ## Examples

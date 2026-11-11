@@ -9,37 +9,37 @@ A collection of settings that together describe the loot filter for an item.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='AutoRoll') }}
+/// member | bool AutoRoll
+The Auto Roll state (dice icon).
+///
 
-:   The Auto Roll state (dice icon).
+/// member | bool Greed
+The Greed (GD) state.
+///
 
-### {{ renderMember(type='bool', name='Greed') }}
+/// member | int IconID
+The ID of the icon.
+///
 
-:   The Greed (GD) state.
+/// member | int ID
+The ID of the item.
+///
 
-### {{ renderMember(type='int', name='IconID') }}
+/// member | string Name
+The Name of the item.
+///
 
-:   The ID of the icon.
+/// member | bool Need
+The Need (ND) state.
+///
 
-### {{ renderMember(type='int', name='ID') }}
+/// member | bool Never
+The Never (NV) state.
+///
 
-:   The ID of the item.
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   The Name of the item.
-
-### {{ renderMember(type='bool', name='Need') }}
-
-:   The Need (ND) state.
-
-### {{ renderMember(type='bool', name='Never') }}
-
-:   The Never (NV) state.
-
-### {{ renderMember(type='int', name='Types') }}
-
-:   Bit field representing all the loot filter flags for this item.
+/// member | int Types
+Bit field representing all the loot filter flags for this item.
+///
 
 ### [string][string] `To String`
 

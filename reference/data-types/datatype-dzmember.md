@@ -11,17 +11,17 @@ See Also: [DataType:dynamiczone](./datatype-dynamiczone.md), [TLO:DynamicZone](.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='Flagged') }}
+/// member | bool Flagged
+Returns true if the dzmember can successfully enter the dz. where x is either index or the name.
+///
 
-:   Returns true if the dzmember can successfully enter the dz. where x is either index or the name.
+/// member | string Name
+The name of the member
+///
 
-### {{ renderMember(type='string', name='Name') }}
-
-:   The name of the member
-
-### {{ renderMember(type='string', name='Status') }}
-
-:   The status of the member - one of the following: Unknown, Online, Offline, In Dynamic Zone, Link Dead
+/// member | string Status
+The status of the member - one of the following: Unknown, Online, Offline, In Dynamic Zone, Link Dead
+///
 
 ### [string][string] `To String`
 

@@ -9,17 +9,17 @@ Used to get information about items on your familiars keyring.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='keyring', name='Familiar') }}
+/// member | keyring Familiar
+Access to the familiar keyring.
+///
 
-:   Access to the familiar keyring.
+/// member | keyringitem Familiar[N]
+Retrieves the item in your familiar keyring by index.
+///
 
-### {{ renderMember(type='keyringitem', name='Familiar', params='N') }}
-
-:   Retrieves the item in your familiar keyring by index.
-
-### {{ renderMember(type='keyringitem', name='Familiar', params='Name') }}
-
-:   Retrieve the item in your familiar keyring by name. A `=` can be prepended for an exact match.
+/// member | keyringitem Familiar[Name]
+Retrieve the item in your familiar keyring by name. A `=` can be prepended for an exact match.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

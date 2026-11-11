@@ -12,7 +12,9 @@ Object used to determine if a match was made to argument in the given set of val
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='int', name='Select', params='argument,value1[,value2,...]') }}
+/// member | int Select[argument,value1[,value2,...]]
+    label: Select
+///
 
 !!! example
     Given:

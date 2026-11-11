@@ -9,78 +9,78 @@ Data types related to the current MacroQuest session.  These also inherit from t
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='Anonymize') }}
+/// member | bool Anonymize
+Anonymize character data
+///
 
-:   Anonymize character data
+/// member | int Build
+The build (client target) for MacroQuest
 
-### {{ renderMember(type='int', name='Build') }}
+| Value | Meaning |
+| :--- | :--- |
+| 1 | Live |
+| 2 | Test |
+| 3 | Beta |
+| 4 | Emu |
+///
 
-:   The build (client target) for MacroQuest
+/// member | string BuildName
+The build (client target) name for MacroQuest:
 
-    | Value | Meaning |
-    | :--- | :--- |
-    | 1 | Live |
-    | 2 | Test |
-    | 3 | Beta |
-    | 4 | Emu |
+- "Live"
+- "Test"
+- "Beta"
+- "Emu"
+///
 
-### {{ renderMember(type='string', name='BuildName') }}
+/// member | string BuildDate
+Date that MacroQuest was built
+///
 
-:   The build (client target) name for MacroQuest:
+/// member | string Error
+Last normal error message
+///
 
-    - "Live"
-    - "Test"
-    - "Beta"
-    - "Emu"
+/// member | string InternalName
+The internal name from MacroQuest("Next")
+///
 
-### {{ renderMember(type='string', name='BuildDate') }}
+/// member | string MQ2DataError
+Last Macro parsing error message
+///
 
-:   Date that MacroQuest was built
+/// member | int Parser
+Which parser engine is currently active
+///
 
-### {{ renderMember(type='string', name='Error') }}
+/// member | string Path[Option]
+Retrieves the path to the specified location. If no path is provided, the root path
+of MacroQuest (where the MacroQuest.exe lives) is returned.
 
-:   Last normal error message
+!!! Important
+    Be sure to use this member to access these paths, and do not hard code paths. These locations in MacroQuest are configurable and may not be in the default locations!
 
-### {{ renderMember(type='string', name='InternalName') }}
+| Option | Result |
+| :--- | :--- |
+| root | Returns the path to the root directory. |
+| config | Returns path to the config directory |
+| crashdumps | Returns the path to where crash dumps are stored |
+| logs | Returns the path to the logs directory |
+| mqini | Returns the path to MacroQuest.ini |
+| macros | Returns the path to the macros directory |
+| plugins | Returns the path to the plugins directory |
+| resources | Returns the path to the resources directory |
 
-:   The internal name from MacroQuest("Next")
+If no path is provided, the root path is returned.
+///
 
-### {{ renderMember(type='string', name='MQ2DataError') }}
+/// member | string SyntaxError
+Last syntax error message
+///
 
-:   Last Macro parsing error message
-
-### {{ renderMember(type='int', name='Parser') }}
-
-:   Which parser engine is currently active
-
-### {{ renderMember(type='string', name='Path', params='Option') }}
-
-:   Retrieves the path to the specified location. If no path is provided, the root path
-    of MacroQuest (where the MacroQuest.exe lives) is returned.
-
-    !!! Important
-        Be sure to use this member to access these paths, and do not hard code paths. These locations in MacroQuest are configurable and may not be in the default locations!
-
-    | Option | Result |
-    | :--- | :--- |
-    | root | Returns the path to the root directory. |
-    | config | Returns path to the config directory |
-    | crashdumps | Returns the path to where crash dumps are stored |
-    | logs | Returns the path to the logs directory |
-    | mqini | Returns the path to MacroQuest.ini |
-    | macros | Returns the path to the macros directory |
-    | plugins | Returns the path to the plugins directory |
-    | resources | Returns the path to the resources directory |
-
-    If no path is provided, the root path is returned.
-
-### {{ renderMember(type='string', name='SyntaxError') }}
-
-:   Last syntax error message
-
-### {{ renderMember(type='string', name='Version') }}
-
-:   The full version of MacroQuest
+/// member | string Version
+The full version of MacroQuest
+///
 
 ### [string][string] `To String`
 

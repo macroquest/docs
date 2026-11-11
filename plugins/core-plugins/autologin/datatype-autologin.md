@@ -9,13 +9,13 @@ Datatype providing access to AutoLogin status and profile information.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='Active')}}
+/// member | bool Active
+True when actively performing automated login
+///
 
-:   True when actively performing automated login
-
-### {{ renderMember(type='LoginProfile', name='Profile')}}
-
-:   Displays autologin profile information, also provides access to current profile information ([LoginProfile] type)
+/// member | LoginProfile Profile
+Displays autologin profile information, also provides access to current profile information ([LoginProfile] type)
+///
 <!--dt-members-end-->
 
 ## Examples

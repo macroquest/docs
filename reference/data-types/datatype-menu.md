@@ -11,29 +11,29 @@ Returns information about visible menus. Inherits [window](datatype-window.md) w
 ## Members
 <!--dt-members-start-->
 
-### {{ renderMember(type='int', name='NumVisibleMenus') }}
+/// member | int NumVisibleMenus
+returns number of currently visible menus. Ordinarily this is going to be 1 if a menu is showing and 0 if not.
+///
 
-:   returns number of currently visible menus. Ordinarily this is going to be 1 if a menu is showing and 0 if not.
+/// member | int CurrMenu
+returns the index for the currently visible menu. Ordinarily this will be 0 if a menu is open and -1 if not
+///
 
-### {{ renderMember(type='int', name='CurrMenu') }}
+/// member | string Name
+returns the name of the menu or the first item's name.
+///
 
-:   returns the index for the currently visible menu. Ordinarily this will be 0 if a menu is open and -1 if not
+/// member | int NumItems
+returns number of items in the currently open menu.
+///
 
-### {{ renderMember(type='string', name='Name') }}
+/// member | string Items[#]
+returns the Itemname specified by Index
+///
 
-:   returns the name of the menu or the first item's name.
-
-### {{ renderMember(type='int', name='NumItems') }}
-
-:   returns number of items in the currently open menu.
-
-### {{ renderMember(type='string', name='Items', params='#') }}
-
-:   returns the Itemname specified by Index
-
-### {{ renderMember(type='string', name='To String') }}
-
-:   If no menu open, returns "No Menu Open". It returns the first menu item's name when a menu is open
+/// member | string To String
+If no menu open, returns "No Menu Open". It returns the first menu item's name when a menu is open
+///
 
 <!--dt-members-end-->
 

@@ -9,7 +9,8 @@ Provides access to general information about the game and its state.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='everquest', name='EverQuest') }}
+/// member | everquest EverQuest
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

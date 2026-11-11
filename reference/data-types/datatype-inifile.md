@@ -9,15 +9,15 @@ This is the type for the ini file that was referenced from [TLO:Ini](../top-leve
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='Exists') }}
+/// member | bool Exists
+Whether the ini file exists or not.
+///
 
-:   Whether the ini file exists or not.
+/// member | inifilesection Section[opt: Section]
+A reference to the named or unnamed section of this ini file.
 
-### {{ renderMember(type='inifilesection', name='Section', params='opt: Section') }}
-
-:   A reference to the named or unnamed section of this ini file.
-
-    The index is optional. Passing an index means it will search for matches to that index. Not passing an index references all sections for operations that allow it.
+The index is optional. Passing an index means it will search for matches to that index. Not passing an index references all sections for operations that allow it.
+///
 <!--dt-members-end-->
 
 ## Examples

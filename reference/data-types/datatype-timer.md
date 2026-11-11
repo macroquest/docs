@@ -9,13 +9,13 @@ A timer data type is set in tenths of one second and counts down to zero; starti
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='OriginalValue') }}
+/// member | int OriginalValue
+Original value of the timer
+///
 
-:   Original value of the timer
-
-### {{ renderMember(type='int', name='Value') }}
-
-:   Current value of the timer
+/// member | int Value
+Current value of the timer
+///
 
 ### [string][string] `To String`
 

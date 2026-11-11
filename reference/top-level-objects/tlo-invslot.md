@@ -9,13 +9,13 @@ Object used to get information on a specific inventory slot.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='invslot', name='InvSlot', params='N') }}
+/// member | invslot InvSlot[N]
+Inventory slot by index _N_.
+///
 
-:   Inventory slot by index _N_.
-
-### {{ renderMember(type='invslot', name='InvSlot', params='SlotName') }}
-
-:   Inventory slot matching `SlotName`.
+/// member | invslot InvSlot[SlotName]
+Inventory slot matching `SlotName`.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

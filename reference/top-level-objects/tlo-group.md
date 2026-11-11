@@ -9,9 +9,9 @@ Access to all group-related information.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='group', name='Group') }}
-
-:   Retrieve information about your group
+/// member | group Group
+Retrieve information about your group
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

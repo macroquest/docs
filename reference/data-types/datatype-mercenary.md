@@ -11,34 +11,34 @@ This is the type used for mercenaries.
 <!--dt-members-start-->
 This type inherits members from [_spawn_](datatype-spawn.md).
 
-### {{ renderMember(type='int', name='AAPoints') }}
+/// member | int AAPoints
+AA Points spent on mercenary abilities
+///
 
-:   AA Points spent on mercenary abilities
+/// member | string Index
+Index
+///
 
-### {{ renderMember(type='string', name='Index') }}
+/// member | string Name
+Name of the mercenary
+///
 
-:   Index
+/// member | string Stance
+Current stance of the mercenary
+///
 
-### {{ renderMember(type='string', name='Name') }}
+/// member | string State
+Current state of the mercenary:
 
-:   Name of the mercenary
+- "DEAD"
+- "SUSPENDED"
+- "ACTIVE"
+- "UNKNOWN"
+///
 
-### {{ renderMember(type='string', name='Stance') }}
-
-:   Current stance of the mercenary
-
-### {{ renderMember(type='string', name='State') }}
-
-:   Current state of the mercenary:
-
-    - "DEAD"
-    - "SUSPENDED"
-    - "ACTIVE"
-    - "UNKNOWN"
-
-### {{ renderMember(type='int', name='StateID') }}
-
-:   Current state ID of the mercenary as a number.
+/// member | int StateID
+Current state ID of the mercenary as a number.
+///
 
 ### [string][string] `To String`
 

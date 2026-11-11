@@ -9,107 +9,107 @@ Contains details about your group
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='AnyoneMissing') }}
+/// member | bool AnyoneMissing
+True if somebody in the group is offline, in some other zone, or just simply dead.
+///
 
-:   True if somebody in the group is offline, in some other zone, or just simply dead.
+/// member | int CasterMercCount
+The number of caster dps mercenaries in your group.
+///
 
-### {{ renderMember(type='int', name='CasterMercCount') }}
+/// member | spawn Cleric
+The first member of the group that is a cleric.
+///
 
-:   The number of caster dps mercenaries in your group.
+/// member | int GroupSize
+The number of members in your group, including yourself.
+///
 
-### {{ renderMember(type='spawn', name='Cleric') }}
+/// member | int HealerMercCount
+The number of healer mercenaries in your group.
+///
 
-:   The first member of the group that is a cleric.
+/// member | int Injured[#]
+The numbers of people in the group that has an hp percent lower than _#_.
+///
 
-### {{ renderMember(type='int', name='GroupSize') }}
+/// member | groupmember Leader
+The leader of the group.
+///
 
-:   The number of members in your group, including yourself.
+/// member | int LowMana[#]
+The number of people in the group that have a mana percent lower than _#_.
+///
 
-### {{ renderMember(type='int', name='HealerMercCount') }}
+/// member | groupmember MainAssist
+The main assist of the group, if one is assigned.
+///
 
-:   The number of healer mercenaries in your group.
+/// member | groupmember MainTank
+The main tank of the group, if one is assigned.
+///
 
-### {{ renderMember(type='int', name='Injured', params='#') }}
+/// member | groupmember MarkNpc
+The group member who can mark NPCs, if one is assigned.
+///
 
-:   The numbers of people in the group that has an hp percent lower than _#_.
+/// member | groupmember MasterLooter
+The master looter of the group, if one is assigned.
+///
 
-### {{ renderMember(type='groupmember', name='Leader') }}
+/// member | int MeleeMercCount
+The number of melee mercenaries in your group.
+///
 
-:   The leader of the group.
+/// member | groupmember Member[#]
+The _Nth_ member of your group. 0 is always you. 1 is the first person in the group list, etc.
+///
 
-### {{ renderMember(type='int', name='LowMana', params='#') }}
+/// member | int Members[Name]
+The group member of your group identified by _Name_.
+///
 
-:   The number of people in the group that have a mana percent lower than _#_.
+/// member | int Members
+The total number of group members, excluding yourself.
+///
 
-### {{ renderMember(type='groupmember', name='MainAssist') }}
+/// member | int MercenaryCount
+The total number of mercenaries that are in the group.
+///
 
-:   The main assist of the group, if one is assigned.
+/// member | groupmember MouseOver
+The name of the group member that the mouse is currently hovering over in the group window, if any.
 
-### {{ renderMember(type='groupmember', name='MainTank') }}
+!!! note
 
-:   The main tank of the group, if one is assigned.
+    You can hover over your own name in the player window where you see your hp and it will return you.
 
-### {{ renderMember(type='groupmember', name='MarkNpc') }}
+??? example "Examples"
 
-:   The group member who can mark NPCs, if one is assigned.
+    ```
+    /echo Im hovering my mouse over ${Group.MouseOver.Name} which has ths spawnid: ${Group.MouseOver.ID}
+    ```
 
-### {{ renderMember(type='groupmember', name='MasterLooter') }}
+    ```
+    /bct ${Group.MouseOver.Name} hi there I dont want to change my target just to tell you: please heal ${Me.Mame}
+    ```
 
-:   The master looter of the group, if one is assigned.
+    ```
+    /bct soandso //casting "Complete Heal" -targetid|${Group.MouseOver.ID}
+    ```
 
-### {{ renderMember(type='int', name='MeleeMercCount') }}
+    ```
+    /bct ${Group.MouseOver.CleanName} //setprio 2
+    ```
+///
 
-:   The number of melee mercenaries in your group.
+/// member | groupmember Puller
+The puller of the group, if one is assigned.
+///
 
-### {{ renderMember(type='groupmember', name='Member', params='#') }}
-
-:   The _Nth_ member of your group. 0 is always you. 1 is the first person in the group list, etc.
-
-### {{ renderMember(type='int', name='Members', params='Name') }}
-
-:   The group member of your group identified by _Name_.
-
-### {{ renderMember(type='int', name='Members') }}
-
-:   The total number of group members, excluding yourself.
-
-### {{ renderMember(type='int', name='MercenaryCount') }}
-
-:   The total number of mercenaries that are in the group.
-
-### {{ renderMember(type='groupmember', name='MouseOver') }}
-
-:   The name of the group member that the mouse is currently hovering over in the group window, if any.
-
-    !!! note
-
-        You can hover over your own name in the player window where you see your hp and it will return you.
-
-    ??? example "Examples"
-
-        ```
-        /echo Im hovering my mouse over ${Group.MouseOver.Name} which has ths spawnid: ${Group.MouseOver.ID}
-        ```
-
-        ```
-        /bct ${Group.MouseOver.Name} hi there I dont want to change my target just to tell you: please heal ${Me.Mame}
-        ```
-
-        ```
-        /bct soandso //casting "Complete Heal" -targetid|${Group.MouseOver.ID}
-        ```
-
-        ```
-        /bct ${Group.MouseOver.CleanName} //setprio 2
-        ```
-
-### {{ renderMember(type='groupmember', name='Puller') }}
-
-:   The puller of the group, if one is assigned.
-
-### {{ renderMember(type='int', name='TankMercCount') }}
-
-:   The number of tank mercenaries in your group.
+/// member | int TankMercCount
+The number of tank mercenaries in your group.
+///
 
 ### [string][string] `To String`
 

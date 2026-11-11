@@ -11,13 +11,13 @@ The useful thing about `${LastSpawn[-1]}` is just being able to get the first sp
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='spawn', name='LastSpawn', params='N') }}
+/// member | spawn LastSpawn[N]
+The nth latest spawn (chronological order)
+///
 
-:   The nth latest spawn (chronological order)
-
-### {{ renderMember(type='spawn', name='LastSpawn', params='-N') }}
-
-:   The nth oldest spawn (chronological order)
+/// member | spawn LastSpawn[-N]
+The nth oldest spawn (chronological order)
+///
 <!--tlo-forms-end-->
 
 ## Usage

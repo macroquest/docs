@@ -9,29 +9,29 @@ Represents a single objective of an achievement
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='Completed') }}
+/// member | bool Completed
+True if the objective has been completed.
+///
 
-:   True if the objective has been completed.
+/// member | int Count
+The current count recorded by the objective.
+///
 
-### {{ renderMember(type='int', name='Count') }}
+/// member | string Description
+Text describing this objective.
+///
 
-:   The current count recorded by the objective.
+/// member | int ID
+The objective's unique ID.
+///
 
-### {{ renderMember(type='string', name='Description') }}
+/// member | int Index
+Visual index of the objective as displayed in the achievement window. Can be used with **Achievement.ObjectiveByIndex**.
+///
 
-:   Text describing this objective.
-
-### {{ renderMember(type='int', name='ID') }}
-
-:   The objective's unique ID.
-
-### {{ renderMember(type='int', name='Index') }}
-
-:   Visual index of the objective as displayed in the achievement window. Can be used with **Achievement.ObjectiveByIndex**.
-
-### {{ renderMember(type='int', name='RequiredCount') }}
-
-:   The total count required to be complete the objective. For objectives that don't require a count, this will be zero.
+/// member | int RequiredCount
+The total count required to be complete the objective. For objectives that don't require a count, this will be zero.
+///
 <!--dt-members-end-->
 
 ## Example

@@ -9,7 +9,8 @@ Object that has access to members that provide information on your raid.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='raid', name='Raid') }}
+/// member | raid Raid
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

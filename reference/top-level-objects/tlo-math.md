@@ -8,9 +8,9 @@ Creates a Math object which gives allows access to the math type members.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='math', name='Math') }}
-
-:   Returns the math object which is used to perform math operations.
+/// member | math Math
+Returns the math object which is used to perform math operations.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

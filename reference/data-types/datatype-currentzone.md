@@ -26,58 +26,58 @@ classDiagram
 <!--dt-members-start-->
 This type inherits members from [_zone_](datatype-zone.md).
 
-### {{ renderMember(type='bool', name='Dungeon') }}
+/// member | bool Dungeon
+Same as Indoor.
+///
 
-:   Same as Indoor.
+/// member | int ID
+the ID of the zone.
+///
 
-### {{ renderMember(type='int', name='ID') }}
+/// member | bool Indoor
+True if this is an Indoor zone.
+///
 
-:   the ID of the zone.
+/// member | float MaxClip
+Maximum clip plane allowed in zone.
+///
 
-### {{ renderMember(type='bool', name='Indoor') }}
+/// member | float MinClip
+Minimum clip plane allowed in zone.
+///
 
-:   True if this is an Indoor zone.
+/// member | string Name
+Full zone name.
+///
 
-### {{ renderMember(type='float', name='MaxClip') }}
+/// member | bool NoBind
+True if binding isn't allowed in this zone outside specified bindable areas.
+///
 
-:   Maximum clip plane allowed in zone.
+/// member | bool Outdoor
+True if this is an outdoor zone.
+///
 
-### {{ renderMember(type='float', name='MinClip') }}
+/// member | string ShortName
+Short zone name
+///
 
-:   Minimum clip plane allowed in zone.
+/// member | int Type
+Zone type
 
-### {{ renderMember(type='string', name='Name') }}
+| Value | Meaning |
+| :--- | :--- |
+| 0 | Indoor Dungeon |
+| 1 | Outdoor |
+| 2 | Outdoor City |
+| 3 | Dungeon City |
+| 4 | Indoor City |
+| 5 | Outdoor Dungeon |
+///
 
-:   Full zone name.
-
-### {{ renderMember(type='bool', name='NoBind') }}
-
-:   True if binding isn't allowed in this zone outside specified bindable areas.
-
-### {{ renderMember(type='bool', name='Outdoor') }}
-
-:   True if this is an outdoor zone.
-
-### {{ renderMember(type='string', name='ShortName') }}
-
-:   Short zone name
-
-### {{ renderMember(type='int', name='Type') }}
-
-:   Zone type
-
-    | Value | Meaning |
-    | :--- | :--- |
-    | 0 | Indoor Dungeon |
-    | 1 | Outdoor |
-    | 2 | Outdoor City |
-    | 3 | Dungeon City |
-    | 4 | Indoor City |
-    | 5 | Outdoor Dungeon |
-
-### {{ renderMember(type='int', name='ZoneType') }}
-
-:   Same as Type
+/// member | int ZoneType
+Same as Type
+///
 
 ### [string][string] `To String`
 

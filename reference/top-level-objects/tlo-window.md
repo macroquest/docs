@@ -11,9 +11,9 @@ You can display a list of window names using the /windows command or by using th
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='window', name='Window', params='Name') }}
-
-:   Retrieve window by searching for the first window matching `Name`.
+/// member | window Window[Name]
+Retrieve window by searching for the first window matching `Name`.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

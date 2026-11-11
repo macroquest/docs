@@ -9,9 +9,9 @@ Access to objects of type corpse, which is the currently active corpse (ie. the 
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='corpse', name='Corpse') }}
-
-:   Corpse you are looting.
+/// member | corpse Corpse
+Corpse you are looting.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

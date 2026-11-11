@@ -11,46 +11,46 @@ Of note: The FindItemBank with ItemSlot REQUIRES that bank item containers be op
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='item', name='FindItemBank', params='name|id') }}
+/// member | item FindItemBank[name|id]
+Search for an item in your bank using the given item id, or partial name match.
 
-:   Search for an item in your bank using the given item id, or partial name match.
+???+ example
 
-    ???+ example
+    Looks for an item in your bank with the name swirling in it, and prints the ID.
 
-        Looks for an item in your bank with the name swirling in it, and prints the ID.
+    === "MQScript"
 
-        === "MQScript"
+        ```
+        /echo ${FindItemBank[swirling].ID}
+        ```
 
-            ```
-            /echo ${FindItemBank[swirling].ID}
-            ```
+    === "Lua"
 
-        === "Lua"
-
-            ```lua
-            print(mq.TLO.FindItemBank("swirling").ID())
-            ```
+        ```lua
+        print(mq.TLO.FindItemBank("swirling").ID())
+        ```
+///
 
 
-### {{ renderMember(type='item', name='FindItemBank', params='=name') }}
+/// member | item FindItemBank[=name]
+Search for an item in your bank using exact name match (case insensitive).
 
-:   Search for an item in your bank using exact name match (case insensitive).
+???+ example
 
-    ???+ example
+    Looks for the Cleric Epic (by exact match) in your bank and prints its ID.
 
-        Looks for the Cleric Epic (by exact match) in your bank and prints its ID.
+    === "MQScript"
 
-        === "MQScript"
+        ```
+        /echo ${FindItemBank[=Water Sprinkler of Nem Ankh].ID}
+        ```
 
-            ```
-            /echo ${FindItemBank[=Water Sprinkler of Nem Ankh].ID}
-            ```
+    === "Lua"
 
-        === "Lua"
-
-            ```lua
-            print(mq.TLO.FindItemBank("=Water Sprinkler of Nem Ankh").ID())
-            ```
+        ```lua
+        print(mq.TLO.FindItemBank("=Water Sprinkler of Nem Ankh").ID())
+        ```
+///
 <!--tlo-forms-end-->
 <!--tlo-linkrefs-start-->
 [item]: ../data-types/datatype-item.md

@@ -9,17 +9,17 @@ This datatype deals strictly with information items on a keyring.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='Index') }}
+/// member | int Index
+Where on the keyring list
+///
 
-:   Where on the keyring list
+/// member | item Item
+The item on the keyring
+///
 
-### {{ renderMember(type='item', name='Item') }}
-
-:   The item on the keyring
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   name of the keyring item
+/// member | string Name
+name of the keyring item
+///
 <!--dt-members-end-->
 
 ## Examples

@@ -10,13 +10,12 @@ Contains information about point merchants, such as LDON merchants. Inherits [sp
 
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='pointmerchantitem', name='Item', params='#|name') }}
+/// member | pointmerchantitem Item[#|name]
+///
 
-:   
-
-### {{ renderMember(type='string', name='To String') }}
-
-:   Returns TRUE if merchant window is visible, otherwise FALSE
+/// member | string To String
+Returns TRUE if merchant window is visible, otherwise FALSE
+///
 
 <!--dt-members-end-->
 

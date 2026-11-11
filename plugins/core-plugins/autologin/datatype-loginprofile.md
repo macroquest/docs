@@ -9,41 +9,41 @@ Datatype providing access to AutoLogin profile information.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='Account')}}
+/// member | string Account
+Account name associated with the profile
+///
 
-:   Account name associated with the profile
+/// member | string Character
+Character name from the profile
+///
 
-### {{ renderMember(type='string', name='Character')}}
+/// member | string Server
+Server name from the profile
+///
 
-:   Character name from the profile
+/// member | string Profile
+Profile group name (if part of a profile group)
+///
 
-### {{ renderMember(type='string', name='Server')}}
+/// member | string HotKey
+Hotkey assigned to the profile (if any)
+///
 
-:   Server name from the profile
+/// member | class Class
+Character's class as shortname, also provides access to class type members.
+///
 
-### {{ renderMember(type='string', name='Profile')}}
+/// member | int Level
+Character's level
+///
 
-:   Profile group name (if part of a profile group)
+/// member | string CustomCharacterIni
+Custom client INI file path if specified in the profile
+///
 
-### {{ renderMember(type='string', name='HotKey')}}
-
-:   Hotkey assigned to the profile (if any)
-
-### {{ renderMember(type='class', name='Class')}}
-
-:   Character's class as shortname, also provides access to class type members.
-
-### {{ renderMember(type='int', name='Level')}}
-
-:   Character's level
-
-### {{ renderMember(type='string', name='CustomCharacterIni')}}
-
-:   Custom client INI file path if specified in the profile
-
-### {{ renderMember(type='string', name='ToString') }}
-
-:   Returns formatted profile info as "Profile: Character (Server)"
+/// member | string ToString
+Returns formatted profile info as "Profile: Character (Server)"
+///
 <!--dt-members-end-->
 
 ## Examples
