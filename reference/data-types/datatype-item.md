@@ -8,674 +8,673 @@ Contains the properties that describe an item.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='AC') }}
+/// member | int AC
+AC value on item
+///
+
+/// member | int Accuracy
+Accuracy
+///
+
+/// member | int AGI
+AGI value on item
+///
+
+/// member | int Attack
+Attack value on item
+///
+
+/// member | bool Attunable
+Attunable?
+///
+
+/// member | int AugRestrictions
+Augment Restrictions
+///
+
+/// member | int Augs
+Number of augs on this item
+///
+
+/// member | augtype AugSlot
+Retrieve the augment in the specified slot number.
+///
+
+/// member | int AugSlot1
+Returns the type of agument in slot 1
+///
+
+/// member | int AugSlot2
+Returns the type of agument in slot 2
+///
+
+/// member | int AugSlot3
+Returns the type of agument in slot 3
+///
+
+/// member | int AugSlot4
+Returns the type of agument in slot 4
+///
+
+/// member | int AugSlot5
+Returns the type of agument in slot 5
+///
+
+/// member | int AugSlot6
+Returns the type of agument in slot 6
+///
+
+/// member | int AugType
+Augmentation slot type mask.
+///
+
+/// member | int Avoidance
+Avoidance
+///
+
+/// member | BaneDMG
+???
+///
+
+/// member | BaneDMGType
+???
+///
+
+/// member | int64 BuyPrice
+The cost to buy this item from active merchant
+///
+
+/// member | bool CanUse
+TRUE if you can use the item, otherwise FALSE
+///
+
+/// member | float CastTime
+Spell effect's cast time (in seconds)
+///
+
+/// member | int CHA
+CHA value on item
+///
+
+/// member | int Charges
+Charges
+///
+
+/// member | int Clairvoyance
+Clairvoyance
+///
+
+/// member | string Class[N]
+Returns the _Nth_ long class name of the listed classes on an item. Items suitable for ALL classes will effectively have all 17 classes listed.
+///
+
+/// member | int Classes
+The number of classes that can use the item. Items suitable for ALL classes will return 16.
+///
+
+/// member | itemspell Clicky
+Activatable spell effect, if any.
+///
+
+/// member | bool Collectible
+TRUE if the item is a collectible, otherwise FALSE
+///
 
-:   AC value on item
+/// member | Combinable
+???
+///
 
-### {{ renderMember(type='int', name='Accuracy') }}
+/// member | int CombatEffects
+CombatEffects
+///
 
-:   Accuracy
+/// member | int Container
+Number of slots, if this is a container
+///
 
-### {{ renderMember(type='int', name='AGI') }}
+/// member | int ContentSize
+???
+///
 
-:   AGI value on item
+/// member | int Damage
+Base Damage of the item
+///
 
-### {{ renderMember(type='int', name='Attack') }}
+/// member | int DamageShieldMitigation
+Damage Shield Mitigation
+///
 
-:   Attack value on item
+/// member | int DamShield
+Damage Shield value on item
+///
 
-### {{ renderMember(type='bool', name='Attunable') }}
+/// member | int Deities
+The number of deities that can use the item. Items with no deity restrictions will return 0.
+///
 
-:   Attunable?
+/// member | string Deity[N]
+Returns the _Nth_ deity of the listed deities on an item. Items with no deity restrictions will return NULL for all values of _N_.
+///
 
-### {{ renderMember(type='int', name='AugRestrictions') }}
+/// member | Delay
+???
+///
 
-:   Augment Restrictions
+/// member | int DEX
+DEX value on item
+///
 
-### {{ renderMember(type='int', name='Augs') }}
+/// member | DMGBonus
+???
+///
 
-:   Number of augs on this item
+/// member | string DMGBonusType
+"None", "Magic", "Fire", "Cold", "Poison", "Disease"
+///
 
-### {{ renderMember(type='augtype', name='AugSlot') }}
+/// member | int DoTShielding
+DoT Shielding
+///
 
-:   Retrieve the augment in the specified slot number.
+/// member | string EffectType
+Spell effect type ([see below](datatype-item.md#spell-effect-types) for spell effect types)
+///
 
-### {{ renderMember(type='int', name='AugSlot1') }}
+/// member | int Endurance
+Endurance
+///
 
-:   Returns the type of agument in slot 1
+/// member | int EnduranceRegen
+Endurance regen
+///
 
-### {{ renderMember(type='int', name='AugSlot2') }}
+/// member | evolving Evolving
+Does this item have Evolving experience on?
+///
 
-:   Returns the type of agument in slot 2
+/// member | bool Expendable
+???
+///
 
-### {{ renderMember(type='int', name='AugSlot3') }}
+/// member | itemspell Familiar
+Familiar spell effect, if any.
+///
 
-:   Returns the type of agument in slot 3
+/// member | int FirstFreeSlot
+???
+///
 
-### {{ renderMember(type='int', name='AugSlot4') }}
+/// member | itemspell Focus
+First focus effect, if any.
+///
 
-:   Returns the type of agument in slot 4
+/// member | itemspell Focus2
+Second focus effect, if any.
+///
 
-### {{ renderMember(type='int', name='AugSlot5') }}
+/// member | FocusID
+???
+///
 
-:   Returns the type of agument in slot 5
+/// member | int FreeStack
+The number of items needed to fill all the stacks of the item you have (with a stacksize of 20).
 
-### {{ renderMember(type='int', name='AugSlot6') }}
+If you have 3 stacks (1, 10, 20 in those stacks), you have room for 60 total and you have 31 on you, so **FreeStack** would return 29.
+///
+
+/// member | int Haste
+Haste value on item
+///
+
+/// member | int HealAmount
+HealAmount (regen?)
+///
+
+/// member | bool Heirloom
+???
+///
+
+/// member | int HeroicAGI
+Heroic AGI value on item
+///
+
+/// member | int HeroicCHA
+Heroic CHA value on item
+///
+
+/// member | int HeroicDEX
+Heroic DEX value on item
+///
+
+/// member | int HeroicINT
+Heroic INT value on item
+///
+
+/// member | int HeroicSTA
+Heroic STA value on item
+///
+
+/// member | int HeroicSTR
+Heroic STR value on item
+///
+
+/// member | int HeroicSvCold
+Heroic SvCold value on item
+///
+
+/// member | int HeroicSvCorruption
+Heroic SvCorruption value on item
+///
+
+/// member | int HeroicSvDisease
+Heroic SvDisease value on item
+///
+
+/// member | int HeroicSvFire
+Heroic SvFire value on item
+///
+
+/// member | int HeroicSvMagic
+Heroic SvMagic value on item
+///
+
+/// member | int HeroicSvPoison
+Heroic SvPoison value on item
+///
+
+/// member | int HeroicWIS
+Heroic WIS value on item
+///
+
+/// member | int HP
+HP value on item
+///
+
+/// member | int HPRegen
+HPRegen value on item
+///
+
+/// member | int Icon
+Item Icon
+///
+
+/// member | int ID
+Item ID
+///
+
+/// member | IDFile
+???
+///
+
+/// member | IDFile2
+???
+///
+
+/// member | itemspell Illusion
+Illusion spell effect, if any.
+///
+
+/// member | float InstrumentMod
+Instrument Modifier Value
+///
+
+/// member | InstrumentType
+???
+///
+
+/// member | int INT
+INT value on item
+///
 
-:   Returns the type of agument in slot 6
+/// member | int InvSlot
+Inventory Slot Number (Historic and now deprecated, use ItemSlot and ItemSlot2)
+///
 
-### {{ renderMember(type='int', name='AugType') }}
+/// member | item Item[N]
+Item in _Nth_ slot, if this is a container or has augs
+///
 
-:   Augmentation slot type mask.
+/// member | float ItemDelay
+Returns the delay of the weapon
+///
 
-### {{ renderMember(type='int', name='Avoidance') }}
+/// member | string ItemLink[CLICKABLE]
+just prints the actual hexlink for an item (not clickable) unless \[CLICKABLE] is included
+///
 
-:   Avoidance
+/// member | int Items
+Number of items, if this is a container.
+///
 
-### {{ renderMember(name='BaneDMG') }}
+/// member | int ItemSlot
+Item Slot number see [Slot Names](../../reference/general/slot-names.md)
+///
 
-:   ???
+/// member | int ItemSlot2
+Item Slot subnumber see [Slot Names](../../reference/general/slot-names.md)
+///
 
-### {{ renderMember(name='BaneDMGType') }}
+/// member | LDoNCost
+???
+///
 
-:   ???
+/// member | string LDoNTheme
+"All", "Deepest Guk", "Miragul's", "Mistmoore", "Rujarkian", "Takish", "Unknown"
+///
 
-### {{ renderMember(type='int64', name='BuyPrice') }}
+/// member | Level
+???
+///
 
-:   The cost to buy this item from active merchant
+/// member | Light
+???
+///
 
-### {{ renderMember(type='bool', name='CanUse') }}
+/// member | bool Lore
+Lore?
+///
 
-:   TRUE if you can use the item, otherwise FALSE
+/// member | bool LoreEquipped
+Lore Equipped?
+///
 
-### {{ renderMember(type='float', name='CastTime') }}
+/// member | LoreText
+???
+///
 
-:   Spell effect's cast time (in seconds)
+/// member | int Luck
+???
+///
 
-### {{ renderMember(type='int', name='CHA') }}
+/// member | bool Magic
+Magic?
+///
 
-:   CHA value on item
+/// member | int Mana
+Mana value on item
+///
 
-### {{ renderMember(type='int', name='Charges') }}
+/// member | int ManaRegen
+ManaRegen value on item
+///
 
-:   Charges
+/// member | int MaxLuck
+???
+///
 
-### {{ renderMember(type='int', name='Clairvoyance') }}
+/// member | int MaxPower
+Max power on an power source
+///
 
-:   Clairvoyance
+/// member | int MerchQuantity
+Quantity of item active merchant has
+///
 
-### {{ renderMember(type='string', name='Class', params='N') }}
+/// member | int MinLuck
+???
+///
 
-:   Returns the _Nth_ long class name of the listed classes on an item. Items suitable for ALL classes will effectively have all 17 classes listed.
+/// member | itemspell Mount
+Mount spell effect, if any.
+///
 
-### {{ renderMember(type='int', name='Classes') }}
+/// member | string Name
+Name
+///
 
-:   The number of classes that can use the item. Items suitable for ALL classes will return 16.
+/// member | bool NoDestroy
+///
 
-### {{ renderMember(type='itemspell', name='Clicky') }}
+/// member | bool NoDrop
+No Trade?
+///
 
-:   Activatable spell effect, if any.
+/// member | bool NoRent
+Temporary?
+///
 
-### {{ renderMember(type='bool', name='Collectible') }}
+/// member | bool NoTrade
+Synonym for NoDrop
+///
 
-:   TRUE if the item is a collectible, otherwise FALSE
+/// member | int Open
+???
+///
 
-### {{ renderMember(name='Combinable') }}
+/// member | int OrnamentationIcon
+???
+///
 
-:   ???
+/// member | float PctPower
+???
+///
 
-### {{ renderMember(type='int', name='CombatEffects') }}
+/// member | PendingLore
+???
+///
 
-:   CombatEffects
+/// member | int Power
+Power left on power source
+///
 
-### {{ renderMember(type='int', name='Container') }}
+/// member | bool Prestige
+Prestige item?
+///
 
-:   Number of slots, if this is a container
+/// member | itemspell Proc
+Combat proc effect.
+///
 
-### {{ renderMember(type='int', name='ContentSize') }}
+/// member | ProcRate
+???
+///
 
-:   ???
+/// member | int Purity
+Purity of item
+///
 
-### {{ renderMember(type='int', name='Damage') }}
+/// member | Quality
+???
+///
 
-:   Base Damage of the item
+/// member | bool Quest
+Quest item?
+///
 
-### {{ renderMember(type='int', name='DamageShieldMitigation') }}
+/// member | string Race[N]
+Returns the _Nth_ long race name of the listed races on an item. Items suitable for all races will effectively have all 15 races listed.
+///
 
-:   Damage Shield Mitigation
 
-### {{ renderMember(type='int', name='DamShield') }}
+/// member | int Races
+The number of races that can use the item. Items suitable for ALL races will return 15.
+///
 
-:   Damage Shield value on item
+/// member | int Range
+???
+///
 
-### {{ renderMember(type='int', name='Deities') }}
+/// member | int RecommendedLevel
+Returns the Recommended Level of an item. Items with no recommended level will return 0.
+///
 
-:   The number of deities that can use the item. Items with no deity restrictions will return 0.
+/// member | int RefCount
+???
+///
 
-### {{ renderMember(type='string', name='Deity', params='N') }}
+/// member | int RequiredLevel
+Returns the Required Level of an item. Items with no required level will return 0.
+///
 
-:   Returns the _Nth_ deity of the listed deities on an item. Items with no deity restrictions will return NULL for all values of _N_.
+/// member | itemspell Scroll
+Scroll effect, if any.
+///
 
-### {{ renderMember(name='Delay') }}
+/// member | int SellPrice
+Price to sell this item at this merchant
+///
 
-:   ???
+/// member | int Shielding
+Shielding
+///
 
-### {{ renderMember(type='int', name='DEX') }}
+/// member | int Size
+Item size:  1 SMALL  2 MEDIUM  3 LARGE  4 GIANT
+///
 
-:   DEX value on item
+/// member | int SizeCapacity
+If item is a container, size of items it can hold.
 
-### {{ renderMember(name='DMGBonus') }}
+| Value | Meaning |
+| 1 | SMALL |
+| 2 | MEDIUM |
+| 3 | LARGE |
+| 4 | GIANT |
+///
 
-:   ???
+/// member | Skill
+???
+///
 
-### {{ renderMember(type='string', name='DMGBonusType') }}
+/// member | int SkillModMax
+???
+///
 
-:   "None", "Magic", "Fire", "Cold", "Poison", "Disease"
+/// member | int SkillModValue
+???
+///
 
-### {{ renderMember(type='int', name='DoTShielding') }}
+/// member | int SlotsUsedByItem
+???
+///
 
-:   DoT Shielding
+/// member | spell Spell
+Spell effect
+///
 
-### {{ renderMember(type='string', name='EffectType') }}
+/// member | int SpellDamage
+Spell damage
+///
 
-:   Spell effect type ([see below](datatype-item.md#spell-effect-types) for spell effect types)
+/// member | int SpellShield
+SpellShield
+///
 
-### {{ renderMember(type='int', name='Endurance') }}
+/// member | int STA
+STA value on item
+///
 
-:   Endurance
+/// member | int Stack
+Number of items in the stack
+///
 
-### {{ renderMember(type='int', name='EnduranceRegen') }}
+/// member | bool Stackable
+Stackable?
+///
 
-:   Endurance regen
+/// member | int StackCount
+The total number of the stackable item in your inventory
+///
 
-### {{ renderMember(type='evolving', name='Evolving') }}
+/// member | int Stacks
+Number of stacks of the item in your inventory
+///
 
-:   Does this item have Evolving experience on?
+/// member | int StackSize
+Maximum number if items that can be in the stack
+///
 
-### {{ renderMember(type='bool', name='Expendable') }}
+/// member | int STR
+STR value on item
+///
 
-:   ???
+/// member | int StrikeThrough
+StrikeThrough
+///
 
-### {{ renderMember(type='itemspell', name='Familiar') }}
+/// member | int StunResist
+Stun resist
+///
 
-:   Familiar spell effect, if any.
+/// member | Summoned
+???
+///
 
-### {{ renderMember(type='int', name='FirstFreeSlot') }}
+/// member | int svCold
+svCold value on item
+///
 
-:   ???
+/// member | int svCorruption
+svCorruption value on item
+///
 
-### {{ renderMember(type='itemspell', name='Focus') }}
+/// member | int svDisease
+svDisease value on item
+///
 
-:   First focus effect, if any.
+/// member | int svFire
+svFire value on item
+///
 
-### {{ renderMember(type='itemspell', name='Focus2') }}
+/// member | int svMagic
+svMagic value on item
+///
 
-:   Second focus effect, if any.
+/// member | int svPoison
+svPoison value on item
+///
 
-### {{ renderMember(name='FocusID') }}
+/// member | ticks Timer
+Returns the number of ticks remaining on an item recast timer
+///
 
-:   ???
+/// member | int TimerReady
+Returns the number of seconds remaining on an item recast timer
+///
 
-### {{ renderMember(type='int', name='FreeStack') }}
+/// member | bool Tradeskills
+Tradeskills?
+///
 
-:   The number of items needed to fill all the stacks of the item you have (with a stacksize of 20).
+/// member | int Tribute
+Tribute value of the item
+///
 
-    If you have 3 stacks (1, 10, 20 in those stacks), you have room for 60 total and you have 31 on you, so **FreeStack** would return 29.
+/// member | string Type
+Type
+///
 
-### {{ renderMember(type='int', name='Haste') }}
+/// member | int Value
+Item value in coppers
+///
 
-:   Haste value on item
+/// member | int Weight
+Item weight
+///
 
-### {{ renderMember(type='int', name='HealAmount') }}
+/// member | WeightReduction
+???
+///
 
-:   HealAmount (regen?)
+/// member | int WIS
+WIS value on item
+///
 
-### {{ renderMember(type='bool', name='Heirloom') }}
+/// member | itemspell Worn
+Passive worn effect, if any.
+///
 
-::   ???
+/// member | invslot WornSlot[N]
+The _Nth_ invslot this item can be worn in (fingers/ears count as 2 slots)
+///
 
-### {{ renderMember(type='int', name='HeroicAGI') }}
+/// member | bool WornSlot[name]
+Can item be worn in invslot with this _name_? (worn slots only)
+///
 
-:   Heroic AGI value on item
-
-### {{ renderMember(type='int', name='HeroicCHA') }}
-
-:   Heroic CHA value on item
-
-### {{ renderMember(type='int', name='HeroicDEX') }}
-
-:   Heroic DEX value on item
-
-### {{ renderMember(type='int', name='HeroicINT') }}
-
-:   Heroic INT value on item
-
-### {{ renderMember(type='int', name='HeroicSTA') }}
-
-:   Heroic STA value on item
-
-### {{ renderMember(type='int', name='HeroicSTR') }}
-
-:   Heroic STR value on item
-
-### {{ renderMember(type='int', name='HeroicSvCold') }}
-
-:   Heroic SvCold value on item
-
-### {{ renderMember(type='int', name='HeroicSvCorruption') }}
-
-:   Heroic SvCorruption value on item
-
-### {{ renderMember(type='int', name='HeroicSvDisease') }}
-
-:   Heroic SvDisease value on item
-
-### {{ renderMember(type='int', name='HeroicSvFire') }}
-
-:   Heroic SvFire value on item
-
-### {{ renderMember(type='int', name='HeroicSvMagic') }}
-
-:   Heroic SvMagic value on item
-
-### {{ renderMember(type='int', name='HeroicSvPoison') }}
-
-:   Heroic SvPoison value on item
-
-### {{ renderMember(type='int', name='HeroicWIS') }}
-
-:   Heroic WIS value on item
-
-### {{ renderMember(type='int', name='HP') }}
-
-:   HP value on item
-
-### {{ renderMember(type='int', name='HPRegen') }}
-
-:   HPRegen value on item
-
-### {{ renderMember(type='int', name='Icon') }}
-
-:   Item Icon
-
-### {{ renderMember(type='int', name='ID') }}
-
-:   Item ID
-
-### {{ renderMember(name='IDFile') }}
-
-:   ???
-
-### {{ renderMember(name='IDFile2') }}
-
-:   ???
-
-### {{ renderMember(type='itemspell', name='Illusion') }}
-
-:   Illusion spell effect, if any.
-
-### {{ renderMember(type='float', name='InstrumentMod') }}
-
-:   Instrument Modifier Value
-
-### {{ renderMember(name='InstrumentType') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='INT') }}
-
-:   INT value on item
-
-### {{ renderMember(type='int', name='InvSlot') }}
-
-:   Inventory Slot Number (Historic and now deprecated, use ItemSlot and ItemSlot2)
-
-### {{ renderMember(type='item', name='Item', params='N') }}
-
-:   Item in _Nth_ slot, if this is a container or has augs
-
-### {{ renderMember(type='float', name='ItemDelay') }}
-
-:   Returns the delay of the weapon
-
-### {{ renderMember(type='string', name='ItemLink', params='CLICKABLE') }}
-
-:   just prints the actual hexlink for an item (not clickable) unless \[CLICKABLE] is included
-
-### {{ renderMember(type='int', name='Items') }}
-
-:   Number of items, if this is a container.
-
-### {{ renderMember(type='int', name='ItemSlot') }}
-
-:   Item Slot number see [Slot Names](../../reference/general/slot-names.md)
-
-### {{ renderMember(type='int', name='ItemSlot2') }}
-
-:   Item Slot subnumber see [Slot Names](../../reference/general/slot-names.md)
-
-### {{ renderMember(name='LDoNCost') }}
-
-:   ???
-
-### {{ renderMember(type='string', name='LDoNTheme') }}
-
-:   "All", "Deepest Guk", "Miragul's", "Mistmoore", "Rujarkian", "Takish", "Unknown"
-
-### {{ renderMember(name='Level') }}
-
-:   ???
-
-### {{ renderMember(name='Light') }}
-
-:   ???
-
-### {{ renderMember(type='bool', name='Lore') }}
-
-:   Lore?
-
-### {{ renderMember(type='bool', name='LoreEquipped') }}
-
-:   Lore Equipped?
-
-### {{ renderMember(name='LoreText') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='Luck') }}
-
-:   ???
-
-### {{ renderMember(type='bool', name='Magic') }}
-
-:   Magic?
-
-### {{ renderMember(type='int', name='Mana') }}
-
-:   Mana value on item
-
-### {{ renderMember(type='int', name='ManaRegen') }}
-
-:   ManaRegen value on item
-
-### {{ renderMember(type='int', name='MaxLuck') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='MaxPower') }}
-
-:   Max power on an power source
-
-### {{ renderMember(type='int', name='MerchQuantity') }}
-
-:   Quantity of item active merchant has
-
-### {{ renderMember(type='int', name='MinLuck') }}
-
-:   ???
-
-### {{ renderMember(type='itemspell', name='Mount') }}
-
-:   Mount spell effect, if any.
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   Name
-
-### {{ renderMember(type='bool', name='NoDestroy') }}
-
-:
-
-### {{ renderMember(type='bool', name='NoDrop') }}
-
-:   No Trade?
-
-### {{ renderMember(type='bool', name='NoRent') }}
-
-:   Temporary?
-
-### {{ renderMember(type='bool', name='NoTrade') }}
-
-:   Synonym for NoDrop
-
-### {{ renderMember(type='int', name='Open') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='OrnamentationIcon') }}
-
-:   ???
-
-### {{ renderMember(type='float', name='PctPower') }}
-
-:   ???
-
-### {{ renderMember(name='PendingLore') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='Power') }}
-
-:   Power left on power source
-
-### {{ renderMember(type='bool', name='Prestige') }}
-
-:  Prestige item?
-
-### {{ renderMember(type='itemspell', name='Proc') }}
-
-:   Combat proc effect.
-
-### {{ renderMember(name='ProcRate') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='Purity') }}
-
-:   Purity of item
-
-### {{ renderMember(name='Quality') }}
-
-:   ???
-
-### {{ renderMember(type='bool', name='Quest') }}
-
-: Quest item?
-
-### {{ renderMember(type='string', name='Race', params='N') }}
-
-:   Returns the _Nth_ long race name of the listed races on an item. Items suitable for all races will effectively have all 15 races listed.
-
-
-### {{ renderMember(type='int', name='Races') }}
-
-:   The number of races that can use the item. Items suitable for ALL races will return 15.
-
-### {{ renderMember(type='int', name='Range') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='RecommendedLevel') }}
-
-:   Returns the Recommended Level of an item. Items with no recommended level will return 0.
-
-### {{ renderMember(type='int', name='RefCount') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='RequiredLevel') }}
-
-:   Returns the Required Level of an item. Items with no required level will return 0.
-
-### {{ renderMember(type='itemspell', name='Scroll') }}
-
-:   Scroll effect, if any.
-
-### {{ renderMember(type='int', name='SellPrice') }}
-
-:   Price to sell this item at this merchant
-
-### {{ renderMember(type='int', name='Shielding') }}
-
-:   Shielding
-
-### {{ renderMember(type='int', name='Size') }}
-
-:   Item size:  1 SMALL  2 MEDIUM  3 LARGE  4 GIANT
-
-### {{ renderMember(type='int', name='SizeCapacity') }}
-
-:   If item is a container, size of items it can hold.
-
-    | Value | Meaning |
-    | 1 | SMALL |
-    | 2 | MEDIUM |
-    | 3 | LARGE |
-    | 4 | GIANT |
-
-### {{ renderMember(name='Skill') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='SkillModMax') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='SkillModValue') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='SlotsUsedByItem') }}
-
-:   ???
-
-### {{ renderMember(type='spell', name='Spell') }}
-
-:   Spell effect
-
-### {{ renderMember(type='int', name='SpellDamage') }}
-
-:   Spell damage
-
-### {{ renderMember(type='int', name='SpellShield') }}
-
-:   SpellShield
-
-### {{ renderMember(type='int', name='STA') }}
-
-:   STA value on item
-
-### {{ renderMember(type='int', name='Stack') }}
-
-:   Number of items in the stack
-
-### {{ renderMember(type='bool', name='Stackable') }}
-
-:   Stackable?
-
-### {{ renderMember(type='int', name='StackCount') }}
-
-:   The total number of the stackable item in your inventory
-
-### {{ renderMember(type='int', name='Stacks') }}
-
-:   Number of stacks of the item in your inventory
-
-### {{ renderMember(type='int', name='StackSize') }}
-
-:   Maximum number if items that can be in the stack
-
-### {{ renderMember(type='int', name='STR') }}
-
-:   STR value on item
-
-### {{ renderMember(type='int', name='StrikeThrough') }}
-
-:   StrikeThrough
-
-### {{ renderMember(type='int', name='StunResist') }}
-
-:   Stun resist
-
-### {{ renderMember(name='Summoned') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='svCold') }}
-
-:   svCold value on item
-
-### {{ renderMember(type='int', name='svCorruption') }}
-
-:   svCorruption value on item
-
-### {{ renderMember(type='int', name='svDisease') }}
-
-:   svDisease value on item
-
-### {{ renderMember(type='int', name='svFire') }}
-
-:   svFire value on item
-
-### {{ renderMember(type='int', name='svMagic') }}
-
-:   svMagic value on item
-
-### {{ renderMember(type='int', name='svPoison') }}
-
-:   svPoison value on item
-
-### {{ renderMember(type='ticks', name='Timer') }}
-
-:   Returns the number of ticks remaining on an item recast timer
-
-### {{ renderMember(type='int', name='TimerReady') }}
-
-:   Returns the number of seconds remaining on an item recast timer
-
-### {{ renderMember(type='bool', name='Tradeskills') }}
-
-:   Tradeskills?
-
-### {{ renderMember(type='int', name='Tribute') }}
-
-:   Tribute value of the item
-
-### {{ renderMember(type='string', name='Type') }}
-
-:   Type
-
-### {{ renderMember(type='int', name='Value') }}
-
-:   Item value in coppers
-
-### {{ renderMember(type='int', name='Weight') }}
-
-:   Item weight
-
-### {{ renderMember(name='WeightReduction') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='WIS') }}
-
-:   WIS value on item
-
-### {{ renderMember(type='itemspell', name='Worn') }}
-
-:   Passive worn effect, if any.
-
-### {{ renderMember(type='invslot', name='WornSlot', params='N') }}
-
-:   The _Nth_ invslot this item can be worn in (fingers/ears count as 2 slots)
-
-### {{ renderMember(type='bool', name='WornSlot', params='name') }}
-
-:   Can item be worn in invslot with this _name_? (worn slots only)
-
-### {{ renderMember(type='int', name='WornSlots') }}
-
-:   The number of invslots this item can be worn in (fingers/ears count as 2 slots)
+/// member | int WornSlots
+The number of invslots this item can be worn in (fingers/ears count as 2 slots)
+///
 
 ### [string][string] `(To String)`
 

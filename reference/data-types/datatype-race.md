@@ -9,13 +9,13 @@ Contains information on the specified race
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='ID') }}
+/// member | int ID
+The ID of the race
+///
 
-:   The ID of the race
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   The name of the race
+/// member | string Name
+The name of the race
+///
 
 ### [string][string] `To String`
 

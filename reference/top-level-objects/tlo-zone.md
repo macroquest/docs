@@ -9,19 +9,19 @@ Used to find information about a particular zone.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='currentzone', name='Zone') }}
+/// member | currentzone Zone
+Retrieves the current zone information
+///
 
-:   Retrieves the current zone information
+/// member | zone Zone[N]
+Retrieves information about a zone by zone ID. If this zone is the current zone, then
+this will return [currentzone].
+///
 
-### {{ renderMember(type='zone', name='Zone', params='N') }}
-
-:   Retrieves information about a zone by zone ID. If this zone is the current zone, then
-    this will return [currentzone].
-
-### {{ renderMember(type='zone', name='Zone', params='ShortName') }}
-
-:   Retrieves information about a zone by short name. If this zone is the current zone, then
-    this will return [currentzone].
+/// member | zone Zone[ShortName]
+Retrieves information about a zone by short name. If this zone is the current zone, then
+this will return [currentzone].
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

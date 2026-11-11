@@ -9,13 +9,13 @@ Object used to return information on a spell by name or by ID.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='spell', name='Spell') }}
+/// member | spell Spell
+Find spell by ID
+///
 
-:   Find spell by ID
-
-### {{ renderMember(type='spell', name='Spell', params='Name') }}
-
-:   Find spell by name
+/// member | spell Spell[Name]
+Find spell by name
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

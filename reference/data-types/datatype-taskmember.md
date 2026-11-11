@@ -9,17 +9,17 @@ Describes a member in your current task
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='Index') }}
+/// member | int Index
+Returns task index for member (i.e., 1-6)
+///
 
-:   Returns task index for member (i.e., 1-6)
+/// member | bool Leader
+Returns true if member is leader
+///
 
-### {{ renderMember(type='bool', name='Leader') }}
-
-:   Returns true if member is leader
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   Returns name of the mamber
+/// member | string Name
+Returns name of the mamber
+///
 <!--dt-members-end-->
 <!--dt-linkrefs-start-->
 [int]: datatype-int.md

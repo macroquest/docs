@@ -9,13 +9,13 @@ Object used to get information on a specific spawn. Uses the filters under [Spaw
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='spawn', name='Spawn', params='N') }}
+/// member | spawn Spawn[N]
+Spawn matching ID _N_.
+///
 
-:   Spawn matching ID _N_.
-
-### {{ renderMember(type='spawn', name='Spawn', params='SearchString') }}
-
-:   Any spawns matching `SearchString`. See [Spawn Search].
+/// member | spawn Spawn[SearchString]
+Any spawns matching `SearchString`. See [Spawn Search].
+///
 <!--tlo-forms-end-->
 
 ## Usage

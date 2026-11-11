@@ -9,48 +9,48 @@ A TLO used to find an item on your character, corpse, or a merchant by partial o
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='item', name='FindItem', params='name|id') }}
+/// member | item FindItem[name|id]
+Search for an item using the given item id, or partial name match. Will search character
+inventory and any items stored in key rings (illusion, mount, etc).
 
-:   Search for an item using the given item id, or partial name match. Will search character
-    inventory and any items stored in key rings (illusion, mount, etc).
+???+ example
 
-    ???+ example
+    Looks for an item with the name swirling in it, and prints the ID.
 
-        Looks for an item with the name swirling in it, and prints the ID.
+    === "MQScript"
 
-        === "MQScript"
+        ```
+        /echo ${FindItem[swirling].ID}
+        ```
 
-            ```
-            /echo ${FindItem[swirling].ID}
-            ```
+    === "Lua"
 
-        === "Lua"
-
-            ```lua
-            print(mq.TLO.FindItem("swirling").ID())
-            ```
+        ```lua
+        print(mq.TLO.FindItem("swirling").ID())
+        ```
+///
 
 
-### {{ renderMember(type='item', name='FindItem', params='=name') }}
+/// member | item FindItem[=name]
+Search for an item using exact name match (case insensitive). Will search character inventory
+and any items stored in key rings (illusion, mount, etc).
 
-:   Search for an item using exact name match (case insensitive). Will search character inventory
-    and any items stored in key rings (illusion, mount, etc).
+???+ example
 
-    ???+ example
+    Looks for the Cleric Epic (by exact match) and prints its ID.
 
-        Looks for the Cleric Epic (by exact match) and prints its ID.
+    === "MQScript"
 
-        === "MQScript"
+        ```
+        /echo ${FindItem[=Water Sprinkler of Nem Ankh].ID}
+        ```
 
-            ```
-            /echo ${FindItem[=Water Sprinkler of Nem Ankh].ID}
-            ```
+    === "Lua"
 
-        === "Lua"
-
-            ```lua
-            print(mq.TLO.FindItem("=Water Sprinkler of Nem Ankh").ID())
-            ```
+        ```lua
+        print(mq.TLO.FindItem("=Water Sprinkler of Nem Ankh").ID())
+        ```
+///
 <!--tlo-forms-end-->
 <!--tlo-linkrefs-start-->
 [item]: ../data-types/datatype-item.md

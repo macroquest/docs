@@ -9,77 +9,77 @@ Data related to switches (levers, buttons, etc) in the zone
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='heading', name='DefaultHeading') }}
+/// member | heading DefaultHeading
+Heading of "closed" switch
+///
 
-:   Heading of "closed" switch
+/// member | float DefaultX
+X coordinate of "closed" switch
+///
 
-### {{ renderMember(type='float', name='DefaultX') }}
+/// member | float DefaultY
+Y coordinate of "closed" switch
+///
 
-:   X coordinate of "closed" switch
+/// member | float DefaultZ
+Z coordinate of "closed" switch
+///
 
-### {{ renderMember(type='float', name='DefaultY') }}
+/// member | float Distance
+Distance from player to switch in (x,y)
+///
 
-:   Y coordinate of "closed" switch
+/// member | float Distance3D
+Distance from player to switch in (x,y,z)
+///
 
-### {{ renderMember(type='float', name='DefaultZ') }}
+/// member | heading Heading
+Switch is facing this heading
+///
 
-:   Z coordinate of "closed" switch
+/// member | heading HeadingTo
+Direction player must move to meet this switch
+///
 
-### {{ renderMember(type='float', name='Distance') }}
+/// member | int ID
+Switch ID
+///
 
-:   Distance from player to switch in (x,y)
+/// member | bool IsTargeted
+Returns TRUE if the switch is targeted
+///
 
-### {{ renderMember(type='float', name='Distance3D') }}
+/// member | bool LineOfSight
+Returns TRUE if the switch is in LoS
+///
 
-:   Distance from player to switch in (x,y,z)
+/// member | string Name
+Name
+///
 
-### {{ renderMember(type='heading', name='Heading') }}
+/// member | bool Open
+True if the switch is in the "open" state (State == 1)
+///
 
-:   Switch is facing this heading
+/// member | int State
+The "state" of the switch.
+///
 
-### {{ renderMember(type='heading', name='HeadingTo') }}
+/// member | float X
+X coordinate
+///
 
-:   Direction player must move to meet this switch
+/// member | float Y
+Y coordinate
+///
 
-### {{ renderMember(type='int', name='ID') }}
+/// member | float Z
+Z coordinate
+///
 
-:   Switch ID
-
-### {{ renderMember(type='bool', name='IsTargeted') }}
-
-:   Returns TRUE if the switch is targeted
-
-### {{ renderMember(type='bool', name='LineOfSight') }}
-
-:   Returns TRUE if the switch is in LoS
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   Name
-
-### {{ renderMember(type='bool', name='Open') }}
-
-:   True if the switch is in the "open" state (State == 1)
-
-### {{ renderMember(type='int', name='State') }}
-
-:   The "state" of the switch.
-
-### {{ renderMember(type='float', name='X') }}
-
-:   X coordinate
-
-### {{ renderMember(type='float', name='Y') }}
-
-:   Y coordinate
-
-### {{ renderMember(type='float', name='Z') }}
-
-:   Z coordinate
-
-### {{ renderMember(type='string', name='ToString') }}
-
-:   Same as **ID**
+/// member | string ToString
+Same as **ID**
+///
 <!--dt-members-end-->
 <!--dt-linkrefs-start-->
 [bool]: datatype-bool.md

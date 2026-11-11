@@ -9,46 +9,46 @@ A TLO used to find a count of items in your bank by partial or exact name match.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='int', name='FindItemBankCount', params='name|id') }}
+/// member | int FindItemBankCount[name|id]
+Counts the items in your bank using the given item id, or partial name match.
 
-:   Counts the items in your bank using the given item id, or partial name match.
+???+ example
 
-    ???+ example
+    Echos the number of items in your bank with the name swirling in it.
 
-        Echos the number of items in your bank with the name swirling in it.
+    === "MQScript"
 
-        === "MQScript"
+        ```
+        /echo ${FindItemBankCount[swirling]}
+        ```
 
-            ```
-            /echo ${FindItemBankCount[swirling]}
-            ```
+    === "Lua"
 
-        === "Lua"
-
-            ```lua
-            print(mq.TLO.FindItemBankCount("swirling"))
-            ```
+        ```lua
+        print(mq.TLO.FindItemBankCount("swirling"))
+        ```
+///
 
 
-### {{ renderMember(type='int', name='FindItemBankCount', params='=name') }}
+/// member | int FindItemBankCount[=name]
+Counts the items in your bank using exact name match (case insensitive).
 
-:   Counts the items in your bank using exact name match (case insensitive).
+??? example
 
-    ??? example
+    Echoes the number of Swirling Shadows you have in your bank.
 
-        Echoes the number of Swirling Shadows you have in your bank.
+    === "MQScript"
 
-        === "MQScript"
+        ```
+        /echo ${FindItemBankCount[=Swirling Shadows]}
+        ```
 
-            ```
-            /echo ${FindItemBankCount[=Swirling Shadows]}
-            ```
+    === "Lua"
 
-        === "Lua"
-
-            ```lua
-            print(mq.TLO.FindItemBankCount("=Swirling Shadows"))
-            ```
+        ```lua
+        print(mq.TLO.FindItemBankCount("=Swirling Shadows"))
+        ```
+///
 <!--tlo-forms-end-->
 <!--tlo-linkrefs-start-->
 [int]: ../data-types/datatype-int.md

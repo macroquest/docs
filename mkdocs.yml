@@ -698,6 +698,7 @@ markdown_extensions:
   - admonition
   - attr_list
   - def_list
+  - eq_markdown.member
   - footnotes
   - mdx_math
   - meta

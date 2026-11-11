@@ -9,25 +9,25 @@ This is the type for the referenced key in a specific section of an ini file.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='Count') }}
+/// member | int Count
+How many keys matching the Key[] index exist.
+///
 
-:   How many keys matching the Key[] index exist.
+/// member | bool Exists
+Whether a specific key exists.
+///
 
-### {{ renderMember(type='bool', name='Exists') }}
+/// member | string Value
+The value for a specific key.  Accepts an Index to allow for returning a value if the key does not exist
+///
 
-:   Whether a specific key exists.
+/// member | string KeyAtIndex
+The name of the key at the specified index
+///
 
-### {{ renderMember(type='string', name='Value') }}
-
-:   The value for a specific key.  Accepts an Index to allow for returning a value if the key does not exist
-
-### {{ renderMember(type='string', name='KeyAtIndex') }}
-
-:   The name of the key at the specified index
-
-### {{ renderMember(type='string', name='ValueAtIndex') }}
-
-:   The value of the entry at the specified index
+/// member | string ValueAtIndex
+The value of the entry at the specified index
+///
 <!--dt-members-end-->
 
 ## Examples

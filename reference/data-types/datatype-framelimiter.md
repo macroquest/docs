@@ -9,45 +9,45 @@ Data type to access frame limiter information.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='float', name='BackgroundFPS') }}
+/// member | float BackgroundFPS
+Value of the target background fps setting.
+///
 
-:   Value of the target background fps setting.
+/// member | bool ClearScreen
+Value of the clear screen when not rendering setting.
+///
 
-### {{ renderMember(type='bool', name='ClearScreen') }}
+/// member | float CPU
+Current CPU usage as %
+///
 
-:   Value of the clear screen when not rendering setting.
+/// member | bool Enabled
+TRUE if the frame limiter feature is currently active.
+///
 
-### {{ renderMember(type='float', name='CPU') }}
+/// member | float ForegroundFPS
+Value of the target foreground fps setting.
+///
 
-:   Current CPU usage as %
+/// member | float MinSimulationFPS
+Value of the minimum simualtion rate setting.
+///
 
-### {{ renderMember(type='bool', name='Enabled') }}
+/// member | float RenderFPS
+Current graphics scene frame rate (visible fps).
+///
 
-:   TRUE if the frame limiter feature is currently active.
+/// member | bool SaveByChar
+TRUE if settings for the frame limiter are being saved by character.
+///
 
-### {{ renderMember(type='float', name='ForegroundFPS') }}
+/// member | float SimulationFPS
+Current simulation frame rate (game updates per second).
+///
 
-:   Value of the target foreground fps setting.
-
-### {{ renderMember(type='float', name='MinSimulationFPS') }}
-
-:   Value of the minimum simualtion rate setting.
-
-### {{ renderMember(type='float', name='RenderFPS') }}
-
-:   Current graphics scene frame rate (visible fps).
-
-### {{ renderMember(type='bool', name='SaveByChar') }}
-
-:   TRUE if settings for the frame limiter are being saved by character.
-
-### {{ renderMember(type='float', name='SimulationFPS') }}
-
-:   Current simulation frame rate (game updates per second).
-
-### {{ renderMember(type='string', name='Status') }}
-
-:   Either "Foreground" or "Background".
+/// member | string Status
+Either "Foreground" or "Background".
+///
 <!--dt-members-end-->
 <!--dt-linkrefs-start-->
 [bool]: datatype-bool.md

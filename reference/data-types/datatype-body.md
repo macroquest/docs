@@ -9,13 +9,13 @@ Contains data about spawn [body types](../general/body-types.md)
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='ID') }}
+/// member | int ID
+The ID of the body type
+///
 
-:   The ID of the body type
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   The full name of the body type
+/// member | string Name
+The full name of the body type
+///
 
 ### [string][string] `To String`
 

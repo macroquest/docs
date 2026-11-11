@@ -9,105 +9,105 @@ Contains all the data related to alternate abilities
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='AARankRequired') }}
+/// member | int AARankRequired
+Rank required to train
+///
 
-:   Rank required to train
+/// member | bool CanTrain
+Returns true/false on if the Alternative Ability can be trained
+///
 
-### {{ renderMember(type='bool', name='CanTrain') }}
+/// member | string Category
+The name of the category that this AA belongs to.
+///
 
-:   Returns true/false on if the Alternative Ability can be trained
+/// member | int Cost
+Base cost to train
+///
 
-### {{ renderMember(type='string', name='Category') }}
+/// member | string Description
+Basic description
+///
 
-:   The name of the category that this AA belongs to.
+/// member | int Expansion
+Expansion level for the ability.
+///
 
-### {{ renderMember(type='int', name='Cost') }}
+/// member | int Flags
+Flags value (Currently unknown?).
+///
 
-:   Base cost to train
+/// member | int GroupID
+ID of the AA group that this AA belongs to
+///
 
-### {{ renderMember(type='string', name='Description') }}
+/// member | int ID
+ID
+///
 
-:   Basic description
+/// member | int Index
+Returns the index number of the Alternative Ability
+///
 
-### {{ renderMember(type='int', name='Expansion') }}
+/// member | int MaxRank
+Max rank available in this ability
+///
 
-:   Expansion level for the ability.
+/// member | int MinLevel
+Minimum level to train
+///
 
-### {{ renderMember(type='int', name='Flags') }}
+/// member | int MyReuseTime
+Reuse time (in seconds) that takes into account any hastened AA abilities
+///
 
-:   Flags value (Currently unknown?).
+/// member | string Name
+Name
+///
 
-### {{ renderMember(type='int', name='GroupID') }}
+/// member | int NextIndex
+Returns the next index number of the Alternative Ability
+///
 
-:   ID of the AA group that this AA belongs to
+/// member | bool Passive
+Returns true/false on if the Alternative Ability is passive
+///
 
-### {{ renderMember(type='int', name='ID') }}
+/// member | int PointsSpent
+Returns the amount of points spent on an AA
+///
 
-:   ID
+/// member | int Rank
+Returns the Rank of the AA
+///
 
-### {{ renderMember(type='int', name='Index') }}
+/// member | altability RequiresAbility
+Required ability (if any)
+///
 
-:   Returns the index number of the Alternative Ability
+/// member | int RequiresAbilityPoints
+Points required in above ability
+///
 
-### {{ renderMember(type='int', name='MaxRank') }}
+/// member | int ReuseTime
+Reuse time in seconds
+///
 
-:   Max rank available in this ability
+/// member | string ShortName
+First line of button label (if any)
+///
 
-### {{ renderMember(type='int', name='MinLevel') }}
+/// member | string ShortName2
+Second line of button label (if any)
+///
 
-:   Minimum level to train
+/// member | spell Spell
+Spell used by the ability (if any)
+///
 
-### {{ renderMember(type='int', name='MyReuseTime') }}
-
-:   Reuse time (in seconds) that takes into account any hastened AA abilities
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   Name
-
-### {{ renderMember(type='int', name='NextIndex') }}
-
-:   Returns the next index number of the Alternative Ability
-
-### {{ renderMember(type='bool', name='Passive') }}
-
-:   Returns true/false on if the Alternative Ability is passive
-
-### {{ renderMember(type='int', name='PointsSpent') }}
-
-:   Returns the amount of points spent on an AA
-
-### {{ renderMember(type='int', name='Rank') }}
-
-:   Returns the Rank of the AA
-
-### {{ renderMember(type='altability', name='RequiresAbility') }}
-
-:   Required ability (if any)
-
-### {{ renderMember(type='int', name='RequiresAbilityPoints') }}
-
-:   Points required in above ability
-
-### {{ renderMember(type='int', name='ReuseTime') }}
-
-:   Reuse time in seconds
-
-### {{ renderMember(type='string', name='ShortName') }}
-
-:   First line of button label (if any)
-
-### {{ renderMember(type='string', name='ShortName2') }}
-
-:   Second line of button label (if any)
-
-### {{ renderMember(type='spell', name='Spell') }}
-
-:   Spell used by the ability (if any)
-
-### {{ renderMember(type='int', name='Type') }}
-
-:   Type (1-6)
+/// member | int Type
+Type (1-6)
+///
 
 ### [string][string] `To String`
 

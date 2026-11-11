@@ -9,15 +9,15 @@ Information about the macro that's currently running.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='macro', name='Macro') }}
+/// member | macro Macro
+Returns an object related to the macro that is currently running.
 
-:   Returns an object related to the macro that is currently running.
+!!! example
 
-    !!! example
-
-        ```
-        /echo This macro has been running for: ${Macro.RunTime} seconds
-        ```
+    ```
+    /echo This macro has been running for: ${Macro.RunTime} seconds
+    ```
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

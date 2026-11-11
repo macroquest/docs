@@ -9,21 +9,21 @@ Contains information related to the specified zone
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='ID') }}
+/// member | int ID
+ID of the zone
+///
 
-:   ID of the zone
+/// member | string Name
+Full zone name
+///
 
-### {{ renderMember(type='string', name='Name') }}
+/// member | string ShortName
+Short zone name
+///
 
-:   Full zone name
-
-### {{ renderMember(type='string', name='ShortName') }}
-
-:   Short zone name
-
-### {{ renderMember(type='int64', name='ZoneFlags') }}
-
-:   Flags for this zone
+/// member | int64 ZoneFlags
+Flags for this zone
+///
 
 ### [string][string] `To String`
 

@@ -26,1406 +26,1295 @@ classDiagram
 The [source](https://github.com/macroquest/macroquest/blob/master/src/main/datatypes/MQ2CharacterType.cpp) always has the latest data members.
 If something is missing here, you can check the source to see if it exists.
 
-### {{ renderMember(type='int', name='AAExp') }}
+/// member | int AAExp
+AA exp as a raw number out of 10,000 (10,000=100%)
+///
 
-:   AA exp as a raw number out of 10,000 (10,000=100%)
+/// member | int AAPoints
+Unused AA points
+///
 
-### {{ renderMember(type='int', name='AAPoints') }}
+/// member | int AAPointsAssigned
+Number of AA Points currently assigned
+///
 
-:   Unused AA points
+/// member | int AAPointsSpent
+The number of points you have spent on AA abilities
+///
 
-### {{ renderMember(type='int', name='AAPointsAssigned') }}
+/// member | int AAPointsTotal
+The total number of AA points you have
+///
 
-:   Number of AA Points currently assigned
+/// member | int64 AAVitality
+The total number of AA Vitality you have
+///
 
-### {{ renderMember(type='int', name='AAPointsSpent') }}
+/// member | int64 AAVitalityCap
+///
 
-:   The number of points you have spent on AA abilities
+/// member | string Ability[name]
+Skill name assigned to this doability button
+///
 
-### {{ renderMember(type='int', name='AAPointsTotal') }}
+/// member | bool Ability[#|name]
+Whether you have this ability or not
+///
 
-:   The total number of AA points you have
+/// member | bool AbilityReady[#|name]
+Whether this ability is ready (false if you do not have the ability)
+///
 
-### {{ renderMember(type='int64', name='AAVitality') }}
+/// member | timestamp AbilityTimer[#|name]
+How long before an ability can be used again. Zero if it can currently be used or you do not have the ability.  nil if the skill is not an ability or the ability does not exist.
+///
 
-:   The total number of AA Vitality you have
+/// member | timestamp AbilityTimerTotal[#|name]
+The total amount of time an ability takes to refresh. Zero if it is not currently active.
+///
 
-### {{ renderMember(type='int64', name='AAVitalityCap') }}
+/// member | int AccuracyBonus
+Accuracy bonus from gear and spells
+///
 
-:   
+/// member | spell ActiveDisc
+Returns a spell if melee discipline is active.
+///
 
-### {{ renderMember(type='string', name='Ability', params='name') }}
+/// member | int ActiveFavorCost
+If Tribute is active, how much it is costing you every 10 minutes. Returns NULL if tribute is inactive.
+///
 
-:   Skill name assigned to this doability button
+/// member | int AdoptiveCoin
+///
 
-### {{ renderMember(type='bool', name='Ability', params='#|name') }}
+/// member | buff Aego
+Returns the name of the Aegolism buff or equivalent (Aego, HP Buff, Symbol) from a Cleric.
+///
 
-:   Whether you have this ability or not
+/// member | spawn AggroLock
+Spawn info for aggro lock player
+///
 
-### {{ renderMember(type='bool', name='AbilityReady', params='#|name') }}
+/// member | int AGI
+Character Agility
+///
 
-:   Whether this ability is ready (false if you do not have the ability)
+/// member | int AirSupply
+///
 
-### {{ renderMember(type='timestamp', name='AbilityTimer', params='#|name') }}
+/// member | altability AltAbility[#|name]
+Returns the total number of points you have spent in ability # or name
+///
 
-:   How long before an ability can be used again. Zero if it can currently be used or you do not have the ability.  nil if the skill is not an ability or the ability does not exist.
+/// member | bool AltAbilityReady[#|name]
+Alt ability # or name ready?
+///
 
-### {{ renderMember(type='timestamp', name='AbilityTimerTotal', params='#|name') }}
+/// member | int AltAbilityTimer[#|name]
+Alt ability reuse time remaining (in ticks) for ability # or name
+///
 
-:   The total amount of time an ability takes to refresh. Zero if it is not currently active.
+/// member | int AltCurrency[name]
+The amount of alternate currency given the name (e.g. Marks of Valor)
+///
 
-### {{ renderMember(type='int', name='AccuracyBonus') }}
+/// member | bool AltTimerReady
+Alternate timer ready? (Bash/Slam/Frenzy/Backstab). Note: ${AbilityReady} works fine with most of these.
+///
 
-:   Accuracy bonus from gear and spells
+/// member | bool AmIGroupLeader
+Am I the group leader?
+///
 
-### {{ renderMember(type='spell', name='ActiveDisc') }}
+/// member | int AncientDraconicCoin
+///
 
-:   Returns a spell if melee discipline is active.
+/// member | int AncientSebilisianCoins
+///
 
-### {{ renderMember(type='int', name='ActiveFavorCost') }}
+/// member | bool AssistComplete
+returns true/false if the assist is complete
+///
 
-:   If Tribute is active, how much it is costing you every 10 minutes. Returns NULL if tribute is inactive.
+/// member | int AttackBonus
+Attack bonus from gear and spells
+///
 
-### {{ renderMember(type='int', name='AdoptiveCoin') }}
+/// member | int AttackSpeed
+Your Attack Speed. No haste spells/items = AttackSpeed of 100. A 41% haste item will result in an AttackSpeed of 141. This variable does not take into account spell or song haste.
+///
 
-:   
+/// member | auratype Aura
+Aura data, if an aura is active.
+///
 
-### {{ renderMember(type='buff', name='Aego') }}
+/// member | bool AutoFire
+Is Autofire on?
+///
 
-:   Returns the name of the Aegolism buff or equivalent (Aego, HP Buff, Symbol) from a Cleric.
+/// member | skill AutoSkill
+///
 
-### {{ renderMember(type='spawn', name='AggroLock') }}
+/// member | int AvoidanceBonus
+Avoidance bonus from gear/spells
+///
 
-:   Spawn info for aggro lock player
+/// member | bandolier Bandolier
+Gives access to the bandolier datatype.
+///
 
-### {{ renderMember(type='int', name='AGI') }}
+/// member | item Bank
+Item in this bankslot #
+///
 
-:   Character Agility
+/// member | bool BardSongPlaying
+Is a bard song playing?
+///
 
-### {{ renderMember(type='int', name='AirSupply') }}
+/// member | int BaseAGI
+Base Agility
+///
 
-:   
+/// member | int BaseCHA
+Base Charisma
+///
 
-### {{ renderMember(type='altability', name='AltAbility', params='#|name') }}
+/// member | int BaseDEX
+Base Dexterity
+///
 
-:   Returns the total number of points you have spent in ability # or name
+/// member | int BaseINT
+Base Intelligence
+///
 
-### {{ renderMember(type='bool', name='AltAbilityReady', params='#|name') }}
+/// member | int BaseSTA
+Base Stamana
+///
 
-:   Alt ability # or name ready?
+/// member | int BaseSTR
+Base Strength
+///
 
-### {{ renderMember(type='int', name='AltAbilityTimer', params='#|name') }}
+/// member | int BaseWIS
+Base Wisdom
+///
 
-:   Alt ability reuse time remaining (in ticks) for ability # or name
+/// member | int BathezidTradeGems
+///
 
-### {{ renderMember(type='int', name='AltCurrency', params='name') }}
+/// member | int Bayle
+///
 
-:   The amount of alternate currency given the name (e.g. Marks of Valor)
+/// member | buff Beneficial
+Returns the first Beneficial buff found in your list of buffs
+///
 
-### {{ renderMember(type='bool', name='AltTimerReady') }}
+/// member | int BifurcatedCoin
+///
 
-:   Alternate timer ready? (Bash/Slam/Frenzy/Backstab). Note: ${AbilityReady} works fine with most of these.
+/// member | spell BlockedBuff
+///
 
-### {{ renderMember(type='bool', name='AmIGroupLeader') }}
+/// member | spell BlockedPetBuff[name]
+Buff blocked by pet with this name
+///
 
-:   Am I the group leader?
+/// member | spell BlockedPetBuff[#]
+Buff at this index slot # of the blocked pet buffs
+///
 
-### {{ renderMember(type='int', name='AncientDraconicCoin') }}
+/// member | int Book[name]
+Slot in your spell book assigned to spell name
+///
 
-:   
+/// member | spell Book[#]
+Spell assigned to this slot # in your spell book
+///
 
-### {{ renderMember(type='int', name='AncientSebilisianCoins') }}
+/// member | worldlocation BoundLocation[#]
+Returns information about your bind points (0-4)
+///
 
-:   
+/// member | int Brellium
+///
 
-### {{ renderMember(type='bool', name='AssistComplete') }}
+/// member | buff Brells
+Returns the Brell's line HP buff from a Paladin
+///
 
-:   returns true/false if the assist is complete
+/// member | int BronzeFiats
+///
 
-### {{ renderMember(type='int', name='AttackBonus') }}
+/// member | buff Buff[name]
+The buff with this name
+///
 
-:   Attack bonus from gear and spells
+/// member | buff Buff[#]
+The buff in this slot #
+///
 
-### {{ renderMember(type='int', name='AttackSpeed') }}
+/// member | timestamp BuffDuration[name]
+Override on the Spawn version for consistency. The time remaining on the buff or song matching this name. The name is matched as a case-insensitive substring; prefix `=` to require a case-insensitive exact match instead. Consistent with `Me.Buff[name].Duration`.
+///
 
-:   Your Attack Speed. No haste spells/items = AttackSpeed of 100. A 41% haste item will result in an AttackSpeed of 141. This variable does not take into account spell or song haste.
+/// member | timestamp BuffDuration[#]
+Override on the Spawn version for consistency. The time remaining on the buff or song in this slot #. Slots are numbered from 1 and span the long-duration buffs followed by the short-duration (song) buffs.
+///
 
-### {{ renderMember(type='auratype', name='Aura') }}
+/// member | bool CanMount
+Can you use a mount here?
+///
 
-:   Aura data, if an aura is active.
+/// member | int64 CareerFavor
+Career favor/tribute
+///
 
-### {{ renderMember(type='bool', name='AutoFire') }}
+/// member | int64 Cash
+Total cash on your character, expressed in coppers (eg. if you are carrying 100pp, Cash will return 100000)
+///
 
-:   Is Autofire on?
+/// member | int64 CashBank
+Total cash in your bank, expressed in coppers
+///
 
-### {{ renderMember(type='skill', name='AutoSkill') }}
+/// member | timestamp CastTimeLeft
+///
 
-:   
+/// member | int CHA
+Character Charisma
+///
 
-### {{ renderMember(type='int', name='AvoidanceBonus') }}
+/// member | buff Charmed
+///
 
-:   Avoidance bonus from gear/spells
+/// member | int Chronobines
+Chronobines on your character
+///
 
-### {{ renderMember(type='bandolier', name='Bandolier') }}
+/// member | int ClairvoyanceBonus
+Clairvoyance Bonus
+///
 
-:  Gives access to the bandolier datatype.
+/// member | buff Clarity
+///
 
-### {{ renderMember(type='item', name='Bank') }}
+/// member | bool Combat
+In combat?
+///
 
-:   Item in this bankslot #
+/// member | spell CombatAbility[#]
+The name of Combat Ability # in your list (not the same as anyone else's list!)
+///
 
-### {{ renderMember(type='bool', name='BardSongPlaying') }}
+/// member | int CombatAbility[name]
+The number of Combat ability name in your list (not the same as anyone else's list!)
+///
 
-:   Is a bard song playing?
+/// member | bool CombatAbilityReady[name|#]
+Is this Combat Ability ready?
+///
 
-### {{ renderMember(type='int', name='BaseAGI') }}
+/// member | int CombatAbilityTimer[name|#]
+The time remaining (in seconds) before the Combat Ability name is usable
+///
 
-:   Base Agility
+/// member | int CombatEffectsBonus
+Combat Effects bonus from gear and spells
+///
 
-### {{ renderMember(type='int', name='BaseCHA') }}
+/// member | string CombatState
+Returns the current out-of-combat resting state.
 
-:   Base Charisma
+| Value | Meaning |
+| --- | --- |
+| COMBAT | You are currently in a combat state and can not rest yet |
+| DEBUFFED | You can't rest now. You need to be cleansed before the cooldown will start |
+| COOLDOWN | You are cooling down. OOC regen is ready when you are done cooling down |
+| ACTIVE | You can rest now. You can use the OOC regen if you want |
+| RESTING | You ARE resting now. the OOC regen is active |
 
-### {{ renderMember(type='int', name='BaseDEX') }}
+If the client does not support this feature, ACTIVE will always be returned.
 
-:   Base Dexterity
+!!! Example
 
-### {{ renderMember(type='int', name='BaseINT') }}
-
-:   Base Intelligence
-
-### {{ renderMember(type='int', name='BaseSTA') }}
-
-:   Base Stamana
-
-### {{ renderMember(type='int', name='BaseSTR') }}
-
-:   Base Strength
-
-### {{ renderMember(type='int', name='BaseWIS') }}
-
-:   Base Wisdom
-
-### {{ renderMember(type='int', name='BathezidTradeGems') }}
-
-:   
-
-### {{ renderMember(type='int', name='Bayle') }}
-
-:   
-
-### {{ renderMember(type='buff', name='Beneficial') }}
-
-:   Returns the first Beneficial buff found in your list of buffs
-
-### {{ renderMember(type='int', name='BifurcatedCoin') }}
-
-:   
-
-### {{ renderMember(type='spell', name='BlockedBuff') }}
-
-:   
-
-### {{ renderMember(type='spell', name='BlockedPetBuff', params='name') }}
-
-:   Buff blocked by pet with this name
-
-### {{ renderMember(type='spell', name='BlockedPetBuff', params='#') }}
-
-:   Buff at this index slot # of the blocked pet buffs
-
-### {{ renderMember(type='int', name='Book', params='name') }}
-
-:   Slot in your spell book assigned to spell name
-
-### {{ renderMember(type='spell', name='Book', params='#') }}
-
-:   Spell assigned to this slot # in your spell book
-
-### {{ renderMember(type='worldlocation', name='BoundLocation', params='#') }}
-
-:   Returns information about your bind points (0-4)
-
-### {{ renderMember(type='int', name='Brellium') }}
-
-:   
-
-### {{ renderMember(type='buff', name='Brells') }}
-
-:   Returns the Brell's line HP buff from a Paladin
-
-### {{ renderMember(type='int', name='BronzeFiats') }}
-
-:   
-
-### {{ renderMember(type='buff', name='Buff', params='name') }}
-
-:   The buff with this name
-
-### {{ renderMember(type='buff', name='Buff', params='#') }}
-
-:   The buff in this slot #
-
-### {{ renderMember(type='timestamp', name='BuffDuration', params='name') }}
-
-:   Override on the Spawn version for consistency. The time remaining on the buff or song matching this name. The name is matched as a case-insensitive substring; prefix `=` to require a case-insensitive exact match instead. Consistent with `Me.Buff[name].Duration`.
-
-### {{ renderMember(type='timestamp', name='BuffDuration', params='#') }}
-
-:   Override on the Spawn version for consistency. The time remaining on the buff or song in this slot #. Slots are numbered from 1 and span the long-duration buffs followed by the short-duration (song) buffs.
-
-### {{ renderMember(type='bool', name='CanMount') }}
-
-:   Can you use a mount here?
-
-### {{ renderMember(type='int64', name='CareerFavor') }}
-
-:   Career favor/tribute
-
-### {{ renderMember(type='int64', name='Cash') }}
-
-:   Total cash on your character, expressed in coppers (eg. if you are carrying 100pp, Cash will return 100000)
-
-### {{ renderMember(type='int64', name='CashBank') }}
-
-:   Total cash in your bank, expressed in coppers
-
-### {{ renderMember(type='timestamp', name='CastTimeLeft') }}
-
-:   
-
-### {{ renderMember(type='int', name='CHA') }}
-
-:   Character Charisma
-
-### {{ renderMember(type='buff', name='Charmed') }}
-
-:   
-
-### {{ renderMember(type='int', name='Chronobines') }}
-
-:   Chronobines on your character
-
-### {{ renderMember(type='int', name='ClairvoyanceBonus') }}
-
-:   Clairvoyance Bonus
-
-### {{ renderMember(type='buff', name='Clarity') }}
-
-:   
-
-### {{ renderMember(type='bool', name='Combat') }}
-
-:   In combat?
-
-### {{ renderMember(type='spell', name='CombatAbility', params='#') }}
-
-:   The name of Combat Ability # in your list (not the same as anyone else's list!)
-
-### {{ renderMember(type='int', name='CombatAbility', params='name') }}
-
-:   The number of Combat ability name in your list (not the same as anyone else's list!)
-
-### {{ renderMember(type='bool', name='CombatAbilityReady', params='name|#') }}
-
-:   Is this Combat Ability ready?
-
-### {{ renderMember(type='int', name='CombatAbilityTimer', params='name|#') }}
-
-:   The time remaining (in seconds) before the Combat Ability name is usable
-
-### {{ renderMember(type='int', name='CombatEffectsBonus') }}
-
-:   Combat Effects bonus from gear and spells
-
-### {{ renderMember(type='string', name='CombatState') }}
-
-:   Returns the current out-of-combat resting state.
-
-    | Value | Meaning |
-    | --- | --- |
-    | COMBAT | You are currently in a combat state and can not rest yet |
-    | DEBUFFED | You can't rest now. You need to be cleansed before the cooldown will start |
-    | COOLDOWN | You are cooling down. OOC regen is ready when you are done cooling down |
-    | ACTIVE | You can rest now. You can use the OOC regen if you want |
-    | RESTING | You ARE resting now. the OOC regen is active |
-
-    If the client does not support this feature, ACTIVE will always be returned.
-
-    !!! Example
-
-        ```text
-        /if ${Me.CombatState.Equal[ACTIVE]} /echo I can now sit and regen fast
-        /if ${Me.CombatState.Equal[DEBUFFED]} /echo I need cures before I can rest
-        ```
-
-### {{ renderMember(type='int', name='Commemoratives') }}
-
-:   
-
-### {{ renderMember(type='int', name='Copper') }}
-
-:   Copper on your character
-
-### {{ renderMember(type='int', name='CopperBank') }}
-
-:   Copper in bank
-
-### {{ renderMember(type='spell', name='Corrupted') }}
-
-:   Returns the name of the Corrupted debuff if you have one
-
-### {{ renderMember(type='int', name='CountBuffs') }}
-
-:   Number of buffs you have, not including short duration buffs
-
-### {{ renderMember(type='int64', name='CountersCorruption') }}
-
-:   
-
-### {{ renderMember(type='int64', name='CountersCurse') }}
-
-:   Number of curse counters you have
-
-### {{ renderMember(type='int64', name='CountersDisease') }}
-
-:   Number of disease counters you have
-
-### {{ renderMember(type='int64', name='CountersPoison') }}
-
-:   Number of poison counters you have
-
-### {{ renderMember(type='int', name='CountSongs') }}
-
-:   Number of songs you have
-
-### {{ renderMember(type='int', name='Crippled') }}
-
-:   
-
-### {{ renderMember(type='int', name='CrystallizedFear') }}
-
-:   
-
-### {{ renderMember(type='int', name='CryrstallizedLuck') }}
-
-:   
-
-### {{ renderMember(type='int', name='CurrentEndurance') }}
-
-:   Current endurance
-
-### {{ renderMember(type='int64', name='CurrentFavor') }}
-
-:   Current favor/tribute
-
-### {{ renderMember(type='int', name='CurrentHPs') }}
-
-:   Current hit points
-
-### {{ renderMember(type='int', name='CurrentMana') }}
-
-:   Current mana
-
-### {{ renderMember(type='int', name='CurrentWeight') }}
-
-:   Current weight
-
-### {{ renderMember(type='spell', name='Cursed') }}
-
-:   Returns the name of the Curse debuff if you are effected by one
-
-### {{ renderMember(type='int', name='CursorCopper') }}
-
-:   
-
-### {{ renderMember(type='int', name='CursorGold') }}
-
-:   
-
-### {{ renderMember(type='int', name='CursorKrono') }}
-
-:   
-
-### {{ renderMember(type='int', name='CursorPlatinum') }}
-
-:   
-
-### {{ renderMember(type='int', name='CursorSilver') }}
-
-:   
-
-### {{ renderMember(type='int', name='DamageShieldBonus') }}
-
-:   Damage Shield bonus from gear and spells
-
-### {{ renderMember(type='int', name='DamageShieldMitigationBonus') }}
-
-:   Damage Shield Mitigation bonus from gear and spells
-
-### {{ renderMember(type='int64', name='Dar') }}
-
-:   Damage absorption remaining (eg. from Rune-type spells)
-
-### {{ renderMember(type='int', name='DEX') }}
-
-:   Character Dexterity
-
-### {{ renderMember(type='int', name='DiamondCoins') }}
-
-:   
-
-### {{ renderMember(type='string', name='Diseased') }}
-
-:   Returns the name of first Disease spell on character
-
-### {{ renderMember(type='int', name='DoTShieldBonus') }}
-
-:   DoT Shield bonus from gear and spells
-
-### {{ renderMember(type='string', name='Dotted') }}
-
-:   Returns name of first DoT on character
-
-### {{ renderMember(type='int', name='Doubloons') }}
-
-:   Doubloons on your character
-
-### {{ renderMember(type='ticks', name='Downtime') }}
-
-:   Downtime (Ticks left til combat timer end)
-
-### {{ renderMember(type='int', name='DreadStones') }}
-
-:   
-
-### {{ renderMember(type='int', name='Drunk') }}
-
-:   Drunkenness level
-
-### {{ renderMember(type='buff', name='DSed') }}
-
-:   
-
-### {{ renderMember(type='int', name='EbonCrystals') }}
-
-:   Number of Ebon Crystals on your character
-
-### {{ renderMember(type='int', name='Endurance') }}
-
-:   
-
-### {{ renderMember(type='int', name='EnduranceBonus') }}
-
-:   Endurance bonus from gear and spells
-
-### {{ renderMember(type='int', name='EnduranceRegen') }}
-
-:   Endurance regen from the last tick
-
-### {{ renderMember(type='int', name='EnduranceRegenBonus') }}
-
-:   Endurance regen bonus
-
-### {{ renderMember(type='int', name='EnergyCrystals') }}
-
-:   
-
-### {{ renderMember(type='int', name='EntwinedDjinnCoins') }}
-
-:   
-
-### {{ renderMember(type='int64', name='Exp') }}
-
-:   Experience (out of 10,000 on Live / out of 330 on Emu)
-
-### {{ renderMember(type='int', name='ExpansionFlags') }}
-
-:   Returns a numeric number representing which expansions your toon is flagged for
-
-### {{ renderMember(type='int', name='Faycites') }}
-
-:   Faycites on your character
-
-### {{ renderMember(type='buff', name='Feared') }}
-
-:   
-
-### {{ renderMember(type='fellowship', name='Fellowship') }}
-
-:   Info about Fellowship
-
-### {{ renderMember(type='int', name='FetteredIfritCoins') }}
-
-:   
-
-### {{ renderMember(type='buff', name='FindBuff') }}
-
-:   
-
-### {{ renderMember(type='int', name='Fists') }}
-
-:   
-
-### {{ renderMember(type='buff', name='Focus') }}
-
-:   
-
-### {{ renderMember(type='int', name='FreeBuffSlots') }}
-
-:   Number of open buff slots (not counting the short duration buff slots)
-
-### {{ renderMember(type='int', name='FreeInventory') }}
-
-:   Number of free inventory spaces
-
-### {{ renderMember(type='int', name='FreeInventory', params='#') }}
-
-:   Number of free inventory spaces of at least # size (giant=4)
-
-### {{ renderMember(type='int', name='FroststoneDucat') }}
-
-:   
-
-### {{ renderMember(type='int', name='Gem', params='name') }}
-
-:   Returns the slot # with the spell name
-
-### {{ renderMember(type='spell', name='Gem', params='#') }}
-
-:   The name of the spell in this slot #
-
-### {{ renderMember(type='ticks', name='GemTimer', params='name|#') }}
-
-:   The timer for the spell with this name or in this gem #
-
-### {{ renderMember(type='int', name='Gold') }}
-
-:   Gold on character
-
-### {{ renderMember(type='int', name='GoldBank') }}
-
-:   Gold in bank
-
-### {{ renderMember(type='int', name='GoldTokens') }}
-
-:   
-
-### {{ renderMember(type='spawn', name='GroupAssistTarget') }}
-
-:   Current group assist target
-
-### {{ renderMember(type='bool', name='Grouped') }}
-
-:   Grouped?
-
-### {{ renderMember(type='string', name='GroupList') }}
-
-:   Returns a string of your group members (excluding you)
-
-### {{ renderMember(type='spawn', name='GroupMarkNPC', params='#') }}
-
-:   Current group marked NPC (1-3)
-
-### {{ renderMember(type='int', name='GroupSize') }}
-
-:   Size of group
-
-### {{ renderMember(type='buff', name='Growth') }}
-
-:   
-
-### {{ renderMember(type='int', name='GukEarned') }}
-
-:   Total LDoN points earned in Deepest Guk
-
-### {{ renderMember(type='int64', name='GuildID') }}
-
-:   Returns the ID number of your guild
-
-### {{ renderMember(type='int', name='Haste') }}
-
-:   Total Combined Haste (worn and spell) as shown in Inventory Window stats
-
-### {{ renderMember(type='buff', name='Hasted') }}
-
-:   
-
-### {{ renderMember(type='bool', name='HaveExpansion', params='#') }}
-
-:   Returns TRUE/FALSE if you have that expansion #
-
-### {{ renderMember(type='int', name='HealAmountBonus') }}
-
-:   Total Heal Amount bonus from gear
-
-### {{ renderMember(type='int', name='HeroicAGIBonus') }}
-
-:   Total Heroic Agility bonus from gear
-
-### {{ renderMember(type='int', name='HeroicCHABonus') }}
-
-:   Total Heroic Charisma bonus from gear
-
-### {{ renderMember(type='int', name='HeroicDEXBonus') }}
-
-:   Total Heroic Dexterity bonus from gear
-
-### {{ renderMember(type='int', name='HeroicINTBonus') }}
-
-:   Total Heroic Intelligence bonus from gear
-
-### {{ renderMember(type='int', name='HeroicSTABonus') }}
-
-:   Total Heroic Stamina bonus from gear
-
-### {{ renderMember(type='int', name='HeroicSTRBonus') }}
-
-:   Total Heroic Strength bonus from gear
-
-### {{ renderMember(type='int', name='HeroicWISBonus') }}
-
-:   Total Heroic Wisdom bonus from gear
-
-### {{ renderMember(type='int', name='HPBonus') }}
-
-:   Hit point bonus from gear and spells
-
-### {{ renderMember(type='int', name='HPRegen') }}
-
-:   Hit point regeneration from last tick
-
-### {{ renderMember(type='int', name='HPRegenBonus') }}
-
-:   HP regen bonus from gear and spells
-
-### {{ renderMember(type='int', name='Hunger') }}
-
-:   Hunger level
-
-### {{ renderMember(type='buff', name='HybridHP') }}
-
-:   
-
-### {{ renderMember(type='int', name='ID') }}
-
-:   Spawn ID
-
-### {{ renderMember(type='bool', name='InInstance') }}
-
-:   Returns TRUE/FALSE if you are in an instance.
-
-### {{ renderMember(type='int', name='Instance') }}
-
-:   
-
-### {{ renderMember(type='int', name='INT') }}
-
-:   Character Intelligence
-
-### {{ renderMember(type='item', name='Inventory', params='#') }}
-
-:   Item in this slot #
-
-### {{ renderMember(type='item', name='Inventory', params='slotname') }}
-
-:   Item in this slotname (inventory slots only). See [Slot Names](../general/slot-names.md) for a list of slotnames.
-
-### {{ renderMember(type='bool', name='Invited') }}
-
-:   Invited to group?
-
-### {{ renderMember(type='string', name='Inviter') }}
-
-:   Name of player sending group invite
-
-### {{ renderMember(type='string', name='Invulnerable') }}
-
-:   Returns the invulnerable spell name on you, can be used with spell datatype
-
+    ```text
+    /if ${Me.CombatState.Equal[ACTIVE]} /echo I can now sit and regen fast
+    /if ${Me.CombatState.Equal[DEBUFFED]} /echo I need cures before I can rest
     ```
-    ${Me.Invulnerable.Spell.ID}
-    ```
+///
 
-### {{ renderMember(type='int', name='IsBerserk') }}
+/// member | int Commemoratives
+///
 
-:   
+/// member | int Copper
+Copper on your character
+///
 
-### {{ renderMember(type='bool', name='ItemReady', params='XXX') }}
+/// member | int CopperBank
+Copper in bank
+///
 
-:   True/False on if the item is ready to cast.
+/// member | spell Corrupted
+Returns the name of the Corrupted debuff if you have one
+///
 
-### {{ renderMember(type='int', name='Krono') }}
+/// member | int CountBuffs
+Number of buffs you have, not including short duration buffs
+///
 
-:   
+/// member | int64 CountersCorruption
+///
 
-### {{ renderMember(type='int', name='LADelegateMA') }}
+/// member | int64 CountersCurse
+Number of curse counters you have
+///
 
-:   Level of Delegate MA of the current group leader (not your own ability level)
+/// member | int64 CountersDisease
+Number of disease counters you have
+///
 
-### {{ renderMember(type='int', name='LADelegateMarkNPC') }}
+/// member | int64 CountersPoison
+Number of poison counters you have
+///
 
-:   Level of Delegate Mark NPC of the current group leader (not your own ability level)
+/// member | int CountSongs
+Number of songs you have
+///
 
-### {{ renderMember(type='int', name='LAFindPathPC') }}
+/// member | int Crippled
+///
 
-:   Level of Find Path PC of the current group leader (not your own ability level)
+/// member | int CrystallizedFear
+///
 
-### {{ renderMember(type='int', name='LAHealthEnhancement') }}
+/// member | int CryrstallizedLuck
+///
 
-:   Level of Health Enhancement of the current group leader (not your own ability level)
+/// member | int CurrentEndurance
+Current endurance
+///
 
-### {{ renderMember(type='int', name='LAHealthRegen') }}
+/// member | int64 CurrentFavor
+Current favor/tribute
+///
 
-:   Level of Health Regen of the current group leader (not your own ability level)
+/// member | int CurrentHPs
+Current hit points
+///
 
-### {{ renderMember(type='int', name='LAHoTT') }}
+/// member | int CurrentMana
+Current mana
+///
 
-:   Level of HoTT of the current group leader (not your own ability level)
+/// member | int CurrentWeight
+Current weight
+///
 
-### {{ renderMember(type='int', name='LAInspectBuffs') }}
+/// member | spell Cursed
+Returns the name of the Curse debuff if you are effected by one
+///
 
-:   Level of Inspect Buffs of the current group leader (not your own ability level)
+/// member | int CursorCopper
+///
 
-### {{ renderMember(type='int', name='LAManaEnhancement') }}
+/// member | int CursorGold
+///
 
-:   Level of Mana Enhancement of the current group leader (not your own ability level)
+/// member | int CursorKrono
+///
 
-### {{ renderMember(type='int', name='LAMarkNPC') }}
+/// member | int CursorPlatinum
+///
 
-:   Level of Mark NPC of the current group leader (not your own ability level)
+/// member | int CursorSilver
+///
 
-### {{ renderMember(type='int', name='LANPCHealth') }}
+/// member | int DamageShieldBonus
+Damage Shield bonus from gear and spells
+///
 
-:   Level of NPC Health of the current group leader (not your own ability level)
+/// member | int DamageShieldMitigationBonus
+Damage Shield Mitigation bonus from gear and spells
+///
 
-### {{ renderMember(type='int', name='LAOffenseEnhancement') }}
+/// member | int64 Dar
+Damage absorption remaining (eg. from Rune-type spells)
+///
 
-:   Level of Offense Enhancement of the current group leader (not your own ability level)
+/// member | int DEX
+Character Dexterity
+///
 
-### {{ renderMember(type='int', name='LASpellAwareness') }}
+/// member | int DiamondCoins
+///
 
-:   Level of Spell Awareness of the current group leader (not your own ability level)
+/// member | string Diseased
+Returns the name of first Disease spell on character
+///
 
-### {{ renderMember(type='int', name='Language', params='language name') }}
+/// member | int DoTShieldBonus
+DoT Shield bonus from gear and spells
+///
 
-:   The EQ language number of the specified language. See [languages](../general/languages.md).
+/// member | string Dotted
+Returns name of first DoT on character
+///
 
-### {{ renderMember(type='string', name='Language', params='language number') }}
+/// member | int Doubloons
+Doubloons on your character
+///
 
-:   Returns the EQ language name of the language number specified. See [languages](../general/languages.md).
+/// member | ticks Downtime
+Downtime (Ticks left til combat timer end)
+///
 
-### {{ renderMember(type='int', name='LanguageSkill', params='language') }}
+/// member | int DreadStones
+///
 
-:   Your skill in language
+/// member | int Drunk
+Drunkenness level
+///
 
-### {{ renderMember(type='int', name='LargestFreeInventory') }}
+/// member | buff DSed
+///
 
-:   Size of your largest free inventory space
+/// member | int EbonCrystals
+Number of Ebon Crystals on your character
+///
 
-### {{ renderMember(type='timestamp', name='LastZoned') }}
+/// member | int Endurance
+///
 
-:   Returns a timestamp of last time you zoned
+/// member | int EnduranceBonus
+Endurance bonus from gear and spells
+///
 
-### {{ renderMember(type='int', name='LaurionInnVoucher') }}
+/// member | int EnduranceRegen
+Endurance regen from the last tick
+///
 
-:   
+/// member | int EnduranceRegenBonus
+Endurance regen bonus
+///
 
-### {{ renderMember(type='int', name='LCK') }}
+/// member | int EnergyCrystals
+///
 
-:   
+/// member | int EntwinedDjinnCoins
+///
 
-### {{ renderMember(type='int', name='LDoNPoints') }}
+/// member | int64 Exp
+Experience (out of 10,000 on Live / out of 330 on Emu)
+///
 
-:   Available LDoN points
+/// member | int ExpansionFlags
+Returns a numeric number representing which expansions your toon is flagged for
+///
 
-### {{ renderMember(type='int', name='LoyaltyTokens') }}
+/// member | int Faycites
+Faycites on your character
+///
 
-:   
+/// member | buff Feared
+///
 
-### {{ renderMember(type='buff', name='Maloed') }}
+/// member | fellowship Fellowship
+Info about Fellowship
+///
 
-:   
+/// member | int FetteredIfritCoins
+///
 
-### {{ renderMember(type='int', name='ManaBonus') }}
+/// member | buff FindBuff
+///
 
-:   Mana bonus from gear and spells
+/// member | int Fists
+///
 
-### {{ renderMember(type='int', name='ManaRegen') }}
+/// member | buff Focus
+///
 
-:   Mana regeneration from last tick
+/// member | int FreeBuffSlots
+Number of open buff slots (not counting the short duration buff slots)
+///
 
-### {{ renderMember(type='int', name='ManaRegenBonus') }}
+/// member | int FreeInventory
+Number of free inventory spaces
+///
 
-:   Mana regen bonus from gear and spells
+/// member | int FreeInventory[#]
+Number of free inventory spaces of at least # size (giant=4)
+///
 
-### {{ renderMember(type='int', name='MarksOfValor') }}
+/// member | int FroststoneDucat
+///
 
-:   
+/// member | int Gem[name]
+Returns the slot # with the spell name
+///
 
-### {{ renderMember(type='int', name='MaxAirSupply') }}
+/// member | spell Gem[#]
+The name of the spell in this slot #
+///
 
-:   
+/// member | ticks GemTimer[name|#]
+The timer for the spell with this name or in this gem #
+///
 
-### {{ renderMember(type='int', name='MaxBuffSlots') }}
+/// member | int Gold
+Gold on character
+///
 
-:   Max number of buffs you can have on you. /echo ${Me.MaxBuffSlots}
+/// member | int GoldBank
+Gold in bank
+///
 
-### {{ renderMember(type='int', name='MaxEndurance') }}
+/// member | int GoldTokens
+///
 
-:   Max endurance
+/// member | spawn GroupAssistTarget
+Current group assist target
+///
 
-### {{ renderMember(type='int', name='MaxHPs') }}
+/// member | bool Grouped
+Grouped?
+///
 
-:   Max hit points
+/// member | string GroupList
+Returns a string of your group members (excluding you)
+///
 
-### {{ renderMember(type='int', name='MaxLevel') }}
+/// member | spawn GroupMarkNPC[#]
+Current group marked NPC (1-3)
+///
 
-:   
+/// member | int GroupSize
+Size of group
+///
 
-### {{ renderMember(type='int', name='MaxMana') }}
+/// member | buff Growth
+///
 
-:   Max mana
+/// member | int GukEarned
+Total LDoN points earned in Deepest Guk
+///
 
-### {{ renderMember(type='int', name='McKenzie') }}
+/// member | int64 GuildID
+Returns the ID number of your guild
+///
 
-:   
+/// member | int Haste
+Total Combined Haste (worn and spell) as shown in Inventory Window stats
+///
 
-### {{ renderMember(type='int', name='MedalsOfConflict') }}
+/// member | buff Hasted
+///
 
-:   
+/// member | bool HaveExpansion[#]
+Returns TRUE/FALSE if you have that expansion #
+///
 
-### {{ renderMember(type='int', name='MedalsOfHeroism') }}
+/// member | int HealAmountBonus
+Total Heal Amount bonus from gear
+///
 
-:   
+/// member | int HeroicAGIBonus
+Total Heroic Agility bonus from gear
+///
 
-### {{ renderMember(type='string', name='MembershipLevel') }}
+/// member | int HeroicCHABonus
+Total Heroic Charisma bonus from gear
+///
 
-:   Account membership level: `GOLD`, `SILVER`, `FREE`. All-Access and Lifetime All-access are both considered Gold.
+/// member | int HeroicDEXBonus
+Total Heroic Dexterity bonus from gear
+///
 
-### {{ renderMember(type='int64', name='MercAAExp') }}
+/// member | int HeroicINTBonus
+Total Heroic Intelligence bonus from gear
+///
 
-:   
+/// member | int HeroicSTABonus
+Total Heroic Stamina bonus from gear
+///
 
-### {{ renderMember(type='int', name='MercAAPoints') }}
+/// member | int HeroicSTRBonus
+Total Heroic Strength bonus from gear
+///
 
-:   
+/// member | int HeroicWISBonus
+Total Heroic Wisdom bonus from gear
+///
 
-### {{ renderMember(type='int', name='MercAAPointsSpent') }}
+/// member | int HPBonus
+Hit point bonus from gear and spells
+///
 
-:   
+/// member | int HPRegen
+Hit point regeneration from last tick
+///
 
-### {{ renderMember(type='string', name='Mercenary') }}
+/// member | int HPRegenBonus
+HP regen bonus from gear and spells
+///
 
-:   The state of your Mercenary, ACTIVE, SUSPENDED, or UNKNOWN (If it's dead). Returns NULL if you do not have a Mercenary.
+/// member | int Hunger
+Hunger level
+///
 
-### {{ renderMember(type='string', name='MercenaryStance') }}
+/// member | buff HybridHP
+///
 
-:   Current active mercenary stance as a string, default is NULL.
+/// member | int ID
+Spawn ID
+///
 
-### {{ renderMember(type='string', name='MercListInfo') }}
+/// member | bool InInstance
+Returns TRUE/FALSE if you are in an instance.
+///
 
-:   
+/// member | int Instance
+///
 
-### {{ renderMember(type='buff', name='Mezzed') }}
+/// member | int INT
+Character Intelligence
+///
 
-:   
+/// member | item Inventory[#]
+Item in this slot #
+///
 
-### {{ renderMember(type='int', name='MirEarned') }}
+/// member | item Inventory[slotname]
+Item in this slotname (inventory slots only). See [Slot Names](../general/slot-names.md) for a list of slotnames.
+///
 
-:   Total LDoN points earned in Miragul's
+/// member | bool Invited
+Invited to group?
+///
 
-### {{ renderMember(type='int', name='MMEarned') }}
+/// member | string Inviter
+Name of player sending group invite
+///
 
-:   Total LDoN points earned in Mistmoore
+/// member | string Invulnerable
+Returns the invulnerable spell name on you, can be used with spell datatype
 
-### {{ renderMember(type='int', name='Motes') }}
+```
+${Me.Invulnerable.Spell.ID}
+```
+///
 
-:   
+/// member | int IsBerserk
+///
 
-### {{ renderMember(type='bool', name='Moving') }}
+/// member | bool ItemReady[XXX]
+True/False on if the item is ready to cast.
+///
 
-:   Moving? (including strafe)
+/// member | int Krono
+///
 
-### {{ renderMember(type='string', name='Name') }}
+/// member | int LADelegateMA
+Level of Delegate MA of the current group leader (not your own ability level)
+///
 
-:   First name
+/// member | int LADelegateMarkNPC
+Level of Delegate Mark NPC of the current group leader (not your own ability level)
+///
 
-### {{ renderMember(type='int', name='Nobles') }}
+/// member | int LAFindPathPC
+Level of Find Path PC of the current group leader (not your own ability level)
+///
 
-:   
+/// member | int LAHealthEnhancement
+Level of Health Enhancement of the current group leader (not your own ability level)
+///
 
-### {{ renderMember(type='int', name='NumBagSlots') }}
+/// member | int LAHealthRegen
+Level of Health Regen of the current group leader (not your own ability level)
+///
 
-:   
+/// member | int LAHoTT
+Level of HoTT of the current group leader (not your own ability level)
+///
 
-### {{ renderMember(type='int', name='NumGems') }}
+/// member | int LAInspectBuffs
+Level of Inspect Buffs of the current group leader (not your own ability level)
+///
 
-:   Returns the amount of spell gems your toon has
+/// member | int LAManaEnhancement
+Level of Mana Enhancement of the current group leader (not your own ability level)
+///
 
-### {{ renderMember(type='zone', name='Origin') }}
+/// member | int LAMarkNPC
+Level of Mark NPC of the current group leader (not your own ability level)
+///
 
-:   
+/// member | int LANPCHealth
+Level of NPC Health of the current group leader (not your own ability level)
+///
 
-### {{ renderMember(type='int', name='Orux') }}
+/// member | int LAOffenseEnhancement
+Level of Offense Enhancement of the current group leader (not your own ability level)
+///
 
-:   Orux on your character
+/// member | int LASpellAwareness
+Level of Spell Awareness of the current group leader (not your own ability level)
+///
 
-### {{ renderMember(type='int', name='OverseerTetradrachm') }}
+/// member | int Language[language name]
+The EQ language number of the specified language. See [languages](../general/languages.md).
+///
 
-:   
+/// member | string Language[language number]
+Returns the EQ language name of the language number specified. See [languages](../general/languages.md).
+///
 
-### {{ renderMember(type='int', name='ParcelStatus') }}
+/// member | int LanguageSkill[language]
+Your skill in language
+///
 
-:   
+/// member | int LargestFreeInventory
+Size of your largest free inventory space
+///
 
-### {{ renderMember(type='float', name='PctAAExp') }}
+/// member | timestamp LastZoned
+Returns a timestamp of last time you zoned
+///
 
-:   AA exp as a %
+/// member | int LaurionInnVoucher
+///
 
-### {{ renderMember(type='int', name='PctAAVitality') }}
+/// member | int LCK
+///
 
-:   Percentage of AA Vitality your toon has
+/// member | int LDoNPoints
+Available LDoN points
+///
 
-### {{ renderMember(type='int', name='PctAggro') }}
+/// member | int LoyaltyTokens
+///
 
-:   Your aggro percentage
+/// member | buff Maloed
+///
 
-### {{ renderMember(type='int', name='PctAirSupply') }}
+/// member | int ManaBonus
+Mana bonus from gear and spells
+///
 
-:   
+/// member | int ManaRegen
+Mana regeneration from last tick
+///
 
-### {{ renderMember(type='int', name='PctEndurance') }}
+/// member | int ManaRegenBonus
+Mana regen bonus from gear and spells
+///
 
-:   Current endurance as a %
+/// member | int MarksOfValor
+///
 
-### {{ renderMember(type='float', name='PctExp') }}
+/// member | int MaxAirSupply
+///
 
-:   Experience as a %
+/// member | int MaxBuffSlots
+Max number of buffs you can have on you. /echo ${Me.MaxBuffSlots}
+///
 
-### {{ renderMember(type='int', name='PctExpToAA') }}
+/// member | int MaxEndurance
+Max endurance
+///
 
-:   
+/// member | int MaxHPs
+Max hit points
+///
 
-### {{ renderMember(type='int', name='PctHPs') }}
+/// member | int MaxLevel
+///
 
-:   Current HP as a %
+/// member | int MaxMana
+Max mana
+///
 
-### {{ renderMember(type='int', name='PctMana') }}
+/// member | int McKenzie
+///
 
-:   Current mana as a %
+/// member | int MedalsOfConflict
+///
 
-### {{ renderMember(type='float', name='PctMercAAExp') }}
+/// member | int MedalsOfHeroism
+///
 
-:   
+/// member | string MembershipLevel
+Account membership level: `GOLD`, `SILVER`, `FREE`. All-Access and Lifetime All-access are both considered Gold.
+///
 
-### {{ renderMember(type='int', name='PctVitality') }}
+/// member | int64 MercAAExp
+///
 
-:   Percentage of Vitality the toon has
+/// member | int MercAAPoints
+///
 
-### {{ renderMember(type='int', name='PersonaLevel', params='class') }}
+/// member | int MercAAPointsSpent
+///
 
-:   Given the class shortname as a param, returns level of that class persona. e.g. ${Me.PersonaLevel[DRU]} returns the level of your Druid persona.  If you do not have a Persona of the given class, the member will return 0.
+/// member | string Mercenary
+The state of your Mercenary, ACTIVE, SUSPENDED, or UNKNOWN (If it's dead). Returns NULL if you do not have a Mercenary.
+///
 
-### {{ renderMember(type='int', name='PersonaLevel', params='#') }}
+/// member | string MercenaryStance
+Current active mercenary stance as a string, default is NULL.
+///
 
-:   Given the class ID # returns the persona level of that class. eg ${Me.PersonaLevel[11]} returns the level of your Necromancer persona.  If you do not have a Persona of the given class, the member will return 0.
+/// member | string MercListInfo
+///
 
-### {{ renderMember(type='spell', name='PetBuff', params='#') }}
+/// member | buff Mezzed
+///
 
-:   The spell in this PetBuff slot #
+/// member | int MirEarned
+Total LDoN points earned in Miragul's
+///
 
-### {{ renderMember(type='int', name='PetBuff', params='name') }}
+/// member | int MMEarned
+Total LDoN points earned in Mistmoore
+///
 
-:   Finds PetBuff slot with the spell name
+/// member | int Motes
+///
 
-### {{ renderMember(type='int', name='Phosphenes') }}
+/// member | bool Moving
+Moving? (including strafe)
+///
 
-:   Phosphenes on your character
+/// member | string Name
+First name
+///
 
-### {{ renderMember(type='int', name='Phosphites') }}
+/// member | int Nobles
+///
 
-:   Phosphites on your character
+/// member | int NumBagSlots
+///
 
-### {{ renderMember(type='int', name='PiecesofEight') }}
+/// member | int NumGems
+Returns the amount of spell gems your toon has
+///
 
-:   
+/// member | zone Origin
+///
 
-### {{ renderMember(type='int', name='Platinum') }}
+/// member | int Orux
+Orux on your character
+///
 
-:   Platinum on your character
+/// member | int OverseerTetradrachm
+///
 
-### {{ renderMember(type='int', name='PlatinumBank') }}
+/// member | int ParcelStatus
+///
 
-:   Platinum in bank
+/// member | float PctAAExp
+AA exp as a %
+///
 
-### {{ renderMember(type='int', name='PlatinumShared') }}
+/// member | int PctAAVitality
+Percentage of AA Vitality your toon has
+///
 
-:   Platinum in shared bank
+/// member | int PctAggro
+Your aggro percentage
+///
 
-### {{ renderMember(type='string', name='Poisoned') }}
+/// member | int PctAirSupply
+///
 
-:   Returns the name of any Poison spell
+/// member | int PctEndurance
+Current endurance as a %
+///
 
-### {{ renderMember(name='PracticePoints') }}
+/// member | float PctExp
+Experience as a %
+///
 
-:   
+/// member | int PctExpToAA
+///
 
-### {{ renderMember(type='buff', name='Pred') }}
+/// member | int PctHPs
+Current HP as a %
+///
 
-:   
+/// member | int PctMana
+Current mana as a %
+///
 
-### {{ renderMember(type='int', name='RadiantCrystals') }}
+/// member | float PctMercAAExp
+///
 
-:   Number of Radiant Crystals on your character
+/// member | int PctVitality
+Percentage of Vitality the toon has
+///
 
-### {{ renderMember(type='spawn', name='RaidAssistTarget', params='#') }}
+/// member | int PersonaLevel[class]
+Given the class shortname as a param, returns level of that class persona. e.g. ${Me.PersonaLevel[DRU]} returns the level of your Druid persona.  If you do not have a Persona of the given class, the member will return 0.
+///
 
-:   Current raid assist target (1-3)
+/// member | int PersonaLevel[#]
+Given the class ID # returns the persona level of that class. eg ${Me.PersonaLevel[11]} returns the level of your Necromancer persona.  If you do not have a Persona of the given class, the member will return 0.
+///
 
-### {{ renderMember(type='spawn', name='RaidMarkNPC', params='#') }}
+/// member | spell PetBuff[#]
+The spell in this PetBuff slot #
+///
 
-:   Current raid marked NPC (1-3)
+/// member | int PetBuff[name]
+Finds PetBuff slot with the spell name
+///
 
-### {{ renderMember(type='bool', name='RangedReady') }}
+/// member | int Phosphenes
+Phosphenes on your character
+///
 
-:   Ranged attack ready?
+/// member | int Phosphites
+Phosphites on your character
+///
 
-### {{ renderMember(type='int', name='RebellionChits') }}
+/// member | int PiecesofEight
+///
 
-:   
+/// member | int Platinum
+Platinum on your character
+///
 
-### {{ renderMember(type='int', name='Reclamation') }}
+/// member | int PlatinumBank
+Platinum in bank
+///
 
-:   
+/// member | int PlatinumShared
+Platinum in shared bank
+///
 
-### {{ renderMember(type='buff', name='Regen') }}
+/// member | string Poisoned
+Returns the name of any Poison spell
+///
 
-:   
+/// member | PracticePoints
+///
 
-### {{ renderMember(type='int', name='RemnantOfTranquility') }}
+/// member | buff Pred
+///
 
-:   
+/// member | int RadiantCrystals
+Number of Radiant Crystals on your character
+///
 
-### {{ renderMember(type='int', name='RestlessMark') }}
+/// member | spawn RaidAssistTarget[#]
+Current raid assist target (1-3)
+///
 
-:   
+/// member | spawn RaidMarkNPC[#]
+Current raid marked NPC (1-3)
+///
 
-### {{ renderMember(type='buff', name='RevDSed') }}
+/// member | bool RangedReady
+Ranged attack ready?
+///
 
-:   
+/// member | int RebellionChits
+///
 
-### {{ renderMember(type='buff', name='Rooted') }}
+/// member | int Reclamation
+///
 
-:   
+/// member | buff Regen
+///
 
-### {{ renderMember(type='int', name='RujEarned') }}
+/// member | int RemnantOfTranquility
+///
 
-:   Total LDoN points earned in Rujarkian
+/// member | int RestlessMark
+///
 
-### {{ renderMember(type='bool', name='Running') }}
+/// member | buff RevDSed
+///
 
-:   Do I have auto-run turned on?
+/// member | buff Rooted
+///
 
-### {{ renderMember(type='int', name='SathirsTradeGems') }}
+/// member | int RujEarned
+Total LDoN points earned in Rujarkian
+///
 
-:   
+/// member | bool Running
+Do I have auto-run turned on?
+///
 
-### {{ renderMember(type='int', name='ScarletMarks') }}
+/// member | int SathirsTradeGems
+///
 
-:   
+/// member | int ScarletMarks
+///
 
-### {{ renderMember(type='buff', name='SE') }}
+/// member | buff SE
+///
 
-:   
+/// member | spawn SecondaryAggroPlayer
+spawninfo for secondary aggro player
+///
 
-### {{ renderMember(type='spawn', name='SecondaryAggroPlayer') }}
+/// member | int SecondaryPctAggro
+Secondary Percentage aggro
+///
 
-:   spawninfo for secondary aggro player
+/// member | int ShadedSpecie
+///
 
-### {{ renderMember(type='int', name='SecondaryPctAggro') }}
+/// member | int ShadowStones
+///
 
-:   Secondary Percentage aggro
+/// member | int ShalowainsPrivateReserve
+///
 
-### {{ renderMember(type='int', name='ShadedSpecie') }}
+/// member | item SharedBank
+///
 
-:   
+/// member | int ShieldingBonus
+Shielding bonus from gear and spells
+///
 
-### {{ renderMember(type='int', name='ShadowStones') }}
+/// member | buff Shining
+///
 
-:   
+/// member | bool Shrouded
+Am I Shrouded?
+///
 
-### {{ renderMember(type='int', name='ShalowainsPrivateReserve') }}
+/// member | buff Silenced
+Returns the buff of the Silence type effect on you
+///
 
-:   
+/// member | int Silver
+Silver on your character
+///
 
-### {{ renderMember(type='item', name='SharedBank') }}
+/// member | int SilverBank
+Silver in bank
+///
 
-:   
+/// member | int SilverTokens
+///
 
-### {{ renderMember(type='int', name='ShieldingBonus') }}
+/// member | int Skill[name|#]
+Skill level of skill with this name or ID #
+///
 
-:   Shielding bonus from gear and spells
+/// member | int SkillBase
+///
 
-### {{ renderMember(type='buff', name='Shining') }}
+/// member | int SkillCap[name|#]
+Skill cap of skill with this name or ID #
+///
 
-:   
+/// member | buff Skin
+///
 
-### {{ renderMember(type='bool', name='Shrouded') }}
+/// member | buff Slowed
+///
 
-:   Am I Shrouded?
+/// member | buff Snared
+///
 
-### {{ renderMember(type='buff', name='Silenced') }}
+/// member | buff Song[name]
+Finds song with this name
+///
 
-:   Returns the buff of the Silence type effect on you
+/// member | buff Song[#]
+The song in this slot #
+///
 
-### {{ renderMember(type='int', name='Silver') }}
+/// member | int SPA
+///
 
-:   Silver on your character
+/// member | spawn Spawn
+The character's spawn
+///
 
-### {{ renderMember(type='int', name='SilverBank') }}
+/// member | spell Spell
+///
 
-:   Silver in bank
+/// member | int SpellDamageBonus
+Spell Damage bonus
+///
 
-### {{ renderMember(type='int', name='SilverTokens') }}
+/// member | bool SpellInCooldown
+returns TRUE if you have a spell in cooldown and FALSE when not.
+///
 
-:   
+/// member | int SpellRankCap
+your characters spell rank cap. if it returns: 1 = Rk. I spells 2 = Rk. II spells 3 = Rk. III spells
+///
 
-### {{ renderMember(type='int', name='Skill', params='name|#') }}
+/// member | bool SpellReady[name|#]
+Gem with this spell name or in this gem # ready to cast?
+///
 
-:   Skill level of skill with this name or ID #
+/// member | int SpellShieldBonus
+Spell Shield bonus from gear and spells
+///
 
-### {{ renderMember(type='int', name='SkillBase') }}
+/// member | int SpiritualMedallions
+///
 
-:   
+/// member | int STA
+Character Stamina
+///
 
-### {{ renderMember(type='int', name='SkillCap', params='name|#') }}
+/// member | int STR
+Character Strength
+///
 
-:   Skill cap of skill with this name or ID #
+/// member | buff Strength
+///
 
-### {{ renderMember(type='buff', name='Skin') }}
+/// member | int StrikeThroughBonus
+Strikethrough bonus from gear and spells
+///
 
-:   
+/// member | bool Stunned
+Am I stunned?
+///
 
-### {{ renderMember(type='buff', name='Slowed') }}
+/// member | int StunResistBonus
+Stun Resist bonus from gear and spells
+///
 
-:   
+/// member | string Subscription
+See MembershipLevel
+///
 
-### {{ renderMember(type='buff', name='Snared') }}
+/// member | int SubscriptionDays
+The number of days left before subscription expires.
+///
 
-:   
+/// member | buff SV
+///
 
-### {{ renderMember(type='buff', name='Song', params='name') }}
+/// member | int svChromatic
+Your character's lowest resist
+///
 
-:   Finds song with this name
+/// member | int svCold
+Character Cold Resist
+///
 
-### {{ renderMember(type='buff', name='Song', params='#') }}
+/// member | int svCorruption
+Character Corruption Resist
+///
 
-:   The song in this slot #
+/// member | int svDisease
+Character Disease Resist
+///
 
-### {{ renderMember(type='int', name='SPA') }}
+/// member | int svFire
+Character Fire Resist
+///
 
-:   
+/// member | int svMagic
+Character Magic Resist
+///
 
-### {{ renderMember(type='spawn', name='Spawn') }}
+/// member | int svPoison
+Character Poison Resist
+///
 
-:   The character's spawn
+/// member | int svPrismatic
+The average of your character's resists
+///
 
-### {{ renderMember(type='spell', name='Spell') }}
+/// member | buff Symbol
+///
 
-:   
+/// member | int TakEarned
+Total LDoN points earned in Takish
+///
 
-### {{ renderMember(type='int', name='SpellDamageBonus') }}
+/// member | spawn TargetOfTarget
+Target of Target (will only work when group or raid Target of Target is active; if not, it will return NULL)
+///
 
-:   Spell Damage bonus
+/// member | buff Tashed
+///
 
-### {{ renderMember(type='bool', name='SpellInCooldown') }}
+/// member | int Thirst
+Thirst level
+///
 
-:   returns TRUE if you have a spell in cooldown and FALSE when not.
+/// member | int64 TotalCounters
+///
 
-### {{ renderMember(type='int', name='SpellRankCap') }}
+/// member | bool TributeActive
+Tribute Active
+///
 
-:   your characters spell rank cap. if it returns: 1 = Rk. I spells 2 = Rk. II spells 3 = Rk. III spells
+/// member | ticks TributeTimer
+Tribute Timer
+///
 
-### {{ renderMember(type='bool', name='SpellReady', params='name|#') }}
+/// member | bool UseAdvancedLooting
+TRUE/FALSE if using advanced looting
+///
 
-:   Gem with this spell name or in this gem # ready to cast?
+/// member | int VeliumShards
+///
 
-### {{ renderMember(type='int', name='SpellShieldBonus') }}
+/// member | int64 Vitality
+Total amount of Vitality your toon has
+///
 
-:   Spell Shield bonus from gear and spells
+/// member | int64 VitalityCap
+///
 
-### {{ renderMember(type='int', name='SpiritualMedallions') }}
+/// member | int Voucher
+///
 
-:   
+/// member | int WarforgedEmblem
+///
 
-### {{ renderMember(type='int', name='STA') }}
+/// member | int WarlordsSymbol
+///
 
-:   Character Stamina
+/// member | int WIS
+Character Wisdom
+///
 
-### {{ renderMember(type='int', name='STR') }}
+/// member | int XTAggroCount[N]
+_N is optional and defaults to 100_.<br><br>Returns the number of AUTO-HATER mobs on the extended target window where your aggro is less than the optional parameter N. N must be between 1-100 inclusive or it will be set to 100 (the default value).
+///
 
-:   Character Strength
+/// member | xtarget XTarget[#]
+Extended target data for the specified XTarget #. Note: Passing no index to this returns the number of current extended targets.
+///
 
-### {{ renderMember(type='buff', name='Strength') }}
+/// member | int XTargetSlots
+///
 
-:   
+/// member | int XTHaterCount
+///
 
-### {{ renderMember(type='int', name='StrikeThroughBonus') }}
+/// member | zone ZoneBound
+///
 
-:   Strikethrough bonus from gear and spells
+/// member | float ZoneBoundX
+///
 
-### {{ renderMember(type='bool', name='Stunned') }}
+/// member | float ZoneBoundY
+///
 
-:   Am I stunned?
+/// member | float ZoneBoundZ
+///
 
-### {{ renderMember(type='int', name='StunResistBonus') }}
-
-:   Stun Resist bonus from gear and spells
-
-### {{ renderMember(type='string', name='Subscription') }}
-
-:   See MembershipLevel
-
-### {{ renderMember(type='int', name='SubscriptionDays') }}
-
-:   The number of days left before subscription expires.
-
-### {{ renderMember(type='buff', name='SV') }}
-
-:   
-
-### {{ renderMember(type='int', name='svChromatic') }}
-
-:   Your character's lowest resist
-
-### {{ renderMember(type='int', name='svCold') }}
-
-:   Character Cold Resist
-
-### {{ renderMember(type='int', name='svCorruption') }}
-
-:   Character Corruption Resist
-
-### {{ renderMember(type='int', name='svDisease') }}
-
-:   Character Disease Resist
-
-### {{ renderMember(type='int', name='svFire') }}
-
-:   Character Fire Resist
-
-### {{ renderMember(type='int', name='svMagic') }}
-
-:   Character Magic Resist
-
-### {{ renderMember(type='int', name='svPoison') }}
-
-:   Character Poison Resist
-
-### {{ renderMember(type='int', name='svPrismatic') }}
-
-:   The average of your character's resists
-
-### {{ renderMember(type='buff', name='Symbol') }}
-
-:   
-
-### {{ renderMember(type='int', name='TakEarned') }}
-
-:   Total LDoN points earned in Takish
-
-### {{ renderMember(type='spawn', name='TargetOfTarget') }}
-
-:   Target of Target (will only work when group or raid Target of Target is active; if not, it will return NULL)
-
-### {{ renderMember(type='buff', name='Tashed') }}
-
-:   
-
-### {{ renderMember(type='int', name='Thirst') }}
-
-:   Thirst level
-
-### {{ renderMember(type='int64', name='TotalCounters') }}
-
-:   
-
-### {{ renderMember(type='bool', name='TributeActive') }}
-
-:   Tribute Active
-
-### {{ renderMember(type='ticks', name='TributeTimer') }}
-
-:   Tribute Timer
-
-### {{ renderMember(type='bool', name='UseAdvancedLooting') }}
-
-:   TRUE/FALSE if using advanced looting
-
-### {{ renderMember(type='int', name='VeliumShards') }}
-
-:   
-
-### {{ renderMember(type='int64', name='Vitality') }}
-
-:   Total amount of Vitality your toon has
-
-### {{ renderMember(type='int64', name='VitalityCap') }}
-
-:   
-
-### {{ renderMember(type='int', name='Voucher') }}
-
-:   
-
-### {{ renderMember(type='int', name='WarforgedEmblem') }}
-
-:   
-
-### {{ renderMember(type='int', name='WarlordsSymbol') }}
-
-:   
-
-### {{ renderMember(type='int', name='WIS') }}
-
-:   Character Wisdom
-
-### {{ renderMember(type='int', name='XTAggroCount', params='N') }}
-
-:   _N is optional and defaults to 100_.<br><br>Returns the number of AUTO-HATER mobs on the extended target window where your aggro is less than the optional parameter N. N must be between 1-100 inclusive or it will be set to 100 (the default value).
-
-### {{ renderMember(type='xtarget', name='XTarget', params='#') }}
-
-:   Extended target data for the specified XTarget #. Note: Passing no index to this returns the number of current extended targets.
-
-### {{ renderMember(type='int', name='XTargetSlots') }}
-
-:   
-
-### {{ renderMember(type='int', name='XTHaterCount') }}
-
-:   
-
-### {{ renderMember(type='zone', name='ZoneBound') }}
-
-:   
-
-### {{ renderMember(type='float', name='ZoneBoundX') }}
-
-:   
-
-### {{ renderMember(type='float', name='ZoneBoundY') }}
-
-:   
-
-### {{ renderMember(type='float', name='ZoneBoundZ') }}
-
-:   
-
-### {{ renderMember(type='bool', name='Zoning') }}
-
-:   
+/// member | bool Zoning
+///
 
 ### [string][string] `To String`
 

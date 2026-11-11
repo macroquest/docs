@@ -11,62 +11,62 @@ While not required to access achievements, categories may be useful for enumerat
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='achievement', name='Achievement', params='#|Name') }}
+/// member | achievement Achievement[#|Name]
+Find an achievement in this category by its ID or name.
+///
 
-:   Find an achievement in this category by its ID or name.
+/// member | achievement AchievementByIndex[#]
+Find an achievement by its index in this category.
+///
 
-### {{ renderMember(type='achievement', name='AchievementByIndex', params='#') }}
+/// member | int AchievementCount
+The number of achievements in this category.
+///
 
-:   Find an achievement by its index in this category.
+/// member | achievementcat Category[#|Name]
+Find a child category in this category by its ID or name.
+///
 
-### {{ renderMember(type='int', name='AchievementCount') }}
+/// member | achievementcat CategoryByIndex
+Find a child category by its index in this category.
+///
 
-:   The number of achievements in this category.
+/// member | int CategoryCount
+The number of child categories in this category.
+///
 
-### {{ renderMember(type='achievementcat', name='Category', params='#|Name') }}
+/// member | int CompletedAchievements
+The number of achievements earned in this category and its subcategories
+///
 
-:   Find a child category in this category by its ID or name.
+/// member | string Description
+The category's description
+///
 
-### {{ renderMember(type='achievementcat', name='CategoryByIndex') }}
+/// member | int ID
+The unique ID for the category
+///
 
-:   Find a child category by its index in this category.
+/// member | string ImageTextureName
+Name of the image texture that is used to represent this category in the Achievements Window.
+///
 
-### {{ renderMember(type='int', name='CategoryCount') }}
+/// member | int Index
+The index of the category in the achievement manager. For more information see [Achievement Indices](../top-level-objects/tlo-achievement.md#usage).
+///
 
-:   The number of child categories in this category.
+/// member | string Name
+The category's display name
+///
 
-### {{ renderMember(type='int', name='CompletedAchievements') }}
-
-:   The number of achievements earned in this category and its subcategories
-
-### {{ renderMember(type='string', name='Description') }}
-
-:   The category's description
-
-### {{ renderMember(type='int', name='ID') }}
-
-:   The unique ID for the category
-
-### {{ renderMember(type='string', name='ImageTextureName') }}
-
-:   Name of the image texture that is used to represent this category in the Achievements Window.
-
-### {{ renderMember(type='int', name='Index') }}
-
-:   The index of the category in the achievement manager. For more information see [Achievement Indices](../top-level-objects/tlo-achievement.md#usage).
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   The category's display name
-
-### {{ renderMember(type='int', name='Points') }}
-
-:   The total earned points of achievements in this category.
+/// member | int Points
+The total earned points of achievements in this category.
+///
 
 
-### {{ renderMember(type='int', name='TotalAchievements') }}
-
-:   The total number of achievements in this category and its subcategories.
+/// member | int TotalAchievements
+The total number of achievements in this category and its subcategories.
+///
 <!--dt-members-end-->
 
 ### Examples

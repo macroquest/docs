@@ -9,7 +9,8 @@ Test if _n_ is inside a range of 2 numbers or between 2 numbers
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='range', name='Range') }}
+/// member | range Range
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

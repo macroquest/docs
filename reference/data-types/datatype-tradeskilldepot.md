@@ -9,41 +9,41 @@ This contains information related to a tradeskill depot.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='Capacity') }}
+/// member | int Capacity
+Returns the total capacity of the tradeskill depot.
+///
 
-:   Returns the total capacity of the tradeskill depot.
+/// member | int Count
+Returns the number of item stacks in the tradeskill depot.
+///
 
-### {{ renderMember(type='int', name='Count') }}
+/// member | bool Enabled
+Returns whether the tradeskill depot is enabled or not. It requires the Night of Shadows expansion.
+///
 
-:   Returns the number of item stacks in the tradeskill depot.
+/// member | item FindItem[#]
+Find an item with the given item ID in the tradeskill depot.
+///
 
-### {{ renderMember(type='bool', name='Enabled') }}
+/// member | item FindItem[name]
+Find an item by partial name in the tradeskill depot. Prefix with "=" for an exact match.
+///
 
-:   Returns whether the tradeskill depot is enabled or not. It requires the Night of Shadows expansion.
+/// member | int FindItemCount[#]
+Find the number of items with the given item ID in the tradeskill depot.
+///
 
-### {{ renderMember(type='item', name='FindItem', params='#') }}
+/// member | int FindItemCount[name]
+Find the number of items by partial name in the tradeskill depot. Prefix with "=" for an exact match.
+///
 
-:   Find an item with the given item ID in the tradeskill depot.
+/// member | bool ItemsReceived
+Returns whether the tradeskill depot has been populated with items. The window must be opened at least once for the depot to be populated with items.
+///
 
-### {{ renderMember(type='item', name='FindItem', params='name') }}
-
-:   Find an item by partial name in the tradeskill depot. Prefix with "=" for an exact match.
-
-### {{ renderMember(type='int', name='FindItemCount', params='#') }}
-
-:   Find the number of items with the given item ID in the tradeskill depot.
-
-### {{ renderMember(type='int', name='FindItemCount', params='name') }}
-
-:   Find the number of items by partial name in the tradeskill depot. Prefix with "=" for an exact match.
-
-### {{ renderMember(type='bool', name='ItemsReceived') }}
-
-:   Returns whether the tradeskill depot has been populated with items. The window must be opened at least once for the depot to be populated with items.
-
-### {{ renderMember(type='item', name='SelectedItem') }}
-
-:   Returns the currently selected item in the tradeskill depot window.
+/// member | item SelectedItem
+Returns the currently selected item in the tradeskill depot window.
+///
 <!--dt-members-end-->
 
 ## Methods

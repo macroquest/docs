@@ -9,53 +9,53 @@ A timestamp represented in milliseconds.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='Days') }}
+/// member | int Days
+Number of days remaining in the timestamp (3d 2h 23m will return 3)
+///
 
-:   Number of days remaining in the timestamp (3d 2h 23m will return 3)
+/// member | float Float
+timestamp represented in remaining seconds (1hr 23 min 53 seconds will return 5033.00)
+///
 
-### {{ renderMember(type='float', name='Float') }}
+/// member | int64 Hours
+Number of hours remaining in the timestamp (1hr 23min 53 seconds will return 1)
+///
 
-:   timestamp represented in remaining seconds (1hr 23 min 53 seconds will return 5033.00)
+/// member | int64 Minutes
+Number of Minutes remaining in the timestamp (1hr 23min 53 seconds will return 23)
+///
 
-### {{ renderMember(type='int64', name='Hours') }}
+/// member | int64 Raw
+Remaining time value represented in milliseconds
+///
 
-:   Number of hours remaining in the timestamp (1hr 23min 53 seconds will return 1)
+/// member | int64 Seconds
+Number of Seconds remaining in the timestamp (1hr 23min 53 seconds will return 53)
+///
 
-### {{ renderMember(type='int64', name='Minutes') }}
+/// member | int64 Ticks
+Remaining time value represented in ticks
+///
 
-:   Number of Minutes remaining in the timestamp (1hr 23min 53 seconds will return 23)
+/// member | string Time
+Remaining time value formatted in M:S
+///
 
-### {{ renderMember(type='int64', name='Raw') }}
+/// member | string TimeDHM
+Remaining time value formatted in D:H:M (Days:Hours:Minutes)
+///
 
-:   Remaining time value represented in milliseconds
+/// member | string TimeHMS
+Remaining time value formatted in H:M:S
+///
 
-### {{ renderMember(type='int64', name='Seconds') }}
+/// member | int64 TotalMinutes
+Total number of remaining minutes in the timestamp (1hr 23min 53 seconds will return 83)
+///
 
-:   Number of Seconds remaining in the timestamp (1hr 23min 53 seconds will return 53)
-
-### {{ renderMember(type='int64', name='Ticks') }}
-
-:   Remaining time value represented in ticks
-
-### {{ renderMember(type='string', name='Time') }}
-
-:   Remaining time value formatted in M:S
-
-### {{ renderMember(type='string', name='TimeDHM') }}
-
-:   Remaining time value formatted in D:H:M (Days:Hours:Minutes)
-
-### {{ renderMember(type='string', name='TimeHMS') }}
-
-:   Remaining time value formatted in H:M:S
-
-### {{ renderMember(type='int64', name='TotalMinutes') }}
-
-:   Total number of remaining minutes in the timestamp (1hr 23min 53 seconds will return 83)
-
-### {{ renderMember(type='int64', name='TotalSeconds') }}
-
-:   Total number of remaining minutes in the timestamp (1hr 23min 53 seconds will return 5033)
+/// member | int64 TotalSeconds
+Total number of remaining minutes in the timestamp (1hr 23min 53 seconds will return 5033)
+///
 
 ### [string][string] `(To String)`
 

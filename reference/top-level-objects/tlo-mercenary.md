@@ -9,7 +9,8 @@ Object used to get information about your mercenary.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='mercenary', name='Mercenary') }}
+/// member | mercenary Mercenary
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

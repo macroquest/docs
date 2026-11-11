@@ -11,40 +11,40 @@ This contains information related to the active merchant.
 <!--dt-members-start-->
 This type inherits members from [_spawn_](datatype-spawn.md) if a merchant is active.
 
-### {{ renderMember(type='bool', name='Full') }}
+/// member | bool Full
+Returns True if the merchant's inventory is full.
+///
 
-:   Returns True if the merchant's inventory is full.
+/// member | item Item[#]
+Item number _#_ on the merchant's list.
+///
 
-### {{ renderMember(type='item', name='Item', params='#') }}
+/// member | item Item[name]
+Find an item by partial name on the merchant's list. Prefix with "=" for an exact match.
+///
 
-:   Item number _#_ on the merchant's list.
+/// member | int Items
+Number of items on the merchant.
+///
 
-### {{ renderMember(type='item', name='Item', params='name') }}
+/// member | bool ItemsReceived
+True if the merchant's item list has been populated.
+///
 
-:   Find an item by partial name on the merchant's list. Prefix with "=" for an exact match.
+/// member | float Markup
+The number used to calculate the buy and sell value for an item. (This is what is changed by charisma and faction). This value is capped at 1.05.
 
-### {{ renderMember(type='int', name='Items') }}
+- Amount you buy item for = Item Value * Markup
+- Amount you sell item for = Item Value * (1/Markup)
+///
 
-:   Number of items on the merchant.
+/// member | bool Open
+Returns True if the merchant window is open.
+///
 
-### {{ renderMember(type='bool', name='ItemsReceived') }}
-
-:   True if the merchant's item list has been populated.
-
-### {{ renderMember(type='float', name='Markup') }}
-
-:   The number used to calculate the buy and sell value for an item. (This is what is changed by charisma and faction). This value is capped at 1.05.
-
-    - Amount you buy item for = Item Value * Markup
-    - Amount you sell item for = Item Value * (1/Markup)
-
-### {{ renderMember(type='bool', name='Open') }}
-
-:   Returns True if the merchant window is open.
-
-### {{ renderMember(type='item', name='SelectedItem') }}
-
-:   The currently selected item in the merchant window. Items can be selected by using [/selectitem](../commands/selectitem.md) or the `SelectItem` method
+/// member | item SelectedItem
+The currently selected item in the merchant window. Items can be selected by using [/selectitem](../commands/selectitem.md) or the `SelectItem` method
+///
 
 ### [string][string] `(To String)`
 

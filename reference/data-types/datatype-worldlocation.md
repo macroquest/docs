@@ -9,29 +9,29 @@ Provides access to world locations such as a character's bound location
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='heading', name='Heading') }}
+/// member | heading Heading
+At the point of binding, what direction was the character facing
+///
 
-:   At the point of binding, what direction was the character facing
+/// member | int ID
+The zone ID
+///
 
-### {{ renderMember(type='int', name='ID') }}
+/// member | float X
+The X coordinate
+///
 
-:   The zone ID
+/// member | float Y
+The Y coordinate
+///
 
-### {{ renderMember(type='float', name='X') }}
+/// member | float Z
+The Z coordinate
+///
 
-:   The X coordinate
-
-### {{ renderMember(type='float', name='Y') }}
-
-:   The Y coordinate
-
-### {{ renderMember(type='float', name='Z') }}
-
-:   The Z coordinate
-
-### {{ renderMember(type='zone', name='Zone') }}
-
-:   Access to the zone data
+/// member | zone Zone
+Access to the zone data
+///
 <!--dt-members-end-->
 <!--dt-linkrefs-start-->
 [heading]: datatype-heading.md

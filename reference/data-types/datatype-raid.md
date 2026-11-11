@@ -9,71 +9,71 @@ Contains data on the current raid
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='float', name='AverageLevel') }}
+/// member | float AverageLevel
+Average level of raid members (more accurate than in the window)
+///
 
-:   Average level of raid members (more accurate than in the window)
+/// member | bool Invited
+Have I been invited to the raid?
+///
 
-### {{ renderMember(type='bool', name='Invited') }}
+/// member | raidmember Leader
+Raid leader
+///
 
-:   Have I been invited to the raid?
+/// member | bool Locked
+Returns TRUE if the raid is locked
+///
 
-### {{ renderMember(type='raidmember', name='Leader') }}
+/// member | string Looter[#]
+Specified looter name by number
+///
 
-:   Raid leader
+/// member | int Looters
+Number of specified looters
+///
 
-### {{ renderMember(type='bool', name='Locked') }}
+/// member | int LootType
+Method of looter assignment
 
-:   Returns TRUE if the raid is locked
+| Value | Meaning |
+| :--- | :--- |
+| 1 | Leader |
+| 2 | Leader & Group Leader |
+| 3 | Leader & Assignments |
+///
 
-### {{ renderMember(type='string', name='Looter', params='#') }}
+/// member | raidmember MainAssist
+Raid main assist
+///
 
-:   Specified looter name by number
+/// member | raidmember MarkNpc
+Raid NPC marker
+///
 
-### {{ renderMember(type='int', name='Looters') }}
+/// member | raidmember MasterLooter
+Raid Master Looter
+///
 
-:   Number of specified looters
+/// member | raidmember Member[N]
+Raid member by number _N_
+///
 
-### {{ renderMember(type='int', name='LootType') }}
+/// member | raidmember Member[name]
+Raid member by _name_.
+///
 
-:   Method of looter assignment
+/// member | int Members
+Total number of raid members
+///
 
-    | Value | Meaning |
-    | :--- | :--- |
-    | 1 | Leader |
-    | 2 | Leader & Group Leader |
-    | 3 | Leader & Assignments |
+/// member | raidmember Target
+Raid target (clicked in raid window)
+///
 
-### {{ renderMember(type='raidmember', name='MainAssist') }}
-
-:   Raid main assist
-
-### {{ renderMember(type='raidmember', name='MarkNpc') }}
-
-:   Raid NPC marker
-
-### {{ renderMember(type='raidmember', name='MasterLooter') }}
-
-:   Raid Master Looter
-
-### {{ renderMember(type='raidmember', name='Member', params='N') }}
-
-:   Raid member by number _N_
-
-### {{ renderMember(type='raidmember', name='Member', params='name') }}
-
-:   Raid member by _name_.
-
-### {{ renderMember(type='int', name='Members') }}
-
-:   Total number of raid members
-
-### {{ renderMember(type='raidmember', name='Target') }}
-
-:   Raid target (clicked in raid window)
-
-### {{ renderMember(type='int', name='TotalLevels') }}
-
-:   Sum of all raid member's levels
+/// member | int TotalLevels
+Sum of all raid member's levels
+///
 <!--dt-members-end-->
 <!--dt-linkrefs-start-->
 [bool]: datatype-bool.md

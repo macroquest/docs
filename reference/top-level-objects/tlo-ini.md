@@ -9,20 +9,20 @@ Reads value(s) from an ini file located in a relative or absolute path.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='string', name='Ini', params='filename,section,key,default') }}
+/// member | string Ini[filename,section,key,default]
+The _section_, _key_, and _default_ do not need to be given. If _section_ or _key_ are not given, multiple values are read.
 
-:   The _section_, _key_, and _default_ do not need to be given. If _section_ or _key_ are not given, multiple values are read.
+_Section_ and _key_ may be set to -1 to skip them and give a new value.
 
-    _Section_ and _key_ may be set to -1 to skip them and give a new value.
+If the ini is located in a directory other than the root Macros directory is located, you can use
+a DOS-style filepath (relative or absolute) to locate the ini. If the macro accessing the ini
+is in the same non-root directory, you will still to provide the (relative or absolute) filepath.
+///
 
-    If the ini is located in a directory other than the root Macros directory is located, you can use
-    a DOS-style filepath (relative or absolute) to locate the ini. If the macro accessing the ini
-    is in the same non-root directory, you will still to provide the (relative or absolute) filepath.
-
-### {{ renderMember(type='ini', name='Ini') }}
-
-:   When passed with no parameters to Ini[] the more robust form of the Ini TLO is used.  See below and the reference
-    to the [Key](../data-types/datatype-inifilesectionkey.md) datatype for further usage.
+/// member | ini Ini
+When passed with no parameters to Ini[] the more robust form of the Ini TLO is used.  See below and the reference
+to the [Key](../data-types/datatype-inifilesectionkey.md) datatype for further usage.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

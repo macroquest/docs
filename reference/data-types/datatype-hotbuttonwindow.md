@@ -9,124 +9,124 @@ Data related to hotbuttons
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='altability', name='AltAbility') }}
+/// member | altability AltAbility
+If this hotbutton activates an alternate ability, this will return the alternate
+ability that is activated by pressing this button.
+///
 
-:   If this hotbutton activates an alternate ability, this will return the alternate
-    ability that is activated by pressing this button.
+/// member | int ButtonIndex
+Returns the index of the button in the hotbutton page it resides on.
 
-### {{ renderMember(type='int', name='ButtonIndex') }}
+e.g., if this hotbutton is the third button on the page, it will return 3.
+///
 
-:   Returns the index of the button in the hotbutton page it resides on.
+/// member | int BarIndex
+Returns which bar this button resides on.
 
-    e.g., if this hotbutton is the third button on the page, it will return 3.
+e.g. If this hotbutton is on the first (main) hotbutton bar, it will return 1.
+///
 
-### {{ renderMember(type='int', name='BarIndex') }}
+/// member | int IconSlot
+Returns the ID of the icon that is displayed by this hotbutton, if any. Which icon
+this identifies depends on the value of `IconType`.
 
-:   Returns which bar this button resides on.
+If no icon is present, this will return -1.
+///
 
-    e.g. If this hotbutton is on the first (main) hotbutton bar, it will return 1.
+/// member | int IconType
+Returns the type of icon that is displayed by this hotbutton. Each type of icon is
+read from a specific icon texture atlas.
 
-### {{ renderMember(type='int', name='IconSlot') }}
+If no icon is present, this will return -1.
 
-:   Returns the ID of the icon that is displayed by this hotbutton, if any. Which icon
-    this identifies depends on the value of `IconType`.
+| Value | Meaning | Texture Atlas |
+| :---: | :---: | :---: |
+| -1 | No icon | n/a |
+| 0 | Item icon | A_DragItem |
+| 1 | Spell Icons | A_SpellGems |
+| 2 | Menu Icons | A_MenuIcons |
+///
 
-    If no icon is present, this will return -1.
+/// member | item Item
+An item that is linked to the hot button
+///
 
-### {{ renderMember(type='int', name='IconType') }}
+/// member | string ItemGuid
+Unique identifier of the item associated with this hotbutton, if any.
 
-:   Returns the type of icon that is displayed by this hotbutton. Each type of icon is
-    read from a specific icon texture atlas.
+If no item is associated with this hotbutton, this will return an empty string.
+///
 
-    If no icon is present, this will return -1.
+/// member | int ItemId
+ID of the item associated with this hotbutton.
 
-    | Value | Meaning | Texture Atlas |
-    | :---: | :---: | :---: |
-    | -1 | No icon | n/a |
-    | 0 | Item icon | A_DragItem |
-    | 1 | Spell Icons | A_SpellGems |
-    | 2 | Menu Icons | A_MenuIcons |
+If no item is associated with this hotbutton, this will return 0.
+///
 
-### {{ renderMember(type='item', name='Item') }}
+/// member | string ItemName
+Name of the item associated with this hotbutton.
 
-:   An item that is linked to the hot button
+If no item is associated with this hotbutton, this will return an empty string.
+///
 
-### {{ renderMember(type='string', name='ItemGuid') }}
+/// member | string Label
+Display label for this hotbutton.
+///
 
-:   Unique identifier of the item associated with this hotbutton, if any.
+/// member | int PageIndex
+Returns the index of the page of the hotbar that this button resides on.
+///
 
-    If no item is associated with this hotbutton, this will return an empty string.
+/// member | int Slot
+The meaning of this value depends on the type of hotbutton. The type of hotbutton can be
+determined with the `Type` member.
 
-### {{ renderMember(type='int', name='ItemId') }}
+See [HotButton Types](datatype-hotbuttonwindow.md#hotbutton-types) for the meaning of the Slot parameter.
+///
 
-:   ID of the item associated with this hotbutton.
+/// member | social Social
+Returns the social if this hotbutton is associated with a social. Otherwise returns NULL.
+///
 
-    If no item is associated with this hotbutton, this will return 0.
+/// member | string Spell
+If the hotbutton is a spell gem, this will return the associated spell.
 
-### {{ renderMember(type='string', name='ItemName') }}
+If the hottbuton is an alternate ability, this will return the spell associated with the alternate ability.
 
-:   Name of the item associated with this hotbutton.
+Otherwise, returns NULL.
+///
 
-    If no item is associated with this hotbutton, this will return an empty string.
+/// member | int Type
+Returns the type of hotbutton. See [HotButton Types](datatype-hotbuttonwindow.md#hotbutton-types).
+///
 
-### {{ renderMember(type='string', name='Label') }}
-
-:   Display label for this hotbutton.
-
-### {{ renderMember(type='int', name='PageIndex') }}
-
-:   Returns the index of the page of the hotbar that this button resides on.
-
-### {{ renderMember(type='int', name='Slot') }}
-
-:   The meaning of this value depends on the type of hotbutton. The type of hotbutton can be
-    determined with the `Type` member.
-
-    See [HotButton Types](datatype-hotbuttonwindow.md#hotbutton-types) for the meaning of the Slot parameter.
-
-### {{ renderMember(type='social', name='Social') }}
-
-:   Returns the social if this hotbutton is associated with a social. Otherwise returns NULL.
-
-### {{ renderMember(type='string', name='Spell') }}
-
-:   If the hotbutton is a spell gem, this will return the associated spell.
-
-    If the hottbuton is an alternate ability, this will return the spell associated with the alternate ability.
-
-    Otherwise, returns NULL.
-
-### {{ renderMember(type='int', name='Type') }}
-
-:   Returns the type of hotbutton. See [HotButton Types](datatype-hotbuttonwindow.md#hotbutton-types).
-
-### {{ renderMember(type='string', name='TypeName') }}
-
-:   Returns the type name of hotbutton. See [HotButton Types](datatype-hotbuttonwindow.md#hotbutton-types).
+/// member | string TypeName
+Returns the type name of hotbutton. See [HotButton Types](datatype-hotbuttonwindow.md#hotbutton-types).
+///
 <!--dt-members-end-->
 
 ## Methods
 
 
-### {{ renderMember(name='Activate') }}
+/// member | Activate
+Activates the hotbutton as if it were clicked.
 
-:   Activates the hotbutton as if it were clicked.
+!!! Example
 
-    !!! Example
+    Activate the first hotbutton on the first hotbar
 
-        Activate the first hotbutton on the first hotbar
+    === "Lua"
 
-        === "Lua"
+        ```lua
+        mq.TLO.Window("HotButtonWnd/HB_Button1").HotButton.Activate()
+        ```
 
-            ```lua
-            mq.TLO.Window("HotButtonWnd/HB_Button1").HotButton.Activate()
-            ```
+    === "MQScript"
 
-        === "MQScript"
-
-            ```text
-            /invoke ${Window[HotButtonWnd/HB_Button1].HotButton.Activate}
-            ```
+        ```text
+        /invoke ${Window[HotButtonWnd/HB_Button1].HotButton.Activate}
+        ```
+///
 
 
 ## HotButton Types

@@ -8,3 +8,4 @@ mkdocs-same-dir
 python-markdown-math
 mkdocs-include-markdown-plugin
 eq_lexers
+eq_markdown>=0.1.1

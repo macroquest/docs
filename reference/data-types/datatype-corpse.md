@@ -24,21 +24,21 @@ classDiagram
 
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='item', name='Item', params='N') }}
+/// member | item Item[N]
+_Nth_ item on the corpse
+///
 
-:   _Nth_ item on the corpse
+/// member | item Item[name]
+Finds an item by partial _name_ in this corpse (use `=<name>` for exact match)
+///
 
-### {{ renderMember(type='item', name='Item', params='name') }}
+/// member | int Items
+Number of items on the corpse
+///
 
-:   Finds an item by partial _name_ in this corpse (use `=<name>` for exact match)
-
-### {{ renderMember(type='int', name='Items') }}
-
-:   Number of items on the corpse
-
-### {{ renderMember(type='bool', name='Open') }}
-
-:   Corpse open?
+/// member | bool Open
+Corpse open?
+///
 
 ### [string][string] `To String`
 

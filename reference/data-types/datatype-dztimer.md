@@ -11,21 +11,21 @@ See Also: [DataType:dynamiczone](./datatype-dynamiczone.md), [TLO:DynamicZone](.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='ExpeditionName') }}
+/// member | string ExpeditionName
+The name of the expedition
+///
 
-:   The name of the expedition
+/// member | string EventName
+The name of the event
+///
 
-### {{ renderMember(type='string', name='EventName') }}
+/// member | timestamp Timer
+The timestamp indicating when this lockout expires
+///
 
-:   The name of the event
-
-### {{ renderMember(type='timestamp', name='Timer') }}
-
-:   The timestamp indicating when this lockout expires
-
-### {{ renderMember(type='int', name='EventID') }}
-
-:   ID of the event. These values are only unique per Expedition. Non-event lockouts (Replay Timer) will have a -1 event id.
+/// member | int EventID
+ID of the event. These values are only unique per Expedition. Non-event lockouts (Replay Timer) will have a -1 event id.
+///
 
 ### [string][string] `To String`
 

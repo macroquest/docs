@@ -9,13 +9,17 @@ Gives information on item windows
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='DisplayItem', name='DisplayItem') }}
+/// member | DisplayItem DisplayItem
+///
 
-### {{ renderMember(type='DisplayItem', name='DisplayItem', params='x') }}
-:   Valid range 1-6. Returns information on one of the 6 possible item windows open.
+/// member | DisplayItem DisplayItem[x]
+Valid range 1-6. Returns information on one of the 6 possible item windows open.
+///
 
-### {{ renderMember(type='DisplayItem', name='DisplayItem', params='<itemname>') }}
-:   Return the Item display window for the specified item name, if one exists.
+/// member | DisplayItem DisplayItem[<itemname>]
+    label: DisplayItem[itemname]
+Return the Item display window for the specified item name, if one exists.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

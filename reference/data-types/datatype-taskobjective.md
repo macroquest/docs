@@ -9,70 +9,70 @@ This is the type for your current task objective.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='CurrentCount') }}
+/// member | int CurrentCount
+Returns the current count of the .Type needed to complete a objective
+///
 
-:   Returns the current count of the .Type needed to complete a objective
+/// member | int DZSwitchID
+Returns an int of the switch used in a objective.
+///
 
-### {{ renderMember(type='int', name='DZSwitchID') }}
+/// member | string Index
+Returns the objective's place on the objectivelist
+///
 
-:   Returns an int of the switch used in a objective.
+/// member | string Instruction
+Returns a tasks' Objectives
+///
 
-### {{ renderMember(type='string', name='Index') }}
+/// member | bool Optional
+Returns true or false if a objective is optional
+///
 
-:   Returns the objective's place on the objectivelist
+/// member | int RequiredCount
+Returns the required count of the .Type needed to complete a objective
+///
 
-### {{ renderMember(type='string', name='Instruction') }}
+/// member | string RequiredItem
+Returns a string of the required item to complete a objective.
+///
 
-:   Returns a tasks' Objectives
+/// member | string RequiredSkill
+Returns a string of the required skill to complete a objective.
+///
 
-### {{ renderMember(type='bool', name='Optional') }}
+/// member | string RequiredSpell
+Returns a string of the required spell to complete a objective.
+///
 
-:   Returns true or false if a objective is optional
+/// member | string Status
+Returns the status of the objective in the format amount done Vs total IE 0/3
+///
 
-### {{ renderMember(type='int', name='RequiredCount') }}
+/// member | string Type
+Returns a string that can be one of the following:
 
-:   Returns the required count of the .Type needed to complete a objective
+- Unknown
+- None
+- Deliver
+- Kill
+- Loot
+- Hail
+- Explore
+- Tradeskill
+- Fishing
+- Foraging
+- Cast
+- UseSkill
+- DZSwitch
+- DestroyObject
+- Collect
+- Dialogue
+///
 
-### {{ renderMember(type='string', name='RequiredItem') }}
-
-:   Returns a string of the required item to complete a objective.
-
-### {{ renderMember(type='string', name='RequiredSkill') }}
-
-:   Returns a string of the required skill to complete a objective.
-
-### {{ renderMember(type='string', name='RequiredSpell') }}
-
-:   Returns a string of the required spell to complete a objective.
-
-### {{ renderMember(type='string', name='Status') }}
-
-:   Returns the status of the objective in the format amount done Vs total IE 0/3
-
-### {{ renderMember(type='string', name='Type') }}
-
-:   Returns a string that can be one of the following:
-
-    - Unknown
-    - None
-    - Deliver
-    - Kill
-    - Loot
-    - Hail
-    - Explore
-    - Tradeskill
-    - Fishing
-    - Foraging
-    - Cast
-    - UseSkill
-    - DZSwitch
-    - DestroyObject
-    - Collect
-    - Dialogue
-
-### {{ renderMember(type='string', name='Zone') }}
-
-:   Returns the zone the objective is to be performed in
+/// member | string Zone
+Returns the zone the objective is to be performed in
+///
 <!--dt-members-end-->
 
 <!--dt-linkrefs-start-->

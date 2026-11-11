@@ -9,77 +9,77 @@ A string is an array of characters. In MacroQuest there is no single character d
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='Arg', params='#,s') }}
+/// member | string Arg[#,s]
+Returns the #th argument of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1].
+///
 
-:   Returns the #th argument of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1].
+/// member | int Compare[text]
+Determines how the initial string and the second string, _text_, compare to each other:<br/><ul><li>If both are the same, **Compare** will return 0.</li><li>If the string is alphabetically before text, **Compare** will return -1.</li><li>If text is alphabetically after string, **Compare** will return 1.</li></ul>**Compare** is case-insensitive
+///
 
-### {{ renderMember(type='int', name='Compare', params='text') }}
+/// member | int CompareCS[text]
+The same as **Compare**, except that it is case-sensitive
+///
 
-:   Determines how the initial string and the second string, _text_, compare to each other:<br/><ul><li>If both are the same, **Compare** will return 0.</li><li>If the string is alphabetically before text, **Compare** will return -1.</li><li>If text is alphabetically after string, **Compare** will return 1.</li></ul>**Compare** is case-insensitive
+/// member | int Count[c]
+Returns how many times a single character _c_ occurs in the string
+///
 
-### {{ renderMember(type='int', name='CompareCS', params='text') }}
+/// member | bool Equal[text]
+If the initial string and the second string _text_ are exactly the same, returns TRUE.<br/>**Equal** is case-insensitive
+///
 
-:   The same as **Compare**, except that it is case-sensitive
+/// member | bool EqualCS[text]
+The same as **Equal**, except that it is case-sensitive
+///
 
-### {{ renderMember(type='int', name='Count', params='c') }}
+/// member | int Find[text]
+This tries to find the second string _text_ within the original string:<br/><ul><li>If it is successful, it returns the first position in the string where _text_ begins.</li><li>It returns NULL if _text_ is not found.</li></ul>**Find** is case-insensitive
+///
 
-:   Returns how many times a single character _c_ occurs in the string
+/// member | string Left[#]
+Returns the first # characters of the string. A negative _#_ will return the whole string except for the last # characters
+///
 
-### {{ renderMember(type='bool', name='Equal', params='text') }}
+/// member | int Length
+Returns the length of the string as an integer
+///
 
-:   If the initial string and the second string _text_ are exactly the same, returns TRUE.<br/>**Equal** is case-insensitive
+/// member | string Lower
+Returns the string in all lower-case
+///
 
-### {{ renderMember(type='bool', name='EqualCS', params='text') }}
+/// member | string Mid[p,n]
+Returns a segment of the string, starting at position _p_ and running _n_ characters.
+///
 
-:   The same as **Equal**, except that it is case-sensitive
+/// member | bool NotEqual[text]
+If the initial string and the second string _text_ are exactly the same, returns FALSE. **NotEqual** is case-insensitive
+///
 
-### {{ renderMember(type='int', name='Find', params='text') }}
+/// member | bool NotEqualCS[text]
+The same as **NotEqual**, except that it is case-sensitive.
+///
 
-:   This tries to find the second string _text_ within the original string:<br/><ul><li>If it is successful, it returns the first position in the string where _text_ begins.</li><li>It returns NULL if _text_ is not found.</li></ul>**Find** is case-insensitive
+/// member | string Replace[ReplaceThis,WithThis]
+Replaces _ReplaceThis_ with _WithThis_.
+///
 
-### {{ renderMember(type='string', name='Left', params='#') }}
+/// member | string Right[#]
+Returns the last _#_ characters of the string. A negative _#_ will return the whole string except for the first _#_ characters
+///
 
-:   Returns the first # characters of the string. A negative _#_ will return the whole string except for the last # characters
+/// member | string StripLinks
+Returns the plain text version of a string, stripping out the links
+///
 
-### {{ renderMember(type='int', name='Length') }}
+/// member | string Token[#,s]
+Returns the #th token of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1].
+///
 
-:   Returns the length of the string as an integer
-
-### {{ renderMember(type='string', name='Lower') }}
-
-:   Returns the string in all lower-case
-
-### {{ renderMember(type='string', name='Mid', params='p,n') }}
-
-:   Returns a segment of the string, starting at position _p_ and running _n_ characters.
-
-### {{ renderMember(type='bool', name='NotEqual', params='text') }}
-
-:   If the initial string and the second string _text_ are exactly the same, returns FALSE. **NotEqual** is case-insensitive
-
-### {{ renderMember(type='bool', name='NotEqualCS', params='text') }}
-
-:   The same as **NotEqual**, except that it is case-sensitive.
-
-### {{ renderMember(type='string', name='Replace', params='ReplaceThis,WithThis') }}
-
-:   Replaces _ReplaceThis_ with _WithThis_.
-
-### {{ renderMember(type='string', name='Right', params='#') }}
-
-:   Returns the last _#_ characters of the string. A negative _#_ will return the whole string except for the first _#_ characters
-
-### {{ renderMember(type='string', name='StripLinks') }}
-
-:   Returns the plain text version of a string, stripping out the links
-
-### {{ renderMember(type='string', name='Token', params='#,s') }}
-
-:   Returns the #th token of the string separated by _s_. The separator _s_ must be a single character (defaults to space).<br />See [Difference between Arg and Token][1].
-
-### {{ renderMember(type='string', name='Upper') }}
-
-:   Returns the string in all upper-case
+/// member | string Upper
+Returns the string in all upper-case
+///
 
 ### [string][string] `(To String)`
 

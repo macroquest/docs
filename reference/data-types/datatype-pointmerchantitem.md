@@ -10,41 +10,35 @@ Returns information about the specified item from a point merchant
 
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='Name') }}
+/// member | string Name
+Returns the name of the item.
+///
 
-:   Returns the name of the item.
+/// member | int ItemID
+Returns the ID of the item
+///
 
-### {{ renderMember(type='int', name='ItemID') }}
+/// member | int64 Price
+Price of item
+///
 
-:   Returns the ID of the item
+/// member | int ThemeID
+///
 
-### {{ renderMember(type='int64', name='Price') }}
+/// member | bool IsStackable
+///
 
-:   Price of item
+/// member | bool IsLore
+///
 
-### {{ renderMember(type='int', name='ThemeID') }}
+/// member | int RaceMask
+///
 
-:   
+/// member | int ClassMask
+///
 
-### {{ renderMember(type='bool', name='IsStackable') }}
-
-:   
-
-### {{ renderMember(type='bool', name='IsLore') }}
-
-:   
-
-### {{ renderMember(type='int', name='RaceMask') }}
-
-:   
-
-### {{ renderMember(type='int', name='ClassMask') }}
-
-:   
-
-### {{ renderMember(type='bool', name='CanUse') }}
-
-:   
+/// member | bool CanUse
+///
 
 <!--dt-members-end-->
 

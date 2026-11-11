@@ -9,57 +9,57 @@ The Macro DataType deals with the macro currently running, and nothing else.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='CurCommand') }}
+/// member | string CurCommand
+list the current line number, macro name, and code of the macro being processed
+///
 
-:   list the current line number, macro name, and code of the macro being processed
+/// member | int CurLine
+The current line number of the macro being processed
+///
 
-### {{ renderMember(type='int', name='CurLine') }}
+/// member | string CurSub
+The current subroutine
+///
 
-:   The current line number of the macro being processed
+/// member | bool isOuterVariable
+true if the provided parameter is a defined outer variable
+///
 
-### {{ renderMember(type='string', name='CurSub') }}
+/// member | bool isTLO
+true if the provided parameter an existing TLO
+///
 
-:   The current subroutine
+/// member | int MemUse
+How much memory the macro is using
+///
 
-### {{ renderMember(type='bool', name='isOuterVariable') }}
+/// member | string Name
+The name of the macro currently running
+///
 
-:   true if the provided parameter is a defined outer variable
+/// member | int Params
+The number of parameters that were passed to the current subroutine
+///
 
-### {{ renderMember(type='bool', name='isTLO') }}
+/// member | bool Paused
+NULL if no macro running, FALSE if mqpause is off, TRUE if mqpause is on
+///
 
-:   true if the provided parameter an existing TLO
+/// member | string Return
+The value that was returned by the last completed subroutine
+///
 
-### {{ renderMember(type='int', name='MemUse') }}
+/// member | int64 RunTime
+How long the macro has been running (in seconds)
+///
 
-:   How much memory the macro is using
+/// member | int StackSize
+StackSize?
+///
 
-### {{ renderMember(type='string', name='Name') }}
-
-:   The name of the macro currently running
-
-### {{ renderMember(type='int', name='Params') }}
-
-:   The number of parameters that were passed to the current subroutine
-
-### {{ renderMember(type='bool', name='Paused') }}
-
-:   NULL if no macro running, FALSE if mqpause is off, TRUE if mqpause is on
-
-### {{ renderMember(type='string', name='Return') }}
-
-:   The value that was returned by the last completed subroutine
-
-### {{ renderMember(type='int64', name='RunTime') }}
-
-:   How long the macro has been running (in seconds)
-
-### {{ renderMember(type='int', name='StackSize') }}
-
-:   StackSize?
-
-### {{ renderMember(type='varies', name='Variable') }}
-
-:   returns the value given the name of Macro variable. The type of this member depends on the type of the variable being accessed.
+/// member | varies Variable
+returns the value given the name of Macro variable. The type of this member depends on the type of the variable being accessed.
+///
 <!--dt-members-end-->
 
 ## Methods
@@ -72,4 +72,5 @@ The Macro DataType deals with the macro currently running, and nothing else.
 [int]: datatype-int.md
 [int64]: datatype-int64.md
 [string]: datatype-string.md
+[varies]: ../../macros/variables.md
 <!--dt-linkrefs-end-->

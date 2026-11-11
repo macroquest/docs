@@ -9,9 +9,9 @@ Object which references the ground spawn item you have targeted.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='ground', name='Ground') }}
-
-:   Access currently targeted ground item.
+/// member | ground Ground
+Access currently targeted ground item.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

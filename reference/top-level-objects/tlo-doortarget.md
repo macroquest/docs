@@ -9,9 +9,9 @@ Object used to return information on your doortarget.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='switch', name='DoorTarget')}}
-
-:   Returns the currently targeted door/switch
+/// member | switch DoorTarget
+Returns the currently targeted door/switch
+///
 <!--tlo-forms-end-->
 
 ## Usage

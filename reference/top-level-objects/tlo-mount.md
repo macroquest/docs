@@ -9,17 +9,17 @@ Used to get information about items on your Mount keyring.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='keyring', name='Mount') }}
+/// member | keyring Mount
+Access to the Mount keyring.
+///
 
-:   Access to the Mount keyring.
+/// member | keyringitem Mount[N]
+Retrieves the item in your mount keyring by index.
+///
 
-### {{ renderMember(type='keyringitem', name='Mount', params='N') }}
-
-:   Retrieves the item in your mount keyring by index.
-
-### {{ renderMember(type='keyringitem', name='Mount', params='Name') }}
-
-:   Retrieve the item in your mount keyring by name. A `=` can be prepended for an exact match.
+/// member | keyringitem Mount[Name]
+Retrieve the item in your mount keyring by name. A `=` can be prepended for an exact match.
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

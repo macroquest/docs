@@ -9,21 +9,21 @@ A DataType that deals with evolving items.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='ExpOn') }}
+/// member | bool ExpOn
+Is evolving item experience turned on for this item?
+///
 
-:   Is evolving item experience turned on for this item?
+/// member | float ExpPct
+Percentage of experience that the item has gained
+///
 
-### {{ renderMember(type='float', name='ExpPct') }}
+/// member | int Level
+The level of the evolving item.
+///
 
-:   Percentage of experience that the item has gained
-
-### {{ renderMember(type='int', name='Level') }}
-
-:   The level of the evolving item.
-
-### {{ renderMember(type='int', name='MaxLevel') }}
-
-:   The maximum level of the evolving item
+/// member | int MaxLevel
+The maximum level of the evolving item
+///
 
 ### [string][string] `To String`
 

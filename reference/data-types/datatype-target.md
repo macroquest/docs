@@ -23,161 +23,161 @@ classDiagram
 
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='cachedbuff', name='Aego') }}
-
-:   Returns the name of the Aego spell if the Target has one
-
-### {{ renderMember(type='spawn', name='AggroHolder') }}
-
-:   Returns the target's current target.
-
-### {{ renderMember(type='cachedbuff', name='Beneficial') }}
-
-:   Returns the name of the Beneficial spell if the Target has one. This will skip "player" casted buffs, but will show NPC Casted buffs and some AA buffs.
-
-### {{ renderMember(type='cachedbuff', name='Brells') }}
-
-:   Returns the name of the Brells spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Charmed') }}
-
-:   Returns the name of the Charmed spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Clarity') }}
-
-:   Returns the name of the Clarity spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Corrupted') }}
-
-:   Returns the name of any the Corruption spell if Target has one
-
-### {{ renderMember(type='cachedbuff', name='Cursed') }}
-
-:   Returns the name of the Curse spell if Target has one
-
-### {{ renderMember(type='cachedbuff', name='Crippled') }}
-
-:   Returns the name of the Cripple spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Diseased') }}
-
-:   Returns the name of a Disease spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Dotted') }}
-
-:   Returns the name of a DOT spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='DSed') }}
-
-:   Returns the name of the Damage Shield spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Feared') }}
-
-:   ???
-
-### {{ renderMember(type='cachedbuff', name='Focus') }}
-
-:   Returns the name of the Focus spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Growth') }}
-
-:   Returns the name of the Growth spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Hasted') }}
-
-:   Returns the name of the Haste spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='HybridHP') }}
-
-:   Returns the name of the Hybrid HP spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Invulnerable') }}
-
-:   ???
-
-### {{ renderMember(type='cachedbuff', name='Maloed') }}
-
-:   Returns the name of the Malo spell if the Target has one
-
-### {{ renderMember(type='float', name='MaxMeleeTo') }}
-
-:   ???
-
-### {{ renderMember(type='cachedbuff', name='Mezzed') }}
-
-:   Returns the name of the Mez spell if the Target has one
-
-### {{ renderMember(type='int', name='PctAggro') }}
-
-:   ???
-
-### {{ renderMember(type='cachedbuff', name='Poisoned') }}
-
-:   Returns the name of a Poison spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Pred') }}
-
-:   Returns the name of the Predator spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Regen') }}
-
-:   Returns the name of the Regen spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='RevDSed') }}
-
-:   Returns the name of the Reverse Damage Shield spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Rooted') }}
-
-:   Returns the name of the Rooted spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='SE') }}
-
-:   Returns the name of the Spiritual Enlightenment spell if the Target has one
-
-### {{ renderMember(type='spawn', name='SecondaryAggroPlayer') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='SecondaryPctAggro') }}
-
-:   ???
-
-### {{ renderMember(type='cachedbuff', name='Shining') }}
-
-:   Returns the name of the Shining spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Silenced') }}
-
-:   ???
-
-### {{ renderMember(type='cachedbuff', name='Skin') }}
-
-:   Returns the name of the Skin spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Slowed') }}
-
-:   Returns the name of the Slow spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Snared') }}
-
-:   Returns the name of the Snare spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Strength') }}
-
-:   Returns the name of the Strength spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='SV') }}
-
-:   Returns the name of the Spiritual Vitality spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Symbol') }}
-
-:   Returns the name of the Symbol spell if the Target has one
-
-### {{ renderMember(type='cachedbuff', name='Tashed') }}
-
-:   Returns the name of the Tash spell if the Target has one
+/// member | cachedbuff Aego
+Returns the name of the Aego spell if the Target has one
+///
+
+/// member | spawn AggroHolder
+Returns the target's current target.
+///
+
+/// member | cachedbuff Beneficial
+Returns the name of the Beneficial spell if the Target has one. This will skip "player" casted buffs, but will show NPC Casted buffs and some AA buffs.
+///
+
+/// member | cachedbuff Brells
+Returns the name of the Brells spell if the Target has one
+///
+
+/// member | cachedbuff Charmed
+Returns the name of the Charmed spell if the Target has one
+///
+
+/// member | cachedbuff Clarity
+Returns the name of the Clarity spell if the Target has one
+///
+
+/// member | cachedbuff Corrupted
+Returns the name of any the Corruption spell if Target has one
+///
+
+/// member | cachedbuff Cursed
+Returns the name of the Curse spell if Target has one
+///
+
+/// member | cachedbuff Crippled
+Returns the name of the Cripple spell if the Target has one
+///
+
+/// member | cachedbuff Diseased
+Returns the name of a Disease spell if the Target has one
+///
+
+/// member | cachedbuff Dotted
+Returns the name of a DOT spell if the Target has one
+///
+
+/// member | cachedbuff DSed
+Returns the name of the Damage Shield spell if the Target has one
+///
+
+/// member | cachedbuff Feared
+???
+///
+
+/// member | cachedbuff Focus
+Returns the name of the Focus spell if the Target has one
+///
+
+/// member | cachedbuff Growth
+Returns the name of the Growth spell if the Target has one
+///
+
+/// member | cachedbuff Hasted
+Returns the name of the Haste spell if the Target has one
+///
+
+/// member | cachedbuff HybridHP
+Returns the name of the Hybrid HP spell if the Target has one
+///
+
+/// member | cachedbuff Invulnerable
+???
+///
+
+/// member | cachedbuff Maloed
+Returns the name of the Malo spell if the Target has one
+///
+
+/// member | float MaxMeleeTo
+???
+///
+
+/// member | cachedbuff Mezzed
+Returns the name of the Mez spell if the Target has one
+///
+
+/// member | int PctAggro
+???
+///
+
+/// member | cachedbuff Poisoned
+Returns the name of a Poison spell if the Target has one
+///
+
+/// member | cachedbuff Pred
+Returns the name of the Predator spell if the Target has one
+///
+
+/// member | cachedbuff Regen
+Returns the name of the Regen spell if the Target has one
+///
+
+/// member | cachedbuff RevDSed
+Returns the name of the Reverse Damage Shield spell if the Target has one
+///
+
+/// member | cachedbuff Rooted
+Returns the name of the Rooted spell if the Target has one
+///
+
+/// member | cachedbuff SE
+Returns the name of the Spiritual Enlightenment spell if the Target has one
+///
+
+/// member | spawn SecondaryAggroPlayer
+???
+///
+
+/// member | int SecondaryPctAggro
+???
+///
+
+/// member | cachedbuff Shining
+Returns the name of the Shining spell if the Target has one
+///
+
+/// member | cachedbuff Silenced
+???
+///
+
+/// member | cachedbuff Skin
+Returns the name of the Skin spell if the Target has one
+///
+
+/// member | cachedbuff Slowed
+Returns the name of the Slow spell if the Target has one
+///
+
+/// member | cachedbuff Snared
+Returns the name of the Snare spell if the Target has one
+///
+
+/// member | cachedbuff Strength
+Returns the name of the Strength spell if the Target has one
+///
+
+/// member | cachedbuff SV
+Returns the name of the Spiritual Vitality spell if the Target has one
+///
+
+/// member | cachedbuff Symbol
+Returns the name of the Symbol spell if the Target has one
+///
+
+/// member | cachedbuff Tashed
+Returns the name of the Tash spell if the Target has one
+///
 
 ### [string][string] `(To String)`
 

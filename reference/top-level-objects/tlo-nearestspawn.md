@@ -9,17 +9,17 @@ Object that is used in finding spawns nearest to you.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='spawn', name='NearestSpawn', params='N') }}
+/// member | spawn NearestSpawn[N]
+The _Nth_ nearest spawn
+///
 
-:   The _Nth_ nearest spawn
+/// member | spawn NearestSpawn[Search]
+The nearest spawn matching this search string (see [Spawn Search]).
+///
 
-### {{ renderMember(type='spawn', name='NearestSpawn', params='Search') }}
-
-:   The nearest spawn matching this search string (see [Spawn Search]).
-
-### {{ renderMember(type='spawn', name='NearestSpawn', params='N,Search') }}
-
-:   The _Nth_ nearest spawn matching this search string (see [Spawn Search]).
+/// member | spawn NearestSpawn[N,Search]
+The _Nth_ nearest spawn matching this search string (see [Spawn Search]).
+///
 <!--tlo-forms-end-->
 
 ## Usage

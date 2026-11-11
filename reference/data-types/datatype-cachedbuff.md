@@ -32,41 +32,41 @@ classDiagram
 
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='Caster') }}
+/// member | string Caster
+Same as _CasterName_, added for consistency.
+///
 
-:   Same as _CasterName_, added for consistency.
+/// member | string CasterName
+Returns the name of the caster who applied the buff (Deprecated, use _Caster_ instead).
+///
 
-### {{ renderMember(type='string', name='CasterName') }}
+/// member | int Count
+Returns the amount of buffs catched, or -1 it none
+///
 
-:   Returns the name of the caster who applied the buff (Deprecated, use _Caster_ instead).
+/// member | int Duration
+Returns the duration of the buff
+///
 
-### {{ renderMember(type='int', name='Count') }}
+/// member | int OriginalDuration
+Original duration of the buff.
+///
 
-:   Returns the amount of buffs catched, or -1 it none
+/// member | int Slot
+Returns the buff slot the target had the buff in
+///
 
-### {{ renderMember(type='int', name='Duration') }}
+/// member | spell Spell
+Access the spell.
+///
 
-:   Returns the duration of the buff
+/// member | int SpellID
+Returns the buff's spell ID
+///
 
-### {{ renderMember(type='int', name='OriginalDuration') }}
-
-:   Original duration of the buff.
-
-### {{ renderMember(type='int', name='Slot') }}
-
-:   Returns the buff slot the target had the buff in
-
-### {{ renderMember(type='spell', name='Spell') }}
-
-:   Access the spell.
-
-### {{ renderMember(type='int', name='SpellID') }}
-
-:   Returns the buff's spell ID
-
-### {{ renderMember(type='timestamp', name='Staleness') }}
-
-:   How long it has been since this information was refreshed.
+/// member | timestamp Staleness
+How long it has been since this information was refreshed.
+///
 <!--dt-members-end-->
 
 ## Usage

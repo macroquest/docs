@@ -9,13 +9,13 @@ Provides access to spawn search filter criteria in alerts. Alerts are created us
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='alert', name='Alert', params='ID') }}
+/// member | alert Alert[ID]
+Retrieve information for the alert category by its id
+///
 
-:   Retrieve information for the alert category by its id
-
-### {{ renderMember(type='string', name='Alert') }}
-
-:   Returns pipe `|` separated list of alert ids
+/// member | string Alert
+Returns pipe `|` separated list of alert ids
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

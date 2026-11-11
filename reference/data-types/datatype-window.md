@@ -11,295 +11,296 @@ Windows come in many forms, but all are represented with the generic **window** 
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='argb', name='BGColor') }}
+/// member | argb BGColor
+Background color of the window.
+///
 
-:   Background color of the window.
 
+/// member | bool Checked
+Returns `TRUE` if the button has been checked.
+///
 
-### {{ renderMember(type='bool', name='Checked') }}
+/// member | window Child[name]
+Find a child window with the provided name.
 
-:   Returns `TRUE` if the button has been checked.
+Parameters:
 
-### {{ renderMember(type='window', name='Child', params='name') }}
+*   `name`: Name of a child window
+///
 
-:   Find a child window with the provided name.
 
-    Parameters:
+/// member | bool Children
+Returns `TRUE` if the window has children.
+///
 
-    *   `name`: Name of a child window
 
+/// member | window CurrentTab
+Applies to: `TabBox`
 
-### {{ renderMember(type='bool', name='Children') }}
+Returns the `Page` window associated with the currently selected tab.
+///
 
-:   Returns `TRUE` if the window has children.
 
+/// member | int CurrentTabIndex
+Applies to: `TabBox`
 
-### {{ renderMember(type='window', name='CurrentTab') }}
+Returns the index of the currently selected tab.
+///
 
-:   Applies to: `TabBox`
 
-    Returns the `Page` window associated with the currently selected tab.
+/// member | bool Enabled
+Returns `TRUE` if the window is enabled.
+///
 
+/// member | window FirstChild
+Returns the first child window in the window hierarchy.
+///
 
-### {{ renderMember(type='int', name='CurrentTabIndex') }}
 
-:   Applies to: `TabBox`
+/// member | int GetCurSel
+!!! info "Deprecation Notice"
 
-    Returns the index of the currently selected tab.
+    This member is deprecated and discouraged from continued use. Please use [SelectedIndex](#SelectedIndex) instead.
 
+Applies to: `Combobox`, `Listbox`, `TreeView`
 
-### {{ renderMember(type='bool', name='Enabled') }}
+Index of the currently selected/higlighted item.
+///
 
-:   Returns `TRUE` if the window is enabled.
 
-### {{ renderMember(type='window', name='FirstChild') }}
+/// member | int Height
+Height of the window in pixels.
+///
 
-:   Returns the first child window in the window hierarchy.
 
+/// member | bool Highlighted
+Returns `TRUE` if the window is the currently focused window.
+///
 
-### {{ renderMember(type='int', name='GetCurSel') }}
 
-:   !!! info "Deprecation Notice"
+/// member | bool HisTradeReady
+Returns the following data from the trade window, regardless of what the current window object is:
 
-        This member is deprecated and discouraged from continued use. Please use [SelectedIndex](#SelectedIndex) instead.
+Has the other person clicked the Trade button?
+///
 
-    Applies to: `Combobox`, `Listbox`, `TreeView`
+/// member | hotbuttonwindow HotButton
+Applies to: `HotButton`
 
-    Index of the currently selected/higlighted item.
+Returns the HotButton associated with this window object.
+///
 
+/// member | int HScrollMax
+Horizontal scrollbar maximum position.
+///
 
-### {{ renderMember(type='int', name='Height') }}
 
-:   Height of the window in pixels.
+/// member | int HScrollPct
+Horizontal scroll bar current position as a percentage of the maximum position as a value from 0 to 100.
+///
 
 
-### {{ renderMember(type='bool', name='Highlighted') }}
+/// member | int HScrollPos
+Horizontal scroll bar current position.
+///
 
-:   Returns `TRUE` if the window is the currently focused window.
+/// member | invslotwindow InvSlot
+Applies to: `InvSlot`
 
+Returns the InvSlot associated with this window object.
+///
 
-### {{ renderMember(type='bool', name='HisTradeReady') }}
 
-:   Returns the following data from the trade window, regardless of what the current window object is:
+/// member | int Items
+Applies to: `Combobox`, `Listbox`, `TreeView`
 
-    Has the other person clicked the Trade button?
+Number of items in the list.
+///
 
-### {{ renderMember(type='hotbuttonwindow', name='HotButton') }}
 
-:   Applies to: `HotButton`
+/// member | string List[Row,Col]
+Applies to: `Combobox`, `Listbox`, `TreeView`
 
-    Returns the HotButton associated with this window object.
+Get text for an item in the list by the specified row and column. If the column is not provided then the first column is used.
 
-### {{ renderMember(type='int', name='HScrollMax') }}
+Parameters:
 
-:   Horizontal scrollbar maximum position.
+*   `Row`: Row index of the item in the list.
+*   `Col`: _[optional]_ Column index of the item in the list.
+///
 
 
-### {{ renderMember(type='int', name='HScrollPct') }}
+/// member | int List[Text,Col]
+Applies to: `Combobox`, `Listbox`, `TreeView`
 
-:   Horizontal scroll bar current position as a percentage of the maximum position as a value from 0 to 100.
+Search a list for an item by text. Returns the index of the first element that matches the given text string.
 
+Parameters:
 
-### {{ renderMember(type='int', name='HScrollPos') }}
+*   `Text`: Text to search for. Partial match is performed. Prefix with `=` to perform an exact match.
+*   `Col`: _[optional]_ Column index of the item in the item in the list. If not provided, the first column is searched.
+///
 
-:   Horizontal scroll bar current position.
 
-### {{ renderMember(type='invslotwindow', name='InvSlot') }}
+/// member | bool Minimized
+Returns `TRUE` if the window is minimized.
+///
 
-:   Applies to: `InvSlot`
 
-    Returns the InvSlot associated with this window object.
+/// member | bool MouseOver
+Returns `TRUE` if the mouse is currently over the window.
+///
 
 
-### {{ renderMember(type='int', name='Items') }}
+/// member | bool MyTradeReady
+Returns the following data from the trade window, regardless of what the current window object is:
 
-:   Applies to: `Combobox`, `Listbox`, `TreeView`
+Have I clicked the Trade button?
+///
 
-    Number of items in the list.
 
+/// member | string Name
+Name of the window.
 
-### {{ renderMember(type='string', name='List', params='Row,Col') }}
+_Note: this value may be affected by custom ui._
+///
 
-:   Applies to: `Combobox`, `Listbox`, `TreeView`
 
-    Get text for an item in the list by the specified row and column. If the column is not provided then the first column is used.
+/// member | window Next
+Next sibling window in the window hierarchy.
+///
 
-    Parameters:
 
-    *   `Row`: Row index of the item in the list.
-    *   `Col`: _[optional]_ Column index of the item in the list.
+/// member | bool Open
+Returns `TRUE` if the window is open.
+///
 
 
-### {{ renderMember(type='int', name='List', params='Text,Col') }}
+/// member | window Parent
+Returns the parent of this window, or `NULL` if this is a top level window.
+///
 
-:   Applies to: `Combobox`, `Listbox`, `TreeView`
 
-    Search a list for an item by text. Returns the index of the first element that matches the given text string.
+/// member | string ScreenID
+ScreenID of the window piece.
 
-    Parameters:
+_Note: This is **not** custom ui dependent, it must be the same on all UIs._
+///
 
-    *   `Text`: Text to search for. Partial match is performed. Prefix with `=` to perform an exact match.
-    *   `Col`: _[optional]_ Column index of the item in the item in the list. If not provided, the first column is searched.
 
+/// member | int SelectedIndex
+Applies to: `Combobox`, `Listbox`, `TreeView`
 
-### {{ renderMember(type='bool', name='Minimized') }}
+Index of the currently selected/higlighted item.
+///
 
-:   Returns `TRUE` if the window is minimized.
 
+/// member | bool Siblings
+Returns `TRUE` if the window has siblings.
+///
 
-### {{ renderMember(type='bool', name='MouseOver') }}
+/// member | string Size
+Returns the size of the window in the form of `width,height`.
+///
 
-:   Returns `TRUE` if the mouse is currently over the window.
+/// member | int Style
+Returns an integer representing the window style bit flags.
+///
 
 
-### {{ renderMember(type='bool', name='MyTradeReady') }}
+/// member | int TabCount
+Applies to: `TabBox`
 
-:   Returns the following data from the trade window, regardless of what the current window object is:
+The number of tabs present in the TabBox.
+///
 
-    Have I clicked the Trade button?
 
+/// member | window Tab[Index]
+Applies to: `TabBox`
 
-### {{ renderMember(type='string', name='Name') }}
+Looks up the `Page` window that matches the provided tab index in the TabBox.
+///
 
-:   Name of the window.
 
-    _Note: this value may be affected by custom ui._
+/// member | window Tab[Text]
+Applies to: `TabBox`
 
+Looks up the `Page` window that matches the provided tab text in the TabBox.
+///
 
-### {{ renderMember(type='window', name='Next') }}
 
-:   Next sibling window in the window hierarchy.
+/// member | string Text
+The text of the window. The actual value varies by type of window:
 
+*   `STMLbox`: Returns the contents of the STML.
+*   `Page`: Returns the name of the page's Tab.
+///
 
-### {{ renderMember(type='bool', name='Open') }}
 
-:   Returns `TRUE` if the window is open.
+/// member | string Tooltip
+The tooltip text for the window. This value comes from the window's TooltipReference.
+///
 
 
-### {{ renderMember(type='window', name='Parent') }}
+/// member | string Type
+The window's type. The type will determine the behavior of some of the other members.
 
-:   Returns the parent of this window, or `NULL` if this is a top level window.
+Can be one of:
 
+* `Screen`
+* `Listbox`
+* `Gauge`
+* `SpellGem`
+* `InvSlot`
+* `Editbox`
+* `Slider`
+* `Label`
+* `STMLbox`
+* `TreeView`
+* `Combobox`
+* `Page`
+* `TabBox`
+* `LayoutBox`
+* `HorizontalLayoutBox`
+* `VerticalLayoutBox`
+* `FinderBox`
+* `TileLayoutBox`
+* `Screen`
+* `HotButton`
+///
 
-### {{ renderMember(type='string', name='ScreenID') }}
 
-:   ScreenID of the window piece.
+/// member | int VScrollMax
+Vertical scrollbar maximum position.
+///
 
-    _Note: This is **not** custom ui dependent, it must be the same on all UIs._
 
+/// member | int VScrollPct
+Vertical scroll bar current position as a percentage of the maximum position as a value from 0 to 100.
+///
 
-### {{ renderMember(type='int', name='SelectedIndex') }}
 
-:   Applies to: `Combobox`, `Listbox`, `TreeView`
+/// member | int VScrollPos
+Vertical scroll bar current position.
+///
 
-    Index of the currently selected/higlighted item.
 
+/// member | int Width
+Width of the window in pixels.
+///
 
-### {{ renderMember(type='bool', name='Siblings') }}
+/// member | float Value
+///
 
-:   Returns `TRUE` if the window has siblings.
 
-### {{ renderMember(type='string', name='Size') }}
+/// member | int X
+The X coordinate of the window's position, in pixels.
+///
 
-:   Returns the size of the window in the form of `width,height`.
 
-### {{ renderMember(type='int', name='Style') }}
-
-:   Returns an integer representing the window style bit flags.
-
-
-### {{ renderMember(type='int', name='TabCount') }}
-
-:   Applies to: `TabBox`
-
-    The number of tabs present in the TabBox.
-
-
-### {{ renderMember(type='window', name='Tab', params='Index') }}
-
-:   Applies to: `TabBox`
-
-    Looks up the `Page` window that matches the provided tab index in the TabBox.
-
-
-### {{ renderMember(type='window', name='Tab', params='Text') }}
-
-:   Applies to: `TabBox`
-
-    Looks up the `Page` window that matches the provided tab text in the TabBox.
-
-
-### {{ renderMember(type='string', name='Text') }}
-
-:   The text of the window. The actual value varies by type of window:
-
-    *   `STMLbox`: Returns the contents of the STML.
-    *   `Page`: Returns the name of the page's Tab.
-
-
-### {{ renderMember(type='string', name='Tooltip') }}
-
-:   The tooltip text for the window. This value comes from the window's TooltipReference.
-
-
-### {{ renderMember(type='string', name='Type') }}
-
-:   The window's type. The type will determine the behavior of some of the other members.
-
-    Can be one of:
-
-    * `Screen`
-    * `Listbox`
-    * `Gauge`
-    * `SpellGem`
-    * `InvSlot`
-    * `Editbox`
-    * `Slider`
-    * `Label`
-    * `STMLbox`
-    * `TreeView`
-    * `Combobox`
-    * `Page`
-    * `TabBox`
-    * `LayoutBox`
-    * `HorizontalLayoutBox`
-    * `VerticalLayoutBox`
-    * `FinderBox`
-    * `TileLayoutBox`
-    * `Screen`
-    * `HotButton`
-
-
-### {{ renderMember(type='int', name='VScrollMax') }}
-
-:   Vertical scrollbar maximum position.
-
-
-### {{ renderMember(type='int', name='VScrollPct') }}
-
-:   Vertical scroll bar current position as a percentage of the maximum position as a value from 0 to 100.
-
-
-### {{ renderMember(type='int', name='VScrollPos') }}
-
-:   Vertical scroll bar current position.
-
-
-### {{ renderMember(type='int', name='Width') }}
-
-:   Width of the window in pixels.
-
-### {{ renderMember(type='float', name='Value') }}
-
-
-### {{ renderMember(type='int', name='X') }}
-
-:   The X coordinate of the window's position, in pixels.
-
-
-### {{ renderMember(type='int', name='Y') }}
-
-:   The Y coordinate of the window's position, in pixels.
+/// member | int Y
+The Y coordinate of the window's position, in pixels.
+///
 
 
 ### [string][string] To String
@@ -310,133 +311,133 @@ Windows come in many forms, but all are represented with the generic **window** 
 ## Methods
 
 
-### {{ renderMember(name='DoClose') }}
+/// member | DoClose
+Close the window. Has the effect of hiding the window if it closed.
+///
 
-:   Close the window. Has the effect of hiding the window if it closed.
 
+/// member | DoOpen
+Open the window. Has the effect of showing the window if it is hidden.
+///
 
-### {{ renderMember(name='DoOpen') }}
 
-:   Open the window. Has the effect of showing the window if it is hidden.
+/// member | LeftMouseDown
+Send a `leftmousedown` event to the window.
 
+Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+///
 
-### {{ renderMember(name='LeftMouseDown') }}
 
-:   Send a `leftmousedown` event to the window.
+/// member | LeftMouseHeld
+Send a `leftmouseheld` event to the window.
 
-    Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+///
 
+/// member | LeftMouseHeldUp
+Send a `leftmouseheldup` event to the window.
 
-### {{ renderMember(name='LeftMouseHeld') }}
+Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+///
 
-:   Send a `leftmouseheld` event to the window.
 
-    Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+/// member | LeftMouseUp
+Send a `leftmouseup` event to the window.
 
-### {{ renderMember(name='LeftMouseHeldUp') }}
+Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+///
 
-:   Send a `leftmouseheldup` event to the window.
 
-    Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+/// member | Move[X,Y,Width,Height]
+Move or resize the window.
+///
 
+/// member | RightMouseDown
+Send a `rightmousedown` event to the window.
 
-### {{ renderMember(name='LeftMouseUp') }}
+Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+///
 
-:   Send a `leftmouseup` event to the window.
 
-    Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+/// member | RightMouseHeld
+Send a `rightmouseheld` event to the window.
 
+Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+///
 
-### {{ renderMember(name='Move', params='X,Y,Width,Height') }}
 
-:   Move or resize the window.
+/// member | RightMouseHeldUp
+Send a `rightmouseheldup` event to the window.
 
-### {{ renderMember(name='RightMouseDown') }}
+Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+///
 
-:   Send a `rightmousedown` event to the window.
 
-    Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+/// member | RightMouseUp
+Send a `rightmouseup` event to the window.
 
+Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+///
 
-### {{ renderMember(name='RightMouseHeld') }}
 
-:   Send a `rightmouseheld` event to the window.
+/// member | Select[Index]
+Applies to: `Combobox`, `Listbox`, `TreeView`
 
-    Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+Selects the specified item in the list.
 
+Parameters:
 
-### {{ renderMember(name='RightMouseHeldUp') }}
+*   `Index`: The number index of the item to select
+///
 
-:   Send a `rightmouseheldup` event to the window.
 
-    Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+/// member | SetAlpha[Alpha]
+Set the alpha value for the window.
 
+Parameters:
 
-### {{ renderMember(name='RightMouseUp') }}
+*   `Alpha`: The alpha value, a number between 0 and 255.
+///
 
-:   Send a `rightmouseup` event to the window.
 
-    Has the same effect as using the [/notify](../commands/notify.md) command on the window.
+/// member | SetBGColor[Color]
+Set the background color.
 
+Parameters:
 
-### {{ renderMember(name='Select', params='Index') }}
+*   `Color`: A hex string in the form "AARRGGBB"
+///
 
-:   Applies to: `Combobox`, `Listbox`, `TreeView`
 
-    Selects the specified item in the list.
+/// member | SetCurrentTab[Index]
+Applies to: `TabBox`.
 
-    Parameters:
+Changes the current tab of the tab box.
 
-    *   `Index`: The number index of the item to select
+Parameters:
 
+*   `Index`: Either the text or the index of the tab to select. If text is provided, it is case insensitive.
+///
 
-### {{ renderMember(name='SetAlpha', params='Alpha') }}
 
-:   Set the alpha value for the window.
+/// member | SetFadeAlpha[Alpha]
+Set the faded alpha value for the window.
 
-    Parameters:
+Parameters:
 
-    *   `Alpha`: The alpha value, a number between 0 and 255.
+*   `Alpha`: The alpha value, a number between 0 and 255.
+///
 
 
-### {{ renderMember(name='SetBGColor', params='Color') }}
+/// member | SetText[Text]
+Applies to: `EditBox`
 
-:   Set the background color.
+Changes the current text value of the edit box.
 
-    Parameters:
+Parameters:
 
-    *   `Color`: A hex string in the form "AARRGGBB"
-
-
-### {{ renderMember(name='SetCurrentTab', params='Index') }}
-
-:   Applies to: `TabBox`.
-
-    Changes the current tab of the tab box.
-
-    Parameters:
-
-    *   `Index`: Either the text or the index of the tab to select. If text is provided, it is case insensitive.
-
-
-### {{ renderMember(name='SetFadeAlpha', params='Alpha') }}
-
-:   Set the faded alpha value for the window.
-
-    Parameters:
-
-    *   `Alpha`: The alpha value, a number between 0 and 255.
-
-
-### {{ renderMember(name='SetText', params='Text') }}
-
-:   Applies to: `EditBox`
-
-    Changes the current text value of the edit box.
-
-    Parameters:
-
-    *   `Text`: The text to set to the edit box.
+*   `Text`: The text to set to the edit box.
+///
 
 
 ## Usage

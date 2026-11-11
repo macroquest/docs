@@ -9,17 +9,17 @@ Describes an aura.
 
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='ID') }}
+/// member | int ID
+ID of the Aura
+///
 
-:   ID of the Aura
+/// member | string Name
+Name of the Aura
+///
 
-### {{ renderMember(type='string', name='Name') }}
-
-:   Name of the Aura
-
-### {{ renderMember(type='int', name='SpawnID') }}
-
-:   ID of the spawn that emits aura
+/// member | int SpawnID
+ID of the spawn that emits aura
+///
 <!--dt-members-end-->
 
 ## Methods

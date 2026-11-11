@@ -9,37 +9,37 @@ Data related to the specified raid member
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='class', name='Class') }}
+/// member | class Class
+Raid member's class (works without being in zone)
+///
 
-:   Raid member's class (works without being in zone)
+/// member | int Group
+Current group number (or 0)
+///
 
-### {{ renderMember(type='int', name='Group') }}
+/// member | bool GroupLeader
+Returns TRUE if the member is a group leader
+///
 
-:   Current group number (or 0)
+/// member | int Level
+Raid member's level (works without being in zone)
+///
 
-### {{ renderMember(type='bool', name='GroupLeader') }}
+/// member | bool Looter
+Allowed to loot with current loot rules and looters?
+///
 
-:   Returns TRUE if the member is a group leader
+/// member | string Name
+Raid member's name
+///
 
-### {{ renderMember(type='int', name='Level') }}
+/// member | bool RaidLeader
+Returns TRUE if the member is the raid leader
+///
 
-:   Raid member's level (works without being in zone)
-
-### {{ renderMember(type='bool', name='Looter') }}
-
-:   Allowed to loot with current loot rules and looters?
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   Raid member's name
-
-### {{ renderMember(type='bool', name='RaidLeader') }}
-
-:   Returns TRUE if the member is the raid leader
-
-### {{ renderMember(type='spawn', name='Spawn') }}
-
-:   Spawn object for this player if available (must be in zone)
+/// member | spawn Spawn
+Spawn object for this player if available (must be in zone)
+///
 
 ### [string][string] `To String`
 

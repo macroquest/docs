@@ -8,37 +8,37 @@ Represents a count of "ticks". Ticks are units of 6 seconds that are used to rep
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='Hours') }}
+/// member | int Hours
+The number of hours in HH:MM:SS (0-23)
+///
 
-:   The number of hours in HH:MM:SS (0-23)
+/// member | int Minutes
+The number of minutes in HH:MM:SS (1-59)
+///
 
-### {{ renderMember(type='int', name='Minutes') }}
+/// member | int Seconds
+The number of seconds in HH:MM:SS (1-59)
+///
 
-:   The number of minutes in HH:MM:SS (1-59)
+/// member | int TotalMinutes
+The total number of minutes
+///
 
-### {{ renderMember(type='int', name='Seconds') }}
+/// member | int TotalSeconds
+The total number of seconds
+///
 
-:   The number of seconds in HH:MM:SS (1-59)
+/// member | int Ticks
+The value in ticks
+///
 
-### {{ renderMember(type='int', name='TotalMinutes') }}
+/// member | string Time
+Time in the form MM:SS
+///
 
-:   The total number of minutes
-
-### {{ renderMember(type='int', name='TotalSeconds') }}
-
-:   The total number of seconds
-
-### {{ renderMember(type='int', name='Ticks') }}
-
-:   The value in ticks
-
-### {{ renderMember(type='string', name='Time') }}
-
-:   Time in the form MM:SS
-
-### {{ renderMember(type='string', name='TimeHMS') }}
-
-:   Time in the form HH:MM:SS (if there are no hours, the form will be MM:SS)
+/// member | string TimeHMS
+Time in the form HH:MM:SS (if there are no hours, the form will be MM:SS)
+///
 
 ### [string][string] `To String`
 

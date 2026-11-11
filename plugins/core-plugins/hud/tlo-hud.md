@@ -9,9 +9,9 @@ Returns the current HUD name.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='string', name='HUD') }}
-
-:   Returns the current HUD name
+/// member | string HUD
+Returns the current HUD name
+///
 <!--tlo-forms-end-->
 
 ## Example

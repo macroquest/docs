@@ -9,48 +9,48 @@ A TLO used to find a count of items on your character, corpse, or a merchant by 
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='int', name='FindItemCount', params='name|id') }}
+/// member | int FindItemCount[name|id]
+Counts the items using the given item id, or partial name match. Will search character
+inventory and any items stored in key rings (illusion, mount, etc).
 
-:   Counts the items using the given item id, or partial name match. Will search character
-    inventory and any items stored in key rings (illusion, mount, etc).
+???+ example
 
-    ???+ example
+    Echos the number of items in your inventory with the name swirling in it.
 
-        Echos the number of items in your inventory with the name swirling in it.
+    === "MQScript"
 
-        === "MQScript"
+        ```
+        /echo ${FindItemCount[swirling]}
+        ```
 
-            ```
-            /echo ${FindItemCount[swirling]}
-            ```
+    === "Lua"
 
-        === "Lua"
-
-            ```lua
-            print(mq.TLO.FindItemCount("swirling"))
-            ```
+        ```lua
+        print(mq.TLO.FindItemCount("swirling"))
+        ```
+///
 
 
-### {{ renderMember(type='int', name='FindItemCount', params='=name') }}
+/// member | int FindItemCount[=name]
+Counts the items using exact name match (case insensitive). Will search character inventory
+and any items stored in key rings (illusion, mount, etc).
 
-:   Counts the items using exact name match (case insensitive). Will search character inventory
-    and any items stored in key rings (illusion, mount, etc).
+???+ example
 
-    ???+ example
+    Echoes the number of Water Flasks you have in your inventory.
 
-        Echoes the number of Water Flasks you have in your inventory.
+    === "MQScript"
 
-        === "MQScript"
+        ```
+        /echo ${FindItemCount[=Water Flask]}
+        ```
 
-            ```
-            /echo ${FindItemCount[=Water Flask]}
-            ```
+    === "Lua"
 
-        === "Lua"
-
-            ```lua
-            print(mq.TLO.FindItemCount("=Water Flask"))
-            ```
+        ```lua
+        print(mq.TLO.FindItemCount("=Water Flask"))
+        ```
+///
 <!--tlo-forms-end-->
 <!--tlo-linkrefs-start-->
 [int]: ../data-types/datatype-int.md

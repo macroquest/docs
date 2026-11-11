@@ -11,29 +11,29 @@ See Also: [_character_](./datatype-character.md), [TLO:Me](../top-level-objects/
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='Class') }}
+/// member | string Class
+Class of the character
+///
 
-:   Class of the character
+/// member | int Count
+Number of characters in the character select list
+///
 
-### {{ renderMember(type='int', name='Count') }}
+/// member | int Level
+Level of the character
+///
 
-:   Number of characters in the character select list
+/// member | string Name
+Name of the character
+///
 
-### {{ renderMember(type='int', name='Level') }}
+/// member | string Race
+Race of the character
+///
 
-:   Level of the character
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   Name of the character
-
-### {{ renderMember(type='string', name='Race') }}
-
-:   Race of the character
-
-### {{ renderMember(type='int', name='ZoneID') }}
-
-:   Id of the zone the character logged out in
+/// member | int ZoneID
+Id of the zone the character logged out in
+///
 <!--dt-members-end-->
 <!--dt-linkrefs-start-->
 [int]: ./datatype-int.md

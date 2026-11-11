@@ -9,21 +9,21 @@ Object used when you want to find information on targetted doors or switches suc
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='switch', name='Switch') }}
+/// member | switch Switch
+Returns the currently targeted switch
+///
 
-:   Returns the currently targeted switch
+/// member | switch Switch[ID]
+Returns a switch matching the provided numeric ID
+///
 
-### {{ renderMember(type='switch', name='Switch', params='ID') }}
+/// member | switch Switch[Search]
+Based on the value of `Search`, return a switch:
 
-:   Returns a switch matching the provided numeric ID
-
-### {{ renderMember(type='switch', name='Switch', params='Search') }}
-
-:   Based on the value of `Search`, return a switch:
-
-    - `target`: Return the currently targeted switch
-    - `nearest`: Return the nearest switch.
-    - Otherwise, return switch by searching by name
+- `target`: Return the currently targeted switch
+- `nearest`: Return the nearest switch.
+- Otherwise, return switch by searching by name
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

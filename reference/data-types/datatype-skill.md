@@ -9,47 +9,47 @@ Data related to a particular skill
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='Activated') }}
+/// member | bool Activated
+Returns TRUE if the skill is an activatable skill (ie, an Ability)
+///
 
-:   Returns TRUE if the skill is an activatable skill (ie, an Ability)
+/// member | int AltTimer
+Originally intended to tell whether a skill shares a timer with another skill, this is misnamed.  It returns the category of the skill:
 
-### {{ renderMember(type='int', name='AltTimer') }}
+| Value | Meaning |
+| :--- | :--- |
+| 0 | Non Combat |
+| 1 | Combat |
+| 2 | Special |
+///
 
-:   Originally intended to tell whether a skill shares a timer with another skill, this is misnamed.  It returns the category of the skill:
+/// member | bool Auto
+Returns TRUE if the skill has /autoskill on, FALSE if it does not.
+///
 
-    | Value | Meaning |
-    | :--- | :--- |
-    | 0 | Non Combat |
-    | 1 | Combat |
-    | 2 | Special |
+/// member | int ID
+Skill number
+///
 
-### {{ renderMember(type='bool', name='Auto') }}
+/// member | int MinLevel
+Minimum level for your class
+///
 
-:   Returns TRUE if the skill has /autoskill on, FALSE if it does not.
+/// member | string Name
+Name of the skill
+///
 
-### {{ renderMember(type='int', name='ID') }}
+/// member | int ReuseTime
+Reuse timer _(what number format? ticks, seconds, deciseconds?)_
+///
 
-:   Skill number
+/// member | int SkillCap
+Skill cap based on your current level and class.
+///
 
-### {{ renderMember(type='int', name='MinLevel') }}
-
-:   Minimum level for your class
-
-### {{ renderMember(type='string', name='Name') }}
-
-:   Name of the skill
-
-### {{ renderMember(type='int', name='ReuseTime') }}
-
-:   Reuse timer _(what number format? ticks, seconds, deciseconds?)_
-
-### {{ renderMember(type='int', name='SkillCap') }}
-
-:   Skill cap based on your current level and class.
-
-### {{ renderMember(type='int', name='StartingSkill') }}
-
-:   Base skill level for your class
+/// member | int StartingSkill
+Base skill level for your class
+///
 
 ### [string][string] `To String`
 

@@ -9,9 +9,9 @@ Access to all Groundspawn item count information.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='int', name='GroundItemCount') }}
-
-:   Retrieve the count of items on the ground
+/// member | int GroundItemCount
+Retrieve the count of items on the ground
+///
 <!--tlo-forms-end-->
 
 ## Usage

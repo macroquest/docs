@@ -10,61 +10,61 @@ Represents a spell effect on an item.
 
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='CastTime') }}
+/// member | int CastTime
+Spell cast time.
+///
 
-:   Spell cast time.
+/// member | int EffectiveCasterLevel
+Effective level that is used to cast the spell.
+///
 
-### {{ renderMember(type='int', name='EffectiveCasterLevel') }}
+/// member | int EffectType
+The type of item spell effect.
+///
 
-:   Effective level that is used to cast the spell.
+/// member | int MaxCharges
+The maximum number of charges supported by this spell.
+///
 
-### {{ renderMember(type='int', name='EffectType') }}
+/// member | int OtherID
+???
+///
 
-:   The type of item spell effect.
+/// member | string OtherName
+Synonym of _OverrideName_
+///
 
-### {{ renderMember(type='int', name='MaxCharges') }}
+/// member | string OverrideDescription
+Overrides the normal spell description string, if set.
+///
 
-:   The maximum number of charges supported by this spell.
+/// member | string OverrideName
+Overrides the normal spell name string, if set.
+///
 
-### {{ renderMember(type='int', name='OtherID') }}
+/// member | int ProcRate
+Combat effect proc rate.
+///
 
-:   ???
+/// member | int RecastType
+Recast type of the spell.
+///
 
-### {{ renderMember(type='string', name='OtherName') }}
+/// member | int RequiredLevel
+Level required for the spell to be usable.
+///
 
-:   Synonym of _OverrideName_
+/// member | spell Spell
+The spell.
+///
 
-### {{ renderMember(type='string', name='OverrideDescription') }}
+/// member | int SpellID
+ID of the Spell.
+///
 
-: Overrides the normal spell description string, if set.
-
-### {{ renderMember(type='string', name='OverrideName') }}
-
-: Overrides the normal spell name string, if set.
-
-### {{ renderMember(type='int', name='ProcRate') }}
-
-:   Combat effect proc rate.
-
-### {{ renderMember(type='int', name='RecastType') }}
-
-:   Recast type of the spell.
-
-### {{ renderMember(type='int', name='RequiredLevel') }}
-
-:   Level required for the spell to be usable.
-
-### {{ renderMember(type='spell', name='Spell') }}
-
-:   The spell.
-
-### {{ renderMember(type='int', name='SpellID') }}
-
-:   ID of the Spell.
-
-### {{ renderMember(type='int', name='TimerID') }}
-
-:   Timer ID of the spell.
+/// member | int TimerID
+Timer ID of the spell.
+///
 <!--dt-members-end-->
 <!--dt-linkrefs-start-->
 [int]: ../data-types/datatype-int.md

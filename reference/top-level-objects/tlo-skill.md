@@ -9,13 +9,13 @@ Object used to get information on your character's skills.
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='skill', name='Skill', params='name') }}
+/// member | skill Skill[name]
+Retrieve skill by name
+///
 
-:   Retrieve skill by name
-
-### {{ renderMember(type='skill', name='Skill', params='N') }}
-
-:   Retrieve skill by number
+/// member | skill Skill[N]
+Retrieve skill by number
+///
 <!--tlo-forms-end-->
 
 ## Associated DataTypes

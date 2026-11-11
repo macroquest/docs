@@ -10,9 +10,9 @@ Access to point merchants (such as those found in LDoN) when a window is open.
 
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='pointmerchant', name='PointMerchant') }}
-
-:   Returns TRUE if point merchant window is open
+/// member | pointmerchant PointMerchant
+Returns TRUE if point merchant window is open
+///
 
 <!--tlo-forms-end-->
 

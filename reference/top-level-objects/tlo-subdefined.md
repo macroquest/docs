@@ -10,9 +10,9 @@ Information about macro sub's definition
 
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='bool', name='SubDefined', params='name') }}
-
-:   Returns true if a sub called `name` is defined and the macro is currently running.
+/// member | bool SubDefined[name]
+Returns true if a sub called `name` is defined and the macro is currently running.
+///
 
 <!--tlo-forms-end-->
 

@@ -9,9 +9,9 @@ Determines whether a variable, array, or timer with this name exists. The variab
 <!--tlo-desc-end-->
 ## Forms
 <!--tlo-forms-start-->
-### {{ renderMember(type='bool', name='Defined', params='Name') }}
-
-:   Returns true if the given variable _name_ is defined.
+/// member | bool Defined[Name]
+Returns true if the given variable _name_ is defined.
+///
 <!--tlo-forms-end-->
 
 ## Usage

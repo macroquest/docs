@@ -11,57 +11,57 @@ This is the type for any buffs currently affecting you, both long duration and s
 <!--dt-members-start-->
 This type inherits members from [_spell_](datatype-spell.md).
 
-### {{ renderMember(type='string', name='Caster') }}
+/// member | string Caster
+Name of the caster who cast the buff, if available.
+///
 
-:   Name of the caster who cast the buff, if available.
+/// member | int64 CountersCorruption
+The number of corruption counters.
+///
 
-### {{ renderMember(type='int64', name='CountersCorruption') }}
+/// member | int64 CountersCurse
+The number of curse counters.
+///
 
-:   The number of corruption counters.
+/// member | int64 CountersDisease
+The number of disease counters.
+///
 
-### {{ renderMember(type='int64', name='CountersCurse') }}
+/// member | int64 CountersPoison
+The number of poison counters.
+///
 
-:   The number of curse counters.
+/// member | int64 Dar
+The remaining damage absorption of the buff (if any). _This is not entirely accurate, it will only show you to the Dar of your spell when it was initially cast, or what it was when you last zoned (whichever is more recent)._
+///
 
-### {{ renderMember(type='int64', name='CountersDisease') }}
+/// member | timestamp Duration
+The time remaining before the buff fades (not total duration)
+///
 
-:   The number of disease counters.
+/// member | int HitCount
+?
+///
 
-### {{ renderMember(type='int64', name='CountersPoison') }}
+/// member | int ID
+The ID of the buff or shortbuff slot
+///
 
-:   The number of poison counters.
+/// member | int Level
+The level of the person that cast the buff on you (not the level of the spell)
+///
 
-### {{ renderMember(type='int64', name='Dar') }}
+/// member | float Mod
+The modifier to a bard song
+///
 
-:   The remaining damage absorption of the buff (if any). _This is not entirely accurate, it will only show you to the Dar of your spell when it was initially cast, or what it was when you last zoned (whichever is more recent)._
+/// member | spell Spell
+The spell
+///
 
-### {{ renderMember(type='timestamp', name='Duration') }}
-
-:   The time remaining before the buff fades (not total duration)
-
-### {{ renderMember(type='int', name='HitCount') }}
-
-:   ?
-
-### {{ renderMember(type='int', name='ID') }}
-
-:   The ID of the buff or shortbuff slot
-
-### {{ renderMember(type='int', name='Level') }}
-
-:   The level of the person that cast the buff on you (not the level of the spell)
-
-### {{ renderMember(type='float', name='Mod') }}
-
-:   The modifier to a bard song
-
-### {{ renderMember(type='spell', name='Spell') }}
-
-:   The spell
-
-### {{ renderMember(type='int64', name='TotalCounters') }}
-
-:   The total number of counters on the buff.
+/// member | int64 TotalCounters
+The total number of counters on the buff.
+///
 
 ### [string][string] `To String`
 

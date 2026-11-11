@@ -9,17 +9,17 @@ Data for the specified plugin
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='bool', name='IsLoaded') }}
+/// member | bool IsLoaded
+Returns true if the plugin is loaded
+///
 
-:   Returns true if the plugin is loaded
+/// member | string Name
+Name of the plugin
+///
 
-### {{ renderMember(type='string', name='Name') }}
-
-:   Name of the plugin
-
-### {{ renderMember(type='float', name='Version') }}
-
-:   Version number of the plugin
+/// member | float Version
+Version number of the plugin
+///
 
 ### [string][string] `To String`
 

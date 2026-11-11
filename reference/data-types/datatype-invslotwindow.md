@@ -9,61 +9,61 @@ Contains information related to the specified inventory slot
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='string', name='Background') }}
+/// member | string Background
+Background image for the slot
+///
 
-:   Background image for the slot
+/// member | bool FindSelected
+???
+///
 
-### {{ renderMember(type='bool', name='FindSelected') }}
+/// member | bool HotButton
+???
+///
 
-:   ???
+/// member | bool InventorySlotLinked
+???
+///
 
-### {{ renderMember(type='bool', name='HotButton') }}
+/// member | int ItemLocation
+???
+///
 
-:   ???
+/// member | int ItemIndexSlot
+???
+///
 
-### {{ renderMember(type='bool', name='InventorySlotLinked') }}
+/// member | item Item
+The item object of the slot
+///
 
-:   ???
+/// member | int ItemOffsetX
+???
+///
 
-### {{ renderMember(type='int', name='ItemLocation') }}
+/// member | int ItemOffsetY
+???
+///
 
-:   ???
+/// member | string ItemTexture
+???
+///
 
-### {{ renderMember(type='int', name='ItemIndexSlot') }}
+/// member | int Mode
+???
+///
 
-:   ???
+/// member | int Quantity
+???
+///
 
-### {{ renderMember(type='item', name='Item') }}
+/// member | bool Selected
+???
+///
 
-:   The item object of the slot
-
-### {{ renderMember(type='int', name='ItemOffsetX') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='ItemOffsetY') }}
-
-:   ???
-
-### {{ renderMember(type='string', name='ItemTexture') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='Mode') }}
-
-:   ???
-
-### {{ renderMember(type='int', name='Quantity') }}
-
-:   ???
-
-### {{ renderMember(type='bool', name='Selected') }}
-
-:   ???
-
-### {{ renderMember(type='string', name='Text') }}
-
-:   ???
+/// member | string Text
+???
+///
 <!--dt-members-end-->
 <!--dt-linkrefs-start-->
 [bool]: datatype-bool.md

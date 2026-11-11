@@ -13,17 +13,17 @@ Data related to arrays.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='Dimensions') }}
+/// member | int Dimensions
+Number of dimensions in the array
+///
 
-:   Number of dimensions in the array
+/// member | int Size
+Total number of elements in the array
+///
 
-### {{ renderMember(type='int', name='Size') }}
-
-:   Total number of elements in the array
-
-### {{ renderMember(type='int', name='Size', params='N') }}
-
-:   Total number of elements stored in the _N_ th dimension of the array
+/// member | int Size[N]
+Total number of elements stored in the _N_ th dimension of the array
+///
 <!--dt-members-end-->
 
 ## Usage

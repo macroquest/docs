@@ -9,19 +9,19 @@ This is the type for the referenced section of an ini file.
 <!--dt-desc-end-->
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='Count') }}
+/// member | int Count
+How many sections matching the Section[] index exist.
+///
 
-:   How many sections matching the Section[] index exist.
+/// member | bool Exists
+Whether a specific section exists.
+///
 
-### {{ renderMember(type='bool', name='Exists') }}
+/// member | inifilesectionkey Key[opt: Key]
+A reference to the named or unnamed key in this specific ini file section.
 
-:   Whether a specific section exists.
-
-### {{ renderMember(type='inifilesectionkey', name='Key', params='opt: Key') }}
-
-:   A reference to the named or unnamed key in this specific ini file section.
-
-    The index is optional. Passing an index means it will reference all keys that match that index. Not passing an index references all keys for operations that allow it.
+The index is optional. Passing an index means it will reference all keys that match that index. Not passing an index references all keys for operations that allow it.
+///
 <!--dt-members-end-->
 
 ## Examples

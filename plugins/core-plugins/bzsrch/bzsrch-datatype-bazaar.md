@@ -10,17 +10,21 @@ Datatype providing access to bazaar search results and status information.
 
 ## Members
 <!--dt-members-start-->
-### {{ renderMember(type='int', name='Count') }}
-:   Number of search results available
+/// member | int Count
+Number of search results available
+///
 
-### {{ renderMember(type='bool', name='Done') }}
-:   True if search operation has completed
+/// member | bool Done
+True if search operation has completed
+///
 
-### {{ renderMember(type='bazaaritem', name='Item', params='#') }}
-:   Returns the name of the item at the specified index
+/// member | bazaaritem Item[#]
+Returns the name of the item at the specified index
+///
 
-### {{ renderMember(type='bazaaritem', name='SortedItem', params='#') }}
-:   Returns the name of the item at the specified index from a sorted list, as you'd see it in the GUI.
+/// member | bazaaritem SortedItem[#]
+Returns the name of the item at the specified index from a sorted list, as you'd see it in the GUI.
+///
 <!--dt-members-end-->
 
 <!--dt-linkrefs-start-->
