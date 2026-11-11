@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -19840,7 +19840,7 @@ Mq2Banolier (<a href="https://macroquest.org/wiki/index.php/MQ2Bandolier">Wiki P
 </ul>
 </li>
 <li>
-<p>This still has a problem finding variables in very long sections. If /echo <span IniFile="IniFile" class="arithmatex">\({Ini\[\)</span>,</p>
+<p>This still has a problem finding variables in very long sections. If /echo <span IniFile class="arithmatex">\({Ini\[\)</span>,</p>
 <p>]} is over the MAX_STRING value - (You go LD typing that if it is). - Stuff like ABGem[20] is almost never found. (Still working on that.)</p>
 </li>
 </ul>
@@ -19903,7 +19903,7 @@ Mq2Banolier (<a href="https://macroquest.org/wiki/index.php/MQ2Bandolier">Wiki P
 <p><code>"cast" command usage now allows for multiple aliases. If you have several spells with the same alias, using /bc castwill now cast all spells marked.</code>
 <code>Example, for shaman you can have Fo7, Talisman of Boar, Talisman of Wrulan, Talisman of Tribunal, ect.. all marked with "fullgroup". "/mb cast fullgroup" will</code>
 <code>cast each spell in the order they are found in the .ini file.</code>
-<code>-```Group buffs can now be seperated to different classes, and will allow keeping the spell on netbots members in seperate groups from the caster with the inclusion of keyword``
+````Buffing -<code>Group buffs can now be seperated to different classes, and will allow keeping the spell on netbots members in seperate groups from the caster with the inclusion of keyword``
 `"raid". Example -`````  Code: ``````[AB2]``
 `ABGem=8`
 `ABSpell=Focus of the Seventh`
@@ -19917,14 +19917,13 @@ Mq2Banolier (<a href="https://macroquest.org/wiki/index.php/MQ2Bandolier">Wiki P
 `ABRecast=FALSE`
 `ABSpellIcon=`
 `ABPreCondition=TRUE`
-````` Note from the above example that clr is not included in the TarType.. My clerics have the spell blocked. Attempting to cast on them will cause a chain loop of``````casting until the cleric gets self buff on that doesn't "stack" with focus. - so watch spell stacking and make sure to set your toons accordingly.</code> Old format of "self" will also work with no change if you don't want to buff other groups with the spell.<code>`Commands -`
+````` Note from the above example that clr is not included in the TarType.. My clerics have the spell blocked. Attempting to cast on them will cause a chain loop of``````casting until the cleric gets self buff on that doesn't "stack" with focus. - so watch spell stacking and make sure to set your toons accordingly.``````````` Old format of "self" will also work with no change if you don't want to buff other groups with the spell.`````
+`Commands -`
 `Tell commands will now check buff aliases, and don't need "cast" to ask for buffs.. "/tellfullgroup" from a non-master toon will make the shaman cast`
 `every spell with that alias on the sender of the tell. Masters still require use of "cast". - This does allow guildies or whoever else knows your aliases to get`
 `buffs easily.`
-`/say is not affected and is still not enabled for modbot.`</code> Added "docommand" -<code>ter toons that aren't in netbots can now directly command toons. "/telldocommand /sit" will make the receiving toon sit, or execute any command after</code>
-<code>the "docommand" keyword. - Word of caution - You can cause macro errors with this if you aren't careful. The command sent is executed directly with /docommand in the macro.</code>
-<code>A tell received of "/telldocommand /sit" will locally execute "/docommand /sit" Watch extra characters and or brackets.. - Because of the nature of this one,</code>
-<code>the commanding toon MUST be listed in MasterList.</code></p>
+`/say is not affected and is still not enabled for modbot.`
+````` Added "docommand" -</code>Master toons that aren't in netbots can now directly command toons. "/telldocommand /sit" will make the receiving toon sit, or execute any command after<code>`````</code>the "docommand" keyword. - Word of caution - You can cause macro errors with this if you aren't careful. The command sent is executed directly with /docommand in the macro.<code></code>A tell received of "/telldocommand /sit" will locally execute "/docommand /sit" Watch extra characters and or brackets.. - Because of the nature of this one,<code></code>the commanding toon MUST be listed in MasterList.`</p>
 <ul>
 <li>You should be familiar or at least capable of making MQ2Bandolier sets as they are used by MQ2Cast for "foci"</li>
 </ul>
@@ -19951,7 +19950,7 @@ Mq2Banolier (<a href="https://macroquest.org/wiki/index.php/MQ2Bandolier">Wiki P
 <li>Setting spell duration modifications (AHDurMod, ADDurMod, ABDurMod, AEDurMod) - Use the following formula to</li>
 </ul>
 <p>determine what number to set your DurMod at:</p>
-<p><span AHDurModX="AHDurModX" class="arithmatex">\({Spell[X\].Duration} \* (\)</span>) == timer duration.}+${Spell[X].Duration</p>
+<p><span AHDurModX class="arithmatex">\({Spell[X\].Duration} \* (\)</span>) == timer duration.}+${Spell[X].Duration</p>
 <p>So if you want a 25% extension on the timer, set durmod to 25 to make ${Spell[X].Duration} * 1.25 = timer. Modbot shouldn't re-cast if timer is still running.</p>
 <h3 id="references">References<a class="headerlink" href="#references" title="Permanent link">&para;</a></h3>
 <ul>
@@ -21245,7 +21244,7 @@ Please note- when you are posting on the forum for help (after reading this wiki
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>

@@ -23,7 +23,7 @@
       
       
       <link rel="icon" href="../../../images/logo.png">
-      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.0">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.8.1">
     
     
       
@@ -18860,7 +18860,7 @@
 <p>Because the default handling of objects is protobuf, T is assumed to be a protobuf type. There is one exception, this function is specialized for <code>T = std::string</code>, which is used as a data container and just serializes the string directly to the message being sent. <code>Address</code> is talked about below, and is how you would direct the message to an actor. <code>Message</code> is also talked about below and is the actual message being sent to the actor. The callback is optional, and is specified when the receiving actor will send a response to the sent message.</p>
 <p>There are three more structures to explore in a plugin, <code>Address</code>, <code>Message</code>, and <code>DropboxAPI</code>.</p>
 <h2 id="address">Address<a class="headerlink" href="#address" title="Permanent link">&para;</a></h2>
-<p>An address is a shim to the protobuf-defined address, and follows the same rules as the <a href="#terminology">terminology section above</a>. The API provides this shim as a simple struct where you can set the address parameters directly like this (as an example):</p>
+<p>An address is a shim to the protobuf-defined address, and follows the same rules as the <a href="../../../main/features/actors/#terminology">terminology section above</a>. The API provides this shim as a simple struct where you can set the address parameters directly like this (as an example):</p>
 <div class="language-cpp highlight"><pre><span></span><code><span class="n">postoffice</span><span class="o">::</span><span class="n">Address</span><span class="w"> </span><span class="n">addr</span><span class="p">;</span>
 <span class="n">addr</span><span class="p">.</span><span class="n">Server</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"test"</span><span class="p">;</span>
 <span class="n">addr</span><span class="p">.</span><span class="n">Character</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="s">"target"</span><span class="p">;</span>
@@ -18945,7 +18945,7 @@
       <script id="__config" type="application/json">{"annotate": null, "base": "../../..", "features": ["content.action.edit", "navigation.tabs", "search.highlight", "search.share", "navigation.instant", "navigation.indexes", "navigation.top"], "search": "../../../assets/javascripts/workers/search.a7633da7.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
     
     
-      <script src="../../../assets/javascripts/bundle.c21346df.min.js"></script>
+      <script src="../../../assets/javascripts/bundle.a5f9d56c.min.js"></script>
       
     
   </body>
