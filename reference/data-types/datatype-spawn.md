@@ -653,30 +653,6 @@ Represents an in-game spawn.
 
 :   Z coordinate
 
-### {{ renderMember(type='float', name='N') }}
-
-:   X, the Northward-positive coordinate
-
-### {{ renderMember(type='float', name='W') }}
-
-:   Y, the Westward-positive coordinate
-
-### {{ renderMember(type='float', name='U') }}
-
-:   Z, the Upward-positive coordinate
-
-### {{ renderMember(type='float', name='E') }}
-
-:   Shortcut for -X (makes Eastward positive)
-
-### {{ renderMember(type='float', name='S') }}
-
-:   Shortcut for -Y (makes Southward positive)
-
-### {{ renderMember(type='float', name='D') }}
-
-:   Shortcut for -Z (makes Downward positive)
-
 ### [string][string] `To String`
 
 :   Same as **Name**

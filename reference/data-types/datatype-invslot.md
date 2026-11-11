@@ -64,7 +64,7 @@ Data related to an inventory slot.
 [achievementobj]: datatype-achievementobj.md
 [altability]: datatype-altability.md
 [auratype]: datatype-auratype.md
-[bandolieritem]: #bandolieritem-datatype
+[bandolieritem]: datatype-bandolier.md#bandolieritem
 [bool]: datatype-bool.md
 [buff]: datatype-buff.md
 [class]: datatype-class.md
